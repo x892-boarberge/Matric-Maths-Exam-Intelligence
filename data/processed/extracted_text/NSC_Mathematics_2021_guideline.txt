@@ -1,0 +1,989 @@
+Copyright reserved Please turn over
+
+
+
+
+
+
+
+
+
+
+MATHEMATICS
+
+
+
+EXAMINATION GUIDELINES
+
+
+
+GRADE 12
+
+2021
+
+
+
+
+
+These guidelines consist of 16 pages.
+
+
+
+Mathematics 2 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+
+CONTENTS Page
+
+Chapter 1: Introduction 3
+
+Chapter 2: Assessment in Grade 12
+2.1 Format of question papers for Grade 12 4
+2.2 Weighting of topics per paper for Grade 12 4
+2.3 Weighting of cognitive levels 5
+
+Chapter 3: Elaboration of Content for Grade 12 (CAPS) 6
+
+Chapter 4: Acceptable reasons: Euclidean Geometry
+4.1 Acceptable Reasons: Euclidean Geometry (ENGLISH) 9
+4.2 Aanvaarbare redes: Euklidiese Meetkunde (AFRIKAANS) 12
+
+Chapter 5: Information sheet 15
+
+Chapter 6: Guidelines for marking 16
+
+Chapter 7: Conclusion 16
+.
+
+Mathematics 3 DBE/2020
+Examination Guidelines
+Copyright reserved Please turn over
+
+
+1. INTRODUCTION
+
+The Curriculum and Assessment Policy Statement (CAPS) for Mathematics outlines the nature and purpose of
+the subject Mathematics. This guides the philosophy underlying the teaching and assessment of the subject in
+Grade 12.
+
+The purpose of these Examination Guidelines is to:
+
+ Provide clarity on the depth and sc ope of the content to be assessed in the Grade 12 National Senior
+Certificate Examination in Mathematics
+ Assist teachers to adequately prepare learners for the examinations
+
+This document deals with the final Grade 12 external examinations. It does not de al in any depth with the
+school-based assessment (SBA), p erformance assessment tasks (PATs) or final external practical
+examinations as these are clarified in a separate PAT document which is updated annually.
+
+These guidelines should be read in conjunction with:
+
+ The National Curriculum Statement (NCS) Curriculum and Assessment Policy Statement (CAPS) :
+Mathematics
+ The National Protocol of Assessment: An addendum to the policy document, the National Senior
+Certificate: A qualification at Level 4 on the National Qualifications Framework (NQF), regarding the
+National Protocol for Assessment (Grades R–12)
+ National policy pertaining to the programme and promotion requirements of the National Curriculum
+Statement, Grades R to 12
+
+Included in this document is a list of Euclidean Geometry reasons, both in English and Afrikaans,
+which should be used as a guideline when teaching learners Euclidean Geometry.
+
+The Information Sheet for Paper 1 and 2 is included in this document.
+
+
+Mathematics 4 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+
+2. ASSESSMENT IN GRADE 12
+
+All candidates will write two external papers as prescribed.
+
+2.1 Format of Question Papers for Grade 12
+
+Paper Topics Duration Total Date Marking
+1
+Patterns and sequences
+Finance, growth and decay
+Functions and graphs
+Algebra, equations and inequalities
+Differential Calculus
+Probability
+3 hours 150 October/November Externally
+2
+Euclidean Geometry
+Analytical Geometry
+Statistics and regression
+Trigonometry
+3 hours 150 October/November Externally
+
+Questions in both Papers 1 and 2 will assess performance at different cognitive levels with an
+emphasis on process skills, critical thinking, scientific reasoning and strategies to investigate and
+solve problems in a variety of contexts.
+
+An Information Sheet is included on p. 15.
+
+
+2.2 Weighting of Topics per Paper for Grade 12
+
+PAPER 1 MARKS PAPER 2 MARKS
+Algebra, Equations and Inequalities
+Number Patterns
+Functions and Graphs
+Finance, Growth and Decay
+Differential Calculus
+Counting Principle and Probability
+25
+25
+35
+15
+35
+15
+Statistics and Regression
+Analytical Geometry
+Trigonometry
+Euclidean Geometry
+
+20
+40
+50
+40
+TOTAL 150 TOTAL 150
+
+
+
+Mathematics 5 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+2.3 Weighting of Cognitive Levels
+
+Papers 1 and 2 will include questions across four cognitive levels. The distribution of cognitive
+levels in the papers is given below.
+
+Cognitive Level Description of Skills to be Demonstrated Weighting
+Approximate
+Number of
+Marks in a
+150-mark
+Paper
+Knowledge
+ Recall
+ Identification of correct formula on the
+information sheet (no changing of the subject)
+ Use of mathematical facts
+ Appropriate use of mathematical vocabulary
+ Algorithms
+ Estimation and appropriate rounding of
+numbers
+20% 30 marks
+Routine
+Procedures
+ Proofs of prescribed theorems and derivation
+of formulae
+ Perform well-known procedures
+ Simple applications and calculations which
+might involve few steps
+ Derivation from given information may be
+involved
+ Identification and use (after changing the
+subject) of correct formula
+ Generally similar to those encountered in class
+35% 52–53 marks
+Complex
+Procedures
+ Problems involve complex calculations and/or
+higher-order reasoning
+ There is often not an obvious route to the
+solution
+ Problems need not be based on a real-world
+context
+ Could involve making significant connections
+between different representations
+ Require conceptual understanding
+ Learners are expected to solve problems by
+integrating different topics.
+30% 45 marks
+Problem
+Solving
+ Non-routine problems (which are not
+necessarily difficult)
+ Problems are mainly unfamiliar
+ Higher-order reasoning and processes are
+involved
+ Might require the ability to break the problem
+down into its constituent parts
+ Interpreting and extrapolating from solutions
+obtained by solving problems based in
+unfamiliar contexts.
+15% 22–23 marks
+
+
+Mathematics 6 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+
+3. ELABORATION OF CONTENT/TOPICS
+
+The purpose of the cl arification of the topics is to give guidance to the teacher in terms of depth of
+content necessary for examination purposes. Integration of topics is encouraged as learners should
+understand Mathematics as a holistic discipline. Thus q uestions integrating various topics can be
+asked.
+
+FUNCTIONS
+
+1. Candidates must be able to use and interpret functional notation. In the teaching process learners
+must be able to understand how
+)(xf has been transformed to generate
+)( xf  ,
+)(xf ,
+)( axf 
+
+axf )( ,
+)(xaf and
+)(yfx where
+Ra .
+2. Trigonometric functions will ONLY be examined in PAPER 2.
+
+NUMBER PATTERNS, SEQUENCES AND SERIES
+
+1. The sequence of first differences of a quadratic number pattern is linear. Therefore, knowledge
+of linear patterns can be tested in the context of quadratic number patterns.
+2. Recursive patterns will not be examined explicitly.
+3. Links must be clearly established between patterns done in earlier grades.
+
+FINANCE, GROWTH AND DECAY
+
+1. Understand the difference between nominal and effective interest rates and convert fluently
+between them for the following compounding periods: monthly, quarterly and half-yearly or
+semi-annually.
+2. With the exception of calculating i in the Fv and Pv formulae, candidates are expected to calculate
+the value of any of the other variables.
+3. Pyramid schemes will NOT be examined in the examination.
+
+ALGEBRA
+
+1. Solving quadratic equations by completing the square will NOT be examined.
+2. Solving quadratic equations using the substitution method (k-method) is examinable.
+3. Equations involving surds that lead to a quadratic equation are examinable.
+4. Solution of non-quadratic inequalities should be seen in the context of functions.
+5. Nature of the roots will be tested intuitively with the solution of quadratic equations and in all the
+prescribed functions.
+
+
+
+Mathematics 7 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+
+DIFFERENTIAL CALCULUS
+
+1. The following notations for differentiation can be used:
+)(xf ,
+xD ,
+dx
+dy or
+y .
+2. In respect of cubic functions, candidates are expected to be able to:
+ Determine the equation of a cubic function from a given graph.
+ Discuss the nature of stationary points incl uding local maximum, local minimum and points
+of inflection.
+ Apply knowledge of transformations on a given function to obtain its image.
+3. Candidates are expected to be able to draw and interpret the graph of the derivative of a function.
+4. Surface area and volume will be examined in the context of optimisation.
+5. Candidates must know the formulae for the surface area and volume of the right prisms. These
+formulae will NOT be provided on the formula sheet
+6. If the optimisation question is based on the surface ar ea and/or volume of the cone, sphere and/or
+pyramid, a list of the relevant formulae will be provided in that question. Candidates will be
+expected to select the correct formula from this list.
+
+PROBABILITY
+
+1. Dependent events are examinable but conditional probabilities are not part of the syllabus.
+2. Dependent events in which an object is not replaced are examinable.
+3. Questions that require the learner to count the different number of ways that objects may be
+arranged in a circle and/or the use of combinations are not in the spirit of the curriculum.
+4. In respect of word arrangements, letters that are repeated in the word can be treated as the same
+(indistinguishable) or different (distinguishable). The question will be specific in this regard.
+
+EUCLIDEAN GEOMETRY AND MEASUREMENT
+
+1. Measurement can be tested in the context of optimisation in calculus and two - and
+three-dimensional trigonometry.
+2. Composite shapes could be formed by combining a maximum of TWO of the stated shapes.
+3. The following proofs of theorems are examinable:
+ The line drawn from the centre of a circle perpendicular to a chord bisects the chord;
+ The line drawn from the centre of a circle that bisects a chord is perpendicular to the chord;
+ The angle subtended by an arc at the centre of a circle is double the size of the angle
+subtended by the same arc at the circle (on the same side of the chord as the centre);
+ The opposite angles of a cyclic quadrilateral are supplementary;
+ The angle between the tangent to a circle and the ch ord drawn from the point of contact is
+equal to the angle in the alternate segment;
+ A line drawn parallel to one side of a triangle divides the other two sides proportionally;
+ Equiangular triangles are similar.
+
+
+Mathematics 8 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+
+4. Corollaries derived from the theorems and axioms are necessary in solving riders:
+ Angles in a semi-circle
+ Equal chords subtend equal angles at the circumference
+ Equal chords subtend equal angles at the centre
+ In equal circles, equal chords subtend equal angles at the circumference
+ In equal circles, equal chords subtend equal angles at the centre.
+ The exterior angle of a cyclic quadrilateral is equal to the interior opposite angle of the
+quadrilateral.
+ If the exterior angle of a quadrilateral is equal to the interior opposite angle of the
+quadrilateral, then the quadrilateral is cyclic.
+ Tangents drawn from a common point outside the circle are equal in length.
+5. The theory of quadrilaterals will be integrated into questions in the examination.
+6. Concurrency theory is excluded.
+
+TRIGONOMETRY
+
+1. The reciprocal ratios cosec , sec  and cot  can be used by candidates in the answering of
+problems but will not be explicitly tested.
+2. The focus of trigonometric graphs is on the relationships, simplification and determining points
+of intersection by solving equations, although characteristics of the graphs should not be
+excluded.
+
+ANALYTICAL GEOMETRY
+
+1. Prove the properties of polygons by using analytical methods.
+2. The concept of collinearity must be understood.
+3. Candidates are expected to be able to integrate Euclidean Geometry axioms and theorems into
+Analytical Geometry problems.
+4. The length of a tangent from a point outside the circle should be calculated.
+5. Concepts involved with concurrency will not be examined.
+
+STATISTICS
+
+1. Candidates should be encouraged to use the calculator to calculate standard deviation, variance
+and the equation of the least squares regression line.
+2. The interpretation of standard deviation in terms of normal distribution is not examinable.
+3. Candidates are expected to identify outliers intuitively in both the scatter plot as well as the box
+and whisker diagram.
+In the case of the box and whisker diagram, observations that lie outside the interval
+(lower quartile – 1,5 IQR; upper quartile + 1,5 IQR) are considered to be outliers. However,
+candidates will not be penalised if they did not make use of this formula in identifying outliers.
+
+
+
+Mathematics 9 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+
+4. ACCEPTABLE REASONS: EUCLIDEAN GEOMETRY
+
+In order to have some kind of uniformity, the use of the following shortened versions of the theorem
+statements is encouraged.
+
+4.1 ACCEPTABLE REASONS: EUCLIDEAN GEOMETRY (ENGLISH)
+
+THEOREM STATEMENT ACCEPTABLE REASON(S)
+LINES
+The adjacent angles on a straight line are supplementary. s on a str line
+If the adjacent angles are supplementary, the outer arms of these angles
+form a straight line.
+adj s supp
+The adjacent angles in a revolution add up to 360. s round a pt OR s in a rev
+Vertically opposite angles are equal. vert opp s =
+If AB || CD, then the alternate angles are equal. alt s; AB || CD
+If AB || CD, then the corresponding angles are equal. corresp s; AB || CD
+If AB || CD, then the co-interior angles are supplementary. co-int s; AB || CD
+If the alternate angles between two lines are equal, then the lines are
+parallel.
+alt s =
+If the corresponding angles between two lines are equal, then the lines
+are parallel.
+corresp s =
+If the co-interior angles between two lines are supplementary, then the
+lines are parallel.
+coint s supp
+
+TRIANGLES
+The interior angles of a triangle are supplementary.  sum in  OR sum of s in ∆
+OR Int s 
+The exterior angle of a triangle is equal to the sum of the interior
+opposite angles.
+ext  of 
+The angles opposite the equal sides in an isosceles triangle are equal. s opp equal sides
+
+The sides opposite the equal angles in an isosceles triangle are equal. sides opp equal s
+In a right -angled triangle, the square of the hypotenuse is equ al to the
+sum of the squares of the other two sides.
+Pythagoras OR
+Theorem of Pythagoras
+If the square of the longest side in a triangle is equal to the sum of the
+squares of the other two sides then the triangle is right-angled.
+Converse Pythagoras
+OR
+Converse Theorem of Pythagoras
+If three sides of one triangle are respectively equal to three sides of
+another triangle, the triangles are congruent.
+SSS
+
+If two sides and an included angle of one triangle are respectively
+equal to two sides and an included angle of another triangle, the
+triangles are congruent.
+SAS OR SS
+If two angles and one side of one triangle are respectively equal to two
+angles and the corresponding side in another triangle, the triangles are
+congruent.
+AAS OR S
+
+
+If in two right -angled triangles, the hypotenuse and one side of one
+triangle are respectively equal to the hypotenuse and one side of the
+other, the triangles are congruent
+RHS OR 90°HS
+
+
+
+Mathematics 10 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+THEOREM STATEMENT ACCEPTABLE REASON(S)
+The line segment joining the midpoints of two sides of a triangle is
+parallel to the third side and equal to half the length of the third side
+Midpt Theorem
+The line drawn from the midpoint of one side of a triangle, parallel to
+another side, bisects the third side.
+line through midpt || to 2nd side
+A line drawn parallel to one side of a triangle divides the other two
+sides proportionally.
+line || one side of 
+OR
+prop theorem; name || lines
+If a line divides two sides of a triangle in the same proportion, then the
+line is parallel to the third side.
+line divides two sides of ∆ in prop
+If two triangles are equiangular, then the corresponding sides are in
+proportion (and consequently the triangles are similar).
+||| s OR equiangular ∆s
+If the corresponding sides of two triangles are proportional, then the
+triangles are equiangular (and consequently the triangles are similar).
+Sides of ∆ in prop
+If triangles (or parallelograms) are on the same base (or on bases of
+equal length) and between the same parallel lines, then the triangles (or
+parallelograms) have equal areas.
+same base; same height OR
+equal bases; equal height
+
+CIRCLES
+The tangent to a circle is perpendicular to the radius/diameter of the
+circle at the point of contact.
+tan  radius
+tan  diameter
+If a line is drawn perpendicular to a radius/diameter at the point where
+the radius/diameter meets the circle, then the line is a tangent to the
+circle.
+line  radius OR
+converse tan  radius OR
+converse tan  diameter
+The line drawn from the centre of a circle to the midpoint of a chord is
+perpendicular to the chord.
+line from centre to midpt of chord
+The line drawn from the centre of a circle perpendicular to a chord
+bisects the chord.
+line from centre  to chord
+The perpendicular bisector of a chord passes through the centre of the
+circle;
+perp bisector of chord
+The angle subtended by an arc at the centre of a circle is double the
+size of the angle subtended by the same arc at the circle (on the same
+side of the chord as the centre)
+ at centre = 2 × at circumference
+The angle subtended by the diameter at the circumference of the circle
+is 90.
+s in semi-circle OR
+diameter subtends right angle OR
+ in
+2
+1 
+If the angle subtended by a chord at the circumference of the circle is
+90, then the chord is a diameter.
+chord subtends 90 OR
+converse s in semi-circle
+Angles subtended by a chord of the circle, on the same side of the
+chord, are equal
+s in the same seg
+If a line segment joining two points subtends equal angles at two points
+on the same side of the line segment, then the four points are concyclic.
+line subtends equal s OR
+converse s in the same seg
+Equal chords subtend equal angles at the circumference of the circle. equal chords; equal s
+Equal chords subtend equal angles at the centre of the circle. equal chords; equal s
+Equal chords in equal circles subtend equal angles at the circumference
+of the circles.
+equal circles; equal chords; equal s
+
+
+Mathematics 11 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+THEOREM STATEMENT ACCEPTABLE REASON(S)
+Equal chords in equal circles subtend equal angles at the centre of the
+circles.
+equal circles; equal chords; equal s
+The opposite angles of a cyclic quadrilateral are supplementary opp s of cyclic quad
+If the opposite angles of a quadrilateral are supplementary then the
+quadrilateral is cyclic.
+opp s quad supp OR
+converse opp s of cyclic quad
+The exterior angle of a cyclic quadrilateral is equal to the interior
+opposite angle.
+ext  of cyclic quad
+If the exterior angle of a quadrilateral is equal to the interior opposite
+angle of the quadrilateral, then the quadrilateral is cyclic.
+ext  = int opp  OR
+converse ext  of cyclic quad
+Two tangents drawn to a circle from the same point outside the circle
+are equal in length
+Tans from common pt OR
+Tans from same pt
+The angle between the tangent to a circle and the chord drawn from the
+point of contact is equal to the angle in the alternate segment.
+tan chord theorem
+
+If a line is drawn through the end-point of a chord, making with the
+chord an angle equal to an angle in the alternate segment, then the line
+is a tangent to the circle.
+converse tan chord theorem OR
+ between line and chord
+QUADRILATERALS
+The interior angles of a quadrilateral add up to 360. sum of s in quad
+The opposite sides of a parallelogram are parallel. opp sides of ||m
+If the opposite sides of a quadrilateral are parallel, then the
+quadrilateral is a parallelogram.
+opp sides of quad are ||
+The opposite sides of a parallelogram are equal in length. opp sides of ||m
+If the opposite sides of a quadrilateral are equal , then the quadrilateral
+is a parallelogram.
+opp sides of quad are =
+OR
+converse opp sides of a parm
+The opposite angles of a parallelogram are equal. opp s of ||m
+If the opposite angles of a quadrilateral are equal then the quadrilateral
+is a parallelogram.
+opp s of quad are = OR
+converse opp angles of a parm
+The diagonals of a parallelogram bisect each other. diag of ||m
+If the diagonals of a quadrilateral bisect each other, then the
+quadrilateral is a parallelogram.
+diags of quad bisect each other
+OR
+converse diags of a parm
+If one pair of opposite sides of a quadrilateral are equal and parallel,
+then the quadrilateral is a parallelogram.
+pair of opp sides = and ||
+The diagonals of a parallelogram bisect its area. diag bisect area of ||m
+The diagonals of a rhombus bisect at right angles. diags of rhombus
+The diagonals of a rhombus bisect the interior angles. diags of rhombus
+All four sides of a rhombus are equal in length. sides of rhombus
+All four sides of a square are equal in length. sides of square
+The diagonals of a rectangle are equal in length. diags of rect
+The diagonals of a kite intersect at right-angles. diags of kite
+A diagonal of a kite bisects the other diagonal. diag of kite
+A diagonal of a kite bisects the opposite angles diag of kite
+
+
+Mathematics 12 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+4.2 ACCEPTABLE REASONS: EUCLIDEAN GEOMETRY (AFRIKAANS)
+
+STELLING AANVAARBARE REDE
+LYNE
+Aangrensende hoeke op 'n reguitlyn is supplementêr. e op reguit lyn
+As aangrensende hoeke supplementêr is, lê die buitenste bene van die
+hoeke in 'n reguitlyn.
+aangr. e suppl.
+Die som van die aangrensende hoeke om 'n punt is 360 . e om 'n punt OF e in 'n omw
+Regoorstaande hoeke is gelyk. regoorst. e
+As AB || CD, dan is die verwissellende hoeke gelyk verw. e ; AB || CD
+As AB || CD, dan is die ooreenkomstige hoeke gelyk. ooreenk. e ; AB || CD
+As AB || CD, dan is die ko-binnehoeke supplementêr. ko-binne e ; AB || CD
+As die verwissellende hoeke tussen twee lyne gelyk is, dan is die lyne
+ewewydig.
+verw. e =
+As die ooreenkomstige hoeke tussen twee lyne gelyk is, dan is die lyne
+ewewydig.
+ooreenk. e =
+As die ko-binnehoeke tussen twee lyne supplementêr is, dan is die lyne
+ewewydig.
+ko-binne e suppl.
+
+DRIEHOEKE
+Die binnehoeke van 'n driehoek is supplementêr.  som van  OF som van e in 
+OF binne e
+Die buitehoek van 'n driehoek is gelyk aan die som van die twee
+teenoorstaande binnehoeke.
+buite  van
+Die hoeke teenoor die gelyke sye van 'n gelykbenige driehoek, is
+gelyk.
+e teenoor gelyke sye
+
+Die sye teenoor die gelyke sye van 'n gelykbenige driehoek, is gelyk. sye teenoor gelyke e
+In 'n reghoekige driehoek is die vierkant op die skuinssy gelyk aan die
+som van die vierkante op die ander twee sye.
+Pythagoras OF Stelling van
+Pythagoras
+As die vierkant op een sy van 'n driehoek gelyk is aan die som van die
+vierkante op die ander twee sye, dan is die driehoek reghoekig.
+Omgekeerde Pythagoras
+OF
+Omgekeerde stelling: Pythagoras
+As drie sye van een driehoek onderskeidelik gelyk is aan drie sye van
+'n ander driehoek, dan is die driehoeke kongruent.
+SSS
+As twee sye en 'n ingeslote hoek van een driehoek onderskeidelik
+gelyk is aan twee sye en 'n ingeslote hoek van 'n ander driehoek, dan is
+die twee driehoeke kongruent.
+SHS OF SS
+As twee hoeke en 'n sy van een driehoek onderskeidelik gelyk is aan
+twee hoeke en 'n ooreenstemmende sy van 'n ander driehoek, dan is die
+twee driehoeke kongruent.
+HHS OF S
+As die skuinssy en 'n reghoeks y van 'n reghoekige driehoek
+onderskeidelik gelyk is aan die skuinssy en 'n reghoeksy van 'n ander
+reghoekige driehoek, dan is die twee driehoeke kongruent.
+RHS OF 90°HS
+Die lynstuk wat die middelpunte van twee sye van 'n driehoek verbind,
+is ewewydig aan en gelyk aan die helfte van die derde sy.
+Midpt.-stelling
+Die lynstuk wat van die middelpunt van een sy van 'n driehoek
+ewewydig aan die tweede sy getrek word, halveer die derde sy.
+lyn deur midpt || 2de sy
+Die lyn ewewydig aan een sy van 'n driehoek verdeel die ander twee
+sye in eweredige dele.
+lyn || een sy van OF
+eweredige stelling; noem || lyne
+
+Mathematics 13 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+STELLING AANVAARBARE REDE
+As 'n lyn twee sye van 'n driehoek in eweredige dele verdeel, is die lyn
+ewewydig aan die derde sy.
+lyn verdeel twee sye van
+eweredig
+As twee driehoe ke gelykhoekig is, is hulle ooreenstemmende sye
+eweredig (en is driehoeke dus gelykvormig).
+||| e OF gelykhoekige e
+As die ooreenstemmende sye van twee driehoeke eweredig is, is die
+driehoeke gelykhoekig (en is driehoeke dus gelykvormig).
+Sye van e eweredig
+
+Driehoeke (of parallelogramme) op dieselfde basis en tussen dieselfde
+ewewydige lyne is gelyk in oppervlakte.
+dieselfde basis ; dieselfde hoogte
+OF
+gelyke basis ; gelyke hoogte
+SIRKELS
+'n Raaklyn aan 'n sirkel is loodreg op die radius/ middellyn van die
+sirkel by die raakpunt.
+raaklyn  radius
+raaklyn  middellyn
+As 'n lyn loodreg getrek word na die radius/middellyn by die punt
+waar die radius/middellyn die sirkel ontmoet, dan is die lyn 'n raaklyn
+aan die sirkel.
+Lyn  Radius OF
+omgekeerde raaklyn  radius OF
+omgekeerde raaklyn  middellyn
+Die lynstuk wat die middelpunt van 'n sirkel met die middelpunt van 'n
+koord verbind, is loodreg op die koord.
+lyn vanuit midpt na midpt van
+koord
+Die loodlyn uit die middelpunt van 'n sirkel na 'n koord, halveer die
+koord.
+lyn vanuit midpt  op koord
+Die middelloodlyn van 'n koord gaan deur die middelpunt van die
+sirkel.
+middelloodlyn van koord
+Die hoek wat 'n koord by die middelpunt van 'n sirkel onderspan, is
+dubbel die hoek wat dit by eni ge punt op die omtrek onderspan (aan
+dieselfde kant van die koord as die midpt).
+Midpts = 2 x Omtreks
+Die omtrekshoek wat deur die middellyn onderspan word, is 90°.  in halwe sirkel OF
+middellyn onderspan regte hoek
+OF  in
+
+
+As 'n koord van 'n sirkel 'n regte hoek by die omtrek onderspan, dan is
+die koord 'n middellyn.
+Koord onderspan 90 OF
+omgekeerde  in halwe sirkel
+Hoeke onderspan deur 'n koord van 'n sirkel, aan dieselfde kant van die
+koord, is gelyk.
+e in dieselfde segment
+As 'n lynstuk wat twee punte verbind, gelyke hoeke by twee ander
+punte aan dieselfde kant van die lynstuk onderspan, dan is die vier
+punte konsiklies (d.w.s. hulle lê op die omtrek van 'n sirkel).
+Lynstuk onderspan gelyke e OF
+omgekeerde e in dieselfde
+segment
+Gelyke koorde onderspan gelyke omtrekshoeke. gelyke koorde; gelyke e
+Gelyke koorde onderspan gelyke middelpuntshoeke. gelyke koorde; gelyke e
+Gelyke koorde in gelyke sirkels onderspan gelyke omtrekshoeke. gelyke sirkels; gelyke koorde ;
+gelyke e
+Gelyke koorde in gelyke sirkels onderspan gelyke middelpuntshoeke. gelyke sirkels; gelyke koorde ;
+gelyke e
+Die teenoorstaande hoeke van 'n koordvierhoek is supplementêr. teenoorst. e van kvh
+As die teenoorstaande hoeke van 'n vierhoek supplementêr is, dan is
+die vierhoek 'n koordevierhoek.
+teenoorst. e van vierhoek is supp
+OF omgekeerde teenoorst e
+koordevierhoek
+Die buitehoek van 'n koordevierhoek is gelyk aan die teenoorstaande
+binnehoek.
+buite van kvh
+
+Mathematics 14 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+STELLING AANVAARBARE REDE
+As die buitehoek van 'n vierhoek gelyk is aan die teenoorstaande
+binnehoek, dan is die vierhoek 'n koordevierhoek.
+buite van vierhoek = teenoorst.
+binne  OF omgekeerde buite 
+koordevierhoek
+Twee raaklyn wat vanaf dieselfde punt buite 'n sirkel na 'n sirkel
+getrek word, is ewe lank.
+Raaklyne vanuit gemeensk. Punt
+OF raaklyne vanaf dieselfde
+punt
+Die hoek wat gevorm word tussen 'n raaklyn aan 'n sirkel en 'n koord
+wat vanuit die raakpunt getrek word, is gelyk aan die hoek in die
+oorstaande segment.
+raaklyn koord stelling
+As 'n lyn deur die eindpunt van 'n koord 'n hoek met die koord vorm
+wat gelyk is aan die hoek in die oorstaande segment, dan is die lyn 'n
+raaklyn aan die sirkel.
+
+ tussen lyn en koord OF
+omgekeerde raaklyn koord stelling
+VIERHOEKE
+Die som van die binnehoeke van 'n vierhoek is 360. som van e in vierhoek
+Die teenoorstaande sye van 'n parallelogram is ewewydig. teenoorst. sye van ||m
+As die teenoorstaande sye van 'n vierhoek ewewydig is, dan is die
+vierhoek 'n parallelogram.
+teenoorst sye van vierh is ||
+Die teenoorstaande sye van 'n parallelogram is gelyk in lengte. teenoorst. sye van ||m
+As die teenoorstaande sye van 'n vierhoek gelyk is, dan is die vie rhoek
+'n parallelogram.
+teenoorst sye van vierh = OF
+omgekeerde teenoorst sye van
+||m
+Die teenoorstaande hoeke van 'n parallelogram is gelyk. teenoorst. e van ||m
+As die teenoorstaande hoeke van 'n vierhoek gelyk is, dan is die
+vierhoek 'n parallelogram.
+teenoorst. e van vierh = OF
+omgekeerde teenoorst. e van ||m
+Die hoeklyne van 'n parallelogram halveer mekaar. hoeklyne van ||m
+As die hoeklyne van 'n vierhoek mekaar halveer, dan is die vierhoek 'n
+parallelogram.
+hoeklyne van vierh halveer mekaar
+OF omgekeerde hoeklyne van ||m
+As een paar teenoorstaande sye van 'n vierhoek gelyk en ewewydig is,
+dan is die vierhoek 'n parallelogram.
+
+teenoorst. sye = en ||
+Die hoeklyne van 'n parallelogram halveer die oppervlakte van die
+parallelogram.
+hoeklyn van ||m halveer opp
+Die hoeklyne van 'n ruit halveer mekaar reghoekig. hoeklyne van ruit
+Die hoeklyne van 'n ruit halveer die teenoorstaande binnehoeke. hoeklyne van ruit
+Al vier sye van 'n ruit is gelyk. sye van ruit
+Al vier sye van 'n vierkant is gelyk. sye van vierkant
+Die hoeklyne van 'n reghoek is ewe lank. hoeklyne van reghoek
+Die hoeklyne van 'n vlieër sny mekaar reghoekig. hoeklyne van vlieër
+Die een hoeklyn van 'n vlieër halveer die ander hoeklyn. hoeklyne van vlieër
+Een hoeklyn van 'n vlieër halveer die teenoorstaande binnehoeke hoeklyne van vlieër
+
+
+Mathematics 15 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+5. INFORMATION SHEET
+
+a
+acbbx 2
+42 
+
+)1( niPA 
+
+)1( niPA 
+niPA )1( 
+niPA )1( 
+dnaTn )1( 
+
+ dnan
+n )1(22S 
+1 n
+n arT
+
+ 
+1
+1
+
+ r
+raS
+n
+n ;
+1r
+r
+aS 
+1 ;
+11  r
+  
+i
+ixF
+n
+11 
+
+  
+i
+ixP
+n 11
+h
+xfhxfxf
+h
+)()(lim)('
+0
+
+
+
+22 )()( 1212 yyxxd 
+M
+
+
+
+
+
+ 
+2;2
+2121 yyxx
+cmxy 
+
+)( 11 xxmyy 
+12
+12
+xx
+yym 
+
+tanm
+    222
+rbyax 
+
+In ABC:
+C
+c
+B
+b
+A
+a
+sinsinsin 
+Abccba cos.2222 
+CabABCarea sin.2
+1
+
+   sin.coscos.sinsin 
+
+   sin.coscos.sinsin 
+
+   sin.sincos.coscos 
+
+   sin.sincos.coscos 
+
+
+
+
+
+
+
+
+
+1cos2
+sin21
+sincos
+2cos
+2
+2
+22
+
+
+
+
+
+ cos.sin22sin 
+n
+x
+x 
+
+ 
+n
+xx
+n
+i
+i
+2
+2
+1
+
+
+
+
+ Sn
+AnAP )()( 
+P(A or B) = P(A) + P(B) – P(A and B)
+bxay ˆ
+
+ 
+
+
+
+ 2)(
+)(
+xx
+yyxxb
+
+
+Mathematics 16 DBE/2021
+Examination Guidelines
+Copyright reserved
+
+
+6. GENERAL GUIDELINES FOR MARKING
+
+ If a learner makes more than one attempt at answering a question and does not cancel any of
+them out, only the first attempt will be marked irrespective of which of the attempt(s) may be
+the correct answer.
+ Consistent Accuracy marking regarding calculations will be followed in the following cases:
+- Subquestion to subquestion: When a certain variable is incorrectly calculated in one
+subquestion and needs to be substitute d into another subquestion , full marks can be
+awarded for the subsequent subquestions provided the methods used are correct and the
+calculations are correct.
+- Assuming values/answers in order to solve a problem is unacceptable.
+
+7. CONCLUSION
+
+This Examination Guidelines document is meant to articulate the assessment aspirations espoused in
+the CAPS document. It is therefore not a substitute for the CAPS document which teachers should
+teach to.
+
+Qualitative curriculum coverage as enunciated in the CAPS cannot be over-emphasised.

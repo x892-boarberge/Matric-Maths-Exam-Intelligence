@@ -1,0 +1,2885 @@
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKS/PUNTE: 150
+
+
+
+
+
+These marking guidelines consist of 25 pages./
+Hierdie nasienriglyne bestaan uit 25 bladsye.
+
+MATHEMATICS P2/WISKUNDE V2
+
+NOVEMBER 2024
+
+MARKING GUIDELINES/NASIENRIGLYNE
+GRADE 12/GRAAD 12
+
+
+NATIONAL
+SENIOR CERTIFICATE/
+NASIONALE
+SENIOR SERTIFIKAAT
+
+
+Mathematics P2/Wiskunde V2 2 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+NOTE:
+• If a candidate answers a question TWICE, only mark the FIRST attempt.
+• If a candidate has crossed out an attem pt of a question and not redone the question, mark
+the crossed-out version.
+• Consistent accuracy applies in ALL aspects of the Marking Guidelines. Stop marking at the
+second calculation error.
+• Assuming answers/values in order to solve a problem is NOT acceptable.
+
+
+LET WEL:
+• As 'n kandidaat 'n vraag TWEE KEER beantwoord, sien slegs die EERSTE poging na.
+• As 'n kandidaat 'n antwoord van 'n vraag doodtrek en nie oordoen nie, sien die
+doodgetrekte poging na.
+• Volgehoue akkuraatheid word in ALLE aspekte van die Nasienriglyne toegepas. Hou op
+nasien by die tweede berekeningsfout.
+• Aanvaar van antwoorde/waardes om 'n probleem op te los, word NIE toegelaat nie.
+
+
+
+GEOMETRY • MEETKUNDE
+S
+A mark for a correct statement
+(A statement mark is independent of a reason)
+'n Punt vir 'n korrekte bewering
+('n Punt vir 'n bewering is onafhanklik van die rede)
+R
+A mark for the correct reason
+(A reason mark may only be awarded if the statement is correct)
+'n Punt vir 'n korrekte rede
+('n Punt word slegs vir die rede toegeken as die bewering korrek is)
+S/R
+Award a mark if statement AND reason are both correct
+Ken 'n punt toe as die bewering EN rede beide korrek is
+
+
+Mathematics P2/Wiskunde V2 3 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 1
+
+Weight
+(in kg) (x) 34 32 40 27 33 28 27 55 39 44 30 57 28 32 31
+Number of push-
+ups per minute
+(y)
+26 21 6 20 16 26 23 7 18 14 17 8 28 25 20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.1 a = 39,456001…
+b = – 0,590018…
+xy 59,046,39ˆ −=
+
+
+✓ a = 39,46
+✓ b = – 0,59
+✓ equation
+(3)
+1.2 r = – 0,8 ✓(A) – 0,8
+(1)
+1.3 y = 39,46 – 0,59(29)
+y = 22,35
+
+OR/OF
+
+y = 22,35 (calculator)
+
+✓ substitution
+✓ answer
+(2)
+
+
+✓✓ answer
+(2)
+1.4
+33,18=y ✓(A) 18,33
+(1)
+1.5 The increase in the number of push-ups will have no influence.
+The standard deviation stays the same.
+✓ no influence OR
+standard deviation
+remains the same
+geen verandering /
+bly dieselfde (1)
+1.6 6 is furthest y-value below the least squares regression line.
+An increase of 10 push-ups will get the team member to
+(40 ; 16), the minimum number of push-ups for a player
+weighing 40kg.
+✓ 6
+✓ difference is 10
+
+(2)
+[10]
+CORRECT ANSWER ONLY: FULL MARKS
+0
+5
+10
+15
+20
+25
+30
+0 10 20 30 40 50 60
+Push-ups per minute
+W eight (in kg)
+Scatter plot
+
+Mathematics P2/Wiskunde V2 4 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 2
+
+
+
+
+
+
+
+
+
+
+
+
+2.1 Median = 65 ✓ 65
+(1)
+2.2 Q1 = 44 ✓ 44
+(1)
+2.3 IQR = 84 – 44
+= 40
+✓ 84
+✓ IQR
+(2)
+2.4
+
+
+
+
+
+✓ box
+(A) whiskers
+ending at 5 & 120
+(2)
+2.5 Number of employees who qualify = 34
+% of employees who qualify =
+34 100
+60
+
+= 56,67% of the employees
+OR/OF
+Number of employees who qualify = 35
+% of employees who qualify =
+100
+60
+35 
+= 58,33% of the employees
+
+✓ 34
+
+
+
+ answer
+(2)
+
+✓ 35
+
+
+
+ answer
+(2)
+2.6 Number of intervals = 3
+Time allowed to work from home = 3(30 minutes)
+= 90 minutes OR/OF 1,5 hours
+✓ 3
+
+✓ answer
+(2)
+[10]
+5 44 65 84
+
+Mathematics P2/Wiskunde V2 5 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION / VRAAG 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.1
+
+( )
+DC
+90
+39
+m −−=
+−−
+OR/OF
+
+
+( )
+DC
+09
+93
+m −−=
+−−
+4
+3
+DC −=m
+
+4
+3
+DC −=m
+ correct substitution of
+D
+)9 ; 3( − & C
+0) ; 9(−
+into gradient formula
+
+ answer
+(2)
+3.2 Equation of DC:
+( )309
+4
+c= − − +
+
+OR/OF
+
+
+( )( )309
+4
+yx− = − − −
+
+27 3 or 6
+44
+c −=−
+)9(
+4
+3 +−= xy
+3 27
+44
+yx= − −
+
+3 27
+44
+yx= − −
+
+
+ correct substitution of
+C
+0) ; 9(− or D
+)9 ; 3( −
+into equation of line
+
+
+ answer
+(2)
+
+3.3
+( )3 271
+44
+k = − − − OR/OF
+( )9 3
+1 3 4
+k −− −=
+−− OR/OF
+( )
+03
+1 9 4
+k −− =
+−−−
+4
+27
+4
+3 −=k
+OR/OF
+39 =+k OR/OF
+( )8
+4
+3−=k
+6k =−
+
+6k =−
+6k =−
+
+
+ substitution of B
+) ; 1( k−
+
+(1)
+
+3.4
+( ) ( )
+22
+DC 3 9 9 0= + + − −
+
+
+DC = 15 units
+ correct substitution of
+D
+)9 ; 3( − & C
+0) ; 9(−
+into distance formula
+ answer
+(2)
+
+A
+D(3 ; –9)
+C(–9 ; 0)
+B(–1 ; k)
+O x
+y
+M
+
+Mathematics P2/Wiskunde V2 6 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+3.5
+( )( ) ( )( )
+22
+DB 3 1 9 6= − − + − − −
+DB = 5
+
+
+DB 5 1
+DC 15 3
+ = =
+
+
+
+
+
+DB = 5
+
+
+ answer
+(2)
+
+3.6
+DM DB 1==
+DA DC 3
+( )
+( )Dˆsin (DA)(DC)
+2
+1
+Dˆsin (DM)(DB)
+2
+1
+ACD Area
+ΔMBD Area =
+
+
+
+3
+1
+3
+1 =
+
+9
+1=
+
+DC
+DB
+DA
+DM =
+
+
+ correct use of area rule
+
+
+
+ subst. for
+DC
+BD and
+DA
+DM
+into correct formula
+ answer
+(4)
+3.7 y = –4x + c
+4AD −=m
+
+( )9 4 3 c− = − +
+OR/OF
+4
+3
+9 −=
+−
++
+x
+y
+c = 3
+1249 +−=+ xy
+43yx= − +
+
+43yx= − +
+( ) ( )
+22
+3 9 612xy− + + =
+
+( ) ( ) ( )
+222
+3 4 3 9 612xx− + − + + =
+
+( ) ( )
+22
+3 4 12 612xx− + − + =
+
+22
+6 9 16 96 144 612x x x x− + + − + =
+
+2
+17 102 459 0xx− − =
+
+2
+6 27 0xx−−=
+
+( )( )9 3 0xx− + =
+
+3or 9 −== xx
+
+N/A
+y = –4(–3) + 3
+y = 15
+)15 ; 3(A −
+
+
+
+
+
+
+
+
+
+ correct substitution of
+
+4AD −=m and D(3 ; –9)
+
+
+
+( ) ( )
+22
+3 9 612xy− + + =
+
+ substitution of equation
+AD into distance formula
+
+
+
+
+ standard form
+
+
+
+ x values with rejection
+
+
+
+ y coordinate
+
+(6)
+
+
+
+
+
+
+Mathematics P2/Wiskunde V2 7 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+OR/OF
+
+( )9 4 3 c− = − +
+
+3c =
+
+43yx= − +
+
+N(0 ; 3)
+ND
+( ) ( )
+22
+3 0 9 3= − + − −
+
+3 17=
+AD
+6 17=
+1ND AD
+2
+=
+
+N is the midpoint of AD
+A(–3 ; 15)
+
+
+OR/OF
+
+
+
+ correct substitution of
+
+4AD −=m and D(3 ; –9)
+
+
+✓ N(0 ; 3)
+
+✓ substitution into distance
+formula to calculate ND
+
+
+✓
+1ND AD
+2
+=
+
+
+✓ x – value ✓ y – value
+(6)
+[19]
+
+
+Mathematics P2/Wiskunde V2 8 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 4
+
+
+
+
+
+
+
+
+
+
+
+
+4.1 L(–1 ; –3)  x = –1  y = –3
+(2)
+
+4.2
+13
+39
+MP
+−
+−=m
+
+3MP =m
+
+ST
+1
+3
+m =−
+
+( )193
+3
+c= − +
+
+)3(
+3
+19 −−=− xy
+
+
+
+10=c
+OR/OF
+1
+3
+19 +−=− xy
+
+1 10
+3
+yx= − +
+
+1 10
+3
+yx= − +
+
+
+
+
+3MP =m
+
+MP
+ST
+1
+m
+m −=
+
+
+ substitution of
+STm & P(3; 9)
+into equation of a line
+
+
+
+ equation of tangent ST
+(4)
+
+4.3
+( ) ( )
+22 213x y r− + − =
+( ) ( )
+22 23 1 9 3 r− + − =
+
+2 40r =
+
+( ) ( )
+22
+1 3 40xy− + − =
+
+22 2 1 6 9 40x x y y− + + − + =
+
+22 2 6 30 0x y x y+ − − − =
+
+
+
+( ) ( )
+22 23 1 9 3 r− + − =
+
+ value of
+2r
+
+ LHS of equation of circle
+
+
+ expanding LHS
+
+(4)
+
+O
+S
+P(3 ; 9)
+R(d ; 1)
+L
+V
+T
+M(1 ; 3)
+N x
+y
+
+Mathematics P2/Wiskunde V2 9 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+4.4
+( ) ( )
+22 1 2 6 1 30 0dd + − − − =
+
+2 2 35 0dd − − =
+
+( )( )7 5 0dd− + =
+
+7 or 5dd= = −
+
+7d=
+
+
+OR/OF
+
+( ) ( )
+22
+1 3 40xy− + − =
+
+40)31()1( 22 =−+−d
+
+36)1( 2 =−d
+
+61 =−d
+or
+61 −=−d
+7 or 5dd= = −
+
+7d=
+
+
+
+OR/OF
+
+ˆPRL 90=
+( in semi-circle)
+9 1 1 ( 3) 1
+3 ( 1)dd
+− − − = −
+− − −
+
+2
+2 35 0dd − − =
+
+( )( )7 5 0dd− + =
+
+7 or 5dd= = −
+
+7d=
+
+
+( ) ( )
+22 1 2 6 1 30 0dd + − − − =
+ standard form
+
+
+(2)
+
+
+
+OR/OF
+
+
+
+
+40)31()1( 22 =−+−d
+ standard form
+
+
+
+(2)
+
+OR/OF
+
+
+
+✓
+PR RL 1mm  = −
+
+✓ standard form
+
+
+
+
+(2)
+
+
+
+
+
+Mathematics P2/Wiskunde V2 10 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.5
+PO 3m =
+ˆtan POV = 3
+
+ˆPOV = 71,565...
+
+( )
+( )
+RL
+13
+71
+m −−=
+−−
+
+
+
+1
+2
+=
+
+
+1ˆtan RVN =
+2
+
+
+ˆRVN = 26,565...
+
+ˆL = 71,565... 26.565... −  [ext.
+ of  / buite
+ van ]
+
+ˆL = 45
+
+OR/OF
+
+= 90Rˆ
+[ in semi-circle / in 'n halwe sirkel]
+( ) ( )
+222
+PR 3 7 9 1= − + −
+
+5480PR ==
+units
+( )( ) ( )( )
+222
+PL 3 1 9 3= − − + − −
+OR
+( ) ( )
+222RL 7 1 1 3= + + +
+104160PL ==
+
+RL 80 4 5==
+104
+54 Lˆsin =
+OR
+45ˆcos L
+4 10
+= OR
+45ˆtan L
+45
+=
+ˆL = 45
+
+
+
+
+
+POVOˆPtan m=
+
+VOˆP
+
+
+
+RLm using R(7 ; 1) & L
+
+
+
+
+
+
+
+NVˆR
+
+
+
+ answer
+(5)
+
+OR/OF
+
+
+= 90Rˆ
+
+
+
+5480PR ==
+
+
+
+ length of PL OR RL
+
+ trig ratio of
+ˆL
+
+ answer
+(5)
+O
+S
+P(3 ; 9)
+R(d ; 1)
+L
+V
+T
+M(1 ; 3)
+N x
+y
+26, 6
+
+4 10
+
+45
+
+45
+
+71, 6
+
+116, 6 
+
+Mathematics P2/Wiskunde V2 11 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+OR/OF
+( ) ( )
+22
+PL 3 1 9 3 160 4 10= + + + = =
+
+( ) ( )
+22
+PR 7 3 1 9 80 4 5= − + − = =
+
+( ) ( )
+22
+LR 7 1 1 3 80 4 5= + + + = =
+
+80 160 80cos L
+2 80 160
++−=
+
+
+2cos L
+2
+=
+
+ˆL 45=
+
+OR/OF
+
+ length of PL
+
+
+5480PR ==
+
+ length of LR
+
+
+ substitution into the cos rule
+
+
+
+
+✓ answer
+(5)
+
+4.6
+RM
+13
+71
+m −=
+−
+
+1
+3
+=−
+RT 3m =
+(tan ⊥ rad)
+PT
+1
+3
+m =−
+
+RT PT 1mm  = −
+
+PT ⊥ RT
+
+OR/OF
+71
+13
+MR
+−
+−=m
+
+
+3
+1−=
+PT
+1
+3
+m =−
+[proved in Q4.2]
+MRPT mm =
+
+PT || MR
+= 90TRˆM
+[radius ⊥ tangent / raaklyn ⊥ radius]
+= 90RTˆP
+[co-int s; PT || MR/ooreenkomst. e; PT || MR]
+PT ⊥ RT
+
+OR/OF
+
+== 45LˆRPˆT
+[tan-chord theorem/  tussen raaklyn
+en koord]
+
+TRTP = [tans from common pt]
+== 45PRˆTRPˆT
+[s opp equal sides/
+e teenoor gelyke sye]
+= 90RTˆP
+[sum of s in ∆ / binne e van ∆]
+PT ⊥ RT
+
+
+
+✓
+RMm
+
+✓
+RTm
+
+
+
+✓
+RT PT 1mm  = −
+(3)
+
+
+OR/OF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ PT || MR
+
+= 90TRˆM
+
+= 90RTˆP
+(3)
+
+OR/OF
+
+
+LˆRPˆT =
+
+
+
+PRˆTRPˆT =
+
+
+
+= 90RTˆP
+(3)
+[20]
+
+Mathematics P2/Wiskunde V2 12 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 5
+
+
+
+
+
+5.1.1 r = 5
+3cos A
+5
+=−
+
+ r = 5
+
+ answer
+(2)
+5.1.2
+2
+cos2A=2cos A 1−
+
+2
+321
+5
+= − −
+
+7
+25
+=−
+OR/OF
+22
+cos 2A cos A sin A=−
+
+
+22
+34
+55
+   = − − −      
+
+7
+25
+=−
+OR/OF
+2
+cos2A=1 2sin A−
+
+
+2
+412
+5
+= − −
+
+7
+25
+=−
+
+
+ substitution of
+Acos into
+double angle formula
+
+ answer
+(2)
+
+
+ substitution of
+Acos &
+Asin
+into double angle formula
+
+ answer
+(2)
+
+
+ substitution of
+Asin into
+double angle formula
+
+ answer
+(2)
+5.1.3
+
+
+
+
+
+x = –3
+( )sin A B =sinAcosB cosAsinB−−
+
+
+
+
+
+
+
+
+
+
+−−
+
+
+
+−
+
+
+
+−=
+5
+4
+5
+3
+5
+3
+5
+4
+
+12 12=
+25 25
++
+=
+25
+24
+
+
+
+
+
+
+
+
+
+
+ x = –3
+
+
+ substitution into the
+compound angle formula
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ answer
+(4)
+O
+(x ; 4)
+x
+B
+y
+O
+P(–3 ; –4)
+x
+A
+y
+•
+K
+•
+
+Mathematics P2/Wiskunde V2 13 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+5.2
+cos 45 sin 4522
+2
+   −  −       
+
+2.2
+45sin452cos 
+
+
+
+ −
+
+
+
+
+ −
+=
+
+
+
+( )
+4
+sin −= 
+
+4
+cos−=
+
+4
+p−=
+OR/OF
+p
+4
+1−=
+
+
+OR/OF
+
+22
+22
+cos 45 sin 45
+22
+2
+cos cos 45 sin sin 45 sin cos 45 cos sin 45
+2 2 2 2
+2
+2 2 2 2cos sin sin cos
+2 2 2 2 2 2 2 2
+2
+11sin cos
+2 2 2 2
+2
+1 cos sin
+2 2 2
+2
+cos 2
+2
+4
+cos
+
+   
+   
+
+
+
+
+   −  −       
+     +   −       =
+   
++−   
+   =
+−
+=
+−− =
+
+=−
+=−
+4
+1
+4
+p=−
+
+
+
+
+
+ multiply by
+2
+2
+
+
+
+
+ double angle
+
+ co function
+
+ answer
+(4)
+
+OR/OF
+
+
+
+
+
+✓ expansion
+
+
+✓ special angles
+
+
+
+
+
+
+
+
+✓ double angle
+
+
+
+
+ answer
+(4)
+[12]
+
+
+Mathematics P2/Wiskunde V2 14 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 6
+
+6.1.1
+( )yx +cos
+( )( )yx −−= cos
+
+( ) ( )yxyx −+−= sinsincoscos
+
+yxyx sinsincoscos −=
+
+( ) ( )( )yxyx −−=+
+ correct expansion
+
+(2)
+
+
+
+
+6.1.2
+( ) ( ) ( )
+( ) ( ) yxyx
+xyyx
+sin360sin360coscos
+180cossincos90cosLHS
+−++
++−+−=
+
+( ) ( )( )
+( ) ( ) yxyx
+xyyx
+sinsincoscos
+cossincossin
+−+
+−−+=
+
+sin cos cos sin
+cos cos sin sin
+x y x y
+x y x y
++=
+−
+
+( )
+( )
+sin
+cos
+xy
+xy
++=
++
+
+( )tan xy=+
+= RHS
+
+
+
+( )cos 90 sinxx − =
+
+( )sin sinyy− = −
+
+( )cos 180 cosxx + = −
+
+( )cos 360 cosyy + =
+
+( )sin 360 sinxx − = −
+
+ compound angle formulae
+
+
+
+
+(6)
+
+6.2
+( ) 2790cos11sin6 2 =++− xx
+( )
+2
+6sin 11cos 90 7 4xx−  + + =
+
+( )
+2
+6sin 11 sin 7 4xx− − + =
+
+2
+6sin 11sin 3 0xx+ + =
+
+( )( ) 03sin21sin3 =++ xx
+
+3
+1sin −=x
+OR/OF
+2
+3sin −=x
+= 47,19ref
+no solution
+x = 199,47° or x = 340,53°
+
+
+squaring both sides
+
+
+( )cos 90 sinxx + = −
+
+
+ factors
+
+ both equations
+
+
+
+ answers
+(6)
+
+6.3.1
+( )
+2
+4 8sin
+3
+xgx −=
+
+( )
+2
+4 1 2sin
+3
+x−
+=
+
+4 cos 2
+3
+x=
+Maximum value of cos 2x is 1
+
+maximum value of
+( ) 4
+3
+gx =
+
+
+
+
+
+
+ factors
+
+
+
+
+
+
+
+
+4 cos 2
+3
+x
+
+
+
+
+
+
+ answer
+(3)
+
+
+
+Mathematics P2/Wiskunde V2 15 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+OR/OF
+
+2
+4 8sin x−
+is a maximum when
+2
+sin x is a minimum
+
+Minimum value of
+2
+sin x is 0
+
+max. value of
+( ) ( )4 8 0
+3
+gx −=
+
+( ) 4
+3
+gx =
+
+
+OR/OF
+
+( )0sin 82 3
+x −=
+−
+
+sin 0x =
+
+
+max. value of
+( ) ( )4 8 0
+3
+gx −=
+
+( ) 4
+3
+gx =
+OR/OF
+
+
+
+ min of
+2
+sin x = 0
+✓
+( ) ( )4 8 0
+3
+gx −=
+
+ answer
+(3)
+
+OR/OF
+
+
+( )0sin 82 3
+x −=
+−
+
+
+sin 0x =
+
+
+
+
+ answer
+(3)
+6.3.2 x = 180°  180°
+(1)
+[18]
+
+
+Mathematics P2/Wiskunde V2 16 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+f
+g
+–90° 0° 90°
+1
+2
+3
+– 1
+–2
+–3
+
+QUESTION/VRAAG 7
+
+7.1 x = 90°
+
+ x = 90°
+(1)
+7.2
+−= 180x or
+]0;90( −x
+
+OR/OF
+
+−= 180x
+or
+− 090 x
+ answer
+(2)
+
+
+ answer
+(2)
+7.3.1 180°  answer
+(1)
+7.3.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ turning points on
+x-axis: x = –90° ; 90°
+
+ shape
+
+ turning point on y-axis
+at (0 ; 2)
+
+
+
+(3)
+
+7.4
+3
+2cos sin 0xx−=
+3
+2cos sinxx=
+
+2 sin2cos
+cos
+xx
+x
+=
+
+2
+2 cos tanxx=
+
+2
+2 cos 1 tan 1xx− = −
+
+cos 2 1 tanxx+=
+
+x = 45° + k.180°;
+Zk 
+
+OR/OF
+
+3
+2 cos sin 0xx−=
+
+( )
+2
+cos 2cos tan 0x x x −=
+
+2
+cos 0 or 2 cos tanx x x==
+
+not valid
+2
+2 cos 1 1 tanxx− + =
+
+cos 2 1 tanxx+=
+x = 45° + k.180°;
+Zk 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+2 cos tanxx=
+
+2
+2 cos 1 tan 1xx− = −
+
+cos 2 1 tanxx+=
+ answer
+(4)
+OR/OF
+
+
+
+
+2
+2 cos tanxx=
+
+2
+2 cos 1 1 tanxx− + =
+
+cos 2 1 tanxx+=
+ answer
+(4)
+[11]
+
+–180° 180°
+
+Mathematics P2/Wiskunde V2 17 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8.1
+AC
+DCCAˆDtan =
+
+=
+46,85tan
+16AC
+
+m15AC =
+
+
+
+
+
+ correct subs into trig ratio
+
+ answer
+(2)
+
+8.2
+( ) ( ) ( ) ( )( )
+2 2 2 ˆAB BC AC 2 BC AC cos BCA=+−
+( ) ( ) ( )
+22 2
+19 15 2 15 cos105,61xx= + − 
+
+
+2
+8,07 136 0xx+ − =
+
+
+( ) ( )( )
+( )
+2
+8,07 8,07 4 1 136
+21
+x
+−  − −
+=
+
+30,8=x
+m or
+38,16−x m
+
+ˆBEC 58=
+OR/OF
+ˆEBC 32=
+EC
+BCCEˆBtan =
+
+BC
+ECCBˆEtan =
+
+=
+58tan
+3,8EC
+
+= 32tan3,8EC
+19,5EC =
+m
+19,5EC = m
+81,10DE =
+m
+81,10DE = m
+
+
+
+
+
+
+
+ correct subst. into
+cosine rule
+
+ quadratic equation in
+std form
+
+ correct subst. into
+quadratic formula
+
+
+ length of BC
+
+ size of
+ˆBEC OR/OF
+CBˆE
+
+
+
+
+
+ length of EC
+
+ answer
+(7)
+
+
+
+
+46,85°
+E
+122°
+16
+105,61°
+D
+E
+C
+B A 19
+
+Mathematics P2/Wiskunde V2 18 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+OR/OF
+
+ˆsin105,61 sin CBA=
+19 15
+
+
+ˆCBA 49,5=
+
+ˆBAC 24,89=
+
+BC 19 =
+sin 24,89 sin105,61
+
+BC = 8,3 m
+
+ˆBEC 58=
+OR/OF
+ˆEBC 32=
+EC
+BCCEˆBtan =
+
+BC
+ECCBˆEtan =
+
+=
+58tan
+3,8EC
+
+= 32tan3,8EC
+19,5EC =
+m
+19,5EC = m
+81,10DE =
+m
+81,10DE = m
+
+
+
+OR/OF
+
+
+ correct subst. into
+sine rule
+
+
+
+ˆBAC
+
+ correct subst. into
+sine formula
+
+ length of BC
+
+
+ size of
+ˆBEC OR/OF
+CBˆE
+
+
+
+
+
+ length of EC
+
+ answer
+(7)
+[9]
+
+Mathematics P2/Wiskunde V2 19 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9.1
+= 40Aˆ
+1 [ext.  of a cyclic quad / buite  van kvh] ✓ S ✓ R
+(2)
+
+
+
+
+9.2
+ˆB 80=
+1
+1ˆ ˆAB
+2
+ =
+ˆD 100=
+[opp s of cyclic quad / teenoorst. e van kvh]
+2
+ˆC 40 = 
+[sum of s in ∆ / binne e van ∆]
+== 40AˆCˆ
+12
+
+AD = DC
+[sides opp = s / sye teenoor gelyke ]
+
+
+
+
+OR/OF
+
+ˆB 80=
+
+1
+1ˆ ˆAB
+2
+ =
+
+BˆAˆECˆA 2 +=
+[ext  of ∆ / buite  van ∆]
+2
+ˆC 40 = 
+
+== 40AˆCˆ
+12
+
+AD = DC
+[sides opp = s / sye teenoor gelyke ]
+
+
+
+OR/OF
+
+ˆB 80=
+
+1
+1ˆ ˆAB
+2
+ =
+
+−−= 8046180Cˆ
+3
+[sum of s in ∆ / binne e van ∆]
+= 54Cˆ
+3
+
+−−= 5486180Cˆ
+2
+[s on a str. line / e op 'n reguitlyn]
+= 40Cˆ
+2
+
+== 40AˆCˆ
+12
+
+AD = DC
+[sides opp = s / sye teenoor gelyke ]
+
+✓ S
+
+
+✓ S/R
+
+✓ S
+
+
+✓ R
+
+(4)
+
+
+✓ S
+
+✓ S/R
+✓ S
+
+
+✓ R
+
+(4)
+
+✓ S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✓ S/R
+
+
+
+
+
+
+
+
+✓ S
+
+
+
+
+
+
+✓ R
+(4)
+[6]
+A
+B
+C
+D
+E
+86°
+46°
+1
+2
+2 1
+3
+
+Mathematics P2/Wiskunde V2 20 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 10
+
+10.1
+
+
+
+
+
+
+
+10.1 Construction: Join SB and TA and draw
+1h from B ⊥ AR and
+2h
+from A ⊥ RB
+
+Konstruksie: Verbind SB en TA en trek
+1h vanaf B ⊥ AR en
+2h
+vanaf A ⊥ RB
+
+Proof/Bewys:
+
+1
+1
+1 RAarea ΔRAB RA2
+1area ΔASB AS AS
+2
+h
+h
+
+==
+
+
+
+
+2
+2
+1 RBarea ΔRAB RB2
+1area ΔABT BT BT2
+h
+h
+
+==
+
+
+area ∆RAB = area ∆RAB [common/gemeenskaplik]
+But area ∆ASB = area ∆ABT [same base & height; AB || ST/
+dies. basis & hoogte; AB ||ST]
+
+area ΔRAB area ΔRAB
+area ΔASB area ΔABT
+=
+
+RA RB
+AS BT
+=
+
+✓ construction
+
+
+
+
+
+✓
+area ΔRAB
+area ΔASB
+=
+1
+1
+1 RA2
+1 AS2
+h
+h
+
+
+✓
+RA
+AS
+
+✓
+BT
+RB
+ABTarea
+RABarea =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✓ S ✓ R
+
+
+
+
+
+
+(6)
+
+R
+S T
+A B
+h2 h1
+
+Mathematics P2/Wiskunde V2 21 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+10.2
+
+
+
+
+
+
+
+
+
+10.2.1 PR = RS [line from centre ⊥ to chord/
+lyn vanuit midpt. sirkel ⊥ op koord]
+PO = OW [radii / radiusse]
+
+1OR = WS
+2
+[midpt theorem/midpt. stelling]
+
+OR : WS = 1 : 2
+
+
+
+OR/OF
+
+ˆPSW = 90°
+[ in semi circle/ in halwe sirkel]
+ˆPRO = 90°
+[given]
+
+ˆˆPRO = PSW
+
+ RO || SW [corresp s = / ooreenk. e =]
+OR/OF
+[co-int. s suppl / ko-binne e suppl]
+PO PR =
+OW RS
+[prop theorem; RO || SW/
+lyn || een sy van ∆]
+PO = OW [radii / radiusse]
+
+PR = RS
+
+OR : WS = 1 : 2 [midpt theorem/ midpt. stelling]
+
+
+
+
+
+
+
+
+
+
+✓ S ✓ R
+
+✓ S
+
+✓ S ✓ R
+
+(5)
+
+
+
+
+✓ S
+
+
+
+✓ S
+
+
+
+✓ S ✓ R
+
+
+
+
+✓ R
+(5)
+
+
+
+
+
+
+
+
+
+
+W
+P
+R
+S
+T
+O
+V
+
+Mathematics P2/Wiskunde V2 22 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+OR/OF
+
+∆PRO and ∆PSW
+ˆPSW = 90°
+[ in semi circle/ in halwe sirkel]
+ˆPRO = 90°
+[given]
+ˆˆPRO = PSW
+
+Pˆ
+is common
+SWˆPROˆP =
+[sum of s in ∆/ som van  e in ]
+
+∆PRO ||| ∆PSW []
+SW
+RO
+PW
+PO =
+[||| ∆s / ||| ∆e]
+
+but PW = 2 PO [diameter = 2 radius/middellyn = 2 radius]
+2PO
+PO
+SW
+RO =
+
+
+2
+1=
+
+OR : WS = 1 : 2
+
+
+
+
+
+
+
+
+
+
+✓ S ✓ R
+
+✓ S
+
+
+
+✓ S
+
+✓ S
+
+
+
+
+(5)
+
+10.2.2
+OV RS 1 =
+VT ST 3
+= [prop theorem; RO || SW/
+lyn || een sy van ∆]
+RS 1
+15 3
+=
+
+RS 5=
+units
+PR = RS = 5 units [line from centre ⊥ to chord /
+lyn vanuit midpt. sirkel ⊥ op koord]
+
+PT = 25 units
+
+✓ S /R
+
+
+
+
+✓ S
+
+✓ S
+
+✓ answer
+(4)
+[15]
+
+10.2
+
+
+W
+P
+R
+S
+T
+O
+V
+
+Mathematics P2/Wiskunde V2 23 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 11
+
+
+
+
+
+
+
+
+
+11.1
+x== GAˆEDˆ
+1 [tan-chord theorem/  tussen raaklyn
+en koord]
+x== 11 DˆCˆ
+[tan-chord theorem/  tussen raaklyn
+en koord]
+x== 14 CˆCˆ
+[vert opp s = / regoorst. e]
+x== GAˆEGFˆA
+[tan-chord theorem/  tussen raaklyn
+en koord]
+
+OR/OF
+
+EA = EC [tans from common pt/
+raaklyne vanuit dies. punt]
+x== GAˆECˆ
+1
+[s opp equal sides/
+e teenoor gelyke sye]
+x== 14 CˆCˆ
+[vert opp s = / regoorst. e]
+
+x== GAˆEDˆ
+1
+[tan-chord theorem/  tussen raaklyn
+en koord]
+x== GAˆEGFˆA
+[tan-chord theorem  tussen raaklyn
+en koord]
+
+
+
+
+✓ S ✓ R
+
+
+
+
+✓ S ✓ R
+
+
+
+
+
+
+
+
+
+✓ S/R
+
+
+✓ S
+(6)
+
+
+
+✓ S/R
+
+
+
+✓ S
+
+
+✓ S/R
+
+
+✓ S ✓ R
+
+
+✓ S
+(6)
+A
+B
+C
+E
+G
+F
+D 1 1
+1
+1
+1
+2
+2
+2
+2
+2 3
+3
+4
+
+Mathematics P2/Wiskunde V2 24 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11.2
+1
+ˆˆD AFG = x=
+
+
+DC ||FG [corresp s = / ooreenk e = ]
+AG AF =
+AC AD
+[prop theorem; DC || FG /
+lyn || een sy van ∆]
+
+AG.AD = AC.AF
+
+OR/OF
+
+In ACD and AGF
+3Aˆ
+is common
+x== 1DˆGFˆA
+[proved in 11.1 / reeds bewys]
+2
+ˆˆC AGF x==
+[sum  s/binne e ]
+ACD ||| AGF [ ]
+AF
+AD
+AG
+AC =
+[||| s  sides in proportion /
+||| e  sye in dieselfde verhouding]
+
+AG.AD = AC.AF
+ S
+
+ S/R
+
+
+ S  R
+
+
+
+(4)
+
+
+
+ S
+
+ S
+
+
+ S/R
+
+ S
+
+(4)
+11.3 In
+AGF and ΔABC
+2
+ˆ ˆGB=
+[s in the same seg /
+e in dies. segment]
+1
+ˆˆAFG = C x=
+[proved in 11.1 / reeds bewys]
+32
+ˆˆA = A
+[sum of s in ∆/binne e van ∆]
+AGF ||| ΔABC
+[ ]
+
+
+ S  R
+
+
+
+ S
+
+ S
+OR/OF R
+(4)
+
+A
+B
+C
+E
+G
+F
+D 1 1
+1
+1
+1
+2
+2
+2
+2
+2 3
+3
+4
+
+Mathematics P2/Wiskunde V2 25 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou
+
+11.4
+
+
+
+GF AF
+BC AC
+=
+[
+AGF ||| ΔABC ]
+BC.AFGF
+AC
+=
+
+ACD ||| ΔFGC
+[ ]
+AC AD
+GF FC
+=
+
+AD.FGAC
+FC
+=
+
+AD.FGGF BC.AF
+FC
+ = 
+
+FCGF BC.AF
+AD.FG
+=
+
+2 BC.FC.AFGF
+AD
+=
+
+
+OR/OF
+
+AGF||| ΔABC
+[ ]
+GF AF=
+BC AC
+
+AF.BCGF
+AC
+=
+
+
+ACD ||| ΔAGF
+[ ]
+AD CD
+AF GF
+=
+
+AF.CDGF
+AD
+=
+
+AF.BC AF.CDGF×GF .
+AC AD
+=
+
+ΔFCD ||| ΔFAC
+[]
+FC CD= from ||| Δ`s
+FA AC
+
+CD.AFFC
+AC
+=
+
+2 AF.FC.BCGF =
+AD
+
+
+
+ S / R
+
+
+ S
+
+ S
+
+
+ S
+
+
+
+
+
+
+
+
+
+
+
+
+
+ S
+
+
+ S
+
+
+(6)
+
+OR/OF
+
+
+
+
+ S
+
+ S
+
+
+
+
+
+
+
+ S
+
+
+ S
+
+ S
+
+
+
+
+ S
+
+
+(6)
+[20]
+
+TOTAL/TOTAAL: 150

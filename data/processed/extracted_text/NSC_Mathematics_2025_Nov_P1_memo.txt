@@ -1,0 +1,2448 @@
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKS/PUNTE: 150
+
+
+
+
+
+
+These marking guidelines consist of 21 pages.
+Hierdie nasienriglyne bestaan uit 21 bladsye.
+MATHEMATICS P1/WISKUNDE V1
+
+NOVEMBER 2025
+
+MARKING GUIDELINES/NASIENRIGLYNE
+GRADE 12/GRAAD 12
+
+
+NATIONAL
+SENIOR CERTIFICATE/
+NASIONALE SENIOR
+SERTIFIKAAT
+
+
+Mathematics P1/Wiskunde V1 2 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+NOTE:
+• If a candidate answers a question TWICE, only mark the FIRST attempt.
+• Consistent Accuracy applies in all aspects of the marking guidelines.
+
+LET WEL:
+• Indien 'n kandidaat 'n vraag TWEE keer beantwoord, sien slegs die EERSTE poging na.
+• Volgehoue akkuraatheid is DEURGAANS op ALLE aspekte van die nasienriglyne van
+toepassing.
+
+QUESTION 1/VRAAG 1
+
+1.1.1
+( )( )5 2 0xx+ − =
+5 or 2xx= − =
+
+
+✓
+5x =−
+✓
+2x =
+(2)
+1.1.2
+2
+5 2 9xx + = −
+2
+5 9 2 0xx + + =
+
+( ) ( )( )
+( )
+2
+9 9 4 5 2
+25
+x
+−  −
+=
+
+9 41
+10
+x −=
+
+0, 26 or 1,54xx= − = −
+
+
+✓ standard form
+
+✓ substitution into the
+correct formula
+
+
+
+✓ answer
+✓ answer
+(4)
+1.1.3
+2
+82xx 
+2
+8 2 0xx −
+
+( )2 4 1 0xx −
+
+CV:
+10 ;
+4
+
+
+
+
+
+10 or
+4
+xx
+
+
+✓ standard form
+
+✓ critical values/factors
+
+
+
+
+✓✓ answer
+(4)
+1.1.4
+2
+2.2 9.2 4 0
+xx
+− + =
+(2.2 1)(2 4) 0
+xx
+− − =
+
+12
+2
+x
+=
+or
+24
+x
+=
+1
+22
+x −
+=
+
+2
+22
+x
+=
+1x =−
+
+2x =
+
+
+✓factors
+
+
+
+✓ both equations
+✓ answer
+✓ answer
+(4)
+
+0
+
+
+Mathematics P1/Wiskunde V1 3 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+OR/OF
+2
+2.2 9.2 4 0
+xx
+− + =
+
+Let
+2
+x
+k =
+2
+2 9 4 0kk − + =
+
+( )( )2 1 4 0kk− − =
+
+1
+2
+k =
+or
+4k =
+12
+2
+x
+=
+or
+24
+x
+=
+1x = −
+or
+2x =
+OR/OF
+
+
+
+
+✓factors
+
+
+
+✓ both equations
+
+✓ answer
+✓ answer
+(4)
+1.1.5
+11 2
+x x
++=
+
+2 2
+11 2
+x x
+  +=  
+
+11 2
+xx
++=
+
+11 2
+xx
+=−
+
+2 2
+11 2
+xx
+ =− 
+
+2
+1 1 4 4
+x x x
+= − +
+
+2
+15 40
+xx
+− + =
+
+2
+4 5 1 0xx − + =
+
+(4 1)( 1) 0xx− − =
+
+1 or 1
+4
+xx=
+
+
+OR/OF
+
+
+
+
+✓ squaring both sides
+
+
+
+
+✓ isolation of surd
+
+✓ squaring both sides only
+after isolation of surd
+
+
+
+
+✓ standard form
+
+
+✓ answer with selection
+(5)
+OR/OF
+
+
+
+
+Mathematics P1/Wiskunde V1 4 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+1.1.5
+11 2
+x x
++=
+
+Let
+1 k
+x
+=
+2kk+=
+
+2
+2kk+=
+
+2
+20kk − − =
+
+( 2)( 1) 0kk− + =
+
+2 or 1kk = = −
+
+1 2
+x
+=
+or
+1 1
+x
+−
+21 x =
+
+41x =
+
+1
+4
+x=
+
+
+
+
+
+
+
+✓ equation
+✓ squaring both sides
+✓ standard form
+
+
+
+✓ substitution
+
+
+
+✓ answer with selection
+(5)
+1.2
+2xy=+ …..(1)
+2
+56xy x=+
+…..(2)
+( ) ( )
+2
+5 2 2 6y y y+ = + +
+
+22
+5 10 4 4 6y y y y+ = + + +
+
+2
+4 6 10 0yy + − =
+
+2
+2 3 5 0yy + − =
+
+( )( )2 5 1 0yy+ − =
+
+5
+2
+y =−
+or
+1y =
+1
+2
+x =−
+or
+3x =
+
+OR/OF
+2yx=−
+…..(1)
+2
+56xy x−=
+…..(2)
+
+2
+5 ( 2) 6x x x− − =
+
+22
+5 10 6x x x− − =
+
+2
+4 10 6 0xx − − =
+
+2
+2 5 3 0xx − − =
+
+(2 1)( 3) 0xx+ − =
+
+1 or 3
+2
+xx= − =
+
+5 or 1
+2
+yy= − =
+
+✓
+2xy=+
+✓
+2
+56xy x=+
+✓ substitution
+
+
+
+✓ standard form
+
+
+✓y-values
+
+✓ x-values
+(6)
+
+OR/OF
+✓
+2yx=−
+✓
+2
+56xy x−=
+
+✓ substitution
+
+✓ standard form
+
+
+
+✓x-values
+
+✓ y-values
+(6)
+[25]
+
+
+Mathematics P1/Wiskunde V1 5 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 2
+
+2.1.1
+( ) ( ) ( )10 2 4t t t+ + − + +
+24
+10 2
+tt
+tt
+−+ =
++−
+
+( ) ( )( )
+2
+2 4 10t t t− = + +
+
+22
+4 4 14 40t t t t− + = + +
+
+18 36t−=
+
+2t = −
+
+
+✓ equating the ratios
+✓ cross multiplication
+✓ expansion
+(3)
+2.1.2
+8 ; 4 ; . . .−
+41
+82
+r −= = −
+
+
+24
+25
+18
+2
+T =− 
+
+21
+25
+1
+2
+T = 
+or
+( )
+21
+25 2T
+−
+= or
+( )
+7
+25 8T
+−
+= or
+( )
+3
+25 128T
+−
+=
+or
+( )
+1
+25 2 097 152T
+−
+=
+✓
+8 and 4−
+✓r
+
+
+
+
+
+✓ answer in exponential
+form
+(3)
+2.1.3
+1
+aS
+r
+ =
+−
+8
+11 2
+S =
+−−
+
+16 5,33
+3
+S ==
+
+
+
+✓substitution
+
+✓ answer
+(2)
+2.2.1
+14 6TT −
+48=
+
+32=
+
+
+OR/OF
+14 6TT −
+
+( )( ) ( )( )4 14 1 4 6 1= − − −
+
+55 23=−
+
+32=
+
+
+
+OR/OF
+14 6TT −
+
+( )( ) ( )( )4 13 1 4 5 1kk= + − − + −
+
+( )4 51 4 19kk= + − +
+
+32=
+
+
+
+✓✓answer
+(2)
+OR/OF
+
+✓ subs
+
+✓ answer
+(2)
+OR/OF
+
+
+✓ subs
+
+✓ answer
+(2)
+
+
+
+Mathematics P1/Wiskunde V1 6 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+2.2.2
+118nk=−
+
+117 467T =
+
+ 118
+118 4 1 467
+2
+k
+kSk −
+−= − +
+
+ 26 675 (118 ) 2 233kk= − +
+
+2
+26 675 236 27494 2 233k k k= + − −
+
+2
+2 3 819 0kk − − =
+
+( 21)(2 39) 0kk− + =
+
+3921 or
+2
+kk =  −
+
+
+OR/OF
+
+118nk=−
+
+
+ 118
+118 2(4 1) (118 1)(4)
+2
+k
+kS k k−
+−= − + − −
+
+ 11826 675 8 2 468 4
+2
+k kk−= − + −
+
+ 53 350 (118 ) 4 466kk= − +
+
+2
+53 350 472 54 988 4 466k k k= + − −
+
+2
+4 6 1638 0kk − − =
+
+2
+2 3 819 0kk − − =
+
+( 21)(2 39) 0kk− + =
+
+3921 or
+2
+kk =  −
+
+OR/OF
+12
+117 1
+37
+26 675k
+TT
+SS −
+==
+−=
+
+ 
+ 
+117 2 ( 1)
+2
+117 2(3) (116)4
+2
+27 495
+nS a n d= + −
+=+
+=
+
+
+ 
+1 27 495 26 675 820
+820 2(3) 4 4
+2
+kS
+n n
+− = − =
+= + −
+
+2
+0 2 820
+(2 41)( 20) 0
+20
+nn
+nn
+n
+= + −
++ − =
+=
+1 20k − =
+
+
+21k =
+
+✓ number of terms
+
+✓ last term
+
+✓ substitution
+
+
+
+✓standard form
+
+
+✓answer with selection
+(5)
+OR/OF
+
+✓ number of terms
+
+
+✓ substitution
+
+
+✓simplification
+
+
+✓ standard form
+
+
+✓answer with selection
+(5)
+
+
+
+
+
+
+
+✓ 27 495
+✓ difference
+
+✓substitution
+
+✓ standard form
+
+
+
+✓answer with selection
+(5)
+[15]
+
+
+Mathematics P1/Wiskunde V1 7 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 3
+
+3.1 36 ; 71 ; 104 ; 135 ; 164
+
+35 33 31 29
+
+
+– 2
+
+5 164T =
+
+
+
+✓first differences
+
+
+
+✓ answer (2)
+3.2
+22a =−
+1a =−
+
+( )3 1 35 b− + =
+
+38b =
+
+1 38 36 c− + + =
+
+1c =−
+
+2
+38 1nT n n= − + −
+
+✓
+22a =−
+
+✓
+( )3 1 35 b− + =
+
+✓
+1 38 36 c− + + =
+(3)
+3.3 n =
+38 19
+2( 1)
+− =
+−
+
+2
+19 (19) 38(19) 1 360T = − + − =
+
+
+
+
+OR/OF
+/
+2 38 0nTn = − + =
+
+19n=
+
+
+2
+19 (19) 38(19) 1 360T = − + − =
+
+✓ method
+
+✓ n
+✓ answer
+(3)
+
+OR/OF
+✓ method
+✓ n
+
+✓ answer
+(3)
+
+3.4
+3 19
+2
+n + =
+3 38n +=
+
+35n =
+
+
+OR/OF
+2
+38 1 104nn− + − =
+
+2
+38 105 0nn − + =
+
+( )( )35 3 0nn− − =
+
+35n =
+
+✓ method
+
+
+✓ answer
+(2)
+
+✓ method
+
+✓ answer
+(2)
+[10]
+
+
+Mathematics P1/Wiskunde V1 8 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 4
+x
+y
+f
+O A
+(3 ; t)
+
+4.1
+1
+3
+log 3t =
+1t =−
+
+
+
+
+✓ answer (1)
+4.2
+( )A 1; 0
+
+✓ answer (1)
+4.3
+( ) 1
+3
+logf x x =
+1
+3
+logyx=
+
+1
+3
+logxy=
+
+1 3
+3
+x
+x
+y
+−==
+
+
+
+
+
+
+✓ swopping
+
+
+✓ answer
+(2)
+4.4
+0y =
+
+✓ answer
+(1)
+
+
+4.5
+
+
+
+
+
+
+
+
+
+
+
+
+4.6 (4 ; 3) is a point on h
+
+03 y
+or
+y  (0 ; 3)
+
+
+✓✓ answer
+(2)
+[10]
+
+
+
+
+
+
+✓ decreasing
+exponential shape
+with asymptote
+y = 0
+✓ y-intercept (0 ; 1)
+✓ any point
+(3)
+(−1 ; 3)
+(0 ; 1)
+O
+x
+y
+1
+f
+−
+
+
+Mathematics P1/Wiskunde V1 9 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 5
+
+x
+y
+f
+g
+M O
+P
+T
+D(5 ; 6)
+g
+
+5.1
+,3x R x ✓ answer
+(1)
+5.2
+8y  ✓ answer
+(1)
+5.3.1
+35 x OR/OF
+( 3;5x  ✓✓ answer
+(2)
+5.3.2
+1 or 5xx OR/OF
+( );1x  − or
+( )5;x
+
+✓
+1x 
+✓
+5x 
+(2)
+5.4
+2
+( 3) 8y a x= − +
+2
+6 (5 3) 8a= − +
+
+24 a−=
+
+1
+2
+a = −
+
+21 ( 3) 8
+2
+yx= − − +
+
+21 ( 6 9) 8
+2
+y x x= − − + +
+
+217 3
+22
+y x x= − + +
+
+✓ p and q values
+
+✓ substitution (5 ; 6)
+
+
+
+
+
+
+
+
+✓ simplification
+
+(3)
+
+
+
+Mathematics P1/Wiskunde V1 10 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+5.5
+217 3
+22
+y x x= − + +
+2
+6 7 0xx − − =
+
+( 7)( 1) 0xx− + =
+
+7 or 1xx= = −
+
+M(– 1 ; 0)
+408
+3x
+−=+
+−
+
+8 24 4x− + = −
+
+7
+2
+x =
+
+T
+7 ;0
+2
+
+
+
+MT =
+7 1
+2
++
+9 4,5
+2
+==
+
+
+
+
+✓ solve for x
+
+
+✓ x-values
+
+✓ coordinates of M
+
+✓ solve for x
+
+
+
+
+✓ x-value
+
+
+
+
+
+✓ MT
+(6)
+5.6
+217( ) 3
+22
+f x x x= − + +
+/
+( ) 3f x x = − +
+
+/
+(5)mf=
+
+53= − +
+
+2=−
+
+
+6 2(5) c= − +
+
+16c =
+
+
+2 16yx = − +
+
+
+
+
+✓
+/
+( ) 3f x x = − +
+
+✓
+/
+(5)mf=
+
+
+
+
+
+
+✓ answer
+(3)
+[18]
+
+
+
+Mathematics P1/Wiskunde V1 11 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 6
+x
+y
+O
+f
+g
+f
+
+6.1 (–p ; 0)
+
+✓ (–p ; 0)
+(1)
+6.2
+( )g x x c=+
+1qc=+
+
+( ) 1af x c
+xc
+= + +
++
+
+
+Point (0 ; c)
+1
+0
+acc
+c
+= + +
++
+
+1 a
+c
+−=
+
+ac=−
+
+
+Point (3 ; 3 + c)
+31
+3
+acc
+c
++ = + +
++
+
+
+31
+3
+ccc
+c
+−+ = + +
++
+
+22
+9 6 3 4c c c c c+ + = − + + +
+
+36c =−
+
+2c =−
+
+2a =
+
+1q =−
+
+( ) 2 1
+2
+fx
+x
+=−
+−
+
+
+OR/OF
+
+
+✓
+1qc=+
+✓
+( ) 1af x c
+xc
+= + +
++
+
+
+
+
+
+
+
+
+
+
+✓
+31
+3
+acc
+c
++ = + +
++
+
+
+
+
+
+
+
+✓ a = 2
+✓ q = – 1
+
+
+(5)
+
+OR/OF
+
+
+Mathematics P1/Wiskunde V1 12 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+0 xc=+
+xc = −
+
+
+1qc=+
+
+
+( ) 1af x c
+xc
+= + +
++
+
+31
+3
+acc
+c
++ = + +
++
+
+2
+3
+a
+c
+=
++
+
+62ac=+
+
+
+62 1cyc
+xc
++= + +
++
+
+62 1
+0
+ccc
+c
++= + +
++
+
+621 c
+c
++−=
+
+62cc− = +
+
+2c = −
+
+
+2a =
+
+1q =−
+( ) 2 1
+2
+fx
+x
+ = −
+−
+
+
+
+✓
+1qc=+
+
+✓
+( ) 1af x c
+xc
+= + +
++
+✓
+31
+3
+acc
+c
++ = + +
++
+
+
+
+
+
+
+
+
+
+
+
+
+
+✓ a = 2
+✓ q = – 1
+
+(5)
+6.3 Translation of 1 unit down
+
+
+OR/OF
+Translation of 1 unit to the right
+✓✓ answer
+(2)
+
+OR/OF
+✓✓ answer
+(2)
+[8]
+
+
+
+Mathematics P1/Wiskunde V1 13 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 7
+
+7.1
+( )A P 1
+n
+i=+
+( )
+5
+A 40 000 1 7,8%=+
+
+A R58 230,94=
+
+
+✓ substitution into
+correct formula
+✓ answer
+(2)
+7.2
+( )11
+F
+n
+xi
+i
+ +−=
+
+24
+0, 0582 300 1 1 4 0, 058F1 0, 058 4
+4
+ +− =  + 
+
+F R66 411, 60=
+
+
+OR/OF
+25
+0, 0582 300 1 1 4
+F 2300 0, 058
+4
+ +−=−
+
+F = R66 411,60
+
+
+✓
+i
+✓ substitution into
+correct formula
+✓ future value ×
+( )
+1
+1 i+
+
+✓ answer
+(4)
+OR/OF
+✓
+i
+✓ substitution into
+correct formula
+✓ – 2300
+
+✓ answer
+(4)
+7.3.1
+(1 )
+n
+A P i=+
+3
+0, 068900 000 1
+12
+A =+ 
+
+= R915 386,86
+
+( )11
+n
+xi
+P
+i
+− −+=
+
+0, 06810 000 1 1 12
+915 386,86 0, 068
+12
+n− −+ =
+
+0, 0681 0, 4812...
+12
+n−
+ +=
+
+1,005...log 0,4812...n−=
+
+129, 419...n =
+months
+132, 419
+months since loan was granted
+133
+months since loan was granted
+
+
+
+
+✓answer
+
+
+
+
+
+
+✓ substitution into
+correct formula
+
+
+✓ correct use of logs
+
+
+✓ answer of n
+
+✓ final answer
+(5)
+
+
+
+Mathematics P1/Wiskunde V1 14 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+7.3.2
+0,419...
+0,06810 000 1 1 12
+0,068
+12
+P
+− −+ =
+= R4 173,55…
+Final payment =
+1
+0,0684173,55... 1 4 197, 21
+12
+R +=
+
+OR/OF
+129
+0, 068A 915 386,86 1
+12
+=+ 
+
+= R1 897 482,712
+
+129
+0, 06810 000 1 1 12
+F 0, 068
+12
+ +−=
+
+= R1 893 309,16
+
+Balance after 129 months = R4 173,552
+
+Final payment =
+1
+0,0684 173,552 1 R4 197, 21
+12
+ +=
+
+✓ substitution
+✓ n
+
+
+✓ balance
+
+✓ final payment
+(4)
+
+OR/OF
+
+
+
+✓answer
+
+
+
+
+
+
+✓ answer
+
+✓balance
+
+
+✓final payment
+(4)
+[15]
+
+
+Mathematics P1/Wiskunde V1 15 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 8
+
+8.1
+( ) 2 3f x x = − +
+( ) ( )
+h
+xfhxfxf
+h
+−+=
+→0
+/ lim)(
+
+0
+2( ) 3 ( 2 3)lim
+h
+x h x
+h→
+− + + − − +=
+
+0
+2lim
+h
+h
+h→
+−=
+
+( )
+0
+lim 2
+h→
+=−
+
+2=−
+
+
+OR/OF
+( ) 2 3f x x = − +
+
+( ) 2( ) 3f x h x h+ = − + +
+
+( ) ( ) 2 2 3 2 3 2f x h f x x h x h+ − = − − + + − = −
+
+
+( ) ( )
+h
+xfhxfxf
+h
+−+=
+→0
+/ lim)(
+
+0
+2lim
+h
+h
+h→
+−=
+
+
+( )
+0
+lim 2
+h→
+=−
+
+2=−
+
+
+
+✓
+)( hxf +
+✓substitution
+
+✓simplification
+
+
+✓answer
+(4)
+
+OR/OF
+
+✓
+)( hxf +
+✓simplification
+
+
+
+✓substitution
+
+
+
+✓answer
+(4)
+8.2.1
+( )
+4
+32g x x x= − +
+( )
+/3
+12 2g x x = − +
+
+
+✓
+3
+12x−
+✓ 2
+(2)
+8.2.2
+4
+2
+21xy
+x
++=
+
+22
+2y x x
+−
+=+
+
+3
+42dy xx
+dx
+−
+=−
+
+
+
+✓
+2
+2 x
+✓
+2
+x
+−
+✓ derivative first
+term
+✓ derivative second
+term
+(4)
+[10]
+
+
+
+Mathematics P1/Wiskunde V1 16 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 9
+x
+A O
+D
+B
+E
+C
+f
+y
+
+9.1
+32
+( ) 8 5 14f x x x x= − + +
+/2
+( ) 3 16 5 0f x x x= − + =
+
+(3 1)( 5) 0xx− − =
+
+1 or 5
+3
+xx==
+
+E(5 ; – 36)
+
+✓
+/
+()fx
+✓
+/
+( ) 0fx =
+
+
+✓ x-value
+✓ y-value
+(4)
+9.2
+//
+( ) 6 16 0f x x = − 
+8
+3
+x 
+
+
+OR/OF
+1 5 83
+23
+x
++
+==
+
+8
+3
+x 
+
+✓
+//
+()fx
+✓
+//
+( ) 0fx 
+✓ answer
+(3)
+OR/OF
+
+✓ midpoint of TPs
+✓
+//
+( ) 0fx 
+✓ answer
+(3)
+9.3 x-intercepts of f: (– 1 ; 0) and (7 ; 0)
+12 x−  
+or
+8 7
+3
+x
+
+✓✓ x-intercepts
+✓ first interval
+✓ second interval
+(4)
+9.4
+2
+3 16 5 11xx − + = −
+2
+3 16 16 0xx − + =
+
+( 4)(3 4) 0xx− − =
+
+44 or
+3
+xx==
+
+At
+4x = :
+32
+(4) 8(4) 5(4) 14 11(4) t− + + = − +
+t = 14
+
+At
+4
+3
+x = :
+32
+4 4 4 48 5 14 11
+3 3 3 3
+t       − + + = − +              
+
+634 1323 23, 48
+27 27
+t = = =
+✓ equating
+
+
+
+✓ x-values
+
+
+✓ answer
+
+
+
+
+✓ answer
+
+
+
+Mathematics P1/Wiskunde V1 17 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+63414
+27
+t  
+
+OR/OF
+32
+8 5 14 11x x x x t− + + = − +
+
+32
+8 5 14 11x x x x t− + + + =
+
+32
+8 16 14x x x t− + + =
+
+
+2
+3 16 16 0xx − + =
+
+( 4)(3 4) 0xx− − =
+
+44 or
+3
+xx==
+
+At
+4x = :
+32
+(4) 8(4) 5(4) 14 11(4) t− + + = − +
+t = 14
+
+At
+4
+3
+x = :
+32
+4 4 4 48 5 14 11
+3 3 3 3
+t       − + + = − +              
+
+634 1323 23, 48
+27 27
+t = = =
+
+63414
+27
+t  
+
+
+✓✓ answer
+(6)
+OR/OF
+✓ equating
+
+
+
+
+
+
+✓ x-values
+
+
+✓ answer
+
+
+
+
+
+✓ answer
+
+
+✓✓ answer
+(6)
+
+[17]
+
+
+
+Mathematics P1/Wiskunde V1 18 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.1
+2 2 50xh+=
+25hx=−
+
+
+2 rx =
+
+2
+xr
+
+=
+
+
+2
+V rh=
+
+( )
+2
+V 25
+2
+x x 
+=− 
+
+( )
+2
+2V 25
+4
+x x
+
+=−
+
+23
+25V
+44
+xx
+
+=−
+
+
+✓
+2 2 50xh+=
+
+
+
+✓
+2
+xr
+
+=
+
+
+
+
+
+
+✓ substitution
+
+(3)
+10.2
+( )
+2
+/ 50 3V
+44
+xxx
+
+=−
+
+
+( )
+2
+/ 50 3V0
+44
+xxx
+
+= − =
+
+2
+50 3 0xx−=
+
+( )0 50 3xx=−
+
+500 or
+3
+xx=
+
+50 16,67
+3
+x = =
+
+
+
+
+
+
+✓
+2
+50 3
+44
+xx
+
+−
+
+✓
+( )
+/
+V0 x =
+
+
+
+✓ answer with
+selection
+(3)
+[6]
+
+x
+h
+h
+
+Mathematics P1/Wiskunde V1 19 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 11
+
+
+
+
+
+
+
+
+
+
+
+
+11.1.1
+( ) ( ) ( )P Male and Prefer juice P Male P Prefer juice=
+36 90
+210 210 210
+e=
+
+84e =
+
+✓
+( ) ( ) ( )P M and J P M P J=
+✓
+36
+210
+✓ P (Male)
+90
+210
+=
+(3)
+11.1.2
+( )P Female and like energy drink
+210
+b=
+210 84 126d = − =
+
+126 54 72b = − =
+
+( ) 72 12P Female and like energy drink 0,34
+210 35
+= = =
+
+
+OR/OF
+c = 120
+b = 72
+( ) 72 12P Female and like energy drink 0,34
+210 35
+= = =
+
+
+
+
+✓ d- value
+✓ b-value
+
+✓ answer
+(3)
+OR/OF
+✓ c- value
+✓ b-value
+
+✓ answer
+(3)
+
+JUICE ENERGY
+DRINKS TOTAL
+Females a 72 120
+Males 36 54 90
+Total 84 126 210
+
+Mathematics P1/Wiskunde V1 20 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+11.2
+( )3 1 73
+4 4 12
+xx+=
+27 3 7xx+=
+
+30 7x =
+
+7
+30
+x =
+
+28 cups
+
+
+OR/OF
+
+
+
+
+
+
+
+
+
+
+
+75 3 25 7
+100 120 100 120 12
+xx    + =      
+
+
+3 1 7
+160 480 12
+xx+=
+10 280x =
+
+28x =
+cups of coffee
+
+
+OR/OF
+
+
+
+
+
+
+
+
+
+
+
+
+
+75 3(120 ) 25 120 7
+100 120 100 120 12
+xx−−    + =      
+
+
+91270 30 70
+44
+xx− + − =
+5 230
+2
+x− = −
+
+92x=
+(bottles of water)
+ there are 28 cups of coffee
+✓
+( )3 3
+4
+x
+✓
+1
+4
+x
+✓
+7
+12
+=
+✓answer
+(4)
+OR/OF
+
+
+
+
+
+
+
+
+
+
+✓
+75 3
+100 120
+x
+✓
+25
+100 120
+x
+
+✓
+7
+12
+=
+✓answer
+(4)
+OR/OF
+
+
+
+
+
+
+
+
+
+
+
+
+✓
+75 3(120 )
+100 120
+x−
+✓
+25 120
+100 120
+x−
+
+✓
+7
+12
+=
+
+✓answer
+(4)
+
+R
+S
+C
+W
+C
+W
+0,75
+0,25
+
+
+
+
+C
+R
+S
+W
+C
+W
+0,75
+0,25
+
+
+
+
+Mathematics P1/Wiskunde V1 21 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou
+
+
+11.3.1 7.6! = 5 040
+
+
+OR/OF
+
+7! 5 040=
+
+✓✓ answer
+(2)
+
+OR/OF
+
+✓✓ answer
+(2)
+11.3.2 Possible outcomes:
+
+A × 6 × 5 × B × 4 × 3 × 2 × 1
+A × 6 × 5 × 4 × B × 3 × 2 × 1
+A × 6 × 5× 4 × 3 × B × 2 × 1
+A × 6 × 5 × 4 × 3 × 2 × B × 1
+A × 6 × 5 × 4 × 3 × 2 × 1 × B
+
+5 6!
++
+4 6! +
+3 6! +
+2 6! +
+1 6!
+6!(5 4 3 2 1)= + + + +
+
+6!(15)=
+
+
+P(two or more runners finishing after Andrew) =
+6!(15)
+8!
+15
+56
+=
+
+0,27=
+
+
+OR/OF
+
+( )8! 7!.2 2.6.6!
+8!.2
+−+
+
+15
+56
+=
+
+
+
+
+
+
+
+
+
+✓✓
+6! (15)
+
+
+
+✓ 8! in denominator
+✓
+6!(15)
+8! or
+15
+56
+(4)
+
+
+OR/OF
+
+✓ 8! in numerator and
+denominator
+✓✓ (
+7!.2 +
+2.6.6! )
+✓
+15
+56
+(4)
+[16]
+TOTAL/TOTAAL: 150

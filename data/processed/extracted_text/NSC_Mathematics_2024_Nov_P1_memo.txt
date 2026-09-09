@@ -1,0 +1,1995 @@
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKS/PUNTE: 150
+
+
+
+
+
+
+These marking guidelines consist of 17 pages.
+Hierdie nasienriglyne bestaan uit 17 bladsye.
+MATHEMATICS P1/WISKUNDE V1
+
+NOVEMBER 2024
+
+MARKING GUIDELINES/NASIENRIGLYNE
+GRADE 12/GRAAD 12
+
+
+NATIONAL
+SENIOR CERTIFICATE/
+NASIONALE SENIOR
+SERTIFIKAAT
+
+
+Mathematics P1/Wiskunde V1 2 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+NOTE:
+• If a candidate answers a question TWICE, only mark the FIRST attempt.
+• Consistent Accuracy applies in all aspects of the marking guidelines.
+
+LET WEL:
+• Indien ’n kandidaat ’n vraag TWEE keer beantwoord, sien slegs die EERSTE poging na.
+• Volgehoue akkuraatheid is DEURGAANS op ALLE aspekte van die nasienriglyne van
+toepassing.
+
+QUESTION 1/VRAAG 1
+
+1.1.1
+0)3( =−xx
+0=x
+or
+3=x
+✓
+0=x
+✓
+3=x (2)
+
+1.1.2
+0142 2 =+− xx
+( )
+2
+( 4) 4 4(2)(1)
+2(2)
+x
+− −  − −
+=
+
+71,1=x
+or
+29,0=x
+✓ standard form
+
+✓ correct substitution
+in correct formula
+✓ answer
+✓ answer (4)
+1.1.3
+0322 −− xx
+0)1)(3( +− xx
+
+CV: x = 3 or x = – 1
+
+
+
+
+
+x < – 1 or x > 3 OR/OF
+( ; 1) (3 ; )x − −  
+
+✓factors
+✓ critical values
+
+
+✓✓ answer (4)
+1.1.4
+03222 22 =−− +xx
+0322.22 22 =−− xx
+
+0)42)(82( =+− xx
+
+82 =x
+or
+42 −x
+322 =x
+no solution
+3=x
+
+
+✓use of exponential law
+✓factors
+✓
+82 =x
+✓
+42 −x
+✓ answer (5)
+
+1.1.5
+242 =−+− xx
+xx +=+− 242
+
+( ) ( )
+22
+2 4 2xx− + = +
+
+24442 xxx ++=+−
+
+062 =+ xx
+
+0)6( =+xx
+
+0=x
+or
+6−x
+
+✓ isolating the root
+
+✓ squaring both sides
+
+✓ standard form
+
+✓ answers with selection
+(4)
+
+
+– 1 3
+Answer only:
+4
+4
+Answer only:
+3
+4
+Answer only:
+1
+5
+
+Mathematics P1/Wiskunde V1 3 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+1.2
+xy 23−= … (1)
+22 =+ xyy
+… (2)
+Subs (1) into (2):
+2)23()23( 2 =−+− xxx
+
+02329124 22 =−+−+− xxxx
+
+0792 2 =+− xx
+
+0)1)(72( =−− xx
+
+2
+7=x
+or
+1=x
+4−=y
+
+1=y
+
+OR/OF
+2
+3 yx −=
+… (1)
+22 =+ xyy
+… (2)
+Subs (1) into (2):
+2
+2
+32 =
+
+
+
+ −+ yyy
+
+0432 22 =−−+ yyy
+
+0432 =−+ yy
+
+0)1)(4( =−+ yy
+
+4−=y
+or
+1=y
+2
+7=x
+or
+1=x
+✓ eq 1
+
+
+✓ substitution
+
+
+✓ standard form
+
+✓ both x-values
+
+✓ both y-values (5)
+
+OR/OF
+
+✓ eq 1
+
+
+
+✓ substitution
+
+
+
+✓ standard form
+
+✓ both y-values
+
+✓ both x-values (5)
+1.3 Product =
+3 4 5 1 1 ...
+2 3 4 1 2
+n n n
+nn
+++     =
+−
+
+The product will be an integer value when n + 1 is
+divisible by 2 i.e.
+ 3;5;7;...n
+
+Therefore, n must be an odd number, greater than 2.
+
+OR/OF
+For n = 2 the product is
+3
+2
+For n = 3 the product is
+34 2
+23
+   =    
+For n = 4 the product is
+3 4 5 5
+2 3 4 2
+    =      
+For n = 5 the product is
+3 4 5 6 3
+2 3 4 5
+     =        
+ 3;5;7;...n
+
+
+Therefore, n must be an odd number, greater than 2.
+
+✓
+n
+n 1...
+4
+5
+3
+4
+2
+3 +
+
+✓ statement
+1
+2
+n+
+
+
+✓ n is odd for n > 2 (3)
+
+OR/OF
+
+✓ generation of the four
+products
+
+
+
+
+✓ identifying the pattern
+when n is odd
+
+✓ n is odd for n > 2 (3)
+[27]
+
+Mathematics P1/Wiskunde V1 4 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 2
+
+2.1.1
+])1(2[
+2
+dnanS n −+=
+)]5)(120()7(2[
+2
+20
+20 −+=S
+
+0901S20 =
+
+
+
+
+✓ substitution
+
+✓ answer (2)
+2.1.2
+)5)(1(7 −+= nTn
+25 += nTn
+
+
+310130901400142075 =−=− SS
+
+75 20
+11
+(5 2) (5 2) 13 310
+nn
+nn
+==
++ − + =
+
+31013)25(
+75
+21
+=+
+=n
+n
+
+
+OR/OF
+21 22 23 75 ... 14 400 1090T T T T+ + + + = −
+
+107 + 112 + 117 + …. = 13 310
+102 5nTn=+
+
+55
+1
+(5 102) 13 310n + =
+
+
+✓ general term
+
+✓
+2075 SS −
+
+
+✓
+
+=
+75
+21n ✓ = 13 310
+(4)
+OR/OF
+✓
+2075 SS −
+
+✓ general term
+✓
+55
+1n=
+ ✓ = 13 310
+(4)
+2.2.1
+12 −= nTn
+98th first difference = 2(98) – 1
+= 195
+
+Quadratic:
+1956329T98 −=
+
+4379=
+
+✓answer
+
+✓method
+✓answer (3)
+2.2.2 28 ; 29 ; 32
+
+
+1 3 5 7
+
+
+2 2 2
+
+3a + b = 1 9a + 3b + c = 32
+2a = 2 3(1) + b = 1
+32)3(2)3(1 2
+3 =+−= cT
+a = 1 b = – 2 c = 29
+OR/OF
+1 – 2 + c = 28
+c = 29
+2922 +−= nnTn
+
+
+
+
+
+
+
+✓ second difference
+
+✓ a = 1
+✓ b = – 2
+✓ method to calculate c
+
+
+✓ c = 29 (5)
+[14]
+
+Mathematics P1/Wiskunde V1 5 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 3
+
+3.1 2nd circle:
+3
+2
+6 = cm
+
+3rd circle:
+5,1
+2
+3 = cm
+
+OR/OF
+3rd circle =
+2
+16 1,5
+2
+ =
+
+
+
+
+✓✓ radius 3rd circle (2)
+
+OR/OF
+✓✓ radius 3rd circle (2)
+3.2
+...;
+4
+9;9;36 
+36;
+4
+1 == ar
+
+
+1
+4
+1
+1
+4
+136
+10
+10
+−
+
+
+
+
+
+
+−
+
+
+
+
+=
+
+S
+
+80,15010 =S
+
+
+✓a
+✓ r
+
+
+
+
+✓ substitution
+
+✓ answer
+(4)
+3.3
+...
+2
+3;3;6
+1 3 3radius
+2 128 256
+== 
+
+1
+31 6
+256 2
+n−
+= 
+
+1
+11
+512 2
+n−
+=
+
+91
+11
+22
+n−
+   =      
+or/of
+1
+2
+11 log
+512
+n 
+
+−= 
+
+19n − =
+
+19n − =
+10n=
+
+10n=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✓
+3
+256
+
+✓ equating to radius
+general term
+✓simplification
+
+
+
+
+✓ answer (4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mathematics P1/Wiskunde V1 6 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+OR/OF
+
+12 ; 6 ; 3 ; …
+
+3diameter
+128
+=
+
+1
+31 12
+128 2
+n−
+= 
+
+1
+11
+512 2
+n−
+=
+
+91
+11
+22
+n−
+   =      
+or/of
+1
+2
+11 log
+512
+n 
+
+−= 
+
+19n − =
+
+19n − =
+10n=
+
+10n=
+
+
+
+OR/OF
+
+
+
+
+
+✓
+1
+112
+2
+n−
+
+
+✓ equating general term of
+diameter to
+3
+128
+✓simplification
+
+
+
+✓ answer (4)
+
+[10]
+
+
+
+Mathematics P1/Wiskunde V1 7 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 4
+
+4.1
+1)( −= xaxf
+1
+9
+5 2 −=− a
+
+9
+42 =a
+
+3
+2=a
+
+
+
+✓ substitution
+
+
+
+
+✓ answer (2)
+4.2
+1−y
+
+OR/OF
+( )− ;1y
+
+✓ answer
+(1)
+
+✓ answer
+(1)
+4.3
+x
+y
+−1
+0 B
+
+
+
+
+
+
+
+✓(0 ; 0)
+✓ asymptote
+✓decreasing shape
+(3)
+4.4
+19 2 1
+83
+x
+=−
+
+x
+
+
+
+
+=
+3
+2
+8
+27
+
+x−
+
+
+
+
+=
+
+
+
+
+2
+3
+2
+3
+3
+
+
+3−= x
+
+
+19C 3 ;
+8
+− 
+
+
+
+
+
+ − 3;
+8
+19C/
+
+
+✓substitution
+
+
+
+
+
+
+
+✓ answer
+
+
+
+
+✓ answer (3)
+[9]
+
+Mathematics P1/Wiskunde V1 8 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 5
+
+5.1
+1−=p ✓
+1−=p (1)
+5.2
+3−= xy
+31−=y
+
+2−=y
+
+✓ substitution
+✓ answer (2)
+5.3
+12
+01
+a=−
+−
+1
+3
+−
+= a
+
+3−=a
+
+
+✓ substitute (0 ; 1)
+
+
+✓ answer (2)
+5.4
+02
+1
+3 =−
+−
+−
+x
+223 −=− x
+
+12 −=x
+
+2
+1−= x
+
+
+
+
+
+− 1;
+2
+1x
+OR/OF
+1
+2
+1 − x
+
+
+
+
+✓x-intercept
+
+
+✓✓ answer (3)
+5.5 f is reflected in the y-axis, then translated 2 units to
+the right
+
+
+OR/OF
+
+f is reflected in the x-axis, then translated 4 units
+down
+
+OR/OF
+
+f is reflected about the line x = 1
+
+
+OR/OF
+
+f is reflected about the line y = – 2
+
+
+
+✓ reflection in y-axis
+✓ translation 2 units right
+(2)
+
+OR/OF
+
+✓ reflection in x-axis
+✓ translation 4 units down
+(2)
+OR/OF
+
+✓✓ reflection about line
+
+1x= (2)
+
+OR/OF
+
+✓✓ reflection about line
+
+2y =− (2)
+
+[10]
+
+
+
+
+
+
+Answer only:
+2
+2
+
+Mathematics P1/Wiskunde V1 9 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+QUESTION/VRAAG 6
+
+6.1
+2
+)1(2
+4 =
+−
+−=x OR/OF
+042)(/ =+−= xxf
+x = 2
+5)2(4)2( 2 ++−=y
+
+= 9
+
+( )9;2B
+
+
+✓ method for x
+✓ value of x
+
+✓ value for y
+
+(3)
+6.2
+0542 =−− xx
+0)1)(5( =+− xx
+
+5=x
+or
+1−=x
+( )0;1A −
+
+Equation of AC:
+1
+0
+13
+08
++
+−=
++
+−
+x
+y
+OR/OF
+80 2
+31
+m −==
++
+yx 488 =+
+
+( )120 +=− xy
+yx =+ 22
+
+22yx=+
+
+
+
+✓
+( )0;1A −
+
+
+✓ method for
+gradient
+
+✓ substitute point A
+or C into equation
+of a straight line
+(3)
+6.3
+( ) 2254EH 2 +−++−= xxx
+32EH 2 ++−= xx
+
+
+Max EH at:
+022 =+− x
+OR/OF
+)1(2
+)2(
+2 −
+−−=−=
+a
+bx
+
+1=x
+1=x
+
+Max length of EH
+3)1(2)1( 2 ++−=
+= 4
+✓ difference
+✓
+32EH 2 ++−= xx
+
+
+
+✓ x - value
+
+
+
+✓ length (4)
+6.4
+( ) ( )mxfxk +=
+
+5442 22 +++−−−= mxmmxx
+
+/ ( ) 2 2 4k x x m=− − +
+
+( ) 2/ =xk
+
+2422 =+−− mx
+
+222 −=− mx
+
+mx −= 1
+
+
+)1()1( mgmk −=−
+
+2)1(254)1(4)1(2)1( 22 +−=++−+−−−−− mmmmmmm
+
+22254442221 222 +−=++−+−+−−+− mmmmmmmm
+
+042 =−− m
+
+2−= m
+
+
+
+
+✓
+( )
+/kx
+✓
+( ) 2/ =xk
+
+
+✓
+mx −= 1
+
+
+✓ substitution
+
+
+
+
+✓ answer
+(5)
+Answer only:
+1
+4
+Answer only:
+0
+5
+
+Mathematics P1/Wiskunde V1 10 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+OR/OF
+
+( ) ( ) )(xgmxfxk =+=
+
+225442 22 +=+++−−− xmxmmxx
+
+( ) 34220 22 −−+−+= mmxmx
+
+
+)34)(1(4)22( 22 −−−−= mmm
+
+12164484 22 ++−+−= mmmm
+
+0168 =+= m
+
+2−=m
+
+
+OR/OF
+2( ) 4 5f x x x=− + +
+
+/ ( ) 2 4 2f x x =− + =
+
+
+22x− =−
+
+1x=
+
+2(1) (1) 4(1) 5f =− + +
+
+8y=
+
+
+translate 2 units to the right
+2m =−
+
+
+OR/OF
+
+
+✓ equating
+✓ simplification
+
+
+✓ substitution into
+
+
+✓
+ = 0
+✓ answer
+(5)
+
+OR/OF
+
+✓
+/ ( ) 2fx =
+
+✓ x-value
+
+
+
+✓ y-value
+✓ 2 units to the right
+✓ answer
+(5)
+
+[15]
+
+
+Mathematics P1/Wiskunde V1 11 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 7
+
+7.1
+niPA )1( +=
+64
+6,85 000 1
+400
+R14 706,56
+A =+ 
+=
+
+
+
+✓ i, n
+✓ substitution into
+correct formula
+✓ answer
+(3)
+7.2
+(1 )A P in=−
+1 (1 4 )
+2
+P P i=−
+
+)41(
+2
+1 i−=
+
+8
+1=i
+
+%5,12= r
+
+
+OR/OF
+50%
+4
+r =
+
+12,5%r =
+
+
+✓substitution into
+correct formula
+
+
+
+
+✓ answer
+(2)
+
+OR/OF
+✓ method
+
+✓ answer
+(2)
+7.3.1 Already paid:
+80,058138R6098,3002 =
+
+
+Interest:
+138 058,80 – 100 000 = R 38 058,80
+
+✓ amount already paid
+
+
+✓ interest
+(2)
+
+
+
+Mathematics P1/Wiskunde V1 12 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+7.3.2 Balance after 2 years:
+( ) 
+i
+ixP
+n−
++−= 11
+
+1200
+5,13
+1200
+5,131198,3002
+36
+
+
+
+
+
+
+
+
+
+
+
+
+ +−
+=
+−
+P
+
+
+94,80467 R=
+
+R 67 804,94 – R20 000 = R 47 804,94
+
+( ) 
+i
+ixP
+n−
++−= 11
+
+1200
+5,13
+1200
+5,131198,3002
+94,80447 
+
+
+
+
+
+
+
+
+
+
+
+ +−
+=
+−n
+
+( )
+n−
+= 01125,1766,0
+
+n−=766,0log 01125,1
+
+n = 23,83
+
+12 months earlier
+
+OR/OF
+212
+1200
+5,131000100
+
+
+
+
+
+ +=A
+
+= R130 799,12
+
+1200
+5,13
+1
+1200
+5,13198,3002
+212
+
+
+
+
+
+
+
+
+−
+
+
+
+ +
+=
+
+F
+
+= R 62 993, 92
+
+Balance outstanding = A – F = 130 799,12 – 62 993,92
+= R67 805,20
+
+R 67 805,20 – R20 000 = R 47 805,20
+
+( ) 
+i
+ixP
+n−
++−= 11
+
+( )
+13,52 300,98 1 1 1200
+47 805, 20 13,5
+1200
+0, 766... 1, 01125
+n
+n
+−
+−
+ −+ =
+=
+
+1,01125log 0,766... n=−
+
+n = 23,80
+
+12 months’ earlier
+
+
+
+
+✓n= 36
+✓i
+✓ substitution into
+correct formula
+
+✓ answer
+✓ answer
+
+
+
+
+
+✓substitution into
+correct formula
+
+
+
+
+✓ answer in months
+(7)
+OR/OF
+
+✓n = 24
+✓i
+
+✓ substitution into
+both correct
+formulae
+
+
+✓ answer
+
+
+✓ answer
+
+
+
+
+
+
+✓ substitution into
+correct formula
+
+
+
+
+
+✓ answer in months (7)
+
+Mathematics P1/Wiskunde V1 13 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+OR/OF
+
+1200
+5,13
+1200
+5,131198,3002
+000100 
+
+
+
+
+
+
+
+
+
+
+
+ +−
+=
+−n
++
+24
+1200
+5,13100020
+−
+
+
+
+
+ +
+
+
+84 709,38 =
+8092 300,98 1 800
+0,135
+12
+n− − 
+8090, 4142 1
+800
+n−
+=− 
+
+809 0,5858
+800
+n−
+ =
+
+809
+800
+log 0,5858n 
+
+−=
+
+
+n = 47,80 months after starting payments
+
+
+12 months earlier
+
+
+OR/OF
+
+✓ i
+✓ n = 24
+✓= 100 000
+✓ substitution into
+correct P formula
+✓ substitution into
+correct A formula
+
+
+✓ simplification
+
+
+
+
+
+
+
+
+
+
+
+
+✓ answer in months
+(7)
+[14]
+
+
+
+Mathematics P1/Wiskunde V1 14 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+QUESTION/VRAAG 8
+
+8.1.1
+ 253 xx
+dx
+d −
+x103−=
+
+
+✓3
+✓– 10x
+(2)
+8.1.2
+3 7
+2
+2)( x
+x
+xg −=
+3
+7
+22)( xxxg −= −
+
+
+3
+4
+3
+74)( 3/ xxxg −−= −
+
+
+
+✓
+22 −x ✓
+3
+7
+x−
+
+✓
+34 −− x ✓
+3
+4
+3
+7 x−
+(4)
+8.2
+324)( 23 ++−= xxxxf
+283)( 2/ +−= xxxf
+
+( ) ( ) 22823)2(
+2/ +−== fm
+
+2−=m
+
+3)2(2)2(4)2()2( 23 ++−== fy
+
+1−=y
+
+( )221 −−=+ xy
+
+32 +−= xy
+
+
+
+
+
+✓
+2−=m
+
+✓
+1−=y
+
+✓ answer
+(3)
+8.3.1
+26)( xxf −=
+( ) ( )
+h
+xfhxfxf
+h
+−+=
+→0
+/ lim)(
+
+( )
+h
+xhx
+h
+22
+0
+66lim ++−=
+→
+
+2 2 2
+0
+6 12 6 6lim
+h
+x xh h x
+h→
+− − − +=
+
+h
+hxh
+h
+2
+0
+612lim −−=
+→
+
+( )
+0
+12 6lim
+h
+h x h
+h→
+−−=
+
+( )
+0
+lim 12 6
+h
+xh
+→
+= − −
+
+x12−=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✓substitution
+
+✓
+22
+( ) 6 12 6f x h x xh h+ =− − −
+
+✓simplification
+
+✓common factor
+
+
+✓answer
+(5)
+
+
+
+
+
+
+
+
+
+
+Mathematics P1/Wiskunde V1 15 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+
+OR/OF
+
+26)( xxf −=
+
+22 6126)( hxhxhxf −−−=+
+
+2222 61266126)()( hxhxhxhxxfhxf −−=+−−−=−+
+
+
+( ) ( )
+h
+xfhxfxf
+h
+−+=
+→0
+/ lim)(
+
+h
+hxh
+h
+2
+0
+612lim −−=
+→
+
+( )
+0
+12 6lim
+h
+h x h
+h→
+−−=
+
+( )
+0
+lim 12 6
+h
+xh
+→
+= − −
+
+x12−=
+
+
+
+OR/OF
+
+
+✓
+22
+( ) 6 12 6f x h x xh h+ =− − −
+
+✓simplification
+
+
+
+
+✓substitution
+
+✓common factor
+
+
+✓answer
+(5)
+8.3.2
+0x
+
+OR/OF
+
+0x
+
+✓answer
+(1)
+
+
+✓answer
+(1)
+8.3.3
+26xy −=
+26yx −=
+
+xy
+6
+12 −=
+
+xy
+6
+1−=
+
+xy
+6
+1−−=
+;
+0x
+
+✓ swopping x and y
+
+
+
+✓
+xy
+6
+1−=
+
+✓ answer
+
+(3)
+[18]
+
+
+Mathematics P1/Wiskunde V1 16 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 9
+
+9.1
+2
+51  x ✓✓answer
+(2)
+9.2
+
+
+
+
+ 0;
+2
+5and)0;1( ✓
+1=x ✓
+2
+5=x
+(2)
+9.3
+2
+1
+2
+5 +
+
+4
+7=
+
+Concave up for
+4
+7x
+
+✓method
+
+
+
+
+✓answer
+
+(2)
+9.4
+89 −− k ✓✓answer
+(2)
+[8]
+
+QUESTION/VRAAG 10
+
+10.1
+0186 =+− t
+
+t618 =
+
+t=3
+s /
+27)3(18)3(3)3( 2 =+−=
+✓ = 0
+
+✓ value of t
+✓ answer
+(3)
+10.2
+0183 2 =+− tt
+0)6(3 =−− tt
+
+6or0 == tt
+
+
+32()s t at bt=+
+
+s /
+btatt 23)( 2 +=
+33 −=a
+and
+182 =b
+
+1−=a
+9=b
+
+32( ) 1 9s t t t=− +
+
+32(6) (6) 9(6)s =− +
+
+(6) 108s =
+
+
+✓ factors
+✓ values
+
+
+
+
+
+✓ a and b
+
+
+✓ substitution
+✓ answer
+(5)
+[8]
+
+
+Mathematics P1/Wiskunde V1 17 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou
+
+QUESTION/VRAAG 11
+
+11.1
+
+
+
+
+✓2
+
+✓3 ; 4 ; 5
+
+✓6 ; 9 ; 11
+
+
+
+(3)
+11.2 P(at least two subjects) =
+4 2 5 3 14 7 0,35
+40 40 20
++ + + === ✓ (4 + 2 + 5 + 3) or 14
+in numerator
+✓ 40 in denominator
+(2)
+11.3
+( ) ( )TPMP  =
+40
+16
+40
+22
+22,0
+50
+11 ==
+
+
+( ) 175,0
+40
+7T and MP ==
+
+
+( ) ( )TPMP 
+
+P(M and T)
+
+Events M and T are not independent
+✓
+40
+16
+40
+22
+✓
+50
+11
+✓
+40
+7
+
+
+
+✓answer
+(4)
+[9]
+
+QUESTION/VRAAG 12
+
+12.1
+6006710261026 = ✓for correct letters
+✓for correct digits
+(2)
+12.2
+39015519918 = Given that its multiplication
+✓ 18
+✓ 19
+✓ 9
+✓ 5
+(4)
+12.3
+24 9 25 5 27 000   =
+27 000 15390 100 75, 44%
+15 390
+− =
+
+✓
+24 9 25 5  
+
+✓answer
+(2)
+[8]
+
+TOTAL/TOTAAL: 150
+5
+2
+3 4
+11
+
+9
+6
+M T
+G
+
+
+M
