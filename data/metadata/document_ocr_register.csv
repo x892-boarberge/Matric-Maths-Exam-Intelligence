@@ -1,0 +1,8 @@
+document_id,ocr_text_file,page_count,character_count,ocr_status,ocr_date
+2023_nov_p1_exam_maths,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,10,8423,ocr_complete,2026-09-10T07:29:31.208230+00:00
+2023_nov_p2_exam_maths,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,14,9620,ocr_complete,2026-09-10T07:30:07.335497+00:00
+2024_nov_p1_exam_maths,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,10,9737,ocr_complete,2026-09-10T07:30:28.254302+00:00
+2024_nov_p2_exam_maths,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,14,10389,ocr_complete,2026-09-10T07:30:55.468737+00:00
+2025_nov_p1_exam_maths,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,12,8995,ocr_complete,2026-09-10T07:31:17.439608+00:00
+2025_nov_p2_exam_maths,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,15,9548,ocr_complete,2026-09-10T07:31:44.562548+00:00
+2025_nov_p2_memo_maths,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,12,8995,ocr_complete,2026-09-10T07:32:06.635866+00:00
