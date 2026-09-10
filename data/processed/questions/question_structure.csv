@@ -1,0 +1,7435 @@
+document_id,year,paper,document_type,source_text_file,extraction_quality,question_number,subquestion,marks,marks_all_found,question_text,question_char_count,segment_index,segmentation_status
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1,3.0,[3],"1.1 Solve for x:
+
+11.1 x +x-12=0 (3)",36.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.2,4.0,[4],1.1.2 3x*-2x=6 (answers correct to TWO decimal places) (4),58.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.3,4.0,[4],1.1.3 V2xt+1 =x-1 (4),21.0,3.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.4,4.0,[4],1.1.4 x? -3>2x (4),18.0,4.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.2,5.0,[5],"1.2 Solve for x and y simultaneously:
+
+x+2=2y and Iytly
+
+x y (5)",64.0,5.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.3,4.0,[4],"1.3 Given: 2”*1 +2"" =3""'? 3” where m and n are integers.
+
+Determine the value of m+ n. (4)
+
+[24]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 4 DBE/November 2023
+
+NSC",174.0,6.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1,,[],2.1 Given the arithmetic series: 7+ 12+17+...,45.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.1,3.0,[3],"2.1.1 Determine the value of Ty, (3)",36.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.2,,[],"2.1.2 Calculate S,, 2)",22.0,3.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.3,3.0,[3],"2.1.3 Calculate the value of n for which T, =517 (3)",52.0,4.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2,,[],"2.2 The following information is given about a quadratic number pattern:
+
+T, =3, T,-T, =9 and T,-T, =21",103.0,5.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2.1,2.0,[2],"2.2.1 Show that 7,=111 (2)",26.0,6.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2.2,,[],"2.2.2 Show that the general term of the quadratic pattern is T,, = 6n? —9n+6 ()",79.0,7.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2.3,16.0,"[3, 16]","2.2.3 Show that the pattern is increasing for all ne N. (3)
+[16]",64.0,8.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.1,,[],3.1 Given the geometric series: 3+6+12+... to n terms.,54.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.1.1,,[],"3.1.1 Write down the general term of this series. qd)
+k",55.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.1.2,4.0,[4],"3.1.2 Calculate the value of k such that: >50y = 98 301 (4)
+p=l",63.0,3.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.2,10.0,"[5, 10]","3.2 A geometric sequence and an arithmetic sequence have the same first term.
+
+e The common ratio of the geometric sequence is 3
+
+The common difference of the arithmetic sequence is 3
+The sum of 22 terms of the arithmetic sequence is 734 more than the sum to
+infinity of the geometric sequence.
+
+Calculate the value of the first term. (5)
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P 1 5 DBE/November 2023
+NSC",421.0,4.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.1,1.0,[1],4.1 Write down the equation of the asymptote of /. (1),54.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.2,2.0,[2],4.2 Determine the coordinates of B. (2),39.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.3,3.0,"[3, 3]","4.3 Determine the equation of k, a straight line passing through A and B in the form
+
+Kx) =... (3)
+44 Calculate the vertical distance between & and f at x=1 (3)",160.0,3.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.5,14.0,"[1, 2, 2, 14]","4.5 Write down the equation of g if itis given that g(x)= f(x) +4 (1)
+46 Write down the domain of g'. (2)
+47 Write down the equation of g7' inthe form y=... (2)
+
+[14]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 6
+
+NSC",226.0,4.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.2,,[],5.2,3.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.3,,[],5.3,3.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.4,,[],5.4,3.0,3.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.5,,[],5.5,3.0,4.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.6,,[],5.6,3.0,5.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.7,18.0,"[2, 2, 1, 3, 5, 4, 18]","5.7
+
+Write down the coordinates of the turning point of (2)
+Calculate the coordinates of C. (2)
+Calculate the value of . (ql)
+Write down the range of g. (1)
+For which values of x will f(x).g(x) <0? (3)
+Calculate the values of k so that h(x) =—2x +k will not intersect the graph of g. (5)
+h isa tangent to g at R, a point in the first quadrant. Calculate ¢ such that
+
+y=f(x)+t intersects g at R. (4)
+
+[18]
+
+Copyright reserved
+
+Please turn over
+
+Mathematics/P1 7 DBE/November 2023
+NSC",482.0,6.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.1,,[],"6.1 Patrick deposited an amount of R18 500 into an account earning r% interest p.a.,
+
+compounded monthly. After 6 months, his balance was R19 319,48.",149.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.1.1,3.0,[3],6.1.1 Calculate the value of r. (3),35.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.1.2,2.0,[2],6.1.2 Calculate the effective interest rate. (2),48.0,3.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.2,,[],"6.2 Kuda bought a laptop for R10 000 on 31 January 2019. He will replace it with a new
+one in 5 years' time on 31 January 2024.",127.0,4.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.2.1,2.0,[2],"6.2.1 The value of the old laptop depreciates annually at a rate of 20% p.a.
+according to the straight-line method. After how many years will the
+laptop have a value of RO? (2)",176.0,5.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.2.2,4.0,[4],"6.2.2 Kuda will buy a laptop that costs R20 000. In order to cover the cost
+price, he made his first monthly deposit into a savings account on
+28 February 2019. He will make his 60% monthly deposit on
+31 January 2024. The savings account pays interest at 8,7% p.a.,
+compounded monthly. Calculate Kuda's monthly deposit into this
+account. (4)",341.0,6.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.3,16.0,"[6, 16]","6.3 Tino wins a jackpot of R1 600 000. He invests all of his winnings in a fund that earns
+interest of 11,2% p.a., compounded monthly. He withdraws R20 000 from the fund at
+the end of each month. His first withdrawal is exactly 1 month after his initial
+investment. How many withdrawals of R20 000 will Tino be able to make from this
+
+fund? (6)
+[16]",349.0,7.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,7.0,7.1,6.0,[6],"7.1 Determine f /(x) from first principles if f(x) =—4x? (6)
+72 Determine:",74.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,7.0,7.21,2.0,[2],7.21 f'@) if f(x) = 2x? -3x (2),31.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,7.0,7.2.2,3.0,[3],"7.2.2 D, bal + ox) (3)
+73 For which values of x will the tangent to f(x) =—2x>+8x have a positive gradient? Se
+
+Copyright reserved Please tum over
+
+Mathematics/P1 8 DBE/November 2023
+NSC",186.0,3.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.1,4.0,[4],8.1 Determine the coordinates of the turning points of f (4),60.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.2,4.0,[4],"8.2 Draw a sketch graph of /- Clearly label all the intercepts with the axes and any
+
+turning points. (4)",105.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.3,2.0,[2],"8.3 Use the graph to determine the value(s) of & for which —x°+6x7~-9x+4=k will
+
+have three real and unequal roots. (2)",119.0,3.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.4,6.0,[6],"8.4 The line g{x)=ax+5 is the tangent to f at the point of inflection of Determine
+
+the equation of g. (6)",106.0,4.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.5,18.0,[18],"8.5 Calculate the value of @, the acute angle formed between g and the x-axis in the
+
+first quadrant. Q)
+
+[18]",110.0,5.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.1,3.0,[3],"9.1 Show that the total area of the page is given by:
+A(x) = = + 6x +480
+x (3)",78.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.2,6.0,"[3, 6]","9.2 Determine the value of x such that the total area of the page is a minimum. (3)
+
+[6]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 9 DBE/November 2023
+NSC",165.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.1,,[],"10.1 A and B are independent events. P(A) = ; and P(B)= ;
+Determine:",68.0,1.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.1.1,,[],10.1.1 P(A and B),17.0,2.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.1.2,,[],10.1.2 P(at least ONE event occurs),35.0,3.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.2,,[],"10.2 The probability that it will snow on the Drakensberg Mountains in June is 5%.
+e When it snows on the mountains, the probability that the minimum temperature in
+Central South Africa will drop below 0 °C is 72%.
+e If it does not snow on the mountains, the probability that the minimum
+
+temperature in Central South Africa will drop below 0 °C is 35%.",353.0,4.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.2.1,,[],"10.2.1 Represent the given information on a tree diagram. Clearly indicate the
+probabilities associated with EACH branch.",121.0,5.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.2.2,,[],"10.2.2 Calculate the probability that the temperature in Central South Africa will
+NOT drop below 0 °C in June 2024.",116.0,6.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.3,,[],"10.3 Ten learners stand randomly in a line, one behind the other.",65.0,7.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.3.1,,[],10.3.1 In how many different ways can the ten learners stand in the line?,73.0,8.0,ok
+2023_nov_p1_exam_maths,2023,P1,exam,data\processed\ocr\text\2023_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.3.2,15.0,"[2, 3, 1, 4, 15]","10.3.2 Calculate the probability that there will be 5 learners between the 2
+youngest learners in the line.
+
+TOTAL:
+
+Copyright reserved
+
+(2)
+@)
+
+(3)
+
+@G)
+
+(1)
+
+(4)
+[15]
+
+150
+
+Mathematics/P1 DBE/November 2023
+
+NSC
+INFORMATION SHEET
+ea ENe’ —4ac
+2a
+A= P(1+ni) A= P(I-ni) A= P(-i)"" A= P(i+i)""
+T, =a+(n-1)d S, = SPat(m-nd]
+T, =ar"""" Ss _ ar"" -1) sr#l s.=;* 3 -l<r<l
+. r-l -r
+
+pox 1+i=1 pala +i)""
+
+t t
+
+7) = tim LE2M=F@)
+h->0
+
+h
+xX, +X, yt+y
+d = (x, -%)Y +O, -yy M| 2;
+2 2
+y=mxte y-y, =m(x-x) m= 22-1 m=tané
+X.Y
+
+(x-a! +(y-4VP =r?
+In AABC: 2—=—?_ = ©
+
+sinA sinB sinC
+
+a =b? +e? -2be.cos A
+
+area AABC =F ab.sin
+sin(@ + )=sina.cos f +cosa.sin B sin(a - 8) =sina.cos 8 —cosa.sin B
+cos (a + B)=cosa..cos B -sina.sin B cos(a -B)= cosa@.cos # + sina.sin B
+
+cos’ a—sin’ a
+cos2a@ =41-2sin’ a sin 2a = 2sin a.cosa
+
+2cos* a—1
+
+“ Yo, -D
+
+2 _ isl
+
+o =
+n n
+P(A)= 75) P(A or B) = P(A) + P(B)— P(A and B)
+ni
+Paathx p= L&D)
+
+Y@-3
+
+Copyright reserved",927.0,9.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,1.0,1.1.1,3.0,[3],"1.1.1
+0122  xx
+   043  xx
+
+4or 3  xx
+
+factors/formula
+answer
+answer (3)",87.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,1.0,1.1.2,4.0,[4],"1.1.2
+623 2  xx
+0623 2  xx
+
+    
+ 32
+63422
+2
+x
+
+12,1or 79,1  xx
+
+ standard form
+ substitution into
+correct formula
+ answer
+ answer (4)",159.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,1.0,1.1.3,4.0,[4],"1.1.3
+112  xx
+ 
+2
+112  xx
+
+1212 2  xxx
+
+042  xx
+
+  04 xx
+
+x = 0 or x = 4
+4or 0  xx
+
+ squaring both sides
+
+ standard form
+
+ both x-values
+ valid answer (4)",178.0,3.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,1.0,1.1.4,4.0,[4],"1.1.4
+322  xx
+0322  xx
+
+   013  xx
+
+CV’s: x = – 1 ; x = 3
+
+3or 1  xx
+
+ standard form
+
+ critical values/factors
+
+answer (4)
+– 1 3
+
+Mathematics P1/Wiskunde V1 3 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",312.0,4.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,1.0,1.2,5.0,"[1, 2, 1, 2, 5, 5]","1.2
+11 1 . . . (1)xy
+(2) . . .2y 2x
+
+22  yx
+
+11
+22
+1  yy
+
+yyyy 2222 2 
+
+0252 2  yy
+
+0)2)(12(  yy
+
+2or 2
+1  yy
+
+2or1  xx
+
+OR/OF
+
+11 1 . . . (1)xy
+
+(2) . . .2y 2x
+
+12 xy
+
+1
+12
+11 
+
+ xx
+
+12
+21  xx
+
+xxxx 222 2 
+
+022  xx
+
+0)2)(1(  xx
+
+2or1  xx
+
+2or 2
+1  yy
+
+
+22  yx
+
+substitution
+
+standard form
+
+y-values
+
+x-values (5)
+
+OR/OF
+
+
+12 xy
+
+substitution
+
+standard form
+
+x-values
+
+y-values (5)
+
+Mathematics P1/Wiskunde V1 4 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",611.0,5.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,1.0,1.3,4.0,"[3, 3, 3, 3, 3, 3, 3, 2, 4, 3, 2, 4]","1.3
+nnmm 3322 21  
+)13(3)12(2 2  nm
+
+)8(3)3(2 nm 
+
+)2(3)3(2 3nm 
+
+3m
+and
+1n
+4 nm
+
+OR/OF
+
+nnmm 3322 21  
+
+)13(3)12(2 2  nm
+
+)8(3)3(2 nm 
+
+)2(3)3(2 3nm 
+
+13 32   nm
+
+Only true if m – 3 = 0 and n – 1 = 0
+4 nm
+
+ factors
+
+
+32 (3) 3 (2 )mn  (same
+bases)
+
+3m and
+1n
+
+4mn (4)
+
+OR/OF
+
+ factors
+
+
+32 (3) 3 (2 )mn  (same
+bases)
+ m – 3 = 0 and n – 1 = 0
+
+4mn (4)
+[24]
+
+Mathematics P1/Wiskunde V1 5 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",568.0,6.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,2.0,2.1.1,3.0,"[3, 3]","2.1.1 7 + 12 + 17 + …..
+ dnaTn 1
+
+  5191791 T
+
+45791 T
+
+OR/OF
+d = 5
+52nTn
+
+91 5(91) 2T 
+
+45791 T
+
+d = 5
+substitution into correct
+formula
+answer (3)
+OR/OF
+d = 5
+substitution n = 91
+answer (3)",215.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,2.0,2.1.2,2.0,"[2, 2]","2.1.2
+  dnanSn 122 
+   5191722
+91
+91 S
+
+112219 S
+
+OR/OF
+ lanSn  2
+
+ 45772
+91
+91 S
+
+1122191 S
+
+substitution into correct
+formula
+answer (2)
+
+OR/OF
+
+substitution into correct
+formula
+answer (2)",222.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,2.0,2.1.3,3.0,[3],"2.1.3
+  517  nTn
+51725 n
+
+5155 n
+
+103n
+
+substitution into correct
+formula
+equate
+answer (3)",105.0,3.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,2.0,2.2.1,2.0,"[6, 5, 5, 2, 2]","2.2.1
+21and9;3 23121  TTTTT
+
+3 12 33 66 111
+
+9 21 33 45
+
+12 12 12
+
+111453321935 T
+
+OR/OF
+122 a
+
+6a
+
+3(6) 9b
+
+9b
+
+6 9 3 c  
+
+2
+5 6(5) 9(5) 6T   
+= 111
+
+ constant second diff = 12
+ first differences : 33 and
+45
+(2)
+OR/OF
+ constant second diff = 12
+
+substitute 5 (2)
+
+Mathematics P1/Wiskunde V1 6 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",456.0,4.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,2.0,2.2.2,3.0,"[6, 6, 3]","2.2.2
+122 a
+6a
+
+3(6) 9b
+or
+5 6 21b  
+9b
+
+6 9 3 c  
+
+6c
+
+696 2  nnTn
+
+
+122 a
+
+
+3(6) 9b /
+5 6 21b  
+
+
+6 9 3 c   (3)",141.0,5.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,2.0,2.2.3,16.0,"[6, 3, 6, 3, 16]","2.2.3
+0912
+/
+ nTn
+
+4
+3n
+
+nT is increasing for
+Nn
+
+OR/OF
+
+9
+2 2(6)
+bn a
+ 
+
+4
+3n
+
+
+min at n = 1 for
+Nn
+
+nT is increasing for
+Nn
+
+
+912
+/
+ nTn
+
+4
+3n
+ increasing for
+Nn
+(3)
+OR/OF
+
+9
+2 2(6)
+bn a 
+
+4
+3n
+
+ increasing for
+Nn
+(3)
+[16]
+
+Mathematics P1/Wiskunde V1 7 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",420.0,6.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,3.0,3.1.1,1.0,[1],"3.1.1
+1 n
+n arT
+ 
+1
+23
+
+
+n
+nT
+
+
+ 
+1
+23
+
+
+n
+nT (1)",60.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,3.0,3.1.2,4.0,[4],"3.1.2
+
+
+
+k
+p
+p
+1
+301982.2
+3
+
+1
+3 .2 3 6 12 ...2
+k p
+p
+   
+
+n = k
+   3019812
+123 
+
+k
+
+  768322 
+k
+
+1522 k
+OR/OF
+76832log2k
+
+15k
+
+expansion
+
+ n = k
+substitution into correct
+formula
+
+k = 15 (4)",218.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,3.0,3.2,10.0,"[5, 10]","3.2
+ )3(2122
+22
+22  aS
+6932222  aS
+
+11 3
+aS 
+
+
+2
+3a
+
+7342
+369322  aa
+
+46813386144  aa
+
+8241 a
+
+2a
+
+ substitution into
+nS
+
+6932222  aS
+
+substitution into
+S
+
+
+22 734SS 
+
+ answer (5)
+[10]
+
+Mathematics P1/Wiskunde V1 8 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",379.0,3.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,4.0,4.1,1.0,[1],4.1 y = – 4  y = – 4 (1),25.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,4.0,4.2,2.0,[2],"4.2 x – intercept:
+420  x
+
+x24
+
+2x
+ 0;2B
+
+y = 0
+
+x = 2 (2)",67.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,4.0,4.3,3.0,[3],"4.3
+3420 y
+)3;0(A 
+
+cmxy 
+
+2
+3m
+
+  32
+3  xxk
+
+y = – 3
+
+gradient
+
+equation (3)",93.0,3.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,4.0,4.4,3.0,"[1, 1, 3]","4.4
+    2
+3312
+31 k
+242)1( 1 f
+
+  units2
+122
+3distance Vertical 
+
+k(1)
+
+f(1) = – 2
+
+answer (3)",116.0,4.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,4.0,4.5,1.0,[1],"4.5
+    4 xfxg
+
+  xxg 2
+;
+)4;2[x
+
+
+  xxg 2 (1)",61.0,5.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,4.0,4.6,2.0,[2],"4.6 Range of g :
+
+
+
+
+ 16;4
+1y
+
+Domain of
+:1g x
+
+
+
+
+ 16;4
+1 or/of
+1 164 x
+
+x
+
+
+
+
+ 16;4
+1 (2)",117.0,6.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,4.0,4.7,14.0,"[2, 14]","4.7
+xyg 2: 
+yxg 2:1 
+
+  xxg 2
+1 log
+, x
+
+
+
+
+ 16;4
+1
+
+swop x and y
+
+ equation
+(2)
+[14]
+
+Mathematics P1/Wiskunde V1 9 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",266.0,7.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,5.0,5.1,2.0,[2],5.1 (1 ; 8)  x = 1  y = 8 (2),31.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,5.0,5.2,2.0,[2],"5.2
+2
+17
+8)10(2
+1 2
+
+y
+
+15C 0 ; 2
+
+
+
+x = 0
+
+ answer (2)",68.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,5.0,5.3,1.0,[1],"5.3
+8
+18
+
+
+d
+d
+
+substitution (1 ; 8) (1)",44.0,3.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,5.0,5.4,1.0,[1],"5.4
+0;  yRy 
+0y (1)",23.0,4.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,5.0,5.5,3.0,[3],"5.5
+5or03  xx
+OR/OF
+
+[ 3 ; 0) [5 ; )x   
+
+03  x
+
+5x
+(3)",70.0,5.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,5.0,5.6,5.0,"[5, 5]","5.6
+xkx 82 
+082 2  kxx
+
+  824)( 2  k
+
+0642 k
+
+8;8:  kkCV
+
+88  k
+or/of
+( 8 ; 8)k
+
+OR/OF
+//( ) ( )g x h x
+
+28
+2  x
+
+228 x
+
+2x
+
+4y
+
+ B(2 ; 4) and A(– 2 ; – 4)
+For tangents:
+kxxh  2)(
+or
+kxxh  2)(
+k )2(24
+
+k )2(24
+8k
+
+8k
+
+88  k
+or/of
+( 8 ; 8)k
+
+xkx 82 
+ standard form
+substitution into
+
+
+0 or
+0
+
+inequality
+(5)
+
+OR/OF
+
+
+2
+8
+x 
+2
+
+ x-values
+ y-values
+
+inequality
+(5)
+
+Mathematics P1/Wiskunde V1 10 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",610.0,6.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,5.0,5.7,18.0,"[2, 1, 2, 2, 4, 2, 2, 4, 2, 2, 4, 18]","5.7
+82)(  xxh
+xx 882 
+
+882 2  xx
+
+0882 2  xx
+
+0442  xx
+
+0)2( 2 x
+
+2 x
+
+15(2) 2f 
+
+4)2( h
+
+t 2
+154
+
+7
+2t 
+
+OR/OF
+2
+15)2( f
+
+Tangent point of contact (2 ; 4)
+t 8)12(2
+14 2
+
+t 2
+154
+
+7
+2t 
+
+OR/OF
+1( ) 8g x x 
+
+/2( ) 8g x x 
+
+228 x 
+
+2
+11
+4 x
+
+2x
+
+8 42y
+
+(2 ; 4)R
+
+21 ( 1) 82y x t   
+
+214 (2 1) 82 t   
+
+7
+2t 
+
+
+2x
+
+
+(2)f
+
+(2)h
+
+answer
+(4)
+OR/OF
+
+2x
+
+(2)f
+
+ h(2)
+
+answer
+(4)
+OR/OF
+
+ x = 2
+
+ h(2)
+ f(2)
+
+answer (4)
+[18]
+
+Mathematics P1/Wiskunde V1 11 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",658.0,7.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,6.0,6.1.1,3.0,[3],"6.1.1
+ 
+n
+i 1PA
+6
+120015001848,31991 
+
+
+
+  r
+
+6 ...04429,112001 
+
+
+
+  r
+
+...00725,01200 r
+
+r = 8,7%
+
+ n = 6
+substitution into correct
+formula
+
+answer (3)",177.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,6.0,6.1.2,2.0,[2],"6.1.2
+12
+1200
+7,811001 
+
+
+
+  i
+
+r = 9,06%
+substitution into correct
+formula
+answer (2)",97.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,6.0,6.2.1,2.0,[2],"6.2.1
+ in 1PA
+ n2,01000010 
+
+5n
+
+substitution into correct
+formula
+answer (2)",88.0,3.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,6.0,6.2.2,4.0,[4],"6.2.2
+  
+i
+ixF
+n
+11 
+
+1200
+7,8
+11200
+7,81
+00020
+60
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+x
+
+x
+R267,26
+
+ i
+ n
+substitution into correct
+formula
+
+answer
+(4)",160.0,4.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,6.0,6.3,16.0,"[5, 16]","6.3
+
+  
+i
+ixP
+n
+ 11
+
+12
+112,0
+12
+112,01100020
+0006001 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+n
+
+n
+
+
+
+
+  12
+112,01175
+56
+
+75
+19
+12
+112,01 
+
+
+
+ 
+n
+
+
+
+
+
+
+
+
+
+
+  75
+19log
+12
+112,01
+n
+
+80,147 n
+
+Tino will make 147 withdrawals of R20 000
+
+i
+substitution into correct
+formula
+
+correct use of logs
+
+
+80,147 n
+
+147n
+(5)
+[16]
+
+Mathematics P1/Wiskunde V1 12 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",528.0,5.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,7.0,7.1,5.0,"[4, 5, 5]","7.1
+     
+h
+xfhxfxf
+h
+
+0
+/ lim
+     
+h
+xhxxf
+h
+22
+0
+/ 44lim 
+
+
+  h
+xhxhxxf
+h
+222
+0
+/ 4484lim 
+
+
+  h
+hxhxf
+h
+2
+0
+/ 48lim 
+
+
+   
+h
+hxhxf
+h
+48lim
+0
+/ 
+
+
+   hxxf
+h
+48lim
+0
+/ 
+
+
+  xxf 8/ 
+
+OR/OF
+222 484)(4)( hxhxhxhxf 
+
+)4(484)()( 222 xhxhxxfhxf 
+
+248 hxh
+     
+h
+xfhxfxf
+h
+
+0
+/ lim
+
+  h
+hxhxf
+h
+2
+0
+/ 48lim 
+
+
+   
+h
+hxhxf
+h
+48lim
+0
+/ 
+
+
+   hxxf
+h
+48lim
+0
+/ 
+
+
+  xxf 8/ 
+
+substitution into correct
+formula
+ f (x+h) =
+22 484 hxhx 
+
+simplification
+
+common factor
+
+answer (5)
+OR/OF
+ f (x+h) =
+22 484 hxhx 
+
+simplification
+
+substitution into correct
+formula
+
+common factor
+
+answer (5)",702.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,7.0,7.2.1,2.0,[2],"7.2.1
+xxxf 32)( 3 
+36)( 2/  xxf
+
+
+26x
+– 3 (2)",51.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,7.0,7.2.2,3.0,[3],"7.2.2
+ 53 2 2.7  xxDx
+
+
+
+
+
+  53
+2
+2.7 xxDx
+
+63
+1
+103
+14 
+ xx
+
+
+3
+2
+x
+
+derivative with rational exp
+
+610  x (3)",131.0,3.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,7.0,7.3,13.0,"[3, 13]","7.3
+086 2  x
+6
+82 x
+
+CV’s:
+3
+2x or
+3
+2x
+Positive for :
+3
+2
+3
+2  x
+
+CV’s:
+2
+3
+x
+
+answer (3)
+[13]
+
+Mathematics P1/Wiskunde V1 13 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",276.0,4.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,8.0,8.1,4.0,"[9, 6, 9, 6, 4]","8.1
+9123)( 2/  xxxf
+09123 2  xx
+
+0342  xx
+
+0)1)(3(  xx
+
+1or 3  xx
+
+44)3(9)3(6)3()3( 23 f
+
+04)1(9)1(6)1()1( 23 f
+
+
+turning points are: (3 ; 4) and (1 ; 0)
+
+9123)( 2/  xxxf
+
+
+0)(/ xf
+
+ both x-values
+
+ both y-values
+(4)",255.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,8.0,8.2,4.0,[4],"8.2
+
+ y-intercept
+
+ both x-intercepts
+
+ both turning points
+
+ shape
+
+(4)",76.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,8.0,8.3,2.0,[2],"8.3
+40  k or/of
+(0 ; 4)k k between y-values
+of turning points (2)",70.0,3.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,8.0,8.4,6.0,"[6, 6]","8.4
+0126)(//  xxf
+
+2x
+Max at (2 ; 2)
+
+3)2(/ f
+
+ 232  xy
+or
+  c 232
+43)(  xxg
+
+43)(  xxg
+
+OR/OF
+Point of inflection: x =
+31
+2
+
+
+2x
+Max at (2 ; 2)
+
+3)2(/ f
+
+ 232  xy
+or
+  c 232
+43)(  xxg
+
+43)(  xxg
+
+126)(//  xxf
+
+// ( ) 0fx 
+ x-value
+ y-value
+gradient at x-value
+
+equation of tangent
+(6)
+
+OR/OF
+
+31
+2
+
+ x-value
+ y-value
+
+gradient at x-value
+
+equation of tangent (6)",417.0,4.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,8.0,8.5,18.0,"[2, 18]","8.5
+3tan 
+ 57,71
+
+ gradient of g
+ answer (2)
+[18]
+
+x
+y
+f
+4
+4 1
+(3 ; 4)
+O
+
+Mathematics P1/Wiskunde V1 14 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",246.0,5.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,9.0,9.1,3.0,[3],"9.1
+xb432
+xb 432
+
+
+
+
+
+  6432)8()( xxxA
+
+3456( ) 432 6 480A x x x   
+
+48064563)(  xxxA
+
+
+xb 432
+
+
+8( x )
+
+
+
+
+
+  6432
+x
+
+(3)",153.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,9.0,9.2,4.0,"[3, 6, 8, 3, 4, 8, 3, 4, 3, 3, 4]","9.2
+48064563)( 1   xxxA
+64563)( 2
+/  xxA
+
+064563
+2  x
+
+264563 x
+
+cm 24576 x
+
+
+13456 6 480xx 
+
+
+64563)( 2
+/  xxA
+
+answer
+(3)
+[6]
+
+x
+432
+
+x
+A
+B C
+D
+6432x
+
+x + 8
+
+Mathematics P1/Wiskunde V1 15 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+x
+A
+B C
+D 3
+3
+3
+3
+4
+4 4
+4
+432
+x
+
+x
+A
+B C
+D
+x + 8
+4
+4 4
+4
+432
+x
+
+3
+3
+x
+432
+
+x
+A
+B C
+D
+x
+
+6432x
+
+x + 8
+3
+3
+3
+3
+ 432 432total area 2( 8)(3) 2 4 ( )xx xx
+             
+
+432 432total area 2(4) 6 ( ) 6 xxx
+            
+
+ 432 432total area 2( 8)(3) 2 4 ( )xx xx
+             
+
+ 432 432total area 4(4)(3) 2( )(3) 2 (4)xx xx
+             
+
+3
+4 4
+
+Mathematics P1/Wiskunde V1 16 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",923.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,10.0,10.1.1,2.0,[2],"10.1.1 P(A and B) = P(A) × P(B)
+
+4
+3
+3
+1
+
+4
+1
+
+
+4
+3
+3
+1
+
+4
+1
+(2)",70.0,1.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,10.0,10.1.2,2.0,"[2, 2]","10.1.2 P(A or B) = P(A) + P(B) – P(A and B)
+=
+4
+1
+4
+3
+3
+1 
+=
+6
+5
+
+OR/OF
+
+P(A or B) =
+1 1 1 5
+12 4 2 6  
+
+ substitution
+
+ answer
+(2)
+OR/OF
+
+ substitution
+
+ answer
+(2)",174.0,2.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,10.0,10.2.1,3.0,[3],"10.2.1
+
+ branch 1 with probabilities
+
+ branch 2 with probabilities
+
+ branch 3 with probabilities
+
+(3)",104.0,3.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,10.0,10.2.2,3.0,[3],"10.2.2 P(NOT below 0o)
+= P(S; NOT below 0o) + P(NS ; NOT below 0o)
+= 0,05 × 0,28 + 0,95 × 0,65
+= 0,6315
+
+ value of
+P(S; NOT below 0o)
+ value of
+P(NS ; NOT below 0o)
+ answer
+(3)",179.0,4.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,10.0,10.3.1,1.0,[1],"10.3.1 n(S) =
+!10 
+!10 (1)
+
+S
+No S
+0,05
+0,95
+B
+Not B
+B
+Not B
+0,72
+0,28
+0,35
+0,65
+A B
+1
+12
+
+1
+4
+1
+2
+
+Mathematics P1/Wiskunde V1 17 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou",229.0,5.0,ok
+2023_nov_p1_memo_maths,2023,P1,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P1_memo.txt,good,10.0,10.3.2,15.0,"[4, 4, 15]","10.3.2 4 Options;
+2 ×8 ×7 × 6 ×5 ×4 ×1 ×3 ×2 ×1 = 80 640
+8 ×2 ×7 × 6 ×5 ×4 ×3 ×1 ×2 ×1 = 80 640
+8 ×7 ×2 × 6 ×5 ×4 ×3 ×1 ×1 ×1 = 80 640
+8 ×7 × 6 ×2 ×5 ×4 ×3 ×2 ×1 ×1 = 80 640
+
+Total number of possibilities = 322 560
+
+P(5 learners in between) =
+45
+4
+!10
+560322 
+
+OR/OF
+
+2 ×8 ×7 × 6 ×5 ×4 ×1 ×3 ×2 ×1
+4 possible starting positions
+560322)1!82(4 
+
+8(8!) = 322 560
+P(5 learners in between) =
+45
+4
+!10
+560322 
+
+
+(2 8!)
+
+4(2 × 8!) or 322 560
+
+
+322 560
+n(S) (4)
+
+OR/OF
+
+
+(2 8!)
+
+4(2 × 8!) or 322 560
+
+
+322 560
+n(S)
+(4)
+[15]
+
+TOTAL/TOTAAL: 150",550.0,6.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.1,,[],1.1,3.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.2,,[],1.2,3.0,2.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.3,,[],1.3,3.0,3.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.4,,[],1.4,3.0,4.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.5,,[],"1.5
+
+Determine the equation of the least squares regression line for the data.
+
+If a truck driver travelled 550 km, predict the amount of time (in minutes) that he
+should rest before continuing his journey.
+
+Write down the correlation coefficient for the data.
+Interpret your answer to QUESTION 1.3.
+
+At each stop, the truck driver spent money buying food and other refreshments. The
+amount spent (in rands) is given in the table below.
+
+pe T= P= [= [= [° [Do",459.0,5.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.5.1,,[],1.5.1 Calculate the mean amount of money he spent at each stop.,63.0,6.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.5.2,,[],1.5.2 Calculate the standard deviation for the data.,52.0,7.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.5.3,12.0,"[3, 2, 2, 12]","1.5.3 At how many stops did the driver spend an amount that was less than one
+
+standard deviation below the mean?
+
+Copyright reserved Please turn over
+
+(3)
+
+(2)
+@)
+q)
+
+Q)
+()
+
+(2)
+[12]
+
+Mathematics/P2 4 DBE/November 2023
+
+NSC",224.0,8.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.1,,[],2.1,3.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.2,,[],2.2,3.0,2.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.3,,[],2.3,3.0,3.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.4,3.0,"[4, 3]","2.4
+
+NUMBER OF GLASSES OF NUMBER OF STAFF
+WATER DRANK PER DAY MEMBERS
+
+Complete the cumulative frequency column provided in the table in the ANSWER
+BOOK.
+
+How many staff members were interviewed?
+How many staff members drank fewer than 6 glasses of water during a school day?
+
+The staff committee observed that k teachers were absent on the day of the
+interviews. It was found that half of these k teachers drank from 0 to fewer than
+2 (that is O<x<2) glasses of water per day, while the remainder of them drank
+from 4 to fewer than 6 (that is 4<x<6) glasses of water per day. When these k
+teachers are included in the data, the estimated mean is 4 glasses of water per staff
+member per day.
+
+How many teachers were absent on the day of the interviews?
+
+Copyright reserved Please turn over
+
+2)
+a)
+()
+
+(4)
+[3]
+
+Mathematics/P2 5 DBE/November 2023
+NSC",848.0,4.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.1,2.0,[2],3.1 Calculate the length of SL. Leave your answer in surd form. (2),67.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.2,2.0,[2],3.2 Calculate the gradient of SN. (2),37.0,2.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.3,2.0,[2],"3.3 Calculate the size of @, the angle of inclination of SN. (2)",64.0,3.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.4,3.0,[3],3.4 Calculate the size of LNS. (3),34.0,4.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.5,,[],"3.5 Determine the equation of the line which passes through L and is parallel to SN.
+
+Write your answer in the form y=mxte. GB)",127.0,5.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.6,,[],3.6 Calculate the area of ALSN. G),34.0,6.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.7,,[],"3.7 Calculate the coordinates of point P, which is equidistant from L, S and N. 6))",83.0,7.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.8,20.0,"[2, 20]","3.8 Calculate the size of LPS. (2)
+
+[20]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 6 DBE/November 2023
+NSC",117.0,8.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.1,2.0,[2],"4.1 Given that D(p ;-2) lies on the smaller circle, show that p= 4. (2)",71.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.2,4.0,[4],"4.2 E(6 ; 2) is the midpoint of DF. Determine the coordinates of F. Q)
+43 Determine the equation of the common tangent, DF, in the form y=mx+tc. (4)
+44 Calculate the value of t. Show ALL working. @G)",199.0,2.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.5,4.0,[4],4.5 Determine the equation of the larger circle in the form ax’ +by’ +ext+dy+e=0. (4),85.0,3.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.6,,[],"4.6 The smaller circle must be translated by & units along the x-axis to touch the larger
+
+circle internally. Calculate the possible values of k. an
+
+Copyright reserved Please turn over
+
+Mathematics/P2 7 DBE/November 2023
+NSC",225.0,4.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1,,[],"5.1 Given: sinB= ; , where f£ € (90° ; 270°)
+
+Without using a calculator, determine each of the following:",106.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1.1,,[],5.1.1 cos B G3),15.0,2.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1.2,,[],5.1.2 sin 2p QB),16.0,3.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.13,,[],"5.13 cos(450°— #) 3)
+. cos’ x +sin? x.cos” x",44.0,4.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.2,,[],"5.2 Given; —————_
+1+sinx
+cos’ x+sin’ x.cos” x .",47.0,5.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.2.1,4.0,[4],"5.2.1 Prove that —————-—_ = 1-sinx 4
+1+sinx (4)",47.0,6.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.2.2,2.0,[2],"5.2.2 For what value(s) of x in the interval x €[0° ; 360°] is
+cos’ x+sin? x.cos” x
+l+sinx undefined? (2)",105.0,7.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.2.3,2.0,[2],"5.2.3 Write down the minimum value of the function defined by
+_ cos’ x+sin” x.cos” x
+l+sinx (2)",95.0,8.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.3,,[],5.3 Given: cos(A —B) = cosAcosB + sinAsinB,42.0,9.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.3.1,3.0,[3],5.3.1 Use the above identity to deduce that sin(A — B) = sinAcosB — cosAsinB (3),80.0,10.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.3.2,5.0,[5],"5.3.2 Hence, or otherwise, determine the general solution of the equation
+sin 48° cos x — cos 48° sin x = cos 2x (5)
+sin3x+sin",126.0,11.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.4,6.0,[6],"5.4 Simplify — to a single trigonometric ratio.
+cos2x+1 (6)
+
+[31]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 , 8 DBE/November 2023
+NSC",144.0,12.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.1,,[],6.1 Write down the period of f qd),34.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.2,2.0,[2],6.2 Determine the range of g in the interval x € [0° ; 180°]. (2),65.0,2.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.3,,[],"6.3 Determine the values of x, in the interval x € [0° ; 180°], for which:",74.0,3.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.3.1,2.0,[2],6.3.1 f (x).g(x)>0 (2),22.0,4.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.3.2,2.0,[2],6.3.2 J (x)+150 (2),19.0,5.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.4,3.0,[3],"6.4 Another graph p is defined as p(x) =—f (x). D(k;~-1) lies on p. Determine the
+
+value(s) of & in the interval x € [0° ; 180°]. (3)",133.0,6.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.5,12.0,"[2, 12]","6.5 Graph h is obtained when g is translated 45° to the left. Determine the equation
+
+of h. Write your answer in its simplest form. (2)
+
+[12]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 9 DBE/November 2023
+NSC",218.0,7.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,7.0,,7.0,"[2, 7]","QUESTION 7
+
+In the diagram, S, T and K lie in the same horizontal plane. RS is a vertical tower. The
+
+angle of depression from R to K is £. TSK = a, TS = p metres and the area of
+ASTK is g m2.
+
+T
+TA Determine the length of SK in terms of p, q and a. (2)
+72 Showthat RS=224 Q)
+
+psina
+73 Calculate the size of a if a<90° and RS=70m, p=80m, qg=2500 m? and
+
+B = 42°, @)
+[7]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 10 DBE/November 2023
+
+NSC",448.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.1,5.0,[5],"8.1 In the diagram, O is the centre of the circle.
+K
+P
+T
+
+Use the diagram above to prove the theorem which states that the angle subtended by
+a chord at the centre of the circle is equal to twice the angle subtended by the same
+chord at the circumference, that is, prove that TOP=2TKP. (5)",289.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.2,5.0,[5],"8.2 In the diagram, O is the centre of the circle and ABCD is a cyclic quadrilateral.
+OB and OD are drawn.
+
+A
+
+If 0, =4x+100° and C=x+34° , calculate, giving reasons, the size of x. (5)
+
+Copyright reserved Please turn over
+
+Mathematics/P2 ll DBE/November 2023
+NSC",263.0,2.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.3,,[],"8.3 In the diagram, O is the centre of the larger circle. OB is a diameter of the smaller
+circle. Chord AB of the larger circle intersects the smaller circle at M and B.
+
+A B",174.0,3.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.3.1,2.0,[2],8.3.1 Write down the size of OMB. Provide a reason. (2),55.0,4.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.3.2,16.0,[16],"8.3.2 If AB=~7300 units and OM=5 units, calculate, giving reasons, the
+length of OB. 4)
+[16]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 12 DBE/November 2023
+NSC",170.0,5.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.1,3.0,[3],"9.1 Calculate, with reasons, the length of FB. (3)",50.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.2,3.0,[3],"9.2 Prove, with reasons, that AEDF ||| AEAB. (3)",48.0,2.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.3,6.0,[6],"9.3 Calculate, with reasons, the length of FC. (6)
+
+19]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 13 DBE/November 2023
+NSC",133.0,3.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.1,,[],"10.1 §,=8, 6)",13.0,1.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.2,4.0,[4],10.2 SMRC isa cyclic quadrilateral (4),38.0,2.0,ok
+2023_nov_p2_exam_maths,2023,P2,exam,data\processed\ocr\text\2023_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.3,15.0,"[6, 15]","10.3 RP is a tangent to the circle passing through P, S and A at P (6)
+[15]
+
+TOTAL: 150
+
+Copyright reserved
+
+Mathematics/P2 DBE/November 2023
+NSC
+INFORMATION SHEET
+xe —b+vb? —4ac
+2a
+A=P(l+ni) A= P(-ni) A= P(1-i)"" A=P(+i)""
+T,=a+(n-l)d S, =F bat(n-dd]
+
+~A
+i]
+
+T =ar™ Ss _ alr” -1) sr#l 4s -ler<l
+1
+
+"" n
+
+pa 2+i""=1
+
+t
+
+fa+h)-f@
+h
+
+d= (x, -x,) +e -yy
+
+S'(x)= lim
+hoo
+
+y=mx+e
+
+(x -a) +(y-bf =r?
+a _ 5b _¢
+
+snA sinB sinC
+
+a =b* +c? —2be.cos A
+
+In AABC:
+
+area AABC = 5a. sinC
+sin (@ + B) =sina.cos § +cosa.sin B
+cos(@ + £)=cosa.cos f —sina.sin B
+
+cos’ a —sin? @
+
+cos2@ =41-2sin? a
+
+2cos’ a—-1
+*
+x _ i=l
+n
+
+n(A)
+P(A)=——
+
+nS)
+ypratbhx
+
+Copyright reserved
+
+y-y, =m(x-%,)
+
+l-r
+
+MX Vit Vo
+;
+
+ea"")
+
+m= 22 m=tan0
+XX
+
+sin(a— £) =sina.cos B—cosa.sin B
+
+cos (a — f)=cosa.cos B+ sina.sin 8
+
+sin 2a = 2sin a.cos a
+
+YG, -¥""
+o-
+n
+
+P(A ot B) = P(A) + P(B) — P(A and B)
+
+p= UY)
+Si@-xY",861.0,3.0,ok
+2023_nov_p2_memo_maths,2023,P2,memo,data\processed\extracted_text\NSC_Mathematics_2023_Nov_P2_memo.txt,good,,,,,"Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+MARKS/PUNTE: 150
+
+These marking guidelines consist of 23 pages./
+Hierdie nasienriglyne bestaan uit 23 bladsye.
+
+MATHEMATICS P2/WISKUNDE V2
+
+NOVEMBER 2023
+
+MARKING GUIDELINES/NASIENRIGLYNE
+GRADE 12/GRAAD 12
+
+NATIONAL
+SENIOR CERTIFICATE/
+NASIONALE
+SENIOR SERTIFIKAAT
+
+Mathematics P2/Wiskunde V2 2 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+NOTE:
+ If a candidate answers a QUESTION TWICE, only mark the FIRST attempt.
+ If a candidate has crossed out an attempt of a QUESTION and not redone the QUESTION, mark
+the crossed out version.
+ Consistent accuracy applies in ALL aspects of the Marking Guidelines. Stop marking at the
+second calculation error.
+ Assuming answers/values in order to solve a problem is NOT acceptable.
+
+NOTA:
+ As 'n kandidaat 'n vraag TWEE KEER beantwoord, merk slegs die EERSTE poging.
+ As 'n kandidaat 'n antwoord van 'n vraag doodtrek en nie oordoen nie, merk die
+doodgetrekte poging.
+ Volgehoue akkuraatheid word in ALLE aspekte van die Nasienriglyne toegepas. Hou op
+nasien by die tweede berekeningsfout.
+ Aanvaar van antwoorde/waardes om 'n probleem op te los, word NIE toegelaat nie.
+
+GEOMETRY
+S
+A mark for a correct statement
+(A statement mark is independent of a reason)
+'n Punt vir 'n korrekte bewering
+('n Punt vir 'n bewering is onafhanklik van die rede)
+R
+A mark for the correct reason
+(A reason mark may only be awarded if the statement is correct)
+'n Punt vir 'n korrekte rede
+('n Punt word slegs vir die rede toegeken as die bewering korrek is)
+S/R
+Award a mark if statement AND reason are both correct
+Ken 'n punt toe as die bewering EN rede beide korrek is
+
+Mathematics P2/Wiskunde V2 3 DBE/November 2023
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 1
+
+1.1 a = –23,846…
+b = 0,227…
+ˆ 23,85 0,23yx 
+",,,no_question_markers
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.2,,[],1.1.2 2x? +1=4x (correct to TWO decimal places),47.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.3,,[],1.1.3 x? -2x-3>0,16.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.4,,[],"1.1.4 2% —-2*? -32 =0
+
+115 V-2x4+4-x=2",38.0,3.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.2,,[],"1.2 Solve for x and y simultaneously:
+
+2x+y=3
+
+y +xy=2",54.0,4.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.3,,[],"1.3 Consider the product f + i 1+ i et we
+2 3 4
+
+Each factor in the product is of the form ( + +) for n>2.
+n
+
+Determine ALL the values of » for which the product will be an integer value.",187.0,5.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1,,[],"2.1 The first term of an arithmetic series is 7. The common difference of this series is
+
+5 and the series contains 20 terms.",125.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.1,,[],2.1.1 Calculate the sum of this series.,39.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.2,,[],"2.1.2 The original arithmetic series is extended to 75 terms. The sum of these
+75 terms is 14 400. Using sigma notation, write down an equation for the
+sum of the terms added to the original series.",198.0,3.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2,,[],2.2 The sequence of the first differences of a quadratic pattern is: 1;3;5;...,78.0,4.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2.1,,[],"2.2.1 If Ty, of this quadratic pattern is 9 632, calculate the value of 7,,.",76.0,5.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2.2,14.0,"[2, 4, 4, 5, 4, 6, 3, 4, 14]","2.2.2 If it is further given that the third term of the quadratic pattern is 32,
+determine the general term, 7, of the quadratic pattern.
+
+Copyright reserved Please turn over
+
+(2).
+(4)
+(4)
+(5)
+(4)
+
+(6)
+
+(3)
+
+[27]
+
+2)
+
+(4)
+
+G3)
+
+65)
+[14]
+
+Mathematics/P 1 4 DBE/November 2024
+NSC Confidential",290.0,6.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.1,2.0,[2],"3.1 Write down the radius of the 3"" circle. (2)",47.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.2,4.0,[4],3.2 Calculate the sum of the areas of the first 10 circles. (4),63.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.3,10.0,"[4, 10]","3.3 Which circle has a diameter of = cm?
+128 (4)
+[10]",53.0,3.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.1,9.0,"[2, 3, 9]","4.1 Calculate the value of a. (2)
+42 Write down the range of f. qd)
+43 Sketch the graph of f Clearly show the intercepts with the axes and asymptotes,
+
+if any. (3)
+
+44 It is further given that C isapointon f at y= >.
+
+Determine the coordinates of C!, the image of C, when C is reflected about the line
+y=x. GB)
+[9]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 5 DBE/November 2024
+NSC Confidential",404.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.1,1.0,[1],5.1 Write down the value of p. (1),34.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.2,2.0,[2],5.2 Determine the equation of the horizontal asymptote of f (2),63.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.3,2.0,[2],5.3 Calculate the value of a. (2),33.0,3.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.4,,[],5.4 For which values of x is f(x) >0? G3),41.0,4.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.5,10.0,[10],"5.5 Graph f undergoes a transformation to h where:
+
+e The domain and range of / are the same as that of f
+
+e A'(x), the derivative of h, is negative on its domain
+
+Describe a possible transformation that f could have undergone to result in A. Q)
+
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 6 DBE/November 2024
+NSC Confidential",341.0,5.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.1,,[],"6.1 Calculate the coordinates of B, the turning point of f @G)",62.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.2,3.0,[3],6.2 Show that the equation of the line through A and C is given by g(x) =2x+2. (3),82.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.3,4.0,[4],6.3 Calculate the maximum length of EH for f > g. (4),53.0,3.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.4,15.0,"[5, 15]","6.4 Given: k(x) = f(x+m)=—x? —2mx—m? +4x+4m+5
+Determine the value of m such that g is a tangent to &. (5)
+
+[15]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 7 DBE/November 2024
+
+NSC Confidential",202.0,4.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,7.0,7.3.2,,[],"7.3.2 Tshepo paid R22 300,98 (his monthly instalment and an additional
+R20 000) on 1 March 2024 into the loan account. He continues to pay the
+original monthly instalment thereafter. How many months earlier will
+Tshepo repay the loan?",234.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.1,,[],"8.1 Determine:
+d 2",18.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.1.1,,[],"8.1.1 — [Bx - 5x
+4.51""
+Wont 2 yr",32.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.1.2,,[],8.1.2 8 '@) if 8) =a x,22.0,3.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.2,,[],8.2 Determine the equation of the tangent to f(x)=x'?—4x°+2x+3 at x=2.,70.0,4.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.3,,[],8.3 Given: f(x) =—6x?,21.0,5.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.3.1,,[],8.3.1 Determine f’(x) from first principles.,44.0,6.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.3.2,,[],"8.3.2 Write down how you will restrict the domain of f such that f, the
+
+inverse of f is a function.",100.0,7.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.3.3,18.0,"[2, 14, 2, 4, 6, 1, 18]","8.3.3 Determine the equation of f' for f(x) <0. Write your answer in the
+form y=...
+
+Copyright reserved Please turn over
+
+G3)
+
+(2)
+
+2)
+
+)
+[14]
+
+(2)
+
+(4)
+
+GB)
+
+(6)
+
+(1)
+
+G3)
+[18]
+
+Mathematics/P1 8 DBE/November 2024
+NSC Confidential",230.0,8.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.2,2.0,[2],"9.2 Write down the x-intercepts of f’, the derivative of (2)",60.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.3,3.0,"[2, 2, 3]","9.3 For which values of x will f be concave up? (2)
+
+94 Determine the value of & for which y= /(x)+k will have THREE positive
+x-intercepts. (2)
+
+[3]",148.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.1,3.0,[3],10.1 Calculate the maximum speed that the cyclist reached on this ride. (3),75.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.2,8.0,"[5, 8]","10.2 Calculate the distance between town P and town T. (5)
+[8]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 9 DBE/November 2024
+
+NSC Confidential",153.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.2,,[],"11.2 Calculate the probability that a learner, chosen at random, will sit for examinations in
+at least TWO of the subjects.",123.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.3,,[],"11.3 Determine if the events: sitting for examinations in Mathematics and sitting for
+examinations in Tourism are independent. Support your answer with the necessary
+calculations.",179.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,12.0,12.1,,[],"12.1 Determine how many different codes can be formed if letters and digits may be
+repeated.",92.0,1.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,12.0,12.2,,[],"12.2 Determine how many different codes can be formed if:
+e = The letters D, F, I, Q, U and V may NOT be used
+e The code may NOT start witha W ora Z
+e Letters or digits may NOT be repeated
+e = The code ends with an odd digit",224.0,2.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,12.0,12.3,,[],12.3 The company wishes to increase the number of 4-character codes formed in,77.0,3.0,ok
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,12.0,,4.0,"[3, 2, 4, 4, 3, 4]","QUESTION 12.2 by allowing the letters D, F, I, Q, U and V to be used.
+Calculate the percentage increase in the number of different codes that can now be
+formed.
+
+TOTAL:
+
+Copyright reserved
+
+(3)
+
+(2)
+
+(4)
+19]
+
+Q)
+
+(4)
+
+2)
+[3]
+
+150
+
+Mathematics/P1 DBE/November 2024
+NSC Confidential
+INFORMATION SHEET
+xe —bt Vb’ —4ac
+2a
+A= P(1+ni) A=P(\-ni) A= P(1-i)"" A= P(1+i)""
+T,=a4+(n-l)d 8, =F fa+(n—na]
+T, = ar"" S _ alr” -1) sre#l S,= a 3 -l<r<l
+, r-1 Fr
+posi 1 pa xia G+)""
+i i
+_ f(xth)- f(x)
+“x)= 1
+POs eh
++ +
+d=, -%)""+0,-9)"" m(A%,%*2)
+2 2
+y=mx+e y-y, =m(x-x,) m= 221 m=tané
+x —%
+
+(x-a) +(y-bY =”?
+5
+sinB sinC
+
+a c
+
+In AABC: —
+sin A
+
+a =b’ +c? —2be.cos A
+
+area AABC = 5 abesin C
+
+sin(a + 8) =sina.cos f + cosa.sin 2
+cos(a +) =cosa.cos f -sina.sin B
+cos’ @—sin? a
+
+cos2a =41-2sin’ a
+
+2cos? a ~1
+
+Copyright reserved
+
+sin(a — 8)=sina.cos 8 -cosa.sin B
+
+cos(a@~ B)=cosa.cos 8 +sina.sin B
+
+sin 2a = 2sin @.cos @
+
+¥ (x, - 3)
+= ial
+
+n
+
+o
+
+P(A ot B) = P(4) + P(B) — P(A and B)
+
+> @-xky-y)
+
+YS e- xP",978.0,1.0,ok
+2024_nov_p1_memo_maths,2024,P1,memo,data\processed\extracted_text\NSC_Mathematics_2024_Nov_P1_memo.txt,good,1.0,1.1.1,2.0,[2],"1.1.1
+0)3( =−xx
+0=x
+or
+3=x
+✓
+0=x
+✓
+3=x (2)",42.0,1.0,ok
+2024_nov_p1_memo_maths,2024,P1,memo,data\processed\extracted_text\NSC_Mathematics_2024_Nov_P1_memo.txt,good,1.0,1.1.2,4.0,"[4, 2, 1, 2, 4]","1.1.2
+0142 2 =+− xx
+( )
+2
+( 4) 4 4(2)(1)
+2(2)
+x
+− −  − −
+=
+
+71,1=x
+or
+29,0=x
+✓ standard form
+
+✓ correct substitution
+in correct formula
+✓ answer
+✓ answer (4)",158.0,2.0,ok
+2024_nov_p1_memo_maths,2024,P1,memo,data\processed\extracted_text\NSC_Mathematics_2024_Nov_P1_memo.txt,good,1.0,1.1.3,4.0,[4],"1.1.3
+0322 −− xx
+0)1)(3( +− xx
+
+CV: x = 3 or x = – 1
+
+x < – 1 or x > 3 OR/OF
+( ; 1) (3 ; )x − −  
+
+✓factors
+✓ critical values
+
+✓✓ answer (4)",146.0,3.0,ok
+2024_nov_p1_memo_maths,2024,P1,memo,data\processed\extracted_text\NSC_Mathematics_2024_Nov_P1_memo.txt,good,1.0,1.1.4,5.0,[5],"1.1.4
+03222 22 =−− +xx
+0322.22 22 =−− xx
+
+0)42)(82( =+− xx
+
+82 =x
+or
+42 −x
+322 =x
+no solution
+3=x
+
+✓use of exponential law
+✓factors
+✓
+82 =x
+✓
+42 −x
+✓ answer (5)",162.0,4.0,ok
+2024_nov_p1_memo_maths,2024,P1,memo,data\processed\extracted_text\NSC_Mathematics_2024_Nov_P1_memo.txt,good,1.0,1.1.5,4.0,[4],"1.1.5
+242 =−+− xx
+xx +=+− 242
+
+( ) ( )
+22
+2 4 2xx− + = +
+
+24442 xxx ++=+−
+
+062 =+ xx
+
+0)6( =+xx
+
+0=x
+or
+6−x
+
+✓ isolating the root
+
+✓ squaring both sides
+
+✓ standard form
+
+✓ answers with selection
+(4)
+
+– 1 3
+Answer only:
+4
+4
+Answer only:
+3
+4
+Answer only:
+1
+5
+
+Mathematics P1/Wiskunde V1 3 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",423.0,5.0,ok
+2024_nov_p1_memo_maths,2024,P1,memo,data\processed\extracted_text\NSC_Mathematics_2024_Nov_P1_memo.txt,good,1.0,1.2,5.0,"[1, 2, 1, 2, 1, 2, 1, 2, 5, 5]","1.2
+xy 23−= … (1)
+22 =+ xyy
+… (2)
+Subs (1) into (2):
+2)23()23( 2 =−+− xxx
+
+02329124 22 =−+−+− xxxx
+
+0792 2 =+− xx
+
+0)1)(72( =−− xx
+
+2
+7=x
+or
+1=x
+4−=y
+
+1=y
+
+OR/OF
+2
+3 yx −=
+… (1)
+22 =+ xyy
+… (2)
+Subs (1) into (2):
+2
+2
+32 =
+
+
+
+ −+ yyy
+
+0432 22 =−−+ yyy
+
+0432 =−+ yy
+
+0)1)(4( =−+ yy
+
+4−=y
+or
+1=y
+2
+7=x
+or
+1=x
+✓ eq 1
+
+✓ substitution
+
+✓ standard form
+
+✓ both x-values
+
+✓ both y-values (5)
+
+OR/OF
+
+✓ eq 1
+
+✓ substitution
+
+✓ standard form
+
+✓ both y-values
+
+✓ both x-values (5)",475.0,6.0,ok
+2024_nov_p1_memo_maths,2024,P1,memo,data\processed\extracted_text\NSC_Mathematics_2024_Nov_P1_memo.txt,good,1.0,1.3,8.0,"[3, 3, 2, 4, 4, 3, 1, 2, 5, 14, 2, 2, 4, 4, 4, 10, 2, 1, 1, 3, 3, 9, 1, 2, 2, 3, 2, 2, 2, 2, 10, 4, 3, 3, 2, 2, 4, 4, 2, 5, 4, 1, 1, 1, 5, 5, 15, 3, 1, 2, 2, 2, 7, 7, 7, 14, 2, 4, 2, 4, 3, 5, 5, 1, 1, 3, 18, 2, 2, 2, 2, 8, 18, 3, 3, 6, 6, 6, 6, 5, 8, 3, 2, 4, 9, 2, 4, 2, 8]","1.3 Product =
+3 4 5 1 1 ...
+2 3 4 1 2
+n n n
+nn
+++     =
+−
+
+The product will be an integer value when n + 1 is
+divisible by 2 i.e.
+ 3;5;7;...n
+
+Therefore, n must be an odd number, greater than 2.
+
+OR/OF
+For n = 2 the product is
+3
+2
+For n = 3 the product is
+34 2
+23
+   =    
+For n = 4 the product is
+3 4 5 5
+2 3 4 2
+    =      
+For n = 5 the product is
+3 4 5 6 3
+2 3 4 5
+     =        
+ 3;5;7;...n
+
+Therefore, n must be an odd number, greater than 2.
+
+✓
+n
+n 1...
+4
+5
+3
+4
+2
+3 +
+
+✓ statement
+1
+2
+n+
+
+
+✓ n is odd for n > 2 (3)
+
+OR/OF
+
+✓ generation of the four
+products
+
+✓ identifying the pattern
+when n is odd
+
+✓ n is odd for n > 2 (3)
+[27]
+
+Mathematics P1/Wiskunde V1 4 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 2
+
+2.1.1
+])1(2[
+2
+dnanS n −+=
+)]5)(120()7(2[
+2
+20
+20 −+=S
+
+0901S20 =
+
+✓ substitution
+
+✓ answer (2)
+2.1.2
+)5)(1(7 −+= nTn
+25 += nTn
+
+310130901400142075 =−=− SS
+
+75 20
+11
+(5 2) (5 2) 13 310
+nn
+nn
+==
++ − + =
+
+31013)25(
+75
+21
+=+
+=n
+n
+
+OR/OF
+21 22 23 75 ... 14 400 1090T T T T+ + + + = −
+
+107 + 112 + 117 + …. = 13 310
+102 5nTn=+
+
+55
+1
+(5 102) 13 310n + =
+
+✓ general term
+
+✓
+2075 SS −
+
+✓
+
+=
+75
+21n ✓ = 13 310
+(4)
+OR/OF
+✓
+2075 SS −
+
+✓ general term
+✓
+55
+1n=
+ ✓ = 13 310
+(4)
+2.2.1
+12 −= nTn
+98th first difference = 2(98) – 1
+= 195
+
+Quadratic:
+1956329T98 −=
+
+4379=
+
+✓answer
+
+✓method
+✓answer (3)
+2.2.2 28 ; 29 ; 32
+
+1 3 5 7
+
+2 2 2
+
+3a + b = 1 9a + 3b + c = 32
+2a = 2 3(1) + b = 1
+32)3(2)3(1 2
+3 =+−= cT
+a = 1 b = – 2 c = 29
+OR/OF
+1 – 2 + c = 28
+c = 29
+2922 +−= nnTn
+
+✓ second difference
+
+✓ a = 1
+✓ b = – 2
+✓ method to calculate c
+
+✓ c = 29 (5)
+[14]
+
+Mathematics P1/Wiskunde V1 5 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 3
+
+3.1 2nd circle:
+3
+2
+6 = cm
+
+3rd circle:
+5,1
+2
+3 = cm
+
+OR/OF
+3rd circle =
+2
+16 1,5
+2
+ =
+
+✓✓ radius 3rd circle (2)
+
+OR/OF
+✓✓ radius 3rd circle (2)
+3.2
+...;
+4
+9;9;36 
+36;
+4
+1 == ar
+
+1
+4
+1
+1
+4
+136
+10
+10
+−
+
+
+
+
+
+
+−
+
+
+
+
+=
+
+S
+
+80,15010 =S
+
+✓a
+✓ r
+
+✓ substitution
+
+✓ answer
+(4)
+3.3
+...
+2
+3;3;6
+1 3 3radius
+2 128 256
+== 
+
+1
+31 6
+256 2
+n−
+= 
+
+1
+11
+512 2
+n−
+=
+
+91
+11
+22
+n−
+   =      
+or/of
+1
+2
+11 log
+512
+n 
+
+−= 
+
+19n − =
+
+19n − =
+10n=
+
+10n=
+
+✓
+3
+256
+
+✓ equating to radius
+general term
+✓simplification
+
+✓ answer (4)
+
+Mathematics P1/Wiskunde V1 6 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+OR/OF
+
+12 ; 6 ; 3 ; …
+
+3diameter
+128
+=
+
+1
+31 12
+128 2
+n−
+= 
+
+1
+11
+512 2
+n−
+=
+
+91
+11
+22
+n−
+   =      
+or/of
+1
+2
+11 log
+512
+n 
+
+−= 
+
+19n − =
+
+19n − =
+10n=
+
+10n=
+
+OR/OF
+
+✓
+1
+112
+2
+n−
+
+
+✓ equating general term of
+diameter to
+3
+128
+✓simplification
+
+✓ answer (4)
+
+[10]
+
+Mathematics P1/Wiskunde V1 7 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 4
+
+4.1
+1)( −= xaxf
+1
+9
+5 2 −=− a
+
+9
+42 =a
+
+3
+2=a
+
+✓ substitution
+
+✓ answer (2)
+4.2
+1−y
+
+OR/OF
+( )− ;1y
+
+✓ answer
+(1)
+
+✓ answer
+(1)
+4.3
+x
+y
+−1
+0 B
+
+✓(0 ; 0)
+✓ asymptote
+✓decreasing shape
+(3)
+4.4
+19 2 1
+83
+x
+=−
+
+x
+
+
+
+
+=
+3
+2
+8
+27
+
+x−
+
+
+
+
+=
+
+
+
+
+2
+3
+2
+3
+3
+
+3−= x
+
+19C 3 ;
+8
+− 
+
+
+
+
+
+ − 3;
+8
+19C/
+
+✓substitution
+
+✓ answer
+
+✓ answer (3)
+[9]
+
+Mathematics P1/Wiskunde V1 8 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 5
+
+5.1
+1−=p ✓
+1−=p (1)
+5.2
+3−= xy
+31−=y
+
+2−=y
+
+✓ substitution
+✓ answer (2)
+5.3
+12
+01
+a=−
+−
+1
+3
+−
+= a
+
+3−=a
+
+✓ substitute (0 ; 1)
+
+✓ answer (2)
+5.4
+02
+1
+3 =−
+−
+−
+x
+223 −=− x
+
+12 −=x
+
+2
+1−= x
+
+
+
+
+
+− 1;
+2
+1x
+OR/OF
+1
+2
+1 − x
+
+✓x-intercept
+
+✓✓ answer (3)
+5.5 f is reflected in the y-axis, then translated 2 units to
+the right
+
+OR/OF
+
+f is reflected in the x-axis, then translated 4 units
+down
+
+OR/OF
+
+f is reflected about the line x = 1
+
+OR/OF
+
+f is reflected about the line y = – 2
+
+✓ reflection in y-axis
+✓ translation 2 units right
+(2)
+
+OR/OF
+
+✓ reflection in x-axis
+✓ translation 4 units down
+(2)
+OR/OF
+
+✓✓ reflection about line
+
+1x= (2)
+
+OR/OF
+
+✓✓ reflection about line
+
+2y =− (2)
+
+[10]
+
+Answer only:
+2
+2
+
+Mathematics P1/Wiskunde V1 9 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+QUESTION/VRAAG 6
+
+6.1
+2
+)1(2
+4 =
+−
+−=x OR/OF
+042)(/ =+−= xxf
+x = 2
+5)2(4)2( 2 ++−=y
+
+= 9
+
+( )9;2B
+
+✓ method for x
+✓ value of x
+
+✓ value for y
+
+(3)
+6.2
+0542 =−− xx
+0)1)(5( =+− xx
+
+5=x
+or
+1−=x
+( )0;1A −
+
+Equation of AC:
+1
+0
+13
+08
++
+−=
++
+−
+x
+y
+OR/OF
+80 2
+31
+m −==
++
+yx 488 =+
+
+( )120 +=− xy
+yx =+ 22
+
+22yx=+
+
+✓
+( )0;1A −
+
+✓ method for
+gradient
+
+✓ substitute point A
+or C into equation
+of a straight line
+(3)
+6.3
+( ) 2254EH 2 +−++−= xxx
+32EH 2 ++−= xx
+
+Max EH at:
+022 =+− x
+OR/OF
+)1(2
+)2(
+2 −
+−−=−=
+a
+bx
+
+1=x
+1=x
+
+Max length of EH
+3)1(2)1( 2 ++−=
+= 4
+✓ difference
+✓
+32EH 2 ++−= xx
+
+✓ x - value
+
+✓ length (4)
+6.4
+( ) ( )mxfxk +=
+
+5442 22 +++−−−= mxmmxx
+
+/ ( ) 2 2 4k x x m=− − +
+
+( ) 2/ =xk
+
+2422 =+−− mx
+
+222 −=− mx
+
+mx −= 1
+
+)1()1( mgmk −=−
+
+2)1(254)1(4)1(2)1( 22 +−=++−+−−−−− mmmmmmm
+
+22254442221 222 +−=++−+−+−−+− mmmmmmmm
+
+042 =−− m
+
+2−= m
+
+✓
+( )
+/kx
+✓
+( ) 2/ =xk
+
+✓
+mx −= 1
+
+✓ substitution
+
+✓ answer
+(5)
+Answer only:
+1
+4
+Answer only:
+0
+5
+
+Mathematics P1/Wiskunde V1 10 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+OR/OF
+
+( ) ( ) )(xgmxfxk =+=
+
+225442 22 +=+++−−− xmxmmxx
+
+( ) 34220 22 −−+−+= mmxmx
+
+)34)(1(4)22( 22 −−−−= mmm
+
+12164484 22 ++−+−= mmmm
+
+0168 =+= m
+
+2−=m
+
+OR/OF
+2( ) 4 5f x x x=− + +
+
+/ ( ) 2 4 2f x x =− + =
+
+22x− =−
+
+1x=
+
+2(1) (1) 4(1) 5f =− + +
+
+8y=
+
+
+translate 2 units to the right
+2m =−
+
+OR/OF
+
+✓ equating
+✓ simplification
+
+✓ substitution into
+
+
+✓
+ = 0
+✓ answer
+(5)
+
+OR/OF
+
+✓
+/ ( ) 2fx =
+
+✓ x-value
+
+✓ y-value
+✓ 2 units to the right
+✓ answer
+(5)
+
+[15]
+
+Mathematics P1/Wiskunde V1 11 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 7
+
+7.1
+niPA )1( +=
+64
+6,85 000 1
+400
+R14 706,56
+A =+ 
+=
+
+✓ i, n
+✓ substitution into
+correct formula
+✓ answer
+(3)
+7.2
+(1 )A P in=−
+1 (1 4 )
+2
+P P i=−
+
+)41(
+2
+1 i−=
+
+8
+1=i
+
+%5,12= r
+
+OR/OF
+50%
+4
+r =
+
+12,5%r =
+
+✓substitution into
+correct formula
+
+✓ answer
+(2)
+
+OR/OF
+✓ method
+
+✓ answer
+(2)
+7.3.1 Already paid:
+80,058138R6098,3002 =
+
+Interest:
+138 058,80 – 100 000 = R 38 058,80
+
+✓ amount already paid
+
+✓ interest
+(2)
+
+Mathematics P1/Wiskunde V1 12 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+7.3.2 Balance after 2 years:
+( ) 
+i
+ixP
+n−
++−= 11
+
+1200
+5,13
+1200
+5,131198,3002
+36
+
+
+
+
+
+
+
+
+
+
+
+
+ +−
+=
+−
+P
+
+94,80467 R=
+
+R 67 804,94 – R20 000 = R 47 804,94
+
+( ) 
+i
+ixP
+n−
++−= 11
+
+1200
+5,13
+1200
+5,131198,3002
+94,80447 
+
+
+
+
+
+
+
+
+
+
+
+ +−
+=
+−n
+
+( )
+n−
+= 01125,1766,0
+
+n−=766,0log 01125,1
+
+n = 23,83
+
+12 months earlier
+
+OR/OF
+212
+1200
+5,131000100
+
+
+
+
+
+ +=A
+
+= R130 799,12
+
+1200
+5,13
+1
+1200
+5,13198,3002
+212
+
+
+
+
+
+
+
+
+−
+
+
+
+ +
+=
+
+F
+
+= R 62 993, 92
+
+Balance outstanding = A – F = 130 799,12 – 62 993,92
+= R67 805,20
+
+R 67 805,20 – R20 000 = R 47 805,20
+
+( ) 
+i
+ixP
+n−
++−= 11
+
+( )
+13,52 300,98 1 1 1200
+47 805, 20 13,5
+1200
+0, 766... 1, 01125
+n
+n
+−
+−
+ −+ =
+=
+
+1,01125log 0,766... n=−
+
+n = 23,80
+
+12 months’ earlier
+
+✓n= 36
+✓i
+✓ substitution into
+correct formula
+
+✓ answer
+✓ answer
+
+✓substitution into
+correct formula
+
+✓ answer in months
+(7)
+OR/OF
+
+✓n = 24
+✓i
+
+✓ substitution into
+both correct
+formulae
+
+✓ answer
+
+✓ answer
+
+✓ substitution into
+correct formula
+
+✓ answer in months (7)
+
+Mathematics P1/Wiskunde V1 13 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+OR/OF
+
+1200
+5,13
+1200
+5,131198,3002
+000100 
+
+
+
+
+
+
+
+
+
+
+
+ +−
+=
+−n
++
+24
+1200
+5,13100020
+−
+
+
+
+
+ +
+
+84 709,38 =
+8092 300,98 1 800
+0,135
+12
+n− − 
+8090, 4142 1
+800
+n−
+=− 
+
+809 0,5858
+800
+n−
+ =
+
+809
+800
+log 0,5858n 
+
+−=
+
+n = 47,80 months after starting payments
+
+
+12 months earlier
+
+OR/OF
+
+✓ i
+✓ n = 24
+✓= 100 000
+✓ substitution into
+correct P formula
+✓ substitution into
+correct A formula
+
+✓ simplification
+
+✓ answer in months
+(7)
+[14]
+
+Mathematics P1/Wiskunde V1 14 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 8
+
+8.1.1
+ 253 xx
+dx
+d −
+x103−=
+
+✓3
+✓– 10x
+(2)
+8.1.2
+3 7
+2
+2)( x
+x
+xg −=
+3
+7
+22)( xxxg −= −
+
+3
+4
+3
+74)( 3/ xxxg −−= −
+
+✓
+22 −x ✓
+3
+7
+x−
+
+✓
+34 −− x ✓
+3
+4
+3
+7 x−
+(4)
+8.2
+324)( 23 ++−= xxxxf
+283)( 2/ +−= xxxf
+
+( ) ( ) 22823)2(
+2/ +−== fm
+
+2−=m
+
+3)2(2)2(4)2()2( 23 ++−== fy
+
+1−=y
+
+( )221 −−=+ xy
+
+32 +−= xy
+
+✓
+2−=m
+
+✓
+1−=y
+
+✓ answer
+(3)
+8.3.1
+26)( xxf −=
+( ) ( )
+h
+xfhxfxf
+h
+−+=
+→0
+/ lim)(
+
+( )
+h
+xhx
+h
+22
+0
+66lim ++−=
+→
+
+2 2 2
+0
+6 12 6 6lim
+h
+x xh h x
+h→
+− − − +=
+
+h
+hxh
+h
+2
+0
+612lim −−=
+→
+
+( )
+0
+12 6lim
+h
+h x h
+h→
+−−=
+
+( )
+0
+lim 12 6
+h
+xh
+→
+= − −
+
+x12−=
+
+✓substitution
+
+✓
+22
+( ) 6 12 6f x h x xh h+ =− − −
+
+✓simplification
+
+✓common factor
+
+✓answer
+(5)
+
+Mathematics P1/Wiskunde V1 15 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+OR/OF
+
+26)( xxf −=
+
+22 6126)( hxhxhxf −−−=+
+
+2222 61266126)()( hxhxhxhxxfhxf −−=+−−−=−+
+
+( ) ( )
+h
+xfhxfxf
+h
+−+=
+→0
+/ lim)(
+
+h
+hxh
+h
+2
+0
+612lim −−=
+→
+
+( )
+0
+12 6lim
+h
+h x h
+h→
+−−=
+
+( )
+0
+lim 12 6
+h
+xh
+→
+= − −
+
+x12−=
+
+OR/OF
+
+✓
+22
+( ) 6 12 6f x h x xh h+ =− − −
+
+✓simplification
+
+✓substitution
+
+✓common factor
+
+✓answer
+(5)
+8.3.2
+0x
+
+OR/OF
+
+0x
+
+✓answer
+(1)
+
+✓answer
+(1)
+8.3.3
+26xy −=
+26yx −=
+
+xy
+6
+12 −=
+
+xy
+6
+1−=
+
+xy
+6
+1−−=
+;
+0x
+
+✓ swopping x and y
+
+✓
+xy
+6
+1−=
+
+✓ answer
+
+(3)
+[18]
+
+Mathematics P1/Wiskunde V1 16 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 9
+
+9.1
+2
+51  x ✓✓answer
+(2)
+9.2
+
+
+
+
+ 0;
+2
+5and)0;1( ✓
+1=x ✓
+2
+5=x
+(2)
+9.3
+2
+1
+2
+5 +
+
+4
+7=
+
+Concave up for
+4
+7x
+
+✓method
+
+✓answer
+
+(2)
+9.4
+89 −− k ✓✓answer
+(2)
+[8]
+
+QUESTION/VRAAG 10
+
+10.1
+0186 =+− t
+
+t618 =
+
+t=3
+s /
+27)3(18)3(3)3( 2 =+−=
+✓ = 0
+
+✓ value of t
+✓ answer
+(3)
+10.2
+0183 2 =+− tt
+0)6(3 =−− tt
+
+6or0 == tt
+
+32()s t at bt=+
+
+s /
+btatt 23)( 2 +=
+33 −=a
+and
+182 =b
+
+1−=a
+9=b
+
+32( ) 1 9s t t t=− +
+
+32(6) (6) 9(6)s =− +
+
+(6) 108s =
+
+✓ factors
+✓ values
+
+✓ a and b
+
+✓ substitution
+✓ answer
+(5)
+[8]
+
+Mathematics P1/Wiskunde V1 17 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou
+
+QUESTION/VRAAG 11
+
+11.1
+
+✓2
+
+✓3 ; 4 ; 5
+
+✓6 ; 9 ; 11
+
+(3)
+11.2 P(at least two subjects) =
+4 2 5 3 14 7 0,35
+40 40 20
++ + + === ✓ (4 + 2 + 5 + 3) or 14
+in numerator
+✓ 40 in denominator
+(2)
+11.3
+( ) ( )TPMP  =
+40
+16
+40
+22
+22,0
+50
+11 ==
+
+( ) 175,0
+40
+7T and MP ==
+
+( ) ( )TPMP 
+
+P(M and T)
+
+Events M and T are not independent
+✓
+40
+16
+40
+22
+✓
+50
+11
+✓
+40
+7
+
+✓answer
+(4)
+[9]
+
+QUESTION/VRAAG 12
+
+12.1
+6006710261026 = ✓for correct letters
+✓for correct digits
+(2)
+12.2
+39015519918 = Given that its multiplication
+✓ 18
+✓ 19
+✓ 9
+✓ 5
+(4)
+12.3
+24 9 25 5 27 000   =
+27 000 15390 100 75, 44%
+15 390
+− =
+
+✓
+24 9 25 5  
+
+✓answer
+(2)
+[8]
+
+TOTAL/TOTAAL: 150
+5
+2
+3 4
+11
+
+9
+6
+M T
+G
+
+M",11616.0,7.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.4,3.0,[3],1.4 Determine the equation of the least squares regression line for the data. (3),81.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.2,2.0,[2],"1.2 Write down the correlation coefficient. qd)
+13 The coach uses the least squares regression line to set the target for the minimum
+
+number of push-ups by each team member according to their weight. Predict the
+number of push-ups that a member of the team, who weighs 29 kg, should do to meet
+
+the target. (2)",311.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.4,1.0,[1],1.4 Write down the mean number of push-ups for the given data. (1),66.0,3.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.5,,[],"1.5 The players trained hard during the season. At the end of the season, the coach reported
+
+that each player was able to do 5 more push-ups per minute than they did at the
+beginning of the season. How does the increase in the number of push-ups influence
+
+the standard deviation of the data? 60)",297.0,4.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.6,10.0,"[2, 10]","1.6 At the beginning of the season, the coach used the least squares regression line as the
+minimum target for a player to aim for. Determine the maximum possible increase in
+the number of push-ups that a team member must obtain to reach the minimum target. (2)
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 4 DBE/November 2024
+
+NSC Confidential",357.0,5.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.1,,[],2.1,3.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.2,,[],2.2,3.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.3,,[],2.3,3.0,3.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.4,,[],2.4,3.0,4.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.5,,[],2.5,3.0,5.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.6,2.0,[2],"2.6
+
+>
+3
+3
+ee
+vo
+i
+vo
+Hes
+B
+E
+1o)
+
+Time (in minutes)
+Estimate the median travel time.
+Estimate the lower quartile.
+Estimate the interquartile range.
+The minimum and maximum times taken for an employee to travel to work are
+5 and 120 minutes respectively. On the scaled line in the ANSWER BOOK, draw a box
+
+and whisker diagram to indicate the distribution of the data as represented in the ogive
+above.
+
+The company manager decided that all employees who travel for an hour or more will
+be allowed to work from home for part of the day. What percentage of the employees
+will be allowed to work from home for part of the day?
+
+Employees work 8 hours in a normal working day. The manager decided on the
+following rule for time to work from home:
+
+e An employee is allowed to work half an hour from home for each time
+interval of 20 minutes, or part thereof, above an hour taken to travel to work.
+
+On a certain day, an employee takes 110 minutes to travel to work. Calculate the
+number of minutes that this employee will be allowed to work from home on this day.
+
+Copyright reserved Please turn over
+
+a)
+()
+2)
+
+2)
+
+(2)
+
+2)
+{10]
+
+Mathematics/P2 DBE/November 2024
+
+5
+NSC Confidential",1178.0,6.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.4,2.0,[2],3.4 Calculate the gradient of DC. (2),37.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.2,2.0,[2],3.2 Determine the equation of DC in the form y= mx +c. (2),58.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.3,,[],3.3 Show that k=-6. (),22.0,3.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.4,2.0,[2],3.4 Calculate the length of DC. (2),35.0,4.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.5,2.0,[2],"3.5 Calculate the ratio of DB :
+DC (2)",38.0,5.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.6,4.0,[4],"3.6 If M isa point on AD such that AC || MB, calculate the ratio of aa .
+Area AACD (4)",86.0,6.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.7,19.0,"[6, 19]","3.7 If it is further given that the gradient of AD is -—4 and the length of AD is
+V612 units, calculate the coordinates of A. (6)
+[19]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 6 DBE/November 2024
+NSC Confidential",224.0,7.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.2,4.0,"[4, 4]","4.2 Determine the equation of tangent ST to the circle at P. (4)
+43 Show that the equation of the circle with centre M is x? +y’—2x-—6y—30=0. (4)",145.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.4,2.0,[2],4.4 Show that d=7. (2),22.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.5,5.0,[5],4.5 Calculate the size of L (5),31.0,3.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.6,20.0,[20],"4.6 TR isa tangent to the circle at R. Prove that PT L RT. @G)
+
+[20]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 DBE/November 2024
+
+7
+NSC Confidential",159.0,4.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1,,[],"5.1 In the diagram, line OP is given with P7-3;—4). KOP=A.
+y
+
+P-3; 4)
+
+Determine, without using a calculator, the value of:",123.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1.1,2.0,[2],5.1.1 cosA (2),14.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1.2,2.0,[2],5.1.2 cos2A (2),15.0,3.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1.3,4.0,[4],"5.1.3 sin(A-B), if itis further given that sinB =; and 90° <B<360°
+
+(4)",71.0,4.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.2,12.0,"[4, 12]","5.2 If cos@=p, express the following expression in terms of p:
+cos( - 45°]sin{ % - 45°]
+2 2
+2 (4)
+[12]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 8 DBE/November 2024
+NSC Confidential",192.0,5.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.1,,[],6.1 Given the identity: cos(x— y)=cosxcosy +sinxsin y,53.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.1.1,,[],"6.1.1 Use the compound angle identity given above to derive a formula for
+cos(x + y).",85.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.1.2,,[],"6.1.2 Hence, or otherwise, show that:
+cos(90° — x)cos y + sin(— y)cos(180°+ x
+( deosy Cy)eos( ) — tan(e+y)
+cos x cos(360° + y)+ sin(360° — x)sin y",146.0,3.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.2,,[],"6.2 Given: f(x)=/6sin? x —11c0s(90° + x) +7
+Solve for x in the interval x e( ° 5 360°) if f(x)=2.
+—_ in?",104.0,4.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.3,,[],6.3 Consider the function: g(x) = —_,36.0,5.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.3.1,,[],6.3.1 Calculate the maximum value of g.,39.0,6.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.3.2,18.0,"[2, 6, 6, 1, 18]","6.3.2 Write down the smallest possible value of x for which g will have a
+
+maximum value in the interval x e( a 360°].
+
+Copyright reserved
+
+Please turn over
+
+(2)
+
+(6)
+
+(6)
+
+3)
+
+(1)
+[18]
+
+Mathematics/P2 9 DBE/November 2024
+NSC Confidential",238.0,7.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,7.0,7.2,1.0,"[2, 1]","7.2 Write down the values of x in the interval x e[-180° ; 0°] for which f(x)<0. (2)
+73 Given: g(x)=cos 2x+1
+734 Write down the period of g. (1)",144.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,7.0,7.3.2,4.0,[4],"7.3.2 On the grid given in the ANSWER BOOK, draw the graph of
+g(x)=cos2x+1 for the interval x e[—180°; 180°]. Clearly show the
+
+intercepts with the axes as well as the coordinates of the turning points. G3)
+74 Use the graphs to determine the general solution of 2cos’ x—sinx=0. (4)
+{11}
+
+Copyright reserved Please turn over
+
+Mathematics/P2 10 DBE/November 2024
+NSC Confidential",377.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.1,2.0,[2],"8.1 Calculate the length of AC, the distance between the observer at A and the foot of
+
+the building. (2)",105.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.2,7.0,[7],"8.2 Calculate how far the painter at E is from the top of the building. (7)
+19]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 ll DBE/November 2024
+NSC Confidential
+
+Provide reasons for your statements in QUESTIONS 9, 10 and 11.",234.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.1,2.0,[2],"9.1 Calculate, with a reason, the value of A . (2)",50.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.2,6.0,"[4, 6]","9.2 Hence, prove that AD = DC. (4)
+
+[6]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 12 DBE/November 2024
+NSC Confidential",130.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.1,6.0,[6],"10.1 In the diagram, ARST is drawn. Line AB intersects RS and RT at A and B
+respectively such that AB || ST.
+
+R
+
+S T
+
+Prove the theorem which states that a line drawn parallel to one side of a triangle divides
+RB
+
+the other two sides proportionally, i.e. ee)
+AS BT (6)",268.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.2,,[],"10.2 In the diagram, O is the centre of the circle. APWS is drawn with P, W and S on
+the circle. OR 1 PS. PRS is produced to T. SW and OT intersect at V.
+
+OV: OT=1:4
+P
+,
+S
+T
+W",175.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.2.1,5.0,[5],"10.2.1 Prove, with reasons, that OR : WS = 1:2 (5)",50.0,3.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.2.2,15.0,"[4, 15]","10.2.2 Calculate the length of PT if ST = 15 units. (4)
+
+[15]
+
+Copyright reserved Please turn over
+
+Mathematics/P2",114.0,4.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.1,,[],"11.1 If EAG=x, determine with reasons, FOUR other angles that are equal to x.",77.0,1.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.2,,[],11.2 Prove that AG.AD = AC.AF,29.0,2.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.3,,[],11.3 Prove that AAGF ||| AABC,29.0,3.0,ok
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.4,20.0,"[6, 4, 4, 6, 20]","11.4 Prove that GF’ =
+
+Copyright reserved
+
+BC.FC.AF
+
+AD
+
+TOTAL:
+
+(6)
+(4)
+(4)
+(6)
+[20]
+
+150
+
+Mathematics/P2 DBE/November 2024
+NSC Confidential
+INFORMATION SHEET
+pnb tvb? = 4a0
+2a
+A= P(l+ni) A=P(\-ni) A= P(1~i)"" A= P(i+i)""
+T,=a+(n-1)d 8, = 5 Rat (n—nd]
+T, =ar""! S _ alr"" -1) sr#l S,= a 3 -l<r<l
+, r-l -r
+
+pass"" =! pawl +i""
+
+i i
+
+_ f(x+h)- f(x)
+1 =|
+#@) h30 h
+
+xX, +X, V,+yV
+d=\(%,—%) +(,-¥,)° M|/——3;4
+2 2
+yomxte y-y, =m(x—-x,) m= 221 m=tan@
+Xy —X,
+
+(x—a) +(y-b) =r?
+be
+snA sinB sinC
+
+a =b? +c? —2be.cos A
+
+a
+
+In AABC:
+
+1 :
+area AABC = ec Cc
+sin(a + £)=sina.cos B+cosa.sin §
+cos (a + B)=cosa.cos # —sina.sin B
+cos’ a—sin? @
+cos 2a =41-2sin? a
+
+2cos* a1
+
+|
+
+n
+
+x=
+
+n(A)
+
+nS)
+
+P(A)=
+
+poatbx
+
+Copyright reserved
+
+sin (a ~ £)=sina.cos B—cosa.sin 8
+
+cos(a ~ 8) =cosa.cos f +sina.sin 8
+sin 2a = 2sina@.cosa
+
+n
+
+> (x; ~ x)’
+
+— Jeb
+
+co?
+
+n
+
+P(A or B) = P(A) + P(B) — P(A and B)
+
+Xe -¥ky-Y)
+
+po ews
+Si@e- xy",896.0,4.0,ok
+2024_nov_p2_memo_maths,2024,P2,memo,data\processed\extracted_text\NSC_Mathematics_2024_Nov_P2_memo.txt,good,,,,,"Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+MARKS/PUNTE: 150
+
+These marking guidelines consist of 25 pages./
+Hierdie nasienriglyne bestaan uit 25 bladsye.
+
+MATHEMATICS P2/WISKUNDE V2
+
+NOVEMBER 2024
+
+MARKING GUIDELINES/NASIENRIGLYNE
+GRADE 12/GRAAD 12
+
+NATIONAL
+SENIOR CERTIFICATE/
+NASIONALE
+SENIOR SERTIFIKAAT
+
+Mathematics P2/Wiskunde V2 2 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+NOTE:
+• If a candidate answers a QUESTION TWICE, only mark the FIRST attempt.
+• If a candidate has crossed out an attem pt of a QUESTION and not redone the QUESTION, mark
+the crossed-out version.
+• Consistent accuracy applies in ALL aspects of the Marking Guidelines. Stop marking at the
+second calculation error.
+• Assuming answers/values in order to solve a problem is NOT acceptable.
+
+LET WEL:
+• As 'n kandidaat 'n vraag TWEE KEER beantwoord, sien slegs die EERSTE poging na.
+• As 'n kandidaat 'n antwoord van 'n vraag doodtrek en nie oordoen nie, sien die
+doodgetrekte poging na.
+• Volgehoue akkuraatheid word in ALLE aspekte van die Nasienriglyne toegepas. Hou op
+nasien by die tweede berekeningsfout.
+• Aanvaar van antwoorde/waardes om 'n probleem op te los, word NIE toegelaat nie.
+
+GEOMETRY • MEETKUNDE
+S
+A mark for a correct statement
+(A statement mark is independent of a reason)
+'n Punt vir 'n korrekte bewering
+('n Punt vir 'n bewering is onafhanklik van die rede)
+R
+A mark for the correct reason
+(A reason mark may only be awarded if the statement is correct)
+'n Punt vir 'n korrekte rede
+('n Punt word slegs vir die rede toegeken as die bewering korrek is)
+S/R
+Award a mark if statement AND reason are both correct
+Ken 'n punt toe as die bewering EN rede beide korrek is
+
+Mathematics P2/Wiskunde V2 3 DBE/November 2024
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 1
+
+Weight
+(in kg) (x) 34 32 ",,,no_question_markers
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.2,,[],1.1.2 5x? +2=-9x (correct to TWO decimal places),48.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.3,,[],1.1.3 8x? > 2x,14.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.4,,[],"1.1.4 2.27* -9.2* +4=0
+
+[ft 1",29.0,3.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.5,,[],"1.1.5 —+2=—=
+x Vx",17.0,4.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.2,,[],"1.2 Calculate the values of x and y if:
+
+e x isthe sum of 2 and y
+e Five times the product of x and y, is 6 more than the square of x",133.0,5.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1,,[],2.1 Given the infinite geometric series: (f+ 10) + (¢-2) +(@+4) +...,68.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.1,,[],2.1.1 Show that t=—2,20.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.2,,[],"2.1.2 Calculate the value of 7,,. Write your answer in the form 7, = 5*",71.0,3.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.3,,[],"2.1.3 Calculate the sum of the infinite series.
+
+U7",51.0,4.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2,,[],"2.2 Given }'(4p-1)= 26 675
+pak",30.0,5.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2.1,,[],"2.2.1 Write down the difference between 7 and 7),",49.0,6.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2.2,15.0,"[2, 4, 4, 4, 5, 6, 3, 3, 2, 2, 5, 15]","2.2.2 Calculate the value of k.
+
+Copyright reserved Please turn over
+
+(2)
+(4)
+(4)
+(4)
+
+(5)
+
+(6)
+[25]
+
+(3)
+(3)
+(2)
+
+(2)
+
+(5)
+[15]
+
+Mathematics/P1 4
+NSC Confidential",163.0,7.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.1,,[],3.1 Calculate the depth of the torpedo at the end of the first 5 seconds.,73.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.2,,[],"3.2 Show that the depth of the torpedo at the end of seconds was 7, =—n’ +38n-1",79.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.3,,[],3.3 Calculate the maximum depth that the torpedo reached.,57.0,3.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.4,10.0,"[2, 3, 3, 10]","3.4 After how many seconds was the torpedo at 104 m_below sea level for the second
+time?
+
+Copyright reserved
+
+Please turn over
+
+(2)
+(3)
+(3)
+
+Q)
+[10]
+
+Mathematics/P1 5 DBE/November 2025
+NSC Confidential",201.0,4.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.1,,[],4.1 Calculate the value of ¢ qd),32.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.2,2.0,[2],"4.2 Write down the coordinates of A. qd)
+43 Determine the equation of f', the inverse of f£ inthe form y=... (2)",112.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.4,,[],4.4 Write down the equation of the asymptote of f™ q),53.0,3.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.5,,[],"4.5 Draw the graph of f' on the set of axes provided in the ANSWER BOOK. Clearly
+indicate the intercepts with the axes, the coordinates of ONE other point and the
+asymptotes. (GB)",179.0,4.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.6,10.0,"[2, 10]","4.6 The graph of h is obtained when /~ is translated 5 units to the right. Determine the
+p-values of h where x>4. (2)
+
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 6 DBE/November 2025
+NSC Confidential",213.0,5.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.1,1.0,[1],5.1 Write down the domain of g. (1),35.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.2,1.0,[1],5.2 Write down the range of /- (1),34.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.3,,[],5.3 Determine the values of x for which:,40.0,3.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.3.1,2.0,[2],5.3.1 2(x)< f(x) (2),20.0,4.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.3.2,2.0,[2],5.3.2 f(x) <6 (2),17.0,5.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.4,3.0,[3],5.4 Show that the equation of the parabolais f(x) = 5? +3x +2 (3),65.0,6.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.5,6.0,[6],5.5 Calculate the length of MT. (6),35.0,7.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.6,18.0,"[3, 18]","5.6 Determine the equation of the tangent to f at D. (3)
+
+[18]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 7 DBE/November 2025
+NSC Confidential",152.0,8.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.1,,[],6.1 Write down the coordinates of the x-intercept of g in terms of p. qd),73.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.2,5.0,[5],"6.2 Graph g intersects the horizontal asymptote of graph f at x=1 and the graph f at
+x=3. Graphs f and g also intersect on the y-axis. Determine the equation of f (5)",166.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.3,8.0,"[2, 8]","6.3 Describe the transformation that g must undergo to become an axis of symmetry of f
+that cuts f at two points. (2)
+[8]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 8 DBE/November 2025
+NSC Confidential",211.0,3.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,7.0,7.2,4.0,[4],"7.2 Sarah opened a savings account that paid interest at a rate of 5,8% p.a., compounded
+
+quarterly. She deposited R2 300 into the account on 1 January 2020 and continued to
+make deposits of R2 300 at the beginning of each quarter thereafter. She made her last
+deposit on 1 October 2025. Calculate the accumulated amount in the account on
+1 January 2026. (4)
+
+73 The bank granted Rajesh a loan of R900 000 on 28 February 2024 at an interest rate of
+6,8% p.a., compounded monthly.",479.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,7.0,7.3.1,15.0,"[5, 4, 15]","7.3.1 Rajesh was unable to make the first three payments. He made his first
+repayment of R10 000 on 30 June 2024. He continued to make monthly
+repayments of R10 000 at the end of each month thereafter. How long, in
+completed months, will it take Rajesh to repay the loan from the time the
+
+loan was granted? (5)
+73.2 Calculate the value of the final payment. (4)
+[15]",367.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.1,4.0,[4],8.1 Determine /‘(x) from first principles if it is given that f(x)=-2x+3. (4),77.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.2,,[],8.2 Determine:,14.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.2.1,10.0,"[2, 4, 10]","8.2.1 g(x) if g(x)=-3x* +2x (2)
+22S if y- ue (4)
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 9 DBE/November 2025
+
+NSC Confidential",144.0,3.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.1,,[],9.1,3.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.2,,[],9.2,3.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.3,,[],9.3,3.0,3.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.4,17.0,"[4, 4, 6, 17]","9.4
+
+Copyright reserved
+
+Calculate the coordinates of E.
+For which values of x is f concave down?
+
+The coordinates of B are (2; 0). Use the graph to determine the values of x for which
+S@).f “<0
+
+For which values of ¢ will y=-—llx+¢ intersect f at 3 distinct points?
+
+Please turn over
+
+(4)
+@)
+
+(4)
+
+(6)
+[17]
+
+Mathematics/P 1 10 DBE/November 2025
+NSC Confidential",362.0,4.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.1,,[],"10.1 Show that the volume of the cylinder is given by V = a
+4n An",65.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.2,6.0,"[3, 6]","10.2 Calculate the value of x that will maximise the volume of the cylinder. (3)
+
+[6]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 11 DBE/November 2025
+NSC Confidential",176.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.1,,[],"11.1 A survey was conducted among female and male learners at a school about which type
+of cold drink they preferred. The data from the survey is presented in the table below.
+
+[ser [nena [1070
+rs ee
+re ee",205.0,1.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.1.1,3.0,[3],11.1.1 The events male and preferring juice are independent. Show that e = 84. (3),82.0,2.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.1.2,3.0,[3],"11.1.2 Calculate the probability that a female learner, chosen at random from the
+group, will like energy drinks. (3)",117.0,3.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.2,4.0,[4],"11.2 At a kiosk, 120 people buy either a cup of coffee or a bottle of water. The chance of
+rain on any given day is 75%. The chance of a person buying a cup of coffee on a rainy
+day is three times the chance of the person buying coffee on a non-rainy day.
+
+The probability of a person buying coffee on any given day is =.
+Calculate the number of cups of coffee that will be sold on a non-rainy day. (4)",402.0,4.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.3,,[],"11.3 Eight runners compete in a race where there are no tied finishes. Bongi and Andrew are
+two of the competitors.",115.0,5.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.3.1,2.0,[2],"11.3.1 Calculate the total number of possible ways in which the 8 runners can
+finish the race if Bongi finishes in a position immediately after Andrew. (2)",155.0,6.0,ok
+2025_nov_p1_exam_maths,2025,P1,exam,data\processed\ocr\text\2025_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.3.2,16.0,"[4, 16]","11.3.2 Calculate the probability that TWO OR MORE runners finish the race after
+Andrew and before Bongi. (4)
+[16]
+
+TOTAL: 150
+
+Copyright reserved
+
+Mathematics/P1
+
+DBE/November 2025
+
+NSC Confidential
+
+INFORMATION SHEET
+ear tv b* — 4ac
+2a
+A=P(1+ni) A=P(i-ni) A=P(-i)"" A=P(+i)""
+T, =a+(n-1)d S, = Fa + (n—-Dd]
+T, =ar""™"" Ss _ al"" -1) srHl S,= é 3 -I<r<l
+"" r-l l-r
+pats -1 pa xlat+iy""
+i i
+. h)- f(x)
+(x) = 1 S (xt
+a
+X, +X. +
+d= (, —x%,) +0,-¥) m( i ra %)
+2 2
+yomxte y~y, =m(x-x,) m= 22H m= tan 0
+Xx. —X,
+
+(x-a) +(y-by =r?
+aq b __¢
+snA sinB sinC
+
+In AABC:
+a’ =b’ +c? -2be.cos A
+area AABC = sabsin€
+
+sin(a + B)=sina.cos £ + cosa.sin B
+
+cos(a + 8)=cosa@.cos f ~sina.sin B
+cos’ a—sin’ a
+
+cos2a =41-2sin’ a
+
+2cos’ a—-1
+
+Copyright reserved
+
+sin (a@ -£) = sin a.cos 8-cosa.sin B
+
+cos(a~- 8) =cosa.cos B +sina.sin B
+
+sin 2a = 2sin a.cos a
+
+n
+
+> @,-¥""
+
+o = tL
+n
+
+P(A ot B) = P(A) + P(B) — P(A and B)
+
+dX @-*)o-y~
+
+Ye",901.0,7.0,ok
+2025_nov_p1_memo_maths,2025,P1,memo,data\processed\extracted_text\NSC_Mathematics_2025_Nov_P1_memo.txt,good,1.0,1.1.1,2.0,[2],"1.1.1
+( )( )5 2 0xx+ − =
+5 or 2xx= − =
+
+✓
+5x =−
+✓
+2x =
+(2)",58.0,1.0,ok
+2025_nov_p1_memo_maths,2025,P1,memo,data\processed\extracted_text\NSC_Mathematics_2025_Nov_P1_memo.txt,good,1.0,1.1.2,4.0,[4],"1.1.2
+2
+5 2 9xx + = −
+2
+5 9 2 0xx + + =
+
+( ) ( )( )
+( )
+2
+9 9 4 5 2
+25
+x
+−  −
+=
+
+9 41
+10
+x −=
+
+0, 26 or 1,54xx= − = −
+
+✓ standard form
+
+✓ substitution into the
+correct formula
+
+✓ answer
+✓ answer
+(4)",200.0,2.0,ok
+2025_nov_p1_memo_maths,2025,P1,memo,data\processed\extracted_text\NSC_Mathematics_2025_Nov_P1_memo.txt,good,1.0,1.1.3,4.0,[4],"1.1.3
+2
+82xx 
+2
+8 2 0xx −
+
+( )2 4 1 0xx −
+
+CV:
+10 ;
+4
+
+10 or
+4
+xx
+
+✓ standard form
+
+✓ critical values/factors
+
+✓✓ answer
+(4)",129.0,3.0,ok
+2025_nov_p1_memo_maths,2025,P1,memo,data\processed\extracted_text\NSC_Mathematics_2025_Nov_P1_memo.txt,good,1.0,1.1.4,4.0,"[4, 4]","1.1.4
+2
+2.2 9.2 4 0
+xx
+− + =
+(2.2 1)(2 4) 0
+xx
+− − =
+
+12
+2
+x
+=
+or
+24
+x
+=
+1
+22
+x −
+=
+
+2
+22
+x
+=
+1x =−
+
+2x =
+
+✓factors
+
+✓ both equations
+✓ answer
+✓ answer
+(4)
+
+0
+
+Mathematics P1/Wiskunde V1 3 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+OR/OF
+2
+2.2 9.2 4 0
+xx
+− + =
+
+Let
+2
+x
+k =
+2
+2 9 4 0kk − + =
+
+( )( )2 1 4 0kk− − =
+
+1
+2
+k =
+or
+4k =
+12
+2
+x
+=
+or
+24
+x
+=
+1x = −
+or
+2x =
+OR/OF
+
+✓factors
+
+✓ both equations
+
+✓ answer
+✓ answer
+(4)",516.0,4.0,ok
+2025_nov_p1_memo_maths,2025,P1,memo,data\processed\extracted_text\NSC_Mathematics_2025_Nov_P1_memo.txt,good,1.0,1.1.5,5.0,"[1, 5]","1.1.5
+11 2
+x x
++=
+
+2 2
+11 2
+x x
+  +=  
+
+11 2
+xx
++=
+
+11 2
+xx
+=−
+
+2 2
+11 2
+xx
+ =− 
+
+2
+1 1 4 4
+x x x
+= − +
+
+2
+15 40
+xx
+− + =
+
+2
+4 5 1 0xx − + =
+
+(4 1)( 1) 0xx− − =
+
+1 or 1
+4
+xx=
+
+OR/OF
+
+✓ squaring both sides
+
+✓ isolation of surd
+
+✓ squaring both sides only
+after isolation of surd
+
+✓ standard form
+
+✓ answer with selection
+(5)
+OR/OF
+
+Mathematics P1/Wiskunde V1 4 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief",521.0,5.0,ok
+2025_nov_p1_memo_maths,2025,P1,memo,data\processed\extracted_text\NSC_Mathematics_2025_Nov_P1_memo.txt,good,1.0,1.1.5,5.0,"[2, 1, 5]","1.1.5
+11 2
+x x
++=
+
+Let
+1 k
+x
+=
+2kk+=
+
+2
+2kk+=
+
+2
+20kk − − =
+
+( 2)( 1) 0kk− + =
+
+2 or 1kk = = −
+
+1 2
+x
+=
+or
+1 1
+x
+−
+21 x =
+
+41x =
+
+1
+4
+x=
+
+✓ equation
+✓ squaring both sides
+✓ standard form
+
+✓ substitution
+
+✓ answer with selection
+(5)",234.0,6.0,ok
+2025_nov_p1_memo_maths,2025,P1,memo,data\processed\extracted_text\NSC_Mathematics_2025_Nov_P1_memo.txt,good,1.0,1.2,16.0,"[1, 2, 1, 2, 2, 3, 6, 6, 3, 3, 2, 2, 2, 2, 4, 1, 3, 3, 20, 5, 5, 5, 15, 2, 3, 1, 19, 19, 19, 19, 3, 3, 2, 2, 10, 1, 1, 2, 1, 2, 10, 3, 1, 1, 2, 2, 3, 3, 3, 7, 1, 6, 5, 5, 5, 3, 18, 1, 5, 5, 2, 2, 8, 2, 4, 4, 1, 5, 4, 4, 15, 4, 4, 2, 4, 10, 5, 4, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6, 17, 3, 3, 6, 3, 3, 3, 4, 4, 4, 2, 2, 15, 15, 15, 15, 4, 4, 16]","1.2
+2xy=+ …..(1)
+2
+56xy x=+
+…..(2)
+( ) ( )
+2
+5 2 2 6y y y+ = + +
+
+22
+5 10 4 4 6y y y y+ = + + +
+
+2
+4 6 10 0yy + − =
+
+2
+2 3 5 0yy + − =
+
+( )( )2 5 1 0yy+ − =
+
+5
+2
+y =−
+or
+1y =
+1
+2
+x =−
+or
+3x =
+
+OR/OF
+2yx=−
+…..(1)
+2
+56xy x−=
+…..(2)
+
+2
+5 ( 2) 6x x x− − =
+
+22
+5 10 6x x x− − =
+
+2
+4 10 6 0xx − − =
+
+2
+2 5 3 0xx − − =
+
+(2 1)( 3) 0xx+ − =
+
+1 or 3
+2
+xx= − =
+
+5 or 1
+2
+yy= − =
+
+✓
+2xy=+
+✓
+2
+56xy x=+
+✓ substitution
+
+✓ standard form
+
+✓y-values
+
+✓ x-values
+(6)
+
+OR/OF
+✓
+2yx=−
+✓
+2
+56xy x−=
+
+✓ substitution
+
+✓ standard form
+
+✓x-values
+
+✓ y-values
+(6)
+[25]
+
+Mathematics P1/Wiskunde V1 5 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 2
+
+2.1.1
+( ) ( ) ( )10 2 4t t t+ + − + +
+24
+10 2
+tt
+tt
+−+ =
++−
+
+( ) ( )( )
+2
+2 4 10t t t− = + +
+
+22
+4 4 14 40t t t t− + = + +
+
+18 36t−=
+
+2t = −
+
+✓ equating the ratios
+✓ cross multiplication
+✓ expansion
+(3)
+2.1.2
+8 ; 4 ; . . .−
+41
+82
+r −= = −
+
+24
+25
+18
+2
+T =− 
+
+21
+25
+1
+2
+T = 
+or
+( )
+21
+25 2T
+−
+= or
+( )
+7
+25 8T
+−
+= or
+( )
+3
+25 128T
+−
+=
+or
+( )
+1
+25 2 097 152T
+−
+=
+✓
+8 and 4−
+✓r
+
+✓ answer in exponential
+form
+(3)
+2.1.3
+1
+aS
+r
+ =
+−
+8
+11 2
+S =
+−−
+
+16 5,33
+3
+S ==
+
+✓substitution
+
+✓ answer
+(2)
+2.2.1
+14 6TT −
+48=
+
+32=
+
+OR/OF
+14 6TT −
+
+( )( ) ( )( )4 14 1 4 6 1= − − −
+
+55 23=−
+
+32=
+
+OR/OF
+14 6TT −
+
+( )( ) ( )( )4 13 1 4 5 1kk= + − − + −
+
+( )4 51 4 19kk= + − +
+
+32=
+
+✓✓answer
+(2)
+OR/OF
+
+✓ subs
+
+✓ answer
+(2)
+OR/OF
+
+✓ subs
+
+✓ answer
+(2)
+
+Mathematics P1/Wiskunde V1 6 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+2.2.2
+118nk=−
+
+117 467T =
+
+ 118
+118 4 1 467
+2
+k
+kSk −
+−= − +
+
+ 26 675 (118 ) 2 233kk= − +
+
+2
+26 675 236 27494 2 233k k k= + − −
+
+2
+2 3 819 0kk − − =
+
+( 21)(2 39) 0kk− + =
+
+3921 or
+2
+kk =  −
+
+OR/OF
+
+118nk=−
+
+ 118
+118 2(4 1) (118 1)(4)
+2
+k
+kS k k−
+−= − + − −
+
+ 11826 675 8 2 468 4
+2
+k kk−= − + −
+
+ 53 350 (118 ) 4 466kk= − +
+
+2
+53 350 472 54 988 4 466k k k= + − −
+
+2
+4 6 1638 0kk − − =
+
+2
+2 3 819 0kk − − =
+
+( 21)(2 39) 0kk− + =
+
+3921 or
+2
+kk =  −
+
+OR/OF
+12
+117 1
+37
+26 675k
+TT
+SS −
+==
+−=
+
+ 
+ 
+117 2 ( 1)
+2
+117 2(3) (116)4
+2
+27 495
+nS a n d= + −
+=+
+=
+
+ 
+1 27 495 26 675 820
+820 2(3) 4 4
+2
+kS
+n n
+− = − =
+= + −
+
+2
+0 2 820
+(2 41)( 20) 0
+20
+nn
+nn
+n
+= + −
++ − =
+=
+1 20k − =
+
+21k =
+
+✓ number of terms
+
+✓ last term
+
+✓ substitution
+
+✓standard form
+
+✓answer with selection
+(5)
+OR/OF
+
+✓ number of terms
+
+✓ substitution
+
+✓simplification
+
+✓ standard form
+
+✓answer with selection
+(5)
+
+✓ 27 495
+✓ difference
+
+✓substitution
+
+✓ standard form
+
+✓answer with selection
+(5)
+[15]
+
+Mathematics P1/Wiskunde V1 7 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 3
+
+3.1 36 ; 71 ; 104 ; 135 ; 164
+
+35 33 31 29
+
+– 2
+
+5 164T =
+
+✓first differences
+
+✓ answer (2)
+3.2
+22a =−
+1a =−
+
+( )3 1 35 b− + =
+
+38b =
+
+1 38 36 c− + + =
+
+1c =−
+
+2
+38 1nT n n= − + −
+
+✓
+22a =−
+
+✓
+( )3 1 35 b− + =
+
+✓
+1 38 36 c− + + =
+(3)
+3.3 n =
+38 19
+2( 1)
+− =
+−
+
+2
+19 (19) 38(19) 1 360T = − + − =
+
+OR/OF
+/
+2 38 0nTn = − + =
+
+19n=
+
+2
+19 (19) 38(19) 1 360T = − + − =
+
+✓ method
+
+✓ n
+✓ answer
+(3)
+
+OR/OF
+✓ method
+✓ n
+
+✓ answer
+(3)
+
+3.4
+3 19
+2
+n + =
+3 38n +=
+
+35n =
+
+OR/OF
+2
+38 1 104nn− + − =
+
+2
+38 105 0nn − + =
+
+( )( )35 3 0nn− − =
+
+35n =
+
+✓ method
+
+✓ answer
+(2)
+
+✓ method
+
+✓ answer
+(2)
+[10]
+
+Mathematics P1/Wiskunde V1 8 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 4
+x
+y
+f
+O A
+(3 ; t)
+
+4.1
+1
+3
+log 3t =
+1t =−
+
+✓ answer (1)
+4.2
+( )A 1; 0
+
+✓ answer (1)
+4.3
+( ) 1
+3
+logf x x =
+1
+3
+logyx=
+
+1
+3
+logxy=
+
+1 3
+3
+x
+x
+y
+−==
+
+✓ swopping
+
+✓ answer
+(2)
+4.4
+0y =
+
+✓ answer
+(1)
+
+4.5
+
+4.6 (4 ; 3) is a point on h
+
+03 y
+or
+y  (0 ; 3)
+
+✓✓ answer
+(2)
+[10]
+
+✓ decreasing
+exponential shape
+with asymptote
+y = 0
+✓ y-intercept (0 ; 1)
+✓ any point
+(3)
+(−1 ; 3)
+(0 ; 1)
+O
+x
+y
+1
+f
+−
+
+Mathematics P1/Wiskunde V1 9 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 5
+
+x
+y
+f
+g
+M O
+P
+T
+D(5 ; 6)
+g
+
+5.1
+,3x R x ✓ answer
+(1)
+5.2
+8y  ✓ answer
+(1)
+5.3.1
+35 x OR/OF
+( 3;5x  ✓✓ answer
+(2)
+5.3.2
+1 or 5xx OR/OF
+( );1x  − or
+( )5;x
+
+✓
+1x 
+✓
+5x 
+(2)
+5.4
+2
+( 3) 8y a x= − +
+2
+6 (5 3) 8a= − +
+
+24 a−=
+
+1
+2
+a = −
+
+21 ( 3) 8
+2
+yx= − − +
+
+21 ( 6 9) 8
+2
+y x x= − − + +
+
+217 3
+22
+y x x= − + +
+
+✓ p and q values
+
+✓ substitution (5 ; 6)
+
+✓ simplification
+
+(3)
+
+Mathematics P1/Wiskunde V1 10 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+5.5
+217 3
+22
+y x x= − + +
+2
+6 7 0xx − − =
+
+( 7)( 1) 0xx− + =
+
+7 or 1xx= = −
+
+M(– 1 ; 0)
+408
+3x
+−=+
+−
+
+8 24 4x− + = −
+
+7
+2
+x =
+
+T
+7 ;0
+2
+
+
+
+MT =
+7 1
+2
++
+9 4,5
+2
+==
+
+✓ solve for x
+
+✓ x-values
+
+✓ coordinates of M
+
+✓ solve for x
+
+✓ x-value
+
+✓ MT
+(6)
+5.6
+217( ) 3
+22
+f x x x= − + +
+/
+( ) 3f x x = − +
+
+/
+(5)mf=
+
+53= − +
+
+2=−
+
+6 2(5) c= − +
+
+16c =
+
+2 16yx = − +
+
+✓
+/
+( ) 3f x x = − +
+
+✓
+/
+(5)mf=
+
+✓ answer
+(3)
+[18]
+
+Mathematics P1/Wiskunde V1 11 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 6
+x
+y
+O
+f
+g
+f
+
+6.1 (–p ; 0)
+
+✓ (–p ; 0)
+(1)
+6.2
+( )g x x c=+
+1qc=+
+
+( ) 1af x c
+xc
+= + +
++
+
+Point (0 ; c)
+1
+0
+acc
+c
+= + +
++
+
+1 a
+c
+−=
+
+ac=−
+
+Point (3 ; 3 + c)
+31
+3
+acc
+c
++ = + +
++
+
+31
+3
+ccc
+c
+−+ = + +
++
+
+22
+9 6 3 4c c c c c+ + = − + + +
+
+36c =−
+
+2c =−
+
+2a =
+
+1q =−
+
+( ) 2 1
+2
+fx
+x
+=−
+−
+
+OR/OF
+
+✓
+1qc=+
+✓
+( ) 1af x c
+xc
+= + +
++
+
+✓
+31
+3
+acc
+c
++ = + +
++
+
+✓ a = 2
+✓ q = – 1
+
+(5)
+
+OR/OF
+
+Mathematics P1/Wiskunde V1 12 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+0 xc=+
+xc = −
+
+1qc=+
+
+( ) 1af x c
+xc
+= + +
++
+
+31
+3
+acc
+c
++ = + +
++
+
+2
+3
+a
+c
+=
++
+
+62ac=+
+
+62 1cyc
+xc
++= + +
++
+
+62 1
+0
+ccc
+c
++= + +
++
+
+621 c
+c
++−=
+
+62cc− = +
+
+2c = −
+
+2a =
+
+1q =−
+( ) 2 1
+2
+fx
+x
+ = −
+−
+
+✓
+1qc=+
+
+✓
+( ) 1af x c
+xc
+= + +
++
+✓
+31
+3
+acc
+c
++ = + +
++
+
+✓ a = 2
+✓ q = – 1
+
+(5)
+6.3 Translation of 1 unit down
+
+OR/OF
+Translation of 1 unit to the right
+✓✓ answer
+(2)
+
+OR/OF
+✓✓ answer
+(2)
+[8]
+
+Mathematics P1/Wiskunde V1 13 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 7
+
+7.1
+( )A P 1
+n
+i=+
+( )
+5
+A 40 000 1 7,8%=+
+
+A R58 230,94=
+
+✓ substitution into
+correct formula
+✓ answer
+(2)
+7.2
+( )11
+F
+n
+xi
+i
+ +−=
+
+24
+0, 0582 300 1 1 4 0, 058F1 0, 058 4
+4
+ +− =  + 
+
+F R66 411, 60=
+
+OR/OF
+25
+0, 0582 300 1 1 4
+F 2300 0, 058
+4
+ +−=−
+
+F = R66 411,60
+
+✓
+i
+✓ substitution into
+correct formula
+✓ future value ×
+( )
+1
+1 i+
+
+✓ answer
+(4)
+OR/OF
+✓
+i
+✓ substitution into
+correct formula
+✓ – 2300
+
+✓ answer
+(4)
+7.3.1
+(1 )
+n
+A P i=+
+3
+0, 068900 000 1
+12
+A =+ 
+
+= R915 386,86
+
+( )11
+n
+xi
+P
+i
+− −+=
+
+0, 06810 000 1 1 12
+915 386,86 0, 068
+12
+n− −+ =
+
+0, 0681 0, 4812...
+12
+n−
+ +=
+
+1,005...log 0,4812...n−=
+
+129, 419...n =
+months
+132, 419
+months since loan was granted
+133
+months since loan was granted
+
+✓answer
+
+✓ substitution into
+correct formula
+
+✓ correct use of logs
+
+✓ answer of n
+
+✓ final answer
+(5)
+
+Mathematics P1/Wiskunde V1 14 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+7.3.2
+0,419...
+0,06810 000 1 1 12
+0,068
+12
+P
+− −+ =
+= R4 173,55…
+Final payment =
+1
+0,0684173,55... 1 4 197, 21
+12
+R +=
+
+OR/OF
+129
+0, 068A 915 386,86 1
+12
+=+ 
+
+= R1 897 482,712
+
+129
+0, 06810 000 1 1 12
+F 0, 068
+12
+ +−=
+
+= R1 893 309,16
+
+Balance after 129 months = R4 173,552
+
+Final payment =
+1
+0,0684 173,552 1 R4 197, 21
+12
+ +=
+
+✓ substitution
+✓ n
+
+✓ balance
+
+✓ final payment
+(4)
+
+OR/OF
+
+✓answer
+
+✓ answer
+
+✓balance
+
+✓final payment
+(4)
+[15]
+
+Mathematics P1/Wiskunde V1 15 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 8
+
+8.1
+( ) 2 3f x x = − +
+( ) ( )
+h
+xfhxfxf
+h
+−+=
+→0
+/ lim)(
+
+0
+2( ) 3 ( 2 3)lim
+h
+x h x
+h→
+− + + − − +=
+
+0
+2lim
+h
+h
+h→
+−=
+
+( )
+0
+lim 2
+h→
+=−
+
+2=−
+
+OR/OF
+( ) 2 3f x x = − +
+
+( ) 2( ) 3f x h x h+ = − + +
+
+( ) ( ) 2 2 3 2 3 2f x h f x x h x h+ − = − − + + − = −
+
+( ) ( )
+h
+xfhxfxf
+h
+−+=
+→0
+/ lim)(
+
+0
+2lim
+h
+h
+h→
+−=
+
+( )
+0
+lim 2
+h→
+=−
+
+2=−
+
+✓
+)( hxf +
+✓substitution
+
+✓simplification
+
+✓answer
+(4)
+
+OR/OF
+
+✓
+)( hxf +
+✓simplification
+
+✓substitution
+
+✓answer
+(4)
+8.2.1
+( )
+4
+32g x x x= − +
+( )
+/3
+12 2g x x = − +
+
+✓
+3
+12x−
+✓ 2
+(2)
+8.2.2
+4
+2
+21xy
+x
++=
+
+22
+2y x x
+−
+=+
+
+3
+42dy xx
+dx
+−
+=−
+
+✓
+2
+2 x
+✓
+2
+x
+−
+✓ derivative first
+term
+✓ derivative second
+term
+(4)
+[10]
+
+Mathematics P1/Wiskunde V1 16 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 9
+x
+A O
+D
+B
+E
+C
+f
+y
+
+9.1
+32
+( ) 8 5 14f x x x x= − + +
+/2
+( ) 3 16 5 0f x x x= − + =
+
+(3 1)( 5) 0xx− − =
+
+1 or 5
+3
+xx==
+
+E(5 ; – 36)
+
+✓
+/
+()fx
+✓
+/
+( ) 0fx =
+
+✓ x-value
+✓ y-value
+(4)
+9.2
+//
+( ) 6 16 0f x x = − 
+8
+3
+x 
+
+OR/OF
+1 5 83
+23
+x
++
+==
+
+8
+3
+x 
+
+✓
+//
+()fx
+✓
+//
+( ) 0fx 
+✓ answer
+(3)
+OR/OF
+
+✓ midpoint of TPs
+✓
+//
+( ) 0fx 
+✓ answer
+(3)
+9.3 x-intercepts of f: (– 1 ; 0) and (7 ; 0)
+12 x−  
+or
+8 7
+3
+x
+
+✓✓ x-intercepts
+✓ first interval
+✓ second interval
+(4)
+9.4
+2
+3 16 5 11xx − + = −
+2
+3 16 16 0xx − + =
+
+( 4)(3 4) 0xx− − =
+
+44 or
+3
+xx==
+
+At
+4x = :
+32
+(4) 8(4) 5(4) 14 11(4) t− + + = − +
+t = 14
+
+At
+4
+3
+x = :
+32
+4 4 4 48 5 14 11
+3 3 3 3
+t       − + + = − +              
+
+634 1323 23, 48
+27 27
+t = = =
+✓ equating
+
+✓ x-values
+
+✓ answer
+
+✓ answer
+
+Mathematics P1/Wiskunde V1 17 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+63414
+27
+t  
+
+OR/OF
+32
+8 5 14 11x x x x t− + + = − +
+
+32
+8 5 14 11x x x x t− + + + =
+
+32
+8 16 14x x x t− + + =
+
+2
+3 16 16 0xx − + =
+
+( 4)(3 4) 0xx− − =
+
+44 or
+3
+xx==
+
+At
+4x = :
+32
+(4) 8(4) 5(4) 14 11(4) t− + + = − +
+t = 14
+
+At
+4
+3
+x = :
+32
+4 4 4 48 5 14 11
+3 3 3 3
+t       − + + = − +              
+
+634 1323 23, 48
+27 27
+t = = =
+
+63414
+27
+t  
+
+✓✓ answer
+(6)
+OR/OF
+✓ equating
+
+✓ x-values
+
+✓ answer
+
+✓ answer
+
+✓✓ answer
+(6)
+
+[17]
+
+Mathematics P1/Wiskunde V1 18 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 10
+
+10.1
+2 2 50xh+=
+25hx=−
+
+2 rx =
+
+2
+xr
+
+=
+
+2
+V rh=
+
+( )
+2
+V 25
+2
+x x 
+=− 
+
+( )
+2
+2V 25
+4
+x x
+
+=−
+
+23
+25V
+44
+xx
+
+=−
+
+✓
+2 2 50xh+=
+
+✓
+2
+xr
+
+=
+
+✓ substitution
+
+(3)
+10.2
+( )
+2
+/ 50 3V
+44
+xxx
+
+=−
+
+( )
+2
+/ 50 3V0
+44
+xxx
+
+= − =
+
+2
+50 3 0xx−=
+
+( )0 50 3xx=−
+
+500 or
+3
+xx=
+
+50 16,67
+3
+x = =
+
+✓
+2
+50 3
+44
+xx
+
+−
+
+✓
+( )
+/
+V0 x =
+
+✓ answer with
+selection
+(3)
+[6]
+
+x
+h
+h
+
+Mathematics P1/Wiskunde V1 19 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+QUESTION/VRAAG 11
+
+11.1.1
+( ) ( ) ( )P Male and Prefer juice P Male P Prefer juice=
+36 90
+210 210 210
+e=
+
+84e =
+
+✓
+( ) ( ) ( )P M and J P M P J=
+✓
+36
+210
+✓ P (Male)
+90
+210
+=
+(3)
+11.1.2
+( )P Female and like energy drink
+210
+b=
+210 84 126d = − =
+
+126 54 72b = − =
+
+( ) 72 12P Female and like energy drink 0,34
+210 35
+= = =
+
+OR/OF
+c = 120
+b = 72
+( ) 72 12P Female and like energy drink 0,34
+210 35
+= = =
+
+✓ d- value
+✓ b-value
+
+✓ answer
+(3)
+OR/OF
+✓ c- value
+✓ b-value
+
+✓ answer
+(3)
+
+JUICE ENERGY
+DRINKS TOTAL
+Females a 72 120
+Males 36 54 90
+Total 84 126 210
+
+Mathematics P1/Wiskunde V1 20 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+11.2
+( )3 1 73
+4 4 12
+xx+=
+27 3 7xx+=
+
+30 7x =
+
+7
+30
+x =
+
+28 cups
+
+OR/OF
+
+75 3 25 7
+100 120 100 120 12
+xx    + =      
+
+3 1 7
+160 480 12
+xx+=
+10 280x =
+
+28x =
+cups of coffee
+
+OR/OF
+
+75 3(120 ) 25 120 7
+100 120 100 120 12
+xx−−    + =      
+
+91270 30 70
+44
+xx− + − =
+5 230
+2
+x− = −
+
+92x=
+(bottles of water)
+ there are 28 cups of coffee
+✓
+( )3 3
+4
+x
+✓
+1
+4
+x
+✓
+7
+12
+=
+✓answer
+(4)
+OR/OF
+
+✓
+75 3
+100 120
+x
+✓
+25
+100 120
+x
+
+✓
+7
+12
+=
+✓answer
+(4)
+OR/OF
+
+✓
+75 3(120 )
+100 120
+x−
+✓
+25 120
+100 120
+x−
+
+✓
+7
+12
+=
+
+✓answer
+(4)
+
+R
+S
+C
+W
+C
+W
+0,75
+0,25
+
+C
+R
+S
+W
+C
+W
+0,75
+0,25
+
+Mathematics P1/Wiskunde V1 21 DBE/November 2025
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Copyright reserved/Kopiereg voorbehou
+
+11.3.1 7.6! = 5 040
+
+OR/OF
+
+7! 5 040=
+
+✓✓ answer
+(2)
+
+OR/OF
+
+✓✓ answer
+(2)
+11.3.2 Possible outcomes:
+
+A × 6 × 5 × B × 4 × 3 × 2 × 1
+A × 6 × 5 × 4 × B × 3 × 2 × 1
+A × 6 × 5× 4 × 3 × B × 2 × 1
+A × 6 × 5 × 4 × 3 × 2 × B × 1
+A × 6 × 5 × 4 × 3 × 2 × 1 × B
+
+5 6!
++
+4 6! +
+3 6! +
+2 6! +
+1 6!
+6!(5 4 3 2 1)= + + + +
+
+6!(15)=
+
+P(two or more runners finishing after Andrew) =
+6!(15)
+8!
+15
+56
+=
+
+0,27=
+
+OR/OF
+
+( )8! 7!.2 2.6.6!
+8!.2
+−+
+
+15
+56
+=
+
+✓✓
+6! (15)
+
+✓ 8! in denominator
+✓
+6!(15)
+8! or
+15
+56
+(4)
+
+OR/OF
+
+✓ 8! in numerator and
+denominator
+✓✓ (
+7!.2 +
+2.6.6! )
+✓
+15
+56
+(4)
+[16]
+TOTAL/TOTAAL: 150",13195.0,7.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.1,,[],1.1 Determine the equation of the least squares regression line.,64.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.2,,[],1.2 Predict the selling price of a similar car at this car dealership that is 5 years old.,90.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.3,,[],"1.3 Use the correlation coefficient to show whether the prediction made in QUESTION 1.2
+
+is valid or not.",105.0,3.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.4,1.0,"[3, 2, 2, 1]","1.4 Use the answer to QUESTION 1.1 to write down the estimated average yearly decrease
+
+in the selling price of these 11 cars.
+
+Copyright reserved
+
+Please turn over
+
+(3)
+(2)
+
+(2)
+
+(1)
+8]
+
+Mathematics/P2 4 DBE/November 2025
+NSC Confidential",239.0,4.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.1,,[],"2.1 The cumulative frequency table below shows the amount of time that people spent on
+a particular website on a certain day.
+
+TIME, ¢ CUMULATIVE
+IN MINUTES FREQUENCY
+
+0<1<20 16
+0<1<40 40
+0<t<60 59
+0<t#<80 67
+
+0<t¢<100 70",221.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.1.1,,[],2.1.1 How many people visited this website on that day? qd),59.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.1.2,2.0,[2],"2.1.2 How many people spent more than 40 and up to 80 minutes on the
+website? (2)",81.0,3.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.1.3,3.0,[3],"2.1.3 Draw a histogram to represent the information provided in the cumulative
+frequency table. (3)",99.0,4.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.1.4,,[],2.1.4 Comment on the skewness of the data. qd),46.0,5.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.2,12.0,"[5, 12]","2.2 There are 9 players in a basketball team. The coach calculated that on average, each
+
+player scored 12 points during a game. The points scored by 8 of the 9 players from the
+team is given below:
+
+[+ f[s[»]»l*l»]? «|
+
+How many players' points score was outside ONE standard deviation of the mean points
+score? (5)
+[12]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 5 DBE/November 2025
+NSC Confidential",411.0,6.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.1,2.0,[2],3.1 Calculate the length of QR. Leave your answer in simplified surd form. (2),78.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.2,2.0,[2],3.2 Calculate the gradient of QR. (2),37.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.3,2.0,[2],3.3 Calculate the size of 6. (2),32.0,3.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.4,2.0,[2],3.4 Determine the equation of QR. (2),37.0,4.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.5,2.0,[2],"3.5 PQRS, in that order, is a parallelogram. Write down the coordinates of S. (2)",81.0,5.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.6,5.0,[5],3.6 T isa point on QR such that PT 1 QR. Calculate the coordinates of T. (5),76.0,6.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.7,18.0,"[3, 18]","3.7 Calculate the area of parallelogram PQRS. (3)
+
+[18]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 6 DBE/November 2025
+
+NSC Confidential",146.0,7.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.1,,[],4.1,3.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.2,,[],"4.2
+
+43
+
+44",11.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.5,,[],4.5,3.0,3.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.6,,[],4.6,3.0,4.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.7,,[],4.7,3.0,5.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.8,4.0,"[1, 4, 2, 1, 3, 4, 2, 4]","4.8
+
++
+
+y
+
+Write down the value of p.
+Show that ¢ = 4.
+
+Determine the equation of the circle in the form (x -a) +(y- by =r.
+
+Ree
+
+If the circle is translated 2 units to the left, determine the minimum distance between
+
+the circle and the y-axis.
+Calculate the coordinates of A and B.
+Determine the equation of tangent BC.
+
+Write down the coordinates of C.
+
+Calculate the size of ACB.
+
+Copyright reserved
+
+Please turn over
+
+(1),
+(4)
+(2)
+
+(1)
+(3)
+(4)
+(2)
+
+(4)
+[21]
+
+Mathematics/P2 7 DBE/November 2025
+NSC Confidential",515.0,6.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1,,[],5.1 It is given that tan 50° =k. Express EACH of the following in terms of £:,77.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.11,5.0,"[2, 5]","5.11 cos 40° (2)
+512 2sin 25°.cos 25° (5)
+—2+4sin’ 25°",54.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1.3,4.0,[4],"5.1.3 sin 10° (4)
+i Oo Oo
+PP Given: sin (540 £2).cos(0 +x)
+sin(—x)",66.0,3.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.2.1,4.0,[4],5.2.1 Simplify the expression above fully to a single trigonometric ratio. (4),78.0,4.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.2.2,17.0,"[2, 17]","5.2.2 Hence, determine the values of x in the interval x <[0°;360°] for which
+in(540°+ x). 90°+
+cat ea] gos(0""+2)! val beveal. (2)
+sin(-x)
+[17]",143.0,5.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.1,6.0,[6],"6.1 Prove that: [ tan (180°- x)] (1 —cos x) + cos’ x= (6)
+—cos x",64.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.2,13.0,"[7, 13]","6.2 It is given that sin’ x ; cos’x and ssi 2x are the first three terms of an arithmetic
+sequence. The constant difference of the arithmetic sequence is NOT zero.
+Determine the general solution for x. (7)
+[13]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 8 DBE/November 2025
+NSC Confidential",300.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,7.0,7.2,10.0,"[3, 1, 1, 4, 10]","7.2 On the set of axes provided in the ANSWER BOOK, draw the graph of
+g(x)=tan2x-1 for xe[-135°; 135°]. (3)
+73 Graph /f is translated 45° to the left to form graph h. Determine the equation of h
+in its simplest form. (1)
+74 Write down the range of h. (1)
+75 Determine the values of x for which (1—tan2x)(cos2x)>0 in the interval
+x [0° ; 135°]. (4)
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 9 DBE/November 2025
+
+NSC Confidential",443.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.1,,[],8.1,3.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.2,,[],8.2,3.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.3,,[],8.3,3.0,3.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.4,4.0,"[2, 2, 2, 4]","8.4
+
+BKLC isa horizontal base having KBC=104° and BKC =52,6°.
+
+The rectangular backdrop, ABCD, is vertical to the horizontal base and must have an area
+of 648 cm’.
+
+The sides of ABCD must be in the ratio AB: BC=1: 2.
+
+The stage must be partly enclosed with triangular sides ABK and DCL.
+
+Area = 648 em
+
+K L
+
+Show that AB = 18 cm. (2)
+Calculate the length of AC. (2)
+Calculate the length of diagonal KC. (2)
+If AB=BK, calculate the size of KAC. (4)
+
+[10}
+
+Copyright reserved Please tum over
+
+Mathematics/P2 10 DBE/November 2025
+NSC Confidential
+
+Provide reasons for your statements in QUESTIONS 9, 10 and 11.",607.0,4.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.1,5.0,[5],"9.1 In the diagram, O is the centre of the circle. K, T and P lie on the circle.
+
+K
+
+Use the diagram above to prove the theorem which states that the angle subtended by
+a chord (or arc) at the centre of the circle is equal to twice the angle subtended by the
+
+same chord (or arc) at the circumference, that is prove that TOP =2TKP. (5)
+
+Copyright reserved Please turn over
+
+Mathematics/P2 ll DBE/November 2025
+NSC Confidential",426.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.2,,[],"9.2 In the diagram, O is the centre of the circle. POF is the diameter of the circle and
+MF is a tangent to the circle at F. OM cuts the circle at L. P=32°,
+
+P
+32°
+1
+2 oO
+L
+M F
+Calculate, with reasons, the size of:",214.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.2.1,2.0,[2],"9.2.1 0, (2)",12.0,3.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.2.2,10.0,"[3, 10]","9.2.2 M (3)
+
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 12
+NSC Confidential",90.0,4.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.1,,[],"10.1 Calculate, with reasons, the size of QTs .",47.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.2,,[],10.2 Prove that PQ || SR.,25.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.3,8.0,"[3, 3, 2, 8]","10.3 Prove that PT is a diameter of the circle.
+
+Copyright reserved
+
+Please turn over
+
+(3)
+(3)
+
+(2)
+[8]
+
+Mathematics/P2 13 DBE/November 2025
+NSC Confidential",157.0,3.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.1,4.0,"[2, 4]","11.1 In the diagram, A ABC is drawn. BA is produced to E. F and D are points on BC
+CF 2 CG 3
+—=— and —=-.
+FB 5 GA 2
+
+such that AD || EF. AC and EF intersect at G.
+
+Calculate, with reasons, the value of:
+
+FD
+wl. 7 2
+IL1.1 CF (2)
+BA
+Lil: —_— 4
+W412 (4)
+Area of AGCF",263.0,1.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.1.3,,[],"11.1.3 ——_——— 4
+Area of GFDA
+
+Copyright reserved Please turn over
+
+Mathematics/P2 14 DBE/November 2025
+NSC Confidential",119.0,2.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.2,,[],"11.2 In the diagram, WVZR is a cyclic quadrilateral. RZ is produced to Q. A tangent is
+drawn from Q to touch the circle at S. WV is produced to E, a point on ZQ.
+RW produced meets ZV produced in P. PQ || WE. RS and ZS are drawn.
+
+P
+
+Q
+
+Prove, with reasons, that:
+
+_ PW.QR",271.0,3.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.2.1,2.0,[2],11.2.1 PR cE (2),16.0,4.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.2.2,3.0,"[1, 3]","11.2.2 If APQZ||| ARQP, then PQ? =RQ.QZ (1)
+11.2.3. AQSZ ||| AQRS (3)",69.0,5.0,ok
+2025_nov_p2_exam_maths,2025,P2,exam,data\processed\ocr\text\2025_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.2.4,4.0,"[3, 4]","11.2.4 PQ=QS (3)
+125 PW= a (4)
+[23]
+
+TOTAL: 150
+
+Copyright reserved
+
+Mathematics/P2
+
+DBE/November 2025
+
+NSC Confidential
+
+INFORMATION SHEET
+ea bt ve’ —4ac
+2a
+A=P( 4ni) A= P(\-ni) 4=P(-i"" A= P(+i)""
+T, =a+{n-1)d 8, => Rat (-Dd]
+
+T, =ar™"" 5-0 =) grat S,=—
+
+r-1
+
+p= x= (4 i)”
+
+lx) = Jim LEV -L@)
+H9= py
+
+i
+d= \(%, -x,) +0 -y,y
+
+yemxtc y-y, =m(x-m)
+
+(x-a) +(y-by =P?
+
+In AaBc: 2 =? = ©
+snA sinB sinC
+
+a’? =b’ +e? —2be.cos A
+
+area AABC = ab.sinC
+
+sin (@ + B) =sina.cos 8 +cosa.sin B
+
+cos(@+ B) =cosa..cos # -sina.sin B
+cos’ a—sin’ @
+
+cos2a@ =41-2sin’ @
+
+2cos’ a-1
+
+Copyright reserved
+
+3 -l<r<l
+l-r
+X, +X, W+tY,
+2° 2
+m=22-""1 m=tan@
+xy %
+
+sin(a — 8)=sin a.cos f —cosa.sin B
+
+cos(a— £) =cosa.cos f +sina.sin B
+
+sin 2a = 2sina.cosa
+
+n
+
+> (x; ~ x)
+
+o’ =wisl
+n
+
+P(A or B) = P(A) + P(B) — P(A and B)
+
+dX &-¥hy- 7)
+
+baa
+Yi@- x)",813.0,6.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,1.0,1.1.2,,[],1.1.2 5x? +2=-9x (correct to TWO decimal places),48.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,1.0,1.1.3,,[],1.1.3 8x? > 2x,14.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,1.0,1.1.4,,[],"1.1.4 2.27* -9.2* +4=0
+
+[ft 1",29.0,3.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,1.0,1.1.5,,[],"1.1.5 —+2=—=
+x Vx",17.0,4.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,1.0,1.2,,[],"1.2 Calculate the values of x and y if:
+
+e x isthe sum of 2 and y
+e Five times the product of x and y, is 6 more than the square of x",133.0,5.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,2.0,2.1,,[],2.1 Given the infinite geometric series: (f+ 10) + (¢-2) +(@+4) +...,68.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,2.0,2.1.1,,[],2.1.1 Show that t=—2,20.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,2.0,2.1.2,,[],"2.1.2 Calculate the value of 7,,. Write your answer in the form 7, = 5*",71.0,3.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,2.0,2.1.3,,[],"2.1.3 Calculate the sum of the infinite series.
+
+U7",51.0,4.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,2.0,2.2,,[],"2.2 Given }'(4p-1)= 26 675
+pak",30.0,5.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,2.0,2.2.1,,[],"2.2.1 Write down the difference between 7 and 7),",49.0,6.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,2.0,2.2.2,15.0,"[2, 4, 4, 4, 5, 6, 3, 3, 2, 2, 5, 15]","2.2.2 Calculate the value of k.
+
+Copyright reserved Please turn over
+
+(2)
+(4)
+(4)
+(4)
+
+(5)
+
+(6)
+[25]
+
+(3)
+(3)
+(2)
+
+(2)
+
+(5)
+[15]
+
+Mathematics/P1 4
+NSC Confidential",163.0,7.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,3.0,3.1,,[],3.1 Calculate the depth of the torpedo at the end of the first 5 seconds.,73.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,3.0,3.2,,[],"3.2 Show that the depth of the torpedo at the end of seconds was 7, =—n’ +38n-1",79.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,3.0,3.3,,[],3.3 Calculate the maximum depth that the torpedo reached.,57.0,3.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,3.0,3.4,10.0,"[2, 3, 3, 10]","3.4 After how many seconds was the torpedo at 104 m_below sea level for the second
+time?
+
+Copyright reserved
+
+Please turn over
+
+(2)
+(3)
+(3)
+
+Q)
+[10]
+
+Mathematics/P1 5 DBE/November 2025
+NSC Confidential",201.0,4.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,4.0,4.1,,[],4.1 Calculate the value of ¢ qd),32.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,4.0,4.2,2.0,[2],"4.2 Write down the coordinates of A. qd)
+43 Determine the equation of f', the inverse of f£ inthe form y=... (2)",112.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,4.0,4.4,,[],4.4 Write down the equation of the asymptote of f™ q),53.0,3.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,4.0,4.5,,[],"4.5 Draw the graph of f' on the set of axes provided in the ANSWER BOOK. Clearly
+indicate the intercepts with the axes, the coordinates of ONE other point and the
+asymptotes. (GB)",179.0,4.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,4.0,4.6,10.0,"[2, 10]","4.6 The graph of h is obtained when /~ is translated 5 units to the right. Determine the
+p-values of h where x>4. (2)
+
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 6 DBE/November 2025
+NSC Confidential",213.0,5.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,5.0,5.1,1.0,[1],5.1 Write down the domain of g. (1),35.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,5.0,5.2,1.0,[1],5.2 Write down the range of /- (1),34.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,5.0,5.3,,[],5.3 Determine the values of x for which:,40.0,3.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,5.0,5.3.1,2.0,[2],5.3.1 2(x)< f(x) (2),20.0,4.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,5.0,5.3.2,2.0,[2],5.3.2 f(x) <6 (2),17.0,5.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,5.0,5.4,3.0,[3],5.4 Show that the equation of the parabolais f(x) = 5? +3x +2 (3),65.0,6.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,5.0,5.5,6.0,[6],5.5 Calculate the length of MT. (6),35.0,7.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,5.0,5.6,18.0,"[3, 18]","5.6 Determine the equation of the tangent to f at D. (3)
+
+[18]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 7 DBE/November 2025
+NSC Confidential",152.0,8.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,6.0,6.1,,[],6.1 Write down the coordinates of the x-intercept of g in terms of p. qd),73.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,6.0,6.2,5.0,[5],"6.2 Graph g intersects the horizontal asymptote of graph f at x=1 and the graph f at
+x=3. Graphs f and g also intersect on the y-axis. Determine the equation of f (5)",166.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,6.0,6.3,8.0,"[2, 8]","6.3 Describe the transformation that g must undergo to become an axis of symmetry of f
+that cuts f at two points. (2)
+[8]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 8 DBE/November 2025
+NSC Confidential",211.0,3.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,7.0,7.2,4.0,[4],"7.2 Sarah opened a savings account that paid interest at a rate of 5,8% p.a., compounded
+
+quarterly. She deposited R2 300 into the account on 1 January 2020 and continued to
+make deposits of R2 300 at the beginning of each quarter thereafter. She made her last
+deposit on 1 October 2025. Calculate the accumulated amount in the account on
+1 January 2026. (4)
+
+73 The bank granted Rajesh a loan of R900 000 on 28 February 2024 at an interest rate of
+6,8% p.a., compounded monthly.",479.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,7.0,7.3.1,15.0,"[5, 4, 15]","7.3.1 Rajesh was unable to make the first three payments. He made his first
+repayment of R10 000 on 30 June 2024. He continued to make monthly
+repayments of R10 000 at the end of each month thereafter. How long, in
+completed months, will it take Rajesh to repay the loan from the time the
+
+loan was granted? (5)
+73.2 Calculate the value of the final payment. (4)
+[15]",367.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,8.0,8.1,4.0,[4],8.1 Determine /‘(x) from first principles if it is given that f(x)=-2x+3. (4),77.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,8.0,8.2,,[],8.2 Determine:,14.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,8.0,8.2.1,10.0,"[2, 4, 10]","8.2.1 g(x) if g(x)=-3x* +2x (2)
+22S if y- ue (4)
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 9 DBE/November 2025
+
+NSC Confidential",144.0,3.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,9.0,9.1,,[],9.1,3.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,9.0,9.2,,[],9.2,3.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,9.0,9.3,,[],9.3,3.0,3.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,9.0,9.4,17.0,"[4, 4, 6, 17]","9.4
+
+Copyright reserved
+
+Calculate the coordinates of E.
+For which values of x is f concave down?
+
+The coordinates of B are (2; 0). Use the graph to determine the values of x for which
+S@).f “<0
+
+For which values of ¢ will y=-—llx+¢ intersect f at 3 distinct points?
+
+Please turn over
+
+(4)
+@)
+
+(4)
+
+(6)
+[17]
+
+Mathematics/P 1 10 DBE/November 2025
+NSC Confidential",362.0,4.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,10.0,10.1,,[],"10.1 Show that the volume of the cylinder is given by V = a
+4n An",65.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,10.0,10.2,6.0,"[3, 6]","10.2 Calculate the value of x that will maximise the volume of the cylinder. (3)
+
+[6]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 11 DBE/November 2025
+NSC Confidential",176.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,11.0,11.1,,[],"11.1 A survey was conducted among female and male learners at a school about which type
+of cold drink they preferred. The data from the survey is presented in the table below.
+
+[ser [nena [1070
+rs ee
+re ee",205.0,1.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,11.0,11.1.1,3.0,[3],11.1.1 The events male and preferring juice are independent. Show that e = 84. (3),82.0,2.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,11.0,11.1.2,3.0,[3],"11.1.2 Calculate the probability that a female learner, chosen at random from the
+group, will like energy drinks. (3)",117.0,3.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,11.0,11.2,4.0,[4],"11.2 At a kiosk, 120 people buy either a cup of coffee or a bottle of water. The chance of
+rain on any given day is 75%. The chance of a person buying a cup of coffee on a rainy
+day is three times the chance of the person buying coffee on a non-rainy day.
+
+The probability of a person buying coffee on any given day is =.
+Calculate the number of cups of coffee that will be sold on a non-rainy day. (4)",402.0,4.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,11.0,11.3,,[],"11.3 Eight runners compete in a race where there are no tied finishes. Bongi and Andrew are
+two of the competitors.",115.0,5.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,11.0,11.3.1,2.0,[2],"11.3.1 Calculate the total number of possible ways in which the 8 runners can
+finish the race if Bongi finishes in a position immediately after Andrew. (2)",155.0,6.0,ok
+2025_nov_p2_memo_maths,2025,P2,memo,data\processed\ocr\text\2025_nov_p2_memo_maths_ocr.txt,ocr_good,11.0,11.3.2,16.0,"[4, 16]","11.3.2 Calculate the probability that TWO OR MORE runners finish the race after
+Andrew and before Bongi. (4)
+[16]
+
+TOTAL: 150
+
+Copyright reserved
+
+Mathematics/P1
+
+DBE/November 2025
+
+NSC Confidential
+
+INFORMATION SHEET
+ear tv b* — 4ac
+2a
+A=P(1+ni) A=P(i-ni) A=P(-i)"" A=P(+i)""
+T, =a+(n-1)d S, = Fa + (n—-Dd]
+T, =ar""™"" Ss _ al"" -1) srHl S,= é 3 -I<r<l
+"" r-l l-r
+pats -1 pa xlat+iy""
+i i
+. h)- f(x)
+(x) = 1 S (xt
+a
+X, +X. +
+d= (, —x%,) +0,-¥) m( i ra %)
+2 2
+yomxte y~y, =m(x-x,) m= 22H m= tan 0
+Xx. —X,
+
+(x-a) +(y-by =r?
+aq b __¢
+snA sinB sinC
+
+In AABC:
+a’ =b’ +c? -2be.cos A
+area AABC = sabsin€
+
+sin(a + B)=sina.cos £ + cosa.sin B
+
+cos(a + 8)=cosa@.cos f ~sina.sin B
+cos’ a—sin’ a
+
+cos2a =41-2sin’ a
+
+2cos’ a—-1
+
+Copyright reserved
+
+sin (a@ -£) = sin a.cos 8-cosa.sin B
+
+cos(a~- 8) =cosa.cos B +sina.sin B
+
+sin 2a = 2sin a.cos a
+
+n
+
+> @,-¥""
+
+o = tL
+n
+
+P(A ot B) = P(A) + P(B) — P(A and B)
+
+dX @-*)o-y~
+
+Ye",901.0,7.0,ok
+caps_mathematics_gr10_12,2011,,caps,data\processed\extracted_text\NSC_Mathematics_2011_caps.txt,good,,,,,"/MT66/MT97/MT115/MT105/MT99/MT32/MT69/MT100/MT117/MT99/MT97/MT116/MT105/MT111/MT110
+/MT68/MT101/MT112/MT97/MT114/MT116/MT109/MT101/MT110/MT116/MT58
+/MT82/MT69/MT80/MT85/MT66/MT76/MT73/MT67/MT32/MT79/MT70/MT32/MT83/MT79/MT85/MT84/MT72/MT32/MT65/MT70/MT82/MT73/MT67/MT65
+/MT98/MT97/MT115/MT105/MT99/MT32/MT101/MT100/MT117/MT99/MT97/MT116/MT105/MT111/MT110MATHEMATICS
+Curriculum and Assessment
+Policy Statement
+Further Education and Training Phase
+Grades 10-12
+National Curriculum Statement (NCS)
+
+CAPS
+CurriCulum and assessment PoliCy statement
+Grades 10-12
+matHematiCs
+
+MATHEMATICS GRADES 10-12
+CURRICULUM AND ASSESSMENT POLICY STATEMENT (CAPS)
+department of Basic education
+222 Struben Street
+Private Bag X895
+Pretoria 0001
+South Africa
+Tel: +27 12 357 3000
+Fax: +27 12 323 0601
+120 Plein Street Private Bag X9023
+Cape Town 8000
+South Africa
+Tel: +27 21 465 1701
+Fax: +27 21 461 8110
+Website: http://www.education.gov.za
+© 2011 department of Basic education
+isBn: 978-1-4315-0573-9
+Design and Layout by: Ndabase Printing Solution
+Printed by: Government Printing Works
+
+MATHEMATICS GRADES 10-12
+CAPS
+AGRICULTURAL MANAGEMENT PRACTICES GRADES 10-12
+CAPS
+FOREWORD by thE ministER
+Our national curriculum is the culmination of our efforts over a period of seventeen
+years to transform the curriculum bequeathed to us by apartheid. From the start of
+democracy we have built our curriculum on the values that inspired our Constitution
+(Act 108 of 1996). the Preamble to the Constitution states that the aims of the
+Constitution are to:
+• heal the divisions of the past and establish a society based on democratic
+values, social justice and fundamental human rights;
+• improve the quality of life of all citizens and free the potential of each person;
+• lay the foundations for a democratic and open society in which government is
+based on the will of the people and every citizen is equally protected by law;
+and
+• build a united and democratic South Africa able to take its rightful place as a sovereign st",,,no_question_markers
+grade12_mathematics_exam_guideline_2021,2021,,guideline,data\processed\extracted_text\NSC_Mathematics_2021_guideline.txt,good,,,,,"Copyright reserved Please turn over
+
+MATHEMATICS
+
+EXAMINATION GUIDELINES
+
+GRADE 12
+
+2021
+
+These guidelines consist of 16 pages.
+
+Mathematics 2 DBE/2021
+Examination Guidelines
+Copyright reserved Please turn over
+
+CONTENTS Page
+
+Chapter 1: Introduction 3
+
+Chapter 2: Assessment in Grade 12
+2.1 Format of QUESTION papers for Grade 12 4
+2.2 Weighting of topics per paper for Grade 12 4
+2.3 Weighting of cognitive levels 5
+
+Chapter 3: Elaboration of Content for Grade 12 (CAPS) 6
+
+Chapter 4: Acceptable reasons: Euclidean Geometry
+4.1 Acceptable Reasons: Euclidean Geometry (ENGLISH) 9
+4.2 Aanvaarbare redes: Euklidiese Meetkunde (AFRIKAANS) 12
+
+Chapter 5: Information sheet 15
+
+Chapter 6: Guidelines for marking 16
+
+Chapter 7: Conclusion 16
+.
+
+Mathematics 3 DBE/2020
+Examination Guidelines
+Copyright reserved Please turn over
+
+1. INTRODUCTION
+
+The Curriculum and Assessment Policy Statement (CAPS) for Mathematics outlines the nature and purpose of
+the subject Mathematics. This guides the philosophy underlying the teaching and assessment of the subject in
+Grade 12.
+
+The purpose of these Examination Guidelines is to:
+
+ Provide clarity on the depth and sc ope of the content to be assessed in the Grade 12 National Senior
+Certificate Examination in Mathematics
+ Assist teachers to adequately prepare learners for the examinations
+
+This document deals with the final Grade 12 external examinations. It does not de al in any depth with the
+school-based assessment (SBA), p erformance assessment tasks (PATs) or final external practical
+examinations as these are clarified in a separate PAT document which is updated annually.
+
+These guidelines should be read in conjunction with:
+
+ The National Curriculum Statement (NCS) Curriculum and Assessment Policy Statement (CAPS) :
+Mathematics
+ The National Protocol of Assessment: An addendum to the policy document, the National Senior
+Certificate: A qualification at Level 4 on the National Qualifications Framework (NQF), regarding the
+National Protocol ",,,no_question_markers
