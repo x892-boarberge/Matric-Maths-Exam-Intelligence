@@ -1,0 +1,525 @@
+Confidential
+
+basic education
+
+Department:
+Basic Education
+REPUBLIC OF SOUTH AFRICA
+
+NATIONAL
+SENIOR CERTIFICATE
+
+MATHEMATICS P2
+
+NOVEMBER 2025
+
+MARKS: 150
+
+TIME: 3 hours
+
+This question paper consists of 14 pages, 1 information sheet
+and an answer book of 27 pages.
+
+Copyright reserved Please turn over
+
+Mathematics/P2 2 DBE/November 2025
+NSC Confidential
+
+INSTRUCTIONS AND INFORMATION
+
+Read the following instructions and information carefully before answering the questions.
+
+1. This question paper consists of 11 questions.
+
+2. Answer ALL the questions in the SPECIAL ANSWER BOOK provided.
+
+3. Clearly show ALL calculations, diagrams, graphs, etc. which you have used in
+determining your answers.
+
+4. Answers only will NOT necessarily be awarded full marks.
+
+5. You may use an approved scientific calculator (non-programmable and non-graphical),
+
+unless stated otherwise.
+
+6. If necessary, round off answers to TWO decimal places, unless stated otherwise.
+7. Diagrams are NOT necessarily drawn to scale.
+
+8. An information sheet with formulae is included at the end of the question paper.
+9. Write neatly and legibly.
+
+Copyright reserved Please tum over
+
+Mathematics/P2
+
+3
+
+NSC Confidential
+
+QUESTION 1.
+
+DBE/November 2025
+
+There were 11 cars of the same model for sale at a car dealership. The age (in years) of each car
+
+and its corresponding selling price (in rands) is provided in the table below.
+
+AGE OF CAR
+(IN YEARS)
+
+SELLING PRICE
+OF CAR
+IN RAND
+293 000
+
+265 000
+
+256 000
+
+219 000
+
+241 000
+
+246 000
+
+226 000
+
+176 000
+
+154 000
+
+180 000
+
+CO |SITE |O |B |B PB [G0 [U0 [to
+
+148 000
+
+1.1 Determine the equation of the least squares regression line.
+1.2 Predict the selling price of a similar car at this car dealership that is 5 years old.
+1.3 Use the correlation coefficient to show whether the prediction made in QUESTION 1.2
+
+is valid or not.
+
+1.4 Use the answer to QUESTION 1.1 to write down the estimated average yearly decrease
+
+in the selling price of these 11 cars.
+
+Copyright reserved
+
+Please turn over
+
+(3)
+(2)
+
+(2)
+
+(1)
+8]
+
+Mathematics/P2 4 DBE/November 2025
+NSC Confidential
+
+QUESTION 2
+
+2.1 The cumulative frequency table below shows the amount of time that people spent on
+a particular website on a certain day.
+
+TIME, ¢ CUMULATIVE
+IN MINUTES FREQUENCY
+
+0<1<20 16
+0<1<40 40
+0<t<60 59
+0<t#<80 67
+
+0<t¢<100 70
+
+2.1.1 How many people visited this website on that day? qd)
+
+2.1.2 How many people spent more than 40 and up to 80 minutes on the
+website? (2)
+
+2.1.3 Draw a histogram to represent the information provided in the cumulative
+frequency table. (3)
+2.1.4 Comment on the skewness of the data. qd)
+
+2.2 There are 9 players in a basketball team. The coach calculated that on average, each
+
+player scored 12 points during a game. The points scored by 8 of the 9 players from the
+team is given below:
+
+[+ f[s[»]»l*l»]? «|
+
+How many players' points score was outside ONE standard deviation of the mean points
+score? (5)
+[12]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 5 DBE/November 2025
+NSC Confidential
+QUESTION 3
+
+In the diagram, P(-1 ; 8), Q(-4;-6) and R(12; 2) are the vertices of APQR. The angle of
+inclination of QR is @.
+
+yt
+PCI ; 8)
+R(12 ; 2)
+a >
+x
+QC ; -6)
+
+3.1 Calculate the length of QR. Leave your answer in simplified surd form. (2)
+3.2 Calculate the gradient of QR. (2)
+3.3 Calculate the size of 6. (2)
+3.4 Determine the equation of QR. (2)
+3.5 PQRS, in that order, is a parallelogram. Write down the coordinates of S. (2)
+3.6 T isa point on QR such that PT 1 QR. Calculate the coordinates of T. (5)
+3.7 Calculate the area of parallelogram PQRS. (3)
+
+[18]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 6 DBE/November 2025
+
+NSC Confidential
+
+QUESTION 4
+
+In the diagram, M(p ; q) is the centre of the circle that intersects the x-axis at A and B. C is
+a point such that the line drawn from M to C is parallel to the y-axis and intersects the x-axis
+at D. MC intersects the circle at E(-6 ; -1). Tangents drawn from C touch the circle at A
+
+and B. AD =(q—1) units.
+
+4.1
+
+4.2
+
+43
+
+44
+
+4.5
+
+4.6
+
+4.7
+
+4.8
+
++
+
+y
+
+Write down the value of p.
+Show that ¢ = 4.
+
+Determine the equation of the circle in the form (x -a) +(y- by =r.
+
+Ree
+
+If the circle is translated 2 units to the left, determine the minimum distance between
+
+the circle and the y-axis.
+Calculate the coordinates of A and B.
+Determine the equation of tangent BC.
+
+Write down the coordinates of C.
+
+Calculate the size of ACB.
+
+Copyright reserved
+
+Please turn over
+
+(1),
+(4)
+(2)
+
+(1)
+(3)
+(4)
+(2)
+
+(4)
+[21]
+
+Mathematics/P2 7 DBE/November 2025
+NSC Confidential
+QUESTION 5
+5.1 It is given that tan 50° =k. Express EACH of the following in terms of £:
+5.11 cos 40° (2)
+512 2sin 25°.cos 25° (5)
+—2+4sin’ 25°
+5.1.3 sin 10° (4)
+i Oo Oo
+PP Given: sin (540 £2).cos(0 +x)
+sin(—x)
+5.2.1 Simplify the expression above fully to a single trigonometric ratio. (4)
+5.2.2 Hence, determine the values of x in the interval x <[0°;360°] for which
+in(540°+ x). 90°+
+cat ea] gos(0"+2)! val beveal. (2)
+sin(-x)
+[17]
+QUESTION 6
+3 »___ (sinx-cosx){1+sin x.cosx)
+6.1 Prove that: [ tan (180°- x)] (1 —cos x) + cos’ x= (6)
+—cos x
+6.2 It is given that sin’ x ; cos’x and ssi 2x are the first three terms of an arithmetic
+sequence. The constant difference of the arithmetic sequence is NOT zero.
+Determine the general solution for x. (7)
+[13]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 8 DBE/November 2025
+NSC Confidential
+
+QUESTION 7
+
+In the diagram, the graph of f(x) =cos2x is drawn for xe [-1 35° ; 135°].
+
+¥
+
+7A Write down the period of f qd)
+7.2 On the set of axes provided in the ANSWER BOOK, draw the graph of
+g(x)=tan2x-1 for xe[-135°; 135°]. (3)
+73 Graph /f is translated 45° to the left to form graph h. Determine the equation of h
+in its simplest form. (1)
+74 Write down the range of h. (1)
+75 Determine the values of x for which (1—tan2x)(cos2x)>0 in the interval
+x [0° ; 135°]. (4)
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 9 DBE/November 2025
+
+NSC Confidential
+
+QUESTION 8
+
+As part of a school project, learners are required to design a portable stage for a puppet show, as
+shown in the diagram below. The design must fulfil the following requirements:
+
+8.1
+
+8.2
+
+8.3
+
+8.4
+
+BKLC isa horizontal base having KBC=104° and BKC =52,6°.
+
+The rectangular backdrop, ABCD, is vertical to the horizontal base and must have an area
+of 648 cm’.
+
+The sides of ABCD must be in the ratio AB: BC=1: 2.
+
+The stage must be partly enclosed with triangular sides ABK and DCL.
+
+Area = 648 em
+
+K L
+
+Show that AB = 18 cm. (2)
+Calculate the length of AC. (2)
+Calculate the length of diagonal KC. (2)
+If AB=BK, calculate the size of KAC. (4)
+
+[10}
+
+Copyright reserved Please tum over
+
+Mathematics/P2 10 DBE/November 2025
+NSC Confidential
+
+Provide reasons for your statements in QUESTIONS 9, 10 and 11.
+QUESTION 9
+
+9.1 In the diagram, O is the centre of the circle. K, T and P lie on the circle.
+
+K
+
+Use the diagram above to prove the theorem which states that the angle subtended by
+a chord (or arc) at the centre of the circle is equal to twice the angle subtended by the
+
+same chord (or arc) at the circumference, that is prove that TOP =2TKP. (5)
+
+Copyright reserved Please turn over
+
+Mathematics/P2 ll DBE/November 2025
+NSC Confidential
+
+9.2 In the diagram, O is the centre of the circle. POF is the diameter of the circle and
+MF is a tangent to the circle at F. OM cuts the circle at L. P=32°,
+
+P
+32°
+1
+2 oO
+L
+M F
+Calculate, with reasons, the size of:
+9.2.1 0, (2)
+9.2.2 M (3)
+
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 12
+NSC Confidential
+
+QUESTION 10
+
+DBE/November 2025
+
+In the diagram, PQRS is a cyclic quadrilateral. T is a point on the circle such that QT is
+
+perpendicular to SR at V. PT and ST are drawn. a, = 35° and R=S.
+
+10.1 Calculate, with reasons, the size of QTs .
+
+10.2 Prove that PQ || SR.
+
+10.3 Prove that PT is a diameter of the circle.
+
+Copyright reserved
+
+Please turn over
+
+(3)
+(3)
+
+(2)
+[8]
+
+Mathematics/P2 13 DBE/November 2025
+NSC Confidential
+
+QUESTION 11
+
+11.1 In the diagram, A ABC is drawn. BA is produced to E. F and D are points on BC
+CF 2 CG 3
+—=— and —=-.
+FB 5 GA 2
+
+such that AD || EF. AC and EF intersect at G.
+
+Calculate, with reasons, the value of:
+
+FD
+wl. 7 2
+IL1.1 CF (2)
+BA
+Lil: —_— 4
+W412 (4)
+Area of AGCF
+11.1.3 ——_——— 4
+Area of GFDA
+
+Copyright reserved Please turn over
+
+Mathematics/P2 14 DBE/November 2025
+NSC Confidential
+
+11.2 In the diagram, WVZR is a cyclic quadrilateral. RZ is produced to Q. A tangent is
+drawn from Q to touch the circle at S. WV is produced to E, a point on ZQ.
+RW produced meets ZV produced in P. PQ || WE. RS and ZS are drawn.
+
+P
+
+Q
+
+Prove, with reasons, that:
+
+_ PW.QR
+
+11.2.1 PR cE (2)
+11.2.2 If APQZ||| ARQP, then PQ? =RQ.QZ (1)
+11.2.3. AQSZ ||| AQRS (3)
+11.2.4 PQ=QS (3)
+125 PW= a (4)
+[23]
+
+TOTAL: 150
+
+Copyright reserved
+
+Mathematics/P2
+
+DBE/November 2025
+
+NSC Confidential
+
+INFORMATION SHEET
+ea bt ve’ —4ac
+2a
+A=P( 4ni) A= P(\-ni) 4=P(-i" A= P(+i)"
+T, =a+{n-1)d 8, => Rat (-Dd]
+
+T, =ar™" 5-0 =) grat S,=—
+
+r-1
+
+p= x= (4 i)”
+
+lx) = Jim LEV -L@)
+H9= py
+
+i
+d= \(%, -x,) +0 -y,y
+
+yemxtc y-y, =m(x-m)
+
+(x-a) +(y-by =P?
+
+In AaBc: 2 =? = ©
+snA sinB sinC
+
+a’? =b’ +e? —2be.cos A
+
+area AABC = ab.sinC
+
+sin (@ + B) =sina.cos 8 +cosa.sin B
+
+cos(@+ B) =cosa..cos # -sina.sin B
+cos’ a—sin’ @
+
+cos2a@ =41-2sin’ @
+
+2cos’ a-1
+
+Copyright reserved
+
+3 -l<r<l
+l-r
+X, +X, W+tY,
+2° 2
+m=22-"1 m=tan@
+xy %
+
+sin(a — 8)=sin a.cos f —cosa.sin B
+
+cos(a— £) =cosa.cos f +sina.sin B
+
+sin 2a = 2sina.cosa
+
+n
+
+> (x; ~ x)
+
+o’ =wisl
+n
+
+P(A or B) = P(A) + P(B) — P(A and B)
+
+dX &-¥hy- 7)
+
+baa
+Yi@- x)

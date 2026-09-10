@@ -1,0 +1,369 @@
+= lz basic education
+
+WF
+= Department:
+e AK Basic Education
+
+(@) REPUBLIC OF SOUTH AFRICA
+
+NATIONAL
+SENIOR CERTIFICATE
+GRADE 12
+
+MATHEMATICS P1
+
+NOVEMBER 2023
+
+TIME: 3 hours
+
+This question paper consists of 9 pages and 1 information sheet.
+
+Copyright reserved Please turn over
+
+Mathematics/P1 2 DBE/November 2023
+
+NSC
+
+INSTRUCTIONS AND INFORMATION
+
+Read the following instructions carefully before answering the questions.
+
+1.
+
+2.
+
+10.
+
+This question paper consists of 10 questions.
+Answer ALL the questions.
+
+Number the answers correctly according to the numbering system used in this
+question paper.
+
+Clearly show ALL calculations, diagrams, graphs, etc. that you have used in
+determining your answers.
+
+Answers only will NOT necessarily be awarded full marks.
+
+You may use an’ approved scientific calculator (non-programmable and non-
+graphical), unless stated otherwise.
+
+If necessary, round off answers to TWO decimal places, unless stated otherwise.
+Diagrams are NOT necessarily drawn to scale.
+An information sheet with formulae is included at the end of the question paper.
+
+Write neatly and legibly.
+
+Copyright reserved Please turn over
+
+Mathematics/P 1 3 DBE/November 2023
+
+NSC
+
+QUESTION 1
+1.1 Solve for x:
+
+11.1 x +x-12=0 (3)
+
+1.1.2 3x*-2x=6 (answers correct to TWO decimal places) (4)
+
+1.1.3 V2xt+1 =x-1 (4)
+
+1.1.4 x? -3>2x (4)
+1.2 Solve for x and y simultaneously:
+
+x+2=2y and Iytly
+
+x y (5)
+
+1.3 Given: 2”*1 +2" =3"'? 3” where m and n are integers.
+
+Determine the value of m+ n. (4)
+
+[24]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 4 DBE/November 2023
+
+NSC
+QUESTION 2
+2.1 Given the arithmetic series: 7+ 12+17+...
+2.1.1 Determine the value of Ty, (3)
+2.1.2 Calculate S,, 2)
+2.1.3 Calculate the value of n for which T, =517 (3)
+2.2 The following information is given about a quadratic number pattern:
+
+T, =3, T,-T, =9 and T,-T, =21
+
+2.2.1 Show that 7,=111 (2)
+2.2.2 Show that the general term of the quadratic pattern is T,, = 6n? —9n+6 ()
+2.2.3 Show that the pattern is increasing for all ne N. (3)
+[16]
+QUESTION 3
+3.1 Given the geometric series: 3+6+12+... to n terms.
+3.1.1 Write down the general term of this series. qd)
+k
+3.1.2 Calculate the value of k such that: >50y = 98 301 (4)
+p=l
+3.2 A geometric sequence and an arithmetic sequence have the same first term.
+
+e The common ratio of the geometric sequence is 3
+
+The common difference of the arithmetic sequence is 3
+The sum of 22 terms of the arithmetic sequence is 734 more than the sum to
+infinity of the geometric sequence.
+
+Calculate the value of the first term. (5)
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P 1 5 DBE/November 2023
+NSC
+
+QUESTION 4
+
+Sketched below is the graph of f(x)=2*-4 for x e[-2; 4).
+A and B are respectively the y- and x-intercepts of f
+
+4.1 Write down the equation of the asymptote of /. (1)
+4.2 Determine the coordinates of B. (2)
+4.3 Determine the equation of k, a straight line passing through A and B in the form
+
+Kx) =... (3)
+44 Calculate the vertical distance between & and f at x=1 (3)
+4.5 Write down the equation of g if itis given that g(x)= f(x) +4 (1)
+46 Write down the domain of g'. (2)
+47 Write down the equation of g7' inthe form y=... (2)
+
+[14]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 6
+
+NSC
+
+QUESTION 5
+
+DBE/November 2023
+
+The graphs of f(x) = -F0 —1)?+8 and g(x) = @ are drawn below. A point of intersection
+x
+
+of f and g is B, the turning point of £ The graph f has x-intercepts at (-3; 0) and (5 ; 0)
+and a y-intercept at C.
+
+3.1
+
+5.2
+
+5.3
+
+5.4
+
+5.5
+
+5.6
+
+5.7
+
+Write down the coordinates of the turning point of (2)
+Calculate the coordinates of C. (2)
+Calculate the value of . (ql)
+Write down the range of g. (1)
+For which values of x will f(x).g(x) <0? (3)
+Calculate the values of k so that h(x) =—2x +k will not intersect the graph of g. (5)
+h isa tangent to g at R, a point in the first quadrant. Calculate ¢ such that
+
+y=f(x)+t intersects g at R. (4)
+
+[18]
+
+Copyright reserved
+
+Please turn over
+
+Mathematics/P1 7 DBE/November 2023
+NSC
+
+QUESTION 6
+
+6.1 Patrick deposited an amount of R18 500 into an account earning r% interest p.a.,
+
+compounded monthly. After 6 months, his balance was R19 319,48.
+6.1.1 Calculate the value of r. (3)
+6.1.2 Calculate the effective interest rate. (2)
+
+6.2 Kuda bought a laptop for R10 000 on 31 January 2019. He will replace it with a new
+one in 5 years' time on 31 January 2024.
+
+6.2.1 The value of the old laptop depreciates annually at a rate of 20% p.a.
+according to the straight-line method. After how many years will the
+laptop have a value of RO? (2)
+
+6.2.2 Kuda will buy a laptop that costs R20 000. In order to cover the cost
+price, he made his first monthly deposit into a savings account on
+28 February 2019. He will make his 60% monthly deposit on
+31 January 2024. The savings account pays interest at 8,7% p.a.,
+compounded monthly. Calculate Kuda's monthly deposit into this
+account. (4)
+
+6.3 Tino wins a jackpot of R1 600 000. He invests all of his winnings in a fund that earns
+interest of 11,2% p.a., compounded monthly. He withdraws R20 000 from the fund at
+the end of each month. His first withdrawal is exactly 1 month after his initial
+investment. How many withdrawals of R20 000 will Tino be able to make from this
+
+fund? (6)
+[16]
+
+QUESTION 7
+7.1 Determine f /(x) from first principles if f(x) =—4x? (6)
+72 Determine:
+
+7.21 f'@) if f(x) = 2x? -3x (2)
+
+7.2.2 D, bal + ox) (3)
+73 For which values of x will the tangent to f(x) =—2x>+8x have a positive gradient? Se
+
+Copyright reserved Please tum over
+
+Mathematics/P1 8 DBE/November 2023
+NSC
+
+QUESTION 8
+
+Given: f(x) =—x? +6x? -9x4+4=(x-1)?(-x+4)
+
+8.1 Determine the coordinates of the turning points of f (4)
+8.2 Draw a sketch graph of /- Clearly label all the intercepts with the axes and any
+
+turning points. (4)
+8.3 Use the graph to determine the value(s) of & for which —x°+6x7~-9x+4=k will
+
+have three real and unequal roots. (2)
+8.4 The line g{x)=ax+5 is the tangent to f at the point of inflection of Determine
+
+the equation of g. (6)
+8.5 Calculate the value of @, the acute angle formed between g and the x-axis in the
+
+first quadrant. Q)
+
+[18]
+
+QUESTION 9
+
+The diagram below represents a printed poster. Rectangle ABCD is the part on which the text
+is printed. This shaded area ABCD is 432 cm? and AD=xcem. ABCD is 4cm from the left
+and right edges of the page and 3 cm from the top and bottom of the page.
+
+9.1 Show that the total area of the page is given by:
+A(x) = = + 6x +480
+x (3)
+9.2 Determine the value of x such that the total area of the page is a minimum. (3)
+
+[6]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 9 DBE/November 2023
+NSC
+
+QUESTION 10
+
+10.1 A and B are independent events. P(A) = ; and P(B)= ;
+Determine:
+10.1.1 P(A and B)
+10.1.2 P(at least ONE event occurs)
+10.2 The probability that it will snow on the Drakensberg Mountains in June is 5%.
+e When it snows on the mountains, the probability that the minimum temperature in
+Central South Africa will drop below 0 °C is 72%.
+e If it does not snow on the mountains, the probability that the minimum
+
+temperature in Central South Africa will drop below 0 °C is 35%.
+
+10.2.1 Represent the given information on a tree diagram. Clearly indicate the
+probabilities associated with EACH branch.
+
+10.2.2 Calculate the probability that the temperature in Central South Africa will
+NOT drop below 0 °C in June 2024.
+
+10.3 Ten learners stand randomly in a line, one behind the other.
+10.3.1 In how many different ways can the ten learners stand in the line?
+
+10.3.2 Calculate the probability that there will be 5 learners between the 2
+youngest learners in the line.
+
+TOTAL:
+
+Copyright reserved
+
+(2)
+@)
+
+(3)
+
+@G)
+
+(1)
+
+(4)
+[15]
+
+150
+
+Mathematics/P1 DBE/November 2023
+
+NSC
+INFORMATION SHEET
+ea ENe’ —4ac
+2a
+A= P(1+ni) A= P(I-ni) A= P(-i)" A= P(i+i)"
+T, =a+(n-1)d S, = SPat(m-nd]
+T, =ar"" Ss _ ar" -1) sr#l s.=;* 3 -l<r<l
+. r-l -r
+
+pox 1+i=1 pala +i)"
+
+t t
+
+7) = tim LE2M=F@)
+h->0
+
+h
+xX, +X, yt+y
+d = (x, -%)Y +O, -yy M| 2;
+2 2
+y=mxte y-y, =m(x-x) m= 22-1 m=tané
+X.Y
+
+(x-a! +(y-4VP =r?
+In AABC: 2—=—?_ = ©
+
+sinA sinB sinC
+
+a =b? +e? -2be.cos A
+
+area AABC =F ab.sin
+sin(@ + )=sina.cos f +cosa.sin B sin(a - 8) =sina.cos 8 —cosa.sin B
+cos (a + B)=cosa..cos B -sina.sin B cos(a -B)= cosa@.cos # + sina.sin B
+
+cos’ a—sin’ a
+cos2a@ =41-2sin’ a sin 2a = 2sin a.cosa
+
+2cos* a—1
+
+“ Yo, -D
+
+2 _ isl
+
+o =
+n n
+P(A)= 75) P(A or B) = P(A) + P(B)— P(A and B)
+ni
+Paathx p= L&D)
+
+Y@-3
+
+Copyright reserved

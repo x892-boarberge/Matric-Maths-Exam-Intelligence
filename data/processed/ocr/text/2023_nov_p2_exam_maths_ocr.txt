@@ -1,0 +1,460 @@
+basic education
+
+Department:
+Basic Education
+REPUBLIC OF SOUTH AFRICA
+
+NATIONAL
+SENIOR CERTIFICATE
+
+GRADE 12
+
+MATHEMATICS P2
+
+NOVEMBER 2023
+
+TIME: 3 hours
+
+This question paper consists of 13 pages, 1 information sheet
+and an answer book of 23 pages.
+
+Copyright reserved Please turn over
+
+Mathematics/P2 2 DBE/November 2023
+
+NSC
+
+INSTRUCTIONS AND INFORMATION
+
+Read the following instructions carefully before answering the questions.
+
+1.
+
+2.
+
+This question paper consists of 10 questions.
+Answer ALL the questions in the SPECIAL ANSWER BOOK provided.
+
+Clearly show ALL calculations, diagrams, graphs, etc. which you have used in
+determining your answers.
+
+Answers only will NOT necessarily be awarded full marks.
+
+You may use an approved scientific calculator (non-programmable and
+non-graphical), unless stated otherwise.
+
+If necessary, round off answers correct to TWO decimal places, unless stated
+otherwise.
+
+Diagrams are NOT necessarily drawn to scale.
+
+An information sheet with formulae is included at the end of the question paper.
+
+Write neatly and legibly.
+
+Copyright reserved Please turn over
+
+Mathematics/P2 3 DBE/November 2023
+
+NSC
+
+QUESTION 1
+
+Truck drivers travel a certain distance and have a rest before travelling further. A driver kept
+record of the distance he travelled (in km) on 8 trips and the amount of time he rested
+(in minutes) before he continued his journey. The information is given in the table below.
+
+Distance travelled
+(in km) (x)
+
+Amount of rest time
+(in minutes) (y)
+
+1.1
+
+1.2
+
+1.3
+
+1.4
+
+1.5
+
+Determine the equation of the least squares regression line for the data.
+
+If a truck driver travelled 550 km, predict the amount of time (in minutes) that he
+should rest before continuing his journey.
+
+Write down the correlation coefficient for the data.
+Interpret your answer to QUESTION 1.3.
+
+At each stop, the truck driver spent money buying food and other refreshments. The
+amount spent (in rands) is given in the table below.
+
+pe T= P= [= [= [° [Do
+
+1.5.1 Calculate the mean amount of money he spent at each stop.
+1.5.2 Calculate the standard deviation for the data.
+1.5.3 At how many stops did the driver spend an amount that was less than one
+
+standard deviation below the mean?
+
+Copyright reserved Please turn over
+
+(3)
+
+(2)
+@)
+q)
+
+Q)
+()
+
+(2)
+[12]
+
+Mathematics/P2 4 DBE/November 2023
+
+NSC
+
+QUESTION 2
+
+At a certain school, the staff committee wanted to determine how many glasses of water the
+staff members drank during a school day. All teachers present on a specific day were
+interviewed. The information is shown in the table below.
+
+2.1
+
+2.2
+
+2.3
+
+2.4
+
+NUMBER OF GLASSES OF NUMBER OF STAFF
+WATER DRANK PER DAY MEMBERS
+
+Complete the cumulative frequency column provided in the table in the ANSWER
+BOOK.
+
+How many staff members were interviewed?
+How many staff members drank fewer than 6 glasses of water during a school day?
+
+The staff committee observed that k teachers were absent on the day of the
+interviews. It was found that half of these k teachers drank from 0 to fewer than
+2 (that is O<x<2) glasses of water per day, while the remainder of them drank
+from 4 to fewer than 6 (that is 4<x<6) glasses of water per day. When these k
+teachers are included in the data, the estimated mean is 4 glasses of water per staff
+member per day.
+
+How many teachers were absent on the day of the interviews?
+
+Copyright reserved Please turn over
+
+2)
+a)
+()
+
+(4)
+[3]
+
+Mathematics/P2 5 DBE/November 2023
+NSC
+
+QUESTION 3
+
+In the figure, L(—4 ; 1), S(4 ; 5) and N(-2 ; —3) are the vertices of a triangle having
+SLN=90°. LN intersects the x-axis at K.
+
+3.1 Calculate the length of SL. Leave your answer in surd form. (2)
+3.2 Calculate the gradient of SN. (2)
+3.3 Calculate the size of @, the angle of inclination of SN. (2)
+3.4 Calculate the size of LNS. (3)
+3.5 Determine the equation of the line which passes through L and is parallel to SN.
+
+Write your answer in the form y=mxte. GB)
+3.6 Calculate the area of ALSN. G)
+3.7 Calculate the coordinates of point P, which is equidistant from L, S and N. 6))
+3.8 Calculate the size of LPS. (2)
+
+[20]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 6 DBE/November 2023
+NSC
+
+QUESTION 4
+
+In the diagram, the circle with centre O has the equation x+y? =20. G(t 3 0) is the centre
+
+of the larger circle. A common tangent touches the circles at D and F respectively, such that
+D(p ;-2) lies in the 4" quadrant.
+
+4.1 Given that D(p ;-2) lies on the smaller circle, show that p= 4. (2)
+4.2 E(6 ; 2) is the midpoint of DF. Determine the coordinates of F. Q)
+43 Determine the equation of the common tangent, DF, in the form y=mx+tc. (4)
+44 Calculate the value of t. Show ALL working. @G)
+4.5 Determine the equation of the larger circle in the form ax’ +by’ +ext+dy+e=0. (4)
+4.6 The smaller circle must be translated by & units along the x-axis to touch the larger
+
+circle internally. Calculate the possible values of k. an
+
+Copyright reserved Please turn over
+
+Mathematics/P2 7 DBE/November 2023
+NSC
+
+QUESTION 5
+
+5.1 Given: sinB= ; , where f£ € (90° ; 270°)
+
+Without using a calculator, determine each of the following:
+
+5.1.1 cos B G3)
+5.1.2 sin 2p QB)
+5.13 cos(450°— #) 3)
+. cos’ x +sin? x.cos” x
+5.2 Given; —————_
+1+sinx
+cos’ x+sin’ x.cos” x .
+5.2.1 Prove that —————-—_ = 1-sinx 4
+1+sinx (4)
+5.2.2 For what value(s) of x in the interval x €[0° ; 360°] is
+cos’ x+sin? x.cos” x
+l+sinx undefined? (2)
+5.2.3 Write down the minimum value of the function defined by
+_ cos’ x+sin” x.cos” x
+l+sinx (2)
+
+5.3 Given: cos(A —B) = cosAcosB + sinAsinB
+
+5.3.1 Use the above identity to deduce that sin(A — B) = sinAcosB — cosAsinB (3)
+
+5.3.2 Hence, or otherwise, determine the general solution of the equation
+sin 48° cos x — cos 48° sin x = cos 2x (5)
+sin3x+sin
+5.4 Simplify — to a single trigonometric ratio.
+cos2x+1 (6)
+
+[31]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 , 8 DBE/November 2023
+NSC
+
+QUESTION 6
+
+In the diagram, the graphs of f(x)=2sin2x and g(x)=—cos(x+45°) are drawn for the
+interval x [0° ; 180°]. A(105° ; -1) lies on f
+
+180° *
+
+A(105° ; -1)
+
+-2
+
+6.1 Write down the period of f qd)
+6.2 Determine the range of g in the interval x € [0° ; 180°]. (2)
+6.3 Determine the values of x, in the interval x € [0° ; 180°], for which:
+
+6.3.1 f (x).g(x)>0 (2)
+
+6.3.2 J (x)+150 (2)
+6.4 Another graph p is defined as p(x) =—f (x). D(k;~-1) lies on p. Determine the
+
+value(s) of & in the interval x € [0° ; 180°]. (3)
+6.5 Graph h is obtained when g is translated 45° to the left. Determine the equation
+
+of h. Write your answer in its simplest form. (2)
+
+[12]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 9 DBE/November 2023
+NSC
+
+QUESTION 7
+
+In the diagram, S, T and K lie in the same horizontal plane. RS is a vertical tower. The
+
+angle of depression from R to K is £. TSK = a, TS = p metres and the area of
+ASTK is g m2.
+
+T
+TA Determine the length of SK in terms of p, q and a. (2)
+72 Showthat RS=224 Q)
+
+psina
+73 Calculate the size of a if a<90° and RS=70m, p=80m, qg=2500 m? and
+
+B = 42°, @)
+[7]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 10 DBE/November 2023
+
+NSC
+QUESTION 8
+8.1 In the diagram, O is the centre of the circle.
+K
+P
+T
+
+Use the diagram above to prove the theorem which states that the angle subtended by
+a chord at the centre of the circle is equal to twice the angle subtended by the same
+chord at the circumference, that is, prove that TOP=2TKP. (5)
+
+8.2 In the diagram, O is the centre of the circle and ABCD is a cyclic quadrilateral.
+OB and OD are drawn.
+
+A
+
+If 0, =4x+100° and C=x+34° , calculate, giving reasons, the size of x. (5)
+
+Copyright reserved Please turn over
+
+Mathematics/P2 ll DBE/November 2023
+NSC
+
+8.3 In the diagram, O is the centre of the larger circle. OB is a diameter of the smaller
+circle. Chord AB of the larger circle intersects the smaller circle at M and B.
+
+A B
+8.3.1 Write down the size of OMB. Provide a reason. (2)
+8.3.2 If AB=~7300 units and OM=5 units, calculate, giving reasons, the
+length of OB. 4)
+[16]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 12 DBE/November 2023
+NSC
+
+QUESTION 9
+
+In the diagram, ABCD is a parallelogram with AB = 14 units. AD is produced to E such
+that AD: DE=4: 3. EB intersects DC in F. EB=21 units.
+
+E
+
+A B
+9.1 Calculate, with reasons, the length of FB. (3)
+9.2 Prove, with reasons, that AEDF ||| AEAB. (3)
+9.3 Calculate, with reasons, the length of FC. (6)
+
+19]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 13 DBE/November 2023
+NSC
+
+QUESTION 10
+
+In the diagram, PQRS isa cyclic quadrilateral such that PQ = PR. The tangents to the circle
+through P and R meet QS produced at A. RS is produced to meet tangent AP at B. PS
+is produced to meet tangent AR at C. PR and QS intersect at M.
+
+Prove, giving reasons, that:
+
+10.1 §,=8, 6)
+
+10.2 SMRC isa cyclic quadrilateral (4)
+
+10.3 RP is a tangent to the circle passing through P, S and A at P (6)
+[15]
+
+TOTAL: 150
+
+Copyright reserved
+
+Mathematics/P2 DBE/November 2023
+NSC
+INFORMATION SHEET
+xe —b+vb? —4ac
+2a
+A=P(l+ni) A= P(-ni) A= P(1-i)" A=P(+i)"
+T,=a+(n-l)d S, =F bat(n-dd]
+
+~A
+i]
+
+T =ar™ Ss _ alr” -1) sr#l 4s -ler<l
+1
+
+" n
+
+pa 2+i"=1
+
+t
+
+fa+h)-f@
+h
+
+d= (x, -x,) +e -yy
+
+S'(x)= lim
+hoo
+
+y=mx+e
+
+(x -a) +(y-bf =r?
+a _ 5b _¢
+
+snA sinB  sinC
+
+a =b* +c? —2be.cos A
+
+In AABC:
+
+area AABC = 5a. sinC
+sin (@ + B) =sina.cos § +cosa.sin B
+cos(@ + £)=cosa.cos f —sina.sin B
+
+cos’ a —sin? @
+
+cos2@ =41-2sin? a
+
+2cos’ a—-1
+*
+x _ i=l
+n
+
+n(A)
+P(A)=——
+
+nS)
+ypratbhx
+
+Copyright reserved
+
+y-y, =m(x-%,)
+
+l-r
+
+MX Vit Vo
+;
+
+ea")
+
+m= 22 m=tan0
+XX
+
+sin(a— £) =sina.cos B—cosa.sin B
+
+cos (a — f)=cosa.cos B+ sina.sin 8
+
+sin 2a = 2sin a.cos a
+
+YG, -¥"
+o-
+n
+
+P(A ot B) = P(A) + P(B) — P(A and B)
+
+p= UY)
+Si@-xY
