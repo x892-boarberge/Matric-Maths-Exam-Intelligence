@@ -1,0 +1,11 @@
+{
+  "gold_topic_accuracy": 1.0,
+  "mapped_rows": 417,
+  "unmapped_rows": 265,
+  "unmapped_pct": 0.6355,
+  "high_conf": 132,
+  "medium_conf": 20,
+  "low_conf": 265,
+  "taxonomy_version": "v1.1",
+  "generated_at": "2026-09-11T08:54:11.957729+00:00"
+}
