@@ -1,0 +1,7 @@
+pattern_id,label,shape
+IP_MISCONCEPTION_CONTRAST,Misconception contrast pair,Show incorrect vs correct method; learner identifies the differing step.
+IP_STEP_ISOLATION,Step isolation drill,"Drill the failing step alone, then reintegrate into full task."
+IP_REPRESENTATION_SHIFT,Representation shift,Same idea in graph/algebra/numeric forms.
+IP_GRADUATED_DIFFICULTY,Graduated difficulty ladder,Routine → multi-step → novel context.
+IP_BOUNDARY_CASE,Boundary case exploration,Zero/negative/undefined/edge cases.
+IP_SELF_EXPLANATION,Self-explanation prompt,Learner explains a step in words before answer check.
