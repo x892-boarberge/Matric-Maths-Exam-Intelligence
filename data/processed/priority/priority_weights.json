@@ -1,0 +1,10 @@
+{
+  "weights": {
+    "exposure": 0.3,
+    "difficulty": 0.4,
+    "persistence": 0.2,
+    "design_weight": 0.1
+  },
+  "locked_at": "2026-09-12T13:07:18.572242+00:00",
+  "notes": "Locked before ranking. Difficulty uses N06 error pressure, not national mean %."
+}

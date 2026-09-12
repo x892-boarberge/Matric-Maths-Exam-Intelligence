@@ -1,0 +1,9 @@
+dimension_shifted,delta,top5_overlap,top5_shifted
+exposure,-0.2,3,Unmapped; Trigonometry; Euclidean Geometry; Finance; Analytical Geometry
+exposure,0.2,4,Trigonometry; Calculus; Functions & Graphs; Analytical Geometry; Euclidean Geometry
+difficulty,-0.2,4,Trigonometry; Calculus; Functions & Graphs; Analytical Geometry; Euclidean Geometry
+difficulty,0.2,3,Unmapped; Trigonometry; Euclidean Geometry; Finance; Analytical Geometry
+persistence,-0.2,5,Unmapped; Trigonometry; Calculus; Analytical Geometry; Functions & Graphs
+persistence,0.2,4,Trigonometry; Calculus; Analytical Geometry; Functions & Graphs; Euclidean Geometry
+design_weight,-0.2,5,Trigonometry; Calculus; Functions & Graphs; Unmapped; Analytical Geometry
+design_weight,0.2,4,Trigonometry; Analytical Geometry; Calculus; Euclidean Geometry; Functions & Graphs
