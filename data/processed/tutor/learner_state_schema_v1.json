@@ -1,0 +1,15 @@
+{
+  "learner_id": "string",
+  "topic": "string",
+  "misconception_id": "string|null",
+  "intervention_id": "string|null",
+  "hint_level": "H0|H1|H2|H3|H4",
+  "attempt_count": "int",
+  "session_mastery_status": "in_progress|passed|failed",
+  "skill_mastery_status": "not_started|in_progress|mastered|needs_human_review",
+  "error_history": "list",
+  "confidence_last": "1|2|3|null",
+  "engagement_state": "active|silent|frustrated|answer_demand|disconnected",
+  "n08_trace_share_session": "float",
+  "updated_at": "iso8601"
+}

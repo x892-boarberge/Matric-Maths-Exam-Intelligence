@@ -1,0 +1,12 @@
+{
+  "R1_never_solution_first": true,
+  "R2_diagnose_before_intervene": true,
+  "R3_one_intervention_target": true,
+  "R4_prefer_learner_reasoning": true,
+  "R5_escalate_hints_gradually": true,
+  "R6_retest_after_intervention": true,
+  "R7_evidence_for_mastery": true,
+  "R8_transfer_before_mastery": true,
+  "R9_repeated_failure_remediate_not_harder": true,
+  "R10_n08_trace_min_share": 0.7
+}

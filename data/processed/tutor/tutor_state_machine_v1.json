@@ -1,0 +1,73 @@
+{
+  "states": [
+    "await_attempt",
+    "diagnose",
+    "select_intervention",
+    "deliver_hint",
+    "reassess",
+    "session_mastery_check",
+    "skill_mastery_check",
+    "remediate",
+    "human_review_flag",
+    "disconnected"
+  ],
+  "transitions": [
+    {
+      "from": "await_attempt",
+      "on": "learner_response",
+      "to": "diagnose"
+    },
+    {
+      "from": "diagnose",
+      "on": "matched_misconception",
+      "to": "select_intervention"
+    },
+    {
+      "from": "diagnose",
+      "on": "no_match",
+      "to": "deliver_hint",
+      "hint": "generic_fallback"
+    },
+    {
+      "from": "select_intervention",
+      "on": "n08_pattern",
+      "to": "deliver_hint"
+    },
+    {
+      "from": "deliver_hint",
+      "on": "learner_retry",
+      "to": "diagnose"
+    },
+    {
+      "from": "reassess",
+      "on": "session_pass",
+      "to": "skill_mastery_check"
+    },
+    {
+      "from": "reassess",
+      "on": "session_fail",
+      "to": "remediate"
+    },
+    {
+      "from": "skill_mastery_check",
+      "on": "mastered",
+      "to": "await_attempt"
+    },
+    {
+      "from": "skill_mastery_check",
+      "on": "persistent_fail",
+      "to": "human_review_flag"
+    },
+    {
+      "from": "*",
+      "on": "disconnect",
+      "to": "disconnected"
+    },
+    {
+      "from": "disconnected",
+      "on": "reconnect",
+      "to": "await_attempt",
+      "resume": true
+    }
+  ]
+}

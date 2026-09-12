@@ -1,0 +1,17 @@
+{
+  "session_mastery": {
+    "source": "N08",
+    "correct_required": 4,
+    "items_presented": 5,
+    "unseen_only": true,
+    "structure_type_match": true,
+    "sittings_required_for_skill": 2
+  },
+  "skill_mastery": {
+    "source": "N09",
+    "min_sessions_passed": 2,
+    "max_hints_on_final_session": 1,
+    "no_target_misconception_recurrence": true,
+    "require_transfer_item": true
+  }
+}

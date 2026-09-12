@@ -1,0 +1,21 @@
+{
+  "levels": {
+    "H0": "Socratic prompt only",
+    "H1": "Conceptual pointer",
+    "H2": "Strategic operation hint",
+    "H3": "One micro-step only",
+    "H4": "Stepwise solution with teach-back (never dump)"
+  },
+  "escalation": {
+    "type": "hybrid_attempt_primary",
+    "attempt_map": {
+      "1": "H0",
+      "2": "H1",
+      "3": "H2",
+      "4": "H3",
+      "5": "H4"
+    },
+    "silence_seconds_offer_hint": 90,
+    "explicit_answer_request": "one_more_H2_then_stepwise_H4"
+  }
+}
