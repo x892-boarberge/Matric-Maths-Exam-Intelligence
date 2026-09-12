@@ -1,0 +1,47 @@
+[
+  {
+    "year":2023,
+    "filename":"2023_maths_diagnostic.pdf",
+    "path":"c:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\raw\\diagnostic_reports\\2023_maths_diagnostic.pdf",
+    "exists":true,
+    "size_mb":6.79,
+    "book":"Book 1",
+    "chapter":"Chapter 10 \u2014 Mathematics",
+    "expected_start_note":"~PDF page 211 (confirm manually)",
+    "verified":true,
+    "chapter_page_start":213.0,
+    "chapter_page_end":236.0,
+    "notes":"Mathematics chapter verified by content search",
+    "manifest_updated_at":"2026-09-12T12:23:20.568283+00:00"
+  },
+  {
+    "year":2024,
+    "filename":"2024_maths_diagnostic.pdf",
+    "path":"c:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\raw\\diagnostic_reports\\2024_maths_diagnostic.pdf",
+    "exists":true,
+    "size_mb":8.05,
+    "book":"Book 1",
+    "chapter":"Chapter 10 \u2014 Mathematics",
+    "expected_start_note":"~PDF page 217 (confirm manually)",
+    "verified":true,
+    "chapter_page_start":219.0,
+    "chapter_page_end":245.0,
+    "notes":"Mathematics chapter verified by content search",
+    "manifest_updated_at":"2026-09-12T12:23:20.568283+00:00"
+  },
+  {
+    "year":2025,
+    "filename":"2025_maths_diagnostic.pdf",
+    "path":"c:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\raw\\diagnostic_reports\\2025_maths_diagnostic.pdf",
+    "exists":true,
+    "size_mb":8.92,
+    "book":"Book 1",
+    "chapter":"Chapter 10 \u2014 Mathematics",
+    "expected_start_note":"~PDF page 229 (confirm manually)",
+    "verified":true,
+    "chapter_page_start":230.0,
+    "chapter_page_end":254.0,
+    "notes":"Mathematics chapter verified by content search",
+    "manifest_updated_at":"2026-09-12T12:23:20.568283+00:00"
+  }
+]
