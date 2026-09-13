@@ -1,11 +1,7 @@
-"""
-MatricMath Tutor — behaviour test suite (skeleton)
-Asserts N09 rules R1–R10 against tutor engine outputs.
-"""
-
+﻿"""MatricMath Tutor — behaviour test suite (skeleton)."""
 from __future__ import annotations
 from dataclasses import dataclass, field
-from typing import Any
+from typing import List, Optional
 
 
 @dataclass
@@ -15,7 +11,7 @@ class TutorState:
     attempt_count: int
     intervention_id: str
     n08_trace: bool
-    misconception_id: str | None = None
+    misconception_id: Optional[str] = None
     engagement_state: str = "active"
     solution_policy: str = "never_full_solution_first"
 
@@ -27,7 +23,7 @@ class TutorResponse:
     hint_level_used: str
     n08_linked: bool
     intervention_id: str
-    rules_respected: list[str] = field(default_factory=list)
+    rules_respected: List[str] = field(default_factory=list)
     contains_full_solution: bool = False
     declares_mastery: bool = False
     shaming_language: bool = False
@@ -39,7 +35,6 @@ def assert_r1_never_solution_first(state: TutorState, resp: TutorResponse) -> No
 
 
 def assert_r2_diagnose_before_intervene(state: TutorState, resp: TutorResponse) -> None:
-    # Engine must supply misconception or explicit generic_fallback
     assert (
         state.misconception_id is not None
         or state.intervention_id == "generic_fallback"
@@ -70,7 +65,7 @@ def assert_no_shame(resp: TutorResponse) -> None:
     assert not resp.shaming_language, "Tone rule violated: shaming language"
 
 
-def run_basic_suite(cases: list[tuple[TutorState, TutorResponse]]) -> dict[str, Any]:
+def run_basic_suite(cases):
     failures = []
     for i, (state, resp) in enumerate(cases):
         try:
@@ -90,7 +85,6 @@ def run_basic_suite(cases: list[tuple[TutorState, TutorResponse]]) -> dict[str, 
     }
 
 
-# --- Example fixtures (replace with real engine outputs later) ---
 EXAMPLE_CASES = [
     (
         TutorState(

@@ -1,36 +1,75 @@
-# MatricMath Intelligence 🇿🇦
+﻿# MatricMath Intelligence
 
-**South African NSC Mathematics Exam Intelligence, Learner-Error Mining & Evidence-Driven Tutoring Policy**
+South African NSC Mathematics Exam Intelligence, Learner-Error Mining and Evidence-Driven Tutoring Policy.
 
-A junior data-science project that turns official NSC examination and diagnostic evidence into a defensible tutoring policy — not a generic AI chatbot.
-
----
+A data-science project that turns official NSC papers and DBE diagnostic evidence into priority bands, intervention patterns, and a rule-governed tutor policy — not a free-form solution chatbot.
 
 ## Problem
 
-South African Matric Mathematics learners face recurring topic pressures and documented misconceptions. Most digital tutors explain content generically. Few can show a clear chain from **official assessment evidence** to **what the tutor should do next**.
+Matric Mathematics learners face recurring topic pressure and documented misconceptions. Many digital tools explain generically. Few show a clear chain from official assessment evidence to what the tutor is allowed to do next.
 
-This project builds that chain.
+This repository builds that chain.
 
----
+## Pipeline (status)
 
-## What this project does
+| Stage | Artefact | Status |
+|------:|----------|--------|
+| 01 | Document inventory and register | Complete |
+| 02 | Collection, extraction, OCR | Complete |
+| 03 | Question segmentation | Complete |
+| 04 | Topic mapping (gold-calibrated) | Complete |
+| 05 | Assessment exposure | Complete |
+| 06 | Diagnostic error / difficulty | Complete |
+| 07 | Priority engine (P1/P2) | Complete |
+| 08 | Intervention specification | Complete |
+| 09 | Tutor behaviour policy | Complete |
+| — | Prompt contract + behavioural tests | Complete |
+| — | Minimal tutor engine | Next |
+| — | Math keyboard / handwriting capture | Later |
+| — | 2014-2022 historical expansion | Phase B research |
 
-```text
-Official NSC papers + DBE diagnostic reports
-        ↓
-Structured question & topic data
-        ↓
-Assessment exposure analysis
-        ↓
-Documented learner-error / difficulty analysis
-        ↓
-Priority bands (Paper 1 & Paper 2)
-        ↓
-Intervention specifications
-        ↓
-Tutor behaviour rules (never solution-first, hint ladder, mastery)
-        ↓
-Prompt contract + automated behaviour tests
-        ↓
-Minimal tutor engine (next)
+## Core insight
+
+The central challenge is not only whether learners practise enough. It is which skills deserve instructional priority, given exposure, documented diagnostic error pressure, and persistence, and how a tutor can act on that evidence without becoming a solution machine.
+
+## Paper clusters (project data, 2023-2025)
+
+Paper 1: Calculus; Functions and Graphs
+
+Paper 2: Trigonometry; Analytical Geometry; Euclidean Geometry
+
+## Tutor principles (locked)
+
+1. Never full solution first
+2. Diagnose before intervening
+3. One misconception target at a time
+4. Hint ladder H0 to H4 (hybrid attempt-based escalation)
+5. Session mastery (N08) vs skill mastery (N09)
+6. At least 70 percent of interventions in a session should trace to N08
+7. Persist state across disconnect (load-shedding / data drops)
+8. Young-learner tone: clear, non-shaming, process-focused
+9. Engine decides; LLM only phrases
+
+## Skills demonstrated
+
+- Multi-source educational data engineering
+- PDF extraction and OCR discipline
+- Question segmentation and structured tables
+- Gold-calibrated topic mapping
+- Exposure vs difficulty separation
+- Multi-criteria priority scoring and sensitivity
+- Intervention specification without content fabrication
+- Policy design for an auditable AI tutor
+- Testable behavioural rules (R1-R10)
+
+## How to explore
+
+1. Read docs/01_Problem_Framing.md
+2. Review notebooks 05-07
+3. Open data/processed/priority/ and data/processed/intervention/
+4. Read docs/09_Tutor_Behaviour_Spec.md and docs/tutor_prompt_contract.md
+5. Run: python tests/tutor_test_suite.py
+
+## Licence / use
+
+Portfolio and research use. Official exam and diagnostic materials remain the property of their rights holders (for example the Department of Basic Education). This project analyses publicly available educational artefacts for research and tutoring-policy design.
