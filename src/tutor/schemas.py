@@ -1,7 +1,6 @@
-﻿from dataclasses import dataclass, field, asdict
+﻿from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional, List, Dict, Any
-import json
 
 
 class HintLevel(str, Enum):
@@ -96,6 +95,11 @@ class TutorAction:
     next_state: LearnerState
     rule_id: str
     session_event_id: str
+import json
+from dataclasses import asdict
+
+from dataclasses import dataclass, field, asdict
+import json
 
 
 class EventType(str, Enum):
