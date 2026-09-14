@@ -26,7 +26,21 @@ This repository builds that chain.
 | — | Prompt contract + behavioural tests | Complete |
 | — | Minimal tutor engine | Next |
 | — | Math keyboard / handwriting capture | Later |
-| — | 2014-2022 historical expansion | Phase B research |
+| — | 2014-2022 historical expansion | Phase B research |  
+
+## Tutor engine (v1)
+
+A minimal **rule-governed** tutoring engine lives under `src/tutor/`.
+
+- **Principle:** the engine decides (diagnosis, intervention, hint level); the renderer only phrases.
+- **Demo:** five diagnosis cases (Algebra, Functions, Trig, Analytical Geometry, Euclidean Geometry).
+- **Tests:** 13 behavioural checks in `tests/test_tutor_engine.py` (R1–R10 style rules + five cases).
+
+### Run the five cases
+
+```bash
+python scripts/run_five_cases.py
+
 
 ## Core insight
 
