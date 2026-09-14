@@ -1,6 +1,7 @@
-﻿from dataclasses import dataclass, field
+﻿from dataclasses import dataclass, field, asdict
 from enum import Enum
 from typing import Optional, List, Dict, Any
+import json
 
 
 class HintLevel(str, Enum):
@@ -95,3 +96,37 @@ class TutorAction:
     next_state: LearnerState
     rule_id: str
     session_event_id: str
+
+
+class EventType(str, Enum):
+    SESSION_STARTED = "SESSION_STARTED"
+    PROBLEM_PRESENTED = "PROBLEM_PRESENTED"
+    LEARNER_ATTEMPTED = "LEARNER_ATTEMPTED"
+    DIAGNOSIS_MADE = "DIAGNOSIS_MADE"
+    INTERVENTION_SELECTED = "INTERVENTION_SELECTED"
+    HINT_ISSUED = "HINT_ISSUED"
+    TUTOR_MESSAGE = "TUTOR_MESSAGE"
+    MASTERY_UPDATED = "MASTERY_UPDATED"
+    ESCALATION_TRIGGERED = "ESCALATION_TRIGGERED"
+    FALLBACK_USED = "FALLBACK_USED"
+    SESSION_ENDED = "SESSION_ENDED"
+
+
+EVENT_SCHEMA_VERSION = "1.0"
+
+
+@dataclass
+class TutorEvent:
+    schema_version: str
+    event_id: str
+    session_id: str
+    sequence: int
+    timestamp: str
+    event_type: EventType
+    attempt_id: Optional[str]
+    payload: Dict[str, Any]
+
+    def to_jsonl(self) -> str:
+        d = asdict(self)
+        d["event_type"] = self.event_type.value
+        return json.dumps(d, ensure_ascii=False, default=str)

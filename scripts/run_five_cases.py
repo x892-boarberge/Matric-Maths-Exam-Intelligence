@@ -1,10 +1,12 @@
-import sys
+﻿import sys
 import pathlib
+from datetime import datetime, timezone
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
-from src.tutor.schemas import LearnerState, Problem
+from src.tutor.schemas import LearnerState, Problem, EventType
 from src.tutor.tutor_engine import TutorEngine
+from src.tutor.event_log import SessionLogger, read_events
 
 
 CASES = [
@@ -57,9 +59,20 @@ CASES = [
 
 
 def main():
-    engine = TutorEngine()
+    root = pathlib.Path(__file__).resolve().parents[1]
+    log_dir = root / "data" / "processed" / "tutor" / "logs"
+    log_dir.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    session_id = f"demo_five_cases_{stamp}"
+    log_path = log_dir / f"{session_id}.jsonl"
+
+    logger = SessionLogger(session_id, log_path)
+    logger.emit(EventType.SESSION_STARTED, {"demo": "five_cases"})
+
+    engine = TutorEngine(session_logger=logger)
     line = "=" * 78
     print(line)
+
     for i, c in enumerate(CASES, 1):
         problem = Problem(
             problem_id=f"P{i}",
@@ -73,8 +86,18 @@ def main():
         state = LearnerState(
             learner_id=f"L{i}",
             skill_id=c["skill_id"],
-            current_session_id=f"S{i}",
+            current_session_id=session_id,
         )
+
+        logger.emit(
+            EventType.PROBLEM_PRESENTED,
+            {
+                "problem_id": problem.problem_id,
+                "skill_id": problem.skill_id,
+                "topic": problem.topic,
+            },
+        )
+
         action = engine.step(state, problem, c["response"])
 
         print(f"\nCase {i}: {c['topic']} / {c['subtopic']}")
@@ -93,9 +116,13 @@ def main():
         print(f"  Action:        {action.action.value}")
         print(f"  Engine rule:   {action.rule_id}")
         print(f"  Tutor says:    {action.tutor_message}")
+
+    summary = logger.close()
     print("\n" + line)
+    print(f"Log file: {log_path}")
+    print(f"SESSION_ENDED summary: {summary}")
+    print(f"Events written: {len(read_events(log_path))}")
 
 
 if __name__ == "__main__":
     main()
-    

@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+﻿from datetime import datetime, timezone
 from typing import Optional, Callable, Dict, Any
 import uuid
 
@@ -12,10 +12,12 @@ from .schemas import (
     MasteryState,
     ProvenanceKind,
     InterventionSelection,
+    EventType,
 )
 from .diagnosis import diagnose
 from .intervention_selector import select_intervention
 from .hint_policy import select_hint_level
+from .event_log import SessionLogger
 
 
 MASTERY_MIN_CORRECT = 3
@@ -25,8 +27,13 @@ MAX_ATTEMPTS_BEFORE_HUMAN = 6
 class TutorEngine:
     """Rule-governed tutor engine. Engine decides; renderer phrases."""
 
-    def __init__(self, phrase_renderer: Optional[Callable[[Dict[str, Any]], str]] = None):
+    def __init__(
+        self,
+        phrase_renderer: Optional[Callable[[Dict[str, Any]], str]] = None,
+        session_logger: Optional[SessionLogger] = None,
+    ):
         self.phrase_renderer = phrase_renderer or self._default_renderer
+        self.logger = session_logger
 
     def step(
         self,
@@ -38,8 +45,33 @@ class TutorEngine:
         event_id = f"evt_{uuid.uuid4().hex[:12]}"
         now = datetime.now(timezone.utc).isoformat()
 
+        # --- logging: learner attempt ---
+        if self.logger:
+            self.logger.begin_attempt()
+            self.logger.emit(
+                EventType.LEARNER_ATTEMPTED,
+                {
+                    "response": learner_response,
+                    "attempt_number": learner_state.attempts_total + 1,
+                    "skill_id": problem.skill_id,
+                    "problem_id": problem.problem_id,
+                },
+            )
+
         diag = diagnose(problem.skill_id, learner_response, problem.expected_answer)
         learner_state.attempts_total += 1
+
+        # --- logging: diagnosis ---
+        if self.logger:
+            self.logger.emit(
+                EventType.DIAGNOSIS_MADE,
+                {
+                    "error_type": diag.error_type.value,
+                    "misconception_id": diag.misconception_id,
+                    "confidence": diag.confidence,
+                    "rule_id": diag.rule_id,
+                },
+            )
 
         if diag.error_type == ErrorType.NONE:
             learner_state.attempts_correct += 1
@@ -68,7 +100,10 @@ class TutorEngine:
                 action_type = ActionType.GIVE_HINT
             engine_rule = f"ENG_HINT_{hint_level.value}"
 
-        if learner_state.attempts_total >= MAX_ATTEMPTS_BEFORE_HUMAN and learner_state.attempts_correct == 0:
+        if (
+            learner_state.attempts_total >= MAX_ATTEMPTS_BEFORE_HUMAN
+            and learner_state.attempts_correct == 0
+        ):
             action_type = ActionType.FLAG_FOR_HUMAN
             engine_rule = "ENG_ESCALATE_HUMAN"
 
@@ -103,6 +138,45 @@ class TutorEngine:
             "engine_rule": engine_rule,
         }
         learner_state.session_events.append(event)
+
+        # --- logging: intervention / hint / message / mastery ---
+        if self.logger:
+            self.logger.emit(
+                EventType.INTERVENTION_SELECTED,
+                {
+                    "intervention_pattern": intervention.intervention_pattern,
+                    "provenance": intervention.provenance.value,
+                    "n08_intervention_id": intervention.n08_intervention_id,
+                    "rule_id": intervention.rule_id,
+                },
+            )
+            if intervention.provenance.value == "generic_fallback":
+                self.logger.emit(
+                    EventType.FALLBACK_USED,
+                    {"reason": intervention.notes},
+                )
+            if engine_rule == "ENG_ESCALATE_HUMAN":
+                self.logger.emit(
+                    EventType.ESCALATION_TRIGGERED,
+                    {"reason": "max_attempts_without_success"},
+                )
+            self.logger.emit(
+                EventType.HINT_ISSUED,
+                {
+                    "hint_level": hint_level.value if hint_level else None,
+                    "action": action_type.value,
+                    "engine_rule": engine_rule,
+                },
+            )
+            self.logger.emit(
+                EventType.TUTOR_MESSAGE,
+                {"message": message},
+            )
+            self.logger.emit(
+                EventType.MASTERY_UPDATED,
+                {"mastery_state": learner_state.mastery_state.value},
+            )
+            self.logger.end_attempt()
 
         return TutorAction(
             action=action_type,
