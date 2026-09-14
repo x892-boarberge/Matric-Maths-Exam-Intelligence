@@ -1,6 +1,8 @@
 import sys
 import pathlib
 import pytest
+from .event_log import SessionLogger
+from .schemas import EventType
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 

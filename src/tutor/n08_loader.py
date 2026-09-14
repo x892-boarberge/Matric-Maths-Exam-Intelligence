@@ -1,4 +1,4 @@
-﻿"""Load and validate N08 intervention_specification CSV with safe fallback."""
+"""Load and validate N08 intervention_specification CSV with safe fallback."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ import pandas as pd
 
 from .schemas import DiagnosisResult, InterventionSelection, ProvenanceKind
 
-# Curated five-case map — always available as secondary lookup
+# Same five-case map as before (fallback)
 FALLBACK_MAP = {
     "M_SIGN_ERROR_FACTORISATION": ("IP_MISCONCEPTION_CONTRAST", "N08_ALG_QUAD_SIGN_01"),
     "M_TP_COORD_CONFUSION": ("IP_REPRESENTATION_SHIFT", "N08_FUNC_PARAB_02"),
@@ -27,6 +27,7 @@ REQUIRED_COLUMNS = {
     "intervention_pattern",
 }
 
+# Optional renames from older N08 exports
 COLUMN_ALIASES = {
     "pattern": "intervention_pattern",
     "misconception": "misconception_id",
@@ -72,25 +73,6 @@ def _normalise_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def _fallback_library(errors: List[str]) -> N08Library:
-    by_misc = {
-        mid: {
-            "intervention_id": n08_id,
-            "intervention_pattern": pattern,
-            "topic": "",
-            "misconception_id": mid,
-        }
-        for mid, (pattern, n08_id) in FALLBACK_MAP.items()
-    }
-    return N08Library(
-        by_misconception=by_misc,
-        source_path=None,
-        source_hash=None,
-        load_status="fallback",
-        validation_errors=errors,
-    )
-
-
 def load_n08_library(csv_path: Optional[Path] = None) -> N08Library:
     path = Path(csv_path) if csv_path else _default_csv_path()
     errors: List[str] = []
@@ -112,8 +94,7 @@ def load_n08_library(csv_path: Optional[Path] = None) -> N08Library:
         return _fallback_library(errors)
 
     if "status" in df.columns:
-        status = df["status"].astype(str).str.strip().str.lower()
-        df = df[status.isin(["active", "nan", ""]) | df["status"].isna()]
+        df = df[df["status"].astype(str).str.lower().isin(["active", "nan", ""]) | df["status"].isna()]
 
     by_misc: Dict[str, Dict[str, Any]] = {}
     seen_ids = set()
@@ -138,6 +119,7 @@ def load_n08_library(csv_path: Optional[Path] = None) -> N08Library:
             continue
         seen_ids.add(iid)
 
+        # First row wins per misconception (stable)
         if mid not in by_misc:
             by_misc[mid] = {
                 "intervention_id": iid,
@@ -159,6 +141,26 @@ def load_n08_library(csv_path: Optional[Path] = None) -> N08Library:
     )
 
 
+def _fallback_library(errors: List[str]) -> N08Library:
+    by_misc = {
+        mid: {
+            "intervention_id": n08_id,
+            "intervention_pattern": pattern,
+            "topic": "",
+            "misconception_id": mid,
+        }
+        for mid, (pattern, n08_id) in FALLBACK_MAP.items()
+    }
+    return N08Library(
+        by_misconception=by_misc,
+        source_path=None,
+        source_hash=None,
+        load_status="fallback",
+        validation_errors=errors,
+    )
+
+
+# Module-level cache
 _LIBRARY: Optional[N08Library] = None
 
 
@@ -173,12 +175,7 @@ def select_intervention_from_library(
     diagnosis: DiagnosisResult,
     library: Optional[N08Library] = None,
 ) -> Tuple[InterventionSelection, str]:
-    """
-    Lookup order:
-      1) loaded library (csv or fallback library)
-      2) curated FALLBACK_MAP (if CSV loaded but IDs differ)
-      3) true generic fallback
-    """
+    """Return (selection, intervention_source) where source is 'csv' or 'fallback'."""
     lib = library or get_library()
     mid = diagnosis.misconception_id
 
@@ -192,37 +189,77 @@ def select_intervention_from_library(
         )
         return sel, "fallback"
 
-    # 1) Library hit (CSV or full fallback library)
     row = lib.by_misconception.get(mid)
     if row:
+        # Provenance: n08_backed if from csv library OR from curated fallback map ids
+        provenance = (
+            ProvenanceKind.N08_BACKED
+            if lib.load_status == "csv"
+            else ProvenanceKind.N08_BACKED  # curated map is still N08-shaped
+        )
         source = lib.load_status  # "csv" or "fallback"
         sel = InterventionSelection(
             intervention_pattern=row["intervention_pattern"],
-            provenance=ProvenanceKind.N08_BACKED,
+            provenance=provenance,
             n08_intervention_id=row["intervention_id"],
             rule_id="ISEL_N08_CSV" if source == "csv" else "ISEL_N08_FALLBACK_MAP",
             notes=f"source={source}; hash={lib.source_hash}",
         )
         return sel, source
 
-    # 2) Curated map even when CSV loaded with different IDs
-    if mid in FALLBACK_MAP:
-        pattern, n08_id = FALLBACK_MAP[mid]
-        sel = InterventionSelection(
-            intervention_pattern=pattern,
-            provenance=ProvenanceKind.N08_BACKED,
-            n08_intervention_id=n08_id,
-            rule_id="ISEL_N08_FALLBACK_MAP",
-            notes="csv/library miss; used curated FALLBACK_MAP",
-        )
-        return sel, "fallback_map"
-
-    # 3) True generic
     sel = InterventionSelection(
         intervention_pattern="IP_GENERIC_PROMPT",
         provenance=ProvenanceKind.GENERIC_FALLBACK,
         n08_intervention_id=None,
         rule_id="ISEL_UNMAPPED_MISCONCEPTION",
-        notes=f"Misconception {mid} not in CSV or FALLBACK_MAP.",
+        notes=f"Misconception {mid} not in library ({lib.load_status}).",
     )
     return sel, "fallback"
+import sys
+import pathlib
+import pandas as pd
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+
+from src.tutor.n08_loader import load_n08_library, select_intervention_from_library
+from src.tutor.schemas import DiagnosisResult, ErrorType
+
+
+def test_fallback_when_csv_missing(tmp_path):
+    lib = load_n08_library(tmp_path / "does_not_exist.csv")
+    assert lib.load_status == "fallback"
+    assert "M_REDUCTION_SIGN" in lib.by_misconception
+
+
+def test_csv_load_when_valid(tmp_path):
+    path = tmp_path / "intervention_specification_v1.csv"
+    pd.DataFrame(
+        [
+            {
+                "intervention_id": "N08_TRIG_RED_01",
+                "topic": "Trigonometry",
+                "misconception_id": "M_REDUCTION_SIGN",
+                "intervention_pattern": "IP_MISCONCEPTION_CONTRAST",
+                "status": "active",
+            }
+        ]
+    ).to_csv(path, index=False)
+
+    lib = load_n08_library(path)
+    assert lib.load_status == "csv"
+    assert lib.source_hash is not None
+    assert lib.by_misconception["M_REDUCTION_SIGN"]["intervention_id"] == "N08_TRIG_RED_01"
+
+
+def test_select_uses_library():
+    diag = DiagnosisResult(
+        error_type=ErrorType.CONCEPTUAL,
+        misconception_id="M_REDUCTION_SIGN",
+        confidence=0.8,
+        rule_id="D_TRIG_RED_SIGN",
+        explanation="test",
+    )
+    sel, source = select_intervention_from_library(diag)
+    assert sel.n08_intervention_id is not None
+    assert source in ("csv", "fallback")
+    
