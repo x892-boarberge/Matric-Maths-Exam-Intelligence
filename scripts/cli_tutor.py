@@ -1,4 +1,4 @@
-﻿"""
+"""
 MatricMath thin CLI tutor loop (no UI).
 Engine decides; template renderer phrases; session is logged to JSONL.
 """
@@ -193,3 +193,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    
