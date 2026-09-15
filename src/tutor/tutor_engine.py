@@ -1,27 +1,46 @@
-﻿from datetime import datetime, timezone
-from typing import Optional, Callable, Dict, Any
-import uuid
+﻿import uuid
+from abc import ABC
+from collections.abc import Callable as CallableFn
+from datetime import datetime, timezone
+from typing import Any, Dict, Optional
 
-from .schemas import (
-    LearnerState,
-    Problem,
-    TutorAction,
-    ActionType,
-    HintLevel,
-    ErrorType,
-    MasteryState,
-    ProvenanceKind,
-    InterventionSelection,
-    EventType,
-)
 from .diagnosis import diagnose
-from .intervention_selector import select_intervention
-from .hint_policy import select_hint_level
+from .disengagement import DisengagementKind, detect_disengagement
 from .event_log import SessionLogger
-
+from .hint_policy import select_hint_level
+from .intervention_selector import select_intervention
+from .schemas import (
+    ActionType,
+    ErrorType,
+    EventType,
+    HintLevel,
+    InterventionSelection,
+    LearnerState,
+    MasteryState,
+    Problem,
+    ProvenanceKind,
+    TutorAction,
+)
 
 MASTERY_MIN_CORRECT = 3
 MAX_ATTEMPTS_BEFORE_HUMAN = 6
+
+
+class Callable(ABC):
+    """Concrete callable wrapper with a useful default implementation."""
+
+    def __init__(self, callback: CallableFn[..., Any], *, name: str = "callable"):
+        self.callback = callback
+        self.name = name
+
+    def __call__(self, *args: Any, **kwargs: Any) -> Any:
+        return self.callback(*args, **kwargs)
+
+    def describe(self) -> str:
+        return f"{self.name}({self.callback.__name__})"
+
+    def __repr__(self) -> str:
+        return f"Callable(name={self.name!r}, callback={self.callback.__name__})"
 
 
 class TutorEngine:
@@ -29,7 +48,7 @@ class TutorEngine:
 
     def __init__(
         self,
-        phrase_renderer: Optional[Callable[[Dict[str, Any]], str]] = None,
+        phrase_renderer: CallableFn[[Dict[str, Any]], str] | None = None,
         session_logger: Optional[SessionLogger] = None,
     ):
         self.phrase_renderer = phrase_renderer or self._default_renderer
@@ -45,7 +64,11 @@ class TutorEngine:
         event_id = f"evt_{uuid.uuid4().hex[:12]}"
         now = datetime.now(timezone.utc).isoformat()
 
-        # --- logging: learner attempt ---
+        # Disengagement (rule-based, not LLM)
+        diseng = detect_disengagement(learner_response)
+        if diseng.kind == DisengagementKind.ANSWER_DEMAND:
+            explicit_solution_request = True
+
         if self.logger:
             self.logger.begin_attempt()
             self.logger.emit(
@@ -55,13 +78,13 @@ class TutorEngine:
                     "attempt_number": learner_state.attempts_total + 1,
                     "skill_id": problem.skill_id,
                     "problem_id": problem.problem_id,
+                    "disengagement": diseng.kind.value,
                 },
             )
 
         diag = diagnose(problem.skill_id, learner_response, problem.expected_answer)
         learner_state.attempts_total += 1
 
-        # --- logging: diagnosis ---
         if self.logger:
             self.logger.emit(
                 EventType.DIAGNOSIS_MADE,
@@ -92,6 +115,13 @@ class TutorEngine:
                 error_type=diag.error_type,
                 explicit_request=explicit_solution_request,
             )
+            # Frustrated → keep hint burden lower
+            if diseng.kind == DisengagementKind.FRUSTRATED and hint_level in (
+                HintLevel.H3,
+                HintLevel.H4,
+            ):
+                hint_level = HintLevel.H1
+
             if hint_level == HintLevel.H4:
                 action_type = ActionType.OFFER_WORKED_STEP
             elif hint_level in (HintLevel.H0, HintLevel.H1):
@@ -121,8 +151,25 @@ class TutorEngine:
             "hint_level": hint_level,
             "action_type": action_type,
             "learner_state": learner_state,
+            "disengagement": diseng.kind,
         }
         message = self.phrase_renderer(ctx)
+
+        # Override phrasing for disengagement (still no full solution)
+        if diseng.kind == DisengagementKind.ANSWER_DEMAND and diag.error_type != ErrorType.NONE:
+            message = (
+                "I won't give the full solution yet. "
+                "Let's take one useful step: what are you being asked to find?"
+            )
+            action_type = ActionType.HANDLE_DISENGAGEMENT
+            engine_rule = "ENG_DISENGAGE_ANSWER_DEMAND"
+        elif diseng.kind == DisengagementKind.FRUSTRATED and diag.error_type != ErrorType.NONE:
+            message = (
+                "Let's simplify. Ignore the whole problem for a moment — "
+                "what is the single quantity this question asks for?"
+            )
+            action_type = ActionType.HANDLE_DISENGAGEMENT
+            engine_rule = "ENG_DISENGAGE_FRUSTRATED"
 
         event = {
             "event_id": event_id,
@@ -136,10 +183,10 @@ class TutorEngine:
             "hint_level": hint_level.value if hint_level else None,
             "action": action_type.value,
             "engine_rule": engine_rule,
+            "disengagement": diseng.kind.value,
         }
         learner_state.session_events.append(event)
 
-        # --- logging: intervention / hint / message / mastery ---
         if self.logger:
             self.logger.emit(
                 EventType.INTERVENTION_SELECTED,
@@ -155,10 +202,17 @@ class TutorEngine:
                     EventType.FALLBACK_USED,
                     {"reason": intervention.notes},
                 )
-            if engine_rule == "ENG_ESCALATE_HUMAN":
+            if engine_rule in (
+                "ENG_ESCALATE_HUMAN",
+                "ENG_DISENGAGE_ANSWER_DEMAND",
+                "ENG_DISENGAGE_FRUSTRATED",
+            ):
                 self.logger.emit(
                     EventType.ESCALATION_TRIGGERED,
-                    {"reason": "max_attempts_without_success"},
+                    {
+                        "reason": engine_rule,
+                        "phrase": diseng.matched_phrase,
+                    },
                 )
             self.logger.emit(
                 EventType.HINT_ISSUED,

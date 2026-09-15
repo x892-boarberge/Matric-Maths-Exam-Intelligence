@@ -87,3 +87,17 @@ Paper 2: Trigonometry; Analytical Geometry; Euclidean Geometry
 ## Licence / use
 
 Portfolio and research use. Official exam and diagnostic materials remain the property of their rights holders (for example the Department of Basic Education). This project analyses publicly available educational artefacts for research and tutoring-policy design.
+## Tutor engine (v1.1)
+
+Rule-governed NSC Mathematics tutoring prototype.
+
+### What it does
+- Diagnoses selected demo misconceptions (with answer normalisation)
+- Selects interventions from `data/processed/intervention/intervention_specification_v1.csv` (N08)
+- Escalates hints H0–H4 without giving full solutions first
+- Detects simple disengagement (answer demand / frustration)
+- Writes append-only session logs under `data/processed/tutor/logs/`
+
+### Run five-case demo
+```bash
+python scripts/run_five_cases.py
