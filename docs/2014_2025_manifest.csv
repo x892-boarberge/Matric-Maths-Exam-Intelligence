@@ -1,0 +1,54 @@
+year,session,paper,doc_type,language,source_url,collection_status,verified,notes
+2023,Nov,P1,exam,Eng,,owned,true,Already in project
+2023,Nov,P1,memo,Eng,,owned,true,Already in project
+2023,Nov,P2,exam,Eng,,owned,true,Already in project
+2023,Nov,P2,memo,Eng,,owned,true,Already in project
+2023,,,diagnostic,Eng,,owned,true,DBE diagnostic Book 1 Maths chapter
+2024,Nov,P1,exam,Eng,,owned,true,Already in project
+2024,Nov,P1,memo,Eng,,owned,true,Already in project
+2024,Nov,P2,exam,Eng,,owned,true,Already in project
+2024,Nov,P2,memo,Eng,,owned,true,Already in project
+2024,,,diagnostic,Eng,,owned,true,DBE diagnostic Book 1 Maths chapter
+2025,Nov,P1,exam,Eng,,owned,true,Already in project
+2025,Nov,P1,memo,Eng,,owned,true,Already in project
+2025,Nov,P2,exam,Eng,,owned,true,Already in project
+2025,Nov,P2,memo,Eng,,owned,true,Already in project
+2025,,,diagnostic,Eng,,owned,true,DBE diagnostic Book 1 Maths chapter
+2022,Nov,P1,exam,Eng,,to_collect,false,
+2022,Nov,P1,memo,Eng,,to_collect,false,
+2022,Nov,P2,exam,Eng,,to_collect,false,
+2022,Nov,P2,memo,Eng,,to_collect,false,
+2022,,,diagnostic,Eng,,to_collect,false,If published
+2021,Nov,P1,exam,Eng,,to_collect,false,covid_adjusted
+2021,Nov,P1,memo,Eng,,to_collect,false,covid_adjusted
+2021,Nov,P2,exam,Eng,,to_collect,false,covid_adjusted
+2021,Nov,P2,memo,Eng,,to_collect,false,covid_adjusted
+2021,,,diagnostic,Eng,,to_collect,false,covid_adjusted if exists
+2020,Nov,P1,exam,Eng,,to_collect,false,covid_adjusted
+2020,Nov,P1,memo,Eng,,to_collect,false,covid_adjusted
+2020,Nov,P2,exam,Eng,,to_collect,false,covid_adjusted
+2020,Nov,P2,memo,Eng,,to_collect,false,covid_adjusted
+2019,Nov,P1,exam,Eng,,to_collect,false,
+2019,Nov,P1,memo,Eng,,to_collect,false,
+2019,Nov,P2,exam,Eng,,to_collect,false,
+2019,Nov,P2,memo,Eng,,to_collect,false,
+2018,Nov,P1,exam,Eng,,to_collect,false,
+2018,Nov,P1,memo,Eng,,to_collect,false,
+2018,Nov,P2,exam,Eng,,to_collect,false,
+2018,Nov,P2,memo,Eng,,to_collect,false,
+2017,Nov,P1,exam,Eng,,to_collect,false,
+2017,Nov,P1,memo,Eng,,to_collect,false,
+2017,Nov,P2,exam,Eng,,to_collect,false,
+2017,Nov,P2,memo,Eng,,to_collect,false,
+2016,Nov,P1,exam,Eng,,to_collect,false,
+2016,Nov,P1,memo,Eng,,to_collect,false,
+2016,Nov,P2,exam,Eng,,to_collect,false,
+2016,Nov,P2,memo,Eng,,to_collect,false,
+2015,Nov,P1,exam,Eng,,to_collect,false,
+2015,Nov,P1,memo,Eng,,to_collect,false,
+2015,Nov,P2,exam,Eng,,to_collect,false,
+2015,Nov,P2,memo,Eng,,to_collect,false,
+2014,Nov,P1,exam,Eng,,to_collect,false,First full CAPS Grade 12 year
+2014,Nov,P1,memo,Eng,,to_collect,false,
+2014,Nov,P2,exam,Eng,,to_collect,false,
+2014,Nov,P2,memo,Eng,,to_collect,false,
