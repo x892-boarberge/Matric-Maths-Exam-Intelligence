@@ -14,8 +14,13 @@ def test_answer_demand_detected():
 
 
 def test_frustrated_detected():
-    r = detect_disengagement("I don't understand this")
+    r = detect_disengagement("this is so frustrating")
     assert r.kind == DisengagementKind.FRUSTRATED
+
+
+def test_help_seeking_detected():
+    r = detect_disengagement("I don't understand")
+    assert r.kind == DisengagementKind.HELP_SEEKING
 
 
 def test_engine_does_not_dump_solution_on_answer_demand():

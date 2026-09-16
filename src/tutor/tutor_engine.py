@@ -1,46 +1,28 @@
-﻿import uuid
-from abc import ABC
-from collections.abc import Callable as CallableFn
-from datetime import datetime, timezone
-from typing import Any, Dict, Optional
+﻿from datetime import datetime, timezone
+from typing import Optional, Callable, Dict, Any
+import uuid
 
-from .diagnosis import diagnose
-from .disengagement import DisengagementKind, detect_disengagement
-from .event_log import SessionLogger
-from .hint_policy import select_hint_level
-from .intervention_selector import select_intervention
 from .schemas import (
-    ActionType,
-    ErrorType,
-    EventType,
-    HintLevel,
-    InterventionSelection,
     LearnerState,
-    MasteryState,
     Problem,
-    ProvenanceKind,
     TutorAction,
+    ActionType,
+    HintLevel,
+    ErrorType,
+    MasteryState,
+    ProvenanceKind,
+    InterventionSelection,
+    EventType,
 )
+from .diagnosis import diagnose
+from .intervention_selector import select_intervention
+from .hint_policy import select_hint_level
+from .event_log import SessionLogger
+from .disengagement import detect_disengagement, DisengagementKind
+
 
 MASTERY_MIN_CORRECT = 3
 MAX_ATTEMPTS_BEFORE_HUMAN = 6
-
-
-class Callable(ABC):
-    """Concrete callable wrapper with a useful default implementation."""
-
-    def __init__(self, callback: CallableFn[..., Any], *, name: str = "callable"):
-        self.callback = callback
-        self.name = name
-
-    def __call__(self, *args: Any, **kwargs: Any) -> Any:
-        return self.callback(*args, **kwargs)
-
-    def describe(self) -> str:
-        return f"{self.name}({self.callback.__name__})"
-
-    def __repr__(self) -> str:
-        return f"Callable(name={self.name!r}, callback={self.callback.__name__})"
 
 
 class TutorEngine:
@@ -48,7 +30,7 @@ class TutorEngine:
 
     def __init__(
         self,
-        phrase_renderer: CallableFn[[Dict[str, Any]], str] | None = None,
+        phrase_renderer: Optional[Callable[[Dict[str, Any]], str]] = None,
         session_logger: Optional[SessionLogger] = None,
     ):
         self.phrase_renderer = phrase_renderer or self._default_renderer
@@ -170,6 +152,13 @@ class TutorEngine:
             )
             action_type = ActionType.HANDLE_DISENGAGEMENT
             engine_rule = "ENG_DISENGAGE_FRUSTRATED"
+        elif diseng.kind == DisengagementKind.HELP_SEEKING and diag.error_type != ErrorType.NONE:
+            message = (
+                "No problem — let's slow down. "
+                "What is the single thing this question is asking you to find?"
+            )
+            action_type = ActionType.HANDLE_DISENGAGEMENT
+            engine_rule = "ENG_DISENGAGE_HELP_SEEKING"
 
         event = {
             "event_id": event_id,
@@ -206,6 +195,7 @@ class TutorEngine:
                 "ENG_ESCALATE_HUMAN",
                 "ENG_DISENGAGE_ANSWER_DEMAND",
                 "ENG_DISENGAGE_FRUSTRATED",
+                "ENG_DISENGAGE_HELP_SEEKING",
             ):
                 self.logger.emit(
                     EventType.ESCALATION_TRIGGERED,

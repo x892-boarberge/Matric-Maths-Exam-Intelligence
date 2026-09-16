@@ -16,6 +16,10 @@ def _norm(text: str) -> str:
     s = s.replace("≥", ">=").replace("≤", "<=")
     s = s.replace("–", "-").replace("—", "-")
     s = s.replace("**", "^")  # v1.2
+    s = s.replace("0r", " or ")
+    s = s.replace("ror", " or ")
+    s = re.sub(r"\bor(\d)", r"or \1", s)
+    s = re.sub(r"(\d)or\b", r"\1 or", s)
     s = re.sub(r"\b(sin|cos|tan|cot|sec|csc)(theta|x|\()", r"\1 \2", s)
     s = re.sub(r"\s+", " ", s)
     s = re.sub(r"\bor(\d)", r"or \1", s)   # v1.2: or3 -> or 3
@@ -31,7 +35,6 @@ def _norm(text: str) -> str:
     s = re.sub(r"\s*\*\s*", "*", s)
     s = re.sub(r"\s*\^\s*", "^", s)
     return s.strip()
-
 
 def _is_correct(response: str, expected: str) -> bool:
     nr = _norm(response)
