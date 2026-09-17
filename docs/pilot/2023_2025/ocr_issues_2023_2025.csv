@@ -1,0 +1,8 @@
+year,paper,subq,issue,severity
+2025,P1,9.4,-1lx should be -11x,Low
+2025,P1,4,log_1 x subscript lost,Medium
+2025,P2,9.2.1,"Q-hat Q not in diagram, likely L-hat",Medium
+2024,P1,5,Skctched typo,Low
+2024,P2,2,numbered 1.1 instead of 2.1,Low
+2024,P2,6.2,square root symbol lost,Medium
+2023,P2,-,page 14 answer grid misread as 1s,Low
