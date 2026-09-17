@@ -1,0 +1,245 @@
+document_id,year,paper,question_number,subquestion,marks,question_text,source_type,segmentation_status
+2022_nov_p2_exam_maths,2022,P2,1,1.1,2.0,"Calculate the:
+1.1.1. Mean number of votes that these 10 learners received",exam,ok
+2022_nov_p2_exam_maths,2022,P2,1,1.1.2,1.0,Standard deviation of the number of votes that these 10 learners received,exam,ok
+2022_nov_p2_exam_maths,2022,P2,1,1.2,2.0,"The learners who received fewer votes than one standard deviation below the mean
+were not invited for an interview. How many learners were invited?",exam,ok
+2022_nov_p2_exam_maths,2022,P2,1,1.3,3.0,"Determine the equation of the least squares regression line for the data given in the
+table.",exam,ok
+2022_nov_p2_exam_maths,2022,P2,1,1.4,2.0,Predict the number of votes that a learner with a popularity score of 72 will receive.,exam,ok
+2022_nov_p2_exam_maths,2022,P2,1,1.5,1.0,"Using the scatter plot and table above, provide a reason why:
+1.5.1. IQ is nota good indicator of the number of votes that a learner could receive",exam,ok
+2022_nov_p2_exam_maths,2022,P2,1,1.5.2,,"The prediction in QUESTION 1.4 is reliable (1)
+[12]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P2 4 . DBE/November 2022
+NSC",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,2,2.1,1.0,How many people are employed at this company?,exam,ok
+2022_nov_p2_exam_maths,2022,P2,2,2.2,1.0,Write down the modal class of the data.,exam,ok
+2022_nov_p2_exam_maths,2022,P2,2,2.3,2.0,"How many employees spent more than 22,5% of their monthly salary on fuel?",exam,ok
+2022_nov_p2_exam_maths,2022,P2,2,2.4,2.0,"An employee spent R2 400 of his salary on fuel in that particular month. Determine
+the monthly salary of this employee if he spends 7% of his salary on fuel.",exam,ok
+2022_nov_p2_exam_maths,2022,P2,2,2.5,,"The monthly salaries of these employees remains constant and the number of litres of
+fuel used in each month also remains constant. If the fuel price increases from R21,43
+per litre to R22,79 per litre at the beginning of the next month, how will the above
+ogive change? (2)
+[8]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2022
+NSC",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,3,3.1,,Calculate the:,exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,3,3.1.1,2.0,Gradient of AB,exam,ok
+2022_nov_p2_exam_maths,2022,P2,3,3.1.2,2.0,"Size of a (2)
+3.1.3. Coordinates of T",exam,ok
+2022_nov_p2_exam_maths,2022,P2,3,3.1.4,2.0,Coordinates of S,exam,ok
+2022_nov_p2_exam_maths,2022,P2,3,3.2,3.0,Determine the equation of CD inthe form y=mx+c.,exam,ok
+2022_nov_p2_exam_maths,2022,P2,3,3.3,,Calculate the:,exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,3,3.3.1,4.0,Sizeof DCA,exam,ok
+2022_nov_p2_exam_maths,2022,P2,3,3.3.2,,"Areaof POSC (5)
+[20]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2022
+NSC",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,4,4.1,2.0,Calculate the coordinates of P.,exam,ok
+2022_nov_p2_exam_maths,2022,P2,4,4.2,,Determine the equation of:,exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,4,4.2.1,3.0,The circle inthe form (x—a)’ +(y-b) =r’,exam,ok
+2022_nov_p2_exam_maths,2022,P2,4,4.2.2,4.0,"KL inthe form y=mx+c (5)
+43 For which values of k will y= ~5% +k beasecant to the circle?",exam,ok
+2022_nov_p2_exam_maths,2022,P2,4,4.4,,"Points A(t; 4) and B are not shown on the diagram.
+
+From point A, another tangent is drawn to touch the circle with centre M at B.",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,4,4.4.1,2.0,Show that the length of tangent AB is given by V207+4¢+9.,exam,ok
+2022_nov_p2_exam_maths,2022,P2,4,4.4.2,,"Determine the minimum length of AB. (4)
+
+[20]
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2022
+NSC",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,5,5.1,,"Given that /13sinx+3=0, where xe (90° ; 270°).
+
+Without using a calculator, determine the value of:",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,5,5.1.1,2.0,sin(360° + x),exam,ok
+2022_nov_p2_exam_maths,2022,P2,5,5.1.2,2.0,"tanx (3)
+
+5.1.3. cos(180°+ x)",exam,ok
+2022_nov_p2_exam_maths,2022,P2,5,5.2,,"Determine the value of the following expression, without using a calculator:
+
+cos(90° + @)
+
+sin(9 - 180°) +3 sin(-0) ©)",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,5,5.3,6.0,"Determine the general solution of the following equation:
+
+{cosx +2sin x)(3sin 2x -1)=0",exam,ok
+2022_nov_p2_exam_maths,2022,P2,5,5.4,4.0,"Given the identity: cos(x + y).cos(x— y) =1-sin? x—sin’ y
+
+5.4.1. Prove the identity.",exam,ok
+2022_nov_p2_exam_maths,2022,P2,5,5.4.2,3.0,"Hence, determine the value of 1-—sin* 45°-sin?15°, without using a
+
+calculator.",exam,ok
+2022_nov_p2_exam_maths,2022,P2,5,5.5,,Consider the trigonometric expression: 16sinx.cos’ x —8sinx.cosx,exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,5,5.5.1,4.0,Rewrite the expression as a single trigonometric ratio.,exam,ok
+2022_nov_p2_exam_maths,2022,P2,5,5.5.2,,"For which value of x in the interval x €[0°; 90°] will
+
+16sin x.cos’ x —8sinx.cosx have its minimum value? (1)
+[30]
+
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2022
+NSC",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,6,6.1,1.0,Write down the period of g.,exam,ok
+2022_nov_p2_exam_maths,2022,P2,6,6.2,,Calculate the:,exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,6,6.2.1,1.0,Value of k,exam,ok
+2022_nov_p2_exam_maths,2022,P2,6,6.2.2,1.0,Coordinates of B,exam,ok
+2022_nov_p2_exam_maths,2022,P2,6,6.3,2.0,Write down the range of 2g(x).,exam,ok
+2022_nov_p2_exam_maths,2022,P2,6,6.4,2.0,"For which values of x will g(x+5°)-— f(x+5°)<0 in the interval
+
+x €[-90° ; 0°]?",exam,ok
+2022_nov_p2_exam_maths,2022,P2,6,6.5,,"Determine the values of p for which sinx.cosx=p will have exactly two real roots
+
+in the interval x €[—180° ; 180°]. (3)
+
+[10]
+
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2022
+NSC",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,7,7.1,2.0,Determine the length of AD in terms of p.,exam,ok
+2022_nov_p2_exam_maths,2022,P2,7,7.2,,"Show that the length of CD = 2? (Sit +082) (5)
+V2 sin x",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,7,7.3,,"If it is further given that p= 10 and x = 110°, calculate the area of AADC. (3)
+[10]
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P2 10 ' DBE/November 2022
+NSC",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,8,8.1,,"In the diagram, O is the centre of the circle. MNPR is acyclic quadrilateral and SN
+is a diameter of the circle. Chord MS and radius OR are drawn. M, =64.
+I
+64° \
+O
+R Ss.
+P
+Determine, giving reasons, the size of the following angles:",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,8,8.1.1,2.0,P,exam,ok
+2022_nov_p2_exam_maths,2022,P2,8,8.1.2,2.0,"M,",exam,ok
+2022_nov_p2_exam_maths,2022,P2,8,8.1.3,,"0, (2)
+Copyright reserved Please turn over
+
+===== Page 11 =====
+Mathematics/P2 11 DBE/November 2022
+NSC",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,8,8.2,,"In the diagram, AABG is drawn. D and E are midpoints of AB and AG
+respectively. AG and BG are produced to C and H respectively. F is a point on
+BC such that FG || CH.
+A
+E
+D
+H
+G
+B
+F C",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,8,8.2.1,,"Give areason why DE || BH. (1)
+oe . FC 1",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,8,8.2.2,,"If it is further given that Br = ri , DE=3x-—1 and GH=x+1, calculate,
+giving reasons, the value of x. (6)
+[13]
+Copyright reserved Please turn over
+
+===== Page 12 =====
+Mathematics/P2 12 : DBE/November 2022
+NSC",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,9,9.1,,"In the diagram, O is the centre ofa circle. OD bisects chord AB.
+“
+Na, °
+
+Prove the theorem that states that the line from the centre of a circle that bisects a
+
+chord is perpendicular to the chord, i.e. OD L AB. (5)
+92 In the diagram, E, B, F, S and P are points on the circle centred at O. GB isa
+
+tangent to the circle at B. FE is produced to meet the tangent at G. OT is drawn
+
+such that T is the midpoint of EF. GO and BO are drawn. BS is drawn through
+
+T. PS || GF.
+
+B
+| F
+P
+""5
+
+Prove, giving reasons, that:",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,9,9.2.1,5.0,OTBG isa cyclic quadrilateral,exam,ok
+2022_nov_p2_exam_maths,2022,P2,9,9.2.2,,"GOB=§ (4)
+
+[14]
+
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2022
+NSC ,",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,10,10.1,,"S=-L (4)
+AD AS",exam,missing_marks
+2022_nov_p2_exam_maths,2022,P2,10,10.2,5.0,AR AC,exam,ok
+2022_nov_p2_exam_maths,2022,P2,10,10.3,,"AC x SD = AR x TC (4)
+[13]
+TOTAL: 150
+Copyright reserved
+
+===== Page 14 =====
+Mathematics/P2 : DBE/November 2022
+, NSC
+INFORMATION SHEET
+xe —bt vb? —4ac
+2a
+A= P(l+ni) A= P(1-ni) A=P(1-i)"" A= P(1+i)""
+T, =at+(n-Nd S, =F a+ @-)d]
+T, =ar"""" S _a(r"" -1) srz#l S,=—53-1er<1
+n r-l 1-r
+pa 2it+"" -1] pall +i)"" |
+i i
+_ S(xt+h)— f(x)
+t = |
+Be) = h
+X, +x +
+d= (x,-%) +0.-y/ M Att Mi Ye
+2 2
+y=mxt+e y—y, =m(x—x,) m=22— 1 m=tand
+Hy ~ Xi
+(x-ay +(y-by =r?
+In AABC; 2-= 9 ©
+snA sinB sinC
+a’ =b’? +c? —2be.cos A
+area AABC = 5 ab.sin C
+sin(a+ B) =sina.cos 8+cosa.sin£B sin(a— B) =sina.cos S—cosa.sinfB
+cos (a+ £) =cosa.cos f—sina.sinfB cos (a- B) =cosa@.cos P+sina.sinf
+cos’ a—sin’ a
+cos2a =+1—2sin’ a sin2a = 2sina.cosa
+2cos’ a-1
+. =\2
+X,—%X
+>. 2, ;~ x)
+x=- a ———————
+n 7
+n(A)
+P(A)= lS) P(A or B) = P(A) + P(B) — P(A and B)
+n
+x-xKy-y
+yp=atbhx p= A=W) Ke=9)
+Si(x-X)
+Copyright reserved",exam,missing_marks

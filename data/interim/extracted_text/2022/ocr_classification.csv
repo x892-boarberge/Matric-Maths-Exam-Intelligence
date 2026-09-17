@@ -1,0 +1,5 @@
+doc,exists,pages,chars_per_page,has_text_layer,ocr_required
+p1_exam,True,10,0.0,False,True
+p1_memo,True,21,628.3,True,False
+p2_exam,True,14,0.0,False,True
+p2_memo,True,24,960.0,True,False

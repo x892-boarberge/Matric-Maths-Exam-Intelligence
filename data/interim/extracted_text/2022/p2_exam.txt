@@ -1,0 +1,409 @@
+
+===== Page 1 =====
+=e basic education
+(U2 \ —EEeEEeE—e—eEeEEEEEEyE
+fy = NN Department:
+WO Basic Education
+Sa REPUBLIC OF SOUTH AFRICA
+NATIONAL
+SENIOR CERTIFICATE
+GRADE 12
+4 MATHEMATICS P2 ‘
+" NOVEMBER 2022
+MARKS: 150
+TIME: 3 hours
+This question paper consists of 13 pages and 1 information sheet.
+Copyright reserved Please turn over
+
+
+===== Page 2 =====
+Mathematics/P2 2 ‘DBE/November 2022
+NSC
+
+INSTRUCTIONS AND INFORMATION
+
+Read the following instructions carefully before answering the questions.
+
+1. This question paper consists of 10 questions.
+
+2. Answer ALL the questions in the SPECIAL ANSWER BOOK provided.
+
+3. Clearly show ALL calculations, diagrams, graphs, etc. which you have used in
+determining your answers.
+
+4. Answers only will NOT necessarily be awarded full marks.
+
+5. You may use an approved scientific calculator (non-programmable and
+non-graphical), unless stated otherwise.
+
+6. If necessary, round off answers correct to TWO decimal places, unless stated
+otherwise.
+
+7. Diagrams are NOT necessarily drawn to scale.
+
+8. An information sheet with formulae is included at the end of the question paper.
+
+9. Write neatly and legibly.
+
+Copyright reserved Please turn over
+
+
+===== Page 3 =====
+Mathematics/P2 3 DBE/November 2022
+NSC
+QUESTION 1
+The matric class of a certain high school had to vote for the chairperson of the RCL
+(representative council of learners). The scatter plot below shows the IQ (intelligence quotient)
+of the 10 learners who received the most votes and the number of votes that they received.
+SCATTER PLOT
+to SE2SS2 523 SSSSSSSSsasSSSc=
+h SERRE RRS
+1S SSS
+5 SSS 5.5.-_——S---——
+Zz 5 = a a a al ee el
+98 103 108 113 118 123
+Intelligence quotient (IQ)
+Before the election, the popularity of each of these ten learners was established and a popularity
+score (out of a 100) was assigned to each. The popularity scores and the number of votes of the
+same 10 learners who received the most votes are shown in the table below.
+Popularity score (x) _| 32_| 89 | 35 _| 82 | 5o_| 59 | 81 | 40 | 79
+Number ofvotes(y) | 9 | 22 | 10 | 21 | 11 | 15 | 20 | 12 | 19 | 16 |
+1.1 Calculate the:
+1.1.1. Mean number of votes that these 10 learners received (2)
+1.1.2 Standard deviation of the number of votes that these 10 learners received (1)
+1.2 The learners who received fewer votes than one standard deviation below the mean
+were not invited for an interview. How many learners were invited? (2)
+1.3 Determine the equation of the least squares regression line for the data given in the
+table. (3)
+1.4 Predict the number of votes that a learner with a popularity score of 72 will receive. (2)
+1.5 Using the scatter plot and table above, provide a reason why:
+1.5.1. IQ is nota good indicator of the number of votes that a learner could receive (1)
+1.5.2 The prediction in QUESTION 1.4 is reliable (1)
+[12]
+Copyright reserved Please turn over
+
+
+===== Page 4 =====
+Mathematics/P2 4 . DBE/November 2022
+NSC
+QUESTION 2
+A company conducted research among all its employees on what percentage of their monthly
+salary was spent on fuel in a particular month. The data is represented in the ogive (cumulative
+frequency graph) below.
+OGIVE
+W-LEEET-EEE REESE
+» = ==
+=== SE=an=====
+2 See2s===522==
+= 40 — Lf
+.,=—D._
+2 yy Lt =o,
+MW=SSSSSaSSSSa==
+a /| =
+20
+a iY —
+° = =
+" ae
+{=522>===S==>>=
+5 10 15 20 25 30 35
+Percentage of salary spent on fuel
+2.1 How many people are employed at this company? (1)
+2.2 Write down the modal class of the data. (1)
+2.3 How many employees spent more than 22,5% of their monthly salary on fuel? (2)
+2.4 An employee spent R2 400 of his salary on fuel in that particular month. Determine
+the monthly salary of this employee if he spends 7% of his salary on fuel. (2)
+2.5 The monthly salaries of these employees remains constant and the number of litres of
+fuel used in each month also remains constant. If the fuel price increases from R21,43
+per litre to R22,79 per litre at the beginning of the next month, how will the above
+ogive change? (2)
+[8]
+Copyright reserved Please turn over
+
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2022
+NSC
+QUESTION 3
+In the diagram, A(4; 2), B(6;-4) and C2 ;-3) are vertices of AABC. T is the midpoint
+of CB. The equation of line AC is 5x—-6y=8. The angle of inclination of AB is a. ADCT
+is drawn such that CD || BA. The lines AC and DT intersect at S, the y-intercept of AC.
+P, F and R are the x-intercepts of DC, AC and AB respectively.
+D Jy
+AQ ; 2)
+ZO :
+as .
+\x
+C(-2 ;-3)
+T
+B66 ; -4)
+3.1 Calculate the:
+3.1.1 Gradient of AB (2)
+3.1.2 Size of a (2)
+3.1.3. Coordinates of T (2)
+3.1.4 Coordinates of S (2)
+3.2 Determine the equation of CD inthe form y=mx+c. (3)
+3.3 Calculate the:
+3.3.1 Sizeof DCA (4)
+3.3.2 Areaof POSC (5)
+[20]
+Copyright reserved Please turn over
+
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2022
+NSC
+QUESTION 4
+In the diagram, M(3 ; —5) is the centre of the circle having PN as its diameter. KL isa
+tangent to the circle at N(7 ; —2).
+y
+K
+\ *
+4 L
+P
+
+4.1 Calculate the coordinates of P. (2)
+4.2 Determine the equation of:
+
+4.2.1 The circle inthe form (x—a)’ +(y-b) =r’ (3)
+
+4.2.2 KL inthe form y=mx+c (5)
+43 For which values of k will y= ~5% +k beasecant to the circle? (4)
+4.4 Points A(t; 4) and B are not shown on the diagram.
+
+From point A, another tangent is drawn to touch the circle with centre M at B.
+
+4.4.1 Show that the length of tangent AB is given by V207+4¢+9. (2)
+
+4.4.2 Determine the minimum length of AB. (4)
+
+[20]
+
+Copyright reserved Please turn over
+
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2022
+NSC
+
+QUESTION 5
+5.1 Given that /13sinx+3=0, where xe (90° ; 270°).
+
+Without using a calculator, determine the value of:
+
+5.1.1 sin(360° + x) (2)
+
+5.1.2  tanx (3)
+
+5.1.3. cos(180°+ x) (2)
+5.2 Determine the value of the following expression, without using a calculator:
+
+cos(90° + @)
+
+sin(9 - 180°) +3 sin(-0) ©)
+5.3 Determine the general solution of the following equation:
+
+{cosx +2sin x)(3sin 2x -1)=0 (6)
+5.4 Given the identity: cos(x + y).cos(x— y) =1-sin? x—sin’ y
+
+5.4.1. Prove the identity. (4)
+
+5.4.2 Hence, determine the value of 1-—sin* 45°-sin?15°, without using a
+
+calculator. (3)
+
+5.5 Consider the trigonometric expression: 16sinx.cos’ x —8sinx.cosx
+
+5.5.1 Rewrite the expression as a single trigonometric ratio. (4)
+
+5.5.2 For which value of x in the interval x €[0°; 90°] will
+
+16sin x.cos’ x —8sinx.cosx have its minimum value? (1)
+[30]
+
+Copyright reserved Please turn over
+
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2022
+NSC
+
+QUESTION 6
+In the diagram below, the graphs of f(x)=tanx and g(x)=2sin2x are drawn for the
+interval x €[—180° ; 180°] A(60°; 4) and B are two points of intersection of f and g.
+6.1 Write down the period of g. (1)
+6.2 Calculate the:
+
+6.2.1 Value of k (1)
+
+6.2.2 Coordinates of B (1)
+6.3 Write down the range of 2g(x). (2)
+6.4 For which values of x will g(x+5°)-— f(x+5°)<0 in the interval
+
+x €[-90° ; 0°]? (2)
+6.5 Determine the values of p for which sinx.cosx=p will have exactly two real roots
+
+in the interval x €[—180° ; 180°]. (3)
+
+[10]
+
+Copyright reserved Please turn over
+
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2022
+NSC
+QUESTION 7
+AB is a vertical flagpole that is 5 p metres long. AC and AD are two cables anchoring the
+flagpole. B, C and D are in the same horizontal plane.
+BD = 2p metres, ACD=x and ADC =45°.
+A
+J5p
+the B Higisn i 2p
+tha ODF a5 a 45°
+Cc
+7.1 Determine the length of AD in terms of p. (2)
+7.2 Show that the length of CD = 2? (Sit +082) (5)
+V2 sin x
+7.3 If it is further given that p= 10 and x = 110°, calculate the area of AADC. (3)
+[10]
+Copyright reserved Please turn over
+
+
+===== Page 10 =====
+Mathematics/P2 10 '  DBE/November 2022
+NSC
+QUESTION 8
+8.1 In the diagram, O is the centre of the circle. MNPR is acyclic quadrilateral and SN
+is a diameter of the circle. Chord MS and radius OR are drawn. M, =64.
+I
+64° \
+O
+R Ss.
+P
+Determine, giving reasons, the size of the following angles:
+8.1.1 P (2)
+8.1.2 M, (2)
+8.1.3 0, (2)
+Copyright reserved Please turn over
+
+
+===== Page 11 =====
+Mathematics/P2 11 DBE/November 2022
+NSC
+8.2 In the diagram, AABG is drawn. D and E are midpoints of AB and AG
+respectively. AG and BG are produced to C and H respectively. F is a point on
+BC such that FG || CH.
+A
+E
+D
+H
+G
+B
+F C
+8.2.1 Give areason why DE || BH. (1)
+oe . FC 1
+8.2.2 If it is further given that Br = ri , DE=3x-—1 and GH=x+1, calculate,
+giving reasons, the value of x. (6)
+[13]
+Copyright reserved Please turn over
+
+
+===== Page 12 =====
+Mathematics/P2 12 : DBE/November 2022
+NSC
+QUESTION 9
+9.1 In the diagram, O is the centre ofa circle. OD bisects chord AB.
+“
+Na, °
+
+Prove the theorem that states that the line from the centre of a circle that bisects a
+
+chord is perpendicular to the chord, i.e. OD L AB. (5)
+92 In the diagram, E, B, F, S and P are points on the circle centred at O. GB isa
+
+tangent to the circle at B. FE is produced to meet the tangent at G. OT is drawn
+
+such that T is the midpoint of EF. GO and BO are drawn. BS is drawn through
+
+T. PS || GF.
+
+B
+| F
+P
+"5
+
+Prove, giving reasons, that:
+
+9.2.1 OTBG isa cyclic quadrilateral (5)
+
+9.2.2 GOB=§ (4)
+
+[14]
+
+Copyright reserved Please turn over
+
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2022
+NSC ,
+QUESTION 10
+In the diagram, PQRS is acyclic quadrilateral. KP is a tangent to the circle at P. C and D
+are points on chords PQ and PS respectively and CD produced meets RS produced at A.
+CA || QS. RC is drawn. P, =R,.
+A so
+Q
+K
+q
+P
+Prove, giving reasons, that:
+10.1 S=-L (4)
+AD AS
+10.2 AR AC (5)
+10.3 AC x SD = AR x TC (4)
+[13]
+TOTAL: 150
+Copyright reserved
+
+
+===== Page 14 =====
+Mathematics/P2 : DBE/November 2022
+, NSC
+INFORMATION SHEET
+xe —bt vb? —4ac
+2a
+A= P(l+ni) A= P(1-ni) A=P(1-i)" A= P(1+i)"
+T, =at+(n-Nd S, =F a+ @-)d]
+T, =ar"" S _a(r" -1) srz#l S,=—53-1er<1
+n r-l 1-r
+pa 2it+" -1] pall +i)" |
+i i
+_ S(xt+h)— f(x)
+t = |
+Be) = h
+X, +x +
+d= (x,-%) +0.-y/ M Att Mi Ye
+2 2
+y=mxt+e y—y, =m(x—x,) m=22— 1 m=tand
+Hy ~ Xi
+(x-ay +(y-by =r?
+In AABC; 2-= 9 ©
+snA sinB sinC
+a’ =b’? +c? —2be.cos A
+area AABC = 5 ab.sin C
+sin(a+ B) =sina.cos 8+cosa.sin£B sin(a— B) =sina.cos S—cosa.sinfB
+cos (a+ £) =cosa.cos f—sina.sinfB cos (a- B) =cosa@.cos P+sina.sinf
+cos’ a—sin’ a
+cos2a =+1—2sin’ a sin2a = 2sina.cosa
+2cos’ a-1
+. =\2
+X,—%X
+>. 2, ;~ x)
+x=- a ———————
+n 7
+n(A)
+P(A)= lS) P(A or B) = P(A) + P(B) — P(A and B)
+n
+x-xKy-y
+yp=atbhx p= A=W) Ke=9)
+Si(x-X)
+Copyright reserved
