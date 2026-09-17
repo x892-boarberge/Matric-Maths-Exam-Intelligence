@@ -1,0 +1,16 @@
+paper,question_number,subquestion,type,description,method,verification_status
+P1,4,4.1,hyperbola,"h(x)=1/(x-1)+2; VA x=1, HA y=2; x-int (1/2;0)",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P1,4,4.2,parabola_and_exponential,"f opens up TP D(2;-9), x-int E(-1;0) H(5;0), y-int C(0;-5); g(x)=-2^x-5, asymptote y=-5",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P1,5,5.0,linear_and_inverse,"g(x)=2x+6, B(0;6), D(-3;0); g^-1(x)=0.5x-3, C(6;0); A(-6;-6)",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P1,8,8.0,quadratic_derivative,"f'(x)=-3x^2+2x+1 opens down, x-int at -1/3 and 1, y-int (0;1)",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P1,9,9.0,curve_and_point,"f(x)=x^2, B(10;2), A(x;x^2) with tangent perp to AB; min d=2*sqrt(17)",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P1,10,10.0,venn_three_events,"A_only=0.05, A&B_only=0.1, A&C_only=0.15, A&B&C=x=0.16, B_only=0.183, B&C_only=0.2, C_only=0.05, outside=y=0.107",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P2,1,1.0,scatter_plot_and_table,"scatter IQ vs votes; table popularity=[32,89,35,82,50,59,81,40,79,65] votes=[9,22,10,21,11,15,20,12,19,16]",partial_vision_and_reconstruction,ok_verified_2026_09_18
+P2,2,2.0,ogive,"x=percentage fuel 5-35, y=cumulative frequency 0-70; approx points (5;0),(10;5),(15;12),(20;24),(25;45),(30;58),(35;60); total=60",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P2,3,3.0,coordinate_triangle_with_construction,"A(4;2) B(6;-4) C(-2;-3), T midpoint CB, D such that CD || BA, S y-int AC, alpha angle of inclination AB",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P2,4,4.0,circle_and_tangent,"centre M(3;-5), N(7;-2), P(-1;-8) opposite N, KL tangent at N",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P2,6,6.0,trig_graphs,"f=tan x, g=2sin2x, x in [-180;180]; intersections at A(60;sqrt3) and B(-60;-sqrt3)",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P2,7,7.0,3d_flagpole,"vertical AB=sqrt5*p, horizontal plane B,C,D; BD=2p, angle ACD=x, angle ADC=45",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P2,8,8.0,cyclic_quadrilateral_with_diameter,"cyclic quad MNPR, centre O, SN diameter, M2=64",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P2,9,9.2,circle_with_tangent_and_parallels,"circle centre O, points E,B,F,S,P; GB tangent at B; T midpoint EF; PS || GF",reconstructed_from_text_and_memo,ok_verified_2026_09_18
+P2,10,10.0,cyclic_quad_with_tangent_and_auxiliary,"cyclic quad PQRS, tangent KP at P, C on PQ, D on PS, CD meets RS at A, CA || QS, angle P1 = angle R2",reconstructed_from_text_and_memo,ok_verified_2026_09_18

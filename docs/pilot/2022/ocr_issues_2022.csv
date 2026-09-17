@@ -1,0 +1,16 @@
+paper,page,subq,issue,severity
+P1,3,1.4,OCR swapped y for n vs memo,High
+P1,3,1.1.x,mark allocations collapsed,High
+P1,9,10,Venn values image-only,Critical
+P1,8,8,f'(x) graph image-only,Critical
+P1,5,4.1,hyperbola graph image-only,High
+P1,5,4.2,parabola/exp graph image-only,High
+P2,3,1,popularity table numbers mashed,Critical
+P2,3,1,scatter plot image-only,Critical
+P2,4,2,ogive values image-only,Critical
+P2,5,3,triangle interior points image-only,High
+P2,6,4,circle diagram image-only,Medium
+P2,8,6,trig graph image-only,Medium
+P2,10,8,Euclidean diagram image-only,Critical
+P2,12,9,circle/tangent diagrams image-only,Critical
+P2,13,10,cyclic quad diagram image-only,Critical
