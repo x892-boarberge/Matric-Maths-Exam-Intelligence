@@ -1,46 +1,61 @@
-﻿year,session,paper,doc_type,language,document_id,source_url,local_path,collection_status,verified,notes
-2022,Nov,P1,exam,Eng,2022_nov_p1_exam_maths,https://www.education.gov.za/Portals/0/CD/2022NovExams/Non-Languages%20Nov%202022%20PDF/Mathematics/Mathematics%20P1%20Nov%202022%20Eng.pdf?ver=2023-02-02-114231-000,data/raw/exams/2022_nov_p1_exam_maths.pdf,owned,yes,NSC Nov 2022 P1 exam verified
-2022,Nov,P2,exam,Eng,2022_nov_p2_exam_maths,https://www.education.gov.za/Portals/0/CD/2022NovExams/Non-Languages%20Nov%202022%20PDF/Mathematics/Mathematics%20P2%20Nov%202022%20Eng.pdf?ver=2023-02-08-132128-000,data/raw/exams/2022_nov_p2_exam_maths.pdf,owned,yes,NSC Nov 2022 P2 exam verified
-2022,Nov,P1,memo,Eng,2022_nov_p1_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=gytAGGPYSc8%3d&tabid=3294&portalid=0&mid=10986,data/raw/memos/2022_nov_p1_memo_maths.pdf,owned,yes,NSC Nov 2022 P1 marking guidelines verified
-2022,Nov,P2,memo,Eng,2022_nov_p2_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=var8F7VpOmU%3d&tabid=3294&portalid=0&mid=10986,data/raw/memos/2022_nov_p2_memo_maths.pdf,owned,yes,NSC Nov 2022 P2 marking guidelines verified
-2022,—,—,diagnostic,Eng,2022_maths_diagnostic_part1,https://www.education.gov.za/Portals/0/Documents/Reports/Diagnostic%20Reports%202022/,data/raw/diagnostic_reports/2022_maths_diagnostic_part1.pdf,owned,yes,NSC 2022 Diagnostic Report Part 1 Content Subjects verified
-2021,Nov,P1,exam,Eng,2021_nov_p1_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=jgMJbW3Aa0o%3d&tabid=2922&portalid=0&mid=10135,data/raw/exams/2021_nov_p1_exam_maths.pdf,owned,yes,NSC Nov 2021 P1 exam; covid_adjusted
-2021,Nov,P2,exam,Eng,2021_nov_p2_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=s7hK0H8bqPM%3d&tabid=2922&portalid=0&mid=10135,data/raw/exams/2021_nov_p2_exam_maths.pdf,owned,yes,NSC Nov 2021 P2 exam; covid_adjusted
-2021,Nov,P1,memo,Eng,2021_nov_p1_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=sGgq9FNv0lQ%3d&tabid=2922&portalid=0&mid=10135,data/raw/memos/2021_nov_p1_memo_maths.pdf,owned,yes,NSC Nov 2021 P1 memo; covid_adjusted
-2021,Nov,P2,memo,Eng,2021_nov_p2_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=LJo4MZ4DRZM%3d&tabid=2922&portalid=0&mid=10135,data/raw/memos/2021_nov_p2_memo_maths.pdf,owned,yes,NSC Nov 2021 P2 memo; covid_adjusted
-2021,—,—,diagnostic,Eng,2021_maths_diagnostic_part1,https://www.education.gov.za/LinkClick.aspx?fileticket=H1cFr8xeEh0%3d&tabid=92&portalid=0&mid=4359,data/raw/diagnostic_reports/2021_maths_diagnostic_part1.pdf,owned,yes,NSC 2021 Diagnostic Report Part 1; covid_adjusted
-2020,Nov,P1,exam,Eng,2020_nov_p1_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=f-OMZa2HZ5U%3d&tabid=2702&portalid=0&mid=9632,data/raw/exams/2020_nov_p1_exam_maths.pdf,owned,yes,NSC Nov 2020 P1 exam; covid_adjusted
-2020,Nov,P2,exam,Eng,2020_nov_p2_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=FU-0n3tYUzs%3d&tabid=2702&portalid=0&mid=9632,data/raw/exams/2020_nov_p2_exam_maths.pdf,owned,yes,NSC Nov 2020 P2 exam; covid_adjusted
-2020,Nov,P1,memo,Eng,2020_nov_p1_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=R9cpC35sw60%3d&tabid=2702&portalid=0&mid=9632,data/raw/memos/2020_nov_p1_memo_maths.pdf,owned,yes,NSC Nov 2020 P1 memo; covid_adjusted
-2020,Nov,P2,memo,Eng,2020_nov_p2_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=P7kQcnNxRHY%3d&tabid=2702&portalid=0&mid=9632,data/raw/memos/2020_nov_p2_memo_maths.pdf,owned,yes,NSC Nov 2020 P2 memo; covid_adjusted
-2020,—,—,diagnostic,Eng,2020_maths_diagnostic_part1,https://www.education.gov.za/LinkClick.aspx?fileticket=pfjtA8b_rf4%3d&tabid=92&portalid=0&mid=4359,data/raw/diagnostic_reports/2020_maths_diagnostic_part1.pdf,owned,yes,NSC 2020 Diagnostic Part 1; covid_adjusted
-2019,Nov,P1,exam,Eng,2019_nov_p1_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=Tno439ZyBcU%3d&tabid=2556&portalid=0&mid=8994,data/raw/exams/2019_nov_p1_exam_maths.pdf,owned,yes,NSC Nov 2019 P1 exam
-2019,Nov,P2,exam,Eng,2019_nov_p2_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=s6HzylxEHVo%3d&tabid=2556&portalid=0&mid=8994,data/raw/exams/2019_nov_p2_exam_maths.pdf,owned,yes,NSC Nov 2019 P2 exam
-2019,Nov,P1,memo,Eng,2019_nov_p1_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=n-F98_w5Zig%3d&tabid=2556&portalid=0&mid=8994,data/raw/memos/2019_nov_p1_memo_maths.pdf,owned,yes,NSC Nov 2019 P1 memo
-2019,Nov,P2,memo,Eng,2019_nov_p2_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=DtEIXt8fp_E%3d&tabid=2556&portalid=0&mid=8994,data/raw/memos/2019_nov_p2_memo_maths.pdf,owned,yes,NSC Nov 2019 P2 memo
-2019,—,—,diagnostic,Eng,2019_maths_diagnostic_part1,https://www.education.gov.za/LinkClick.aspx?fileticket=a20XbsuSdcc%3d&tabid=92&portalid=0&mid=4359,data/raw/diagnostic_reports/2019_maths_diagnostic_part1.pdf,owned,yes,NSC 2019 Diagnostic Report Part 1 / Book 1
-2018,Nov,P1,exam,Eng,2018_nov_p1_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=QE2-jAQgyWo%3d&tabid=2268&portalid=0&mid=8402,data/raw/exams/2018_nov_p1_exam_maths.pdf,owned,yes,NSC Nov 2018 P1 exam
-2018,Nov,P2,exam,Eng,2018_nov_p2_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=ABGQ68K1-V0%3d&tabid=2268&portalid=0&mid=8402,data/raw/exams/2018_nov_p2_exam_maths.pdf,owned,yes,NSC Nov 2018 P2 exam
-2018,Nov,P1,memo,Eng,2018_nov_p1_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=oaZUa6tkOeI%3d&tabid=2268&portalid=0&mid=8402,data/raw/memos/2018_nov_p1_memo_maths.pdf,owned,yes,NSC Nov 2018 P1 memo
-2018,Nov,P2,memo,Eng,2018_nov_p2_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=JGqaMbWx7XA%3d&tabid=2268&portalid=0&mid=8402,data/raw/memos/2018_nov_p2_memo_maths.pdf,owned,yes,NSC Nov 2018 P2 memo
-2018,—,—,diagnostic,Eng,2018_maths_diagnostic_part1,https://www.education.gov.za/LinkClick.aspx?fileticket=WLMCRy84Zj4%3d&tabid=92&portalid=0&mid=4359,data/raw/diagnostic_reports/2018_maths_diagnostic_part1.pdf,owned,yes,NSC 2018 Diagnostic Report Part 1 Non-Languages
-2017,Nov,P1,exam,Eng,2017_nov_p1_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=9bzKRinovqI%3d&tabid=1856&portalid=0&mid=7350,data/raw/exams/2017_nov_p1_exam_maths.pdf,owned,yes,NSC Nov 2017 P1 exam
-2017,Nov,P2,exam,Eng,2017_nov_p2_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=keSfPGPlEAg%3d&tabid=1856&portalid=0&mid=7350,data/raw/exams/2017_nov_p2_exam_maths.pdf,owned,yes,NSC Nov 2017 P2 exam
-2017,Nov,P1,memo,Eng,2017_nov_p1_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=zp4zBOSLW0Q%3d&tabid=1856&portalid=0&mid=7350,data/raw/memos/2017_nov_p1_memo_maths.pdf,owned,yes,NSC Nov 2017 P1 memo
-2017,Nov,P2,memo,Eng,2017_nov_p2_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=BvPSes02Sn4%3d&tabid=1856&portalid=0&mid=7350,data/raw/memos/2017_nov_p2_memo_maths.pdf,owned,yes,NSC Nov 2017 P2 memo
-2017,—,—,diagnostic,Eng,2017_maths_diagnostic_part1,https://www.education.gov.za/LinkClick.aspx?fileticket=c4uOac3jwP4%3d&tabid=92&portalid=0&mid=4359,data/raw/diagnostic_reports/2017_maths_diagnostic_part1.pdf,owned,yes,NSC 2017 Diagnostic Report Part 1
-2016,Nov,P1,exam,Eng,2016_nov_p1_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=Mf2vXwdMvgs%3d&tabid=1508&portalid=0&mid=6179,data/raw/exams/2016_nov_p1_exam_maths.pdf,owned,yes,NSC Nov 2016 P1 exam
-2016,Nov,P2,exam,Eng,2016_nov_p2_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=z8L8L6YJt7k%3d&tabid=1508&portalid=0&mid=6179,data/raw/exams/2016_nov_p2_exam_maths.pdf,owned,yes,NSC Nov 2016 P2 exam
-2016,Nov,P1,memo,Eng,2016_nov_p1_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=BREWbevmj5A%3d&tabid=1508&portalid=0&mid=6179,data/raw/memos/2016_nov_p1_memo_maths.pdf,owned,yes,NSC Nov 2016 P1 memo
-2016,Nov,P2,memo,Eng,2016_nov_p2_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=ZcumaObYY0U%3d&tabid=1508&portalid=0&mid=6179,data/raw/memos/2016_nov_p2_memo_maths.pdf,owned,yes,NSC Nov 2016 P2 memo
-2016,—,—,diagnostic,Eng,2016_maths_diagnostic_part1,https://www.education.gov.za/LinkClick.aspx?fileticket=dS08Lo3nuiU%3d&tabid=92&portalid=0&mid=4359,data/raw/diagnostic_reports/2016_maths_diagnostic_part1.pdf,owned,yes,NSC 2016 Diagnostic Report
-2015,Nov,P1,exam,Eng,2015_nov_p1_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=Ff8Magmt-Aw%3d&tabid=979&portalid=0&mid=4289,data/raw/exams/2015_nov_p1_exam_maths.pdf,owned,yes,NSC Nov 2015 P1 exam
-2015,Nov,P2,exam,Eng,2015_nov_p2_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=zSHGn8qtNQA%3d&tabid=979&portalid=0&mid=4289,data/raw/exams/2015_nov_p2_exam_maths.pdf,owned,yes,NSC Nov 2015 P2 exam
-2015,Nov,P1,memo,Eng,2015_nov_p1_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=npZjEEJ1rRE%3d&tabid=979&portalid=0&mid=4289,data/raw/memos/2015_nov_p1_memo_maths.pdf,owned,yes,NSC Nov 2015 P1 memo
-2015,Nov,P2,memo,Eng,2015_nov_p2_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=bRzKGUA745Q%3d&tabid=979&portalid=0&mid=4289,data/raw/memos/2015_nov_p2_memo_maths.pdf,owned,yes,NSC Nov 2015 P2 memo
-2015,—,—,diagnostic,Eng,2015_maths_diagnostic_part1,https://www.education.gov.za/LinkClick.aspx?fileticket=IwlSo5eiHzA%3d&tabid=92&portalid=0&mid=4359,data/raw/diagnostic_reports/2015_maths_diagnostic_part1.pdf,owned,yes,NSC 2015 Diagnostic Report
-2014,Nov,P1,exam,Eng,2014_nov_p1_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=hiapoaCUjZM%3d&tabid=568&portalid=0&mid=1527,data/raw/exams/2014_nov_p1_exam_maths.pdf,owned,yes,NSC Nov 2014 P1 exam (amended)
-2014,Nov,P2,exam,Eng,2014_nov_p2_exam_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=lUWxb7RJ8qY%3d&tabid=568&portalid=0&mid=1527,data/raw/exams/2014_nov_p2_exam_maths.pdf,owned,yes,NSC Nov 2014 P2 exam (amended)
-2014,Nov,P1,memo,Eng,2014_nov_p1_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=_XS29vTWY-I%3d&tabid=568&portalid=0&mid=1527,data/raw/memos/2014_nov_p1_memo_maths.pdf,owned,yes,NSC Nov 2014 P1 memo
-2014,Nov,P2,memo,Eng,2014_nov_p2_memo_maths,https://www.education.gov.za/LinkClick.aspx?fileticket=KNmGWZqhp04%3d&tabid=568&portalid=0&mid=1527,data/raw/memos/2014_nov_p2_memo_maths.pdf,owned,yes,NSC Nov 2014 P2 memo
-2014,—,—,diagnostic,Eng,2014_maths_diagnostic_part1,https://www.education.gov.za/LinkClick.aspx?fileticket=hZL6MoEQvtQ%3d&tabid=92&portalid=0&mid=4359,data/raw/diagnostic_reports/2014_maths_diagnostic_part1.pdf,owned,yes,NSC 2014 Diagnostic Report
+year,session,paper,doc_type,language,document_id,local_path,collection_status,verified,notes
+2014,,,diagnostic,Eng,2014_maths_diagnostic_part1,data/raw/diagnostic_reports/2014_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2014,Nov,P1,exam,Eng,2014_nov_p1_exam_maths,data/raw/exams/2014_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2014,Nov,P2,exam,Eng,2014_nov_p2_exam_maths,data/raw/exams/2014_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2014,Nov,P1,memo,Eng,2014_nov_p1_memo_maths,data/raw/memos/2014_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2014,Nov,P2,memo,Eng,2014_nov_p2_memo_maths,data/raw/memos/2014_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2015,,,diagnostic,Eng,2015_maths_diagnostic_part1,data/raw/diagnostic_reports/2015_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2015,Nov,P1,exam,Eng,2015_nov_p1_exam_maths,data/raw/exams/2015_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2015,Nov,P2,exam,Eng,2015_nov_p2_exam_maths,data/raw/exams/2015_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2015,Nov,P1,memo,Eng,2015_nov_p1_memo_maths,data/raw/memos/2015_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2015,Nov,P2,memo,Eng,2015_nov_p2_memo_maths,data/raw/memos/2015_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2016,,,diagnostic,Eng,2016_maths_diagnostic_part1,data/raw/diagnostic_reports/2016_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2016,Nov,P1,exam,Eng,2016_nov_p1_exam_maths,data/raw/exams/2016_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2016,Nov,P2,exam,Eng,2016_nov_p2_exam_maths,data/raw/exams/2016_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2016,Nov,P1,memo,Eng,2016_nov_p1_memo_maths,data/raw/memos/2016_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2016,Nov,P2,memo,Eng,2016_nov_p2_memo_maths,data/raw/memos/2016_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2017,,,diagnostic,Eng,2017_maths_diagnostic_part1,data/raw/diagnostic_reports/2017_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2017,Nov,P1,exam,Eng,2017_nov_p1_exam_maths,data/raw/exams/2017_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2017,Nov,P2,exam,Eng,2017_nov_p2_exam_maths,data/raw/exams/2017_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2017,Nov,P1,memo,Eng,2017_nov_p1_memo_maths,data/raw/memos/2017_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2017,Nov,P2,memo,Eng,2017_nov_p2_memo_maths,data/raw/memos/2017_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2018,,,diagnostic,Eng,2018_maths_diagnostic_part1,data/raw/diagnostic_reports/2018_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2018,Nov,P1,exam,Eng,2018_nov_p1_exam_maths,data/raw/exams/2018_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2018,Nov,P2,exam,Eng,2018_nov_p2_exam_maths,data/raw/exams/2018_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2018,Nov,P1,memo,Eng,2018_nov_p1_memo_maths,data/raw/memos/2018_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2018,Nov,P2,memo,Eng,2018_nov_p2_memo_maths,data/raw/memos/2018_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2019,,,diagnostic,Eng,2019_maths_diagnostic_part1,data/raw/diagnostic_reports/2019_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2019,Nov,P1,exam,Eng,2019_nov_p1_exam_maths,data/raw/exams/2019_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2019,Nov,P2,exam,Eng,2019_nov_p2_exam_maths,data/raw/exams/2019_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2019,Nov,P1,memo,Eng,2019_nov_p1_memo_maths,data/raw/memos/2019_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2019,Nov,P2,memo,Eng,2019_nov_p2_memo_maths,data/raw/memos/2019_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2020,,,diagnostic,Eng,2020_maths_diagnostic_part1,data/raw/diagnostic_reports/2020_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2020,Nov,P1,exam,Eng,2020_nov_p1_exam_maths,data/raw/exams/2020_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2020,Nov,P2,exam,Eng,2020_nov_p2_exam_maths,data/raw/exams/2020_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2020,Nov,P1,memo,Eng,2020_nov_p1_memo_maths,data/raw/memos/2020_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2020,Nov,P2,memo,Eng,2020_nov_p2_memo_maths,data/raw/memos/2020_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2021,,,diagnostic,Eng,2021_maths_diagnostic_part1,data/raw/diagnostic_reports/2021_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2021,Nov,P1,exam,Eng,2021_nov_p1_exam_maths,data/raw/exams/2021_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2021,Nov,P2,exam,Eng,2021_nov_p2_exam_maths,data/raw/exams/2021_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2021,Nov,P1,memo,Eng,2021_nov_p1_memo_maths,data/raw/memos/2021_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2021,Nov,P2,memo,Eng,2021_nov_p2_memo_maths,data/raw/memos/2021_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2022,,,diagnostic,Eng,2022_maths_diagnostic_part1,data/raw/diagnostic_reports/2022_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2022,Nov,P1,exam,Eng,2022_nov_p1_exam_maths,data/raw/exams/2022_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2022,Nov,P2,exam,Eng,2022_nov_p2_exam_maths,data/raw/exams/2022_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2022,Nov,P1,memo,Eng,2022_nov_p1_memo_maths,data/raw/memos/2022_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2022,Nov,P2,memo,Eng,2022_nov_p2_memo_maths,data/raw/memos/2022_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2023,,,diagnostic,Eng,2023_maths_diagnostic_part1,data/raw/diagnostic_reports/2023_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2023,Nov,P1,exam,Eng,2023_nov_p1_exam_maths,data/raw/exams/2023_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2023,Nov,P2,exam,Eng,2023_nov_p2_exam_maths,data/raw/exams/2023_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2023,Nov,P1,memo,Eng,2023_nov_p1_memo_maths,data/raw/memos/2023_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2023,Nov,P2,memo,Eng,2023_nov_p2_memo_maths,data/raw/memos/2023_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2024,,,diagnostic,Eng,2024_maths_diagnostic_part1,data/raw/diagnostic_reports/2024_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2024,Nov,P1,exam,Eng,2024_nov_p1_exam_maths,data/raw/exams/2024_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2024,Nov,P2,exam,Eng,2024_nov_p2_exam_maths,data/raw/exams/2024_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2024,Nov,P1,memo,Eng,2024_nov_p1_memo_maths,data/raw/memos/2024_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2024,Nov,P2,memo,Eng,2024_nov_p2_memo_maths,data/raw/memos/2024_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
+2025,,,diagnostic,Eng,2025_maths_diagnostic_part1,data/raw/diagnostic_reports/2025_maths_diagnostic_part1.pdf,owned,yes,corpus_v1
+2025,Nov,P1,exam,Eng,2025_nov_p1_exam_maths,data/raw/exams/2025_nov_p1_exam_maths.pdf,owned,yes,corpus_v1
+2025,Nov,P2,exam,Eng,2025_nov_p2_exam_maths,data/raw/exams/2025_nov_p2_exam_maths.pdf,owned,yes,corpus_v1
+2025,Nov,P1,memo,Eng,2025_nov_p1_memo_maths,data/raw/memos/2025_nov_p1_memo_maths.pdf,owned,yes,corpus_v1
+2025,Nov,P2,memo,Eng,2025_nov_p2_memo_maths,data/raw/memos/2025_nov_p2_memo_maths.pdf,owned,yes,corpus_v1
