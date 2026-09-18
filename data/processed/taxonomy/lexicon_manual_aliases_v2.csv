@@ -1,0 +1,37 @@
+topic_id,subtopic,token
+SEQ,Sum to infinity,sum to infinity
+SEQ,Sum to infinity,converges
+SEQ,Sum to infinity,infinite geometric
+SEQ,Sum to infinity,s infinity
+SEQ,Sum to infinity,|r|
+FUNC,Hyperbola,hyperbola
+FUNC,Hyperbola,asymptote
+FUNC,Hyperbola,xy =
+FUNC,Hyperbola,y = k/x
+FUNC,Hyperbola,vertical asymptote
+FUNC,Hyperbola,horizontal asymptote
+CALC,Optimisation,optimisation
+CALC,Optimisation,optimization
+CALC,Optimisation,maximum
+CALC,Optimisation,minimum
+CALC,Optimisation,maximum profit
+CALC,Optimisation,minimum cost
+CALC,Optimisation,largest
+CALC,Optimisation,smallest
+CALC,Optimisation,rate of change
+EUCL,Similarity,similar triangles
+EUCL,Similarity,proportional
+EUCL,Circle geometry,angle in a semicircle
+EUCL,Circle geometry,cyclic quadrilateral
+TRIG,3D trigonometry,angle of elevation
+TRIG,3D trigonometry,angle of depression
+AGEO,Circle equation,equation of the circle
+AGEO,Circle equation,centre and radius
+STAT,Regression,least squares
+STAT,Regression,correlation coefficient
+PROB,Counting,fundamental counting
+PROB,Counting,different codes
+FIN,Annuities,present value
+FIN,Annuities,future value
+ALG,Inequalities,inequality
+ALG,Inequalities,greater than

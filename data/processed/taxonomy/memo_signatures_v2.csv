@@ -1,0 +1,16 @@
+signature,topic_id,weight
+first principles,CALC,3
+dy/dx,CALC,3
+with reasons,EUCL,2
+common ratio,SEQ,2
+asymptote,FUNC,2
+cyclic quadrilateral,EUCL,3
+angle in a semicircle,EUCL,3
+compound interest,FIN,2
+present value,FIN,2
+standard deviation,STAT,2
+least squares,STAT,2
+reduction formula,TRIG,2
+identity,TRIG,1
+equation of the circle,AGEO,3
+independent events,PROB,2
