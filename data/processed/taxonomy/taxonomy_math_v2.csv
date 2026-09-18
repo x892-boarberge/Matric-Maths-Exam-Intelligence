@@ -1,0 +1,11 @@
+paper,topic_id,caps_name,design_marks,design_band,taxonomy_version,source,created_at
+P1,ALG,Algebra and equations (and inequalities),25,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00
+P1,SEQ,Patterns and sequences,25,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00
+P1,FIN,"Finance, growth and decay",15,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00
+P1,FUNC,Functions and graphs,35,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00
+P1,CALC,Differential Calculus,35,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00
+P1,PROB,Probability,15,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00
+P2,STAT,Statistics,20,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00
+P2,AGEO,Analytical Geometry,40,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00
+P2,TRIG,Trigonometry,40,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00
+P2,EUCL,Euclidean Geometry and Measurement,50,±3,v2_caps,"CAPS FET Mathematics Grades 10-12 (2011), p.60",2026-09-18T20:59:42.534507+00:00

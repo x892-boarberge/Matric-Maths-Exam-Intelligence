@@ -1,0 +1,56 @@
+topic_id,subtopic,caps_reference,taxonomy_version
+ALG,Exponents and surds,"Term 1, p.22; p.35",v2_caps
+ALG,Equations and inequalities,"Term 1, p.22; p.35",v2_caps
+ALG,Quadratic equations,p.35,v2_caps
+ALG,Simultaneous equations,p.35,v2_caps
+ALG,Nature of roots,p.35,v2_caps
+ALG,Polynomial functions (cubics),"Term 2, p.22; p.47",v2_caps
+SEQ,Arithmetic sequences and series,p.45,v2_caps
+SEQ,Geometric sequences and series,p.45,v2_caps
+SEQ,Quadratic number patterns,p.22; p.45,v2_caps
+SEQ,Sigma notation,p.45,v2_caps
+SEQ,Sum to infinity,p.45,v2_caps
+FIN,Simple and compound growth,p.42,v2_caps
+FIN,"Depreciation (straight-line, reducing)",p.42,v2_caps
+FIN,Nominal and effective interest rates,p.42,v2_caps
+FIN,"Annuities (future value, present value)",p.42,v2_caps
+FIN,Time lines,p.42,v2_caps
+FUNC,Exponential and logarithmic functions,"Term 1, p.22; p.41",v2_caps
+FUNC,Inverse functions,p.41,v2_caps
+FUNC,Parabola (quadratic function),p.41,v2_caps
+FUNC,Hyperbola,p.41,v2_caps
+FUNC,Transformations of graphs,p.41,v2_caps
+FUNC,Interpretation of graphs,p.41,v2_caps
+CALC,First principles,p.47,v2_caps
+CALC,Rules of differentiation,p.47,v2_caps
+CALC,"Cubic graphs (turning points, concavity)",p.47,v2_caps
+CALC,Tangents to curves,p.47,v2_caps
+CALC,Optimisation,p.47,v2_caps
+CALC,Rates of change,p.47,v2_caps
+PROB,Venn diagrams,p.38; p.54,v2_caps
+PROB,Tree diagrams,p.38; p.54,v2_caps
+PROB,Independent and mutually exclusive events,p.38; p.54,v2_caps
+PROB,Counting principles (fundamental),p.38; p.54,v2_caps
+STAT,Ogives (cumulative frequency),p.48,v2_caps
+STAT,Box and whisker diagrams,p.48,v2_caps
+STAT,Regression line (least squares),"Term 3, p.48",v2_caps
+STAT,Correlation coefficient,p.48,v2_caps
+STAT,Variance and standard deviation,p.20; p.48,v2_caps
+STAT,Skewness and outliers,p.20,v2_caps
+AGEO,"Line segment (gradient, midpoint, length)",p.20,v2_caps
+AGEO,Parallel and perpendicular lines,p.20,v2_caps
+AGEO,Angle of inclination,p.20,v2_caps
+AGEO,Equation of a circle,p.20,v2_caps
+AGEO,Tangent to a circle,p.20,v2_caps
+TRIG,Compound and double angle identities,"Term 1, p.22; p.47",v2_caps
+TRIG,Reduction formulae,"Term 2, p.22; p.38",v2_caps
+TRIG,Trigonometric equations (general solution),p.38,v2_caps
+TRIG,Trigonometric graphs,p.38,v2_caps
+TRIG,"Sine, cosine and area rules","Term 2, p.22; p.37",v2_caps
+TRIG,2D and 3D problems (incl. heights and distances),p.37,v2_caps
+EUCL,"Circle geometry (centre, chord, tangent theorems)",p.20,v2_caps
+EUCL,Cyclic quadrilaterals,p.20; p.40,v2_caps
+EUCL,Tangents to a circle,p.40,v2_caps
+EUCL,Similarity and proportionality,p.20; p.40,v2_caps
+EUCL,Midpoint theorem,p.20,v2_caps
+EUCL,Pythagorean theorem (proof and application),p.20; p.40,v2_caps

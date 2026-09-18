@@ -1,0 +1,13 @@
+v1_label,v2_topic_id,taxonomy_version
+Algebra & Equations,ALG,v2_caps
+Number Patterns & Sequences,SEQ,v2_caps
+Finance,FIN,v2_caps
+Functions & Graphs,FUNC,v2_caps
+Calculus,CALC,v2_caps
+Probability,PROB,v2_caps
+Statistics,STAT,v2_caps
+Analytical Geometry,AGEO,v2_caps
+Trigonometry,TRIG,v2_caps
+Euclidean Geometry,EUCL,v2_caps
+Mixed / Multi-topic,MIXED,v2_caps
+Unmapped,UNMAPPED,v2_caps
