@@ -1,0 +1,280 @@
+
+===== Page 1 =====
+gy
+x basic educati
+“=i basic education
+aS iii XS ii
+p eh Department:
+(GO) Basic Education
+SO REPUBLIC OF SOUTH AFRICA
+NATIONAL
+SENIOR CERTIFICATE
+GRADE 12
+" MATHEMATICS P1 i
+. NOVEMBER 2016
+MARKS: 150
+TIME: 3 hours
+This question paper consists of 9 pages and 1 information sheet.
+Copyright reserved Please turn over
+
+
+===== Page 2 =====
+Mathematics/P | 2 DBE/November 2016
+NSC
+INSTRUCTIONS AND INFORMATION
+Read the following instructions carefully before answering the questions.
+1. This question paper consists of 12 questions.
+2 Answer ALL the questions.
+a Number the answers correctly according to the numbering system used in this
+question paper.
+4. Clearly show ALL calculations, diagrams, graphs, et cetera that you have used in
+determining your answers.
+5. Answers only will not necessarily be awarded full marks.
+6. You may use an approved scientific calculator (non-programmable and
+non-graphical), unless stated otherwise.
+7. If necessary, round off answers to TWO decimal places, unless stated otherwise.
+8. Diagrams are NOT necessarily drawn to scale.
+9. An information sheet with formulae is included at the end of the question paper.
+10. Write neatly and legibly.
+Copyright reserved Please turn over
+
+
+===== Page 3 =====
+Mathematics/P 1 3 DBE/November 2016
+NSC
+QUESTION 1
+1.1 Solve for x:
+1.1.1 x(x-—7)=0 (2)
+Li2 x° —6x +2 =0 (correct to TWO decimal places) (3)
+L153 vx-1+1l=x (5)
+1.1.4 3**° 3°? = 486 (4)
+ld Given: f(x)=x?+3x-4
+1.2.1 Solve for x if f(x)=0 (2)
+Lee Solve for x if f(x)<0 (2)
+L223 Determine the values of x for which f/(x) > 0 (2)
+1.3 Solve for x and y: x=2y and x’ —Sxy=-24 (4)
+[24]
+QUESTION 2
+Given the finite arithmetic sequence: 5 ; 1 ; -3 ; ... ; -83 ; -87
+2.1 Write down the fourth term (T4) of the sequence. (1)
+22 Calculate the number of terms in the sequence. (3)
+2.3 Calculate the sum of all the negative numbers in the sequence. (3)
+2.4 Consider the sequence: 5 ; 1 ; -3; ... ; -83 ; -87; ... ; 4187
+Determine the number of terms in this sequence that will be exactly divisible by 5. (4)
+[11]
+Copyright reserved Please turn over
+
+
+===== Page 4 =====
+Mathematics/P | 4 DBE/November 2016
+NSC
+QUESTION 3
+a4 The first four terms of a quadratic number pattern are -1 ; x ; 3 ; x+8
+3.1.1 Calculate the value(s) of x. (4)
+che Be If x = 0, determine the position of the first term in the quadratic number
+pattern for which the sum of the first n first differences will be greater
+than 250. (4)
+3.2 Rectangles of width 1 cm are drawn from the edge of a sheet of paper that is 30 cm
+long such that there is a 1 cm gap between one rectangle and the next. The length of
+the first rectangle is 21 cm and the length of each successive rectangle is 85% of the
+length of the previous rectangle until there are rectangles drawn along the entire
+length of AD. Each rectangle is coloured grey.
+A B
+|
+30 cm
+lcm t
+dD iE i ae ee a ns weet Aa rte ob oa te xu eS ee ee Cc
+21cm
+3.2.1 Calculate the length of the 10" rectangle. (3)
+3.22 Calculate the percentage of the paper that is coloured grey. (4)
+[15]
+Copyright reserved Please turn over
+
+
+===== Page 5 =====
+Mathematics/P 1 5 DBE/November 2016
+NSC
+
+QUESTION 4
+Sketched below is the graph of h(x) =a‘, a>O. R isthe y-intercept of h.
+The points P(2 ;9) and a» : =| lie on Ah.
+
+y
+
+D P(2; 9)
+h
+R
+db;
+Q[bs gt
+x
+
+0
+4.1 Write down the equation of the asymptote of A. (1)
+4.2 Determine the coordinates of R. (1)
+4.3 Calculate the value of a. (2)
+4.4 D isa point such that DQ || y-axis and DP || x-axis. Calculate the length of DP. (4)
+4.5 Determine the values of & for which the equation A(x+2)+k=0 will have a root
+
+that is less than —6. (3)
+(11]
+
+Copyright reserved Please turn over
+
+
+===== Page 6 =====
+Mathematics/P | 6 DBE/November 2016
+NSC
+QUESTION 5
+Sketched below is the parabola f with equation /f (x) =-x’+4x-3 anda hyperbola g,
+with equation (x — p)(y+1)=3.
+e BB, the turning point of f lies at the point of intersection of the asymptotes of g.
+e A(-1;0) isthe x-intercept of g.
+y
+| g
+eB
+fo N x
+AC-1; oS / |
+] g
+| f
+dal Show that the coordinates of B are (2; 1) (2)
+$.2 Write down the range of f (1)
+Ds For which value(s) of x will g(x)>0? (2)
+5.4 Determine the equation of the vertical asymptote of the graph of A if
+A(x) = g(x +4) (1)
+a5 Determine the values of p and 1. (4)
+5.6 Write down the values of x for which f(x).g’(x)>0 (4)
+[14]
+Copyright reserved Please turn over
+
+
+===== Page 7 =====
+Mathematics/P | 7 DBE/November 2016
+NSC
+QUESTION 6
+Given: /(x)=—x+3and g(x) =log, x
+6.1 On the same set of axes, sketch the graphs of f and_ g, clearly showing ALL
+intercepts with the axes. (4)
+6.2 Write down the equation of g' (x), the inverse of g, inthe form y=... (2)
+6.3 Explain how you will use QUESTION 6.1 and/or QUESTION 6.2 to solve the
+equation log, (3 ~ x) =X. (3)
+6.4 Write down the solution to log, (3— x)= x. (1)
+[10]
+QUESTION 7
+On | June 2016 a bank granted Thabiso a loan of R250 000 at an interest rate of 15% p.a.
+compounded monthly, to buy a car. Thabiso agreed to repay the loan in monthly instalments
+commencing on | July 2016 and ending 4 years later on 1 June 2020. However, Thabiso was
+unable to make the first two instalments and only commenced with the monthly instalments on
+1 September 2016.
+Pol Calculate the amount Thabiso owed the bank on 1 August 2016, a month before he
+paid his first monthly instalment. (2)
+V2 Having paid the first monthly instalment on 1 September 2016, Thabiso will still pay
+his last monthly instalment on 1 June 2020. Calculate his monthly instalment. (4)
+7.3 If Thabiso paid R9 000 as his monthly instalment starting on 1 September 2016,
+how many months sooner will he repay the loan? (5)
+7.4 If Thabiso paid R9 000 as a monthly instalment starting on 1 September 2016,
+calculate the final instalment to repay the loan. (4)
+[15]
+Copyright reserved Please turn over
+
+
+===== Page 8 =====
+Mathematics/P 1 8 DBE/November 2016
+NSC
+QUESTION 8
+8.1 Determine f’(x) from first principles if f(x) =3x? (5)
+8.2 John determines g’(a), the derivative of a certain function g at x =a, and arrives
+. V4+h-2
+at the answer: -—
+Write down the equation of g and the value of a. (2)
+8.3 Determine wy if y= vx? - z (4)
+dx x
+8.4 g(x)=-8x+20 isa tangent to f(x)=x°>+ax’+bx+18 at x = 1. Calculate the
+values of a and 5b. (5)
+[16]
+QUESTION 9
+For a certain function f, the first derivative is givenas f” (x) = 3x* +8x-3
+9.1 Calculate the x-coordinates of the stationary points of f. (3)
+9.2 For which values of x is f concave down? (3)
+9.3 Determine the values of x for which f is strictly increasing. (2)
+9.4 If it is further given that f(x)=ax'+bx?+cx+d and f(0)=~-18, determine the
+equation of f. (5)
+[13]
+QUESTION 10
+The number of molecules of a certain drug in the bloodstream f hours after it has been taken
+is represented by the equation M(t)=-1? +3r? +72r, 0<1<10.
+10.1 Determine the number of molecules of the drug in the bloodstream 3 hours after the
+drug was taken. (2)
+10.2 Determine the rate at which the number of molecules of the drug in the bloodstream is
+changing at exactly 2 hours after the drug was taken. (3)
+10.3 How many hours after taking the drug will the rate at which the number of molecules
+of the drug in the bloodstream is changing, be a maximum? (3)
+[8]
+Copyright reserved Please turn over
+
+
+===== Page 9 =====
+Mathematics/P 1 9 DBE/November 2016
+NSC
+QUESTION 11
+A survey was conducted among 100 boys and 60 girls to determine how many of them watched
+TV in the period during which examinations were written. Their responses are shown in the
+partially completed table below.
+WATCHED TV DID NOT WATCH TV
+DURING DURING TOTALS
+EXAMINATIONS EXAMINATIONS
+rome ff ef
+a A
+11.1 Calculate the values of a and b. (2)
+LL Are the events ‘being a male’ and 'did not watch TV during examinations’ mutually
+exclusive? Give a reason for your answer. (2)
+LL If a learner who participated in this survey is chosen at random, what is the
+probability that the learner:
+11.3.1 Watched TV in the period during which the examinations were written? (2)
+11.3.2 Is not a male and did not watch TV in the period during which
+examinations were written? (2)
+[8]
+QUESTION 12
+The digits 1 to 7 are used to create a four-digit code to enter a locked room. How many
+different codes are possible if the digits may not be repeated and the code must be an even
+number bigger than 5 000? [5]
+TOTAL: 150
+Copyright reserved
+
+
+===== Page 10 =====
+Mathematics/P 1 DBE/November 2016
+NSC
+INFORMATION SHEET
+—_ —~b+Vb? —4ac
+2a
+A= P(l+ni) A= P(\-ni) A= P(1-i)’ A= P(1+i)”
+T, =a+(n-l)d S, = 5Ra+@-d]
+Z, =r S _ alr” -1) srs | S,=— +; -lerei
+" r=] l-r
++i -1] p_al-0+)"|
+i i
+h>0 h
+x, +x, yty
+d= (x, -x,)° +(y, -y,y M oe bias
+2 2
+y=mx+c y-y, =mM(x—-x,) ee 2A. m = tan @
+ae
+(x—a)' +(y-by =r? page Heat.
+sinA sinB sinC
+a’ =b’? +c? —2bc.cos A
+area AABC = sabesinc
+sin(a + ) = sina.cosf# +cosa.sin B sin(a - B) = sina.cosB —cosa.sinB
+cota + B)=cosa.cos$ —sina.sin B cosa — 8) =cosa.cos#+sina.sin B
+cos’ a@-—sin’ a
+cos2a =41-2sin’ a sin2a = 2sina.cosa
+2cos’ a-
+~e, ~ay
+e= y o? =
+n n
+n(A) _
+P(A)=— P(A or B) = P(A) + P(B) — P(A and B)
+n(S)
+x-x\y-y
+yp=athbx p= due 2-9) Ky=9)
+Yo-%
+Copyright reserved

@@ -1,0 +1,1198 @@
+
+===== Page 1 =====
+NATIONAL
+SENIOR CERTIFICATE
+NASIONALE SENIOR
+SERTIFIKAAT
+GRADE 12/GRAAD 12
+MATHEMATICS P1/WISKUNDE V1
+NOVEMBER 2017
+MARKING GUIDELINES/NASIENRIGLYNE
+MARKS/PUNTE: 150
+This memorandum consists of 22 pages.
+Hierdie memorandum bestaan uit 22 bladsye.
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 2 =====
+Mathematics/P1/Wiskunde/V1 2 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+NOTE:
+• If a candidate answers a question TWICE, only mark the FIRST attempt.
+• Consistent accuracy applies in ALL aspects of the marking guidelines.
+LET WEL:
+• Indien 'n kandidaat 'n vraag TWEE KEER beantwoord, merk slegs die EERSTE poging.
+• Volgehoue akkuraatheid is op ALLE aspekte van die nasienriglyne van toepassing.
+QUESTION/VRAAG 1
+1.1.1 x2 +9x+14 = 0
+( )( )  factors
+x+7 x+2 = 0
+x=−7
+x = −7 or x = −2  x=−2
+(3)
+1.1.2 4x2 +9x−3= 0
+−b± b2 −4ac
+x =
+2a
+−9± 92 −4 ( 4 )( −3 )  substitution
+=
+( )
+2 4
+−9± 129  simplification
+=
+x = 0,29
+8
+x = 0,29 or x = −2,54  x = −2,54
+OR/OF
+OR/OF
+9 81 3 81
+x2 + x+ = + 81
+4 64 4 64 for adding on
+64
+2
+ 9 129 both sides
+x+  =
+ 8 64
+9 129
+x+ = ±  simplification
+8 8
+−9± 129
+x =
+8
+x = 0,29
+x = 0,29 or x = −2,54  x = −2,54
+(4)
+1.1.3
+x2 −5 = 2 x
+x2 −5= 4x  x2 −5=4x
+x2 −4x−5=0
+( )( )  standard form
+x−5 x+1 =0
+ both answers
+x =5 or x = −1
+x =5  select x = 5
+(4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 3 =====
+Mathematics/P1/Wiskunde/V1 3 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+1.2 3x− y = 4
+y = 3x−4
+ y subject of formula
+x2 +2xy− y2 = −2
+x2 +2x ( 3x−4 ) − ( 3x−4 )2 = −2
+( )  substitution
+x2 +6x2 −8x− 9x2 −24x+16 = −2
+7x2 −8x−9x2 +24x−16= −2
+−2x2 +16x−14=0
+x2 −8x+7 =0
+ correct standard form
+( x−7 )( x−1 ) =0  factors
+x-values
+x =1 or x =7
+( ) ( )
+y =31 −4 y =3 7 −4
+y = −1 or y =17 y-values
+OR/OF
+3x− y = 4 OR/OF
+y+4
+x = x subject of formula
+3
+x2 +2xy− y2 = −2
+x2 +2xy− y2 = −2
+  y+4   2 +2  y+4   y− y2 = −2  substitution
+ 3   3 
+y2 +8y+16+6y2 +24y−9y2 = −18
+−2y2 +32y+34 =0
+y2 −16y−17 =0  correct standard form
+( )( )  factors
+y−17 y+1 =0
+y = −1 or y =17 y-values
+−1+4 17+4
+x = x =
+3 3
+x-values
+x =1 or x =7
+(6)
+1.3.1 x2 +8x+16 >0
+( )( )
+( )( )  x+4 x+4
+x+4 x+4 >0
+ any one of the
+x∈R, x≠−4 or
+solutions
+x∈(−∞;−4) or x∈(−4;∞) or
+x<−4 or x >−4
+OR/OF
+OR/OF
+x2 +8x+16>0
+( x+4 )( x+4 ) >0 + +  ( x+4 )( x+4 )
+ any one of the
+– 4
+The function values remain positive solutions
+x∈R, x ≠ −4 (3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 4 =====
+Mathematics/P1/Wiskunde/V1 4 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+y
+1.3.2
+(0;16)
+ 0
+y = p
+ 16
+(-4 ; 0)
+For two negative unequal roots:  0 < p <16 (4)
+0 < p <16
+OR/OF
+OR/OF
+x2 +8x+16 = p
+x2 +8x+16− p = 0
+0 <16− p <16  0
+−16 < −p < 0  16
+0 < p <16
+ 0 < p <16 (4)
+OR/OF
+x2 +8x+16− p =0
+−8± 64−4
+(
+16− p
+)
+x=
+2
+ 0
+( )
+0<64−416− p <64
+ 16
+0<4p<64
+0< p<16  0 < p <16 (4)
+OR/OF
+x2 +8x+16= p
+x2 +8x+16− p =0
+Roots are real and unequal:
+82 −4 ( 16− p ) >0
+4p >0
+p >0
+−8± 4p
+Roots are:
+2
+For both roots to be negative:
+4p <8
+ 0
+4p<64
+ 16
+p<16
+0< p<16  0 < p <16 (4)
+[24]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 5 =====
+Mathematics/P1/Wiskunde/V1 5 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 2
+2.1.1
+5 –4 –19 –40
+–9 –15 –21
+–6 –6
+first differences: –9; –15; –21
+ first differences
+second difference = – 6
+ – 6
+(2)
+2.1.2 T = an2 +bn+c
+n
+second difference
+a = = −3  a = −3
+2
+3a+b = −9
+3
+(
+−3
+)
++b = −9
+ b =0
+b =0
+a+b+c =5
+−3+0+c =5  c =8
+c =8
+ T =−3n2 +8
+T = −3n2 +8 n
+n
+OR/OF
+OR/OF
+( )( )
+n−1 n−2 d
+T =T + ( n−1 ) d + 2
+n 1 1 2
+( )( )( )
+( )( )
+n−1 n−2 −6  a = −3
+=5+ n−1 −9 +
+2  b =0
+c =8
+=5−9n+9−3n2 +9n−6
+ T =−3n2 +8
+T =−3n2 +8 n
+n (4)
+2.1.3 −3n2 +8 = −25939  T = −25 939
+n
+−3n2 = −25947
+n2 =8649
+ n2 =8649
+n = −93 or n = 93
+ answer
+The 93rd term has a value of –25 939
+(3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 6 =====
+Mathematics/P1/Wiskunde/V1 6 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+2.2.1 2k −7; k +8 and 2k −1
+k +8−
+(
+2k −7
+)
+=2k−1−
+(
+k +8
+) 
+k+8−( 2k−7 )=2k−1−( k+8 )
+−k+15= k−9
+2k = 24
+k =12 k = 12
+2k −7;k +8 and 2k −1
+17
+17;20;23.......
+ d =3
+d = 3
+( )
+T =17+14 3
+15
+= 59 T =59
+15
+(5)
+2.2.2 Sequence is 17 ; 20 ; 23 ; 26 ; 29 ; 32 …….
+Every alternate term of the sequence will be even /
+Elke tweede term van die ry sal ewe wees
+20+26 + 32+.......  20+26 + 32+.......
+30[ ( ) ( )( )]
+S = 2 20 + 29 6
+30 2 a = 20 d = 6
+[ ] subst into correct formula
+=1540+174
+=3210
+ answer
+(4)
+OR/OF
+T 30 =20+29(6)  a = 20 d = 6
+= 94
+ T =94
+30
+30
+S 30 = 2 ( 20+194 )  S 30 = 3 2 0 ( 20+194 )
+= 3210
+ answer
+(4)
+[18]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 7 =====
+Mathematics/P1/Wiskunde/V1 7 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 3
+3.1 a+ar = 2  a+ar = 2
+( )
+a1+r = 2
+2 2
+a =  a =
+1+r 1+r
+OR/OF (2)
+a 1
+−2=
+a 1
+1−r 4  −2=
+4a−8 ( 1−r ) =1−r 1−r 4
+4a−8+8r =1−r
+4a=9−9r 9−9r
+ a=
+9−9r 4
+a=
+(2)
+4
+OR/OF
+OR/OF
+( )
+a rn −1
+S =
+n r−1 ( )
+a r2 −1
+( )
+a r2 −1  2=
+2= r−1
+r−1
+( )( )
+a r−1 r+1
+2=
+r−1
+( )
+2=a r+1
+2
+2  a =
+a = 1+r
+r+1
+(2)
+OR/OF
+OR/OF
+ar2 1
+ar2 1  =
+= 1−r 4
+1−r 4
+1−r 1−r
+a =  a =
+4r2 4r2
+(2)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 8 =====
+Mathematics/P1/Wiskunde/V1 8 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+∞
+3.2 S =T +T +∑T
+∞ 1 2 n
+n=3
+1
+S =2+ 1
+∞ S =2+
+4 ∞
+4
+a 1
+=2+
+1−r 4
+a 9 a 9
+=  =
+1−r 4 1−r 4
+ 2   1  9
+ × =  substitution of a into the
+1+r 1−r 4
+correct formula
+2 9
+=
+1−r2 4
+8=9−9r2
+9r2 =1
+ 9r2 =1
+1 1
+r =  r =
+3 3
+3 3
+a = a =
+2 2
+(6)
+OR/OF OR/OF
+∞
+S =T +T +∑T
+∞ 1 2 n
+n=3
+1
+S
+∞
+=2+ S =2+ 1
+4 ∞
+4
+a 1
+=2+
+1−r 4
+a
+=
+9  a = 9
+1−r 4 1−r 4
+4a =9−9r
+9−4a
+r =  r =
+9−4a
+9
+9
+9−4a
+a+a  = 2
+ 9 
+9a+9a−4a2 =18
+2a2 −9a+9=0  substitution of a into the
+( a−3 )( 2a−3 ) =0 correct formula
+3
+a = or a =3
+2
+1 1
+r = or r = −
+3 3 3
+ a =
+N/A 2
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 9 =====
+Mathematics/P1/Wiskunde/V1 9 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+1
+ r =
+OR/OF 3
+2−a (6)
+r =
+a
+ar2 1 OR/OF
+= 2−a
+1−r 4 r =
+a
+4ar2 =1−r
+ar2 1
+2−a 2 2−a  =
+4a  =1− 1−r 4
+ a  a
+16−16a+4a2 =2a+2  substitution of a
+2a2 −9a+9=0
+( )( )
+2a−3 a−3 =0
+3
+a = a ≠3  ( 2a−3 )( a−3 ) =0
+2
+3
+1 1 a =
+r = r ≠ −
+2
+3 3
+1
+ r =
+OR/OF 3
+∞ (6)
+S =T +T +∑T OR/OF
+∞ 1 2 n
+n=3
+1
+S =2+
+∞
+4
+a 1
+=2+
+1
+1−r 4 S =2+
+∞
+4
+a 9
+=
+1−r 4
+1−r  1  9
+ × =  a = 9
+ 4r2  1−r 4
+1−r 4
+1 9
+=
+4r2 4  substitution of a
+4=36r2
+9r2 =1
+1
+r =
+3
+ 9r2 =1
+1
+a = 3  r =
+3
+2
+3
+a =
+2
+(6)
+[8]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 10 =====
+Mathematics/P1/Wiskunde/V1 10 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 4
+4.1 f ( x ) = −ax2 +bx+6
+f
+/(
+x
+)
+= −2ax+b
+–2ax+b
+−2ax+b = 3
+at x = −1
+[ ]
+2a+b =3
+2a+b = 3 1
+( )
+7
+f −1 =
+2
+7
+7 −a−b+6=
+−a−b+6 =
+2
+2
+−2a−2b+12 = 7
+[ ]
+2a+2b = 5 2 solve simultaneously
+[ ] [ ]
+2 − 1
+(5)
+b = 2
+2a+2 = 3
+1
+a =
+2
+OR/OF
+f
+/(
+x
+)
+=−2ax+b
+3=2a+b
+b=3−2a
+–2ax+b
+2a+b =3
+7
+=−a
+(
+−1
+)2
++
+(
+3−2a
+)(
+−1
+)
++6
+2
+7 
+a+3=
+2 7 =−a (−1 )2+( 3−2a )(−1 )+6
+2
+1
+a =
+2 solve simultaneously
+b=2
+(5)
+4.2 1
+f ( x ) =− x2 +2x+6
+2
+x−intercepts:
+1
+1  − x2 +2x+6= 0
+− x2 +2x+6 =0 2
+2
+-x2 +4x+12=0
+( )
+x2 −4x−12=0
+ −2;0
+( )( )
+x−6 x+2 =0
+ (6;0)
+( )
+−2;0 (6;0)
+(3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 11 =====
+Mathematics/P1/Wiskunde/V1 11 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+1
+4.3 f ( x ) =− x2 +2x+6
+2
+2 −x+2 / − /
+b −2+6  1
+f /( x ) =0 or x =− or x = 2.− 
+2a 2  2
+2
+−2+6
+−x+2=0 x=− x=2
+ 1 2
+2.− 
+ 2
+x=2 x=2 x =2
+1
+y =−
+(
+2
+)2
++2
+(
+2
+)
++6
+2
+ y = 8
+=−2+4+6
+=8
+( )
+TP 2;8
+OR/OF
+OR/OF
+`1
+− ( x−2 )2 +8
+2
+1( )
+y =− x2 −4x−12
+2
+=−
+1[
+(
+x−2
+)2
+−4−12
+] x =2
+ y = 8
+2
+`1 (3)
+=−
+(
+x−2
+)2
++8
+2
+( )
+TP 2;8
+4.4 y
+(2 ; 8)
+4.6
+4.4:
+(0 ; 6)
+f:
+shape
+f
+x- intercepts
+y- intercept
+(- 1 ; 0) x
+(2 ; 8)
+(- 2 ; 0) (6 ; 0)
+(4)
+(0 ; - 1)
+4.6:
+g
+g:
+ x- intercept
+ y- intercept
+(2)
+4.5 0< x < 4 or (0 ; 4)  4
+0< x < 4 (3)
+4.7 x≤−2 or −1≤ x≤6  x≤−2
+ −1≤ x≤6
+OR/OF
+(3)
+[23]
+(−∞ ; −2] or [-1 ; 6]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 12 =====
+Mathematics/P1/Wiskunde/V1 12 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 5
+5.1 y∈R;y ≠ −1
+OR/OF
+y<−1 or y >−1  answer
+OR/OF
+y∈(−∞;−1) or y∈(−1;∞)
+OR/OF
+(2)
+R −{−1}
+5.2 D ( 2; −1 ) D ( 2; −1 )
+2 2
+g ( x )= −1  −1 (2)
+x−2 x−2
+( )
+5.3 f x =log x.
+3
+2 correct substitution of A
+log t =1 OR/OF g(x)= −1
+3 x−2  t =3
+t =3
+(3)
+2
+1= −1
+t −2
+2
+2=
+t −2
+2t −4=2
+t =3
+5.4 x = log y interchange x and y
+3
+y =3x  y =3x (2)
+5.5 3x <31 3x <31
+x<1
+x<1
+(2)
+OR/OF
+3x <31
+3x <31
+( )
+( ) x∈ −∞ ;1
+x∈ −∞ ;1
+(2)
+5.6 Equation of the axis of symmetry: y = −x+1  equation of axis of
+x-intercept of the axis of symmetry is at x = 1 symmetry
+f has an x-intercept at B(1 ; 0) which is the same as the
+x-intercept of the axis of symmetry
+( ) ( )
+Point of intersection: B 1; 0 B or 1; 0
+OR/OF
+OR/OF
+Since BE = ED = 1 and D lies on the axis of symmetry
+and the gradient of the axis of symmetry is –1, B will
+also lie on the axis of symmetry. But B also lies on f.  BE = ED = 1
+Therefore B(1 ; 0) is the point of intersection between f
+and the axis of symmetry with a negative gradient./ ( )
+ B or 1; 0
+Omdat BE = ED = 1 en D op die simmetrie-as lê en die
+simmetrie-as se gradiënt –1 is, sal B ook op die
+simmetrie-as lê. Maar B lê ook op f. Dus is B(1 ; 0) die
+snypunt van f en die simmetrie-as met negatiewe
+(3)
+gradiënt.
+[14]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 13 =====
+Mathematics/P1/Wiskunde/V1 13 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 6
+6.1 A = P ( 1+i )n
+r
+36 
+ r 
+12 146,72=10 0001+  12
+ 12  n = 36
+36
+ r 
+1+  =1,214672  correct substitution into
+ 12
+formula
+r
+1+ = 361,214672
+12 r
+ 1+ = 361,214672
+=1,005416 12
+r
+=0,005416
+12
+r =0,06500
+r =6,5%  6,5%
+(5)
+[ ]
+6.2.1 x1− ( 1+i )−n
+P=
+i
+ −54
+ 0,11 0,11
+x1−1+    i =
+  12   12
+235 000=  n = 54
+0,11
+ correct substitution
+12
+in P
+0,11
+235 000×
+x =
+12
+
+ 0,11
+−54
+1−1+  
+  12  
+=R5536,95  answer
+His monthly instalment is R 5 536,95 (4)
+6.2.2 Amount paid for the year : ( 5 536,95×12 ) = R66 443,40  R66 443,40
+ 0,11
+12
+ 2350001+ 
+ 12 
+ 0,11  12 
+5536,951+  −1
+ 0,11 12   12    0,1112 
+Balance = 2350001+  − 5536,951+  −1
+ 12  0,11   12  
+0,11
+12
+12
+=192 296,17
+ R192 296,17
+( ) ( )
+Interest = 5536,95×12 − 235000−192 296,17
+ R42 703,83
+=66 443,40 − 42 703,83  R23 739,57
+=23739,57
+OR/OF
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 14 =====
+Mathematics/P1/Wiskunde/V1 14 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Total amount paid in first year = R5536.95×12
+= R66 443,40
+ R66 443,40
+Balance on loan after 1 year = P of remaining installments
+[ ]
+x1−
+(
+1+i
+)−n
+P=
+i
+  0,11 −42  n = – 42
+5 536,951−1+  
+  12  
+=  substitution into
+0,11
+correct formula
+12
+=R192 296,20
+Amount paid off in the first year:  R192 296,20
+R235 000 – R192 296,20= R42 703,80
+Amount of interest = R66 443,40 – R42 703,80  R42 703,80
+= R23 739,60
+ R23 739,60
+(6)
+OR/OF
+OR/OF
+ −12
+ 0,11
+5536,951−1+  
+  12  
+P =
+0,11
+12
+= R 62 648,18
+ R62 648,18
+235 000 – 62 648,18 = R172 351,82
+ R172 351,82
+After 12 months, money owed on house is
+12
+ 0,11
+172351,821+ 
+ 12 
+=192 296,17
+ R192 296,17
+Amount paid after 12 months is
+5 536,95 × 12 = R 66 443, 40  R66 443,40
+Amount of interest paid:
+R 66 443, 40 – (235 000 – 192 296,17)
+ 235 000 – 192 296,17
+= R 23 739, 57  R23 739,57
+(6)
+[15]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 15 =====
+Mathematics/P1/Wiskunde/V1 15 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 7
+7.1 f(x+h)=2(x+h)2 − ( x+h )
+=2(x2 +2xh+h2)−x−h
+2 x2 +4xh+2h2 − x−h
+=2 x2 +4xh+2h2 −x−h
+f(x+h)− f(x)=2x2 +4xh+2h2 −x−h−2x2 + x  4 x h + 2 h 2 −h
+= 4xh+2h2 −h
+f(x+h)− f(x)
+f(x+h)− f(x)  f /(x) =lim
+f /(x)=lim h→0 h
+h→0 h
+4xh+2h2 −h subst. into formula
+=lim
+h→0 h
+h(4x+2h−1)
+=lim lim ( 4x+2h−1 )
+h→0 h h→0
+=lim
+(
+4x+2h−1
+)
+h→0 4x – 1
+=4x−1
+OR/OF
+OR/OF
+f(x+h)− f(x)
+f(x+h)− f(x)  f /(x) =lim
+f /(x)=lim h→0 h
+h→0 h
+2(x+h)2 −(x+h)−(2x2 −x) subst. into formula
+=lim
+h→0 h
+2 x2 +4xh+2h2 − x−h
+2 x2 +4xh+2h2 −x−h−2x2 +x
+=lim
+h→0 h
+4xh+2h2 −h
+4xh+2h2 −h
+=lim
+h→0 h lim ( 4x+2h−1 )
+h→0
+h(4x+2h−1)
+=lim
+h→0 h
+( )
+=lim 4x+2h−1
+h→0
+ 4x – 1
+=4x−1
+(6)
+[( )( )]
+7.2.1 D x+1 3x−7
+x
+= D
+(
+3x2 −4x−7
+)  3x2 −4x−7
+x  6x −4 (2)
+= 6x−4
+5 1
+7.2.2 y = x3 − + π
+3
+x 2
+x2 −5x−1
+y = x2 3 −5x−1 + 1 π 3 1
+2  x2
+2
+dy = 3 x 1 2 +5x−2  +5x−2
+dx 2 1
+ derivative of π is 0
+2
+(4)
+[12]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 16 =====
+Mathematics/P1/Wiskunde/V1 16 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 8
+8.1 f ( x ) = x3 −6x2 +9x  x3 −6x2 +9x
+f /( x ) =3x2 −12x+9 3x2 −12x+9
+ 6x−12
+f
+//(
+x
+)
+=6x−12 =0
+ 6x−12=0
+x = 2
+f
+//(
+0
+)
+=6
+(
+0
+)
+−12
+= −12 < > 0
+f //( 3 ) =6 ( 3 ) −12  explanation
+2
+=6
+(5)
+Point of inflection at x = 2
+8.2
+y
+(1 ; 4)
+•
+x
+O (0 ; 0) (3 ; 0) shape
+ (0 ; 0)
+ (3 ; 0) as TP
+(1 ; 4)
+(4)
+8.3 f concave up for x > 2
+y =−f ( x ) will be concave down for x > 2 x > 2
+(2)
+8.4.1 ( 3;7 )  3
+7 (2)
+8.4.2 Do not agree with Claire as her statement is incorrect. no
+Between x = 1 and x = 3 the graph of f is decreasing.
+Therefore at x = 2 the gradient will have a negative value.
+justification
+Stem nie saam met Claire nie, want haar stelling in verkeerd.
+Die grafiek van f is dalend/afnemend tussen x = 1 en x = 3.
+By x = 2 moet die gradiënt dus 'n negatiewe waarde hê.
+OR/OF
+f /(2) =3(2)2 −12(2)+9
+= −3
+≠1
+(2)
+[15]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 17 =====
+Mathematics/P1/Wiskunde/V1 17 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 9
+y = x2 +2
+( )
+P x;x2 +2
+( )
+B 0;3
+PB2 = ( x−0 )2 + ( x2 +2−3 )2 ( x−0 )2 + ( x2 +2−3 )2
+= x2 + x4 −2x2 +1
+= x4 −x2 +1  x4 − x2 +1
+PB will be a minimum if PB2is a minimum
+( )
+d PB2
+=4x3 −2x 4x3 −2x
+dx
+( )
+4x3 −2x=0 d PB2
+ =0
+( )
+x 2x2 −1 =0 dx
+1
+x=0 or x2 =
+2
+1
+x=
+2 1
+ x=
+2
+4 2
+ 1   1 
+PB2 =  −  +1 4 2
+ 1   1 
+ 2  2  PB2 =  −  +1
+ 2  2
+1 1
+= − +1
+4 2
+3
+=
+4
+3
+PB = =0,87  answer
+2
+OR/OF OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 18 =====
+Mathematics/P1/Wiskunde/V1 18 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+Gradient of tangent to curve =2x =2x
+x2 +2−3
+Gradient of line joining B and the curve =
+x−0
+x2 −1 x2 −1
+=
+ =
+x
+x
+Shortest distance will be where tangent to curve is
+perpendicular to the line joining P and the curve.
+x2 −1 1
+x2 −1 1  =−
+= − x 2x
+x 2x
+( )
+2x x2 −1 = −x
+2x3−2x =0  2x3−2x=0
+x
+(
+2x2 −1
+)
+=0
+1
+x =0 or x2 =
+2
+1 1
+x =  x=
+2 2
+ 1 
+4
+ 1 
+2
+PB2 =  −  +1
+4 2
+ 2  2  1   1 
+ PB2 =  −  +1
+1 1  2  2
+= − +1
+4 2
+3
+=
+4
+ answer
+3
+PB= =0,87
+2
+OR/OF
+OR/OF
+( )
+P k;k2 +2 and B(0; 3) P ( k;k2 +2 )
+BP⊥ tangent passing through y = x2 +2 at P.
+m =2k m =2k
+tangent at P tangent at P
+1
+m =−
+1
+BP 2k m = −
+BP 2k
+ 1 
+Equation of BP: y =  − x+3  1 
+ 2k   y =− x+3
+ 2k
+ 1 
+y =  −  ( k )+3=2,5
+P  2k   value of y at P
+( )
+⇒k2 +2=2,5 and so k = 0,5 and P 0,5; 2,5
+value of k
+BP= ( 0,5 −0 )2 +( 2,5−3 )2 = 3 = 3 =0,87
+4 2
+ answer
+[7]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 19 =====
+Mathematics/P1/Wiskunde/V1 19 DBE/November 2017
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 10
+10.1
+n(S) = 100
+8 values need to be
+I
+T placed in correct
+49 – x 4
+2 position:
+8
+2 or 3 correct: 1 mark
+x 5
+4 or 5 correct: 2 marks
+6 or 7 correct: 3 marks
+60 – x 8 correct: 4 marks
+14
+W
+(4)
+10.2 ( 49− x ) + x+8+4+5+2+ ( 60− x ) +14=100  setting up equation
+− x+142=100
+x = 42
+ answer
+(2)
+7+2+18 7+2+18
+10.3 P (use only one application) = 
+100 100
+27
+= or 27% answer
+100
+(2)
+[8]
+QUESTION/VRAAG 11
+11.1 5 x 5 x 10 x 9  5 x 5
+= 2250  10 x 9
+ 2250 (3)
+11.2 No of digits Letters Digits Total
+used
+1 5 x 5 10 250
+2 5 x 5 10 x 9 2 250
+3 5 x 5 10 x 9 x 8 18 000
+4 5 x 5 10 x 9 x 8 x7 126 000
+5 5 x 5 10 x 9 x 8 x7 x 6 756 000  5 x 5 x 10 x 9 x 8 x 7 x 6
+ five digits (3)
+[6]
+Codes of two letters and five digits will ensure unique
+numbers for 700 000 clients.
+TOTAL/TOTAAL: 150
+Copyright reserved/Kopiereg voorbehou

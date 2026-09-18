@@ -1,0 +1,405 @@
+
+===== Page 1 =====
+aa e *
+al basic education
+bi FN Department:
+OD Basic Education
+SE REPUBLIC OF SOUTH AFRICA
+NATIONAL
+SENIOR CERTIFICATE
+GRADE 12
+= MATHEMATICS P2
+i NOVEMBER 2017 :
+MARKS: 150
+TIME: 3 hours
+This question paper consists of 14 pages, 1 information sheet
+and an answer book of 28 pages.
+Copyright reserved Please turn over
+
+
+===== Page 2 =====
+Mathematics/P2 2 DBE/November 2017
+NSC
+
+INSTRUCTIONS AND INFORMATION
+
+Read the following instructions carefully before answering the questions.
+
+1. This question paper consists of 11 questions.
+
+2. Answer ALL the questions in the ANSWER BOOK provided.
+
+3. Clearly show ALL calculations, diagrams, graphs, et cetera that you have used in
+determining your answers.
+
+4, Answers only will NOT necessarily be awarded full marks.
+
+5. You may use an approved scientific calculator (non-programmable and
+non-graphical), unless stated otherwise.
+
+6. If necessary, round off answers to TWO decimal places, unless stated otherwise.
+
+7. Diagrams are NOT necessarily drawn to scale.
+
+8. An information sheet with formulae is included at the end of the question paper.
+
+9. Write neatly and legibly.
+
+Copyright reserved Please turn over
+
+
+===== Page 3 =====
+Mathematics/P2 3 DBE/November 2017
+NSC
+QUESTION 1
+The table below shows the time (in seconds, rounded to ONE decimal place) taken by
+12 athletes to run the 100 metre sprint and the distance (in metres, rounded to ONE decimal
+place) of their best long jump.
+Time for 100 msprint | 491) 10,2 | 10,5/ 10,9| 11 | 11,1) 11,2) 11,5) 12 | 12 | 122) 12,5
+(in seconds) |
+Distance of best long jump 17.| 7,673 76|72|68) 7 | 66 | 63 | 68 | 6,4
+(in metres)
+The scatter plot representing the data above is given below.
+SCATTER PLOT
+on a oe ae
+S 65 es aa == Bae ar
+ZB PERRI
+10 10.5 11 11.5 12 12.5
+Time for 100 m sprint (in seconds)
+The equation of the least squares regression line is » = a+ bx.
+1.1 Determine the values of a and 3b. (3)
+1.2 An athlete runs the 100 metre sprint in 11,7 seconds. Use »=a+bx to predict the
+distance of the best long jump of this athlete. (2)
+1.3 Another athlete completes the 100 metre sprint in 12,3 seconds and the distance of his
+best long jump is 7,6 metres. If this is included in the data, will the gradient of the
+least squares regression line increase or decrease? Motivate your answer without any
+further calculations. (2)
+[7]
+Copyright reserved Please turn over
+
+
+===== Page 4 =====
+Mathematics/P2 4 DBE/November 2017
+NSC
+QUESTION 2
+In an experiment, a group of 23 girls were presented with a page containing 30 coloured
+rectangles. They were asked to name the colours of the rectangles correctly as quickly as
+possible. The time, in seconds, taken by each of the girls is given in the table below.
+13 | 14 | 14 | 16 | 17 18 | 18 | 19 | 20
+|
+2.1 Calculate:
+2.1.1 The mean of the data (2)
+2.1.2 The interquartile range of the data (3)
+2.2 The standard deviation of the times taken by the girls is 5,94. How many girls took
+longer than ONE standard deviation from the mean to name the colours? (2)
+2.3 Draw a box and whisker diagram to represent the data on the number line provided in
+the ANSWER BOOK. (3)
+2.4 The five-number summary of the times taken by a group of 23 boys in naming the
+colours of the rectangles correctly is (15 ; 21 ; 23,5 ; 26 ; 38).
+2.4.1 Which of the two groups, girls or boys, had the lower median time to
+correctly name the colours of the rectangles? (1)
+2.4.2 The first three learners who named the colours of all 30 rectangles
+correctly in the shortest time will receive a prize. How many boys will be
+among these three prizewinners? Motivate your answer. (2)
+[13]
+Copyright reserved Please turn over
+
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2017
+NSC
+QUESTION 3
+In the diagram, A, B(—6 ; —5) and C(8 ; -4) are points in the Cartesian plane. F [: 35] and G
+are points on line AC such that AF = FG. E is the x-intercept of AB.
+y A
+2
+Can
+E La x
+C(8;-4)
+B (-6 ; -5)
+3.1 Calculate:
+3.1.1 The equation of AC in the form y=mx+e (4)
+3.1.2 The coordinates of G if the equation of BG is 7x— 10y=8 (3)
+3.2 Show by calculation that the coordinates of A is (2 ; 5). (2)
+3.3 Prove that EF || BG. (4)
+3.4 ABCD is a parallelogram with D in the first quadrant. Calculate the coordinates of D. (4)
+[17]
+Copyright reserved Please turn over
+
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2017
+NSC
+QUESTION 4
+In the diagram, P(-4 ; 5) and K(O ; —3) are the end points of the diameter of a circle with
+centre M. S and R are respectively the x- and y-intercept of the tangent to the circle at P.
+@ is the inclination of PK with the positive x-axis.
+ya
+t a
+OR
+P(4 we ~ Sh
+S \ | O /
+\ | /
+ee Keo ; 3)
+4.1 Determine:
+4.1.1 The gradient of SR (4)
+4.1.2 The equation of SR in the form y = mx +c (2)
+4.1.3 The equation of the circle in the form (x—a)’ +(y—b) =r" (4)
+4.1.4 The size of PKR (3)
+4.1.5 The equation of the tangent to the circle at K in the form y = mx +c (2)
+4.2 Determine the values of t¢ such that the line y = = +t cuts the circle at two different
+points. (3)
+4.3 Calculate the area of ASMK. (5)
+[23]
+Copyright reserved Please turn over
+
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2017
+NSC
+QUESTION 5
+51 Given: sin(A —360°).cos(90° + A)
+cos(90° — A).tan(—A)
+
+Simplify the expression to a single trigonometric ratio. (6)
+5.2 In the diagram, P(3 ; #) is a point in the Cartesian plane. OP =./34 and HOP= Bis
+
+a reflex angle.
+
+y
+B H
+x
+Ba
+\ PB ; £)
+
+Without using a calculator, determine the value of:
+
+5.2.1 t (2)
+
+5.2.2 tan B (1)
+
+5.2.3 cos 28 (4)
+5.3 Prove:
+
+5.3.1 sin(A + B)—sin(A -B) = 2cosA.sinB (2)
+
+5.3.2 Without using a calculator, that sin77° —sin 43° = sin17° (4)
+
+[19]
+
+Copyright reserved Please turn over
+
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2017
+NSC
+QUESTION 6
+In the diagram, the graph of f(x)=cos2x is drawn for the interval x €[—270°; 90°].
+: +x
+-270° | -180° ,_  , 0 \ 90°
+6.1 Draw the graph of g(x)=2sinx—-1 for the interval x €[—270°;90°] on the grid
+given in your ANSWER BOOK. Show ALL the intercepts with the axes, as well as
+the turning points. (4)
+6.2 Let A be a point of intersection of the graphs of f and g. Show that the x-coordinate
+of A satisfies the equation sin x = a 1+ v5 .
+2 (4)
+6.3 Hence, calculate the coordinates of the points of intersection of graphs of f and g for
+the interval x €[—270°; 90°]. (4)
+[12]
+Copyright reserved Please turn over
+
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2017
+NSC
+QUESTION 7
+AB represents a vertical netball pole. Two players are positioned on either side of the netball
+pole at points D and E such that D, B and E are on the same straight line. A third player is
+positioned at C. The points B, C, D and E are in the same horizontal plane. The angles of
+elevation from C to A and from E to A are x and y respectively. The distance from B to E is k.
+A
+|
+L / B |
+D
+7.1 Write down the size of ABC. (1)
+7.2 Show that AC = Ktany (4)
+sin x
+7.3 If it is further given that DAC=2x and AD = AC, show that the distance DC
+between the players at D and C is 2k tan y. (5)
+[10]
+Copyright reserved Please turn over
+
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2017
+NSC
+Give reasons for your statements in QUESTIONS 8, 9, 10 and 11.
+QUESTION 8
+In the diagram, points A, B, D and C lie on a circle. CE || AB with E on AD produced.
+Chords CB and AD intersect at F. D, = 50° and C, =15°.
+Oe |
+Ss B
+
+8.1 Calculate, with reasons, the size of:
+
+8.1.1 A (3)
+
+8.1.2 C, (2)
+8.2 Prove, with a reason, that CF is a tangent to the circle passing through points C, D
+
+and E, (2)
+
+[7]
+
+Copyright reserved Please turn over
+
+
+===== Page 11 =====
+Mathematics/P2 11 DBE/November 2017
+NSC
+QUESTION 9
+In the diagram, AABC and AACD are drawn. F and G are points on sides AB and AC
+respectively such that AF = 3x, FB = 2x, AG = 12y and GC = 8y. H, E and K are points
+on side AD such that GH || CK and GE || CD.
+A
+3x |
+E
+K
+D
+F
+2x
+B
+C
+
+9.1 Prove that:
+
+9.1.1 FG || BC (2)
+
+9.1.2 AH _AE (3)
+
+HK ED
+9.2 If it is further given that AH = 15 and ED = 12, calculate the length of EK. (5)
+[10]
+
+Copyright reserved Please turn over
+
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2017
+NSC
+QUESTION 10
+In the diagram, W is a point on the circle with centre O. V is a point on OW.
+Chord MN is drawn such that MV = VN. The tangent at W meets OM produced at T and
+ON produced at S.
+M
+| -
+WwW L™~*)
+NS)
+
+10.1 Give a reason why OV MN. (1)
+10.2 Prove that:
+
+10.2.1 MN || TS (2)
+
+10.2.2 TMNS is acyclic quadrilateral (4)
+
+10.2.3 OS . MN =20N . WS (5)
+
+[12]
+
+Copyright reserved Please turn over
+
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2017
+NSC
+
+QUESTION 11
+11.1 In the diagram, chords KM, MN and KN are drawn in the circle with centre O.
+
+PNQ is the tangent to the circle at N.
+
+(
+<= |
+aS N
+P
+
+Prove the theorem which states that MNQ =K, (5)
+
+Copyright reserved Please turn over
+
+
+===== Page 14 =====
+Mathematics/P2 14 DBE/November 2017
+NSC
+11.2 In the diagram, BC is a diameter of the circle. The tangent at point D on the
+circle meets CB produced at A. CD is produced to E such that EA 1 AC.
+BD is drawn.
+Let C=x.
+E
+NN
+NN
+De
+A “Sy
+1 / ~
+| a 2 2/ A _ |
+A BS ec
+/
+\ /
+11.2.1 Give a reason why:
+(a) D,=90° (1)
+(b) ABDE is a cyclic quadrilateral (1)
+() D,=x (1)
+11.2.2 Prove that:
+(a) AD=AE (3)
+(b) AADB ||| AACD (3)
+11.2.3 It is further given that BC = 2AB = 2r.
+(a) Prove that AD’ =3r’ (2)
+(b) Hence, prove that AADE is equilateral. (4)
+[20]
+TOTAL: 150
+Copyright reserved
+
+
+===== Page 15 =====
+Mathematics/P2 DBE/November 2017
+NSC
+INFORMATION SHEET: MATHEMATICS
+~b+\b? —4ac
+X=
+2a
+A= P(1+ni) A= P(1-ni) A= P(l—i)" A= P(1+i)"
+T, =a+(n-ld S, = 5 [2a+ (nnd
+T, =ar”™" S _ alr” -1) ;re#l S,=—-;-ler<l
+"— r-l l-r
+past = p04")
+i i
+Poa tim LOAF)
+h->0 h
+nn. nn) X tx, ypty
+d= \(x, —x,)7 +(y, -y,)° M2122)
+2 2
+_ _ v2 7 _
+y=mxt+e y-y, =m(x-x,) m= m=tan0
+%27~*)
+(a)? +(y-2) =P
+InAABC: So
+snA sinB~ sinC
+a* =b* +¢7 —2be.cosA
+area KAABC = 5 absinc
+sin(a + B) = sina.cosf + cosa.sin 8 sin(a - B) = sina.cos # —cosa.sin 8
+coat B) =cosa.cos#—sina.sin B cola —B) =cosa@.cos#+sina.sin #
+[ere a-—sin’ a
+cos2a@ =41—2sin* a sin2a@ = 2sina.cosa
+ls cos” a-l
+n 2
+Yix > (x, x)
+x= ot og? = 1 _
+a nh
+_ nA) _
+P(A) = =) P(A or B) = P(A) + P(B) — P(A and B)
+ft
+x-x\Ky-y
+p=atbx p= ae ko=9)
+5 (x—-¥)
+Copyright reserved

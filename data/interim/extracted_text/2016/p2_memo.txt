@@ -1,0 +1,1349 @@
+
+===== Page 1 =====
+NATIONAL/NASIONALE
+SENIOR
+CERTIFICATE/SERTIFIKAAT
+GRADE/GRAAD 12
+MATHEMATICS P2/WISKUNDE V2
+NOVEMBER 2016
+MEMORANDUM
+MARKS/PUNTE: 150
+This memorandum consists of 26 pages.
+Hierdie memorandum bestaan uit 26 bladsye.
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 2 =====
+Mathematics P2/Wiskunde V2 2 DBE/November 2016
+NSC/NSS – Memorandum
+NOTE:
+• If a candidate answered a question TWICE, mark only the FIRST attempt.
+• If a candidate has crossed out an attempt to answer a question and did not redo it, mark
+the crossed-out version.
+• Consistent accuracy applies in ALL aspects of the marking memorandum. Stop marking
+at the second calculation error.
+• Assuming answers/values in order to solve a problem is NOT acceptable.
+LET WEL:
+• Indien 'n kandidaat 'n vraag TWEE keer beantwoord het, sien slegs die EERSTE poging
+na.
+• As 'n kandidaat 'n poging om 'n vraag te beantwoord, doodgetrek en nie oorgedoen het
+nie, sien die doodgetrekte poging na.
+• Volgehoue akkuraatheid is op ALLE aspekte van die memorandum van toepassing. Staak
+nasien by die tweede berekeningsfout.
+• Om antwoorde/waardes om 'n probleem op te los, te veronderstel, word NIE toegelaat
+NIE.
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 3 =====
+Mathematics P2/Wiskunde V2 3 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 1
+Distance from the store in km
+1 2 3 4 5 7 8 10
+Afstand vanaf die winkel in km
+Average number of times shopped per week
+Gemiddelde aantal keer wat kopers 12 10 7 7 6 2 3 2
+die winkel per week besoek
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+0 1 2 3 4 5 6 7 8 9 10
+1.1 Strong/Sterk 
+(1)
+1.2 –0,95 (–0,9462..) 
+(1)
+1.3 a = 11,71 (11,7132…)  value of a
+b = –1,12 (–1,1176…)  value of b
+yˆ = −1,12x+11,71  equation/vgl
+(3)
+1.4 yˆ = −1,12(6)+11,71  substitition
+ answer
+= 5 times
+(2)
+1.5 On scatter plot/Op spreidiagram  A line close to any
+2 of the following
+points:
+(5 ; 6) or (10 ; 1 ) or
+2
+(6 ; 5) or (0 ; 11,7)
+(2)
+[9]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+semit
+fo
+rebmun
+egarevA
+keew
+rep
+deppohs
+SCATTER PLOT/SPREIDIAGRAM
+Distance from the store in km
+
+===== Page 4 =====
+Mathematics P2/Wiskunde V2 4 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 2
+2.1 Positively skewed OR skewed to the right/positief skeef OF skeef na regs  answer
+(1)
+2.2 Range/Omvang = 2,21 – 1,39 = 0,82 m  subtract
+values
+answer
+(2)
+2.3
+Intervals Cumulative frequency
+Klasse Kumulatiewe frekwensie
+95 , 133,
+1,3≤ x <1,5 24
+156
+1,5≤ x <1,7 95
+160
+1,7 ≤ x <1,9 133
+1,9≤ x < 2,1 156
+2,1≤ x < 2,3 160 (2)
+2.4  upper
+limits /
+170 boonste
+165
+160 limiete
+155
+ cum f/
+150
+145 kum f
+140
+135  shape/
+130 vorm
+125
+120  grounded
+115 geanker
+110
+105
+100
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+5
+0
+1.1 1.3 1.5 1.7 1.9 2.1 2.3 2.5
+(4)
+–
+2.5 method (using 80 to determine the height)  method
+1,65 (accept any value between 1,6 and 1,69)  answer
+(2)
+2.6.1 The mean would change by 0,1 m  answer
+Die gemiddelde sal met 0,1 m verander (1)
+2.6.2 No influence/change as there is no difference in variation of data./Geen invloed  answer
+/verandering aangesien daar geen verskil in die variasie van die data is nie. (1)
+[13]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+srenrael
+fo
+rebmuN
+OGIVE/OGIEF
+Q
+2
+Heights (m)
+
+===== Page 5 =====
+Mathematics P2/Wiskunde V2 5 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 3
+y
+D
+y = 2x + 16
+M C(6 ; 3)
+A(−7 ; 2)
+<
+α x
+O F(p ; 0)
+G
+B
+3.1 M = Midpt of AC [diags of rectangle bisect/
+hoekl v reghoek halveer]
+−7+6 2+3
+=M ; 
+ 2 2 
+ x-value of M
+ 1 5  y-value of M
+= M− ; 
+ 2 2 (2)
+3.2 3−0 3
+m
+BC
+=
+6− p
+=
+6− p
+answer
+(1)
+OR/OF
+0−3 −3
+m = =
+BC p−6 p−6 answer
+(1)
+3.3 m = m [AD | | BC]
+AD BC
+ m = 2
+m = 2 BC
+BC
+3
+= 2  equating
+6− p
+3=12−2p
+p = 4
+1 answer
+2 (3)
+OR/OF  m = 2
+BC
+y− y = 2(x−x )
+1 1
+C(6;3)
+ substituting
+y−3= 2(x−6)
+(6 ; 3)
+∴y = 2x−9
+but y =0
+1 answer
+∴x = 4 = p
+2 (3)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 6 =====
+Mathematics P2/Wiskunde V2 6 DBE/November 2016
+NSC/NSS – Memorandum
+y = 2x+c
+3 =12+c
+ m = 2
+−9 = c BC
+y = 2x−9
+0 = 2x−9  substituting
+9 9
+x = ∴ p =
+2 2
+answer
+(3)
+3.4 DB =AC [diag of rectangle = / hoekl v reghoek =]
+AC= (x −x ) 2 +(y − y ) 2
+2 1 2 1  substitution
+AC= (6+7) 2 +(3−2) 2
+AC= 13 2 +1 2  length of AC
+AC= 170
+ AC = BD
+∴ DB = 170 or 13,04
+(3)
+3.5 tanα= m = 2  tanα=m
+BC BC
+∴α = 63,43°  α = 63,43°
+(2)
+3.6 In quadrilateral OFBG:
+OF ˆ B=63,43° [vert opp ∠s/regoorst ∠e]  size of OF ˆ B
+FO ˆ G =GB ˆ F=90°
+∴ OG ˆ B=360°−[90°+90°+63,43°][sum ∠s quad/som ∠e vierh = 360°]  S
+∴ OG ˆ B=116,57°  answer
+OR/OF (3)
+1 1
+m = −  m = −
+AB 2 AB 2
+ˆ
+90° + OGA= 153,43°
+ˆ
+∴ OGA = 63,43°  S
+ˆ
+OGB = 180° – 63,43°  answer
+= 116,57° (3)
+OR/OF
+FO ˆ G =GB ˆ F=90°
+ S
+∴GOFB is cyc quad
+ S
+ˆ
+OGB = 180° – 63,43° [∠s of cyc quad = 180°]  answer
+= 116,57°
+(3)
+OR/OF
+OF ˆ B=63,43°
+XO ˆ G =FB ˆ G =90°
+ S
+∴OGBF is a cyclic quad
+ S
+∴OG ˆ B=180°−63,43°
+ answer
+OG ˆ B=116,57° (3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 7 =====
+Mathematics P2/Wiskunde V2 7 DBE/November 2016
+NSC/NSS – Memorandum
+3.7  1 5
+M− ;  is the centre/is die middelpunt  M is centre
+ 2 2
+170 170
+r = = radius [BD is diameter/middellyn]  r =
+2 2
+ 1 2  5 2  170 2 85
+x+  +y−  =     = = 42,5  equation
+ 2  2  2  2 (3)
+3.8 CB ˆ M = BA ˆ M = 45° [diag of square bisect ∠s/hoekl v vierk halv ∠e] S
+ R
+∴ BC will be a tangent [converse tan chord th/omgekeerde raakl-koordst]
+(2)
+OR/OF
+C
+S
+AM ˆ B= 90° [diag of square bisect ⊥] M
+∴ AB is diameter
+BC ⊥ AB A  R
+∴ BC is tangent [ line ⊥ radius or converse tan-chord th] B (2)
+[19]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 8 =====
+Mathematics P2/Wiskunde V2 8 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 4
+L
+y
+T(3 ; 7)
+M
+R
+S(5 ; 2)
+x
+O
+K(a ; b)
+4.1 ∠ in semi circle/ ∠ at centre = 2∠ on circle  R
+∠ in halfsirkel /∠ by middelpt = 2∠ op sirkel (1)
+4.2 7−2
+m TS = 3−5  substitution
+5
+= −  m
+TS
+2
+(2)
+4.3 m ×m = −1 [TS⊥SR]
+TS RS
+2
+∴m = m
+RS 5 RS
+2
+y = x+c
+5
+substitution m
+2
+2= (5)+c
+and (5 ; 2)
+5
+c =0
+ equation
+2
+y = x (3)
+5
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 9 =====
+Mathematics P2/Wiskunde V2 9 DBE/November 2016
+NSC/NSS – Memorandum
+m ×m = −1 [TS⊥SR]
+TS RS
+m
+2 RS
+∴m =
+RS 5
+2
+y− y = (x−x )
+1 5 1 substitution m
+and (5 ; 2)
+2
+y−2 = (x−5)
+5  equation
+(3)
+2
+y = x
+5
+4.4.1
+1
+r = 36  r
+4
+ 1   answer
+TR = 2.r = 2   36   = 145 (2)
+ 4
+OR/OF
+2
+ 1 145
+TM = (3−9) 2 +7−6  =  substitution
+ 2 2
+ answer
+ 1 
+TR = 2.r = 2 36 = 145 (2)
+ 
+ 4
+4.4.2  1
+M9 ; 6   M
+ 2
+x +3 y +7 1
+∴ R =9 and R =6
+2 2 2
+∴ R(15 ; 6)  x coordinate
+Answer only: full marks  y coordinate
+Answer only: only 1 coordinate (3)
+correct (1 mark)
+OR/OF
+ M
+ 1
+M9 ; 6 
+ 2  x coordinate
+ 1 1  y coordinate
+∴ R9+6 ; 6 −  = R(15; 6)
+(3)
+ 2 2
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 10 =====
+Mathematics P2/Wiskunde V2 10 DBE/November 2016
+NSC/NSS – Memorandum
+9−3 1
+m = =−
+TM 1 12
+6 −7
+2
+1 1 29
+TM : 7 =− (3)+c y =− x+ .........(1)
+12 12 4
+ equating
+2
+SR: y = x ..........(2)
+5
+2 1 29
+x =− x+
+5 12 4  x coordinate
+29 29
+x =  y coordinate
+60 4
+(3)
+∴x =15
+2
+∴y = (15)=6
+5
+4.4.3
+ST =
+(
+x −x
+)2
++
+(
+y − y
+)2
+2 1 2 1
+ST = (5−3)2 +(2−7)2
+substitution
+ST = 4+25 = 29  answer
+TS 29 5 1
+sinR = = or or or 0,45  ratio
+TR 145 5 5 (3)
+OR/OF
+TS = 29
+SR =2 29
+area
+1( )( )
+area of ∆TSR = 29 2 29 =29
+2  rule
+1
+29= ( 145)(2 29)sinR
+2  ratio
+(3)
+5 1
+sinR = or
+5 5
+4.4.4 1
+m =
+7−6
+2 =− 1 OR/OF m = 7−6 =− 1 m =− 1
+TR 3−9 12 TR 3−15 12 TR 12
+m ×m =−1 [r⊥ tangent]
+TR KTL m = 12
+KTL
+m =12
+KTL
+y− y =12(x−x )
+1 1
+y−7=12(x−3)
+y =12x−29
+y =12x−29
+substitute K(a;b): (3)
+b=12a−29
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 11 =====
+Mathematics P2/Wiskunde V2 11 DBE/November 2016
+NSC/NSS – Memorandum
+1
+7−6
+m TR = 3−9 2 = − 1 1 2 m TR =− 1 1 2
+m ×m = −1 [r⊥ tangent]
+TR KTL
+b−7
+=12 m = 12
+a−3 KTL
+substitution
+b−7 =12(a−3)
+(3 ; 7) & (a ; b)
+b =12a−29 (3)
+OR/OF
+KR 2 = TR 2 +TK 2
+(a−15) 2 +(b−6) 2 = (15−3) 2 +(6−7) 2 +(a−3) 2 +(b−7) 2 
+subst into Pyth
+−30a+225−12b+36=144+1−6a+9−14b+49
+multiplication
+2b = 24a−58 simplification
+b =12a−29 (3)
+4.4.5 TK =TR
+ substitution into
+(a-3)2 +(b−7)2 = 145 distance formula
+(a-3)2 +(b−7)2 =145
+Substitute b = 12a – 29 [from 4.4.4]
+ substitution of
+(a-3)2 +(12a−29−7)2 =145
+b = 12a – 29
+(a-3)2 +(12a−36)2 =145
+a2 −6a+9+144a2 −864a+1296−145=0
+standard form
+145a2 −870a+1160=0
+ subst into
+870± (870) 2 −4(145)(1160) formula or
+a =
+factorise
+290
+ values of a
+a =2 or a =4
+∴ b = 12(2) – 29 or b = 12(4) – 29  value of b
+= –5 = 19 (6)
+∴ K(2 ; –5)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 12 =====
+Mathematics P2/Wiskunde V2 12 DBE/November 2016
+NSC/NSS – Memorandum
+TK =TR
+(a−3)2 +(b−7)2 = 145  substitution into
+distance formula
+(a−3)2 +(b−7)2 =145
+Substitute b = 12a – 29 [from 4.4.4]
+(a−3) 2 +(12a−29−7) 2 =145  substitution of
+b = 12a – 29
+(a−3) 2 +(12a−36) 2 =145
+(a−3) 2 +144(a−3) 2 =145
+(a−3) 2 =1
+(a−3) 2 =1
+a−3=±1
+ ±1
+a =2 or 4  values of a
+∴ b = 12(2) – 29 or b = 12(4) – 29
+= –5 = 19
+∴ K(2 ; –5)  value of b
+(6)
+OR/OF
+ substitution
+KR 2 =TR 2 +TK 2
+ substitution of
+(a−15) 2 +(b−6) 2 =145+145 b = 12a – 29
+(a−15) 2 +(12a−29−6) 2 =290
+(a−15) 2 +(12a−35) 2 = 290
+standard form
+a 2 −30a+225+144a 2 −840a+1225=290
+145a 2 −870a+1160=0  factors
+a 2 −6a+8=0
+∴(a−2)(a−4)=0  values of a
+a =2 or a =4
+∴b = 12(2) −29 or b = 12(4) - 29  value of b
+(6)
+= −5 = 19
+K(2 ; −5)
+[23]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 13 =====
+Mathematics P2/Wiskunde V2 13 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 5
+5.1.1 sin196°= −sin16°  reduction
+= −p
+answer
+(2)
+5.1.2 cos16°= 1−sin216°  statement
+answer
+= 1− p2 (2)
+OR/OF
+(x ; p)
+x 2 + p 2 =1
+1 x in terms of p
+x = 1− p 2 16°
+1− p2 answer
+∴
+cos16°= = 1− p2
+(2)
+1
+5.2 sin(A+B)= cos[90°−(A+B)]  co-ratio
+= cos[(90°−A)−B] correct form
+
+= cos(90°−A)cosB+sin(90°−A)sinB expansion
+(3)
+= sinAcosB+cosAsinB
+5.3
+1−cos2 2A
+cos(−A).cos(90°+A)
+sin22A
+ sin
+2
+2A
+=
+cosA.(−sinA) cosA −sinA
+sin2A
+=
+cosA.(−sinA)
+2sinAcosA 2sinAcosA
+=
+cosA.(−sinA)
+ answer
+=−2
+(5)
+OR/OF
+1−cos 2 2A 1−(2cos 2 A−1) 2 2cos 2 A−1
+=
+cos(−A)cos(90°+A) cosA.−sinA
+cosA −sinA
+1−(4cos 4 A−4cos 2 A+1) 4cos 2 A−4cos 4 A
+= =
+cosA.−sinA cosA.−sinA
+4cos 2 A(1−cos 2 A) 4cos 2 Asin 2 A
+= =  identity
+cosA.−sinA cosA.−sinA
+2cosA.sinA
+=
+cosA.−sinA  answer
+(5)
+= −2
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 14 =====
+Mathematics P2/Wiskunde V2 14 DBE/November 2016
+NSC/NSS – Memorandum
+1−(1−2sin 2 A) 2 1−2sin 2 A
+cosA.−sinA
+cosA −sinA
+1−(1−4sin 2 A+4sin 2 A)
+=
+cosA.−sinA
+4sin 2 A(1−sin 2 A)
+=
+cosA.−sinA
+2sinA cos 2 A  identity
+=
+cosA.−sinA
+ answer
+=−2
+(5)
+3
+5.4.1 cos2B=
+5
+3
+2cos2B−1=  identity
+5
+cos2B=
+4  value of cos2B
+5
+ answer
+4 2 2 5
+∴ cosB= or or [ 0° ≤ B ≤ 90°] (3)
+5 5 5
+OR/OF
+cos2B+1
+cosB =
+cos2B+1
+2  =
+2
+3
++1
+5
+=  value of cos2B
+2
+2 5  answer
+=
+(3)
+5
+sin2B=1−cos2B
+5.4.2
+2
+ 2 
+=1−
+
+
+
+
+1
+ 5  sin2B=
+5
+1 1 5
+= ∴ sinB= or  answer
+5 5 5
+(2)
+OR/OF
+(2)2 + y2 =( 5)2
+4+ y2 =5
+(2 ; y)
+y2 =1
+5
+ y = 1
+y =1 B
+1 5  answer
+∴ sinB= or
+(2)
+5 5
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 15 =====
+Mathematics P2/Wiskunde V2 15 DBE/November 2016
+NSC/NSS – Memorandum
+OR/OF
+3
+cos2B=
+5
+3
+1−2sin 2 B=
+5
+1
+sin 2 B=
+5
+1
+1 5
+ sin2B=
+∴ sinB= or 5
+5 5
+ answer
+(2)
+5.4.3 cos(B+45°) =cosB.cos45°−sinB.sin45°  expansion
+ 2  1   1  1 
+=  −    1 
+   
+ 5 2  5 2
+ 
+ 2
+2 1
+= −  2   1 
+10 10
+  & 
+ 5  5
+1 10
+= or
+10 10 answer
+(4)
+OR/OF
+ expansion
+cos(B+45°) = cosB.cos45°−sinB.sin45°
+=    2       2    −    1       2      1  
+ 5 2   5 2   2
+2 2 2  2   1 
+= −   & 
+2 5 2 5  5  5
+2 10
+= or answer
+2 5 10 (4)
+[21]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 16 =====
+Mathematics P2/Wiskunde V2 16 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 6
+6.1
+2
+ x- intercepts/
+afsnitte
+1
+ y- intercept/
+afsnit
+–180° –135° –90° –45° 0° 45° 90° 135° 180°  turning pts/
+draaipte
+g
+–1
+f
+(3)
+–2
+6.2 f(x)−3= 2sin2x−3
+∴ maximum value = 2 – 3 = –1   answer
+(2)
+6.3 2sin2x =−cos2x
+1
+1 tan2x=−
+tan2x =−
+2
+2
+ref∠=26,57°
+2x =153,43°
+2x =153,43°+k.180°;k∈Z or – 26,56o
+x =76,72°+k.90°;k∈Z or x =−13.28°+k.90°,k∈Z 76,72°or
+−13,28°
+k.90°;k∈Z
+(4)
+OR/OF
+2sin2x =−cos2x 1
+tan2x=−
+1 2
+tan2x =−
+2 2x =153,43°
+ref∠= 26,57° & 333,43°
+76,72°&
+2x =153,43°+k.360° or 333,43°+k.360°,k∈Z
+166,72°
+x =76,72°+k.180° or 166,72°+k.180° ;k∈Z k.180°;k∈Z
+(4)
+6.4 x∈(−103,28°;−13,28°)  values
+notation
+(3)
+OR/OF
+ values
+–103,28° < x < –13,28°
+notation
+(3)
+[12]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 17 =====
+Mathematics P2/Wiskunde V2 17 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 7
+E
+1
+Volume of pyramid= (area of base)×(⊥ height)
+3
+x
+D
+C
+O
+A
+θ
+3
+B
+7.1 DB2 =32 +32 [Theorem of Pyth]  substitution into
+Pyth
+= 18
+DB= 18
+ value of DB
+1 18 3 3 2
+OB= DB= or or or2,12  answer
+2 2 2 2
+(3)
+OR/OF
+ correct ratio
+OB
+sin45°=
+3  OB as subject
+OB =3sin45°
+ answer
+3 2 3 (3)
+OB = or or2,12
+2 2
+OF/OR
+ correct ratio
+OB
+cos45°=
+3  special angle
+1 OB
+=
+2 3
+ answer
+3 3 2 (3)
+OB = or or2,12
+2 2
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 18 =====
+Mathematics P2/Wiskunde V2 18 DBE/November 2016
+NSC/NSS – Memorandum
+OR/OF
+AO ˆ B=90° (diagonals bisect ⊥)  OB = OA
+OB=OA
+AB 2 = AO 2 +BO 2 [pyth]  Pyth
+∴AB 2 = 2OB 2
+2OB 2 =3 2
+ answer
+3 3 2
+∴OB= or or 2,12 (3)
+2 2
+7.2 BE2 = EO2 + OB2 (Pyth)
+2
+ 3   substitution into
+BE2 = x2 + 
+Pyth
+ 2
+9  length of BE
+BE = x2 +
+2
+correct cosine
+AE 2 = AB 2 +EB 2 −2AB.EBcosθ rule
+AB 2 +EB 2 −AE 2 AB 2 [EB = AE]  cos θ as subject
+cosθ= =
+2AB.EB 2AB.EB
+AB  simplification
+cosθ=
+(5)
+2EB
+3
+cosθ=
+2 x 2 +
+9
+2
+s
+OR/OF
+BE2 = EO2 + OB2 (Pyth)
+ substitution into
+2 Pyth
+ 3 
+BE2 = x2 + 
+ 2
+9
+BE = x2 +  length of BE
+2
+AE 2 = AB 2 +EB 2 −2AB.EBcosθ correct cosine
+rule
+2 2
+ 9   9   9 
+  x 2 +   =9+   x 2 +   −2(3)   x 2 +  .cosθ  substituting
+ 2  2  2
+9  cos θ as subject
+cosθ=
+9
+6 x 2 +
+2
+3
+=
+9
+2 x 2 + (5)
+2
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 19 =====
+Mathematics P2/Wiskunde V2 19 DBE/November 2016
+NSC/NSS – Memorandum
+OR/OF
+BE2 = EO2 + OB2 (Pyth)
+ substitution into
+2
+ 3  Pyth
+BE2 = x2 + 
+ 2
+ length of BE
+9 E
+BE = x2 +
+ sketch with
+2
+values
+3
+3
+cosθ=
+2 x2+ 9
+2
+
+2
+9
+x 2 +  substitution
+2
+3
+= θ
+2 x 2 + 9 A 3 F 3 B (5)
+2 2
+2
+OR/OF
+E ˆ =180°−2θ
+E ˆ =180°−2θ E  sinE =sin2θ
+sinE =sin2θ
+3
+x 2 + 9
+2
+x2+ 9
+2
+
+r
+s
+u
+u
+l
+b
+e
+s t into sine
+∴ =
+sin2θ sinθ
+ diagram
+x 2 +
+9
+3 2
+∴ =
+θ θ  2sinθcosθ
+2sinθcosθ sinθ
+A B
+∴
+3
+= x 2 +
+9 3
+E
+2cosθ 2
+3
+cosθ= (5)
+9
+2 x 2 +
+2
+7.3 1
+Volume= (area of base)×(⊥ height)
+3
+1
+15= (9)×x  substitution
+3
+x =5  x-value
+3
+cosθ=  substitution
+9
+2 25+
+2  answer
+∴ θ = 73,97° (4)
+[12]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 20 =====
+Mathematics P2/Wiskunde V2 20 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 8
+8.1
+S
+P
+1
+2
+70°
+1
+2
+T
+3
+1
+2
+R Q
+8.1.1 Alternate angles / verwiss hoeke, PQ || SR  R
+(1)
+8.1.2(a) T ˆ =70° [∠s opp = sides/∠e teenoor = sye]  S R
+2
+∴Q ˆ =180°−2(70°) [∠s/e ∆ = 180°]
+1
+= 40°  answer
+(3)
+8.1.2(b) P ˆ = 40° [tangent chord th/raakl-koordst]  S R
+1 (2)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 21 =====
+Mathematics P2/Wiskunde V2 21 DBE/November 2016
+NSC/NSS – Memorandum
+8.2
+C
+S
+O
+x
+A
+T
+B
+8.2.1 AT = 20 [line from centre ⊥ to chord/lyn vanaf midpt ⊥ koord] S
+(1)
+8.2.2 AO2 = OS2 +AS2 [Pyth: ∆AOS]
+OT2 +AT2 =OS2 +AS2 [Pyth:ΔAOT]  equating
+But AS = 24 [line from centre ⊥ to chord/lyn vanaf midpt ⊥ koord]  AS = 24
+2
+ 7 
+OT 2 +400 = OT +576  substitution
+15  7
+OS= OT
+176 = 176 OT 2 15
+225
+OT 2 = 225
+ OT
+OT =15
+ radius
+∴AO= 225+400
+(5)
+= 25
+OR/OF
+Let OS = 7, then OT = 15
+In ∆AOT:
+AO 2 = 20 2 +15 2  testing in
+∆AOT
+= 625
+AO= 25  testing in
+In ∆AOS: ∆AOS
+AO 2 = 24 2 +7 2
+=625
+conclusion
+AO= 25
+(5)
+∴ OA = 25
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 22 =====
+Mathematics P2/Wiskunde V2 22 DBE/November 2016
+NSC/NSS – Memorandum
+AO2 = OS2 +AS2 [Pyth: ∆AOS]  equating
+OT2 +AT2 =OS2 +AS2 [Pyth:ΔAOT]
+Let OT = 15x. Then OS = 7x  AS = 24
+But AS = 24 [line from centre ⊥ to chord/lyn vanaf midpt ⊥ koord]  substitution
+(15x) 2 +400=(7x) 2 +576
+225x 2 +400= 49x 2 +576
+176x 2 =176  x = 1
+x=1
+ radius
+∴AO= 225+400
+(5)
+= 25
+ AS = 24
+OR/OF
+AS = 24 [line from centre ⊥ to chord/lyn vanaf midpt ⊥ koord]
+AO 2 =OS 2 +AS 2 [Pyth: ∆AOS]  substitution
+7
+2 OS = OT
+ 7 
+= OT +AS 2 15
+15   equating
+ subst Pyth
+49
+AO 2 = (AO 2 −20 2 )+24 2 [Pyth: ∆AOT]
+225
+176
+AO 2 =
+4400
+225 9
+ radius
+AO 2 =625
+(5)
+AO=25 [12]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 23 =====
+Mathematics P2/Wiskunde V2 23 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 9
+F
+E
+1
+x
+3
+2 1 D
+2
+x
+A
+3
+2
+1
+4
+B
+y
+2
+1
+C
+9.1.1 tangent chord theorem/raaklyn-koordstelling  R
+(1)
+9.1.2 corresponding/ooreenkomstige ∠s/e; FB || DC  R
+(1)
+9.2 E ˆ = BC ˆ D  S
+1
+∴BCDE = cyclic quad[converse ext ∠ cyc quad/omgek: buite∠kdvh]  R
+(2)
+9.3 D ˆ = E ˆ [∠s in the same segment/∠e in dies segment]  S
+2 2
+D ˆ = FB ˆ D [alt ∠s, BF ||CD/verwiss ∠e,BF||CD]  S
+2
+(2)
+9.4 B ˆ = y OR B ˆ =C ˆ [∠s in the same segment/∠e in dies segment]  S
+3 3 2
+B ˆ = x− y OR B ˆ +B ˆ = x [from 9.3 and 9.4]  S
+2 3 2
+ S
+C ˆ = x− y [from 9.2 and 9.3]
+1 (3)
+∴B ˆ =C ˆ
+2 1
+OR/OF
+ identifying ∆’s
+In ∆BFE and ∆BEC
+E ˆ = E ˆ [= x]  S
+1 2
+ S
+F ˆ = B ˆ +B ˆ [tan-chord theorem]
+3 4
+∴∆BFE///∆CBE [∠,∠,∠]
+(3)
+∴B ˆ =C ˆ
+2 1 [9]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 24 =====
+Mathematics P2/Wiskunde V2 24 DBE/November 2016
+NSC/NSS – Memorandum
+QUESTION/VRAAG 10
+P
+10.1
+h
+2
+h
+1
+S T
+Q R
+10.1
+Constr: Join S to R and T to Q and draw h from S ⊥ PT and h
+1 2  constr/konstruksie
+from T ⊥ PS/ Verbind SR enTQ en trek h van S ⊥ PT en h
+1 2
+van T ⊥ PS]
+Proof :
+1
+PS×h area ∆PST
+area ∆PST 2 2 PS 
+= = equal altitudes area ∆QST
+area ∆QST 1 SQ
+SQ×h 1
+2 2 PS×h
+2 2
+1 =
+PT×h 1
+area ∆PST = 2 1 = PT equal altitudes 2 SQ×h 2
+area ∆STR 1 TR
+TR×h area ∆PST PT
+2 1  =
+area ∆STR TR
+area ∆PST = area ∆PST [common]
+But area ∆QST = area ∆STR [same base, height; ST || QR]
+area ∆PST area ΔPST
+∴ =  S  R
+area ∆QST area ΔSTR
+PS PT  S
+∴ =
+SQ TR
+(6)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 25 =====
+Mathematics P2/Wiskunde V2 25 DBE/November 2016
+NSC/NSS – Memorandum
+10.2
+M
+y
+L
+1
+2
+x
+1 H
+1
+2
+2
+K 3
+3
+G
+2x
+2 1
+F
+10.2.1 Corresponding/Ooreenkomstige ∠s/e; GF || LK  R
+(1)
+10.2.2(a) GL FK GL 2x
+= OR = [prop theorem/eweredighst; GF| |LK] S  R
+LM KM y x
+2GH
+=
+2x
+[LH = HG]
+ GL = 2GH
+y x
+(3)
+∴GH= y
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 26 =====
+Mathematics P2/Wiskunde V2 26 DBE/November 2016
+NSC/NSS – Memorandum
+
+10.2.2(b) K =GF ˆ M [corresponding/ooreenkomst ∠ s; GF || LK]
+1
+
+LK ˆ M or K = MH ˆ F [ext ∠ cyclic quad/buite∠koordevh]  S  R
+1
+MH ˆ F = GF ˆ M  S
+In ∆MFH and ∆MGF:
+ S
+ˆ ˆ
+M = M [common/gemeen]
+MH ˆ F = GF ˆ M [proven/bewys]
+∴ ∆MFH | | | ∆MGF [∠∠∠]  R
+(5)
+OR/OR
+
+K =GF ˆ M [corresponding/ooreenkomst ∠ s; GF || LK]
+1
+
+LK ˆ M or K = MH ˆ F [ext ∠ cyclic quad/buite∠koordevh]
+1
+S  R
+MH ˆ F = GF ˆ M
+ S
+In ∆MFH and ∆MGF:
+ˆ ˆ
+M = M [common/gemeen]
+ S
+MH ˆ F = GF ˆ M [proven/bewys]
+F ˆ =G ˆ [∠s of ∆ = 180°]  S
+2 (5)
+∴ ∆MFH | | | ∆MGF
+10.2.2(c) GF MF
+∴ = [ ||| ∆s]
+FH MH
+S R
+3x
+=
+2y (2)
+10.2.3 MF MG  S
+= [ ||| ∆s]
+MH MF
+substitution
+3x 3y
+= [from 10.2.2(c)]
+2y 3x
+y2 9 3 
+= = simplificatio
+x2 6 2
+n
+y 3
+=
+x 2
+(3)
+[20]
+TOTAL MARKS 150
+Copyright reserved/Kopiereg voorbehou

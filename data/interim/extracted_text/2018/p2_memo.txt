@@ -1,0 +1,1079 @@
+
+===== Page 1 =====
+NATIONAL
+SENIOR CERTIFICATE/
+NASIONALE
+SENIOR SERTIFIKAAT
+GRADE/GRAAD 12
+MATHEMATICS P2/WISKUNDE V2
+NOVEMBER 2018
+MARKING GUIDELINES/NASIENRIGLYNE
+MARKS/PUNTE: 150
+These marking guidelines consist of 24pages.
+Hierdie nasienriglyne bestaan uit 24 bladsye.
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 2 =====
+Mathematics P2/Wiskunde V2 2 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+NOTE:
+• If a candidate answers a question TWICE, only mark the FIRST attempt.
+• If a candidate has crossed out an attempt of a question and not redone the question, mark the
+crossed out version.
+• Consistent accuracy applies in ALL aspects of the marking memorandum. Stop marking at the
+second calculation error.
+• Assuming answers/values in order to solve a problem is NOT acceptable.
+NOTA:
+• As 'n kandidaat 'n vraag TWEE KEER beantwoord, sien slegs die EERSTE poging na.
+• As 'n kandidaat 'n antwoord van 'n vraag doodtrek en nie oordoen nie, sien die doodgetrekte
+poging na.
+• Volgehoue akkuraatheid word in ALLE aspekte van die nasienriglyne toegepas. Hou op nasien
+by die tweede berekeningsfout.
+• Om antwoorde/waardes te aanvaar om 'n probleem op te los, word NIE toegelaat NIE.
+GEOMETRY • MEETKUNDE
+A mark for a correct statement
+(A statement mark is independent of a reason)
+S
+'n Punt vir 'n korrekte bewering
+('n Punt vir 'n bewering is onafhanklik van die rede)
+A mark for the correct reason
+(A reason mark may only be awarded if the statement is correct)
+R
+'n Punt vir 'n korrekte rede
+('n Punt word slegs vir die rede toegeken as die bewering korrek is)
+Award a mark if statement AND reason are both correct
+S/R
+Ken 'n punt toe as die bewering EN rede beide korrek is
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 3 =====
+Mathematics P2/Wiskunde V2 3 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 1
+1.1.1 140 items  answer
+(1)
+1.1.2 Modal class/modale klas: 20< x≤30minutes  answer
+OR/OF (1)
+20≤ x <30minutes  answer
+(1)
+1.1.3 Number of minutes taken = 20 minutes  a n swer
+(1)
+1.1.4 140 – 126 [Accept: 124 to 128]  126
+14 orders (12 to 16)  answer
+(2)
+Answer only: Full marks
+1.1.5 75th percentile is at 105 items  105
+=37 minutes [accept 36 – 38 minutes]  answer
+Answer only: Full marks
+(2)
+1.1.6 Lower quartile is at 35 items
+Answer only:
+=21,5 min [accept 21 – 23 min]  lower quartile (Q )
+1
+IQR = 37 – 21,5
+Full marks
+= 15,5 min [accept 13 – 17 min]  answer
+(2)
+35 70 75 80 80
+90 100 100 105 105
+110 110 115 120 125
+1.2.1(a) 1420  1420
+x = Answer only: Full marks
+15
+= R94,666..= R94,67  answer
+(2)
+1.2.1(b) σ= R22,691...= R22,69  answer
+(2)
+1.2.2(a) They both collected the same (equal) amount in  answer
+tips, i.e. R1 420 over the 15-day period.
+Hulle albei het dieselfde bedrag met fooitjies (1)
+ontvang, nl. R1 420 oor die 15 dae-tydperk
+1.2.2(b) Mary's standard deviation is smaller than Reggie's
+which suggests that there was greater variation in
+the amount of tips that Reggie collected each day  explanation
+compared to the number of tips that Mary collected
+each day.
+Marie se standaardafwyking is kleiner as Reggie s'n
+wat beteken dat daar groter variasie/verspreiding
+in die fooitjies was wat Reggie elke dag ontvang (1)
+het in vergelyking met die getal fooitjies wat Marie
+elke dag ontvang het.
+[15]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 4 =====
+Mathematics P2/Wiskunde V2 4 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 2
+2.1 251 km/h  answer
+(1)
+2.2.1 r = 0,52 OR C  answer
+(1)
+2.2.2 The points are fairly scattered and the least squares
+regression line is increasing.  reason
+(1)
+Die punte is redelik verspreid en die kleinstekwadrate-
+regressielyn neem toe.
+2.3 There is a weak positive relation hence the height
+could have an influence  answer
+(1)
+Daar is 'n swak positiewe verband, tog kan die lengte
+'n invloed hê.
+OR/OF
+There is no conclusive evidence that the height of a
+player will influence his/her tennis serve speed.
+ answer
+Daar is geen duidelike bewys dat die lengte van die (1)
+speler sy/haar afslaanspoed kan beïnvloed nie.
+OR/OF
+There is no conclusive evidence that a taller person
+will serve faster than a shorter person.  answer
+Daar is geen duidelike bewys dat 'n langer speler (1)
+vinniger sal afslaan as 'n korter een nie.
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 5 =====
+Mathematics P2/Wiskunde V2 5 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+2.4 For (0 ; 27,07), it means that the player has a height of
+0 m but can serve at a speed of 27,07 km/h.
+It is impossible for a person to have a height of 0 m.  explanation
+(1)
+(0 ; 27,07) beteken dat 'n speler 'n lengte van 0 m kan
+hê en teen 'n spoed van 27,07 km/h kan afslaan. Dit is
+onmoontlik om 'n lengte van 0 m te hê.
+OR/OF
+This means that the player does not exist and  explanation
+therefore cannot serve and have a serve speed. (1)
+Dit beteken dat die speler nie bestaan nie en daarom
+nie kan afslaan en 'n afslaanspoed hê nie.
+[5]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 6 =====
+Mathematics P2/Wiskunde V2 6 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 3
+y
+K(– 1 ; 2)
+o
+78,69
+θ
+P x
+O
+N(1 ; –1)
+L(–5 ; –2)
+78,69o
+T(–6; – 3)
+13
+13
+22,62o
+M(–3 ; –5)
+3.1.1 y − y
+m = 2 1
+KN
+x − x
+2 1
+2−(−1)
+m =  correct substitution
+KN −1−1 Answer only: Full marks
+3  answer
+=−
+2 (2)
+3.1.2 3 3
+tanθ=m =− tanθ= m = −
+KN 2 KN 2
+θ=180°−56,31° Answer only: Full marks
+θ=123,69°  answer
+(2)
+3.2 Inclination KL = 123,69°−78,69°= 45° [ext ∠∆]  S
+tan45°= m =1  tan45°= m =1
+KL KL
+(2)
+3.3 y = x+c
+2= −1+c  substitute (– 1 ; 2) and m
+c = 3
+y = x + 3  equation
+(2)
+OR/OF
+y− y =1(x−x )
+1 1
+ substitute (– 1 ; 2) and m
+y−2=1(x−(−1))
+y = x+3  equation
+(2)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 7 =====
+Mathematics P2/Wiskunde V2 7 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+3.4  substitute K and N into
+KN= (1+1)2 +(−1−2)2
+distance formula
+KN = 13 or 3,61 Answer only: Full marks  answer
+(2)
+3.5.1 (x+3)2 +(y +5)2 =13 ...(1)  equation (1)
+L is a point on KL
+y = x + 3 …(2)
+(2) in (1):
+(x+3)2 +(x+3+5)2 =13
+ substituting eq (2)
+x2 +6x+9+ x2 +16x+64=13
+2x2 +22x+60=0
+x2 +11x+30=0  standard form
+(x+5)(x+6)=0
+x = –5 or x = –6
+ x-values
+y = –2 or y = –3
+ y-values
+L(–5 ; –2) or (–6 ; –3)
+(5)
+OR/OF
+ equation (1)
+(x+3)2 +(y +5)2 =13 ...(1)
+L is a point on KL
+y = x + 3 ∴ x = y – 3 …(2)
+(2) in (1):
+(y−3+3) 2 +(y+5) 2 =13  substituting eq (2)
+y 2 + y 2 +10y+25=13
+2y 2 +10y+12=0
+y 2 +5y+6=0
+ standard form
+(y+2)(y+3)=0
+y = –2 or y = –3  y-values (both)
+x = –5 or x = –6  x-values (both)
+L(–5 ; –2) or (–6 ; –3) (5)
+3.5.2 Midpoint of KM: (– 2 ; – 1,5)  midpoint of KM
+x +1 y −1 3
+∴ L =−2 and L =−
+2 2 2
+x value  y value
+∴L(– 5 ; – 2)
+(3)
+OR/OF
+m = m
+KN LM  m = m
+( ) LM KN
+y− −5 3
+= −
+( )
+x− −3 2
+2(x+3+5)=−3(x+3)
+2x+16=−3x−9
+5x=−25 Answer only: Full marks
+x=−5 x value
+∴L(– 5 ; – 2)  y value
+(3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 8 =====
+Mathematics P2/Wiskunde V2 8 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+OR/OF
+N→M: N→K:
+(x ; y)→(x−4 ; y −4) (x ; y)→(x−2 ; y+3)
+∴L(– 1 – 4 ; 2 – 4) OR/OF ∴ L(– 3 – 2 ; – 5 + 3)
+∴L(– 5 ; – 2)
+∴L(– 5 ; – 2)
+OR/OF
+N→M: N→K:
+(x ; y)→(x−4 ; y −4) (x ; y)→(x−2 ; y+3)
+∴L(– 1 – 4 ; 2 – 4) OR/OF ∴ L(– 3 – 2 ; – 5 + 3)
+∴L(– 5 ; – 2)
+∴L(– 5 ; – 2)
+OR/OF
+N→M: N→K:
+(x ; y)→(x−4 ; y −4) (x ; y)→(x−2 ; y+3)
+∴L(– 1 – 4 ; 2 – 4) OR/OF ∴ L(– 3 – 2 ; – 5 + 3)
+∴L(– 5 ; – 2)
+∴L(– 5 ; – 2)
+OR/OF
+N→M: N→K:
+(x ; y)→(x−4 ; y −4) (x ; y)→(x−2 ; y+3)
+∴L(– 1 – 4 ; 2 – 4) OR/OF ∴ L(– 3 – 2 ; – 5 + 3)
+∴L(– 5 ; – 2)
+∴L(– 5 ; – 2)
+OR/OF
+N→M: N→K:
+ transformation
+(x ; y)→(x−4 ; y −4) (x ; y)→(x−2 ; y+3)
+∴L(– 1 – 4 ; 2 – 4) OR/OF ∴ L(– 3 – 2 ; – 5 + 3)
+∴L(– 5 ; – 2) x value  y value
+∴L(– 5 ; – 2) (3)
+3.6 T(–6 ; –3) (from Question 3.5.1)  coordinates of T
+KT= (−1−(−6))2 +(2−(−3))2
+ length of KT
+= 50
+KN = 13 (CA from 3.4)
+1
+Area of ΔKTN= KT.KN sinLK ˆ N
+2
+= 1 50. 13 sin78,69°  substitution into area rule
+2
+ answer
+= 12,50 square units
+(4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 9 =====
+Mathematics P2/Wiskunde V2 9 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+OR/OF
+In ∆KLM:
+TL 13
+=
+sin22,62° sin78,69°
+TL=1,414..
+ length of TL
+KL= (−1−(−5)) 2 +(2−(−2)) 2
+= 32
+∴ KT = 7,0708…
+1  length of KT
+Area of ΔKTN= KT.KN sinLK ˆ N
+2
+1
+= (7,0708). 13 sin78,69°
+2
+ substitution into area rule
+= 12,50 square units
+ answer
+(4)
+[22]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 10 =====
+Mathematics P2/Wiskunde V2 10 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 4
+y J
+S(6 ; 5)
+F
+x
+H
+K
+G(m ; n)
+4.1 F(3 ; 1) x value  y value
+(2)
+4.2 FS= (6−3) 2 +(5−1) 2  substitution of F
+& S
+FS = 5
+
+answer
+(2)
+4.3 FH(FS) : HG = 1 : 2
+∴HG = 2 FH
+= 10  HG = 10
+(1)
+4.4 Tangents from common/same point /  answer
+Raaklyne vanaf gemeenskaplike of dieselfde punt (1)
+4.5.1 FH ˆ J =90° [tan ⊥ radius / rkl ⊥ radius]  S  R
+FJ2 = 202 + 52 [Pyth theorem/stelling]  S
+FJ = 425 or 5 17 or 20,62  answer
+(4)
+4.5.2 (x−m)2 +(y −n)2 =100  answer
+(1)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 11 =====
+Mathematics P2/Wiskunde V2 11 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+4.5.3 K(22; n) [radius ⊥ tangent]  K(22; n)
+GK = HG = 10 [radii]
+FH = FS = 5 [radii]
+m = 22 – 10
+m = 12  value of m
+F, H and G are collinear [HJ is a common tangent]
+F, H en G is saamlynig [HJ is 'n gemeemskaplike raaklyn]
+FG 2 =(12−3) 2 +(n−1) 2  subst. of F and G in
+distance formula
+15 2 =81+(n−1) 2  FG = 15
+(n−1) 2 =144 n2 −2n−143=0  simplification/
+n−1= ±12 OR/OF (n+11)(n−13) =0 standard form
+n≠13 or n=−11 n=−11 or n≠13  value of n
+∴G(12; –11)  coordinates of G
+(7)
+OR/OF
+K(22; n) [radius ⊥ t angent]  K(22; n)
+GK = HG = 10 [radii]
+FH = FS = 5 [radii]
+m = 22 – 10
+m = 12  value of m
+Let J(22 ; y):
+FJ 2 =(22−3) 2 +(y−1) 2  subst. of F and J in
+distance formula
+425=361+ y 2 −2y+1
+ FJ = 425
+0= y 2 −2y−63
+ standard form
+0=(y−9)(y+7)
+∴ y = 9 or/of y ≠ –7
+∴ n = 9 – 20 = –11  value of n
+∴G(12; –11)  coordinates of G
+(7)
+[18]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 12 =====
+Mathematics P2/Wiskunde V2 12 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 5
+y
+P(k ; 1)
+5
+θ
+• x
+O R
+5.1.1 k2 =( 5)2 −12  substitution into theorem of
+= 4 Answer only: full marks Pythagoras
+ answer
+k = −2
+(2)
+5.1.2(a) 1
+tanθ= − answer
+2
+(1)
+5.1.2(b) cos(180°+θ) = −cosθ  reduction
+= 2 Answer only: full marks  answer
+5 (2)
+5.1.2(c) a+b
+sin(θ+60°) =
+20
+LHS = sinθcos60°+cosθsin60°  expansion
+ 1 1  2  3
+=     +  −        subst of sin θ
+ 52  5 2 
+ subst of cos θ
+1−2 3  both special ∠s
+=
+2 5 1−2 3
+
+1−2 3 2 5
+=
+20
+(5)
+5.1.3 1
+tanθ= −
+2
+∴θ=180°−26,57°
+∴θ=153,43°
+ θ
+tan(2θ−40°) = tan[(2×153,43°)−40°]
+ substitution
+=tan266,87°
+=18,3  answer
+(3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 13 =====
+Mathematics P2/Wiskunde V2 13 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+cosx+sinx cosx−sinx
+5.2 LHS = − RHS =2tan2x
+cosx−sinx cosx+sinx
+(
+cosx+sin x
+)2
+−
+(
+cosx−sin x
+)2
+ single fraction
+=
+( )( )
+cosx−sin x cosx+ sin x
+cos2 x+2sinxcosx+sin2 x−cos2 x+2sinxcosx−sin2 x
+=  expansion
+cos2 x−sin2 x
+= 2(2sin xcosx)  simplification (both)
+cos2 x−sin2 x
+2sin2x  double ∠ identity
+=
+ double ∠ identity
+cos2x
+=2tan2x
+= RHS
+(5)
+OR/OF
+cosx+sinx cosx−sinx
+LHS = − RHS =2tan2x
+cosx−sinx cosx+sinx
+( cosx+sin x )2 − ( cosx−sin x )2  single fraction
+=
+(
+cosx−sin x
+)(
+cosx+ sin x
+)
+(cosx+sinx+cosx−sinx)(cosx+sinx−cosx+sinx)  difference of two
+=
+cos2 x−sin2 x squares
+(2cosx)(2sinx)
+=
+cos2 x−sin2 x
+ simplification (both)
+2(2sin xcosx)
+=
+cos2 x−sin2 x
+2sin2x  double ∠ identity
+=
+cos2x  double ∠ identity
+=2tan2x (5)
+= RHS
+OR/OF
+RHS= 2tan2x
+2sin2x
+=
+cos2x
+2(2sinx.cosx)
+=  double ∠ identity
+cos 2 x−sin 2 x  double ∠ identity
+4sinx.cosx
+=
+cos 2 x−sin 2 x
+1+2sinx.cosx−(1−2sinx.cosx)  identity & method
+=
+cos 2 x−sin 2 x
+(cosx+sinx) 2 −(cosx−sinx) 2  factorising numerator
+=
+(cosx+sinx)(cosx−sinx) and denominator
+(cosx+sinx) 2 (cosx−sinx) 2  writing as 2 terms
+= −
+(cosx+sinx)(cosx−sinx) (cosx+sinx)(cosx−sinx)
+cosx+sinx cosx−sinx
+= − = LHS (5)
+cosx−sinx cosx+sinx
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 14 =====
+Mathematics P2/Wiskunde V2 14 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+5.3 52
+∑cos2 A
+A=38
+= cos2 38° + cos2 39° + cos2 40° + ... + cos2 51°+ cos2 52°
+ expansion
+= sin2 52° + sin2 51° + sin2 50° + ... + cos2 51°+ cos2 52°  co ratio
+= 7(1) + cos 2 45°  cos 2 45°
+= 7+ 
+ 2
+
+ 2
+or = 7+ 
+ 1
+
+ 2  7 × identity
+   
+ 2   2
+1
+= 7
+ answer
+2
+(5)
+OR/OF
+52
+∑cos2 A
+A=38
+= cos2 38° + cos2 39° + cos2 40° + ... + cos2 51°+ cos2 52°  expansion
+= (cos 2 38° + sin 2 52°)+ (cos 2 39° + sin 2 51°)... + cos 2 45°
+ pairing
+= 7(1) + cos 2 45°  cos 2 45°
+= 7+ 
+ 2
+
+ 2
+or = 7+ 
+ 1
+
+ 2  7 × identity
+
+ 2
+
+
+
+ 2
+
+
+1
+= 7
+ answer
+2
+(5)
+[23]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 15 =====
+Mathematics P2/Wiskunde V2 15 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 6
+6.1 Period = 120°  answer
+(1)
+6.2 3
+2 = −2tan x  equating
+2
+3 
+tan  t  =−1
+2 
+ general solution of
+3 3
+t= 135° + k.180° OR/OF t= −45° + k.180° 3
+2 2 t
+t= 90° + k.120° ; k∈Z t= −30° + k.120° ; k∈Z 2
+ general solution of t
+(3)
+OR/OF
+3
+2 = −2tan x
+2  equating
+3 
+tan  t  =−1
+2 
+ general solution of
+3 3
+t= 135° + k.360° or/of t= 315° + k.360° 3
+2 2 t
+2
+t= 90° + k.240° or.of t= 210° + k.240° ; k∈Z
+ general solution of t
+(3)
+6.3
+y
+asymptotes:
+x = ± 60°; x = 180°
+2 x-intercepts 0°; ±120°
+ negative shape
+x
+–120° –90° – 60° –30 ° 0° 30° 60° 90° 120° 150° 180°  (90° ; 2) or
+–2 (− 30° ; 2) or
+f (30° ; −2) or
+(−90° ; −2)
+(4)
+6.4 x∈(−60° ; −30°] or (60°; 90°]  interval  interval
+ notation
+OR/OF (3)
+–60°< x ≤ –30° or 60° < x ≤ 90°  interval  interval
+ notation
+(3)
+6.5 3 
+g(x) =−2tan (x+40°) = f(x+40°)
+   Translation of 40°
+2 
+ to the left
+Translation of 40° to the left / skuif met 40° links
+(2)
+[13]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 16 =====
+Mathematics P2/Wiskunde V2 16 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 7
+A
+30°
+2x
+3h
+h
+DD
+B
+C
+7.1 AB ˆ D=30°  AB ˆ D=30°
+h
+sin 30°=
+AB
+h h
+AB= OR AB= OR AB = 2h  answer
+sin30° 1
+(2)
+2
+OR/OF
+BA ˆ D=60°  BA ˆ D=60°
+h
+cos60°=
+AB
+h h
+AB= OR AB= OR AB = 2h
+cos60° 1  answer
+(2)
+2
+7.2 BC2 =AB2 +AC2 −2AB.ACcosBA ˆ C  use of cosine rule in
+=(2h)2 +(3h)2 −2(2h)(3h)cos2x ∆ABC
+=13h2 −12h2(2cos2 x−1)  substitution
+=13h 2 −24h 2 cos 2 x+12h 2  double angle identity
+= 25h 2 −24h 2 cos 2 x  25h 2 −24h 2 cos 2 x
+BC =h 25−24cos2 x
+(4)
+[6]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 17 =====
+Mathematics P2/Wiskunde V2 17 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 8
+T
+M
+R
+1 66°
+2
+2
+1 N
+1 2
+O
+P
+8.1.1 P ˆ = M ˆ =66° [tan chord theorem/raaklyn koordst] S R
+1
+(2)
+8.1.2 M ˆ 2 = 90° [∠ in semi circle/∠ in halfsirkel] S R
+(2)
+8.1.3 N ˆ =180°−(90°+66°) [sum of ∠s of /som van ∠e ∆MNP]
+1 S
+= 24°
+(1)
+8.1.4 O ˆ = P ˆ = 66° [corres. ∠s;/ooreenk ∠e, PM || OR] S R
+2
+(2)
+8.1.5 R ˆ + N ˆ + N ˆ =180°−66° [sum of ∠s of/som van ∠e ∆RNO]
+1 2
+=114° S
+R ˆ = N ˆ + N ˆ =57° [∠s opposite = radii/∠e teenoor = radii] S/R
+1 2
+∴ N ˆ =33° S
+2 (3)
+OR/OF
+PO ˆ R =114° [∠s on straight line/∠e op reguitlyn]
+S
+PN ˆ R = 57° [∠ at centre = twice ∠ at circumference/ S/R
+midpts∠ = 2 × omtreks∠]
+∴ N ˆ =33° S
+2
+(3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 18 =====
+Mathematics P2/Wiskunde V2 18 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+8.2
+B
+A
+M
+20
+C
+21
+D
+F
+H
+15
+G
+8.2.1 FC || AB || GH [opp sides of rectangle/teenoorst sye v reghoek]  R
+(1)
+8.2.2 AC AF
+= [line || one side of ∆] OR [prop theorem; FC || GH] S R
+CH FG
+[lyn || een sy van ∆] OF [eweredighst; FC || GH]
+AC 20
+=
+21 15
+20×21
+AC =
+15
+= 28  AC
+DB = AC = 28 [diags of rectangle =/hoeklyne v reghoek = ]
+ S
+1
+DM = DB = 14 [diags of rectangle bisect/hoekl v reghoek halveer]
+ S
+2
+(5)
+[16]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 19 =====
+Mathematics P2/Wiskunde V2 19 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 9
+9.1 J
+M
+2
+O
+1
+K L
+9.1 Constr/Konstr.: Draw KO and MO/Trek KO en MO  construction
+Proof:
+O ˆ 1 = 2J ˆ [∠ at centre = twice ∠ at circumference]  S/R
+[midpts∠ = 2 × omtreks∠]
+O ˆ = 2L ˆ [∠ at centre = twice ∠ at circumference]  S
+2
+O ˆ 1 + O ˆ 2 = 3 6 0 ° [∠s around a point /∠e om 'n punt]  S/R
+ S
+∴ 2J ˆ + 2L ˆ = 360°
+( )
+∴ 2 J ˆ + L ˆ = 360°
+∴ J ˆ + L ˆ = 180° (5)
+OR/OF
+ construction
+Constr/Konstr.: Draw KO and MO/Trek KO en MO
+Proof:
+Let J ˆ = x
+ S  R
+O ˆ
+1
+= 2x [∠ at centre = twice ∠ at circumference]
+[midpts∠ = 2 × omtreks∠]
+ S/R
+O ˆ
+2
+= 360°−2x [∠s around a point /∠e om 'n punt]
+ S
+∴ L ˆ =180° − x [∠ at centre = twice ∠ at circumference]
+∴ J ˆ + L ˆ = 180°
+(5)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 20 =====
+Mathematics P2/Wiskunde V2 20 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+9.2
+A
+B
+1 2
+x
+1
+S 2
+3
+1
+2
+3
+T
+4
+1
+y 1 2 2
+D
+R
+C
+9.2.1(a) B ˆ 1 = x [∠s in same seg/∠e in dieselfde segm]  S  R
+(2)
+9.2.1(b) B ˆ 2 = y [ext ∠ of cyclic quad/buite∠ koordevh]  S  R
+(2)
+9.2.2 C ˆ = 180°−(x+ y) [sum of ∠s of/som v ∠e, ∆ACR]  S
+SB ˆ D + C ˆ = x + y + 180°−(x+ y)
+SB ˆ D + C ˆ = 180°  S
+SCDB is a cyclic quad [converse opp angles of cyclic quad]
+ R
+[omgekeerde teenoorst ∠e koordevh]
+(3)
+OR/OF
+S ˆ =T ˆ [∠s in same segment/∠e in dies. segment]  S
+1 2
+T ˆ = D ˆ +D ˆ = BD ˆ R [ext ∠ of cyc quad/buite∠ koordevh]
+2 1 2
+∴ S ˆ = BD ˆ R  S
+1
+∴ SCDB is cyc quad [ext ∠ of quad = opp ∠/buite∠ = tos ∠]  R
+(3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 21 =====
+Mathematics P2/Wiskunde V2 21 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+9.2.3 T ˆ = y −30° [ext ∠ of/buite ∠ ∆TDR]  S
+4
+T ˆ = y −30° [vert opp ∠s =/regoorst ∠e =]  S
+1
+y −30°+ x + 100°=180° [sum of ∠s of/som v ∠e, ∆AST]
+∴ x + y = 110°
+SB ˆ D = 110°
+ S
+∴ SD not diameter [line does not subtend 90° ∠ ]
+SD nie 'n middellyn [lyn onderspan nie 90°∠]  R
+(4)
+OR/OF
+AS ˆ T = C ˆ +D ˆ [ext ∠ of/buite ∠ ∆SCD]  S
+2
+C ˆ = 100°−30° =70°  S
+SB ˆ D = 180°−70° [opp ∠s cyclic quad/ teenoorst ∠e kdvh]
+= 110°  S
+∴ S D not diam eter [line does not subtend 90° ∠ ]
+SD nie 'n middellyn [lyn onderspan nie 90°∠]  R
+(4)
+[16]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 22 =====
+Mathematics P2/Wiskunde V2 22 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 10
+A
+2
+1
+1
+D x
+B
+2
+1
+2
+M
+C
+10.1.1 A ˆ = A ˆ =90°−x [= chords subtend = ∠s  S R
+2 1
+= kde onderspan =∠e]
+D ˆ = x [exterior angle of cyclic quad/buite∠ koordevh.]  S/R
+2
+∴C ˆ =90°−x [sum of ∠s of/som v ∠e, ∆DCM]  C ˆ =90°−x
+2 2
+∴C ˆ = A ˆ = 90°− x
+2 1
+∴MC is a tangent to the circle at C [converse: tan chord th]
+ R
+MC is 'n raaklyn by C [omgekeerde raakl koordst]
+(5)
+OR/OF
+A ˆ
+2
+= A ˆ
+1
+=90°−x [= chords subtend = ∠s/  S  R
+= kde onderspan =∠e]
+C ˆ 1 +C ˆ 2 = x [sum of ∠s of/som v ∠e, ∆ACM]  C ˆ +C ˆ = x
+1 2
+∴C ˆ +C ˆ = B ˆ = x
+1 2
+∴MC is a tangent to the circle at C [converse : tan chord th]
+ R
+MC is 'n raaklyn by C [omgekeerde raakl koordst]
+(5)
+OR/OF
+In ∆AMC and ∆ACB:
+A ˆ = A ˆ =90°−x [= chords subtend = ∠s/
+2 1  S  R
+= kde onderspan =∠e]
+AM ˆ C=AC ˆ B=90° [given]
+∴C ˆ 1 +C ˆ 2 = B ˆ = x  C ˆ +C ˆ = x
+1 2
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 23 =====
+Mathematics P2/Wiskunde V2 23 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+∴MC is a tangent to the circle at C [converse : tan chord th]  R
+MC is 'n raaklyn by C [omgekeerde raakl koordst] (5)
+In ∆ACB and/en ∆CMD
+B ˆ = D ˆ = x [proved OR exterior ∠ of cyclic quad.]  S
+2
+[bewys OF buite ∠ v koordevh]
+A ˆ =C ˆ =90°−x [proved OR sum of ∠s in ∆]  S
+2 2
+[Bewys OF som v ∠e in ∆]
+∆ACB ||| ∆CMD [∠, ∠, ∠ ]  R
+(3)
+OR/OF
+In ∆ACB and/en ∆CMD
+B ˆ = D ˆ = x [proved OR exterior ∠ of cyclic quad.]
+2
+[bewys OF buite ∠ v koordevh]  S
+AC ˆ B=AM ˆ C=90° [given/gegee]  S
+∆ACB ||| ∆CMD [∠, ∠, ∠ ]
+ R
+OR/OF (3)
+In ∆ACB and/en ∆CMD
+B ˆ = D ˆ = x [proved OR exterior ∠ of cyclic quad]
+2
+[bewys OF buite ∠ v koordevh]
+A ˆ =C ˆ =90°−x [proved OR sum of ∠s in ∆]  S
+2 2
+[Bewys OF som v ∠e in ∆]
+AC ˆ B=AM ˆ C=90° [given OR sum of ∠s in ∆]  S
+[gegee OF som v ∠e in ∆]
+∆ACB ||| ∆CMD  S (3)
+10.2.1 BC AB BC AB
+= [∆ACB ||| ∆CMD]  =
+MD DC MD DC
+DC AB
+= [BC = DC]
+MD DC
+∴DC2 = AB×MD  DC 2 = AB×MD
+In ∆AMC and/en ∆CMD
+ˆ  S
+M is common/gemeen
+A ˆ =C ˆ [tan chord th /raaklyn koordst]
+1 2  S
+OR/OF
+C ˆ +C ˆ =B ˆ =D ˆ = x [tan chord th /raaklyn koordst OR/OF
+1 2
+exterior ∠ of cyclic quad/ buite ∠ v kdvh]
+∆AMC ||| ∆CMD [∠, ∠, ∠ ]
+AM CM
+=
+CM MD
+∴CM2 = AM×MD  CM 2 = AM×MD
+CM 2 AM×MD
+∴ = AM×MD
+DC
+2 AB×MD 
+AB×MD
+AM
+= (6)
+AB
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 24 =====
+Mathematics P2/Wiskunde V2 24 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+OR/OF
+AC AB
+ =
+AC AB MC DC
+= [∆ACB ||| ∆CMD]
+MC DC
+∴CM×AB= AC×DC
+In ∆AMC and/en ∆ACB  S
+C ˆ = M ˆ =90° [given]
+ S
+A ˆ = A ˆ [proven]
+1 2
+OR/OF
+AC ˆ M = B ˆ = x [proven]
+∆AMC ||| ∆ACB [∠, ∠, ∠ ]
+AC BC
+=
+AM MC  AC.MC= AM.BC
+∴AC×MC= AM×BC
+BC.AM
+∴AC=
+MC
+ equating
+BC.AM
+CM×AB = ×DC
+MC
+ S
+DC.AM
+CM 2 = ×DC [BC= DC]
+AB
+2
+CM AM
+= (6)
+DC 2 AB
+10.2.2 In ∆DMC:
+CM
+= sinx  trig ratio
+DC
+CM2 AC CM
+= sin2 x =  square both sides
+DC2 AB DC
+AM
+∴ = sin2 x
+AB (2)
+OR/OF
+In ∆ABC:
+AC
+sinx=
+AB
+In ∆AMC:
+ 2 equations for
+AM
+sinx= sin x
+AC
+AC AM AM  product
+sinx.sinx= × =
+(2)
+AB AC AB
+[16]
+TOTAL/TOTAAL: 150
+Copyright reserved/Kopiereg voorbehou

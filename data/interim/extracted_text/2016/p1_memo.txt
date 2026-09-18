@@ -1,0 +1,1169 @@
+
+===== Page 1 =====
+GRADE 12/GRAAD 12
+NATIONAL
+SENIOR CERTIFICATE/
+NASIONALE
+SENIOR SERTIFIKAAT
+MATHEMATICS P1/WISKUNDE V1
+NOVEMBER 2016
+MEMORANDUM
+MARKS: 150
+PUNTE: 150
+This memorandum consists of 20 pages.
+Hierdie memorandum bestaan uit 20 bladsye.
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 2 =====
+Mathematics/P1 2 DBE/November 2016
+NSC – Memorandum
+NOTE:
+• If a candidate answers a question TWICE, only mark the FIRST attempt.
+• Consistent accuracy applies in all aspects of the marking memorandum.
+LET WEL:
+• Indien 'n kandidaat 'n vraag TWEE keer beantwoord, sien slegs die EERSTE poging na.
+• Volgehoue akkuraatheid is op ALLE aspekte van die memorandum van toepassing.
+QUESTION/VRAAG 1
+( )
+1.1.1 x x−7 =0
+ x =0
+x=0 or x=7
+ x =7
+(2)
+1.1.2 x2 −6x+2=0
+6± (−6)2 −4(1)(2)
+correct substitution into
+x=
+2(1) correct formula
+6± 28
+x=  x =0,35
+2
+ x =5,65
+x=0,35or x=5,65
+(3)
+OR/OF
+x2 −6x+2=0
+x2 −6x+9= −2+9
+(
+x−3
+)2
+=7
+ ( x−3 )2 =7
+x−3= ± 7
+x =3± 7  x =0,35
+x =0,35or x =5,65  x =5,65
+(3)
+1.1.3 x−1+1= x
+x−1 = x−1
+ isolate x−1
+x−1= x2 −2x+1
+ x2 −2x+1
+x2 −3x+2=0
+( )( )  standard form
+x−2 x−1 =0
+ factors
+x = 2 or x =1
+ both answers
+Both answers are valid
+(5)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 3 =====
+Mathematics/P1 3 DBE/November 2016
+NSC – Memorandum
+x−1+1= x
+ isolate x−1
+x−1 = x−1
+Let x−1= k
+k = k k ≥0
+k = k2
+ k2
+k2 −k =0
+k ( k −1 ) =0  standard form
+( )( )
+x−1 x−2 =0
+ factors
+x = 2 or x =1 ; x ≥1  both answers
+Both answers are valid (5)
+OR/OF
+x−1+1= x  isolate x−1
+x−1 = x−1  x−1=0
+ x−1=1
+By inspection:
+ x=2
+x−1=0 or x−1=1
+x = 2 or x =1  x=1
+(5)
+1.1.4 3x+3 −3x+2 = 486
+ expansion
+3x33 −3x32 = 486
+( )
+3x 33 −32 = 486  common factor
+3x = 27
+ 3x = 27
+3x =33
+x =3  x =3
+(4)
+OR/OF
+3x+3 −3x+2 = 486  common factor
+3x+2 ( 31 −1 ) = 486  ( 31−1 )
+3x+2 = 243
+3x+2 =35
+ 3x+2 =243
+x+2=5
+ x=3
+x =3
+(4)
+1.2.1 f ( x ) = x2 +3x−4
+( )( )
+0 = x+4 x−1
+ factors
+x = −4 or x =1  both answers
+(2)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 4 =====
+Mathematics/P1 4 DBE/November 2016
+NSC – Memorandum
+1.2.2 x2 +3x − 4 < 0
+(x + 4)(x −1) < 0
++ – +
+OR/
+–4 1 OF
+-4 1
+ −4< x<1
+( )
+−4< x<1 OR/OF x∈ −4 ;1
+(2)
+1.2.3 2x+3≥0  2x+3
+3 3
+x≥−  x≥−
+2 2
+(2)
+f
+/(
+x
+)
+≥0 when f is increasing
+−4+1 −4+1
+The turning point occurs at x =  x=
+2 2
+3
+x ≥ − 3
+ x≥−
+2
+2
+(2)
+x = 2y and x2 −5xy = −24
+1.3
+(
+2y
+)2
+−5
+(
+2y
+)(
+y
+)
+= −24
+ substitution of 2y
+4y2 −10y2 = −24
+−6y2 = −24
+ −6y2 =−24
+y2 = 4
+y = −2 or y = 2  both y – values
+x = −4 or x = 4  both x– values
+(4)
+OR/OF
+x=2y and x2 −5xy=−24
+x x
+y=  substitution of
+2 2
+x
+x2 −5 ( x )  =−24
+2
+5
+x2 − x2 =−24
+2 3
+ − x2 =−24
+3
+− x2 =−24 2
+2
+x2 =16
+x=−4 or x=4
+ both x – values
+y=−2 or y=2  both y – values (4)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 5 =====
+Mathematics/P1 5 DBE/November 2016
+NSC – Memorandum
+x x2 +24
+ equating =
+2 5x
+x = 2y and x2 −5xy = −24
+x
+y =
+2
+−x2 −24
+y =
+−5x
+x x2 +24
+=
+2 5x
+5x2 = 2x2 +48  3x2 = 48
+3x2 = 48
+x2 =16  both x – values
+ both y – values (4)
+x = −4 or x = 4
+y = −2 or y = 2
+[24]
+QUESTION/VRAAG 2
+2.1 T = −7  –7
+4
+(1)
+2.2 T = a+(n−1)d
+n
+ a = 5 and d = –4
+−87 =5+(n−1)(−4)
+−87 =5−4n+4  −87=5+(n−1)(−4)
+4n =96
+n = 24  n = 24
+(3)
+OR/OF
+ –4n + 9
+−4n+9= −87
+ −4n+9=−87
+−4n = −96
+n = 24  n = 24
+(3)
+2.3 −3;−7;.......;−87
+n
+[ ]
+S = a+T
+n n
+2
+ n = 22
+22
+S = [ −3−87 ]  a = –3
+22
+2
+= −990  answer
+(3)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 6 =====
+Mathematics/P1 6 DBE/November 2016
+NSC – Memorandum
+−3;−7;.......;−87
+n
+[ ( ) ]
+S = 2a+ n−1d
+n
+2
+22
+S = [ 2(−3)+ ( 22−1 )( −4 )]  n = 22
+22
+2  a = –3
+= −990  answer
+(3)
+OR/OF
+All negative terms can be written down and added to get the
+answer of –990./Alle negatiewe terme kan neergeskryf word
+en dan bymekaar getel word om –990 te kry. a = –3
+ answer (3)
+OR/OF
+Sum = S −(5+1) 24 [ ]
+24  5−87
+24
+= [ 5−87 ] −6 2
+2  –6
+= −990
+ answer
+(3)
+2.4 5;−15;−35......
+d = −20  d = –20
+T = −20n+25 T =−20n+25
+n  n
+Last term in the sequence divisible by 5 is:/Laaste term in
+die ry deelbaar deur 5 is:
+−4187+4(3)
+= −4175
+T = −20n+25
+n
+−4175 = −20n+25
+ −4175=−20n+25
+20n = 4200
+n = 210  n=210
+There will be 210 terms in the sequence that is divisible
+by 5./Daar is 210 terme in die ry deelbaar deur 5. (4)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 7 =====
+Mathematics/P1 7 DBE/November 2016
+NSC – Memorandum
+5 ; 1 ; –3 ; ... ; –83 ; –87; ……; – 4187
+T = −4n+9  −4n+9=−4187
+n
+−4187 = −4n+9
+4n = 4196  n=1049
+n =1049
+There are 1049 terms in the sequence./Daar is 1049 terme
+in die ry.
+T ;T ;T ;T ... are divisible by 5./is deelbaar deur 5.
+1 6 11 16
+The largest integer value of k such that  5k −4≤1049
+5k −4≤1049
+5k ≤1053
+k ≤ 210,6
+ k = 210
+k = 210
+(4)
+OR/OF
+5 ; 1 –3 ; –7 ; … ; –4175; –4179 ;–4183 ; –4187
+( )
+T = a+ n−1d
+n ( )( )
+−4175=5+ n−1 −4
+( )  d = –4
+−4180= −4 n−1
+n =1046
+ −4175= −4n+9
+ 1046
+Number of terms divisible by 5
+1046−1
+= +1
+5
+= 210
+ n=210
+(4)
+[11]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 8 =====
+Mathematics/P1 8 DBE/November 2016
+NSC – Memorandum
+QUESTION/VRAAG 3
+3.1.1 – 1 ; x ; 3 ; x + 8 ; ...
+–1 x 3 x +8
+ x+1;3−x and x+5
+x + 1 3 – x x + 5
+ calculating second
+–2 x + 2 2x + 2
+differences
+ −2x+2 = 2x+2
+−2x+2= 2x+2
+4x =0
+ x = 0 (4)
+x =0
+3.1.2 First differences/Eerste verskille: 1 ; 3 ; 5 ; ……
+n
+[ ( ) ( )( )]
+S = 21 + n−1 2
+n 2 S = n2
+n
+= n2
+250< n2
+ S > 250
+n
+n > 250
+∴n >15,8  n >15,8
+The sum of the 16 first differences will be greater than 250.
+Therefore the 17th term of the quadratic number pattern is the
+ n = 17
+first satisfying this condition./Die som van 16 eerste verskille
+sal groter as 250 wees. Gevolglik sal die 17de term van die (4)
+kwadratiese getalpatroon die eerste wees wat aan die
+voorwaarde voldoen.
+3.2.1 21+21 ( 0,85 ) +21 ( 0,85 )2 +.........
+17
+T = arn−1  n = 10 ; r = 0,85 or
+n 20
+T =
+(
+21
+)(
+0,85
+)9
+ substitution into correct
+10
+= 4,86 cm formula
+ answer
+(3)
+( )
+3.2.2 a1−rn
+S =
+n 1−r
+( )  n = 15
+211−
+(
+0,85
+)15
+S =
+15 1−0,85
+=127,77  127,77
+Area of the page = 30 x 21 = 630
+ 630
+Percentage of paper covered in grey ink:
+127,77
+= ×100%
+630
+ 20,28
+= 20,28%
+(4)
+[15]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 9 =====
+Mathematics/P1 9 DBE/November 2016
+NSC – Memorandum
+QUESTION/VRAAG 4
+4.1 y = 0  y = 0
+(1)
+4.2 R(0 ; 1)  answer
+(1)
+4.3 y = ax
+9 = a2
+ substitution
+∴a = 3  a = 3
+(2)
+DP = 2 – b
+4.4
+y =3x
+1
+=3b 1 b
+81  =3
+81
+3−4 =3b
+ 3−4 or use of logs
+b = −4  b = −4
+DP = 2−(−4)
+=6 units  DP = 6 units
+(4)
+4.5 h(x+2)+k =0
+h(x+2) = −k
+0< −k <
+1
+ −k <
+1
+or k > −
+1
+81 81 81
+1 1
+− < k <0  − <k <0
+81 81
+(3)
+[11]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 10 =====
+Mathematics/P1 10 DBE/November 2016
+NSC – Memorandum
+QUESTION/VRAAG 5
+5.1 f ( x ) = −x2 +4x−3
+4
+f ′( x ) =0 or x = −  −2x+4=0 or
+( )
+2 −1
+4
+−2x+4= 0 x= 2
+x=−
+( )
+2 −1
+x = 2
+y = − ( 2 )2 +4 ( 2 ) −3  y =− ( 2 )2 +4 ( 2 ) −3
+=1 (2)
+( )
+B 2;1
+OR/OF
+−x2 +4x−3=0
+x2 −4x+3=0
+( )( )
+x−3 x−1 =0
+x =3 or x =1
+3+1 3+1
+x =  x=
+2 2
+x = 2
+y = −
+(
+2
+)2
++4
+(
+2
+)
+−3  y =− ( 2 )2 +4 ( 2 ) −3
+=1
+(2)
+B(2 ; 1)
+5.2 Range/Waardeversameling : y≤1  y ≤1
+OR/OF (1)
+Range/Waardeversameling : y∈(−∞;1]  (−∞ ;1]
+(1)
+5.3 x≤−1 or x>2  critical values
+ x≤−1 or x>2
+OR/OF (2)
+( −∞ ; −1 ] ∪ ( 2; ∞ )  critical values
+ x≤−1 or x>2
+(2)
+5.4 ( x− p )( y+t ) =3
+Vertical asymptote of h(x) /vertikale asimptoot atx = 2
+ x = −2
+Translation 4 units to the left / Translasie 4 eenhede links
+(1)
+x = 2 – 4 = –2 is the equation of the vertical asymptote of
+h(x + 4)
+x = 2 – 4 = –2 is die vergelyking van die vertikale asimptoot
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 11 =====
+Mathematics/P1 11 DBE/November 2016
+NSC – Memorandum
+OR/OF
+3
+( )
+h x = +1
+x−2+4
+3
+= +1
+x+2
+x = −2
+is the equation of the vertical asymptote / is die vergelyking  x = −2
+van die vertikale asimptoot (1)
+( )( )
+5.5 x− p y+t =3
+3
+( )
+y+t =
+( )
+x− p
+3
+
+3
+y = −t x− p
+x− p  −t
+( )
+B 2;1
+Point of intersection of the asymptotes
+Snypunt van die asimptote
+p = 2  p=2
+−t =1
+t = −1  t = −1
+(4)
+5.6 x-intercepts of f / x-afsnitte van f :
+x2 −4x+3=0
+( )( )
+x−3 x−1 =0
+ both critical values
+x=1 or x=3
+g/(
+x
+)
+<0for x∈R; x ≠ 2
+( )
+Hence f x <0
+( ] [ )
+ x≤1
+x ≤1 or x ≥3 OR/OF −∞ ;1 ∪ 3; ∞
+ or
+ x≥3
+(4)
+[14]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 12 =====
+Mathematics/P1 12 DBE/November 2016
+NSC – Memorandum
+QUESTION/VRAAG 6
+6.1 y
+g:
+shape: increasing curve
+3 g (1 ; 0):
+only on log graph
+x f:
+0 1 3
+(3 ; 0)
+f
+(0 ; 3)
+(4)
+6.2 y =log x
+2
+ interchange x and y
+g−1: x =log y
+2  y = 2x
+y =2x
+(2)
+( )
+6.3 log 3−x = x
+2
+2x =3−x
+2x =−x+3
+2x = −x+3
+Reflect the graph of g about the line y = x to obtain
+g−1and
+determine the point of intersection of f and g−1./ Reflekteer die  point of intersection of
+grafiek van g om die lyn y = x en bepaal die snypunt van f and f and g−1
+g−1 (3)
+6.4 x =1  answer (1)
+[10]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 13 =====
+Mathematics/P1 13 DBE/November 2016
+NSC – Memorandum
+QUESTION/VRAAG 7
+7.1 A = P(1+i)n
+2
+= 250000  1+ 0,15   substituting i and n
+ 12  values in correct
+= R256 289,06 formula
+ answer
+(2)
+[ ]
+7.2 x1− ( 1+i )−n
+P =
+i
+0,15
+ −46  i =
+ 0,15
+x1−1+   12
+  12    n = 46
+256 289,06=
+0,15
+ substitution into
+correct formula
+12
+ −46
+ 0,15
+3203,6133= x1−1+  
+  12  
+ answer
+x = R 7 359,79 per month
+(4)
+OR/OF
+0,15
+−2 −46
+ i =
+ 0,15  0,15 12
+x1+  1−1+  
+ 12    12    n = 46
+250000 =  substitution into
+0,15
+correct formula
+12
+x = R 7359,79  answer
+(4)
+7.3  −n
+ 0,15
+9 0001−1+   x = 9 000
+  12  
+256 289,06=
+0,15  substitute into correct
+12 formula
+−n
+ 0,15
+1+  =0,6440429722
+ 12 
+ 0,15  use of logs
+−nlog1+  =log0,6440429722
+ 12 
+ n =35,42
+n =35,41872568 months/ maande
+∴36 payments are required
+∴36 paaiemente moet betaal word
+∴Thabiso will pay his loan off 10 months sooner./Thabiso los  10 months
+sy lening 10 maande vroeër af.
+(5)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 14 =====
+Mathematics/P1 14 DBE/November 2016
+NSC – Memorandum
+ n 
+ 0,15
+90001+  −1
+ 0,15 n   12    9 000
+256289,061+  =
+ 12  0,15
+12  substitute into correct
+n n formula
+ 0,15  0,15
+3203,613251+  =90001+  −9000
+ 12   12 
+ 0,15
+n
+9000=5796,386751+ 
+ 12 
+ use of logs
+n =log 1,5523691425
+ 0,15
+1+ 
+ 12   n =35,42
+n =35,41872568
+∴36 payments are required
+∴36 paaiemente moet betaal word
+∴Thabiso will pay his loan off 10 months sooner./Thabiso los  10 months
+sy lening 10 maande vroeër af.
+(5)
+7.4 The balance of his loan after the 35th payment was made:
+Die balans van sy lening nadat die 35ste paaiement betaal is:
+ 35 
+ 0,15
+9000  1+  −1  35
+ 0,15 35    12     256289,06  1+ 0,15  
+Balance=256289,061+  −  12 
+ 12  0,15
+12  9000        1+ 0 1 ,1 2 5   35 −1    
+=R 3 735,45
+0,15
+12
+ 0,15
+Final instalment =3735,451+   0,15
+ 12 
+ 3735,451+ 
+ 12 
+=R 3 782,14
+ answer
+OR/OF
+(4)
+[ ]
+x1−
+(
+1+i
+)−n
+P =
+i
+Final instalment
+ 0,41872568
+ −0,41872568
+9 000
+
+
+
+1−
+
+ 1+ 0
+1
+,1
+2
+5 
+
+
+
+
+ 0,15
+ 9000
+
+
+
+ 1−
+
+ 1+ 0
+1
+,1
+2
+5 
+
+−0,41872568
+
+
+
+
+= 1+  0,15
+0,15  12  12
+12  0,15
+ ×1+ 
+= R3 782,14  12 
+ answer
+(4)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 15 =====
+Mathematics/P1 15 DBE/November 2016
+NSC – Memorandum
+9000 
+
+
+
+1+
+0,15
+
+ 36
+−1 
+ 
+256289,06
+
+1+
+0,15
+
+ 36
+   12 
+ 0,15 36   12  
+Balance= 256289,061+  −  0,1536 
+ 12  0,15  9000      1+ 12   −1   
+12 0,15
+= R −5 217,86 12
+ 9000−5217,86
+Final payment =9000−5217,86
+ answer
+= R 3 782,14
+(4)
+[15]
+QUESTION/VRAAG 8
+8.1 f(x+h)=3(x+h)2  3(x+h)2
+=3(x2 +2xh+h2)
+=3 x2 +6xh+3h2
+f(x+h)− f(x)=3 x2 +6xh+3h2 −3x2
+ 6xh+3h2
+= 6xh+3h2
+f(x+h)− f(x)
+f ′(x)=lim
+h→0 h  f′(x)=lim f(x+h)− f(x)
+h→0 h
+6xh+3h2
+=lim
+h→0 h
+h(6x+3h)  lim ( 6x+3h )
+=lim
+h→0
+h→0 h
+( )
+=lim 6x+3h
+h→0
+6x
+=6x
+(5)
+OR/OF
+f(x+h)− f(x)
+f ′(x)=lim
+h→0 h  f/(x)=lim f(x+h)− f(x)
+h→0 h
+3(x+h)2 −3x2
+=lim
+h→0 h  3(x+h)2 −3x2
+3 x2 +6xh+3h2 −3x2
+=lim
+h→0 h
+6xh+3h2  6xh+3h2
+=lim
+h→0 h
+h(6x+3h)
+=lim  lim ( 6x+3h )
+h→0 h h→0
+( )
+=lim 6x+3h
+h→0  6x
+=6x (5)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 16 =====
+Mathematics/P1 16 DBE/November 2016
+NSC – Memorandum
+8.2 4+h −2
+lim
+h→0 h
+ answer
+g(x)= x
+ answer
+a =4 (2)
+8.3 5 3
+y = x3 −
+x3
+ x2
+ −5x−3
+3
+y = x2 −5x−3 3 1
+ x2
+dy 3 1 2
+= x2 +15x−4
+ 15x−4
+dx 2
+(4)
+f(x)= x3 +ax2 +bx+18
+8.4
+f /( x ) =3x2 +2ax+b  3x2 +2ax+b
+At x = 1, m =−8
+tan
+f
+/(
+1
+)
+= −8  f /( 1 ) =−8 or
+3
+(
+1
+)2
++2a
+(
+1
+)
++b = −8
+3+2a+b = −8 3
+(
+1
+)2
++2a
+(
+1
+)
++b=−8
+2a+b = −11 ..........(1)
+y = f
+(
+1
+)
+( )
+= g 1
+( )
+= −81 +20
+=12
+ 1+a+b+18=12
+1+a+b+18=12
+a+b = −7............(2)
+a = −4  a =−4
+b = −3  b=−3
+(5)
+[16]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 17 =====
+Mathematics/P1 17 DBE/November 2016
+NSC – Memorandum
+QUESTION/VRAAG 9
+9.1 f′(
+x
+)
+= 3x
+2
++8x−3= 0
+ equating derivative to
+zero
+( )( )
+3x−1 x+3 = 0
+ factors
+1  x – values
+x = or x = −3
+(3)
+3
+f //(x) =6x+8  6x+8
+9.2
+6x+8<0
+4
+4
+x<−
+x < − 3
+3
+(3)
+OR
+1
+1
+−3
+−3
+x = 3  3
+2 2
+4
+=
+3
+4
+∴x < −
+4
+3 x<−
+3
+(3)
+1  x≤−3
+9.3 x ≤ −3 or x ≥
+3 1
+ x≥ (2)
+OR/OF 3
+
+[
+−∞;−3
+]
+1 
+[ −∞;−3 ] ∪ ;∞ 1 
+   ;∞ (2)
+3   
+3 
+( )
+9.4 f 0 =−18
+d =−18
+ d =−18
+f(x)=ax3 +bx2 +cx−18
+ f′( x ) =3ax2 +2bx+c
+f′( x ) =3ax2 +2bx+c
+f′( x ) =3x2 +8x−3
+ a = 1
+3a =3 2b=8
+ b = 4
+a =1 b=4 c =−3
+ c = –3
+f ( x ) = x3 +4x2 −3x−18 (5)
+OR/OF
+f′( x ) =3x2 +8x−3
+ f ( x ) = x3 +4x2 −3x+d
+By integration/Deur integrasie
+f ( x ) = x3 +4x2 −3x+d
+d =−18
+f(0) = d = −18
+ a = 1
+a =1
+ b = 4
+b = 4  c = –3
+c = −3 (5)
+[13]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 18 =====
+Mathematics/P1 18 DBE/November 2016
+NSC – Memorandum
+QUESTION/VRAAG 10
+10.1 M ( t ) = −t3 + 3t2 +72t
+M
+(
+3
+)
+= −
+(
+3
+)3+
+3
+(
+3
+)2
++72
+(
+3
+) M ( 3 )=−( 3 )3 + 3 ( 3 )2 +72 ( 3 )
+= 216  216
+(2)
+216 molecules/molekules
+10.2 M ( t ) = −t3 +3t2 +72t
+M/( t ) = −3t2 +6t +72  M/( t ) =−3t2 +6t+72
+M/(
+2
+)
+= −3
+(
+2
+)2
++6
+(
+2
+)
++72  M/( 2 )
+=72  72
+(3)
+72 molecules per hour/molekules per uur
+10.3 M ( t ) = −t3 + 3t2 +72t
+ M//(t)
+M/(t)= −3t2 +6t+72
+ M//(t) =0
+M//(t) =0
+−6t+6 =0
+ answer
+t =1
+Maximum rate of change of the number of molecules of the
+drug in the bloodstream is after 1 hour./Maksimum tempo
+van verandering van die getal molekules in die bloedstroom
+is na 1 uur (3)
+[8]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 19 =====
+Mathematics/P1 19 DBE/November 2016
+NSC – Memorandum
+QUESTION/VRAAG 11
+11.1
+Watches TV Do not watch Total
+during exams TV during
+exams
+Male 80 a 80+a
+Female 48 12 60
+Total b 32 160
+a+12=32
+a =20 a = 20
+b=80+48
+b = 128
+=128
+(2)
+11.2 No No
+20
+P(M and not watching TV) = ≠ 0
+reason
+160
+(2)
+128 4 128
+( )
+11.3.1 P watching TV = = =0,8=80% 160
+160 5
+(2)
+12 3
+( )
+11.3.2 P female and not watching TV = = =0,075=7,5%  12
+160 40
+160
+(2)
+[8]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 20 =====
+Mathematics/P1 20 DBE/November 2016
+NSC – Memorandum
+QUESTION/VRAAG 12
+12. We want to create codes that are even numbers greater than 5000.
+The digit 6 can be used in one of two places in these codes and
+therefore this presents two scenarios.
+Ons wil kodes kry wat ewe getalle groter as 5000 is. Die syfer 6
+kan in twee posisies in die kode gebruik word en twee opsies is
+moontlik:
+CASE 1: The first digit is a 6./Die eerste syfer is’n 6.
+2
+6
+4
+ 1 × 5 × 4 ×2
+1 × 5 × 4 × 2
+ 40
+Number of codes starting with 6./Getal kodes wat met 6 begin.
+= 1 × 5 × 4 ×2 = 40
+CASE 2: The first digit is a 5 or 7./Die eerste syfer is’n 5 of 7.
+2
+5
+4
+7
+6
+2 × 5 × 4 × 3
+Number of codes not starting with 6./Getal kodes wat nie met 6
+begin = 2 × 5 × 4 ×3 = 120
+ 2 × 5 × 4 ×3
+ 120
+Therefore total number of possible codes./Die totale getal
+moontlike kodes = 40 + 120 = 160.
+ 160
+[5]
+OR/OF
+( ) ( ) ( )  ( 3×5×4×1 )
+3×5×4×1 + 3×5×4×1 + 2×5×4×1
+ ( 3×5×4×1 )
+= 60 + 60 + 40
+ ( 2×5×4×1 )
+= 160
+ 160
+[5]
+OR/OF
+( ) ( )
+ ( 3×5×4×3 )
+3×5×4×3 − 1×5×4×1
+ ( 1×5×4×1 )
+= 180−20
+= 160  160
+[5]
+TOTAL/TOTAAL: 150
+Copyright reserved/Kopiereg voorbehou

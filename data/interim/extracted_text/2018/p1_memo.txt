@@ -1,0 +1,889 @@
+
+===== Page 1 =====
+NATIONAL
+SENIOR CERTIFICATE/
+NASIONALE SENIOR
+SERTIFIKAAT
+GRADE 12/GRAAD 12
+MATHEMATICS P1/WISKUNDE V1
+NOVEMBER 2018
+MARKING GUIDELINES/NASIENRIGLYNE
+MARKS: 150
+PUNTE: 150
+These marking guidelines consist of 18 pages.
+Hierdie nasienriglyne bestaan uit 18 bladsye
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 2 =====
+Mathematics P1/Wiskunde V1 2 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+NOTE:
+• If a candidate answers a question TWICE, only mark the FIRST attempt.
+• Consistent Accuracy applies in all aspects of the marking memorandum.
+LET WEL:
+• Indien ’n kandidaat ’n vraag TWEE keer beantwoord, merk slegs die EERSTE poging.
+• Volgehoue akkuraatheid is op ALLE aspekte van die nasienriglyne van toepassing.
+QUESTION/VRAAG 1
+1.1.1 x2 −4x+3=0
+(x−3)(x−1) =0 factors/correct subt in
+formula
+x =3 or x =1
+x =3
+x =1
+(3)
+1.1.2 5x2 −5x+1=0
+−b± b2 −4ac
+x =
+2a
+5± 25−4(5)(1) substitution into the correct
+=
+formula
+2(5)
+5± 5
+=
+10
+x = 0,72 or x = 0,28 x = 0,72
+x = 0,28
+(3)
+1.1.3 x2 −3x−10>0
+factors/ critical values
+(x−5)(x+2) > 0
+OR/OF
+–2 5
++ – +
+– 2 5
+x < −2 or x >5 x < −2 or x >5
+(3)
+1.1.4 3 x = x−4
+ squaring both sides
+9x= x2 −8x+16
+x2 −17x+16=0  x2 −17x+16=0
+(x−16)(x−1)=0  factors
+x=16 or x=1  answer with
+NA selection
+(4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 3 =====
+Mathematics P1/Wiskunde V1 3 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+OR/OF OR/OF
+1
+3x2 = x−4
+1
+x−3x2 −4=0  standard form
+2
+ 1  1   1 
+    
+x2 −4 x2 +1 =0  recognize x= x2
+    
+    
+1 1  factors
+x2 = 4 or x2 = −1
+x = 16 NA  answer with selection
+(4)
+1.2 2y+9x2 = −1......(1)
+3x− y = 2 ...... (2)
+y =3x−2 .......(3)  y =3x−2
+2(3x−2)+9x2 =−1 substitution
+6x−4+9x2 =−1
+9x2 +6x−3=0
+ standard form
+3x2 +2x−1=0
+(3x−1)(x+1)=0
+factors
+1
+x = or x = −1
+both x values
+3
+y =−1 or y =−5
+both y values
+(6)
+OR/OF OR/OF
+2y+9x2 = −1......(1)
+3x− y = 2 ...... (2)
+y+2 y+2
+x = x =
+3 3
+ y+2 2
+2y+9  = −1 substitution
+ 3 
+ y2 +4y+4
+2y+9  = −1
+ 
+ 9 
+2y+ y2 +4y+4+1=0
+y2 +6y+5=0  standard form
+factors
+(y+5)(y+1) =0
+y =−1 or y =−5 both y values
+x = 1 or x = −1 both x values
+3
+(6)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 4 =====
+Mathematics P1/Wiskunde V1 4 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+1.3 3 9x =64
+( )3
+3 3x =(4) 3  33x =4
+3 3x = 4
+5 p =64
+p
+5 = 64
+p
+ 5 =8
+p
+5 =8
+[ ]
+x−1 3 3x−3 3x −3
+3 3 3 .3
+p = p OR/OF = p 3 3x−3 or 3 3x .3 −3
+5 5
+5 2
+33x 3 64.3−3
+= =
+27× 5 p 64
+4
+=
+27×8
+1
+= answer
+54
+(4)
+OR/OF
+OR/OF
+(
+3
+x−1
+)3
+3
+3x
+.3
+−3
+=
+p ( ) p
+5 5 0.5
+3 3x .3 −3  3 3x−3 or 3 3x .3 −3
+=
+0.5
+ p 
+5 
+ 
+−3
+4.3
+=  33x =4
+64
+p
+ 5 =8
+1
+4.
+27 1
+= = answer
+8 54
+(4)
+[23]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 5 =====
+Mathematics P1/Wiskunde V1 5 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 2
+2.1.1 42 answer
+(1)
+2.1.2 2a = 6 3a + b = 1 a + b + c = 2  a = 3
+a = 3 3(3) + b = 1 (3) + (–8) + c = 2  b = –8
+b = –8 c = 7  c = 7
+T =3n2 −8n+7 T =an 2 +bn+c
+n n
+(4)
+OR/OF OR/OF
+2a = 6
+a = 3  a = 3
+T =3n 2 +bn+c
+n
+T :3+b+c =2 b+c =−1 ......(1)
+1
+T :12+2b+c =3 2b+c =−9 ......(2)
+2
+T – T : b = – 8  b = –8
+2 1
+Subst. in (1): – 8 + c = – 1
+c = 7  c = 7
+T =3n2 −8n+7 T =an 2 +bn+c (4)
+n n
+2.1.3 T =3(20)2 −8(20)+7 substitution
+20
+= 1047 answer (2)
+2.2 T =−7n+42 T =−7n+42
+n n
+−7n+42=−140 −7n+42=−140
+−7n=−182
+n=26 n=26
+(3)
+2.3 S = n ( a+l ) OR/OF S = n [ 2a+ ( n−1 ) d ]
+n 2 n 2
+n
+S n = n 2 ( 35−7n+42 ) S n = n 2 ( 70−7n+7 ) S n = 2 ( 35−7n+42 ) or
+n
+( )
+n ( ) S = 70−7n+7
+S = −7n+77 n 2
+n 2
+7 77
+S =− n2 + n
+n 2 2 simplification of S
+n
+7 77 equating
+− n2 + n =3n2 −8n+7
+2 2
+13n2 −93n+14=0 standard form
+factors
+(n−7)(13n−2)=0
+2
+n=7 or n=
+13 answer with
+NA
+selection (6)
+∴n =7
+[16]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 6 =====
+Mathematics P1/Wiskunde V1 6 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 3
+3.1 1
+r = and S =6
+∞
+2
+a
+S =
+∞ 1−r
+a
+6= substitution
+1
+1−
+2
+a = 3 answer
+(2)
+3.2 T =arn−1
+n
+7
+1
+T =3  1 7
+8 2  T =3 
+8 2
+3
+T =
+8 128
+(2)
+3.3 n 1−k
+∑3 ( 2 ) =5,8125
+k=1
+3 3
+3+ + +...=5,8125
+2 4
+a(1−rn)
+S = = 5,8125
+n 1−r
+1
+ 1 n  r =
+31−   2
+ 2  substitution
+= 5,8125
+1
+1−
+2
+ n
+1
+61−  =5,8125
+ 2 
+n
+1 1
+  = = 0,03125 simplification
+2 32
+2−n =2−5 or nlog
+1
+=log
+1
+2 32
+n = 5 n=5 answer
+(4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 7 =====
+Mathematics P1/Wiskunde V1 7 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+3.4 20
+∑3(2)1−k = p
+k=1
+3 3
+3+ + +........+3.2−19 = p expansion
+2 4
+20
+∑24(2)−k
+k=1
+=12+6+3+.....+24.2−20  expansion
+ 3 3 
+=43+ + +.....+3.2−19
+ 2 4 
+= 4p  answer (3)
+OR/OF
+OR/OF
+20
+∑3(2)1−k = p ∑ 20 6(2)−k = p
+k=1
+k=1
+20
+∑6(2)−k = p
+20
+k=1  ∑4×6(2) −k
+20
+∴∑24(2)−k =4p k=1
+4p
+k=1
+(3)
+OR/OF OR/OF
+2 ∑ 0 24(2) −k = 2 ∑ 0 4×3×2(2) −k  2 ∑ 0 4×3×2(2) −k
+k=1 k=1 k=1
+= 4 2 ∑ 0 3×2(2) −k 4 2 ∑ 0 3×2(2) −k
+k=1 k=1
+20
+= 4∑3×(2)
+1−k
+= 4p 4p
+k=1
+(3)
+OR/OF
+OR/OF
+
+1
+20 
+ 
+3   −1
+ 2 
+S =   = 6= p  substitution and answer
+20 1
+−1
+2
+ 20 
+1
+ 
+12   −1
+  2   substitution and answer
+S = = 24
+20 1
+−1
+2
+24 = 4×6 = 4p
+4p
+(3)
+[11]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 8 =====
+Mathematics P1/Wiskunde V1 8 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 4
+4.1 Yes answer
+For every x-value there is only one corresponding y value reason
+OR/OF
+One to one mapping (vertical line test) (2)
+4.2 R(–12 ; –6) answer (1)
+4.3 f(x) = ax2 substitute (−6;−12)
+substitution
+−12=a(−6)2
+−1
+answer
+a =
+3 (2)
+4.4 1
+f : y =− x2
+3
+1
+f −1:x =− y2 swapping x and y
+3
+y2 =−3x  y2 =−3x
+y = ± −3x
+Only y = − −3x and x ≤ 0  y = − −3x
+(3)
+[8]
+QUESTION/VRAAG 5
+5.1 Domain: x∈R ; x ≠1 answer
+OR/OF (1)
+x∈(−∞;1)∪(1;∞)
+5.2 x =1 x = 1
+y =0 y = 0 (2)
+5.3
+y
+ y intercept
+1 vertical asymptote
+O 1 x shape
+(3)
+5.4 x≥0 ; x ≠1 x ≥ 0
+x ≠1 (2)
+OR/OF OR/OF
+0 ≤ x < 1 or x > 1  0 ≤ x < 1
+OR/OF  x > 1
+x∈[0;1)∪(1;∞)
+[8]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 9 =====
+Mathematics P1/Wiskunde V1 9 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 6
+6.1 y = mx+c
+5−1
+m=
+substitution into
+4−0
+gradient formula
+m=1
+y-intercept (0 ; 1)
+c =1
+(2)
+g(x)= x+1
+OR/OF
+OR/OF
+y = mx+c
+substitute (4 ; 5)
+5= m(4)+1
+c = 1
+m = 1
+(2)
+g(x)= x+1
+6.2 x2 −2x−3=0
+(x+1)(x−3)=0 y = 0
+factors
+x = −1 or x =3
+x-values (3)
+A(–1 ; 0) B(3 ; 0)
+6.3 −1+3 −b −(−2)
+x = or x = = or f / (x) = 2x−2=0
+2 2a 2(1)
+x -value
+x =1
+f(x) = x2 −2x−3
+y = ( 1 )2 −2 ( 1 ) −3 or y =(x 2 −2x+(−1) 2 )−3−1  substitution/
+completing the square
+y = −4 = (x−1) 2 −4
+y ≥ −4 or [−4;∞)  answer
+(3)
+6.4.1 MN: y =(x2 −2x−3)−(x+1)
+= x2 −3x−4 x 2 −3x−4
+substituting y = 6
+6= x2 −3x−4
+0= x2 −3x−10
+0=(x−5)(x+2)
+x = 5 or x = –2 values of x
+OT = 2 or OT = 5  OT = 2
+NA (4)
+6.4.2 y = x+1substitute x =−2 substituting x = –2
+= (–2) + 1
+= –1
+N(–2 ; –1) answer (2)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 10 =====
+Mathematics P1/Wiskunde V1 10 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+6.5 f′(x)=2x−2  f′(x)=2x−2
+2x−2=1 2x−2=1
+3 3
+x = x =
+2 2
+3 −15 3 −15
+f =  f =
+2 4 2 4
+15  3 15 1
+y+ =1x−  or − = +c
+4  2 4 2
+21
+y = x− answer
+4
+(5)
+OR/OF
+OR/OF
+x 2 −2x−3= x+ p equating
+x 2 −2x−3−x− p =0
+This equation will have equal roots, therefore: equal roots
+b 2 −4ac =0
+(−3) 2 −4(1)(−3− p)=0  substitution
+9+12+4p =0 simplification
+−21
+p =
+4
+21
+y = x− answer (5)
+4
+6.6 −21 answer
+k <
+(1)
+4
+[20]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 11 =====
+Mathematics P1/Wiskunde V1 11 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 7
+7.1.1 x[(1+i)n −1]
+F =
+i
+0,088
+  0,088 16   and n = 16
+15 0001+  −1 4
+  4   substitution into
+F =
+0,088 correct formula
+4
+F = R283 972,28
+answer
+(3)
+7.1.2 4  future value – amount
+ 0,088
+A = R283 972,28−1000001+  including interest
+ 4 
+4
+ 0,088
+= R 174 877,60 1000001+ 
+ 4 
+answer
+(3)
+OR/OF OR/OF
+Amount at end of 3 years:
+ 12 
+ 0,088
+15 0001+  −1
+F =
+  4  
+−100000  R15 000 including interest
+0,088 – R100 000
+4
+= R103 459,12
+Amount at end of 4 years:
+x[(1+i)n −1]
+P(1+i)n +
+i
+ 4 
+ 0,088
+4
+150001+  −1  0,088
+=103459,12  1+ 0,088   4 +    4      1+ 4   on P and x in F v
+ 4  0,088 method
+4
+= R 174 877,60
+(3)
+[ ]
+7.2.1 x1− ( 1+i )−n
+P =
+i
+ −12×20
+ 0,105
+0,105
+x1−1+   i =
+  12   12
+1500000=
+0,105 n =240
+ substitution into
+12
+correct formula
+x = R14 975,70
+ answer
+(4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 12 =====
+Mathematics P1/Wiskunde V1 12 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+[ ]
+7.2.2 x1− ( 1+i )−n
+P = R14 975,70 in P -formula
+i v
+n=96
+ −12×8
+ 0,105
+14 975,701−1+  
+  12    substitution into
+P =
+correct formula
+0,105
+12
+ answer
+P =R969 927,74
+(5)
+OR/OF
+OR/OF
+Balance outstanding = A – F
+ 144 
+ 0,105
+14 975,701+  −1
+ 0,105 144   12  
+=1500 0001+  –  n = 144 in A-formula
+ 12  0,105
+n=144 in F -formula
+v
+12
+ R14 975,70
+ A – F
+= R5 259 229,61– R4 289 302,47
+= R969 927,14
+ answer
+(5)
+[15]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 13 =====
+Mathematics P1/Wiskunde V1 13 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 8
+8.1 f(x+h)− f(x)
+f'(x)=lim
+h→0 h
+x2 +2xh+h2 −5−x2 +5
+x2 +2xh+h2 −5
+=lim simplification
+h→0 h
+h(2x+h)
+=lim factorisation
+h→0 h
+=lim (2x+h) lim(2x+h)
+h→0
+h→0
+= 2x 2x
+(5)
+OR/OF
+OR/OF
+f(x+h) = (x+h)2 −5
+= x2 +2xh+h2 −5 x2 +2xh+h2 −5
+f(x+h)− f(x) = x2 +2xh+h2 −5−(x2 −5)
+= 2xh+h2
+simplification
+f(x+h)− f(x)
+f ′(x) = lim
+h→0 h
+2xh+h2
+= lim
+factorisation
+h→0 h
+h(2x+h)
+= lim
+h→0 h
+lim(2x+h)
+= lim(2x+h) h→0
+h→0
+= 2x
+2x
+(5)
+8.2.1 y =3x3 +6x2 +x−4
+9x2
+dy
+12x
+=9x2 +12x+1
+1
+dx
+(3)
+8.2.2 y(x−1)=2x(x−1)  y(x−1)
+2x(x−1)  2x(x−1)
+y = if x ≠1
+x−1
+y = 2x  y = 2x
+dy
+= 2
+answer
+dx
+(4)
+[12]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 14 =====
+Mathematics P1/Wiskunde V1 14 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 9
+9.1.1 g(x)=(x+5)(x−x ) 2 (x+5)
+1
+20=5(x )2
+1
+x 2 =4
+1
+x 1 =2 repeated root
+g(x)=(x+5)(x−2)2 x = 2
+1
+g(x)=(x+5)(x2 −4x+4)
+g(x)=(x+5)(x2 −4x+4)
+g(x)= x3 +x2 −16x+20
+(4)
+9.1.2 g(x)= x3 + x2 −16x+20
+derivative
+g′(x)=3x2 +2x−16
+3x2 +2x−16=0 equating to zero
+(3x+8)(x−2)=0 factors
+−8
+x = or x =2
+3
+−8 1372
+R ;  or R(−2,67;50,81) co-ordinates of R
+ 3 27 
+ co-ordinates of P
+P(2;0)
+(5)
+9.1.3 g′′(x)=6x+2  g′′(x)=6x+2
+g′′(0) = 2 g′′(0) = 2
+∴concave up conclusion (3)
+OR/OF OR/OF
+g′′(
+x
+)
+=6x+2 g′′(x)=6x+2
+6x+2=0 1
+x =−
+1 3
+x =− is the point of inflection
+3
+conclusion
+∴concave up
+(3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 15 =====
+Mathematics P1/Wiskunde V1 15 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+9.2
+y
+ y – intercept of a cubic
+graph
+27
+ point of inflection and
+stationary point, x = 3
+ concave up for x <3and
+concave down for x >3
+O 3 x
+(3)
+[15]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 16 =====
+Mathematics P1/Wiskunde V1 16 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 10
+A
+D E
+H
+C
+B F G
+10.1 AH 3
+=
+HG 2  answer (1)
+10.2 Area of a parallelogram = base ×⊥ height
+3 2 2
+Area = (5−t). t  t
+5 5 5
+
+3
+( 5−t )
+6 ( ) 5
+Area = 5−t t
+25
+A ( t ) = − 6 t2 + 6 t A ( t ) = − 6 t2 + 6 t
+25 5 25 5
+12 6
+A/(
+t
+)
+= − t +
+25 5
+12 6
+12 6 − t +
+− t + =0
+25 5
+25 5
+12t −30 =0
+30 5
+t = or
+12 2
+answer
+(5)
+[6]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 17 =====
+Mathematics P1/Wiskunde V1 17 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 11
+11.1.1 75 =16 807  answer (2)
+11.1.2 7×6×5×4×3 7!
+7×6×5×4×3 or
+7! 2!
+= =2520
+2! answer (2)
+11.2 2×7×1= 14  2×7×1 (3)
+[7]
+QUESTION/VRAAG 12
+12.1 P(A or B) = P(A) + P(B)  P(A or B) = P(A) + P(B)
+0,74 = 0,45 + y substitution
+y = 0,29 answer (3)
+12.2
+S
+S
+G
+S
+G
+G
+Let the number of mystery gift bags = x
+The total number of bags = 4x  4x
+ x   x−1  7
+ × =   x   or  1  
+4x 4x−1 118
+4x 4
+1 x−1 7
+× =  x−1 
+ 
+4 4x−1 118
+4x−1
+1 x−1
+x−1 28  ×
+=
+4 4x−1
+4x−1 118
+7
+118x – 118 = 112x – 28
+ equating to
+x = 15 118
+answer (6)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 18 =====
+Mathematics P1/Wiskunde V1 18 DBE/November 2018
+NSC/NSS – Marking Guidelines/Nasienriglyne
+OR/OF OR/OF
+P(gift and gift) = P(gift at first draw) × P(gift at second draw)
+7 1 1
+= ×P(gift at second draw) 
+118 4 4
+1
+ ×P(gift at 2nd draw)
+7 1
+4
+P(gift at second draw) = ÷
+118 4 7 1
+ = ×P(gift at 2nd draw)
+14
+118 4
+=
+59 14
+
+15
+59
+Therefore: P(gift at first draw) =
+60
+15
+
+And: 15 bags had mystery gifts inside
+60
+answer (6)
+[9]
+TOTAL/TOTAAL: 150
+Copyright reserved/Kopiereg voorbehou

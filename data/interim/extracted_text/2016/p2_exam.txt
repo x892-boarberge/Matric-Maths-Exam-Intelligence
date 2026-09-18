@@ -1,0 +1,371 @@
+
+===== Page 1 =====
+guy
+= e e
+yl basic education
+oe \2a ema
+4 ro Department:
+O) Basic Education
+REPUBLIC OF SOUTH AFRICA
+NATIONAL
+SENIOR CERTIFICATE
+GRADE 12
+‘ MATHEMATICS P2
+i a
+: NOVEMBER 2016 :
+“fh Ce 9 We ane eels Wwe ee hs es 6 eb ane?
+MARKS: 150
+TIME: 3 hours
+This question paper consists of 14 pages, 1 information sheet
+and an answer book of 28 pages.
+Copyright reserved Please turn over
+
+
+===== Page 2 =====
+Mathematics/P2 2 DBE/November 2016
+NSC
+INSTRUCTIONS AND INFORMATION
+Read the following instructions carefully before answering the questions.
+l. This question paper consists of 10 questions.
+2, Answer ALL the questions in the ANSWER BOOK provided.
+3. Clearly show ALL calculations, diagrams, graphs, et cetera that you have used in
+determining your answers.
+4. Answers only will not necessarily be awarded full marks.
+5. You may use an approved scientific calculator (non-programmable and
+non-graphical), unless stated otherwise.
+6. If necessary, round off answers to TWO decimal places, unless stated otherwise.
+7. Diagrams are NOT necessarily drawn to scale.
+8. An information sheet with formulae is included at the end of the question paper.
+9. Write neatly and legibly.
+Copyright reserved Please turn over
+
+
+===== Page 3 =====
+Mathematics/P2 3 DBE/November 2016
+NSC
+QUESTION 1
+A survey was conducted at a local supermarket relating the distance that shoppers lived from
+the store to the average number of times they shopped at the store in a week. The results are
+shown in the table below.
+ll CTEAEAESESEAES
+er week
+SCATTER PLOT
+TS EDO oe
+Ss 2 g a a ae renee Soe Sees Mees Meee Oe a
+i} 5 —-—_—— Senne Senne eres $$ ++ ——— SEE eo
+E a4 + ! ! ! | |
+s = i a: A: ee |S 2 ee
+< oo
+0 1 2 | 4 5 6 7 8 9 10
+Distance from the store in km
+1.1 Use the scatter plot to comment on the strength of the relationship between the
+distance a shopper lived from the store and the average number of times she/he
+shopped at the store in a week. (1)
+1.2 Calculate the correlation coefficient of the data. (1)
+153 Calculate the equation of the least squares regression line of the data. (3)
+1.4 Use your answer at QUESTION 1.3 to estimate the average number of times that a
+shopper living 6 km from the supermarket will visit the store in a week. (2)
+LS Sketch the least squares regression line on the scatter plot provided in the ANSWER
+BOOK. (2)
+[9]
+Copyright reserved Please turn over
+
+
+===== Page 4 =====
+Mathematics/P2 4 DBE/November 2016
+NSC
+QUESTION 2
+The heights of 160 learners in a school are measured. The height of the shortest learner is
+1,39 m and the height of the tallest learner is 2,21 m. The heights are represented in the
+histogram below.
+.
+Histogram |
+80 44 |
+a 70 |
+3 60 |
+_ |
+5 38
+= 40
+°
+» 30
+ev
+z 10
+0 - — ' em
+1,1 1,3 1,5 ie 19d 2,3 |
+Heights (in m)
+___]
+gol Describe the skewness of the data. (1)
+2.2 Calculate the range of the heights. (2)
+235 Complete the cumulative frequency column in the table given in the ANSWER
+BOOK. (2)
+2.4 Draw an ogive (cumulative frequency curve) to represent the data on the grid
+provided in the ANSWER BOOK. (4)
+ZS Eighty learners are less than x metres in height. Estimate x. (2)
+2.6 The person taking the measurements only had
+a 1,5 m measuring tape available. In order to
+compensate for the short measuring tape, he |
+decided to mount the tape on a wall at a height Ls P
+of 1 m above the ground. After recording the "cei
+measurements he discovered that the tape was |
+mounted at 1,1 m above the ground instead of
+1m. Distance above the ground
+GROUND
+How does this error influence the following:
+2.6.1 Mean of the data set (1)
+2.6.2 Standard deviation of the data set (1)
+[13]
+Copyright reserved Please turn over
+
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2016
+NSC
+QUESTION 3
+In the diagram, A(-7 ; 2), B, C(6;3) and D are the vertices of rectangle ABCD.
+The equation of AD is y= 2x + 16. Line AB cuts the y-axis at G. The x-intercept of
+line BC is F(p; 0) and the angle of inclination of BC with the positive x-axis is a.
+The diagonals of the rectangle intersect at M.
+D ¥
+y=2xt+l6—_» '
+C(6 ; 3)
+ss, 0 F(@ ; 0) *
+G
+B
+Sal Calculate the coordinates of M. (2)
+a2 Write down the gradient of BC in terms of p. (1)
+3.3 Hence, calculate the value of p. (3)
+3.4 Calculate the length of DB. (3)
+3.5 Calculate the size of @ (2)
+3.6 Calculate the size of OGB. (3)
+A Determine the equation of the circle passing through points D, B and C in the form
+(x-a)’ +(y—by =r’. (3)
+3.8 If AD is shifted so that ABCD becomes a square, will BC be a tangent to the
+circle passing through points A, M and B, where M is now the intersection of the
+diagonals of the square ABCD? Motivate your answer. (2)
+[19]
+Copyright reserved Please turn over
+
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2016
+NSC
+QUESTION 4
+In the diagram, M is the centre of the circle passing through T(3; 7), R and S(5;2). RT is
+a diameter of the circle. K(a; 5) is a point in the 4" quadrant such that KTL is a tangent to
+the circle at T.
+L
+Bs
+TC #7)
+R
+S(5 ; 2)
+0 ¥
+K(a; b)
+4.1 Give a reason why TSR =90°. (1)
+4.2 Calculate the gradient of TS. (2)
+43 Determine the equation of the line SR in the form y= mx +c. (3)
+2
+44 The equation of the circle above is (x —9)? + [y - 63) = 36.
+4.4.] Calculate the length of TR in surd form. (2)
+4.4.2 Calculate the coordinates of R. (3)
+4.4.3 Calculate sinR. (3)
+4.4.4 Show that 6 = 12a — 29. (3)
+4.4.5 If TK =TR, calculate the coordinates of K. (6)
+[23]
+Copyright reserved Please turn over
+
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2016
+NSC
+QUESTION 5
+Sel Given: sinl16°=p
+Determine the following in terms of p, without using a calculator.
+ee Al sinl96° (2)
+512 cos 16° (2)
+5.2 Given: cos(A —B) =cosAcosB + sinAsinB
+Use the formula for cos(A -B) to derive a formula for sin(A +B) (3)
+/ 2
+a3 Simplify es completely, given that 0°< A < 90°. (5)
+cos(—A).cos(90° + A)
+SA Given: cos 2B= = and 0°<B<90°
+Determine, without using a calculator, the value of EACH of the following in its
+simplest form:
+5.4.1 cosB (3)
+5.4.2 sinB (2)
+5.4.3 cos (B + 45°) (4)
+[21]
+Copyright reserved Please turn over
+
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2016
+NSC
+QUESTION 6
+In the diagram the graph of f(x) =2sin2x is drawn for the interval x € [—180° ; 180°].
+a
++ oD +
+x
+~180° —9) 90 B0°
+¥
+6.1 On the system of axes on which / is drawn in the ANSWER BOOK, draw the graph
+of g(x)=—cos2x for x € [-180° ; 180°]. Clearly show all intercepts with the axes,
+the coordinates of the turning points and end points of the graph. (3)
+6.2 Write down the maximum value of /(x)-—3. (2)
+G2 Determine the general solution of f(x) = g(x). (4)
+6.4 Hence, determine the values of x for which /(x)< g(x) in the interval
+x € [—180° ; 0°]. (3)
+[12]
+Copyright reserved Please turn over
+
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2016
+NSC
+QUESTION 7
+E is the apex of a pyramid having a square base ABCD. O is the centre of the base.
+EBA = ?, AB=3m and EO, the perpendicular height of the pyramid, is x.
+Volume of pyramid = 5 (area of base) x (1 height)
+E
+ae O 9
+3
+B
+7.1 Calculate the length of OB. (3)
+3
+dz Show that cos@ =—_————
+21” 4: a
+2 (5)
+im If the volume of the pyramid is 15 m° , calculate the value of @. (4)
+[12]
+Copyright reserved Please turn over
+
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2016
+NSC
+Give reasons for ALL statements and calculations in QUESTIONS 8, 9 and 10.
+QUESTION 8
+8.1 In the diagram below PQRT is a cyclic quadrilateral having RT || QP. The tangent
+at P meets RT produced at S. QP = QT and PTS = 70°.
+S
+“*
+8.1.1 Give a reason why P, = 70°. (1)
+8.1.2 Calculate, with reasons, the size of:
+(a2) Q, (3)
+(b) PB, (2)
+Copyright reserved Please turn over
+
+
+===== Page 11 =====
+Mathematics/P2 1] DBE/November 2016
+NSC
+8.2 A, B and C are points on the circle having centre O. S and T are points on AC
+and AB respectively such that OS | AC and OT | AB. AB = 40 and AC = 48.
+C
+A
+OE,
+B
+8.2.1 Calculate AT. (1)
+8.2.2 If OS= “or, calculate the radius OA of the circle. (5)
+[12]
+Copyright reserved Please turn over
+
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2016
+NSC
+QUESTION 9
+ABC is a tangent to the circle BFE at B. From C a straight line is drawn parallel to BF to
+meet FE produced at D. EC and BD are drawn. E, ~ E, =x and C, =y.
+F
+2 :
+LI
+=
+Cc
+9.1 Give a reason why EACH of the following is TRUE:
+9.1.1 B, =x (1)
+9.1.2 BCD =B, (1)
+9.2 Prove that BCDE is a cyclic quadrilateral. (2)
+93 Which TWO other angles are each equal to x? (2)
+9.4 Prove that B, =C,. (3)
+[9]
+Copyright reserved Please turn over
+
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2016
+NSC
+QUESTION 10
+10.1 In the diagram APQR is drawn. S and T are points on sides PQ and PR
+respectively such that ST || QR.
+P
+S -
+Q R
+Prove the theorem which states that re = il ‘ (6)
+SQ TR
+Copyright reserved Please turn over
+
+
+===== Page 14 =====
+Mathematics/P2 14 DBE/November 2016
+NSC
+10.2 In the diagram HLKF is a cyclic quadrilateral. The chords HL and FK are produced
+to meet at M. The line through F parallel to KL meets MH produced at G.
+MK =x, KF = 2x, ML=y and LH=HG.
+M
+a
+L
+: Aas is H
+G
+F
+1034 Give a reason why GFM = LKM. (1)
+10.2.2 Prove that:
+(a) GH=y (3)
+(b) AMFH]|||AMGF (5)
+(©) GF _3x
+FH 2y (2)
+y 3
+10.2.3 Show that — = ,/—
+P 4 2 (3)
+[20]
+TOTAL: 150
+Copyright reserved
+
+
+===== Page 15 =====
+Mathematics/P2 DBE/November 2016
+NSC
+INFORMATION SHEET
+ve —~b+yb" —4ac
+2a
+A= P(l+ni) A= P(1—ni) A= P(1-i)" A= P(i+i)”
+T, =a+(n-l)d S, = 52a +(n—-1)d]
+eT a S _ alr" -1) eA S, =7—3 -l<r<l
+n r- 1 —-r
+Pe (el p_sl-d+iy")
+i i
+.. Jxt+h-f@)
+'(x) = im
+#) h>0 h
+X, +X, yy t+y
+d= (x, -x,)? +0,-y,)” M fe he
+Z 2
+_ _ y27V1 _
+y=mxt+ce y-y, =m(x-x,) Ce ee m=tan@
+a |
+snA sinB© sinC
+a’ =5* +e" —2bc.cos A
+area AABC = 5abssin
+sin(a + B) = sina.cos# + cosa.sin B sin(a — B) = sina.cos#—cosa.sinB
+coda + B) =cosa@.cosf—sina.sin PB cofa - B) =cosa@.cosf+sina.sinB
+cos* a—sin’a
+cos2@ =41-—2sin’a sin2a@ = 2sina.cosa
+2cos’? a—1
+x == oo =
+n n
+n(A) _
+P(A) = 78) P(A or B) = P(A) + P(B) — P(A and B)
+n
+x-x\Ky-y
+p=atbx 5 - =P) Ky=9)
+Yor-3)
+Copyright reserved

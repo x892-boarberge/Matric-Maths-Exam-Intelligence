@@ -1,0 +1,1442 @@
+
+===== Page 1 =====
+NATIONAL
+SENIOR CERTIFICATE
+GRADE 12/GRAAD 12
+MATHEMATICS P1/WISKUNDE V1
+NOVEMBER 2015
+MEMORANDUM
+MARKS: 150
+PUNTE: 150
+This memorandum consists of 25 pages.
+Hierdie memorandum bestaan uit 25 bladsye.
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 2 =====
+Mathematics/P1/Wiskunde V1 2 DBE/November 2015
+NSC/NSC – Memorandum
+NOTE:
+• If a candidate answers a question TWICE, only mark the FIRST attempt.
+• Consistent accuracy applies in ALL aspects of the marking memorandum.
+LET WEL:
+• Indien 'n kandidaat 'n vraag TWEE keer beantwoord, merk slegs die EERSTE poging.
+• Volgehoue akkuraatheid is op ALLE aspekte van die memorandum van toepassing.
+QUESTION/VRAAG 1
+1.1.1 x2 −9x+20=0
+( )( )
+factors
+x−4 x−5 =0
+x = 4
+x=4 or x=5 x =5 (3)
+1.1.2 3x2 +5x−4=0 standard form
+−5± (5)2 −4(3)(−4) substitution into
+x =
+2(3) correct formula
+−5± 73
+x =
+6
+x = −2,26or x =0,59 answers
+(4)
+OR/OF
+5 25 4 25
+x2 + x+ = +
+3 36 3 36 for adding 25 on
+2 36
+ 5 73
+x+  = both sides
+ 6 36
+5 73
+x+ = ±
+6 6
+−5± 73
+−5± 73 x =
+x =
+6
+6
+x = −2,26 or x = 0,59
+answers
+(4)
+1.1.3 −5
+2x 3 =64
+−5 dividing both
+x 3 =32 sides by 2
+( )−3 32 = 25 or
+x= 25 5
+64 = 26
+x=2−3 or 1 or 0,125 raising RHS to −3
+8 5
+answer
+(4)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 3 =====
+Mathematics/P1/Wiskunde V1 3 DBE/November 2015
+NSC/NSC – Memorandum
+−5
+2x 3 =64
+−5 dividing both
+x 3 =32 sides by 2
+( )
+−3 raising RHS to −3
+x= 32 5 5
+x=5 32−3 5 32−3
+1
+x=2−3 or or 0,125 answer
+8
+(4)
+OR/OF
+−3
+ −55 −3
+ 2x 3   =645 raising both sides to
+  −3
+0,659x=0,0825 5
+0,659 and 0,0825
+x=0,125
+dividing both
+sides by 0,659
+OR/OF answer
+(4)
+−5
+x 3 =32
+dividing both
+−5 sides by 2
+logx=log32
+3 logs on both sides
+3
+logx= log32
+−5
+logx=−0,903
+logx=−0,903
+x=10−0,903
+1
+=0,125 or answer
+8
+(4)
+1.1.4 2− x = x−2
+squaring both
+2− x=
+(
+x−2
+)2
+sides
+2− x= x2 −4x+ 4
+x2 −3x+ 2=0
+( )( )
+x−1 x−2 =0 factors
+x=1 or x=2
+ x = 1 or x=2
+if x=1, 2− x =1 and x−2=−1
+x=2 only x=2only
+(4)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 4 =====
+Mathematics/P1/Wiskunde V1 4 DBE/November 2015
+NSC/NSC – Memorandum
+2− x = x−2
+squaring both
+2− x =
+(
+x−2
+)2
+sides
+2− x =
+(
+2− x
+)2 
+2−x=1 or 2−x=0
+2− x =1 or 2− x = 0
+x =1 or x = 2  x = 1 or x=2
+if x =1, 2− x =1 and x−2 = −1
+∴x = 2 only
+x=2only
+(4)
+OR/OF
+2− x = x−2
+2− x≥0 and x−2≥0
+2−x≥0
+ x−2≥0
+x≤2 and x≥2
+x≤2 and x≥2
+∴ x=2 only
+x=2
+(4)
+1.1.5 x2 +7x <0
+x(x+7)<0 factors
++ – +
+-7 0
+OR/
+-7 0
+OF
+inequality or
+−7 < x <0 OR/OF x∈ ( −7;0 ) interval
+(3)
+1.2 The square of any number is always positive or zero
+So for the sum of two squares to be zero, both squares must be
+zero, i.e.
+Die kwadraat van enige getal is altyd positief of nul. Vir die som
+van twee kwadrate om nul te wees, moet beide die kwadrate nul
+wees, d.i.
+(
+3x− y
+)2
+=0 and/en
+(
+x−5
+)2
+=0 3x− y =0
+x−5=0
+3x− y =0 and/en x−5=0
+x=5
+x=5
+( )
+35 − y =0  y =15
+y =15 (4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 5 =====
+Mathematics/P1/Wiskunde V1 5 DBE/November 2015
+NSC/NSC – Memorandum
+1.3 x2 +x=k
+x2 +x−k =0
+standard form
+∆<0
+∆<0
+b2 −4ac<0
+12 −4 ( 1 )( −k ) <0 12 −4 ( 1 )( −k )
+1+4k <0
+−1
+k < −1
+k <
+4
+4
+OR/OF
+(4)
+x2 +x = k
+1 1 1
+x2 +x+ = k+ adds to both
+4 4 4
+2 sides
+ 1 1
+x+  = k+
+ 2 4  1 2 1
+x+  =k+
+1  2 4
+for nonreal roots k+ <0
+4
+1
+−1 k+ <0
+k <
+4
+4
+−1
+k <
+4
+OR/OF
+(4)
+Consider the functions y= x2 +x and y =k
+Beskou die funksies y= x2 +x en y =k
+y
+y = x2 + x
+sketch or
+explanation
+x
+y = k
+1
+x = −
+−1 −1
+Turning point of/Draaipunt van y= x2 +x is  ;  2
+ 2 4  1
+y = −
+x2 + x=k does not have real roots when the line y =k does not 4
+intersect y = x2 + x.
+x2 + x=k het geen reële wortels as die lyn y =k nie met
+y = x2 + x sny nie.
+−1 −1
+Therefore k < k <
+4 4
+(4)
+[26]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 6 =====
+Mathematics/P1/Wiskunde V1 6 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 2
+2.1 T
+r = 2
+T
+1
+5
+=
+10
+1 1
+=  r =
+2 2
+1 1
+4
+T =1,25  T =10 
+5 2 5 2
+OR/OF
+5 5 answer
+= or 0,625 = or 0,625
+8 8 (2)
+2.2 n−1 substitutes a =10
+1
+T =10  into GP formula
+n 2
+1
+substitutes r =
+2
+into GP formula
+(2)
+2.3 For convergence/Om te konvergeer −1<r <1
+1 1 −1<r <1
+Since/Aangesien r = and/en −1< <1
+1
+2 2  show that r = is
+2
+−1<r <1
+the sequence converges/die ry konvergeer
+(2)
+( )
+2.4 a a1−rn
+S - S = −
+∞ n 1−r 1−r
+
+10
+1
+ 1n 1−
+10  1−   2
+10  2 
+= −  1n
+1 1 101− 
+1− 1− 
+ 2
+
+
+2 2 
+1
+ 1n 1−
+=20 − 201−  2
+ 
+ 2 
+ 1n
+n
+201− 
+1  
+=20 − 20+20   2 
+2
+1 n answer
+=20 
+(4)
+2
+OR/OF
+constructing the
+series
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 7 =====
+Mathematics/P1/Wiskunde V1 7 DBE/November 2015
+NSC/NSC – Memorandum
+S - S =T +T +T +
+∞ n n+1 n+2 n+3
+
+n
+1  1 1 
+=10   1+ + +  1 n  1 1 
+2  2 4  10  1+ + +
+ 
+2  2 4 
+ 
+1 n 1 
+=10    1
+2
+1−
+1
+
+
+1
+ 2 1−
+2
+n
+1
+=20 
+answer
+2 (4)
+OR/OF
+a−a+arn
+a a
+(
+1−rn
+) 
+S - S = −
+1−r
+∞ n 1−r 1−r arn
+
+a−a+arn
+=
+1−r
+1−r n
+1
+arn 10 
+= 2
+
+1−r
+1
+n
+1 2
+10 
+2 answer
+=
+1 (4)
+[10]
+2
+n
+1
+=20 
+2
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 8 =====
+Mathematics/P1/Wiskunde V1 8 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 3
+3.1 d = 8  d value
+( )
+T =a + k −1d
+k
+=−3+
+(
+k −1
+)(
+8
+)
+=−3+8k −8
+=8k −11 answer
+(2)
+3.2 n n−1 n−1 for general term
+∑( 8k −11 ) OR/OF ∑( 8(k +1)−11 ) = ∑(8k −3)
+lower and upper
+k=1 k=0 k=0
+values in sigma
+notation
+(2)
+3.3 n formula
+[ ( ) ]
+S = 2a+ n−1d
+n 2
+substitution
+n
+[ ( ) ( ) ]
+= 2 −3 + n−1(8)
+2
+n
+[ ]
+= −6+8n−8
+2
+= n [ 8n−14 ]  n[ 8n−14 ]
+2 2
+=n(4n−7) (3)
+=4n2 −7n
+OR/OF
+n
+S =
+[
+2a+
+(
+n−1
+)
+d
+] formula
+n 2
+n substitution
+[ ( ) ( ) ]
+= 2 −3 + n−1(8)
+2
+n [ ]  n[ 8n−14 ]
+= −6+8n−8
+2
+2
+(3)
+n
+[ ]
+= 8n−14
+2
+= 4n2 −7n
+OR/OF
+n
+[ ]
+formula
+S = a+l
+n 2
+substitution
+n
+[ ]
+= −3+8n−11
+2
+n  n[ 8n−14 ]
+[ ]
+= 8n−14 2
+2
+(3)
+= 4n2 −7n
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 9 =====
+Mathematics/P1/Wiskunde V1 9 DBE/November 2015
+NSC/NSC – Memorandum
+OR/OF
+S =−3+5=2
+2
+S S S S
+1 2 3 4 S =2+13=15
+–3 2 15 36 3
+S =15+21
+4
+5 13 21 calculates S , S ,
+1 2
+S and S ,
+3 4
+8 8
+S =an2 +bn+c
+n
+8
+a =
+2
+a =4  a = 4
+S =4+b+c=−3 b+c=−7 ...............(1)
+1
+S =16+2b+c =2 2b+c =−14..............(2)
+2
+b=−7................(2)−(1)
+solves
+c=0 simultaneously for
+b and c.
+Hence S =4n2 −7n
+n (3)
+3.4.1 Q = −6−3+5+13+21+29  answer
+6
+(2)
+3.4.2 Q =−6+S
+129 128
+
+=−6+4(128)2 −7(128)
+−6+4(128)2−7(128)
+=64634 answer
+(3)
+OR/OF
+Q
+1
+Q
+2
+Q
+3
+Q
+4
+–6 –9 –4 9
+–3 5 13
+8 8 8
+Q = an2 +bn+c
+n
+a = 4
+a = 4
+Q = 4+b+c = −6 b+c = −10 ...............(1)
+1
+Q =16+2b+c = −9 2b+c = −25...............(2)
+2
+b = −15................(2)−(1)
+c =5
+Hence Q = 4n2 −15n+5  Q =4n2 −15n+5
+n n
+Q = 4
+(
+129
+)2
+−15
+(
+129
+)
++5
+129 answer
+=64 634
+(3)
+[12]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 10 =====
+Mathematics/P1/Wiskunde V1 10 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 4
+Given: f(x)=2x+1 −8
+4.1 y = – 8  y = – 8
+(1)
+4.2
+y
+8
+6
+x-intercept
+4 f
+y-intercept
+shape
+2
+x
+asymptote
+(only if the graph
+-8 -6 -4 -2 0 2 4 6 8
+does not cut the
+-2
+asymptote)
+-4
+-6
+y = -8
+-8
+(4)
+4.3 g ( x ) =2−x+1 −8 answer
+(1)
+OR/OF
+answer
+x−1
+1
+g ( x ) =  −8 (1)
+2 [6]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 11 =====
+Mathematics/P1/Wiskunde V1 11 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 5
+Given h ( x ) =2x−3for −2≤ x ≤ 4.
+y
+h
+Q x
+-2 O 4
+P
+-3
+5.1 For x-intercepts, y = 0
+2x−3=0
+x=1,5
+x =1,5
+( )  y = 0
+Q1,5;0
+(2)
+5.2 h:
+x=−2: y =2(−2)−3=−7  h(–2) = –7
+x=4: y =2(4)−3=5  h(4) = 5
+Domain of h−1:−7≤ x≤5 OR/OF [ −7; 5 ] −7≤ x≤5
+(3)
+5.3 y  y-intercept
+on a straight
+h-1
+line
+1,5
+-7
+x
+0 5  line segment
+ accurate
+endpoints (x
+or y or
+both)
+OR/OF
+y
+(3)
+4
+h-1
+1,5
+x
+0
+-2
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 12 =====
+Mathematics/P1/Wiskunde V1 12 DBE/November 2015
+NSC/NSC – Memorandum
+5.4 h ( x )=2x−3
+For the inverse of h,
+x =2y−3
+x+3
+x+3
+ y =
+y =
+2
+2
+x+3
+h−1(x)=
+2
+h
+(
+x
+) =h−1(
+x
+)
+x+3 x+3
+2x−3= 2x−3=
+2 2
+4x−6= x+3
+x=3
+x =3
+(3)
+OR/OF
+h
+(
+x
+)=2x−3
+h and h−1 intersect when y = x
+( ) h ( x )= x
+h x = x
+2x−3= x 2x−3= x
+x=3
+x =3
+(3)
+OR/OF
+h
+(
+x
+)=2x−3
+x+3
+For the inverse of h,  y =
+x = 2y−3 2
+x+3
+y =
+2
+h−1(x) = x x+3
+ = x
+x+3 2
+= x
+2
+x+3= 2x x =3
+(3)
+x =3
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 13 =====
+Mathematics/P1/Wiskunde V1 13 DBE/November 2015
+NSC/NSC – Memorandum
+5.5 OP2 = ( x−0 )2 + ( y−0 )2  OP2 =x2+y2
+= x2 + ( 2x−3 )2 substitute
+y =2x−3
+= x2 +4x2 −12x+9
+=5x2 −12x+9 5x2 −12x+9
+For OP to be at its minimum, OP2 has to be a minimum
+Vir OP om minimum te wees, moet OP2 'n minimum wees
+d
+(
+OP2
+)
+b
+=0 OR/OF x=−
+dx 2a
+−12
+10x−12=0 =−
+( )
+2 5
+6
+∴x=
+x-value
+5
+2
+6 6 9 3
+Minimum length of OP = 5  −12 +9 = or or 1,34units
+5 5 5 5 answer
+(5)
+OR/OF
+For minimum distance OP ⊥ the line
+m =2 (given)
+h
+−1
+m =
+OP 2
+−1
+∴OP has equation y = x
+2
+−1
+x=2x−3
+2
+− x=4x−6
+−1
+5x=6 m =
+OP 2
+x =1,2
+P
+equation of
+1
+( )
+y =− 1,2 =−0,6 OP
+P 2
+OP= ( 1,2−0 )2 + ( −0,6−0 )2 −1
+ x=2x−3
+2
+=1,34 or 1,8 units
+x-value
+answer
+(5)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 14 =====
+Mathematics/P1/Wiskunde V1 14 DBE/November 2015
+NSC/NSC – Memorandum
+OR/OF
+For minimum distance OP ⊥ the line
+3   OP2 =x2+y2
+( ) ( )
+O 0;0 P x; 2x−3 Q ;0
+substitute
+2 
+y =2x−3
+OP2 +PQ2 =OQ2 (pythag)
+2 2
+ 3 3
+(
+x−0
+)2
++
+(
+2x−3−0
+)2
++x−  +
+(
+2x−3−0
+)2
+=  
+ 2 2
+10x2 −27x+18
+9 9
+x2 +4x2 −12x+9+ x2 −3x+ +4x2 −12x+9=
+4 4
+10x2 −27x+18=0
+( )( )
+5x−6 2x−3 = 0
+x-value
+6 3
+x = or
+5 2
+6
+Hence, x = at P
+5
+OP2 = x2 + ( 2x−3 )2
+6 2  6  2
+=  +2 −3
+  answer
+5  5 
+(5)
+36 9
+= +
+25 25
+9
+=
+5
+OP =1,34
+OR/OF
+For minimum distance OP ⊥ the line
+tanQ ˆ =2
+tanQ ˆ = 2
+Q ˆ =63,43
+Q ˆ =63,43
+sin63,43
+OP
+sin63,43 = OP
+
+1,5
+1,5
+OP =1,34
+ answer
+(5)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 15 =====
+Mathematics/P1/Wiskunde V1 15 DBE/November 2015
+NSC/NSC – Memorandum
+OR/OF
+OP=
+(
+x−0
+)2
++
+(
+y−0
+)2 
+OP= (x−0)2+(y−0)2
+=
+(
+x−0
+)2
++
+(
+2x−3−0
+)2
+substitute
+= x2 +4x2 −12x+9 y =2x−3
+= 5x2 −12x+9 5x2 −12x+9
+By using the chain rule (which is not in the CAPS):
+dOP
+=
+1(
+5x2 −12x+9
+)−
+2
+1
+⋅ ( 10x−12 )
+dx 2
+0=
+1(
+5x2 −12x+9
+)−
+2
+1
+⋅ ( 10x−12 )
+2
+1
+0=
+(
+10x−12
+)
+2
+0=5x−6
+6
+x= x-value
+5
+5
+2
+6
+OP= 5  −12 +9
+6 5
+answer
+=1,34
+(5)
+OR/OF
+For minimum distance OP ⊥ the line
+Let the y-intercept be R O 1,5 Q
+OR = 3 units
+3
+OQ = units 3 P
+2 3
+ RQ = 5
+3 2
+RQ = 5 (Pythagoras) R
+2
+1
+Area OQR = × base × ⊥height
+2
+ 1 3 
+. 5.OP
+1 1 3 
+.OR.OQ= . 5.OP 2 2 
+2 2 2  1 3
+ .3. 
+1 3 1 3  2 2
+.3. = . 5.OP
+2 2 2 2   equating
+3
+OP= =1,34  answer
+5 (5)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 16 =====
+Mathematics/P1/Wiskunde V1 16 DBE/November 2015
+NSC/NSC – Memorandum
+5.6.1 f′( x ) =2x−3
+ Turning
+3
+Turning point at x=
+3
+2 point at x=
+2
+3
+f′′( x ) =2>0 or f′′ >0
+2  f ′′( x ) =2>0
+3
+f has a local minimum at x=
+2
+3
+(2)
+f het 'n lokale minimum by x=
+2
+OR/OF
+h(x) = f′(x)<0for x∈ ( −2 ;1,5 ) ⇒f is decreasing on the left of Q / decreasing
+left of Q
+f is dalend links van Q.
+h(x) = f′(x) >0for x∈ ( 1,5 ; 4 ) ⇒f is increasing on the right of Q / increasing
+right of Q
+f is stygend regs van Q.
+(2)
+3
+∴ f (x) has a local minimum when x= /
+2
+3
+∴ f (x) het ‘n lokael minimum by x=
+2
+OR/OF
+f(x)= x2 −3x+c 
+f(x)=x2 −3x+c
+f has a minimum value since a > 0
+f het 'n minimum waarde omdat a > 0  explanation
+(2)
+5.6.2 m = f′(4) = h ( 4 ) =5 answer
+(1)
+[19]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 17 =====
+Mathematics/P1/Wiskunde V1 17 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 6
+6.1.1 T(0;18) (0;18)
+(1)
+6.1.2 −2x2 +18=0 y= 0
+(
+x−3
+)(
+x+3
+)
+=0
+factors
+x = 3
+Q(3;0)
+(3)
+OR/OF  y= 0
+−2x2 +18=0
+x2 =9
+ x = 3
+x2 =9
+(3)
+Q(3;0)
+6.1.3 x-coordinate of S is 4,5/x-koördinaat van S is 4,5
+By symmetry about the line x = 4,5/Deur simmetrie om die
+x =6
+lyn x = 4,5: R = (4,5 + 4,5–3 ; 0) = (6 ; 0)
+ y = 0
+(2)
+6.1.4 For all x∈R OR/OF ( −∞;∞ ) answer
+(2)
+6.2 If C ( x;y ) is the centre of the hyperbola/As C ( x;y ) die middelpunt is van
+die hiperbool
+y = x+6 and x=−2
+∴y =−2+6=4
+
+asymptote
+y
+y =4
+asymptote
+y = 4
+x=−2
+shape
+x
+(increasing
+0
+hyperbolic
+function)
+x = -2
+(4)
+[12]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 18 =====
+Mathematics/P1/Wiskunde V1 18 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 7
+7.1 R450 000 answer
+(1)
+7.2 A= P(1−i)n
+substitution of
+f(x)=450000(1−i)x
+450 000 into
+correct formula
+243 736,90=450000(1−i)4 substitution of
+( 4; 243736,90 ) into
+correct formula
+243 736,90
+i=1−4
+450000
+making i the
+subject
+i=0,1421
+The rate of depreciation is 14,21 % p.a.
+Die waardeverminderingskoers is 14,21% p.j. answer
+(4)
+7.3 At T:
+A=P
+(
+1+i
+)n
+g(x)=450000(1+i)x i = 0,081 & n = 4
+correct
+substitution into
+a=450000
+(
+1+0,081
+)4
+formula
+answer
+=R614490,66 (3)
+7.4 Future Value = R614 490, 66 −R243 736 ,90
+R370 753,76
+=R370 753,76
+Let x be the value of monthly payment
+[ ] 0,062
+x ( 1+i )n −1 i =
+F = 12
+v i
+n = 36
+ 36 
+ 0.062
+x1+  −1
+substitution into
+  12  
+370753,76= correct formula
+0.062
+12 answer
+x=R9397,11 (5)
+[13]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 19 =====
+Mathematics/P1/Wiskunde V1 19 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 8
+8.1 f(x+h)=(x+h)2 −3(x+h)
+finding f(x+h)
+= x2 + 2xh+h2 −3x−3h
+f(x+h)− f(x)= x2 +2xh+h2 −3x−3h−(x2 −3x)
+=2xh+h2 −3h
+2xh+h2 −3h
+f(x+h)− f(x)
+f ′(x)=lim formula
+h→0 h
+2xh+h2 −3h
+=lim
+h→0 h
+h(2x+h−3)
+=lim factorisation
+h→0 h
+( )
+=lim 2x+h−3
+h→0
+=2x−3 answer
+(5)
+OR/OF
+f(x+h)− f(x)
+f′(x) =lim
+h→0 h formula
+(x+h)2 −3(x+h) −(x2 −3x)
+=lim
+h→0 h
+finding f(x+h)
+x2 +2xh+h2 −3x−3h−x2 +3x
+=lim
+h→0 h
+2xh+h2 −3h
+=lim
+h→0 h
+h(2x+h−3)
+2xh+h2 −3h
+=lim
+h→0 h
+factorisation
+=lim(2x+h−3)
+h→0
+= 2x−3 answer
+(5)
+8.2.1 2
+ 1 
+y =x2 − 
+ x2 
+1
+1 x4 −2+
+y = x4 −2+ x4
+x4
+= x4 −2+x−4
+4x3
+dy
+=4x3 −4x−5
+−4x−5
+dx
+(3)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 20 =====
+Mathematics/P1/Wiskunde V1 20 DBE/November 2015
+NSC/NSC – Memorandum
+By using the chain rule (which is not part of CAPS):
+y =
+(
+x2 −x−2
+)2
+
+dy
+= 2
+(
+x2 −x−2
+)(
+2x+2x−3
+)
+2
+(
+x2−x−2
+)(
+2x+2x−3
+)
+dx
+( )
+= 2 2x3 +2x−1 −2x−1 −2x−5
+( ) (3)
+= 2 2x3 −2x−5
+= 4x3 −4x−5
+8.2.2 (x−1)(x2 +x+1)
+D  
+factorisation
+x
+
+x−1
+
+= D [ x2 +x+1 ] x2 +x+1
+x
+=2x+1 2x +1
+(3)
+OR/OF
+By using the quotient rule (with is not part of CAPS):
+x3 −1
+D  
+x
+
+x−1
+
+= 3x2( x−1 ) − ( x3 −1 ) 3x2( x−1 ) − ( x3 −1 )
+(
+x−1
+)2
+(
+x−1
+)2
+(3)
+[11]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 21 =====
+Mathematics/P1/Wiskunde V1 21 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 9
+9.1 Substitute Q(2; 10) into
+h(x)=−x3 +ax2 +bx substitute Q into
+h
+−23 +a(22)+b(2)=10
+−8+4a+2b=10
+2a+b=9 ..................line1 finding
+derivative
+h′(x) = −3x2 +2ax+b
+h′(2)
+At Q: h′(2) =0 equating
+−3(2)2 +2a(2)+b =0 derivative to 0
+−12+4a+b =0
+4a+b =12 .............line2
+line2 − line1: 2a =3
+solving
+3 simultaneously
+a =
+2 for a and b
+Substitutein line1: b =6
+(5)
+9.2 3  f ( −1 ) = –3,5
+f
+(
+−1
+)
+=−
+(
+−1
+)3
++
+(
+−1
+)2
++6
+(
+−1
+)
+2
+=−3,5
+f(x )− f(x )
+Average gradient/Gemiddelde gradiënt = Q P formula
+x − x
+Q P
+substitution
+10−(−3,5)
+Average gradient/ Gemiddelde gradiënt =
+2−(−1)
+=4,5 answer
+(4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 22 =====
+Mathematics/P1/Wiskunde V1 22 DBE/November 2015
+NSC/NSC – Memorandum
+9.3 h′( x ) =−3x2 +3x+6  h′(x)=−3x2+3x+6
+h′′(x)=−6x+3 h′′(x)=−6x+3
+=−3(2x−1)
+x
+1 1
+For x < , h is concave up and for x > , h is concave down explanation
+2 2
+using
+h//(
+x
+)
+1 1
+Vir x < ,is h konkaaf na bo en vir x > ,is h konkaaf na onder
+2 2
+(3)
+1
+∴ concavity changes at x= /
+2
+1
+∴ konkwiteit verander by x=
+2
+1
+9.4 The graph of h has a point of inflection at x = / answer
+2
+(1)
+1
+Die grafiek van h het 'n buigpunt by x= .
+2
+OR/OF
+The graph of h changes from concave up to concave down at
+1 1 answer
+x = /Diegrafiek vanh verander by x = van konkaaf op
+2 2
+na konkaaf af (1)
+9.5 Gradient of g is – 12/Gradiënt van g is –12
+Gradient of tangent is/Gradiënt van die raaklyn is:
+h′( x ) =−3x2 +3x+6  h′( x )=−3x 2 +3x+6
+h′(x)=−12 h′(x)=−12
+−3x2 +3x+6=−12
+3x2 −3x+18=0
+x2 − x+6=0
+factors
+(x−3)(x+2)=0
+selection of
+x=−2 only x-value
+(4)
+[17]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 23 =====
+Mathematics/P1/Wiskunde V1 23 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 10
+10.1 h h
+= tan600  =tan600
+r r
+h
+r =
+tan600
+h
+∴r = answer
+3
+(2)
+10.2 1
+V = πr2h
+cone 3 formula
+2
+1  h 
+= π  h
+ 
+3  3 substitution of
+the value of r in
+terms of h
+1
+= πh3
+9 simplified
+volume answer
+dV 1
+= πh2 derivative
+dh 3
+dV 1
+= π
+(
+9
+)2
+dh 3
+h=9
+answer
+=27π or 84,82cm3/cm
+(5)
+[7]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 24 =====
+Mathematics/P1/Wiskunde V1 24 DBE/November 2015
+NSC/NSC – Memorandum
+QUESTION/VRAAG 11
+11.1 P(A) ×P(B) 0,2×0,63
+= 0,2×0,63
+= 0,126 P(A)×P(B)=P(A
+i.e. P(A) × P(B) = P(A and B) and B)
+Therefore A and B are independent/Dus is A en B onafhanklik conclusion
+(3)
+11.2.1 77 =823 543 77
+(2)
+11.2.2 7!=5040 7!
+(2)
+11.2.3 There are 3 vowels ⇒3 options for first position ×3
+There are 4 consonants ⇒4 options for last position ×4
+The remaining 5 letters can be arranged in 5×4×3×2×1 ways 5×4×3×2×1
+3×( 5×4×3×2×1 )×4=1440 answer
+Daar is 3 klinkers ⇒3 opsies vir die eerste posisie
+Daar is 4 konsonante ⇒4 opsies vir die laaste posisie
+Die oorblywende 5 letters kan as volg gerangskik word
+5×4×3×2×1 ways/maniere
+3×( 5×4×3×2×1 )×4=1440 (4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 25 =====
+Mathematics/P1/Wiskunde V1 25 DBE/November 2015
+NSC/NSC – Memorandum
+11.3 Orange OO
+t
+t+2
+ t 
+Orange
+t P(O) =  
+t+2
+t + 2 2
+t+2
+Yellow OY  2 
+P(Y) =  
+t+2
+Orange YO
+2
+t
+t+2
+t + 2
+Yellow
+2
+t+2
+Yellow YY
+52
+P(Orange,Orange)+P(Yellow,Yellow)=
+100
+  t     t   +  2     2   = 52 P(O,O) =   t   2
+t+2t+2 t+2t+2 100 t+2
+2
+ P(Y,Y) =   2  
+t2 4 13
+t+2
++ = 
+t2 +4t+4 t2 +4t+4 25
+ t  t   2  2  52
+  +  =
+t+2t+2 t+2t+2 100
+( ) ( )
+25t2 +4 =13t2 +4t+4
+3t2 −13t+12=0
+( )( )
+3t−4 t−3 =0
+t =3 t =3 (no ca)
+There are 3 orange balls in the bag/Daar is 3 oranje balle in die
+sak
+(6)
+[17]
+TOTAL/TOTAAL: 150 marks
+Copyright reserved/Kopiereg voorbehou
