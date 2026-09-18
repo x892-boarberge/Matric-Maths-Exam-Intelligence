@@ -1,0 +1,434 @@
+year,document_id,paper,question_number,subquestion,marks,question_text,segmentation_status
+2020,2020_nov_p1_exam_maths,P1,1,1.1,,Solve for x:,missing_marks
+2020,2020_nov_p1_exam_maths,P1,1,1.1.1,2.0,x’ —-6x =0,ok
+2020,2020_nov_p1_exam_maths,P1,1,1.1.2,3.0,x’ +10x+8=0 (correct to TWO decimal places),ok
+2020,2020_nov_p1_exam_maths,P1,1,1.1.3,3.0,(l—x\{x+2)<0,ok
+2020,2020_nov_p1_exam_maths,P1,1,1.1.4,5.0,Vx+18 =x-2,ok
+2020,2020_nov_p1_exam_maths,P1,1,1.2,6.0,"Solve simultaneously for x and y:
+x+y=3 and 2x°+4xy—-y=15",ok
+2020,2020_nov_p1_exam_maths,P1,1,1.3,,"If is the largest integer for which n° < 5°”, determine the value of 7. (3)",missing_marks
+2020,2020_nov_p1_exam_maths,P1,2,2.1,4.0,73x%3;y3-I1 ; ... isan arithmetic sequence. Determine the values of x and y.,ok
+2020,2020_nov_p1_exam_maths,P1,2,2.2,,Given the quadratic number pattern: —3 ; 6 ; 27 ; 60; ...,missing_marks
+2020,2020_nov_p1_exam_maths,P1,2,2.2.1,4.0,"Determine the general term of the pattern in the form 7, =an*+bn+c.",ok
+2020,2020_nov_p1_exam_maths,P1,2,2.2.2,2.0,"Calculate the value of the 50"" term of the pattern.",ok
+2020,2020_nov_p1_exam_maths,P1,2,2.2.3,3.0,"Show that the sum of the first n first-differences of this pattern can be
+given by S, =6n*+3n.",ok
+2020,2020_nov_p1_exam_maths,P1,2,2.2.4,,"How many consecutive first-differences were added to the first term of
+the quadratic number pattern to obtain a term in the quadratic number
+pattern that has a value of 21 060? (4)
+[17]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P 1 4 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p1_exam_maths,P1,3,3.1,,"Prove that 54.37“ is a convergent geometric series. Show ALL your calculations. (3)
+k=l
+Sy qk _ 2",missing_marks
+2020,2020_nov_p1_exam_maths,P1,3,3.2,3.0,"If > 4.3 =>? determine the value of p. (5)
+k=p",ok
+2020,2020_nov_p1_exam_maths,P1,4,4.1,,"Given: A(x) =—— +2
+x-l",missing_marks
+2020,2020_nov_p1_exam_maths,P1,4,4.1.1,2.0,Write down the equations of the asymptotes of A.,ok
+2020,2020_nov_p1_exam_maths,P1,4,4.1.2,2.0,"Determine the equation of the axis of symmetry of / that has a negative
+gradient.",ok
+2020,2020_nov_p1_exam_maths,P1,4,4.1.3,,"Sketch the graph of h, showing the asymptotes and the intercepts with
+the axes. (4)
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P 1 5 DBE/November 2020
+SC/NSC
+1 2 1 9",missing_marks
+2020,2020_nov_p1_exam_maths,P1,4,4.2,,"The graphs of f(x)= mA +5) —8 and g(x)= 5° + 5 are sketched below.
+
+e Ais the turning point of f
+
+e The axis of symmetry of f intersects the x-axis at E and the line g at D(m; n).
+
+e C isthe y-intercept of f and g.
+
+\y
+""Dim; n)
+—_ E C x
+7 |",missing_marks
+2020,2020_nov_p1_exam_maths,P1,4,4.2.1,2.0,Write down the coordinates of A.,ok
+2020,2020_nov_p1_exam_maths,P1,4,4.2.2,1.0,Write down the range of f-,ok
+2020,2020_nov_p1_exam_maths,P1,4,4.2.3,3.0,Calculate the values of m and n.,ok
+2020,2020_nov_p1_exam_maths,P1,4,4.2.4,3.0,Calculate the area of OCDE.,ok
+2020,2020_nov_p1_exam_maths,P1,4,4.2.5,2.0,"Determine the equation of g™’, the inverse of g, inthe form y=...",ok
+2020,2020_nov_p1_exam_maths,P1,4,4.2.6,,"If h(x)=g'(x)+k isa tangent to f determine the coordinates of the
+
+point of contact between A and f (4)
+[23]
+
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P1 6 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p1_exam_maths,P1,5,5.1,1.0,Write down the coordinates of A.,ok
+2020,2020_nov_p1_exam_maths,P1,5,5.2,3.0,Determine the coordinates of B.,ok
+2020,2020_nov_p1_exam_maths,P1,5,5.3,,"Write down the domain of f7'. (2)
+. . 27",missing_marks
+2020,2020_nov_p1_exam_maths,P1,5,5.4,3.0,Describe the translation from f to A(x) = 3F,ok
+2020,2020_nov_p1_exam_maths,P1,5,5.5,,"Determine the values of x for which A(x) <1. (3)
+[12]
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P1 7 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p1_exam_maths,P1,6,6.1,,"On 31 January 2020, Tshepo made the first of his monthly deposits of R1 000 into a
+savings account. He continues to make monthly deposits of R1 000 at the end of each
+month up until 31 January 2032. The interest rate was fixed at 7,5% p.a., compounded
+monthly.",missing_marks
+2020,2020_nov_p1_exam_maths,P1,6,6.1.1,4.0,What will the investment be worth immediately after the last deposit?,ok
+2020,2020_nov_p1_exam_maths,P1,6,6.1.2,2.0,"If he makes no further payments but leaves the money in the account, how
+much money will be in the account on 31 January 2033?",ok
+2020,2020_nov_p1_exam_maths,P1,6,6.2,3.0,"Jim bought a new car for R250 000. The value of the car depreciated at a rate of
+22% p.a. annually according to the reducing-balance method. After how many years
+will its book value be R92 537,64?",ok
+2020,2020_nov_p1_exam_maths,P1,6,6.3,,"Mpho is granted a loan under the following conditions:
+e The interest rate is 11,3% p.a., compounded monthly.
+e The period of the loan is 6 years.
+e The monthly repayment on the loan is R1 500.
+e Her first repayment is made one month after the loan is granted.",missing_marks
+2020,2020_nov_p1_exam_maths,P1,6,6.3.1,3.0,Calculate the value of the loan.,ok
+2020,2020_nov_p1_exam_maths,P1,6,6.3.2,,How much interest will Mpho pay in total over the first 5 years? (4),missing_marks
+2020,2020_nov_p1_exam_maths,P1,7,7.1,5.0,Determine f ‘(x) from first principles if f(x)=2x?-1.,ok
+2020,2020_nov_p1_exam_maths,P1,7,7.2,,"Determine:
+721 “Wa? +x) 3)
+dx
+4x* —9 3",missing_marks
+2020,2020_nov_p1_exam_maths,P1,7,7.2.2,,"(x) if f(x)=——_ osx ¥-> 4
+f(x) if £@)- 5 (4)
+[12]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P 1 8 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p1_exam_maths,P1,8,8.1,2.0,For which values of x will g increase?,ok
+2020,2020_nov_p1_exam_maths,P1,8,8.2,2.0,Write down the x-coordinate of the point of inflection of g.,ok
+2020,2020_nov_p1_exam_maths,P1,8,8.3,2.0,For which values of x will g be concave down?,ok
+2020,2020_nov_p1_exam_maths,P1,8,8.4,4.0,"If g‘(x)=—6x? + 6x+12, determine the equation of g.",ok
+2020,2020_nov_p1_exam_maths,P1,8,8.5,,"Determine the equation of the tangent to g that has the maximum gradient. Write
+
+your answer in the form y=mx+c. (5S)
+
+[15]
+
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P 1 9 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p1_exam_maths,P1,9,9.1,4.0,Show that the cost to construct the box can be calculated by: Cost =90w? +48wh,ok
+2020,2020_nov_p1_exam_maths,P1,9,9.2,10.0,Determine the width of the box such that the cost to build the box is a minimum. (6),ok
+2020,2020_nov_p1_exam_maths,P1,10,10.1,2.0,How many possible 10-digit telephone numbers could be formed?,ok
+2020,2020_nov_p1_exam_maths,P1,10,10.2,,"Certain restrictions were placed on the groups of digits:
+e Area code: must be 3 digits and the first digit can NOT be 0 or 1
+e Exchange code: must be 3 digits and the first and second digits can NOT
+be 0 or 1
+e Number: must be 4 digits and the first digit MUST bea 0 or 1",missing_marks
+2020,2020_nov_p1_exam_maths,P1,10,10.2.1,3.0,"How many valid 10-digit telephone numbers could be formed by applying
+the given restrictions?",ok
+2020,2020_nov_p1_exam_maths,P1,10,10.2.2,,"Determine the probability that any randomly chosen 10-digit telephone
+number would be a valid phone number. (2)
+[7]
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P 1 10 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p1_exam_maths,P1,11,11.1,2.0,"Calculate the probability that Harry will hit the bull's eye in his first shot and his
+second shot.",ok
+2020,2020_nov_p1_exam_maths,P1,11,11.2,3.0,"Calculate the probability that Harry will hit the bull's eye at least twice in his first
+three shots.",ok
+2020,2020_nov_p1_exam_maths,P1,11,11.3,,"Glenda also has a 50% chance of hitting the bull's eye on each shot. Harry and
+Glenda will take turns to shoot an arrow and the first person to hit the bull's eye will
+be the winner. Calculate the probability that the person who shoots first will be the
+winner of the challenge. (3)
+[3]
+TOTAL: 150
+Copyright reserved
+
+===== Page 11 =====
+Mathematics/P 1 DBE/November 2020
+SC/NSC
+INFORMATION SHEET
+~b+Vb? —4ac
+———
+2a
+A= P(1+ni) A= P(-ni) A=P(-i)” A= P(1+i)""
+n
+T, =a+(n—l)d 8, = 5 2a+ (nD
+T, =ar"""" S =) ay S,=-4;-1er<«l
+. r-1 l-r
+p+” -1] pazi-a+a”|
+i i
+1) — Yim SOE FA)— F(X)
+F(x) = lim h
+ly OND OND X +X. Vity2
+d= \(x,-x,)+(,.-y,) Ml > ° 9
+y=mxre y-y, =m(x-x,) m= 22-21 m=tand
+XX ~%;
+(x—ay +(y—by =?
+snd sinB sinC
+a =b? +c’ —2be.cos A
+area AABC = 5 abasinC
+sin(a + £)=sinacos §+cosasin B sin(a — £8) =sinacos 8-—cosasin B
+cos(a + 8) =cosacos # —sina sin B cos(a - #) = cosacos §+sinasin B
+| cos’ a —sin’ @
+cos 2a =41—2sin’ a sin2a@ =2sinacosa
+‘2008? a1
+_ yx Y(, -xy
+xa 2 _ isl
+n CC ————_——
+n
+n(A)
+P(A) = aS) P(A or B) = P(A) + P(B)— P(A and B)
+n
+. x-x\y-y
+y=atbx p= 2b Ky-9)
+> (x-x)
+Copyright reserved",missing_marks
+2020,2020_nov_p2_exam_maths,P2,1,1.1,3.0,Determine the equation of the least squares regression line for the data.,ok
+2020,2020_nov_p2_exam_maths,P2,1,1.2,2.0,"Draw the least squares regression line on the scatter plot provided in the ANSWER
+BOOK.",ok
+2020,2020_nov_p2_exam_maths,P2,1,1.3,2.0,Predict the Physical Sciences mark of a learner who achieved 69% for Mathematics.,ok
+2020,2020_nov_p2_exam_maths,P2,1,1.4,1.0,"Write down the correlation coefficient between the Mathematics and Physical
+Sciences marks for the data.",ok
+2020,2020_nov_p2_exam_maths,P2,1,1.5,1.0,"Comment on the strength of the correlation between the Mathematics and Physical
+Sciences marks for the data.",ok
+2020,2020_nov_p2_exam_maths,P2,1,1.6,,"What trend did the teacher observe between the results of the two subjects? (1)
+[10]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P2 4 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,2,2.1,1.0,"The number of aircraft landing at the Port Elizabeth Airport exceeds the number of
+aircraft landing at the King Shaka International Airport during some months of the
+given period. During which month is this difference the greatest?",ok
+2020,2020_nov_p2_exam_maths,P2,2,2.2,2.0,"The number of aircraft landing at the King Shaka International Airport during these
+months are:
+2182 | 2323 | 2267 | 2334 | 2346 | 2175 |
+2293 | 2263 | 2215 | 2271 | 2018 2254 |
+Calculate the mean for the data.",ok
+2020,2020_nov_p2_exam_maths,P2,2,2.3,2.0,"Calculate the standard deviation for the number of aircraft landing at the King Shaka
+International Airport for the given period.",ok
+2020,2020_nov_p2_exam_maths,P2,2,2.4,3.0,"Determine the number of months in which the number of aircraft landing at the King
+Shaka International Airport were within one standard deviation of the mean.",ok
+2020,2020_nov_p2_exam_maths,P2,2,2.5,,"Which ONE of the following statements is CORRECT?
+A. During December and January, there were more landings at the Port
+Elizabeth Airport than at the King Shaka International Airport.
+B. There was a greater variation in the number of aircraft landing at the King
+Shaka International Airport than at the Port Elizabeth Airport for the given
+period.
+C. The standard deviation of the number of landings at the Port Elizabeth
+Airport will be higher than the standard deviation of the number of landings
+at the King Shaka International Airport. (1)
+[9]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,3,3.1,2.0,Calculate the gradient of WP.,ok
+2020,2020_nov_p2_exam_maths,P2,3,3.2,2.0,Show that WP | ST.,ok
+2020,2020_nov_p2_exam_maths,P2,3,3.3,4.0,"If the equation of SK is given as 5y+2x+60=0, calculate the coordinates of S.",ok
+2020,2020_nov_p2_exam_maths,P2,3,3.4,4.0,Calculate the length of WR.,ok
+2020,2020_nov_p2_exam_maths,P2,3,3.5,5.0,Calculate the size of @.,ok
+2020,2020_nov_p2_exam_maths,P2,3,3.6,,"Let L_ be a point in the third quadrant such that SWRL, in that order, forms a
+parallelogram. Calculate the area of SWRL. (4)
+[21]
+Copyright reserved Please tum over
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,4,4.1,2.0,Determine the equation of the small circle.,ok
+2020,2020_nov_p2_exam_maths,P2,4,4.2,3.0,"Determine the equation of the circle centred at M in the form
+
+(x-a) +(y-bY =r?",ok
+2020,2020_nov_p2_exam_maths,P2,4,4.3,4.0,Determine the equation of NM inthe form y=mx+e,ok
+2020,2020_nov_p2_exam_maths,P2,4,4.4,5.0,Calculate the length of SN.,ok
+2020,2020_nov_p2_exam_maths,P2,4,4.5,,"If another circle with centre B(—2 ; 5) and radius k& touches the circle centred at M,
+
+determine the value(s) of k, correct to ONE decimal place. (5)
+
+[19]
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,5,5.1,1.0,"Write down the period of g. (1)
+52 Write down the amplitude of f (1)
+53 Determine the value of £(180°) — (180°)",ok
+2020,2020_nov_p2_exam_maths,P2,5,5.4,,"Use the graphs to determine the values of x, in the interval xe [0° ; 180°], for
+which:",missing_marks
+2020,2020_nov_p2_exam_maths,P2,5,5.4.1,,f(x-10°) = g(x -10°) ()),missing_marks
+2020,2020_nov_p2_exam_maths,P2,5,5.4.2,,"VJ3sinx+cosx 21 (4)
+[8]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,6,6.1,,"In the diagram, P(-5 ; 12) and T lies on the positive x-axis. POT =0
+y
+»(-5 ; 12) |
+|
+ae
+j T
+|
+Answer the following without using a calculator:",missing_marks
+2020,2020_nov_p2_exam_maths,P2,6,6.1.1,1.0,Write down the value of tan@,ok
+2020,2020_nov_p2_exam_maths,P2,6,6.1.2,3.0,Calculate the value of cos@,ok
+2020,2020_nov_p2_exam_maths,P2,6,6.1.3,4.0,"S(a ; 6) is a point in the third quadrant such that TOS =0+90° and
+OS = 6,5 units. Calculate the value of 5.",ok
+2020,2020_nov_p2_exam_maths,P2,6,6.2,,"Determine, without using a calculator, the value of the following trigonometric
+expression:
+sin 2x. cos(—x) + cos 2x. sin(360° — x)
+sin(180° + x) (>)",missing_marks
+2020,2020_nov_p2_exam_maths,P2,6,6.3,,"Determine the general solution of the following equation:
+6sin’ x + 7cosx—3 =0 (6)
+. 1 > 1",missing_marks
+2020,2020_nov_p2_exam_maths,P2,6,6.4,,"Given: x+—=3cosA and x°+—>~=2
+x x
+Determine the value of cos 2A without using a calculator. (5)
+[24]
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,7,7.1,3.0,Show that QS = 37,ok
+2020,2020_nov_p2_exam_maths,P2,7,7.2,3.0,"Determine, in terms of r, the area of the flower garden. (2)
+73 Show that RS =rV10~6 cos 2x",ok
+2020,2020_nov_p2_exam_maths,P2,7,7.4,,"If r= 10 metres and x = 56°, calculate RS. (2)
+[10]
+
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,8,8.1,,"O is the centre of the circle.. KOM bisects chord LN and MNO=26°. K and P
+are points on the circle with NKP =32°. OP is drawn.
+[SS
+P",missing_marks
+2020,2020_nov_p2_exam_maths,P2,8,8.1.1,4.0,"Determine, giving reasons, the size of:
+(a) 0, (2)
+(b) O,",ok
+2020,2020_nov_p2_exam_maths,P2,8,8.1.2,,"Prove, giving reasons, that KN bisects OKP. (3)
+Copyright reserved Please turn over
+
+===== Page 11 =====
+Mathematics/P2 Ik DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,8,8.2,,"In AABC, F and G are points on sides AB and AC respectively. D isa point on
+GC such that D,= B.
+A
+VA .
+| \
+D
+Cc
+B",missing_marks
+2020,2020_nov_p2_exam_maths,P2,8,8.2.1,,"If AF is a tangent to the circle passing through points F, G and D, then
+prove, giving reasons, that FG || BC. (4)
+ws ; AF 2",missing_marks
+2020,2020_nov_p2_exam_maths,P2,8,8.2.2,,"If it is further given that cot = 5 AC =2x—6 and GC =x+9, then
+calculate the value of x. (4)
+[17]
+Copyright reserved Please turn over
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,9,9.1,,"In the diagram, O is the centre of the circle. Points 5, T and R lie on the circle.
+Chords ST, SR and TR are drawn in the circle. QS is a tangent to the circle at S.
+R
+/\
+T /
+/
+Q A\\/
+Ss
+Use the diagram to prove the theorem which states that QST=R. (5)
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,9,9.2,,"Chord QN bisects MNP and intersects chord MP at S. The tangent at P meets
+MN produced at R such that QN || PR. Let P, =X.
+R
+|
+TY",missing_marks
+2020,2020_nov_p2_exam_maths,P2,9,9.2.1,2.0,"Determine the following angles in terms of x. Give reasons
+(a) N, (2)
+(bo) Q",ok
+2020,2020_nov_p2_exam_maths,P2,9,9.2.2,,"Prove, giving reasons, that MN _ MS 6
+2. » giving , NR SQ (6)
+[15]
+Copyright reserved Please turn over
+
+===== Page 14 =====
+Mathematics/P2 14 DBE/November 2020
+SC/NSC",missing_marks
+2020,2020_nov_p2_exam_maths,P2,10,10.1,,"Prove, giving reasons, that:",missing_marks
+2020,2020_nov_p2_exam_maths,P2,10,10.1.1,3.0,FBDM is acyclic quadrilateral,ok
+2020,2020_nov_p2_exam_maths,P2,10,10.1.2,3.0,"B,=F (4)
+10.1.3. ACDB ||| ACBE",ok
+2020,2020_nov_p2_exam_maths,P2,10,10.2,,"If it is further given that CD =2 units and DE=6 units, calculate the length of:",missing_marks
+2020,2020_nov_p2_exam_maths,P2,10,10.2.1,3.0,BC,ok
+2020,2020_nov_p2_exam_maths,P2,10,10.2.2,,"DB (4)
+[17]
+TOTAL: 150
+Copyright reserved
+
+===== Page 15 =====
+Mathematics/P2 DBE/November 2020
+SC/NSC
+INFORMATION SHEET
+—~b+ Vb? —4ac
+x = ———————
+2a
+A= P(l+ni) A= P(-ni) A= P(-i)"" A= P(+i)""
+T, =a+(n-l)d S, = Fea + (nd
+n-I alr” ~1) a
+T, = ar S, =—— ; r#l S,,=——; -l<r<l
+r-l l-r
+poids"" =] p_ai-a+9""|
+i i
+Wey) — tern SOX tA) FX)
+f'(*) = lim ,
+| 2 x, tX. Vy t V2
+d= \(%)-x%) +0, -vS Mi 7 ° 9
+y=mxtc y-y, =m(x—x,) m=22— 1 m=tand
+Xx, ~ %Xy
+(x-a) +(y—bY =r?
+InAABC: —2-=—8 = 2
+sinA sinB sinc
+a’ =b? +c? —2be.cos A
+area AABC = asi C
+sin(a + £)=sinacos B+cosasin £ sin(a — 8) =sinacos f —cosasin B
+cos(a + 8) =cosacos f —sinasin B cos(a — 8) =cosacos 8 +sina sin B
+[cos asin a
+cos2a =41—2sin’ a sin2a =2sinacosa
+lacos? 1
+_ yx D~& —x)
+x= = |
+n OO
+n
+A
+P(A) S P(A or B) = P(A) + P(B) — P(A and B)
+n
+. x-X\y-y
+deaths p= = *-3)
+> (x-x)
+Copyright reserved",missing_marks

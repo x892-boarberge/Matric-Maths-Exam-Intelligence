@@ -1,0 +1,5 @@
+year,doc,exists,pages,chars_per_page,has_text_layer,ocr_required
+2020,p1_exam,True,11,0.0,False,True
+2020,p2_exam,True,15,0.0,False,True
+2020,p1_memo,True,18,862.7,True,False
+2020,p2_memo,True,27,965.3,True,False

@@ -1,0 +1,402 @@
+
+===== Page 1 =====
+te basic education
+— ee
+" FEO Department:
+©) Basic Education
+Ss REPUBLIC OF SOUTH AFRICA
+SENIOR CERTIFICATE/
+NATIONAL SENIOR CERTIFICATE
+GRADE 12
+i MATHEMATICS P2 i
+" NOVEMBER 2020 a
+MARKS: 150
+TIME: 3 hours
+This question paper consists of 14 pages, 1 information sheet
+and an answer book of 24 pages.
+Copyright reserved Please turn over
+
+
+===== Page 2 =====
+Mathematics/P2 2 DBE/November 2020
+SC/NSC
+
+INSTRUCTIONS AND INFORMATION
+
+Read the following instructions carefully before answering the questions.
+
+1. This question paper consists of 10 questions.
+
+2. Answer ALL the questions in the SPECIAL ANSWER BOOK provided.
+
+3. Clearly show ALL calculations, diagrams, graphs, etc. that you have used in
+determining your answers.
+
+4, Answers only will NOT necessarily be awarded full marks.
+
+5. You may use an approved scientific calculator (non-programmable and
+non-graphical), unless stated otherwise.
+
+6. If necessary, round off answers correct to TWO decimal places, unless stated
+otherwise.
+
+7. Diagrams are NOT necessarily drawn to scale.
+
+8. An information sheet with formulae is included at the end of the question paper.
+
+9. Write neatly and legibly.
+
+Copyright reserved Please turn over
+
+
+===== Page 3 =====
+Mathematics/P2 3 DBE/November 2020
+SC/NSC
+QUESTION 1
+A Mathematics teacher was curious to establish if her learners' Mathematics marks influenced
+their Physical Sciences marks. In the table below, the Mathematics and Physical Sciences marks
+of 15 learners in her class are given as percentages (%).
+MATHEMATICS | 96 | 62 | 21 | 33 | 53 | 76 | 32 | 59 | 43 | 33 | 49] 51 | 19 | 34 | 85
+(AS %)
+PHYSICAL
+mea blol=lsl=l=[>[1> [919 [|=
+SCATTER PLOT
+90 ——— pe een _ a ncaa pn Say
+F 60 = =aQe SSS SgescSt ossnesns Sn npess sess aes ss
+20 = sacecs a eS
+0- a
+0 10 20 30 40 50 60 70 80 90
+MATHEMATICS (%) |
+1.1 Determine the equation of the least squares regression line for the data. (3)
+1.2 Draw the least squares regression line on the scatter plot provided in the ANSWER
+BOOK. (2)
+1.3 Predict the Physical Sciences mark of a learner who achieved 69% for Mathematics. (2)
+1.4 Write down the correlation coefficient between the Mathematics and Physical
+Sciences marks for the data. (1)
+1.5 Comment on the strength of the correlation between the Mathematics and Physical
+Sciences marks for the data. (1)
+1.6 What trend did the teacher observe between the results of the two subjects? (1)
+[10]
+Copyright reserved Please turn over
+
+
+===== Page 4 =====
+Mathematics/P2 4 DBE/November 2020
+SC/NSC
+QUESTION 2
+The number of aircraft landing at the King Shaka International Airport and the Port Elizabeth
+Airport for the period starting in April 2017 and ending in March 2018, is shown in the double
+bar graph below.
+Number of aircraft landing at the King Shaka
+International airport and the Port Elizabeth Airport for
+000 the period April 2017 to March 2018
+SI
+= 2500 —— —
+=|
+&
+= 2000 — ~
+§
+= 1500 - _ -
+ra
+ij
+6 1000 4 ; . 7 : _ BKing Shaka
+o Port Elizabeth
+x2
+E500 | — — — -
+Zz
+0 i T TT —~ T "y ae we “T — eens
+Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar
+| Months in the period 2017/2018
+[Source: http://www. airports.co.za/airports/statistics/aircraft]
+2.1 The number of aircraft landing at the Port Elizabeth Airport exceeds the number of
+aircraft landing at the King Shaka International Airport during some months of the
+given period. During which month is this difference the greatest? (1)
+2.2 The number of aircraft landing at the King Shaka International Airport during these
+months are:
+2182 | 2323 | 2267 | 2334 | 2346 | 2175 |
+2293 | 2263 | 2215 | 2271 | 2018 2254 |
+Calculate the mean for the data. (2)
+2.3 Calculate the standard deviation for the number of aircraft landing at the King Shaka
+International Airport for the given period. (2)
+2.4 Determine the number of months in which the number of aircraft landing at the King
+Shaka International Airport were within one standard deviation of the mean. (3)
+2.5 Which ONE of the following statements is CORRECT?
+A. During December and January, there were more landings at the Port
+Elizabeth Airport than at the King Shaka International Airport.
+B. There was a greater variation in the number of aircraft landing at the King
+Shaka International Airport than at the Port Elizabeth Airport for the given
+period.
+C. The standard deviation of the number of landings at the Port Elizabeth
+Airport will be higher than the standard deviation of the number of landings
+at the King Shaka International Airport. (1)
+[9]
+Copyright reserved Please turn over
+
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2020
+SC/NSC
+QUESTION 3
+ATSK is drawn. The equation of ST is y= > +6 and ST cuts the x-axis at M. W(4; 4)
+lies on ST and R lies on SK such that WR is parallel to the y-axis. WK cuts the x-axis at
+V andthe y-axis at P(O;-4). KS produced cuts the x-axis at N. TSK =6.
+y
+T
+WC-4 ; 4)
+B ZN
+S PO; -4)
+R
+K
+3.1 Calculate the gradient of WP. (2)
+3.2 Show that WP | ST. (2)
+3.3 If the equation of SK is given as 5y+2x+60=0, calculate the coordinates of S. (4)
+3.4 Calculate the length of WR. (4)
+3.5 Calculate the size of @. (5)
+3.6 Let L_ be a point in the third quadrant such that SWRL, in that order, forms a
+parallelogram. Calculate the area of SWRL. (4)
+[21]
+Copyright reserved Please tum over
+
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2020
+SC/NSC
+QUESTION 4
+M(-3 ; 4) is the centre of the large circle and a point on the small circle having centre O(0; 0).
+From N(-11 ; p), a tangent is drawn to touch the large circle at T with NT is parallel to the
+y-axis. NM is a tangent to the smaller circle at M with MOS a diameter.
+/
+a : oh
+r M(-3 ; 4)
+%, ‘
+| OO
+\
+NC-11; \, \
+Ss
+
+4.1 Determine the equation of the small circle. (2)
+4.2 Determine the equation of the circle centred at M in the form
+
+(x-a) +(y-bY =r? (3)
+4.3 Determine the equation of NM inthe form y=mx+e (4)
+4.4 Calculate the length of SN. (5)
+4.5 If another circle with centre B(—2 ; 5) and radius k& touches the circle centred at M,
+
+determine the value(s) of k, correct to ONE decimal place. (5)
+
+[19]
+
+Copyright reserved Please turn over
+
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2020
+SC/NSC
+QUESTION 5
+The graphs of f(x) = 008% and g(x) =sin(x+30°), for the interval xe lor; 180°], are
+drawn below. A(130,9° ; 0,33) is the approximate point of intersection of the two graphs.
+y
+§
+A(130,9° ; 0,33)
+0° 90° 150° 180°
+f
+5.1 Write down the period of g. (1)
+52 Write down the amplitude of f (1)
+53 Determine the value of £(180°) — (180°) (1)
+5.4 Use the graphs to determine the values of x, in the interval xe [0° ; 180°], for
+which:
+5.4.1 f(x-10°) = g(x -10°) ())
+5.4.2 VJ3sinx+cosx 21 (4)
+[8]
+Copyright reserved Please turn over
+
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2020
+SC/NSC
+QUESTION 6
+6.1 In the diagram, P(-5 ; 12) and T lies on the positive x-axis. POT =0
+y
+»(-5 ; 12) |
+|
+ae
+j T
+|
+Answer the following without using a calculator:
+6.1.1 Write down the value of tan@ (1)
+6.1.2 Calculate the value of cos@ (3)
+6.1.3 S(a ; 6) is a point in the third quadrant such that TOS =0+90° and
+OS = 6,5 units. Calculate the value of 5. (4)
+6.2 Determine, without using a calculator, the value of the following trigonometric
+expression:
+sin 2x. cos(—x) + cos 2x. sin(360° — x)
+sin(180° + x) (>)
+6.3 Determine the general solution of the following equation:
+6sin’ x + 7cosx—3 =0 (6)
+. 1 > 1
+6.4 Given: x+—=3cosA and x°+—>~=2
+x x
+Determine the value of cos 2A without using a calculator. (5)
+[24]
+Copyright reserved Please turn over
+
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2020
+SC/NSC
+QUESTION 7
+A landscape artist plans to plant flowers within two concentric circles around a vertical light
+pole PQ. R isa point on the inner circle and S is a point on the outer circle. R, Q and S lie in
+the same horizontal plane. RS is a pipe used for the irrigation system in the garden.
+e The radius of the inner circle is r units and the radius of the outer circle is QS.
+e The angle of elevation from S to P is 30°.
+© ROQS=2x and PQ =-3r
+P
+/ / oe .
+| ( 7 oR )
+S
+7.1 Show that QS = 37 (3)
+7.2 Determine, in terms of r, the area of the flower garden. (2)
+73 Show that RS =rV10~6 cos 2x (3)
+7.4 If r= 10 metres and x = 56°, calculate RS. (2)
+[10]
+
+Copyright reserved Please turn over
+
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2020
+SC/NSC
+QUESTION 8
+8.1 O is the centre of the circle.. KOM bisects chord LN and MNO=26°. K and P
+are points on the circle with NKP =32°. OP is drawn.
+[SS
+P
+8.1.1 Determine, giving reasons, the size of:
+(a) 0, (2)
+(b) O, (4)
+8.1.2 Prove, giving reasons, that KN bisects OKP. (3)
+Copyright reserved Please turn over
+
+
+===== Page 11 =====
+Mathematics/P2 Ik DBE/November 2020
+SC/NSC
+8.2 In AABC, F and G are points on sides AB and AC respectively. D isa point on
+GC such that D,= B.
+A
+VA .
+| \
+D
+Cc
+B
+8.2.1 If AF is a tangent to the circle passing through points F, G and D, then
+prove, giving reasons, that FG || BC. (4)
+ws ; AF 2
+8.2.2 If it is further given that cot = 5 AC =2x—6 and GC =x+9, then
+calculate the value of x. (4)
+[17]
+Copyright reserved Please turn over
+
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2020
+SC/NSC
+QUESTION 9
+9.1 In the diagram, O is the centre of the circle. Points 5, T and R lie on the circle.
+Chords ST, SR and TR are drawn in the circle. QS is a tangent to the circle at S.
+R
+/\
+T /
+/
+Q A\\/
+Ss
+Use the diagram to prove the theorem which states that QST=R. (5)
+Copyright reserved Please turn over
+
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2020
+SC/NSC
+9.2 Chord QN bisects MNP and intersects chord MP at S. The tangent at P meets
+MN produced at R such that QN || PR. Let P, =X.
+R
+|
+TY
+9.2.1 Determine the following angles in terms of x. Give reasons
+(a) N, (2)
+(bo) Q (2)
+9.2.2 Prove, giving reasons, that MN _ MS 6
+2. » giving , NR SQ (6)
+[15]
+Copyright reserved Please turn over
+
+
+===== Page 14 =====
+Mathematics/P2 14 DBE/November 2020
+SC/NSC
+QUESTION 10
+In the diagram, a circle passes through D,B and E. Diameter ED of the circle is produced
+to C and AC isa tangent to the circle at B. M isa point on DE such that AM _L DE.
+AM and chord BE intersect at F.
+C D| M |
+z ———- ———— eee —— —__—— aun E
+N \ \ 2 ai |
+_ \ \ | we |
+Se \ \ a |
+he \ \ 4 lL /
+N\, * \ 3 2 /
+A
+10.1 Prove, giving reasons, that:
+10.1.1 FBDM is acyclic quadrilateral (3)
+10.1.2 B,=F (4)
+10.1.3. ACDB ||| ACBE (3)
+10.2 If it is further given that CD =2 units and DE=6 units, calculate the length of:
+10.2.1 BC (3)
+10.2.2 DB (4)
+[17]
+TOTAL: 150
+Copyright reserved
+
+
+===== Page 15 =====
+Mathematics/P2 DBE/November 2020
+SC/NSC
+INFORMATION SHEET
+—~b+ Vb? —4ac
+x = ———————
+2a
+A= P(l+ni) A= P(-ni) A= P(-i)" A= P(+i)"
+T, =a+(n-l)d S, = Fea + (nd
+n-I alr” ~1) a
+T, = ar S, =—— ; r#l S,,=——; -l<r<l
+r-l l-r
+poids" =] p_ai-a+9"|
+i i
+Wey) — tern SOX tA) FX)
+f'(*) = lim ,
+| 2 x, tX. Vy t V2
+d= \(%)-x%) +0, -vS Mi 7 ° 9
+y=mxtc y-y, =m(x—x,) m=22— 1 m=tand
+Xx, ~ %Xy
+(x-a) +(y—bY =r?
+InAABC: —2-=—8 = 2
+sinA sinB sinc
+a’ =b? +c? —2be.cos A
+area AABC = asi C
+sin(a + £)=sinacos B+cosasin £ sin(a — 8) =sinacos f —cosasin B
+cos(a + 8) =cosacos f —sinasin B cos(a — 8) =cosacos 8 +sina sin B
+[cos asin a
+cos2a =41—2sin’ a sin2a =2sinacosa
+lacos? 1
+_ yx D~& —x)
+x= = |
+n OO
+n
+A
+P(A) S P(A or B) = P(A) + P(B) — P(A and B)
+n
+. x-X\y-y
+deaths p= = *-3)
+> (x-x)
+Copyright reserved
