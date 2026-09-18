@@ -1,0 +1,380 @@
+year,document_id,paper,question_number,subquestion,marks,question_text,segmentation_status
+2015,2015_nov_p1_exam_maths,P1,1,1.1,3.0,"Solve for x:
+LL x” -9x+20=0",ok
+2015,2015_nov_p1_exam_maths,P1,1,1.1.2,,"3x° +5x=4 (correct to TWO decimal places) (4)
+=>",missing_marks
+2015,2015_nov_p1_exam_maths,P1,1,1.1.3,4.0,24° =64,ok
+2015,2015_nov_p1_exam_maths,P1,1,1.1.4,4.0,V2-x=x-2,ok
+2015,2015_nov_p1_exam_maths,P1,1,1.1.5,3.0,x°+7x<0,ok
+2015,2015_nov_p1_exam_maths,P1,1,1.2,,"Given: (3x- y) +(x-5) =0
+Solve for x and y. (4)
+L3 For which value of k will the equation x° +x=k have no real roots? (4)
+[26]",missing_marks
+2015,2015_nov_p1_exam_maths,P1,2,2.4,,"Determine S,,—S, inthe form ab”, where S, is the sum of the first 1 terms of
+the sequence. (4)
+[10]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P 1 4 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p1_exam_maths,P1,3,3.2,2.0,"Write S, in sigma notation.",ok
+2015,2015_nov_p1_exam_maths,P1,3,3.3,3.0,"Show that S|, =4n* -7n.",ok
+2015,2015_nov_p1_exam_maths,P1,3,3.4,,"Another sequence is defined as:
+Q, =-6
+Os =-H-3
+Q, =-6-3+5
+Q, =-6-34+5+13
+Q, =-6-34+5413+21",missing_marks
+2015,2015_nov_p1_exam_maths,P1,3,3.4.1,2.0,"Write down a numerical expression for Q,.",ok
+2015,2015_nov_p1_exam_maths,P1,3,3.4.2,12.0,"Calculate the value of Q,,.. (3)",ok
+2015,2015_nov_p1_exam_maths,P1,4,4.1,1.0,Write down the equation of the asymptote of f-,ok
+2015,2015_nov_p1_exam_maths,P1,4,4.2,4.0,"Sketch the graph of f Clearly indicate ALL intercepts with the axes as well as the
+asymptote.",ok
+2015,2015_nov_p1_exam_maths,P1,4,4.3,,"The graph of g is obtained by reflecting the graph of f in the y-axis. Write down
+the equation of g. (1)
+[6]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P 1 5 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p1_exam_maths,P1,5,5.1,2.0,Determine the coordinates of Q.,ok
+2015,2015_nov_p1_exam_maths,P1,5,5.2,3.0,Write down the domain of h''.,ok
+2015,2015_nov_p1_exam_maths,P1,5,5.3,3.0,"Sketch the graph of /7' in your ANSWER BOOK, clearly indicating the y-intercept
+and the end points.",ok
+2015,2015_nov_p1_exam_maths,P1,5,5.4,5.0,"For which value(s) of x will h(x)=h""'(x)? (3)
+5:5 P(x ; y) is the point on the graph of / that is closest to the origin. Calculate the
+distance OP.",ok
+2015,2015_nov_p1_exam_maths,P1,5,5.6,,"Given: h(x)= f""(x) where f is a function defined for -2<x<4.",missing_marks
+2015,2015_nov_p1_exam_maths,P1,5,5.6.1,,"Explain why / has a local minimum. (2)
+36,2 Write down the value of the maximum gradient of the tangent to the
+graph of 7. (1)
+[19]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P 1 6 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p1_exam_maths,P1,6,6.1,1.0,"The graphs of f(x)=-2x?+18 and g(x)=ax’?+bx+c are sketched below.
+Points P and Q are the x-intercepts of £ Points Q and R are the x-intercepts
+of g. S is the turning point of g. T is the y-intercept of both f and g.
+J
+oh
+f
+x
+P 0 R
+S
+GAs) Write down the coordinates of T.",ok
+2015,2015_nov_p1_exam_maths,P1,6,6.12,3.0,Determine the coordinates of Q.,ok
+2015,2015_nov_p1_exam_maths,P1,6,6.1.3,2.0,"Given that x = 4,5 at S, determine the coordinates of R.",ok
+2015,2015_nov_p1_exam_maths,P1,6,6.1.4,2.0,Determine the value(s) of x for which g”(x)>0.,ok
+2015,2015_nov_p1_exam_maths,P1,6,6.2,,"The function defined as_y =“? + q_has the following properties:
+x+p
+e The domainis xe R, x #-2.
+° y=x+6 isan axis of symmetry.
+° The function is increasing for all x € R, x + -2.
+Draw a neat sketch graph of this function. Your sketch must include the asymptotes,
+if any. (4)
+[12]
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P 1 7 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p1_exam_maths,P1,7,7.1,3.0,"How much did Joe pay for the vehicle? (1)
+Ted Use the reducing-balance method to calculate the percentage annual rate of
+depreciation of the vehicle that Joe bought. (4)
+73 If the average rate of the price increase of the vehicle is 8,1% p.a., calculate the value
+of a.",ok
+2015,2015_nov_p1_exam_maths,P1,7,7.4,,"A vehicle that costs R450 000 now, is to be replaced at the end of 4 years. The old
+vehicle will be used as a trade-in. A sinking fund is created to cover the replacement
+cost of this vehicle. Payments will be made at the end of each month. The first
+payment will be made at the end of the 13"" month and the last payment will be made
+at the end of the 48"" month. The sinking fund earns interest at a rate of 6,2% p.a.,
+compounded monthly.
+Calculate the monthly payment to the fund. (3)
+[13]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P1 8 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p1_exam_maths,P1,8,8.1,,"If f(x) =x° —3x, determine f(x) from first principles. )",missing_marks
+2015,2015_nov_p1_exam_maths,P1,8,8.2,11.0,"Determine:
+a5.1 Y i y= [+ -5) (3)
+dx x""
+x -1
+(3)",ok
+2015,2015_nov_p1_exam_maths,P1,9,9.1,5.0,Show that a= 5 and b=6.,ok
+2015,2015_nov_p1_exam_maths,P1,9,9.2,4.0,"Calculate the average gradient of h between P and Q, if it is given that
+x=-latP.",ok
+2015,2015_nov_p1_exam_maths,P1,9,9.3,3.0,Show that the concavity of h changes at x= >,ok
+2015,2015_nov_p1_exam_maths,P1,9,9.4,,"Explain the significance of the change in QUESTION 9.3 with respect to A. (1)
+95 Determine the value of x, given x <0, at which the tangent to h is parallel to g. (4)
+[17]
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P 1 9 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p1_exam_maths,P1,10,10.1,2.0,Determine r in terms of 4. Leave your answer in surd form.,ok
+2015,2015_nov_p1_exam_maths,P1,10,10.2,,"Determine the derivative of the volume of water with respect to 4 when / is equal
+to 9cm. (5)
+[7]
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P1 10 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p1_exam_maths,P1,11,11.1,,"For two events, A and B, it is given that:
+P(A) = 0,2
+P(B) = 0,63
+P(A and B) = 0,126
+Are the events, A and B, independent? Justify your answer with appropriate
+calculations. (3)
+ae The letters of the word DECIMAL are randomly arranged into a new ‘word', also
+consisting of seven letters. How many different arrangements are possible if:",missing_marks
+2015,2015_nov_p1_exam_maths,P1,11,11.2.1,2.0,Letters may be repeated,ok
+2015,2015_nov_p1_exam_maths,P1,11,11.2.2,4.0,"Letters may not be repeated (2)
+Li233 The arrangements must start with a vowel and end in a consonant and no
+repetition of letters is allowed",ok
+2015,2015_nov_p1_exam_maths,P1,11,11.3,,"There are ¢ orange balls and 2 yellow balls in a bag. Craig randomly selects one ball
+from the bag, records his choice and returns the ball to the bag. He then randomly
+selects a second ball from the bag, records his choice and returns it to bag. It is known
+that the probability that Craig will select two balls of the same colour from the bag
+is 52%.
+Calculate how many orange balls are in the bag. (6)
+[17]
+TOTAL: 150
+Copyright reserved
+
+===== Page 11 =====
+Mathematics/P 1 DBE/November 2015
+NSC
+INFORMATION SHEET
+_ —~b+ Vb? —4ac
+2a
+A=P(1+ni) A= P(1—ni) A=P(1-i)” A= P(1+i)”
+T, =a+(n-l)d S, =F a+ (n—1d]
+T. =ar"""" S _ alr” -1) opel S,=—-3-ler<l
+mn r—-] l-r
+r+ -1] pa l-0+i""|
+7 i
+h>0 h
+a. oe 7 X,+xX, yt+y
+Z 2
+y=mxt+e y-y, =mM(x-x,) m=22—*1 m=tan@
+a i |
+(ea)? +(y-a) =r?
+snA sinB sinC
+a’ =b? +c? —2be.cosA
+area AABC = sabsinC
+sin(a + B) = sina.cos# + cosa.sinB sin(a —B)=sina.cosB —cosa.sinB
+cota + B) =cosa@.cos#—sina.sin B cosa ~ B) =cosa@.cos#+sina.sin B
+cos’ asin’ a
+cos2@ =41—2sin’ a sin2a = 2sina.cosa
+2cos’ a —1
+x= go? = +1 __
+n n
+P(A) =——= P(A or B) = P(A) + P(B) — P(A and B)
+n(S)
+x-xKy-y
+y=atbx b= Le-y-7)
+D@-x)
+Copyright reserved",missing_marks
+2015,2015_nov_p2_exam_maths,P2,1,1.22,1.0,"Draw the least squares regression line on the scatter plot drawn
+for QUESTION 1.1. (2)
+L3 Identify an outlier in the data set.",ok
+2015,2015_nov_p2_exam_maths,P2,1,1.4,2.0,Calculate the value of the correlation coefficient.,ok
+2015,2015_nov_p2_exam_maths,P2,1,1.5,,"Comment on the strength of the relationship between the fat content and the number
+of kilojoules of energy. (1)
+[11]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P2 4 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,2,2.4,,"Determine the number of times that the sum of the recorded values of the dice is
+within ONE standard deviation from the mean. Show your calculations. (3)
+[9]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,3,3.1,2.0,"The gradient of PQ (2)
+cme The equation of MN in the form y= mx +c and give reasons (4)
+ad The length of MN",ok
+2015,2015_nov_p2_exam_maths,P2,3,3.4,1.0,The length of RS,ok
+2015,2015_nov_p2_exam_maths,P2,3,3.5,3.0,"The coordinates of S such that PQRS, in this order, is a parallelogram",ok
+2015,2015_nov_p2_exam_maths,P2,3,3.6,,"The coordinates of P (6)
+
+[18]
+
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,4,4.1,3.0,Determine the equation of the circle in the form (x—a)? +(y—b)* =r’.,ok
+2015,2015_nov_p2_exam_maths,P2,4,4.2,3.0,Calculate the coordinates of S.,ok
+2015,2015_nov_p2_exam_maths,P2,4,4.3,4.0,Determine the equation of the tangent APB inthe form y=mx+c.,ok
+2015,2015_nov_p2_exam_maths,P2,4,4.4,2.0,Calculate the size of a.,ok
+2015,2015_nov_p2_exam_maths,P2,4,4.5,4.0,"Calculate, with reasons, the size of 8.",ok
+2015,2015_nov_p2_exam_maths,P2,4,4.6,,"Calculate the area of APQS. (4)
+
+[20]
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P2 (aan DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,5,5.1.3,6.0,"tan(—23°) (2)
+SZ Simplify the following expression to a single trigonometric function:
+4 cos(—x).cos(90° + x)
+sin(30° — x).cos x + cos(30° — x).sin x",ok
+2015,2015_nov_p2_exam_maths,P2,5,5.3,6.0,Determine the general solution of cos2x—7cosx—-3=0.,ok
+2015,2015_nov_p2_exam_maths,P2,5,5.4,,"Given that sin@ = ; , calculate the numerical value of sin30, WITHOUT using
+a calculator. (5)
+[24]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,6,6.1,4.0,Determine the values of p and q.,ok
+2015,2015_nov_p2_exam_maths,P2,6,6.2,2.0,Determine the values of x in the interval —240° <x < 240° for which f(x) > g(x).,ok
+2015,2015_nov_p2_exam_maths,P2,6,6.3,,"Describe a transformation that the graph of g has to undergo to form the graph of A,
+
+where h(x) =—cosx. (2)
+
+[8]
+
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,7,7.1,,"Determine an expression for CAD in terms of @ (1)
+fe Prove that cos@ =—~—. (4)
+x+3",missing_marks
+2015,2015_nov_p2_exam_maths,P2,7,7.3,,"If it is given that x = 2, calculate AB, the height of the piece of wood. (5)
+[10]
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2015
+NSC
+Give reasons for ALL statements in QUESTIONS 8, 9, 10 and 11.",missing_marks
+2015,2015_nov_p2_exam_maths,P2,8,8.1,,"Inthe diagram below, cyclic quadrilateral ABCD is drawn in the circle with centre O.
+A a
+(5 |
+Cc",missing_marks
+2015,2015_nov_p2_exam_maths,P2,8,8.1.1,1.0,"Complete the following statement:
+The angle subtended by a chord at the centre of a circle is ... the angle subtended
+by the same chord at the circumference of the circle.",ok
+2015,2015_nov_p2_exam_maths,P2,8,8.1.2,,"Use QUESTION 8.1.1 to prove that A+C =180°. (3)
+Copyright reserved Please turn over
+
+===== Page 11 =====
+Mathematics/P2 1] DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,8,8.2,,"In the diagram below, CD is a common chord of the two circles. Straight lines ADE
+and BCF are drawn. Chords AB and EF are drawn.
+B XY
+A iN
+RK.
+D )
+E
+Prove that EF || AB. (5)
+[9]
+Copyright reserved Please turn over
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,9,9.1,2.0,"Prove that K 3 =X. (4)
+2 Prove that AKBT is acyclic quadrilateral.",ok
+2015,2015_nov_p2_exam_maths,P2,9,9.3,4.0,Prove that TK bisects AKB.,ok
+2015,2015_nov_p2_exam_maths,P2,9,9.4,2.0,"Prove that TA is a tangent to the circle passing through the points A, K and H.",ok
+2015,2015_nov_p2_exam_maths,P2,9,9.5,,"S is a point in the circle such that the points A, S, K and B are concyclic.
+Explain why A, S, B and T are also concyclic. (2)
+[14]
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,10,10.1,3.0,"Calculate, with reasons, the length of DC.",ok
+2015,2015_nov_p2_exam_maths,P2,10,10.2,3.0,"E isa pointon BC such that BE: EC =3: 1. EF is parallel to BD with
+F on DC.
+2A Calculate, with reasons, the length of CF.",ok
+2015,2015_nov_p2_exam_maths,P2,10,10.2.2,5.0,Prove that ABAC || | AFEC.,ok
+2015,2015_nov_p2_exam_maths,P2,10,10.2.3,4.0,Calculate the length of AC.,ok
+2015,2015_nov_p2_exam_maths,P2,10,10.2.4,,"Write down, giving reasons, the radius of the circle passing through points
+A, B and C. (2)
+[17]
+Copyright reserved Please turn over
+
+===== Page 14 =====
+Mathematics/P2 14 DBE/November 2015
+NSC",missing_marks
+2015,2015_nov_p2_exam_maths,P2,11,11.1,,"Complete the following statement:
+If the sides of two triangles are in the same proportion, then the triangles are ... (1)
+LL.2 In the diagram below, K, M and N respectively are points on sides PQ, PR and
+QR of APQR. KP = 1,5; PM = 2; KM = 2,5; MN =1; MR = 1,25 and
+NR = 0,75.
+Nig
+1,5 Z
+M
+K 1,25
+R
+N 0,75
+Q",missing_marks
+2015,2015_nov_p2_exam_maths,P2,11,11.2.1,3.0,Prove that AKPM ||| ARNM.,ok
+2015,2015_nov_p2_exam_maths,P2,11,11.2.2,,"Determine the length of NQ. (6)
+[10]
+TOTAL: 150
+Copyright reserved
+
+===== Page 15 =====
+Mathematics/P2 DBE/November2015
+NSC
+INFORMATION SHEET
+re —b+Vb2 —4ac
+2a
+A= P(l+ni) A= P(1-ni) A= P(1-i)” A= P(1+i)”
+n
+T, =a+(n-l)d S, = 5Pa+(n-1a]
+T, =ar""""' 5 _ ar"" -1) ;rel S,=-—3-ler<
+"" r-1 l-r
++a -1] p_xl-04"")
+i i
+h>0 h
+x, +X y Ty
+d= (x, ey"" +e M Soe ts
+2 2
+y=mxt+c y-y, =m(x-x,) m= 2 m=tan@d
+a? ad |
+(x-a)’ +(y-b) =r?
+In AABC: _#. = —_ = —_
+snA sinB~ sinC
+a’ =? +7 —2bc.cos A
+area AABC = 5abssinc
+sin(a + B) = sina.cosf + cosa.sin B sin(a - B) = sina.cos# —cosa.sinB
+cota + B) =cosa.cos#—sina.sinB coda _ B) =cosa@.cos#+sina.sinB
+cos’ a@—sin’ a
+cos2a@ =41-2sin’a@ sin2a@ = 2sina.cosa
+2cos* a—1
+x,-X
+x= oe o = +L __
+n n
+nA) -
+P(A) = a) P(A or B) = P(A) + P(B) — P(A and B)
+n
+. > (e-xXy-9)
+yp=a+bx b= eS
+Diez
+Copyright reserved",missing_marks

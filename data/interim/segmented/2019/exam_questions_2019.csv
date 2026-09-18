@@ -1,0 +1,475 @@
+year,document_id,paper,question_number,subquestion,marks,question_text,segmentation_status
+2019,2019_nov_p1_exam_maths,P1,1,1.1,,Solve for x:,missing_marks
+2019,2019_nov_p1_exam_maths,P1,1,1.1.1,3.0,x? +5x-6=0,ok
+2019,2019_nov_p1_exam_maths,P1,1,1.1.2,3.0,4x*+3x-5=0 (correct to TWO decimal places),ok
+2019,2019_nov_p1_exam_maths,P1,1,1.1.3,4.0,"4x? -1<0 (3)
+114 (Vv32 + x | \v32 - x] =x",ok
+2019,2019_nov_p1_exam_maths,P1,1,1.2,5.0,"Solve simultaneously for x and y:
+ytx=12 and xy=14-3x",ok
+2019,2019_nov_p1_exam_maths,P1,1,1.3,,"Consider the product 1x2x3x4x... x 30.
+Determine the largest value of k such that 3° is a factor of this product. (4)
+[22]",missing_marks
+2019,2019_nov_p1_exam_maths,P1,2,2.1,,Given the quadratic sequence: 321 ; 290 ; 261 ; 234; ....,missing_marks
+2019,2019_nov_p1_exam_maths,P1,2,2.1.1,2.0,Write down the values of the next TWO terms of the sequence.,ok
+2019,2019_nov_p1_exam_maths,P1,2,2.1.2,4.0,"Determine the general term of the sequence in the form J, = an’ +bnt+c.",ok
+2019,2019_nov_p1_exam_maths,P1,2,2.1.3,4.0,Which term(s) of the sequence will have a value of 74?,ok
+2019,2019_nov_p1_exam_maths,P1,2,2.1.4,,"Which term in the sequence has the least value? (2)
+. . ; 5 5 5",missing_marks
+2019,2019_nov_p1_exam_maths,P1,2,2.2,,"Given the geometric series: — +—+—~—+...=K
+8 16 32",missing_marks
+2019,2019_nov_p1_exam_maths,P1,2,2.2.1,3.0,Determine the value of K ifthe series has 21 terms.,ok
+2019,2019_nov_p1_exam_maths,P1,2,2.2.2,,"Determine the largest value of n for which 7, > a (4)
+[19]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P 1 4 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p1_exam_maths,P1,3,3.1,,"Without using a calculator, determine the value of: y— — > — (3)
+y=3 ye 2 y=3 Y -1",missing_marks
+2019,2019_nov_p1_exam_maths,P1,3,3.2,,"A steel pavilion at a sports ground comprises of a series of 12 steps, of which the first
+3 are shown in the diagram below.
+Each step is 5m wide. Each step has a rise of ; m and has a tread of ; m, as
+shown in the diagram below.
+3 y
+The open side (shaded on sketch) on each side of the pavilion must be covered with
+metal sheeting. Calculate the area (in m7) of metal sheeting needed to cover both
+open sides. (6)
+[9]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P1 5 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p1_exam_maths,P1,4,4.1,1.0,Write down the value of p.,ok
+2019,2019_nov_p1_exam_maths,P1,4,4.2,3.0,Show that a=3 and b=2.,ok
+2019,2019_nov_p1_exam_maths,P1,4,4.3,4.0,Calculate the coordinates of C.,ok
+2019,2019_nov_p1_exam_maths,P1,4,4.4,2.0,Write down the range of f,ok
+2019,2019_nov_p1_exam_maths,P1,4,4.5,3.0,"Determine the equation of the line through C that makes an angle of 45° with the
+positive x-axis. Write your answer in the form y=...",ok
+2019,2019_nov_p1_exam_maths,P1,4,4.6,2.0,"Is the straight line, determined in QUESTION 4.5, a tangent to /? Explain
+your answer.",ok
+2019,2019_nov_p1_exam_maths,P1,4,4.7,,"The function h(x) =f(m—x)+q has only one x-intercept at x= 0. Determine the
+values of m and q. (4)
+[19]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P 1 6 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p1_exam_maths,P1,5,5.1,2.0,Determine the value of &.,ok
+2019,2019_nov_p1_exam_maths,P1,5,5.2,2.0,"Graph g is obtained by reflecting graph f about the line y= x. Determine the
+
+equation of g inthe form y=...",ok
+2019,2019_nov_p1_exam_maths,P1,5,5.3,4.0,Sketch the graph g. Indicate on your graph the coordinates of two points on g.,ok
+2019,2019_nov_p1_exam_maths,P1,5,5.4,,Use your graph to determine the value(s) of x for which:,missing_marks
+2019,2019_nov_p1_exam_maths,P1,5,5.4.1,2.0,I(x) x g(x) > 0,ok
+2019,2019_nov_p1_exam_maths,P1,5,5.4.2,2.0,2(x)<-1,ok
+2019,2019_nov_p1_exam_maths,P1,5,5.5,,"If h(x) =f), calculate the value of x for which f(x)— h(x) = (4)
+
+[16]
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P 1 7 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p1_exam_maths,P1,6,6.1,5.0,"Two friends, Kuda and Thabo, each want to invest RS 000 for four years. Kuda
+invests his money in an account that pays simple interest at 8,3% per annum. At the
+end of four years, he will receive a bonus of exactly 4% of the accumulated amount.
+Thabo invests his money in an account that pays interest at 8,1% p.a., compounded
+monthly.
+Whose investment will yield a better return at the end of four years? Justify your
+answer with appropriate calculations.",ok
+2019,2019_nov_p1_exam_maths,P1,6,6.2,,"Nine years ago, a bank granted Mandy a home loan of R525 000. This loan was to be
+repaid over 20 years at an interest rate of 10% p.a., compounded monthly. Mandy's
+monthly repayments commenced exactly one month after the loan was granted.",missing_marks
+2019,2019_nov_p1_exam_maths,P1,6,6.2.1,5.0,"Mandy decided to make monthly repayments of R6 000 instead of the
+required R5 066,36. How many payments will she make to settle the
+loan?",ok
+2019,2019_nov_p1_exam_maths,P1,6,6.2.2,14.0,"After making monthly repayments of R6 000 for nine years, Mandy
+required money to fund her daughter's university fees. She approached the
+bank for another loan. Instead, the bank advised Mandy that the extra
+amount repaid every month could be regarded as an investment and that
+she could withdraw this full amount to fund her daughter's studies.
+Calculate the maximum amount that Mandy may withdraw from the loan
+account. (4)",ok
+2019,2019_nov_p1_exam_maths,P1,7,7.1,4.0,Determine f ‘(x) from first principles if it is given that f(x) =4-7x.,ok
+2019,2019_nov_p1_exam_maths,P1,7,7.2,3.0,Determine o if y= 4x8 4x?,ok
+2019,2019_nov_p1_exam_maths,P1,7,7.3,,"Given: y=ax’ +a
+Determine:
+dy",missing_marks
+2019,2019_nov_p1_exam_maths,P1,7,7.3,,"da (2)
+. . 12 . .",missing_marks
+2019,2019_nov_p1_exam_maths,P1,7,7.4,,"The curve with equation y=x+— _ passes through the point A(2 ; 6). Determine
+x
+the equation of the line perpendicular to the tangent to the curve at A. (4)
+[14]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P | 8 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p1_exam_maths,P1,8,8.1,1.0,At what height above the floor did the insect start to crawl?,ok
+2019,2019_nov_p1_exam_maths,P1,8,8.2,3.0,How many times did the insect reach the floor?,ok
+2019,2019_nov_p1_exam_maths,P1,8,8.3,3.0,Determine the maximum height that the insect reached above the floor. (4),ok
+2019,2019_nov_p1_exam_maths,P1,9,9.1,3.0,Solve f(x) =f ‘(x),ok
+2019,2019_nov_p1_exam_maths,P1,9,9.2,,"The graphs f, f’ and f” all pass through the point (0; 0).",missing_marks
+2019,2019_nov_p1_exam_maths,P1,9,9.2.1,1.0,For which of the graphs will (0; 0) be a stationary point?,ok
+2019,2019_nov_p1_exam_maths,P1,9,9.2.2,2.0,"Explain the difference, if any, in the stationary points referred to in",ok
+2019,2019_nov_p1_exam_maths,P1,9,9.3,3.0,Determine the vertical distance between the graphs of f’ and f” at x=1.,ok
+2019,2019_nov_p1_exam_maths,P1,9,9.4,13.0,For which value(s) of x is f(x)— f (x) <0? (4),ok
+2019,2019_nov_p1_exam_maths,P1,10,10.1,2.0,The same day,ok
+2019,2019_nov_p1_exam_maths,P1,10,10.2,,"Consecutive days (3)
+[5]
+
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P 1 9 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p1_exam_maths,P1,11,11.1,,"Events A and B are independent. P(A) =0,4 and P(B) = 0,25.",missing_marks
+2019,2019_nov_p1_exam_maths,P1,11,11.1.1,3.0,"Represent the given information on a Venn diagram. Indicate on the Venn
+diagram the probabilities associated with each region.",ok
+2019,2019_nov_p1_exam_maths,P1,11,11.1.2,2.0,Determine P(A or NOT B).,ok
+2019,2019_nov_p1_exam_maths,P1,11,11.2,,"Motors Incorporated manufacture cars with 5 different body styles, 4 different interior
+colours and 6 different exterior colours, as indicated in the table below.
+BODY STYLES INTERIOR COLOURS EXTERIOR COLOURS
+The interior colour of the car must NOT be the same as the exterior colour.
+Motors Incorporated wants to display one of each possible variation of its car in their
+showroom. The showroom has a floor space of 500 m’and each car requires a floor
+space of 5m’.
+Is this display possible? Justify your answer with the necessary calculations. (6)
+[11]
+TOTAL: 150
+Copyright reserved
+
+===== Page 10 =====
+Mathematics/P1 DBE/November 2019
+NSC
+INFORMATION SHEET
+—~b+b? -4ac
+x = ——
+2a
+A=P(l+ni) A= P(1-ni) A= P(-i)"" A= P(1+i)""
+n
+T, =a+(n-Nd 5, =5[2a+(n—Nd]
+"" r—| l-r
+plea"" =I pawi-d+)""|
+i i
+ley — pin AeA) Fx)
+f(x) = lim h
+— oo X, +X, Wty,
+d= (x,-x,) +0.-y) M{ 7 ° 9
+y=mxt+e y-y, =m(x-x,) m= 22% m= tan@
+xy — xy
+(x —a)’ +(y-by =r?
+mAABC; —2~=—2- = ¢_
+snA sinB sinC
+a’ =b’? +c? —2be.cos A
+area AABC = 5 ab.sinC
+sin(a + 8) =sinacos #+cosasin B sin(a — #) =sinacos 8 -cosasin B
+cos(a + 8) = cosacos B-sinasin B cos(@ — 8) =cosacosf#+sinasin B
+‘cos’? a@—sin’ a
+cos2a@ =41—2sin’ a sin2a@ = 2sina cosa
+2cos’ a—1
+_ ye: &, —x)
+a 2 i=l
+n OO
+n
+A
+P(A) S P(A or B) = P(A) +P(B) — P(A and B)
+n
+x—-x\fy-y
+YS"" (x-x)
+Copyright reserved",missing_marks
+2019,2019_nov_p2_exam_maths,P2,1,1.1,3.0,Determine the equation of the least squares regression line for the data.,ok
+2019,2019_nov_p2_exam_maths,P2,1,1.2,2.0,"If a person earns R14 000 per month, predict the monthly repayment that the person
+could make towards a motor vehicle.",ok
+2019,2019_nov_p2_exam_maths,P2,1,1.3,1.0,"Determine the correlation coefficient between the monthly income and the monthly
+repayment of a motor vehicle.",ok
+2019,2019_nov_p2_exam_maths,P2,1,1.4,,"A person who earns R18 000 per month has to decide whether to spend R9 000 as a
+monthly repayment of a motor vehicle, or not. If the above information is a true
+representation of the population data, which of the following would the person most
+likely decide on:
+A Spend R9 000 per month because there is a very strong positive correlation
+between the amount earned and the monthly repayment.
+B NOT to spend R9 000 per month because there is a very weak positive
+correlation between the amount earned and the monthly repayment.
+C Spend R9 000 per month because the point (18 000 ; 9 000) lies very near to the
+least squares regression line.
+D NOT to spend R9 000 per month because the point (18 000 ; 9 000) lies very far
+from the least squares regression line. (2)
+[8]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P2 4 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,2,2.1,1.0,How many people paid R200 or less on their monthly cellphone contracts?,ok
+2019,2019_nov_p2_exam_maths,P2,2,2.2,5.0,Use the information above to show that a= 24 and b= 16.,ok
+2019,2019_nov_p2_exam_maths,P2,2,2.3,1.0,Write down the modal class for the data.,ok
+2019,2019_nov_p2_exam_maths,P2,2,2.4,4.0,"On the grid provided in the ANSWER BOOK, draw an ogive (cumulative frequency
+
+graph) to represent the data.",ok
+2019,2019_nov_p2_exam_maths,P2,2,2.5,,"Determine how many people paid more than R420 per month for their cellphone
+
+contracts. (2)
+
+[13]
+
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,3,3.1,1.0,Write down the equation of PR.,ok
+2019,2019_nov_p2_exam_maths,P2,3,3.2,,Calculate the:,missing_marks
+2019,2019_nov_p2_exam_maths,P2,3,3.2.1,2.0,Gradient of RS,ok
+2019,2019_nov_p2_exam_maths,P2,3,3.2.2,3.0,"Sizeof 0 G3)
+3.2.3. Coordinates of D",ok
+2019,2019_nov_p2_exam_maths,P2,3,3.3,4.0,"If it is given that TS = 2/5 , calculate the value of &.",ok
+2019,2019_nov_p2_exam_maths,P2,3,3.4,3.0,"Parallelogram TDNS, with N in the 4"" quadrant, is drawn. Calculate the
+coordinates of N.",ok
+2019,2019_nov_p2_exam_maths,P2,3,3.5,,"APRD is reflected about the y-axis to form AP’R'D!. Calculate the size of
+RDR’. (3)
+[19]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,4,4.2,2.0,Calculate the coordinates of C.,ok
+2019,2019_nov_p2_exam_maths,P2,4,4.3,4.0,Show that the equation of the tangent CD is y—x=3.,ok
+2019,2019_nov_p2_exam_maths,P2,4,4.4,3.0,"Determine the values of ¢ for which the line y =x +7 will NOT touch or cut the
+
+smaller circle.",ok
+2019,2019_nov_p2_exam_maths,P2,4,4.5,3.0,"The smaller circle centred at N is transformed such that point C is translated along
+
+the tangent to D. Calculate the coordinates of E, the new centre of the smaller
+
+circle.",ok
+2019,2019_nov_p2_exam_maths,P2,4,4.6,,"If it is given that the area of quadrilateral OBCD is 2a’ square units and
+
+(5)
+a> 0, show that a= a units.
+[20]
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,5,5.1,,"Simplify the following expression to ONE trigonometric term:
+
+_S* 1 sin(180° + x) cos(90°— x) (5)
+
+cos x.tan x
+
+; sin* 35°—cos? 35°",missing_marks
+2019,2019_nov_p2_exam_maths,P2,5,5.2,,"Without using a calculator, determine the value of: =£.————————_— (4)
+4sin10°cos10°",missing_marks
+2019,2019_nov_p2_exam_maths,P2,5,5.3,4.0,"Given: cos26°=m
+
+Without using a calculator, determine 2sin’ 77° interms of m.",ok
+2019,2019_nov_p2_exam_maths,P2,5,5.4,6.0,"Consider: f(x) =sin(x + 25°)cos15°—cos(x +25°)sin15°
+
+5.4.1. Determine the general solution of f(x) = tan165°",ok
+2019,2019_nov_p2_exam_maths,P2,5,5.4.2,,"Determine the value(s) of x in the interval xe[0°;360°] for which
+
+f(x) will have a minimum value. (3)
+[22]
+
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,6,6.1,2.0,Write down the range of f,ok
+2019,2019_nov_p2_exam_maths,P2,6,6.2,2.0,"Write down the values of x in the interval x ¢[-90°; 360°] for which graph f is
+
+decreasing.",ok
+2019,2019_nov_p2_exam_maths,P2,6,6.3,,"P and Q are points on graphs g and f respectively such that PQ is parallel to the
+
+y-axis. If PQ lies between A and B, determine the value(s) of x for which
+
+PQ will be a maximum. (6)
+
+[10]
+
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,7,7.1,2.0,Determine AK in terms of x.,ok
+2019,2019_nov_p2_exam_maths,P2,7,7.2,1.0,Write down the size of KCF.,ok
+2019,2019_nov_p2_exam_maths,P2,7,7.3,,"It is further given that AKF, the angle between the solar panel and the concrete slab,
+
+is y. Determine the areaof AAKF intermsof x and y. (7)
+
+[10]
+
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,8,8.1,,"In the diagram, PQRS is acyclic quadrilateral. Chord RS is produced to T. K isa
+point on RS and W isa point on the circle such that QRKW is a parallelogram.
+PS and QW intersect at U. PST =136° and Q, =100°.
+P
+0 Zo - ave
+( )
+R
+WA
+S
+T
+Determine, with reasons, the size of:",missing_marks
+2019,2019_nov_p2_exam_maths,P2,8,8.1.1,2.0,R,ok
+2019,2019_nov_p2_exam_maths,P2,8,8.1.2,2.0,P,ok
+2019,2019_nov_p2_exam_maths,P2,8,8.1.3,3.0,POW,ok
+2019,2019_nov_p2_exam_maths,P2,8,8.1.4,,"U, (2)
+Copyright reserved Please turn over
+
+===== Page 11 =====
+Mathematics/P2 11 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,8,8.2,,"In the diagram, the diagonals of quadrilateral CDEF intersect at T.
+EF = 9 units, DC = 18 units, ET = 7 units, TC = 10 units, FT = 5 units and
+TD = 14 units.
+F
+[>—~
+™
+——
+i ~~
+“Ss,
+7 — Tee Sie
+af
+ra
+a -
+14 a
+oA
+A
+a 18
+4
+gf
+J
+“
+} ~
+La
+D
+Prove, with reasons, that:",missing_marks
+2019,2019_nov_p2_exam_maths,P2,8,8.2.1,4.0,EFD = ECD,ok
+2019,2019_nov_p2_exam_maths,P2,8,8.2.2,,"DFC = DEC (3)
+[16]
+Copyright reserved Please turn over
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,9,9,,"QUESTION 9
+In the diagram, O is the centre of the circle. ST is a tangent to the circle at T. M and P
+are points on the circle such that TM= MP. OT, OP and TP are drawn. Let O, =X.
+s Fi
+M \
+P
+
+Prove, with reasons, that STM = a . [7]
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2019
+NSC",no_sub_markers
+2019,2019_nov_p2_exam_maths,P2,10,10.1,,"In the diagram, AABC is drawn. D isa pointon AB and E isapoint on AC such
+
+that DE || BC. BE and DC are drawn.
+
+A
+D
+E
+B
+C
+
+Use the diagram to prove the theorem which states that a line drawn parallel
+
+to one side of a triangle divides the other two sides proportionally, in other words
+
+prove that = = AE (6)
+
+DB EC
+
+Copyright reserved Please turn over
+
+===== Page 14 =====
+Mathematics/P2 14 DBE/November 2019
+NSC",missing_marks
+2019,2019_nov_p2_exam_maths,P2,10,10.2,,"In the diagram, ST and VT are tangents to the circle at S and V_ respectively.
+R is a point on the circle and W is a point on chord RS such that WT is parallel
+toRV. SV and WV are drawn. WT intersects SV at K. Let S, =x.
+— SS
+a
+pf A \
+ff Wi3 | YX,
+4 ~~
+es SN
+“Sy
+| | aw
+\
+R\
+\ 2
+l | 3 =
+— V",missing_marks
+2019,2019_nov_p2_exam_maths,P2,10,10.2.1,6.0,"Write down, with reasons, THREE other angles EACH equal to x.",ok
+2019,2019_nov_p2_exam_maths,P2,10,10.2.2,,"Prove, with reasons, that:
+(a) WSTV is acyclic quadrilateral (2)
+(b) AWRY is isosceles (4)
+(c) AWRY ||| ATSV (3)
+RV KV
+d —_ =—— 4
+@ Ris (4)
+[25]
+TOTAL: 150
+Copyright reserved
+
+===== Page 15 =====
+Mathematics/P2 DBE/November 2019
+NSC
+INFORMATION SHEET: MATHEMATICS
+—b+b? -4ac
+x = —
+2a
+A= P(1+ni) A= P(1-ni) A=P(1-3)"" A=P(1+i)""
+T, =a+(n-l)d S, =F ba + (1a
+T, =ar"""" S ar"" =I). S, =; -l<r<l
+"" r-l l-r
+al i)” -1] ple (+ iy” |
+i i
+ley) — ie SETA) F(X)
+f°) = tim FE
+| ed X, tX. Vi + V2
+d= (x,-x) +0,.-») Ml 2 ° 92
+y=mxte y—y, =m(x-x,) m= 228 m=tand
+xy —
+(x—a) +(y-by =r?
+a b c
+In AABC: ee ee
+sn A sinB sinc
+a’ =b’> +c? —2be.cos A
+area AABC = 5 ab.sin Cc
+sin(a + £) = sinacos B +cosasin Bp sin(a — 8) =sinacos § —cosa sin B
+cos(a + #) =cosacos f —sinasin B cos(a — 8) =cosacos # +sina sin B
+cos’ a@—sin’ a
+cos2a =41-—2sin’ a sin2a@ = 2sinacosa@
+2cos* a—1
+_ yx i, -z/
+x= 2 i=l
+n C=
+n
+n(A)
+P(A) = a(S) P(A or B) = P(A) + P(B) — P(A and B)
+n
+. > (e-¥Xy-¥)
+ypa=atbx a eT
+S""(x-x)
+Copyright reserved",missing_marks
