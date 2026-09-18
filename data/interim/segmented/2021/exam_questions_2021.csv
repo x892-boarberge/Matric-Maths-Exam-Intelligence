@@ -1,0 +1,413 @@
+document_id,year,paper,question_number,subquestion,marks,question_text,source_type,segmentation_status
+2021_nov_p1_exam_maths,2021,P1,1,1.1,,Solve for x:,exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,1,1.1.1,3.0,x? ~2x-24=0,exam,ok
+2021_nov_p1_exam_maths,2021,P1,1,1.1.2,3.0,2x*-3x-3=0 (correct to TWO decimal places),exam,ok
+2021_nov_p1_exam_maths,2021,P1,1,1.1.3,4.0,x? +5x<-4,exam,ok
+2021_nov_p1_exam_maths,2021,P1,1,1.1.4,4.0,Vx+28=2-x,exam,ok
+2021_nov_p1_exam_maths,2021,P1,1,1.2,6.0,"Solve simultaneously for x and y in:
+2y=3+x and 2xy+7=x7? +4y’",exam,ok
+2021_nov_p1_exam_maths,2021,P1,1,1.3,,"The roots of an equation are x= ae =e where m, n and p are positive
+real numbers. The numbers m, n and pin that order, form a geometric sequence.
+Prove that x is a non-real number. (4)",exam,mark_capped
+2021_nov_p1_exam_maths,2021,P1,2,2.1,2.0,| Calculate the value of x.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,2,2.2,2.0,"Show that the sum of the first m termsis S$, =1 ovo(t —(0,9)"" ).",exam,ok
+2021_nov_p1_exam_maths,2021,P1,2,2.3,,"Hence, or otherwise, calculate the sum to infinity. (2)
+[6]
+Copyright reserved — Please turn over
+
+===== Page 4 =====
+Mathematics P! 4 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,3,3.1,1.0,"Write down the value of T,.",exam,ok
+2021_nov_p1_exam_maths,2021,P1,3,3.2,3.0,"Show that the general term of this number pattern is T, = —n? + 26n-170.",exam,ok
+2021_nov_p1_exam_maths,2021,P1,3,3.3,4.0,"Between which TWO terms of the quadratic number pattern will there be a difference
+of —121?",exam,ok
+2021_nov_p1_exam_maths,2021,P1,3,3.4,11.0,"What value must be added to each term in the number pattern so that the value of the
+maximum term in the new number pattern formed will be 1? (3)",exam,ok
+2021_nov_p1_exam_maths,2021,P1,4,4.1,3.0,"Determine T,,.",exam,ok
+2021_nov_p1_exam_maths,2021,P1,4,4.2,,"Calculate the sum of the first 51 terms. (2)
+; 5000",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,4,4.3,,"Write down the expansion of >) (2n+3). Show only the first 3 terms and the last
+n=l
+term of the expansion. (1)
+5000 4999",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,4,4.4,10.0,"Hence, or otherwise, calculate > (2n+3)+ > (—2n-1).
+n=l n=l
+ALL working details must be shown. (4)",exam,ok
+2021_nov_p1_exam_maths,2021,P1,5,5.1,2.0,Write down the equations of the asymptotes of f.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,5,5.2,1.0,Write down the domain of,exam,ok
+2021_nov_p1_exam_maths,2021,P1,5,5.3,2.0,Determine the coordinates of the x-intercept of f,exam,ok
+2021_nov_p1_exam_maths,2021,P1,5,5.4,2.0,Write down the coordinates of the y-intercept of f,exam,ok
+2021_nov_p1_exam_maths,2021,P1,5,5.5,,"Draw the graph of f- Clearly show ALL the asymptotes and intercepts with the axes. (3)
+. [10]
+Copyright reserved Please tum over
+
+===== Page 5 =====
+Mathematics P1 5 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,6,6.1,2.0,Calculate the value of k.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,6,6.2,2.0,Determine the values of x for which —1< f(x) £2.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,6,6.3,2.0,"Write down the equation of f~', the inverse of f, inthe form y=...",exam,ok
+2021_nov_p1_exam_maths,2021,P1,6,6.4,,"For which values of x will x.f (x) <0? (2)
+[8]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics P1 6 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,7,7.1,2.0,Write down the coordinates of B and D.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,7,7.2,2.0,Calculate the coordinates of C.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,7,7.3,1.0,Write down the range of f,exam,ok
+2021_nov_p1_exam_maths,2021,P1,7,7.4,,"Given that @= 14,04° and the tangent to f at T is perpendicular to AE.",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,7,7.4.1,1.0,"Calculate the gradient of AE, correct to TWO decimal places.",exam,ok
+2021_nov_p1_exam_maths,2021,P1,7,7.4.2,5.0,Calculate the coordinates of T.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,7,7.5,,"A straight line, g, parallel to AE, cuts f at K(-3 ;-9) and R.
+
+Calculate the x-coordinate of R. (6)
+
+[17]
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics P1 7 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,8,8.1,3.0,"A farmer bought a tractor for R980 000. The value of the tractor depreciates annually
+at a rate of 9,2% p.a. on the reducing-balance method. Calculate the book value of
+the tractor after 7 years.",exam,ok
+2021_nov_p1_exam_maths,2021,P1,8,8.2,4.0,"How many years will it take for an amount of R75 000 to accrue to R116 253,50 in
+an account earning interest of 6,8% p.a., compounded quarterly?",exam,ok
+2021_nov_p1_exam_maths,2021,P1,8,8.3,,Thabo wanted to save R450 000 as a deposit to buy a house on 30 June 2018.,exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,8,8.3.1,3.0,"He deposited a fixed amount of money at the end of every month into an
+account earning interest of 8,35% p.a., compounded monthly. His first
+deposit was made on 31 July 2013 and his 60th deposit on 30 June 2018.
+Calculate the amount he deposited monthly.",exam,ok
+2021_nov_p1_exam_maths,2021,P1,8,8.3.2,,"Thabo bought a house costing R1500 000 and used his savings as the
+deposit. He obtained a home loan for the balance of the purchase price at
+an interest of 12% p.a., compounded monthly over 25 years. He made
+his first monthly instalment of R11 058,85 towards the loan on
+31 July 2018.
+(a) What will the balance outstanding on the loan be on 30 June 2039,
+21 years after the loan was granted? (3)
+(a) Calculate the interest Thabo will have paid over the first
+21 years of the loan. (3)",exam,mark_capped
+2021_nov_p1_exam_maths,2021,P1,9,9.1,5.0,Determine f ‘(x) from first principles if it is given that f(x) =2x? —3x.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,9,9.2,,Determine:,exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,9,9.2.1,,"Y i¢ y =4x° —6x* +3x (3)
+dx
+Vx (1y",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,9,2.2,,"D_| -——+| — 4
+7 x 2 =| oe
+{12]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics P1 8 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,10,10.1,5.0,Show that a=-1 and b=6.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,10,10.2,3.0,Calculate the coordinates of A.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,10,10.3,,Write down the values of x for which A is:,exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,10,10.3.1,2.0,Increasing,exam,ok
+2021_nov_p1_exam_maths,2021,P1,10,10.3.2,2.0,Concave down,exam,ok
+2021_nov_p1_exam_maths,2021,P1,10,10.4,,"For which values of & will -—(x—1)’+6(x-1)?-k=0 have one negative and
+
+two distinct positive roots? (3)
+
+[15]
+
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics P1 9 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,11,11,7.0,"QUESTION 11
+After travelling a distance of 20 km from home, a person suddenly remembers that he did not
+close a tap in his garden. He decides to turn around immediately and return home to close
+the tap.
+The cost of the water, at the rate at which water is flowing out of the tap, is R1,60 per hour.
+The cost of petrol is [12 + a) rands per km, where x is the average speed in km/h.
+Calculate the average speed at which the person must travel home to keep his cost as low
+as possible. [7]",exam,no_sub_markers
+2021_nov_p1_exam_maths,2021,P1,12,12.1,,"A and B are independent events. It is further given that:
+P(A and B) = 0,3 and P(only B) = 0,2",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,12,12.1.1,1.0,Are A and B mutually exclusive? Motivate your answer.,exam,ok
+2021_nov_p1_exam_maths,2021,P1,12,12.1.2,2.0,"Determine:
+(a) P(only A) (4)
+(b) Pot A or not B)",exam,ok
+2021_nov_p1_exam_maths,2021,P1,12,12.2,,"A teacher has 5 different poetry books, 4 different dramas and 3 different novels.
+She must arrange these 12 books from left to right on a shelf.",exam,missing_marks
+2021_nov_p1_exam_maths,2021,P1,12,12.2.1,1.0,"Write down the probability that a novel will be the first book placed on
+the shelf.",exam,ok
+2021_nov_p1_exam_maths,2021,P1,12,12.2.2,2.0,"Calculate the number of different ways these 12 books can be placed on
+the shelf if any book can be placed in any position.",exam,ok
+2021_nov_p1_exam_maths,2021,P1,12,12.2.3,,"Calculate the probability that a poetry book is placed in the first position,
+the three novels are placed next to each other and a drama is placed in the
+last position. (4)
+[14]
+TOTAL: 150
+Copyright reserved
+
+===== Page 10 =====
+Mathematics P1 DBE/November 2021
+NSC
+INFORMATION SHEET
+re —b+b? —4ac
+2a
+A= P(1+ni) A= P(|-ni) A= P(l-i)” A= PU +i)""
+T, =a+(n-ld 8, => 2a+(n-1d]
+T, =ar™"" Ss _ ae"" =I) =I sre S,=—-3-1<r<1
+n r-l l-r
+pea -1) p_l-G+)""|
+i i
+_ f(xth)— f(x)
+‘(x) = lim ———
+f'@) h>0 h
+xX, +X. +
+d=\(x,—xY +0-H) m| se
+2 2
+youmxte y—y, =m(x—-x,) m=22 > m=tan@
+Xa —%
+In AABC: 2 =? 2 ©
+snA sinB sinc
+a’ =b? +c? —2be.cos A
+area AABC = 5 ab.sin C
+sin(a + B) = sina.cos # +cosa.sin B sin(a ~ B) =sina.cos 8 —cosa.sin B
+cos(a + 8)=cosa.cos 6 —sina.sin B cos(a — 8)=cosa.cos f +sina.sin B
+cos’ a@—sin’ a
+cos2a@ =41-2sin’ @ sin 2a =2sina.cosa
+2cos? a—-1
+= =\2
+_ >* , YG x)
+x= of = S| —____
+n n
+n(A) _
+P(A) = 7S) P(A or B) = P(A) + P(B) — P(A and B)
+n
+(x-*)y-9)
+, y=ath b= D&-*hy-9)
+Copyright reserved",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,1,1.1,,Calculate the:,exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,1,1.1.1,2.0,Mean number of loaves of bread ordered daily |,exam,ok
+2021_nov_p2_exam_maths,2021,P2,1,1.1.2,1.0,Standard deviation of the data,exam,ok
+2021_nov_p2_exam_maths,2021,P2,1,1.1.3,2.0,"Number of days on which the number of loaves of bread ordered was
+
+more than one standard deviation above the mean",exam,ok
+2021_nov_p2_exam_maths,2021,P2,1,1.2,2.0,"The tuck-shop owner was not able to sell all the loaves of bread delivered daily.
+
+He calculated the mean number of loaves sold over the 18 days to be 20. Calculate the
+
+number of loaves of bread which were NOT sold over the 18 days.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,1,1.3,,"One of the two box and whisker diagrams drawn below represents the data given in
+
+the table above.
+
+SOF a
+8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42
+be es ee ee ee ee ee ee ee ee ee ee ee |
+8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,1,1.3.1,2.0,"Which ONE of the two box and whisker diagrams, drawn above, correctly
+represents the data? Write down a reason for your answer.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,1,1.3.2,,"Describe the skewness of the data. (i)
+[10}
+
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P2 4 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,2,2.1,3.0,"On the grid provided in the ANSWER BOOK, draw the scatter plot to represent the
+
+data.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,2,2.2,3.0,Determine the equation of the least squares regression line for the data.,exam,ok
+2021_nov_p2_exam_maths,2021,P2,2,2.3,2.0,"If the farmer sells a 5-litre container of milk for R38, predict the number of 5-litre
+
+containers of milk he will sell.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,2,2.4,,"Refer to the correlation between the price of 5-litre containers of milk and the number
+
+of 5-litre containers of milk sold, and comment on the accuracy of your answer to",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,2,2,,"QUESTION 2.3. (2)
+
+[10}
+
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2021
+NSC",exam,no_sub_markers
+2021_nov_p2_exam_maths,2021,P2,3,3.1,,Calculate the gradient of:,exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,3,3.1.1,2.0,BE,exam,ok
+2021_nov_p2_exam_maths,2021,P2,3,3.1.2,2.0,AB,exam,ok
+2021_nov_p2_exam_maths,2021,P2,3,3.2,2.0,Determine the equation of BE inthe form y = mx +c,exam,ok
+2021_nov_p2_exam_maths,2021,P2,3,3.3,,Calculate the:,exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,3,3.3.1,2.0,"Coordinates of B, where k<0",exam,ok
+2021_nov_p2_exam_maths,2021,P2,3,3.3.2,4.0,Size of A,exam,ok
+2021_nov_p2_exam_maths,2021,P2,3,3.3.3,2.0,"Coordinates of the point of intersection of the diagonals of parallelogram
+ACES, where S$ is a point in the first quadrant",exam,ok
+2021_nov_p2_exam_maths,2021,P2,3,3.4,,"Another point T(p; p), where p> 0, is plotted such that ET = BE =4-17 units.",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,3,3.4.1,5.0,Calculate the coordinates of T.,exam,ok
+2021_nov_p2_exam_maths,2021,P2,3,3.4.2,,"Determine the equation of the:
+(a) Circle with centre at E and passing through B and T in the form
+(x-a)’ +(y-by =r? (2)
+(b) Tangent to the circle at point B(k; k) (3)
+[24]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,4,4.1,1.0,Write down the length of the radius of the circle.,exam,ok
+2021_nov_p2_exam_maths,2021,P2,4,4.2,,Calculate the:,exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,4,4.2.1,2.0,Coordinates of C,exam,ok
+2021_nov_p2_exam_maths,2021,P2,4,4.2.2,2.0,Coordinates of D,exam,ok
+2021_nov_p2_exam_maths,2021,P2,4,4.2.3,3.0,Area of ABCD,exam,ok
+2021_nov_p2_exam_maths,2021,P2,4,4.3,,"The circle, centred at N, is reflected about the line y=x. M is the centre of the new
+
+circle which is formed. The two circles intersect at A and F.
+
+Calculate the:",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,4,4.3.1,3.0,Length of NM,exam,ok
+2021_nov_p2_exam_maths,2021,P2,4,4.3.2,,"Midpoint of AF (4)
+
+{15}
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,5,5.1,,"Without using a calculator, simplify the following expression to ONE trigonometric
+ratio:
+sin 140°. sin(360° — x) ‘5
+cos 50°. tan(—x) (6)
+4. —2sin’?x+cosx+1",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,5,5.2,,"Prove the identity: —————__————- = 2cosx-1 (4)
+1 ~cos(540° — x)",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,5,5.3,,"Given: sin36°=./1— p’
+Without using a calculator, determine EACH of the following in terms of p:",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,5,5.3.1,3.0,tan 36°,exam,ok
+2021_nov_p2_exam_maths,2021,P2,5,5.3.2,,cos108° (4),exam,mark_capped
+2021_nov_p2_exam_maths,2021,P2,6,6.1,,Given: cos(a ~ 8) =cosacos £+sinasin §,exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,6,6.1.1,3.0,Use the given identity to derive a formula for cos(@ + £),exam,ok
+2021_nov_p2_exam_maths,2021,P2,6,6.1.2,5.0,Simplify completely: 2cos6xcos4x—cos10x+2sin? x,exam,ok
+2021_nov_p2_exam_maths,2021,P2,6,6.2,,"Determine the general solution of tanx =2sin2x where cosx <0. (7)
+[15]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,7,7.1,3.0,"On the grid provided in the ANSWER BOOK, draw the graph of
+g(x) =cos(x~60°) for xe[-180°; 180°]. Clearly show ALL intercepts with the
+axes and turning points of the graph.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,7,7.2,2.0,Write down the period of f(3x).,exam,ok
+2021_nov_p2_exam_maths,2021,P2,7,7.3,1.0,"Use the graphs to determine the value of x in the interval x <[—180°; 180°] for
+which f(x)- g(x)=1.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,7,7.4,,"Write down the range of k, if k(x) = ; g(x) +1. (2)
+[8]
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,8,8.1,3.0,Prove that QS = 5 tanx,exam,ok
+2021_nov_p2_exam_maths,2021,P2,8,8.2,5.0,Prove that the length of QT =10sinx,exam,ok
+2021_nov_p2_exam_maths,2021,P2,8,8.3,,"Calculate the area of ATQR if TQR = 70° and x= 25°. (2)
+[10]
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,9,9.1,1.0,Give areason why ST =TR.,exam,ok
+2021_nov_p2_exam_maths,2021,P2,9,9.2,,"Calculate, giving reasons, the size of:",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,9,9.2.1,2.0,"S,",exam,ok
+2021_nov_p2_exam_maths,2021,P2,9,9.2.2,,"S, (2)
+[5]
+Copyright reserved Please turn over
+
+===== Page 11 =====
+Mathematics/P2 11 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,10,10.1,1.0,Give areason why AF = FE.,exam,ok
+2021_nov_p2_exam_maths,2021,P2,10,10.2,3.0,"Determine, giving reasons, the size of M, in terms of x.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,10,10.3,4.0,"Prove, giving reasons, that AD is a tangent to the circle passing through A, C
+and F.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,10,10.4,,"Given that CF = 6 units and AB = 24 units, calculate, giving reasons, the length
+of AE. (5)
+[13]
+Copyright reserved Please turn over
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,11,11.1,,"In the diagram, chords DE, EF and DF are drawn in the circle with centre O.
+
+KFC is a tangent to the circle at F.
+
+J. \
+\y
+K F ©
+
+Prove the theorem which states that DFK =F. (5)
+
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2021
+NSC",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,11,11.2,,"In the diagram, PK is a tangent to the circle at K. Chord LS is produced to P.
+N and M are points on KP and SP _ respectively such that MN || SK.
+Chord KS and LN intersect at T.
+(—>
+M
+P",exam,missing_marks
+2021_nov_p2_exam_maths,2021,P2,11,11.2.1,1.0,"Prove, giving reasons, that:
+@) &,=NNIL (4)
+(b) KLMN is acyclic quadrilateral",exam,ok
+2021_nov_p2_exam_maths,2021,P2,11,11.2.2,5.0,"Prove, giving reasons, that ALKN ||| AKSM.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,11,11.2.3,4.0,"If LK = 12 units and 3KN =4SM, determine the length of KS.",exam,ok
+2021_nov_p2_exam_maths,2021,P2,11,11.2.4,,"If it is further given that NL = 16 units, LS = 13 units and KN = 8 units,
+determine, with reasons, the length of LT. (4)
+[23]
+TOTAL: 150
+Copyright reserved
+
+===== Page 14 =====
+Mathematics/P2 DBE/November 2021
+NSC
+INFORMATION SHEET: MATHEMATICS
+ee OEY —4ac ,
+2a
+A =P(1+ni) A= P(l-xi) A= P(1-i)” A=P(1+i)""
+T, =a+(n-l)d S, = 5 2a+(n-a]
+T, =ar""™"" Ss = 8"" =D gy S,=— +; -ler<l
+. r-l l-r
+re x[asiy | >= xhi-a+ iy”
+i i
+ley) — lien LOH t A) - FO)
+f(x) = lim P
+SEEN SEE EEE ee xX, +x, Wty
+d= \(x,-x,°+(.-») Ml 5 +; 5 |
+y=mxte y-y, =m(x-x,) m= 221 m= tan@
+Xx. —X,
+(x-a) +(y-by =r?
+In AABC: —@ _ 6 _
+sin A sinB sinC
+a’ =b’ +c’ —2be.cos A
+area AABC = Sab. sin Cc
+sin(a + #)=sinacos # + cos asin B sin(a — #) =sinacos 8 —cosasin B
+cos(a + #)=cosacos f-sinasin f cos(a — f)=cosacos #+sinasin B
+cos’ a —sin’ a
+cos2a=| 1-2sin’a sin 2a = 2sina cosa
+2cos*a-1
+_ yx dil, - x)
+x =~ 2_ i=l
+n oO =
+n
+n(A)
+P(A) ~ AS) P(A or B)= P(A)+ P(B)- P(A and B)
+n
+> &-xXy-7)
+y=ath b= SS oN
+¥=atTOX > (x3)
+Copyright reserved",exam,missing_marks

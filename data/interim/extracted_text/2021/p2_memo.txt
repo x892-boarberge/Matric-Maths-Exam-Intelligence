@@ -1,0 +1,1147 @@
+
+===== Page 1 =====
+NATIONAL SENIOR CERTIFICATE/
+NASIONALE SENIOR SERTIFIKAAT
+GRADE/GRAAD 12
+MATHEMATICS P2/WISKUNDE V2
+NOVEMBER 2021
+MARKING GUIDELINES/NASIENRIGLYNE
+MARKS/PUNTE: 150
+These marking guidelines consist of 24 pages.
+Hierdie nasienriglyne bestaan uit 24 bladsye.
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 2 =====
+Mathematics P2/Wiskunde V2 2 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+NOTE:
+ If a candidate answers a question TWICE, only mark the FIRST attempt.
+ If a candidate has crossed out an attempt of a question and not redone the question, mark the
+crossed out version.
+ Consistent accuracy applies in ALL aspects of the marking memorandum. Stop marking at the
+second calculation error.
+ Assuming answers/values in order to solve a problem is NOT acceptable.
+NOTA:
+ As 'n kandidaat 'n vraag TWEE KEER beantwoord, sien slegs die EERSTE poging na.
+ As 'n kandidaat 'n antwoord van 'n vraag doodtrek en nie oordoen nie, sien die doodgetrekte
+poging na.
+ Volgehoue akkuraatheid word in ALLE aspekte van die nasienriglyne toegepas. Hou op nasien
+by die tweede berekeningsfout.
+ Om antwoorde/waardes te aanvaar om 'n probleem op te los, word NIE toegelaat NIE.
+GEOMETRY  MEETKUNDE
+A mark for a correct statement
+(A statement mark is independent of a reason)
+S
+'n Punt vir 'n korrekte bewering
+('n Punt vir 'n bewering is onafhanklik van die rede)
+A mark for the correct reason
+(A reason mark may only be awarded if the statement is correct)
+R
+'n Punt vir 'n korrekte rede
+('n Punt word slegs vir die rede toegeken as die bewering korrek is)
+Award a mark if statement AND reason are both correct
+S/R
+Ken 'n punt toe as die bewering EN rede beide korrek is
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 3 =====
+Mathematics P2/Wiskunde V2 3 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 1
+10 11 13 14 14 15 16 18 18
+19 19 20 21 35 35 37 40 41
+1.1.1 396  396
+x  Answer only: Full marks
+18
+Slegs antw: Volpunte
+x 22
+ answer
+(2)
+1.1.2  = 10,1707  10,17  answer
+(1)
+1.1.3 x32,17  32,17
+ 5
+5 days
+(2)
+1.2 2218396 ordered/bestel
+2018360sold/verkoop  18x and 18x
+1 2
+Total not sold/Totaal nie verkoop nie: 36  answer
+(2)
+OR/OF
+22–20 = 2  x x
+1 2
+21836
+ answer
+(2)
+1.3.1 Option B/Opsie B  B
+Any one of the following reasons/Enige een van die
+vlg redes:
+ Median/Mediaan = 18,5  reason
+ Q 14
+1
+(2)
+ IQR = 21
+ Mean > Median, therefore the data is skewed to
+the right
+1.3.2 Data is positively skewed/skewed to the right  answer
+Data is positief skeef/skeef na regs (1)
+[10]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 4 =====
+Mathematics P2/Wiskunde V2 4 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 2
+Price of milk in rands
+per 5-litre container (x)
+26 32 36 28 40 33 29 34 27 30
+Prys van melk in rand,
+per 5 liter-houer (x)
+Number of 5-litre
+containers of milk sold
+(y) 48 30 26 44 23 32 39 29 42 33
+Aantal 5 liter-houers
+melk verkoop (y)
+2.1
+SCATTER PLOT
+50
+45 1 mark:
+3 to 5 points plotted
+40 correctly
+d 35 2 marks:
+lo
+s
+stin
+6 to 9 points plotted
+U 30 correctly
+3 marks:
+25
+all points plotted
+correctly
+20
+20 25 30 35 40
+Price per 5 litre
+(3)
+2.2 a90,478...90,48  a
+b1,773...1,77 Answer only: Full marks  b
+Slegs antw: Volpunte  equation
+yˆ 90,481,77x
+(3)
+2.3 y = 23,069…  23,07 units/eenhede (calculator/sakrekenaar)  answer
+(2)
+OR/OF
+y90,481,77(38)  substitution
+y = 23,22 units/eenhede  answer
+(2)
+2.4 r = – 0,94  value of r OR/OF
+The value of r indicates a strong relationship between the cost per 5 litre strong relationship/
+and the number of units sold there is a good chance of the prediction sterk verwantskap
+being accurate./
+Die waarde van r dui 'n sterk vewantskap tussen die koste per 5 liter en  accurate/akkuraat
+die aantal eenhede verkoop aan  daar is 'n goeie kans dat die (2)
+voorspelling akkuraat is
+[10]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 5 =====
+Mathematics P2/Wiskunde V2 5 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 3
+y
+A(–2; 10)
+81,87° H
+F G E(12; 0) x
+C(4; –2)
+B(k; k)
+3.1.1 0(2) 20  substitution C & E
+m  m  OR/OF m  m 
+BE CE 124 BE CE 412
+1 1
+   answer
+4 4
+(2)
+3.1.2 m  tan81,87  substitution
+AB Answer only: Full marks
+ answer
+m 7 Slegs antw: Volpunte
+AB (2)
+3.2 y mxc y y m(xx )
+1 1
+1 1
+0 (12)c or y0 (x12)  substitution of E
+4 4
+1
+c 3 y  x3
+4
+1
+ answer
+y  x3
+4 (2)
+OR/OF
+y mxc y y m(xx )  substitution of C
+1 1
+1 1
+2 (4)c or y (2) (x4)
+4 4
+1
+c 3 y  x3  answer
+4
+(2)
+1
+y  x3
+4
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 6 =====
+Mathematics P2/Wiskunde V2 6 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+3.3.1 1
+y  x3
+4
+ substitution
+1
+k  k 3
+4
+3
+k 3
+4
+k 4
+ answer
+B(–4; –4) (2)
+OR/OF
+1 1
+m  OR/OF m 
+BE 4 BE 4
+ substitution
+0k 1 k 1
+ 
+12k 4 k 12 4
+4k 12k 4k k 12
+k 4 k 4  answer
+B(–4; –4) (2)
+OR/OF
+m tan81,87
+AB
+m 7
+AB
+ substitution
+10k
+m 
+AB 2k
+7(2k)10k
+–14 – 7k = 10 – k
+– 6k = 24
+ answer
+k = – 4
+(2)
+B(–4; –4)
+OR/OF
+EB: y 1 x3 and AB: y7x24
+4  equating EB & AB
+1
+x37x24
+4
+27 x27
+4
+ answer
+xk 4
+(2)
+B(4;4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 7 =====
+Mathematics P2/Wiskunde V2 7 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+3.3.2 In AFG:
+10(2)
+m  2
+AC 24  m 2
+AC
+tanm 2  tan2
+AC
+18063,43...
+ 116,57
+116,57
+ˆ
+A116,5781,87 [ext  of  ]
+ˆ
+A34,70
+ answer
+(4)
+OR/OF
+In ABC:
+a BC2 17;bAC6 5;cAB10 2  all 3 lengths
+a2 b2 c2 2bc.cosA
+ 2  2  2  substitution into the
+2 17  6 5  10 2 2(6 5)(10 2).cosA
+correct cosine rule
+ 2  2  2
+6 5  10 2  2 17
+cosA=  cos A subject
+  
+2 6 5 10 2
+0,822...
+ answer
+A34,7
+(4)
+3.3.3 12  2  10(0) 
+M ; 
+ 2 2 
+Diagonals intersect at the point (5 ; 5)  x-value  y-value
+(2)
+3.4.1 BE = ET
+ substitution of E & T
+4 17 (12 p)2 (0 p)2
+ equating
+ 2   2
+4 17  (12 p)2 (0 p)2
+27214424p p2  p2
+p2 12p640  standard form
+(p16)(p4)0  factors
+p = 16 or p = – 4 (n.a.)  p = 16
+T(16; 16) (5)
+ 2
+3.4.2a (x12)2  y2  4 17 272  LHS  RHS
+(2)
+3.4.2b 1
+m 
+radius 4
+m 4
+ m
+tangent
+tangent
+y 4xc OR/OF
+ substitution of B
+44(4)c
+c = – 20
+y = – 4x – 20  equation
+(3)
+[24]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 8 =====
+Mathematics P2/Wiskunde V2 8 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 4
+y
+6
+C D
+N(–1 ; 3)
+B(–4 ; 2) E
+O
+x
+A(–1 ; –1)
+4.1 Radius = 4 units/eenhede  answer
+(1)
+4.2.1 CDCN
+C(1; 7) x value  y value
+(2)
+4.2.2 CD = 6 units
+D(5; 7) x value  y value
+(2)
+4.2.3 h5units  h5units
+DC = 6 units
+1  substitution into
+Area ΔBCD (6)(5)
+Area formula
+2
+15units2  answer
+(3)
+OR/OF
+h5units  h5units
+DC = 6 units
+1
+Area ΔBCD [Area of ||m]  substitution into
+2 Area formula
+1
+ 
+ (5)(6)
+2
+15units2  answer
+(3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 9 =====
+Mathematics P2/Wiskunde V2 9 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+OR/OF
+Let angle of inclination of BC = 
+5
+tan
+3
+59,036...
+ˆ
+BCD180
+ˆ
+BCD18059,036...  BC ˆ D120,96
+ˆ
+BCD120,96
+ substitution into
+1  Area rule
+Area ΔBCD 34 (6)sin120,96
+ answer
+2
+= 15 units2 (3)
+4.3.1 M(3 ; –1) [reflection of N(–1 ; 3) about the line y = x]  coordinates of M (A)
+MN (3(1))2 (13)2  substitution of M&N
+MN 32 4 2 5,66units  answer
+(3)
+4.3.2 M(3 ; –1)
+3(1)
+m  1
+MN 13
+MN: 1(3)c or
+c2
+ equation of MN
+yx2
+xx2
+ equating AF & MN
+2x2
+x1
+y1 x value  y value
+midpoint (1;1) (4)
+OR/OF
+N(–1; 3) F(3; 3)
+N(1; 3)
+y  y 3
+F N
+Reflected about y = x
+A(–1; –1)
+F(3; 3)  coordinates of F
+13 13
+midpoint  ;   (1;1)
+x value  y value
+ 2 2 
+(4)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 10 =====
+Mathematics P2/Wiskunde V2 10 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+OR/OF
+N(–1; 3) F(3; 3)
+A(–1; –1) M(3;–1)
+ NAMF = square
+NAMF is a square (NA=NF=AM=MF and NAAM)
+Midpoint NM= (1;1)
+x  y of midpt NM
+Midpointof AF  midpt AF
+(4)
+[15]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 11 =====
+Mathematics P2/Wiskunde V2 11 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 5
+5.1 sin140.sin(360 x)
+cos50.tan(x)
+sin40(sinx)
+  sin40°  sinx
+ 
+sin40 tanx  co-ratio  tanx
+sin x
+
+sin x sinx
+  tanx
+cosx cosx
+cosx
+ answer
+(6)
+5.2 2sin2 xcosx1
+LHS  RHS 2cosx1
+1cos(540x)
+2(1cos2 x)cosx1
+ identity i. t. o. cos x
+LHS 
+1(cosx)  cos(540°x) cosx
+22cos2 xcosx1
+LHS 
+1cosx
+2cos2 xcosx1
+LHS   standard form
+1cosx
+(2cosx1)(cosx1)  factors
+LHS 
+1cosx
+LHS 2cosx1
+LHS = RHS
+(4)
+5.3.1
+sin36 1 p2
+1 p2 1  method
+tan36 
+p 36°
+p  value of p
+ answer
+OR/OF
+(3)
+cos2361sin236
+ method
+cos36 1(1 p2)
+ cos 36° = p
+ p
+sin36
+tan36
+cos36
+1 p2
+  answer
+p
+(3)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 12 =====
+Mathematics P2/Wiskunde V2 12 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+5.3.2 cos108
+cos72  reduction
+= –cos (2×36°)  double angle
+(2cos2361)
+ expansion
+2p2 1  answer i. t. o. p (4)
+OR/OF
+cos108
+ reduction
+cos72
+ double angle
+= –cos (2×36°)
+(12sin236)  expansion
+ 
+2
+12 1 p2
+ answer i. t. o. p
+12(1 p2) (4)
+2p2 1
+OR/OF
+cos108
+cos72  reduction
+= –cos (2×36°)  double angle
+(cos236sin236)
+ expansion
+
+ 
+2
+  p2  1 p2 
+ 
+ answer i. t. o. p
+ 
+ p2 (1 p2) (4)
+2p2 1
+OR/OF
+cos108
+cos(254)
+ double angle
+2cos2541  expansion
+2(1 p2)1
+12p2  answer i. t. o. p
+OR/OF (4)
+cos108cos(7236)
+cos72cos36sin72sin36
+ expansion
+(2cos2361)cos36(2sin36cos36)sin36
+2cos336cos362cos36sin236  both double angle identities
+ 2
+2p3 p2p 1 p2
+ value of sin 36°
+2p3 p2p2p3
+ answer i. t. o. p
+4p33p
+(4)
+[17]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 13 =====
+Mathematics P2/Wiskunde V2 13 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 6
+6.1.1 cos()
+cos(())  cos(())
+coscos()sinsin()  expansion
+ reduction
+coscossin(sin)
+(3)
+coscossinsin
+6.1.2 2 cos6x cos4xcos10x 2sin2 x
+ cos10x = cos(6x + 4x)
+2 cos6x cos4xcos(6x4x)2sin2 x
+2 cos6x cos4x(cos6xcos4xsin6xsin4x)2sin2 x
+ expansion of cos(6x + 4x)
+cos6xcos4xsin6xsin4x2sin2 x
+cos2x2sin2 x  cos2x
+12sin2 x2sin2 x  12sin2 x
+= 1  answer (5)
+6.2 tanx2sin2x
+sinx
+2(2sinxcosx)
+ quotient identity
+cosx
+ double angle identity
+sinx 4sinxcos2 x
+4sinxcos2 xsinx 0
+sinx(4cos2 x1)0
+ factors
+1
+sinx 0 or cos2 x 
+4  both equations
+1
+cosx  
+2
+ x = 180°
+x = 180° + k.360°; kZ or x = 120° + k.360°; kZ
+ x = 120°& 240° OR/OF
+x = 240° + k.360°; kZ
+x = ±120°
+ k.360°; kZ
+OR/OF
+(7)
+tanx2sin2x
+sinx
+4sinxcosx  quotient identity
+cosx
+sinx4sinxcos2 x
+4sinxcos2 xsinx0
+ identity
+4sinx(1sin2 x)sinx0
+3sinx4sin3x0
+sinx(34sin2 x)0
+ factors
+3
+sinx0 or sin2 x
+4  both equations
+3 3
+sinx or sinx  x = 180°
+2 2
+ x = 120°& 240° OR/OF
+x180 k.360 ,kZ or x120 k.360 ,kZ x = ±120°
+ k.360°; kZ
+or x240 k.360 ,kZ
+(7)
+[15]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 14 =====
+Mathematics P2/Wiskunde V2 14 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 7
+7.1
+y
+2
+1
+g
+x  both
+turning points
+–180° –90° 0 90° 180°
+ both
+–1 x intercepts
+f
+(–30° & 150°)
+– 2  shape
+(3)
+7.2 Period = 120°  answer
+(2)
+7.3 x  30  answer
+(1)
+7.4 Range of/waardeversameling van g: y[1;1]
+1  1 1
+Range of/Waardeversameling van g: y
+
+ ;
+
+2  2 2
+1 1 3  critical values
+Range of/Waardeversameling van g + 1: y ;
+2  2 2    correct
+notation
+(2)
+OR/OF
+1 1 3
+Range of/Waardeversameling van g + 1:  y  critical values
+2 2 2
+ correct
+notation
+(2)
+[8]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 15 =====
+Mathematics P2/Wiskunde V2 15 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 8
+T
+S
+x
+90° + x
+x
+Q 5 R
+8.1 In ∆SQR:
+QS QR
+
+ 
+sinx sin 90x
+ correct use of sine rule
+QS 5
+
+ 
+sinx cosx  sin 90x cosx
+5sinx 5sinx
+QS  QS
+cosx cosx
+QS 5tanx
+(3)
+8.2 QT TS  correct use of sine rule
+
+ 
+sin1802x sinx
+QT 5tanx
+  TS = QS = 5tanx
+sin2x sinx
+5tanx sin2x
+QT 5tanx sin2x
+ QT
+sinx
+sinx
+sinx 
+5  (2sinxcosx)
+cosx sinx
+QT  tanx
+sinx cosx
+5sinx (2sinx)  sin2x2sinxcosx
+QT
+sinx
+QT10sinx (5)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 16 =====
+Mathematics P2/Wiskunde V2 16 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+OR/OF
+QT2 QS2 TS2 2QS.TScosQS ˆ T  correct use of cos rule
+QT2 (5 tan x)2 (5tanx)2 2(5 tan x).(5 tan x)cos(180-2x)  TS = QS = 5tanx
+QT2 50 tan2 x50 tan2 x(cos2x)
+QT2 50 tan2 x(1cos2x)  cos 2x2cos2 x1 &
+reduction
+QT2 50 tan2 x(12cos2 x1)
+QT2 50 tan2 x(2cos2 x)
+sin2 x sinx
+QT2 100 (cos2 x)  tanx
+cos2x cosx
+QT2 = 100sin2 x  QT2 = 100sin2 x
+QT = 10sinx
+(5)
+OR/OF
+TS2=QS2+TQ2 2QS.TQ.cosx  correct use of cos rule
+ TS = QS = 5tanx
+(5tanx)2 (5tanx)2 TQ2 2(5tanx).TQ.cosx
+ quadratic equation ito
+0TQ2 2(5tanx).TQ.cosx TQ
+0TQTQ10tanx.cosx
+TQ10tanx.cosx (TQ0)  TQ = 10tan x . cos x
+sinx
+sinx  tanx
+10 .cosx
+cosx
+cosx
+10sinx
+(5)
+8.3 1
+ˆ
+Area of ΔTQR .TQ.QR sinTQR
+2
+1
+
+
+10sin25
+
+5
+
+(sin70)  correct substitution into
+2
+the area rule
+9,93unit2
+ answer
+(2)
+[10]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 17 =====
+Mathematics P2/Wiskunde V2 17 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 9
+Q
+93°
+P
+1
+R
+2
+1
+2
+S
+3
+78°
+T
+W
+9.1 tangents from same(common) point/raaklyne vanaf dieselfde punt  R
+(1)
+9.2.1 S ˆ SR ˆ T [s opp equal sides/e teenoor gelyke sye]  R
+2
+ˆ
+S 51 [sum of s in ∆/som van e in ]  S
+2
+(2)
+9.2.2 S ˆ S ˆ 93 [ext  of cyclic quad/buite van koordevh]  R
+2 3
+S ˆ  42  answer
+3
+(2)
+OR/OF
+ˆ
+S 87 [opp s of cyclic quad/teenoorst e v kdvh]
+1  R
+ˆ
+S 180(8751)
+3
+ˆ  answer
+S  42 [s on a str line/e op reguitlyn]
+3 (2)
+[5]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 18 =====
+Mathematics P2/Wiskunde V2 18 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 10
+C E
+x
+F
+1
+1 2 M
+3
+A 2
+3
+B D
+10.1 line from centre  to chord/lyn vanaf middelpunt  op koord  R
+(1)
+10.2 A ˆ 90x [sum of s in ∆/som van e in ]  S
+1
+M ˆ 1802x [at centre=2× at circumf/midpts= 2×omtreks]  S  R
+1
+(3)
+10.3 ˆ
+CAD90 [ in semi circle/ in halfsirkel ]  S  R
+A
+ˆ
+90(90x)
+2
+A ˆ  x  S
+2
+A
+ˆ
+C
+ˆ
+ x
+2
+AD is a tangent [converse tan-chord theorem/omgek rkl-kd st. ]  R
+(4)
+OR/OF
+EM ˆ D2x [adj suppl s/aanligg suppl e]  S
+ˆ
+ A  x [at centre= 2× at circumf/midpts= 2 ×omtreks]
+2
+ˆ  S  R
+ A C x
+2
+AD is a tangent [converse tan-chord theorem/omgek rkl-kd st. ]
+ R
+(4)
+OR/OF
+ˆ
+M 180 2x [vert. opp/regoorstaande e]
+3
+ˆ
+A 90 x [at centre= 2× at circumf/midpts= 2  S
+3
+×omtreks]
+ R
+ˆ
+BAE90 [ in semi-circle/ in halfsirkel]
+ S
+ˆ
+ A C x
+2  R
+AD is a tangent [converse tan-chord theorem/omgek rkl-kd st. ]
+(4)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 19 =====
+Mathematics P2/Wiskunde V2 19 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+CD || AB [midpt. Thm/ middelpuntst.]
+ˆ
+BAE90 [ in semi-circle/ in halfsirkel]
+ S
+ˆ ˆ
+A D90 x [alt.s;CD||AB/verwiss e]
+3
+ R
+ˆ
+A  x C
+2
+AD is a tangent [converse tan-chord theorem/omgek rkl-kd st. ]
+ S
+ R
+OR/OF
+(4)
+ˆ
+CAD90 [ in semi circle/ in halfsirkel ]
+AC = diameter [converse  in semi circle/omgek  in halfsirkel]
+ S  R
+ AD is a tangent [converse radius  tangent/omgek radiusrkl]  S
+ R
+(4)
+10.4 AF = FE and BM = ME [given & radii]
+1
+ FM = AB = 12 units [Midpt Theorem/middelptstelling]  FM = 12  R
+2
+EM = MB = CM = 18 units [radii]
+EB = 36 units [diameter = 2 radius]
+ EB = 36
+AE2 = (36)2 – (24)2 [Pythagoras]
+ using Pyth correctly
+AE = 12 5 or 26,83 units  answer
+(5)
+OR/OF
+AF = FE and BM = ME [given & radii]
+1  FM = 12  R
+ FM = AB = 12 units [Midpt Theorem/middelpuntstelling]
+2
+ EM = 18
+EM = MB = CM = 18 units [radii]
+FE2 = (18)2 – (12)2 [Pythagoras]  using Pyth correctly
+FE = 6 5
+ answer
+AE = 12 5 or 26,83 units (5)
+[13]
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 20 =====
+Mathematics P2/Wiskunde V2 20 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 11
+11.1
+B
+E
+D
+O
+C
+F
+K
+Construction: Draw diameter BF and draw BE Constr
+Konstruksie: Trek middellyn BF en verbind BE
+ˆ ˆ ˆ
+BFK90 or DFK 90BFD [radius  tangent/raaklyn]
+ S  R
+ˆ
+BEF  90 [ in semi-circle/semi-sirkel]  S
+DE
+ˆ
+F = 90 BE
+ˆ
+D
+ˆ
+= 90° –BFD [s same segment/e dieselfde segment]
+ S/R
+DF
+ˆ
+KDE
+ˆ
+F
+(5)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 21 =====
+Mathematics P2/Wiskunde V2 21 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+E
+D
+O
+K
+F
+C
+Construction: Draw radii DO and OF  construction
+Konstruksie: Trek radii DO en OF
+ˆ ˆ ˆ  S R
+OFK90 or DFK90OFD radius tangent/raaklyn]
+ODˆFOFˆD [s opp = sides/e teenoor = sye]
+ S
+DOˆF  1802OFˆD [s of /e van ]
+DEˆF90OFˆD [ at centre = 2× circumf/
+ S/R
+midpts = 2× omtreks]
+ˆ ˆ
+DFKDEF
+(5)
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 22 =====
+Mathematics P2/Wiskunde V2 22 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+B
+E
+D
+O
+K
+F
+C
+Construction: Draw diameter BF and join BD.  construction
+Konstruksie: Trek middellyn BF en verbind BD.
+BFˆK90 or DFˆK90BFˆD [radius  S /R
+tangent/raaklyn]
+ S
+FDˆB90 [ in half circle/semi-sirkel]
+Bˆ 90BFˆD
+DFˆKBˆ
+ˆ ˆ  S/R
+but B E [s same segment/e dieselfde segment]
+ˆ ˆ
+DFKE
+(5)
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 23 =====
+Mathematics P2/Wiskunde V2 23 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+11.2
+L
+K 4 1
+3 2
+1
+2
+3 T
+N
+2
+1
+1
+1
+2
+2
+S
+3
+1
+M
+P
+11.2.1(a) ˆ ˆ
+K S [tan chord theorem/raaklynkoordstelling]  S  R
+4 1
+ˆ ˆ ˆ  S  R
+M M S [corresp s; / ooreenk s; MN || KS]
+2 3 1
+ˆ ˆ ˆ ˆ
+K M M NML (4)
+4 2 3
+11.2.1(b) ˆ ˆ ˆ ˆ
+K M M NML
+4 2 3
+KLMN is a cyclic quad [ext  of quad = opp int  /
+ R
+buite  van vh = teenoorst binne ] (1)
+OR/OF
+N K
+ˆ
+K
+ˆ
+NK
+ˆ
+S [corresp s; / ooreenk s; MN || KS]
+1 1 2
+NKˆSKLˆS [tan chord theorem / raaklynkoordstelling]
+ˆ ˆ
+N KLS
+1
+KLMN is a cyclic quad [ext  of quad = opp int  /  R
+(1)
+buite  van vh = teenoorst binne ]
+OR/OF
+Copyright reserved/Kopiereg voorbehou Please turn over/Blaai om asseblief
+
+===== Page 24 =====
+Mathematics P2/Wiskunde V2 24 DBE/November 2021
+NSC/NSS – Marking Guidelines/Nasienriglyne
+NKL180 K [adj. suppl.]
+4
+NKL180 NML [proved]
+KLMN is a cyclic quad [opp.s supplementary]  R
+(1)
+11.2.2 In LKN|||ΔKSM:
+ˆ ˆ
+N M [s in the same seg / e in dieselfde sirkel segm]
+3 3  S  R
+L
+ˆ
+1 M
+ˆ
+2 [s in the same seg / e in dieselfde sirkel segm]  S
+K ˆ [alt s; / verwe; MN||KS]  S/R
+2
+NKˆLMSˆK [s of  / e van ]  S
+LKN|||ΔKSM (5)
+OR/OF
+In LKN|||ΔKSM:
+ˆ ˆ
+N M [s in the same seg / e in dieselfde sirkel segm]  S  R
+3 3
+ˆ ˆ
+NKL=M [ext  of cyclic quad/buite van koordevh]  S/R
+1
+ˆ  S
+S [corresp s/ooreenk e; KS || NM]
+2
+ R
+LKN|||ΔKSM [,,]
+(5)
+OR/OF
+In LKN|||ΔKSM:
+ˆ ˆ
+N M [s in the same seg / e in dieselfde sirkel segm]
+3 3
+ S  R
+ˆ ˆ ˆ ˆ
+K +NKL=S +S [s on straight line/e op reguitlyn]
+4 1 2
+ S/R
+ˆ ˆ ˆ ˆ
+ NKL=S [K =S ]
+2 4 1  S
+LKN|||ΔKSM [,,]
+ R
+(5)
+11.2.3 LK KN
+ [LKN|||ΔKSM]
+KS SM  S  R
+12 4
+ 
+ substitution
+KS 3
+KS  9 units  answer
+(4)
+11.2.4 4SM = 3KN
+3(8)
+SM 
+4
+SM = 6  SM = 6
+LT LS
+ [line || one side of  / lyn || een sy v ∆]
+ S  R
+NL ML
+LT 13
+
+16 19
+208  answer
+LT 10,95
+19 (4)
+[23]
+TOTAL/TOTAAL: 150
+Copyright reserved/Kopiereg voorbehou

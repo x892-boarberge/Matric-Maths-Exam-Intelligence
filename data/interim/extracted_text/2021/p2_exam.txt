@@ -1,0 +1,369 @@
+
+===== Page 1 =====
+“=e basic education
+PF Fay Department:
+\ ©) / Basic Education
+REPUBLIC OF SOUTH AFRICA
+NATIONAL
+SENIOR CERTIFICATE
+GRADE 12
+i MATHEMATICS P2 s
+i, NOVEMBER 2021 .
+MARKS: 150
+TIME: 3 hours
+This question paper consists of 13 pages and 1 information sheet.
+Copyright reserved Please turn over
+
+
+===== Page 2 =====
+Mathematics/P2 2 DBE/November 2021
+NSC
+
+INSTRUCTIONS AND INFORMATION
+
+Read the following instructions carefully before answering the questions. .
+
+1. This question paper consists of 11 questions.
+
+2. Answer ALL the questions in the SPECIAL ANSWER BOOK provided.
+
+3. Clearly show ALL calculations, diagrams, graphs, etc. that you have used in
+determining your answers.
+
+4. Answers only will NOT necessarily be awarded full marks.
+
+5. You may use an approved scientific calculator (non-programmable and
+non-graphical), unless stated otherwise.
+
+6. If necessary, round off answers correct to TWO decimal places, unless stated
+otherwise.
+
+7. Diagrams are NOT necessarily drawn to scale.
+
+8. An information sheet with formulae is included at the end of the question paper.
+
+9. Write neatly and legibly.
+
+Copyright reserved Please turn over
+
+
+===== Page 3 =====
+Mathematics/P2 3 DBE/November 2021
+NSC
+QUESTION 1
+A bakery kept a record of the number of loaves of bread a tuck-shop ordered daily over the last
+18 days. The information is shown in the table below.
+Ne ec
+ps fe f= fa pss fo [o fo
+
+1.1 Calculate the:
+
+1.1.1 Mean number of loaves of bread ordered daily | (2)
+
+1.1.2 Standard deviation of the data (1)
+
+1.1.3 Number of days on which the number of loaves of bread ordered was
+
+more than one standard deviation above the mean (2)
+
+1.2 The tuck-shop owner was not able to sell all the loaves of bread delivered daily.
+
+He calculated the mean number of loaves sold over the 18 days to be 20. Calculate the
+
+number of loaves of bread which were NOT sold over the 18 days. (2)
+1.3 One of the two box and whisker diagrams drawn below represents the data given in
+
+the table above.
+
+SOF a
+8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42
+be es ee ee ee ee ee ee ee ee ee ee ee |
+8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42
+1.3.1 Which ONE of the two box and whisker diagrams, drawn above, correctly
+represents the data? Write down a reason for your answer. (2)
+1.3.2 Describe the skewness of the data. (i)
+[10}
+
+Copyright reserved Please turn over
+
+
+===== Page 4 =====
+Mathematics/P2 4 DBE/November 2021
+NSC
+QUESTION 2
+A farm stall sells milk in 5-litre containers to the local.community. The price varies according
+to the availability of milk at the farm stall. The price of milk, in rands per 5-litre container, and
+the number of 5-litre containers of milk sold, are recorded in the table below.
+Price of milk
+in rands per 26 32 36 28 40 33 29 34 27 30
+5-litre container (x) _
+Number of
+Slitre containers of | 4g | 39 | 26 | 44 | 23 | 32 | 39 | 29 | a2 | 33
+milk sold
+’)
+
+2.1 On the grid provided in the ANSWER BOOK, draw the scatter plot to represent the
+
+data. (3)
+2.2 Determine the equation of the least squares regression line for the data. (3)
+2.3 If the farmer sells a 5-litre container of milk for R38, predict the number of 5-litre
+
+containers of milk he will sell. (2)
+2.4 Refer to the correlation between the price of 5-litre containers of milk and the number
+
+of 5-litre containers of milk sold, and comment on the accuracy of your answer to
+
+QUESTION 2.3. (2)
+
+[10}
+
+Copyright reserved Please turn over
+
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2021
+NSC
+QUESTION 3
+In the diagram, A(—2 ; 10), B(k; k) and C(4 ; —2) are the vertices of AABC. Line BC is
+produced to H and cuts the x-axis at E(12; 0). AB and AC intersects the x-axis at F and
+G respectively. The angle of inclination of line AB is 81,87°.
+A(-2;10) »
+p18 H
+F , ee E(12 ; 0) x
+C(4 ; -2)
+Bk; k) |
+3.1 Calculate the gradient of:
+3.1.1 BE (2)
+3.1.2 AB (2)
+3.2 Determine the equation of BE inthe form y = mx +c (2)
+3.3 Calculate the:
+3.3.1 Coordinates of B, where k<0 (2)
+3.3.2 Size of A (4)
+3.3.3 Coordinates of the point of intersection of the diagonals of parallelogram
+ACES, where S$ is a point in the first quadrant (2)
+3.4 Another point T(p; p), where p> 0, is plotted such that ET = BE =4-17 units.
+3.4.1 Calculate the coordinates of T. (5)
+3.4.2 Determine the equation of the:
+(a) Circle with centre at E and passing through B and T in the form
+(x-a)’ +(y-by =r? (2)
+(b) Tangent to the circle at point B(k; k) (3)
+[24]
+Copyright reserved Please turn over
+
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2021
+NSC
+QUESTION 4
+In the diagram, the circle centred at N(—1 ; 3) passes through A(-1 ;—-1) and C. BC-4; 2),
+C, D and E are joined to form a parallelogram such that BE is parallel to the x-axis.
+CD isa tangent to the circle at C and CD =6 units.
+y
+C__| 6 D
+a *
+A(-13;-1)|
+
+4.1 Write down the length of the radius of the circle. (1)
+4.2 Calculate the:
+
+4.2.1 Coordinates of C (2)
+
+4.2.2 Coordinates of D (2)
+
+4.2.3 Area of ABCD (3)
+4.3 The circle, centred at N, is reflected about the line y=x. M is the centre of the new
+
+circle which is formed. The two circles intersect at A and F.
+
+Calculate the:
+
+4.3.1 Length of NM (3)
+
+4.3.2 Midpoint of AF (4)
+
+{15}
+
+Copyright reserved Please turn over
+
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2021
+NSC
+QUESTION 5
+5.1 Without using a calculator, simplify the following expression to ONE trigonometric
+ratio:
+sin 140°. sin(360° — x) ‘5
+cos 50°. tan(—x) (6)
+4. —2sin’?x+cosx+1
+5.2 Prove the identity: —————__————- = 2cosx-1 (4)
+1 ~cos(540° — x)
+5.3 Given: sin36°=./1— p’
+Without using a calculator, determine EACH of the following in terms of p:
+5.3.1 tan 36° (3)
+5.3.2 cos108° (4)
+[17]
+QUESTION 6
+6.1 Given: cos(a ~ 8) =cosacos £+sinasin §
+6.1.1 Use the given identity to derive a formula for cos(@ + £) (3)
+6.1.2 Simplify completely: 2cos6xcos4x—cos10x+2sin? x (5)
+6.2 Determine the general solution of tanx =2sin2x where cosx <0. (7)
+[15]
+Copyright reserved Please turn over
+
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2021
+NSC
+QUESTION 7
+In the diagram below, the graph of f(x)=-2sinx is drawn for the interval
+x €[-180° ; 180°].
+180° 9028 ge — Z180°
+7.1 On the grid provided in the ANSWER BOOK, draw the graph of
+g(x) =cos(x~60°) for xe[-180°; 180°]. Clearly show ALL intercepts with the
+axes and turning points of the graph. (3)
+7.2 Write down the period of f(3x). (2)
+7.3 Use the graphs to determine the value of x in the interval x <[—180°; 180°] for
+which f(x)- g(x)=1. (1)
+7.4 Write down the range of k, if k(x) = ; g(x) +1. (2)
+[8]
+Copyright reserved Please turn over
+
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2021
+NSC
+QUESTION 8
+In the diagram below, T is a hook on the ceiling of an art gallery. Points Q, S and R are on
+the same horizontal plane from where three people are observing the hook T. The angle of
+elevation from Q to T is x.
+QSR =90°+x, QRS =x, QR=S units and TS=SQ.
+T
+Se
+x
+Q 5 R
+8.1 Prove that QS = 5 tanx (3)
+8.2 Prove that the length of QT =10sinx (5)
+8.3 Calculate the area of ATQR if TQR = 70° and x= 25°. (2)
+[10]
+Copyright reserved Please turn over
+
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2021
+NSC
+QUESTION 9
+In the diagram, PQRS is a cyclic quadrilateral. PS is produced to W. TR and TS are
+tangents to the circle at R and S respectively. T=78° and Q=93°.
+Q
+Vas
+P
+\ Z |
+su
+T
+W
+9.1 Give areason why ST =TR. (1)
+9.2 Calculate, giving reasons, the size of:
+9.2.1 S, (2)
+9.2.2 S, (2)
+[5]
+Copyright reserved Please turn over
+
+
+===== Page 11 =====
+Mathematics/P2 11 DBE/November 2021
+NSC
+QUESTION 10
+In the diagram, BE and CD are diameters of a circle having M as centre. Chord AE is
+drawn to cut CD at F. AELCD. Let C=x.
+K 7 7 E
+(D>
+A KA
+LS,
+10.1 Give areason why AF = FE. (1)
+10.2 Determine, giving reasons, the size of M, in terms of x. (3)
+10.3 Prove, giving reasons, that AD is a tangent to the circle passing through A, C
+and F. (4)
+10.4 Given that CF = 6 units and AB = 24 units, calculate, giving reasons, the length
+of AE. (5)
+[13]
+Copyright reserved Please turn over
+
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2021
+NSC
+
+QUESTION 11
+11.1 In the diagram, chords DE, EF and DF are drawn in the circle with centre O.
+
+KFC is a tangent to the circle at F.
+
+J. \
+\y
+K F ©
+
+Prove the theorem which states that DFK =F. (5)
+
+Copyright reserved Please turn over
+
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2021
+NSC
+11.2 In the diagram, PK is a tangent to the circle at K. Chord LS is produced to P.
+N and M are points on KP and SP _ respectively such that MN || SK.
+Chord KS and LN intersect at T.
+(—>
+M
+P
+11.2.1 Prove, giving reasons, that:
+@) &,=NNIL (4)
+(b) KLMN is acyclic quadrilateral (1)
+11.2.2 Prove, giving reasons, that ALKN ||| AKSM. (5)
+11.2.3 If LK = 12 units and 3KN =4SM, determine the length of KS. (4)
+11.2.4 If it is further given that NL = 16 units, LS = 13 units and KN = 8 units,
+determine, with reasons, the length of LT. (4)
+[23]
+TOTAL: 150
+Copyright reserved
+
+
+===== Page 14 =====
+Mathematics/P2 DBE/November 2021
+NSC
+INFORMATION SHEET: MATHEMATICS
+ee OEY —4ac ,
+2a
+A =P(1+ni) A= P(l-xi) A= P(1-i)” A=P(1+i)"
+T, =a+(n-l)d S, = 5 2a+(n-a]
+T, =ar"™" Ss = 8" =D gy S,=— +; -ler<l
+. r-l l-r
+re x[asiy | >= xhi-a+ iy”
+i i
+ley) — lien LOH t A) - FO)
+f(x) = lim P
+SEEN SEE EEE ee xX, +x, Wty
+d= \(x,-x,°+(.-») Ml 5 +; 5 |
+y=mxte y-y, =m(x-x,) m= 221 m= tan@
+Xx. —X,
+(x-a) +(y-by =r?
+In AABC: —@ _ 6 _
+sin A sinB  sinC
+a’ =b’ +c’ —2be.cos A
+area AABC = Sab. sin Cc
+sin(a + #)=sinacos # + cos asin B sin(a — #) =sinacos 8 —cosasin B
+cos(a + #)=cosacos f-sinasin f cos(a — f)=cosacos #+sinasin B
+cos’ a —sin’ a
+cos2a=| 1-2sin’a sin 2a = 2sina cosa
+2cos*a-1
+_ yx dil, - x)
+x =~ 2_ i=l
+n oO =
+n
+n(A)
+P(A) ~ AS) P(A or B)= P(A)+ P(B)- P(A and B)
+n
+> &-xXy-7)
+y=ath b= SS oN
+¥=atTOX > (x3)
+Copyright reserved
