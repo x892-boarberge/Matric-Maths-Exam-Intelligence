@@ -1,5 +1,5 @@
 year,document_id,paper,question_number,subquestion,marks,question_text,segmentation_status
-2016,2016_nov_p1_exam_maths,P1,1,1.1,,Solve for x:,missing_marks
+2016,2016_nov_p1_exam_maths,P1,1,1.1,,Solve for x:,stem
 2016,2016_nov_p1_exam_maths,P1,1,1.1.1,5.0,"x(x-—7)=0 (2)
 Li2 x° —6x +2 =0 (correct to TWO decimal places) (3)
 L153 vx-1+1l=x",ok
@@ -35,7 +35,7 @@ A B
 30 cm
 lcm t
 dD iE i ae ee a ns weet Aa rte ob oa te xu eS ee ee Cc
-21cm",missing_marks
+21cm",stem
 2016,2016_nov_p1_exam_maths,P1,3,3.2.1,3.0,"Calculate the length of the 10"" rectangle.",ok
 2016,2016_nov_p1_exam_maths,P1,3,3.22,,"Calculate the percentage of the paper that is coloured grey. (4)
 [15]
@@ -193,7 +193,7 @@ measurements he discovered that the tape was |
 mounted at 1,1 m above the ground instead of
 1m. Distance above the ground
 GROUND
-How does this error influence the following:",missing_marks
+How does this error influence the following:",stem
 2016,2016_nov_p2_exam_maths,P2,2,2.6.1,1.0,Mean of the data set,ok
 2016,2016_nov_p2_exam_maths,P2,2,2.6.2,,"Standard deviation of the data set (1)
 [13]
@@ -279,7 +279,7 @@ Give reasons for ALL statements and calculations in QUESTIONS 8, 9 and 10.",miss
 2016,2016_nov_p2_exam_maths,P2,8,8.1,,"In the diagram below PQRT is a cyclic quadrilateral having RT || QP. The tangent
 at P meets RT produced at S. QP = QT and PTS = 70°.
 S
-“*",missing_marks
+“*",stem
 2016,2016_nov_p2_exam_maths,P2,8,8.1.1,1.0,"Give a reason why P, = 70°.",ok
 2016,2016_nov_p2_exam_maths,P2,8,8.1.2,,"Calculate, with reasons, the size of:
 (a2) Q, (3)
@@ -294,7 +294,7 @@ and AB respectively such that OS | AC and OT | AB. AB = 40 and AC = 48.
 C
 A
 OE,
-B",missing_marks
+B",stem
 2016,2016_nov_p2_exam_maths,P2,8,8.2.1,1.0,Calculate AT.,ok
 2016,2016_nov_p2_exam_maths,P2,8,8.2.2,,"If OS= “or, calculate the radius OA of the circle. (5)
 [12]
@@ -303,7 +303,7 @@ Copyright reserved Please turn over
 ===== Page 12 =====
 Mathematics/P2 12 DBE/November 2016
 NSC",missing_marks
-2016,2016_nov_p2_exam_maths,P2,9,9.1,,Give a reason why EACH of the following is TRUE:,missing_marks
+2016,2016_nov_p2_exam_maths,P2,9,9.1,,Give a reason why EACH of the following is TRUE:,stem
 2016,2016_nov_p2_exam_maths,P2,9,9.1.1,1.0,"B, =x",ok
 2016,2016_nov_p2_exam_maths,P2,9,9.1.2,1.0,"BCD =B,",ok
 2016,2016_nov_p2_exam_maths,P2,9,9.2,2.0,"Prove that BCDE is a cyclic quadrilateral. (2)
@@ -336,7 +336,7 @@ L
 : Aas is H
 G
 F
-1034 Give a reason why GFM = LKM.",ok
+1034 Give a reason why GFM = LKM.",stem
 2016,2016_nov_p2_exam_maths,P2,10,10.2.2,,"Prove that:
 (a) GH=y (3)
 (b) AMFH]|||AMGF (5)

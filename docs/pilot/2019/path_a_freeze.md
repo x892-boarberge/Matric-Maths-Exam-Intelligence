@@ -15,3 +15,9 @@ Counts:
 No topic, no sample verification, no vision, no question_force.
 Do not run N05/N06/N07 on this year until taxonomy v2 mapping.
 Frozen: 2026-09-18T10:36:43.218582+00:00
+
+
+Segmentation v1.2 note: stems detected and labelled.
+Rows with segmentation_status = 'stem' are shared context paragraphs, not questions.
+Real question count excludes stems.
+Stems preserved for N04 mapping (context will be prepended to children).

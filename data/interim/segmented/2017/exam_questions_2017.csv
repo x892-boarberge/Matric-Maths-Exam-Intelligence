@@ -1,19 +1,19 @@
 year,document_id,paper,question_number,subquestion,marks,question_text,segmentation_status
-2017,2017_nov_p1_exam_maths,P1,1,1.1,,Solve for x:,missing_marks
+2017,2017_nov_p1_exam_maths,P1,1,1.1,,Solve for x:,stem
 2017,2017_nov_p1_exam_maths,P1,1,1.1.1,3.0,x? +9x+14=0,ok
 2017,2017_nov_p1_exam_maths,P1,1,1.1.2,4.0,"4x°+9x-3=0 (correct to TWO decimal places) (4)
 11300 Vx?-5 =2vx",ok
 2017,2017_nov_p1_exam_maths,P1,1,1.2,6.0,"Solve for x and y if:
 3x-y=4 and x*4+2xy-y? =-2",ok
-2017,2017_nov_p1_exam_maths,P1,1,1.3,,Given: (x)= x? +8x+16,missing_marks
+2017,2017_nov_p1_exam_maths,P1,1,1.3,,Given: (x)= x? +8x+16,stem
 2017,2017_nov_p1_exam_maths,P1,1,1.3.1,3.0,Solve for x if f(x) >0.,ok
 2017,2017_nov_p1_exam_maths,P1,1,1.3.2,,"For which values of p will f (x) = p have TWO unequal negative roots? (4)
 [24]",missing_marks
-2017,2017_nov_p1_exam_maths,P1,2,2.1,,Given the following quadratic number pattern: 5 ; —-4 ; -19 ; 40; ...,missing_marks
+2017,2017_nov_p1_exam_maths,P1,2,2.1,,Given the following quadratic number pattern: 5 ; —-4 ; -19 ; 40; ...,stem
 2017,2017_nov_p1_exam_maths,P1,2,2.1.1,4.0,"Determine the constant second difference of the sequence. (2)
 212 Determine the n"" term (T,) of the pattern.",ok
 2017,2017_nov_p1_exam_maths,P1,2,2.1.3,3.0,Which term of the pattern will be equal to —25 939?,ok
-2017,2017_nov_p1_exam_maths,P1,2,2.2,,The first three terms of an arithmetic sequence are 2k-—7 ; k+8 and 2k-1.,missing_marks
+2017,2017_nov_p1_exam_maths,P1,2,2.2,,The first three terms of an arithmetic sequence are 2k-—7 ; k+8 and 2k-1.,stem
 2017,2017_nov_p1_exam_maths,P1,2,2.2.1,5.0,Calculate the value of the 15” term of the sequence.,ok
 2017,2017_nov_p1_exam_maths,P1,2,2.2.2,,"Calculate the sum of the first 30 even terms of the sequence. (4)
 [138]",missing_marks
@@ -59,13 +59,13 @@ monthly. At the end of this period, she received R12 146,72. Calculate r, correc
 to ONE decimal place.",ok
 2017,2017_nov_p1_exam_maths,P1,6,6.2,,"Piet takes a loan from a bank to buy a car for R235 000. He agrees‘to repay the loan
 over a period of 54 months. The first instalment will be paid one month after the loan
-is granted. The bank charges interest at 11% p.a., compounded monthly.",missing_marks
+is granted. The bank charges interest at 11% p.a., compounded monthly.",stem
 2017,2017_nov_p1_exam_maths,P1,6,6.2.1,4.0,Calculate Piet's monthly instalment.,ok
 2017,2017_nov_p1_exam_maths,P1,6,6.2.2,15.0,"Calculate the total amount of interest that Piet will pay during the first
 year of the repayment of the loan. (6)",ok
 2017,2017_nov_p1_exam_maths,P1,7,7.1,6.0,"Given: f(x) =2x?-x
 Determine f’(x) from first principles.",ok
-2017,2017_nov_p1_exam_maths,P1,7,7.2,,Determine:,missing_marks
+2017,2017_nov_p1_exam_maths,P1,7,7.2,,Determine:,stem
 2017,2017_nov_p1_exam_maths,P1,7,7.2.1,,"D,{(x +1)3x-7)] (2)
 dy . 3; ~6(C«<CO;SCd
 722 if yeViP-2 450 (4)
@@ -79,7 +79,7 @@ NSC",missing_marks
 2017,2017_nov_p1_exam_maths,P1,8,8.2,4.0,"Sketch the graph of f, clearly indicating the intercepts with the axes and the turning
 points.",ok
 2017,2017_nov_p1_exam_maths,P1,8,8.3,2.0,For which values of x will y=~—f (x) be concave down?,ok
-2017,2017_nov_p1_exam_maths,P1,8,8.4,,Use your graph to answer the following questions:,missing_marks
+2017,2017_nov_p1_exam_maths,P1,8,8.4,,Use your graph to answer the following questions:,stem
 2017,2017_nov_p1_exam_maths,P1,8,8.4.1,15.0,"Determine the coordinates of the local maximum of h if
 A(x) = f(x-2)+3. (2)
 842 Claire claims that f’ (2) =1.
@@ -164,7 +164,7 @@ Copyright reserved Please turn over
 ===== Page 4 =====
 Mathematics/P2 4 DBE/November 2017
 NSC",missing_marks
-2017,2017_nov_p2_exam_maths,P2,2,2.1,,Calculate:,missing_marks
+2017,2017_nov_p2_exam_maths,P2,2,2.1,,Calculate:,stem
 2017,2017_nov_p2_exam_maths,P2,2,2.1.1,2.0,The mean of the data,ok
 2017,2017_nov_p2_exam_maths,P2,2,2.1.2,3.0,The interquartile range of the data,ok
 2017,2017_nov_p2_exam_maths,P2,2,2.2,2.0,"The standard deviation of the times taken by the girls is 5,94. How many girls took
@@ -172,7 +172,7 @@ longer than ONE standard deviation from the mean to name the colours?",ok
 2017,2017_nov_p2_exam_maths,P2,2,2.3,3.0,"Draw a box and whisker diagram to represent the data on the number line provided in
 the ANSWER BOOK.",ok
 2017,2017_nov_p2_exam_maths,P2,2,2.4,,"The five-number summary of the times taken by a group of 23 boys in naming the
-colours of the rectangles correctly is (15 ; 21 ; 23,5 ; 26 ; 38).",missing_marks
+colours of the rectangles correctly is (15 ; 21 ; 23,5 ; 26 ; 38).",stem
 2017,2017_nov_p2_exam_maths,P2,2,2.4.1,1.0,"Which of the two groups, girls or boys, had the lower median time to
 correctly name the colours of the rectangles?",ok
 2017,2017_nov_p2_exam_maths,P2,2,2.4.2,,"The first three learners who named the colours of all 30 rectangles
@@ -184,7 +184,7 @@ Copyright reserved Please turn over
 ===== Page 5 =====
 Mathematics/P2 5 DBE/November 2017
 NSC",missing_marks
-2017,2017_nov_p2_exam_maths,P2,3,3.1,,Calculate:,missing_marks
+2017,2017_nov_p2_exam_maths,P2,3,3.1,,Calculate:,stem
 2017,2017_nov_p2_exam_maths,P2,3,3.1.1,4.0,The equation of AC in the form y=mx+e,ok
 2017,2017_nov_p2_exam_maths,P2,3,3.1.2,3.0,The coordinates of G if the equation of BG is 7x— 10y=8,ok
 2017,2017_nov_p2_exam_maths,P2,3,3.2,2.0,Show by calculation that the coordinates of A is (2 ; 5).,ok
@@ -196,7 +196,7 @@ Copyright reserved Please turn over
 ===== Page 6 =====
 Mathematics/P2 6 DBE/November 2017
 NSC",missing_marks
-2017,2017_nov_p2_exam_maths,P2,4,4.1,,Determine:,missing_marks
+2017,2017_nov_p2_exam_maths,P2,4,4.1,,Determine:,stem
 2017,2017_nov_p2_exam_maths,P2,4,4.1.1,4.0,The gradient of SR,ok
 2017,2017_nov_p2_exam_maths,P2,4,4.1.2,2.0,The equation of SR in the form y = mx +c,ok
 2017,2017_nov_p2_exam_maths,P2,4,4.1.3,4.0,"The equation of the circle in the form (x—a)’ +(y—b) =r""",ok
@@ -221,11 +221,11 @@ x
 Ba
 \ PB ; £)
 
-Without using a calculator, determine the value of:",missing_marks
+Without using a calculator, determine the value of:",stem
 2017,2017_nov_p2_exam_maths,P2,5,5.2.1,2.0,t,ok
 2017,2017_nov_p2_exam_maths,P2,5,5.2.2,1.0,tan B,ok
 2017,2017_nov_p2_exam_maths,P2,5,5.2.3,4.0,cos 28,ok
-2017,2017_nov_p2_exam_maths,P2,5,5.3,,Prove:,missing_marks
+2017,2017_nov_p2_exam_maths,P2,5,5.3,,Prove:,stem
 2017,2017_nov_p2_exam_maths,P2,5,5.3.1,2.0,sin(A + B)—sin(A -B) = 2cosA.sinB,ok
 2017,2017_nov_p2_exam_maths,P2,5,5.3.2,,"Without using a calculator, that sin77° —sin 43° = sin17° (4)
 
@@ -262,7 +262,7 @@ Copyright reserved Please turn over
 Mathematics/P2 10 DBE/November 2017
 NSC
 Give reasons for your statements in QUESTIONS 8, 9, 10 and 11.",missing_marks
-2017,2017_nov_p2_exam_maths,P2,8,8.1,,"Calculate, with reasons, the size of:",missing_marks
+2017,2017_nov_p2_exam_maths,P2,8,8.1,,"Calculate, with reasons, the size of:",stem
 2017,2017_nov_p2_exam_maths,P2,8,8.1.1,3.0,A,ok
 2017,2017_nov_p2_exam_maths,P2,8,8.1.2,2.0,"C,",ok
 2017,2017_nov_p2_exam_maths,P2,8,8.2,,"Prove, with a reason, that CF is a tangent to the circle passing through points C, D
@@ -276,7 +276,7 @@ Copyright reserved Please turn over
 ===== Page 11 =====
 Mathematics/P2 11 DBE/November 2017
 NSC",missing_marks
-2017,2017_nov_p2_exam_maths,P2,9,9.1,,Prove that:,missing_marks
+2017,2017_nov_p2_exam_maths,P2,9,9.1,,Prove that:,stem
 2017,2017_nov_p2_exam_maths,P2,9,9.1.1,2.0,FG || BC,ok
 2017,2017_nov_p2_exam_maths,P2,9,9.1.2,,"AH _AE (3)
 
@@ -290,7 +290,7 @@ Copyright reserved Please turn over
 Mathematics/P2 12 DBE/November 2017
 NSC",missing_marks
 2017,2017_nov_p2_exam_maths,P2,10,10.1,1.0,Give a reason why OV MN.,ok
-2017,2017_nov_p2_exam_maths,P2,10,10.2,,Prove that:,missing_marks
+2017,2017_nov_p2_exam_maths,P2,10,10.2,,Prove that:,stem
 2017,2017_nov_p2_exam_maths,P2,10,10.2.1,2.0,MN || TS,ok
 2017,2017_nov_p2_exam_maths,P2,10,10.2.2,4.0,TMNS is acyclic quadrilateral,ok
 2017,2017_nov_p2_exam_maths,P2,10,10.2.3,,"OS . MN =20N . WS (5)
@@ -331,7 +331,7 @@ A “Sy
 | a 2 2/ A _ |
 A BS ec
 /
-\ /",missing_marks
+\ /",stem
 2017,2017_nov_p2_exam_maths,P2,11,11.2.1,1.0,"Give a reason why:
 (a) D,=90° (1)
 (b) ABDE is a cyclic quadrilateral (1)

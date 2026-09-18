@@ -1,5 +1,5 @@
 year,document_id,paper,question_number,subquestion,marks,question_text,segmentation_status
-2018,2018_nov_p1_exam_maths,P1,1,1.1,,Solve for x:,missing_marks
+2018,2018_nov_p1_exam_maths,P1,1,1.1,,Solve for x:,stem
 2018,2018_nov_p1_exam_maths,P1,1,1.1.1,3.0,x* —-4x+3=0,ok
 2018,2018_nov_p1_exam_maths,P1,1,1.1.2,3.0,5x* —5x+1=0 (correct to TWO decimal places),ok
 2018,2018_nov_p1_exam_maths,P1,1,1.1.3,3.0,x’ —3x-10>0,ok
@@ -10,7 +10,7 @@ year,document_id,paper,question_number,subquestion,marks,question_text,segmentat
 the value of: bap
 vs"" (a
 [23]",missing_marks
-2018,2018_nov_p1_exam_maths,P1,2,2.1,,Given the quadratic sequence: 2;3;10;23;...,missing_marks
+2018,2018_nov_p1_exam_maths,P1,2,2.1,,Given the quadratic sequence: 2;3;10;23;...,stem
 2018,2018_nov_p1_exam_maths,P1,2,2.1.1,1.0,Write down the next term of the sequence.,ok
 2018,2018_nov_p1_exam_maths,P1,2,2.1.2,4.0,"Determine the n"" term of the sequence.",ok
 2018,2018_nov_p1_exam_maths,P1,2,2.1.3,2.0,"Calculate the 20"" term of the sequence.",ok
@@ -53,7 +53,7 @@ asymptotes.",ok
 2018,2018_nov_p1_exam_maths,P1,6,6.1,2.0,Show that g)=x+1.,ok
 2018,2018_nov_p1_exam_maths,P1,6,6.2,3.0,Calculate the coordinates of A and B.,ok
 2018,2018_nov_p1_exam_maths,P1,6,6.3,3.0,Determine the range of f,ok
-2018,2018_nov_p1_exam_maths,P1,6,6.4,,If MN = 6:,missing_marks
+2018,2018_nov_p1_exam_maths,P1,6,6.4,,If MN = 6:,stem
 2018,2018_nov_p1_exam_maths,P1,6,6.4.1,4.0,"Determine the length of OT if T lies on the negative x-axis. Show ALL
 your working.",ok
 2018,2018_nov_p1_exam_maths,P1,6,6.4.2,2.0,"Hence, write down the coordinates of N.",ok
@@ -67,20 +67,20 @@ Mathematics/P1 6 DBE/November 2018
 NSC",missing_marks
 2018,2018_nov_p1_exam_maths,P1,7,7.1,,"Selby decided today that he will save R15 000 per quarter over the next four years.
 He will make the first deposit into a savings account in three months' time and he will
-make his last deposit at the end of four years from now.",missing_marks
+make his last deposit at the end of four years from now.",stem
 2018,2018_nov_p1_exam_maths,P1,7,7.1.1,3.0,"How much will Selby have at the end of four years if interest is earned at
 8,8% per annum, compounded quarterly?",ok
 2018,2018_nov_p1_exam_maths,P1,7,7.1.2,3.0,"If Selby decides to withdraw R100 000 from the account at the end of
 three years from now, how much will he have in the account at the end of
 four years from now?",ok
-2018,2018_nov_p1_exam_maths,P1,7,7.2,,Tshepo takes out a home loan over 20 years to buy a house that costs R1 500 000.,missing_marks
+2018,2018_nov_p1_exam_maths,P1,7,7.2,,Tshepo takes out a home loan over 20 years to buy a house that costs R1 500 000.,stem
 2018,2018_nov_p1_exam_maths,P1,7,7.2.1,4.0,"Calculate the monthly instalment if interest is charged at 10,5% p.a.,
 compounded monthly.",ok
 2018,2018_nov_p1_exam_maths,P1,7,7.2.2,15.0,"Calculate the outstanding balance immediately after the 144"" payment
 was made. (5)",ok
 2018,2018_nov_p1_exam_maths,P1,8,8.1,5.0,Determine f'(x) from first principles if it is given f(x) =x? —5.,ok
 2018,2018_nov_p1_exam_maths,P1,8,8.2,,"Determine yy if:
-ax",missing_marks
+ax",stem
 2018,2018_nov_p1_exam_maths,P1,8,8.2.1,3.0,y=3x + 6x7 +x-4,ok
 2018,2018_nov_p1_exam_maths,P1,8,8.2.2,,"yx-y=2x?-2x 3; x¥l (4)
 [12]
@@ -96,7 +96,7 @@ Ro} y
 &
 20
 x
-—5 O P",missing_marks
+—5 O P",stem
 2018,2018_nov_p1_exam_maths,P1,9,9.1.1,4.0,"Show that b=1, c=-—16 and d= 20.",ok
 2018,2018_nov_p1_exam_maths,P1,9,9.1.2,5.0,Calculate the coordinates of P and R.,ok
 2018,2018_nov_p1_exam_maths,P1,9,9.1.3,3.0,"Is the graph concave up or concave down at (0 ; 20)? Show ALL your
@@ -116,7 +116,7 @@ NSC",missing_marks
 2018,2018_nov_p1_exam_maths,P1,10,10.2,6.0,"Calculate ¢ if the area of the parallelogram is a maximum.
 
 (NOTE: Area of a parallelogram = base x | height) (5)",ok
-2018,2018_nov_p1_exam_maths,P1,11,11.1,,"Calculate how many unique 5-digit codes can be formed using the digits above, if:",missing_marks
+2018,2018_nov_p1_exam_maths,P1,11,11.1,,"Calculate how many unique 5-digit codes can be formed using the digits above, if:",stem
 2018,2018_nov_p1_exam_maths,P1,11,11.1.1,2.0,The digits may be repeated,ok
 2018,2018_nov_p1_exam_maths,P1,11,11.1.2,2.0,The digits may not be repeated,ok
 2018,2018_nov_p1_exam_maths,P1,11,11.2,,"How many unique 3-digit codes can be formed using the above digits, if:
@@ -194,7 +194,7 @@ Mobis fecafest cd osttsstessfsafeatlottoatee’ cafaaHlcd Oanbetie:
 =o UGsudi fHsszd/ if ceaffl/cedfdHocatf TT FsedHiIEEETTEGUT
 
 ie) 10 20 30 40 50 60
-Number of minutes",missing_marks
+Number of minutes",stem
 2018,2018_nov_p2_exam_maths,P2,1,1.1.1,1.0,"Write down the total number of food items ordered from the menu during
 this hour.",ok
 2018,2018_nov_p2_exam_maths,P2,1,1.1.2,1.0,Write down the modal class of the data.,ok
@@ -211,7 +211,7 @@ NSC",missing_marks
 2018,2018_nov_p2_exam_maths,P2,1,1.2,,"Reggie works part-time as a waiter at a local restaurant. The amount of money
 (in rands) he made in tips over a 15-day period is given below.
 C=[e[= [= [=
-Pe [ow [oe Pe [os",missing_marks
+Pe [ow [oe Pe [os",stem
 2018,2018_nov_p2_exam_maths,P2,1,1.2.1,2.0,"Calculate:
 (a) The mean of the data (2)
 (b) The standard deviation of the data",ok
@@ -230,7 +230,7 @@ Mathematics/P2 5 DBE/November 2018
 NSC",missing_marks
 2018,2018_nov_p2_exam_maths,P2,2,2.1,1.0,Write down the fastest average serve speed (in km/h) achieved in this tournament.,ok
 2018,2018_nov_p2_exam_maths,P2,2,2.2,,"Consider the following correlation coefficients:
-A. r=0,93 B. r=-0,42 C. r=0,52",missing_marks
+A. r=0,93 B. r=-0,42 C. r=0,52",stem
 2018,2018_nov_p2_exam_maths,P2,2,2.2.1,1.0,Which ONE of the given correlation coefficients best fits the plotted data?,ok
 2018,2018_nov_p2_exam_maths,P2,2,2.2.2,1.0,"Use the scatter plot and least squares regression line to motivate your
 answer to QUESTION 2.2.1.",ok
@@ -245,13 +245,13 @@ Copyright reserved Please turn over
 ===== Page 6 =====
 Mathematics/P2 6 DBE/November 2018
 NSC",missing_marks
-2018,2018_nov_p2_exam_maths,P2,3,3.1,,Calculate:,missing_marks
+2018,2018_nov_p2_exam_maths,P2,3,3.1,,Calculate:,stem
 2018,2018_nov_p2_exam_maths,P2,3,3.1.1,2.0,The gradient of KN,ok
 2018,2018_nov_p2_exam_maths,P2,3,3.1.2,2.0,"The size of @, the inclination of KN",ok
 2018,2018_nov_p2_exam_maths,P2,3,3.2,2.0,Show that the gradient of KL is equal to 1.,ok
 2018,2018_nov_p2_exam_maths,P2,3,3.3,2.0,Determine the equation of the straight line KL in the form y=mx+c.,ok
 2018,2018_nov_p2_exam_maths,P2,3,3.4,2.0,Calculate the length of KN.,ok
-2018,2018_nov_p2_exam_maths,P2,3,3.5,,It is further given that KN = LM.,missing_marks
+2018,2018_nov_p2_exam_maths,P2,3,3.5,,It is further given that KN = LM.,stem
 2018,2018_nov_p2_exam_maths,P2,3,3.5.1,5.0,Calculate the possible coordinates of L.,ok
 2018,2018_nov_p2_exam_maths,P2,3,3.5.2,3.0,"Determine the coordinates of L if it is given that KLMN is a
 parallelogram.",ok
@@ -267,7 +267,7 @@ NSC",missing_marks
 2018,2018_nov_p2_exam_maths,P2,4,4.2,2.0,Calculate the length of FS.,ok
 2018,2018_nov_p2_exam_maths,P2,4,4.3,1.0,Write down the length of HG.,ok
 2018,2018_nov_p2_exam_maths,P2,4,4.4,4.0,Give a reason why JH = JK.,ok
-2018,2018_nov_p2_exam_maths,P2,4,4.5,,Determine:,missing_marks
+2018,2018_nov_p2_exam_maths,P2,4,4.5,,Determine:,stem
 2018,2018_nov_p2_exam_maths,P2,4,4.5.1,4.0,"The distance FJ, with reasons, if it is given that JK = 20",ok
 2018,2018_nov_p2_exam_maths,P2,4,4.5.2,1.0,"The equation of the circle with centre G in terms of m and 7 in the
 
@@ -287,7 +287,7 @@ y
 P(k; 1)
 V5 | ¢
 x
-O R",missing_marks
+O R",stem
 2018,2018_nov_p2_exam_maths,P2,5,5.1.1,2.0,Calculate the value of k.,ok
 2018,2018_nov_p2_exam_maths,P2,5,5.1.2,,"Without using a calculator, calculate the value of:
 (a) tan@ (1)
@@ -345,7 +345,7 @@ MN are drawn. Let M, = 66°.
 T
 (if | | -
 |
-Calculate, with reasons, the size of EACH of the following angles:",missing_marks
+Calculate, with reasons, the size of EACH of the following angles:",stem
 2018,2018_nov_p2_exam_maths,P2,8,8.1.1,2.0,P,ok
 2018,2018_nov_p2_exam_maths,P2,8,8.1.2,2.0,"M,",ok
 2018,2018_nov_p2_exam_maths,P2,8,8.1.3,1.0,"N,",ok
@@ -372,7 +372,7 @@ Cc
 F
 H
 15
-G",missing_marks
+G",stem
 2018,2018_nov_p2_exam_maths,P2,8,8.2.1,1.0,Explain why FC || GH.,ok
 2018,2018_nov_p2_exam_maths,P2,8,8.2.2,,"Calculate, with reasons, the length of DM. (5)
 [16]
@@ -397,7 +397,7 @@ a common chord. Straight lines STD and ATR are drawn. Chords AS and DR
 are produced to meet in C, a point outside the two circles. BS and BD are drawn.
 A=xand R, =y.
 R
-Cc",missing_marks
+Cc",stem
 2018,2018_nov_p2_exam_maths,P2,9,9.2.1,2.0,"Name, giving a reason, another angle equal to:
 (a) x (2)
 (b) y",ok
@@ -410,11 +410,11 @@ Copyright reserved Please turn over
 ===== Page 15 =====
 Mathematics/P2 15 DBE/November 2018
 NSC",missing_marks
-2018,2018_nov_p2_exam_maths,P2,10,10.1,,Prove that:,missing_marks
+2018,2018_nov_p2_exam_maths,P2,10,10.1,,Prove that:,stem
 2018,2018_nov_p2_exam_maths,P2,10,10.1.1,5.0,MC isa tangent to the circle at C,ok
 2018,2018_nov_p2_exam_maths,P2,10,10.1.2,3.0,AACB ||| ACMD,ok
 2018,2018_nov_p2_exam_maths,P2,10,10.2,,"Hence, or otherwise, prove that:
-2",missing_marks
+2",stem
 2018,2018_nov_p2_exam_maths,P2,10,10.2.1,,"CM"" AM (6)
 DC? AB",missing_marks
 2018,2018_nov_p2_exam_maths,P2,10,10.2.2,,"AM = sin’? x (2)
