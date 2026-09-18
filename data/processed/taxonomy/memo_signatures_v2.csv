@@ -1,16 +1,87 @@
-signature,topic_id,weight
-first principles,CALC,3
-dy/dx,CALC,3
-with reasons,EUCL,2
-common ratio,SEQ,2
-asymptote,FUNC,2
-cyclic quadrilateral,EUCL,3
-angle in a semicircle,EUCL,3
-compound interest,FIN,2
-present value,FIN,2
-standard deviation,STAT,2
-least squares,STAT,2
-reduction formula,TRIG,2
-identity,TRIG,1
-equation of the circle,AGEO,3
-independent events,PROB,2
+topic_id,signature_id,pattern,confidence,taxonomy_version,match_method,usage_rule
+CALC,first_principles,lim,high,v2_caps,substring_case_insensitive,PRIMARY
+CALC,dy_dx,dy/dx,high,v2_caps,substring_case_insensitive,PRIMARY
+CALC,D_x_operator,d,low,v2_caps,substring_case_insensitive,FALLBACK
+CALC,second_derivative,f''(x),medium,v2_caps,substring_case_insensitive,SECONDARY
+CALC,tangent_gradient,tangent,high,v2_caps,substring_case_insensitive,PRIMARY
+CALC,derivative_zero,= 0,low,v2_caps,substring_case_insensitive,FALLBACK
+CALC,differentiate,d/dx,high,v2_caps,substring_case_insensitive,PRIMARY
+SEQ,arithmetic_term,T_n = a +,high,v2_caps,substring_case_insensitive,PRIMARY
+SEQ,arithmetic_sum,S_n = n/2,high,v2_caps,substring_case_insensitive,PRIMARY
+SEQ,geometric_term,T_n = a r,high,v2_caps,substring_case_insensitive,PRIMARY
+SEQ,geometric_term,T_n = ar,high,v2_caps,substring_case_insensitive,PRIMARY
+SEQ,common_ratio,common ratio,high,v2_caps,substring_case_insensitive,PRIMARY
+SEQ,sum_to_infinity,sum to infinity,high,v2_caps,substring_case_insensitive,PRIMARY
+SEQ,sum_to_infinity,S,low,v2_caps,substring_case_insensitive,FALLBACK
+SEQ,second_difference,second difference,high,v2_caps,substring_case_insensitive,PRIMARY
+SEQ,quadratic_pattern,quadratic pattern,high,v2_caps,substring_case_insensitive,PRIMARY
+FUNC,asymptotes,asymptote,high,v2_caps,substring_case_insensitive,PRIMARY
+FUNC,turning_point,-b,low,v2_caps,substring_case_insensitive,FALLBACK
+FUNC,inverse_swap,swap,high,v2_caps,substring_case_insensitive,PRIMARY
+FUNC,inverse_swap,interchange,high,v2_caps,substring_case_insensitive,PRIMARY
+FUNC,logarithm,log,high,v2_caps,substring_case_insensitive,PRIMARY
+FUNC,exponential,exponential,high,v2_caps,substring_case_insensitive,PRIMARY
+FUNC,parabola,parabola,high,v2_caps,substring_case_insensitive,PRIMARY
+FUNC,hyperbola,hyperbola,high,v2_caps,substring_case_insensitive,PRIMARY
+FUNC,domain_range,domain,medium,v2_caps,substring_case_insensitive,SECONDARY
+FUNC,domain_range,range,medium,v2_caps,substring_case_insensitive,SECONDARY
+ALG,quadratic_formula,-b,low,v2_caps,substring_case_insensitive,FALLBACK
+ALG,factorisation,(,low,v2_caps,substring_case_insensitive,FALLBACK
+ALG,critical_values,critical values,high,v2_caps,substring_case_insensitive,PRIMARY
+ALG,critical_values,CV,medium,v2_caps,substring_case_insensitive,SECONDARY
+ALG,discriminant,discriminant,high,v2_caps,substring_case_insensitive,PRIMARY
+ALG,simultaneous,substitution,medium,v2_caps,substring_case_insensitive,SECONDARY
+ALG,inequality,inequality,high,v2_caps,substring_case_insensitive,PRIMARY
+ALG,nature_of_roots,nature of roots,high,v2_caps,substring_case_insensitive,PRIMARY
+TRIG,compound_angle,cos(,low,v2_caps,substring_case_insensitive,FALLBACK
+TRIG,compound_angle,compound angle,high,v2_caps,substring_case_insensitive,PRIMARY
+TRIG,double_angle,double angle,high,v2_caps,substring_case_insensitive,PRIMARY
+TRIG,reduction,reduction,high,v2_caps,substring_case_insensitive,PRIMARY
+TRIG,general_solution,general solution,high,v2_caps,substring_case_insensitive,PRIMARY
+TRIG,general_solution,360,medium,v2_caps,substring_case_insensitive,SECONDARY
+TRIG,sine_rule,sine rule,high,v2_caps,substring_case_insensitive,PRIMARY
+TRIG,cosine_rule,cosine rule,high,v2_caps,substring_case_insensitive,PRIMARY
+TRIG,area_rule,area rule,high,v2_caps,substring_case_insensitive,PRIMARY
+TRIG,identity_proof,identity,high,v2_caps,substring_case_insensitive,PRIMARY
+AGEO,gradient,gradient,high,v2_caps,substring_case_insensitive,PRIMARY
+AGEO,midpoint,midpoint,high,v2_caps,substring_case_insensitive,PRIMARY
+AGEO,distance,distance,high,v2_caps,substring_case_insensitive,PRIMARY
+AGEO,circle_equation,circle,high,v2_caps,substring_case_insensitive,PRIMARY
+AGEO,tangent_to_circle,tangent,medium,v2_caps,substring_case_insensitive,SECONDARY
+AGEO,angle_inclination,inclination,high,v2_caps,substring_case_insensitive,PRIMARY
+AGEO,parallel_perp,parallel,medium,v2_caps,substring_case_insensitive,SECONDARY
+AGEO,parallel_perp,perpendicular,medium,v2_caps,substring_case_insensitive,SECONDARY
+EUCL,with_reasons,with reasons,high,v2_caps,substring_case_insensitive,PRIMARY
+EUCL,tangent_chord,tangent,medium,v2_caps,substring_case_insensitive,SECONDARY
+EUCL,tangent_chord,chord,high,v2_caps,substring_case_insensitive,PRIMARY
+EUCL,cyclic_quad,cyclic,high,v2_caps,substring_case_insensitive,PRIMARY
+EUCL,angle_at_centre,centre,medium,v2_caps,substring_case_insensitive,SECONDARY
+EUCL,similarity,similar,high,v2_caps,substring_case_insensitive,PRIMARY
+EUCL,similarity,|||,high,v2_caps,substring_case_insensitive,PRIMARY
+EUCL,proportionality,proportional,medium,v2_caps,substring_case_insensitive,SECONDARY
+EUCL,midpoint_theorem,midpoint,medium,v2_caps,substring_case_insensitive,SECONDARY
+EUCL,pythagoras,pythagoras,high,v2_caps,substring_case_insensitive,PRIMARY
+STAT,mean,mean,medium,v2_caps,substring_case_insensitive,SECONDARY
+STAT,standard_dev,standard deviation,high,v2_caps,substring_case_insensitive,PRIMARY
+STAT,regression,regression,high,v2_caps,substring_case_insensitive,PRIMARY
+STAT,correlation,correlation,high,v2_caps,substring_case_insensitive,PRIMARY
+STAT,ogive_reading,ogive,high,v2_caps,substring_case_insensitive,PRIMARY
+STAT,ogive_reading,cumulative,high,v2_caps,substring_case_insensitive,PRIMARY
+STAT,box_whisker,box and whisker,high,v2_caps,substring_case_insensitive,PRIMARY
+STAT,iqr,IQR,high,v2_caps,substring_case_insensitive,PRIMARY
+STAT,iqr,interquartile,high,v2_caps,substring_case_insensitive,PRIMARY
+PROB,venn,venn,high,v2_caps,substring_case_insensitive,PRIMARY
+PROB,tree,tree diagram,high,v2_caps,substring_case_insensitive,PRIMARY
+PROB,independence,independent,high,v2_caps,substring_case_insensitive,PRIMARY
+PROB,mutually_exclusive,mutually exclusive,high,v2_caps,substring_case_insensitive,PRIMARY
+PROB,counting,factorial,medium,v2_caps,substring_case_insensitive,SECONDARY
+PROB,counting,combination,medium,v2_caps,substring_case_insensitive,SECONDARY
+PROB,complement,complementary,medium,v2_caps,substring_case_insensitive,SECONDARY
+FIN,compound_interest,compound,high,v2_caps,substring_case_insensitive,PRIMARY
+FIN,simple_interest,simple interest,high,v2_caps,substring_case_insensitive,PRIMARY
+FIN,depreciation,depreciat,high,v2_caps,substring_case_insensitive,PRIMARY
+FIN,annuity_fv,future value,high,v2_caps,substring_case_insensitive,PRIMARY
+FIN,annuity_pv,present value,high,v2_caps,substring_case_insensitive,PRIMARY
+FIN,nominal_effective,nominal,high,v2_caps,substring_case_insensitive,PRIMARY
+FIN,nominal_effective,effective,high,v2_caps,substring_case_insensitive,PRIMARY
+FIN,time_line,time line,high,v2_caps,substring_case_insensitive,PRIMARY

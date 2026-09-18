@@ -9,7 +9,7 @@ SEQ,Arithmetic sequences and series,arithmetic; sequences; series,16,calculate:7
 SEQ,Geometric sequences and series,geometric; sequences; series,14,calculate:7; first:6; term:6; terms:4; sum:4; prove:2; value:2; determine:2; sequence:2; form:2; order:2; number:2; show:1; calculations:1; convergent:1
 SEQ,Quadratic number patterns,quadratic; number; patterns,53,determine:12; pattern:10; given:8; term:8; calculate:8; mean:8; sequence:8; deviation:7; standard:7; first:6; one:6; value:5; airport:5; king:5; landing:5
 SEQ,Sigma notation,sigma; notation,2,write:1; express:1; series:1
-SEQ,Sum to infinity,infinity,2,calculate:2; sum:2; otherwise:1; hence:1; another:1; first:1; term:1; new:1; series:1
+SEQ,Infinite geometric series,infinite; geometric; series,14,calculate:7; first:6; term:6; terms:4; sum:4; prove:2; value:2; determine:2; sequence:2; form:2; order:2; number:2; show:1; calculations:1; convergent:1
 FIN,Simple and compound growth,simple; compound; growth,1,kuda:1; pays:1; two:1; years:1; interest:1; annum:1; money:1; receive:1; exactly:1; monthly:1; four:1; want:1; invest:1; his:1; compounded:1
 FIN,"Depreciation (straight-line, reducing)",depreciation; straight; line; reducing,39,regression:13; least:13; squares:13; determine:12; equation:12; data:10; calculate:9; diagram:8; circle:7; book:6; two:6; value:5; through:5; drawn:5; point:4
 FIN,Nominal and effective interest rates,nominal; effective; interest; rates,19,compounded:16; monthly:14; years:10; month:9; first:9; loan:8; calculate:8; end:7; rate:7; made:6; after:6; his:5; account:5; granted:5; one:5
@@ -18,27 +18,27 @@ FIN,Time lines,time; lines,8,below:3; two:3; diagram:3; three:2; first:2; restau
 FUNC,Exponential and logarithmic functions,exponential; logarithmic; functions,1,calculate:1; value:1; sequence:1; first:1; term:1; form:1; geometric:1; terms:1; three:1; leave:1; simplified:1; sum:1
 FUNC,Inverse functions,inverse; functions,4,form:4; equation:4; inthe:3; down:3; write:3; determine:1
 FUNC,Parabola (quadratic function),parabola; quadratic; function,20,pattern:7; number:7; given:6; sequence:5; value:4; first:4; term:4; differences:3; determine:3; following:3; write:3; consecutive:2; values:2; draw:2; graph:2
-FUNC,Hyperbola,hyperbola,0,
+FUNC,Hyperbola (asymptotes),hyperbola; asymptotes,9,graph:6; axes:4; intercepts:4; down:3; write:3; sketch:3; clearly:3; draw:3; equations:2; showing:2; show:2; book:1; provided:1; endpoint:1; interval:1
 FUNC,Transformations of graphs,transformations; graphs,13,point:7; determine:5; turning:3; sketched:3; intercept:3; axis:3; below:3; interval:3; points:3; intersection:3; intercepts:3; symmetry:2; use:2; value:2; lies:2
 FUNC,Interpretation of graphs,interpretation; graphs,13,point:7; determine:5; turning:3; sketched:3; intercept:3; axis:3; below:3; interval:3; points:3; intersection:3; intercepts:3; symmetry:2; use:2; value:2; lies:2
 CALC,First principles,first; principles,51,calculate:20; determine:13; sum:10; terms:10; interest:9; term:8; monthly:8; his:7; compounded:7; made:7; years:7; sequence:7; given:6; number:6; month:6
 CALC,Rules of differentiation,rules; differentiation,0,
 CALC,"Cubic graphs (turning points, concavity)",cubic; graphs; turning; points; concavity,49,circle:16; point:12; graph:10; coordinates:10; determine:9; through:9; tangent:9; intercepts:9; drawn:7; passing:7; prove:7; diagram:7; axes:7; centre:6; respectively:6
 CALC,Tangents to curves,tangents; curves,3,respectively:2; diagram:2; circle:2; chord:1; drawn:1; point:1; parallel:1; torv:1; let:1; intersects:1; diameter:1; value:1; determine:1; longer:1
-CALC,Optimisation,optimisation,0,
+CALC,Optimisation (max/min),optimisation,0,
 CALC,Rates of change,rates; change,2,value:1; explain:1; respect:1; determine:1; parallel:1; significance:1; tangent:1; given:1; month:1; remains:1; increases:1; fuel:1; monthly:1; beginning:1; litre:1
 PROB,Venn diagrams,venn; diagrams,5,diagram:3; given:3; above:3; information:2; probabilities:2; represents:2; two:2; box:2; data:2; below:2; whisker:2; drawn:2; one:2; indicate:1; associated:1
 PROB,Tree diagrams,tree; diagrams,2,represents:2; two:2; box:2; data:2; whisker:2; drawn:2; above:2; one:2; table:1; below:1; given:1; sof:1; down:1; reason:1; write:1
 PROB,Independent and mutually exclusive events,independent; mutually; exclusive; events,11,given:5; probability:3; value:2; determine:2; calculate:2; male:2; two:2; justify:2; calculations:2; motivate:2; three:2; least:2; during:1; learner:1; watch:1
 PROB,Counting principles (fundamental),counting; principles; fundamental,9,first:9; determine:9; given:4
-STAT,Ogives (cumulative frequency),ogives; cumulative; frequency,7,data:4; ogive:4; grid:3; book:3; draw:3; graph:3; provided:2; represent:2; hour:2; number:2; table:2; column:2; complete:2; estimate:2; sheet:2
-STAT,Box and whisker diagrams,whisker; diagrams,3,box:3; data:3; represents:2; two:2; drawn:2; above:2; one:2; book:1; provided:1; represent:1; draw:1; diagram:1; number:1; line:1; table:1
+STAT,Cumulative frequency (ogive),cumulative; frequency; ogive,9,data:4; grid:3; book:3; draw:3; graph:3; hour:3; number:3; sheet:3; diagram:3; provided:2; represent:2; table:2; column:2; complete:2; estimate:2
+STAT,Box and whisker plots,whisker; plots,3,box:3; data:3; represents:2; two:2; diagrams:2; drawn:2; above:2; one:2; book:1; provided:1; represent:1; draw:1; diagram:1; number:1; line:1
 STAT,Regression line (least squares),regression; line; least; squares,38,determine:14; equation:12; data:10; calculate:8; circle:6; diagram:6; through:5; straight:5; two:5; scatter:4; plot:4; form:4; axis:3; point:3; probability:3
 STAT,Correlation coefficient,correlation; coefficient,9,data:5; physical:2; sciences:2; comment:2; motor:2; repayment:2; vehicle:2; monthly:2; regression:2; least:2; following:2; line:2; squares:2; coefficients:2; calculate:2
 STAT,Variance and standard deviation,variance; standard; deviation,14,mean:8; number:7; one:7; data:4; calculate:3; shaka:3; airport:3; king:3; period:3; landing:3; international:3; aircraft:3; determine:3; received:3; given:2
 STAT,Skewness and outliers,skewness; outliers,1,describe:1; data:1
-AGEO,"Line segment (gradient, midpoint, length)",line; segment; gradient; midpoint; length,81,calculate:32; determine:23; equation:17; regression:13; least:13; squares:13; data:10; reasons:9; point:8; tangent:8; form:8; write:8; given:8; circle:8; axis:7
-AGEO,Parallel and perpendicular lines,parallel; perpendicular; lines,15,diagram:8; drawn:7; tangent:5; line:5; point:5; determine:4; isa:4; chord:4; through:3; respectively:3; two:3; prove:3; circle:3; produced:3; straight:3
+AGEO,"Coordinate geometry (gradient, midpoint, distance)",coordinate; geometry; gradient; midpoint; distance,38,calculate:11; determine:10; point:9; write:7; down:6; equation:5; tangent:5; show:5; given:5; reasons:5; line:5; form:3; maximum:3; graphs:3; graph:3
+AGEO,Gradient and parallel/perpendicular lines,gradient; parallel; perpendicular; lines,29,determine:9; tangent:9; calculate:8; point:8; diagram:8; line:7; drawn:7; equation:6; two:4; isa:4; chord:4; circle:4; given:4; axis:3; form:3
 AGEO,Angle of inclination,angle; inclination,6,determine:3; through:1; axis:1; positive:1; equation:1; form:1; makes:1; write:1; line:1; slab:1; further:1; concrete:1; intermsof:1; areaof:1; aakf:1
 AGEO,Equation of a circle,equation; circle,105,determine:42; form:32; tangent:25; centre:20; line:17; diagram:17; write:16; points:16; drawn:14; through:14; down:14; inthe:13; calculate:13; prove:12; passing:11
 AGEO,Tangent to a circle,tangent; circle,68,determine:21; centre:20; equation:18; diagram:18; points:16; form:15; drawn:14; point:13; through:13; passing:11; prove:11; chord:10; reasons:10; line:8; calculate:8
@@ -47,10 +47,10 @@ TRIG,Reduction formulae,reduction; formulae,0,
 TRIG,Trigonometric equations (general solution),trigonometric; equations; general; solution,21,determine:11; sin:8; following:7; cos:7; expression:6; cosx:6; term:5; write:5; down:4; tan:4; pattern:3; form:3; simplify:3; asymptotes:2; value:2
 TRIG,Trigonometric graphs,trigonometric; graphs,19,point:7; determine:6; expression:6; cos:5; sin:5; following:4; turning:3; sketched:3; intercept:3; axis:3; below:3; interval:3; value:3; simplify:3; tan:3
 TRIG,"Sine, cosine and area rules",sine; cosine; area; rules,34,sheet:20; aabc:19; cos:19; sinc:18; information:18; sinb:18; sina:18; sin:18; calculate:16; cosa:16; tan:12; sna:10; alr:9; atbx:8; mxt:8
-TRIG,2D and 3D problems (incl. heights and distances),problems; incl; heights; distances,3,complete:2; given:2; sheet:2; area:2; aade:2; construct:2; adeb:2; construction:2; diagram:2; altitudes:2; table:1; calculate:1; cumulative:1; book:1; column:1
-EUCL,"Circle geometry (centre, chord, tangent theorems)",circle; geometry; centre; chord; tangent; theorems,69,determine:21; diagram:19; equation:18; points:16; form:15; drawn:15; point:13; through:13; prove:12; passing:11; reasons:10; line:8; calculate:8; produced:7; write:6
+TRIG,2D and 3D trigonometric problems,trigonometric; problems,6,expression:6; cos:5; following:4; sin:4; simplify:3; tan:3; calculator:2; using:2; one:2; single:2; cosx:2; ratio:2; value:1; determine:1; term:1
+EUCL,Circle geometry theorems,circle; geometry; theorems,50,centre:20; tangent:18; diagram:17; points:16; determine:14; drawn:13; form:12; through:12; equation:11; passing:11; prove:11; reasons:10; chord:9; point:9; calculate:7
 EUCL,Cyclic quadrilaterals,cyclic; quadrilaterals,7,quadrilateral:7; diagram:3; prove:2; give:2; reason:2; produced:2; below:2; meets:2; scdb:1; abde:1; pts:1; pqrt:1; tangent:1; two:1; equal:1
 EUCL,Tangents to a circle,tangents; circle,51,centre:20; tangent:18; diagram:17; points:16; determine:15; drawn:13; form:12; through:12; equation:11; passing:11; prove:11; reasons:10; chord:9; point:9; calculate:7
 EUCL,Similarity and proportionality,similarity; proportionality,0,
 EUCL,Midpoint theorem,midpoint; theorem,10,diagram:9; states:8; prove:7; centre:6; drawn:6; circle:6; tangent:4; line:4; chords:3; points:3; use:2; aabc:2; sides:2; isa:2; through:2
-EUCL,Pythagorean theorem (proof and application),pythagorean; theorem; proof; application,8,states:8; diagram:8; prove:7; drawn:6; centre:5; circle:5; tangent:4; chords:3; points:3; line:3; use:2; aabc:2; sides:2; isa:2; qst:1
+EUCL,Pythagoras (proof and application),pythagoras; proof; application,1,sheet:1; area:1; aade:1; partially:1; heights:1; construct:1; siusmusmaasnis:1; aabc:1; states:1; areaaade:1; adeb:1; ccsesscsserreceranees:1; aan:1; complete:1; line:1

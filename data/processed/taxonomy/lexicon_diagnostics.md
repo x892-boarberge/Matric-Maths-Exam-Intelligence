@@ -17,7 +17,7 @@ Total tokens (document frequency): 1281
 | SEQ | Geometric sequences and series | 14 | OK |
 | SEQ | Quadratic number patterns | 53 | OK |
 | SEQ | Sigma notation | 2 | THIN |
-| SEQ | Sum to infinity | 2 | THIN |
+| SEQ | Infinite geometric series | 14 | OK |
 | FIN | Simple and compound growth | 1 | THIN |
 | FIN | Depreciation (straight-line, reducing) | 39 | OK |
 | FIN | Nominal and effective interest rates | 19 | OK |
@@ -26,27 +26,27 @@ Total tokens (document frequency): 1281
 | FUNC | Exponential and logarithmic functions | 1 | THIN |
 | FUNC | Inverse functions | 4 | THIN |
 | FUNC | Parabola (quadratic function) | 20 | OK |
-| FUNC | Hyperbola | 0 | MISSING |
+| FUNC | Hyperbola (asymptotes) | 9 | OK |
 | FUNC | Transformations of graphs | 13 | OK |
 | FUNC | Interpretation of graphs | 13 | OK |
 | CALC | First principles | 51 | OK |
 | CALC | Rules of differentiation | 0 | MISSING |
 | CALC | Cubic graphs (turning points, concavity) | 49 | OK |
 | CALC | Tangents to curves | 3 | THIN |
-| CALC | Optimisation | 0 | MISSING |
+| CALC | Optimisation (max/min) | 0 | MISSING |
 | CALC | Rates of change | 2 | THIN |
 | PROB | Venn diagrams | 5 | OK |
 | PROB | Tree diagrams | 2 | THIN |
 | PROB | Independent and mutually exclusive events | 11 | OK |
 | PROB | Counting principles (fundamental) | 9 | OK |
-| STAT | Ogives (cumulative frequency) | 7 | OK |
-| STAT | Box and whisker diagrams | 3 | THIN |
+| STAT | Cumulative frequency (ogive) | 9 | OK |
+| STAT | Box and whisker plots | 3 | THIN |
 | STAT | Regression line (least squares) | 38 | OK |
 | STAT | Correlation coefficient | 9 | OK |
 | STAT | Variance and standard deviation | 14 | OK |
 | STAT | Skewness and outliers | 1 | THIN |
-| AGEO | Line segment (gradient, midpoint, length) | 81 | OK |
-| AGEO | Parallel and perpendicular lines | 15 | OK |
+| AGEO | Coordinate geometry (gradient, midpoint, distance) | 38 | OK |
+| AGEO | Gradient and parallel/perpendicular lines | 29 | OK |
 | AGEO | Angle of inclination | 6 | OK |
 | AGEO | Equation of a circle | 105 | OK |
 | AGEO | Tangent to a circle | 68 | OK |
@@ -55,13 +55,13 @@ Total tokens (document frequency): 1281
 | TRIG | Trigonometric equations (general solution) | 21 | OK |
 | TRIG | Trigonometric graphs | 19 | OK |
 | TRIG | Sine, cosine and area rules | 34 | OK |
-| TRIG | 2D and 3D problems (incl. heights and distances) | 3 | THIN |
-| EUCL | Circle geometry (centre, chord, tangent theorems) | 69 | OK |
+| TRIG | 2D and 3D trigonometric problems | 6 | OK |
+| EUCL | Circle geometry theorems | 50 | OK |
 | EUCL | Cyclic quadrilaterals | 7 | OK |
 | EUCL | Tangents to a circle | 51 | OK |
 | EUCL | Similarity and proportionality | 0 | MISSING |
 | EUCL | Midpoint theorem | 10 | OK |
-| EUCL | Pythagorean theorem (proof and application) | 8 | OK |
+| EUCL | Pythagoras (proof and application) | 1 | THIN |
 
 ## Top 40 global tokens
 
