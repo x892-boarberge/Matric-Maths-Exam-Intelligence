@@ -1,0 +1,451 @@
+document_id,year,paper,question_number,subquestion,marks,question_text,source_type,segmentation_status,topic_v2,subtopic_v2,mapping_method_v2,mapping_confidence_v2,signature_id_v2,_source,inherited_v2
+2022_nov_p1_exam_maths,2022,P1,1,1.1,,Solve for x:,exam,missing_marks,ALG,,signature,high,nsc_solve_x,path_a,False
+2022_nov_p1_exam_maths,2022,P1,1,1.1.1,2.0,(3x — 6)(x + 2)=0,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,1,1.1.2,3.0,2x* —6x+1=0 (correct to TWO decimal places),exam,ok,ALG,,struct,high,STRUCT_ALG,path_a,False
+2022_nov_p1_exam_maths,2022,P1,1,1.1.3,4.0,x? -90>x,exam,ok,ALG,,struct,high,STRUCT_ALG,path_a,False
+2022_nov_p1_exam_maths,2022,P1,1,1.1.4,4.0,x—7x =-12,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,1,1.2,,"Solve for x and y simultaneously:
+2x-y=2",exam,missing_marks,ALG,,signature,high,nsc_solve_x,path_a,False
+2022_nov_p1_exam_maths,2022,P1,1,1.3,,"Show that 2.5” ~5”*'+5""*? is even for all positive integer values of 7. (3)
+aut",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,1,1.4,25.0,Determine the values of x and y if: ria V96* (4),exam,ok,ALG,,signature,high,nsc_simul_x_y,path_a,False
+2022_nov_p1_exam_maths,2022,P1,2,2.1,,"The first term of a geometric series is 14 and the 6"" term is 448.",exam,missing_marks,SEQ,,signature,high,nsc_geometric_series,path_a,False
+2022_nov_p1_exam_maths,2022,P1,2,2.1.1,2.0,"Calculate the value of the constant ratio, r.",exam,ok,SEQ,,signature,high,nsc_constant_ratio,path_a,False
+2022_nov_p1_exam_maths,2022,P1,2,2.1.2,4.0,"Determine the number of consecutive terms that must be added to the first
+6 terms of the series in order to obtain a sum of 114 674.",exam,ok,SEQ,,lexicon,medium,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,2,2.1.3,,"If the first term of another series is 448 and the 6"" term is 14, calculate
+the sum to infinity of the new series. (3)
+A] 1 1 .",exam,missing_marks,SEQ,,signature,high,sum_to_infinity,path_a,False
+2022_nov_p1_exam_maths,2022,P1,2,2.2,,"If > — p+—|=20—, determine the value of &
+pa\3 6 6 (5)
+[14]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P 1 4 DBE/November 2022
+NSC",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,3,3.1,2.0,Show that 5 =4.,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,3,3.2,2.0,"Determine the value of the 60"" term of this number pattern.",exam,ok,SEQ,,lexicon,medium,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,3,3.3,3.0,"Determine the general term for the sequence of first differences of the quadratic
+number pattern. Write your answer in the form 7, = mp +q.",exam,ok,SEQ,,signature,high,nsc_first_difference,path_a,False
+2022_nov_p1_exam_maths,2022,P1,3,3.4,10.0,"Which TWO consecutive terms in the quadratic number pattern have a first difference
+of 157? (3)",exam,ok,SEQ,,signature,high,nsc_quadratic_pattern,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.1,,"Sketched below is the graph of (x)= — +q. The asymptotes of # intersect at
+x+p
+(13 2),",exam,missing_marks,FUNC,,signature,high,asymptotes,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.1.1,2.0,Write down the values of p and q.,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.1.2,2.0,Calculate the coordinates of the x-intercept of h.,exam,ok,FUNC,,lexicon,medium,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.1.3,2.0,Write down the x-coordinate of the x-intercept of g if g(x) =h(x +3).,exam,ok,FUNC,,lexicon,medium,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.1.4,2.0,"The equation of an axis of symmetry of h is y=x++¢. Determine the
+value of f.",exam,ok,FUNC,,lexicon,medium,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.1.5,,"Determine the values of x for which ~2< a
+x-1 (3)
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P 1 5 DBE/November 2022
+NSC",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.2,,"The graphs of f(x)=x?—4x—5 and g(x)=a.2""%+q are sketched below.
+
+e E and H are the x-intercepts of f
+
+e C is the y-intercept of f and lies on the asymptote of g.
+
+e The two graphs intersect at D, the turning point of f
+
+y
+f
+E H
+O x
+2 IN
+Xp",exam,missing_marks,FUNC,,signature,high,asymptotes,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.2.1,1.0,Write down the y-coordinate of C.,exam,ok,FUNC,,lexicon,medium,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.2.2,2.0,Determine the coordinates of D.,exam,ok,FUNC,,lexicon,medium,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.2.3,3.0,Determine the values of a and gq.,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.2.4,1.0,Write down the range of g.,exam,ok,FUNC,,signature,high,nsc_range,path_a,False
+2022_nov_p1_exam_maths,2022,P1,4,4.2.5,,"Determine the values of & for which the value of f{x)—k will always be
+
+positive. (2)
+[20]
+
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P | 6 DBE/November 2022
+NSC",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,5,5.1,1.0,Write down the y-coordinate of B.,exam,ok,FUNC,,lexicon,medium,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,5,5.2,2.0,Determine the equation of g™ inthe form g@'(x)=mx+n.,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,5,5.3,3.0,Determine the coordinates of A.,exam,ok,FUNC,,lexicon,medium,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,5,5.4,2.0,Calculate the length of AB.,exam,ok,FUNC,,signature,medium,nsc_length,path_a,False
+2022_nov_p1_exam_maths,2022,P1,5,5.5,,"Calculate the area of AABC. (5)
+{13}
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P | 7 DBE/November 2022
+NSC",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,6,6.1,4.0,"R12 000 was invested in a fund that paid interest at m% p.a., compounded quarterly.
+
+After 24 months, the value of the investment was R13 459.
+
+Determine the value of m.",exam,ok,FIN,,signature,high,nsc_compound,path_a,False
+2022_nov_p1_exam_maths,2022,P1,6,6.2,4.0,"On 31 January 2022, Tino deposited R1 000 in an account that paid interest at 7,5%
+
+p.a., compounded monthly. He continued depositing R1 000 on the last day of every
+
+month. He will make the last deposit on 31 December 2022.
+
+Will Tino have sufficient funds in the account on 1 January 2023 to buy a computer
+
+that costs R13 000? Justify your answer by means of an appropriate calculation.",exam,ok,FIN,,signature,high,nsc_compound,path_a,False
+2022_nov_p1_exam_maths,2022,P1,6,6.3,,"Thabo plans to buy a car that costs R250 000. He will pay a deposit of 15% and take
+
+out a loan for the balance. The interest on the loan is 13% p.a., compounded monthly.",exam,missing_marks,FIN,,signature,high,nsc_loan,path_a,False
+2022_nov_p1_exam_maths,2022,P1,6,6.3.1,1.0,Calculate the value of the loan.,exam,ok,FIN,,signature,high,nsc_loan,path_a,False
+2022_nov_p1_exam_maths,2022,P1,6,6.3.2,14.0,"The first repayment will be made 6 months after the loan has been
+
+granted. The loan will be repaid over a period of 6 years after it has been
+granted. Calculate the MONTHLY instalment. (5)",exam,ok,FIN,,signature,high,nsc_loan,path_a,False
+2022_nov_p1_exam_maths,2022,P1,7,7.1,5.0,Determine f ‘(x) from first principles if f(x) =x? +x.,exam,ok,CALC,,signature,high,nsc_first_principles,path_a,False
+2022_nov_p1_exam_maths,2022,P1,7,7.2,,"Determine f ‘(x) if f(x) =2x° —3x4+8x. (3)
+73 The tangent to g(x)=ax°+3x*+hx+e has a minimum gradient at the
+
+point (— 1 ;-—7). For which values of x will g be concave up? (4)
+
+[12]
+
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P 1 8 DBE/November 2022
+NSC",exam,missing_marks,CALC,,signature,high,tangent_gradient,path_a,False
+2022_nov_p1_exam_maths,2022,P1,8,8.1,6.0,"Determine the values of m, n and k.",exam,ok,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,8,8.2,,If it is further given that f(x)=—x* +x?+x+4+2:,exam,missing_marks,ALG,,struct,high,STRUCT_ALG,path_a,False
+2022_nov_p1_exam_maths,2022,P1,8,8.2.1,3.0,Determine the coordinates of the turning points of f,exam,ok,CALC,,struct,medium,STRUCT_CALC,path_a,False
+2022_nov_p1_exam_maths,2022,P1,8,8.2.2,5.0,"Draw the graph of f Indicate on your graph the coordinates of the turning
+
+points and the intercepts with the axes.",exam,ok,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,8,8.3,,"Points E and W are two variable points on f’ and are on the same horizontal line.
+
+e h isatangentto /' at E.
+
+e g isatangentto f‘ at W.
+
+e h and g intersect at D(a; d).",exam,missing_marks,CALC,,signature,high,tangent_gradient,path_a,False
+2022_nov_p1_exam_maths,2022,P1,8,8.3.1,1.0,Write down the value of a.,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p1_exam_maths,2022,P1,8,8.3.2,,"Determine the value(s) of 5 for which h and g will no longer be
+
+tangents to f’. (2)
+[17]
+
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P 1 9 DBE/November 2022
+NSC",exam,missing_marks,CALC,,signature,high,tangent_gradient,path_a,False
+2022_nov_p1_exam_maths,2022,P1,9,9,,"QUESTION 9
+Given f(x)=x’.
+Determine the minimum distance between the point (10; 2) anda point on f. [8]",exam,no_sub_markers,SEQ,,signature,high,nsc_term_to_term,path_a,False
+2022_nov_p1_exam_maths,2022,P1,10,10.1,,"A, B and C are three events. The probabilities of these events (or any combination
+of them) occurring is given in the Venn-diagram below
+y co B",exam,missing_marks,PROB,,signature,high,venn,path_a,False
+2022_nov_p1_exam_maths,2022,P1,10,10.1.1,1.0,"If it is given that the probability that at least one of the events will occur is
+0,893, calculate the value of:
+(a) y, the probability that none of the events will occur. (1)
+(b) x, the probability that all three events will occur.",exam,ok,PROB,,signature,medium,nsc_probability,path_a,False
+2022_nov_p1_exam_maths,2022,P1,10,10.1.2,2.0,Determine the probability that at least two of the events will take place.,exam,ok,PROB,,signature,medium,nsc_probability,path_a,False
+2022_nov_p1_exam_maths,2022,P1,10,10.1.3,5.0,Are events B and C independent? Justify your answer.,exam,ok,PROB,,signature,high,nsc_independent,path_a,False
+2022_nov_p1_exam_maths,2022,P1,10,10.2,,"A four-digit code is required to open a combination lock. The code must be
+even-numbered and may not contain the digits 0 or 1. Digits may not be repeated.",exam,missing_marks,PROB,,signature,high,nsc_no_repeat,path_a,False
+2022_nov_p1_exam_maths,2022,P1,10,10.2.1,3.0,How many possible 4-digit combinations are there to open the lock?,exam,ok,PROB,,signature,high,nsc_combinations,path_a,False
+2022_nov_p1_exam_maths,2022,P1,10,10.2.2,,"Calculate the probability that you will open the lock at the first attempt if
+it is given that the code is greater than 5 000 and the third digit is 2. (5)
+[17]
+TOTAL: 150
+Copyright reserved
+
+===== Page 10 =====
+Mathematics/P 1 DBE/November 2022
+NSC
+INFORMATION SHEET
+y= bE Vb? dae
+2a
+A= P(i+ni) A= P(1~ni) A= P(i-i)"" A=P(1+i)""
+T, =a+(n-ld S, = 5 2a +(n-1d]
+T, =ar""' s a"" -1) sr #l S,=— 3-1<r<!
+” r-l l-r
+ped"" = pala G+""
+I i
+h>0 h
+—S__== xX, +x +
+d=\(%,-%)' +0, -»,) Mj
+2 2
+y=mxtce y-y, =m(x-x,) m=22— 71 m=tand
+XX
+(r-aF +b ar
+In ABC: 2 = 8 = 8
+snA sinB sinc
+a’ =b? +c? —2be.cos A
+area AABC = 5 ab.sin C
+sin(a+ f) =sina.cos f+cosa.sinZ sin(a—£) =sina.cos f—cosa.sinf
+cos(a+ f) =cosa.cos f—sina.sing cos (a—£) =cosa@.cos #+sina.sinf
+cos’ @—sin’ a
+cos2a@ =41-2sin’ a sin 2a = 2sina.cosa
+2cos’ a-1 ;
+. =\2
+X,—-X
+__ Ds 7 2, a)
+= oo = SO
+fl nl
+n(A)
+P(A) = lS) P(A or B) = P(A) + P(B) — P(A and B)
+n
+x~xKy-y
+po=at+bx p= Le 0-¥) ky=9)
+> @-x)
+Copyright reserved",exam,missing_marks,PROB,,signature,medium,nsc_probability,path_a,False
+2022_nov_p2_exam_maths,2022,P2,1,1.1,2.0,"Calculate the:
+1.1.1. Mean number of votes that these 10 learners received",exam,ok,STAT,,signature,medium,mean,path_a,False
+2022_nov_p2_exam_maths,2022,P2,1,1.1.2,1.0,Standard deviation of the number of votes that these 10 learners received,exam,ok,STAT,,signature,high,standard_dev,path_a,False
+2022_nov_p2_exam_maths,2022,P2,1,1.2,2.0,"The learners who received fewer votes than one standard deviation below the mean
+were not invited for an interview. How many learners were invited?",exam,ok,STAT,,signature,high,standard_dev,path_a,False
+2022_nov_p2_exam_maths,2022,P2,1,1.3,3.0,"Determine the equation of the least squares regression line for the data given in the
+table.",exam,ok,STAT,,signature,high,regression,path_a,False
+2022_nov_p2_exam_maths,2022,P2,1,1.4,2.0,Predict the number of votes that a learner with a popularity score of 72 will receive.,exam,ok,STAT,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,1,1.5,1.0,"Using the scatter plot and table above, provide a reason why:
+1.5.1. IQ is nota good indicator of the number of votes that a learner could receive",exam,ok,STAT,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,1,1.5.2,,"The prediction in QUESTION 1.4 is reliable (1)
+[12]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P2 4 . DBE/November 2022
+NSC",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,2,2.1,1.0,How many people are employed at this company?,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,2,2.2,1.0,Write down the modal class of the data.,exam,ok,STAT,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,2,2.3,2.0,"How many employees spent more than 22,5% of their monthly salary on fuel?",exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,2,2.4,2.0,"An employee spent R2 400 of his salary on fuel in that particular month. Determine
+the monthly salary of this employee if he spends 7% of his salary on fuel.",exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,2,2.5,,"The monthly salaries of these employees remains constant and the number of litres of
+fuel used in each month also remains constant. If the fuel price increases from R21,43
+per litre to R22,79 per litre at the beginning of the next month, how will the above
+ogive change? (2)
+[8]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2022
+NSC",exam,missing_marks,STAT,,signature,high,ogive_reading,path_a,False
+2022_nov_p2_exam_maths,2022,P2,3,3.1,,Calculate the:,exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,3,3.1.1,2.0,Gradient of AB,exam,ok,AGEO,,signature,high,gradient,path_a,False
+2022_nov_p2_exam_maths,2022,P2,3,3.1.2,2.0,"Size of a (2)
+3.1.3. Coordinates of T",exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,3,3.1.4,2.0,Coordinates of S,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,3,3.2,3.0,Determine the equation of CD inthe form y=mx+c.,exam,ok,AGEO,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,3,3.3,,Calculate the:,exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,3,3.3.1,4.0,Sizeof DCA,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,3,3.3.2,,"Areaof POSC (5)
+[20]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2022
+NSC",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,4,4.1,2.0,Calculate the coordinates of P.,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,4,4.2,,Determine the equation of:,exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,4,4.2.1,3.0,The circle inthe form (x—a)’ +(y-b) =r’,exam,ok,AGEO,,signature,high,circle_equation,path_a,False
+2022_nov_p2_exam_maths,2022,P2,4,4.2.2,4.0,"KL inthe form y=mx+c (5)
+43 For which values of k will y= ~5% +k beasecant to the circle?",exam,ok,AGEO,,signature,high,circle_equation,path_a,False
+2022_nov_p2_exam_maths,2022,P2,4,4.4,,"Points A(t; 4) and B are not shown on the diagram.
+
+From point A, another tangent is drawn to touch the circle with centre M at B.",exam,missing_marks,CALC,,signature,high,tangent_gradient,path_a,False
+2022_nov_p2_exam_maths,2022,P2,4,4.4.1,2.0,Show that the length of tangent AB is given by V207+4¢+9.,exam,ok,CALC,,signature,high,tangent_gradient,path_a,False
+2022_nov_p2_exam_maths,2022,P2,4,4.4.2,,"Determine the minimum length of AB. (4)
+
+[20]
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2022
+NSC",exam,missing_marks,EUCL,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.1,,"Given that /13sinx+3=0, where xe (90° ; 270°).
+
+Without using a calculator, determine the value of:",exam,missing_marks,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.1.1,2.0,sin(360° + x),exam,ok,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.1.2,2.0,"tanx (3)
+
+5.1.3. cos(180°+ x)",exam,ok,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.2,,"Determine the value of the following expression, without using a calculator:
+
+cos(90° + @)
+
+sin(9 - 180°) +3 sin(-0) ©)",exam,missing_marks,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.3,6.0,"Determine the general solution of the following equation:
+
+{cosx +2sin x)(3sin 2x -1)=0",exam,ok,TRIG,,signature,high,general_solution,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.4,4.0,"Given the identity: cos(x + y).cos(x— y) =1-sin? x—sin’ y
+
+5.4.1. Prove the identity.",exam,ok,TRIG,,signature,high,identity_proof,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.4.2,3.0,"Hence, determine the value of 1-—sin* 45°-sin?15°, without using a
+
+calculator.",exam,ok,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.5,,Consider the trigonometric expression: 16sinx.cos’ x —8sinx.cosx,exam,missing_marks,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.5.1,4.0,Rewrite the expression as a single trigonometric ratio.,exam,ok,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,5,5.5.2,,"For which value of x in the interval x €[0°; 90°] will
+
+16sin x.cos’ x —8sinx.cosx have its minimum value? (1)
+[30]
+
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2022
+NSC",exam,missing_marks,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,6,6.1,1.0,Write down the period of g.,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,6,6.2,,Calculate the:,exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,6,6.2.1,1.0,Value of k,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,6,6.2.2,1.0,Coordinates of B,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,6,6.3,2.0,Write down the range of 2g(x).,exam,ok,FUNC,,signature,high,nsc_range,path_a,False
+2022_nov_p2_exam_maths,2022,P2,6,6.4,2.0,"For which values of x will g(x+5°)-— f(x+5°)<0 in the interval
+
+x €[-90° ; 0°]?",exam,ok,FUNC,,signature,medium,nsc_interpret,path_a,False
+2022_nov_p2_exam_maths,2022,P2,6,6.5,,"Determine the values of p for which sinx.cosx=p will have exactly two real roots
+
+in the interval x €[—180° ; 180°]. (3)
+
+[10]
+
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2022
+NSC",exam,missing_marks,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,7,7.1,2.0,Determine the length of AD in terms of p.,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,7,7.2,,"Show that the length of CD = 2? (Sit +082) (5)
+V2 sin x",exam,missing_marks,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,7,7.3,,"If it is further given that p= 10 and x = 110°, calculate the area of AADC. (3)
+[10]
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P2 10 ' DBE/November 2022
+NSC",exam,missing_marks,TRIG,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,8,8.1,,"In the diagram, O is the centre of the circle. MNPR is acyclic quadrilateral and SN
+is a diameter of the circle. Chord MS and radius OR are drawn. M, =64.
+I
+64° \
+O
+R Ss.
+P
+Determine, giving reasons, the size of the following angles:",exam,missing_marks,EUCL,,signature,high,cyclic_quad,path_a,False
+2022_nov_p2_exam_maths,2022,P2,8,8.1.1,2.0,P,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,8,8.1.2,2.0,"M,",exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,8,8.1.3,,"0, (2)
+Copyright reserved Please turn over
+
+===== Page 11 =====
+Mathematics/P2 11 DBE/November 2022
+NSC",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,8,8.2,,"In the diagram, AABG is drawn. D and E are midpoints of AB and AG
+respectively. AG and BG are produced to C and H respectively. F is a point on
+BC such that FG || CH.
+A
+E
+D
+H
+G
+B
+F C",exam,missing_marks,AGEO,,signature,high,midpoint,path_a,False
+2022_nov_p2_exam_maths,2022,P2,8,8.2.1,,"Give areason why DE || BH. (1)
+oe . FC 1",exam,missing_marks,EUCL,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,8,8.2.2,,"If it is further given that Br = ri , DE=3x-—1 and GH=x+1, calculate,
+giving reasons, the value of x. (6)
+[13]
+Copyright reserved Please turn over
+
+===== Page 12 =====
+Mathematics/P2 12 : DBE/November 2022
+NSC",exam,missing_marks,EUCL,,lexicon,medium,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,9,9.1,,"In the diagram, O is the centre ofa circle. OD bisects chord AB.
+“
+Na, °
+
+Prove the theorem that states that the line from the centre of a circle that bisects a
+
+chord is perpendicular to the chord, i.e. OD L AB. (5)
+92 In the diagram, E, B, F, S and P are points on the circle centred at O. GB isa
+
+tangent to the circle at B. FE is produced to meet the tangent at G. OT is drawn
+
+such that T is the midpoint of EF. GO and BO are drawn. BS is drawn through
+
+T. PS || GF.
+
+B
+| F
+P
+""5
+
+Prove, giving reasons, that:",exam,missing_marks,CALC,,signature,high,tangent_gradient,path_a,False
+2022_nov_p2_exam_maths,2022,P2,9,9.2.1,5.0,OTBG isa cyclic quadrilateral,exam,ok,EUCL,,signature,high,cyclic_quad,path_a,False
+2022_nov_p2_exam_maths,2022,P2,9,9.2.2,,"GOB=§ (4)
+
+[14]
+
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2022
+NSC ,",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,10,10.1,,"S=-L (4)
+AD AS",exam,missing_marks,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,10,10.2,5.0,AR AC,exam,ok,,,unmapped,,,path_a,False
+2022_nov_p2_exam_maths,2022,P2,10,10.3,,"AC x SD = AR x TC (4)
+[13]
+TOTAL: 150
+Copyright reserved
+
+===== Page 14 =====
+Mathematics/P2 : DBE/November 2022
+, NSC
+INFORMATION SHEET
+xe —bt vb? —4ac
+2a
+A= P(l+ni) A= P(1-ni) A=P(1-i)"" A= P(1+i)""
+T, =at+(n-Nd S, =F a+ @-)d]
+T, =ar"""" S _a(r"" -1) srz#l S,=—53-1er<1
+n r-l 1-r
+pa 2it+"" -1] pall +i)"" |
+i i
+_ S(xt+h)— f(x)
+t = |
+Be) = h
+X, +x +
+d= (x,-%) +0.-y/ M Att Mi Ye
+2 2
+y=mxt+e y—y, =m(x—x,) m=22— 1 m=tand
+Hy ~ Xi
+(x-ay +(y-by =r?
+In AABC; 2-= 9 ©
+snA sinB sinC
+a’ =b’? +c? —2be.cos A
+area AABC = 5 ab.sin C
+sin(a+ B) =sina.cos 8+cosa.sin£B sin(a— B) =sina.cos S—cosa.sinfB
+cos (a+ £) =cosa.cos f—sina.sinfB cos (a- B) =cosa@.cos P+sina.sinf
+cos’ a—sin’ a
+cos2a =+1—2sin’ a sin2a = 2sina.cosa
+2cos’ a-1
+. =\2
+X,—%X
+>. 2, ;~ x)
+x=- a ———————
+n 7
+n(A)
+P(A)= lS) P(A or B) = P(A) + P(B) — P(A and B)
+n
+x-xKy-y
+yp=atbhx p= A=W) Ke=9)
+Si(x-X)
+Copyright reserved",exam,missing_marks,TRIG,,lexicon,medium,,path_a,False

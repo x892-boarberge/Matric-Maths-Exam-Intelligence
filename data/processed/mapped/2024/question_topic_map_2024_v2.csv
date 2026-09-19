@@ -1,0 +1,576 @@
+document_id,year,paper,document_type,source_text_file,extraction_quality,question_number,subquestion,marks,marks_all_found,question_text,question_char_count,segment_index,segmentation_status,question_id,topic,subtopic,mapping_method,rule_id,mapping_confidence,taxonomy_version,topic_v2,subtopic_v2,mapping_method_v2,mapping_confidence_v2,signature_id_v2,_source,inherited_v2
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.3,,[],1.1.3 x? -2x-3>0,16.0,2.0,ok,2024_nov_p1_exam_maths__Q1__1.1.3,Trigonometry,Equations,context_inherit,inherit_prev_subq,medium,v1.2,ALG,,struct,high,STRUCT_ALG,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.1.4,,[],"1.1.4 2% —-2*? -32 =0
+
+115 V-2x4+4-x=2",38.0,3.0,ok,2024_nov_p1_exam_maths__Q1__1.1.4,Trigonometry,Equations,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.2,,[],"1.2 Solve for x and y simultaneously:
+
+2x+y=3
+
+y +xy=2",54.0,4.0,ok,2024_nov_p1_exam_maths__Q1__1.2,Algebra & Equations,Quadratic equations,rule,alg,medium,v1.2,ALG,,signature,high,nsc_solve_x,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,1.0,1.3,,[],"1.3 Consider the product f + i 1+ i et we
+2 3 4
+
+Each factor in the product is of the form ( + +) for n>2.
+n
+
+Determine ALL the values of » for which the product will be an integer value.",187.0,5.0,ok,2024_nov_p1_exam_maths__Q1__1.3,Algebra & Equations,Quadratic equations,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1,,[],"2.1 The first term of an arithmetic series is 7. The common difference of this series is
+
+5 and the series contains 20 terms.",125.0,1.0,ok,2024_nov_p1_exam_maths__Q2__2.1,Number Patterns & Sequences,Arithmetic sequences,rule,seq,high,v1.2,SEQ,,signature,high,nsc_arithmetic_series,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.1,,[],2.1.1 Calculate the sum of this series.,39.0,2.0,ok,2024_nov_p1_exam_maths__Q2__2.1.1,Number Patterns & Sequences,Arithmetic sequences,context_inherit,inherit_prev_subq,medium,v1.2,SEQ,,lexicon,medium,,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.1.2,,[],"2.1.2 The original arithmetic series is extended to 75 terms. The sum of these
+75 terms is 14 400. Using sigma notation, write down an equation for the
+sum of the terms added to the original series.",198.0,3.0,ok,2024_nov_p1_exam_maths__Q2__2.1.2,Number Patterns & Sequences,Arithmetic sequences,context_inherit,inherit_prev_subq,medium,v1.2,SEQ,,signature,high,nsc_arithmetic_series,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2,,[],2.2 The sequence of the first differences of a quadratic pattern is: 1;3;5;...,78.0,4.0,ok,2024_nov_p1_exam_maths__Q2__2.2,Number Patterns & Sequences,Arithmetic sequences,context_inherit,inherit_prev_subq,medium,v1.2,SEQ,,signature,high,quadratic_pattern,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2.1,,[],"2.2.1 If Ty, of this quadratic pattern is 9 632, calculate the value of 7,,.",76.0,5.0,ok,2024_nov_p1_exam_maths__Q2__2.2.1,Number Patterns & Sequences,Arithmetic sequences,context_inherit,inherit_prev_subq,medium,v1.2,SEQ,,signature,high,quadratic_pattern,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,2.0,2.2.2,14.0,"[2, 4, 4, 5, 4, 6, 3, 4, 14]","2.2.2 If it is further given that the third term of the quadratic pattern is 32,
+determine the general term, 7, of the quadratic pattern.
+
+Copyright reserved Please turn over
+
+(2).
+(4)
+(4)
+(5)
+(4)
+
+(6)
+
+(3)
+
+[27]
+
+2)
+
+(4)
+
+G3)
+
+65)
+[14]
+
+Mathematics/P 1 4 DBE/November 2024
+NSC Confidential",290.0,6.0,ok,2024_nov_p1_exam_maths__Q2__2.2.2,Number Patterns & Sequences,Arithmetic sequences,context_inherit,inherit_prev_subq,medium,v1.2,SEQ,,signature,high,quadratic_pattern,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.2,4.0,[4],3.2 Calculate the sum of the areas of the first 10 circles. (4),63.0,2.0,ok,2024_nov_p1_exam_maths__Q3__3.2,Number Patterns & Sequences,Arithmetic sequences,context_inherit,inherit_prev_subq,medium,v1.2,AGEO,,signature,high,circle_equation,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,3.0,3.3,10.0,"[4, 10]","3.3 Which circle has a diameter of = cm?
+128 (4)
+[10]",53.0,3.0,ok,2024_nov_p1_exam_maths__Q3__3.3,Number Patterns & Sequences,Arithmetic sequences,context_inherit,inherit_prev_subq,medium,v1.2,AGEO,,signature,high,circle_equation,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,4.0,4.1,9.0,"[2, 3, 9]","4.1 Calculate the value of a. (2)
+42 Write down the range of f. qd)
+43 Sketch the graph of f Clearly show the intercepts with the axes and asymptotes,
+
+if any. (3)
+
+44 It is further given that C isapointon f at y= >.
+
+Determine the coordinates of C!, the image of C, when C is reflected about the line
+y=x. GB)
+[9]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 5 DBE/November 2024
+NSC Confidential",404.0,1.0,ok,2024_nov_p1_exam_maths__Q4__4.1,Functions & Graphs,Graph interpretation,rule,fn,high,v1.2,FUNC,,signature,high,nsc_range,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.2,2.0,[2],5.2 Determine the equation of the horizontal asymptote of f (2),63.0,2.0,ok,2024_nov_p1_exam_maths__Q5__5.2,Functions & Graphs,Graph interpretation,rule,fn,high,v1.2,FUNC,,signature,high,asymptotes,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.3,2.0,[2],5.3 Calculate the value of a. (2),33.0,3.0,ok,2024_nov_p1_exam_maths__Q5__5.3,Functions & Graphs,Graph interpretation,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.4,,[],5.4 For which values of x is f(x) >0? G3),41.0,4.0,ok,2024_nov_p1_exam_maths__Q5__5.4,Functions & Graphs,Graph interpretation,context_inherit,inherit_prev_subq,medium,v1.2,FUNC,,signature,medium,nsc_interpret,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,5.0,5.5,10.0,[10],"5.5 Graph f undergoes a transformation to h where:
+
+e The domain and range of / are the same as that of f
+
+e A'(x), the derivative of h, is negative on its domain
+
+Describe a possible transformation that f could have undergone to result in A. Q)
+
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 6 DBE/November 2024
+NSC Confidential",341.0,5.0,ok,2024_nov_p1_exam_maths__Q5__5.5,Calculus,Rules of differentiation,rule,calc_rules,high,v1.2,FUNC,,signature,medium,domain_range,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.1,,[],"6.1 Calculate the coordinates of B, the turning point of f @G)",62.0,1.0,ok,2024_nov_p1_exam_maths__Q6__6.1,Calculus,Cubic graphs,rule,calc_more,high,v1.2,CALC,,struct,medium,STRUCT_CALC,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.2,3.0,[3],6.2 Show that the equation of the line through A and C is given by g(x) =2x+2. (3),82.0,2.0,ok,2024_nov_p1_exam_maths__Q6__6.2,Analytical Geometry,Distance / midpoint / gradient,rule,anageo,high,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.3,4.0,[4],6.3 Calculate the maximum length of EH for f > g. (4),53.0,3.0,ok,2024_nov_p1_exam_maths__Q6__6.3,Analytical Geometry,Distance / midpoint / gradient,context_inherit,inherit_prev_subq,medium,v1.2,CALC,,signature,medium,nsc_maximum,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,6.0,6.4,15.0,"[5, 15]","6.4 Given: k(x) = f(x+m)=—x? —2mx—m? +4x+4m+5
+Determine the value of m such that g is a tangent to &. (5)
+
+[15]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 7 DBE/November 2024
+
+NSC Confidential",202.0,4.0,ok,2024_nov_p1_exam_maths__Q6__6.4,Calculus,Cubic graphs,rule,calc_more,high,v1.2,CALC,,signature,high,tangent_gradient,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,7.0,7.3.2,,[],"7.3.2 Tshepo paid R22 300,98 (his monthly instalment and an additional
+R20 000) on 1 March 2024 into the loan account. He continues to pay the
+original monthly instalment thereafter. How many months earlier will
+Tshepo repay the loan?",234.0,1.0,ok,2024_nov_p1_exam_maths__Q7__7.3.2,Finance,Compound interest,rule,fin,high,v1.2,FIN,,signature,high,nsc_loan,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.1.1,,[],"8.1.1 — [Bx - 5x
+4.51""
+Wont 2 yr",32.0,2.0,ok,2024_nov_p1_exam_maths__Q8__8.1.1,Finance,Compound interest,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.1.2,,[],8.1.2 8 '@) if 8) =a x,22.0,3.0,ok,2024_nov_p1_exam_maths__Q8__8.1.2,Finance,Compound interest,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.2,,[],8.2 Determine the equation of the tangent to f(x)=x'?—4x°+2x+3 at x=2.,70.0,4.0,ok,2024_nov_p1_exam_maths__Q8__8.2,Calculus,Cubic graphs,rule,calc_more,high,v1.2,CALC,,signature,high,tangent_gradient,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.3,,[],8.3 Given: f(x) =—6x?,21.0,5.0,ok,2024_nov_p1_exam_maths__Q8__8.3,Calculus,Cubic graphs,context_inherit,inherit_prev_subq,medium,v1.2,ALG,,struct,high,STRUCT_ALG,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.3.1,,[],8.3.1 Determine f’(x) from first principles.,44.0,6.0,ok,2024_nov_p1_exam_maths__Q8__8.3.1,Calculus,First principles,rule,calc_fp,high,v1.2,CALC,,signature,high,nsc_first_principles,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.3.2,,[],"8.3.2 Write down how you will restrict the domain of f such that f, the
+
+inverse of f is a function.",100.0,7.0,ok,2024_nov_p1_exam_maths__Q8__8.3.2,Functions & Graphs,Graph interpretation,rule,fn,high,v1.2,FUNC,,signature,high,nsc_inverse,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,8.0,8.3.3,18.0,"[2, 14, 2, 4, 6, 1, 18]","8.3.3 Determine the equation of f' for f(x) <0. Write your answer in the
+form y=...
+
+Copyright reserved Please turn over
+
+G3)
+
+(2)
+
+2)
+
+)
+[14]
+
+(2)
+
+(4)
+
+GB)
+
+(6)
+
+(1)
+
+G3)
+[18]
+
+Mathematics/P1 8 DBE/November 2024
+NSC Confidential",230.0,8.0,ok,2024_nov_p1_exam_maths__Q8__8.3.3,Functions & Graphs,Graph interpretation,context_inherit,inherit_prev_subq,medium,v1.2,ALG,,struct,medium,STRUCT_ALG,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.2,2.0,[2],"9.2 Write down the x-intercepts of f’, the derivative of (2)",60.0,1.0,ok,2024_nov_p1_exam_maths__Q9__9.2,Calculus,Rules of differentiation,rule,calc_rules,high,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,9.0,9.3,3.0,"[2, 2, 3]","9.3 For which values of x will f be concave up? (2)
+
+94 Determine the value of & for which y= /(x)+k will have THREE positive
+x-intercepts. (2)
+
+[3]",148.0,2.0,ok,2024_nov_p1_exam_maths__Q9__9.3,Calculus,Cubic graphs,rule,calc_more,high,v1.2,FUNC,,signature,medium,nsc_interpret,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,10.0,10.2,8.0,"[5, 8]","10.2 Calculate the distance between town P and town T. (5)
+[8]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 9 DBE/November 2024
+
+NSC Confidential",153.0,2.0,ok,2024_nov_p1_exam_maths__Q10__10.2,Calculus,Cubic graphs,context_inherit,inherit_prev_subq,medium,v1.2,SEQ,,signature,high,nsc_term_to_term,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.2,,[],"11.2 Calculate the probability that a learner, chosen at random, will sit for examinations in
+at least TWO of the subjects.",123.0,1.0,ok,2024_nov_p1_exam_maths__Q11__11.2,Probability,Basic probability,rule,prob,high,v1.2,PROB,,signature,medium,nsc_probability,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,11.0,11.3,,[],"11.3 Determine if the events: sitting for examinations in Mathematics and sitting for
+examinations in Tourism are independent. Support your answer with the necessary
+calculations.",179.0,2.0,ok,2024_nov_p1_exam_maths__Q11__11.3,Probability,Basic probability,context_inherit,inherit_prev_subq,medium,v1.2,PROB,,signature,high,nsc_independent,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,12.0,12.2,,[],"12.2 Determine how many different codes can be formed if:
+e = The letters D, F, I, Q, U and V may NOT be used
+e The code may NOT start witha W ora Z
+e Letters or digits may NOT be repeated
+e = The code ends with an odd digit",224.0,2.0,ok,2024_nov_p1_exam_maths__Q12__12.2,Probability,Basic probability,context_inherit,inherit_prev_subq,medium,v1.2,PROB,,signature,high,nsc_no_repeat,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,12.0,12.3,,[],12.3 The company wishes to increase the number of 4-character codes formed in,77.0,3.0,ok,2024_nov_p1_exam_maths__Q12__12.3,Probability,Basic probability,context_inherit,inherit_prev_subq,medium,v1.2,PROB,,signature,medium,nsc_code,mapped_v1,False
+2024_nov_p1_exam_maths,2024,P1,exam,data\processed\ocr\text\2024_nov_p1_exam_maths_ocr.txt,ocr_good,12.0,,4.0,"[3, 2, 4, 4, 3, 4]","QUESTION 12.2 by allowing the letters D, F, I, Q, U and V to be used.
+Calculate the percentage increase in the number of different codes that can now be
+formed.
+
+TOTAL:
+
+Copyright reserved
+
+(3)
+
+(2)
+
+(4)
+19]
+
+Q)
+
+(4)
+
+2)
+[3]
+
+150
+
+Mathematics/P1 DBE/November 2024
+NSC Confidential
+INFORMATION SHEET
+xe —bt Vb’ —4ac
+2a
+A= P(1+ni) A=P(\-ni) A= P(1-i)"" A= P(1+i)""
+T,=a4+(n-l)d 8, =F fa+(n—na]
+T, = ar"" S _ alr” -1) sre#l S,= a 3 -l<r<l
+, r-1 Fr
+posi 1 pa xia G+)""
+i i
+_ f(xth)- f(x)
+“x)= 1
+POs eh
++ +
+d=, -%)""+0,-9)"" m(A%,%*2)
+2 2
+y=mx+e y-y, =m(x-x,) m= 221 m=tané
+x —%
+
+(x-a) +(y-bY =”?
+5
+sinB sinC
+
+a c
+
+In AABC: —
+sin A
+
+a =b’ +c? —2be.cos A
+
+area AABC = 5 abesin C
+
+sin(a + 8) =sina.cos f + cosa.sin 2
+cos(a +) =cosa.cos f -sina.sin B
+cos’ @—sin? a
+
+cos2a =41-2sin’ a
+
+2cos? a ~1
+
+Copyright reserved
+
+sin(a — 8)=sina.cos 8 -cosa.sin B
+
+cos(a@~ B)=cosa.cos 8 +sina.sin B
+
+sin 2a = 2sin @.cos @
+
+¥ (x, - 3)
+= ial
+
+n
+
+o
+
+P(A ot B) = P(4) + P(B) — P(A and B)
+
+> @-xky-y)
+
+YS e- xP",978.0,1.0,ok,2024_nov_p1_exam_maths__Q12__main,Trigonometry,Equations,rule,trig,high,v1.2,PROB,,signature,medium,nsc_code,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.2,2.0,[2],"1.2 Write down the correlation coefficient. qd)
+13 The coach uses the least squares regression line to set the target for the minimum
+
+number of push-ups by each team member according to their weight. Predict the
+number of push-ups that a member of the team, who weighs 29 kg, should do to meet
+
+the target. (2)",311.0,2.0,ok,2024_nov_p2_exam_maths__Q1__1.2,Statistics,Regression / correlation,rule,stats,high,v1.2,STAT,,signature,high,regression,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.4,3.0,[3],1.4 Determine the equation of the least squares regression line for the data. (3),81.0,1.0,ok,2024_nov_p2_exam_maths__Q1__1.4,Statistics,Regression / correlation,rule,stats,high,v1.2,STAT,,signature,high,regression,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.4,1.0,[1],1.4 Write down the mean number of push-ups for the given data. (1),66.0,3.0,ok,2024_nov_p2_exam_maths__Q1__1.4,Statistics,Regression / correlation,context_inherit,inherit_prev_subq,medium,v1.2,STAT,,signature,medium,mean,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.5,,[],"1.5 The players trained hard during the season. At the end of the season, the coach reported
+
+that each player was able to do 5 more push-ups per minute than they did at the
+beginning of the season. How does the increase in the number of push-ups influence
+
+the standard deviation of the data? 60)",297.0,4.0,ok,2024_nov_p2_exam_maths__Q1__1.5,Statistics,Regression / correlation,rule,stats,high,v1.2,STAT,,signature,high,standard_dev,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,1.0,1.6,10.0,"[2, 10]","1.6 At the beginning of the season, the coach used the least squares regression line as the
+minimum target for a player to aim for. Determine the maximum possible increase in
+the number of push-ups that a team member must obtain to reach the minimum target. (2)
+[10]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 4 DBE/November 2024
+
+NSC Confidential",357.0,5.0,ok,2024_nov_p2_exam_maths__Q1__1.6,Statistics,Regression / correlation,rule,stats,high,v1.2,STAT,,signature,high,regression,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.2,,[],2.2,3.0,2.0,ok,2024_nov_p2_exam_maths__Q2__2.2,Statistics,Regression / correlation,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.3,,[],2.3,3.0,3.0,ok,2024_nov_p2_exam_maths__Q2__2.3,Statistics,Regression / correlation,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.4,,[],2.4,3.0,4.0,ok,2024_nov_p2_exam_maths__Q2__2.4,Statistics,Regression / correlation,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.5,,[],2.5,3.0,5.0,ok,2024_nov_p2_exam_maths__Q2__2.5,Statistics,Regression / correlation,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,2.0,2.6,2.0,[2],"2.6
+
+>
+3
+3
+ee
+vo
+i
+vo
+Hes
+B
+E
+1o)
+
+Time (in minutes)
+Estimate the median travel time.
+Estimate the lower quartile.
+Estimate the interquartile range.
+The minimum and maximum times taken for an employee to travel to work are
+5 and 120 minutes respectively. On the scaled line in the ANSWER BOOK, draw a box
+
+and whisker diagram to indicate the distribution of the data as represented in the ogive
+above.
+
+The company manager decided that all employees who travel for an hour or more will
+be allowed to work from home for part of the day. What percentage of the employees
+will be allowed to work from home for part of the day?
+
+Employees work 8 hours in a normal working day. The manager decided on the
+following rule for time to work from home:
+
+e An employee is allowed to work half an hour from home for each time
+interval of 20 minutes, or part thereof, above an hour taken to travel to work.
+
+On a certain day, an employee takes 110 minutes to travel to work. Calculate the
+number of minutes that this employee will be allowed to work from home on this day.
+
+Copyright reserved Please turn over
+
+a)
+()
+2)
+
+2)
+
+(2)
+
+2)
+{10]
+
+Mathematics/P2 DBE/November 2024
+
+5
+NSC Confidential",1178.0,6.0,ok,2024_nov_p2_exam_maths__Q2__2.6,Statistics,Regression / correlation,rule,stats,high,v1.2,STAT,,signature,high,ogive_reading,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.3,,[],3.3 Show that k=-6. (),22.0,3.0,ok,2024_nov_p2_exam_maths__Q3__3.3,Statistics,Regression / correlation,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.4,2.0,[2],3.4 Calculate the gradient of DC. (2),37.0,1.0,ok,2024_nov_p2_exam_maths__Q3__3.4,Analytical Geometry,Distance / midpoint / gradient,rule,anageo,high,v1.2,AGEO,,signature,high,gradient,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.4,2.0,[2],3.4 Calculate the length of DC. (2),35.0,4.0,ok,2024_nov_p2_exam_maths__Q3__3.4,Analytical Geometry,Distance / midpoint / gradient,context_inherit,inherit_prev_subq,medium,v1.2,FUNC,,signature,medium,nsc_length,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.5,2.0,[2],"3.5 Calculate the ratio of DB :
+DC (2)",38.0,5.0,ok,2024_nov_p2_exam_maths__Q3__3.5,Analytical Geometry,Distance / midpoint / gradient,context_inherit,inherit_prev_subq,medium,v1.2,TRIG,,lexicon,medium,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.6,4.0,[4],"3.6 If M isa point on AD such that AC || MB, calculate the ratio of aa .
+Area AACD (4)",86.0,6.0,ok,2024_nov_p2_exam_maths__Q3__3.6,Analytical Geometry,Distance / midpoint / gradient,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,3.0,3.7,19.0,"[6, 19]","3.7 If it is further given that the gradient of AD is -—4 and the length of AD is
+V612 units, calculate the coordinates of A. (6)
+[19]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 6 DBE/November 2024
+NSC Confidential",224.0,7.0,ok,2024_nov_p2_exam_maths__Q3__3.7,Analytical Geometry,Distance / midpoint / gradient,rule,anageo,high,v1.2,AGEO,,signature,high,gradient,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.4,2.0,[2],4.4 Show that d=7. (2),22.0,2.0,ok,2024_nov_p2_exam_maths__Q4__4.4,Analytical Geometry,Distance / midpoint / gradient,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.5,5.0,[5],4.5 Calculate the size of L (5),31.0,3.0,ok,2024_nov_p2_exam_maths__Q4__4.5,Analytical Geometry,Distance / midpoint / gradient,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,4.0,4.6,20.0,[20],"4.6 TR isa tangent to the circle at R. Prove that PT L RT. @G)
+
+[20]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 DBE/November 2024
+
+7
+NSC Confidential",159.0,4.0,ok,2024_nov_p2_exam_maths__Q4__4.6,Calculus,Cubic graphs,rule,calc_more,high,v1.2,CALC,,signature,high,tangent_gradient,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1.1,2.0,[2],5.1.1 cosA (2),14.0,2.0,ok,2024_nov_p2_exam_maths__Q5__5.1.1,Calculus,Cubic graphs,context_inherit,inherit_prev_subq,medium,v1.2,TRIG,,lexicon,medium,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1.2,2.0,[2],5.1.2 cos2A (2),15.0,3.0,ok,2024_nov_p2_exam_maths__Q5__5.1.2,Calculus,Cubic graphs,context_inherit,inherit_prev_subq,medium,v1.2,TRIG,,lexicon,medium,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.1.3,4.0,[4],"5.1.3 sin(A-B), if itis further given that sinB =; and 90° <B<360°
+
+(4)",71.0,4.0,ok,2024_nov_p2_exam_maths__Q5__5.1.3,Trigonometry,Equations,rule,trig,high,v1.2,TRIG,,lexicon,medium,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,5.0,5.2,12.0,"[4, 12]","5.2 If cos@=p, express the following expression in terms of p:
+cos( - 45°]sin{ % - 45°]
+2 2
+2 (4)
+[12]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 8 DBE/November 2024
+NSC Confidential",192.0,5.0,ok,2024_nov_p2_exam_maths__Q5__5.2,Trigonometry,Equations,rule,trig,high,v1.2,TRIG,,lexicon,medium,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.1,,[],6.1 Given the identity: cos(x— y)=cosxcosy +sinxsin y,53.0,1.0,ok,2024_nov_p2_exam_maths__Q6__6.1,Trigonometry,Equations,rule,trig,high,v1.2,TRIG,,signature,high,identity_proof,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.1.1,,[],"6.1.1 Use the compound angle identity given above to derive a formula for
+cos(x + y).",85.0,2.0,ok,2024_nov_p2_exam_maths__Q6__6.1.1,Trigonometry,Equations,rule,trig,high,v1.2,TRIG,,signature,high,identity_proof,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.1.2,,[],"6.1.2 Hence, or otherwise, show that:
+cos(90° — x)cos y + sin(— y)cos(180°+ x
+( deosy Cy)eos( ) — tan(e+y)
+cos x cos(360° + y)+ sin(360° — x)sin y",146.0,3.0,ok,2024_nov_p2_exam_maths__Q6__6.1.2,Trigonometry,Equations,rule,trig,high,v1.2,TRIG,,lexicon,medium,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.2,,[],"6.2 Given: f(x)=/6sin? x —11c0s(90° + x) +7
+Solve for x in the interval x e( ° 5 360°) if f(x)=2.
+—_ in?",104.0,4.0,ok,2024_nov_p2_exam_maths__Q6__6.2,Algebra & Equations,Quadratic equations,rule,alg,medium,v1.2,ALG,,signature,high,nsc_solve_x,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.3,,[],6.3 Consider the function: g(x) = —_,36.0,5.0,ok,2024_nov_p2_exam_maths__Q6__6.3,Algebra & Equations,Quadratic equations,context_inherit,inherit_prev_subq,medium,v1.2,,,unmapped,,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.3.1,,[],6.3.1 Calculate the maximum value of g.,39.0,6.0,ok,2024_nov_p2_exam_maths__Q6__6.3.1,Algebra & Equations,Quadratic equations,context_inherit,inherit_prev_subq,medium,v1.2,CALC,,signature,medium,nsc_maximum,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,6.0,6.3.2,18.0,"[2, 6, 6, 1, 18]","6.3.2 Write down the smallest possible value of x for which g will have a
+
+maximum value in the interval x e( a 360°].
+
+Copyright reserved
+
+Please turn over
+
+(2)
+
+(6)
+
+(6)
+
+3)
+
+(1)
+[18]
+
+Mathematics/P2 9 DBE/November 2024
+NSC Confidential",238.0,7.0,ok,2024_nov_p2_exam_maths__Q6__6.3.2,Algebra & Equations,Quadratic equations,context_inherit,inherit_prev_subq,medium,v1.2,CALC,,signature,medium,nsc_maximum,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,7.0,7.2,1.0,"[2, 1]","7.2 Write down the values of x in the interval x e[-180° ; 0°] for which f(x)<0. (2)
+73 Given: g(x)=cos 2x+1
+734 Write down the period of g. (1)",144.0,1.0,ok,2024_nov_p2_exam_maths__Q7__7.2,Trigonometry,Equations,rule,trig,high,v1.2,ALG,,struct,medium,STRUCT_ALG,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,7.0,7.3.2,4.0,[4],"7.3.2 On the grid given in the ANSWER BOOK, draw the graph of
+g(x)=cos2x+1 for the interval x e[—180°; 180°]. Clearly show the
+
+intercepts with the axes as well as the coordinates of the turning points. G3)
+74 Use the graphs to determine the general solution of 2cos’ x—sinx=0. (4)
+{11}
+
+Copyright reserved Please turn over
+
+Mathematics/P2 10 DBE/November 2024
+NSC Confidential",377.0,2.0,ok,2024_nov_p2_exam_maths__Q7__7.3.2,Calculus,Cubic graphs,rule,calc_more,high,v1.2,TRIG,,signature,high,general_solution,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,8.0,8.2,7.0,[7],"8.2 Calculate how far the painter at E is from the top of the building. (7)
+19]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 ll DBE/November 2024
+NSC Confidential
+
+Provide reasons for your statements in QUESTIONS 9, 10 and 11.",234.0,2.0,ok,2024_nov_p2_exam_maths__Q8__8.2,Calculus,Cubic graphs,context_inherit,inherit_prev_subq,medium,v1.2,EUCL,,lexicon,medium,,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,9.0,9.2,6.0,"[4, 6]","9.2 Hence, prove that AD = DC. (4)
+
+[6]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 12 DBE/November 2024
+NSC Confidential",130.0,2.0,ok,2024_nov_p2_exam_maths__Q9__9.2,Calculus,Cubic graphs,context_inherit,inherit_prev_subq,medium,v1.2,EUCL,,struct,medium,STRUCT_EUCL,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.1,6.0,[6],"10.1 In the diagram, ARST is drawn. Line AB intersects RS and RT at A and B
+respectively such that AB || ST.
+
+R
+
+S T
+
+Prove the theorem which states that a line drawn parallel to one side of a triangle divides
+RB
+
+the other two sides proportionally, i.e. ee)
+AS BT (6)",268.0,1.0,ok,2024_nov_p2_exam_maths__Q10__10.1,Euclidean Geometry,Circle geometry,rule,euclid,high,v1.2,CALC,,signature,medium,nsc_intersect_3,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.2,,[],"10.2 In the diagram, O is the centre of the circle. APWS is drawn with P, W and S on
+the circle. OR 1 PS. PRS is produced to T. SW and OT intersect at V.
+
+OV: OT=1:4
+P
+,
+S
+T
+W",175.0,2.0,ok,2024_nov_p2_exam_maths__Q10__10.2,Euclidean Geometry,Circle geometry,context_inherit,inherit_prev_subq,medium,v1.2,AGEO,,signature,high,circle_equation,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.2.1,5.0,[5],"10.2.1 Prove, with reasons, that OR : WS = 1:2 (5)",50.0,3.0,ok,2024_nov_p2_exam_maths__Q10__10.2.1,Euclidean Geometry,Circle geometry,context_inherit,inherit_prev_subq,medium,v1.2,EUCL,,signature,high,with_reasons,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,10.0,10.2.2,15.0,"[4, 15]","10.2.2 Calculate the length of PT if ST = 15 units. (4)
+
+[15]
+
+Copyright reserved Please turn over
+
+Mathematics/P2",114.0,4.0,ok,2024_nov_p2_exam_maths__Q10__10.2.2,Euclidean Geometry,Circle geometry,context_inherit,inherit_prev_subq,medium,v1.2,FUNC,,signature,medium,nsc_length,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.2,,[],11.2 Prove that AG.AD = AC.AF,29.0,2.0,ok,2024_nov_p2_exam_maths__Q11__11.2,Euclidean Geometry,Circle geometry,context_inherit,inherit_prev_subq,medium,v1.2,EUCL,,struct,medium,STRUCT_EUCL,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.3,,[],11.3 Prove that AAGF ||| AABC,29.0,3.0,ok,2024_nov_p2_exam_maths__Q11__11.3,Euclidean Geometry,Circle geometry,context_inherit,inherit_prev_subq,medium,v1.2,EUCL,,struct,medium,STRUCT_EUCL,mapped_v1,False
+2024_nov_p2_exam_maths,2024,P2,exam,data\processed\ocr\text\2024_nov_p2_exam_maths_ocr.txt,ocr_good,11.0,11.4,20.0,"[6, 4, 4, 6, 20]","11.4 Prove that GF’ =
+
+Copyright reserved
+
+BC.FC.AF
+
+AD
+
+TOTAL:
+
+(6)
+(4)
+(4)
+(6)
+[20]
+
+150
+
+Mathematics/P2 DBE/November 2024
+NSC Confidential
+INFORMATION SHEET
+pnb tvb? = 4a0
+2a
+A= P(l+ni) A=P(\-ni) A= P(1~i)"" A= P(i+i)""
+T,=a+(n-1)d 8, = 5 Rat (n—nd]
+T, =ar""! S _ alr"" -1) sr#l S,= a 3 -l<r<l
+, r-l -r
+
+pass"" =! pawl +i""
+
+i i
+
+_ f(x+h)- f(x)
+1 =|
+#@) h30 h
+
+xX, +X, V,+yV
+d=\(%,—%) +(,-¥,)° M|/——3;4
+2 2
+yomxte y-y, =m(x—-x,) m= 221 m=tan@
+Xy —X,
+
+(x—a) +(y-b) =r?
+be
+snA sinB sinC
+
+a =b? +c? —2be.cos A
+
+a
+
+In AABC:
+
+1 :
+area AABC = ec Cc
+sin(a + £)=sina.cos B+cosa.sin §
+cos (a + B)=cosa.cos # —sina.sin B
+cos’ a—sin? @
+cos 2a =41-2sin? a
+
+2cos* a1
+
+|
+
+n
+
+x=
+
+n(A)
+
+nS)
+
+P(A)=
+
+poatbx
+
+Copyright reserved
+
+sin (a ~ £)=sina.cos B—cosa.sin 8
+
+cos(a ~ 8) =cosa.cos f +sina.sin 8
+sin 2a = 2sina@.cosa
+
+n
+
+> (x; ~ x)’
+
+— Jeb
+
+co?
+
+n
+
+P(A or B) = P(A) + P(B) — P(A and B)
+
+Xe -¥ky-Y)
+
+po ews
+Si@e- xy",896.0,4.0,ok,2024_nov_p2_exam_maths__Q11__11.4,Trigonometry,Equations,rule,trig,high,v1.2,EUCL,,struct,medium,STRUCT_EUCL,mapped_v1,False

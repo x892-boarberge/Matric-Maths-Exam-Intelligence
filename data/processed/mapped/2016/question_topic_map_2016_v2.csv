@@ -1,0 +1,389 @@
+year,document_id,paper,question_number,subquestion,marks,question_text,segmentation_status,topic_v2,subtopic_v2,mapping_method_v2,mapping_confidence_v2,signature_id_v2,_source,inherited_v2
+2016,2016_nov_p1_exam_maths,P1,1,1.1,,Solve for x:,stem,ALG,,signature,high,nsc_solve_x,path_a,False
+2016,2016_nov_p1_exam_maths,P1,1,1.1.1,5.0,"x(x-—7)=0 (2)
+Li2 x° —6x +2 =0 (correct to TWO decimal places) (3)
+L153 vx-1+1l=x",ok,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,1,1.1.4,,"3**° 3°? = 486 (4)
+ld Given: f(x)=x?+3x-4",missing_marks,ALG,,struct,high,STRUCT_ALG,path_a,False
+2016,2016_nov_p1_exam_maths,P1,1,1.2.1,2.0,"Solve for x if f(x)=0 (2)
+Lee Solve for x if f(x)<0 (2)
+L223 Determine the values of x for which f/(x) > 0",ok,ALG,,signature,high,nsc_solve_x,path_a,False
+2016,2016_nov_p1_exam_maths,P1,1,1.3,,"Solve for x and y: x=2y and x’ —Sxy=-24 (4)
+[24]",missing_marks,ALG,,signature,high,nsc_solve_x,path_a,False
+2016,2016_nov_p1_exam_maths,P1,2,2.1,3.0,"Write down the fourth term (T4) of the sequence. (1)
+22 Calculate the number of terms in the sequence.",ok,SEQ,,lexicon,medium,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,2,2.3,3.0,Calculate the sum of all the negative numbers in the sequence.,ok,SEQ,,lexicon,medium,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,2,2.4,,"Consider the sequence: 5 ; 1 ; -3; ... ; -83 ; -87; ... ; 4187
+Determine the number of terms in this sequence that will be exactly divisible by 5. (4)
+[11]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P | 4 DBE/November 2016
+NSC",missing_marks,SEQ,,lexicon,medium,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,3,3.1.1,4.0,"Calculate the value(s) of x. (4)
+che Be If x = 0, determine the position of the first term in the quadratic number
+pattern for which the sum of the first n first differences will be greater
+than 250.",ok,SEQ,,signature,high,nsc_first_difference,path_a,False
+2016,2016_nov_p1_exam_maths,P1,3,3.2,,"Rectangles of width 1 cm are drawn from the edge of a sheet of paper that is 30 cm
+long such that there is a 1 cm gap between one rectangle and the next. The length of
+the first rectangle is 21 cm and the length of each successive rectangle is 85% of the
+length of the previous rectangle until there are rectangles drawn along the entire
+length of AD. Each rectangle is coloured grey.
+A B
+|
+30 cm
+lcm t
+dD iE i ae ee a ns weet Aa rte ob oa te xu eS ee ee Cc
+21cm",stem,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,3,3.2.1,3.0,"Calculate the length of the 10"" rectangle.",ok,FUNC,,signature,medium,nsc_length,path_a,False
+2016,2016_nov_p1_exam_maths,P1,3,3.22,,"Calculate the percentage of the paper that is coloured grey. (4)
+[15]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P 1 5 DBE/November 2016
+NSC",missing_marks,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,4,4.1,1.0,Write down the equation of the asymptote of A.,ok,FUNC,,signature,high,asymptotes,path_a,False
+2016,2016_nov_p1_exam_maths,P1,4,4.2,1.0,Determine the coordinates of R.,ok,FUNC,,lexicon,medium,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,4,4.3,2.0,Calculate the value of a.,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,4,4.4,4.0,D isa point such that DQ || y-axis and DP || x-axis. Calculate the length of DP.,ok,FUNC,,signature,medium,nsc_length,path_a,False
+2016,2016_nov_p1_exam_maths,P1,4,4.5,,"Determine the values of & for which the equation A(x+2)+k=0 will have a root
+
+that is less than —6. (3)
+(11]
+
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P | 6 DBE/November 2016
+NSC",missing_marks,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,5,5.4,4.0,"Determine the equation of the vertical asymptote of the graph of A if
+A(x) = g(x +4) (1)
+a5 Determine the values of p and 1.",ok,FUNC,,signature,high,asymptotes,path_a,False
+2016,2016_nov_p1_exam_maths,P1,5,5.6,,"Write down the values of x for which f(x).g’(x)>0 (4)
+[14]
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P | 7 DBE/November 2016
+NSC",missing_marks,ALG,,struct,medium,STRUCT_ALG,path_a,False
+2016,2016_nov_p1_exam_maths,P1,6,6.1,4.0,"On the same set of axes, sketch the graphs of f and_ g, clearly showing ALL
+intercepts with the axes.",ok,FUNC,,signature,medium,nsc_graph_interp,path_a,False
+2016,2016_nov_p1_exam_maths,P1,6,6.2,2.0,"Write down the equation of g' (x), the inverse of g, inthe form y=...",ok,FUNC,,signature,high,nsc_inverse,path_a,False
+2016,2016_nov_p1_exam_maths,P1,6,6.3,3.0,"Explain how you will use QUESTION 6.1 and/or QUESTION 6.2 to solve the
+equation log, (3 ~ x) =X.",ok,FUNC,,signature,high,nsc_log_graph,path_a,False
+2016,2016_nov_p1_exam_maths,P1,6,6.4,10.0,"Write down the solution to log, (3— x)= x. (1)",ok,FUNC,,signature,high,nsc_log_graph,path_a,False
+2016,2016_nov_p1_exam_maths,P1,7,7.3,5.0,"If Thabiso paid R9 000 as his monthly instalment starting on 1 September 2016,
+how many months sooner will he repay the loan?",ok,FIN,,signature,high,nsc_loan,path_a,False
+2016,2016_nov_p1_exam_maths,P1,7,7.4,,"If Thabiso paid R9 000 as a monthly instalment starting on 1 September 2016,
+calculate the final instalment to repay the loan. (4)
+[15]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P 1 8 DBE/November 2016
+NSC",missing_marks,FIN,,signature,high,nsc_loan,path_a,False
+2016,2016_nov_p1_exam_maths,P1,8,8.1,5.0,Determine f’(x) from first principles if f(x) =3x?,ok,CALC,,signature,high,nsc_first_principles,path_a,False
+2016,2016_nov_p1_exam_maths,P1,8,8.2,2.0,"John determines g’(a), the derivative of a certain function g at x =a, and arrives
+. V4+h-2
+at the answer: -—
+Write down the equation of g and the value of a.",ok,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,8,8.3,,"Determine wy if y= vx? - z (4)
+dx x",missing_marks,ALG,,struct,high,STRUCT_ALG,path_a,False
+2016,2016_nov_p1_exam_maths,P1,8,8.4,,"g(x)=-8x+20 isa tangent to f(x)=x°>+ax’+bx+18 at x = 1. Calculate the
+values of a and 5b. (5)
+[16]",missing_marks,CALC,,signature,high,tangent_gradient,path_a,False
+2016,2016_nov_p1_exam_maths,P1,9,9.1,3.0,Calculate the x-coordinates of the stationary points of f.,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,9,9.2,3.0,For which values of x is f concave down?,ok,CALC,,signature,high,nsc_concave,path_a,False
+2016,2016_nov_p1_exam_maths,P1,9,9.3,2.0,Determine the values of x for which f is strictly increasing.,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,9,9.4,13.0,"If it is further given that f(x)=ax'+bx?+cx+d and f(0)=~-18, determine the
+equation of f. (5)",ok,ALG,,struct,high,STRUCT_ALG,path_a,False
+2016,2016_nov_p1_exam_maths,P1,10,10.1,2.0,"Determine the number of molecules of the drug in the bloodstream 3 hours after the
+drug was taken.",ok,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,10,10.2,3.0,"Determine the rate at which the number of molecules of the drug in the bloodstream is
+changing at exactly 2 hours after the drug was taken.",ok,CALC,,lexicon,medium,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,10,10.3,,"How many hours after taking the drug will the rate at which the number of molecules
+of the drug in the bloodstream is changing, be a maximum? (3)
+[8]
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P 1 9 DBE/November 2016
+NSC",missing_marks,CALC,,signature,medium,nsc_maximum,path_a,False
+2016,2016_nov_p1_exam_maths,P1,11,11.1,,"Calculate the values of a and b. (2)
+LL Are the events ‘being a male’ and 'did not watch TV during examinations’ mutually
+exclusive? Give a reason for your answer. (2)
+LL If a learner who participated in this survey is chosen at random, what is the
+probability that the learner:",missing_marks,PROB,,signature,medium,nsc_probability,path_a,False
+2016,2016_nov_p1_exam_maths,P1,11,11.3.1,2.0,Watched TV in the period during which the examinations were written?,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,11,11.3.2,8.0,"Is not a male and did not watch TV in the period during which
+examinations were written? (2)",ok,,,unmapped,,,path_a,False
+2016,2016_nov_p1_exam_maths,P1,12,12,,"QUESTION 12
+The digits 1 to 7 are used to create a four-digit code to enter a locked room. How many
+different codes are possible if the digits may not be repeated and the code must be an even
+number bigger than 5 000? [5]
+TOTAL: 150
+Copyright reserved
+
+===== Page 10 =====
+Mathematics/P 1 DBE/November 2016
+NSC
+INFORMATION SHEET
+—_ —~b+Vb? —4ac
+2a
+A= P(l+ni) A= P(\-ni) A= P(1-i)’ A= P(1+i)”
+T, =a+(n-l)d S, = 5Ra+@-d]
+Z, =r S _ alr” -1) srs | S,=— +; -lerei
+"" r=] l-r
++i -1] p_al-0+)""|
+i i
+h>0 h
+x, +x, yty
+d= (x, -x,)° +(y, -y,y M oe bias
+2 2
+y=mx+c y-y, =mM(x—-x,) ee 2A. m = tan @
+ae
+(x—a)' +(y-by =r? page Heat.
+sinA sinB sinC
+a’ =b’? +c? —2bc.cos A
+area AABC = sabesinc
+sin(a + ) = sina.cosf# +cosa.sin B sin(a - B) = sina.cosB —cosa.sinB
+cota + B)=cosa.cos$ —sina.sin B cosa — 8) =cosa.cos#+sina.sin B
+cos’ a@-—sin’ a
+cos2a =41-2sin’ a sin2a = 2sina.cosa
+2cos’ a-
+~e, ~ay
+e= y o? =
+n n
+n(A) _
+P(A)=— P(A or B) = P(A) + P(B) — P(A and B)
+n(S)
+x-x\y-y
+yp=athbx p= due 2-9) Ky=9)
+Yo-%
+Copyright reserved",no_sub_markers,PROB,,signature,high,nsc_no_repeat,path_a,False
+2016,2016_nov_p2_exam_maths,P2,1,1.1,1.0,"Use the scatter plot to comment on the strength of the relationship between the
+distance a shopper lived from the store and the average number of times she/he
+shopped at the store in a week.",ok,SEQ,,signature,high,nsc_term_to_term,path_a,False
+2016,2016_nov_p2_exam_maths,P2,1,1.2,3.0,"Calculate the correlation coefficient of the data. (1)
+153 Calculate the equation of the least squares regression line of the data.",ok,STAT,,signature,high,regression,path_a,False
+2016,2016_nov_p2_exam_maths,P2,1,1.4,,"Use your answer at QUESTION 1.3 to estimate the average number of times that a
+shopper living 6 km from the supermarket will visit the store in a week. (2)
+LS Sketch the least squares regression line on the scatter plot provided in the ANSWER
+BOOK. (2)
+[9]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P2 4 DBE/November 2016
+NSC",missing_marks,STAT,,signature,high,regression,path_a,False
+2016,2016_nov_p2_exam_maths,P2,2,2.2,2.0,"Calculate the range of the heights. (2)
+235 Complete the cumulative frequency column in the table given in the ANSWER
+BOOK.",ok,STAT,,lexicon,medium,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,2,2.4,2.0,"Draw an ogive (cumulative frequency curve) to represent the data on the grid
+provided in the ANSWER BOOK. (4)
+ZS Eighty learners are less than x metres in height. Estimate x.",ok,STAT,,signature,high,ogive_reading,path_a,False
+2016,2016_nov_p2_exam_maths,P2,2,2.6,,"The person taking the measurements only had
+a 1,5 m measuring tape available. In order to
+compensate for the short measuring tape, he |
+decided to mount the tape on a wall at a height Ls P
+of 1 m above the ground. After recording the ""cei
+measurements he discovered that the tape was |
+mounted at 1,1 m above the ground instead of
+1m. Distance above the ground
+GROUND
+How does this error influence the following:",stem,AGEO,,signature,high,distance,path_a,False
+2016,2016_nov_p2_exam_maths,P2,2,2.6.1,1.0,Mean of the data set,ok,STAT,,signature,medium,mean,path_a,False
+2016,2016_nov_p2_exam_maths,P2,2,2.6.2,,"Standard deviation of the data set (1)
+[13]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P2 5 DBE/November 2016
+NSC",missing_marks,STAT,,signature,high,standard_dev,path_a,False
+2016,2016_nov_p2_exam_maths,P2,3,3.3,3.0,"Hence, calculate the value of p.",ok,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,3,3.4,3.0,Calculate the length of DB.,ok,FUNC,,signature,medium,nsc_length,path_a,False
+2016,2016_nov_p2_exam_maths,P2,3,3.5,2.0,Calculate the size of @,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,3,3.6,3.0,"Calculate the size of OGB. (3)
+A Determine the equation of the circle passing through points D, B and C in the form
+(x-a)’ +(y—by =r’.",ok,AGEO,,signature,high,circle_equation,path_a,False
+2016,2016_nov_p2_exam_maths,P2,3,3.8,,"If AD is shifted so that ABCD becomes a square, will BC be a tangent to the
+circle passing through points A, M and B, where M is now the intersection of the
+diagonals of the square ABCD? Motivate your answer. (2)
+[19]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P2 6 DBE/November 2016
+NSC",missing_marks,CALC,,signature,high,tangent_gradient,path_a,False
+2016,2016_nov_p2_exam_maths,P2,4,4.1,1.0,Give a reason why TSR =90°.,ok,EUCL,,lexicon,medium,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,4,4.2,2.0,"Calculate the gradient of TS. (2)
+43 Determine the equation of the line SR in the form y= mx +c. (3)
+2
+44 The equation of the circle above is (x —9)? + [y - 63) = 36.
+4.4.] Calculate the length of TR in surd form.",ok,AGEO,,signature,high,gradient,path_a,False
+2016,2016_nov_p2_exam_maths,P2,4,4.4.2,3.0,Calculate the coordinates of R.,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,4,4.4.3,3.0,Calculate sinR.,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,4,4.4.4,3.0,Show that 6 = 12a — 29.,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,4,4.4.5,,"If TK =TR, calculate the coordinates of K. (6)
+[23]
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2016
+NSC",missing_marks,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,5,5.2,,"Given: cos(A —B) =cosAcosB + sinAsinB
+Use the formula for cos(A -B) to derive a formula for sin(A +B) (3)
+/ 2
+a3 Simplify es completely, given that 0°< A < 90°. (5)
+cos(—A).cos(90° + A)
+SA Given: cos 2B= = and 0°<B<90°
+Determine, without using a calculator, the value of EACH of the following in its
+simplest form:",missing_marks,TRIG,,lexicon,medium,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,5,5.4.1,3.0,cosB,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,5,5.4.2,2.0,sinB,ok,TRIG,,lexicon,medium,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,5,5.4.3,,"cos (B + 45°) (4)
+[21]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2016
+NSC",missing_marks,TRIG,,lexicon,medium,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,6,6.1,3.0,"On the system of axes on which / is drawn in the ANSWER BOOK, draw the graph
+of g(x)=—cos2x for x € [-180° ; 180°]. Clearly show all intercepts with the axes,
+the coordinates of the turning points and end points of the graph.",ok,CALC,,struct,medium,STRUCT_CALC,path_a,False
+2016,2016_nov_p2_exam_maths,P2,6,6.2,4.0,"Write down the maximum value of /(x)-—3. (2)
+G2 Determine the general solution of f(x) = g(x).",ok,TRIG,,signature,high,general_solution,path_a,False
+2016,2016_nov_p2_exam_maths,P2,6,6.4,,"Hence, determine the values of x for which /(x)< g(x) in the interval
+x € [—180° ; 0°]. (3)
+[12]
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P2 9 DBE/November 2016
+NSC",missing_marks,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,7,7.1,,"Calculate the length of OB. (3)
+3
+dz Show that cos@ =—_————
+21” 4: a
+2 (5)
+im If the volume of the pyramid is 15 m° , calculate the value of @. (4)
+[12]
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2016
+NSC
+Give reasons for ALL statements and calculations in QUESTIONS 8, 9 and 10.",missing_marks,FUNC,,signature,medium,nsc_length,path_a,False
+2016,2016_nov_p2_exam_maths,P2,8,8.1,,"In the diagram below PQRT is a cyclic quadrilateral having RT || QP. The tangent
+at P meets RT produced at S. QP = QT and PTS = 70°.
+S
+“*",stem,CALC,,signature,high,tangent_gradient,path_a,False
+2016,2016_nov_p2_exam_maths,P2,8,8.1.1,1.0,"Give a reason why P, = 70°.",ok,EUCL,,lexicon,medium,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,8,8.1.2,,"Calculate, with reasons, the size of:
+(a2) Q, (3)
+(b) PB, (2)
+Copyright reserved Please turn over
+
+===== Page 11 =====
+Mathematics/P2 1] DBE/November 2016
+NSC",missing_marks,EUCL,,signature,high,with_reasons,path_a,False
+2016,2016_nov_p2_exam_maths,P2,8,8.2,,"A, B and C are points on the circle having centre O. S and T are points on AC
+and AB respectively such that OS | AC and OT | AB. AB = 40 and AC = 48.
+C
+A
+OE,
+B",stem,AGEO,,signature,high,circle_equation,path_a,False
+2016,2016_nov_p2_exam_maths,P2,8,8.2.1,1.0,Calculate AT.,ok,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,8,8.2.2,,"If OS= “or, calculate the radius OA of the circle. (5)
+[12]
+Copyright reserved Please turn over
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2016
+NSC",missing_marks,AGEO,,signature,high,circle_equation,path_a,False
+2016,2016_nov_p2_exam_maths,P2,9,9.1,,Give a reason why EACH of the following is TRUE:,stem,EUCL,,lexicon,medium,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,9,9.1.1,1.0,"B, =x",ok,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,9,9.1.2,1.0,"BCD =B,",ok,,,unmapped,,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,9,9.2,2.0,"Prove that BCDE is a cyclic quadrilateral. (2)
+93 Which TWO other angles are each equal to x?",ok,EUCL,,signature,high,cyclic_quad,path_a,False
+2016,2016_nov_p2_exam_maths,P2,9,9.4,,"Prove that B, =C,. (3)
+[9]
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2016
+NSC",missing_marks,EUCL,,struct,medium,STRUCT_EUCL,path_a,False
+2016,2016_nov_p2_exam_maths,P2,10,10.1,,"In the diagram APQR is drawn. S and T are points on sides PQ and PR
+respectively such that ST || QR.
+P
+S -
+Q R
+Prove the theorem which states that re = il ‘ (6)
+SQ TR
+Copyright reserved Please turn over
+
+===== Page 14 =====
+Mathematics/P2 14 DBE/November 2016
+NSC",missing_marks,EUCL,,lexicon,medium,,path_a,False
+2016,2016_nov_p2_exam_maths,P2,10,10.2,1.0,"In the diagram HLKF is a cyclic quadrilateral. The chords HL and FK are produced
+to meet at M. The line through F parallel to KL meets MH produced at G.
+MK =x, KF = 2x, ML=y and LH=HG.
+M
+a
+L
+: Aas is H
+G
+F
+1034 Give a reason why GFM = LKM.",stem,EUCL,,signature,high,cyclic_quad,path_a,False
+2016,2016_nov_p2_exam_maths,P2,10,10.2.2,,"Prove that:
+(a) GH=y (3)
+(b) AMFH]|||AMGF (5)
+(©) GF _3x
+FH 2y (2)
+y 3",missing_marks,EUCL,,struct,medium,STRUCT_EUCL,path_a,False
+2016,2016_nov_p2_exam_maths,P2,10,10.2.3,,"Show that — = ,/—
+P 4 2 (3)
+[20]
+TOTAL: 150
+Copyright reserved
+
+===== Page 15 =====
+Mathematics/P2 DBE/November 2016
+NSC
+INFORMATION SHEET
+ve —~b+yb"" —4ac
+2a
+A= P(l+ni) A= P(1—ni) A= P(1-i)"" A= P(i+i)”
+T, =a+(n-l)d S, = 52a +(n—-1)d]
+eT a S _ alr"" -1) eA S, =7—3 -l<r<l
+n r- 1 —-r
+Pe (el p_sl-d+iy"")
+i i
+.. Jxt+h-f@)
+'(x) = im
+#) h>0 h
+X, +X, yy t+y
+d= (x, -x,)? +0,-y,)” M fe he
+Z 2
+_ _ y27V1 _
+y=mxt+ce y-y, =m(x-x,) Ce ee m=tan@
+a |
+snA sinB© sinC
+a’ =5* +e"" —2bc.cos A
+area AABC = 5abssin
+sin(a + B) = sina.cos# + cosa.sin B sin(a — B) = sina.cos#—cosa.sinB
+coda + B) =cosa@.cosf—sina.sin PB cofa - B) =cosa@.cosf+sina.sinB
+cos* a—sin’a
+cos2@ =41-—2sin’a sin2a@ = 2sina.cosa
+2cos’? a—1
+x == oo =
+n n
+n(A) _
+P(A) = 78) P(A or B) = P(A) + P(B) — P(A and B)
+n
+x-x\Ky-y
+p=atbx 5 - =P) Ky=9)
+Yor-3)
+Copyright reserved",missing_marks,ALG,,struct,medium,STRUCT_ALG,path_a,False
