@@ -1,0 +1,128 @@
+topic_id,signature_id,pattern,confidence,usage_rule
+CALC,first_principles,lim,high,PRIMARY
+CALC,dy_dx,dy/dx,high,PRIMARY
+CALC,D_x_operator,d,low,FALLBACK
+CALC,second_derivative,f''(x),medium,SECONDARY
+CALC,tangent_gradient,tangent,high,PRIMARY
+CALC,derivative_zero,= 0,low,FALLBACK
+CALC,differentiate,d/dx,high,PRIMARY
+SEQ,arithmetic_term,T_n = a +,high,PRIMARY
+SEQ,arithmetic_sum,S_n = n/2,high,PRIMARY
+SEQ,geometric_term,T_n = a r,high,PRIMARY
+SEQ,common_ratio,common ratio,high,PRIMARY
+SEQ,sum_to_infinity,sum to infinity,high,PRIMARY
+SEQ,second_difference,second difference,high,PRIMARY
+SEQ,quadratic_pattern,quadratic pattern,high,PRIMARY
+FUNC,asymptotes,asymptote,high,PRIMARY
+FUNC,turning_point,-b,low,FALLBACK
+FUNC,inverse_swap,swap,high,PRIMARY
+FUNC,logarithm,log,high,PRIMARY
+FUNC,exponential,exponential,high,PRIMARY
+FUNC,parabola,parabola,high,PRIMARY
+FUNC,hyperbola,hyperbola,high,PRIMARY
+FUNC,domain_range,domain,medium,SECONDARY
+ALG,quadratic_formula,-b,low,FALLBACK
+ALG,factorisation,(,low,FALLBACK
+ALG,critical_values,critical values,high,PRIMARY
+ALG,discriminant,discriminant,high,PRIMARY
+ALG,simultaneous,substitution,medium,SECONDARY
+ALG,inequality,inequality,high,PRIMARY
+ALG,nature_of_roots,nature of roots,high,PRIMARY
+TRIG,compound_angle,cos(,low,FALLBACK
+TRIG,double_angle,double angle,high,PRIMARY
+TRIG,reduction,reduction,high,PRIMARY
+TRIG,general_solution,general solution,high,PRIMARY
+TRIG,sine_rule,sine rule,high,PRIMARY
+TRIG,cosine_rule,cosine rule,high,PRIMARY
+TRIG,area_rule,area rule,high,PRIMARY
+TRIG,identity_proof,identity,high,PRIMARY
+AGEO,gradient,gradient,high,PRIMARY
+AGEO,midpoint,midpoint,high,PRIMARY
+AGEO,distance,distance,high,PRIMARY
+AGEO,circle_equation,circle,high,PRIMARY
+AGEO,tangent_to_circle,tangent,medium,SECONDARY
+AGEO,angle_inclination,inclination,high,PRIMARY
+AGEO,parallel_perp,parallel,medium,SECONDARY
+EUCL,with_reasons,with reasons,high,PRIMARY
+EUCL,tangent_chord,tangent,medium,SECONDARY
+EUCL,cyclic_quad,cyclic,high,PRIMARY
+EUCL,angle_at_centre,centre,medium,SECONDARY
+EUCL,similarity,similar,high,PRIMARY
+EUCL,proportionality,proportional,medium,SECONDARY
+EUCL,midpoint_theorem,midpoint,medium,SECONDARY
+EUCL,pythagoras,pythagoras,high,PRIMARY
+STAT,mean,mean,medium,SECONDARY
+STAT,standard_dev,standard deviation,high,PRIMARY
+STAT,regression,regression,high,PRIMARY
+STAT,correlation,correlation,high,PRIMARY
+STAT,ogive_reading,ogive,high,PRIMARY
+STAT,box_whisker,box and whisker,high,PRIMARY
+STAT,iqr,IQR,high,PRIMARY
+PROB,venn,venn,high,PRIMARY
+PROB,tree,tree diagram,high,PRIMARY
+PROB,independence,independent,high,PRIMARY
+PROB,mutually_exclusive,mutually exclusive,high,PRIMARY
+PROB,counting,factorial,medium,SECONDARY
+PROB,complement,complementary,medium,SECONDARY
+FIN,compound_interest,compound,high,PRIMARY
+FIN,simple_interest,simple interest,high,PRIMARY
+FIN,depreciation,depreciat,high,PRIMARY
+FIN,annuity_fv,future value,high,PRIMARY
+FIN,annuity_pv,present value,high,PRIMARY
+FIN,nominal_effective,nominal,high,PRIMARY
+FIN,time_line,time line,high,PRIMARY
+SEQ,nsc_infinite_series,infinite series,high,PRIMARY
+SEQ,nsc_constant_ratio,constant ratio,high,PRIMARY
+SEQ,nsc_geometric_series,geometric series,high,PRIMARY
+SEQ,nsc_geometric_seq,geometric sequence,high,PRIMARY
+SEQ,nsc_arithmetic_series,arithmetic series,high,PRIMARY
+SEQ,nsc_arithmetic_seq,arithmetic sequence,high,PRIMARY
+SEQ,nsc_quadratic_pattern,quadratic number pattern,high,PRIMARY
+SEQ,nsc_first_difference,first difference,high,PRIMARY
+SEQ,nsc_sigma,sum from,medium,PRIMARY
+ALG,nsc_solve_x,Solve for x,high,PRIMARY
+ALG,nsc_show_roots,roots are non-real,high,PRIMARY
+ALG,nsc_simultaneous,Solve for x and y,high,PRIMARY
+ALG,nsc_exp_eq,2^(2x),high,PRIMARY
+FUNC,nsc_log_graph,log,high,PRIMARY
+FUNC,nsc_inverse,inverse of,high,PRIMARY
+FUNC,nsc_translation,translated,high,PRIMARY
+FUNC,nsc_range,Write down the range,high,PRIMARY
+FUNC,nsc_domain,Write down the domain,high,PRIMARY
+FUNC,nsc_tangent_parabola,tangent to,medium,PRIMARY
+CALC,nsc_first_principles,from first principles,high,PRIMARY
+CALC,nsc_derivative,Determine f'(x),high,PRIMARY
+CALC,nsc_cubic,cubic function,high,PRIMARY
+CALC,nsc_concave,concave down,high,PRIMARY
+CALC,nsc_intersect_3,intersect,medium,PRIMARY
+CALC,nsc_maximum,maximum,medium,PRIMARY
+CALC,nsc_maximise,maximise,high,PRIMARY
+FIN,nsc_compound,compounded,high,PRIMARY
+FIN,nsc_depreciat,depreciat,high,PRIMARY
+FIN,nsc_loan,loan,high,PRIMARY
+FIN,nsc_instalment,instalment,high,PRIMARY
+FIN,nsc_interest,interest rate,medium,PRIMARY
+PROB,nsc_probability,probability,medium,PRIMARY
+PROB,nsc_independent,independent,high,PRIMARY
+PROB,nsc_venn,Venn,high,PRIMARY
+PROB,nsc_tree,tree diagram,high,PRIMARY
+PROB,nsc_counting,ways in which,high,PRIMARY
+SEQ,nsc_solve_simul,Solve for x and y,high,PRIMARY
+SEQ,nsc_sigma_notation,sum from,high,PRIMARY
+SEQ,nsc_p_k_lower,=k,medium,PRIMARY
+SEQ,nsc_first_5_seconds,first 5 seconds,high,PRIMARY
+SEQ,nsc_max_depth,maximum depth,high,PRIMARY
+SEQ,nsc_second_time,second time,high,PRIMARY
+SEQ,nsc_term_to_term,between T,high,PRIMARY
+ALG,nsc_simul_x_y,values of x and y,high,PRIMARY
+FUNC,nsc_length_mt,length of MT,high,PRIMARY
+FUNC,nsc_length,Calculate the length,medium,PRIMARY
+FUNC,nsc_graph_interp,the graphs of,medium,PRIMARY
+FUNC,nsc_interpret,for which values of x,medium,PRIMARY
+PROB,nsc_digit_code,digit code,high,PRIMARY
+PROB,nsc_code,code,medium,PRIMARY
+PROB,nsc_combinations,combinations,high,PRIMARY
+PROB,nsc_arrangements,arrangements,high,PRIMARY
+PROB,nsc_no_repeat,may not be repeated,high,PRIMARY
+SEQ,nsc_sigma_lower_limit,lower limit,high,PRIMARY
+SEQ,nsc_sigma_pk,=k,high,PRIMARY

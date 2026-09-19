@@ -1,0 +1,72 @@
+[
+  [
+    "first principles|dy/dx|d/dx|lim\\s*_?\\s*\\{?\\s*h",
+    "CALC",
+    "high"
+  ],
+  [
+    "prove that|with reasons|cyclic|semicircle",
+    "EUCL",
+    "medium"
+  ],
+  [
+    "common ratio|sum to infinity|geometric sequence|arithmetic sequence",
+    "SEQ",
+    "medium"
+  ],
+  [
+    "asymptote|hyperbola",
+    "FUNC",
+    "medium"
+  ],
+  [
+    "equation of the circle|centre and radius",
+    "AGEO",
+    "medium"
+  ],
+  [
+    "quadratic number pattern|second difference",
+    "SEQ",
+    "high"
+  ],
+  [
+    "cubic|turning point|concave",
+    "CALC",
+    "medium"
+  ],
+  [
+    "backdrop|puppet|stage|triangular sides",
+    "TRIG",
+    "medium"
+  ],
+  [
+    "sum_\\{|\\\\sum|sigma|lower limit",
+    "SEQ",
+    "high"
+  ],
+  [
+    "x[\\?\\*]\\s*[+\\-]",
+    "ALG",
+    "high"
+  ],
+  [
+    "x\\s*\\^\\s*2",
+    "ALG",
+    "high"
+  ],
+  [
+    "\\d+x[\\?\\*]",
+    "ALG",
+    "high"
+  ],
+  [
+    "<\\s*0\\b|>\\s*0\\b|≤|≥",
+    "ALG",
+    "medium"
+  ],
+  [
+    "solve.*simultaneous|simultaneous.*solve",
+    "ALG",
+    "high"
+  ]
+]
