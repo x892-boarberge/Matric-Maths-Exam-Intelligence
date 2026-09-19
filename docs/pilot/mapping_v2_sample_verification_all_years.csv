@@ -1,0 +1,301 @@
+year,paper,question_number,subquestion,topic_v2,mapping_method_v2,question_text,verdict,correct_topic
+2014,P1,3.0,3.2,SEQ,signature,"The first three terms of a geometric sequence are: 16; 4; 1
+S21 Calculate the value of the 12"" term. (Leave your answer in simplified
+exponential form.) (3)
+i ae Calculate the sum of the first 10 terms of the sequence.",,
+2014,P1,8.0,8.1,CALC,signature,Determine /’(x) from first principles if f(x) = x°.,,
+2014,P1,11.0,11.1,PROB,signature,"Determine the probability that a randomly selected staff member:
+11,11 Is male",,
+2014,P2,3.0,3.4.2,CALC,signature,"The equation of the tangent PB in the form y=mx+c (3)
+oT Write down the equation of tangent SKL.",,
+2014,P2,1.0,1.4,STAT,signature,"Calculate an equation for the least squares regression line (line of best fit) for the
+data. (3)
+15 If a candidate from this group scored 60% in the Mathematics examination but was
+absent for the Accounting examination, predict the percentage that this candidate
+would have scored in the Accounting examination, using your equation in",,
+2015,P1,3.0,3.2,SEQ,struct,"Write S, in sigma notation.",,
+2015,P1,7.0,7.1,FIN,signature,"How much did Joe pay for the vehicle? (1)
+Ted Use the reducing-balance method to calculate the percentage annual rate of
+depreciation of the vehicle that Joe bought. (4)
+73 If the average rate of the price increase of the vehicle is 8,1% p.a., calculate the value
+of a.",,
+2015,P1,1.0,1.1,ALG,signature,"Solve for x:
+LL x” -9x+20=0",,
+2015,P2,9.0,9.4,CALC,signature,"Prove that TA is a tangent to the circle passing through the points A, K and H.",,
+2015,P2,8.0,8.1,EUCL,signature,"Inthe diagram below, cyclic quadrilateral ABCD is drawn in the circle with centre O.
+A a
+(5 |
+Cc",,
+2016,P1,1.0,1.1,ALG,signature,Solve for x:,,
+2016,P1,10.0,10.2,CALC,lexicon,"Determine the rate at which the number of molecules of the drug in the bloodstream is
+changing at exactly 2 hours after the drug was taken.",,
+2016,P1,11.0,11.1,PROB,signature,"Calculate the values of a and b. (2)
+LL Are the events ‘being a male’ and 'did not watch TV during examinations’ mutually
+exclusive? Give a reason for your answer. (2)
+LL If a learner who participated in this survey is chosen at random, what is the
+probability that the learner:",,
+2016,P2,10.0,10.1,EUCL,lexicon,"In the diagram APQR is drawn. S and T are points on sides PQ and PR
+respectively such that ST || QR.
+P
+S -
+Q R
+Prove the theorem which states that re = il ‘ (6)
+SQ TR
+Copyright reserved Please turn over
+
+===== Page 14 =====
+Mathematics/P2 14 DBE/November 2016
+NSC",,
+2016,P2,7.0,7.1,FUNC,signature,"Calculate the length of OB. (3)
+3
+dz Show that cos@ =—_————
+21” 4: a
+2 (5)
+im If the volume of the pyramid is 15 m° , calculate the value of @. (4)
+[12]
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematics/P2 10 DBE/November 2016
+NSC
+Give reasons for ALL statements and calculations in QUESTIONS 8, 9 and 10.",,
+2017,P1,5.0,5.6,AGEO,signature,"Determine the point of intersection of the graphs of f and the axis of symmetry of g
+that has a negative gradient. (3)
+[14]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics/P1 6 DBE/November 2017
+NSC",,
+2017,P1,4.0,4.1,CALC,signature,"The gradient of the tangent to the graph of f at the point [-1 ; z) is 3.
+Show that a= ; and b=2.",,
+2017,P1,6.0,6.2.1,FIN,signature,Calculate Piet's monthly instalment.,,
+2017,P2,11.0,11.2.3,EUCL,struct,"It is further given that BC = 2AB = 2r.
+(a) Prove that AD’ =3r’ (2)
+(b) Hence, prove that AADE is equilateral. (4)
+[20]
+TOTAL: 150
+Copyright reserved
+
+===== Page 15 =====
+Mathematics/P2 DBE/November 2017
+NSC
+INFORMATION SHEET: MATHEMATICS
+~b+\b? —4ac
+X=
+2a
+A= P(1+ni) A= P(1-ni) A= P(l—i)"" A= P(1+i)""
+T, =a+(n-ld S, = 5 [2a+ (nnd
+T, =ar”™"" S _ alr” -1) ;re#l S,=—-;-ler<l
+""— r-l l-r
+past = p04"")
+i i
+Poa tim LOAF)
+h->0 h
+nn. nn) X tx, ypty
+d= \(x, —x,)7 +(y, -y,)° M2122)
+2 2
+_ _ v2 7 _
+y=mxt+e y-y, =m(x-x,) m= m=tan0
+%27~*)
+(a)? +(y-2) =P
+InAABC: So
+snA sinB~ sinC
+a* =b* +¢7 —2be.cosA
+area KAABC = 5 absinc
+sin(a + B) = sina.cosf + cosa.sin 8 sin(a - B) = sina.cos # —cosa.sin 8
+coat B) =cosa.cos#—sina.sin B cola —B) =cosa@.cos#+sina.sin #
+[ere a-—sin’ a
+cos2a@ =41—2sin* a sin2a@ = 2sina.cosa
+ls cos” a-l
+n 2
+Yix > (x, x)
+x= ot og? = 1 _
+a nh
+_ nA) _
+P(A) = =) P(A or B) = P(A) + P(B) — P(A and B)
+ft
+x-x\Ky-y
+p=atbx p= ae ko=9)
+5 (x—-¥)
+Copyright reserved",,
+2017,P2,2.0,2.1.2,STAT,signature,The interquartile range of the data,,
+2018,P1,4.0,4.2,FUNC,lexicon,"If R is the reflection of P in the line y =x, write down the coordinates of R. (1)
+43 Calculate the value of a.",,
+2018,P1,12.0,12.2,PROB,signature,"An organisation decided to distribute gift bags of sweets to a Grade R class at a
+certain school. There is a mystery gift in exactly ; of the total number of bags.
+Each learner in the class may randomly select two gift bags of sweets, one after the
+other. The probability that a learner selects two bags of sweets with a mystery gift
+is a . Calculate the number of gift bags of sweets with a mystery gift inside. 6
+[9]
+TOTAL: 150
+Copyright reserved
+
+===== Page 10 =====
+Mathematics/P 1 DBE/November 2018
+NSC
+INFORMATION SHEET
+—b+ Vb2 —4ac
+x = ——_§_€—
+2a
+A=P(1+ni) A=P(-ni) A=P(1-i)"" A= P(1+i)”
+T, =a+(n-ld 8, = jba+@-Nd]
+nl alr’ ~1) __4@
+T, =ar S = 5r¥il S, =a 3 -l<r<l
+. r-l l-r
+p+"" -1] p_al-d+""|
+i i
+h>0 A
+SSS x, +x +
+d= (x,-x) +(,-n)y M ane Sees)
+2 2
+y=mxte y-y, =m(x-x,) m=22—>L m= tan@
+7%
+(x-a) +(y-bY =r?
+sind sinB sinC
+a’ =b’ +c’ —2be.cosA
+area AABC = 5a sinC
+sin(a + £) =sina.cosf +cosa.sin£ sin(a. —B) = sina.cosB —cosa.sinB
+coda + B) = cosa.cos#—sina.sinP cola _ B) =cosa.cos#+sina.sinB
+cos’ a—sin’ a
+cos2a =41-2sin’ a sin2a = 2sina.cosa
+2cos’ a—1
+» (x; ~ x)
+x= > o’ — j=l
+Wl fn
+nA) _
+P(A) = AAS) P(A or B) = P(A) + P(B) — P(A and B)
+fh
+x—-x\Ky-y
+j-a+bx p= Le —)0-7)
+> («-x)
+Copyright reserved",,
+2018,P1,2.0,2.1,SEQ,lexicon,Given the quadratic sequence: 2;3;10;23;...,,
+2018,P2,3.0,3.6,EUCL,lexicon,"T is apointon KL produced. TM is drawn such that TM=LM. Calculate the
+areaof AKIN. (4)
+[22]
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2018
+NSC",,
+2018,P2,9.0,9.2.1,EUCL,lexicon,"Name, giving a reason, another angle equal to:
+(a) x (2)
+(b) y",,
+2019,P1,8.0,8.2,PROB,lexicon,How many times did the insect reach the floor?,,
+2019,P1,2.0,2.1.4,SEQ,lexicon,"Which term in the sequence has the least value? (2)
+. . ; 5 5 5",,
+2019,P1,4.0,4.3,FUNC,lexicon,Calculate the coordinates of C.,,
+2019,P2,2.0,2.3,STAT,lexicon,Write down the modal class for the data.,,
+2019,P2,5.0,5.3,TRIG,lexicon,"Given: cos26°=m
+
+Without using a calculator, determine 2sin’ 77° interms of m.",,
+2020,P1,8.0,8.3,CALC,signature,For which values of x will g be concave down?,,
+2020,P1,6.0,6.1,FIN,signature,"On 31 January 2020, Tshepo made the first of his monthly deposits of R1 000 into a
+savings account. He continues to make monthly deposits of R1 000 at the end of each
+month up until 31 January 2032. The interest rate was fixed at 7,5% p.a., compounded
+monthly.",,
+2020,P1,1.0,1.1,ALG,signature,Solve for x:,,
+2020,P2,6.0,6.3,TRIG,signature,"Determine the general solution of the following equation:
+6sin’ x + 7cosx—3 =0 (6)
+. 1 > 1",,
+2020,P2,2.0,2.2,STAT,signature,"The number of aircraft landing at the King Shaka International Airport during these
+months are:
+2182 | 2323 | 2267 | 2334 | 2346 | 2175 |
+2293 | 2263 | 2215 | 2271 | 2018 2254 |
+Calculate the mean for the data.",,
+2021,P1,12.0,12.2.2,PROB,lexicon,"Calculate the number of different ways these 12 books can be placed on
+the shelf if any book can be placed in any position.",,
+2021,P1,7.0,7.2,FUNC,lexicon,Calculate the coordinates of C.,,
+2021,P1,5.0,5.4,FUNC,lexicon,Write down the coordinates of the y-intercept of f,,
+2021,P2,3.0,3.3.3,FUNC,signature,"Coordinates of the point of intersection of the diagonals of parallelogram
+ACES, where S$ is a point in the first quadrant",,
+2021,P2,5.0,5.2,TRIG,signature,"Prove the identity: —————__————- = 2cosx-1 (4)
+1 ~cos(540° — x)",,
+2022,P1,6.0,6.3,FIN,signature,"Thabo plans to buy a car that costs R250 000. He will pay a deposit of 15% and take
+
+out a loan for the balance. The interest on the loan is 13% p.a., compounded monthly.",,
+2022,P1,3.0,3.3,SEQ,signature,"Determine the general term for the sequence of first differences of the quadratic
+number pattern. Write your answer in the form 7, = mp +q.",,
+2022,P1,6.0,6.1,FIN,signature,"R12 000 was invested in a fund that paid interest at m% p.a., compounded quarterly.
+
+After 24 months, the value of the investment was R13 459.
+
+Determine the value of m.",,
+2022,P2,1.0,1.1.2,STAT,signature,Standard deviation of the number of votes that these 10 learners received,,
+2022,P2,3.0,3.2,AGEO,lexicon,Determine the equation of CD inthe form y=mx+c.,,
+2023,P1,10.0,10.3,PROB,lexicon,"10.3 Ten learners stand randomly in a line, one behind the other.",,
+2023,P1,2.0,2.2,SEQ,signature,"2.2 The following information is given about a quadratic number pattern:
+
+T, =3, T,-T, =9 and T,-T, =21",,
+2023,P1,6.0,6.2.1,FIN,signature,"6.2.1 The value of the old laptop depreciates annually at a rate of 20% p.a.
+according to the straight-line method. After how many years will the
+laptop have a value of RO? (2)",,
+2023,P2,5.0,5.3.1,TRIG,signature,5.3.1 Use the above identity to deduce that sin(A — B) = sinAcosB — cosAsinB (3),,
+2023,P2,9.0,9.3,EUCL,signature,"9.3 Calculate, with reasons, the length of FC. (6)
+
+19]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 13 DBE/November 2023
+NSC",,
+2024,P1,8.0,8.3.2,FUNC,signature,"8.3.2 Write down how you will restrict the domain of f such that f, the
+
+inverse of f is a function.",,
+2024,P1,7.0,7.3.2,FIN,signature,"7.3.2 Tshepo paid R22 300,98 (his monthly instalment and an additional
+R20 000) on 1 March 2024 into the loan account. He continues to pay the
+original monthly instalment thereafter. How many months earlier will
+Tshepo repay the loan?",,
+2024,P1,10.0,10.2,SEQ,signature,"10.2 Calculate the distance between town P and town T. (5)
+[8]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 9 DBE/November 2024
+
+NSC Confidential",,
+2024,P2,6.0,6.2,ALG,signature,"6.2 Given: f(x)=/6sin? x —11c0s(90° + x) +7
+Solve for x in the interval x e( ° 5 360°) if f(x)=2.
+—_ in?",,
+2024,P2,10.0,10.1,CALC,signature,"10.1 In the diagram, ARST is drawn. Line AB intersects RS and RT at A and B
+respectively such that AB || ST.
+
+R
+
+S T
+
+Prove the theorem which states that a line drawn parallel to one side of a triangle divides
+RB
+
+the other two sides proportionally, i.e. ee)
+AS BT (6)",,
+2025,P1,5.0,5.6,CALC,signature,"5.6 Determine the equation of the tangent to f at D. (3)
+
+[18]
+
+Copyright reserved Please turn over
+
+Mathematics/P1 7 DBE/November 2025
+NSC Confidential",,
+2025,P1,2.0,2.1.3,SEQ,signature,"2.1.3 Calculate the sum of the infinite series.
+
+U7",,
+2025,P1,7.0,7.3.1,FIN,signature,"7.3.1 Rajesh was unable to make the first three payments. He made his first
+repayment of R10 000 on 30 June 2024. He continued to make monthly
+repayments of R10 000 at the end of each month thereafter. How long, in
+completed months, will it take Rajesh to repay the loan from the time the
+
+loan was granted? (5)
+73.2 Calculate the value of the final payment. (4)
+[15]",,
+2025,P2,3.0,3.7,FUNC,signature,"3.7 Calculate the area of parallelogram PQRS. (3)
+
+[18]
+
+Copyright reserved Please turn over
+
+Mathematics/P2 6 DBE/November 2025
+
+NSC Confidential",,
+2025,P2,3.0,3.6,AGEO,lexicon,3.6 T isa point on QR such that PT 1 QR. Calculate the coordinates of T. (5),,
