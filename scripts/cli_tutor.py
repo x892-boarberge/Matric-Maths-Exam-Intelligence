@@ -1,8 +1,7 @@
-"""
+﻿"""
 MatricMath thin CLI tutor loop (no UI).
 Engine decides; template renderer phrases; session is logged to JSONL.
 """
-
 from __future__ import annotations
 
 import sys
@@ -17,6 +16,7 @@ from src.tutor.tutor_engine import TutorEngine
 from src.tutor.event_log import SessionLogger, read_events
 from src.tutor.n08_loader import get_library
 from src.tutor.mapping_adapter import v1_to_v2
+from src.tutor.question_loader import load_gold_2025
 
 
 PROBLEMS = [
@@ -68,32 +68,77 @@ PROBLEMS = [
 ]
 
 
-def pick_problem() -> dict:
+def pick_problem():
     print("\nMatricMath CLI Tutor")
     print("=" * 60)
     lib = get_library(force_reload=True)
-    print(f"N08 library: {lib.load_status} | misconceptions: {len(lib.by_misconception)}")
+    print("N08 library: " + str(lib.load_status) + " | misconceptions: " + str(len(lib.by_misconception)))
     print("=" * 60)
+    print("  P. Practise from 2025 real corpus")
     for i, p in enumerate(PROBLEMS, 1):
-        print(f"  {i}. {p['topic']} — {p['subtopic']}")
+        print("  " + str(i) + ". " + p["topic"] + " - " + p["subtopic"])
     print("  Q. Quit")
     while True:
-        choice = input("\nChoose problem [1-5]: ").strip().lower()
+        choice = input("\nChoose [1-5, P, Q]: ").strip().lower()
         if choice in ("q", "quit", "exit"):
             sys.exit(0)
+        if choice == "p":
+            return "__corpus__"
         if choice.isdigit() and 1 <= int(choice) <= len(PROBLEMS):
             return PROBLEMS[int(choice) - 1]
-        print("Enter a number 1-5, or Q to quit.")
+        print("Enter 1-5, P, or Q.")
+
+
+def pick_corpus_problem():
+    problems = load_gold_2025()
+    if not problems:
+        print("\nNo corpus questions with memo answers yet.")
+        print("Add rows to data/processed/memo_answers/memo_answers_2025.csv")
+        sys.exit(1)
+    print()
+    print("2025 real NSC questions (with memo answers):")
+    for i, p in enumerate(problems, 1):
+        label = p.prompt[:60].replace("\n", " ")
+        print("  " + str(i) + ". [" + str(p.topic_v2) + "] " + p.skill_id)
+        print("     " + label + "...")
+    while True:
+        choice = input("\nChoose question [1-" + str(len(problems)) + "]: ").strip()
+        if choice.isdigit() and 1 <= int(choice) <= len(problems):
+            return problems[int(choice) - 1]
+        print("Enter a number.")
+
+
+def format_topic_line(problem):
+    if problem.topic and problem.topic_v2 and problem.topic != problem.topic_v2:
+        topic_display = str(problem.topic) + " (" + str(problem.topic_v2) + ")"
+    else:
+        topic_display = str(problem.topic or problem.topic_v2 or "")
+    if problem.subtopic:
+        topic_display = topic_display + " / " + str(problem.subtopic)
+    return "Topic: " + topic_display
 
 
 def main() -> None:
     item = pick_problem()
 
+    if item == "__corpus__":
+        problem = pick_corpus_problem()
+        item = {
+            "skill_id": problem.skill_id,
+            "topic": problem.topic,
+            "subtopic": problem.subtopic,
+            "structure_type": problem.structure_type,
+            "prompt": problem.prompt,
+            "expected": problem.expected_answer,
+            "hint_correct": "Answer as you would in the exam.",
+            "_preloaded_problem": problem,
+        }
+
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    session_id = f"cli_{stamp}"
+    session_id = "cli_" + stamp
     log_dir = ROOT / "data" / "processed" / "tutor" / "logs"
     log_dir.mkdir(parents=True, exist_ok=True)
-    log_path = log_dir / f"{session_id}.jsonl"
+    log_path = log_dir / (session_id + ".jsonl")
 
     logger = SessionLogger(session_id, log_path)
     logger.emit(
@@ -101,7 +146,7 @@ def main() -> None:
         {"mode": "cli", "skill_id": item["skill_id"]},
     )
 
-    problem = Problem(
+    problem = item.get("_preloaded_problem") or Problem(
         problem_id="CLI1",
         skill_id=item["skill_id"],
         topic=item["topic"],
@@ -132,11 +177,11 @@ def main() -> None:
     )
 
     print("\n" + "-" * 60)
-    print(f"Topic: {problem.topic} ({problem.topic_v2}) / {problem.subtopic}")
-    print(f"Problem: {problem.prompt}")
+    print(format_topic_line(problem))
+    print("Problem: " + problem.prompt)
     print("-" * 60)
     print("Commands:  quit  |  answer  (ask for more help)  |  just type your attempt")
-    print(f"Note: {item['hint_correct']}")
+    print("Note: " + item["hint_correct"])
     print("-" * 60)
 
     while True:
@@ -163,18 +208,18 @@ def main() -> None:
             explicit_solution_request=explicit,
         )
 
-        print(f"\n  diagnosis:    {action.diagnosis.error_type.value}", end="")
+        print("\n  diagnosis:    " + action.diagnosis.error_type.value, end="")
         if action.diagnosis.misconception_id:
-            print(f" [{action.diagnosis.misconception_id}]", end="")
+            print(" [" + action.diagnosis.misconception_id + "]", end="")
         print()
         print(
-            f"  intervention: {action.intervention.intervention_pattern} "
-            f"[{action.intervention.provenance.value}] "
-            f"{action.intervention.n08_intervention_id or ''}"
+            "  intervention: " + action.intervention.intervention_pattern
+            + " [" + action.intervention.provenance.value + "] "
+            + str(action.intervention.n08_intervention_id or "")
         )
-        print(f"  hint level:   {action.hint_level.value if action.hint_level else '-'}")
-        print(f"  action:       {action.action.value}")
-        print(f"  tutor:        {action.tutor_message}")
+        print("  hint level:   " + (action.hint_level.value if action.hint_level else "-"))
+        print("  action:       " + action.action.value)
+        print("  tutor:        " + action.tutor_message)
 
         if action.diagnosis.error_type.value == "none":
             print("\nCorrect for this demo item. Session can end, or keep practising.")
@@ -188,12 +233,11 @@ def main() -> None:
 
     summary = logger.close()
     print("\n" + "=" * 60)
-    print(f"Session log: {log_path}")
-    print(f"SESSION_ENDED: {summary}")
-    print(f"Events: {len(read_events(log_path))}")
+    print("Session log: " + str(log_path))
+    print("SESSION_ENDED: " + str(summary))
+    print("Events: " + str(len(read_events(log_path))))
     print("=" * 60)
 
 
 if __name__ == "__main__":
     main()
-    

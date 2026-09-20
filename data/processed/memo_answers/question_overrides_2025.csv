@@ -1,0 +1,7 @@
+﻿year,paper,question_number,subquestion,correct_topic_v2,clean_prompt,clean_subtopic
+2025,P1,1,1.1.1,ALG,"Solve for x: (x+5)(x-2)=0",Quadratic equations
+2025,P1,1,1.1.2,ALG,"Solve for x: 5x^2 + 2 = -9x (correct to TWO decimal places)",Quadratic equations
+2025,P1,5,5.2,FUNC,"Write down the range of f.",Parabola
+2025,P2,5,5.2.1,TRIG,"Simplify: sin(540+x) . cos(90+x) / sin(-x)",Reduction formulae
+2025,P2,3,3.5,AGEO,"PQRS, in that order, is a parallelogram. Write down the coordinates of S.",Parallelogram proof
+2025,P2,10,10.3,EUCL,"Prove that PT is a diameter of the circle.",Angle in semicircle
