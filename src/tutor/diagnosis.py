@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+from .answer_matcher import is_correct as _graceful_is_correct
 from typing import Callable, Dict, List, Tuple
 
 from .schemas import DiagnosisResult, ErrorType
@@ -37,30 +38,7 @@ def _norm(text: str) -> str:
     return s.strip()
 
 def _is_correct(response: str, expected: str) -> bool:
-    nr = _norm(response)
-    ne = _norm(expected)
-    if not nr or not ne:
-        return False
-    if nr == ne:
-        return True
-
-    # Boxplot fixture: expected embeds summary + "iqr=N"; bare N is correct
-    m = re.search(r"iqr\s*=\s*(\d+)", ne)
-    if m and re.fullmatch(r"-?\d+", nr):
-        if nr == m.group(1):
-            return True
-
-    loose_r = re.sub(r"\bor\s*x\s*=\s*", "or ", nr)
-    loose_e = re.sub(r"\bor\s*x\s*=\s*", "or ", ne)
-    if loose_r == loose_e:
-        return True
-    parts_r = [p.strip() for p in re.split(r"\bor\b", loose_r) if p.strip()]
-    parts_e = [p.strip() for p in re.split(r"\bor\b", loose_e) if p.strip()]
-    if len(parts_r) == 2 and len(parts_e) == 2 and set(parts_r) == set(parts_e):
-        return True
-    return False
-
-
+    return _graceful_is_correct(response, expected)
 # ----- v1.1 predicates -----
 
 def _quad_sign_flip(nr: str, expected: str) -> bool:
