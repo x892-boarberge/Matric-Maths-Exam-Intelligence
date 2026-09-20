@@ -51,6 +51,7 @@ class Problem:
     structure_type: str
     prompt: str
     expected_answer: str
+    topic_v2: Optional[str] = None
 
 
 @dataclass

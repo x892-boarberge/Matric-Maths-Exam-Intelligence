@@ -60,6 +60,7 @@ class TutorEngine:
                     "attempt_number": learner_state.attempts_total + 1,
                     "skill_id": problem.skill_id,
                     "problem_id": problem.problem_id,
+                    "topic_v2": problem.topic_v2,
                     "disengagement": diseng.kind.value,
                 },
             )

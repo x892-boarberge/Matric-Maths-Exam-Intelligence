@@ -16,6 +16,7 @@ from src.tutor.schemas import LearnerState, Problem, EventType
 from src.tutor.tutor_engine import TutorEngine
 from src.tutor.event_log import SessionLogger, read_events
 from src.tutor.n08_loader import get_library
+from src.tutor.mapping_adapter import v1_to_v2
 
 
 PROBLEMS = [
@@ -104,6 +105,7 @@ def main() -> None:
         problem_id="CLI1",
         skill_id=item["skill_id"],
         topic=item["topic"],
+        topic_v2=v1_to_v2(item["topic"]),
         subtopic=item["subtopic"],
         structure_type=item["structure_type"],
         prompt=item["prompt"],
@@ -124,12 +126,13 @@ def main() -> None:
             "problem_id": problem.problem_id,
             "skill_id": problem.skill_id,
             "topic": problem.topic,
+            "topic_v2": problem.topic_v2,
             "prompt": problem.prompt,
         },
     )
 
     print("\n" + "-" * 60)
-    print(f"Topic: {problem.topic} / {problem.subtopic}")
+    print(f"Topic: {problem.topic} ({problem.topic_v2}) / {problem.subtopic}")
     print(f"Problem: {problem.prompt}")
     print("-" * 60)
     print("Commands:  quit  |  answer  (ask for more help)  |  just type your attempt")
