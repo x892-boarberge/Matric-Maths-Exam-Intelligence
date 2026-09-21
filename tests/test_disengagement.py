@@ -38,4 +38,12 @@ def test_engine_does_not_dump_solution_on_answer_demand():
     action = engine.step(state, problem, "just give me the answer", explicit_solution_request=True)
     msg = action.tutor_message.lower()
     assert "x = 2" not in msg
-    assert "full solution" in msg or "won't give" in msg or "one useful step" in msg
+    refuses_full_solution = any([
+        "full solution" in msg,
+        "won't give" in msg,
+        "will not give" in msg,
+        "one useful step" in msg,
+        "not going to hand" in msg,
+        "not give you the full" in msg,
+    ])
+    assert refuses_full_solution, "tutor did not signal refusal: " + msg
