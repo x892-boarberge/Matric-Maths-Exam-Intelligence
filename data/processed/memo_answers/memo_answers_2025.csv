@@ -1,7 +1,11 @@
 ﻿year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short
 2025,P1,1,1.1.1,algebra.quadratic.solve,"x = -5 or x = 2","Solve (x+5)(x-2)=0"
 2025,P1,1,1.1.2,algebra.quadratic.solve,"x = -0.26 or x = -1.54","Solve 5x^2+2=-9x"
+2025,P1,2,2.1.2,sequences.gp.term,"(1/2)^21","Calculate T25"
+2025,P1,5,5.1,functions.hyperbola.asymptotes,"x is not equal to 3","Write down the domain of g"
 2025,P1,5,5.2,functions.parabola.range,"y <= 8","State the range of f"
-2025,P2,5,5.2.1,trig.reduction.simplify,"-sin x","Simplify sin(540+x).cos(90+x)/sin(-x)"
 2025,P2,3,3.5,analytical_geom.parallelogram.prove,"S(15; 16)","Write down the coordinates of S"
+2025,P2,5,5.2.1,trig.reduction.simplify,"-sin x","Simplify sin(540+x).cos(90+x)/sin(-x)"
+2025,P2,5,5.5.1,trig.identity.simplify,"sin 4x","Rewrite as single ratio"
 2025,P2,10,10.3,euclidean.semicircle.prove,"PT is a diameter","Prove that PT is a diameter"
+2025,P2,11,11.3.1,euclidean.similarity.ratio,"triangle AGF is similar to triangle ABC","Prove similarity"

@@ -1,7 +1,11 @@
 ﻿year,paper,question_number,subquestion,correct_topic_v2,clean_prompt,clean_subtopic
 2025,P1,1,1.1.1,ALG,"Solve for x: (x+5)(x-2)=0",Quadratic equations
 2025,P1,1,1.1.2,ALG,"Solve for x: 5x^2 + 2 = -9x (correct to TWO decimal places)",Quadratic equations
+2025,P1,2,2.1.2,SEQ,"Calculate the value of T25. Write your answer in the form Tn = b^x.",Geometric sequences
+2025,P1,5,5.1,FUNC,"Write down the domain of g(x) = -4/(x-3) + 8.",Hyperbola
 2025,P1,5,5.2,FUNC,"Write down the range of f.",Parabola
-2025,P2,5,5.2.1,TRIG,"Simplify: sin(540+x) . cos(90+x) / sin(-x)",Reduction formulae
 2025,P2,3,3.5,AGEO,"PQRS, in that order, is a parallelogram. Write down the coordinates of S.",Parallelogram proof
+2025,P2,5,5.2.1,TRIG,"Simplify: sin(540+x) . cos(90+x) / sin(-x)",Reduction formulae
+2025,P2,5,5.5.1,TRIG,"Rewrite 16 sin x . cos^3 x - 8 sin x . cos x as a single trigonometric ratio.",Trigonometric identities
 2025,P2,10,10.3,EUCL,"Prove that PT is a diameter of the circle.",Angle in semicircle
+2025,P2,11,11.3.1,EUCL,"Prove that triangle AGF is similar to triangle ABC.",Similarity

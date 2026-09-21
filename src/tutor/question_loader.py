@@ -1,14 +1,5 @@
 ﻿"""
 Load real NSC questions from the mapped corpus + memo answers.
-
-Overrides: for rows where the mapped topic_v2 is wrong, or the OCR text
-is degraded, or the subtopic is missing, a per-year override file
-(question_overrides_YYYY.csv) supplies the correct values.
-
-Inputs:
-    data/processed/memo_answers/memo_answers_YYYY.csv
-    data/processed/memo_answers/question_overrides_YYYY.csv  (optional)
-    data/processed/mapped/YYYY/question_topic_map_YYYY_v2.csv
 """
 from pathlib import Path
 from typing import List, Optional
@@ -26,6 +17,15 @@ def _normalise(v) -> str:
     if pd.isna(v):
         return ""
     return str(v).replace(".0", "").strip()
+
+
+def _clean_topic(v) -> str:
+    if pd.isna(v) or v is None:
+        return "UNMAPPED"
+    s = str(v).strip()
+    if s.lower() in ("nan", "none", ""):
+        return "UNMAPPED"
+    return s
 
 
 def load_memo_answers(year: int) -> pd.DataFrame:
@@ -66,12 +66,19 @@ def load_year_questions(year: int, paper: Optional[str] = None) -> List[Problem]
     if paper:
         memo = memo[memo["paper"] == paper]
 
-    mapped_slim = mapped[["_q", "_s", "question_text", "topic_v2"]].rename(
+    # Include paper in the join key to avoid cross-paper collisions
+    mapped_slim = mapped[
+        ["paper", "_q", "_s", "question_text", "topic_v2"]
+    ].rename(
         columns={"question_text": "question_text_mapped",
                  "topic_v2": "topic_v2_mapped"}
     )
 
-    joined = memo.merge(mapped_slim, on=["_q", "_s"], how="inner")
+    joined = memo.merge(
+        mapped_slim,
+        on=["paper", "_q", "_s"],
+        how="inner",
+    )
 
     if len(overrides) > 0:
         joined = joined.merge(
@@ -87,17 +94,34 @@ def load_year_questions(year: int, paper: Optional[str] = None) -> List[Problem]
 
     problems = []
     for _, row in joined.iterrows():
-        topic_v2 = row["correct_topic_v2"] if pd.notna(row["correct_topic_v2"]) else row["topic_v2_mapped"]
-        prompt = row["clean_prompt"] if pd.notna(row["clean_prompt"]) else str(row["question_text_mapped"])[:500]
-        subtopic = row["clean_subtopic"] if pd.notna(row["clean_subtopic"]) else ""
+        raw_topic = (
+            row["correct_topic_v2"]
+            if pd.notna(row["correct_topic_v2"])
+            else row["topic_v2_mapped"]
+        )
+        topic_v2 = _clean_topic(raw_topic)
+
+        if pd.notna(row["clean_prompt"]) and str(row["clean_prompt"]).strip():
+            prompt = str(row["clean_prompt"])
+        else:
+            prompt = str(row["question_text_mapped"])[:500]
+
+        subtopic = (
+            str(row["clean_subtopic"])
+            if pd.notna(row["clean_subtopic"])
+            else ""
+        )
 
         problems.append(Problem(
-            problem_id=str(year) + "_" + str(row["paper"]) + "_Q" + str(row["_q"]) + "_" + str(row["_s"]),
+            problem_id=(
+                str(year) + "_" + str(row["paper"]) + "_Q"
+                + str(row["_q"]) + "_" + str(row["_s"])
+            ),
             skill_id=row["skill_id"],
             topic=topic_v2,
             subtopic=subtopic,
             structure_type="routine_calculation",
-            prompt=str(prompt)[:500],
+            prompt=prompt[:500],
             expected_answer=str(row["expected_answer"]),
             topic_v2=topic_v2,
         ))
