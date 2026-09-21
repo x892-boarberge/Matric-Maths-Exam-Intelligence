@@ -204,3 +204,81 @@ def say_praise_specific(what_was_correct, learner_id: Optional[str] = None) -> s
         return say_correct_after_struggle(learner_id=learner_id)
     template = pick(_PRAISE_SPECIFIC, learner_id, "praise_specific")
     return template.format(what=what_was_correct)
+
+
+def respond_to_disengagement(kind_value, learner_id=None, attempts=None):
+    """
+    Dispatch a disengagement kind to the right meta-library function.
+
+    kind_value: string value of DisengagementKind
+                ("answer_demand", "frustrated", "help_seeking", "none")
+    learner_id: for deterministic variant selection
+    attempts:   number of prior same-kind events in this session
+
+    Returns an empty string if the kind is not recognised.
+    """
+    repeat = attempts is not None and attempts >= 1
+
+    if kind_value == "answer_demand":
+        return say_answer_demand_repeat(learner_id) if repeat else say_answer_demand(learner_id)
+    if kind_value == "frustrated":
+        return say_frustrated_repeat(learner_id) if repeat else say_frustrated(learner_id)
+    if kind_value == "help_seeking":
+        return say_not_understanding_after_struggle(learner_id) if repeat else say_not_understanding(learner_id)
+    if kind_value == "silent" or kind_value == "none":
+        return say_silence(learner_id)
+    if kind_value == "hostile":
+        return say_hostile_input_repeat(learner_id) if repeat else say_hostile_input(learner_id)
+    if kind_value == "other_language":
+        return say_other_language_repeat(learner_id) if repeat else say_other_language(learner_id)
+    return ""
+
+
+# ---------- Hostile input ----------
+
+_HOSTILE = [
+    "I am still here. Let us come back to the question. What is your first step?",
+    "Okay. We do not have to like this problem. We do have to solve it. What do you see first?",
+    "I hear you. Let us set the frustration down and look at the question. What is it asking for?",
+    "No problem. I am not going anywhere. Show me what you have tried so far.",
+    "Fine. Let us skip the talking and look at the numbers. What is in front of you?",
+]
+
+_HOSTILE_REPEAT = [
+    "Still here. Let us focus on one small thing. What is the first line of your working?",
+    "Okay. One question. What does the problem give you?",
+    "That is fine. Let us start over. Read me the question slowly.",
+]
+
+
+def say_hostile_input(learner_id=None, context=None):
+    return pick(_HOSTILE, learner_id, "hostile")
+
+
+def say_hostile_input_repeat(learner_id=None, context=None):
+    return pick(_HOSTILE_REPEAT, learner_id, "hostile_repeat")
+
+
+# ---------- Other language / code-switching ----------
+
+_OTHER_LANGUAGE = [
+    "I hear you. Think in whatever language helps you work. Write your answer in English if you can. What is your first step?",
+    "That is fine. Use the language that helps you think. When you write the answer, use the maths language of the paper. What do you have so far?",
+    "No problem. Many learners think in their home language first. What is the question asking you to find?",
+    "Okay. Let us keep going. You can think in your language, and write the maths in English. Where does your working stop?",
+    "I understand. Let us focus on the maths. What is the first move you would write down?",
+]
+
+_OTHER_LANGUAGE_REPEAT = [
+    "Still here. Let us look at the numbers together. What does the question give you?",
+    "Okay. Take it one piece at a time. What is the first thing you notice?",
+    "That is fine. Just read me the first line of the question.",
+]
+
+
+def say_other_language(learner_id=None, context=None):
+    return pick(_OTHER_LANGUAGE, learner_id, "other_language")
+
+
+def say_other_language_repeat(learner_id=None, context=None):
+    return pick(_OTHER_LANGUAGE_REPEAT, learner_id, "other_language_repeat")

@@ -19,6 +19,8 @@ from .intervention_selector import select_intervention
 from .hint_policy import select_hint_level
 from .event_log import SessionLogger
 from .disengagement import detect_disengagement, DisengagementKind
+from . import meta_library
+from . import meta_renderer
 
 
 MASTERY_MIN_CORRECT = 3
@@ -139,27 +141,22 @@ class TutorEngine:
         message = self.phrase_renderer(ctx)
 
         # Override phrasing for disengagement (still no full solution)
-        if diseng.kind == DisengagementKind.ANSWER_DEMAND and diag.error_type != ErrorType.NONE:
-            message = (
-                "I won't give the full solution yet. "
-                "Let's take one useful step: what are you being asked to find?"
+        if diseng.kind != DisengagementKind.NONE and diag.error_type != ErrorType.NONE:
+            # Count prior same-kind events in this session
+            prior_same = sum(
+                1 for e in learner_state.session_events
+                if e.get("disengagement") == diseng.kind.value
             )
-            action_type = ActionType.HANDLE_DISENGAGEMENT
-            engine_rule = "ENG_DISENGAGE_ANSWER_DEMAND"
-        elif diseng.kind == DisengagementKind.FRUSTRATED and diag.error_type != ErrorType.NONE:
-            message = (
-                "Let's simplify. Ignore the whole problem for a moment — "
-                "what is the single quantity this question asks for?"
+            meta_message = meta_renderer.render_meta_response(
+                diseng.kind.value,
+                learner_text=learner_response,
+                learner_id=learner_state.learner_id,
+                attempts=prior_same,
             )
-            action_type = ActionType.HANDLE_DISENGAGEMENT
-            engine_rule = "ENG_DISENGAGE_FRUSTRATED"
-        elif diseng.kind == DisengagementKind.HELP_SEEKING and diag.error_type != ErrorType.NONE:
-            message = (
-                "No problem — let's slow down. "
-                "What is the single thing this question is asking you to find?"
-            )
-            action_type = ActionType.HANDLE_DISENGAGEMENT
-            engine_rule = "ENG_DISENGAGE_HELP_SEEKING"
+            if meta_message:
+                message = meta_message
+                action_type = ActionType.HANDLE_DISENGAGEMENT
+                engine_rule = "ENG_DISENGAGE_" + diseng.kind.value.upper()
 
         event = {
             "event_id": event_id,
@@ -257,6 +254,8 @@ class TutorEngine:
         if h == HintLevel.H0:
             return "What are you being asked to find in this step?"
         if h == HintLevel.H1:
+            if d.error_type == ErrorType.UNKNOWN or not d.explanation:
+                return "Think about the concept here. What rule or formula applies to this step?"
             return f"Think about the concept here. {d.explanation}"
         if h == HintLevel.H2:
             return "Try identifying the operation you need before computing."

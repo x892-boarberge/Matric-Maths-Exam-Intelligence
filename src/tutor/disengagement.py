@@ -8,7 +8,49 @@ from typing import Optional
 import re
 
 
+# Words that are clearly not English. A single hit is not enough;
+# we require 2+ markers before firing, to avoid false positives.
+SA_LANGUAGE_MARKERS = [
+    # Afrikaans - definite/indefinite articles and common words
+    "die", "n", "te", "het", "vraag", "som", "hoe", "wat",
+    "nie", "ek", "jy", "julle", "hulle", "hierdie", "daardie",
+    "baie", "klein", "groot", "maar", "ook", "nog", "want",
+    "waar", "wanneer", "hoekom", "asseblief", "dankie",
+    "verstaan", "verduidelik", "geleer", "gese", "reg",
+    "verkeerd", "maklik", "moeilik", "sommer", "net", "al",
+    # isiZulu and isiXhosa
+    "yebo", "cha", "haibo", "eish", "yoh",
+    "ngiyazi", "angazi", "ngiyabonga", "ngicela",
+    "yini", "kanjani", "kuhle", "kubi", "kodwa", "futhi",
+    "manje", "ngoba", "noma", "ndiyazi", "andazi",
+    "ndiyabulela", "ndicela", "ntoni", "njani",
+    "kwaye", "ngoku", "yinhle", "utlwisisa", "utlwa",
+    "sawubona", "sanibonani", "molo",
+    # Sesotho, Sepedi, Setswana
+    "dumela", "kea", "leboha", "kopa", "gore", "gona",
+    "fela", "nnete", "jwang", "empa", "hape", "jwale",
+    "hantle", "tseba", "utlwisisa",
+    # SA English slang
+    "eish", "haibo", "howzit", "bra", "bru", "lekker", "kiff",
+]
+
+
+def _looks_like_other_language(text: str) -> bool:
+    if not isinstance(text, str):
+        return False
+    low = text.lower()
+    hits = 0
+    for word in SA_LANGUAGE_MARKERS:
+        if " " + word + " " in " " + low + " ":
+            hits += 1
+            if hits >= 2:
+                return True
+    return False
+
+
 class DisengagementKind(str, Enum):
+    OTHER_LANGUAGE = "other_language"
+    HOSTILE = "hostile"
     NONE = "none"
     ANSWER_DEMAND = "answer_demand"
     FRUSTRATED = "frustrated"
@@ -143,5 +185,25 @@ def detect_disengagement(text: str) -> DisengagementResult:
         m = re.search(pat, s)
         if m:
             return DisengagementResult(DisengagementKind.HELP_SEEKING, m.group(0))
+
+    # Hostile or abusive input
+    HOSTILE_WORDS = [
+        "fuck", "fuk", "shit", "bullshit", "damn", "hell",
+        "stupid", "idiot", "fool", "dick", "asshole", "bastard",
+        "shut up", "screw you", "piss off",
+    ]
+    low = (text or "").lower()
+    if any(w in low for w in HOSTILE_WORDS):
+        return DisengagementResult(
+            kind=DisengagementKind.HOSTILE,
+            matched_phrase=next(w for w in HOSTILE_WORDS if w in low),
+        )
+
+    # Other South African language or code-switching
+    if _looks_like_other_language(text):
+        return DisengagementResult(
+            kind=DisengagementKind.OTHER_LANGUAGE,
+            matched_phrase="language_marker",
+        )
 
     return DisengagementResult(DisengagementKind.NONE)
