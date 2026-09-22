@@ -367,6 +367,13 @@ class TutorEngine:
         h = ctx["hint_level"]
         d = ctx["diagnosis"]
 
+        # Near-miss clarification
+        if getattr(d, "rule_id", None) == "D_NEAR_MISS":
+            learner = ctx.get("learner_response", "")
+            expected = ctx["problem"].expected_answer
+            return ("I read your answer as '" + str(learner) + "'. "
+                    "That looks close to the target. Did you mean " + str(expected) + "?")
+
         if a == ActionType.ACKNOWLEDGE_CORRECT:
             return "Good — that step is correct. Let's keep going."
         if a == ActionType.OFFER_WORKED_ANALOGUE:

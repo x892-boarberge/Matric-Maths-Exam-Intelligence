@@ -46,9 +46,9 @@ def _light_normalise(s: str) -> str:
     s = s.replace("\u2212", "-").replace("\u2013", "-").replace("\u2014", "-")
     s = s.replace("**", "^")
     s = re.sub(r"\s+", " ", s)
-    # Common learner typo: digit-zero instead of letter-o in "or"
     s = re.sub(r"\b0r\b", "or", s)
     s = re.sub(r"\b0 r\b", "or", s)
+    s = re.sub(r"[.,;!?]+\s*$", "", s)
     return s
 
 
