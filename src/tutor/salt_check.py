@@ -57,12 +57,21 @@ FORBIDDEN = [
 
 
 WARMTH_OPENERS = [
+    # Soft openers and acknowledgements
     "okay", "alright", "that is", "that's", "let's", "let us",
     "i hear", "i know", "i understand", "i am not",
     "not a problem", "no rush", "no problem",
     "fine", "right", "good", "nice",
     "very close", "nearly", "close", "almost",
     "so near", "take", "yes",
+    # Teaching verbs - direct but kind, the way a tutor speaks
+    "check", "look", "read", "notice", "remember", "notice",
+    "try", "write", "draw", "label", "mark", "name",
+    "state", "identify", "circle", "underline", "box",
+    "compare", "substitute", "simplify", "factorise",
+    # Explanatory openers for notes and worked examples
+    "use", "the ", "in this", "when ", "if ", "for ",
+    "each ", "every ", "never ", "always ", "this ",
 ]
 
 
@@ -83,9 +92,11 @@ def is_seasoned(line: str) -> Tuple[bool, str]:
     # Warmth signal
     if "?" in line:
         return True, ""
+    punct = [" ", ",", ".", ":", ";", "!", "-", "\u2014"]
     for opener in WARMTH_OPENERS:
-        if low.startswith(opener + " ") or low.startswith(opener + ",") or low.startswith(opener + "."):
-            return True, ""
+        for p in punct:
+            if low.startswith(opener + p):
+                return True, ""
     # Also allow warmth mid-line for very short lines
     for opener in WARMTH_OPENERS:
         if " " + opener + " " in low[:40]:

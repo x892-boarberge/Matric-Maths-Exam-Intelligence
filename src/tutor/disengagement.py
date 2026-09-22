@@ -48,8 +48,37 @@ def _looks_like_other_language(text: str) -> bool:
     return False
 
 
+CELEBRATION_MARKERS = [
+    "am i a genius", "i am a genius", "im a genius", "i'm a genius",
+    "i got it", "i solved it", "i got the answer", "i finally got",
+    "yes i did it", "i did it", "nailed it", "easy", "that was easy",
+    "i am the best", "im the best", "i am smart", "im smart",
+    "correct right", "how was that", "did i get it", "is that right",
+    "check me", "am i right", "yes!", "yes!!", "got it",
+]
+
+
+META_COMMENT_MARKERS = [
+    "are you real", "are you human", "are you a bot", "are you an ai",
+    "are you an a.i", "you are just an a.i", "just an ai", "just a bot",
+    "who are you", "who made you", "where did you go",
+    "where are you", "are you there", "you there",
+    "do you sleep", "do you eat", "are you a person",
+    "is this chatgpt", "is this ai", "what model are you",
+]
+
+
+def _matches_markers(text: str, markers) -> bool:
+    if not isinstance(text, str):
+        return False
+    low = text.lower()
+    return any(m in low for m in markers)
+
+
 class DisengagementKind(str, Enum):
     OTHER_LANGUAGE = "other_language"
+    CELEBRATION = "celebration"
+    META_COMMENT = "meta_comment"
     HOSTILE = "hostile"
     NONE = "none"
     ANSWER_DEMAND = "answer_demand"
@@ -204,6 +233,20 @@ def detect_disengagement(text: str) -> DisengagementResult:
         return DisengagementResult(
             kind=DisengagementKind.OTHER_LANGUAGE,
             matched_phrase="language_marker",
+        )
+
+    # Celebration - learner just succeeded
+    if _matches_markers(text, CELEBRATION_MARKERS):
+        return DisengagementResult(
+            kind=DisengagementKind.CELEBRATION,
+            matched_phrase="celebration",
+        )
+
+    # Meta-comment about the tutor
+    if _matches_markers(text, META_COMMENT_MARKERS):
+        return DisengagementResult(
+            kind=DisengagementKind.META_COMMENT,
+            matched_phrase="meta_comment",
         )
 
     return DisengagementResult(DisengagementKind.NONE)

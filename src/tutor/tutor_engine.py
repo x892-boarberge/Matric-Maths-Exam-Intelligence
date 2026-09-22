@@ -21,10 +21,11 @@ from .event_log import SessionLogger
 from .disengagement import detect_disengagement, DisengagementKind
 from . import meta_library
 from . import meta_renderer
+from . import analogue_library
 
 
 MASTERY_MIN_CORRECT = 3
-MAX_ATTEMPTS_BEFORE_HUMAN = 6
+MAX_ATTEMPTS_BEFORE_ANALOGUE = 6  # after this many real attempts, show a similar worked problem
 
 
 class TutorEngine:
@@ -68,7 +69,25 @@ class TutorEngine:
             )
 
         diag = diagnose(problem.skill_id, learner_response, problem.expected_answer)
-        learner_state.attempts_total += 1
+
+        # Count the attempt only when the learner actually attempted the maths.
+        # Celebration, meta-comment, hostile, language, silence, and pure
+        # answer-demand do not count as attempts, so they must not advance
+        # the hint ladder.
+        NON_ATTEMPT_KINDS = {
+            "celebration",
+            "meta_comment",
+            "hostile",
+            "other_language",
+            "silent",
+        }
+        is_real_attempt = diseng.kind.value not in NON_ATTEMPT_KINDS
+        # Also treat "answer_demand" as a non-attempt for ladder purposes
+        if diseng.kind.value == "answer_demand":
+            is_real_attempt = False
+
+        if is_real_attempt:
+            learner_state.attempts_total += 1
 
         if self.logger:
             self.logger.emit(
@@ -116,11 +135,21 @@ class TutorEngine:
             engine_rule = f"ENG_HINT_{hint_level.value}"
 
         if (
-            learner_state.attempts_total >= MAX_ATTEMPTS_BEFORE_HUMAN
+            learner_state.attempts_total >= MAX_ATTEMPTS_BEFORE_ANALOGUE
             and learner_state.attempts_correct == 0
         ):
-            action_type = ActionType.FLAG_FOR_HUMAN
-            engine_rule = "ENG_ESCALATE_HUMAN"
+            # Never end the session. Never label the learner.
+            # Show a simpler worked problem of the same type, then invite
+            # the learner to try the original again.
+            if analogue_library.has_analogue(problem.skill_id):
+                action_type = ActionType.OFFER_WORKED_ANALOGUE
+                engine_rule = "ENG_OFFER_ANALOGUE"
+            else:
+                # No analogue exists for this skill; keep the session open
+                # with a gentle step-down hint instead.
+                action_type = ActionType.GIVE_HINT
+                hint_level = HintLevel.H2
+                engine_rule = "ENG_STEP_DOWN_NO_ANALOGUE"
 
         if hint_level:
             learner_state.hint_history.append(hint_level)
@@ -147,16 +176,57 @@ class TutorEngine:
                 1 for e in learner_state.session_events
                 if e.get("disengagement") == diseng.kind.value
             )
-            meta_message = meta_renderer.render_meta_response(
-                diseng.kind.value,
-                learner_text=learner_response,
-                learner_id=learner_state.learner_id,
-                attempts=prior_same,
-            )
+            # The pool handles these kinds more reliably than the LLM:
+            #   celebration    - short acknowledgement, no variety needed
+            #   meta_comment   - honest brief answer, LLM drifts
+            #   other_language - LLM does not speak SA languages well
+            #   silent         - one prompt, pool is fine
+            POOL_ONLY_KINDS = {
+                "celebration",
+                "meta_comment",
+                "other_language",
+                "silent",
+            }
+
+            if diseng.kind.value in POOL_ONLY_KINDS:
+                meta_message = meta_library.respond_to_disengagement(
+                    diseng.kind.value,
+                    learner_id=learner_state.learner_id,
+                    attempts=prior_same,
+                )
+            else:
+                meta_message = meta_renderer.render_meta_response(
+                    diseng.kind.value,
+                    learner_text=learner_response,
+                    learner_id=learner_state.learner_id,
+                    attempts=prior_same,
+                )
             if meta_message:
                 message = meta_message
                 action_type = ActionType.HANDLE_DISENGAGEMENT
                 engine_rule = "ENG_DISENGAGE_" + diseng.kind.value.upper()
+
+        # Quiet struggle signal for the teacher dashboard (does not
+        # affect what the learner sees)
+        if (learner_state.attempts_total >= MAX_ATTEMPTS_BEFORE_ANALOGUE
+                and learner_state.attempts_correct == 0):
+            event_struggle = {
+                "event_id": event_id + "_struggle",
+                "timestamp": now,
+                "skill_id": problem.skill_id,
+                "attempts_total": learner_state.attempts_total,
+                "kind": "deep_struggle",
+            }
+            learner_state.session_events.append(event_struggle)
+            if self.logger:
+                self.logger.emit(
+                    EventType.ESCALATION_TRIGGERED,
+                    {
+                        "reason": "deep_struggle_logged",
+                        "skill_id": problem.skill_id,
+                        "attempts": learner_state.attempts_total,
+                    },
+                )
 
         event = {
             "event_id": event_id,
@@ -245,12 +315,18 @@ class TutorEngine:
 
         if a == ActionType.ACKNOWLEDGE_CORRECT:
             return "Good — that step is correct. Let's keep going."
-        if a == ActionType.FLAG_FOR_HUMAN:
-            return (
-                "I'm seeing a persistent difficulty here. Let's step back "
-                "and rebuild this concept from the basics. I'll flag this "
-                "for your teacher."
-            )
+        if a == ActionType.OFFER_WORKED_ANALOGUE:
+            analogue = analogue_library.get_analogue(ctx["problem"].skill_id)
+            if not analogue:
+                return "Let's try a smaller version of this problem."
+            lines = ["That has not gone well yet. Let's change the approach.",
+                     "Here is a similar problem, worked through:",
+                     "Problem: " + analogue["problem"]]
+            for step in analogue["steps"]:
+                lines.append("  " + step)
+            lines.append("Note: " + analogue["note"])
+            lines.append("When you are ready, try your problem again with this in front of you.")
+            return "\n".join(lines)
         if h == HintLevel.H0:
             return "What are you being asked to find in this step?"
         if h == HintLevel.H1:

@@ -1,6 +1,7 @@
 ﻿from .schemas import HintLevel, ErrorType
 
 HINT_ESCALATION = {
+    0: HintLevel.H0,
     1: HintLevel.H0,
     2: HintLevel.H1,
     3: HintLevel.H2,

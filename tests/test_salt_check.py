@@ -24,6 +24,12 @@ def _all_meta_lines():
         + m._CORRECT_AFTER_STRUGGLE_SHORT
         + m._OFF_TOPIC
         + m._PRAISE_SPECIFIC
+        + m._HOSTILE
+        + m._HOSTILE_REPEAT
+        + m._CELEBRATION
+        + m._META_COMMENT
+        + m._OTHER_LANGUAGE
+        + m._OTHER_LANGUAGE_REPEAT
     )
 
 

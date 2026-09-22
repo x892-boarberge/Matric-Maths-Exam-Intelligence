@@ -79,7 +79,9 @@ def test_r8_mastery_needs_multiple_correct():
     assert s.mastery_state == MasteryState.MASTERED
 
 
-def test_r9_escalation_to_human_after_repeated_failure():
+def test_r9_offer_analogue_after_repeated_failure():
+    """After 6 failed attempts, the tutor offers a worked analogue.
+    It does not end the session and does not label the learner."""
     engine = TutorEngine()
     p = _problem("trig.reduction.simplify", "Simplify", "sin theta")
     s = LearnerState(learner_id="L", skill_id=p.skill_id)
@@ -87,7 +89,9 @@ def test_r9_escalation_to_human_after_repeated_failure():
     for _ in range(6):
         a = engine.step(s, p, "zzz")
         s = a.next_state
-    assert a.action == ActionType.FLAG_FOR_HUMAN
+    assert a.action == ActionType.OFFER_WORKED_ANALOGUE
+    # The session must not be flagged for human and must not end
+    assert a.action != ActionType.FLAG_FOR_HUMAN
 
 
 def test_r10_provenance_always_set():

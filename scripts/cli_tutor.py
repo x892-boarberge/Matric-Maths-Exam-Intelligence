@@ -227,9 +227,8 @@ def main() -> None:
             if more != "y":
                 break
 
-        if action.action.value == "FLAG_FOR_HUMAN":
-            print("\nEngine flagged for human support (repeated failure). Ending session.")
-            break
+        # The session never ends because the learner is struggling.
+        # Only quit or correct answer ends it.
 
     summary = logger.close()
     print("\n" + "=" * 60)
