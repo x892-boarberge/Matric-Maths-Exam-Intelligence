@@ -13,6 +13,7 @@ from .schemas import (
     ProvenanceKind,
     InterventionSelection,
     EventType,
+    DiagnosisResult,
 )
 from .diagnosis import diagnose
 from .intervention_selector import select_intervention
@@ -22,6 +23,9 @@ from .disengagement import detect_disengagement, DisengagementKind
 from . import meta_library
 from . import meta_renderer
 from . import analogue_library
+from . import misconception_hints
+from . import llm_phraser
+from . import llm_gate
 
 
 MASTERY_MIN_CORRECT = 3
@@ -35,9 +39,11 @@ class TutorEngine:
         self,
         phrase_renderer: Optional[Callable[[Dict[str, Any]], str]] = None,
         session_logger: Optional[SessionLogger] = None,
+        use_llm_phraser: bool = True,
     ):
         self.phrase_renderer = phrase_renderer or self._default_renderer
         self.logger = session_logger
+        self.use_llm_phraser = use_llm_phraser
 
     def step(
         self,
@@ -69,6 +75,19 @@ class TutorEngine:
             )
 
         diag = diagnose(problem.skill_id, learner_response, problem.expected_answer)
+
+        # Near-miss detection: if the response is close to expected but not
+        # exact, ask for clarification instead of saying "unknown".
+        if diag.error_type == ErrorType.UNKNOWN:
+            from .answer_matcher import near_miss
+            if near_miss(learner_response, problem.expected_answer):
+                diag = DiagnosisResult(
+                    error_type=ErrorType.UNKNOWN,
+                    misconception_id=None,
+                    confidence=0.5,
+                    rule_id="D_NEAR_MISS",
+                    explanation="Response looks close to expected but not exact.",
+                )
 
         # Count the attempt only when the learner actually attempted the maths.
         # Celebration, meta-comment, hostile, language, silence, and pure
@@ -141,12 +160,27 @@ class TutorEngine:
             # Never end the session. Never label the learner.
             # Show a simpler worked problem of the same type, then invite
             # the learner to try the original again.
-            if analogue_library.has_analogue(problem.skill_id):
+            # Has this analogue already been shown in this session?
+            analogue_seen = any(
+                e.get("kind") == "analogue_shown"
+                and e.get("skill_id") == problem.skill_id
+                for e in learner_state.session_events
+            )
+
+            if analogue_library.has_analogue(problem.skill_id) and not analogue_seen:
                 action_type = ActionType.OFFER_WORKED_ANALOGUE
                 engine_rule = "ENG_OFFER_ANALOGUE"
+                learner_state.session_events.append({
+                    "kind": "analogue_shown",
+                    "skill_id": problem.skill_id,
+                })
+            elif analogue_seen:
+                # The learner has already seen the analogue. Change tack.
+                # Offer a break or a different approach.
+                action_type = ActionType.GIVE_HINT
+                hint_level = HintLevel.H2
+                engine_rule = "ENG_BREAK_OR_PIVOT"
             else:
-                # No analogue exists for this skill; keep the session open
-                # with a gentle step-down hint instead.
                 action_type = ActionType.GIVE_HINT
                 hint_level = HintLevel.H2
                 engine_rule = "ENG_STEP_DOWN_NO_ANALOGUE"
@@ -166,8 +200,28 @@ class TutorEngine:
             "action_type": action_type,
             "learner_state": learner_state,
             "disengagement": diseng.kind,
+            "learner_response": learner_response,
+            "engine_rule": engine_rule,
+            "specific_hint": (
+                misconception_hints.get_hint(diag.misconception_id, hint_level.value)
+                if diag.misconception_id and hint_level else None
+            ),
         }
-        message = self.phrase_renderer(ctx)
+        # Try the LLM phraser only when the gate says the LLM adds value.
+        # Categorical states (celebration, hostile, help-seeking, meta,
+        # language, silence, answer-demand, off-topic) use the pool
+        # directly. Only genuine maths attempts go to the LLM.
+        message = None
+        if self.use_llm_phraser and llm_gate.should_call_llm(
+            diseng.kind.value, is_real_attempt
+        ):
+            phrased = llm_phraser.phrase_response(ctx)
+            if phrased:
+                message = phrased
+                ctx["llm_used"] = True
+        if message is None:
+            message = self.phrase_renderer(ctx)
+            ctx["llm_used"] = False
 
         # Override phrasing for disengagement (still no full solution)
         if diseng.kind != DisengagementKind.NONE and diag.error_type != ErrorType.NONE:
@@ -330,12 +384,22 @@ class TutorEngine:
         if h == HintLevel.H0:
             return "What are you being asked to find in this step?"
         if h == HintLevel.H1:
-            if d.error_type == ErrorType.UNKNOWN or not d.explanation:
-                return "Think about the concept here. What rule or formula applies to this step?"
-            return f"Think about the concept here. {d.explanation}"
+            if d.misconception_id:
+                specific = misconception_hints.get_hint(d.misconception_id, "H1")
+                if specific:
+                    return specific
+            return "Think about the concept here. What rule or formula applies to this step?"
         if h == HintLevel.H2:
+            if d.misconception_id:
+                specific = misconception_hints.get_hint(d.misconception_id, "H2")
+                if specific:
+                    return specific
             return "Try identifying the operation you need before computing."
         if h == HintLevel.H3:
+            if d.misconception_id:
+                specific = misconception_hints.get_hint(d.misconception_id, "H3")
+                if specific:
+                    return specific
             return "Here is one step to try. Complete the rest yourself."
         if h == HintLevel.H4:
             return "Let's walk through this together, one step at a time."

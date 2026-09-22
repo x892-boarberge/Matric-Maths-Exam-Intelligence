@@ -94,12 +94,14 @@ def is_seasoned(line: str) -> Tuple[bool, str]:
         return True, ""
     punct = [" ", ",", ".", ":", ";", "!", "-", "\u2014"]
     for opener in WARMTH_OPENERS:
+        o = opener.rstrip()
         for p in punct:
-            if low.startswith(opener + p):
+            if low.startswith(o + p):
                 return True, ""
     # Also allow warmth mid-line for very short lines
     for opener in WARMTH_OPENERS:
-        if " " + opener + " " in low[:40]:
+        o = opener.rstrip()
+        if " " + o + " " in low[:40]:
             return True, ""
 
     return False, "no warmth signal (no question, no soft opener, no acknowledgement)"
@@ -113,3 +115,26 @@ def check_all(lines):
         if not ok:
             failures.append((line, reason))
     return failures
+
+
+def is_seasoned_hint(line):
+    """
+    Check for hints and teaching lines.
+
+    Hints are direct by design. They do not need a warmth opener. They
+    need to pass the forbidden checks (no laws, no shaming, no leaks,
+    no blame) and be non-empty.
+
+    Returns:
+        (True, "") if the hint is acceptable.
+        (False, reason) otherwise.
+    """
+    if not isinstance(line, str) or not line.strip():
+        return False, "empty line"
+
+    low = line.lower()
+    for pattern in FORBIDDEN:
+        if re.search(pattern, low):
+            return False, "forbidden phrase: " + pattern
+
+    return True, ""

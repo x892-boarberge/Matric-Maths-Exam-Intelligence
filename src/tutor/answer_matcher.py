@@ -46,6 +46,9 @@ def _light_normalise(s: str) -> str:
     s = s.replace("\u2212", "-").replace("\u2013", "-").replace("\u2014", "-")
     s = s.replace("**", "^")
     s = re.sub(r"\s+", " ", s)
+    # Common learner typo: digit-zero instead of letter-o in "or"
+    s = re.sub(r"\b0r\b", "or", s)
+    s = re.sub(r"\b0 r\b", "or", s)
     return s
 
 
@@ -175,3 +178,33 @@ def compare(response: Any, expected: Any) -> Match:
 def is_correct(response: Any, expected: Any) -> bool:
     """Convenience: True only on MATCH."""
     return compare(response, expected) == Match.MATCH
+
+
+def near_miss(response, expected, max_edits=2):
+    """
+    Return True if the response is close to the expected answer, but not
+    close enough for the matcher to accept it. Used to ask the learner
+    "did you mean ...?" instead of saying wrong.
+    """
+    def edit_distance(a, b):
+        if a == b:
+            return 0
+        if len(a) < len(b):
+            a, b = b, a
+        prev = list(range(len(b) + 1))
+        for i, ca in enumerate(a):
+            curr = [i + 1]
+            for j, cb in enumerate(b):
+                curr.append(min(prev[j + 1] + 1, curr[j] + 1,
+                                prev[j] + (ca != cb)))
+            prev = curr
+        return prev[-1]
+
+    if not isinstance(response, str) or not isinstance(expected, str):
+        return False
+    r = _strip_all_spaces(_light_normalise(response))
+    e = _strip_all_spaces(_light_normalise(expected))
+    if not r or not e:
+        return False
+    return edit_distance(r, e) <= max_edits
+
