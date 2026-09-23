@@ -17,6 +17,8 @@ from src.tutor.event_log import SessionLogger, read_events
 from src.tutor.n08_loader import get_library
 from src.tutor.mapping_adapter import v1_to_v2
 from src.tutor.question_loader import load_gold_2025
+from src.tutor.learner_store import open_store
+from src.tutor.schemas import MasteryState
 
 
 PROBLEMS = [
@@ -134,8 +136,21 @@ def main() -> None:
             "_preloaded_problem": problem,
         }
 
+    # Ask for a learner id so the session can be persisted.
+    learner_id = input("\nEnter learner id (or press Enter for 'cli_user'): ").strip()
+    if not learner_id:
+        learner_id = "cli_user"
+
+    # Open the persistent learner store.
+    store_path = ROOT / "data" / "learner_store" / "learners.db"
+    store = open_store(store_path)
+    store.load_learner(learner_id)
+    print("Learner:", learner_id, "| store:", store_path)
+
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     session_id = "cli_" + stamp
+    # Register this session against the learner
+    store.start_session(learner_id, item["skill_id"])
     log_dir = ROOT / "data" / "processed" / "tutor" / "logs"
     log_dir.mkdir(parents=True, exist_ok=True)
     log_path = log_dir / (session_id + ".jsonl")
@@ -158,12 +173,12 @@ def main() -> None:
     )
 
     state = LearnerState(
-        learner_id="cli_user",
+        learner_id=learner_id,
         skill_id=item["skill_id"],
         current_session_id=session_id,
     )
 
-    engine = TutorEngine(session_logger=logger)
+    engine = TutorEngine(session_logger=logger, learner_store=store, session_id=session_id)
 
     logger.emit(
         EventType.PROBLEM_PRESENTED,
@@ -231,6 +246,18 @@ def main() -> None:
         # Only quit or correct answer ends it.
 
     summary = logger.close()
+
+    # Close the store session and print mastery.
+    store.end_session(session_id)
+    try:
+        m = store.get_mastery(learner_id, item["skill_id"])
+        print("\n" + "=" * 60)
+        print("Mastery for", item["skill_id"] + ":", m["mastery_state"])
+        print("Sittings passed:", m["sittings_passed"])
+    except Exception:
+        pass
+    store.close()
+
     print("\n" + "=" * 60)
     print("Session log: " + str(log_path))
     print("SESSION_ENDED: " + str(summary))

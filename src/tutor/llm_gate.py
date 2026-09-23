@@ -17,11 +17,14 @@ POOL_ONLY_KINDS = {
     "help_seeking",
 }
 
+# Actions whose text must be shown verbatim, never paraphrased.
+# These carry fixed mathematical content or fixed messages.
 FIXED_ACTIONS = {
     "OFFER_WORKED_ANALOGUE",
     "OFFER_WORKED_STEP",
     "FLAG_FOR_HUMAN",
     "HANDLE_DISENGAGEMENT",
+    "ACKNOWLEDGE_CORRECT",   # was leaking into expansion lectures
 }
 
 

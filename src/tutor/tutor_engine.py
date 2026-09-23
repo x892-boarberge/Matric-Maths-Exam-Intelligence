@@ -40,10 +40,14 @@ class TutorEngine:
         phrase_renderer: Optional[Callable[[Dict[str, Any]], str]] = None,
         session_logger: Optional[SessionLogger] = None,
         use_llm_phraser: bool = True,
+        learner_store=None,
+        session_id: Optional[str] = None,
     ):
         self.phrase_renderer = phrase_renderer or self._default_renderer
         self.logger = session_logger
         self.use_llm_phraser = use_llm_phraser
+        self.learner_store = learner_store
+        self.session_id = session_id
 
     def step(
         self,
@@ -212,8 +216,9 @@ class TutorEngine:
         # language, silence, answer-demand, off-topic) use the pool
         # directly. Only genuine maths attempts go to the LLM.
         message = None
+        _action_value = action_type.value if action_type else None
         if self.use_llm_phraser and llm_gate.should_call_llm(
-            diseng.kind.value, is_real_attempt
+            diseng.kind.value, is_real_attempt, _action_value
         ):
             phrased = llm_phraser.phrase_response(ctx)
             if phrased:
@@ -343,6 +348,29 @@ class TutorEngine:
                 {"mastery_state": learner_state.mastery_state.value},
             )
             self.logger.end_attempt()
+        # Persist this attempt and update mastery
+        if self.learner_store and self.session_id:
+            try:
+                self.learner_store.save_attempt(
+                    session_id=self.session_id,
+                    learner_id=learner_state.learner_id,
+                    skill_id=problem.skill_id,
+                    response=learner_response,
+                    diagnosis_rule_id=diag.rule_id,
+                    misconception_id=diag.misconception_id,
+                    hint_level=(hint_level.value if hint_level else None),
+                    error_type=diag.error_type.value,
+                )
+                new_mastery = self.learner_store.recompute_mastery(
+                    learner_state.learner_id, problem.skill_id
+                )
+                try:
+                    learner_state.mastery_state = MasteryState(new_mastery)
+                except ValueError:
+                    pass
+            except Exception:
+                # Persistence must never crash the tutor loop.
+                pass
 
         return TutorAction(
             action=action_type,
