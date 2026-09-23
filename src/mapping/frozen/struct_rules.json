@@ -60,7 +60,7 @@
     "high"
   ],
   [
-    "<\\s*0\\b|>\\s*0\\b|≤|≥",
+    "<=|>=|<\\s*0\\b|>\\s*0\\b|at most|at least",
     "ALG",
     "medium"
   ],
