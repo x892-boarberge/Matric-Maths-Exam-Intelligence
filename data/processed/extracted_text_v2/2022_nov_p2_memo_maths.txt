@@ -1,0 +1,1117 @@
+                   NATIONAL
+               SENIOR CERTIFICATE/
+                    NASIONALE
+                SENIOR SERTIFIKAAT
+
+
+
+               GRADE 12/GRAAD 12
+
+
+
+             MATHEMATICS P2/WISKUNDE V2
+
+                  NOVEMBER 2022
+
+          MARKING GUIDELINES/NASIENRIGLYNE
+
+
+
+MARKS/PUNTE: 150
+
+
+
+
+
+                    These marking guidelines consist of 24 pages.
+                        Hierdie nasienriglyne bestaan uit 24 bladsye.
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                        2                           DBE/November 2022
+                        NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+NOTE:
+    If a candidate answers a question TWICE, only mark the FIRST attempt.
+    If a candidate has crossed out an attempt of a question and not redone the question,
+   mark the crossed out version.
+   Consistent accuracy applies in ALL aspects of the marking memorandum. Stop
+   marking at the second calculation error.
+   Assuming answers/values in order to solve a problem is NOT acceptable.
+
+
+NOTA:
+  As 'n kandidaat 'n vraag TWEE KEER beantwoord, merk slegs die EERSTE poging.
+  As 'n kandidaat 'n antwoord van 'n vraag doodtrek en nie oordoen nie, merk die
+    doodgetrekte poging.
+   Volgehoue akkuraatheid word in ALLE aspekte van die memorandum toegepas. Hou
+    op nasien by die tweede berekeningsfout.
+   Aanvaar van antwoorde/waardes om 'n probleem op te los, word NIE toegelaat nie.
+
+
+
+
+
+                  GEOMETRY/MEETKUNDE
+
+        A mark for a correct statement
+
+            (A statement mark is independent of a reason)
+      S
+               'n Punt vir 'n korrekte bewering
+
+                ('n Punt vir 'n bewering is onafhanklik van die rede)
+
+        A mark for the correct reason
+
+            (A reason mark may only be awarded if the statement is correct)
+     R
+               'n Punt vir 'n korrekte rede
+
+                ('n Punt word slegs vir die rede toegeken as die bewering korrek is)
+
+          Award a mark if statement AND reason are both correct
+      S/R
+           Ken 'n punt toe as die bewering EN rede beide korrek is
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                        3                           DBE/November 2022
+                        NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 1
+
+
+            SCATTER PLOT / SPREIDIAGRAM
+
+      /    25
+
+                        20                             votes
+                        15            of                                         stemme
+                                   Number Getal 105 98          103         108         113         118
+                                    Intelligence quotient (IQ) /
+                                     Intelligensiekwosiënt (IK)
+
+
+Popularity score (x)
+                      32   89   35    82   50    59    81   40    79    65
+Gewildheidspunt (x)
+Number of votes (y)
+                      9    22   10    21   11    15    20   12    19    16
+Getal stemme (y)
+
+1.1.1      155                                          155
+        y 
+           10
+                                                            answer         15,5              ANSWER ONLY: Full marks
+                                                                                                (2)
+1.1.2  SD  ,459                               answer
+                                                                                                (1)
+1.2     y  SD
+      = 15,5 – 4,59
+      = 10,91                                 value of y  SD
+     10 – 2 = 8 learners                          answer
+                                                                                                (2)
+1.3    a = 1,7709…                             a
+      b = 0,2243…                             b
+       yˆ  ,177  ,0 22 x                           equation
+                                                                                                 (3)
+1.4    yˆ  ,177  ,0 2272                           substitution
+                                        answer       = 17,61
+         18 votes                                                                                                 (2)
+     OR/OF
+       yˆ  17,92  18 votes                         answer
+                                                                                                 (2)
+1.5.1   Points are all scattered therefore low correlation and unrealistic    R
+        prediction./Punte is versprei daarom 'n lae korrelasie en
+        onrealistiese voorspelling.                                                             (1)
+1.5.2   r = 0,98/correlation very strong/korrelasie baie sterk         S
+     a reliable prediction/'n betroubare voorspelling                                     (1)
+                                                                                         [12]
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                        4                           DBE/November 2022
+                        NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 2
+
+
+                     OGIVEOGIVE/ OGIEF/ OGIEF
+
+              70 70
+
+              60 60
+
+                 50    /  50
+
+                 40
+              40                                frequency                                frequency Frekwensie  30
+              30
+
+                 20
+              20                                    Cumulative                 10                                    Cumulative Kumulatiewe              10
+
+                  0
+               0         5         10        15        20        25        30        35
+                      5        10        15        20        25        30        35
+                               Percentage of salary spent on fuel /
+                                   Percentage of fuel spent                             Persentasie van salaris op brandstof spandeer
+
+
+2.1   60 employees                        answer (A)
+                                                                                                      (1)
+2.2    20 x  25                         answer
+                                                                                                      (1)
+2.3   60 – 34                            34
+     = 26 employees                        answer                  ANSWER ONLY: Full marks
+                                                                                                      (2)
+2.4           100                         method
+       Salary     2400
+              7
+       Salary = R34 285,71  ANSWER ONLY: Full marks   answer
+                                                                                                      (2)
+2.5   Ogive/Cumulative frequency graph will shift to the    answer
+           right/will become steeper.
+    Ogief/Kumulatiewe frekwensie grafiek sal na regs
+           skuif/sal steiler wees.                                                                                                      (2)
+                                                                                                      [8]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                        5                           DBE/November 2022
+                        NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 3
+                                   y
+     D
+
+                                                  A(4 ; 2)
+
+
+
+                                                      α                       
+                                                                                       x
+            P           O      F            R
+
+
+                            S
+
+
+
+
+                  C(–2 ; –3)
+                                 T
+                                                               B(6 ; –4)
+
+3.1.1        2   4              4  2     mAB        OR mAB               4  6                6  4            substitution
+                                     answer     mAB  3        ANSWER ONLY: Full marks
+                                                                                             (2)
+3.1.2    tanmAB  3                       tanmAB  3
+   108, 43                          answer                   ANSWER ONLY: Full marks
+                                                                                             (2)
+3.1.3       x1  x2  y1  y 2       T           ;        
+             2     2   
+             2  6  3  4 
+      T           ;       
+             2     2                                                                   7
+                                                                            T  2   y T               7                            x      T  2 ;                                                           2
+              2                                                                           (2)
+3.1.4   5( 0)  6 y  8                          xS  0
+                  4                                       4
+               y                            yS 
+                  3                                           3
+              4 
+      S  0 ;    
+              3                                                                           (2)
+3.2   mCD mAB  3                        gradient
+       3  3 2   c OR    y   3  3 x   2 
+                                     substitution of
+        c = –9                  y  3 x  9                                                         C(–2 ; –3)
+        y  3 x  9
+                                     equation
+                                                                                             (3)
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                        6                           DBE/November 2022
+                        NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+3.3.1  5 x y6  8
+         5   8
+       y   x 
+         6   6
+                 5
+       tan mAC                                              5                 6                     tan mAC                                                               6
+    39,81                                  39,81
+        Aˆ  108, 43  39,81
+        68,62                                  Aˆ  68,62
+    DCˆA  68,62               [alt s ; DC||AB]       answer
+                                                                                              (4)
+3.3.2  P  ;3 0  and F(1,6 ; 0)              P  ;3 0 
+      Area POSC = Area FPC – Area OFS         method
+                                                   1                 1          1       4             4,6 3                  4,6 3    1,6                   2
+                 2          2       3                                                    1       4               = 6,9 – 1,07                   1,6    
+                                                   2       3               = 5,83 units2
+                                 answer
+                                                                                             (5)
+     OR/OF
+     P  ;3 0                     P  ;3 0 
+                   8  2              2  3 61     FC     2      3  0  
+                   5               5
+                 1      Area Δ PFC    PFFC sinOFˆS
+                 2
+                                                   1  23   3 61                                                                                                                                         sin39,81                          3 61                                                                                                                                                                                1                        23                                                                                                                                                                                                                                                                                           2                                                           5                                                                                                                                 5                                                                                                                                                                                                                                                                                                      sin 39,81                    2  5   5  
+                 ,690                                                    1  8  4 
+                                                                                                                                                                                                                                                                       1                                                     2                                                                      5                                                                  3                                                                                      Area Δ OFS                                                    8  4 
+                     2  5  3 
+               = ,107
+                                 method      Area POSC = 6,90 – 1,07
+                                 answer
+               = 5,83 units2                                                                                             (5)
+
+     OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                        7                           DBE/November 2022
+                        NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+
+           P     R                          O
+
+
+
+
+
+                C(–2 ; –3)
+
+                           P  ;3 0 
+      P 3;0 
+                                 method
+      Area of POSC = Area of OSCR + Area of PRC
+                                                   1  4           1                    1                       4                                1                                                                                                                  3                                                       2                                                                                                         1  3                                                                                                                                                                                         3               2                                                   1  3                                                                                                                           2                                                                   2                                                                      3                                                                                               2                       3                                2                                                               
+                    35
+                 
+                     6
+                  5,83units 2               answer
+                                                                                             (5)
+     OR/
+    OF           P     R                          O
+
+
+
+
+           W     2
+                C(–2 ; –3)
+
+
+                                             P  ;3 0      P  ;3 0                     
+
+      Area POSC = Area ROSW + Area PRC + Area    method
+    WSC
+
+                                                    1                         1                                 1                                        4                                                                                       5                                                                             1  3                                   2                       1  3                            2                                                                                                                                                                                                       2                       3      2       2     3 
+                                                                   4      1     5                                                                                            2  2   
+                 35                                          3      2     3               
+                 6
+                                 answer
+              5,83units 2                                                             (5)
+
+     OR/OF
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                        8                           DBE/November 2022
+                        NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+
+     P  ;3 0 
+                           P  ;3 0 
+                   1                                                 ˆ      Area of PSC =   (PC)(CS)sin DCA
+                   2
+
+                  1         61 
+                                     10                                  sin68,62                                                                                                                                                                                                    1         61                    2                           3                                                                                           10                                                                     sin68,62                                                                                                                                                                                                                                                                                                                                  2         3  
+               = 3,833..
+
+                    1
+      Area of POS =  (PO)(OS)
+                    2
+
+                   1     4                   3                      2     3                          1     4                                   3   
+                                                   2     3 
+               = 2
+
+      Area POSC = 3,833… + 2
+                                 method                                         2               5,83units
+                                 answer
+                                                                                             (5)
+
+
+
+                                                                                      [20]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                        9                           DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 4
+
+
+                               y
+                        K
+
+
+
+                                                                                    x
+
+                                            N(7 ; –2)
+
+
+                                M(3 ; –5)
+
+                                             L
+                      P
+
+
+4.1   P  x; y  ; N ;72  ; M;35
+       x  7            y  2
+           3             5
+        2             2
+         x   1         y   8                          x P  1   yP  8
+     P ;1  8                                                                                     (2)
+4.2.1     2           2                   2                 2             2                  2    substitution into        r  7  3   2   5  OR/OF  r  1 3   8   5                                                                                 distance formula
+        r 2  25
+                                                                                                                    2            2                   2            2                              ( x  3)  ( y  5)         ( x  3)  ( y  5)  25
+                                           r 2  25
+                                                                                                       (3)
+4.2.2         5   2   3                          substitution    mradius         
+               3  7    4                                           3  3
+                                          mradius                   4                                                  4  4    mtangent       [radius  tangent/raaklyn  radius ]
+               3                                                         4
+                                          mtangent              4                                 4                        3      2    7  c        OR     y   2       x  7 
+            3                                 3          substitution of m and
+         22                              4   22                N(7 ; –2)
+       c                                y    x 
+          3                              3    3
+           4   22
+       y    x 
+           3    3                               equation
+                                                                                                      (5)
+4.3         4                                 subst m and P       8      1  c
+            3
+             28                                value of c
+    c 
+             3
+        28     22                              answer
+         k 
+        3      3                                                                                 (4)
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       10                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+4.4.1 AB2  AM2  MB2
+
+                                                 2    AB2    t  3  2   t  5  2   5                                                         substitution into
+         t 2  6t  9  t 2  10t  25  25                                    Pythagoras
+                                          simplification (A)
+    AB   2t 2  4t  9
+
+                                                                                                       (2)
+4.4.2      4                                 substitution into
+           t 
+          22                                                                  correct formula
+         1                                  t   1
+     Minimum at t   1
+    AB   2 1                           2  4 19                          substitution
+     AB 7                                 answer
+                                                                                                      (4)
+
+     OR/OF
+
+                                          derivative = 0      4t  4  0
+                                          t   1          t   1
+     Minimum at t   1
+    AB   2 1                           2  4 19                          substitution
+                                          answer     AB 7
+                                                                                                      (4)
+
+     OR/OF
+       Length of AB   2t 2  4t  9
+
+                              2      9                   2  t  2t                                        
+                                   2 
+                                    2  7                   2   t  1                        completing of the                                                                          2                                                                           square
+                  2  t  1 2  7
+      Minimumat t 1
+                                          t   1
+    AB   2 1                           2  4 19
+                                                                           substitution     AB 7
+                                                             answer
+                                                                                                      (4)
+                                                                                              [20]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       11                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 5
+
+5.1.1      sin 360  x 
+         sin x                                +  sin x
+                                                                                                       (2)
+5.1.2                                         2         2                   substitution
+          x  coordinate                          13                   3                                                                             
+              2
+
+              3           tan x                                 method
+              2
+              3
+            
+              2                                                                                                       (3)
+
+       OR/OF
+
+
+                                               2       2
+          x  coordinate                          13                           3                    substitution                                                                            
+                  2
+              3
+           tan x 
+              2                               method
+                                                                                                       (3)
+5.1.3      cos(180  x )
+
+          cos x                                         –  cos x
+                                                                                                       (2)
+5.2             cos(90  )
+            sin( 180)  3 sin( )
+
+                 sin                          – sin        
+              sin  180    3 sin                     – 3sin
+
+             sin 
+                                           – sin
+          sin 3 sin 
+
+           sin 
+        
+          4 sin                               simplification
+
+           1
+                                           answer
+           4
+                                                                                                       (5)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       12                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+5.3        (cos x  2 sin x)(3 sin 2 x  )1  0
+          cos x  2sin x  0              or   3sin2 x 1  0         both equations
+
+                1                            1                         1          tan x                                sin 2 x              tan x  
+                2                            3                         2
+                                                                        1            ref   26,565...                      ref  19, 471...                                          sin 2 x 
+                                                                        3
+          x = 153,43° + k.180° ; k  Z        x = 9,74° + k.180°; k  Z
+                                         x = 153,43° OR
+               OR/OF                         or                                                                        x = 153,43° &333,43°
+                                         x = 9,74° & 80,26°          x = 153,43° + k.360° ; k  Z        x = 80,26° + k.180°;
+                                         + k.180° ;   k  Z
+                                         k  Z
+
+                       or
+          x = 333,43° + k.360° ; k  Z                                                               (6)
+5.4.1    LHS  cos( x  y ). cos( x  y )
+            cos x. cos y  sin x. sin y cos x. cos y  sin x. sin y                                          expansion
+            cos 2 x. cos 2 y  sin 2 x. sin 2 y                 simplification
+
+                                                        2 x. sin 2 y              square identity            1  sin                                2 x 1  sin                                             2 y   sin
+
+       1  sin 2 x.sin 2 y  sin 2 x  sin 2 y  sin 2 x.sin 2 y                                         product
+            1  sin 2 x  sin 2 y  = RHS
+
+                                                                                                       (4)
+5.4.2    1  sin 2 45  sin 2 15
+         cos( 45  15). cos( 45  15)                   identifying x and y
+         cos 60. cos 30
+              1   3 
+          2                                      substitution               2 
+
+            3
+        
+           4                                 answer
+                                                                                                       (3)
+       OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       13                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+
+        1  sin 2 45  sin 2 15                        identity
+         sin 2 15 cos 2 15 sin 2 45 sin 2 15
+                      2        2  2         cos 15                                                         2 
+                       2     1         cos 15
+                  2
+
+           2cos 2 15 1
+        
+               2
+
+           cos30
+        
+             2
+
+                                         substitution            3  1
+           
+           2   2
+
+            3                                 answer
+                                                                                                               (3)           4
+
+
+
+      OR
+
+         1  sin 2 45  sin 2 15 
+         cos 2 45  sin 2  45  30  
+                                         expansion
+              1  2                                                2                         sin 45  cos30  cos45  sin30                   
+               2                                substitution
+           1   1    3   1   1  2
+                                                                      2    2   2    2  2 
+           1    3    1   2
+                                                              2   2 2  2 2 
+           1    3    1   2
+                                                              2   2 2  2 2 
+           1   3   3  1 
+                                                          2   8   4   8 
+                                         answer
+            3                                                                                                  (3)
+           4
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       14                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+5.5.1    16 sin x. cos 3 x  8 sin x. cos x
+                                         factorisation         8 sin x. cos x 2 cos                                        2 x  1
+         4 sin 2 x cos 2 x 
+                                         4sin2x  cos2x         2 sin 4 x
+
+                                         double angle
+       OR/OF
+                                                                                                      (4)
+
+        16 sin x. cos 3 x  8 sin x. cos x
+                         2   1            1                16cos x    sin 2 x  8   sin 2 x                                            
+                       2            2                        factorisation
+                           2       1                8 2cos x  1    sin 2 x                                        
+                             2       
+         4sin2 x.cos2 x
+                                         4sin 2x  cos2x
+         2sin4x
+                                         double angle
+                                                                                                      (4)
+5.5.2    16 sin x. cos 3 x  8 sin x. cos x = 2sin4x
+       Minimum at x = 67,5°                        answer
+                                                                                                       (1)
+                                                                                               [30]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       15                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 6
+
+
+                                             y
+                                f                                                              f
+
+
+
+             B                        g         A(60° ; k)
+
+
+                                                                                         x
+ –180°             –90°                    0°             90°                  180°
+
+
+
+
+
+                                                                                                             f
+
+
+6.1      180                                answer
+                                                                                                       (1)
+6.2.1                                     answer         k   3  1,73
+                                                                                                       (1)
+6.2.2                                     x = –120°      B 120; 3 
+                                                                                                       (1)
+6.3     Range of g :         y   2 ; 2                y   2 ; 2
+        Range of 2 g ( x ) :     y   4 ; 4                answer
+                                                                                                       (2)
+      OR/OF            ANSWER ONLY: Full marks
+        Range of g : 2  y  2                      2  y  2
+        Range of 2 g ( x ) : 4  y  4                   answer
+                                                                                                       (2)
+6.4      x   65 ;  5                         x   65 ;  5
+                                                                                                       (2)
+      OR/OF
+
+        65  x  5                           65  x  5
+                                                                                                       (2)
+6.5       sin x. cos x  p
+        4 sin x. cos x  4 p
+                                       2 sin 2 x  4 p        2 sin 2 x  4 p
+                                        4 p   2          4 p   2
+                1   1                         answers      p =    or                      ANSWER ONLY: Full marks                2   2                                                                                                       (3)
+                                                                                               [10]
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       16                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 7
+                A
+
+
+
+
+
+                 B                                            2p
+
+                                                                      45°
+           x
+                                                      D
+
+   C
+
+7.1    AD2  AB2  BD 2
+
+
+                   2                               2         2                       substitution in Pythagoras      AD   5 p   2 p 
+
+      AD 2  9 p 2
+
+                                       answer      AD  3 p
+                                                                                                       (2)
+7.2       CD        3 p                       correct use of sine rule
+                  
+           sin(135  x )    sin x
+
+                                       135° – x             3 p sin 135  x       CD 
+                      sin x
+             3 p sin 135 cos x  cos 135 sin x               compound angle      CD 
+                               sin x
+             3 p sin 45 cos x  cos 45 sin x       CD 
+                              sin x
+                      2        2      
+             3 p     cos x     sin x                   special values                     2        2            CD 
+                           sin x
+                      2              3 p       cos x  sin x 
+                     2                           factorisation      CD 
+                          sin x
+             3 p  sin x  cos x       CD 
+                  2 sin x
+                                                                                                       (5)
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       17                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+7.3                 1                          correct use of area rule                                                   ˆ         Area ADC     AD  CD  sinADC
+                    2
+                    1      3 p sinx  cos x  
+                   (3 p )                                 (sin45)                    2          2 sin x    
+          1     30sin 110  cos 110            30                         sin 45
+          2          2 sin 110                       substitution in area rule
+
+        143,11m 2                            answer
+                                                                                                      (3)
+                                                                                               [10]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       18                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 8
+
+8.1
+
+                    M
+
+                                       2
+                                     1
+                                           64°
+
+
+                                                    1  N                         O
+                                                    2
+                    S            1  2
+
+
+                                   1
+
+                                   2
+                      R
+                                    P
+
+
+8.1.1        Pˆ 116         [opp s of cyclic quad/teenoorst. e van kvh]    S  R
+                                                                                                         (2)
+8.1.2     Mˆ 1  64  90  [ in semi-circle/ in halwe sirkel]          R
+         Mˆ1 26                                 S
+                                                                                                         (2)
+8.1.3      Oˆ1 52       [ at centre = 2 x  at circumference/midpts.    S R
+                     = 2 x omtreks. ]
+                                                                                                         (2)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       19                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+8.2
+                           A
+
+
+
+
+
+                                      E
+
+
+                 D
+                                                 H
+
+                                     G
+
+
+
+
+
+         B
+
+                                            F
+                                              C
+
+
+
+8.2.1    Midpt theorem/Midpt. Stelling                      R
+                                                                                                         (1)
+      OR/OF
+
+         Converse prop intercept theorem                     R
+                                                                                                         (1)
+8.2.2   BG = 2DE or 6x – 2           [Midpt theorem/Midpt. stelling]     S  R
+
+      BG = 6x – 2
+                                           S R
+      GH  FC                                        [line || one side of  OR
+      BG  BF
+                                      prop theorem; FG || CH /
+                                           lyn || een sy v.  ]
+          x  1   1
+                                              equation into x        6 x  2  4
+
+         4x + 4 = 6x – 2
+
+         2x = 6
+
+          x = 3                                   answer
+                                                                                                         (6)
+
+      OR/OF
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       20                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+       BF  BG           =               [line || one side of  OR prop theorem; FG || CH /
+       FC  GH                                S  R
+                              lyn || een sy v. ]
+
+       AE  DE           =         [ADE ||| ABG]
+      AG  BG
+                                           S R
+      BG = 4x + 4
+        1   3 x  1
+         =
+         2   4 x  4                                           equation into x
+       4x + 4 = 6x – 2
+
+      x = 3
+                                           answer
+                                                                                                         (6)
+
+
+
+
+                                                                                                [13]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       21                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 9
+
+9.1
+
+
+
+
+
+                           O
+
+                  A          1 2
+                          D        B
+
+
+
+
+9.1.1     Construction:
+       Draw OA and OB                             construction
+          In ADO and BDO
+      OA = OB                        [radii/radiusse]
+      OD = OD                 [common side/gemeenskaplike sy]                                            first pair of sides
+      AD = DB                      [given/gegee]              other 2 pairs
+     ΔADO ΔBDO              [S;S;S]                 R
+      ADB is a straight line
+                                           R
+      Dˆ 1  Dˆ 2             ΔADO  ΔBDO
+      OD AB                 [s on a str line/e op 'n reguitlyn]
+                                                                                                         (5)
+
+
+      OR/OF
+          Construction:
+       Draw OA and OB                             construction
+          In ADO and BDO
+      AD = DB                      [given/gegee]               first pair of sides
+             ˆ    ˆ      A  B                     [s opp; s sides /e teenoor
+                                         gelyke sye]
+                                           other 2 pairs
+      OA = OB                        [radii/radiusse]
+     ΔADO ΔBDO             [S;;S]                 R
+      ADB is a straight line
+                                           R
+      Dˆ 1  Dˆ 2             ΔADO  ΔBDO
+      OD AB                 [s on a str line/e op 'n reguitlyn]                       (5)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       22                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+9.2
+                                     B
+
+
+   G
+                            E
+                                           T
+                                                             F
+
+
+
+                                   O
+
+
+
+
+
+                                 P
+                                                     S
+
+9.2.1   OTˆG 90                       [line from centre to midpt of chord/ S  R
+                                          midpt.    sirkel;   midpt.   koord]
+      OBˆG 90                      [tan  radius/raaklyn  radius]                                           S  R
+      OTˆG  OBˆG  90
+      OTBG is a cyclic quadrilateral [line subtends equal s OR      R
+                                         converse s in the same segment/
+                                            lyn onderspan gelyke e]
+                                                                                                        (5)
+9.2.2        Sˆ  BTˆG                      [corresp s; GF || PS /          S  R
+                                       ooreenk. s; GF || PS]
+        But BTˆG  GOˆB           [s in the same segment/e in dies.   S  R
+                                         sirkelsegment ]
+     GOˆB  Sˆ                                                                                                        (4)
+                                                                                                [14]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       23                          DBE/November 2022
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 10
+
+   A                            S                                               R
+                                              3                                          2                     1                                        1                                                                   2
+
+
+                                              T                                                                3                                                             1                                                              2
+                                                                       2
+                                        1 2
+                                                                       1  Q                         D                                          3
+                  K                         2  3
+                                                     1
+                                       C
+                                        1 2
+                                  P
+
+10.1           Pˆ1  Qˆ1                  [tan-chord theorem/tussen raaklyn  S
+                                  en koord]
+                Sˆ1  Qˆ1  Qˆ 2              [ext  of cyclic quad/buite v. kvh]   S / R
+      Sˆ1   Pˆ1  Qˆ 2
+               Tˆ2  Rˆ 2  Qˆ 2            [ext  of /buite v.  ]         S
+           but Pˆ1  Rˆ 2             [given/gegee]
+               Tˆ2   Pˆ1  Qˆ 2                            S
+      Sˆ1  Tˆ2  Pˆ1  Qˆ 2
+                                                                                                     (4)
+10.2        In  ASD and ACR                        identifying 's
+             Aˆ  Aˆ              [common /gemeenskaplike ]      S
+                Sˆ1  Tˆ2                 [proven/reeds bewys]
+               Tˆ2  Cˆ 2                       [alt s; QS || CA/verw. e; QS || CA  S / R
+              ]                                          S
+      Sˆ1  Cˆ 2
+                                          S
+            Dˆ1  Rˆ 1              [sum of s in ∆/e v. ∆]
+       ASD  ||| ACR
+        AD  AS
+                        [corresponding  sides  in  proportion/
+        AR  AC
+                             ooreenstemmende sy in dies. verhouding]
+                                                                                                     (5)
+       OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P2/Wiskunde V2                       24                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+           In  ASD and ACR                         identifying 's
+             Aˆ  Aˆ            [common /gemeenskaplike ]       S
+                Sˆ1  Tˆ2               [proven/gegee]
+               Tˆ2  Cˆ 2                  [alt s; QS || CA/verw. e; QS || CA]    S/R
+      Sˆ1  Cˆ 2                               S
+       ASD  ||| ACR     [;;]                   R
+        AD  AS
+                      [corresponding sides in proportion/
+        AR  AC
+                            ooreenstemmende sy in dies. verhouding]
+
+                                                                                                     (5)
+10.3
+        AS  SD                              S
+                                [ ASD  ||| ACR ]
+       AC  CR
+
+           AC  SD
+     AS 
+             CR
+
+        AS  CT
+                              [line  || one side of  OR prop theorem;  S  R
+       AR  CR
+                         TS || CA/lyn || een sy v.  ]
+
+           AR  CT
+      AS 
+              CR
+
+        AC  SD  AR  CT                                         equating
+          CR     CR
+
+      AC  SD  AR  CT
+                                                                                                     (4)
+                                                                                             [13]
+
+                                                TOTAL/TOTAAL: 150
+
+
+
+
+
+Copyright reserved

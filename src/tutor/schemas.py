@@ -1,4 +1,4 @@
-﻿from dataclasses import dataclass, field
+from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional, List, Dict, Any
 
@@ -62,6 +62,7 @@ class LearnerState:
     mastery_state: MasteryState = MasteryState.NOT_STARTED
     attempts_total: int = 0
     attempts_correct: int = 0
+    consecutive_fails: int = 0
     hint_history: List[HintLevel] = field(default_factory=list)
     error_history: List[str] = field(default_factory=list)
     current_session_id: str = ""

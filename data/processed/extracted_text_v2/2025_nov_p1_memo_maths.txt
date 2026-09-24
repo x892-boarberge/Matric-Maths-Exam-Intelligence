@@ -1,0 +1,1062 @@
+                   NATIONAL
+               SENIOR CERTIFICATE/
+                NASIONALE SENIOR
+                    SERTIFIKAAT
+
+
+
+               GRADE 12/GRAAD 12
+
+
+
+             MATHEMATICS P1/WISKUNDE V1
+
+                  NOVEMBER 2025
+
+          MARKING GUIDELINES/NASIENRIGLYNE
+
+
+
+MARKS/PUNTE: 150
+
+
+
+
+
+                    These marking guidelines consist of 21 pages.
+                        Hierdie nasienriglyne bestaan uit 21 bladsye.
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        2                           DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+NOTE:
+•    If a candidate answers a question TWICE, only mark the FIRST attempt.
+•   Consistent Accuracy applies in all aspects of the marking guidelines.
+
+LET WEL:
+•   Indien 'n kandidaat 'n vraag TWEE keer beantwoord, sien slegs die EERSTE poging na.
+•   Volgehoue akkuraatheid is DEURGAANS op ALLE aspekte van die nasienriglyne van
+    toepassing.
+
+QUESTION 1/VRAAG 1
+
+ 1.1.1       ( x + 5 )( x − 2 ) = 0
+                                   ✓ x = − 5           x = − 5  or  x = 2
+                                   ✓ x = 2
+                                                                                               (2)
+ 1.1.2     5 x 2 + 2 = − 9 x
+                     2                           ✓ standard form          5 x + 9 x + 2 = 0
+
+                                   2       −9     ( 9                                ) − 4 ( 5 )( 2 )                ✓ substitution into the
+           x =
+                    2 ( 5 )                                          correct formula
+       −9   41
+           x =
+                10
+           x = − 0,26  or  x = − 1,54                ✓ answer
+                                   ✓ answer
+                                                                                               (4)
+ 1.1.3     8 x 2  2 x
+          8 x 2 − 2 x  0                      ✓ standard form
+         2 x ( 4 x − 1)  0
+                   1                      ✓ critical values/factors        CV: 0   ;
+                   4
+
+
+
+                 0
+
+
+                     1
+           x  0  or  x                      ✓✓ answer
+                     4
+                                                                                               (4)
+ 1.1.4      2.2 2 x − 9.2 x + 4 = 0
+                        x         x                                        ✓factors            (2.2 − 1)(2 − 4) = 0
+                     x  1                               x          2 =              or  2 = 4
+              2
+          2 x = 2 − 1              2 x = 2 2            ✓ both equations
+                                   ✓ answer           x = − 1                 x = 2
+                                   ✓ answer
+                                                                                               (4)
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        3                           DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+       OR/OF                               OR/OF
+            2.2 2 x − 9.2 x + 4 = 0
+           Let k = 2 x
+          2 k 2 − 9 k + 4 = 0
+              ( 2 k − 1)( k − 4 ) = 0                                                              ✓factors
+             1
+           k =   or k = 4
+             2
+                         x  1          x       2 =    or 2 = 4                   ✓ both equations
+                2
+      x = −1 or  x = 2                   ✓ answer
+                                   ✓ answer
+                                                                                               (4)
+ 1.1.5             1       1
+              + 2 =
+               x        x
+
+                                               2                        2              1           1                    + 2  =                     ✓ squaring both sides                                                   x           x                        
+           1     1
+            + 2 =
+             x      x
+           1   1
+            =  − 2                       ✓ isolation of surd
+             x   x
+              1   2    1     2               =   − 2                    ✓ squaring both sides only                            
+               x      x                                                 after isolation of surd
+          1   1   4
+          =   2 −  + 4
+           x   x   x
+          1   5
+                   2 −  + 4 = 0
+           x   x
+          4 x 2 − 5 x + 1 = 0                     ✓ standard form
+           (4 x − 1)( x − 1) = 0
+              1
+             x =    or  x  1                                   ✓ answer with selection              4
+                                                                                               (5)
+       OR/OF                               OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        4                           DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+ 1.1.5             1       1
+              + 2 =
+               x        x
+              1
+           Let    = k
+                 x
+            k + 2 = k
+                              2                        ✓ equation           k + 2 = k
+                                   ✓ squaring both sides
+           k 2 − k − 2 = 0                                   ✓ standard form
+               ( k − 2)( k + 1) = 0
+
+       k = 2  or  k = − 1
+
+           1                    1
+            = 2            or     − 1                                   ✓ substitution             x                       x
+         2  x = 1
+          4 x = 1
+               1
+      x =                                   ✓ answer with selection               4
+                                                                                               (5)
+ 1.2       x = y + 2      …..(1)                  ✓ x = y + 2
+         5 xy = x 2 + 6   …..(2)                  ✓ 5 xy = x 2 + 6
+                                           2                  ✓ substitution          5 ( y + 2 ) y = ( y + 2 ) + 6
+         5 y 2 + 10 y = y 2 + 4 y + 4 + 6
+         4 y 2 + 6 y − 10 = 0
+                    2                           ✓ standard form         2 y + 3 y −=5  0
+              ( 2 y + 5 )( y − 1) = 0
+               5
+           y = −    or  y = 1                                                           ✓y-values               2
+              1
+           x = −   or  x = 3                    ✓ x-values
+              2                                                                                               (6)
+
+       OR/OF                                           OR/OF
+            y = x − 2    …..(1)                                   ✓ y = x − 2
+         5 xy − 6 = x 2 …..(2)                                                                   2                                   ✓ 5 xy − 6 = x
+
+         5 x ( x − 2) − 6 = x 2                    ✓ substitution
+          5 x 2 − 10 x − 6 = x 2
+                     2                           ✓ standard form          4 x − 10 x − 6 = 0
+          2 x 2 − 5 x − 3 = 0
+           (2 x + 1)( x − 3) = 0
+                1             x = −    or  x = 3                               ✓x-values
+                2
+                5                        ✓ y-values             y = −    or  y = 1
+                2                                                                          (6)
+                                                                                       [25]
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        5                           DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 2
+
+ 2.1.1       (10 + t ) + ( t − 2 ) + ( t + 4 )
+                  t − 2     t + 4             =                         ✓ equating the ratios
+                  t + 10    t − 2
+               ( t − 2 ) 2 = ( t + 4 )( t + 10 )                 ✓ cross multiplication
+                  2                2                      ✓ expansion                  t − 4t + 4 = t + 14t + 40
+         −18t = 36                                                                         (3)
+     =t  − 2
+ 2.1.2     8 ; − 4 ; ...                                        ✓8 and − 4
+            −4    1
+            r =   = −                                              ✓r             8    2
+
+                      1  24
+         T25 = 8  −  
+                      2 
+                    1  21                − 21                − 7                           2 )   or T25 = ( 8 )   or      ✓ answer in exponential         T25 =     or T25 = (
+                    2                                                           form
+                             −3                            −1
+         T25 = (128 )   or T25 = ( 2 097 152 )                                                                                               (3)
+               a
+ 2.1.3     S =
+              1 − r
+                  8
+        S=                        1                                         ✓substitution              1 −−                          
+                        2 
+              16
+        S=   = 5,33                     ✓ answer              3
+                                                                                               (2)
+ 2.2.1    T14 − T6
+         = 4  8
+                                                 ✓✓answer         = 32
+                                                                                               (2)
+       OR/OF                               OR/OF
+        T14 − T6
+                                   ✓ subs         = ( 4 (14 ) − 1) − ( 4 ( 6 ) − 1)
+         = 55 − 23
+         = 32                          ✓ answer
+                                                                                               (2)
+                                           OR/OF
+       OR/OF
+        T14 − T6
+         = ( 4 ( k + 13 ) − 1) − ( 4 ( k + 5 ) − 1)             ✓ subs
+         = 4 k + 51 − ( 4 k + 19 )
+         = 32                          ✓ answer
+                                                                                               (2)
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        6                           DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+ 2.2.2     n = 118 − k                       ✓ number of terms
+
+        T117 = 467                        ✓ last term
+                118 − k          S118 − k =           4 k −+1  467               ✓ substitution
+                  2
+          26 675 = (118 − k )  2 k + 233
+         26 675 = 236k + 27494 − 2k 2 − 233k
+                     2                                             ✓standard form          2 k − 3 k − 819 = 0
+               ( k − 21)(2 k + 39) = 0
+                        39
+      k = 21 or k −                             ✓answer with selection
+                         2
+                                                                                               (5)
+       OR/OF                               OR/OF
+
+          n = 118 − k                       ✓ number of terms
+
+                118 − k
+          S118 − k =           2(4 k − 1) + (118 − k − 1)(4)        ✓ substitution                  2
+                 118 − k          26 675 =           8k − 2 + 468 − 4 k 
+                    2                                                                ✓simplification
+         53 350 = (118 − k )  4 k + 466 
+         53 350 = 472k + 54 988 − 4k 2 − 466k
+         4k 2 − 6k − 1638 = 0                   ✓ standard form
+          2 k 2 − 3 k − 819 = 0
+               ( k − 21)(2 k + 39) = 0
+                        39                           ✓answer with selection      k = 21 or k −
+                         2                                                                                               (5)
+       OR/OF
+         T1 = 3   T2 = 7
+          S117 − S k −1 = 26 675
+               n          S117 =    2 a + ( n − 1) d 
+               2
+               117            =       2(3) + (116)4 
+                2
+                                   ✓ 27 495            = 27 495
+       S k −1 = 27 495 − 26 675 = 820             ✓ difference
+                n          820 =    2(3) + 4 n − 4                                 ✓substitution
+                2
+          0 = 2 n 2 + n − 820                    ✓ standard form
+            (2 n + 41)( n − 20) = 0
+       n = 20
+    −=k  1  20
+             k = 21                                     ✓answer with selection
+                                                                                               (5)
+                                                                                        [15]
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        7                           DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 3
+
+ 3.1       36  ; 71  ; 104  ;  135    ;  164
+
+             35    33    31    29                                                                       ✓first differences
+
+
+               – 2
+
+        T5 = 164                                    ✓ answer          (2)
+ 3.2      2 a = − 2                                    ✓ 2 a = − 2
+         a = − 1
+         3 ( −1) + b = 35                                    ✓ 3 ( −1) + b = 35
+         b = 38
+     −+1  38 + c = 36
+                             ✓1−+ 38 + c = 36
+          c = − 1                                                                                               (3)
+           nT = − n 2 + 38n − 1
+ 3.3         − 38         n =     = 19                       ✓ method
+               2( − 1)
+
+                                    ✓ n
+        T19 = −(19) 2 + 38(19) −=1  360               ✓ answer
+                                                                                               (3)
+
+                                             OR/OF       OR/OF
+        T / n = −2 n + 38 = 0                     ✓ method
+      n = 19                          ✓ n
+
+        T19 = −(19) 2 + 38(19) −=1  360               ✓ answer
+                                                                                               (3)
+
+ 3.4      n + 3                            ✓ method            = 19
+          2
+         n + 3 = 38
+         n = 35                                    ✓ answer
+                                                                                               (2)
+       OR/OF
+        − n 2 + 38 n −=1  104
+                  2                             ✓ method         n − 38 n + 105 = 0
+             ( n − 35 )( n − 3 ) = 0                                    ✓ answer
+         n = 35                                                                                               (2)
+                                                                                        [10]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        8                           DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 4
+                                     y
+
+
+
+
+                                                        f
+
+
+
+                                                                                                   x
+                 O       A
+
+                                                                     (3 ; t)
+
+ 4.1       t = log 1 3
+                       3
+              t = − 1                               ✓ answer       (1)
+
+ 4.2   A (1; 0 )                              ✓ answer       (1)
+
+ 4.3        f ( x ) = log 1 x
+                              3
+         y = log 1 x
+                        3
+         x = log 1 y                             ✓ swopping
+                        3
+               1  x     − x         y =              = 3                           ✓ answer                
+               3                                                                                                (2)
+
+ 4.4     y = 0                               ✓ answer
+                                                                                               (1)
+
+
+                     y4.5
+           (−1 ; 3)
+
+                          f −1
+
+                                       ✓ decreasing                    (0 ; 1)
+                                                                          exponential shape
+                                                                       with asymptote
+                 O                                          x       y = 0
+                                       ✓ y-intercept (0 ; 1)
+
+                                       ✓ any point
+
+ 4.6     (4 ; 3) is a point on h
+
+         0  y  3    or y (0 ; 3)                    ✓✓ answer
+                                                                                               (2)
+                                                                                        [10]
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        9                           DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 5
+
+                   y
+                        g
+
+
+                                  P
+
+                                                                     g
+                                         f                                 D(5 ; 6)
+
+
+
+
+
+                                                                                                              x
+   M   O                       T
+
+
+
+
+ 5.1       x  R , x  3                         ✓ answer
+                                                                                               (1)
+ 5.2       y  8                            ✓ answer
+                                                                                               (1)
+ 5.3.1    3  x  5  OR/OF x ( 3;5                ✓✓ answer
+                                                                                               (2)
+ 5.3.2     x  1  or  x  5 OR/OF x−(    ;1) or x ( 5;  )    ✓ x  1
+                                    ✓ x  5
+                                                                                               (2)
+ 5.4      y = a ( x − 3) 2 + 8                       ✓ p and q values
+
+        6 = a (5 − 3) 2 + 8                       ✓ substitution (5 ; 6)
+
+     −=2  4a
+
+               1
+      a = −
+               2
+
+              1          2          y = −   ( x − 3) + 8
+              2
+
+              1    2          y = −   ( x − 6 x + 9) + 8
+              2                           ✓ simplification
+
+              1   2      7          y = −  x + 3 x +
+              2        2                                                                 (3)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       10                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+ 5.5          1   2      7          y = −  x + 3 x +
+              2        2
+
+           x 2 − 6 x − 7 = 0                        ✓ solve for x
+              ( x − 7)( x + 1) = 0
+
+          x = 7    or   x = −1                    ✓ x-values
+
+       M(– 1 ; 0)                                    ✓ coordinates of M
+            − 4
+         0 =    + 8                                    ✓ solve for x              x − 3
+        − 8 x + 24 = − 4
+
+            7
+          x =
+            2                                    ✓ x-value
+               7    
+       T     ; 0 
+               2    
+
+
+              7     9
+      MT =  + 1 =  = 4,5                    ✓ MT
+              2     2                                                                   (6)
+
+
+ 5.6             1   2      7                 f ( x ) = −  x + 3 x +
+                2        2
+                                    ✓  f /( x ) = −+x  3                f /( x ) = −+x  3
+      m = f /(5)
+                                    ✓ m = f /(5)        = −+5  3
+        = −2
+
+         6 = − 2(5) + c
+          c = 16
+
+      y = − 2 x + 16                        ✓ answer
+                                                                                               (3)
+                                                                                        [18]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       11                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 6
+                                                       y
+                                                                                                   f
+
+                                                                         g
+
+
+
+
+
+                            O                                                                     x
+
+
+
+                                                 f
+
+
+
+
+
+ 6.1    (–p ; 0)                            ✓ (–p ; 0)
+                                                                                               (1)
+ 6.2    g ( x ) = x + c
+                                    ✓ q = 1 + c        q = 1 + c
+                                                                   a               a                          ✓  f ( x ) =    + 1 + c              f ( x ) =    + 1 + c                                                 x + c                x + c
+
+        Point (0 ; c)
+            a
+        c =    + 1 + c
+          0 + c
+            a
+    −=1
+             c
+       a = −c
+
+        Point (3 ; 3 + c)
+              a                                                    a       3 + c =    + 1 + c                       ✓ 3 + c =    + 1 + c
+             3 + c                                                 3 + c
+
+             − c
+       3 + c =    + 1 + c
+             3 + c
+        9 + 6 c + c 2 = −+c  3 + 4 c + c 2
+        3c = − 6
+        c = − 2
+        a = 2                             ✓ a = 2
+        q = − 1                             ✓ q = – 1
+
+               2              f ( x ) =    − 1
+                x − 2                                                                                               (5)
+
+      OR/OF                                             OR/OF
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       12                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+        0 = x + c
+      x = − c
+                                    ✓ q = 1 + c
+        q = 1 + c
+                                                                   a                                    ✓  f ( x ) =    + 1 + c
+               a                                                        x + c              f ( x ) =    + 1 + c                                                                   a                x + c                                    ✓ 3 + c =    + 1 + c
+              a                                                  3 + c
+       3 + c =    + 1 + c
+             3 + c
+            a
+        2 =
+           3 + c
+       a = 6 + 2 c
+
+           6 + 2 c
+         y =     + 1 + c
+             x + c
+          6 + 2 c
+        c =     + 1 + c
+           0 + c
+           6 + 2c
+    −=1
+               c
+    −=c  6 + 2 c
+      c = − 2                           ✓ a = 2
+                                    ✓ q = – 1           a = 2
+           q = − 1
+                                                                                               (5)
+                   2         f ( x ) =    − 1
+                    x − 2
+ 6.3    Translation of 1 unit down                  ✓✓ answer
+                                                                                               (2)
+
+      OR/OF                                   OR/OF
+         Translation of 1 unit to the right                ✓✓ answer
+                                                                                               (2)
+                                                                                               [8]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       13                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 7
+
+ 7.1                         n      A = P (1 + i )
+                                    ✓ substitution into
+      A = 40 000 (1 + 7,8% ) 5                                          correct formula
+      A = R58 230,94                       ✓ answer
+                                                                                               (2)
+ 7.2                          n
+             x  (1 + i ) − 1                                   F =
+                              i                         ✓ i
+                                                0,058  24                     ✓ substitution into
+            2 300   1 +         − 1                                    correct formula                            4             0,058         F =                    1 +                                                                                                                   1
+                     0,058                 4             ✓ future value ×(1 + i )
+                      4
+        F = R66 411,60                                    ✓ answer
+                                                                                               (4)
+      OR/OF                                  OR/OF
+                                                0,058  25                     ✓ i
+            2 300   1 +         − 1                 ✓ substitution into                            4                F =                    − 2300                            correct formula
+                     0,058
+                      4                      ✓ – 2300
+       F = R66 411,60                                    ✓ answer
+                                                                                               (4)
+ 7.3.1   A = P (1 + i )n
+                            0,068  3       A = 900 000 1 +                                    
+                             12  
+         = R915 386,86                                  ✓answer
+
+              x 1 − (1 + i ) − n                                    P =
+                               i
+                                                                                               − n                                          0,068 
+                    10 000 1 −  1 +         
+                                         12               ✓ substitution into         915 386,86 =
+                              0,068                                                                           correct formula
+                             12
+                             − n
+              0,068 
+            1 +         = 0,4812...                  ✓ correct use of logs
+               12  
+     −=n  log1,005... 0,4812...
+         n = 129,419... months                    ✓ answer of n
+      132,419 months since loan was granted
+                                    ✓ final answer      133 months since loan was granted
+                                                                                               (5)
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       14                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+                                                                        − 0,419...                                0,068 
+            10 000 1 −  1 +                           ✓ substitution
+ 7.3.2                        12                      ✓ n       P =
+                       0,068
+                       12
+         = R4 173,55…                      ✓ balance
+                                            0,068 1
+          Final payment = 4173,55...  1 +        = R 4197,21    ✓ final payment
+                                             12                                                                                                 (4)
+
+      OR/OF                                  OR/OF
+                               0,068 129      A = 915 386,86 1 +                                       
+                                12  
+         = R1 897 482,712                                ✓answer
+
+                                                  0,068 129    
+            10 000   1 +         − 1
+                            12                F =
+                     0,068
+                     12
+                                    ✓ answer         = R1 893 309,16
+
+         Balance after 129 months = R4 173,552                  ✓balance
+
+                                           0,068 1
+          Final payment = 4173,552  1 +        = R4197,21        ✓final payment
+                                            12                                              (4)
+
+
+                                                                                        [15]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       15                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 8
+
+ 8.1              f ( x ) = − 2 x + 3
+                                     /               f ( x + h ) − f ( x )                   f   ( x ) = lim                              h →0                         ✓ f ( x + h )                          h
+                  −2( x + h ) + 3 −−( 2 x + 3)                                                                      ✓substitution              = lim
+                             h → 0         h
+                  − 2 h
+              = lim                                              ✓simplification
+                              h → 0  h
+              = lim ( − 2 )
+                   h→ 0
+                                                         ✓answer              = − 2
+                                                                                               (4)
+
+        OR/OF                                 OR/OF
+                     f ( x ) = − 2 x + 3
+                   f ( x + h ) = − 2( x + h ) + 3                   ✓ f ( x + h )
+                   f ( x + h ) − f ( x ) = − 2 x − 2 h + 3 + 2 x − 3 = − 2 h                                                                     ✓simplification
+                                     /               f ( x + h ) − f ( x )                   f   ( x ) = lim
+                              h →0      h
+                  − 2 h
+              = lim                                              ✓substitution
+                              h → 0  h
+
+              = lim ( − 2 )
+                   h→ 0
+              = − 2                                      ✓answer
+                                                                                               (4)
+                                 4 + 2 x                      ✓ − 12x 3 8.2.1     g ( x ) = −3 x
+                                    /                3                       ✓ 2          g  ( x ) = −12 x + 2                                                                                               (2)
+
+ 8.2.2         2 x 4 + 1
+                                                                                                                       2            y =      2                           ✓ 2x                 x
+                                                                                                                 2                         2      2                        ✓ x−           y = 2 x + x−
+                                     ✓ derivative first           dy             −3            = 4 x − 2 x                                            term
+           dx                                     ✓ derivative second
+                                                                  term
+                                                                                               (4)
+                                                                                        [10]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       16                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 9
+                                                           y  D
+
+
+
+
+                                                                                                                                x
+                       A    O          B                         C
+
+
+
+
+                                                                                                                                                         f
+
+
+
+
+                                                               E
+ 9.1        f ( x ) = x 3 − 8 x 2 + 5 x + 14
+                             /           2                         ✓  f  /( x )              f  ( x ) = 3 x − 16 x + 5 = 0
+          (3 x − 1)( x − 5) = 0                      ✓  f  /( x) = 0
+           1
+         x =   or x = 5
+           3
+        E(5 ; – 36)                          ✓ x-value
+                                    ✓ y-value
+                                                                                               (4)
+ 9.2        f  //( x ) = 6 x − 16  0                     ✓  f  //( x )
+           8                             ✓  f  //( x )  0         x 
+           3                             ✓ answer
+                                                                                               (3)
+      OR/OF                                  OR/OF
+           1
+            + 5
+           3     8                         ✓ midpoint of TPs         x =     =
+             2    3                         ✓  f  //( x )  0
+           8                             ✓ answer         x 
+           3                                                                                (3)
+          x-intercepts of  f: (– 1 ; 0) and (7 ; 0)            ✓✓ x-intercepts 9.3
+                    8                       ✓ first interval
+     −1  x  2  or    x  7                                    ✓ second interval                    3
+                                                                                               (4)
+ 9.4    3 x 2 − 16 x + 5 = − 11                     ✓ equating
+        3 x 2 − 16 x + 16 = 0
+            ( x − 4)(3 x − 4) = 0
+                    4
+         x = 4  or x =                        ✓ x-values
+                    3
+       At x = 4 :     (4) 3 − 8(4) 2 + 5(4) + 14 = −11(4) + t
+                                    t = 14                    ✓ answer
+
+              4       4  3     4  2     4              4 
+       At x =    :        − 8    + 5    + 14 = − 11    + t
+              3       3       3       3              3 
+                       634    13                ✓ answer                                   t =    = 23   = 23,48
+                       27     27
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       17                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+
+                634                        ✓✓ answer
+    14 t                                                                                               (6)                27
+                                             OR/OF      OR/OF
+                3       2                           ✓ equating         x − 8 x + 5 x + 14 = − 11 x + t
+         x 3 − 8 x 2 + 5 x + 14 + 11 x = t
+         x 3 − 8 x 2 + 16 x + 14 = t
+
+        3 x 2 − 16 x + 16 = 0
+            ( x − 4)(3 x − 4) = 0
+                    4                       ✓ x-values
+         x = 4  or x =
+                    3
+       At x = 4 :     (4) 3 − 8(4) 2 + 5(4) + 14 = −11(4) + t
+                                    ✓ answer
+                                    t = 14
+
+              4       4  3     4  2     4              4 
+       At x =    :        − 8    + 5    + 14 = − 11    + t
+              3       3       3       3              3 
+                      634    13
+                                   t =    = 23   = 23,48           ✓ answer
+                       27     27
+
+                634    14 t                           ✓✓ answer
+                27                                                                       (6)
+
+                                                                                        [17]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       18                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 10
+
+
+
+
+
+ h                                                                            h
+
+
+
+
+
+                      x
+
+ 10.1     2 x + 2 h = 50                         ✓ 2 x + 2 h = 50
+          h = 25 − x
+
+          2r = x
+               x                                                         x
+             r =                             ✓ r =
+             2                                                 2
+
+       V = r 2 h
+                     x  2       V =                       25 − x )                          (                     2 
+       x 2
+       V =     2 ( 25 − x )                      ✓ substitution              4
+             25 x 2   x 3
+       V =     −                                                                       (3)
+              4   4
+
+ 10.2                                    /     50 x  3 x 2       V  ( x ) =    −
+                  4  4
+
+                                    /     50 x  3 x 2                                                                            2       V  ( x ) =    −    = 0                                 50 x  3 x
+                  4  4                     ✓    −
+                              2                                             4  4          50 x − 3 x = 0
+         0 = x ( 50 − 3 x )                                                                                                                              /                                     ✓ V  ( x ) = 0
+                     50
+           x  0  or  x =
+                      3
+              50
+      x =   = 16,67
+               3                           ✓ answer with
+                                                                            selection
+                                                                                               (3)
+                                                                                               [6]
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       19                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 11
+
+
+                             ENERGY
+                       JUICE                TOTAL
+                                DRINKS
+              Females         a          72         120
+
+               Males         36             54         90
+
+                 Total       84         126           210
+
+
+ 11.1.1   P ( Male and Prefer juice ) = P ( Male )  P ( Prefer juice ) ✓ P ( Mand J ) = P ( M )  P ( J )
+          36   90    e                                    36
+            =                          ✓
+         210  210  210                                   210
+          e = 84                                                     90
+                                  ✓ P (Male) =
+                                                                  210
+                                                                                                   (3)
+ 11.1.2                                b        P ( Female and like energy drink ) =
+                                     210
+         d = 210 − 84 = 126                   ✓ d- value
+         b = 126 − 54 = 72                    ✓ b-value
+                                      72   12
+        P ( Female and like energy drink ) =    =   = 0,34  ✓ answer
+                                     210  35
+                                                                                                  (3)
+       OR/OF                               OR/OF
+          c = 120                         ✓ c- value
+         b = 72                          ✓ b-value
+                                      72   12        P ( Female and like energy drink ) =    =   = 0,34                                  ✓ answer                                     210  35
+                                                                                                  (3)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       20                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+ 11.2        3      1    7                                     3                     ( 3 x ) +  x =                       ✓    ( 3 x )
+            4      4   12                                     4
+            27 x + 3 x = 7                                        1
+                                     ✓   x            30 x = 7                                                               4
+                7                                                                7              x =                            ✓ =               30                                                               12
+        28 cups                                                         ✓answer
+                                                                                                 (4)
+         OR/OF            C                   OR/OF
+
+
+                 R
+                 0,75        W
+
+                          C
+                 0,25
+                    S
+
+                  W
+                                                               75    3 x 
+                                     ✓                      75    3 x   25   x     7                   +         =                            100   120                                        
+            100   120   100  120   12                          25   x  
+                                     ✓                       3     1     7                  x +     x =                                     100  120 
+            160   480   12                                                                7
+            10 x = 280                         ✓ =
+                                                               12              x = 28 cups of coffee
+                                                         ✓answer
+                                                                                                 (4)
+                                              OR/OF
+         OR/OF
+                          C
+
+
+                 R
+                 0,75        W
+
+                          C
+                  0,25
+                     S
+
+                  W
+                                                              75    3(120 − x ) 
+                                     ✓                
+             75    3(120 − x )   25  120 − x    7                  100     120                            +           =                                                                                                                                                                                                                    25  120 − x             100                         120                                    100                                            120                                                     12          ✓                                                                                              
+                                                              100   120                   9       1
+            270 −  x + 30 −  x = 70                                                                7                 4       4                     ✓ =
+             5                                                 12
+           −  x = − 230
+             2
+                                                         ✓answer        x = 92 (bottles of water)
+                                                                                                 (4)        there are 28 cups of coffee
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       21                          DBE/November 2025
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+ 11.3.1       7.6! = 5 040                        ✓✓ answer
+                                                                                                  (2)
+
+         OR/OF                                 OR/OF
+
+              7! = 5 040                         ✓✓ answer
+                                                                                                  (2)
+ 11.3.2       Possible outcomes:
+
+        A × 6 × 5 × B × 4 × 3 × 2 × 1
+        A × 6 × 5 × 4 × B × 3 × 2 × 1
+        A × 6 × 5× 4 × 3 × B × 2 × 1
+        A × 6 × 5 × 4 × 3 × 2 × B × 1
+        A × 6 × 5 × 4 × 3 × 2 × 1 × B
+
+            5  6! + 4  6! + 3  6! + 2  6! + 1  6!          ✓✓ 6! (15)
+           = 6!(5 + 4 + 3 + 2 + 1)
+           = 6!(15)
+
+                                                                       6!(15)  ✓ 8! in denominator
+            P(two or more runners finishing after Andrew) =                                                                                     6!(15)    15                                                                     8!   ✓        or
+               15                                                               8!      56
+            =                                                                                                  (4)               56
+            = 0,27
+
+                                               OR/OF         OR/OF
+
+                                      ✓ 8! in numerator and              8!− ( 7!.2 + 2.6.6!)
+                                                                   denominator
+                      8!.2                                      ✓✓ (7!.2 + 2.6.6!)
+               15            =                                                      15                                      ✓               56                                                                    56
+                                                                                                  (4)
+                                                                                          [16]
+                                                 TOTAL/TOTAAL: 150
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou

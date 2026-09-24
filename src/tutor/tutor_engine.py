@@ -1,4 +1,4 @@
-﻿from datetime import datetime, timezone
+from datetime import datetime, timezone
 from typing import Optional, Callable, Dict, Any
 import uuid
 
@@ -125,6 +125,7 @@ class TutorEngine:
 
         if diag.error_type == ErrorType.NONE:
             learner_state.attempts_correct += 1
+            learner_state.consecutive_fails = 0
             action_type = ActionType.ACKNOWLEDGE_CORRECT
             hint_level = None
             intervention = InterventionSelection(
@@ -136,6 +137,7 @@ class TutorEngine:
             )
             engine_rule = "ENG_CORRECT"
         else:
+            learner_state.consecutive_fails += 1
             intervention = select_intervention(diag)
             hint_level = select_hint_level(
                 attempts_total=learner_state.attempts_total,
@@ -157,33 +159,42 @@ class TutorEngine:
                 action_type = ActionType.GIVE_HINT
             engine_rule = f"ENG_HINT_{hint_level.value}"
 
-        if (
-            learner_state.attempts_total >= MAX_ATTEMPTS_BEFORE_ANALOGUE
-            and learner_state.attempts_correct == 0
-        ):
+        if learner_state.consecutive_fails >= 2:
             # Never end the session. Never label the learner.
             # Show a simpler worked problem of the same type, then invite
             # the learner to try the original again.
-            # Has this analogue already been shown in this session?
-            analogue_seen = any(
-                e.get("kind") == "analogue_shown"
-                and e.get("skill_id") == problem.skill_id
+            # Which analogues have already been shown for this skill
+            # in this session? Pick a new random one each failure.
+            shown_keys = {
+                e.get("analogue_key")
                 for e in learner_state.session_events
-            )
+                if e.get("kind") == "analogue_shown"
+                and e.get("skill_id") == problem.skill_id
+                and e.get("analogue_key")
+            }
 
-            if analogue_library.has_analogue(problem.skill_id) and not analogue_seen:
-                action_type = ActionType.OFFER_WORKED_ANALOGUE
-                engine_rule = "ENG_OFFER_ANALOGUE"
-                learner_state.session_events.append({
-                    "kind": "analogue_shown",
-                    "skill_id": problem.skill_id,
-                })
-            elif analogue_seen:
-                # The learner has already seen the analogue. Change tack.
-                # Offer a break or a different approach.
-                action_type = ActionType.GIVE_HINT
-                hint_level = HintLevel.H2
-                engine_rule = "ENG_BREAK_OR_PIVOT"
+            if analogue_library.has_analogue(problem.skill_id):
+                analogue = analogue_library.get_random_analogue(
+                    problem.skill_id,
+                    exclude_keys=shown_keys,
+                )
+                if analogue is not None:
+                    action_type = ActionType.OFFER_WORKED_ANALOGUE
+                    engine_rule = "ENG_OFFER_ANALOGUE"
+                    learner_state.session_events.append({
+                        "kind": "analogue_shown",
+                        "skill_id": problem.skill_id,
+                        "analogue_key": analogue_library.analogue_key(analogue),
+                        "analogue_problem": analogue.get("problem"),
+                    })
+                    try:
+                        learner_state._pending_analogue = analogue
+                    except AttributeError:
+                        pass
+                else:
+                    action_type = ActionType.GIVE_HINT
+                    hint_level = HintLevel.H2
+                    engine_rule = "ENG_STEP_DOWN_NO_ANALOGUE"
             else:
                 action_type = ActionType.GIVE_HINT
                 hint_level = HintLevel.H2
@@ -405,7 +416,10 @@ class TutorEngine:
         if a == ActionType.ACKNOWLEDGE_CORRECT:
             return "Good — that step is correct. Let's keep going."
         if a == ActionType.OFFER_WORKED_ANALOGUE:
-            analogue = analogue_library.get_analogue(ctx["problem"].skill_id)
+            # Prefer the analogue stashed by the engine (already shown this turn).
+            analogue = getattr(ctx.get("learner_state"), "_pending_analogue", None)
+            if analogue is None:
+                analogue = analogue_library.get_analogue(ctx["problem"].skill_id)
             if not analogue:
                 return "Let's try a smaller version of this problem."
             lines = ["That has not gone well yet. Let's change the approach.",

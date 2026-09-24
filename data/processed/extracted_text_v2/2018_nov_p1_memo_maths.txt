@@ -1,0 +1,724 @@
+                   NATIONAL
+               SENIOR CERTIFICATE/
+                 NASIONALE SENIOR
+                    SERTIFIKAAT
+
+
+               GRADE 12/GRAAD 12
+
+
+             MATHEMATICS P1/WISKUNDE V1
+
+                  NOVEMBER 2018
+
+          MARKING GUIDELINES/NASIENRIGLYNE
+
+
+MARKS: 150
+PUNTE: 150
+
+
+
+
+                    These marking guidelines consist of 18 pages.
+                        Hierdie nasienriglyne bestaan uit 18 bladsye
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        2                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+NOTE:
+   •   If a candidate answers a question TWICE, only mark the FIRST attempt.
+   •  Consistent Accuracy applies in all aspects of the marking memorandum.
+LET WEL:
+   •  Indien ’n kandidaat ’n vraag TWEE keer beantwoord, merk slegs die EERSTE poging.
+   •  Volgehoue akkuraatheid is op ALLE aspekte van die nasienriglyne van toepassing.
+QUESTION/VRAAG 1
+1.1.1    x 2 −x4 + 3 = 0
+           ( x − 3)( x − )1 = 0                                             factors/correct subt in
+                                                                 formula        x = 3 or x = 1
+                                     x = 3
+                                     x = 1
+                                                                                                     (3)
+1.1.2   5 x 2 −x5 + 1 = 0
+         − b ±  b 2 − 4 ac        x =
+                2 a
+           5 ±  25 − 4(5)()1                                       substitution into the correct        =                                                                 formula                2(5)
+           5 ±  5         =
+             10
+            x = 0,72  or  x = 0,28                        x = 0,72
+                                              x = 0,28
+                                                                                                     (3)
+1.1.3    x 2 −x3 − 10 > 0
+                                                                    factors/ critical values           ( x − 5)( x + 2) > 0
+
+     OR/OF
+
+
+           –2            5
+                                   +      –    +                                         – 2      5
+
+
+
+
+        x < −2  or  x > 5                        x < −2  or  x > 5
+                                                                                                     (3)
+1.1.4       3  x = x − 4
+                     2                             squaring both sides       9 x = x − 8 x + 16
+        x 2 − 17 x + 16 = 0                        x 2 − 17 x + 16 = 0
+           ( x − 16)( x − )1 = 0                        factors
+        x = 16 or  x = 1                         answer with
+            NA                                                 selection
+                                                                                                     (4)
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        3                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+     OR/OF                                   OR/OF
+            1
+       3 x 2 = x − 4
+                1
+        x −x3  2 − 4 = 0                         standard form
+                                                                                                    2           1      1                                                                       1                                                                                                                                                                                                                                                             x 2 − 4                 x 2 + 1                    = 0                      recognize x =                                                                                 x 2                                                                                            
+                                                                                            
+           1              1                        factors
+        x 2 = 4   or  x 2 = −1
+           x = 16      NA                       answer with selection
+                                                                          (4)
+1.2     2 y + 9 x 2 = −1......()1
+       3 x −y = 2  ......   ( 2)
+        y = 3 x − 2    .......(3)                      y = 3 x − 2
+       2(3 x − 2) + 9 x 2 = −1                                        substitution
+       6 x − 4 + 9 x 2 = −1
+       9 x 2 + 6 x − 3 = 0
+                2                               standard form       3 x + 2 x − 1 = 0
+           (3 x − 1)( x + )1 = 0                                                                 factors
+          1        x =     or  x = − 1                                                        both x values          3
+        y = −1  or  y = −5                                                        both y values
+
+                                                                                                     (6)
+
+      OR/OF                                   OR/OF
+       2 y + 9 x 2 = −1......()1
+       3 x −y = 2  ......   ( 2)
+            y + 2                                                      y + 2        x =                               x =
+            3                                                   3
+                 y + 2  2
+       2 y + 9       = −1                                        substitution                  3  
+                 y 2 + 4 y + 4 
+       2 y + 9                           = −1                    9      
+       2 y + y 2 + 4 y + 4 + 1 = 0
+        y 2 + 6 y + 5 = 0                         standard form
+                                                                 factors           ( y + 5)( y + )1 = 0
+        y = −1  or  y = −5                                  both y values
+          1                                                        both x values        x =     or  x = − 1
+          3                                                                                                     (6)
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        4                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+1.3       3 9 x = 64
+               3                      3           3 x           (3                ) = ( 4)                                     33 x = 4
+       3 3 x = 4
+
+       5  p = 64
+
+                  p
+        5   =  64                                                                                                            p
+                  p                               5  = 8
+        5   = 8
+                3             x −1                     3 x − 3                         3 x  −3           [3    ]   3                     3  3.            =            OR/OF  =                               3 x − 3      3 x  −3               p         p                            p           3     or 3  3.
+         5      5
+                                      5 2
+               33 x                                      3 64 3. −3       =                        =
+                            p                       64         27 ×  5
+           4       =
+         27 × 8
+          1
+       =                                               answer
+         54                                                                                                     (4)
+     OR/OF                                             OR/OF                3             x −1                      3 x  − 3           (3    )    3  3.            =
+               p           p                           5.0         5        (5                             )
+          3 3 x 3. −3                           33 x − 3 or 33 x3. −3       =                       5.0
+               p 
+                        5       
+           3.4 −3                                                                                             x       =                                33 = 4
+           64                                                                                       p
+                                      5  = 8           1            .4
+           27   1       =     =                                         answer
+          8    54                                                                                                     (4)
+                                                                                             [23]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        5                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 2
+2.1.1   42                                               answer
+                                                                                                     (1)
+2.1.2   2a = 6             3a + b = 1          a + b + c = 2   a = 3
+       a = 3                3(3) + b = 1          (3) + (–8) + c = 2  b = –8
+                            b = –8                 c = 7    c = 7
+         Tn = 3n 2 − 8 n + 7                        Tn = an 2 + bn + c
+                                                                                                     (4)
+     OR/OF                                   OR/OF
+       2a = 6
+        a = 3                              a = 3
+        Tn = 3n 2 + bn + c
+      T1 : 3 + b + c = 2       b + c = −1  ......(1)
+      T2 : 12 + 2b + c = 3     2b + c = −9 ......(2)
+       T2 – T1: b = – 8                         b = –8
+
+        Subst. in (1):  – 8 + c = – 1
+                           c = 7                    c = 7
+                                                        = an 2 + bn + c       (4)         Tn = 3n 2 − 8 n + 7                        Tn
+2.1.3   T20 = (3 20 ) 2 − 8( 20 ) + 7                                     substitution
+         = 1047                                        answer                  (2)
+2.2     Tn = −7 n + 42                          Tn = −7 n + 42
+    −n7 + 42 = −140                        −n7 + 42 = −140
+      −n7 = −182
+              n = 26                         n = 26
+                                                                                                     (3)
+2.3         n                           n         Sn =   (a + )l         OR/OF Sn =   [2 a + (n − 1)d ]           2                           2
+                                                                    n           n                           n            Sn =   (35 − 7 n + 42 ) or         Sn =   (35 − 7 n + 42 )            Sn =   (70 − 7 n + 7 )             2           2                           2                                                               n           n                                                      Sn =   (70 − 7 n + 7 )         Sn =   (− 7 n + 77 )                                          2           2
+             7   2  77         Sn = −  n +   n
+             2     2                                            simplification of Sn
+         7   2  77          2                                     equating       −  n +   n = 3n − 8n + 7
+         2     2
+                 2                                                  standard form       13n − 93n + 14 = 0
+                                                                 factors           ( n − 7 )(13n − 2) = 0
+                   2       n = 7  or n =
+                   13                                    answer with
+           NA                                                                          selection               (6)
+     ∴n = 7
+                                                                                             [16]
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        6                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 3
+
+3.1        1         r =   and S ∞ = 6
+          2
+             a       S ∞ =
+           1 − r
+            a       6 =                                                        substitution             1          1 −
+             2
+       a = 3                                            answer
+                                                                                                     (2)
+3.2    Tn = ar n −1
+                          7
+                1                                                                                             7
+      T8 = 3 2                             T8 = 3 1                                                                                                                                                                            2             3
+      T8 =           128                                                                                                     (2)
+3.3         n       1− k
+          3(2 )  = ,58125       =∑k 1
+          3  3       3 +  +  + ... = ,58125
+          2  4
+           a 1( − r n )
+       S n =       = 5,8125             1 − r
+
+                              n                                             1                                 1                           r =
+          31 −                                                 2
+                                                   2                                               substitution                 = 5,8125
+               1            1 −
+               2
+                     n                 1        6 1 −       =5,8125                               2             
+                          n
+                1     1
+                               2  = 32 = 0,03125                                  simplification
+                          n     −5             1      1             2 −= 2      or    n log  = log
+                                 2     32
+               n = 5         n = 5                        answer
+                                                                                                     (4)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        7                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+3.4         20       − k          3( 21)  = p   ∑
+              k =1
+          3  3                  −19       3 +  +  + ........ + 2.3  = p                            expansion
+          2  4
+             20
+          24( 2) − k   ∑
+              k =1
+                                        −20                    expansion      = 12 + 6 + 3 + ..... + 242.
+               3  3               −19 
+      = 4 3 + 2 + 4 + ..... + 2.3      
+      = 4p                               answer                 (3)
+
+     OR/OF                                             OR/OF
+
+             20
+   ∑      − k                                                                            20                                                                                                    − k = p          3( 21)  = p                            6( 2)                           ∑              k =1                                                                                                                 k =1
+             20
+          6( 2) − k = p   ∑                                                                               20              k =1                                                                                 − k                20                      ∑×4  6( 2)
+           24 ( 2) − k = 4 p                                                        k =1    ∴ ∑                  k =1                                       4p
+                                                                                                     (3)
+
+     OR/OF                                   OR/OF
+                                                                               20          20                        20                                                                                     − k                 − k                                   − k     ∑ 24 ( 2)  = ∑ 4 × 3 × 2( 2)                ∑ 4 × 3 × 2( 2)
+           k =1             k =1                                                          k =1
+                                                                                20                          20
+                               ∑×3  2( 2) − k               = 4          ∑×3  2( 2) − k                   4
+                            k =1                                                          k =1
+                         20
+               = 4 ∑ 3 × ( 2)1− k = 4 p                     4p
+                            k =1                                                                          (3)
+     OR/OF                                             OR/OF
+                      20                        1                                        3     − 1                                     2                                                       = 6 = p                   substitution and answer       S 20 =                1                − 1
+                2
+                       20                         1                                         12     − 1                                       2                                                                           substitution and answer       S 20 =            = 24                1                − 1
+                2
+       24 = 4 × 6 = 4 p
+                                                4p
+                                                                                                     (3)
+                                                                                             [11]
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        8                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 4
+4.1    Yes                                              answer
+        For every x-value there is only one corresponding y value    reason
+      OR/OF
+      One to one mapping (vertical line test)                                                     (2)
+4.2    R(–12 ; –6)                                        answer                  (1)
+4.3         f ( x ) = ax 2  substitute ( −6 ; − 12)
+                                                                    substitution        − 12 = a ( −62)
+             − 1                                                        answer           a =
+              3                                                                                 (2)
+4.4                1   2
+              f : y = − 3  x
+              −1        1   2
+              f    : x = − 3  y                                     swapping x and y
+            y 2 = −3 x                          y 2 = −3 x
+            y = ± − 3 x
+       Only y = − − 3 x and x ≤ 0                  y = − − 3 x
+                                                                                                     (3)
+                                                                                                     [8]
+
+QUESTION/VRAAG 5
+
+5.1    Domain: x ∈ R ; x ≠ 1                               answer
+      OR/OF                                                                                    (1)
+        x ∈ ( − ∞ )1; ∪ ;1( ∞ )
+5.2     x = 1                                     x = 1
+                                              y = 0                    (2)        y = 0
+5.3
+                              y
+                                     y intercept
+
+
+                           1                                      vertical asymptote
+
+                  O     1                        x                                                        shape
+
+
+
+                                                                                                     (3)
+5.4     x ≥ 0  ; x ≠ 1                                x ≥ 0
+                                              x ≠1                    (2)
+      OR/OF                                   OR/OF
+        0 ≤ x < 1  or x > 1                       0 ≤ x < 1
+      OR/OF                             x > 1
+        x ∈ [ 0 1; ) ∪ ;1( ∞ )
+                                                                                                     [8]
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        9                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 6
+
+6.1     y = mx + c
+           5 − 1     m =                                                                       substitution into           4 − 0
+                                                                           gradient formula     m = 1
+                                                                       y-intercept (0 ; 1)        c = 1
+                                                                                                     (2)       g ( x ) = x + 1
+                                               OR/OF     OR/OF
+        y = mx + c                                                                       substitute (4 ; 5)
+       5 = m ( 4) + 1                                                 c = 1
+     m = 1                                                                                                     (2)
+       g ( x ) = x + 1
+6.2     x 2 −x2 − 3 = 0
+                                                 y = 0           ( x + 1)( x − )3 = 0
+                                                                     factors        x = −1 or x = 3                                                                  x-values            (3)
+       A(–1 ; 0)  B(3 ; 0)
+6.3       − 1+ 3        − b  − ( −2)                   /        x =          or  x =   =          or    f  ( x ) = 2 x − 2 = 0
+            2           2 a    2)1(
+                                                 x -value        x = 1
+              f ( x ) = x 2 − 2 x − 3
+        y = (1) 2 − 2(1) − 3         or      y = ( x 2 − 2 x + ( −)1 2 ) − 3 − 1   substitution/
+                                                          2                    completing the square        y = −4                       = ( x − )1  − 4
+        y ≥ −4     or    [ −4 ; ∞ )                                       answer
+                                                                                                     (3)
+6.4.1  MN:  y = ( x 2 − 2 x − )3 − ( x + )1
+             = x 2 − 3 x − 4                        x 2 −x3 − 4
+                              2                                                  substituting y = 6             6 = x − 3 x − 4
+             0 = x 2 − 3 x − 10
+             0 = ( x − 5)( x + 2)
+               x = 5 or x = –2                                    values of x
+
+          OT = 2 or OT = 5                      OT = 2
+                  NA                                                                 (4)
+
+6.4.2    y = x + 1 substitute x = −2                                      substituting x = –2
+        = (–2) + 1
+        = –1
+       N(–2 ; –1)                                           answer              (2)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       10                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+6.5         f ′( x ) = 2 x − 2                           f ′( x ) = 2 x − 2
+       2 x − 2 = 1                              2 x − 2 = 1
+              3                                                 3             x =                              x =
+              2                                                 2
+            3   − 15                                                            3   − 15
+              f  2  =  4                             f  2  =  4
+          15       3           15  1        y +   = 1 x −        or  −   =  + c           4           2           4   2
+                 21            y = x −                                          answer
+                 4                                                                                                     (5)
+
+     OR/OF                                               OR/OF
+        x 2 − 2 x − 3 = x + p                                        equating
+        x 2 − 2 x − 3 − x − p = 0
+        This equation will have equal roots, therefore:                                                             equal roots
+       b 2 −ac4  = 0
+           ( −)3 2 − 41()( −3 − p ) = 0                      substitution
+       9 + 12 + 4 p = 0                                                simplification
+          − 21       p =
+            4
+              21        y = x −                                              answer              (5)
+              4
+6.6       − 21                                             answer        k <                                                                                                     (1)            4
+                                                                                             [20]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       11                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+QUESTION/VRAAG 7
+7.1.1        x[(1 + i ) n − ]1      F =
+                            i
+                                              16                                          ,0088                                                0,088                             and n = 16
+           15 000   1 +        − 1                             4
+                            4                                      substitution into      F =                    0,088                                            correct formula
+                     4
+      F  = R283 972,28                                 answer
+                                                                                                     (3)
+7.1.2                                                          4             future value – amount                                            ,0088      A = R283 972,28 − 100 000+ 1                                  including interest                                          4                                                                                                     4                                                                                             ,0088         = R 174 877,60                       100 000+1                                                                                                                                                                            4     
+                                                       answer
+                                                                                                     (3)
+      OR/OF                                  OR/OF
+      Amount at end of 3 years:
+
+                                      12                             0,088 
+           15 000   1 +        − 1
+                            4              F =                             − 100000            R15 000 including interest
+                    0,088                                    – R100 000
+                     4
+        = R103 459,12
+
+      Amount at end of 4 years:
+
+                       n    x[(1 + i ) n − ]1      P 1( + i ) +
+                                        i
+                                                         4                                                                                               4                             15000 + 1   ,0088  − 1                  ,0088                                     4                                                                           on P and x in Fv                                                                                                                            +                                                            1                                                   4                                                                                                                                                                                                                                4                                                                                                                                                                                              +       = 103 459,12 + 1   ,0088 
+                            4                 ,0088              method
+                                       4
+      = R 174 877,60
+                                                                                                     (3)
+                              − n7.2.1            x [1 − (1 + i )                                ]      P =
+                            i
+                                          −12× 20 
+                   x 1 − + 1   ,0105                     i = ,0105                               12                                  12       1 500 000 =                                 ,0105                   n = 240
+                                     substitution into                         12
+                                                                          correct formula
+        x = R14 975,70
+                                     answer
+                                                                                                     (4)
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       12                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+
+                            − n7.2.2           x [1 − (1 + i )                              ]
+     P =                                        R14 975,70 in Pv-formula                          i                                      n = 96                                                −12×8                                ,0105               14 975,70 1 − + 1            
+                               12                      substitution into     P =                                                                            correct formula                           ,0105
+                     12                                      answer     P = R969 927,74                                                                                                     (5)
+     OR/OF                                              OR/OF
+       Balance outstanding = A – F
+                                                             144   
+                              14 975,70 +1  ,0105   − 1
+                          ,0105                                  144                                                                                                                      12                = 1 500 000+1           –                    n = 144 in A-formula                                             12                        ,0105                                      n = 144 in Fv-formula
+                                        12                                      R14 975,70
+                                      A – F        = R5 259 229,61– R4 289 302,47
+
+        = R969 927,14
+                                      answer
+                                                                                                     (5)
+                                                                                             [15]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       13                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 8
+
+8.1                          f ( x + h ) − f ( x )              f (' x ) = lim
+                        h →0      h                                                                                                        2              2                              2              2          2                x + 2 xh + h − 5                   x + 2 xh + h − 5 − x + 5
+           = lim                                                     simplification
+                       h → 0          h
+                h ( 2 x + h )           = lim                                                   factorisation
+                       h → 0    h
+          = lim                                                                                                      ( 2 x + h )                        ( 2 x + h )                        lim                       h → 0                                                                                                          h → 0
+          = 2 x                              x2
+                                                                                                     (5)
+                                              OR/OF
+     OR/OF
+                        f ( x + h ) = ( x + h ) 2 − 5
+                   = x 2 + 2 xh + h 2 − 5               x 2 + 2 xh + h 2 − 5
+
+              f ( x + h ) − f ( x ) = x 2 + 2 xh + h 2 − 5 − ( x 2 − 5)
+                   = 2 xh + h 2                                     simplification
+                                              f ( x + h ) − f ( x )                             f ′( x ) = lim
+                                      h → 0      h
+                         2 xh + h 2                   = lim                                      h → 0                                         factorisation                            h
+                         h ( 2 x + h )                   = lim
+                                      h → 0    h                                      lim ( 2 x + h )
+                                                      → 0                   = lim ( 2 x + h )                                                    h
+                                      h → 0
+                   = 2 x                              x2
+                                                                                                     (5)
+8.2.1    y = 3 x 3 + 6 x 2 + x − 4
+                                      9x 2
+        dy        2                             12 x
+         = 9 x + 12 x + 1                            1        dx                                                                                                     (3)
+8.2.2    y ( x − )1 = 2 x ( x − )1                        y ( x − )1
+                2 x ( x − )1                       2 x ( x − )1              y =               if x ≠ 1
+                    x − 1
+              y = 2 x                           y = 2 x
+            dy             = 2                                                        answer            dx
+                                                                                                     (4)
+                                                                                             [12]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       14                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 9
+9.1.1                           2       g ( x ) = ( x + 5)( x − x1)                      ( x + 5)
+       20 = 5( x1) 2
+        x1 2 = 4
+        x1 = 2                                                repeated root
+       g ( x ) = ( x + 5)( x − 22)                              x1 = 2
+       g ( x ) = ( x + 5)( x 2 − 4 x + 4)                                                                         2                                     g ( x ) = ( x + 5)( x − 4 x + 4)                        3     2       g ( x ) = x + x − 16 x + 20                                                                                                     (4)
+9.1.2   g ( x ) = x 3 + x 2 − 16 x + 20
+                          2                                              derivative       g ′( x ) = 3 x + 2 x − 16
+       3 x 2 + 2 x − 16 = 0                                      equating to zero
+           (3 x + 8)( x − 2) = 0                                        factors
+         − 8        x =      or x = 2
+           3
+        − 8 1372 
+     R       ;       or R ( −,267 ; 50,81)                         co-ordinates of R
+            3   27                                       co-ordinates of P
+       P ( 2 ; 0)                                                                                                     (5)
+9.1.3   g ′′( x ) = 6 x + 2                         g ′′( x ) = 6 x + 2
+       g ′′( 0) = 2                           g ′′( 0) = 2
+    ∴ concave up                                         conclusion               (3)
+
+     OR/OF                                  OR/OF
+       g ′′( x ) = 6 x + 2                         g ′′( x ) = 6 x + 2
+       6 x + 2 = 0                                                1                                     x = −            1                                                   3        x = −    is the point of inflection
+            3
+                                                             conclusion
+    ∴ concave up                                                                                                     (3)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       15                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+9.2
+                                y                   y – intercept of a cubic
+                                                                graph
+
+                         27
+                                     point of inflection and
+                                                                          stationary point, x = 3
+
+
+                                     concave up for x < 3 and
+                                                              concave down for x > 3
+
+
+
+                  O                3               x
+
+
+
+                                                                                                     (3)
+                                                                                             [15]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       16                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 10
+
+
+                      A
+
+
+
+
+
+          D                                E
+                     H
+
+                                                C
+        B            F  G
+
+10.1   AH   3          =
+     HG   2                             answer                (1)
+10.2    Area of a parallelogram = base × ⊥ height
+             3      2                                      2        Area =   (5 − t ).   t                          t
+             5      5                                      5
+                                                            3                             (5 − )t
+             6                                              5        Area =    (5 − t )t
+             25
+               6   2  6                                              6   2  6      A(t ) = −     t +   t                  (A t ) = −     t +   t
+              25    5                                              25    5
+               12   6         A/ (t ) = −     t +
+               25   5
+                                                             12   6         12   6                            −     t +       −     t +  = 0                                                             25   5         25   5
+       12t − 30 = 0
+          30   5             t =    or
+          12   2                                                        answer
+                                                                                                     (5)
+                                                                                                     [6]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       17                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 11
+11.1.1  75 = 16 807                           answer              (2)
+
+11.1.2  7 × 6 × 5 × 4 × 3                                                                       !7                                         7 × 6 × 5 × 4 × 3 or
+            !7                                                                                   !2       =  = 2520
+            !2                                              answer                 (2)
+
+11.2    2 × 7 × 1 = 14                             2 × 7 × 1            (3)
+
+                                                                                                     [7]
+
+QUESTION/VRAAG 12
+
+12.1   P(A or B) = P(A) + P(B)                       P(A or B) = P(A) + P(B)
+             0,74 = 0,45 + y                                         substitution
+                y = 0,29                                    answer                    (3)
+12.2                              S
+
+                       S
+                       G
+                              S
+                  G
+                        G
+
+
+        Let the number of mystery gift bags = x
+       The total number of bags = 4x                    4x
+
+          x    x − 1    7           ×       =                                                  x      1                                               or                      4 x      4 x − 1   118                                                                              4 x      4 
+       1   x − 1    7        ×     =                                                           x − 1                                                        4  4 x − 1  118                                                                                 4 x − 1 
+                                                           1   x − 1         x − 1   28                               ×           =                                                            4  4 x − 1       4 x − 1  118
+                                                                       7        118x – 118 = 112x – 28                                         equating to
+            x = 15                                                     118
+                                                             answer                       (6)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       18                             DBE/November 2018
+                          NSC/NSS – Marking Guidelines/Nasienriglyne
+
+     OR/OF                                   OR/OF
+          P(gift and gift) = P(gift at first draw) × P(gift at second draw)
+                 7   1                                      1                  =  × P(gift at second draw)                118  4                        4
+                                                           1                                          × P(gift at 2nd draw)                            7   1                                                           4         P(gift at second draw) =    ÷
+                           118  4                            7   1                                            =  × P(gift at 2nd draw)                           14                                                            118  4                       =
+                           59                               14
+                                  15                                             59        Therefore: P(gift at first draw) =
+                                   60
+                                                           15                                               And: 15 bags had mystery gifts inside                                                            60
+
+                                                             answer                       (6)
+                                                                                                        [9]
+
+                                                  TOTAL/TOTAAL:   150
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou

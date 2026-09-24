@@ -1,0 +1,1093 @@
+                   NATIONAL
+               SENIOR CERTIFICATE/
+                    NASIONALE
+                SENIOR SERTIFIKAAT
+
+
+                 GRADE/GRAAD 12
+
+
+             MATHEMATICS P2/WISKUNDE V2
+
+                  NOVEMBER 2015
+
+                 MEMORANDUM
+
+
+MARKS: 150
+PUNTE: 150
+
+
+
+
+
+                        This memorandum consists of 27 pages./
+                        Hierdie memorandum bestaan uit 27 bladsye.
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                        2                            DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+NOTE:
+•    If a candidate answers a question TWICE, mark only the FIRST attempt.
+•    If a candidate crossed out an attempt of a question and did not redo the question, mark the
+    crossed-out version.
+•   Consistent accuracy applies in ALL aspects of the marking memorandum. Stop marking at the
+    second calculation error.
+•   Assuming answers/values in order to solve a problem is NOT acceptable.
+•   Penalty of only 1 mark for incorrect rounding throughout the paper (Q1.2.1)
+
+
+
+
+LET WEL:
+•   Indien 'n kandidaat 'n vraag TWEE KEER beantwoord, sien slegs die EERSTE poging na.
+•   Indien 'n kandidaat 'n antwoord doodgetrek het en nie oorgedoen het nie, sien die doodgetrekte
+    poging na.
+•   Volgehoue akkuraatheid word in ALLE aspekte van die memorandum toegepas. Hou op
+    nasien by die tweede berekeningsfout.
+•  Om antwoorde/waardes om 'n probleem op te los, te veronderstel, word NIE toegelaat NIE.
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                        3                            DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+QUESTION/VRAAG 1
+
+    Fat/Vet (in g)      9     14    25    8    12    31    28    14    29    20
+   Energy/Energie                   1 100  1 300  2 100  300  1 200  2 400  2 200  1 400  2 600  1 600        (in kJ)
+
+1.1                                                                                  1.1
+                                                                       no marks:
+                           Scatter plot/Spreidiagram                   0 – 2 points
+                                                                                          correctly
+
+                                                                                  plotting
+            2800                                                           3 – 5 points
+            2700                                                                           correctly
+            2600
+            2500                                                              plotting
+            2400                                                            6 – 9points
+            2300                                                                           correctly
+       kJ) 2200
+            2100                                                           plotting       (in
+            2000                                                                                       all 10 points
+            1900                                                                         correctly
+            1800
+            1700                                                              geen punte:
+                                                        •                            0 – 2 punte            1600
+                                                                                  korrek                                  Energy/Energie 1500
+            1400
+                                               stip 3 – 5            1300
+                                                                                          pte korrek            1200
+            1100
+                                                                       stip 6 –9            1000                       •
+                                                                                          pte korrek             900
+             800
+                                               stip al             700                                                                       10 pte korrek
+             600
+             500                                                                                                       (3)
+             4001.2.2
+             300
+             200                                                                         1.2.2
+             100                                               y – int
+               0                                                                       close to
+                 0        5        10       15       20       25       30       35                                                                                      (0 ; 150)
+                                               one pt
+                                     Fat/Vet (in g)                                                                                          close to
+                                                                                  (25 ; 2100)
+                                                                                        or
+                                                                                  (20 ; 1700)
+                                                                                                       (2)
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                        4                            DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+1.2.1          yˆ = 154,60 + 77,13(18)                          subst
+         = 1 542,94 ≈ 1 500 kJ                         answ rounded
+                                                                                      off correctly/
+                                                                     antw korrek
+                                                                          afgerond
+                                                                                                     (2)
+1.3       (8 ; 300)                                 answ/antw
+                                                                                                     (1)
+1.4       r = 0,9520... ≈ 0,95                            answ/antw
+                                                                                                     (2)
+1.5      very strong positive relationship/                     strong/ sterk
+         baie sterk positiewe verband                                                             (1)
+                                                                                             [11]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                        5                            DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+QUESTION/VRAAG 2
+
+                Sum of the values on
+                      uppermost faces/          Frequency/
+                Som van die waardes op        Frekwensie
+                          boonste vlakke
+                             2                     0
+                             3                     3
+                             4                     2
+                             5                     4
+                             6                     4
+                             7                     8
+                             8                     3
+                             9                     2
+                             10                     2
+                             11                     1
+                             12                     1
+
+
+
+2.1                      2( 0) + 3(3) + 4( 2) + ...12)1(  202                                                         202        mean/gemiddelde =                     =
+                                  30            30
+                    = 6,73                         answ/antw
+                                                                                                    (2)
+2.2                  T15 + T16   7 + 7                  answ/antw        median/mediaan  =        =    = 7
+                            2       2                                                    (2)
+
+2.3     SD/SA = 2,264... ≈ 2,26                          answ/antw
+                                                                                                    (2)
+2.4        (6,73 – 2,26 ; 6,73 + 2,26)
+       = (4,47 ; 8,99)                                             lower boundary
+                                                                upper boundary
+      ∴4 + 4 + 8 + 3 = 19 times/keer                      answ/antw
+                                                                                                    (3)
+                                                                                                    [9]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                        6                            DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+QUESTION/VRAAG 3
+
+                 y                                                   S
+                             P (a ; b)
+
+
+
+
+                                       N(7 ; 1)
+              T  45°
+                                                                                   x
+
+
+                                   R
+               M
+      Q(–2 ; –3)
+
+
+3.1    m PQ = tan 45°                              m = tan 45°
+                                           answ/antw          = 1
+                                                                                                    (2)
+3.2   MN | | QP           [midpt theorem/midpt-stelling]          S OR R
+    ∴ m MN = 1                                m MN
+    ∴ y − y1 = m ( x − x1 )                           subst m and/en
+                                                               N(7 ; 1)    ∴ y – 1 = 1(x – 7)
+                                           equation/vgl    ∴    y = x – 6
+                                                                                                    (4)
+      OR/OF
+                                           S OR R     MN | | PQ           [midpt theorem/midpt-stelling]
+                                                                       MN    ∴ m MN = 1                                m
+    ∴ y = mx + c                                           subst m and/en    ∴ 1 = 1(7) + c                                                               N(7 ; 1)         –6 = c
+    ∴    y = x – 6                              equation/vgl
+                                                                                                    (4)
+3.3           1                                 S     MN =  PQ         [midpoint theorem/midp stelling]
+              2
+                7 2    ∴ MN =     ≈ 4,95                          answ/antw
+                 2                                                                                  (2)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                        7                            DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+3.5    QN = NS             [diag of ||m/hoekl van ||m]
+       − 2 + Sx             − 3 + Sy                    method/metode
+                                           x-value/waarde           2   = 7    and/en     2   = 1                                           y-value/waarde
+    ∴ xS = 16      ∴ yS =5                                                          (3)
+      OR/OF
+     QN = NS             [diag of ||m/hoekl van ||m]            method/metode
+    ∴ by inspection/deur inspeksie:                     x-value/waarde
+           S(16 ; 5)                               y-value/waarde
+                                                                                                   (3)
+3.6      Equation of/Vgl van PQ: y = x + c
+                           –3 = –2 + c
+                                y = x – 1     ∴a = b + 1   .....(1)    eq of/vgl van PQ
+       From distance formula/Van afstandsformule:
+                        2          2       PQ =   ( x 2 − x1 )  + ( y 2 − y1 )
+        7 2 =   ( a − ( −2)) 2 + (b − ( −3)) 2                    subst Q & 7  2
+    ∴ 98 = ( a + 2) 2 + (b + )3 2      .....(2)                                        into/in
+                                                                                distance formula/         Subst (1) into (2):
+                                   2             2                                          afstandsformule        98 = (b + 1 + 2) + (b + 3)
+        98 = b 2 + 6b + 9 + b 2 + 6b + 9                      subst eq of/vgl v.
+                         2                                       PQ         0 = 2b + 12b − 80
+                       2                                 st form/st vorm         0 = b + 6b − 40
+      ∴0 = (b + 10)(b – 4)
+    ∴ b = 4   (since b > 0)                                           value of/waarde
+         Subst b = 4 into (1):                                                                    van b
+      ∴a = 4 + 1 = 5                              value of/waarde
+    ∴ P(5 ; 4)                                                    van a
+                                                                                                    (6)
+      OR/OF
+         Equation of/Vgl van PQ: y = x + c
+                           –3 = –2 + c
+                                           eq of/vgl van PQ                                y = x – 1     ∴a = b + 1   .....(1)
+       From distance formula/Van afstandsformule:
+                           2           2                    subst Q & 7  2        7 2 =   ( a − ( −2)) + (b − ( −3))                                                                                        into/in distance
+    ∴ 98 = ( a + 2) 2 + (b + )3 2      .....(2)                                   formula/
+         Subst (1) into (2):                                                   afstandsformule
+            98 = (b + 1 + 2) 2 + (b + 3) 2                     subst eq of/vgl v.
+                                      2                                 PQ            98 = 2(b + 3)
+                                           simplification/
+            49 = (b + 3) 2                                                 vereenvoudig
+          ± 7 = b + 3                                           value of/waarde
+        ± 7 − 3 = b                                                   van b
+    ∴ b = 4 (since b > 0)                          value of/waarde
+         Subst b = 4 into (1):                                            van a
+      ∴a = 4 + 1 = 5                                                                          (6)
+    ∴ P(5 ; 4)
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                        8                            DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+      OR/OF
+
+         Equation of/Vgl van PQ: y = x + c
+                           –3 = –2 + c
+                                y = x – 1     ∴a = b + 1   .....(1)    eq of/vgl van PQ
+       From distance formula/Van afstandsformule:
+        7 2 =   ( a − ( −2)) 2 + (b − ( −3)) 2                    subst Q & 7  2
+                                                                                        into/in distance
+        98 = a( + 2) 2 + a( − 1 + 3) 2                                                                            formula/
+          = 2a( + 2) 2                                                      afstandsformule
+                                           subst eq of/vgl v.    ∴ a + 2 = 7  (since/aangesien a > 0)                                                   PQ    ∴ a = 5
+                                           simplification/         Subst a = 4 into (1):
+                                                                         vereenvoudig      ∴b = 5 – 1 = 4
+    ∴ P(5 ; 4)                                value of/waarde
+                                                                    van a
+                                           value of/waarde
+                                                                    van b
+                                                                                                    (6)
+      OR/OF
+                                                ( a ; b )
+
+
+                      7 2                                                                      7 2 sin 45
+
+                    45
+                   ( −2 ; − 3)                                    7 2 cos 45
+
+        a = − 2 + 7 2 cos 45 = 5                       
+        b = − 3 + 7 2 sin 45 = 4                       
+                                                                                                    (6)
+                                                                                            [17]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                        9                            DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+QUESTION/VRAAG 4
+
+                                   y                              A
+
+
+
+
+
+                          P(0 ; 6)
+
+                                              R                               θ
+                                          Q(5 ; 2)
+
+            B  α       O
+                                                                                   x
+
+                         S
+
+
+
+4.1         ( x − 5) 2 + ( y − 2) 2 = r 2                           subst (5 ; 2)
+                       2             2      2                                                     into circle            ( 0 − 5) + ( 6 − 2) = r                                                                                     eq/in sirkelvgl
+                 25 + 16 = r 2                           value of/waarde
+                     41 = r 2                                           van r2
+     ∴ ( x − 5) 2 + ( y − 2) 2 = 41                         equation/vgl
+                                                                                                       (3)
+      OR/OF
+                                            subst (5 ; 2) &
+      PQ =   ( 0 − 5) 2 + ( 6 − 2) 2                                                                                  (0 ; 6) into dist.
+                                                                               form/in afst. form          =  25 + 16
+                                            value of/waarde             r =  41
+                           2             2                                              van r
+     ∴ ( x − 5) + ( y − 2) = 41                         equation/vgl
+                                                                                                       (3)
+4.2         ( 0 − 5) 2 + ( y − 2) 2 = 41                          x = 0
+             25 + ( y − 2) 2 = 41
+          25 + y 2 − 4 y + 4 = 41
+                         2                                  st form/st. vorm               y − 4 y − 12 = 0
+                   ( y − 6)( y + 2) = 0
+                y ≠ 6  or / of   y = −2                       answ/antw
+     ∴ S(0 ; –2) or y = –2                                                (neg value)
+                                                                                                       (3)
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       10                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+      OR/OF
+
+            ( 0 − 5) 2 + ( y − 2) 2 = 41
+                                      2                             x = 0             25 + ( y − 2) = 41
+                         ( y − 2) 2 = 16                          square form/
+                                                                      kwadraatvorm                      y − 2 = ±4
+                         y = 2 ± 4
+                       y ≠ 6  or / of   y = −2
+     ∴ S(0 ; –2)                                 answ/antw
+                                                                            (neg value)
+
+      OR/OF                                                                                     (3)
+                                              P(0 ; 6)        Draw/Trek QT ⊥ PS
+       PT = TS  [line from centre ⊥ to chord/                                         4                     lyn van midpt ⊥koord]
+       PT = y P −y Q = 6 − 2 = 4           T            Q(5 ; 2)
+         y Q −y S = 4                       4
+          y S = 2 − 4 = −2                    S
+     ∴ S(0 ; –2)
+
+                                            x = 0
+                                            y = –2
+                                                                                                       (3)
+4.3           6 − 2                                 subst (0 ; 6) &
+      m PQ =                                                                                  (5 ; 2) into grad              0 − 5
+                                                                               form/in grad.               4           = −                                                            formule
+               5                                            mPQ
+      m PQ × m APB = −1      [tan/raakl ⊥ radius]
+                 5     ∴ m APB =                                  mAPB
+                 4
+             5      ∴y =   x + 6                                equation/vgl
+             4                                                                                     (4)
+4.4            5          tan α =                                   tan α= mAPB
+               4
+     ∴ α = 51,34°                                            answ/antw
+                                                                                                       (2)
+      OR/OF
+
+         B(4,8 ; 0)
+                 6     ∴ tan α =                                                          6                                            tan α =                    8,4                                                                                           8,4
+     ∴ α = 51,34°                                            answ/antw
+                                                                                                       (2)
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       11                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+4.5   θ = BPˆ S            [tan-chord th/raakl-koordst.]             S  R
+                                            90° – α         = 90° – α      [∠ sum in ∆/∠ som van ∆]
+         = 90° – 51,34°
+                                            answ/antw         = 38,66°
+                                                                                                       (4)
+      OR/OF
+
+       PS = 8
+      PQ = SQ =  41
+                2      2      2          PS = PQ + SQ − 2.PQ.SQ.cosP QˆS                 correct subst into
+            64 = 41 + 41 - 2.41.cosPQˆS                                        cosine rule
+                18         cosP QˆS =
+                 82                                            P QˆS = 77,32°
+          P QˆS = 77,32°
+                                            R           1        θ =  P QˆS        [∠ at centre = 2 × ∠ circumf]            answ/antw
+           2                                                                                                       (4)
+        = 38,66°
+
+                    14.6      Area ∆PQS =  PS ×height/hoogte                    area formula/e:
+                    2                                                        ∆PQS
+                    1                              PS = 8                =   (8)(5)
+                    2                              ⊥h = 5
+                = 20 sq units/vk eenh                     answ/antw
+                                                                                                       (4)
+      OR/OF
+       P QˆS = 2 × 38,66°    [∠at centre = 2×∠ at circum/
+                                            size of/grootte v                            midpts∠=2omtreks∠]
+           = 77,32°                                             P QˆS
+                    1                              area rule/reël:        Area ∆PQS =   PQ.QS.sin P QˆS
+                    2                                       ∆PQS
+                    1                              subst correctly/               =      . 41. 41. sin 77,32°                                                                                  subst korrek                    2
+                                            answ/antw
+                                                                                                       (4)               = 20 sq units/vk eenh
+                                                                                               [20]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       12                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+QUESTION/VRAAG 5
+
+5.1.1    sin 203°                                  reduction/
+      = – sin 23°                                                           reduksie
+                                           answ ito/antw      = –  k
+                                                                                                  itv k
+                                                                                                    (2)
+5.1.2    cos 2 23° = 1 − sin 2 23 °                                                   identity/identiteit
+                                                                               cos2 23° ito/itv k             = 1 − k                             
+         cos 23 ° =  1 − k                             answ/antw
+                                                                                                    (3)
+      OR/OF
+
+
+          2       2        x + (  k ) = 1
+                                                                                2                  2                                                          =1 − k                x               = 1 − k                             x
+                                                              (x ;  k )                 x =  1 − k                                           x ito/itv k                                               1
+                1 − k
+        cos 23 ° =      =  1 − k                   23°                 1                               answ/antw
+                                                                                                    (3)
+5.1.3    tan (–23°) = – tan 23°                           reduction/
+                         sin 23 °                                                 reduksie              = −
+                     cos 23°                          answ ito/antw
+                                                                                                  itv k                         k         k
+              = –      = −                                                                (2)                    1 − k     1 − k
+
+      OR/OF
+
+         tan (–23°) = – tan 23°                           reduction/
+                         k         k                                         reduksie              = –      = −
+                    1 − k     1 − k                     answ ito/antw
+                                                                                                  itv k
+                                                                                                    (2)
+5.2     4 cos x.( − sin x )                              cos x – sin x
+          sin( 30° − x + x )                              sin (α + β)
+        − 4 sin x. cos x       =
+               sin 30°
+        − 4 sin x. cos x                                                1       =                                                  1                                                                    2
+              2
+       = −8 sin x. cos x                              double sine form
+                                                                                                                      / dubbel sin form       = −4( 2 sin x. cos x )
+       = −4 sin 2 x                                answ/antw
+                                                                                                    (6)
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       13                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+                                           cos x – sin x
+      OR/OF
+                             4 cos x.( − sin x )
+          (sin 30° cos x − cos 30° sin x ) cos x + (cos 30° cos x + sin 30° sin x ) sin x
+                      − 4 sin x. cos x       =
+          1        3             3      1              (  cos x −    sin x ) cos x + (   cos x +  sin x ) sin x
+          2       2             2       2               
+         − 2( 2 sin x. cos x )                                         1                                                                         1                                                                                  2                                                                                            2       =                                                                          cos                                                                               x +                                                                                               sin                                                                                        x         1                  1                2                          2            cos                 x +                          x                                         2       2                        sin
+         2       2
+         − 2( 2 sin x. cos x )       =
+         1     2       2             (cos  x + sin  x )
+         2
+                                                                    1        − 2( 2 sin x. cos x )                                  =                                                                    2              1                       )1(
+              2                                           double sine form
+       = −8 cos x sin x                                                                                                                      / dubbel sin form
+       = −4( 2 sin x cos x )                                           answ/antw
+       = −4 sin 2 x                                                                               (6)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       14                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+5.3     cos 2x – 7 cos x – 3 = 0
+              2                                expansion/       2 cos  x − 1 − 7 cos x − 3 = 0
+                                                                             uitbreiding                2          2 cos  x − 7 cos x − 4 = 0                    
+             ( 2 cos x + 1)(cos x − 4) = 0                                2 cos 2 x − 7 cos x − 4 = 0
+                 1                             factors/faktore    ∴ cos x = –     or/of cos x = 4 (no solution)                                                                       1                 2                            cos x = –
+    ∴ x = 120° + n.360° or/of x = 240° + n.360°  ; n ∈ Z                    2
+                                        120° & 240°
+      OR/OF                               + n.360°
+    ∴ x = ±120° + n.360°  ; n ∈ Z                       OR/OF
+                                        ±120°
+                                        + n.360°
+                                                                                                    (6)
+5.4      sin 3θ = sin( 2θ+ θ)
+                                        expansion of/           = sin 2θcosθ+ cos 2θsin θ
+                                                                             uitbreiding van                                            2           = 2 sin θcosθcosθ+ 1( − 2 sin θ) sin θ                         sin( 2θ+ θ)
+                              2                                               3                                        expansions of sin 2θ                     θ           = 2 sin θ1( − sin              θ) + sin θ− 2 sin
+                                           AND cos 2θ                             3           = 3 sin θ− 4 sin θ                                                                                2                                        1− sin θ
+                1                     1                            3                         subst           = 3(                         ) − 4(                                 )
+                3    3
+                 4           = 1 −
+                 27
+                                        answ/antw              23
+           =                                                                                  (5)              27                                                                                            [24]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       15                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+QUESTION/VRAAG 6
+
+
+                                              y
+
+                                       1
+
+
+                                                                     1
+                                                                     2
+                                                           g
+
+                                                                                        x
+  –240°    –180°    –120°     –60°        0°      60°      120°     180°     240°
+
+
+
+                                      –1
+
+                                    –1 12                                                                                                                 f
+
+
+
+
+
+                   1                                                        16.1         f (x) = cos x –      and/en    g(x) = sin(x + 30°)          f (x) = cos x –
+                   2                                                        2
+                            1                      g(x) = sin(x + 30°)    ∴ p = 30° and/en q = –                                         value of/waarde v p                            2
+                                         value of/waarde v q
+      OR/OF                                                                                  (4)
+                                           1
+          sin (60° + p) = 1    and/en  cos 0° + q =              sin (60° + p) = 1                                           2
+                                                                            1                                             1            cos 0° + q =        ∴ p = 30°        ∴ q = –                                                                            2                                             2                                         value of/waarde v p
+                                         value of/waarde v q
+                                                                                                    (4)
+6.2      x ∈ (–120° ; 0°) OR/OF   –120° < x < 0°             critical values/
+                                                                                      kritiese waardes
+                                         correct interval/
+                                                                             korrekte interval
+                                                                                                    (2)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       16                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+6.3     The graph of g has to shift 60° to the left and then be reflected   60° left/links
+         about the x-axis./Die grafiek van g moet 60° na links skuif en    reflection about
+        dan om die x-as gereflekteer word.                                    x-axis/refleksie om
+                                                                            x-as
+                                                                                                    (2)
+      OR/OF
+       The graph of g must be reflected about the x-axis and then be    reflection about
+          shifted 60° to the left./Die grafiek van g moet om die x-as             x-axis/refleksie om
+          gereflekteer word en dan met 60° na links geskuif word.             x-as
+                                         60° left/links
+                                                                                                    (2)
+      OR/OF
+       The graph of g has to shift 120° to the right./Die grafiek van g    120° right/regs
+        moet 120° na regs geskuif word.                                                        (2)
+
+      OR/OF
+       The graph of g has to shift 240° to the left./Die grafiek van g     240° left/links
+        moet met 240° na links geskuif word                                                    (2)
+                                                                                                    [8]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       17                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+QUESTION/VRAAG 7
+              A
+
+
+                                           x + 3
+
+                                   x + 3
+                                         D                             θ
+
+               B
+                                                        2x
+                                                                     1 θ                                                                     2   θ
+                                 C
+
+7.1      C AˆD = 180 ° − 2θ       [ ∠s sum of ∆/∠e som van ∆]        answ/antw
+                                                                                                    (1)
+7.2       sin θ   sin(180° − 2θ)           =                                correct subst into
+         x + 3       2 x                                                    sine rule/korrekte
+          sin θ   sin 2θ                                                     subst in sin-reël           =
+         x + 3    2 x                             sin 2θ
+          sin θ  2 sin θ. cosθ                         2 sinθ. cos θ           =
+         x + 3      2 x
+                                         cos θ as subject/                2 x sin θ         cosθ =                                                        as onderwerp
+              2( x + 3) sin θ
+                  x         cosθ =
+                x + 3                                                                            (4)
+
+      OR/OF
+                                         AD = x + 3     AD = x + 3            [sides opp = ∠s/sye to = ∠e]
+      AC2 = AD2 + CD2 – 2AD.CD.cos θ                 correct subst into
+                       2             2          2                                         cosine rule/korrekte            ( x + 3) = ( x + 3) + ( 2 x ) − 2( 2 x )( x + 3). cosθ                                                                             subst in cos-reël
+             0 = 4 x 2 − 4 x ( x + 3) cosθ                   simplification/
+                                2                                                                       vereenvoudiging                4 x
+         cosθ =                                cos θ as subject/              4 x ( x + )3                                                                       as onderwerp
+                  x           =
+                x + 3                                                                            (4)
+                               A      OR/OF
+
+        Draw/Trek AP ⊥ CD                          constr/konstr                                           x + 3        x + 3                                          sketch shown/
+                  x                                                      toon skets         cos θ=                     θ                x + 3
+                           C   x   P   x  D                             (4)
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       18                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+7.3            2                                                       2         cosθ =                                cosθ =
+              5                                                       5
+    ∴ θ= 66,42°                             size of/grootte v θ
+
+         In ∆ABC:
+             1   AB
+             sin θ=                              correct ratio/             2   AC                                                                             korrekte verh             AB          sin 33,21° =                              subst correctly/
+                    5                                                                         korrek
+    ∴  AB = 5 sin 33,21°                       answ/antw
+              = 2,74                                                                         (5)
+
+      OR/OF
+
+      θ AB          sin   =
+           2   5                                        θ
+           θ                           AB = 5 sin
+    ∴ AB = 5 sin                                                        2
+                    2
+         but/maar:
+                    2                            equation/vgl               cosθ =
+                    5
+                         2 θ  2                            simplification/        1 − 2 sin   =                                                                        vereenvoudiging                2   5
+                         2 θ  3                sin   =
+                2  10                                         value of/waarde v
+        θ    3                        θ                 sin  =                                                         sin
+                2    10                                             2
+                                         answ/antw                  3    15
+    ∴ AB = 5    =    = 2,74                                                            (5)                 10    2                                                                                            [10]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       19                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+QUESTION/VRAAG 8
+
+                       A
+
+
+                                         2
+                          O         D
+                                           1
+
+
+
+                       B                                C
+
+
+8.1.1     twice or double /twee keer of dubbel                  R
+                                                                                                    (1)
+8.1.2      Oˆ 1 = 2Aˆ    [∠ at centre = 2×∠ at circ/midpts∠=2×omtreks∠]  S
+           Oˆ 2 = 2Cˆ    [∠ at centre = 2×∠ at circ/midpts∠=2×omtreks∠]
+           Oˆ 1 + Oˆ 2 = 360°       [∠s in a rev/∠e in omw of om 'n pt]     S
+                                          S        2 Aˆ + 2Cˆ = 360°
+      ∴ Aˆ + Cˆ = 180°                                                                                                    (3)
+      OR/OF
+
+                  = 2 x          Let/Gestel Oˆ1
+            Aˆ = x    [∠ at centre = 2×∠ at circ/midpts∠=2×omtreks∠]    S
+          = 360 ° − 2 x        [∠s in a rev/∠e in omw of om 'n pt]           Oˆ 2                                   S                                          S
+            Cˆ = 180° − x [∠ at centre = 2×∠ at circ/midpts∠=2×omtreks∠]
+     ∴ Aˆ + Cˆ = 180°                                                                         (3)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       20                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+8.2
+
+                      B
+
+
+
+
+
+                                                        1 C
+                                                          2
+                 A
+                                                  F                                              2
+                                                 1
+                          D
+
+                                            E
+
+
+8.2        Aˆ = Cˆ 2                 [ext ∠ of cyclic quad/buite∠ v kdvh]     S  R
+             Eˆ = 180 ° − Cˆ 2          [opp ∠s of cyclic quad/tos∠e v kdvh]    S  R
+     ∴ Eˆ = 180° − Aˆ
+     ∴ EF   | | AB            [co-interior ∠s 180°/ko-binne∠e 180°]                                          R
+                                                                                                    (5)
+      OR/OF
+             Bˆ = Dˆ 1                  [ext ∠ of cyclic quad/buite∠ v kdvh]     S  R
+               Fˆ = 180° − Dˆ 1          [opp ∠s of cyclic quad/tos∠e v kdvh]
+                                          S  R     ∴ Fˆ = 180 ° − Bˆ
+     ∴ EF   | | AB            [co-interior ∠s 180°/ko-binne∠e 180°]                                          R
+                                                                                                    (5)
+                                                                                                    [9]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       21                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+
+QUESTION/VRAAG 9
+
+
+                                    B T            2      1                                            2
+                                                     1
+
+                             H
+                                                       3                                     K
+                                                      2
+                                                        1
+
+
+
+
+
+                              x
+                                 2
+                            3
+                                              •S                                1
+                 A
+
+
+
+                                                C
+
+          = Cˆ                 [corresp ∠s/ooreenk ∠e ; CA| |KT]     S  R9.1        Kˆ 3
+          = Aˆ 3                [tan-chord th/raakl-koordst]         S  R
+          = x                                                                                  (4)
+9.2        Kˆ 3 = x = Aˆ 3           [proved/bewys in 9.1]            S
+     ∴ AKBT is cyc quad    [line (BT) subtends equal ∠s/        R
+                                                                                                    (2)                                   lyn (BT) onderspan gelyke ∠e]
+                         OR/OF
+                                [converse ∠s in same segment/
+                           omgek ∠e in dies segment]
+          = Cˆ                [proven in 9.1]9.3        Kˆ 3
+          = Bˆ 2                [tan-chord th/raakl-koordst]         S  R
+          = Kˆ 2             [∠s in the same segm/∠e in dies segm]   S  R
+     ∴ TK bisects/halveer AKˆB
+                                                                                                    (4)
+      OR/OF
+           Kˆ 2          = Bˆ 2             [∠s in the same seg/∠e in dies segm]    S  R
+          = Aˆ 3                 [tans from same pt; ∠s opp equal sides/   S  R
+                                     rkle v dies pt; ∠e to gelyke sye]
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       22                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+     ∴  = Kˆ 3              [proven in 9.1]                                                                                                    (4)     ∴ TK bisects/halveer AKˆB
+9.4        Aˆ 3 = Kˆ 2 = x        [proven/bewys]                 S
+                                          R     ∴ TA tangent        [converse tan chord theorem OR                                                                                                    (2)                  ∠ between line and chord/
+                           omgekeerde raakl-kdst OF ∠tussen lyn
+                             en koord]
+9.5      BSˆ A = BKˆA = 2x      [A,S,K & B concyclic/konsiklies]      S (both/beide
+      ATˆ B = 180 ° − 2 x       [A,T,B & K concyclic/konsiklies]               statements/
+     ∴ points A, S, B and T are also concyclic/punte A, S, B en T is          bewerings)
+          ook konsiklies [opp ∠s of quad = 180°/tos ∠e van          R
+           vierhoek=180°]                                                                      (2)
+
+      OR/OF
+
+        A, S K and B are concyclic. A, K, B and T are concyclic.       S
+     ∴ A, S, B and T are concyclic.                     S
+                                                                                                    (2)
+      OR/OF
+
+        The circle passing through points A, K and B contains the point S
+        on the circumference (A, ,S, K and B concyclic)./Die sirkel deur  S
+         punt A, K en B bevat die punt S op die omtrek (A, S, K en B
+           konsiklies).
+        The circle passing through A, K and B contains the point T on the
+         circumference (proven in 9.2)./Die sirkel deur punt A, K en B  S
+         bevat die punt T op die omtrek (bewys in 9.2).
+     ∴ points A, S, B and T are also concyclic/punte A, S, B en T is
+             konsiklies                                                                             (2)
+                                                                                            [14]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       23                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+QUESTION/VRAAG 10
+
+
+
+
+                   B
+                                             17
+
+                                           E
+                                8
+                                               C
+                                                 F
+
+                       D
+           A
+
+
+10.1      BDˆC = 90°        [∠ in semi circle/∠ in halfsirkel]        S
+       DC2 = 172 – 82      [Th of/stelling v Pythagoras]           using/gebruik
+                                                                        Pyth korrek/          = 225
+                                                                                   correctly
+                                          answ/antw    ∴ DC = 15
+                                                                                                    (3)
+10.2.1   CF  CE           =                  [line | | one side of ∆/lyn | | een sy van ∆]                                          S/R      CD  CB
+        CF  1         OR/OF ∆CEF | | | ∆CBD
+    ∴   =                                 subst correctly/          15   4                                                                            korrek    ∴ CF = 3,75                                          answ/antw
+                                                                                                    (3)
+10.2.2      BDˆC = 90 °        [∠ in semi circle/∠ in halfsirkel]
+       EFˆC = BDˆC         [corresp ∠s/ooreenk ∠e; EF| |BD]        S/R
+      ABˆC = 90°           [tan ⊥ diameter/raakl ⊥ middellyn]       S  R
+         In ∆BAC and/en ∆ FEC:
+      ABˆC = EFˆC         [proven/bewys]
+                Cˆ = Cˆ          [common/gemeen]                S
+    ∴ ∆BAC | | | ∆ FEC  [∠∠∠]                                          R
+                                                                                                    (5)
+      OR/OF
+      BDˆC = 90°        [∠ in semi circle/∠ in halfsirkel]
+                                          S/R       EFˆC = BDˆC         [corresp ∠s/ooreenk ∠e; EF| |BD]
+      ABˆC = 90°           [tan ⊥ diameter/raakl ⊥ middellyn]       S  R
+         In ∆BAC and/en ∆ FEC:
+      ABˆC = EFˆC         [proven/bewys]
+                Cˆ = Cˆ          [common/gemeen]                S
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       24                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+      BAˆC = FEˆC       [∠ sum in ∆/∠ som van ∆]            S
+    ∴ ∆BAC | | | ∆ FEC                                                                     (5)
+
+
+
+
+             110.2.3  EC =  × 17 = ,4 25                           length of/lengte v
+             4                                        EC
+      AC  BC           =           [∆BAC | | | ∆ FEC]
+      EC  FC                                S
+      AC   17           =                                          subst correctly/         4,25   3,75
+                                                                           korrek                           4     ∴AC = 19,27 or/of 19                          answ/antw
+                           15                                                                                                    (4)
+      OR/OF
+
+             CF  BC         cos Cˆ =    =                             correct ratios/            CE  AC                                                                                korrekte verh's               ,375   17    ∴     =                                subst correctly/
+              ,4 25  AC                                                                           korrek
+                            4                        answ/antw    ∴ AC = 19,27 or/of 19
+                           15                                                               (4)
+
+      OR/OF
+                                          S OR Pyth th
+      ∆BCA | | | ∆DBC                                          correct ratio       CB2 = CD . AC
+                   2          BC      AC =
+          DC
+                  2                                subst             17          =
+             15
+                          4                         answ/antw          = 19,27 or/of 19
+                         15                                                                  (4)
+
+      OR/OF
+            Cˆ = ABˆD            [tan-chord theorem/rkl-kdstelling]        S
+      AD           = tanABˆD
+         8                                    correct ratio
+           = tanCˆ
+              8           =                                  subst
+             15
+               64    ∴ AD =
+               15
+                            4                        answ/antw    ∴ AC = 19,27 or/of 19                                                                                                    (4)                           15
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       25                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+
+10.2.4  AC is diameter of the circle passing through A, B and C        S/R
+         [chord subtends 90° OR converse ∠ in semi circle ]
+      AC is middellyn van die sirkel wat deur die punte A, B en C gaan
+         [koord onderspan 90° OF omgek ∠in halfsirkel ]
+                 1                  19      1             answ/antw        ∴radius =  × 19, 27 = 9,63 or/of 9    or/of  AC
+                 2                  30      2                                          (2)
+                                                                                            [17]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       26                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+QUESTION/VRAAG 11
+11.1    equiangular or similar/gelykhoekig of gelykvormig        answ/antw
+                                                                                                    (1)
+                                P
+                                       •                                            2                                    1,5
+                                 ♦  M
+                    ♠       2,5                                     ♦  1,25                 K
+                                                       1                                          ♠  R                                                                •
+                                                                      0,75                                        N
+
+
+
+          ♦
+       Q
+11.2.1  KP    5,1     PM   2   KM    5,2          =    = 2  ;     =  = 2 ;    =    = 2        
+     RN   ,075    NM  1    RM   .125                                                                                         all 3 statements/
+        KP  PM  KM    ∴    =    =                                                       al 3 bewerings
+       RN  NM  RM                                                                (3)
+
+    ∴ ∆KPM | | | ∆RNM     [Sides of ∆ in prop/sye v ∆eweredig]
+
+     OR/OF
+
+     RN   ,075  1  NM  1  RM    ,1 25  1          =    =        =     ;    =    =                                                ;      KP    5,1   2  PM   2  KM    5,2   2
+                                                                                         all 3 statements/       RN  NM  RM    ∴    =    =                                                       al 3 bewerings
+        KP  PM  KM
+    ∴ ∆KPM | | | ∆RNM    [Sides of ∆ in prop/sye v ∆eweredig]                                                                                               (3)
+
+     OR/OF
+
+        In ∆MNR:
+        1,252 = 12 + 0,752 = 1,5625                                        Pˆ = M NˆR
+    ∴ M NˆR = 90°       [converse Pyth theorem]
+        In ∆PKM:
+         2,52 = 1,52 + 22 = 6,25
+    ∴ Pˆ = 90°           [converse Pyth theorem]
+                    1,5  3              0,75  3        cos P KˆM =   =   and cos Rˆ =    =
+                    2,5  5              1,25  5
+    ∴ P KˆM = Rˆ                                        P KˆM = Rˆ        In ∆KPM and ∆RNM
+      P KˆM = Rˆ     [proved]
+             Pˆ = M NˆR     [proved]
+     ∴∆KPM| | |∆RNM [∠;∠;∠ OR 3rd ∠]                   [∠;∠;∠ OR 3rd ∠]
+                                                                                               (3)
+
+Copyright reserved/Kopiereg voorbehou                                         Please turn over/Blaai om asseblief
+Mathematics/P2/Wiskunde/V2                       27                           DBE/November 2015
+                                  NSC/NSS – Memorandum
+11.2.2     P KˆM = Rˆ          [∆KPM | | | ∆RNM]  S
+    ∴ Pˆ is common/gemeen
+    ∴ ∆RPQ | | | ∆KPM       [∠∠∠]         ∆RPQ|||∆KPM
+      RP         RQ          =                           [∆RPQ | | | ∆KPM]   S
+      KP  KM
+           3,25  RQ                     subst correctly/    ∴     =
+            1,5    2,5                                      korrek
+                                                           5                  5,2 × ,3 25           5           RQ = 5    ∴ RQ =        = 5,42 or 5                                                          12                      5,1             12
+                                 2    ∴ NQ = 5,42 – 0,75 = 4,67 or 4            NQ = answ/antw
+                                 3                                                                                (6)
+     OR/OF
+
+     R NˆM = Pˆ             [∆KPM | | | ∆RNM]  S
+    ∴ Rˆ is common/gemeen
+    ∴ ∆RNM | | | ∆RPQ      [∠∠∠]         ∆RNM | | | ∆RPQ
+      RP  RQ          =               [∆RNM | | | ∆RPQ]  S
+     RN  RM
+           3,25  RQ    ∴     =                       subst correctly/
+           0,75  1,25                                     korrek
+                      5                                   5    ∴ RQ = 5,42 or 5                   RQ = 5
+                      12                                  12
+                                 2    ∴ NQ = 5,42 – 0,75 = 4,67 or 4                                 NQ = answ/antw                                 3
+                                                                                (6)     OR/OF
+        In ∆MNR:
+        1,252 = 12 + 0,752 = 1,5625              S
+    ∴ M NˆR = 90°       [converse Pyth theorem]
+        In ∆PKM:
+         2,52 = 1,52 + 22 = 6,25
+    ∴ Pˆ = 90°           [converse Pyth theorem]
+        In ∆MNR and ∆QPR
+     ∠R is common
+    M NˆR = Pˆ = 90 °
+    ∴ ∆MNR | | | ∆QPR [∠∠∠]                                 ∆MNR | | | ∆QPR
+      RP  RQ          =               [∆RNM | | | ∆RPQ]  S
+     RN  RM
+           3,25  RQ    ∴     =                       subst correctly/
+           0,75  1,25                                     korrek
+                      5                                   5    ∴ RQ = 5,42 or 5                   RQ = 5
+                      12                                  12
+                                 2           NQ = answ/antw    ∴ NQ = 5,42 – 0,75 = 4,67 or 4
+                                 3                                     (6)
+                                                                          [10]
+                                             TOTAL/TOTAAL:     149
+
+Copyright reserved/Kopiereg voorbehou

@@ -1,0 +1,844 @@
+               GRADE 12/GRAAD 12
+
+
+                   NATIONAL
+               SENIOR CERTIFICATE/
+                    NASIONALE
+                 SENIOR SERTIFIKAAT
+
+
+
+             MATHEMATICS P1/WISKUNDE V1
+
+                  NOVEMBER 2016
+
+                 MEMORANDUM
+
+MARKS: 150
+PUNTE: 150
+
+
+
+
+
+                               This memorandum consists of 20 pages.
+                              Hierdie memorandum bestaan uit 20 bladsye.
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                   2                           DBE/November 2016
+                               NSC – Memorandum
+
+
+NOTE:
+•      If a candidate answers a question TWICE, only mark the FIRST attempt.
+•    Consistent accuracy applies in all aspects of the marking memorandum.
+
+LET WEL:
+•    Indien 'n kandidaat 'n vraag TWEE keer beantwoord, sien slegs die EERSTE poging na.
+•    Volgehoue akkuraatheid is op ALLE aspekte van die memorandum van toepassing.
+
+QUESTION/VRAAG 1
+1.1.1    x ( x − 7 ) = 0
+                                     x = 0        x = 0 or x = 7
+                                     x = 7
+                                                                                                    (2)
+1.1.2    x 2 − 6 x + 2 = 0
+                  6 ±   ( −6) 2 − 41()( 2)                                                                correct substitution into                 x =
+                        2)1(                                        correct formula
+                  6 ±  28                 x =                          x = ,035
+                     2                                     x = ,565                 x = ,035 or x = ,565
+                                                                                                    (3)
+     OR/OF
+        x 2 −x6 + 2 = 0
+        x 2 − 6 x + 9 = −2 + 9
+               ( x − 3) 2 = 7
+                                     ( x − 3 )2 = 7
+              x − 3 = ± 7
+                 x = 3 ±  7                       x = ,035
+                 x = ,035 or x = ,565                  x = ,565
+                                                                                                    (3)
+1.1.3            x − 1 + 1 = x
+               x − 1 = x − 1                                     isolate   x − 1
+               x − 1 = x 2 − 2 x + 1                    x                                                                                                        2 −x2 + 1
+         x 2 − 3 x + 2 = 0
+           ( x − 2 )( x − 1) = 0                         standard form
+                                     factors
+                  x = 2  or x = 1                                     both answers
+             Both answers are valid
+                                                                                                    (5)
+     OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                   3                           DBE/November 2016
+                               NSC – Memorandum
+            x − 1 + 1 = x
+                                     isolate   x − 1               x − 1 = x − 1
+           Let  x − 1 = k
+                  k = k    k ≥ 0
+                  k = k 2                                                                     2                                     k
+             k 2 − k = 0
+             k (k − 1) = 0                         standard form
+           ( x − 1)( x − 2 ) = 0                                     factors
+                  x = 2  or x = 1   ;   x ≥ 1              both answers
+              Both answers are valid                                                          (5)
+
+     OR/OF
+
+             x − 1 + 1 = x                        isolate   x − 1
+                x − 1 = x − 1                      x − 1= 0
+                                     x − 1= 1      By inspection :                                     x = 2                x − 1 = 0   or x − 1 = 1
+                   x = 2  or x = 1                   x = 1
+                                                                                                    (5)
+1.1.4    3 x + 3 − 3 x + 2 = 486
+                x  3      x  2                           expansion       3 3 − 3 3 = 486
+        3 x (3                   3 − 3 2 ) = 486                        common factor
+              3 x = 27
+                                     3 x = 27                              x      3              3 = 3
+                 x = 3                         x = 3
+                                                                                                    (4)
+     OR/OF
+
+       3 x + 3 − 3 x + 2 = 486                        common factor
+                                     (31 − )1       3 x + 2 (3                    1 − 1) = 486
+            3 x + 2 = 243
+            3 x + 2 = 3 5                         3                                                                                                                     x + 2 = 243
+             x + 2 = 5
+                                     x = 3                 x = 3
+                                                                                                    (4)
+1.2.1      f ( x ) = x                        2 + 3 x − 4
+          0 = ( x + 4 )( x − 1)                                     factors
+           x = − 4 or x = 1                       both answers
+                                                                                                    (2)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                   4                           DBE/November 2016
+                               NSC – Memorandum
+
+1.2.2     x 2 + 3 x − 4 < 0
+        ( x + 4)( x − 1) < 0
+
+                              +    –    +
+                   OR/                                         -4      1            –4         1 OF
+
+                                      − 4 < x < 1       − 4 < x < 1     OR/OF  x ∈ (− 4 ; )1                                                                                                    (2)
+1.2.3   2 x + 3 ≥ 0                              2 x + 3
+            3                                                    3        x ≥ −                                 x ≥ −
+            2                                                    2
+                                                                                                    (2)
+              f  / ( x ) ≥ 0 when f is increasing
+                             − 4 + 1                       − 4 + 1       The turning point occurs at x =                   x =
+                                  2                             2
+            3        x ≥ −                                                     3                                         x ≥ −            2                                                                2
+                                                                                                    (2)
+                     x = 2 y and  x 2 − 5 xy = −241.3
+           (2 y ) 2 − 5(2 y )( y ) = −24                                     substitution of 2y
+           4 y 2 − 10 y 2 = −24
+                                                                                                            2                                 2                         −y6  = −24              − 6 y = −24
+                    y 2 = 4
+                     y = −2 or y = 2                 both y – values
+                     x = −4  or x = 4                 both x– values
+                                                                                                    (4)     OR/OF
+                   x = 2 y and  x 2 − 5 xy = −24
+                      x                                                          x                  y =                         substitution of
+                    2                                                   2
+              2        x         x − 5( x )   = −24
+                   2 
+                   2  5   2           x −  x = −24
+              2                                              3   2                                     −  x = −24              3   2                                                             2           −  x = −24
+              2
+                  x 2 = 16
+                   x = −4  or x = 4                                     both x – values
+                  y = −2 or y = 2                   both y – values        (4)
+
+     OR/OF
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                   5                           DBE/November 2016
+                               NSC – Memorandum
+
+                                                                            x   x 2 + 24                                     equating  =
+                                                                   2    5 x
+          x = 2 y and  x 2 − 5 xy = −24
+              x          y =
+            2
+           − x 2 − 24          y =
+             − 5 x
+          x   x 2 + 24          =
+         2    5 x
+                                                                                                          2                2        2                            3 x = 48       5 x = 2 x + 48
+       3 x 2 = 48
+         x 2 = 16                            both x – values
+                                     both y – values       (4)          x = −4  or x = 4
+          y = −2 or y = 2
+                                                                                            [24]
+
+QUESTION/VRAAG 2
+
+2.1     T4 = −7                            –7
+                                                                                                    (1)
+2.2       Tn = a + ( n − )1 d
+                                     a = 5 and d = –4       − 87 = 5 + ( n − 1)( −4)
+       − 87 = 5 − 4 n + 4                        − 87 = 5 + ( n − 1)( −4)
+         4 n = 96
+                                     n = 24          n = 24
+                                                                                                    (3)
+     OR/OF
+                                     –4n + 9       − 4 n + 9 = − 87
+                                     −n4 + 9 = − 87
+         − 4 n = − 96
+             n = 24                          n = 24
+                                                                                                    (3)
+2.3       − 3 ; − 7 ; .......; − 87
+            n        S n =   [a + Tn ]
+            2                                     n = 22
+            22                                     a = –3       S 22 =     [− 3 − 87 ]
+             2
+         = − 990                           answer
+                                                                                                    (3)
+     OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                   6                           DBE/November 2016
+                               NSC – Memorandum
+
+          − 3 ; − 7 ; .......; − 87
+            n         Sn =   [2 a + (n − 1)d ]
+            2
+            22                                     n = 22       S 22 =     [2( −3) + (22 − 1)(− 4 )]
+             2                             a = –3
+         = − 990                           answer
+                                                                                                    (3)
+     OR/OF
+
+        All negative terms can be written down and added to get the
+       answer of –990./Alle negatiewe terme kan neergeskryf word
+       en dan bymekaar getel word om –990 te kry.           a = –3
+                                     answer              (3)
+     OR/OF
+      Sum = S 24 − (5 + )1                                     24                                         [5 − 87 ]             24          =     [5 − 87 ] − 6                                    2
+              2                            –6
+          = −990                                     answer
+                                                                                                    (3)
+2.4       5 ; − 15 ; − 35......
+        d = −20                            d = –20
+      Tn = −20 n + 25                         Tn = −20 n + 25
+        Last term in the sequence divisible by 5 is:/Laaste term in
+        die ry deelbaar deur 5 is:
+       − 4187 + 4()3
+       = − 4175
+
+              Tn = −20 n + 25
+       − 4175 = −20 n + 25                                     − 4175 = −20 n + 25
+          20 n = 4200
+            n = 210                          n = 210
+       There will be 210 terms in the sequence that is divisible
+       by 5./Daar is 210 terme in die ry deelbaar deur 5.                                       (4)
+
+     OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                   7                           DBE/November 2016
+                               NSC – Memorandum
+
+
+       5 ; 1 ; –3 ;  ... ; –83 ; –87; ……; – 4187
+             Tn = −4 n + 9                        −n4 + 9 = −4187
+       − 4187 = −4 n + 9
+           4 n = 4196                         n = 1049
+            n = 1049
+       There are 1049 terms in the sequence./Daar is 1049 terme
+         in die ry.
+
+      T1 ; T6 ; T11 ; T16 ... are divisible by 5./is deelbaar deur 5.
+       The largest integer value of k such that             5k − 4 ≤ 1049
+       5k − 4 ≤ 1049
+          5k ≤ 1053
+            k ≤ 2106,                                     k = 210            k = 210                                                                                                    (4)
+     OR/OF
+
+       5 ; 1 –3 ; –7 ; … ; –4175; –4179 ;–4183 ; –4187
+             Tn = a + (n − 1)d
+       − 4175 = 5 + (n − 1)(− 4 )                                     d = –4       − 4180 = −4(n − 1)                                     − 4175 = −4 n + 9            n = 1046
+                                     1046
+      Number of terms divisible by 5
+         1046 − 1       =       + 1
+            5
+       = 210
+                                     n = 210
+
+                                                                                                    (4)
+                                                                                            [11]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                   8                           DBE/November 2016
+                               NSC – Memorandum
+
+QUESTION/VRAAG 3
+3.1.1   – 1   ;  x   ;  3   ;  x + 8 ; ...
+
+        –1              x              3               x +8
+                                      x + 1 ; 3 − x and x + 5
+                x + 1           3 – x            x + 5
+                                      calculating second                 –2 x + 2          2x + 2
+                                                                          differences
+                                      − 2 x + 2 = 2 x + 2      − 2 x + 2 = 2 x + 2
+           4 x = 0                                      x = 0               (4)
+              x = 0
+3.1.2    First differences/Eerste verskille:  1 ; 3 ; 5 ; ……
+            n         Sn =   [2(1) + (n − 1)(2 )]                                                                  2            2                             Sn = n
+         = n 2
+
+       250 < n 2                             S n > 250
+         n >  250
+                                                            n > 158,      ∴ n > 158,                         
+      The sum of the 16 first differences will be greater than 250.
+        Therefore the 17th term of the quadratic number pattern is the
+                                      n = 17          first satisfying this condition./Die som van 16 eerste verskille
+                                                                                                   (4)         sal groter as 250 wees. Gevolglik sal die 17de term van die
+        kwadratiese getalpatroon die eerste wees wat aan die
+       voorwaarde voldoen.
+3.2.1          21 + 21(0,85 ) + 21(0,85 )2 + .........
+                       n −1                                                             17      Tn = ar                             n = 10 ; r = 0,85 or                                                                            20
+      T10 = (21)(,085 )9                         substitution into correct
+                                                                  formula         = ,486 cm
+                                      answer
+                                                                                                    (3)
+
+                             n3.2.2        a (1 − r                           )      S n =             1 − r
+                                    15                        n = 15            21(1 − (,085 )  )      S15 =
+              1 − ,085
+         = 127,77                           127,77
+
+       Area of the page = 30 x 21 = 630
+                                      630        Percentage of paper covered in grey ink:
+            127,77         =      × 100%
+             630                                      20,28
+         = 20, 28%                                                                                                   (4)
+                                                                                                    [15]
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                   9                           DBE/November 2016
+                               NSC – Memorandum
+
+
+QUESTION/VRAAG 4
+
+4.1     y = 0                               y = 0
+                                                                                                    (1)
+4.2    R(0 ; 1)                              answer
+                                                                                                    (1)
+4.3     y = a x
+       9 = a 2                                      substitution
+     ∴ a = 3                            a = 3
+                                                                                                    (2)
+     DP = 2 – b4.4
+          y = 3 x
+        1      b
+         = 3                                                1    b        81                                  = 3
+             − 4      b                                               81       3  = 3                                                                                     4                                       3−  or use of logs
+         b = − 4                             b = − 4
+      DP = 2 − ( −4)
+                                      DP = 6 units         = 6 units
+                                                                                                            (4)
+4.5     h ( x + 2) + k = 0
+          h ( x + 2) = − k
+                       1                                          1         1               0 < − k <                          −k <     or k > −
+                       81                                         81        81
+               1                                              1            −   < k < 0                         −   < k < 0
+              81                                             81
+                                                                                                            (3)
+                                                                                            [11]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  10                          DBE/November 2016
+                               NSC – Memorandum
+
+QUESTION/VRAAG 5
+
+5.1              f ( x ) = − x                               2 + 4 x − 3
+                                      4                  f ′( x ) = 0           or     x = −              −x2 + 4 = 0 or                                     2(− 1)                                                                  4                                                                   x = −       − 2 x + 4 = 0                   x = 2                                                                2(− )1
+              x = 2
+              y = − (2 ) 2 + 4(2 ) − 3                   y = − (2 )2 + 4(2 ) − 3
+             = 1                                                                              (2)
+           B(2 ; )1
+
+     OR/OF
+
+       − x 2 + 4 x − 3 = 0
+          x 2 − 4 x + 3 = 0
+            ( x − 3)( x − 1) = 0
+                   x = 3 or x = 1
+                    3 + 1                                 3+ 1                   x =                         x =
+                     2                                          2
+                   x = 2
+                   y = − (2 ) 2 + 4(2 ) − 3                                                           2                                     y = − (2 ) + 4(2 ) − 3
+                = 1                                                                                                    (2)
+       B(2 ; 1)
+5.2     Range/Waardeversameling :  y ≤ 1               y ≤ 1
+
+     OR/OF                                                                                    (1)
+
+       Range/Waardeversameling :  y ∈ (−∞ ; ]1            (−∞ ; ]1
+                                                                                                    (1)
+5.3     x ≤ −1   or   x > 2                       critical values
+                                         x ≤ −1   or   x > 2
+     OR/OF                                                                                   (2)
+
+                                     critical values           (− ∞ ; − 1] ∪ (2 ; ∞ )
+                                     x ≤ −1   or   x > 2
+                                                                                                    (2)
+5.4       ( x − p ) ( y + t ) = 3
+         Vertical asymptote of h(x) /vertikale asimptoot at x = 2
+                                     x = −2        Translation 4 units to the left / Translasie 4 eenhede links
+                                                                                                    (1)        x = 2 – 4 = –2 is the equation of the vertical asymptote of
+        h(x + 4)
+        x = 2 – 4 = –2 is die vergelyking van die vertikale asimptoot
+
+     OR/OF
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  11                          DBE/November 2016
+                               NSC – Memorandum
+     OR/OF
+
+                3       h ( x ) =       + 1
+              x − 2 + 4
+              3          =     + 1
+              x + 2
+           x = −2
+          is the equation of the vertical asymptote / is die vergelyking   x = −2
+       van die vertikale asimptoot                                                               (1)
+5.5       ( x − p )( y + t ) = 3
+                 3           ( y + t ) =                      ( x − p )                                                             3
+            3                                    y =     − t                                                x − p
+            x − p                            − t
+     B(2 ; 1)
+        Point of intersection of the asymptotes
+        Snypunt van die asimptote
+       p = 2                              p = 2
+       − t = 1
+                                                                                                           t = −1             t = −1                             
+                                                                                                    (4)
+5.6      x-intercepts of  f  / x-afsnitte van f :
+        x 2 − 4 x + 3 = 0
+           ( x − 3 )( x − 1) = 0                                     both critical values
+        x = 1 or  x = 3
+       g / ( x ) < 0 for x ∈ R ; x ≠ 2
+       Hence  f ( x ) < 0
+                                     x ≤ 1        x ≤ 1 or  x ≥ 3  OR/OF   (− ∞ ; 1] ∪ [3 ; ∞ )
+                                     or
+                                     x ≥ 3
+                                                                                                    (4)
+                                                                                            [14]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  12                          DBE/November 2016
+                               NSC – Memorandum
+
+
+QUESTION/VRAAG 6
+
+6.1                                           y
+
+
+                                                                         g:
+                                                            shape: increasing curve
+                                 3                      g             (1 ; 0):
+                                                                  only on log graph
+
+                                                                                       x      f:                                0     1        3
+                                                                                           f                  (3 ; 0)
+                                                     (0 ; 3)
+
+
+
+                                                                                                    (4)
+6.2      y = log 2 x
+             −1                                interchange x and y       g   :  x = log 2 y                                                                                     x                                                                   y = 2                       x                                     y = 2                                                                                                    (2)
+6.3     log2 (3 − x ) = x
+                                                                                                                       x               x                                2 = − x + 3      2 = 3 − x
+      2 x = − x + 3
+
+        Reflect the graph of g about the line y = x to obtain g −1 and
+       determine the point of intersection of  f and g −1 ./ Reflekteer die   point of intersection of
+        grafiek van g om die lyn y = x en bepaal die snypunt van  f and          f and g −1
+       g −1                                                                                        (3)
+
+6.4    x = 1                               answer               (1)
+                                                                                            [10]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  13                          DBE/November 2016
+                               NSC – Memorandum
+
+QUESTION/VRAAG 7
+
+7.1   A = P( 1 + )i n
+                     0 ,15  2                                                                        substituting i and n        = 250000 + 1       
+                         12                                          values in correct
+        = R 256 289 , 06                                          formula
+
+                                        answer
+                                                                                                    (2)
+                                          − n7.2                     x [1 − (1 + i )                                            ]              P =
+                                           i
+                                                 − 46                                           ,015                                                            i =                           0 ,15                       x 1 − + 1                                         12
+                                12                     n = 46       256 289,06 =                                       substitution into                         0 ,15
+                                                                            correct formula                          12
+                                0 ,15  − 46         3203,6133 = x 1 − + 1          
+                                12    
+                                       answer
+                  x = R 7 359 ,79   per month                                                                                                    (4)
+
+     OR/OF
+                                                                                         ,015                                       −2                  −46              i =                                                                    x + 1   ,015   1 − + 1   ,015                             12
+                         12         12                  n = 46       250 000 =                              substitution into                                    ,015                                                                            correct formula
+                           12
+        x = R 7 359,79                           answer
+                                                                                                    (4)
+7.3                                                                              ,015  − n                        9 000 1 − + 1                        x = 9 000
+                                         12              256 289,06 =
+                                         ,015                  substitute into correct
+                               12                                formula
+                              − n
+       + 1  ,015   = ,06440429722
+                 12 
+                      ,015                           use of logs       − n log + 1        = log ,06440429722
+                   12 
+                                       n =35,42
+                   n = 35, 41872568 months/ maande
+            ∴ 36 payments are required
+                 ∴36 paaiemente moet betaal word
+       ∴Thabiso will pay his loan off 10 months sooner./Thabiso los   10 months
+        sy lening 10 maande vroeër af.
+                                                                                                    (5)
+     OR/OF
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  14                          DBE/November 2016
+                               NSC – Memorandum
+                                                      n                              9000 + 1  ,015  − 1                                         n
+                          ,015             12                9 000       256289,06+ 1        =
+                       12               ,015
+                                  12                substitute into correct
+                                          n                        n                        formula
+       3203,61325+1  ,015  = 9000+ 1  ,015  − 9000
+                        12             12 
+                                    ,015  n       9000 = 5796,38675+ 1       
+                                12                                        use of logs
+       n = log    ,015  ,15523691425               + 1       
+                                12                              n =35,42
+       n = 35, 41872568
+    ∴ 36 payments are required
+      ∴36 paaiemente moet betaal word
+       ∴Thabiso will pay his loan off 10 months sooner./Thabiso los   10 months
+        sy lening 10 maande vroeër af.
+                                                                                                    (5)
+7.4    The balance of his loan after the 35th payment was made:
+       Die balans van sy lening nadat die 35ste paaiement betaal is:
+                                                                 ,015  35                                                                                                                                                            35                                          9000 + 1         − 1                                                                                                                                                                                                                                                                                                                                                     12                                        256289,06+ 1  ,015                                                ,015  35                                                                                                                                                         Balance = 256289,06+ 1         −                                                 12 
+                                                                                                                                                                                 35                                               12                ,015                                  ,015                                                                +                                                  12        9000                                                                                                                                                                                                                                                                                                                                                                                    1  12     − 1
+                   = R 3 735,45                                                                           ,015
+                                                                                                  12
+
+                                             ,015          Final instalment = 3 735, 45+ 1                                             0 ,15                                              + 1                                                12                  3 735 ,45                                                                                             12 
+                   = R 3 782,14                                       answer
+
+     OR/OF                                                                                                    (4)
+
+                              − n            x [1 − (1 + i )                               ]      P =
+                            i
+           Final instalment
+                                       0,41872568
+                                                                                                                                                                    −,0 41872568                             ,015  − ,0 41872568                                                                    ,015                                                                 +                                                 1 − +                   1           9 000                                                                                   9 000 1 −                                                                                                                                                                                                                                                             1  12                                   12                                                                                                                              ,015                                                                                                                                        ,015        =                + 1       
+                            ,015                 12                                        12
+                     12                                                            ,015                                        × + 1       
+        = R 3 782,14                                                             12 
+                                       answer
+
+                                                                                                    (4)
+
+     OR/OF
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  15                          DBE/November 2016
+                               NSC – Memorandum
+                                                                        36                          ,015  36                                                                   ,015      256289,06+ 1                                               9000 + 1         − 1                                                                36                                                                    12                                             ,015               12                                      36                                                                                                                      ,015                   Balance = 256289,06+ 1         −                                                                                   9000 +1       − 1                                         12                ,015                       12             
+                                                12                               ,015
+                 = R − 5 217,86                                                 12
+
+                                       9 000 − 5217 ,86
+         Final payment = 9 000 − 5217,86                                       answer
+                 = R 3 782,14
+                                                                                                    (4)
+
+
+                                                                                            [15]
+
+QUESTION/VRAAG 8
+
+8.1                      f ( x + h ) = (3 x + h ) 2                   3( x + h 2)
+                    = (3 x 2 + 2 xh + h 2 )
+                    = 3 x 2 + 6 xh + 3h 2
+                f ( x + h ) −  f ( x ) = 3 x 2 + 6 xh + 3h 2 − 3 x 2
+                                                    2                   6 xh + 3h 2                    = 6 xh + 3h
+
+                                                 f ( x + h ) −  f ( x )                                f ′( x ) = lim                                                                                                                                                     f ( x + h ) − f ( x )                                         h → 0      h                 f ′( x ) = lim
+                                                                                                                                        h → 0      h                                                          2                           6 xh + 3h                    = lim
+                                         h → 0    h
+                           h ( 6 x + 3h )                lim (6 x + 3h )                    = lim                                                            h → 0
+                                         h → 0    h
+                    = lim (6 x + 3h )
+                                         h → 0
+                                                   6x                    = 6 x
+                                                                                                    (5)
+     OR/OF
+                             f ( x + h ) −  f ( x )            f ′( x ) = lim                                                                                                                                                                     f ( x + h ) −  f ( x )                                                                                                                                                                                                                                                                 / ( x ) = lim                      h → 0      h                         f
+                                                                                                                                                        h → 0      h
+                    (3 x + h ) 2 − 3 x 2          = lim
+                      h → 0      h                        3( x + h ) 2 − 3 x 2
+                3 x 2 + 6 xh + 3h 2 − 3 x 2          = lim
+                      h → 0         h
+                6 xh + 3h 2                       6 xh + 3h 2          = lim
+                      h → 0    h
+                h ( 6 x + 3h )          = lim                             lim (6 x + 3h )
+                      h → 0    h                                                                      h → 0
+          = lim (6 x + 3h )
+                      h → 0                             6x
+          = 6 x                                                                                 (5)
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  16                          DBE/November 2016
+                               NSC – Memorandum
+8.2           4 + h − 2       lim
+           h → 0    h                                      answer
+       g ( x ) =  x                                      answer
+      a = 4                                                                                      (2)
+8.3                 3   5                                                                              32       y =  x −   3                            x
+                 x                                                                           −3                   3                               −x5
+       y = x 2 − 5 x − 3                                             3   12                                            x
+       dy   3   12        − 4                                         2        =  x + 15 x                                                                     −4                                          15 x       dx   2
+                                                                                                    (4)
+                       f ( x ) = x 3 + ax 2 + bx + 188.4                                                                                                        2                        /           2                             3 x + 2 ax + b            f  ( x ) = 3 x + 2 ax + b
+       At x = 1, m tan = −8
+                                                                                                                                                                                                 /                           f  / (1) = −8                         f                                                                                                (1) = −8 or
+      3(1) 2 + 2 a (1) + b = −8                                                                   2                                                           3(1) + 2 a (1) + b = −8           3 + 2 a + b = −8
+              2 a + b = −11 ..........)1(
+
+                  y =  f (1)
+                = g (1)
+                = −8(1) + 20
+                = 12                         1 + a + b + 18 = 12
+      1 + a + b + 18 = 12
+             a + b = −7 ............( 2)
+               a = −4                         a = −4
+                b = −3                         b = −3
+                                                                                                            (5)
+                                                                                                    [16]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  17                          DBE/November 2016
+                               NSC – Memorandum
+
+QUESTION/VRAAG 9
+9.1                 2                        equating derivative to                     f ′( x ) = 3 x + 8 x − 3 = 0
+                                                                     zero       (3 x − 1)( x + 3) = 0                                     factors
+                 1                          x – values                x =    or  x = −3                                                                                                    (3)                  3
+         f  // ( x ) = 6 x + 8                           6 x + 89.2
+     6 x + 8 < 0
+                                                                 4
+             4                            x < −          x < −                                                    3
+             3                                                                                                    (3)
+   OR
+        1                                                            1         − 3                                             − 3        3                                                            3     x =                                    
+         2                                                   2
+        4      =
+        3
+            4
+   ∴ x < −                                                     4            3                             x < −
+                                                                 3
+                                                                                                    (3)
+                   1                         x ≤ −39.3  x ≤ −3  or   x ≥
+                   3                                           1                                     x ≥                   (2)
+   OR/OF                                                    3
+                                     [− ∞;−3]
+                     1          [− ∞; −3] ∪     ; ∞                                                     1                                           3                                   ; ∞                 (2)                                                                                                                                                            3       
+9.4     f (0 ) = −18
+        d = −18
+                      3       2                          d = −18          f ( x ) = ax + bx + cx − 18                                                                          2                                      f ′( x ) = 3ax + 2bx + c
+         f ′( x ) = 3ax                        2 + 2bx + c
+         f ′( x ) = 3 x                      2 + 8 x − 3
+                                     a = 1       3a = 3       2b = 8
+                                     b = 4
+        a = 1        b = 4      c = −3                                     c = –3
+          f ( x ) = x                    3 + 4 x 2 − 3 x − 18                                                                   (5)
+   OR/OF
+         f ′( x ) = 3 x                      2 + 8 x − 3
+                             (f x ) = x                                                                                                                 3 + 4 x 2 − 3 x + d    By integration/Deur integrasie
+         f ( x ) = x                    3 + 4 x 2 − 3 x + d
+                                     d = −18
+         f ( 0) = d = −18                                     a = 1
+       a = 1                                     b = 4
+       b = 4                              c = –3
+        c = −3                                                                                   (5)
+                                                                                            [13]
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  18                          DBE/November 2016
+                               NSC – Memorandum
+
+
+QUESTION/VRAAG 10
+
+10.1  M (t ) = −t                         3 + 3t 2 + 72t
+                            3          2                       M (3) = − (3)3 + 3(3 )2 + 72(3 )    M (3) = − (3 ) + 3(3 ) + 72(3 )
+          = 216                           216
+                                                                                                    (2)
+      216 molecules/molekules
+10.2   M (t ) = −t                           3 + 3t 2 + 72t
+                            /            2                          M / (t ) = −3t                                                                                                                      2 + 6t + 72    M  (t ) = −3t + 6t + 72
+    M / (2 ) = −3(2 ) 2 + 6(2 ) + 72                                                                                                       /                                     M (2 )
+           = 72                           72
+                                                                                                    (3)
+      72 molecules per hour/molekules per uur
+10.3   M (t ) = −t                            3 + 3t 2 + 72t
+                                                                                                                                                                                           //                                /            2                          M  (t )     M (t) = −3t + 6t + 72
+                              //                               M // (t ) = 0     M  (t ) = 0
+      − 6t + 6 = 0                                     answer
+                     t = 1
+     Maximum rate of change of the number of molecules of the
+       drug in the bloodstream is after 1 hour./Maksimum tempo
+       van verandering van die getal molekules in die bloedstroom
+          is na 1 uur                                                                                (3)
+                                                                                                    [8]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  19                          DBE/November 2016
+                               NSC – Memorandum
+
+
+QUESTION/VRAAG 11
+
+11.1
+                       Watches TV   Do not watch      Total
+                          during exams   TV during
+                                      exams
+           Male           80            a          80+a
+           Female          48            12           60
+              Total           b            32          160
+       a + 12 = 32
+           a = 20                                    a = 20
+           b = 80 + 48
+                                                b = 128
+           = 128                                                                                                    (2)
+11.2   No                                        No
+                                 20      P ( M and not watching TV) =    ≠ 0                                                                reason                                160
+                                                                                                    (2)
+                      128  4                              12811.3.1  P (watching TV ) =    =  = 8,0 = 80%                                                      160                      160  5
+                                                                                                    (2)
+                                  12   3
+11.3.2  P (female and not watching TV ) =    =   = ,0075 = 5,7%      12                                  160  40
+                                                      160
+                                                                                                    (2)
+                                                                                                    [8]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1                                  20                          DBE/November 2016
+                               NSC – Memorandum
+
+
+QUESTION/VRAAG 12
+
+12.   We want to create codes that are even numbers greater than 5000.
+       The digit 6 can be used in one of two places in these codes and
+         therefore this presents two scenarios.
+      Ons wil kodes kry wat ewe getalle groter as 5000 is. Die syfer 6
+       kan in twee posisies in die kode gebruik word en twee opsies is
+        moontlik:
+
+     CASE 1: The first digit is a 6./Die eerste syfer is’n 6.
+
+                                              2             6                                              4
+                                         1 × 5 × 4 ×2             1    ×    5    ×    4    ×    2
+                                         40
+      Number of codes starting with 6./Getal kodes wat met 6 begin.
+                 = 1 × 5 × 4 ×2 = 40
+
+     CASE 2: The first digit is a 5 or 7./Die eerste syfer is’n 5 of 7.
+
+                                              2             5                                              4             7                                              6
+             2    ×    5    ×    4    ×    3
+
+      Number of codes not starting with 6./Getal kodes wat nie met 6
+               begin = 2 × 5 × 4 ×3 = 120
+                                         2 × 5 × 4 ×3
+                                         120        Therefore total number of possible codes./Die totale getal
+               moontlike kodes = 40 + 120 = 160.
+                                         160
+                                                                                                    [5]
+     OR/OF
+                                         (3 × 5 × 4 × )1           (3 × 5 × 4 × 1) +  (3 × 5 × 4 × 1) + (2 × 5 × 4 × 1)
+                                         (3 × 5 × 4 × )1       =   60    +    60      +    40
+                                         (2 × 5 × 4 × )1       = 160
+                                         160
+                                                                                                    [5]     OR/OF
+                                         (3 × 5 × 4 × 3 )           (3 × 5 × 4 × 3) − (1 × 5 × 4 × 1)
+                                         (1 × 5 × 4 × )1       =   180 − 20
+       = 160                                 160
+                                                                                                    [5]
+                                             TOTAL/TOTAAL:  150
+
+
+Copyright reserved/Kopiereg voorbehou

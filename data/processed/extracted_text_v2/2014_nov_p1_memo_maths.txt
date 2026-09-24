@@ -1,0 +1,894 @@
+                   NATIONAL
+                SENIOR CERTIFICATE
+
+
+
+                GRADE/GRAAD 12
+
+
+
+             MATHEMATICS P1/WISKUNDE V1
+
+                  NOVEMBER 2014
+
+                 MEMORANDUM
+
+
+MARKS: 150
+PUNTE: 150
+
+
+
+
+
+                        This memorandum consists of 22 pages.
+                        Hierdie memorandum bestaan uit 22 bladsye.
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        2                     DBE/November 2014
+                                 NSC/NSS – Memorandum
+NOTE:
+   •   If a candidate answers a question TWICE, only mark the FIRST attempt.
+   •  Consistent accuracy applies in all aspects of the marking memorandum.
+
+LET WEL:
+   •  Indien ’n kandidaat ’n vraag TWEE keer beantwoord, merk slegs die EERSTE poging.
+   •  Volgehoue akkuraatheid is DEURGAANS op ALLE aspekte van die memorandum van
+       toepassing.
+
+QUESTION/VRAAG 1
+
+1.1.1     ( x − 2)( 4 + x ) = 0
+                                                  x = 2        x = 2  or  x = − 4
+                                        x = −4
+                                                                                                 (2)
+1.1.2   3 x 2 − 2 x − 14 = 0                           standard
+                                                                  form/standaardvorm
+         − b ±  b 2 − 4 ac        x =
+                2 a
+                                        substitution into
+          2 ±   ( −2) 2 − 4(3)( −14)                                                                             correct formula/        x =
+                  2(3)                                                    substitusie in
+                                                                          korrekte formule          2 ±  172        =
+             6
+        x = ,252 or/ of  x = −,185                       answers/
+                                                                antwoorde
+                                                                                                 (4)
+
+     OR/OF
+
+                                                                             1                2  2    1  14  1                                     for adding  on         x −  x +  =   +                                                                             9            3    9   3   9
+                             2                                                           1                 1    43                                            both sides/tel               x −   =                                                         9
+                 3     9                                                                 by aan beide kante
+                 1     43               x −  = ±
+                 3     3
+                                                          1±  43                       1 ±  43                     x =          ∴ x =                                                                    3                          3
+                   x = ,252   or/of   x = −,185                                                         answers
+                                                                                                 (4)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        3                     DBE/November 2014
+                                 NSC/NSS – Memorandum
+1.1.3  2 x + 2 + 2 x = 20
+              x    2                                    common factor/gemeen.      2  ( 2 + )1 = 20                                                                      faktor
+              x  20                            simplification/      2 =
+           5                                                 vereenvoudiging
+      2 x = 2 2
+                                    answer/antwoord
+   ∴ x = 2                                                                                                 (3)
+
+     OR/OF
+
+      2 x 2. 2 + 2 x = 2 2 5.
+                                    common factor/gemeen.
+      2 x ( 2 2 + )1 = 2 2 5.                                             faktor
+      2 x 5. = 2 2 5.                           simplification/
+                                                              vereenvoudiging   ∴ x = 2                                    answer/antwoord
+                                                                                                 (3)     OR/OF
+
+       2.4 x + 2 x = 20
+       2.5 x = 20                            2.5 x = 20
+      2 x = 4 = 2 2                           2 x = 4
+                                                         answer/antwoord   ∴ x = 2                                                                                                 (3)
+1.2    x = 2 y + 3                       ..........)1(
+      3 x 2 − 5 xy = 24 + 16 y      ..........( 2)
+
+         )1( in ( 2:)
+      3( 2 y + 3) 2 − 5( 2 y + 3) y = 24 + 16 y                                    substitution/substitusie
+      3( 4 y 2 + 12 y + 9) − 10 y 2 − 15 y = 24 + 16 y
+      12 y 2 + 36 y + 27 − 10 y 2 − 15 y − 24 − 16 y = 0          simplification/
+              2                                                    vereenvoudiging      2 y + 5 y + 3 = 0
+                                                            standard form/
+         ( 2 y + 3)( y + )1 = 0                                                           standaardvorm
+           3                                                      factorisation/faktorisering       y = −       or    y = −1
+           2                                                y-values/y-waardes
+              3    ∴ x = 2−     + 3  or  x = 2( −)1 + 3
+                 2 
+       x = 0       or        x = 1                              x-values/x-waardes
+           3         ( 0 ; −   )              1( ; − )1                                                                                                 (6)           2
+
+     OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        4                     DBE/November 2014
+                                 NSC/NSS – Memorandum
+           x − 3       y =
+           2
+              2       x − 3            x − 3       3 x − 5 x        = 24 + 16                                  substitution/substitusie
+                   2              2  
+              2  5 x 2 − 15 x      16 x − 48      3 x −        = 24 +
+               2             2
+                    2        2                                              simplification/     × 2 : 6 x − 5 x + 15 x = 48 + 16 x − 48                                                              vereenvoudiging
+          x 2 − x = 0                                          standard form / standard
+                                                      vorm         x ( x − )1 = 0
+                                    factors/faktore       x = 0 or x = 1                                                     x- values/x- waardes
+           3       y = −  or y = −1
+           2                             y-values/y-waardes
+                                                                                                (6)
+1.3    ( x − 1)( x − 2 ) < 6
+     x 2 − 3 x + 2 < 6
+     x 2 − 3 x − 4 < 0                      standard form/
+       ( x + 1)( x − 4 ) < 0                                 standaardvorm
+                                                                     factorisation/faktorisering
+
+                                +    –    +
+                  OR/                                           4         1          4               OF
+                                                                      critical values in the
+      − 1 < x < 4  or  x ∈ (−1 ; 4)                                 context of inequality /
+                                                                           kritiese waardes in die
+                                                                 konteks van die
+                                                               ongelykheid
+                                                                 notation/notasie
+                                                                                                 (4)
+
+1.4   − k − 4 ≥ 0                           −k − 4 ≥ 0
+                                    answer/antwoord            k ≤ − 4
+                                                                                                 (2)
+                                                                                         [21]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        5                     DBE/November 2014
+                                 NSC/NSS – Memorandum
+QUESTION/VRAAG 2
+
+2.1      T4 = 23                                    23                 (1)
+2.2    T251 = a + ( n − )1 d                             a = 2 and d = 7
+                                                                 subst. into correct          = 2 + ( 251 − 1)( 7 )                                                                formula /subt. in
+          = 1752                                                                      korrekte formule
+                                                    1752               (3)
+2.3         251                                general term/
+            − 5)    ∑ ( 7 n                                                             algemene term
+             n =1
+                                      complete answer
+                                                                         /volledige antwoord  (2)      OR/OF
+             250                                general term/
+          7 p + 2 )                                           algemene term    ∑ (
+             p = 0                                complete answer /
+                                                                       volledige antwoord   (2)
+2.4         n        S n =   [a + l ]
+            2
+            251        S n =      [2 + 1752 ]                                            substitution/substitusie
+             2
+         = 220127                                                      220127             (2)
+
+      OR/OF
+            n         Sn =   [2 a + ( n − )1 d ]
+            2
+            251         =      [2( 2) + ( 251 − 1)( 7 ) ]                                  substitution/substitusie
+             2
+         = 220127                                     220127             (2)
+2.5     The new series/Die nuwe reeks is 16 + 44 + 72 + …+1 752                                                            generating new
+                                                                             series divisible by 4/       16 + 28( n − )1 = 1752                                                             vorming van nuwe reeks
+       1736 = 28( n − )1                                          deelbaar deur 4
+        62 = n − 1                            T n = 1752
+        n = 63                              63                 (4)
+
+      OR/OF
+       2 + 9 + 16 + 23 + 30 + 37 + 44 + 51 + ... + 1752
+       T3 is divisible by /is deelbaar deur 4               T3 is divisible by 4/
+                                                                                       is deelbaar deur 4       Then T7 , T11 , T15 , ... , T251 are divisible by 4, thus each 4th
+                                                                   identifying terms        term is divisible by 4.                                                                           divisible by 4/        Daarna is T7 , T11 , T15 , ... , T251 deelbaar deur 4, d.w.s. elke 4de                                                                             identifiseer terme
+        term is deelbaar deur 4.                                                                 deelbaar deur 4
+                                          251 − 3       reasoning/redenering      ∴number of terms divisible by 4 will be =      + 1 = 63
+                                             4
+                                          251 − 3         63                 (4)        ∴aantal terme deelbaar deur 4 sal wees =      + 1 = 63
+                                            4
+      OR/OF
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        6                     DBE/November 2014
+                                 NSC/NSS – Memorandum
+
+         Position of terms divisible by 4:
+       3 ; 7 ; 11 ; …; 247; 251                     generating
+                                                               sequence involving         Tn = 4 n − 1 = 251
+                                                                        position of
+        4 n = 252                                                                 terms/vorming van reeks
+        n = 63                                                                              i.t.v. posisie van terme
+                                      T n = 251
+                                      63                 (4)
+
+                                                                                         [12]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        7                     DBE/November 2014
+                                 NSC/NSS – Memorandum
+QUESTION/VRAAG 3
+
+3.1.1  – 1   ;  – 7   ;  – 11   ;  p   ; ...
+
+         – 6  – 4   p + 11
+
+             2    2
+       p + 11 − ( −4) = 2
+                                        p + 15 = 2       p + 15 = 2
+       p = −13                              p = – 13                     (2)
+
+     OR/OF
+      – 1   ;  – 7   ;  – 11   ;  p   ; ...
+                                                                first differences/
+         – 6   – 4   p + 11                                                                 eerste verskille
+             2    2
+
+       p + 11 = −2
+       p = −13                             p = – 13                    (2)
+
+3.1.2   2 a = 2
+                                  a = 1       a = 1
+
+       3a + b = − 6
+       3)1( + b = − 6
+                                  b = −9       b = − 9
+
+       a + b + c = − 1
+      1 − 9 + c = −1                                  c = 7
+       c = 7
+      Tn = n 2 − 9 n + 7                                 answer/antwoord
+                                                                                                 (4)
+     OR/OF
+                                   (n − 1)(n − 2 )d 2        Tn = T1 + (n − 1)d 1 +                                formula/formule
+                            2
+                                      (n − 1)(n − 2 )(2 )        = −1 + (n − 1)(− 6 ) +                                substitution of first and second
+                              2                         differences/substitusie van eerste
+                     2 n 2 − 6 n + 4                     en tweede verskille        = −1 − 6 n + 6 +                                                            simplification/vereenvoudiging                          2
+        = n 2 − 9 n + 7                                                     answer/antwoord           (4)
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        8                     DBE/November 2014
+                                 NSC/NSS – Memorandum
+     OR/OF
+
+        7; – 1   ;  – 7   ;  – 11   ; p   ; ...
+             – 8    – 6    – 4    p+ 11                c-value/c-waarde
+                                                       a-value/a-waarde
+                  2      2     2                     b-value/b-waarde
+      T0 = 7 = c
+                                                     answer/antwoord
+       2 a = 2 ∴ a = 1                                                                                                 (4)
+       3a + b = −6 ∴ b = −9
+      Tn = n 2 − 9 n + 7
+                                                       a-value/a-waarde
+     OR/OF
+
+          1       a =   ( 2) = 1
+          2
+    ∴ Tn = n 2 + bn + c
+      T1 = − 1 ∴1 + b + c = − 1   .......()1                                                       b-value/b-waarde
+      T2 = − 7 ∴ 4 + 2b + c = −7 .......( 2)                                                        c-value/c-waarde
+          ( 2) − :)1(  3 + b = −6
+                                                     answer/antwoord    ∴ b = −9
+                                                                                                 (4)
+       sub in (1) : c = 7
+    ∴ Tn = n 2 − 9 n + 7
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        9                     DBE/November 2014
+                                 NSC/NSS – Memorandum
+
+3.1.3   The sequence of first differences is/Die reeks van eerste
+         verskille is:
+       – 6 ; – 4 ; – 2 ; 0 ; ...
+
+       – 6+(n – 1)(2) = 96                                              – 6+(n – 1)(2) = 96
+                 n = 52                                                  52
+      ∴two terms are/twee terme is:
+      T52 = 52 2 − 9(52) + 7 = 2243
+                                              2 243      T53 = 53 2 − 9(53) + 7 = 2339
+                                              2 339            (4)
+     OR/OF
+
+       The sequence of first differences is/Die reeks van eerste
+         verskille is:
+       – 6 ; – 4 ; – 2 ; 0 ; ...
+       The formula for the sequence of first differences/Die formule
+         vir die reeks van eerste verskille is Tn = 2 n − 8                                                  2n – 8 = 96
+           1st difference/1ste verskil:  2n – 8 = 96
+                                2n = 104
+                                 n = 52                  52
+
+      ∴two terms are/twee terme is:
+      T52 = 52 2 − 9(52) + 7 = 2243                        2 243
+                       2                                    2 339            (4)      T53 = 53 − 9(53) + 7 = 2339
+
+     OR/OF
+                          Tn − Tn −1 = 96              Tn − Tn −1 = 96
+           (n               2 − 9 n + 7 ) − [(n − 1)                                          2 − 9(n − 1) + 7 ] = 96
+       n 2 − 9 n + 7 − n 2 + 2 n − 1 + 9 n − 9 − 7 = 96
+                                  2 n = 106
+                                   n = 53                 53
+                               T52 = 52 2 − 9(52) + 7 = 2243   2 243
+                               T53 = 53 2 − 9(53) + 7 = 2339   2 339            (4)
+
+     OR/OF
+                          Tn +1 − Tn = 96              Tn +1 − Tn = 96
+                                                2 − 9 n + 7 ] = 96            [(n + 1)                      2 − 9(n + 1) + 7 ] − [n
+        n 2 + 2 n + 1 − 9 n − 9 + 7 − n 2 + 9 n − 7 = 96
+                                  2 n = 104
+                                                  52                                   n = 52
+                              T52 = 52 2 − 9(52) + 7 = 2243   2 243
+                              T53 = 53 2 − 9(53) + 7 = 2339    2 339
+                                                                                                 (4)
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       10                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+3.2.1                     12 −1                                                       1                               1                                        a = 16 and r =                                           T12 = 16                                                                          4                  4 
+                                                                    subst. into correct
+            1           − 9      1            −18         =                      9   or  4    or     18   or  2                            formula/ subt in
+            4               2                                      korrekte formule
+                                       answer/antwoord
+                                                                                                 (3)
+                                   10                          substitution into3.2.2                                    1 
+            16 1 −                                                          4                                                   correct formula                                                                              /substitusie in       S10 =                  1                                                 korrekte formule               1 −
+                  4
+       = 21,33                               answer/antwoord
+                                                                                                 (2)
+      OR/OF
+                        10                        1 
+                       − 1                          substitution into            16                    4                                                                            correct formula                         S10 =               1                                                          /substitusie in                − 1                                                                        korrekte formule               4
+       = 21,33
+                                       answer/antwoord
+                                                                                                 (2)
+3.3   + 1  1 + 1  1 + 1  1  ... + 1  1                    improper fractions/                                                                    onegte breuke            2    3    4      99 
+            3  4  5  6    100        =          ...                                            1     100                                           + 1      or                  2  3  4  5    99                                                                                                          99     99 
+            100        =      
+            2  
+                                       answer/antwoord       = 50
+                                                                                                 (4)
+     OR/OF
+     + 1  1 + 1  1 + 1  1  ... + 1  1                                   1             2    3    4      99                    + 1     
+                                                                                    99               1   3      T1 = + 1     =
+                 2   2                                       giving the first
+           3    1   3  4                                             three terms / gee die      T2 = + 1     =  ×  = 2           2    3   2  3                                             eerste drie terme
+                1      5  5      T3 = 2+ 1     = 2 ×  =
+                   4      4  2
+       3    5                               3       1                  , 2 ,    ... is an arithmetic sequence with a =  and d =
+       2    2                               2       2
+             3        1
+     ∴T98 =  + (98 − )1             2        2
+         100
+       =    = 50                                        answer          2                                                                 /antwoord         (4)
+                                                                                          [19]
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       11                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+QUESTION/VRAAG 4
+
+4.1     p = 1                                p value /waarde
+                                         q value /waarde       q = 1
+                                                                                                (2)
+4.2         2                                              2       0 =    + 1                        0 =    + 1
+            x + 1                                                 x + 1
+       − x − 1 = 2
+                                   x = −3        x = −3                                                                                                                         ( 2)
+     OR/OF
+                                   reflect across/reflekteer om        Reflect (0 ; 3) across y = – x to get T( –3 ; 0)                                                            y = – x        x = −3
+         Reflekteer (0 ; 3) om y = – 1 om T( –3 ; 0) te kry
+        x = −3                                   x = −3
+                                                                                               (2)
+4.3     Shifting g five units to the left shifts (– 1 ; 0) five units
+         to the left.
+        x = – 6                           answer/antwoord       (1)
+4.4      2                             equating both graphs/stel           + 1 = x                                                                 grafieke gelyk         x + 1
+       2 + x + 1 = x 2 + x
+                                                                                             2              2                             x = 3        x = 3
+                                   x =  3 and y =  3    ∴ x =  3 since at S, x > 0
+        y =  3 = ,173...
+                                                                                       2                 2      2      2                       OS = 6      OS = x + y = 3 + 3 = 6
+    ∴ OS =  6 = ,2 45 units/ eenhede              answer/antwoord      (5)
+
+
+     OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       12                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+
+        Translate g one unit down and one unit to the
+         right/Transleer g een eenheid af en een eenheid na
+        regs
+                                              2              2       The new equation/Die nuwe vergelyking : p ( x ) =     p ( x ) =
+                                                    x               x
+        Therefore the image of S is  S/ ( 2 ;  2 ) /
+                                                    coord. of/koörd. van /S      Daarom is die beeld van S nou S/ ( 2 ;  2 )
+     Now translate p back to g/Transleer p terug na g:                                                        coord. of/koörd. van S      S( 2 − ;1  2 + 1)
+                                2              2      OS 2 = ( 2 − 1) + ( 2 + 1) = 2 − 2 2 + 1 + 2 + 2 2 + 1
+    ∴ OS =  6 = ,2 45 units/ eenhede                     answer/antwoord        (5)
+4.5     k < 3 will give roots with opposite signs/          k < 3                     (1)
+        k < 3 sal wortels met teenoorgestelde tekens gee
+                                                                                         [11]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       13                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+QUESTION 5
+
+5.1     y = log a x
+                                                                            1                    1                                       subt.    ; −1      − 1 = log a                                                                            3                    3
+                                                                                                           −1
+             −1  1                                                                 −1  1         1        a  =                           a  =   or a =   
+            3                                             3         3 
+              1  −1                                                                               (2)       a =   
+              3 
+    ∴ a = 3
+5.2     h :  x = log 3 y                            swop x and y/ruil x en y
+    ∴ y = 3 x
+                                  answer/antwoord
+                                                                                                 (2)
+5.3     g ( x ) = − log 3 x                                 answer/antwoord
+                                                                                                 (1)
+      OR/ OF
+                 1                                  answer/antwoord
+       g ( x ) = log 3                   x                                                                          (1)
+
+      OR/ OF
+
+       g ( x ) = log 1 x
+                           3                                    answer/antwoord
+                                                                                                 (1)
+     OR/OF
+
+                 − y                                        answer/antwoord           (1)        x = 3
+
+     OR/OF
+                          y
+              1         x =   
+              3                                        answer/antwoord           (1)
+5.4     x > 0                          answer/antwoord
+                                                                                                 (1)
+     OR/OF
+           (0 ; ∞ )
+                                  answer/antwoord
+                                                                                                 (1)
+5.5     log 3 x = −3
+        x = 3 − 3                                  exponential form/
+           1                                              eksponensiële vorm        x =
+          27                                             simplification/vereenvoudiging
+           1        x ≥                                                     answer/antwoord           (3)          27
+                                                                                                 [9]
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       14                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+QUESTION/VRAAG 6
+
+6.1     4 x 2 − 6 = 0                              y = 0
+              2  3        x =
+           2
+        x = ,1 22      ( x - coordinate of S is positive)           1,22                       (2)
+6.2       ( 0 ; – 6)                          0
+                                         – 6                        (2)
+6.3.1  QT =  f ( x ) − g ( x )                     correct formula/
+                                                                 korrekte formule          = 2  x − ( 4 x 2−6) or = 2  x − 4 x 2+6                                                                  substitution/substitusie
+                                                                                                 (3)
+6.3.2                  1
+     QT = 2 x 2 − 4 x 2 + 6
+                                      −                                           1                                 derivative/afgeleide                                          2         Deravitive of QT = x  − 8 x = 0                                                             derivative equal to 0/
+        1                                                      afgeleide gelyk aan 0          = 8 x
+          x
+                                                                                                3               3                                                           1                 1            1                                                                                                2 =               2 =                 or                 = 64 x 2                   x        x
+            8     x                                         8
+                       2
+                3        x =  1
+              8 
+                       2
+              1          3   1        x =    or  x =
+              2         64
+           1                                             x-value/x-waarde        x =  = 0,25
+           4
+                                           1                                                        2
+                             1                                            2     1        Max/Maks QT = 2    − 4   + 6           substitution/substitusie
+                             4        4 
+          3                                           answer/antwoord         (6)       = 6  = ,675units/ eenhede          4                                                                            [13]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       15                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+QUESTION/VRAAG 7
+
+7.1       A = P 1( − i ) n
+       72 500 = 145 000 1( − i 5)                                                                    substitution/substitusie
+                   72500                             5                     i = 1−
+                  145000                                writing in terms of  i
+            = ,01294.. .                                           herskryf in terme van i
+                                                        answer/antwoord       (3)    ∴ Rate of interest/Rentekoers is 12,94 % p.a./p.j.
+
+     OR/OF
+
+                     5  1            (1 − i ) =                                                  substitution/substitusie               2
+                                   1
+                                   5                       1 
+      ∴ i = 1 −                                        writing i.t.o i                       2 
+                    i = ,01294
+    ∴ Rate of interest/Rentekoers is 12,94 % p.a./p.j.        answer                 (3)
+                                     − n7.2.1                 x [1 − (1 + i )                                       ]          P =
+                                    i
+                                                                                  ,012                                   i =
+                                             −240                             12                               ,012                       x 1 − + 1           
+                             12                    n =240       500 000 =                               ,012                                  substitution into correct
+                                                            formula                       12
+                                   ,012                  500000 ×
+                          12              x =
+                             ,012  −240                      1 − + 1           
+                           12     
+                                                        answer/antwoord       (4)              x = R 5505, 43
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       16                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+
+
+                                              − n7.2.2                        x [1 − (1 + i )                                               ]              P =
+                                              i
+                                           ,012  − n             6000                       6000 1 − + 1         
+                                         12                 500000 =                                                                substitute into correct                                         ,012
+                                                                   formula/substitusie in                              12                                                                 korrekte formule
+         500000                      − n              × ,001 = 1 − (,101)
+          6000
+                             − n     5                      (,101)  = 1 −
+                         6
+
+                         1                          log
+                         6             −n =                      use of logs/gebruik van                         log ,101
+                                                                 logs                  n = 180,07
+       ∴Melissa settles the loan in 181 months                                                        answer/antwoord       (4)
+7.2.3   Samuel                                      Samuel
+      He is paying off his loan over a longer period thus more   reason/rede
+         interest will be paid./Hy betaal sy lening oor 'n langer                                 (2)
+        tydperk af, dus sal hy meer rente betaal.
+
+     OR/OF
+
+       Samuel                                      Samuel
+      He will pay/Hy betaal R5505,43 × 240 – R500 000 =     reason/rede
+      R821 303,20                                                                           (2)
+       She will pay between/Sy sal tussen R580 000 and/en
+      R586 000,00 betaal.                                                              [13]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       17                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+QUESTION/VRAAG 8
+
+8.1        f ( x + h ) = ( x + h ) 3 = ( x 2 + 2 xh + h 2 )( x + h )
+                    = x 3 + x 2 h + 2 x 2 h + 2 xh 2 + h 2 x + h 3
+                    = x 3 + 3 x 2 h + 3 xh 2 + h 3
+            f ( x + h ) − f ( x ) = x 3 + 3 x 2 h + 3 xh 2 + h 3 − x 3
+                  = 3 x 2 h + 3 xh 2 + h 3                     simplifying/vereenvouding
+
+                             f ( x + h ) − f ( x )            f ′( x ) = lim                                         formula/formule
+                      h → 0      h
+                3 x 2 h + 3 xh 2 + h 3                           subst. into formula/subst. in          = lim
+                      h → 0       h                                  formule
+                h (3 x 2 + 3 xh + h 2 )
+          = lim                                               factorization/faktorisering
+                      h → 0       h
+          = lim (3 x                               2 + 3 xh + h 2 )
+                      h → 0
+                        2                                        answer/antwoord          = 3 x                                                                                                   (5)
+
+     OR/OF
+                             f ( x + h ) − f ( x )            f ′( x ) = lim                                         formula/formule
+                      h → 0      h
+                        ( x + h ) 3 − x 3                               subst. into formula/subst. in           = lim
+                       h → 0     h                                    formule
+                        ( x + h )( x + h ) 2 − x 3           = lim
+                       h → 0        h
+
+                        ( x + h )( x 2 + 2 xh + h 2 ) − x 3          = lim
+                      h → 0           h
+                  x 3 + 3 x 2 h + 3 xh 2 + h 3 − x 3          = lim                      h → 0                                           simplifying/vereenvoudiging                           h
+                h (3 x 2 + 3 xh + h 2 )          = lim                                               factorization/faktorisering
+                      h → 0       h
+          = lim (3 x                               2 + 3 xh + h 2 )
+                      h →0
+          = 3x 2
+                                                       answer/antwoord
+                                                                                                   (5)    OR
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       18                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+                             f ( x + h ) − f ( x )                           formula/formule            f ′( x ) = lim
+                      h → 0      h
+                                     3      3                               subst. into formula/subst. in                        ( x + h ) − x
+           = lim                                          formule
+                       h → 0     h
+                        ( x + h − x )( x 2 + 2 xh + h 2 + x 2 + xh + x 2 )                                                                  factorization/faktorisering          = lim
+                      h → 0                h
+                h (3 x 2 + 3 xh + h 2 )           = lim
+                       h → 0       h
+           = lim (3 x                                2 + 3 xh + h 2 )                       h → 0                                          simplifying/vereenvoudiging
+                                                       answer/antwoord           = 3x 2
+                                                                                                   (5)
+
+8.2       f ′( x ) = 4 x + 2 x 3                             4x
+                                   2x 3
+                                                                                                    (2)
+8.3      y = x 12 − 2 x 6 + 1                                     simplification/vereenvoudiging
+      dy         11         5
+        = 12 x  − 12 x                                         derivative/afgeleide       dx
+        = 12 x 5 (x                           6 − )1                                        factors/faktore
+        = 12 x5  y
+                                                                                                    (3)
+
+8.4        f(x) = 2 x 3 − 2 x 2 + 4 x − 1
+                        /           2                                               first derivative/eerste afgeleide           f  (x) = 6 x − 4 x + 4                                   second derivative/tweede
+           f   // (x) = 12 x − 4                                          afgeleide
+                                                                                                                                                                               //                                                                                                                         //         f   ( x ) > 0           f is concave up when/is konkaaf op as f  (x) > 0
+   ∴12 x − 4 > 0
+          12 x > 4
+               1                                         1              x >                         x >                          (4)
+               3                                         3
+                                                                                            [14]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       19                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+QUESTION/VRAAG 9
+
+9.1    f  / ( x ) = 3 x 2 − 8 x − 3 = 0                                           derivative/afgeleide
+                                                                        derivative/
+                                                                           afgeleide = 0
+       (3 x + 1)( x − 3 ) = 0                                                   factors/faktore
+         1     x = −                                      or   x = 3             x-values/waardes
+         3
+        500              14                                 each y-     y =          or  y = 18    or 18,52             y = 0        27                    27                                                   values/elke y-waarde
+                              −  1 ; 500  and (3 ; 0)     Turning points are/Draaipunte is                                                          (6)                                           3  27 
+9.2
+
+                                         y
+                           − 1 ; 18,52                                                                             3                
+                                18
+
+
+
+
+                                                                             x-intercepts/afsnitte
+                                                                            y-intercept/afsnit
+                                                                  turning points/
+                                                                     draaipunte
+                                                                                                     x  shape/vorm
+                         ( 2 ; 0)       O                             (3 ; 0)
+
+                                                                                                  (4)
+9.3     − 1                                                   − 1     x <        or   0 < x < 3                       x <
+        3                                                         3
+   OR                                                    both critical points/
+                                                                      beide kritieke-punte
+           1                                                          notation/notasie       ( −∞ ; −  ) ∪ ( 0 ; 3)
+           3                                                                                   (3)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       20                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+QUESTION/VRAAG 10
+
+
+10.1      l + 2 h = 40
+                                                      answer               (1)                   l = 40 − 2 h
+10.2   2b + 2 h = 100                         2b + 2 h = 100
+       b = 50 − h                           b = 50 − h
+     V = lbh                                        volume formula
+     V = h ( 40 − 2 h )(50 − h )                                                                  (3)
+10.3  V = (50 h − h 2 )( 40 − 2 h )
+                     3          2                                         simplifying/vereenvoudig     V = 2 h − 140 h + 2000 h
+     V ′ = 6 h 2 − 280 h + 2000 = 0                                derivative / afgeleide
+          280 ±   ( −280) 2 − 4( 6)( 2000)
+       h =
+                    2( 6)
+       h ≠ 37,86 or h = ,880                                h-values in any form /
+                                                            h-waardes in enige vorm    ∴ for a box as large as possible, h = ,880 cm
+                                                          answer/antwoord            vir die grootste moontlike boks = 8,80 cm                                                                                                 (5)
+                                                                                                 [9]
+
+QUESTION/VRAAG 11
+
+11.1.1                  83        P(male/manlik) =      or 0,46  or 46,11%
+                       180                                answer/antwoord
+                                                                                                 (1)
+11.1.2  P(not game park/nie wildreservaat)
+      = 1 – P(game park/wildreservaat)
+            62                                              62      = 1−                             1−
+           180                                             180
+        59                                              answer/antwoord      =    or 0,66 or 65,56%
+        90                                                                                    (2)
+     OR/OF
+
+        P(not game park/nie wildreservaat)
+         98   20
+       =    +                                             98   20         180  180                            +
+                                                         180  180         118       =
+         180
+         59       =     or  0,66  or 65,56%
+         90                                              answer/antwoord     (2)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       21                    DBE/November 2014
+                                 NSC/NSS – Memorandum
+11.2    Events are independent if /Gebeure is onafhanklike indien
+       P(male) × P(home) = P(male and home)               P(m) × P(h)
+        P(manlik) × P(huis) = P(manlik en huis)                 and their values/en hulle
+                       83                                waardes        P(male/manlik) =
+                       180
+                                                      answer of product
+                            20        and/en P(home/huis) =       or   0,11  or 11,11%
+                            180
+
+        P(male/manlik) × P(home/huis)
+          83   20      =    ×
+         180  180
+          83      =
+         1620
+      = 0,05123  or 5,12%
+
+       P(male and home/manlik en huis)                                              P(m and/en h)
+          13      =                                                    value/waarde
+          180
+      = 0,07222…  or 7,22%
+
+        Therefore P(male) × P(home) ≠ P(male and home)         conclusion/afleiding   (4)
+      Dus P(manlik) × P(huis) ≠ P(manlik en huis)
+       Thus the events are not independent./Dus is die gebeure
+        nie onafhanklik nie
+
+     OR/OF
+                 Home/Huis  Not Home/
+                               Nie huis
+    M        13         70           83
+       F         7          90           97
+                  20         160          180
+
+        P(female/vroulik) × P(not home/nie huis)
+          97  160                                           P(f) × P(not h)      =    ×                                                          and their values/en hulle         180  180
+                                                         waardes          194      =
+          405                                                      answer of product      = 0,479012345…  or 47,90%
+
+        P(female and not home/vroulik en nie-huis)
+                                                        P(f and/en not h)          90      =                                                    value/waarde
+          180
+      = 0,5   or 50%
+
+        Therefore P(female) × P(not home) ≠ P(female and not
+       home)
+       Thus the events are not independent.                                                                 conclusion/afleiding (4)
+      Dus P(vroulik) × P(nie-huis) ≠ P(vroulik en nie-huis)
+      Dus is die gebeure nie onafhanklik nie.                                                                                                 [7]
+
+Copyright reserved/Kopiereg voorbehou                                          Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       22                             DBE/November 2014
+                                 NSC/NSS – Memorandum
+
+QUESTION/VRAAG 12
+12.1.1  26 × 25 × 24 × 23 × 22                     26 × 25 × 24 × 23 × 22
+      = 7 893 600                              7 893 600              (2)
+
+     OR/OF
+
+            26      26!    26!                                  formula/formule       P5 =       =   = 7 893 600                                                         answer/antwoord      (2)                   ( 26 − 5)!  21!
+12.1.2  24 × 23 × 22                          24 × 23 × 22
+      = 12 144                                   12 144
+                                                                                                 (2)
+12.2.1  7×6×5×4×3×2×1                                     product/produk
+      = 5 040                                 5 040                  (2)
+12.2.2  (3×2×1)(5×4×3×2×1)                           3×2×1
+      = 720                                        5×4×3×2×1
+                                                720
+     OR/OF                                                                                (3)
+
+       The five 'units' can be parked in 5×4×3×2×1 ways./Die    5×4×3×2×1
+         vyf 'eenhede' kan op 5×4×3×2×1 maniere geparkeer
+       word.
+       The three silver cars can be parked in 3×2×1 ways./Die    3×2×1
+         drie silwer motors kan op 3×2×1 maniere parkeer word.
+       So there are (3×2×1)(5×4×3×2×1) = 720 ways to park    720
+        the cars./Dus is daar (3×2×1)(5×4×3×2×1) = 720                                   (3)
+       maniere om die motors te parkeer.
+
+     OR/OF
+
+       Suppose for the moment the 3 silver cars are at one
+        end./Veronderstel die drie silwer motors is op die punt.
+       The 3 cars can be arranged in 3×2×1 = 6 ways./Die 3
+       motors kan op 3×2×1 = 6 maniere gerangskik word.
+       For each of them the remaining four cars can be arranged
+         in 4×3×2×1 = 24 ways./Die 4 oorblywende motors kan op
+      4×3×2×1 = 24 maniere rangskik word.
+       So 6 × 24 = 144 ways if all 3 cars at one end./Dus is daar  6 × 24 = 144
+       6 × 24 = 144 maniere as die 3 motors op die punt is.
+
+
+
+        Together, the silver cars can only occupy 5 different
+         positions amongst the 7 positions.
+        ./Saam kan die silwer motors slegs 5 verskillende posisies
+       hê tussen die 7 moontlike posisies.                5 × 144
+       ∴Total ways/Totale getal maniere = 5 × 144 = 720      720                    (3)
+                                                                                                 [9]
+                                             TOTAL/TOTAAL:  150
+
+Copyright reserved/Kopiereg voorbehou

@@ -1,0 +1,938 @@
+                   NATIONAL
+               SENIOR CERTIFICATE/
+                NASIONALE SENIOR
+                    SERTIFIKAAT
+
+
+
+               GRADE 12/GRAAD 12
+
+
+
+             MATHEMATICS P1/WISKUNDE V1
+
+                  NOVEMBER 2022
+
+          MARKING GUIDELINES/NASIENRIGLYNE
+
+
+
+MARKS/PUNTE: 150
+
+
+
+
+
+                    These marking guidelines consist of 21 pages.
+                        Hierdie nasienriglyne bestaan uit 21 bladsye.
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        2                           DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+NOTE:
+      If a candidate answers a question TWICE, only mark the FIRST attempt.
+     Consistent Accuracy applies in all aspects of the marking guidelines.
+
+LET WEL:
+     Indien 'n kandidaat 'n vraag TWEE keer beantwoord, sien slegs die EERSTE poging na.
+     Volgehoue akkuraatheid is DEURGAANS op ALLE aspekte van die nasienriglyne van
+       toepassing.
+
+
+QUESTION1/VRAAG 1
+
+1.1.1        (3 x  6)( x  2)  0                   x  2
+           x  2  or   x  2                   x  2                (2)
+1.1.2      2 x 2 x6  1  0
+             b   b 2  4 ac
+           x 
+                  2 a
+             6    6  2  4(2)(1)                 correct substitution into
+           x                                                       correct formula
+                       2(2)
+                                   2,82
+           x  2,82   or  x  0,18                                   0,18                 (3)
+1.1.3      x 2  90  x
+           x 2 x  90  0                     standard form
+              ( x  9)( x  10)  0
+           CV:  x  9    or  x  10               critical values
+
+
+
+
+
+                      – 9       10
+
+
+           x  9  or  x  10                   x  9 or x  10
+        OR/OF                                                                         (4)
+              ( ;  9) or (10; )
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        3                           DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+1.1.4      x  7  x  12
+
+           x  12  7  x
+                                   isolating the root
+               x  12 2  7  x 2                    squaring both sides
+
+           x 2  24 x  144  49 x
+
+           x 2  25 x  144  0                   standard form
+
+              ( x  16)( x  9)  0
+
+           x  16 or x  9                     both answers        (4)
+
+        OR/OF                              OR/OF
+           x  7  x  12  0                                   standard form
+               x  3 x  4   0   or   let   x  k                                   factors
+
+            x  3 or   x  4                                   answers
+
+           x  9  or  x  16                                   both answers for x   (4)
+1.2       2 x y  2
+
+           y x2  2  ………( 1 )                eq 1
+
+           xy  4   ………( 2 )
+
+             (1) in (2):
+
+           x ( 2 x  2)  4                      substitution
+                    2                           standard form         2 x x2  4  0
+           x 2 x  2  0
+              ( x  2)( x  )1  0
+           x  2  or  x  1                                   x-values
+           y  2    y   4                                   y-values             (5)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        4                           DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+        OR/OF                              OR/OF
+         2 x y  2
+
+             1
+           x    y  1  ………( 1 )                                   eq 1             2
+
+           xy  4   ………( 2 )
+
+             (1) in (2):
+
+               1                y   y  1  4                                   substitution               2     
+
+          1   2             y y  4  0
+          2                            standard form
+
+           y 2 y2  8  0
+
+              ( y  4)( y  2)  0
+
+           y  4  or  y  2                                   y-values
+           x  1    x  2                    x-values             (5)
+
+        OR/OF                              OR/OF
+         2 x y  2 ………( 1 )
+
+             4
+           y     ………( 2 )                eq 2
+               x
+
+             (2) in (1):
+
+              4                                   substitution          2 x    2
+               x
+
+          2 x 2  2 x  4  0                                   standard form
+           x 2  x  2  0
+
+              ( x  2)( x  1)  0
+
+           x  2  or  x  1                   x-values
+           y  2    y   4                    y-values             (5)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        5                           DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+        OR/OF                              OR/OF
+         2 x y  2 ………( 1 )
+
+             4
+           x     ………( 2 )                                   eq 2               y
+
+             (2)in (1):
+               4          2    y  2                                          substitution               y 
+          8  y 2  2 y  0
+           y 2  2 y  8  0                                   standard form
+              ( y  4)( y  2)  0
+
+           y  4  or  y  2                   y-values
+
+           x  1    x  2                    x-values             (5)
+                    n     n 1     n  2        n     n  1     n   2         exp law1.3         5.2  5   5   5.2  5 5.  5 5.
+                     5 n 2  5  25
+                                            common factor                     5n 22 
+
+          2 5n (11)                                                                answer/explanation   (3)
+
+        OR/OF
+
+        Any integer multiplied by an even number will be
+          even
+          3 y 1           x1.4            96
+          32
+
+                     y 1           x                                    3 y 1           x          3                                                                                                             2                                2                          5   96                     5   96                                                         2          2
+
+
+                                5 x    x
+         3 y 12.  5  2 2 3. 2                                                                y 1   5      52x   2x                                   3  2.   2  3.
+
+              5 x
+          5 
+               2
+       x  2                         x  2
+
+                 x
+           y  1 
+               2
+               2
+           y  1 
+                2
+      y  2                          y  2             (4)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        6                           DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+        OR/OF                              OR/OF
+          3 y 1           x              96
+          32                                                                                                       2
+                          2                                                                                y 1                   2                       y 1                   2                                       3                      x                        3                                                                               (96)                                                                                                 (96) x                                                                                                                                                                                                                                                                                                                                                                        25                                                                                        25                               
+          32 y  2      5 x   x
+                    10  2  .3           2
+         32 y  2.210  25 x.3x                                                      2 y  2  10     5 x   x                                   3   .2   2  .3
+
+         10  5 x
+      x 2                         x  2
+
+         2 y  2 2
+      y  2                          y  2             (4)
+
+                                                                                      [25]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        7                           DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION 2/VRAAG 2
+
+2.1.1     a  14
+        T6  14r 5  448                     T6  14r 5  448
+                   r 5  32       Answer only: full marks
+          r  2                      r = 2                 (2)
+2.1.2       nT  14(2)n 1
+
+                             6                        substitution into correct              14(2  1)
+         S n                                                formula
+               2  1
+         S 6  882                         S 6  882
+
+         114 674 – 882 = 113 792
+
+         113 792  896 2 n  1                                     
+
+         128  2n                         128  2n
+
+         n = 7                           7                     (4)
+
+       OR/OF                              OR/OF
+              a( r n  1 )
+         S n 
+                    r  1
+                  14( 2 n  1 )                  substitution into correct
+         114 674                                                              formula                    2  1
+         8 191  2 n  1
+                                                                                             n                  n                            2  8 192         2  8 192
+         n  log 2 8 192
+         n = 13                          n = 13
+      7 more terms must be added to the first 6 terms.                                   7                     (4)
+             1                                  5                        12.1.3       r          OR   448r  14          r 
+             2                                             2
+                                      1
+                        r 
+                                      2
+               a
+         S  
+              1  r
+              448
+          S                            substitution                 1
+              1 
+                 2
+          S   896                        answer               (3)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        8                           DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+2.2               k  1    1     1                 p     20                    p  0  3    6     6
+             1          1  1  3                           1
+        T1        T2                    T1 
+             6          3  6  6                           6
+             3  1  1
+         d                            d
+             6  6  3
+
+         121  n   1          1                 substitution               2    n  1          6   2     6                   3  
+
+         121     1  1   1             n    n 
+          3            3  3   3 
+
+         121  1   2              n
+          3   3
+         121  n 2
+
+                                   value of n         n = 11
+       k  10                        value of k            (5)
+
+       OR/OF                              OR/OF
+
+                   k  1    1     1                 p     20                    p  0  3    6     6
+             1                                             1         a                            a 
+             6                                             6
+            1   1
+                 l   k 
+            3   6                        l
+
+         n k  1                                   n k  1
+             n           Sn      a  l         2
+
+         121   k  1  1  1   1                     k 
+          6    2     6  3   6 
+
+         121   k  1  1   1                     k 
+          6    2     3   3 
+
+         121   k  1  k  1             
+          6    2     3    
+         121 k(  )1 2
+          6      6                                     121   (  )1 2                                     k
+          k  1   121                                    6      6
+          k  1 11
+                                   value of k            (5)          k  10
+                                                                                       [14]
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        9                           DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION 3/VRAAG 3
+
+3.1       3a  b  7                        3a b  7
+          3  b  7                        3 + b = 7             (2)
+             b  4
+
+       OR/OF                              OR/OF
+        T2  T1  7                        T2  T1  7
+         4  2b 9  (1 b  9)  7                substitution          (2)
+         b = 4
+3.2         Tn  n 2  4 n  9
+        T60  ( 60 ) 2  4( 60 )  9                 substitution
+                               Answer only: full marks            3849                        answer               (2)
+3.3       14 ; 21 ; 30 ; 41;
+             First difference: 7 ; 9 ; 11 ; …                         first difference
+       Common 2nd difference: 2                2
+
+          Tp  2 p  5           Answer only: full marks     2 p  5               (3)
+
+       OR/OF                                          OR/OF
+             First difference: 7 ; 9 ; 11 ; …                                                                   first difference
+           Tn  a  n  1d
+                                   2             Tp  7   p  12
+             Tp  2 p  5                     2 p  5               (3)
+3.4       157  2 p  5                      157  2 p  5
+         p  76                          p  76
+      Between T76 and T77                 T76 and T77          (3)
+
+       OR/OF                              OR/OF
+
+                           Tn 1  Tn  157        Tn 1  Tn  157
+              ( n  1) 2  4( n  1)  9  ( n 2  4 n  9)  157
+         n 2  2 n 1  4 n  4  9  n 2  4 n  9  157
+                                   2 n  152
+                                   n  76                                    n  76
+      Between T76 and T77                 T76 and T77          (3)
+                                                                                      [10]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       10                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION 4/VRAAG 4
+
+4.1.1     p = – 1 and q = 2                    p = – 1  q = 2    (2)
+           14.1.2              2  0                                   = 0           x  1
+          2 x  2  1
+             1
+           x 
+             2
+             1    
+                ; 0                                    answer              (2)             2    
+             14.1.3      x    3                                   –3             2
+             5                                          5
+                         Answer only: full marks        x                 (2)
+             2                                              2
+4.1.4      y  x  t                                        subst (1 ; 2)
+         2 1  t
+                t  1                           t  1                 (2)
+               1
+4.1.5      2                             Answer only: full marks                x  1
+                                                         1
+                                        2  0           1             2  0                                         x  1
+           x  1                                             1
+                                   x 
+                                                          2
+              1      x     or  x  1                    x  1                (3)
+              2
+       OR/OF
+                     1            x     ;     or  1 ;                       2 
+4.2.1      y = –5                          answer              (1)
+4.2.2         b   ( 4)           x           2                                   x  2             2 a    2)1(
+                 f (2)  2 2  4(2)  5  9                 y   9              (2)
+      D(2 ;  9 )
+
+       OR/OF                              OR/OF
+                  f  / ( x )  2 x  4
+         2 x  4  0
+               x  2                        x  2
+                 f (2)  2 2  4(2)  5  9                 y   9              (2)
+      D(2 ;  9 )
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       11                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+4.2.3     q  5                          q  5
+          9  a ( 2 ) 2  5                      substitution of (2 ; – 9)
+          4  4 a
+                                   a  1         a  1
+                                     x                                                                     (3)      g ( x )  2  5
+4.2.4      y  (  ;  5) OR   y  5 ; y  R                answer               (1)
+4.2.5      k  9                              – 9
+                                   k  9              (2)
+                                                                                      [20]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       12                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION 5/VRAAG 5
+
+5.1       g ( x )  2 x  6
+                                   y = 6                (1)           y  6
+5.2        y  2 x  6
+                                   swop x and y           x  2 y  6
+                              Answer only: Full marks
+             1           y    x  3                        equation            (2)
+             2
+5.3       1             x  3  2 x  6                                  equating
+          2
+            x  6  4 x  12
+                                            x = – 6             3 x  18
+                x  6                                   y = – 6             (3)
+        A(  6;  6)
+
+       OR/OF                              OR/OF
+
+         2 x 6  x                                                          equating
+          x  6                                            x = – 6
+          y  6                               y = – 6              (3)
+5.4     AB    ( 6) 2  (12) 2                                   substitution
+             180  6 5  13, 42                       answer               (2)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       13                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+5.5       BC   6 2  6 2   72  6 2               BC
+       AB = AC = 180         symmetry of g and g 1    AB = AC /midpoint (3 ; 3)
+                                  2     72  2                                    h (A)       h  ( 180 )                                            2  
+              162  9 2
+                       1
+           area of ABC   BC  h                                   substitution                       2
+                       1                                 2                        72  162  54 units       answer (A)         (5)
+                       2
+
+       OR/OF                                           OR/OF
+           tan BDˆC  2
+                                   BDˆC  63, 43      BDˆC  63, 43
+                  1           tan DCˆA 
+                  2
+      DCˆA  26,57
+                                   DAˆC  36,86
+      DAˆC  36,86             (ext angle triangle)
+                                     AC =  180                        1
+          Area of ABC                            180                                 180                                         sin36,86       substitution into the                                                                                                                                                             2                                                                       correct formula
+                     53,99 units 2              answer (A)         (5)
+
+       OR/OF                              OR/OF
+         Area of ∆ABC = Area of ∆BDC + Area of ∆ADC    Areas (∆BDC+∆ADC)
+                       1        1                     DC .BO  DC .height              1                                    DC .BO                       2        2                                                        2
+                        1       1                     9  6  9  6          1 DC .height
+                        2       2                      2
+                     54 units 2                substitution
+                                   answer (A)          (5)
+                                                                                      [13]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       14                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION 6/VRAAG 6
+
+6.1     A  P1(  i) n
+                  m  8         13 459  12 0001                    8                                                           400                  subst into correct
+                             8                                          formula
+     m1         ,1121...                           400 
+         1 m                              8 ,1121..                                                                    8                                   1 m   ,1121..            400                                                          400
+       m
+             ,00144...
+          400
+     m  5,78%                       5,78 %
+                                                                                              (4)
+6.2            x 1(  i )                                n  1        F 
+                               i
+                                           12                                      ,0 075                                                              
+            1 000                       1  ,0075    1                                                     12
+                          12                       12        F 
+                           ,0075
+                     12
+           R12 421, 22                      answer
+
+        He won't be able to buy the computer because      conclusion
+        R13 000 – R12 421,22 = R578,78                                               (4)
+       OR/OF
+        He won't be able to buy the computer because
+        R12 421,22 < R13 000
+6.3.1     Loan amount = 85% × R250 000
+                  = R212 500                 answer             (1)
+
+       OR/OF                              OR/OF
+         Loan amount = R250 000 – (15% × R250 000)
+                  = R212 500                 answer             (1)
+6.3.2                                       5                                                                             5                               ,013                                                          ,013       A  212 5001                      A  212 5001                                                     12                                                                                                         12   
+      A  224 262,53                               answer
+
+
+                                 n              x 1  1  i )                                          P 
+                               i
+                                  0,13  67                         x 1  1       )                                                                              12                  substitution into         224 262,53 
+                               0,13                                correct formula
+                                   – 67                            12
+         x  R4 724,96                                   answer             (5)
+                                                                                      [14]
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       15                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION 7/VRAAG 7
+
+                           2  x 7.1           f x  x
+                                   /              f  x  h   f x                 f x  lim
+                            h 0      h
+                                   /           ( x  h ) 2  ( x  h )  ( x 2  x )                   substitution into                 f x  lim
+                            h 0           h                                  the formula
+                                   /        x 2  2 xh  h 2  x  h  x 2  x          x 2  2 xh  h 2  x  h                 f x  lim
+                            h  0            h
+                   2 xh  h 2  h
+             = lim                                                                             2                            h  0                         2 xh  h  h                        h
+                   h ( 2 x  h  )1
+              lim                                common factor
+                           h  0     h
+      f  / x  2 x  1                                  answer              (5)
+
+       OR/OF                                 OR/OF
+                           2  x                 f x  x
+                                                                                                   2             2                                       2                  2              2         x  2 xh  h  x  h                 f  x  h   ( x  h)  ( x  h)  x  2 xh  h  x  h
+                                         2  2 xh  h 2  x  h  x 2  x                 f  x  h   f x  x
+                    2 xh  h 2  h                                                    2                                      2 xh  h  h
+                                   /              f  x  h   f x                 f x  lim
+                            h 0      h
+                   2 xh  h 2  h                                 substitution into
+             = lim                            h  0                                                 the formula                        h
+                   h ( 2 x  h  )1
+              lim                                common factor
+                           h  0     h
+      f  / x  2 x  1                                  answer              (5)
+ 7.2           f ( x )  2 x 5  3 x 4  8 x                     10x 4
+                                4  12 x 3  8                    12x 3                 f    / x  10 x
+                                          8                      (3)
+ 7.3      g ( x )  ax 3  3 x 2  bx  c                   g / ( x )  3ax 2  6 x  b
+         g / ( x )  3ax 2  6 x  b                    
+         g // ( x ) ax6   6                                  g // ( )1  6a ( )1  6  0
+         g // ( )1  6a ( )1  6  0                   a  1
+        a  1
+          For concave up g // ( x )  0
+         6 x  6  0                          x > – 1              (4)
+           x > – 1
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       16                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+       OR/OF
+        Min gradient at (– 1 ; – 7) implies:
+                                         at x = – 1 - point of inflection
+                               and g will be positive cubic
+                                hence a > 0
+           Since g is concave up
+                          x 1
+
+       OR/OF
+
+
+                         (– 1 ; – 7 )              .
+                                      .
+                                          (– 1 ; y)          Since g is concave up
+          x 1                     Since g is concave up
+                                     x 1
+
+                                   1
+                       Answer only:
+                                   4
+
+
+
+
+       OR/OF
+        Min gradient at (– 1 ; – 7) implies:
+                                         at x = – 1 - point of inflection
+                               and g will be positive cubic
+                                hence a > 0
+           Since g is concave up
+                          x 1
+
+       OR/OF
+
+
+                         (– 1 ; – 7 )              .
+                                      .
+                                          (– 1 ; y)          Since g is concave up
+          x 1                     Since g is concave up
+                                     x 1
+
+                                   1
+                       Answer only:
+                                   4
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       17                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+       OR/OF                                 OR/OF
+        Min gradient at (– 1 ; – 7) implies:
+                                         at x = – 1 - point of inflection   point of inflection
+                               and g will be positive cubic
+                                      a > 0                                hence a > 0
+           Since g is concave up
+                          x 1
+                                      x 1            (4)
+       OR/OF
+                                             OR/OF
+
+
+                         (– 1 ; – 7 )              .
+                                      .                pos graph
+                                          (– 1 ; y)                 point of inflection          Since g is concave up
+          x 1                     Since g is concave up
+                                     x 1                                      x 1            (4)
+
+                                   1
+                       Answer only:
+                                   4
+
+
+                                                                                          [12]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       18                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION 8/VRAAG 8
+
+                               2  nx  k 8.1           f   / x  mx
+                                                                      1                                     /           1                    substitution of       ; 0                  f x  m x    x  1                                                                                         3                             3 
+                                                         and (1 ; 0)
+                 1          1 m 0    0  1                   substitution of (0 ; 1)
+                    3 
+             1
+         1   m
+             3
+     m  3                        m  3
+                                  /          1                  f x  3 x     x  1
+                          3 
+                                  /          2  2   1                  f x  3 x   x                                                                                     /          2  2   1                                    f x  3 x   x                              3   3                                                                                      3   3 
+                                2  2 x  1                 f   / x  3 x
+      n  2                         n  2
+      k  1                         k  1                  (6)
+
+       OR/OF                              OR/OF
+          k  1                          k  1
+                         1    1
+         0  m  n  1  and  m   n 1  0
+                         9    3
+      m  n 1      (1)                                   m  n 1
+      m  3n 9     (2)                   m  3n 9
+
+               (1) – (2)
+         4 n  8                          4n  8
+      n  2                         n  2
+      m  2 1
+      m 3                        m  3               (6)
+                             3  x 2  x  2 8.2.1        f x   x
+             1   49                 f          1 ,81                  x-coordinates of the TP
+                3   27
+               1  49          T.P      ;                                           1  49                                                             ;                      3  27                      T.P                                                                            3  27 
+                 f 1  3
+         T.P1 ; 3                         T.P1 ; 3           (3)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       19                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+                             3  x 2  x  2 8.2.2        f x   x
+         x 3  x 2  x  2  0
+               x  2  x                             2  x  1  0
+          x  2  or no solution                  x  2
+
+
+
+
+                                               one x-intercept
+                                   (1 ; 3)
+                          2
+                                   two turning points                         1                         ;1,81                                 
+                         3      
+                                    2                      y-intercept
+
+                                   shape: neg cubic
+                                                                                              (5)
+              1
+ 8.3.1          1
+              3         a 
+               2
+           1
+                                     answer               (1)
+           3
+       OR/OF                              OR/OF
+                                2  2 x  1                 f   / x  3 x
+                 f   / / x  6 x  2
+                 f  // a  6a  2  0
+                  6a 2
+                        1
+                     a                    answer               (1)
+                         3
+             4 8.3.2    b    units                       4
+             3                                           3
+                                                          4
+                                   b                    (2)
+                                                          3
+                                                                                      [17]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       20                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION9/VRAAG 9
+                                             2                                                                                                          29.1      Any point on f  : x ; x                                                                 x ; x                                                                                                
+            distance    ( x  10) 2  ( x 2  2) 2               substitution
+                                   2                      4       2             simplification                 x  20 x  100  x  4 x  4
+                 x 4  3 x 2  20 x  104               answer
+          For min distance
+          d x 4  3 x 2  20 x  104   0
+          dx
+         4 x 3 x6  20  0                       4 x 3 x6  20
+                             2                          derivative = 0              ( x  2)( 4 x  8 x  10)  0
+              82  4( 4)(10)  96  no roots
+       x = 2                                               x = 2
+
+                         4         2                                   answer (A)           (8)         d   2  3( 2)  20( 2)  104  2 17  ,8 25
+
+
+           ( x ; x 2 ) A
+
+
+
+
+                                                  B(10 ; 2)
+
+
+
+
+ 9.2             y2  y1   x 2  2       m AB                            m AB
+                 x2  x1   x  10
+                     x  10                                            x  10
+      mtan g    2                      mtan g    2                     x  2                                            x  2
+                  f /( x )  2 x                                    f /( x )  2 x
+                   x  10
+      2 x    2                       equating                   x  2
+         2 x 3  4 x  x  10
+          2 x 3  3 x  10  0                    standard form
+           x  2                                x = 2
+           y  (2) 2  4
+
+        AB   (2  10) 2  (4  2) 2                       substitute into distance
+            2 17  8,25                                                    answer (A)           (8)
+                                                                                              [8]
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       21                          DBE/November 2022
+                           NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION 10/VRAAG 10
+
+             A                    C
+                                                0,05
+                          0,05       0,15
+                                      x
+                                0,1           0,2
+
+                                     0,183
+                  y                  B
+
+
+ 10.1.1(a)   y = 1 – 0,893 = 0,107 (0,11)               y = 1 – 0,893
+                                                                                               (1)
+ 10.1.1(b)  x = 0,893 – 0,733                    x = 0,893 – 0,733
+          = 0,16                                                                         (1)
+ 10.1.2      P(at least 2 events) = 0,1 + 0,15 + 0,16 + 0,2      values
+                      = 0,61                 answer
+                                 Answer only: Full Marks                                                                                               (2)
+ 10.1.3     P(B) = 0,643                      P(B) = 0,643
+           P(C) = 0,56                       P(C) = 0,56
+          P(B and C) = 0,36                    P(B and C) = 0,36
+           P(B) × P(C) = 0,643 × 0,56 = 0,36           P(B) × P(C) = 0,36
+       P(B and C) = P(B) × P(C)              independent  because
+      B and C are independent                         P(B and C) = P(B) × P(C)
+                                                                                               (5)
+ 10.2.1    7  6  5  4  840                    4 7
+                                   7  6  5  4  840
+                                                                                               (3)
+ 10.2.2      start with 5, 7, 9 or start with 6 or start with 8      3  5  1  3  45
+               3  5  1  3 1  5  1  2  1  5  1  2                                            1  5  1  2   10
+           45  10  10                          1  5  1  2   10
+           65                                 65
+               65   13                     answer         P          ,008
+              840  168                                                                  (5)
+
+        OR/OF                              OR/OF
+           ends in 4 or ends in 6 or ends in 8             5  5  1  1  25
+               5  5  1  1 4  5  1  1 4  5  1  1         4  5  1  1  20
+           25  20  20                         4  5  1  1  20
+           65                                 65
+               65   13                     answer
+         P          ,008
+              840  168                                                                  (5)
+                                                                                       [17]
+
+                                                 TOTAL/TOTAAL: 150
+
+
+
+
+Copyright reserved/Kopiereg voorbehou

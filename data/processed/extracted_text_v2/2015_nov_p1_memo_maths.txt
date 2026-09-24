@@ -1,0 +1,1055 @@
+                   NATIONAL
+                SENIOR CERTIFICATE
+
+
+
+               GRADE 12/GRAAD 12
+
+
+
+
+
+             MATHEMATICS P1/WISKUNDE V1
+
+                  NOVEMBER 2015
+
+                 MEMORANDUM
+
+
+MARKS: 150
+PUNTE: 150
+
+
+
+
+
+                        This memorandum consists of 25 pages.
+                        Hierdie memorandum bestaan uit 25 bladsye.
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                        Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                        2                            DBE/November 2015
+                                NSC/NSC – Memorandum
+
+NOTE:
+•    If a candidate answers a question TWICE, only mark the FIRST attempt.
+•   Consistent accuracy applies in ALL aspects of the marking memorandum.
+
+LET WEL:
+•   Indien 'n kandidaat 'n vraag TWEE keer beantwoord, merk slegs die EERSTE poging.
+•   Volgehoue akkuraatheid is op ALLE aspekte van die memorandum van toepassing.
+
+QUESTION/VRAAG 1
+1.1.1    x 2 − 9 x + 20 = 0
+           ( x − 4 )( x − 5 ) = 0                                               factors
+                                        x = 4
+        x = 4  or  x = 5                           x = 5           (3)
+1.1.2   3 x 2 + 5 x − 4 = 0                                             standard form
+                 − 5 ±   (5) 2 − 4(3)( −4)                                                                         substitution into                  x =
+                          2(3)                                           correct formula
+                 − 5 ±  73                  x =
+                       6
+                  x = −,2 26 or x = ,059                           answers
+                                                                                                 (4)
+     OR/OF
+
+              2  5   25  4  25        x +  x +   =  +
+           3   36   3  36                                              25                                                               for adding    on
+                             2                                                      36                 5    73               x +   =                                                 both sides
+                 6    36
+                5     73               x +  = ±
+                6     6
+                                                            − 5 ±  73                  − 5 ±  73                       x =                   x =                                                  6                       6
+                   x = −,2 26  or  x = ,059                                                          answers
+                                                                                                 (4)
+1.1.3        −5
+       2 x 3 = 64
+             −5                                                        dividing both
+        x 3 = 32                                                             sides by 2
+                     −3                                       32 = 2 5  or                    5                       5        x = (2 )                                                               64 = 2 6
+                  −3    1                                                      raising RHS to − 3        x = 2   or    or ,0125
+                8                                                                                      5
+                                                            answer
+                                                                                                 (4)     OR/OF
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                        3                            DBE/November 2015
+                                NSC/NSC – Memorandum
+               −5
+       2 x 3 = 64
+             − 5                                                         dividing both
+        x 3 = 32                                                             sides by 2
+                     − 3                                                         raising RHS to − 3        x = (32 ) 5                                                                                          5
+        x = 5 32 − 3                                      5 32−3
+                  − 3    1        x = 2   or    or ,0125                                   answer                8                                                                                                 (4)
+     OR/OF
+
+
+                    −3
+             − 5  5       − 3
+                   2 x 3    = 64 5                                                   raising both sides to
+                                                                                − 3
+            ,0659 x = ,00825                                                           5                                                             0,659 and 0,0825
+               x = ,0125                                                                   dividing both
+                                                                               sides by 0,659
+     OR/OF                                               answer
+                                                                                                 (4)
+                    −5
+             x 3 = 32                                                                   dividing both
+       − 5                                                                   sides by 2            log x = log 32
+        3                                                      logs on both sides
+                 3            log x =    log 32
+               − 5
+            log x = −,0903                                        log x = −,0903
+               x = 10 − ,0 903
+                         1             = ,0125  or                                                            answer                         8
+                                                                                                 (4)
+1.1.4             2 − x = x − 2
+                                          2                                       squaring both             2 − x = ( x − 2 )                                                                             sides
+             2 − x = x 2 − 4 x + 4
+         x 2 − 3 x + 2 = 0
+           ( x − 1)( x − 2 ) = 0                                               factors
+                  x = 1  or  x = 2                                        x = 1 or x = 2
+                       if x = ,1  2 − x = 1 and x − 2 = −1
+                  x = 2 only                        x = 2 only
+                                                                                                 (4)
+     OR/OF
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                        4                            DBE/November 2015
+                                NSC/NSC – Memorandum
+         2 − x = x − 2
+                                  2                                           squaring both         2 − x = ( x − 2 )                                                                               sides
+                                                                         − x = 1 or 2 − x = 0         2 − x = (2 − x ) 2                           2
+         2 − x = 1 or 2 − x = 0
+             x = 1  or  x = 2                        x = 1 or x = 2
+                if x = ,1  2 − x = 1 and x − 2 = −1
+       ∴ x = 2 only
+                                        x = 2 only
+                                                                                                 (4)     OR/OF
+
+         2 − x = x − 2
+
+         2 − x ≥ 0 and x − 2 ≥ 0                      2 −x ≥ 0
+                                        x − 2 ≥ 0
+             x ≤ 2 and x ≥ 2
+                                        x ≤ 2 and x ≥ 2
+       ∴ x = 2 only
+                                        x = 2
+                                                                                                 (4)
+1.1.5    x 2 + 7 x < 0
+        x ( x + 7 ) < 0                                                   factors
+                             +    –   +
+                  OR/                                       -7      0          -7         0               OF
+                                                                  inequality or
+      − 7 < x < 0 OR/ OF  x ∈ (− ;7 0 )                                     interval
+                                                                                                 (3)
+
+1.2    The square of any number is always positive or zero
+      So for the sum of two squares to be zero, both squares must be
+         zero, i.e.
+       Die kwadraat van enige getal is altyd positief of nul. Vir die som
+       van twee kwadrate om nul te wees, moet beide die kwadrate nul
+        wees, d.i.
+           (3 x − y )2 = 0  and/en    ( x − 5 )2 = 0                  3 x −y = 0
+                                        x − 5 = 0
+       3 x − y = 0  and/en   x − 5 = 0
+                                        x = 5
+                               x = 5
+       3(5 ) − y = 0                              y = 15
+        y = 15                                                                                  (4)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                        5                            DBE/November 2015
+                                NSC/NSC – Memorandum
+1.3           x 2 + x = k
+           x 2 + x − k = 0                                                                  standard form
+             ∆ < 0
+                                        ∆ < 0
+          b 2 − 4 ac < 0
+       12 − 4(1)(− k ) < 0                                        12 − 4(1)(− k )
+            1 + 4 k < 0
+                 − 1                  k <                                          − 1                                        k <                    4                                                                 4     OR/OF                                                                                                 (4)
+
+                         x 2 + x = k
+                                  2     1     1                                  1                     x + x +  = k +                             adds    to both
+                         4     4                                  4
+                                            2                                                                             sides
+           +x  1  = k + 1                                                               2                                                      2       4                                   1       1                                        + x     = k +
+                         1                                                   2       4         for nonreal roots  k +  < 0
+                         4
+                                                                   1                          − 1                    k +  < 0                             k <                                                                   4                             4
+                                                           − 1                                        k <
+                                                                 4
+     OR/OF                                                                                                 (4)
+
+        Consider the functions y = x 2 + x and y = k
+       Beskou die funksies y = x 2 + x en y = k
+
+
+
+
+                                                                                                                              y
+                         y = x2 + x
+
+                                                                sketch or
+                                                                        explanation
+
+
+
+
+
+                                                                                                                                                                                                x
+
+                    y = k
+
+                                                                     1                                                  x = −                                                                  2          − 1 − 1        Turning point of/Draaipunt van  y = x + x is       ;                   2
+                                                             2  4                                                                    1               2                                           y = −        x + x = k does not have real roots when the line y = k does not         4
+         intersect y = x 2 + x .
+        x 2 + x = k het geen reële wortels as die lyn y = k nie met
+        y = x 2 + x sny nie.
+                 − 1                                        − 1        Therefore k <                             k <
+                   4                                             4
+                                                                                                 (4)
+                                                                                          [26]
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                        6                            DBE/November 2015
+                                NSC/NSC – Memorandum
+QUESTION/VRAAG 2
+2.1       T 2          r =
+          T1
+           5        =
+           10
+           1                                                    1        =                                r =
+           2                                                    2
+                                                                                         4
+                     1                                          1        T5 = ,1 25                        T5 = 10  
+                     2                                          2                         OR/OF
+            5                                               5                                                         answer          =                 or ,0625                       =                                                          or ,0625
+            8                                  8                                   (2)
+2.2                         n −1                                                 substitutes a = 10                   1 
+       T n = 10                                                         into GP formula
+                   2                                                                        1                                                                      substitutes r =
+                                                                       2
+                                                                             into GP formula
+                                                                                                 (2)
+2.3     For convergence/Om te konvergeer  − 1 < r < 1
+                             1            1           − 1 < r < 1        Since/Aangesien      r =   and/en − 1 <  < 1                                                                        1                             2            2           show that r =     is
+                                                                        2
+                                                        − 1 < r < 1         the sequence converges/die ry konvergeer
+
+                                                                                                 (2)
+                                                 n2.4              a      a (1 − r                                             )       S ∞ - S n =     −                                                           10               1 − r      1 − r                    
+                                                  n                                 1                            1                                                            1 −                      10−                                                             2                                                                                                                                                1                10           2                                                                 n             =     −                                             1                    1        1                                 10−1                                                                                                                                                                                                  1 −       1 −                                                                                                                                                                                   2                  2        2                              
+                                                    n                                    1                             1                                  1 −             = 20   −  20−                                                                   1                                              2                                    2                                                                n                                                                   1                                                          n                  20−1                                       1                                                                                                                                                                  2               = 20   −  20 + 20                                          
+                                       2 
+                        1  n                                     answer             = 20                                                                                                   (4)                        2 
+
+
+      OR/OF
+
+
+
+                                                                   constructing the
+                                                                              series
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                        7                            DBE/November 2015
+                                NSC/NSC – Memorandum
+
+       S ∞ - S n = Tn +1 + Tn + 2 + Tn + 3 + 
+                                   n                        
+                       1     1  1                                                          n             = 10    1 +  +  +                                                                                1     1  1                            2       2  4                                    10    1 +  +  +                                                                                2       2  4                                           
+                       1  n   1  
+             = 10                                            1
+                                                            2  1 − 1                                                                 1                               2                                   1 −
+                                    n                                           2
+                        1              = 20                                       answer
+                        2                                                                        (4)
+
+
+      OR/OF
+                                                             a − a + ar n                                             n                                      a                     a (1 − r  )                                                               1 − r                  −       S ∞ - S n =               1 − r    1 − r                                                                       ar n                                        n                                       a − a + ar             =                                                1 − r
+                  1 − r                                                                             n                                                                                  1                                n                                                            10                  ar             =                                                                                                                             2                                                     1 − r                                                               1
+                                    n
+                        1                                            2               10  
+                        2                                       answer             =                  1                                                                         (4)
+                                                                                          [10]                  2
+                                    n
+                        1              = 20  
+                        2 
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                        8                            DBE/November 2015
+                                NSC/NSC – Memorandum
+
+QUESTION/VRAAG 3
+
+3.1     d = 8                                  d value
+         Tk = a + (k − 1)d
+         = −3 + (k − 1)(8 )
+         = −3 + 8 k − 8
+         = 8k − 11                                            answer
+                                                                                                 (2)
+3.2         n                                 n −1                       n −1                  for general term
+                                            − 3)   ∑ (8 k           − 11)  OR/OF ∑ (8( k                               + )1 − 11) = ∑ (8 k                                                             lower and upper
+              k =1                                   k = 0                         k = 0                     values in sigma
+                                                                            notation
+                                                                                                 (2)
+
+3.3         n                                                   formula      S n =   [2 a + (n − 1)d ]
+           2
+                                                                          substitution           n         =   [2(− 3) + (n − 1)(8) ]
+           2
+           n         =   [− 6 + 8n − 8]
+           2
+           n                                                   n         =   [8n − 14 ]                              [8n − 14 ]
+           2                                                   2
+                                                                                                 (3)         = n ( 4 n − 7 )
+         = 4 n 2 − 7 n
+
+     OR/OF
+
+            n      S n =   [2 a + (n − 1)d ]                                       formula
+            2
+            n                                                           substitution         =   [2(− 3 ) + (n − 1)(8) ]
+            2
+                                                                n            n                                   [8n − 14 ]         =   [− 6 + 8 n − 8]                                                                2            2
+                                                                                                 (3)            n         =   [8 n − 14 ]
+            2
+         = 4 n 2 − 7 n
+
+     OR/OF
+
+            n                                                  formula      S n =   [a + l ]
+            2
+                                                                          substitution            n         =   [− 3 + 8 n − 11]
+            2                                                                n            n                                   [8n − 14 ]         =   [8 n − 14 ]                                            2
+            2                                                                                                 (3)
+         = 4 n 2 − 7 n
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                        9                            DBE/November 2015
+                                NSC/NSC – Memorandum
+
+     OR/OF
+
+                                                               S 2 = −3 + 5 = 2
+         S1               S2                S3               S4                                                               S 3 = 2 + 13 = 15        –3               2               15              36
+                                                               S 4 = 15 + 21
+                 5               13               21             calculates S1, S2,
+                                                                  S3 and S4,
+                         8                8
+
+        Sn = an 2 + bn + c
+           8        a =
+           2
+        a = 4                                 a = 4
+       S 1 = 4 + b + c = −3      b + c = −7  ...............()1
+       S 2 = 16 + 2b + c = 2     2b + c = −14 ..............( 2)
+                               b = −7 ................( 2) − )1(                                                                  solves
+                                   c = 0                                simultaneously for
+                                2                                           b and c.       Hence Sn = 4 n − 7 n                                                                                                 (3)
+3.4.1   Q6 = −6 − 3 + 5 + 13 + 21 + 29                     answer
+                                                                                                 (2)
+
+3.4.2  Q129 = −6 + S128
+                                     2                                   = −6 + 4(128) − 7 (128)                                                                                          2                                                                           − 6 + 4(128) − 7 (128)
+
+          = 64634                                           answer
+                                                                                                 (3)
+      OR/OF
+       Q1            Q2            Q3            Q4
+        –6              –9             –4              9
+
+                –3              5              13
+
+                        8              8              8
+       Qn = an 2 + bn + c
+                                                a = 4        a = 4
+     Q1 = 4 + b + c = −6      b + c = −10  ...............()1
+     Q 2 = 16 + 2b + c = −9    2b + c = −25 ...............( 2)
+                                b = −15 ................( 2) − )1(
+                                    c = 5
+
+                                                                                                                                                       2 − 15n + 5       Hence Qn = 4 n 2 − 15n + 5                       Qn = 4 n
+     Q129 = 4(129 ) 2 − 15(129 ) + 5
+                                                            answer          = 64 634                                                                                                 (3)
+                                                                                          [12]
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       10                           DBE/November 2015
+                                NSC/NSC – Memorandum
+
+QUESTION/VRAAG 4
+
+Given:  f ( x ) = 2 x +1 − 8
+4.1    y = – 8                                  y = – 8
+                                                                                                 (1)
+4.2
+                                          y
+
+                                          8
+
+                                          6
+                                                                            x-intercept
+                                          4                   f                                                                            y-intercept
+                                          2                                  shape
+                                                               x          asymptote
+                   -8       -6       -4       -2    0       2      4      6      8                (only if the graph
+                                                                      does not cut the                                                    -2
+                                                                        asymptote)
+                                                    -4
+
+                                                    -6
+                                                y = -8
+                                                    -8
+                                                                                                 (4)
+
+                   −x +1 − 8                                            answer4.3    g ( x ) = 2
+                                                                                                 (1)
+     OR/OF
+                             x −1                                             answer
+                1       g ( x ) =     − 8                                                                       (1)
+                2                                                                               [6]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       11                           DBE/November 2015
+                                NSC/NSC – Memorandum
+QUESTION/VRAAG 5
+Given h ( x ) = 2 x − 3 for − 2 ≤ x ≤ 4 .
+                                                   y
+
+                                              h
+
+
+
+                           Q                                          x
+                                -2   O             4
+                               P
+
+
+                                         -3
+
+
+
+5.1    For x-intercepts, y = 0
+      2 x − 3 = 0
+                                            x = 5,1       x = 5,1
+    Q (5,1 ; 0 )                                   y = 0                                                                                                    (2)
+5.2    h :
+       x = − 2 :  y = 2( − 2) − 3 = −7                          h(–2) = –7
+       x = 4 :    y = 2( 4) − 3 = 5                           h(4) = 5
+      Domain of h −1 : −7 ≤ x ≤ 5 OR/OF  [− ;7 5]                 − 7 ≤ x ≤ 5
+                                                                                                             (3)
+5.3                                           y                              y-intercept
+                                                                     on a straight
+                                                  h-1                                                         line
+                                   1,5                 -7                                                    x
+                              0        5                          line segment
+
+                                            accurate
+                                                                                endpoints (x
+                                                                                   or y or
+                                                                                  both)
+     OR/OF
+                                                 y
+                            4                                                                           (3)
+                                                  h-1
+                                   1,5
+                                                                           x
+                              0
+
+                                    -2
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       12                           DBE/November 2015
+                                NSC/NSC – Memorandum
+5.4    h ( x ) = 2 x − 3
+
+      For the inverse of h,
+           x = 2 y − 3
+                                                                                 x + 3               x + 3                                 y =           y =                                                                         2               2
+           −1      x + 3      h  ( x ) =
+               2
+                      −1        h ( x ) = h                        ( x )
+               x + 3                                                                   x + 3      2 x − 3 =                                    2 x − 3 =
+              2                                                              2
+      4 x − 6 = x + 3
+           x = 3
+                                            x = 3
+                                                                                                    (3)     OR/OF
+      h ( x ) = 2 x − 3
+      h and h −1 intersect when y = x
+                                     (h x ) = x        h ( x ) = x
+      2 x − 3 = x                                   2 x −3 = x
+           x = 3                                            x = 3
+                                                                                                    (3)     OR/OF
+      h ( x ) = 2 x − 3
+                                                                                 x + 3      For the inverse of h,                              y =
+                                                                         2       x = 2 y − 3
+           x + 3       y =
+           2
+      h −1 ( x ) = x                                                              x + 3                                                = x
+        x + 3                                                            2           = x
+         2
+        x + 3 = 2 x                                  x = 3
+                                                                                                    (3)           x = 3
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       13                           DBE/November 2015
+                                NSC/NSC – Memorandum
+5.5                                                                 OP 2 = x 2 + y 2     OP 2 = ( x − 0 ) 2 + ( y − 0 ) 2                          
+         = x 2 + (2 x − 3) 2                                                     substitute
+                      2        2                                                         y = 2 x − 3         = x + 4 x − 12 x + 9
+         = 5 x 2 − 12 x + 9                             5 x 2 − 12 x + 9
+       For OP to be at its minimum, OP 2 has to be a minimum
+       Vir OP om minimum te wees, moet OP2 'n minimum wees
+                                          2                    d (OP                                      )                           b                        = 0     OR / OF     x = −
+                       dx                            2 a
+                                               − 12                   10 x − 12 = 0                  = −                                                    2(5 )
+                               6               ∴ x =                                                                        x-value                               5
+                                                            2
+                                          6        6       9    3     Minimum length of OP =   5   − 12   + 9 =     or     or 1,34 units
+                                          5        5       5     5            answer
+                                                                                                    (5)     OR/OF
+      For minimum distance OP ⊥ the line
+     m h = 2 (given)
+           − 1
+     m OP =
+             2
+                          − 1      ∴ OP has equation y =    x
+                             2
+      − 1          x = 2 x − 3
+       2
+       − x = 4 x − 6
+                                                                      − 1        5 x = 6                                   mOP =
+                                                                             2         x P = 2,1
+                                                                       equation of              1         y P = −   (2,1 ) = − 6,0                                  OP
+              2
+      OP =   (2,1 − 0 ) 2 + (− 6,0 − 0 ) 2                                   − 1                                              x = 2 x − 3
+                                                                      2         = ,134 or   8,1  units
+
+
+                                                                        x-value
+
+                                                                 answer
+                                                                                                    (5)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       14                           DBE/November 2015
+                                NSC/NSC – Memorandum
+     OR/OF
+      For minimum distance OP ⊥ the line
+                                    3                          OP 2 = x 2 + y 2    O (0;0 )  P ( x; 2 x − 3) Q    ; 0                                                                                 substitute                                    2   
+                                                                 2         2         2                     y = 2 x − 3                          OP + PQ = OQ   (pythag)
+                                                       2                              2
+                   2                   2      3                     2    3          ( x − 0 ) + (2 x − 3 − 0 ) +  x −   + (2 x − 3 − 0 ) =              
+                                     2                     2                                    2                                                                    10 x − 27 x + 18
+             2        2                   2      9       2          9       x + 4 x − 12 x + 9 + x − 3 x +  + 4 x − 12 x + 9 =
+                               4               4
+                                10 x 2 − 27 x + 18 = 0
+                                                  (5 x − 6 )(2 x − 3) = 0                                                                        x-value
+                                               6    3                                                 x =   or
+                                               5    2
+                6      Hence, x =    at P
+                5
+     OP 2 = x 2 + (2 x − 3) 2
+                          2                   2
+                6        6     
+         =    +  2   − 3                                        answer                5        5     
+                                                                                                    (5)
+            36   9         =   +
+            25  25
+            9         =
+            5
+     OP = ,134
+
+     OR/OF
+      For minimum distance OP ⊥ the line
+                                            tan Q                                                                                                           ˆ = 2            tan Q                    ˆ = 2
+                                                                                                                                                                                                                Q                                                                                                        ˆ = 63, 43                                                     Q                    ˆ = 63, 43                                                                                                                                                                   sin 63, 43
+                              OP        sin 63, 43 =                                         OP
+                     5,1                                                                                                                           5,1
+        OP = ,134                                            answer
+                                                                                                    (5)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       15                           DBE/November 2015
+                                NSC/NSC – Memorandum
+     OR/OF
+
+                             2            2                               OP =   ( x − 0 ) + ( y − 0 )                                                                                                                                   2            2                                                                              OP =   ( x − 0 ) + ( y − 0 )
+        =   ( x − 0 )2 + (2 x − 3 − 0 )2                                                                                substitute
+        =  x 2 + 4 x 2 − 12 x + 9                                                y = 2 x − 3
+        =  5 x 2 − 12 x + 9                             5 x 2 − 12 x + 9
+     By using the chain rule (which is not in the CAPS):
+     dOP  1     2             −1                                            2  ⋅ (10 x − 12 )          =   (5 x − 12 x + 9 )
+        dx   2
+            1     2             −1                                            2  ⋅ (10 x − 12 )         0 =   (5 x − 12 x + 9 )
+            2
+            1         0 =   (10 x − 12 )
+            2
+         0 = 5 x − 6
+            6
+          x =                                                           x-value            5
+                              2
+                    5        6       OP =  5   − 12   + 9
+                    6        5 
+                                                                 answer
+          = ,134                                                                                                    (5)
+
+     OR/OF
+      For minimum distance OP ⊥ the line
+       Let the y-intercept be R               O     1,5   Q
+    OR = 3 units
+           3    OQ =    units                              3       P
+           2                                                              3                                            RQ =    5
+           3                                                               2    RQ =    5  (Pythagoras)               R
+           2
+                 1      Area OQR =  × base × ⊥height
+                 2                                            1  3                                                                                                                                                                                .   5 .OP      1         1  3                                                            2  2                   .OR.OQ =    .   5 .OP
+      2         2  2                                                  1    3                                                  .3.  
+        1    3   1  3                                                  2    2              .3.   =    .   5 .OP
+        2    2   2  2                                   equating
+                 3         OP =   = ,134                               answer
+                  5                                                                                   (5)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       16                           DBE/November 2015
+                                NSC/NSC – Memorandum
+5.6.1    f ′( x ) = 2 x − 3
+                                            Turning                       3      Turning point at x =                                                                             3                       2                                                     point at x =
+                                                                             2                        3             f ′′( x ) = 2 > 0  or  ′′f   > 0
+                               2                                             f ′′( x ) = 2 > 0
+                              3          f has a local minimum at x =
+                              2
+                                3                                                                                                    (2)          f het 'n lokale minimum by x =
+                                2
+
+     OR/OF
+      h ( x ) =  f ′( x ) < 0 for x ∈ (− 2 ; 5,1 )⇒ f  is decreasing on the left of Q /      decreasing
+                                                               f is dalend links van Q.                    left of Q
+      h ( x ) =  f ′( x ) > 0 for x ∈ (5,1 ; 4 )⇒ f is increasing on the right of Q /        increasing
+                                                                                         right of Q                                                             f is stygend regs van Q.                                                                                                    (2)                                      3   ∴ f (x) has a local minimum when x =    /
+                                      2
+                                     3  ∴f (x) het ‘n lokael minimum by x =
+                                     2
+
+     OR/OF
+
+            f ( x ) = x 2 − 3 x + c                             
+                                                                                                                                              f ( x ) = x 2 − 3 x + c
+          f has a minimum value since a > 0
+          f het 'n minimum waarde omdat a > 0                    explanation
+                                                                                                    (2)
+5.6.2 m =  f ′( 4) = h (4 ) = 5                                           answer
+                                                                                                    (1)
+                                                                                            [19]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       17                           DBE/November 2015
+                                NSC/NSC – Memorandum
+
+QUESTION/VRAAG 6
+
+6.1.1  T ( 0 ; 18)                                    ( 0 ;18)
+                                                                                                   (1)
+6.1.2  − 2 x 2 + 18 = 0                                       y= 0
+          ( x − 3)( x + 3) = 0                                                       factors
+                                                       x = 3
+    Q (3 ; 0)                                                                                                   (3)
+     OR/OF                                    y= 0
+
+                                                                                                                            2                 2                                     x = 9      − 2 x + 18 = 0
+             2                                       x = 3       x = 9
+                                                                                                   (3)
+    Q (3 ; 0)
+
+
+6.1.3   x-coordinate of S is 4,5/x-koördinaat van S is 4,5
+     By symmetry about the line x = 4,5/Deur simmetrie om die
+                                            x = 6
+        lyn x = 4,5:          R = (4,5 + 4,5–3 ; 0) = (6 ; 0)                                            y = 0
+                                                                                                   (2)
+6.1.4  For all x ∈ R OR/OF   (− ∞; ∞ )                                answer
+                                                                                                   (2)
+6.2      If C( x; y ) is the centre of the hyperbola/As C( x; y ) die middelpunt is van
+        die hiperbool
+       y = x + 6 and x = −2
+    ∴y = −2 + 6 = 4                                           
+                                                         y                                              asymptote
+                                                                              y = 4
+
+                                                                     asymptote                                                           y = 4
+                                                                                       x = −2
+
+                                                                  shape
+                                                                                           x                          (increasing                                 0
+                                                                               hyperbolic
+                                                                                   function)                       x = -2
+                                                                                                   (4)
+                                                                                           [12]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       18                           DBE/November 2015
+                                NSC/NSC – Memorandum
+
+QUESTION/VRAAG 7
+
+7.1    R450 000                                              answer
+                                                                                                 (1)
+7.2          A = P 1( − i ) n
+                                                        x                                        substitution of                       f ( x ) = 4500001( − i )                                                              450 000 into
+                                                                               correct formula
+       243 736,90 = 4500001( − i ) 4                                        substitution of
+                                                                                                                (4 ; 243 736,90 ) into
+                                                                               correct formula
+
+                      243 736,90                            i = 1 − 4
+                        450000                                                          making i the
+                                                                             subject
+                            i = ,01421
+
+                 The rate of depreciation is 14,21 % p.a.
+       Die waardeverminderingskoers is 14,21% p.j.                                                            answer
+                                                                                                 (4)
+7.3     At T :
+       A = P (1 + i )n
+       g ( x ) = 4500001( + i ) x                                    i = 0,081 & n = 4
+                                                                      correct
+                                              4                                             substitution into          a = 450000(1 + 0,081)                                                                     formula
+                                                            answer
+          = R614490,66                                                                    (3)
+7.4     Future Value = R614 490, 66 − R243 736 ,90
+                                                     R370 753,76                = R370 753,76
+        Let x be the value of monthly payment
+                             n                                                       0,062             x [(1 + i ) − 1]                                       i =      Fv =                                                          12                            i                                                n = 36
+                             .0062  36                        x + 1           − 1                                                                          substitution into                            12              370753,76 =                                                         correct formula
+                               .0062
+                         12                                   answer
+        x = R9397,11                                                                          (5)
+                                                                                          [13]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       19                           DBE/November 2015
+                                NSC/NSC – Memorandum
+
+QUESTION/VRAAG 8
+
+8.1                    f ( x + h ) = ( x + h ) 2 − (3 x + h )
+                                        2               2                                finding f(x+h)                   = x + 2 xh + h − 3 x − 3h
+              f ( x + h ) −  f ( x ) = x 2 + 2 xh + h 2 − 3 x − 3h − ( x 2 − 3 x )
+                                                                                                                          2
+                   = 2 xh + h 2 − 3h                    2 xh + h − 3h
+                                              f ( x + h ) −  f ( x )                             f ′( x ) = lim                                      formula
+                                      h → 0      h
+                         2 xh + h 2 − 3h                   = lim
+                                      h → 0      h
+                         h ( 2 x + h − )3                   = lim                                              factorisation
+                                      h → 0     h
+                   = lim (2 x + h − 3 )
+                                      h → 0
+                   = 2 x − 3                                  answer
+                                                                                                 (5)
+     OR/OF
+
+                               f ( x + h ) − f ( x )              f ′( x ) = lim
+                        h → 0      h                                        formula
+                         ( x + h ) 2 − 3( x + h ) − ( x 2 − 3 x )           = lim
+                        h → 0            h
+                               2              2                   2                          finding f(x+h)                   x + 2 xh + h − 3 x − 3h − x + 3 x           = lim
+                        h → 0             h
+                 2 xh + h 2 − 3h           = lim
+                        h → 0     h
+                 h ( 2 x + h − 3)                        2 xh + h 2 − 3h           = lim
+                        h → 0     h
+                                                                            factorisation           = lim ( 2 x + h − 3)
+                        h → 0
+           = 2 x − 3                                           answer
+
+                                                                                                 (5)
+8.2.1                           2                 2   1           y =  x −    
+                    x 2 
+                                                                                                              4     1                      4      1                            x − 2 +   4          y = x − 2 +                                  4                                                        x                     x
+         = x 4 − 2 + x − 4
+                                                                                                         3                                                                                                   4x        dy                                                                                                         −5         = 4 x 3 − 4 x − 5                                         −x                                                                 4        dx
+                                                                                                 (3)     OR/OF
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       20                           DBE/November 2015
+                                NSC/NSC – Memorandum
+      By using the chain rule (which is not part of CAPS):
+                                 2          y = (x                       2 − x − 2 )
+                                        
+                                                                                                                                                       −3        dy                                          − 3                                                                                  2 (x                                                                                                                                                 2 − x −2 )(2 x + 2 x                                                                                                                                                     )         = 2 (x                         2 − x − 2 )(2 x + 2 x                                            )
+        dx
+         = 2 (2 x                          3 + 2 x −1 − 2 x −1 − 2 x − 5 )
+                          3       − 5                                                                      (3)         = 2 (2 x − 2 x   )
+         = 4 x 3 − 4 x − 5
+8.2.2        ( x − 1)( x                             2 + x + )1      D x                                                                factorisation                               x               − 1             
+                                                                                                               2                                         x + x + 1                      2 + x + 1]       = D x [x
+       = 2 x + 1                                2 x + 1
+                                                                                                 (3)
+     OR/OF
+
+      By using the quotient rule (with is not part of CAPS):
+             x 3 − 1 
+       Dx                          x           − 1                                         
+                   2              3         3 x ( x − 1) − (x − 1)                                                               3 x 2 ( x − 1) − (x                                                                                                                              3 − 1)       =
+                    ( x − 1)2                                                                                                      ( x − 1)2
+                                                                                                 (3)
+                                                                                          [11]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       21                           DBE/November 2015
+                                NSC/NSC – Memorandum
+
+QUESTION/VRAAG 9
+
+9.1     Substitute Q(2; 10) into
+       h ( x ) = − x 3 + ax 2 + bx                                              substitute Q into
+                3        2                                               h      − 2 + a ( 2 ) + b ( 2) = 10
+           − 8 + 4 a + 2b = 10
+                 2 a + b = 9    ..................line 1                         finding
+                                                   2                                         derivative                    h ′( x ) = −3 x + 2 ax + b                                         h′( 2)
+              At Q :  h ′( 2) = 0                                                                   equating
+         − (3 2) 2 + 2 a ( 2) + b = 0                                           derivative to 0
+             − 12 + 4 a + b = 0
+                   4 a + b = 12   .............line 2
+         line 2 − line 1 :    2 a = 3                                                                   solving
+                          3                                         simultaneously                       a =
+                          2                                              for a and b
+         Substitute in line 1 :  b = 6
+                                                                                                 (5)
+9.2                           3  3       2                  (f − )1 = –3,5             f (− 1) = − (− 1) +   (− 1) + 6(− 1)
+                     2
+           = −5,3
+                                                                         f ( x Q ) −  f ( x P )
+       Average gradient/Gemiddelde gradiënt =                       formula
+                                                 x Q − x P
+
+                                                                           substitution                                          10 − ( −5,3)       Average gradient/ Gemiddelde gradiënt =
+                                            2 − ( −)1
+                                     = 5,4                  answer
+                                                                                                 (4)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       22                           DBE/November 2015
+                                NSC/NSC – Memorandum
+
+9.3    h ′( x ) = −3 x                           2 + 3 x + 6                          h′( x ) = −3 x 2 + 3 x + 6
+       h ′′( x ) = −6 x + 3                             h ′′( x ) = −6 x + 3
+          = −3( 2 x − )1
+
+
+
+                                         x
+
+
+             1                        1       For x <    , h is concave up and for x >    , h is concave down                                                                     explanation              2                        2
+                                                                        using h// ( x )             1                           1        Vir x <   ,is h konkaaf na bo en vir  x >    ,is h konkaaf na onder
+             2                           2
+                                                                                                 (3)
+                              1    ∴ concavity changes at x =    /
+                              2
+                               1    ∴ konkwiteit verander by x =
+                               2
+                                              19.4    The graph of h  has a point of inflection at x =      /              answer
+                                              2                                                                                                 (1)
+                                        1       Die grafiek van h het 'n buigpunt by x =    .
+                                        2
+
+     OR/OF
+
+      The graph of h changes from concave up to concave down at
+          1                               1                   answer        x =    / Die grafiek van h verander by x =   van konkaaf op
+          2                               2
+       na konkaaf af                                                                         (1)
+
+9.5     Gradient of g is – 12/Gradiënt van g is –12
+        Gradient of tangent is/Gradiënt van die raaklyn is:
+              h ′( x ) = −3 x                                        2 + 3 x + 6                   (h ′ x ) = −3 x 2 + 3 x + 6
+              h ′( x ) = − 12                          h ′( x ) = −12
+      − 3 x 2 + 3 x + 6 = −12
+        3 x 2 − 3 x + 18 = 0
+            x 2 − x + 6 = 0                                                                        factors
+            ( x − 3)( x + 2) = 0                                                                        selection of
+                    x = − 2 only                                             x-value
+                                                                                                 (4)
+                                                                                          [17]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       23                           DBE/November 2015
+                                NSC/NSC – Memorandum
+
+QUESTION/VRAAG 10
+
+10.1    h            0                                                 h            0        = tan 60                                = tan 60
+          r                                                                        r
+             h
+         r =         0             tan 60
+             h
+    ∴ r =                                                  answer             3                                                                                                 (2)
+10.2          1     2     Vcone = πr h                                                               formula             3
+                                    2
+             1   h 
+           = π         h             3    3                                                   substitution of
+                                                                              the value of r in
+                                                                        terms of h             1     3           = πh
+             9                                                       simplified
+                                                                volume answer
+          dV  1     2            = πh                                                  derivative          dh   3
+       dV     1       2            = π(9 )
+        dh h = 9  3
+                                                    3                              answer            = 27π or  84,82 cm /cm                                                                                                 (5)
+                                                                                                 [7]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       24                           DBE/November 2015
+                                NSC/NSC – Memorandum
+
+QUESTION/VRAAG 11
+
+11.1   P(A) ×P(B)                                            0,2×0,63
+      = 0,2×0,63
+      = 0,126                                             P(A)×P(B)=P(A
+           i.e. P(A) × P(B) = P(A and B)                                and B)
+        Therefore A and B are independent/Dus is A en B onafhanklik     conclusion
+                                                                                                 (3)
+11.2.1   77 = 823 543                                     77
+                                                                                                 (2)
+11.2.2  7!=5040                                        7!
+                                                                                                 (2)
+11.2.3  There are 3 vowels ⇒3 options for first position             ×3
+       There are 4 consonants ⇒4 options for last position          ×4
+       The remaining 5 letters can be arranged in 5 × 4 × 3 × 2 × 1 ways    5 × 4 × 3 × 2 × 1
+       3 × (5 × 4 × 3 × 2 × 1) × 4 = 1440                              answer
+
+       Daar is 3 klinkers ⇒3 opsies vir die eerste posisie
+       Daar is 4 konsonante ⇒4 opsies vir die laaste posisie
+       Die oorblywende 5 letters kan as volg gerangskik word
+
+       5 × 4 × 3 × 2 × 1 ways/maniere
+       3 × (5 × 4 × 3 × 2 × 1) × 4 = 1440                                                           (4)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                       Please turn over/Blaai om asseblief
+Mathematics/P1/Wiskunde V1                       25                           DBE/November 2015
+                                NSC/NSC – Memorandum
+
+11.3                                   Orange    OO
+                                                              t
+                                                           t + 2
+                   Orange                                                               t                   t                                               P(O) =      
+                                  2                                                        t + 2               t + 2
+                                                           t + 2
+                                      Yellow    OY                         2  
+                                                        P(Y) =      
+                                                                                             t + 2 
+                                      Orange    YO
+         2                                     t
+                                                           t + 2
+              t + 2
+                   Yellow
+
+                                  2
+                                                           t + 2
+                                      Yellow    YY
+
+                                          52       P(Orange , Orange) + P(Yellow , Yellow) =
+                                         100
+                      t     t      2    2     52                                                t   2                              +            =                    P(O,O) =      
+                    t + 2  t + 2    t + 2  t + 2   100                                              t + 2 
+                                                                                                                        2   2                                        P(Y,Y) =       
+                                           2                                                                             t + 2                                             t          4      13                           +                                    =                                                   2                                                       2                                      t + 4t + 4    t + 4t + 4  25                                               t     t      2    2     52
+                                                                                                                                                                                                                                                                                                         t + 2  t + 2  +  t + 2  t + 2  = 100
+                                25(t                                                            2 + 4 ) = 13(t                                                                           2 + 4t + 4 )
+                             3t 2 − 13t + 12 = 0
+                                            (3t − 4 )(t − 3) = 0
+                                                                     t = 3             t = 3 (no ca)
+       There are 3 orange balls in the bag/Daar is 3 oranje balle in die
+        sak
+                                                                                                          (6)
+                                                                                                 [17]
+                                  TOTAL/TOTAAL:         150 marks
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou

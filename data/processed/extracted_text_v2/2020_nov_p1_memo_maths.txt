@@ -1,0 +1,800 @@
+      SENIOR CERTIFICATE/SENIOR SERTIFIKAAT
+          NATIONAL SENIOR CERTIFICATE/
+           NASIONALE SENIOR SERTIFIKAAT
+
+
+
+             GRADE 12/GRAAD 12
+
+
+
+
+             MATHEMATICS P1/WISKUNDE V1
+
+                  NOVEMBER 2020
+
+          MARKING GUIDELINES/NASIENRIGLYNE
+
+
+
+MARKS/PUNTE: 150
+
+
+
+
+
+                        These guidelines consist of 18 pages.
+                        Hierdie nasienriglyne bestaan uit 18 bladsye.
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        2                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+NOTE:
+      If a candidate answers a question TWICE, only mark the FIRST attempt.
+    Consistent accuracy applies in all aspects of the marking memorandum.
+
+LET WEL:
+    Indien 'n kandidaat ’n vraag TWEE keer beantwoord, sien slegs die EERSTE poging na.
+    Volgehoue akkuraatheid is op ALLE aspekte van die nasienriglyne van toepassing.
+
+
+REMEMBER: (A) next o the description of a tick implies accuracy mark
+ONTHOU:    (A) langs die beskrywing van `n regmerk impliseer akkuraatheids-punt
+QUESTION/VRAAG 1
+1.1.1          x 2 x6  0                 
+                                    common factor              x  x  6   0
+          x  0  or  x  6
+                                    both answers            (2)
+1.1.2     x 2  10 x  8  0
+            b   b 2  4 ac
+          x 
+                  2 a
+            10   10 2  41 8                  substitution into the correct
+                                                                         formula                   21
+            10   68
+         
+                2
+         x = – 0,88  or  x = –9,12                    – 0,88  –9,12          (3)
+1.1.3        1  x  x  2   0
+           Critical values:
+                                    critical values           x = 1  or  x = –2
+                                     or
+
+            –      +       –            O    O      correct method                                         – 2       1
+               –2       1
+                                    answer          x  2  or  x  1
+                                                                                                    (3)
+1.1.4           x  18  x  2
+                           2                         squaring both sides (m)         x  18  x  4 x  4
+        0  x 2  5 x  14                                    standard form
+              x  7  x  2   0                                    factors
+          x  7  or  x  2                     both answers
+                                    rejection of x = – 2
+                                                                                                    (5)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        3                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+1.2              x y  3
+                    y 3  x …….. (1)               y subject of the formula
+        2 x 2  4 xy  y  15 ……….. (2)
+          Substitute (1) into (2):                                    substitution
+            2 x 2  4 x 3  x  3  x   15
+         2 x 2  12 x  4 x 2  3  x  15  0
+                 2 x 2  13 x  18  0
+                                    2                      standard form                   2 x  13 x  18  0
+                             2 x  9  x  2   0              factors
+                        9                     x-values
+                       x     or  x  2
+                        2
+                                    y-values                        3
+                      y      or   y  1                                                        (6)
+                        2
+
+                                     OR      OR
+                 x y  3
+                                    x subject of the formula
+                    x 3  y …….. (1)
+        2 x 2  4 xy  y  15 ……….. (2)
+          Substitute (1) into (2):
+                               2                        substitution            2(3  y )  43  y  y  y  15
+         2 y 2  12 y  18  4 y 2  12 y  y  15  0
+                 2 y 2  y  3  0
+                   2 y 2 y  3  0                standard form
+                             2 y  3 y  1  0               factors
+                        3                    y-values                      y      or   y  1
+                        2
+                        9                     x-values
+                       x     or  x  2                                                                                                    (6)                        2
+
+1.3      n 200  5 300
+                 2 100      3 100                                                                2 100      3 100                                    n     5     n     5
+                 2 100          100     n     125 
+        n 2  125                          n2 < 125
+       Maximum value of n is 11.                 11
+                                                                                                    (3)
+
+      OR                             OR
+
+         200 log n  300 log 5                    use of logs
+                       3
+                           log 5
+         n  10 2
+        n  11,18                          n  11,18
+      n  11                                  11
+                                                                                                    (3)
+      OR                             OR
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        4                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+
+            200    300        n    5
+                                                                    2 100     3 100            2 100     3 100                     ( n  )    (5  )             ( n  )    (5  )
+
+             2      3          n    5
+                3
+         n  5 2
+                                    n  11,18
+        n  11,18                                 11                        (3)
+      n  11
+                                     OR
+      OR
+               200     300                                                                      300        n   5                                                                         200                                    n  5                    300
+                    200                           n  11,18         n  5
+        n  11,18                          n  11
+                                                                                                    (3)      n  11
+                                                                                            [22]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        5                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 2
+
+2.1      7  ; x  ; y  ; –11  ; …
+                a = 7
+             a + 3d = –11
+             7 + 3d = –11                   7 + 3d = –11
+                 d = –6                    d = –6
+                   x = a + d = 7 + (–6) = 1           value of x
+                   y = a + 2d = 7 + 2(–6) = –5         value of y
+                                                                                                    (4)
+
+      OR                           OR
+          a + 3d = –11
+            3d  11  7                   3d  11  7
+             3d  18
+              d  6                     d  6
+                x  1                      x  1
+                y  5                     y  5
+                                                                                                    (4)
+      OR                           OR
+
+          x  7  y  x      and    y  x  11  y       2 equations
+         2 x  7  y ....(1)         2 y  11  x ...(2)
+           (1) into (2)                                  substitution
+         2( 2 x  7 )  11  x
+         4 x  14  11  x
+         3 x  3
+          x  1                          value of x
+          y  2 )1(  7  5                                  value of y
+                                                                                                    (4)
+2.2.1    − 3  ; 6  ; 27  ; 60  ; …            
+
+       − 3         6           27          60
+
+               9          21          33
+
+                     12          12           second difference
+              2a = 12
+               a = 6                      a = 6
+           3a + b = 9
+            3(6) + b = 9
+               b = –9                     b = –9
+         a + b + c = –3
+         6 – 9 + c = –3
+                 c = 0                     c = 0                          (4)
+                 Tn  6n 2  9n
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        6                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+2.2.2                      2                      substitute 50       T50  650   950     Answer Only: Full Marks
+                                  answer                        (2)           = 14 550
+
+2.2.3    9 ; 21 ; 33 ; …
+         a = 9                         a and d
+         d = 12
+             n          Sn    2 a  n  1d 
+             2
+                                  substitution into the correct             n          Sn    29  n  112                             formula
+             2
+             n             18  12 n  12
+             2
+             n             12 n  6                         n 12 n  6              2                                                     2
+           6n 2  3n
+                                                                                                    (3)
+2.2.4      3  S n  21060                    3  S n  21060
+              S n  21063
+        6n 2 n3  21063
+                  2                          equation        6n n3  21063  0
+        2n 2 n  7021  0                              standard form
+
+            b   b 2  4 ac
+         n 
+                 2 a
+
+            1    )1( 2  41()( 7021)
+         n 
+                    2( 2)
+
+                   119
+         n  59 or n 
+                     2
+                                  answer    n  59
+                                                                                                    (4)
+
+      OR
+
+          Tn  21060
+         6 n 2  9 n  21060  0                 equation
+                   2                          standard form         2 n  3n  7020  0
+         n  60
+
+       59 first differences must be added.                                  answer
+                                                                                                    (4)
+                                                                                            [17]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        7                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 3
+
+3.1                       2  k         4       3.4    12  4    ...                                                                 k                                                           4                                                                                                                                                                  1              k 1              3                 12  4                                                         .. or 36                                                                                                                                                                                         
+            4   1                                          3            3 
+           r    
+            12  3
+                                  value of r             1
+         1    1
+             3
+      series is convergent (  1  r  1 )                                   1  r  1
+                                                                                                    (3)
+
+3.2              2  k         2  p        1 p        p             3.4   3.4    3.4   3.4   ...    
+                k  p
+                                   2  p                   expression for a               a  3.4
+                   1
+                    r 
+                   3
+                    a
+              S  
+                  1  r
+               2   3.4 2 p                   substitution of a, r and S 
+               
+               9      1                   1 
+                      3
+                                                                                                                                                            4                       4                                  simplification                                                                                    3.4 2  p                                                                                                                   3.4 2 p 
+                      27                                                            27 
+              3 2 p  3 3                    3 2 p  3 3
+             2 p  3
+                p  5                                  answer
+                                                                                                    (5)
+                                                                                                   [8]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        8                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 4
+
+4.1.1     x = 1                             x = 1
+         y = 2                             y = 2                   (2)
+4.1.2      y  mx  c     y  y1  m( x  x1 )     y  ( x  p )  q
+                                     substitution of m = –1 and        2 1  c  or   y  2  (1 x  )1  or    ( x  )1  2
+                                                                      (1 ; 2)         c  3           y  2   x  1        y   x  3
+                                     answer
+          y   x  3          y   x  3                                                                                                    (2)
+
+4.1.3
+
+                              y
+
+
+                                     vertical asymptote: x = 1
+                                                                     and
+                           5                                        horizontal asymptote: y = 2
+                                                                        5
+                                     x-intercept:
+                                                                        2
+                                     y-intercept: 5                           2
+                                     shape (A)
+                               1     5               x
+                                   2
+
+
+
+
+                                                                                                    (4)
+4.2.1     (–5 ; –8)                           x = –5 y = –8
+                                                                                                    (2)
+4.2.2      y  8  or   ;8                       answer
+                                                                                                    (1)
+4.2.3   m = –5                            m = –5
+        n = g(–5)
+            1      9                                           substitution         =     5  
+            2      2                                     n = 2
+        = 2
+                                                                                                    (3)
+4.2.4
+                                      y                1
+                          Area trapezium =  (DE  OC)  OE                                     method                                       2
+                                       1              f                   g                         C             =   (2  4,5)  5       correct substitution
+                                       .                          2
+              D                         65
+                                  =    or 16,25       answer
+                 E        O      x             4                                                                                                    (3)
+
+
+
+
+             A
+      OR                                      OR
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                        9                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+                                             1
+                                                 y       Area ∆ =   b.h                                     method                                             2
+                                              1     5                                            (5)  
+                               f                   g                                 C               2    2                                                            .
+                     D                        25                                        
+                 S         E        O      x            4
+                                       Area rect = b.h
+                                          = (5)(2)
+                                          = 10
+
+                    A
+                                                                correct substitution
+                        25       65                     answer                  (3)
+         Area trapezium =    + 10 =    or 16,25
+                        4         4
+
+                                      OR
+      OR
+         S(– 9 ; 0)                           y
+                                                1
+                                     Area ∆ SOC =   b.h
+                                                2
+                                      f                   g
+                                    C              1     9                                                                    .                                            (9 )  
+                                D)                       2     2 
+                    S         E        O      x          81
+                                         
+                                               4
+
+
+
+                       A
+                    1     1         Area ∆ SED =  b.h    ( 4) 2  4
+                    2     2
+                                     method
+         Area trapezium = area ∆ SOC – Area ∆ SED
+                       81                   =    – 4                                correct substitution
+                        4
+                       65                               answer                  (3)                  =    or 16,25
+                        4
+
+4.2.5             1     1   9          g    :  x   y                                      changing x and y                  2   2
+          g  1 :  y x2  9                                                       answer
+                                                                                                    (2)
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       10                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+4.2.6           1          2                f ( x )    ( x  5)  8
+               2
+              1    2                f ( x )    ( x  10 x  25)  8
+              2
+              1   2                f ( x )   x  5 x  5,4
+               2                                                                                                                                      /                                      f  ( x )
+                f  / ( x ) x  5
+        h( x )  2 x  9  k
+         x  5  2                           x  5  2
+         x  3  y  6
+             ( 3 ;  6)                           x  3  y  6
+                                                                                                    (4)
+      OR                              OR
+                f ( x )  h( x )
+         1        2               ( x  5)  8  2 x  9  k                  equating
+         2
+         1  2      27           x  3 x     k  0
+         2         2
+             3              2                   turning point /  = 0          x       3      b ac4   0
+                  1 
+            2  
+                  2 
+          y  6
+                                     x  3  y  6       (4)             ( 3 ;  6)
+
+                                                                                            [23]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       11                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 5
+
+5.1      A(0 ; 1)                            answer
+                                                                                                    (1)
+5.2       9 3  x                            equating
+           32 3  x                            32 3  x
+          x  2
+                                     x  2
+        B(–2 ; 9)
+
+                                                                                                    (3)
+5.3       x  0 ;    or  x > 0                            answer
+                                                                                                    (2)
+5.4       h(x) = 27.3  x
+        h( x )  3  ( x  3 )                         h( x )  3  ( x  3 )
+               f shifted 3 units to the right                    3 units
+                                     right
+                                                                                                    (3)
+5.5      27                    x 3
+                   x  1         3    1         3
+                  x                     x  3     0                 3 x  27 or  3x  3  30        3  27  or    3    3
+                                                                                                               x     3                  x                              3  3  or x  3  0        3  33      x  3  0
+                                     x  3          x  3               x  3
+                                                                                                    (3)
+      OR
+                                      OR
+                                     translation        The graph shifts 3 units to the right
+                                     y-intercept        Thus the y-intercept shift 3 units to the right (3 ; 1)
+      x  3                                         answer                  (3)
+                                                                                            [12]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       12                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 6
+6.1.1           x 1  i                                 n  1        F                              n = 145
+                               i
+                                           145                                               ,0075                            ,0075                       i                                                                  12             1 000  1           1
+                           12                        substitution into the                                                                                     correct formula                            ,0 075
+                      12
+                                     answer           = R234 888,53
+                                                                                                    (4)
+6.1.2                         n        A  P 1  i 
+                                   ,0075  12                substitution into the           234 888,53 1                                                                                  correct formula                                12  
+                                     answer                 (2)           = R253 123,54
+6.2                            n        A  P 1  i 
+                                                       n                           substitution into the correct         92 537,64  250 0001  ,0 22                                                                 formula
+                                         n            ,037015056  ,078
+              log ,037015056                                    correct use of logs
+         n 
+                  log ,078
+                                                       answer
+        n  4 years                                                                                                    (3)
+6.3.1                    x1[  1(  i )  n]
+        Loan amount: =
+                                               i
+                                                              72          72
+                                            ,0113                    substitution into the correct                       1 500 1   1           
+                                           12                      formula                   =
+                                          ,0113
+                                12
+                                                       answer                    = R78 173,49323
+                                                                                                    (3)
+6.3.2                                                     n                                 x 1 1  i            Balance after 5 years: P =
+                                                             i
+
+                                                    ,0113  12                               1 500 1   1           
+                                                   12           substitution (A)                         =
+                                                   ,0113
+                                      12
+                         = R16 945,00629                                     R16 945,00629 (A)
+        Amount paid: R1 500  60  R90 000
+
+
+           Interest
+       = Amount paid – [Loan – Balance]                                     R90 000 – [Loan – Balance]
+       = R90 000 – [ R78 173,49323 – R16 945,00629]                                     answer                (4)
+       = R28 771,51
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       13                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+      OR                              OR
+         Balance
+                                                         60                                                          ,0113                                                                                                                   substitution                               1 500                        1           1                                  60                                                                                                                           12                                ,0133                                                                                                                       78 173, 49 1          
+                           12                  ,0113
+                                       12
+                                     R16 945,00629         Balance = R16 945.00
+
+        Amount paid: R1 500  60  R90 000
+
+
+           Interest
+       = Amount paid – [Loan – Balance]
+                                     R90 000 – [Loan – Balance]       = R90 000 – [ R78 173,49323 – R16 945,00629]
+                                     answer                (4)       = R28 771,51
+
+                                                                                            [16]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       14                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 7
+Penalty of – 1 for notation only in 7.1
+                                         2  17.1                          f x x2
+                                                2  1                         f  x  h   2 x  h 
+                                                           2  1                    2x                                          2  2 xh  h 2 
+                   2 x 2  4 xh  2h 2  1            2 x 2  4 xh  2h 2  1
+                f  x  h   f x  2 x                                         2  4 xh  2h 2  1  2 x                                                                      2  1
+                   2 x 2  4 xh  2h 2  1  2 x 2  1        4 xh  2h 2
+                   4 xh  2h 2
+                                                       /              f  x  h   f x                             f x  lim
+                                       h 0      h
+                         4 xh  2 h 2
+                    lim                     substitution
+                                       h  0    h
+                         h 4 x  2 h                     lim                     simplification
+                                       h  0    h
+                   lim 4 x  2 h 
+                             h 0                                     answer
+                  = 4x                                                                                                    (5)
+7.2.1         d   5  2     3 
+              dx     x   x   
+                        2                                                                                                               2               d    5     3            =     x   x                                                                5                                                    x               dx
+                               
+                                                                                                           3
+                                                                                                                                                           2
+                                                                                                           5  3x 2                                                                    x             dy   2   53       2                                   x   3 x                                  5
+             dx   5                                                                                                    (3)
+7.2.2                4 x 2  9                          f x 
+                    4 x  6
+                                     2 x  32 x  3                              2 x  32 x  3                                                     22 x  3                      22 x  3
+                    2 x  3
+                
+                      2
+                      3              x                        simplification to two
+                      2                                           separate terms
+                       f   / x  1                        answer
+                                                                                                    (4)
+                                                                                            [12]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       15                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 8
+
+8.1      1  x  2                          answer
+                                                                                                    (2)
+8.2          1 2
+          x                                      method              2                                  Answer Only:
+             1
+           x                              Full Marks       answer
+             2                                                                                                    (2)
+8.3                       1
+        From the graph x            Answer Only:                                     answer               (2)                         2
+                                           Full Marks
+
+                                   3  bx 2  cx8.4           g x  ax
+                                                                                                                                                                                  /             2                                      /             2                      2              g x  3ax  2bx  c           g x  3ax  2bx  c  6 x  6 x  12
+         3a = – 6.     2b = 6      c = 12
+                                     a = –2          a = –2       b = 3
+                                     b = 3
+        g x  2 x                             3  3 x 2  12 x                                                                 3       2                                     g x  2 x  3 x  12 x
+                                                                                                    (4)
+8.5                                /  1       1  2     1                                               1         g      6    6    12                   max gradient at x 
+               2       2       2                                               2
+                27
+         m =       or 135,                            answer
+                 2
+                   1  3     1  2      1           y  2    3    12  
+                   2       2        2 
+             13
+           y      or  5,6                      y value
+             2
+          y  y1  m x  x1 
+                                                                   substitution          y  5,6  135, x  5,0
+          y  135, x  ,0 25                                  answer
+                                                                                                    (5)
+                                                                                            [15]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       16                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+QUESTION/VRAAG 9
+
+9.1          Total surface area  2w  2 wh  2h           2w  2 wh  2h
+                          but:   3w                    3w
+             Total surface area  6 w 2  2 wh  6 wh
+
+
+                                                                                                          2                                                    2                                     156 w                                                                                                                 C  156 w                                                  62 wh  6 wh 
+                                                     2                                     62 wh  6 wh                        156 w                                                  68wh 
+                       90 w 2  48wh
+                                                                                                    (4)
+9.2                5  3w2 h
+                       5                                      5                                     h                    h                                                                                                               2                                          2                      3w                                     3w
+             C  90 w 2  48wh
+                                           2        5              C w  90 w  48 w     2              substitution
+                                          3w  
+                                                                                                                2  80 w 1                   90 w 2  80 w 1                C w  90 w
+                                               2           C  / w  180 w  80 w                                     derivative
+        180 w  80 w 2  0                      equating derivative to zero
+           180 w 3  80  0
+                                 3   80             w 
+                      180
+                        80
+                                      3              w 
+                       180
+              w = 0,76                     value of w
+                                                                                                    (6)
+                                                                                            [10]
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       17                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+QUESTION/VRAAG 10
+
+10.1      1010  or  10 000 000 000                   answer
+                                                                                                    (2)
+10.2.1
+        8 × 10 × 10    8 × 8 × 10    2 × 10 × 10 × 10    8 × 10 × 10
+           Area           exchange         number                   or
+                                                            8 × 8 × 10
+
+         No. of valid 10-digit numbers                 2 × 10 × 10 × 10
+         8  10  10  8  8  10  2  10  10  10 
+                                      1,024 × 109  (A)     (3)       = 1,024 × 109
+10.2.2                       ,1024  10 9                                               ,1024  10 9
+                                               Probability                                        10                       10                                     1010
+                    64
+                     ,01024  10, 24%                                      answer                    625
+                                                                                                    (2)
+                                                                                                    [7]
+
+QUESTION/VRAAG 11
+11         First shot   Second     Third
+                       shot        shot
+                               BBB
+                         B
+                                     0,5
+
+                  B
+                          0,5      N      BBN                                         0,5
+                               BNB
+                         B
+                                      0,5                 N
+           B          0,5
+               0,5
+                       N
+                              BNN                                         0,5
+                               NBB
+                          B
+                                      0,5
+
+                  B          N                             0,5                   0,5           N     NBN                                          0,5
+                              NNB
+                          B
+                  N      0,5
+                               0,5
+
+                        N                              NNN
+                                            0,5
+11.1    P (Bull’s eye first shot and second shot)
+       = 0,5 × 0,5                                    two 0,5’s
+                    1                          0,5 × 0,5
+       = 0,25  or                                                                                                    (2)                    4
+
+
+
+Copyright reserved/Kopiereg voorbehou                                      Please turm over/Blaai om asseblief
+Mathematics P1/Wiskunde V1                       18                             DBE/November 2020
+                         SC/SS/NSC/NSS – Marking Guidelines/Nasienriglyne
+
+
+11.2    P (Bull’s eye at least twice in 3 shots)
+       = (0,5 × 0,5 × 0,5) + (0,5 × 0,5× 0,5) + (0,5 × 0,5× 0,5) +    0,5 × 0,5× 0,5
+             (0,5  0,5× 0,5)                                    four events
+       = 0,125 + 0,125 + 0,125 + 0,125
+                   1
+       = 0,5  or                                      answer (A)                   2
+                                                                                                    (3)
+11.3     Person shoots first:
+             (5,0)  (5,0) 3  (5,0) 5  ...                    (5,0)  (5,03)
+             a                                      …   ( 5,0) 5  ...
+        P 1  r
+                 5,0                                                              5,0        P                                P 
+            1  ,0 25                                              1  ,0 25
+            2                                                                                   (3)        P    ,067
+            3
+                                                                                                    [8]
+
+                                                TOTAL/TOTAAL: 150
+
+
+
+
+
+Copyright reserved/Kopiereg voorbehou
