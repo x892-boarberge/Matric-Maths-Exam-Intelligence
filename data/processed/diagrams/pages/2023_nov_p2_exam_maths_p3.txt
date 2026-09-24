@@ -1,0 +1,34 @@
+Mathematics/P2 3 DBE/November 2023
+NsC
+
+QUESTION 1
+
+Truck drivers travel a certain distance and have a rest before travelling further. A driver kept
+record of the distance he travelled (in km) on 8 trips and the amount of time he rested
+(in minutes) before he continued his journey. The information is given in the table below.
+
+Distance travelled
+
+(in km) (¥) 180 200 400 600 170 350 270 300
+
+Amount of rest time
+(in minutes) () 20 25 55 120 15 50 40 45
+
+1.1 Determine the equation of the least squares regression line for the data. 3)
+12 If a truck driver travelled 550 km, predict the amount of time (in minutes) that he
+should rest before continuing his journey. 2
+13 Write down the correlation coefficient for the data. [O)]
+1.4 Interpret your answer to QUESTION 1.3. [0
+
+1.5 At each stop, the truck driver spent money buying food and other refreshments. The
+amount spent (in rands) is given in the table below.
+
+100 150 130 200 50 180 200 190
+
+151 Calculate the mean amount of money he spent at each stop. [#3)
+152 Calculate the standard deviation for the data. 1)
+153 At how many stops did the driver spend an amount that was less than one
+standard deviation below the mean? ?
+1]
+
+Copyright reserved Please tum over

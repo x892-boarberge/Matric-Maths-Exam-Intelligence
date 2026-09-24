@@ -1,0 +1,35 @@
+Mathematics/P1 8 DBE/November 2016
+
+NSC
+QUESTION 8
+8.1 Determine /'(x) from first principles if f(x)=3x> )
+8.2 John determines g'(a), the derivative of a certain function g at x = a, and arrives
+. Vavh-2
+at the answer:  lim—————
+- h
+Write down the equation of g and the value of a. &)
+83 Determine & if y =¥ - 2 )
+dr x
+8.4 g(x)=-8x+20 isatangent to f(x)=x"+ax’+bx+18 at x = 1. Calculate the
+values of a and b. (5)
+[16]
+QUESTION 9
+For a certain function f, the first derivative is givenas f'(x)=3x" +8x-3
+9.1 Calculate the x-coordinates of the stationary points of f. 3)
+9.2 For which values of x is / concave down? 3)
+93 Determine the values of x for which f is strictly increasing. 2)
+9.4 If it is further given that f(x)=ax’+bx’ +cx+d and £(0)=-18, determine the
+equation of /. )
+13
+QUESTION 10
+The number of molecules of a certain drug in the bloodstream ¢ hours after it has been taken
+is represented by the equation M(f)=—> +31> +72, 0 <1 <10.
+10.1 Determine the number of molecules of the drug in the bloodstream 3 hours after the
+drug was taken. [0))
+10.2 Determine the rate at which the number of molecules of the drug in the bloodstream is
+changing at exactly 2 hours after the drug was taken. 3
+103 How many hours after taking the drug will the rate at which the number of molecules
+of the drug in the bloodstream is changing, be a maximum? 3)
+18]
+
+Copyright reserved Please turn over

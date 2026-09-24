@@ -1,0 +1,42 @@
+Mathematics/P1 8 DBE/November 2018
+
+NsC
+QUESTION 10
+In AABC:
+e Dis a point on AB, E is a point on AC and F is a point on BC such that DECF is a
+parallelogram.
+o BF:FC=2:3.
+e The perpendicular height AG is drawn intersecting DE at H.
+e AG=t units.
+e BC=(5-1) units.
+A
+D, E
+H \
+H
+B F G ¢
+
+101 Writedown AH: HG. )
+10.2 Calculate ¢ if the area of the parallelogram is a maximum.
+
+(NOTE: Area of a parallelogram = base x L height) ®)
+
+161
+
+QUESTION 11
+Given the digits: 3;4;5;6;7;8and9
+1.1 Calculate how many unique S-digit codes can be formed using the digits above, if:
+
+11.1.1 The digits may be repeated [03)
+
+11.1.2 The digits may not be repeated )
+112 How many unique 3-digit codes can be formed using the above digits, if:
+
+e Digits may be repeated
+
+e The code is greater than 400 but less than 600
+
+o The code is divisible by 5 3)
+
+171
+
+Copyright reserved Please tum over

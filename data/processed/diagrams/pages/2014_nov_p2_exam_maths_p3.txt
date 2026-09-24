@@ -1,0 +1,81 @@
+Mathematics/P2
+
+NSC
+
+QUESTION 1
+
+At a certain school, only 12 candidates take Mathematics and Accounting. The marks, as a
+percentage, scored by these candidates in the preparatory examinations for Mathematics and
+Accounting, are shown in the table and scatter plot below.
+
+Mathematics | 52 | 82 [ 93 | 95 | 71 | 65 | 77 | 42 | 89 | 48 | 45 | 57
+
+Accounting | 60 | 62 | 88 | 90 [ 72 | 67 [ 75 | 48 | 83 | 57 | 52 | 62
+
+1.1
+
+12
+
+13
+
+1.4
+
+15
+
+1.6
+
+Copyright reserved
+
+Percentage achieved in Accounting
+
+Scatter plot
+
+-
+9
+3
+
+80 — o
+
+70 B — —_—
+
+|
+|
+s
+
+60 —t e — —]
+
+50 R — — — — |
+
+40
+
+40 50 60 70 80 90 100
+
+Percentage achieved in Mathematics
+
+Calculate the mean percentage of the Mathematics data.
+Calculate the standard deviation of the Mathematics data.
+
+Determine the number of candidates whose percentages in Mathematics lie within
+ONE standard deviation of the mean.
+
+Calculate an equation for the least squares regression line (line of best fit) for the
+data.
+
+If a candidate from this group scored 60% in the Mathematics examination but was
+absent for the Accounting examination, predict the percentage that this candidate
+would have scored in the Accounting examination, using your equation in
+QUESTION 1.4. (Round off your answer to the NEAREST INTEGER.)
+
+Use the scatter plot and identify any outlier(s) in the data.
+
+DBE/November 2014
+
+Please turn over
+
+)
+&)
+
+2
+
+1
+2]

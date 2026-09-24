@@ -1,4 +1,4 @@
-﻿"""
+"""
 MatricMath thin CLI tutor loop (no UI).
 Engine decides; template renderer phrases; session is logged to JSONL.
 """
@@ -16,7 +16,8 @@ from src.tutor.tutor_engine import TutorEngine
 from src.tutor.event_log import SessionLogger, read_events
 from src.tutor.n08_loader import get_library
 from src.tutor.mapping_adapter import v1_to_v2
-from src.tutor.question_loader import load_gold_2025
+from src.tutor.question_loader import load_corpus
+from cli_navigation import pick_navigated_problem
 from src.tutor.learner_store import open_store
 from src.tutor.schemas import MasteryState
 
@@ -76,7 +77,7 @@ def pick_problem():
     lib = get_library(force_reload=True)
     print("N08 library: " + str(lib.load_status) + " | misconceptions: " + str(len(lib.by_misconception)))
     print("=" * 60)
-    print("  P. Practise from 2025 real corpus")
+    print("  P. Practise from real NSC corpus (choose topic)")
     for i, p in enumerate(PROBLEMS, 1):
         print("  " + str(i) + ". " + p["topic"] + " - " + p["subtopic"])
     print("  Q. Quit")
@@ -92,22 +93,99 @@ def pick_problem():
 
 
 def pick_corpus_problem():
-    problems = load_gold_2025()
+    import random
+    problems = load_corpus()
     if not problems:
-        print("\nNo corpus questions with memo answers yet.")
-        print("Add rows to data/processed/memo_answers/memo_answers_2025.csv")
+        print()
+        print('No corpus questions with memo answers yet.')
+        print('Add rows to data/processed/memo_answers/memo_answers_YYYY_P*.csv')
         sys.exit(1)
-    print()
-    print("2025 real NSC questions (with memo answers):")
-    for i, p in enumerate(problems, 1):
-        label = p.prompt[:60].replace("\n", " ")
-        print("  " + str(i) + ". [" + str(p.topic_v2) + "] " + p.skill_id)
-        print("     " + label + "...")
+
     while True:
-        choice = input("\nChoose question [1-" + str(len(problems)) + "]: ").strip()
-        if choice.isdigit() and 1 <= int(choice) <= len(problems):
-            return problems[int(choice) - 1]
-        print("Enter a number.")
+        sample = random.sample(problems, min(10, len(problems)))
+        print()
+        print('Real NSC questions (random 10 of ' + str(len(problems)) + ' loaded):')
+        for i, p in enumerate(sample, 1):
+            label = p.prompt[:60].replace(chr(10), ' ')
+            parts = p.problem_id.split('_')
+            yr = parts[0] if len(parts) > 0 else '?'
+            pap = parts[1] if len(parts) > 1 else '?'
+            print(f'  {i}. [{p.topic_v2}] {yr} {pap} :: {p.skill_id}')
+            print('     ' + label + '...')
+        print('  R. Reshuffle   Q. Quit')
+        choice = input('Choose [1-10, R, Q]: ').strip().lower()
+        if choice in ('q', 'quit', 'exit'):
+            sys.exit(0)
+        if choice == 'r':
+            continue
+        if choice.isdigit() and 1 <= int(choice) <= len(sample):
+            return sample[int(choice) - 1]
+        print('Enter 1-10, R, or Q.')
+
+
+
+
+
+# ------------------------------------------------------------------
+# Phase 1.5 - diagram support
+# ------------------------------------------------------------------
+
+import json as _json
+import os as _os
+
+_DIAGRAM_MAP = None
+_DIAGRAM_PAGES_DIR = ROOT / "data" / "processed" / "diagrams" / "pages"
+_DIAGRAM_MAP_PATH = ROOT / "data" / "processed" / "diagrams" / "question_page_map.json"
+
+
+def _load_diagram_map():
+    global _DIAGRAM_MAP
+    if _DIAGRAM_MAP is not None:
+        return _DIAGRAM_MAP
+    if _DIAGRAM_MAP_PATH.exists():
+        try:
+            _DIAGRAM_MAP = _json.loads(_DIAGRAM_MAP_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            _DIAGRAM_MAP = {}
+    else:
+        _DIAGRAM_MAP = {}
+    return _DIAGRAM_MAP
+
+
+def _diagram_path_for(problem):
+    pid = problem.problem_id or ""
+    parts = pid.split("_")
+    if len(parts) < 3:
+        return None
+    year = parts[0]
+    paper = parts[1]
+    q_part = parts[2]
+    if not q_part.startswith("Q"):
+        return None
+    qnum = q_part[1:]
+    stem = year + "_nov_p" + paper[1] + "_exam_maths"
+    dmap = _load_diagram_map()
+    if stem not in dmap:
+        return None
+    q_to_page = dmap[stem]
+    if qnum not in q_to_page:
+        return None
+    page = q_to_page[qnum]
+    path = _DIAGRAM_PAGES_DIR / (stem + "_p" + str(page) + ".png")
+    if path.exists():
+        return path
+    return None
+
+
+def _open_diagram(problem):
+    path = _diagram_path_for(problem)
+    if path is None:
+        return None
+    try:
+        _os.startfile(str(path))
+        return path
+    except Exception:
+        return None
 
 
 def format_topic_line(problem):
@@ -124,7 +202,9 @@ def main() -> None:
     item = pick_problem()
 
     if item == "__corpus__":
-        problem = pick_corpus_problem()
+        problem = pick_navigated_problem(load_corpus())
+        if problem is None:
+            sys.exit(0)
         item = {
             "skill_id": problem.skill_id,
             "topic": problem.topic,
@@ -194,6 +274,15 @@ def main() -> None:
     print("\n" + "-" * 60)
     print(format_topic_line(problem))
     print("Problem: " + problem.prompt)
+
+    _diagram = _diagram_path_for(problem)
+    if _diagram is not None:
+        print("Diagram page: " + str(_diagram))
+        _opened = _open_diagram(problem)
+        if _opened is not None:
+            print("(opened in your image viewer - type \"diagram\" to reopen)")
+        else:
+            print("(open the image manually to see the diagram)")
     print("-" * 60)
     print("Commands:  quit  |  answer  (ask for more help)  |  just type your attempt")
     print("Note: " + item["hint_correct"])
@@ -207,6 +296,13 @@ def main() -> None:
         low = raw.lower()
         if low in ("q", "quit", "exit"):
             break
+        if low in ("diagram", "d"):
+            _p = _open_diagram(problem)
+            if _p is not None:
+                print("(reopened: " + str(_p) + ")")
+            else:
+                print("(no diagram page for this question)")
+            continue
 
         explicit = low in (
             "answer",

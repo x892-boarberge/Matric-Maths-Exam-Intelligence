@@ -6,3 +6,5 @@
 .DS_Store
 data/processed/tutor/logs/
 data/learner_store/
+data/processed/diagrams/pages/*.png
+data/processed/diagrams/pages/*.png

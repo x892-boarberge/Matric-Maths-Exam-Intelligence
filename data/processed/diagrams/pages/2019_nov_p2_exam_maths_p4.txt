@@ -1,0 +1,31 @@
+Mathematics/P2
+
+QUESTION 2
+
+NSC
+
+DBE/November 2019
+
+A survey was conducted among 100 people about the amount that they paid on a monthly basis
+for their cellphone contracts. The person carrying out the survey calculated the estimated mean
+to be R309 per month. Unfortunately, he lost some of the data thereafter. The partial results of
+
+the survey are shown in the frequency table below:
+
+AMOUNT PAID FREQUENCY
+(IN RANDS)
+0<x<100 7
+100 < x <200 12
+200< x<300 a
+300< x <400 35
+400 < x <500 b
+500 < x <600 6
+2.1 How many people paid R200 or less on their monthly cellphone contracts? (1)
+22 Use the information above to show that a=24 and b=16. (5)
+23 ‘Write down the modal class for the data. 1)
+24 On the grid provided in the ANSWER BOOK, draw an ogive (cumulative frequency
+graph) to represent the data. “
+25 Determine how many people paid more than R420 per month for their cellphone
+contracts. )
+3]
+Copyright reserved Please turn over

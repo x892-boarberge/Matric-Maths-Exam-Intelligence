@@ -1,0 +1,44 @@
+Mathematics/P1 8 DBE/November 2017
+NSC
+
+QUESTION 10
+
+A survey was conducted among 100 Grade 12 learners about their use of Instagram (I),
+Twitter (T) and WhatsApp (W) on their cell phones. The survey revealed the following:
+
+o Suseall three.
+
+e 12 use Instagram and Twitter.
+
+e 5use Twitter and WhatsApp, but not Instagram.
+e xuse Instagram and WhatsApp, but not Twitter.
+e 61 use Instagram.
+
+o 19 use Twitter.
+
+e 73 use WhatsApp.
+
+o 14 use none of these applications.
+
+10.1 Draw a Venn diagram to illustrate the information above. )
+10.2 Calculate the value of x. 2)
+103 Calculate the probability that a learner, chosen randomly, uses only ONE of these
+applications. [©)
+18]
+QUESTION 11
+
+A company uses a coding system to identify its clients. Each code is made up of two letters and
+a sequence of digits, for example AD108 or RR 45789.
+
+The letters are chosen from A; D; R; S and U. Letters may be repeated in the code.
+
+The digits 0 to 9 are used, but NO digit may be repeated in the code.
+
+11.1 How many different clients can be identified with a coding system that is made up of
+TWO letters and TWO digits? 3)
+11.2 Determine the least number of digits that is required for a company to uniquely
+identify 700 000 clients using their coding system. A3)
+161
+TOTAL: 150
+
+Copyright reserved

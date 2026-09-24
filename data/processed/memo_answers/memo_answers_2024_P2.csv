@@ -1,0 +1,51 @@
+﻿year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2024,P2,1,1.1,stats.regression.equation,y = 39.46 - 0.59x,Least squares regression line,3
+2024,P2,1,1.2,stats.correlation.r,r = -0.8,Correlation coefficient,1
+2024,P2,1,1.3,stats.regression.predict,y = 22.35,Predict y when x=29,2
+2024,P2,1,1.4,stats.regression.predict,y = 18.33,Predict y when x=36,1
+2024,P2,1,1.5,stats.standard_deviation.invariance,no influence,Effect of adding push-ups on SD,1
+2024,P2,1,1.6,stats.regression.outlier,6; difference 10,Outlier player and required increase,2
+2024,P2,2,2.1,stats.median,65,Median,1
+2024,P2,2,2.2,stats.quartile,44,Lower quartile Q1,1
+2024,P2,2,2.3,stats.iqr,40,IQR,2
+2024,P2,2,2.4,stats.boxplot,box and whiskers ending at 5 and 120,Boxplot,2
+2024,P2,2,2.5,stats.percentage,56.67%,Qualify percentage,2
+2024,P2,2,2.6,stats.interval,90 minutes,Time allowed to work from home,2
+2024,P2,3,3.1,analytical_geom.gradient,m_DC = -3/4,Gradient of DC,2
+2024,P2,3,3.2,analytical_geom.line_equation,y = -3/4 x - 27/4,Equation of DC,2
+2024,P2,3,3.3,analytical_geom.parameter,k = -6,Find k for B(-1;k),1
+2024,P2,3,3.4,analytical_geom.distance,DC = 15 units,Distance DC,2
+2024,P2,3,3.5,analytical_geom.ratio,DB/DC = 1/3,Find ratio DB/DC,2
+2024,P2,3,3.6,analytical_geom.area_ratio,1/9,Ratio of triangle areas,4
+2024,P2,3,3.7,analytical_geom.point,A(-3;15),Coordinates of A,6
+2024,P2,4,4.1,analytical_geom.circle.point,L(-1;-3),Coordinates of L,2
+2024,P2,4,4.2,analytical_geom.tangent.equation,y = -1/3 x + 10,Equation of tangent ST,4
+2024,P2,4,4.3,analytical_geom.circle.equation,x^2 + y^2 - 2x - 6y - 30 = 0,Equation of circle,4
+2024,P2,4,4.4,analytical_geom.circle.point,d = 7,Find d for R(d;1),2
+2024,P2,4,4.5,analytical_geom.angle,L = 45 degrees,Angle L,5
+2024,P2,4,4.6,analytical_geom.prove,PT is perpendicular to RT,Prove PT perpendicular to RT,4
+2024,P2,5,5.1.1,trig.reduction.cos,cos A = -3/5,Find cos A given P(-3;-4),2
+2024,P2,5,5.1.2,trig.double_angle,cos 2A = -7/25,Find cos 2A,2
+2024,P2,5,5.1.3,trig.compound.sin,sin(A-B) = 24/25,Find sin(A-B),4
+2024,P2,5,5.2,trig.identity.simplify,-p/4,Simplify trig expression,8
+2024,P2,6,6.1.1,trig.compound.prove,cos(x+y) = cosx cosy - sinx siny,Prove compound angle cosine,2
+2024,P2,6,6.1.2,trig.identity.prove,tan(x+y) = RHS,Prove identity,6
+2024,P2,6,6.2,trig.equation,x = 199.47 or x = 340.53,Solve trig equation,5
+2024,P2,6,6.3.1,trig.maximum,4/3,Maximum of g(x),3
+2024,P2,6,6.3.2,trig.equation,x = 180,Value of x for max,1
+2024,P2,7,7.1,trig.graph.value,x = 90,Value of x,1
+2024,P2,7,7.2,trig.graph.inequality,x = -180 or x in (-90;0],Values of x,2
+2024,P2,7,7.3.1,trig.graph.period,180,Period,1
+2024,P2,7,7.3.2,trig.graph.sketch,turning points at -90 and 90; shape; y-intercept (0;2),Sketch f and g,3
+2024,P2,7,7.4,trig.equation.general,x = 45 + k.180; k in Z,General solution,4
+2024,P2,8,8.1,trig.3d.length,AC = 15 m,Find AC,2
+2024,P2,8,8.2,trig.3d.length,"BC = 8.3 m; EC = 5.19 m; DE = 10.81 m",Find BC EC DE,6
+2024,P2,9,9.1,euclidean.cyclic_quad,A1 = 40 degrees,Angle A1,2
+2024,P2,9,9.2,euclidean.cyclic_quad,AD = DC,Prove AD = DC,4
+2024,P2,10,10.1,euclidean.prop_theorem,RA/AS = RB/BT,Prove proportion,4
+2024,P2,10,10.2.1,euclidean.prop_theorem,OR:WS = 1:2,Prove ratio,5
+2024,P2,10,10.2.2,euclidean.prop_theorem,PT = 25 units,Find PT,4
+2024,P2,11,11.1,euclidean.tangent_chord,proved,Prove angles equal,5
+2024,P2,11,11.2,euclidean.prop_theorem,AG.AD = AC.AF,Prove product equality,4
+2024,P2,11,11.3,euclidean.similarity,AGF is similar to ABC,Prove triangles similar,4
+2024,P2,11,11.4,euclidean.prop_theorem,GF^2 = (AF.FC.BC)/AD,Prove length relation,6

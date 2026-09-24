@@ -1,0 +1,76 @@
+Mathematics/P2 5 DBE/November 2018
+
+NSC
+
+QUESTION 2
+
+A familiar question among professional tennis players is whether the speed of a tennis serve (in
+km/h) depends on the height of a player (in metres). The heights of 21 tennis players and the
+average speed of their serves were recorded during a tournament. The data is represented in the
+scatter plot below. The least squares regression line is also drawn.
+
+Average serve speed (in km/h)
+
+SCATTER PLOT
+255
+
+250
+
+245
+
+240
+
+235
+
+230
+225 — - = + =
+220 ; !
+= %
+215 ———
+= * — - —
+210 -
+
+SESS=S ==
+18 185 19 1,95 2 2,05
+Height of a player (in metres)
+
+205
+
+2.1
+
+22
+
+23
+
+24
+
+Write down the fastest average serve speed (in km/h) achieved in this tournament.
+
+Consider the following correlation coefficients:
+
+A r=093 B. r=-042 C. r=052
+221 ‘Which ONE of the given correlation coefficients best fits the plotted data?
+222 Use the scatter plot and least squares regression line to motivate your
+
+answer to QUESTION 2.2.1.
+
+What does the data suggest about the speed of a tennis serve (in km/h) and the height
+of a player (in metres)?
+
+The equation of the regression line is given as y = 27,07 + bx.
+
+Explain why, in this context, the least squares regression line CANNOT intersect the
+y-axis at (0;27,07).
+
+Copyright reserved Please turn over
+
+[}
+
+O}
+
+O}
+
+O}
+
+[}
+151

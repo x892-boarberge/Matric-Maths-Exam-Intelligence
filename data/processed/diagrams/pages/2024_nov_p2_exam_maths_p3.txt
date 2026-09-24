@@ -1,0 +1,47 @@
+Mathematics/P2 3 DBE/November 2024
+
+NSC Confidential
+
+QUESTION 1
+
+At the beginning of a season, the coach of a junior boys' rugby team recorded the weight (in kg)
+of the 15 players in his team and the number of push-ups that each player was able to do in one
+minute. The data is represented in the table and scatter plot below. The least squares regression
+line for the data is drawn. ..
+
+Weight 34 (3240 27|33 |28 | 27| 55|39 |44 | 30| 57|28 3231
+(in kg) (x)
+Number of
+push-ups per 26 (21| 6 [20]16]26 23| 7 |18 |14 17| 8 | 28|25 |20
+minute (y)
+Scatter plot
+Ee e
+i
+2 =
+£
+g
+5
+2,
+@
+&
+=
+3
+&
+Weight (in kg)
+1.1 Determine the equation of the least squares regression line for the data. 3)
+12 ‘Write down the correlation coefficient. (1)
+1.3 The coach uses the least squares regression line to set the target for the minimum
+number of push-ups by each team member according to their weight. Predict the
+number of push-ups that a member of the team, who weighs 29 kg, should do to meet
+the target. &)
+14 Write down the mean number of push-ups for the given data. (1)
+L5 The players trained hard during the season. At the end of the season, the coach reported
+that each player was able to do 5 more push-ups per minute than they did at the
+beginning of the season. How does the increase in the number of push-ups influence
+the standard deviation of the data? (1)
+1.6 At the beginning of the season, the coach used the least squares regression line as the
+minimum target for a player to aim for. Determine the maximum possible increase in
+the number of push-ups that a team member must obtain to reach the minimum target. [03)
+[10]
+
+Copyright reserved Please tum over

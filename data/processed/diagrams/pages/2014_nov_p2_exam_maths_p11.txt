@@ -1,0 +1,42 @@
+Mathematics/P2 11 DBE/November 2014
+
+NSC
+QUESTION 9
+9.1 In the diagram, points D and E lie on sides AB and AC of AABC respectively
+such that DE || BC. DC and BE are joined.
+A
+9.1.1 Explain why the areas of ADEB and ADEC are equal. (1
+9.1.2 Given below is the partially completed proof of the theorem that states
+
+that if in any AABC the line DE || BC then AD_ &
+DB EC
+
+Using the above diagram, complete the proof of the theorem on
+DIAGRAM SHEET 4.
+
+Construction: Construct the altitudes (heights) # and & in AADE.
+
+1
+area AADE 5 (AD)r)
+
+arca ADEB
+
+S (BDY)
+
+area AADE _ AE
+area ADEC B EC
+
+But area ADEB =
+
+(reason: ..
+
+. arca AADE
+
+" area ADEB
+. AD _AE
+
+" DB_EC
+
+[©]
+
+Copyright reserved Please turn over

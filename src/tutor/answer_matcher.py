@@ -1,4 +1,4 @@
-﻿"""
+"""
 Graceful answer matcher.
 
 The tutor understands what the learner meant, not the exact string the
@@ -85,29 +85,44 @@ def _split_or(s: str):
 
 def _structural_or_equivalent(r: str, e: str) -> bool:
     """
-    x=2or3 == x=2orx=3
-    Same variable, split on 'or', one side may omit the variable name.
+    Compare multi-root answers as multisets (order-independent).
+
+    x=2or3, x=2orx=3, x=3or2, x=3orx=2 are ALL the same answer.
+
+    Strategy:
+      1. Split both sides on 'or'.
+      2. Require same part count (both >= 2).
+      3. Detect the variable prefix ('x=', 'y=', 't=') from either side.
+      4. Strip the prefix from every part that has it.
+      5. Compare the sorted value lists — order does not matter.
     """
-    r_parts = _split_or(r)
-    e_parts = _split_or(e)
+    r_parts = [p.strip() for p in _split_or(r) if p.strip()]
+    e_parts = [p.strip() for p in _split_or(e) if p.strip()]
     if len(r_parts) != len(e_parts) or len(r_parts) < 2:
         return False
+
+    # Find a prefix from either side
     prefix = None
-    for ep in e_parts:
-        m = re.match(r"^([a-z]+)=", ep)
-        if not m:
-            return False
-        if prefix is None:
-            prefix = m.group(1)
-        elif prefix != m.group(1):
-            return False
-    for rp, ep in zip(r_parts, e_parts):
-        if rp == ep:
-            continue
-        if rp == ep[len(prefix) + 1:]:
-            continue
+    for side in (e_parts, r_parts):
+        for part in side:
+            m = re.match(r"^([a-z]+)=", part)
+            if m:
+                prefix = m.group(1)
+                break
+        if prefix:
+            break
+    if prefix is None:
         return False
-    return True
+
+    def strip_prefix(part):
+        p = part.strip()
+        if p.startswith(prefix + "="):
+            return p[len(prefix) + 1:].strip()
+        return p
+
+    r_values = sorted(strip_prefix(p) for p in r_parts)
+    e_values = sorted(strip_prefix(p) for p in e_parts)
+    return r_values == e_values
 
 
 def _extract_trailing_value(s: str):
@@ -151,8 +166,8 @@ def compare(response: Any, expected: Any) -> Match:
     if r3 == e3:
         return Match.MATCH
 
-    # Layer 4 - structural or-equivalence
-    if _structural_or_equivalent(r3, e3):
+    # Layer 4 - structural or-equivalence (try both directions)
+    if _structural_or_equivalent(r3, e3) or _structural_or_equivalent(e3, r3):
         return Match.MATCH
 
     # Layer 5 - learner answer is the trailing value of the verbose expected
@@ -160,17 +175,18 @@ def compare(response: Any, expected: Any) -> Match:
     if trailing and _strip_all_spaces(r2) == _strip_all_spaces(trailing):
         return Match.MATCH
 
-    # Layer 6 - learner's normalised answer is a value-suffix of the expected,
-    # and the boundary is not inside a number.
-    # "IQR = 7" vs "... IQR = 7" -> match
-    # "7" vs "17" -> no match (7 is inside the number 17)
-    if _strip_all_spaces(r2) and _strip_all_spaces(r2) in _strip_all_spaces(e2):
-        idx = _strip_all_spaces(e2).rfind(_strip_all_spaces(r2))
-        # only accept as suffix (not interior) and only if not preceded by a digit
-        if idx >= 0 and idx + len(_strip_all_spaces(r2)) == len(_strip_all_spaces(e2)):
-            preceding = _strip_all_spaces(e2)[idx - 1] if idx > 0 else ""
-            if not preceding.isdigit():
-                return Match.MATCH
+    # Layer 6 - learner's normalised answer is a value-suffix of the expected.
+    # Only applies when NEITHER side contains 'or'. If either side has 'or',
+    # the answer is multi-root and must be matched by Layer 4.
+    if "or" not in r2 and "or" not in e2:
+        r2s = _strip_all_spaces(r2)
+        e2s = _strip_all_spaces(e2)
+        if r2s and r2s in e2s:
+            idx = e2s.rfind(r2s)
+            if idx >= 0 and idx + len(r2s) == len(e2s):
+                preceding = e2s[idx - 1] if idx > 0 else ""
+                if not preceding.isdigit():
+                    return Match.MATCH
 
     return Match.NO_MATCH
 

@@ -1,0 +1,52 @@
+﻿year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2023,P1,1,1.1.1,algebra.quadratic.solve,x = 3 or x = -4,Solve x^2+x-12=0,3
+2023,P1,1,1.1.2,algebra.quadratic.solve,x = 1.79 or x = -1.12,Solve 3x^2-2x=6 (TWO decimals),4
+2023,P1,1,1.1.3,algebra.surd.solve,x = 4,Solve sqrt(2x+1)=x-1,4
+2023,P1,1,1.1.4,algebra.quadratic.inequality,x < -1 or x > 3,Solve x^2-2x > 3,4
+2023,P1,1,1.2,algebra.simultaneous.solve,"(x=-1 y=2) or (x=2 y=1/2)","Solve 1/2x+1/2y=1 and x+2=2y",5
+2023,P1,1,1.3,algebra.exponential.proof,m+n = 4,Prove 2^(m+1)+2^m = 3^(n+2)-3^n and find m+n,4
+2023,P1,2,2.1.1,sequences.ap.term,T_91 = 457,Find T_91 of AP 7;12;17;...,3
+2023,P1,2,2.1.2,sequences.ap.sum,S_91 = 21112,Find S_91,2
+2023,P1,2,2.1.3,sequences.ap.term,n = 103,Find n if T_n = 517,3
+2023,P1,2,2.2.1,sequences.quadratic.term,T_5 = 111,Find T_5 of quadratic sequence 3;12;33;...,2
+2023,P1,2,2.2.2,sequences.quadratic.general,T_n = 6n^2-9n+6,Find general term,3
+2023,P1,2,2.2.3,sequences.quadratic.monotone,T_n increasing for n in N,Prove T_n is increasing,3
+2023,P1,3,3.1.1,sequences.gp.term,T_n = 3(2)^(n-1),Find general term of GP,1
+2023,P1,3,3.1.2,sequences.gp.sum,k = 15,Find k given sum = 98301,4
+2023,P1,3,3.2,sequences.gp.sum,a = 2,Find a given S_22 = S_inf + 734,5
+2023,P1,4,4.1,functions.exponential.asymptote,y = -4,Asymptote of f(x)=2^x-4,1
+2023,P1,4,4.2,functions.exponential.intercept,B(2;0),x-intercept of f,2
+2023,P1,4,4.3,functions.line.equation,k(x) = 3/2 x - 3,Equation of line through A and B,3
+2023,P1,4,4.4,functions.distance.vertical,1/2 unit,Vertical distance between k and f at x=1,3
+2023,P1,4,4.5,functions.exponential.transform,g(x) = 2^x on [-2;4),Equation of g,1
+2023,P1,4,4.6,functions.inverse.domain,x in [1/4;16],Domain of inverse,2
+2023,P1,4,4.7,functions.log.inverse,g^-1(x) = log_2 x,Equation of inverse,2
+2023,P1,5,5.1,functions.parabola.turning,(1;8),Turning point of f,2
+2023,P1,5,5.2,functions.parabola.intercept,C(0;15/2),y-intercept of f,2
+2023,P1,5,5.3,functions.hyperbola.parameter,d = 8,Find d,1
+2023,P1,5,5.4,functions.hyperbola.range,y not equal to 0,Range of g(x)=8/x,1
+2023,P1,5,5.5,functions.inequality,-3 <= x < 0 or x >= 5,Where f(x)/g(x) > 0,3
+2023,P1,5,5.6,functions.parameter,-8 < k < 8,Values of k for which -2x+k = 8/x has no real roots,5
+2023,P1,5,5.7,functions.parabola.parameter,t = -7/2,Find t given tangency,4
+2023,P1,6,6.1.1,finance.compound.r,r = 8.7%,Find nominal rate,3
+2023,P1,6,6.1.2,finance.effective,r = 9.06%,Effective annual rate,2
+2023,P1,6,6.2.1,finance.depreciation.n,n = 5,Time for value to reach zero,2
+2023,P1,6,6.2.2,finance.annuity.future,x = R267.26,Monthly deposit,4
+2023,P1,6,6.3,finance.loan.n,147 withdrawals,Number of withdrawals,5
+2023,P1,7,7.1,calculus.derivative.first_principles,f'(x) = -8x,First principles for f(x)=-4x^2,5
+2023,P1,7,7.2.1,calculus.derivative.rules,f'(x) = 6x^2-3,Differentiate f(x)=2x^3-3x,2
+2023,P1,7,7.2.2,calculus.derivative.rules,dy/dx = 14/3 x^(-1/3) - 10x^(-6),Differentiate 7 cuberoot(x^2) + 2x^(-5),4
+2023,P1,7,7.3,calculus.inequality,-2/sqrt(3) < x < 2/sqrt(3),Where -6x^2+8 > 0,4
+2023,P1,8,8.1,calculus.cubic.turning,"(3;4) and (1;0)",Turning points of f(x)=-x^3+6x^2-9x+4,4
+2023,P1,8,8.2,calculus.cubic.sketch,y-int (0;4); x-ints (1;0) (4;0); TPs (3;4) (1;0); shape,Sketch f,4
+2023,P1,8,8.3,calculus.cubic.parameter,0 < k < 4,Values of k for three distinct roots,2
+2023,P1,8,8.4,calculus.tangent,g(x) = 3x-4,Tangent at point of inflection,6
+2023,P1,8,8.5,calculus.tangent.angle,71.57 degrees,Angle of inclination of tangent,2
+2023,P1,9,9.1,calculus.optimisation.model,A(x) = 3456/x + 6x + 480,Total area function,3
+2023,P1,9,9.2,calculus.optimisation.min,x = 24 cm,Find x for minimum total area,3
+2023,P1,10,10.1.1,probability.independence,1/4,P(A and B) given independence,2
+2023,P1,10,10.1.2,probability.union,5/6,P(A or B),2
+2023,P1,10,10.2.1,probability.tree,tree with 0.72/0.28 and 0.05/0.95 and 0.35/0.65,Tree diagram,2
+2023,P1,10,10.2.2,probability.conditional,0.6315,P(not below 0 degrees),3
+2023,P1,10,10.3.1,probability.counting,n(S) = 10!,Sample space size,1
+2023,P1,10,10.3.2,probability.counting,4/45,P(5 learners between A and B),3

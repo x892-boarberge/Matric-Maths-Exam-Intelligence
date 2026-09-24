@@ -1,0 +1,32 @@
+Mathematics/P1 9 DBE/November 2022
+NsC
+
+QUESTION 9
+Given f(x)=x".
+
+Determine the minimum distance between the point (10;2) and a point on /. 181
+
+QUESTION 10
+
+10.1 A, B and C are three events. The probabilities of these events (or any combination
+of them) occurring is given in the Venn-diagram below
+
+10.1.1 If it is given that the probability that at Icast one of the events will occur is
+0,893, calculate the value of:
+
+(a) , the probability that none of the events will occur. 1)
+(b) x, the probability that all three events will occur. [¢))
+10.1.2 Determine the probability that at least two of the events will take place. [03)
+10.1.3 Arecvents B and C independent? Justify your answer. ®)
+10.2 A four-digit code is required to open a combination lock. The code must be
+
+even-numbered and may not contain the digits 0 or 1. Digits may not be repeated.
+10.2.1 How many possible 4-digit combinations are there to open the lock? 3)
+
+10.2.2 Calculate the probability that you will open the lock at the first attempt if
+
+itis given that the code is greater than 5000 and the third digit is 2. (5)
+17
+TOTAL: 150
+
+Copyright reserved

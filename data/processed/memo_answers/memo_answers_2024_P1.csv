@@ -1,0 +1,50 @@
+﻿year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2024,P1,1,1.1.1,algebra.quadratic.solve,x = 0 or x = 3,Solve x(x-3)=0,2
+2024,P1,1,1.1.2,algebra.quadratic.solve,x = 1.71 or x = 0.29,Solve 2x^2-4x+1=0,4
+2024,P1,1,1.1.3,algebra.quadratic.inequality,x < -1 or x > 3,Solve x^2-2x-3 > 0,4
+2024,P1,1,1.1.4,algebra.exponential.solve,x = 3,Solve 2^(2x) - 2^(x+2) - 32 = 0,5
+2024,P1,1,1.1.5,algebra.surd.solve,x = 0,Solve sqrt(-2x+4) - x = 2,4
+2024,P1,1,1.2,algebra.simultaneous.solve,"x = 7/2 y = -4 or x = 1 y = 1",Solve y=3-2x and y^2+xy=2,5
+2024,P1,1,1.3,algebra.proof.integer,n is odd for n > 2,Prove product (3/2)(4/3)...(n+1)/n is integer for odd n>2,3
+2024,P1,2,2.1.1,sequences.ap.sum,S_20 = 1090,Sum of first 20 terms of AP with a=7 d=5,2
+2024,P1,2,2.1.2,sequences.ap.sum,S = 13 310,Sum from n=21 to n=75 of AP,4
+2024,P1,2,2.2.1,sequences.quadratic.difference,T_98 = 9437,98th first difference and T_98,3
+2024,P1,2,2.2.2,sequences.quadratic.general,T_n = n^2 - 2n + 29,General term of quadratic sequence 28;29;32...,5
+2024,P1,3,3.1,sequences.gp.term,r_3 = 1.5 cm,Radius of 3rd circle,2
+2024,P1,3,3.2,sequences.gp.sum,S_10 = 150.80,Sum of 10 terms of GP with a=36pi r=1/4,4
+2024,P1,3,3.3,sequences.gp.term,n = 10,Find n where term = 3/256,4
+2024,P1,4,4.1,functions.exponential.value,a = 2/3,Find a in f(x)=a^x-1 given point,2
+2024,P1,4,4.2,functions.exponential.range,y > -1,Range of f,1
+2024,P1,4,4.3,functions.exponential.sketch,increasing; asymptote y=-1; y-intercept (0;0),Sketch of f,3
+2024,P1,4,4.4,functions.exponential.value,x = -3,Solve for x given y=19/8,3
+2024,P1,5,5.1,functions.hyperbola.parameter,p = -1,Find p in f(x)=x/(x-p),1
+2024,P1,5,5.2,functions.line.intercept,y = -2,y-intercept of g through (0;-3),2
+2024,P1,5,5.3,functions.hyperbola.equation,a = -3,Find a in g(x)=a/(x-1)+q,2
+2024,P1,5,5.4,functions.inequality,-1/2 <= x < 1,Solve f(x) <= g(x),3
+2024,P1,5,5.5,functions.transformation,reflection in y-axis then 2 units right,Describe transformation from f to g,2
+2024,P1,6,6.1,functions.parabola.turning,B(2; 9),Turning point of f(x)=-x^2+4x+5,3
+2024,P1,6,6.2,functions.parabola.intercept,A(-1; 0) and AC: y = 2x+2,x-intercept of f and equation of AC,3
+2024,P1,6,6.3,functions.optimisation.length,Max EH = 4; EH = -x^2+2x+3,Maximum length EH,5
+2024,P1,6,6.4,functions.parabola.parameter,m = -2,Find m such that k(x)=f(x+m) is tangent to g,5
+2024,P1,7,7.1,finance.compound,A = R14 706.56,Compound interest A=P(1+i)^n,3
+2024,P1,7,7.2,finance.simple_interest,r = 12.5%,Find interest rate on simple depreciation,2
+2024,P1,7,7.3.1,finance.loan.interest,R38 058.80,Interest paid after 60 instalments,2
+2024,P1,7,7.3.2,finance.loan.n,12 months earlier,Time to repay loan using logs,7
+2024,P1,8,8.1.1,calculus.derivative.rules,3 - 10x,Differentiate 3x-5x^2,2
+2024,P1,8,8.1.2,calculus.derivative.rules,-4x^(-3) - 7/3 x^(4/3),Differentiate 2/x^2 - cube_root(x^7),4
+2024,P1,8,8.2,calculus.tangent,"m = -2; y = -2x+3",Tangent to cubic at x=2,3
+2024,P1,8,8.3.1,calculus.derivative.first_principles,f'(x) = -12x,First principles for f(x)=-6x^2,5
+2024,P1,8,8.3.2,calculus.derivative.domain,x >= 0,Domain where f'(x) <= 0,1
+2024,P1,8,8.3.3,calculus.inverse,y = ±sqrt(-x/6); x <= 0,Inverse of f(x)=-6x^2,3
+2024,P1,9,9.1,calculus.cubic.increasing,x < 1 or x > 5/2,Values of x where f is increasing,2
+2024,P1,9,9.2,calculus.cubic.intercept,(1; 0) and (5/2; 0),x-intercepts of f,2
+2024,P1,9,9.3,calculus.cubic.concave,x > 7/4,Concave up,2
+2024,P1,9,9.4,calculus.cubic.parameter,-9 < k < -8,Values of k for three distinct roots,2
+2024,P1,10,10.1,calculus.optimisation.max,t = 3; s'(3) = 27,Time at which velocity is max and value,3
+2024,P1,10,10.2,calculus.optimisation.model,s(t) = -t^3+9t^2; s(6) = 108,Find s(t) and distance at t=6,5
+2024,P1,11,11.1,probability.venn,2; 3;4;5; 6;9;11,Fill in the Venn diagram regions,2
+2024,P1,11,11.2,probability.set,7/20 = 0.35,Probability of at least two subjects,2
+2024,P1,11,11.3,probability.independence,not independent,Show events M and T are not independent,4
+2024,P1,12,12.1,probability.counting,67 600,Number of possible codes (2 letters 2 digits),2
+2024,P1,12,12.2,probability.counting,15 390,Restricted codes (different letters/digits),4
+2024,P1,12,12.3,probability.counting,75.44%,Percentage of restricted codes,2

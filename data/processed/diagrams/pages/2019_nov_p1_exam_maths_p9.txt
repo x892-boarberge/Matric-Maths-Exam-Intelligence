@@ -1,0 +1,46 @@
+Mathematics/P1
+
+QUESTION 11
+
+NSC
+
+DBE/November 2019
+
+11.1 Events A and B are independent. P(A)=0,4 and P(B)=0,25.
+
+11.1.1 Represent the given information on a Venn diagram. Indicate on the Venn
+diagram the probabilities associated with each region.
+
+1112 Determine P(A or NOT B).
+
+11.2 Motors Incorporated manufacture cars with 5 different body styles, 4 different interior
+colours and 6 different exterior colours, as indicated in the table below.
+
+BODY STYLES INTERIOR COLOURS EXTERIOR COLOURS
+Blue Silver
+Blue
+Five body styles Grey White
+Black Green
+Red
+Red Gold
+
+The interior colour of the car must NOT be the same as the exterior colour.
+
+Motors Incorporated wants to display one of each possible variation of its car in their
+showroom. The showroom has a floor space of 500 m?and each car requires a floor
+
+space of Sm?.
+
+Is this display possible? Justify your answer with the necessary calculations.
+
+Copyright reserved
+
+TOTAL:
+
+3)
+@
+
+6)
+1]
+
+150

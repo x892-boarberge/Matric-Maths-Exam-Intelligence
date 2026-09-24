@@ -1,0 +1,54 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2025,P2,1,1.1,stats.regression.equation,y = 331397.20 - 22988.32x,Least squares regression line,3
+2025,P2,1,1.2,stats.regression.predict,y = 216455.60,Predict price when age=5,2
+2025,P2,1,1.3,stats.correlation.interpret,strong correlation so prediction valid,Interpret r=-0.95,2
+2025,P2,1,1.4,stats.regression.interpret,R22988.32,Average yearly decrease,1
+2025,P2,2,2.1.1,stats.cumulative.total,70,Total from cumulative frequency,1
+2025,P2,2,2.1.2,stats.frequency.count,27,Count from cumulative frequency,2
+2025,P2,2,2.1.3,stats.histogram,histogram with no gaps,Histogram sketch,3
+2025,P2,2,2.1.4,stats.skewness,skewed to the right,Describe distribution,1
+2025,P2,2,2.2,stats.mean.parameter,x = 10,Find x from mean condition,5
+2025,P2,3,3.1,analytical_geom.distance,QR = 8sqrt(5) units,Distance QR,2
+2025,P2,3,3.2,analytical_geom.gradient,m_QR = 1/2,Gradient of QR,2
+2025,P2,3,3.3,analytical_geom.inclination,theta = 26.57 degrees,Angle of inclination,2
+2025,P2,3,3.4,analytical_geom.line_equation,y = 1/2 x - 4,Equation of QR,2
+2025,P2,3,3.5,analytical_geom.translation,S(15; 16),Coordinates of S,2
+2025,P2,3,3.6,analytical_geom.tangent,PT = 5sqrt(5); Area PQRS = 200 units^2,Length PT and area PQRS,6
+2025,P2,4,4.1,analytical_geom.circle.parameter,p = -6,Find p,1
+2025,P2,4,4.2,analytical_geom.circle.parameter,q = 4,Find q,4
+2025,P2,4,4.3,analytical_geom.circle.equation,(x+6)^2 + (y-4)^2 = 25,Equation of circle,2
+2025,P2,4,4.4,analytical_geom.circle.radius,3 units,Radius of smaller circle,1
+2025,P2,4,4.5,analytical_geom.circle.point,A(-9;0) and B(-3;0),Coordinates of A and B,3
+2025,P2,4,4.6,analytical_geom.tangent.equation,y = 3/4 x + 9/4,Equation of BC,4
+2025,P2,4,4.7,analytical_geom.circle.point,C(-6; -9/4),Coordinates of C,2
+2025,P2,4,4.8,analytical_geom.angle,ACB = 106.26 degrees,Angle ACB,4
+2025,P2,5,5.1.1,trig.reduction.cos,cos 40 = k/sqrt(k^2+1),Find cos 40 in terms of k,2
+2025,P2,5,5.1.2,trig.identity.simplify,-k/2,Simplify expression,5
+2025,P2,5,5.1.3,trig.compound.sin,(k^2-1)/(k^2+1),Find sin 10 in terms of k,4
+2025,P2,5,5.2.1,trig.reduction.simplify,-sin x,Simplify reduction expression,4
+2025,P2,5,5.2.2,trig.reduction.range,x in (180; 360),Values of x,2
+2025,P2,6,6.1,trig.identity.prove,LHS = RHS,Prove identity,6
+2025,P2,6,6.2,trig.equation.general,x = 116.57 + k.180; x not equal to 45 + k.180; k in Z,General solution,7
+2025,P2,7,7.1,trig.graph.period,180,Period,1
+2025,P2,7,7.2,trig.graph.sketch,asymptotes; shape; intercepts,Sketch graph,3
+2025,P2,7,7.3,trig.graph.transform,h(x) = -sin 2x,Equation of h,1
+2025,P2,7,7.4,trig.graph.range,y in [-1;1],Range of h,1
+2025,P2,7,7.5,trig.graph.inequality,x in [0;22.5] or [112.5;135],Solve inequality,4
+2025,P2,8,8.1,trig.3d.length,AB = 18 cm,Find AB,2
+2025,P2,8,8.2,trig.3d.length,AC = 18sqrt(5) = 40.25 cm,Find AC,2
+2025,P2,8,8.3,trig.3d.length,KC = 43.97 cm,Find KC,2
+2025,P2,8,8.4,trig.3d.angle,KAC = 80.60 degrees,Find KAC,4
+2025,P2,9,9.1,euclidean.circle.angle_centre,TOP = 2 TKP,Prove angle at centre,5
+2025,P2,9,9.2.1,euclidean.circle.angle,O2 = 64 degrees,Find O2,2
+2025,P2,9,9.2.2,euclidean.tangent.angle,M = 26 degrees,Find M,3
+2025,P2,10,10.1,euclidean.circle.angle,QTS = 55 degrees,Find QTS,3
+2025,P2,10,10.2,euclidean.parallel,R prove PQ parallel SR,Prove PQ parallel SR,3
+2025,P2,10,10.3,euclidean.semicircle.prove,PT is a diameter,Prove PT is a diameter,4
+2025,P2,11,11.1.1,euclidean.prop_theorem,FD/CF = GA/CF,Find ratio,2
+2025,P2,11,11.1.2,euclidean.prop_theorem,FD = 4/3 x; BA/ED,Find length,4
+2025,P2,11,11.1.3,euclidean.area_ratio,9/16,Area ratio,4
+2025,P2,11,11.2.1,euclidean.prop_theorem,QE/PR = QW/PR,Find ratio,2
+2025,P2,11,11.2.2,euclidean.prop_theorem,PQ/QR = QZ/QR,Ratio from similarity,1
+2025,P2,11,11.2.3,euclidean.similarity,QSZ ||| QRS,Prove triangles similar,3
+2025,P2,11,11.2.4,euclidean.prop_theorem,PQ = QS,Prove equality,3
+2025,P2,11,11.2.5,euclidean.prop_theorem,PW = QE.PZ / sqrt(QR.QZ),Prove relation,4

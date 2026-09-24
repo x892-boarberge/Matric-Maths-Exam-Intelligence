@@ -1,0 +1,52 @@
+Mathematics/P2 3 DBE/November 2025
+
+NSC Confidential
+
+QUESTION 1.
+
+There were 11 cars of the same model for sale at a car dealership. The age (in years) of each car
+and its corresponding selling price (in rands) is provided in the table below.
+
+1.1
+
+12
+
+13
+
+1.4
+
+AGE OF CAR SELLING PRICE
+(IN YEARS) OF CAR
+(IN RAND)
+293 000
+265 000
+256 000
+219 000
+241 000
+246 000
+226 000
+176 000
+154 000
+180 000
+148 000
+
+EIRYISIENEN N FN PN 1)
+
+Determine the equation of the least squares regression line.
+Predict the selling price of a similar car at this car dealership that is 5 years old.
+
+Use the correlation coefficient to show whether the prediction made in QUESTION 1.2
+is valid or not.
+
+Use the answer to QUESTION 1.1 to write down the estimated average yearly decrease
+in the selling price of these 11 cars.
+
+Copyright reserved Please turn over
+
+3)
+@)
+
+&)
+
+1)
+18]

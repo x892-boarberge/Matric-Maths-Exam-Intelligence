@@ -1,0 +1,61 @@
+Mathematics/P1 9 DBE/November 2024
+NSC Confidential
+
+QUESTION 11
+
+A certain number of learners are sitting for examinations in Mathematics, Tourism and
+Geography.
+
+All these learners sit for at least one of these examinations.
+
+The total number of learners who sit for Mathematics (M), is 22.
+The total number of learners sitting for Tourism (T), is 16.
+
+The total number of learners sitting for Geography (G), is 18.
+
+5 learners sit for Mathematics and Tourism, but not Geography.
+4 learners sit for Mathematics and Geography, but not Tourism.
+3 learners sit for Tourism and Geography, but not Mathematics.
+6 learners sit for only Tourism.
+
+s e 0 000 00
+
+11.1 Draw a Venn diagram to represent ALL the learners sitting for these examinations. [€))
+
+11.2 Calculate the probability that a learner, chosen at random, will sit for examinations in
+
+at least TWO of the subjects. [0}
+11.3 Determine if the events: sitting for examinations in Mathematics and sitting for
+examinations in Tourism are independent. Support your answer with the necessary
+calculations. “)
+19]
+QUESTION 12
+
+A company generates a 4-character code using the 26 letters of the alphabet and the 10 digits,
+from 0to0 9.
+
+The code isin the form: [ feqer | digit | leter | digit
+121 Determine how many different codes can be formed if letters and digits may be
+
+repeated. @)
+122 Determine how many different codes can be formed if:
+
+e Theletters D, F, I, Q, U and V may NOT be used
+
+e The code may NOT start witha W ora Z
+
+e Letters or digits may NOT be repeated
+
+o The code ends with an odd digit “)
+123 The company wishes to increase the number of 4-character codes formed in
+
+QUESTION 12.2 by allowing the letters D, F, I, Q, U and V to be used.
+
+Calculate the percentage increase in the number of different codes that can now be
+
+formed. ?
+18]
+
+TOTAL: 150
+
+Copyright reserved

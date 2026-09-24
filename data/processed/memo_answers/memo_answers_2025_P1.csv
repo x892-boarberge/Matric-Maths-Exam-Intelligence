@@ -1,0 +1,50 @@
+﻿year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2025,P1,1,1.1.1,algebra.quadratic.solve,x = -5 or x = 2,Solve (x+5)(x-2)=0,2
+2025,P1,1,1.1.2,algebra.quadratic.solve,x = -0.26 or x = -1.54,Solve 5x^2+2=-9x (TWO decimal places),4
+2025,P1,1,1.1.3,algebra.quadratic.inequality,x < 0 or x > 1/4,Solve 8x^2 > 2x,4
+2025,P1,1,1.1.4,algebra.exponential.solve,x = -1 or x = 2,Solve 2.2^(2x) - 9.2^x + 4 = 0,4
+2025,P1,1,1.1.5,algebra.surd.solve,x = 1/4,Solve sqrt(1/sqrt(x)+2) = 1/sqrt(x),5
+2025,P1,1,1.2,algebra.simultaneous.solve,"x = -1/2 , y = -5/2 or x = 3 , y = 1","Solve simultaneous: x=y+2 and 5xy=x^2+6",6
+2025,P1,2,2.1.1,sequences.gp.ratio,t = -2,Find t for geometric ratios with (10+t)/(t-2),3
+2025,P1,2,2.1.2,sequences.gp.term,T_25 = (1/2)^21,Find 25th term of GP: 8 ; -4 ; ...,3
+2025,P1,2,2.1.3,sequences.gp.sum_infinity,S_inf = 16/3,Sum to infinity of GP with a=8 r=-1/2,2
+2025,P1,2,2.2.1,sequences.ap.difference,32,T_14 - T_6 for AP,2
+2025,P1,2,2.2.2,sequences.ap.sum,k = 21,Find k given sum condition on AP,5
+2025,P1,3,3.1,sequences.quadratic.term,T_5 = 164,Quadratic sequence first differences,2
+2025,P1,3,3.2,sequences.quadratic.general,T_n = -n^2 + 38n - 1,General term of quadratic sequence,3
+2025,P1,3,3.3,sequences.quadratic.term,T_19 = 360,Find T_19,3
+2025,P1,3,3.4,sequences.quadratic.n,n = 35,Find n where T_n = 104,2
+2025,P1,4,4.1,functions.log.value,t = -1,Solve t = log_(1/3)(3),1
+2025,P1,4,4.2,functions.log.intercept,A(1;0),x-intercept of log graph,1
+2025,P1,4,4.3,functions.log.inverse,y = (1/3)^x,Equation of inverse of f(x)=log_(1/3)(x),2
+2025,P1,4,4.4,functions.log.asymptote,y = 0,Asymptote of inverse,1
+2025,P1,4,4.5,functions.log.sketch,decreasing exponential; asymptote y=0; y-intercept (0;1),Sketch of inverse,3
+2025,P1,4,4.6,functions.log.range,0 < y < 3,Range restriction for h given point (4;3),2
+2025,P1,5,5.1,functions.hyperbola.domain,x in R x not equal to 3,Domain of combined graphs,1
+2025,P1,5,5.2,functions.parabola.range,y <= 8,Range of f,1
+2025,P1,5,5.3.1,functions.inequality,3 < x <= 5,Solve f >= g type inequality,2
+2025,P1,5,5.3.2,functions.inequality,x < 1 or x > 5,Solve f < g type inequality,2
+2025,P1,5,5.4,functions.parabola.equation,y = -1/2 x^2 + 3x + 7/2,Equation of parabola through given point,3
+2025,P1,5,5.5,functions.parabola.intercepts,M(-1;0); T(7/2;0); MT = 4.5,x-intercepts and distance MT,6
+2025,P1,5,5.6,functions.parabola.tangent,y = -2x + 16,Equation of tangent at x=5,3
+2025,P1,6,6.1,functions.hyperbola.intercept,(-p; 0),x-intercept notation,1
+2025,P1,6,6.2,functions.hyperbola.equation,a=2; q=-1; f(x)=2/(x-2)-1,Find a q and equation of hyperbola,5
+2025,P1,6,6.3,functions.hyperbola.translation,1 unit down,Describe translation,2
+2025,P1,7,7.1,finance.compound,A = R58 230.94,Compound interest A=P(1+i)^n,2
+2025,P1,7,7.2,finance.annuity.future,F = R66 411.60,Future value of annuity,4
+2025,P1,7,7.3.1,finance.loan.n,n = 133 months,Time to repay loan,5
+2025,P1,7,7.3.2,finance.loan.final,Final payment = R4 197.21,Final payment amount,4
+2025,P1,8,8.1,calculus.derivative.first_principles,f'(x) = -2,First principles for f(x)=-2x+3,4
+2025,P1,8,8.2.1,calculus.derivative.rules,g'(x) = -12x^3 + 2,Differentiate g(x)=-3x^4+2x,2
+2025,P1,8,8.2.2,calculus.derivative.rules,dy/dx = 4x - 2x^(-3),Differentiate (2x^4+1)/x^2,4
+2025,P1,9,9.1,calculus.cubic.turning,x=1/3 or x=5; E(5;-36),Turning points of cubic,4
+2025,P1,9,9.2,calculus.cubic.concave,x < 8/3,Where f is concave down,3
+2025,P1,9,9.3,calculus.cubic.increasing,-1 < x < 2 or 8/3 < x < 7,Intervals where f increasing,4
+2025,P1,9,9.4,calculus.cubic.parameter,14 < t < 634/27,Values of t for number of roots condition,6
+2025,P1,10,10.1,calculus.optimisation.volume,V = 25x^2/(4pi) - x^3/(4pi),Volume of cylinder from sheet,3
+2025,P1,10,10.2,calculus.optimisation.max,x = 50/3,Find x for maximum volume,3
+2025,P1,11,11.1.1,probability.independence,e = 84,Independence check for two-way table,3
+2025,P1,11,11.1.2,probability.two_way,12/35,P(Female and energy drink),3
+2025,P1,11,11.2,probability.tree,x = 28 cups,Conditional tree diagram coffee problem,4
+2025,P1,11,11.3.1,probability.counting,5040,Counting arrangements,2
+2025,P1,11,11.3.2,probability.counting,15/56,P(two or more runners after Andrew),4

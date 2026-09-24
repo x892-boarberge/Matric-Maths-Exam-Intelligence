@@ -1,0 +1,47 @@
+Mathematics/P1 9 DBE/November 2020
+SC/NSC
+
+QUESTION 9
+
+A closed rectangular box has to be constructed as follows:
+
+o Dimensions: length (/), width (w) and height (/).
+. The length (J) of the base has to be 3 times its width ().
+. The volume has to be 5 m®.
+
+The material for the top and the bottom parts costs R15 per square metre and the material for
+the sides costs R6 per square metre.
+
+9.1 Show that the cost to construct the box can be calculated by: Cost =90w? +48wh “
+9.2 Determine the width of the box such that the cost to build the box is a minimum. (6)
+[10]
+
+QUESTION 10
+
+In a certain country, 10-digit telephone numbers with the following format were introduced:
+
+~ Format | AreaCode | Exchange Code _ Number
+Number of digits + 3 digits i 3 digits 4 digits
+Example 901 544 1230
+Digits may be repeated.
+10.1 How many possible 10-digit telephone numbers could be formed? )
+
+10.2 Certain restrictions were placed on the groups of digits:
+
+. Area code: must be 3 digits and the first digit can NOT be 0 or 1
+
+. Exchange code: must be 3 digits and the first and second digits can NOT
+be 0 or 1
+
+. Number: must be 4 digits and the first digit MUST bea 0 or 1
+
+102.1  How many valid 10-digit telephone numbers could be formed by applying
+the given restrictions? 3)
+
+10.2.2 Determine the probability that any randomly chosen 10-digit telephone
+
+number would be a valid phone number. ?2)
+
+71
+
+Copyright reserved Please tum over

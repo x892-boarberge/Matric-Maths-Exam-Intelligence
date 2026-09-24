@@ -1,0 +1,36 @@
+Mathematics/P1 10 DBE/November 2015
+
+NSC
+QUESTION 11
+111 For two events, A and B, itis given that:
+P(A)=02
+P(B)=0.63
+
+P(A and B) = 0,126
+
+Are the events, A and B, independent? Justify your answer with appropriate
+calculations. [€))
+
+112 The letters of the word DECIMAL are randomly arranged into a new 'word', also
+consisting of seven letters. How many different arrangements are possible if:
+
+11.2.1 Letters may be repeated ?2)
+1122 Letters may not be repeated 2
+
+T1:2:3 The arrangements must start with a vowel and end in a consonant and no
+repetition of letters is allowed “4)
+
+11.3 There are ¢ orange balls and 2 yellow balls in a bag. Craig randomly selects one ball
+
+from the bag, records his choice and returns the ball to the bag. He then randomly
+selects a second ball from the bag, records his choice and returns it to bag. It is known
+that the probability that Craig will select two balls of the same colour from the bag
+
+is 52%.
+Caleulate how many orange balls are in the bag. ©)
+
+171
+
+TOTAL: 150
+
+Copyright reserved
