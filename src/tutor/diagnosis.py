@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+from pathlib import Path
 from .answer_matcher import is_correct as _graceful_is_correct
 from typing import Callable, Dict, List, Tuple
 
@@ -214,6 +215,90 @@ def _similarity_ratio(nr: str, expected: str) -> bool:
     return (a, b) == (d, c)
 
 
+# ------------------------------------------------------------------
+# N08 v2 — trigger-based fallback layer
+# Loads 69 misconceptions from misconceptions_v2.csv.
+# Fires only when skill-scoped rules miss, gated by topic.
+# ------------------------------------------------------------------
+
+_TRIGGER_LIBRARY = None
+
+
+def _load_trigger_library():
+    """Load the trigger regexes from misconceptions_v2.csv (cached)."""
+    global _TRIGGER_LIBRARY
+    if _TRIGGER_LIBRARY is not None:
+        return _TRIGGER_LIBRARY
+
+    import pandas as pd
+    path = Path(__file__).resolve().parents[2] / "data" / "processed" / "tutor" / "misconceptions_v2.csv"
+    if not path.exists():
+        _TRIGGER_LIBRARY = []
+        return _TRIGGER_LIBRARY
+
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        _TRIGGER_LIBRARY = []
+        return _TRIGGER_LIBRARY
+
+    rules = []
+    for _, row in df.iterrows():
+        try:
+            pattern = re.compile(str(row["trigger_pattern"]), re.IGNORECASE)
+        except re.error:
+            continue
+        rules.append({
+            "mid": str(row["misconception_id"]).strip(),
+            "topic": str(row["topic"]).strip(),
+            "error_class": str(row["error_class"]).strip(),
+            "description": str(row["description"]).strip(),
+            "pattern": pattern,
+            "severity": str(row["severity"]).strip(),
+        })
+    _TRIGGER_LIBRARY = rules
+    return rules
+
+
+_TOPIC_PREFIX = {
+    "algebra.": "ALG",
+    "sequences.": "SEQ",
+    "functions.": "FUNC",
+    "finance.": "FIN",
+    "calculus.": "CALC",
+    "probability.": "PROB",
+    "trig.": "TRIG",
+    "euclidean.": "EUCL",
+    "analytical_geom.": "AGEO",
+    "stats.": "STAT",
+}
+
+
+def _topic_from_skill(skill_id: str):
+    if not skill_id:
+        return None
+    s = str(skill_id).lower()
+    for prefix, code in _TOPIC_PREFIX.items():
+        if s.startswith(prefix):
+            return code
+    return None
+
+
+_CLASS_TO_ERROR_TYPE = {
+    "procedural":   ErrorType.PROCEDURAL,
+    "conceptual":   ErrorType.CONCEPTUAL,
+    "notation":     ErrorType.REPRESENTATION,
+    "presentation": ErrorType.PROCEDURAL,
+    "reading":      ErrorType.STRATEGY,
+    "arithmetic":   ErrorType.ARITHMETIC,
+    "general":      ErrorType.UNKNOWN,
+}
+
+
+def _error_type_for_class(cls: str) -> ErrorType:
+    return _CLASS_TO_ERROR_TYPE.get(str(cls).lower(), ErrorType.UNKNOWN)
+
+
 RuleFn = Callable[[str, str], bool]
 RuleSpec = Tuple[str, ErrorType, str, RuleFn]
 
@@ -339,6 +424,20 @@ def diagnose(skill_id: str, learner_response: str, expected_answer: str) -> Diag
                 explanation=expl,
             )
 
+    # Layer 2 — trigger-based fallback (N08 v2)
+    topic_hint = _topic_from_skill(skill_id)
+    for rule in _load_trigger_library():
+        if topic_hint and rule["topic"] not in (topic_hint, "GEN"):
+            continue
+        if rule["pattern"].search(nr):
+            return DiagnosisResult(
+                error_type=_error_type_for_class(rule["error_class"]),
+                misconception_id=rule["mid"],
+                confidence=0.65,
+                rule_id=f"D_TRIGGER_{rule['mid']}",
+                explanation=rule["description"],
+            )
+
     return DiagnosisResult(
         error_type=ErrorType.UNKNOWN,
         misconception_id=None,
@@ -353,4 +452,6 @@ def reachable_misconception_ids() -> set[str]:
     for rules in RULES.values():
         for mid, *_ in rules:
             ids.add(mid)
+    for rule in _load_trigger_library():
+        ids.add(rule["mid"])
     return ids
