@@ -1,0 +1,11 @@
+topic,slope,r_squared,p_value,direction,mean_per_year
+TRIG,0.287,0.151,0.2113,stable,14.2
+STAT,0.255,0.166,0.1892,stable,9.2
+FIN,0.021,0.005,0.834,stable,4.2
+AGEO,-0.003,0.0,0.9886,stable,12.4
+PROB,-0.028,0.008,0.7872,stable,4.7
+SEQ,-0.028,0.003,0.8759,stable,6.8
+FUNC,-0.031,0.001,0.9061,stable,12.9
+ALG,-0.059,0.022,0.6451,stable,6.1
+CALC,-0.357,0.327,0.0522,falling,9.2
+EUCL,-0.619,0.532,0.0071,falling,12.9

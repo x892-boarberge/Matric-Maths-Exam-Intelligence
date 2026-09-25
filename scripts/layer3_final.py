@@ -1,0 +1,26 @@
+import pandas as pd
+from pathlib import Path
+ROOT = Path(".").resolve()
+DIAG = ROOT / "data" / "processed" / "diagnostics"
+errors = pd.read_csv(DIAG / "diagnostic_errors_v9.csv")
+averages = pd.read_csv(DIAG / "performance_all_years.csv")
+errs = errors[errors["source_section"] == "errors"].copy()
+averages["question_number"] = averages["question_number"].astype(int)
+avg_slim = averages[["year", "paper", "question_number", "avg_performance_pct", "topic_v2"]].copy()
+avg_slim = avg_slim.rename(columns={"topic_v2": "avg_topic_v2"})
+merged = errs.merge(avg_slim, on=["year", "paper", "question_number"], how="left")
+def band(v):
+    if pd.isna(v): return "unknown"
+    if v < 35: return "critical"
+    if v < 50: return "high"
+    if v < 65: return "medium"
+    return "low"
+merged["priority_band"] = merged["avg_performance_pct"].apply(band)
+merged.to_csv(DIAG / "diagnostic_errors_enriched.csv", index=False, encoding="utf-8")
+print(f"Input: {len(errs)}  Joined: {merged['avg_performance_pct'].notna().sum()} "
+      f"({100 * merged['avg_performance_pct'].notna().mean():.1f}%)")
+print()
+print(merged["priority_band"].value_counts().to_string())
+print()
+print("Critical by topic:")
+print(merged[merged["priority_band"] == "critical"]["topic"].value_counts().to_string())
