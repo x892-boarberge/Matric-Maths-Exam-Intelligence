@@ -17,6 +17,7 @@ from src.tutor.event_log import SessionLogger, read_events
 from src.tutor.n08_loader import get_library
 from src.tutor.mapping_adapter import v1_to_v2
 from src.tutor.question_loader import load_corpus
+from src.tutor.drill import run as run_drill
 from cli_navigation import pick_navigated_problem
 from src.tutor.learner_store import open_store
 from src.tutor.schemas import MasteryState
@@ -198,6 +199,125 @@ def format_topic_line(problem):
     return "Topic: " + topic_display
 
 
+
+
+def collect_working():
+    """Collect working line-by-line. Returns WorkingSubmission or None to quit."""
+    from src.tutor.schemas import WorkingSubmission, WorkingStep
+    import time as _time
+
+    print()
+    print("Show your working. One line at a time.")
+    print("  - Type 'done' when finished")
+    print("  - Type 'answer: x = ...' for a single-answer attempt")
+    print("  - Type 'q' to quit")
+    print()
+
+    steps = []
+    start = _time.time()
+    while True:
+        idx = len(steps) + 1
+        try:
+            raw = input(f"  Line {idx}: ").rstrip()
+        except (EOFError, KeyboardInterrupt):
+            return None
+        stripped = raw.strip()
+        if not stripped:
+            continue
+        low = stripped.lower()
+
+        if low in ("q", "quit", "exit"):
+            return None
+
+        if low == "done" or low == "submit":
+            if not steps:
+                print("  (no working yet — type at least one line, or 'q' to quit)")
+                continue
+            return WorkingSubmission(
+                steps=[WorkingStep(index=i + 1, raw_text=t) for i, t in enumerate(steps)],
+                source="typed",
+                final_answer=steps[-1],
+            )
+
+        if low.startswith("answer:"):
+            answer = stripped[len("answer:"):].strip()
+            if answer:
+                return WorkingSubmission(
+                    steps=[WorkingStep(index=1, raw_text=answer, timestamp=_time.time() - start)],
+                    source="typed",
+                    final_answer=answer,
+                )
+            print("  (empty answer — try again)")
+            continue
+
+        # Any other line is a working step
+        steps.append(stripped)
+        if len(steps) >= 40:
+            print("  (40 lines — submit with 'done')")
+
+
+
+
+
+def show_session_summary(store, learner_id, session_id, skill_id, seen_attempts):
+    """Print a proper session summary."""
+    print()
+    print("=" * 60)
+    print("Session summary")
+    print("=" * 60)
+    print(f"  Learner: {learner_id}")
+    print(f"  Skill:   {skill_id}")
+    print(f"  Attempts this session: {len(seen_attempts)}")
+    correct = sum(1 for e in seen_attempts if e == "none")
+    print(f"  Correct: {correct}")
+    print(f"  Wrong:   {len(seen_attempts) - correct}")
+    print()
+    m = store.get_mastery(learner_id, skill_id)
+    print(f"  Mastery state: {m['mastery_state']}")
+    print(f"  Sittings passed: {m['sittings_passed']}")
+    if m["mastery_state"] == "near_mastery":
+        print()
+        print("  You need ONE more passing sitting (3 of 4 correct)")
+        print("  within 14 days to reach mastery.")
+    elif m["mastery_state"] == "practising":
+        print()
+        print("  Keep practising. A passing sitting is 3 correct out of 4")
+        print("  attempts on the same skill in a single session.")
+    print("=" * 60)
+
+
+def show_learner_dashboard(store, learner_id):
+    """Show all skills and their mastery state."""
+    import sqlite3
+    print()
+    print("=" * 60)
+    print(f"Dashboard — {learner_id}")
+    print("=" * 60)
+    rows = store.conn.execute(
+        "SELECT skill_id, mastery_state, sittings_passed, last_sitting_at "
+        "FROM mastery WHERE learner_id = ? ORDER BY mastery_state, skill_id",
+        (learner_id,),
+    ).fetchall()
+    if not rows:
+        print("  (no mastery records yet)")
+    else:
+        print(f"  {'Skill':<38s} {'State':<14s} Sittings")
+        print("  " + "-" * 58)
+        for r in rows:
+            print(f"  {r['skill_id']:<38s} {r['mastery_state']:<14s} {r['sittings_passed']}")
+    print()
+    n_sess = store.conn.execute(
+        "SELECT COUNT(*) FROM session WHERE learner_id = ?", (learner_id,)
+    ).fetchone()[0]
+    n_att = store.conn.execute(
+        "SELECT COUNT(*) FROM attempt WHERE learner_id = ?", (learner_id,)
+    ).fetchone()[0]
+    print(f"  Total sessions: {n_sess}")
+    print(f"  Total attempts: {n_att}")
+    print("=" * 60)
+
+
+
 def main() -> None:
     item = pick_problem()
 
@@ -226,6 +346,8 @@ def main() -> None:
     store = open_store(store_path)
     store.load_learner(learner_id)
     print("Learner:", learner_id, "| store:", store_path)
+
+    session_attempts = []
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     session_id = "cli_" + stamp
@@ -288,35 +410,46 @@ def main() -> None:
     print("Note: " + item["hint_correct"])
     print("-" * 60)
 
-    while True:
-        raw = input("\nYour answer: ").strip()
-        if not raw:
-            print("Type an attempt, or 'quit'.")
-            continue
-        low = raw.lower()
-        if low in ("q", "quit", "exit"):
-            break
-        if low in ("diagram", "d"):
-            _p = _open_diagram(problem)
-            if _p is not None:
-                print("(reopened: " + str(_p) + ")")
-            else:
-                print("(no diagram page for this question)")
-            continue
+    # --- Drill mode: offer it up front ---
+    print()
+    print("  Start a drill on this skill?")
+    print("    d  → drill (4 questions, mastery tracked)")
+    print("    Enter → single attempt (legacy)")
+    mode = input("  > ").strip().lower()
 
-        explicit = low in (
-            "answer",
-            "just give me the answer",
-            "give me the answer",
-            "solution",
-            "solve it",
+    if mode in ("d", "drill"):
+        result = run_drill(
+            engine=engine,
+            store=store,
+            learner_id=learner_id,
+            session_id=session_id,
+            anchor=problem,
+            logger=logger,
         )
+        print()
+        print("  Drill finished:", result)
+        # Skip legacy loop
+        summary = logger.close()
+        store.end_session(session_id)
+        print("\n" + "=" * 60)
+        print("Session log: " + str(log_path))
+        print("SESSION_ENDED: " + str(summary))
+        print("=" * 60)
+        return
+
+    while True:
+        submission = collect_working()
+        if submission is None:
+            break
+
+        # Detect answer-demand shortcut (e.g. "answer:" was already stripped
+        # inside collect_working, so we don't need to detect it here)
 
         action = engine.step(
             state,
             problem,
-            raw,
-            explicit_solution_request=explicit,
+            submission,
+            explicit_solution_request=False,
         )
 
         print("\n  diagnosis:    " + action.diagnosis.error_type.value, end="")
@@ -332,14 +465,83 @@ def main() -> None:
         print("  action:       " + action.action.value)
         print("  tutor:        " + action.tutor_message)
 
+        # Track attempts for the session summary
+        try:
+            session_attempts
+        except NameError:
+            session_attempts = []
+        session_attempts.append(action.diagnosis.error_type.value)
+
         if action.diagnosis.error_type.value == "none":
-            print("\nCorrect for this demo item. Session can end, or keep practising.")
-            more = input("Another attempt on same problem? [y/N]: ").strip().lower()
-            if more != "y":
+            print()
+            print("=" * 60)
+            print("Correct.")
+            print("=" * 60)
+            n = len(session_attempts)
+            c = sum(1 for e in session_attempts if e == "none")
+            print(f"  This session: {c}/{n} correct on {item['skill_id']}")
+            print()
+            print("  [Enter]   next question on the same skill")
+            print("  s         show session summary")
+            print("  d         dashboard (all skills)")
+            print("  q         end session")
+            choice = input("  > ").strip().lower()
+
+            if choice in ("q", "quit", "exit"):
                 break
 
-        # The session never ends because the learner is struggling.
-        # Only quit or correct answer ends it.
+            if choice in ("s", "summary"):
+                show_session_summary(store, learner_id, session_id, item["skill_id"], session_attempts)
+                again = input("\n  Continue? [Y/n]: ").strip().lower()
+                if again == "n":
+                    break
+                continue
+
+            if choice in ("d", "dashboard"):
+                show_learner_dashboard(store, learner_id)
+                again = input("\n  Continue? [Y/n]: ").strip().lower()
+                if again == "n":
+                    break
+                continue
+
+            # Default: load another question on the same skill
+            all_problems = load_corpus()
+            same_skill = [p for p in all_problems if p.skill_id == item["skill_id"]]
+            if len(same_skill) > 1:
+                # Pick a different one than the current
+                import random as _r
+                options = [p for p in same_skill if p.problem_id != problem.problem_id]
+                if options:
+                    new_problem = _r.choice(options)
+                    problem = new_problem
+                    print()
+                    print("-" * 60)
+                    print(format_topic_line(new_problem))
+                    print("Problem: " + new_problem.prompt)
+                    _new_diag = _diagram_path_for(new_problem)
+                    if _new_diag is not None:
+                        print("Diagram page: " + str(_new_diag))
+                        _open_diagram(new_problem)
+                    print("-" * 60)
+                    state = LearnerState(
+                        learner_id=learner_id,
+                        skill_id=item["skill_id"],
+                        current_session_id=session_id,
+                    )
+                    print()
+                    print("Commands:  quit  |  answer  (ask for more help)  |  just type your attempt")
+                    print("-" * 60)
+                    continue
+
+            # No other questions on this skill — end
+            print("(No more questions on this skill. Ending session.)")
+            break
+
+    # Session summary
+    try:
+        show_session_summary(store, learner_id, session_id, item["skill_id"], session_attempts)
+    except Exception:
+        pass
 
     summary = logger.close()
 

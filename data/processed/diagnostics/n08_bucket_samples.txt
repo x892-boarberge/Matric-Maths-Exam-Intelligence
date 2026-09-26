@@ -1,0 +1,398 @@
+======================================================================
+TRIG / procedural  (80 errors)
+======================================================================
+  [2014 P1 Q5]
+    Candidates assumed that q 90 Dˆ and concluded that y = 60°. Some candidates substituted incorrectly into the sine rule when trying to calculate the size of y. Some candidates ¿rst calculated the size of Dˆ by using the sine rule. But instead of using the obtuse angle of 126,25°, 
+
+  [2014 P1 Q7]
+    Candidates wrote down the expansion of x 2 cos as x 2 sin 1 instead of x 2 sin 2 1 . Many candidates mixed up the sign because they omitted the brackets when substituting for x 2 cos . 0 sin 2 sin 0 sin 2 1 1 sin 0 2 cos 1 sin 2 2       x x x x x x They were unable to pro
+
+  [2014 P1 Q7]
+    Many candidates could not integrate what is learnt in Paper 1 with Paper 2. Many wrote the answer to Q7.6 as –1 < x < 1; they merely took the value of r to be x. Some started their answer as –1  r  1. Some candidates used 1 + 2cos2x as the ¿rst term of the series. Some calculat
+
+  [2015 P2 Q5]
+    Errors in Q5.1 and Q5.2 resulted from the incorrect selection and application of reduction formulae. Candidates made errors with the signs in the reduced form of the ratios, for example ° − ° − = ° − 23 cos 23 sin 23 tan . Candidates had difficulty when dealing with negative angl
+
+  [2015 P2 Q5]
+    The vast majority of the candidates failed to identify that the denominator in Q5.2 was an expansion of the compound angle sin(A + B). Many candidates chose to expand the denominator. This resulted in tedious manipulations with very few arriving at the correct simplified expressi
+
+
+======================================================================
+EUCL / procedural  (79 errors)
+======================================================================
+  [2014 P1 Q8]
+    In Q8.1.1, candidates made the mistake of dividing by 2 instead of multiplying by 2. Many did not give the reason or gave an incomplete reason such as ‘angle at centre’. Some gave either ‘angle at circumference is twice angle at centre’ or ‘centre of circle theorem’ as the reason
+
+  [2014 P1 Q8]
+    Some candidates made unnecessary constructions to answer Q8.1.2. Others incorrectly used angles in the same segment to answer this question. Some candidates knew how to answer this question but did not give the size of y. They gave their answer as 2 Bˆ y or 2 180 x y  q .
+
+  [2014 P1 Q8]
+    Many candidates wrote down the correct value of 1 Fˆ but either omitted the reason or wrote the incorrect reason. The most common incorrect reason was OF ^ CD. Candidates were confused between the theorem and the converse and gave the reason as line from centre ^ to chord. Others
+
+  [2014 P1 Q8]
+    In Q8.3.1, candidates gave the incorrect reasons. The most common incorrect reasons were ‘tan-chord theorem’ and AB = AE.
+
+  [2014 P1 Q8]
+    In Q8.3.2, many candidates did not make the substitution that AB was equal to x. They wrote and could go no further. Some could not identify the hypotenuse in the ǻABC. Others wrote and solved this equation. There were also a number of candidates who were able to answer this ques
+
+
+======================================================================
+AGEO / procedural  (78 errors)
+======================================================================
+  [2014 P1 Q3]
+    Some candidates substituted x = 0 instead of y = 0 when calculating the coordinates of A. The use of the incorrect value of the radius from Q3.1 resulted in candidates arriving at solutions where the coordinates of A were invalid. Candidates simply continued even though their sol
+
+  [2014 P1 Q3]
+    Some candidates substituted incorrectly into the gradient formula. The common error was swapping the x and y values.
+
+  [2014 P1 Q3]
+    Many candidates failed to recall that the gradient of a horizontal line is zero. Instead they wrote long arguments and performed tedious calculations to determine the equation of a horizontal line. Some candidates were confused between the tangent ratio and the straight line call
+
+  [2014 P1 Q3]
+    Candidates did not realise that L is the point of intersection of two straight lines whose equations have been established. Many candidates substituted the point (20 ; 9) into the equation 6 4 3  x y and arrived at 9 = 9. Some candidates incorrectly applied the midpoint formula 
+
+  [2014 P1 Q3]
+    Candidates substituted incorrectly into the distance formula. Many gave their answer correct to two decimal places instead of surd form as was required.
+
+
+======================================================================
+FUNC / general  (67 errors)
+======================================================================
+  [2014 P1 Q4]
+    Candidates were unable to calculate the coordinates of S on account of poor algebraic manipulation. This meant that candidates could not calculate the distance OS.
+
+  [2014 P1 Q5]
+    Candidates struggled with the interpretation of Q5.5. The problem stemmed from not knowing the correct x value for which f
+
+  [2014 P1 Q6]
+    In Q6.1, candidates did not follow the instruction given in the question to give the answer correct to two decimal places. Instead they either left the answer in surd form or they rounded to one decimal place.
+
+  [2014 P1 Q6]
+    Candidates struggled to determine an expression for the length of a vertical line between two graphs. This could have been because one graph was an inverse parabola and looked different from many of the questions that learners would have encountered in class.
+
+  [2014 P1 Q6]
+    = 0, which means that candidates are not cognisant that if the distance between two graphs is zero they are actually considering the point of intersection between the graphs.
+
+
+======================================================================
+EUCL / general  (63 errors)
+======================================================================
+  [2014 P1 Q8]
+    In Q8.2.2, many candidates stated that and gave the reason as ‘opposite angles of a cyclic quadrilateral are equal’. A fair number indicated that . Some candidates did not identify the cyclic quadrilateral in Q8.2.
+
+  [2014 P1 Q9]
+    In Q9.1.1, many candidates gave only one part of the reason, either ‘same base’ or ‘same height’ but not both. Some stated ‘proportional intercept theorem’ as the reason.
+
+  [2014 P1 Q9]
+    In Q9.1.2, candidates used h for the height instead of k.
+
+  [2014 P1 Q10]
+    Many candidates have a good understanding of the tan-chord theorem and used it correctly in Q10.1.1 and Q10.1.2. However some candidates gave irrelevant reasons as their answers. In Q10.1.3, many candidates simply gave the answer as ‘corresponding angles’ rather than ‘correspondi
+
+  [2015 P2 Q8]
+    In Q8.1.1, some candidates stated that the angle at the centre was half the angle at the circumference.
+
+
+======================================================================
+AGEO / general  (62 errors)
+======================================================================
+  [2014 P1 Q3]
+    Candidates used the coordinates of M(5 ; 4) in 2 2 2 r y x  and calculated the radius to be 41 instead of realising that M was the centre of the circle.
+
+  [2014 P1 Q4]
+    Some candidates calculated the y-intercept instead of the x-intercept.
+
+  [2014 P1 Q4]
+    Many candidates did not see that Q4.3 was a follow on from Q4.2. They used a different angle of inclination other than the one calculated in Q4.2. Some assumed that AB was perpendicular to EF. Candidates used 45° or 135° as the inclination of AB. Candidates worked backwards by us
+
+  [2015 P2 Q3]
+    Candidates’ lack of knowledge of the Midpoint Theorem resulted in the inability to answer Q3.2 and Q3.3.
+
+  [2015 P2 Q3]
+    In Q3.2, candidates who were unable to calculate the gradient of PQ simply guessed the gradient of MN. Some candidates did not provide a reason for the lines PQ and MN being parallel, while others did not write the equation in the required form.
+
+
+======================================================================
+TRIG / general  (61 errors)
+======================================================================
+  [2014 P1 Q5]
+    Candidates experienced dif¿culty in selecting and applying the correct trigonometric ratio in a right-angled triangle. They did not understand the instruction: ‘Show, by calculation, that x = 60° ’.
+
+  [2014 P1 Q5]
+    Candidates rounded off their answers to whole numbers instead of working to 2 decimal places. 127 DIAGNOSTIC REPORT
+
+  [2014 P1 Q6]
+    Many candidates could not earn any marks in Q6.2. They merely wrote out the expansion b a b a b a sin sin cos cos ) cos(   . Some used ) cos( b a  to derive ) sin( b a  . That was not required.
+
+  [2014 P1 Q7]
+    It was disappointing that some candidates were unable to draw an accurate graph of y = cos2x. In many cases, candidates drew graphs that exceeded the range or could not get the shape of the graph correct. Some drew the graph of y = cosx.
+
+  [2014 P1 Q7]
+    Many candidates did not realise that Q7.5 required a transformation of the points of intersection of f and g. Some tried to solve the equations graphically. Some tried to solve the equation: without any success.
+
+
+======================================================================
+FUNC / procedural  (58 errors)
+======================================================================
+  [2014 P1 Q4]
+    Candidates were unfamiliar with the format q p x a y   for the hyperbola. This meant that candidates wrote down the incorrect value for p.
+
+  [2014 P1 Q4]
+    Although Q4.3 was a basic translation question, candidates failed to apply the translation to the graph. Candidates did not write the asymptote as an equation and often gave the answer as only – 6 instead of x = – 6.
+
+  [2014 P1 Q4]
+    For the most part, candidates did not understand what was being asked of them in Q4.5. This question required higher-order thinking skills as it involved applying the theory of the nature of roots in a graph question. Candidates failed to make the connection between the given lin
+
+  [2015 P1 Q4]
+    Many candidates drew a graph having the incorrect shape. Although they indicated the asymptote, their graph would have intersected with the asymptote which made the asymptote invalid.
+
+  [2015 P1 Q5]
+    Candidates did not recall that the shortest distance between a line and a point is the perpendicular distance between them. They had no clue of this fact as OP was not drawn perpendicular to the straight line in the diagram. Most calculated P as the midpoint between Q and the y-i
+
+
+======================================================================
+CALC / general  (52 errors)
+======================================================================
+  [2014 P1 Q8]
+    Candidates struggled to correctly multiply out . The simpli¿cation and adding of like terms led to many algebraic errors.
+
+  [2014 P1 Q8]
+    Some candidates did not follow the instruction of ¿rst principles. Instead, they applied the rules and wrote down only the answer. No marks were awarded in this case.
+
+  [2014 P1 Q8]
+    Candidates struggled to differentiate when there was a y in the derivative. In the case of Q8.3, many candidates started with the answer and attempted to work backwards. This led them to ultimately calculate the second derivative. This was due to not understanding what expression
+
+  [2014 P1 Q9]
+    In Q9.1, candidates were able to calculate the derivative correctly, but often did not explicitly equate it to zero. They did however arrive at the correct answers for the turning points.
+
+  [2014 P1 Q10]
+    The application of Calculus has always been a problem. Candidates generally did not understand the relevance of the given net and the rectangular prism drawn, and did not understand the connection between the two diagrams and the problem.
+
+
+======================================================================
+STAT / general  (52 errors)
+======================================================================
+  [2014 P1 Q2]
+    It is disappointing that some candidates drew a tally of the frequency in response to completing the cumulative frequency column. Clearly these candidates have very little understanding of Data Handling.
+
+  [2014 P1 Q2]
+    Many candidates plotted the cumulative frequencies at the midpoint of the class intervals rather than at the upper boundaries. Some plotted the cumulative frequencies at the lower boundaries. A signi¿cant number of candidates did not ground the cumulative frequency graph at (20 ;
+
+  [2014 P1 Q2]
+    In Q2.3, some candidates were unaware that they could use the cumulative frequency curve to obtain the answer. Instead they used the table to guess some random value in the interval 60 < x  70. Some candidates read off correctly from the cumulative frequency graph and gave the a
+
+  [2015 P2 Q1]
+    Many candidates were able to represent the information correctly on the scatterplot. However, many candidates were unable to draw an accurate least squares regression line. Instead, many candidates drew a line of best fit. Candidates were confused between a line of best fit and t
+
+  [2015 P2 Q1]
+    Candidates did not realise that each point in the scatterplot represented two pieces of information. They only gave one component of the outlier: either the value of the fat content or the amount of energy. Very few candidates identified the outlier as a bi-variate point.
+
+
+======================================================================
+STAT / procedural  (40 errors)
+======================================================================
+  [2014 P1 Q1]
+    A number of candidates failed to round off correctly to the nearest integer as was required in the question. Some candidates failed to realise that the data was a set of percentages and substituted 0.6 instead of 60. A few candidates substituted y = 60 instead of x = 60.
+
+  [2015 P2 Q1]
+    Many candidates substituted 18 into the equation and then calculated the correct answer. This suggests that they knew what was required to answer the question. However, it is rather disappointing that many candidates did not round off this answer to the nearest 100 kJ, as require
+
+  [2015 P2 Q2]
+    A fair number of candidates were able to correctly calculate the one standard deviation interval from the mean but did not indicate the number of observations that fell within this interval. Some candidates were able to use the incorrectly calculated values to answer Q2.4. This i
+
+  [2016 P2 Q1]
+    A large number of the candidates were able to calculate the correlation coeႈcient. Many candidates rounded the answer incorrectly. Some omitted the negative sign in the answer.
+
+  [2016 P2 Q1]
+    In the main, many candidates were able to answer Q1.4 correctly. Some substituted 6 for y instead of x. They did not realise that the 6km mentioned related to the x-variable.
+
+
+======================================================================
+ALG / procedural  (32 errors)
+======================================================================
+  [2014 P1 Q1]
+    Candidates wrote down the quadratic formula incorrectly from the information sheet. Some might have learnt the formula incorrectly and did not use the information sheet and this was also noted in the previous diagnostic report. Some candidates substituted the value of 2 instead o
+
+  [2015 P1 Q1]
+    Writing down the quadratic formula incorrectly and incorrect substitution therein remained problematic among candidates. 154 NATIONAL SENIOR CERTIFICATE EXAMINATION
+
+  [2015 P1 Q1]
+    In Q1.1.3, candidates did not divide by 2 and when raising to the power of 5 3 − omitted to raise the 2 to the same power giving 64 2 3 5 = − x as 5 3 5 3 3 5 64 2 − − ⋅ − = x . Alternatively, candidates simplified 6 3 5 2 2 = − x as 6 3 5 = − x .
+
+  [2015 P1 Q1]
+    The inequality signs < and > meant very little to the candidates and they could not use them to describe domain, range and certain restricted values on graphs. Incorrect use of inequality signs is problematic, for example: – 7< x > 1.
+
+  [2016 P1 Q1]
+    Writing down the quadratic formula correctly and correct substitution therein remain problematic among candidates.
+
+
+======================================================================
+PROB / general  (31 errors)
+======================================================================
+  [2014 P1 Q12]
+    Candidates displayed poor understanding of the arrangement of a subgroup of objects within an entire group of objects. In this regard, they were unable to calculate the different number of ways in which the 3 silver cars could be parked next to each other among the remaining cars
+
+  [2015 P1 Q11]
+    Candidates confused independent and mutually exclusive events. Many used either the identity ( ) ( ) ( ) B and A P B P A P B or A P − + = ) ( or used ( ) ( ) B P A P + to prove that A and B were independent events, instead of showing that ( ) ( ) ( ) AB P B P A P = • .
+
+  [2015 P1 Q11]
+    Candidates were unable to distinguish between the scenarios where repetition is allowed and where it is not allowed.
+
+  [2015 P1 Q11]
+    In Q11.3, candidates were unable to determine the total number of observations in the sample space. Where they correctly determined 2 2 and 2 + + t t t they struggled to form an equation using 52%. The algebraic manipulation was problematic.
+
+  [2016 P1 Q11]
+    Candidates were unable to explain their understanding in Q11.2. They often contradicted themselves in their answer.
+
+
+======================================================================
+SEQ / procedural  (29 errors)
+======================================================================
+  [2014 P1 Q2]
+    In Q2.4, candidates again did not use the value of n = 251. Some candidates incorrectly used the decimal number for n obtained in Q2.2.
+
+  [2014 P1 Q3]
+    Candidates were unable to devise a strategy to answer Q3.3. Many did not simplify each bracket and were unable to identify the pattern that was created in the process. They also struggled to calculate the last factor of the pattern.
+
+  [2015 P1 Q2]
+    Many candidates could write the sequence as a general term, but then went on to manipulate the general term and made many algebraic errors by simplifying 1 2 1 10 − ⎟ ⎠ ⎞ ⎜ ⎝ ⎛ n to 1 5 − n . Again, the problem lay in the poor simplification of exponents.
+
+  [2015 P1 Q2]
+    A large number of candidates struggled to work with the exponential laws to simplify the expression rising from n S S − ∞ . Many just substituted a value for n to make the process simpler.
+
+  [2016 P1 Q3]
+    Many candidates struggled to determine the ¿rst diႇerences in terms of x and this impacted on the determination of the second diႇerences. The omission of bracketsin Q3.1 led to x x x x       3 5 1 3 resulting in incorrect simpli¿cation and an incorrect value for x.
+
+
+======================================================================
+CALC / notation  (17 errors)
+======================================================================
+  [2014 P1 Q8]
+    With regard to the question on ¿rst principles, candidates continued to make the error of incorrectly copying the formula from the information sheet. Many notation errors occurred in this question; for example: h x f h x f x f h ) ( ) ( lim ) (' 0   o was written down as h x f 
+
+  [2014 P1 Q8]
+    Notation in Q8.2 was also handled poorly. Candidates wrote out the function and then continued on the next line into the derivative without using the notation for the derivative. It would seem that candidates did not understand the difference between a function and its derivative
+
+  [2015 P1 Q8]
+    Although first principles were taught and reiterated in class, candidates still had a problem with notation in this question. The following errors kept re-occurring: (i) Algebraic errors such as incorrect expansion, adding unlike terms and changing of signs in multiplication; (ii
+
+  [2016 P1 Q8]
+    Although ¿rst principles are taught and reiterated in class, candidates still had a problem with notation in this question. The following errors keep occurring:
+
+  [2016 P1 Q8]
+    Algebraic errors such as incorrect expansion, adding unlike terms and changing of signs in multiplication. (ii) Incorrect use of the formula as well as notational mistakes. (iii) Omitting the factorisation step of the working.
+
+
+======================================================================
+ALG / notation  (11 errors)
+======================================================================
+  [2014 P1 Q1]
+    Some candidates were unable to simplify the quadratic equation in y correctly. In cases where candidates used the quadratic formula to solve for y ¿rst, they wrote their answers as x = ... instead of y = ... This created confusion when they then tried to solve for x as their answ
+
+  [2015 P1 Q1]
+    Candidates had little understanding of an inequality and many treated the inequality as an equation which led to them writing answers that did not make sense. Candidates had little or no understanding of set builder or interval notation.
+
+  [2016 P1 Q1]
+    Candidates showed little understanding of an inequality and many treated an inequality as an equation. This led to them writing answers that do not make sense. Candidates also showed little or no understanding of set builder or interval notation.
+
+  [2017 P1 Q1]
+    In Q1.3.1, many candidates were able to factorise the expression but could not solve the inequality. Many treated the inequality as an equation. This led to them writing answers that do not make sense: 4 x or 4 x     or 4 x 4    . Candidates also showed little or no unders
+
+  [2018 P1 Q1]
+    In Q1.1.3, many candidates were able to factorise the expression but could not solve the inequality. Many candidates treated the inequality in the same way that they treat an equation. They have the misconception that if a.b > 0, then a > 0 or b > 0. This led to them writing answ
+
+
+======================================================================
+CALC / procedural  (32 errors)
+======================================================================
+  [2014 P1 Q9]
+    Candidates failed to realise that they had to draw a cubic function in this question. Instead, candidates incorrectly drew the cubic function in the shape of a parabola as they failed to identify that the x-intercept at (3 ; 0) was also a turning point. Candidates did not indicat
+
+  [2014 P1 Q10]
+    Candidates struggled to expand the expression for the volume. The simpli¿cation and adding of like terms led to many algebraic errors. Candidates often incorrectly simpli¿ed the volume to a quadratic or a linear expression.
+
+  [2014 P1 Q10]
+    Candidates seemed to lack con¿dence when they had to use the quadratic formula to ¿nd the solutions of the equation in which the derivative was equated to zero. Yet in earlier questions, these same candidates used the quadratic formula with ease to solve a routine quadratic equat
+
+  [2015 P1 Q8]
+    Candidates had great difficulty in factorising the difference of two cubes.
+
+  [2015 P1 Q9]
+    The fact that no sketch was given complicated the question for some candidates. They struggled to set up the two equations required to solve simultaneously. This meant that the derivative was not used to solve a and b. Candidates also arrived at ( ) ax x x h 2 3 2 + − = ʹ or ( ) 
+
+
+======================================================================
+SEQ / general  (27 errors)
+======================================================================
+  [2014 P1 Q2]
+    In Q2.2, candidates confused the 251st term with the term value of 251. In this question, n was supposed to equal 251 and not Tn. This caused follow-on errors.
+
+  [2014 P1 Q2]
+    Candidates who made the initial mistake of making Tn = 251, went on to obtain a non-natural number for n. These candidates did not realise their mistake and accepted this value of n as a valid solution.
+
+  [2014 P1 Q2]
+    In Q2.5, candidates struggled to express themselves well when trying to calculate the number of terms divisible by 4. The problem was that a new series needed to be generated in order to calculate the answer correctly. Some candidates simply worked with the multiples of 4, i.e. 4
+
+  [2014 P1 Q3]
+    In Q3.1.2, a common error was for candidates to calculate 2a = – 2 instead of 2a = 2.
+
+  [2014 P1 Q3]
+    In Q 3.1.3, candidates struggled to understand exactly what was required of them. They confused the ¿rst difference of 96 with Tn = 96.
+
+
+======================================================================
+FIN / procedural  (22 errors)
+======================================================================
+  [2016 P1 Q7]
+    Many candidates made mistakes in calculating the number of months,n. Common incorrect values were n = 1 and n = 3. Some even used n = 12, 24, etc. as if they converted years to months. The fact that candidates used the wrong number of months also indicates that they did not reali
+
+  [2017 P1 Q6]
+    In Q6.2.1, candidates were not aware of the standard terms of loan repayment and therefore treated the question as if payment was deferred by one month. Candidates often multiplied 54 by 12 and hence used n = 628. Some candidates lost a mark for using the calculator incorrectly.
+
+  [2018 P1 Q7]
+    In Q7.1.1, many candidates did not take into account that the compounding period was quarterly. They could not link in three months’ time with quarters. Hence, they used incorrect values for i, r and n. Some candidates used the compound interest formula. They did not realise that
+
+  [2018 P1 Q7]
+    In Q7.2.1, some candidates confused the value of P with the value of x. They substituted R1 500 000 for the value of x in the present value annuity formula and then attempted to calculate the value of P. Some candidates used i = 0,105 instead of 0,105 12 and used n = 20 instead o
+
+  [2019 P1 Q6]
+    Some candidates made mistakes when converting the rates of interest to decimal values. Some used the incorrect interest rate for the incorrect person. It was also observed that candidates made the correct substitution into the correct formula but arrived at incorrect answers. Thi
+
+
+======================================================================
+FIN / general  (21 errors)
+======================================================================
+  [2014 P1 Q7]
+    Candidates were able to solve for n by applying the log to both sides of the equation but did understand that the log of a negative number is unde¿ned.
+
+  [2014 P1 Q7]
+    The detail, ‘one month after the loan was granted’ was misinterpreted and candidates took the value of n to be either 239 or 241.
+
+  [2015 P1 Q7]
+    The graphical form of the question was unfamiliar to all learners. The graphs were found to be misleading as many learners interpreted the graphs as straight lines.
+
+  [2015 P1 Q7]
+    In Q7.2, candidates did not realise that they needed to use the reducing-balance formula. They struggled to make i the subject of the formula.
+
+  [2015 P1 Q7]
+    In Q7.4, candidates were confused about calculating the sinking fund and n.
+
+
+======================================================================
+SEQ / notation  (13 errors)
+======================================================================
+  [2014 P1 Q2]
+    Candidates tended to determine the general term of the series easily, but had dif¿culty in writing the series in sigma notation. 113 DIAGNOSTIC REPORT
+
+  [2015 P1 Q3]
+    Candidates misunderstood the connection between a linear pattern and the notation given in the paper i.e. c bk Tn + = .
+
+  [2015 P1 Q3]
+    In Q3.2, many candidates answered this question using the general term or left their answer with ( ) ∑ = − n k n 1 11 8 which indicates they did not fully understand the notation.
+
+  [2017 P1 Q3]
+    Most candidates found difficulty in engaging with Q3.2. Many candidates could not interpret the given sigma notation, i.e. 4 1 T 3 n n     , which implied that the sum to infinity from the third term onward equalled . 4 1 Candidates mistakenly used 4 1 Tn  or 4 1 r 1 a   ,
+
+  [2018 P1 Q2]
+    In Q2.2, some candidates made n = –140 instead of Tn = –140. Others equated Tn to zero. Many candidates wrote Tn = 35+(n −1) −7 instead of Tn = 35+(n −1)(−7) . This poor notation often led to incorrect simplification and candidates arriving at the incorrect answer. Some candidate
+

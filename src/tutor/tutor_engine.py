@@ -14,6 +14,7 @@ from .schemas import (
     InterventionSelection,
     EventType,
     DiagnosisResult,
+    WorkingSubmission,
 )
 from .diagnosis import diagnose
 from .intervention_selector import select_intervention
@@ -53,11 +54,23 @@ class TutorEngine:
         self,
         learner_state: LearnerState,
         problem: Problem,
-        learner_response: str,
+        learner_response,
         explicit_solution_request: bool = False,
     ) -> TutorAction:
         event_id = f"evt_{uuid.uuid4().hex[:12]}"
         now = datetime.now(timezone.utc).isoformat()
+
+        # -------- Phase 2: accept WorkingSubmission or str --------
+        if isinstance(learner_response, WorkingSubmission):
+            submission = learner_response
+            learner_state.session_events.append({
+                "kind": "working_submitted",
+                "step_count": len(submission.steps),
+                "steps": submission.step_texts(),
+                "source": submission.source,
+            })
+            learner_response = submission.last_line()
+        # -------- end Phase 2 --------
 
         # Disengagement (rule-based, not LLM)
         diseng = detect_disengagement(learner_response)

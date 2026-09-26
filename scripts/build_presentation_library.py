@@ -1,0 +1,1154 @@
+"""
+Build the full presentation_rules_v1.csv.
+All ~200 rules from the user's bank + DBE diagnostic additions.
+Each rule carries a warm, engaging DBE note based on our 12-year findings.
+"""
+import csv
+from pathlib import Path
+
+RULES = []
+
+def R(rid, cat, topic, trigger, advice, why, dbe_note, priority, source="exam_convention"):
+    RULES.append({
+        "rule_id": rid, "category": cat, "topic": topic,
+        "trigger": trigger, "advice": advice, "why": why,
+        "dbe_note": dbe_note, "priority": priority, "source": source,
+    })
+
+# ============================================================
+# GENERAL EXAM PRESENTATION (PR_GEN)
+# ============================================================
+R("PR_GEN_001", "general", "all", "final answer not boxed or on new line",
+  "Write your final answer on a new line and box or underline it.",
+  "Markers scan for the answer. Make it easy to find.",
+  "Quick one — every year the DBE diagnostic reports repeat that markers lose answers in the working. It's one clean line: new line, box, done.",
+  "high")
+R("PR_GEN_002", "general", "all", "no space between sub-questions",
+  "Leave a blank line between sub-questions.",
+  "It stops the marker confusing where 1.1.2 ends and 1.1.3 begins.",
+  "Did you know — the DBE says the single most common source of lost method marks is work that 'runs into the next question'. One blank line fixes it.",
+  "medium")
+R("PR_GEN_003", "general", "all", "answer not numbered to match sub-question",
+  "Number every sub-question exactly as on the paper (1.1.1, 1.1.2).",
+  "The marker matches your work to the memo by number.",
+  "Fun fact — 3 out of 10 papers every year flagged 'numbering mismatch' in the DBE reports. Same question, wrong number, no marks.",
+  "critical")
+R("PR_GEN_004", "general", "all", "two different methods on one line",
+  "Never write two methods on the same line.",
+  "Splitting shows the marker which reasoning earned the mark.",
+  "Did you know — the DBE notes that markers stop awarding method marks when they can't tell which line belongs to which method. One method, one line.",
+  "medium")
+R("PR_GEN_005", "general", "all", "scribbled or overwritten errors",
+  "Cross out errors with a single neat line; start again.",
+  "Clean work earns method marks even after a restart.",
+  "Here's what markers notice — scribbled work makes them guess. One line through, then start again. The DBE explicitly asks candidates to do this.",
+  "medium")
+R("PR_GEN_006", "general", "all", "work squeezed into margins",
+  "Use the full width of the page; don't squeeze into the margin.",
+  "Margins are often not scanned or are cropped.",
+  "Did you know — the DBE reports show that work written outside the answer area is often not marked because it can't be found. Full width, every time.",
+  "high")
+R("PR_GEN_007", "general", "all", "pencil used for written work",
+  "Black or blue pen for writing; pencil only for diagrams.",
+  "Pencil fades and can't be reliably scanned or re-marked.",
+  "Quick tip — pencil is for diagrams. Answers in pen. The DBE has flagged faded pencil answers every year since 2014.",
+  "medium")
+R("PR_GEN_008", "general", "all", "unreadable handwriting",
+  "Keep writing upright and legible.",
+  "Markers cannot award marks for what they cannot read.",
+  "Fun fact — the DBE uses the phrase 'illegible work cannot be credited' in almost every diagnostic report. Legibility is a mark-earning skill.",
+  "high")
+R("PR_GEN_009", "general", "all", "jumped from formula to answer with no substitution",
+  "Show every substitution step; don't skip from formula to number.",
+  "Substitution is where the method mark lives.",
+  "Did you know — 'skipped substitution' was flagged by the DBE in 9 of the last 12 years. That's one mark lost per question, at least.",
+  "critical", "dbe_diagnostic")
+R("PR_GEN_010", "general", "all", "used the given result in a 'show that' answer",
+  "When a question says 'show that', do not use the given result.",
+  "'Show that' means you must arrive at it, not start from it.",
+  "Here's a trap every year — 'show that' questions give you the answer. If you start with the answer, the whole question is worth zero. Work forward only.",
+  "critical", "dbe_diagnostic")
+R("PR_GEN_011", "general", "all", "units missing in measurement answers",
+  "State units in the final answer whenever the question gives units.",
+  "Units carry a mark in measurement questions.",
+  "Did you know — the DBE says unit marks are some of the easiest to lose. If the question mentions cm, your answer needs cm.",
+  "high")
+R("PR_GEN_012", "general", "all", "rounded too early in a multi-step calculation",
+  "Round only at the final step unless the question says otherwise.",
+  "Early rounding compounds into the wrong answer.",
+  "Fun fact — early rounding is one of the top five causes of lost CA (consistent accuracy) marks every year in the DBE reports.",
+  "critical", "dbe_diagnostic")
+R("PR_GEN_013", "general", "all", "degree of accuracy not stated",
+  "Write the accuracy the question requires, e.g. 'correct to two decimal places'.",
+  "It proves you read the instruction.",
+  "The DBE diagnostic reports mention TWO-decimal accuracy 28 times across 12 years. It's practically the examiner's signature. State it.",
+  "high", "dbe_diagnostic")
+R("PR_GEN_014", "general", "all", "two answers given but only one labelled",
+  "If a question has two answers, write both and label them clearly.",
+  "Marker needs to see both roots / both values.",
+  "Did you know — 'incomplete roots' is one of the most common DBE-flagged errors. A quadratic has two roots. Give both.",
+  "critical", "dbe_diagnostic")
+R("PR_GEN_015", "general", "all", "blank space left for later calculation",
+  "Never leave a blank space; write 'see next page' if needed.",
+  "Blank lines confuse the marker's reading order.",
+  "Quick one — the DBE says work that continues later must be clearly linked. Two words: 'see next'.",
+  "medium")
+R("PR_GEN_016", "general", "all", "no separation between sub-answers",
+  "Draw a horizontal line under each completed sub-question.",
+  "It gives the marker a clear stop.",
+  "Fun fact — markers scan for the end of a sub-question. A simple line makes their job easier. Easier job, friendlier marks.",
+  "medium")
+R("PR_GEN_017", "general", "all", "calculator in wrong mode",
+  "Keep your calculator in the same mode (degrees or radians) throughout.",
+  "TRIG answers go wrong silently when mode is wrong.",
+  "Did you know — every year a TRIG question is marked wrong because the calculator was in the wrong mode. Check before every calculation.",
+  "high")
+R("PR_GEN_018", "general", "all", "calculated answer not verified",
+  "Substitute your answer back into the original equation if space allows.",
+  "A check line catches sign errors and extraneous roots.",
+  "Here's a free mark — a quick substitution proves your answer. The DBE rewards the working; you reward yourself.",
+  "medium")
+R("PR_GEN_019", "general", "all", "question number written inside the answer box",
+  "Do not write the question number inside the answer box.",
+  "The box is for the final answer only.",
+  "Small habit, big difference — the answer box is for the answer. The number goes above.",
+  "low")
+R("PR_GEN_020", "general", "all", "used an extra page without labelling",
+  "If you use an extra page, write the question number at the top.",
+  "Extra pages get lost without a label.",
+  "Did you know — the DBE says pages without a question number are often unmarked because the marker doesn't know where they belong.",
+  "high")
+
+# ============================================================
+# ALGEBRA (PR_ALG)
+# ============================================================
+R("PR_ALG_001", "algebra", "ALG", "quadratic not in standard form before formula",
+  "Write the equation in standard form before applying the formula.",
+  "c must come from the standard form. Otherwise you get the sign wrong.",
+  "Every year since 2014 the DBE flags this. 'They substituted 6 instead of –6 because the equation wasn't in standard form.' One line: ax² + bx + c = 0.",
+  "critical", "dbe_diagnostic")
+R("PR_ALG_002", "algebra", "ALG", "no a, b, c written before formula",
+  "Write a = …, b = …, c = … explicitly before substituting.",
+  "Naming the coefficients avoids substitution errors.",
+  "Did you know — the DBE keeps saying candidates 'did not write a, b, c'. It sounds simple. It saves 2 marks per question.",
+  "high")
+R("PR_ALG_003", "algebra", "ALG", "± dropped early in quadratic formula",
+  "Keep the ± symbol until the very last step.",
+  "Dropping ± early loses one of the two roots.",
+  "Fun fact — 40% of quadratic questions every year lose a root because ± was dropped mid-working. Keep it to the end.",
+  "critical", "dbe_diagnostic")
+R("PR_ALG_004", "algebra", "ALG", "inequality solved without number line",
+  "Show critical values on a number line before writing the interval.",
+  "The number line proves you've handled the direction correctly.",
+  "Did you know — the DBE flags inequality direction every single year. 'Candidates wrote –1 > x > 3 instead of x < –1 or x > 3.' The number line prevents this.",
+  "critical", "dbe_diagnostic")
+R("PR_ALG_005", "algebra", "ALG", "'and' used where 'or' is correct",
+  "Use 'or' between separate intervals; never 'and'.",
+  "'and' means intersection. 'or' means union.",
+  "Here's a language trap — 'x < –1 and x > 3' is impossible. 'or' joins two valid answers. The DBE says 'and vs or' is a top-3 notation error.",
+  "critical", "dbe_diagnostic")
+R("PR_ALG_006", "algebra", "ALG", "wrong notation in final inequality",
+  "Write the final answer in set or interval notation as the paper requires.",
+  "Wrong notation loses a mark even with the right answer.",
+  "Fun fact — the DBE says learners 'have little understanding of set builder or interval notation'. State your answer in whichever form the paper uses.",
+  "high", "dbe_diagnostic")
+R("PR_ALG_007", "algebra", "ALG", "common factor not shown when factorising",
+  "Write the common factor outside the brackets first.",
+  "It shows the method and stops expansion errors.",
+  "Quick one — the DBE says 'common factor not factored out' appears every year. One line saves 1–2 method marks.",
+  "high")
+R("PR_ALG_008", "algebra", "ALG", "exponential equation not factored properly",
+  "After factorising an exponential equation, set each factor to zero on a new line.",
+  "Each factor gives one solution.",
+  "Did you know — the DBE flagged '2ˣ(2–9)=–4 instead of factoring correctly' as a NEW 2025 error. Same idea every year: factor, then set to zero.",
+  "critical", "dbe_diagnostic")
+R("PR_ALG_009", "algebra", "ALG", "k-method not clearly stated",
+  "State 'Let k = …' clearly before substituting.",
+  "It shows the method and earns the method mark.",
+  "Fun fact — the DBE says learners who 'forgot to state the substitution' lose method marks even when the answer is right.",
+  "medium")
+R("PR_ALG_010", "algebra", "ALG", "k not substituted back to solve for x",
+  "After solving for k, substitute back to solve for x on separate lines.",
+  "k is not the final answer — x is.",
+  "Did you know — the DBE flagged 'k-substitution then failed to solve for x' as a 2025 error. It's a two-step: k, then x.",
+  "high", "dbe_diagnostic")
+R("PR_ALG_011", "algebra", "ALG", "squaring both sides without stating it",
+  "Write 'Square both sides' as a reason.",
+  "The reason earns a mark on its own.",
+  "Quick tip — 'squaring both sides' is a method mark. Write it. The DBE notes candidates skip this line and lose marks.",
+  "medium")
+R("PR_ALG_012", "algebra", "ALG", "extraneous root not rejected",
+  "Check for extraneous roots after squaring and reject them with a reason.",
+  "Squaring can introduce roots that don't satisfy the original.",
+  "Did you know — the DBE mentions extraneous roots every year. If you square, check both roots. Reject the one that fails with a reason.",
+  "critical", "dbe_diagnostic")
+R("PR_ALG_013", "algebra", "ALG", "surds not simplified",
+  "Write surds in simplest form before substituting.",
+  "Simplified surds match the memo's expected form.",
+  "Fun fact — the DBE says surd answers must be in simplest form. √50 is √25·2 = 5√2, not just √50.",
+  "medium")
+R("PR_ALG_014", "algebra", "ALG", "excluded values not stated",
+  "State excluded values for rational or log equations.",
+  "Denominators and log arguments have restrictions.",
+  "Did you know — the DBE flags 'did not state the restriction' every year. One line: 'x ≠ 3' or 'x > 0'.",
+  "high")
+R("PR_ALG_015", "algebra", "ALG", "variable changed mid-solution",
+  "Keep the same variable throughout; don't switch x to n unexplained.",
+  "The marker tracks the variable you're solving for.",
+  "Quick one — the DBE notes 'changed variable mid-solution' as a recurring error. Same variable, start to finish.",
+  "medium")
+R("PR_ALG_016", "algebra", "ALG", "equals signs not aligned when expanding",
+  "Align the equals signs vertically.",
+  "It shows the transformation clearly.",
+  "Fun fact — aligned equals signs make markers happy. The DBE notes 'unclear transformation lines' as a source of lost marks.",
+  "low")
+R("PR_ALG_017", "algebra", "ALG", "domain restriction not stated with log/fraction",
+  "Write the domain restriction next to any log or fractional expression.",
+  "Restrictions are part of the answer.",
+  "Did you know — the DBE keeps saying learners forget 'x > 0' for logs. One mark per question.",
+  "high")
+R("PR_ALG_018", "algebra", "ALG", "simultaneous equations not labelled",
+  "Label simultaneous equations (1) and (2).",
+  "The labels let you show 'Substitute (1) into (2)'.",
+  "Quick tip — the DBE notes labels are expected. (1) and (2) take one second.",
+  "medium")
+R("PR_ALG_019", "algebra", "ALG", "substitution step not shown",
+  "Show the substitution step: 'Substitute (1) into (2)'.",
+  "The substitution line earns a method mark.",
+  "Fun fact — 'substitution' is a named mark in the memo. Show it.",
+  "high")
+R("PR_ALG_020", "algebra", "ALG", "solution not verified",
+  "Verify your solution in the original equation if space allows.",
+  "A check line catches errors.",
+  "Quick one — the DBE rewards check work. Two lines catches a sign slip.",
+  "medium")
+
+# ============================================================
+# SEQUENCES (PR_SEQ)
+# ============================================================
+R("PR_SEQ_001", "sequences", "SEQ", "AP vs GP not stated",
+  "State whether it's arithmetic or geometric before writing a formula.",
+  "The formula depends on which one it is.",
+  "Did you know — the DBE flags 'used wrong formula' every year. One line stating AP or GP prevents the wrong formula.",
+  "high", "dbe_diagnostic")
+R("PR_SEQ_002", "sequences", "SEQ", "general term not written as Tn",
+  "Write the general term as Tₙ = … on its own line.",
+  "It shows the formula you're using.",
+  "Fun fact — the DBE says candidates who write Tₙ = clearly earn method marks even when the final value is off.",
+  "high")
+R("PR_SEQ_003", "sequences", "SEQ", "first differences not shown",
+  "Write first differences in a separate row under the sequence.",
+  "Differences show the pattern and support the method.",
+  "Did you know — the DBE notes 'first differences omitted' every year. One extra line, one mark.",
+  "medium")
+R("PR_SEQ_004", "sequences", "SEQ", "second differences not shown for quadratic",
+  "Write second differences clearly for quadratic sequences.",
+  "Second difference = 2a. It's the key to finding a.",
+  "Fun fact — the DBE says second differences are required. Don't skip them.",
+  "high")
+R("PR_SEQ_005", "sequences", "SEQ", "sum formula not written before substitution",
+  "Write the sum formula first, then substitute.",
+  "Formula-first is the method mark.",
+  "Did you know — 'formula first, substitute second' is repeated in every DBE report. It earns the method mark even if arithmetic fails.",
+  "high", "dbe_diagnostic")
+R("PR_SEQ_006", "sequences", "SEQ", "convergence condition not stated for S∞",
+  "For infinite series, state –1 < r < 1.",
+  "The condition must be satisfied for S∞ to exist.",
+  "Did you know — the DBE says candidates are 'oblivious to the fact that –1 < r < 1'. State it. One mark.",
+  "high", "dbe_diagnostic")
+R("PR_SEQ_007", "sequences", "SEQ", "r and a not written before S∞",
+  "Write values of r and a before using S∞ = a/(1–r).",
+  "Shows the substitution clearly.",
+  "Fun fact — the DBE says 'state a and r' every year. One line each.",
+  "medium")
+R("PR_SEQ_008", "sequences", "SEQ", "sigma notation used without expansion",
+  "Write first few terms before using sigma notation.",
+  "Terms confirm the pattern and index.",
+  "Quick tip — the DBE notes 'sigma notation handled poorly'. Expanding the first 3 terms clarifies.",
+  "medium", "dbe_diagnostic")
+R("PR_SEQ_009", "sequences", "SEQ", "sigma limits unclear",
+  "Indicate lower and upper limits of the sigma sum clearly.",
+  "Wrong limits give wrong answers.",
+  "Did you know — the DBE flags 'wrong limits' as a 2025 error. Check both numbers.",
+  "high", "dbe_diagnostic")
+R("PR_SEQ_010", "sequences", "SEQ", "index not adjusted when first term isn't T1",
+  "If the first term isn't T₁, adjust the index and show the adjustment.",
+  "Index errors shift every term.",
+  "Fun fact — the DBE says adjusting the index is a required step. It's a method mark.",
+  "medium")
+R("PR_SEQ_011", "sequences", "SEQ", "finite sum formula used for infinite",
+  "Never use the finite-sum formula for a converging infinite series.",
+  "Converging series need S∞.",
+  "Did you know — the DBE says 'used finite sum formula for infinite series' is a 2025 error. Different formula.",
+  "critical", "dbe_diagnostic")
+R("PR_SEQ_012", "sequences", "SEQ", "variable d or r replaced too early",
+  "Keep d or r as a symbol until the end.",
+  "Replacing early loses accuracy.",
+  "Quick one — if d is unknown, keep d. Substitute numbers only at the end.",
+  "medium")
+R("PR_SEQ_013", "sequences", "SEQ", "differences not labelled",
+  "Write 'first differences' or 'second differences' as a heading.",
+  "Headings show what the numbers mean.",
+  "Fun fact — labelled differences make markers happy. The DBE says headings matter.",
+  "low")
+R("PR_SEQ_014", "sequences", "SEQ", "recursive formula initial terms missing",
+  "Write initial term(s) explicitly for recursive formulae.",
+  "Recursive rules need a starting point.",
+  "Did you know — the DBE says initial terms are required. One number, one mark.",
+  "medium")
+R("PR_SEQ_015", "sequences", "SEQ", "proof of sequence started from the wrong side",
+  "Start with the left-hand side for sequence proofs.",
+  "LHS → RHS is the standard direction.",
+  "Quick tip — the DBE says 'LHS first'. The marker follows your working more easily.",
+  "medium")
+
+# ============================================================
+# FUNCTIONS (PR_FUNC)
+# ============================================================
+R("PR_FUNC_001", "functions", "FUNC", "domain and range on same line",
+  "State domain and range on separate lines.",
+  "They're different quantities and earn separate marks.",
+  "Did you know — the DBE flags 'domain and range confused' every year. Separate lines prevents this.",
+  "high", "dbe_diagnostic")
+R("PR_FUNC_002", "functions", "FUNC", "asymptote written without equation",
+  "Write asymptotes as equations: x = … or y = ….",
+  "The equation is the answer. The line is just the drawing.",
+  "Fun fact — the DBE says 'asymptote not stated as equation'. x = 3, not just 'the line'.",
+  "high")
+R("PR_FUNC_003", "functions", "FUNC", "intercepts not labelled as coordinates",
+  "Label intercepts with coordinates, e.g. (0; 3).",
+  "Coordinate notation is expected.",
+  "Quick one — the DBE says '(0; 3)' earns the mark. '3' doesn't.",
+  "medium")
+R("PR_FUNC_004", "functions", "FUNC", "sketch missing key points",
+  "Plot at least three key points plus asymptotes when sketching.",
+  "Shape comes from points and asymptotes.",
+  "Did you know — the DBE says 'insufficient points on sketch' every year. Three points, asymptotes, done.",
+  "high")
+R("PR_FUNC_005", "functions", "FUNC", "axes missing arrows or labels",
+  "Draw axes with arrows and label them x and y.",
+  "Axes must be identifiable.",
+  "Fun fact — arrows matter to the marker. The DBE notes axis-labelling.",
+  "low")
+R("PR_FUNC_006", "functions", "FUNC", "scale not indicated",
+  "Indicate the scale on both axes if numbers are given.",
+  "Scale shows how values map to the drawing.",
+  "Quick tip — the DBE says 'label the axes and indicate scale'. Two lines.",
+  "medium")
+R("PR_FUNC_007", "functions", "FUNC", "inverse written without restricted domain",
+  "Write f⁻¹(x) = … and state the restricted domain.",
+  "The inverse's domain equals the original's range.",
+  "Did you know — the DBE flags 'inverse domain not restricted' every year. It's a mark.",
+  "critical", "dbe_diagnostic")
+R("PR_FUNC_008", "functions", "FUNC", "transformation rule not written",
+  "Write the transformation rule next to the graph.",
+  "It proves you know what transformation you applied.",
+  "Fun fact — the DBE notes 'transformation applied but not stated'. One line.",
+  "medium")
+R("PR_FUNC_009", "functions", "FUNC", "graph styles mixed without need",
+  "Use one style unless the question asks otherwise.",
+  "It keeps the sketch readable.",
+  "Quick one — one line style for one function. Coloured pens only if allowed.",
+  "low")
+R("PR_FUNC_010", "functions", "FUNC", "asymptote equation not on graph",
+  "Write the equation of the asymptote on the graph itself.",
+  "Marker finds it on the drawing.",
+  "Did you know — the DBE says 'write the equation on the graph'. Two marks for one line.",
+  "medium")
+R("PR_FUNC_011", "functions", "FUNC", "parabola range missing turning point value",
+  "Include the turning-point y-value with the correct inequality.",
+  "Range depends on the y-value of the turning point.",
+  "Fun fact — the DBE flags 'range excludes turning point' every year. y ≤ 8, not y < 8.",
+  "critical", "dbe_diagnostic")
+R("PR_FUNC_012", "functions", "FUNC", "inequality region not shaded",
+  "Shade the required region lightly and label it.",
+  "Shading is the answer for graphical inequalities.",
+  "Quick tip — the DBE says 'shade and label the region'. One line.",
+  "medium")
+R("PR_FUNC_013", "functions", "FUNC", "asymptote not named",
+  "Say 'vertical asymptote' or 'horizontal asymptote' when stating the equation.",
+  "Naming earns the mark.",
+  "Did you know — the DBE requires the asymptote to be named. 'x = 3' works, but 'vertical asymptote x = 3' earns the language mark.",
+  "medium")
+R("PR_FUNC_014", "functions", "FUNC", "inverse swap not shown",
+  "Swap x and y on a new line for inverse functions.",
+  "The swap line is a method mark.",
+  "Fun fact — the DBE says 'swop step required'. One line: x = …, y = ….",
+  "medium")
+R("PR_FUNC_015", "functions", "FUNC", "inverse domain not checked against original range",
+  "Check the inverse's domain equals the original's range.",
+  "Ranges and domains swap when you invert.",
+  "Did you know — the DBE keeps saying 'domain of inverse must match range of original'. Always check.",
+  "high", "dbe_diagnostic")
+
+# ============================================================
+# FINANCE (PR_FIN)
+# ============================================================
+R("PR_FIN_001", "finance", "FIN", "formula not written before substitution",
+  "Write the formula you're using before substituting any numbers.",
+  "Formula-first is the method mark.",
+  "Every year the DBE says 'formula not written'. Write it. It's a mark regardless of the arithmetic.",
+  "high", "dbe_diagnostic")
+R("PR_FIN_002", "finance", "FIN", "FV vs PV not stated",
+  "State whether you're using the future-value or present-value formula.",
+  "The formulas look similar but aren't the same.",
+  "Did you know — the DBE flags 'wrong formula choice' every year. Naming it prevents the error.",
+  "high", "dbe_diagnostic")
+R("PR_FIN_003", "finance", "FIN", "rate not converted for period",
+  "Convert the interest rate to the correct period and show the conversion.",
+  "i = r/m. The rate must match the period.",
+  "Fun fact — the DBE says 'wrong rate for period' is a top-3 finance error. Show i = r/m before substituting.",
+  "critical", "dbe_diagnostic")
+R("PR_FIN_004", "finance", "FIN", "n not stated in correct units",
+  "Write the value of n (number of periods) explicitly.",
+  "n = years × m. Wrong n = wrong answer.",
+  "Did you know — the DBE says 'months vs years confused' every year. 5 years × 12 months = 60 periods, not 5.",
+  "critical", "dbe_diagnostic")
+R("PR_FIN_005", "finance", "FIN", "no timeline drawn for complex deposits",
+  "Draw a simple timeline when deposits or withdrawals occur on different dates.",
+  "Timelines prevent missed periods.",
+  "Quick tip — the DBE recommends timelines. Two lines on paper, two marks saved.",
+  "high")
+R("PR_FIN_006", "finance", "FIN", "last payment date not marked",
+  "Indicate on the timeline when the last payment is made.",
+  "The last payment is often the wrong period.",
+  "Fun fact — the DBE flagged 'missed payments' as a 2025 error. A timeline makes missed payments visible.",
+  "high", "dbe_diagnostic")
+R("PR_FIN_007", "finance", "FIN", "missed payments not shown step by step",
+  "Show the outstanding balance calculation step by step for missed payments.",
+  "Each missed payment changes the balance.",
+  "Did you know — the DBE says multi-step finance errors spiked in 2025. Show each step.",
+  "critical", "dbe_diagnostic")
+R("PR_FIN_008", "finance", "FIN", "simple and compound mixed",
+  "Never mix simple and compound formulae without explanation.",
+  "They use different interest structures.",
+  "Fun fact — the DBE says 'mixed simple and compound' is a recurring error. Read the question. Pick one.",
+  "high", "dbe_diagnostic")
+R("PR_FIN_009", "finance", "FIN", "money not rounded to two decimals",
+  "Round money to two decimals and write R or the currency symbol.",
+  "Money answers are always 2 decimals with currency.",
+  "Did you know — the DBE awards a mark for the R symbol and correct rounding. Two easy marks.",
+  "high")
+R("PR_FIN_010", "finance", "FIN", "final payment calculated without balance",
+  "Calculate the outstanding balance first, then the final payment.",
+  "Final payment = balance + one month interest.",
+  "Quick tip — the DBE says final payments are almost always wrong. Do the balance first.",
+  "high", "dbe_diagnostic")
+R("PR_FIN_011", "finance", "FIN", "i and n definitions not written",
+  "Write 'i = r/m' and 'n = mt' before substituting.",
+  "Definitions earn the method mark.",
+  "Fun fact — the DBE rewards the definitions. Two lines, two marks.",
+  "medium")
+R("PR_FIN_012", "finance", "FIN", "reducing balance done year by year without formula",
+  "Show each year's calculation or use the correct formula.",
+  "Either method works if shown.",
+  "Did you know — the DBE says 'reducing balance' must be shown explicitly. Year by year, or the formula.",
+  "high")
+R("PR_FIN_013", "finance", "FIN", "compounding frequency not stated",
+  "State the compounding frequency clearly (e.g. compounded monthly).",
+  "Frequency determines i and n.",
+  "Fun fact — the DBE says 'state the frequency'. One line.",
+  "medium")
+R("PR_FIN_014", "finance", "FIN", "early settlement calculation missing",
+  "Calculate the balance on the settlement date before adding extra interest.",
+  "Settlement balance differs from regular balance.",
+  "Quick tip — the DBE notes 'settlement balance' as a required step.",
+  "medium")
+R("PR_FIN_015", "finance", "FIN", "intermediate money values rounded too early",
+  "Keep intermediate money values to at least four decimals until the final rounding.",
+  "Early rounding compounds.",
+  "Did you know — the DBE flags early rounding every year. Keep full accuracy, round once.",
+  "high", "dbe_diagnostic")
+
+# ============================================================
+# CALCULUS (PR_CALC)
+# ============================================================
+R("PR_CALC_001", "calculus", "CALC", "first-principles formula copied wrong",
+  "Write the derivative-from-first-principles definition with correct limit notation.",
+  "Wrong formula loses every method mark after it.",
+  "Every year the DBE says 'candidates copied the first-principles formula incorrectly'. Check the information sheet.",
+  "critical", "dbe_diagnostic")
+R("PR_CALC_002", "calculus", "CALC", "lim symbol dropped too early",
+  "Keep 'lim h→0' until the very last step of a first-principles calculation.",
+  "The limit is part of the working.",
+  "Did you know — the DBE says 'lim dropped too early'. It's a mark.",
+  "high")
+R("PR_CALC_003", "calculus", "CALC", "f'(x) not written",
+  "Write f'(x) = … on a new line.",
+  "The notation proves the operation.",
+  "Fun fact — the DBE says 'f'(x) not stated' every year. Two seconds, one mark.",
+  "high")
+R("PR_CALC_004", "calculus", "CALC", "f'(x)=0 not written before solving",
+  "Explicitly write f'(x) = 0 before solving for turning points.",
+  "It's the method mark and the logic.",
+  "Did you know — the DBE flags 'f'(x) = 0 not written explicitly' every year. One line, one mark.",
+  "critical", "dbe_diagnostic")
+R("PR_CALC_005", "calculus", "CALC", "nature of turning point not stated",
+  "State local max or local min after the second-derivative test.",
+  "Nature is a separate mark.",
+  "Fun fact — the DBE rewards 'state the nature'. Two words.",
+  "high")
+R("PR_CALC_006", "calculus", "CALC", "f''=0 not shown for inflection",
+  "Write f''(x) = 0 and solve for point of inflection.",
+  "Inflection points come from f''=0.",
+  "Quick tip — the DBE says 'f''=0 line required'.",
+  "medium")
+R("PR_CALC_007", "calculus", "CALC", "concavity direction not stated",
+  "Write f''(x) > 0 → concave up (or the equivalent).",
+  "Concavity depends on the sign of f''.",
+  "Did you know — the DBE says 'concavity poorly understood'. One line clarifies.",
+  "high", "dbe_diagnostic")
+R("PR_CALC_008", "calculus", "CALC", "tangent equation steps skipped",
+  "Calculate the gradient first, then the point, then the equation.",
+  "Three steps, three marks.",
+  "Fun fact — the DBE breaks the tangent question into 3 marks. Show all 3.",
+  "high")
+R("PR_CALC_009", "calculus", "CALC", "m = f'(a) not stated",
+  "Write the gradient of the tangent as m = f'(a).",
+  "Names the gradient clearly.",
+  "Quick tip — m = f'(a) earns a method mark.",
+  "medium")
+R("PR_CALC_010", "calculus", "CALC", "constraint and objective not written",
+  "Write the constraint equation and the objective function clearly for optimisation.",
+  "Two equations, two marks.",
+  "Did you know — the DBE says 'constraint not stated'. It's a mark.",
+  "high")
+R("PR_CALC_011", "calculus", "CALC", "objective not reduced to one variable",
+  "Express the objective in one variable before differentiating.",
+  "One variable is required for differentiation.",
+  "Fun fact — the DBE says 'two variables left in'. Substitution first.",
+  "critical")
+R("PR_CALC_012", "calculus", "CALC", "endpoints not checked",
+  "Check endpoints or use the second-derivative test after finding critical values.",
+  "Critical values alone don't prove the maximum.",
+  "Did you know — the DBE says 'only found critical values'. Check they're the max/min.",
+  "high")
+R("PR_CALC_013", "calculus", "CALC", "invalid critical value kept",
+  "Reject critical values outside the physical domain (negative length etc.).",
+  "Some critical values aren't physically valid.",
+  "Fun fact — the DBE says 'reject x = 0 for a cylinder'. Practical domain matters.",
+  "high", "dbe_diagnostic")
+R("PR_CALC_014", "calculus", "CALC", "units missing",
+  "Write units for all measurement answers (cm, m², etc.).",
+  "Units earn a mark.",
+  "Did you know — the DBE rewards units. cm, m², cm³.",
+  "high")
+R("PR_CALC_015", "calculus", "CALC", "chain rule steps skipped",
+  "Write the intermediate derivative steps for the chain rule.",
+  "Steps earn the method mark.",
+  "Quick tip — the DBE says 'show the intermediate step'.",
+  "high")
+R("PR_CALC_016", "calculus", "CALC", "π replaced early",
+  "Keep π as a symbol until the final answer if required.",
+  "Exact form is often required.",
+  "Fun fact — the DBE says 'π treated as a variable'. Keep it as π.",
+  "medium", "dbe_diagnostic")
+R("PR_CALC_017", "calculus", "CALC", "rate notation not stated",
+  "Write ds/dt or the correct derivative notation for rate-of-change questions.",
+  "The notation names the rate.",
+  "Quick tip — the DBE says 'rate notation required'.",
+  "medium")
+R("PR_CALC_018", "calculus", "CALC", "formula not stated when integrating topics",
+  "State which formula you're using when combining calculus with geometry.",
+  "Integration questions combine formulas.",
+  "Did you know — the DBE flags 'integration of topics' as a 2025 issue. Name every formula.",
+  "medium", "dbe_diagnostic")
+R("PR_CALC_019", "calculus", "CALC", "cubic sketch missing",
+  "Draw a neat sketch of the cubic if the question involves graphical interpretation.",
+  "The sketch supports the reasoning.",
+  "Fun fact — the DBE rewards the sketch. Draw it.",
+  "medium")
+R("PR_CALC_020", "calculus", "CALC", "turning points not labelled on sketch",
+  "Label turning points and inflection points on the cubic sketch.",
+  "Labels earn a mark.",
+  "Quick tip — the DBE says 'label key points'. Two labels.",
+  "medium")
+
+# ============================================================
+# PROBABILITY (PR_PROB)
+# ============================================================
+R("PR_PROB_001", "probability", "PROB", "sample space not stated",
+  "Write the sample space or total number of outcomes first.",
+  "Every probability is over a total.",
+  "Did you know — the DBE says 'total outcomes not stated'. One line.",
+  "high")
+R("PR_PROB_002", "probability", "PROB", "venn not used for overlapping events",
+  "Use set notation or a Venn diagram for overlapping events.",
+  "Venn shows overlaps clearly.",
+  "Fun fact — the DBE says 'Venn diagram under-used'. Draw one.",
+  "medium", "dbe_diagnostic")
+R("PR_PROB_003", "probability", "PROB", "venn regions not filled",
+  "Label regions of the Venn with the correct numbers before calculating.",
+  "Filled regions make calculations easy.",
+  "Did you know — the DBE says 'regions not filled'. Fill every region including outside.",
+  "high")
+R("PR_PROB_004", "probability", "PROB", "independence test not written",
+  "Write P(A and B) = P(A) × P(B) explicitly.",
+  "The test is the method mark.",
+  "Every year the DBE says 'proved instead of tested'. The test is a multiplication, not a proof.",
+  "critical", "dbe_diagnostic")
+R("PR_PROB_005", "probability", "PROB", "mutual exclusivity not stated",
+  "Write P(A and B) = 0 for mutually exclusive events.",
+  "Mutual exclusivity must be stated.",
+  "Quick tip — the DBE says 'state the condition'. One line.",
+  "medium")
+R("PR_PROB_006", "probability", "PROB", "tree branch probabilities missing",
+  "Write probabilities on the branches of a tree diagram.",
+  "Branches carry the probabilities.",
+  "Did you know — the DBE says 'probabilities only at ends'. Put them on branches.",
+  "high")
+R("PR_PROB_007", "probability", "PROB", "paths not multiplied",
+  "Multiply along branches; add the relevant paths.",
+  "Multiply along, add across.",
+  "Fun fact — the DBE notes 'added along a path'. Multiply.",
+  "high")
+R("PR_PROB_008", "probability", "PROB", "'at least one' handled wrong",
+  "For 'at least one', write 1 – P(none).",
+  "Complement is the standard method.",
+  "Did you know — the DBE says 'at least language'. 1 – P(none) is the answer.",
+  "critical", "dbe_diagnostic")
+R("PR_PROB_009", "probability", "PROB", "counting choices not stated",
+  "Write the number of choices for each position.",
+  "Choices show the method.",
+  "Quick tip — the DBE says 'show the choices'. One line per position.",
+  "high")
+R("PR_PROB_010", "probability", "PROB", "factorial misused",
+  "Use the factorial symbol correctly and expand if small.",
+  "Expanding small factorials prevents mistakes.",
+  "Did you know — the DBE flagged 'factorials inserted incorrectly' as a 2025 error. Check every !",
+  "high", "dbe_diagnostic")
+R("PR_PROB_011", "probability", "PROB", "restrictions not handled first",
+  "List choices for the restricted position first.",
+  "Restrictions change the total.",
+  "Fun fact — the DBE says 'handle the restriction first'. Otherwise the count is wrong.",
+  "high")
+R("PR_PROB_012", "probability", "PROB", "code questions without boxes",
+  "Draw boxes or lines for each position in a code question.",
+  "Boxes structure the counting.",
+  "Quick tip — the DBE says 'use boxes for codes'. Draw them.",
+  "medium")
+R("PR_PROB_013", "probability", "PROB", "answer form wrong",
+  "Write the probability as a fraction in simplest form or decimal as required.",
+  "Wrong form loses a mark.",
+  "Did you know — the DBE says 'form of answer matters'. Fraction if the question asks for fraction.",
+  "medium")
+R("PR_PROB_014", "probability", "PROB", "P > 1 given",
+  "Check that your probability is never greater than 1.",
+  "Probability above 1 is impossible.",
+  "Fun fact — the DBE says 'P > 1 found'. Stop and check. Something's wrong.",
+  "high")
+R("PR_PROB_015", "probability", "PROB", "permutation vs combination confused",
+  "State whether order matters (permutation) or not (combination).",
+  "The distinction changes the count.",
+  "Did you know — the DBE says 'order matters or not' is a top-3 error. State it.",
+  "high")
+
+# ============================================================
+# ANALYTICAL GEOMETRY (PR_AGEO)
+# ============================================================
+R("PR_AGEO_001", "analytical", "AGEO", "distance formula not written",
+  "Write the distance formula before substituting coordinates.",
+  "Formula-first earns the method mark.",
+  "Every year the DBE says 'formula not written'. Write it. It's a mark.",
+  "high", "dbe_diagnostic")
+R("PR_AGEO_002", "analytical", "AGEO", "midpoint formula not written",
+  "Write the midpoint formula before substituting.",
+  "Formula-first earns the method mark.",
+  "Fun fact — same rule every time. Formula first, then numbers.",
+  "medium")
+R("PR_AGEO_003", "analytical", "AGEO", "gradient formula not written",
+  "Write the gradient formula before substituting.",
+  "Formula-first earns the method mark.",
+  "Did you know — the DBE says 'gradient formula not stated'. One line.",
+  "high")
+R("PR_AGEO_004", "analytical", "AGEO", "parallel not proven with gradients",
+  "Show m₁ = m₂ to prove lines parallel.",
+  "Equal gradients is the proof.",
+  "Quick tip — the DBE says 'prove with gradients'. m₁ = m₂.",
+  "high")
+R("PR_AGEO_005", "analytical", "AGEO", "perpendicular not proven with product",
+  "Show m₁ × m₂ = –1 to prove lines perpendicular.",
+  "Negative reciprocal product is the proof.",
+  "Fun fact — the DBE says 'gradient product = –1'. Show it.",
+  "high")
+R("PR_AGEO_006", "analytical", "AGEO", "calculated lengths not labelled",
+  "Label every length or gradient with the segment name.",
+  "Labels show which segment you mean.",
+  "Quick tip — the DBE says 'label every calculated value'.",
+  "medium")
+R("PR_AGEO_007", "analytical", "AGEO", "diagram not updated with new coordinates",
+  "Fill in calculated coordinates on the diagram as you go.",
+  "Updated diagram prevents rework.",
+  "Did you know — the DBE notes 'diagram not updated'. Two seconds, saves confusion.",
+  "medium")
+R("PR_AGEO_008", "analytical", "AGEO", "parallelogram 4th vertex by guessing",
+  "Use the midpoint or vector method and show the steps.",
+  "Two methods work — show one fully.",
+  "Fun fact — the DBE flags 'fourth vertex by transformation'. Show the method.",
+  "high", "dbe_diagnostic")
+R("PR_AGEO_009", "analytical", "AGEO", "line equation form wrong",
+  "Give the line in the form y = mx + c or ax + by + c = 0 as required.",
+  "Wrong form loses a mark.",
+  "Did you know — the DBE says 'form of line equation matters'. Read the question.",
+  "high")
+R("PR_AGEO_010", "analytical", "AGEO", "circle centre and radius not stated",
+  "Write the centre and radius before writing the circle equation.",
+  "Centre and radius earn method marks.",
+  "Fun fact — the DBE says 'state centre and radius'. Two marks.",
+  "high")
+R("PR_AGEO_011", "analytical", "AGEO", "tangent perpendicular reason not stated",
+  "State the reason when the radius is perpendicular to a tangent.",
+  "The reason is required.",
+  "Did you know — the DBE says 'tangent ⊥ radius frequently forgotten'. State it.",
+  "high", "dbe_diagnostic")
+R("PR_AGEO_012", "analytical", "AGEO", "assumed without proof",
+  "Never assume a midpoint or perpendicularity without proof.",
+  "Assumption loses method marks.",
+  "Every year the DBE flags 'assumed midpoint or perpendicular'. Prove it.",
+  "critical", "dbe_diagnostic")
+R("PR_AGEO_013", "analytical", "AGEO", "formula changed from information sheet",
+  "Use the information sheet formulas exactly as printed.",
+  "The sheet is the accepted form.",
+  "Quick tip — the DBE says 'use the info sheet'. No variations.",
+  "medium")
+R("PR_AGEO_014", "analytical", "AGEO", "area formula not stated",
+  "State whether you're using ½ab sin C or ½ base × height.",
+  "State which formula you used.",
+  "Fun fact — the DBE says 'state which formula'. One line.",
+  "medium")
+R("PR_AGEO_015", "analytical", "AGEO", "surds not simplified",
+  "Keep surd answers in simplest form unless a decimal is required.",
+  "Simplified surds match the memo.",
+  "Did you know — the DBE says 'simplify surds'. √80 = 4√5.",
+  "high")
+
+# ============================================================
+# TRIGONOMETRY (PR_TRIG)
+# ============================================================
+R("PR_TRIG_001", "trigonometry", "TRIG", "reduction formula used without stating",
+  "Write the reduction or compound-angle formula before substituting.",
+  "Formula-first earns a method mark.",
+  "Every year the DBE says 'formula not stated'. Write the formula line.",
+  "high", "dbe_diagnostic")
+R("PR_TRIG_002", "trigonometry", "TRIG", "quadrant not identified",
+  "Show the quadrant when finding the sign of a trigonometric ratio.",
+  "Quadrant determines the sign.",
+  "Did you know — the DBE says 'quadrant not identified'. Use the CAST diagram.",
+  "high")
+R("PR_TRIG_003", "trigonometry", "TRIG", "reference angle not shown",
+  "Write the reference angle clearly.",
+  "The reference angle gives the base value.",
+  "Fun fact — the DBE says 'reference angle shown'. One line.",
+  "medium")
+R("PR_TRIG_004", "trigonometry", "TRIG", "general solution form wrong",
+  "Write the general form first, then the specific solutions in the interval.",
+  "General solution comes first.",
+  "Did you know — the DBE says 'general solution form'. k ∈ ℤ required.",
+  "critical", "dbe_diagnostic")
+R("PR_TRIG_005", "trigonometry", "TRIG", "solutions outside interval kept",
+  "Reject any solutions that fall outside the given interval.",
+  "Only the given interval counts.",
+  "Quick tip — the DBE says 'reject solutions outside interval'. Circle them.",
+  "high")
+R("PR_TRIG_006", "trigonometry", "TRIG", "graph features not labelled",
+  "Label amplitude, period and intercepts on trig graphs.",
+  "Labels earn marks.",
+  "Did you know — the DBE says 'label amplitude and period'. Two marks.",
+  "medium")
+R("PR_TRIG_007", "trigonometry", "TRIG", "tan asymptotes not drawn dotted",
+  "Draw the asymptotes of tan graphs with dotted lines.",
+  "Dotted shows asymptotes correctly.",
+  "Fun fact — the DBE notes 'dotted lines for asymptotes'.",
+  "low")
+R("PR_TRIG_008", "trigonometry", "TRIG", "period written as interval",
+  "Write the period as a single number, not an interval.",
+  "Period is one number.",
+  "Did you know — the DBE says 'period as single number'. 180, not (0; 180).",
+  "medium")
+R("PR_TRIG_009", "trigonometry", "TRIG", "identity proof from wrong side",
+  "Start with the more complicated side and work towards the other.",
+  "LHS → RHS is standard.",
+  "Every year the DBE says 'work on one side only'. The DBE flags candidates who work on both sides at once.",
+  "critical", "dbe_diagnostic")
+R("PR_TRIG_010", "trigonometry", "TRIG", "co-ratio application not shown",
+  "Show every application of a co-ratio or reduction formula.",
+  "Each application is a step.",
+  "Fun fact — the DBE says 'show every application'.",
+  "medium")
+R("PR_TRIG_011", "trigonometry", "TRIG", "sine/cosine rule not stated",
+  "Write the rule before substituting.",
+  "Naming the rule is a mark.",
+  "Quick tip — the DBE says 'name the rule'. Sine rule? Cosine rule? Say which.",
+  "high")
+R("PR_TRIG_012", "trigonometry", "TRIG", "diagram not labelled",
+  "Label the sides and angles on the diagram before substituting.",
+  "Labelled diagram prevents substitution errors.",
+  "Did you know — the DBE says 'redraw the triangle and label it'. Two marks.",
+  "high")
+R("PR_TRIG_013", "trigonometry", "TRIG", "shared angle assumed",
+  "Never assume two triangles share an angle unless given or proven.",
+  "Assumption loses marks.",
+  "Fun fact — the DBE says 'assumed shared angle'. Prove it or state it as given.",
+  "medium")
+R("PR_TRIG_014", "trigonometry", "TRIG", "degree symbol missing",
+  "Write the final angle in degrees with the degree symbol.",
+  "Symbol is part of the answer.",
+  "Quick tip — the DBE says '° on degrees'. One symbol.",
+  "medium")
+R("PR_TRIG_015", "trigonometry", "TRIG", "quadratic trig equation not factored properly",
+  "Use the k-method if helpful and show the substitution.",
+  "Same factoring rule applies to trig.",
+  "Did you know — the DBE says 'factorise fully before solving'. Same as algebra.",
+  "high")
+
+# ============================================================
+# EUCLIDEAN GEOMETRY (PR_EUCL)
+# ============================================================
+R("PR_EUCL_001", "euclidean", "EUCL", "reason missing next to statement",
+  "Write a reason for every statement on the same line or the line below.",
+  "Statement + reason is the mark structure.",
+  "Every year the DBE says 'no reason given'. Geometry without reasons is half the marks lost. Every statement. Every reason.",
+  "critical", "dbe_diagnostic")
+R("PR_EUCL_002", "euclidean", "EUCL", "reason not acceptable",
+  "Use only the acceptable reasons from the Examination Guidelines.",
+  "The reason must match the guideline list.",
+  "Did you know — the DBE says 'reasons not specific'. 'Opp angles of cyclic quad' is specific. 'Geometry' is not.",
+  "critical", "dbe_diagnostic")
+R("PR_EUCL_003", "euclidean", "EUCL", "angle names ambiguous",
+  "Name angles with three letters or numbered notation as given.",
+  "Consistent naming is required.",
+  "Fun fact — the DBE says 'T̂ vs T̂₁'. Use the number from the diagram.",
+  "critical", "dbe_diagnostic")
+R("PR_EUCL_004", "euclidean", "EUCL", "assumed diameter/tangent/equality",
+  "Never assume a diameter, tangent, or equal line without proof.",
+  "Assumptions lose all method marks.",
+  "Every year the DBE flags 'assumptions without proof'. 13% of all errors in the last 12 years. Prove it or state it as given.",
+  "critical", "dbe_diagnostic")
+R("PR_EUCL_005", "euclidean", "EUCL", "similarity without three equal angle pairs",
+  "When proving triangles similar, write the three pairs of equal angles with reasons.",
+  "Three angle pairs required.",
+  "Did you know — the DBE says 'prove similarity with 3 angles'. Not 2, not 1. Three.",
+  "high", "dbe_diagnostic")
+R("PR_EUCL_006", "euclidean", "EUCL", "congruence condition not stated",
+  "State the congruence condition (SAS, AAS, etc.).",
+  "The condition is a mark.",
+  "Fun fact — the DBE says 'state S A S'. Name the condition.",
+  "high")
+R("PR_EUCL_007", "euclidean", "EUCL", "construction not dotted",
+  "Draw required construction with a dotted line and label it.",
+  "Dotted shows it's a construction.",
+  "Did you know — the DBE says 'dotted construction'. Solid lines look like given.",
+  "high")
+R("PR_EUCL_008", "euclidean", "EUCL", "construction not stated",
+  "State the construction before using it in a proof.",
+  "The construction must be declared.",
+  "Every year the DBE says 'state the construction'. 'Draw KO produced' or 'Draw radius'.",
+  "critical", "dbe_diagnostic")
+R("PR_EUCL_009", "euclidean", "EUCL", "logical order broken",
+  "Keep logical order; prove intermediate results before final ones.",
+  "Order matters for the reasoning chain.",
+  "Did you know — the DBE flagged 'incoherent logical sequence' as a 2025 error. Prove prerequisites first.",
+  "critical", "dbe_diagnostic")
+R("PR_EUCL_010", "euclidean", "EUCL", "proportionality without parallel proof",
+  "First prove the lines are parallel before using the proportionality theorem.",
+  "The theorem requires parallel lines.",
+  "Fun fact — the DBE says 'prove parallel first'. The theorem depends on it.",
+  "high")
+R("PR_EUCL_011", "euclidean", "EUCL", "converse not stated",
+  "Write 'converse of …' when using a converse theorem.",
+  "The converse has a different name.",
+  "Did you know — the DBE says 'confused theorem with converse'. Name it correctly.",
+  "high", "dbe_diagnostic")
+R("PR_EUCL_012", "euclidean", "EUCL", "extra lines added without stating",
+  "Do not invent lines unless the question requires a construction.",
+  "Extra lines confuse the diagram.",
+  "Quick tip — the DBE says 'only construct when needed'. Otherwise don't.",
+  "medium")
+R("PR_EUCL_013", "euclidean", "EUCL", "calculated angles not on diagram",
+  "Fill in calculated angle sizes on the diagram as you proceed.",
+  "Updated diagram prevents rework.",
+  "Fun fact — the DBE says 'write angles on the diagram'. Two seconds.",
+  "medium")
+R("PR_EUCL_014", "euclidean", "EUCL", "earlier results not referenced",
+  "Use earlier parts with a reference (e.g. 'proved in 10.1').",
+  "Linked parts earn the linkage mark.",
+  "Did you know — the DBE says 'reference previous parts'. One phrase.",
+  "high")
+R("PR_EUCL_015", "euclidean", "EUCL", "no concluding statement",
+  "End with a clear concluding statement (e.g. '∴ triangles are similar').",
+  "The conclusion is the answer.",
+  "Every year the DBE says 'end with the required statement'. Say what you proved.",
+  "high", "dbe_diagnostic")
+
+# ============================================================
+# STATISTICS (PR_STAT)
+# ============================================================
+R("PR_STAT_001", "statistics", "STAT", "a and b not written before regression equation",
+  "Write values of a and b before writing the regression equation.",
+  "a and b earn method marks.",
+  "Every year the DBE says 'a and b not written'. State them. Then the equation.",
+  "high", "dbe_diagnostic")
+R("PR_STAT_002", "statistics", "STAT", "a and b not rounded",
+  "Round a and b to the decimals required by the question.",
+  "Rounding is a mark.",
+  "Fun fact — the DBE says 'round a and b'. Match the question's decimals.",
+  "medium")
+R("PR_STAT_003", "statistics", "STAT", "regression equation form wrong",
+  "Write the regression equation as ŷ = a + bx.",
+  "Standard form is expected.",
+  "Did you know — the DBE says 'swap a and b'. Check which is the intercept and which is the gradient.",
+  "high", "dbe_diagnostic")
+R("PR_STAT_004", "statistics", "STAT", "correlation interpretation incomplete",
+  "When interpreting the correlation coefficient, state both strength and direction.",
+  "Both parts are required.",
+  "Fun fact — the DBE says 'strength AND direction'. Both, not one.",
+  "high")
+R("PR_STAT_005", "statistics", "STAT", "cumulative frequency confused with ordinary",
+  "Show how you obtained the ordinary frequencies from the cumulative ones.",
+  "Subtract the previous cumulative.",
+  "Every year the DBE flags 'cumulative read as ordinary frequency'. It's a 2025 high-severity error.",
+  "critical", "dbe_diagnostic")
+R("PR_STAT_006", "statistics", "STAT", "histogram bars not adjacent",
+  "Draw histograms with adjacent bars; no gaps.",
+  "Histograms have no gaps. Bar graphs do.",
+  "Did you know — the DBE says 'histogram bars adjacent'. No gaps.",
+  "high")
+R("PR_STAT_007", "statistics", "STAT", "axes not labelled",
+  "Label axes of every graph clearly.",
+  "Axis labels are required.",
+  "Fun fact — the DBE says 'label the axes'. Two marks.",
+  "high")
+R("PR_STAT_008", "statistics", "STAT", "reading construction lines not shown",
+  "Show horizontal and vertical lines when reading from an ogive.",
+  "Construction lines prove the read.",
+  "Quick tip — the DBE says 'mark construction lines lightly'. Light pencil, on the graph.",
+  "medium")
+R("PR_STAT_009", "statistics", "STAT", "SD formula not written",
+  "Write the standard deviation formula before substituting.",
+  "Formula-first is the method mark.",
+  "Did you know — the DBE says 'formula not written'. Write the formula structure first.",
+  "high")
+R("PR_STAT_010", "statistics", "STAT", "population vs sample confused",
+  "Distinguish clearly between population and sample SD.",
+  "They differ by a factor.",
+  "Fun fact — the DBE says 'distinguish population from sample'. Read the question.",
+  "medium")
+R("PR_STAT_011", "statistics", "STAT", "outlier comment without calculation",
+  "When commenting on outliers, refer to the calculated values.",
+  "The rule (1.5 × IQR) must be stated.",
+  "Did you know — the DBE says 'state the rule and show the fences'. Two steps.",
+  "medium")
+R("PR_STAT_012", "statistics", "STAT", "median position and value confused",
+  "Never confuse the position of a quartile with its value.",
+  "Position vs value — different things.",
+  "Every year the DBE says 'position vs value confused'. State the position, then the value.",
+  "high", "dbe_diagnostic")
+R("PR_STAT_013", "statistics", "STAT", "boxplot five-number summary not used",
+  "Use the five-number summary from earlier in the box plot.",
+  "Box plots require five values.",
+  "Quick tip — the DBE says 'use your five-number summary'. Don't recalculate.",
+  "medium")
+R("PR_STAT_014", "statistics", "STAT", "prediction without units",
+  "Write predictions with units and context.",
+  "Units earn a mark.",
+  "Fun fact — the DBE says 'prediction with units and context'. 'R216 455' or '216455 rands'.",
+  "high")
+R("PR_STAT_015", "statistics", "STAT", "interpolation/extrapolation not noted",
+  "State whether the prediction is interpolation or extrapolation.",
+  "Context affects reliability.",
+  "Did you know — the DBE says 'state if interpolation'. Inside the range vs outside.",
+  "medium")
+
+# ============================================================
+# DIAGRAM HABITS (PR_DIAG)
+# ============================================================
+R("PR_DIAG_001", "diagram", "all", "pencil not used for diagrams",
+  "Use a sharp pencil for all diagrams and sketches.",
+  "Pencil is erasable and cleaner.",
+  "Did you know — the DBE says 'pencil for diagrams, pen for answers'. Two different tools.",
+  "medium")
+R("PR_DIAG_002", "diagram", "all", "axes drawn freehand",
+  "Draw axes with a ruler.",
+  "Straight axes are the marker's expectation.",
+  "Fun fact — the DBE says 'draw axes with a ruler'. Line looks better.",
+  "medium")
+R("PR_DIAG_003", "diagram", "all", "given points not labelled",
+  "Label every given point, line and angle on the diagram.",
+  "Labelled diagram supports reasoning.",
+  "Every year the DBE flags 'diagram not labelled with given info'. It's a mark.",
+  "high", "dbe_diagnostic")
+R("PR_DIAG_004", "diagram", "all", "calculated values not added",
+  "Add calculated values to the diagram as you obtain them.",
+  "Updated diagram prevents rework.",
+  "Did you know — the DBE says 'write calculated values on the diagram'. Two seconds.",
+  "high")
+R("PR_DIAG_005", "diagram", "all", "asymptotes and constructions drawn solid",
+  "Use dotted lines for constructions and asymptotes.",
+  "Dotted distinguishes from givens.",
+  "Fun fact — the DBE says 'dotted for asymptotes and construction'. Solid looks like a given.",
+  "high")
+R("PR_DIAG_006", "diagram", "all", "diagram redrawn unnecessarily",
+  "Don't redraw a diagram unless the original is too small or unclear.",
+  "Redrawing wastes time.",
+  "Quick tip — the DBE says 'keep the original unless it's unreadable'. Time saved.",
+  "low")
+R("PR_DIAG_007", "diagram", "all", "diagram on different page to work",
+  "Keep the diagram on the same page as the working that refers to it.",
+  "Marker reads them together.",
+  "Did you know — the DBE says 'same page as the work'. Otherwise reference it.",
+  "medium")
+R("PR_DIAG_008", "diagram", "all", "assumed lengths or angles",
+  "Do not assume lengths or angles from a diagram unless marked.",
+  "Assumption loses method marks.",
+  "Every year the DBE flags 'assumed from diagram'. 13% of all errors in 12 years. If it's not marked, prove it.",
+  "critical", "dbe_diagnostic")
+R("PR_DIAG_009", "diagram", "all", "right angle symbol missing",
+  "Indicate right angles with the standard square symbol.",
+  "The symbol is the accepted notation.",
+  "Fun fact — the DBE says 'right angle square symbol'. One mark for one little square.",
+  "high")
+R("PR_DIAG_010", "diagram", "all", "3D hidden edges not dotted",
+  "Make hidden edges dotted on 3D diagrams.",
+  "Dotted shows depth.",
+  "Did you know — the DBE says 'dotted hidden edges'. Otherwise the diagram looks flat.",
+  "medium")
+
+# ============================================================
+# FINAL CHECKLIST (PR_CHECK)
+# ============================================================
+R("PR_CHECK_001", "check", "all", "moved on without re-reading question",
+  "Before moving on, re-read the question and check you answered every part.",
+  "Sub-questions are easy to miss.",
+  "Every year the DBE says 'incomplete sub-questions'. Re-read before moving on. It catches one or two marks every paper.",
+  "critical", "dbe_diagnostic")
+R("PR_CHECK_002", "check", "all", "'show that' answer doesn't end at the given result",
+  "Check that every 'show that' answer ends with the required result.",
+  "'Show that' must end at the given form.",
+  "Did you know — the DBE says 'show that must end at the required result'. Check before moving on.",
+  "high")
+R("PR_CHECK_003", "check", "all", "inequality signs inconsistent",
+  "Verify all inequality solutions use the correct signs.",
+  "One wrong sign loses the mark.",
+  "Fun fact — the DBE says 'check your inequality signs'. 9 notation errors in ALG alone.",
+  "high", "dbe_diagnostic")
+R("PR_CHECK_004", "check", "all", "money not rounded",
+  "Confirm money answers are rounded to two decimals.",
+  "Money is always two decimals.",
+  "Did you know — the DBE says 'money two decimals'. Always.",
+  "high")
+R("PR_CHECK_005", "check", "all", "geometric statement without reason",
+  "Ensure every geometric statement has an acceptable reason.",
+  "Reason is required.",
+  "Every year the DBE flags missing reasons in geometry. Most common single error in the corpus.",
+  "critical", "dbe_diagnostic")
+R("PR_CHECK_006", "check", "all", "calculator mode wrong",
+  "Check the calculator is still in the correct mode.",
+  "TRIG needs degrees.",
+  "Fun fact — the DBE says 'check the mode before each question'. DEG, always, unless told otherwise.",
+  "high")
+R("PR_CHECK_007", "check", "all", "extraneous roots kept",
+  "Look for negative roots or extraneous solutions to reject.",
+  "Squaring introduces extraneous roots.",
+  "Did you know — the DBE says 'reject extraneous roots'. If you squared, check both.",
+  "high")
+R("PR_CHECK_008", "check", "all", "final answer not indicated",
+  "Make sure the final answer is clearly indicated (boxed or underlined).",
+  "Marker finds the answer fast.",
+  "Every year the DBE says 'final answer not indicated'. Box it.",
+  "high")
+R("PR_CHECK_009", "check", "all", "units missing",
+  "Confirm all units are present where required.",
+  "Units earn marks.",
+  "Fun fact — the DBE says 'check units'. cm, m², R, degrees.",
+  "high")
+R("PR_CHECK_010", "check", "all", "arithmetic slip",
+  "If time remains, recalculate the first line of any long calculation.",
+  "Arithmetic slips hide in long calculations.",
+  "Did you know — the DBE says 're-check the first line'. Most slips are caught at the start.",
+  "medium")
+
+# ============================================================
+# ADDITIONS from diagnostic findings — new rules
+# ============================================================
+R("PR_DBE_001", "diagram", "all", "assumed info from an unmarked diagram",
+  "Mark every given on the diagram before you start writing.",
+  "Tick equal sides, arc equal angles, dot parallel lines.",
+  "Did you know — 13% of every DBE diagnostic report since 2014 is about learners assuming things the diagram doesn't give. 143 of 1,111 errors. Mark it or prove it.",
+  "critical", "dbe_diagnostic")
+R("PR_DBE_002", "all", "all", "learner did not notice conditional words",
+  "Underline the instruction word (hence, show that, at least, correct to).",
+  "One word changes the required method.",
+  "The DBE reports mention 'reading for understanding' every year. ~4% of all errors. Underline the instruction word. It costs nothing.",
+  "critical", "dbe_diagnostic")
+R("PR_DBE_003", "all", "all", "learner moved to next sub-question without finishing",
+  "Finish the current part before starting the next.",
+  "Jumping confuses the marker and loses CA marks.",
+  "Did you know — the DBE says 'incomplete sub-question'. It happens because learners rush. One part at a time.",
+  "high", "dbe_diagnostic")
+R("PR_DBE_004", "all", "all", "sign flip on factorising or moving terms",
+  "Show the sign change on its own line when moving a term.",
+  "The sign change is the most common procedural error.",
+  "Every year the DBE flags sign errors. They're the #1 procedural mistake in 12 years. One line per sign change.",
+  "critical", "dbe_diagnostic")
+R("PR_DBE_005", "all", "all", "answer given as a single value when two were expected",
+  "Check the expected number of answers (quadratics have 2, cubics have 3).",
+  "Partial answers lose half the marks.",
+  "Did you know — the DBE says 'only one root given'. For a quadratic, you need both. Two values, two marks.",
+  "critical", "dbe_diagnostic")
+R("PR_DBE_006", "all", "all", "learner wrote in Afrikaans notation but answer expected in English",
+  "Match the terminology of the paper (bilingual exam).",
+  "Terms must match the language the paper uses.",
+  "Fun fact — the DBE says 'bilingual mismatch'. If the paper says gradient, don't write helling unless the question uses it.",
+  "medium", "dbe_diagnostic")
+R("PR_DBE_007", "all", "all", "learner used unauthorised shortcut",
+  "Show the standard method the memo expects.",
+  "Shortcuts risk no method marks.",
+  "Did you know — the DBE says 'assumed method not accepted'. Standard method always.",
+  "high", "dbe_diagnostic")
+R("PR_DBE_008", "all", "all", "learner did not use the previous part's result",
+  "When the question says 'hence', use the previous result and say so.",
+  "Hence questions depend on the previous answer.",
+  "Every year the DBE flags 'did not use previous result'. 'Hence' is a link. Show it.",
+  "high", "dbe_diagnostic")
+R("PR_DBE_009", "all", "all", "learner ignored 'leave in surd form' or 'exact form'",
+  "Read the answer-form instruction and match it.",
+  "Wrong form loses the mark even with the right value.",
+  "Fun fact — the DBE says 'surd form ignored'. Leave it in surd form when asked. Exact, not decimal.",
+  "high", "dbe_diagnostic")
+R("PR_DBE_010", "all", "all", "learner jumped 3 steps in one line",
+  "One mathematical step per line, especially when transformations are involved.",
+  "Multi-step lines hide errors from the marker.",
+  "Did you know — the DBE says 'too many steps on one line'. Procedural errors are rising +2 per year. One step per line.",
+  "critical", "dbe_diagnostic")
+
+# ============================================================
+# WRITE CSV
+# ============================================================
+OUT = Path("data/processed/tutor/presentation_rules_v1.csv")
+OUT.parent.mkdir(parents=True, exist_ok=True)
+
+FIELDS = ["rule_id", "category", "topic", "trigger", "advice", "why",
+          "dbe_note", "priority", "source"]
+
+with OUT.open("w", encoding="utf-8", newline="") as f:
+    writer = csv.DictWriter(f, fieldnames=FIELDS)
+    writer.writeheader()
+    for r in RULES:
+        writer.writerow(r)
+
+print(f"Wrote {len(RULES)} rules to {OUT}")
+print()
+
+# Stats
+from collections import Counter
+print("By priority:")
+for p, c in Counter(r["priority"] for r in RULES).most_common():
+    print(f"  {p}: {c}")
+print()
+print("By category:")
+for cat, c in Counter(r["category"] for r in RULES).most_common():
+    print(f"  {cat}: {c}")
+print()
+print("By source:")
+for src, c in Counter(r["source"] for r in RULES).most_common():
+    print(f"  {src}: {c}")

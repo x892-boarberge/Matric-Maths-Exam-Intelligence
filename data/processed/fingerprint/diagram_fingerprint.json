@@ -1,0 +1,1451 @@
+{
+  "diagram_pct_by_topic": {
+    "ALG": {
+      "total": 22,
+      "with_diagram": 6
+    },
+    "SEQ": {
+      "total": 38,
+      "with_diagram": 5
+    },
+    "FUNC": {
+      "total": 48,
+      "with_diagram": 37
+    },
+    "CALC": {
+      "total": 44,
+      "with_diagram": 25
+    },
+    "FIN": {
+      "total": 12,
+      "with_diagram": 1
+    },
+    "PROB": {
+      "total": 15,
+      "with_diagram": 4
+    },
+    "STAT": {
+      "total": 30,
+      "with_diagram": 10
+    },
+    "AGEO": {
+      "total": 17,
+      "with_diagram": 15
+    },
+    "EUCL": {
+      "total": 24,
+      "with_diagram": 23
+    },
+    "TRIG": {
+      "total": 27,
+      "with_diagram": 18
+    }
+  },
+  "figures_by_topic": {
+    "FUNC": {
+      "hyperbola": 15,
+      "graph_general": 10,
+      "quadrilateral": 6,
+      "parabola": 2,
+      "trig_graph": 2,
+      "circle_geom": 1,
+      "triangle_geom": 1,
+      "rectangular": 1,
+      "3d_trig": 1
+    },
+    "ALG": {
+      "graph_general": 1,
+      "circle_geom": 4,
+      "quadrilateral": 2
+    },
+    "STAT": {
+      "scatter": 8,
+      "ogive": 7,
+      "histogram": 3,
+      "graph_general": 7,
+      "box_plot": 2,
+      "number_line": 1
+    },
+    "AGEO": {
+      "circle_geom": 9,
+      "quadrilateral": 5,
+      "hyperbola": 1,
+      "parabola": 1
+    },
+    "EUCL": {
+      "quadrilateral": 15,
+      "rectangular": 1,
+      "triangle_geom": 3,
+      "circle_geom": 19,
+      "3d_trig": 1
+    },
+    "TRIG": {
+      "quadrilateral": 4,
+      "trig_graph": 6,
+      "graph_general": 2,
+      "circle_geom": 3,
+      "3d_trig": 1,
+      "triangle_geom": 1,
+      "hyperbola": 1
+    },
+    "CALC": {
+      "graph_general": 7,
+      "trig_graph": 2,
+      "circle_geom": 6,
+      "venn": 1,
+      "parabola": 4,
+      "hyperbola": 2,
+      "quadrilateral": 2,
+      "cylinder": 1
+    },
+    "FIN": {
+      "trig_graph": 1
+    },
+    "SEQ": {
+      "scatter": 3,
+      "graph_general": 4,
+      "quadrilateral": 1,
+      "tree_diagram": 1
+    },
+    "PROB": {
+      "venn": 3
+    }
+  },
+  "figures_by_year": {
+    "2014": {
+      "hyperbola": 1,
+      "graph_general": 2,
+      "scatter": 2,
+      "ogive": 2,
+      "histogram": 1,
+      "circle_geom": 2,
+      "quadrilateral": 2
+    },
+    "2015": {
+      "hyperbola": 2,
+      "graph_general": 4,
+      "trig_graph": 2,
+      "scatter": 1,
+      "quadrilateral": 3,
+      "rectangular": 1,
+      "triangle_geom": 1,
+      "circle_geom": 2
+    },
+    "2016": {
+      "hyperbola": 2,
+      "parabola": 1,
+      "graph_general": 4,
+      "scatter": 2,
+      "ogive": 1,
+      "histogram": 1,
+      "circle_geom": 4,
+      "trig_graph": 1,
+      "quadrilateral": 3
+    },
+    "2017": {
+      "graph_general": 4,
+      "hyperbola": 1,
+      "venn": 1,
+      "scatter": 1,
+      "box_plot": 1,
+      "number_line": 1,
+      "quadrilateral": 3,
+      "trig_graph": 1,
+      "circle_geom": 2,
+      "triangle_geom": 1
+    },
+    "2018": {
+      "hyperbola": 2,
+      "graph_general": 3,
+      "quadrilateral": 4,
+      "ogive": 1,
+      "scatter": 1,
+      "circle_geom": 4
+    },
+    "2019": {
+      "graph_general": 3,
+      "hyperbola": 1,
+      "venn": 1,
+      "ogive": 1,
+      "quadrilateral": 4,
+      "circle_geom": 4,
+      "trig_graph": 2,
+      "triangle_geom": 1
+    },
+    "2020": {
+      "parabola": 1,
+      "hyperbola": 1,
+      "graph_general": 2,
+      "scatter": 1,
+      "quadrilateral": 2,
+      "circle_geom": 4,
+      "trig_graph": 1
+    },
+    "2021": {
+      "hyperbola": 1,
+      "parabola": 1,
+      "box_plot": 1,
+      "scatter": 1,
+      "graph_general": 2,
+      "circle_geom": 5,
+      "quadrilateral": 4,
+      "trig_graph": 1,
+      "3d_trig": 1
+    },
+    "2022": {
+      "parabola": 1,
+      "hyperbola": 1,
+      "venn": 1,
+      "scatter": 1,
+      "ogive": 1,
+      "circle_geom": 4,
+      "trig_graph": 1,
+      "quadrilateral": 3
+    },
+    "2023": {
+      "hyperbola": 1,
+      "parabola": 1,
+      "graph_general": 2,
+      "tree_diagram": 1,
+      "triangle_geom": 1,
+      "circle_geom": 3,
+      "quadrilateral": 3
+    },
+    "2024": {
+      "circle_geom": 4,
+      "hyperbola": 3,
+      "graph_general": 3,
+      "parabola": 1,
+      "venn": 1,
+      "scatter": 1,
+      "ogive": 1,
+      "trig_graph": 1,
+      "3d_trig": 1,
+      "quadrilateral": 1,
+      "triangle_geom": 1
+    },
+    "2025": {
+      "hyperbola": 3,
+      "graph_general": 2,
+      "parabola": 1,
+      "cylinder": 1,
+      "histogram": 1,
+      "quadrilateral": 3,
+      "circle_geom": 4,
+      "trig_graph": 1,
+      "rectangular": 1,
+      "3d_trig": 1
+    }
+  },
+  "questions_with_figures": [
+    {
+      "year": "2014",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2014",
+      "paper": "P1",
+      "question_number": "9",
+      "topic": "ALG",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2014",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "STAT",
+      "figures": [
+        "scatter"
+      ]
+    },
+    {
+      "year": "2014",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "STAT",
+      "figures": [
+        "scatter"
+      ]
+    },
+    {
+      "year": "2014",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "ogive",
+        "histogram",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2014",
+      "paper": "P2",
+      "question_number": "3",
+      "topic": "AGEO",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2014",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "EUCL",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2014",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "TRIG",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2014",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "ALG",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2014",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "ogive"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P1",
+      "question_number": "5",
+      "topic": "CALC",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P1",
+      "question_number": "6",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P1",
+      "question_number": "7",
+      "topic": "FIN",
+      "figures": [
+        "trig_graph"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "SEQ",
+      "figures": [
+        "scatter",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P2",
+      "question_number": "3",
+      "topic": "FUNC",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P2",
+      "question_number": "6",
+      "topic": "TRIG",
+      "figures": [
+        "trig_graph"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P2",
+      "question_number": "7",
+      "topic": "EUCL",
+      "figures": [
+        "rectangular",
+        "triangle_geom"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "AGEO",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2015",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P1",
+      "question_number": "5",
+      "topic": "FUNC",
+      "figures": [
+        "parabola",
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P1",
+      "question_number": "6",
+      "topic": "FUNC",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "STAT",
+      "figures": [
+        "scatter"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "STAT",
+      "figures": [
+        "scatter",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "ogive",
+        "histogram",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "AGEO",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P2",
+      "question_number": "6",
+      "topic": "TRIG",
+      "figures": [
+        "trig_graph",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "AGEO",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2016",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "ALG",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "CALC",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P1",
+      "question_number": "5",
+      "topic": "AGEO",
+      "figures": [
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P1",
+      "question_number": "8",
+      "topic": "CALC",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P1",
+      "question_number": "10",
+      "topic": "PROB",
+      "figures": [
+        "venn"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "STAT",
+      "figures": [
+        "scatter"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "box_plot",
+        "number_line",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P2",
+      "question_number": "3",
+      "topic": "FUNC",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P2",
+      "question_number": "6",
+      "topic": "CALC",
+      "figures": [
+        "trig_graph",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2017",
+      "paper": "P2",
+      "question_number": "11",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "triangle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P1",
+      "question_number": "5",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P1",
+      "question_number": "9",
+      "topic": "CALC",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P1",
+      "question_number": "10",
+      "topic": "FUNC",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "STAT",
+      "figures": [
+        "ogive"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "scatter"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P2",
+      "question_number": "3",
+      "topic": "EUCL",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "CALC",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P2",
+      "question_number": "6",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "AGEO",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2018",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "ALG",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P1",
+      "question_number": "3",
+      "topic": "SEQ",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P1",
+      "question_number": "5",
+      "topic": "CALC",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P1",
+      "question_number": "11",
+      "topic": "CALC",
+      "figures": [
+        "venn"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "ogive",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P2",
+      "question_number": "3",
+      "topic": "FUNC",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "ALG",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P2",
+      "question_number": "5",
+      "topic": "TRIG",
+      "figures": [
+        "trig_graph"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P2",
+      "question_number": "6",
+      "topic": "CALC",
+      "figures": [
+        "trig_graph"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P2",
+      "question_number": "7",
+      "topic": "SEQ",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2019",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "triangle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2020",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "CALC",
+      "figures": [
+        "parabola",
+        "hyperbola",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2020",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "SEQ",
+      "figures": [
+        "scatter",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2020",
+      "paper": "P2",
+      "question_number": "3",
+      "topic": "FUNC",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2020",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "AGEO",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2020",
+      "paper": "P2",
+      "question_number": "5",
+      "topic": "TRIG",
+      "figures": [
+        "trig_graph"
+      ]
+    },
+    {
+      "year": "2020",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "CALC",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2020",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2020",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "TRIG",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P1",
+      "question_number": "5",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P1",
+      "question_number": "7",
+      "topic": "AGEO",
+      "figures": [
+        "parabola"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "STAT",
+      "figures": [
+        "box_plot"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "SEQ",
+      "figures": [
+        "scatter",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P2",
+      "question_number": "3",
+      "topic": "CALC",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "AGEO",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P2",
+      "question_number": "7",
+      "topic": "FUNC",
+      "figures": [
+        "trig_graph",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "TRIG",
+      "figures": [
+        "3d_trig"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2021",
+      "paper": "P2",
+      "question_number": "11",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2022",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "FUNC",
+      "figures": [
+        "parabola",
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2022",
+      "paper": "P1",
+      "question_number": "10",
+      "topic": "PROB",
+      "figures": [
+        "venn"
+      ]
+    },
+    {
+      "year": "2022",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "STAT",
+      "figures": [
+        "scatter"
+      ]
+    },
+    {
+      "year": "2022",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "ogive"
+      ]
+    },
+    {
+      "year": "2022",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2022",
+      "paper": "P2",
+      "question_number": "6",
+      "topic": "TRIG",
+      "figures": [
+        "trig_graph"
+      ]
+    },
+    {
+      "year": "2022",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2022",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2022",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "TRIG",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P1",
+      "question_number": "5",
+      "topic": "CALC",
+      "figures": [
+        "parabola"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P1",
+      "question_number": "8",
+      "topic": "FUNC",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P1",
+      "question_number": "10",
+      "topic": "SEQ",
+      "figures": [
+        "tree_diagram"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P2",
+      "question_number": "3",
+      "topic": "TRIG",
+      "figures": [
+        "triangle_geom"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "FUNC",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "EUCL",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2023",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "CALC",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P1",
+      "question_number": "3",
+      "topic": "AGEO",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P1",
+      "question_number": "5",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P1",
+      "question_number": "6",
+      "topic": "CALC",
+      "figures": [
+        "parabola"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P1",
+      "question_number": "11",
+      "topic": "PROB",
+      "figures": [
+        "venn"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P2",
+      "question_number": "1",
+      "topic": "STAT",
+      "figures": [
+        "scatter"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "ogive",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "CALC",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P2",
+      "question_number": "7",
+      "topic": "TRIG",
+      "figures": [
+        "hyperbola",
+        "trig_graph",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "EUCL",
+      "figures": [
+        "3d_trig"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "FUNC",
+      "figures": [
+        "triangle_geom"
+      ]
+    },
+    {
+      "year": "2024",
+      "paper": "P2",
+      "question_number": "11",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P1",
+      "question_number": "4",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P1",
+      "question_number": "5",
+      "topic": "CALC",
+      "figures": [
+        "parabola",
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P1",
+      "question_number": "6",
+      "topic": "FUNC",
+      "figures": [
+        "hyperbola"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P1",
+      "question_number": "10",
+      "topic": "CALC",
+      "figures": [
+        "cylinder"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P2",
+      "question_number": "2",
+      "topic": "STAT",
+      "figures": [
+        "histogram"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P2",
+      "question_number": "3",
+      "topic": "FUNC",
+      "figures": [
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P2",
+      "question_number": "4",
+      "topic": "CALC",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P2",
+      "question_number": "7",
+      "topic": "FUNC",
+      "figures": [
+        "trig_graph",
+        "graph_general"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P2",
+      "question_number": "8",
+      "topic": "FUNC",
+      "figures": [
+        "rectangular",
+        "3d_trig"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P2",
+      "question_number": "9",
+      "topic": "EUCL",
+      "figures": [
+        "circle_geom"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P2",
+      "question_number": "10",
+      "topic": "AGEO",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    },
+    {
+      "year": "2025",
+      "paper": "P2",
+      "question_number": "11",
+      "topic": "TRIG",
+      "figures": [
+        "circle_geom",
+        "quadrilateral"
+      ]
+    }
+  ]
+}

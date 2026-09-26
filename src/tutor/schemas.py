@@ -71,6 +71,35 @@ class LearnerState:
 
 
 @dataclass
+class WorkingStep:
+    index: int
+    raw_text: str
+    source: str = "typed"          # "typed" | "photo" | "stylus"
+    timestamp: Optional[float] = None
+    confidence: Optional[float] = None
+    corrections: int = 0           # crossings out (photo only)
+    pause_ms: Optional[int] = None
+    is_diagram_step: bool = False
+
+
+@dataclass
+class WorkingSubmission:
+    steps: List[WorkingStep]
+    source: str = "typed"
+    final_answer: Optional[str] = None
+    diagram: Optional[Dict[str, Any]] = None
+
+    def last_line(self) -> str:
+        return self.steps[-1].raw_text if self.steps else ""
+
+    def joined(self) -> str:
+        return "\n".join(s.raw_text for s in self.steps)
+
+    def step_texts(self):
+        return [s.raw_text for s in self.steps]
+
+
+@dataclass
 class DiagnosisResult:
     error_type: ErrorType
     misconception_id: Optional[str]
