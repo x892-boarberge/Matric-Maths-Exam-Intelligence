@@ -1,0 +1,50 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final,match_mode
+2024_P2_Q6.1.1,1,Rewrite as subtraction,1,"cos(x+y)=cos(x-(-y))","cos(x+y)=cos(x-(-y))|cos(x+y)=cos(x-(-y))",trig.identity,proof,A,false,keyword
+2024_P2_Q6.1.1,2,Expand,1,"=cosx cos(-y)+sinx sin(-y)","cosx cos(-y)+sinx sin(-y)|cosxcos(-y)+sinxsin(-y)",trig.identity,proof,A,true,keyword
+2024_P2_Q6.1.2,1,cos(90-x)=sinx,1,"cos(90-x)=sinx","cos(90-x)=sinx|sinx",trig.identity,proof,A,false,keyword
+2024_P2_Q6.1.2,2,sin(-y)=-siny,1,"sin(-y)=-siny","sin(-y)=-siny",trig.identity,proof,A,false,keyword
+2024_P2_Q6.1.2,3,cos(180+x)=-cosx,1,"cos(180+x)=-cosx","cos(180+x)=-cosx",trig.identity,proof,A,false,keyword
+2024_P2_Q6.1.2,4,cos(360+y)=cosy,1,"cos(360+y)=cosy","cos(360+y)=cosy|cos(360+y)",trig.identity,proof,A,false,keyword
+2024_P2_Q6.1.2,5,sin(360-x)=-sinx,1,"sin(360-x)=-sinx","sin(360-x)=-sinx",trig.identity,proof,A,false,keyword
+2024_P2_Q6.1.2,6,Compound formula,1,"=tan(x+y)","tan(x+y)|tan(x+y)=RHS",trig.identity,proof,A,true,keyword
+2024_P2_Q6.2,1,Square both sides,1,"6sin^2x-11cos(90+x)+7=4","6sin^2x-11cos(90+x)+7=4|6sin^2x",trig.identity,proof,A,false,keyword
+2024_P2_Q6.2,2,cos(90+x)=-sinx,1,"cos(90+x)=-sinx","cos(90+x)=-sinx|-sinx",trig.identity,proof,A,false,keyword
+2024_P2_Q6.2,3,Factor,1,"(3sinx+1)(2sinx+3)=0","(3sinx+1)(2sinx+3)=0|factor",trig.identity,proof,A,false,keyword
+2024_P2_Q6.2,4,Both equations,1,"sinx=-1/3 or sinx=-3/2","sinx=-1/3|sinx=-3/2",trig.identity,proof,A,false,keyword
+2024_P2_Q6.2,5,Answers,1,"x=199.47 or x=340.53","199.47|340.53",trig.identity,proof,A,true,keyword
+2024_P2_Q6.3.1,1,Factor,1,"=4(1-2sin^2x)/3","4(1-2sin^2x)/3|factor",trig.identity,proof,A,false,keyword
+2024_P2_Q6.3.1,2,Rewrite as 4cos2x/3,1,"=4cos2x/3","4cos2x/3|cos2x",trig.identity,proof,A,false,keyword
+2024_P2_Q6.3.1,3,Maximum value,1,"max=4/3","4/3|max = 4/3",trig.identity,proof,A,true,keyword
+2024_P2_Q6.3.2,1,Answer x,1,"x=180","x=180|x=180°",trig.identity,proof,A,true,keyword
+2024_P2_Q9.1,1,OMB=90,1,"OMB=90 [angle in semi-circle]","angle in semi-circle|omb=90",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q9.1,2,Statement and reason,1,"S/R","S/R|omb=90|angle in semi",euclidean.circle,euclid,A,true,keyword
+2024_P2_Q9.2,1,B=80 [half of A1],1,"B=80","b=80|b_hat=80",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q9.2,2,Opp angles of cyclic quad,1,"D=100 [opp angles]","opp angles|cyclic quad|d=100",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q9.2,3,Sum of angles,1,"C2=40 [sum of angles]","sum of angles|sum of ∠s|c2=40",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q9.2,4,Equal angles imply equal sides,1,"AD=DC","ad=dc|equal sides",euclidean.circle,euclid,A,true,keyword
+2024_P2_Q10.1,1,Construction,1,"Join SB and TA","join sb|join ta|construction",euclidean.similarity,euclid,A,false,keyword
+2024_P2_Q10.1,2,Area of RAB,1,"area RAB = 1/2 RA x h1","area rab|1/2 ra",euclidean.similarity,euclid,A,false,keyword
+2024_P2_Q10.1,3,Area of ASB,1,"area ASB = 1/2 AS x h1","area asb|1/2 as",euclidean.similarity,euclid,A,false,keyword
+2024_P2_Q10.1,4,Areas equal,1,"area ASB = area ABT","area asb = area abt|equal areas",euclidean.similarity,euclid,A,false,keyword
+2024_P2_Q10.1,5,Conclusion,1,"RA/AS = RB/BT","ra/as=rb/bt",euclidean.similarity,euclid,A,true,keyword
+2024_P2_Q10.2,1,Perpendicular from centre,1,"PR=RS","pr=rs|perpendicular from centre|midpoint chord",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q10.2,2,Radii equal,1,"PO=OW","po=ow|radii",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q10.2,3,Midpoint theorem,1,"OR=1/2 WS","or=1/2ws|or:ws=1:2|midpoint theorem",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q10.2,4,Ratio OR:WS,1,"OR:WS=1:2","or:ws=1:2",euclidean.circle,euclid,A,true,keyword
+2024_P2_Q11.1,1,Tan-chord D1,1,"D1=EAg=x [tan-chord]","tan-chord|tan chord|d1=eag",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q11.1,2,Tan-chord C1,1,"C1=D1=x [tan-chord]","tan-chord|tan chord|c1=d1",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q11.1,3,Vert opp angles,1,"C4=C1=x","vert opp|vertical|c4=c1",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q11.1,4,Tan-chord AFG,1,"AFG=EAg=x","tan-chord|tan chord|afg=eag",euclidean.circle,euclid,A,true,keyword
+2024_P2_Q11.2,1,DC parallel FG,1,"D1=AFG=x [corresp]","corresp|dc parallel fg|dc || fg",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q11.2,2,Proportionality,1,"AG/AC = AF/AD","ag/ac = af/ad|prop theorem",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q11.2,3,Answer AG.AD=AC.AF,1,"AG.AD=AC.AF","ag.ad=ac.af",euclidean.circle,euclid,A,true,keyword
+2024_P2_Q11.3,1,Angles in same seg,1,"G=B2 [same seg]","same seg|same segment|g=b2",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q11.3,2,Substitute AFG=C1,1,"AFG=C1=x","afg=c1",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q11.3,3,Sum of angles,1,"A3=A2 [sum]","sum of angles|a3=a2",euclidean.circle,euclid,A,false,keyword
+2024_P2_Q11.3,4,Similar triangles,1,"AGF || ABC","agf || abc|agf ||| abc",euclidean.circle,euclid,A,true,keyword
+2024_P2_Q11.4,1,Ratio from similarity,1,"GF/BC = AF/AC","gf/bc=af/ac",euclidean.similarity,euclid,A,false,keyword
+2024_P2_Q11.4,2,GF expression,1,"GF=BC.AF/AC","gf=bc.af/ac",euclidean.similarity,euclid,A,false,keyword
+2024_P2_Q11.4,3,Second similarity,1,"ACD || FGC","acd || fgc|acd ||| fgc",euclidean.similarity,euclid,A,false,keyword
+2024_P2_Q11.4,4,Ratio,1,"AC/GF = AD/FC","ac/gf=ad/fc",euclidean.similarity,euclid,A,false,keyword
+2024_P2_Q11.4,5,Substitute,1,"GF^2 = AF.FC.BC/AD","gf^2 = af.fc.bc/ad|gf²=af.fc.bc/ad",euclidean.similarity,euclid,A,false,keyword
+2024_P2_Q11.4,6,Answer,1,"Answer","gf^2|gf²",euclidean.similarity,euclid,A,true,keyword

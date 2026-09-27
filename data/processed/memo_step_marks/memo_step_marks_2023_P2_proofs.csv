@@ -1,0 +1,53 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final,match_mode
+2023_P2_Q5.2.1,1,Factor cos squared from numerator,1,"cos^2x(cos^2x+sin^2x)","cos^2x(cos^2x+sin^2x)|cos²x(cos²x+sin²x)",trig.identity,proof,A,false,keyword
+2023_P2_Q5.2.1,2,Apply sin²+cos²=1,1,"sin^2x+cos^2x=1","sin^2x+cos^2x=1|cos^2x+sin^2x=1",trig.identity,proof,A,false,keyword
+2023_P2_Q5.2.1,3,Apply cos²=1-sin²,1,"1-sin^2x","1-sin^2x|cos^2x=1-sin^2x",trig.identity,proof,A,false,keyword
+2023_P2_Q5.2.1,4,Factorise difference of squares,1,"(1-sinx)(1+sinx)","(1-sinx)(1+sinx)|(1+sinx)(1-sinx)",trig.identity,proof,A,true,keyword
+2023_P2_Q5.3.1,1,Rewrite sin as cos,1,"sin(A-B)=cos[90-(A-B)]","sin(A-B)=cos[90|cos[90-(A-B)]",trig.identity,proof,A,false,keyword
+2023_P2_Q5.3.1,2,Apply compound formula,1,"cos[(90-A)-B]","cos[(90-A)-B]|(90-A)-B|cos(90-A)cos(B)",trig.identity,proof,A,false,keyword
+2023_P2_Q5.3.1,3,Co-function and answer,1,"=sinA cosB - cosA sinB","sinA cosB - cosA sinB|sinAcosB-cosAsinB",trig.identity,proof,A,true,keyword
+2023_P2_Q5.4,1,Rewrite 3x,1,"3x=2x+x","3x=2x+x|3x = (2x + x)",trig.identity,proof,A,false,keyword
+2023_P2_Q5.4,2,Expand sin(2x+x),1,"sin2x cosx + cos2x sinx","sin2x cosx + cos2x sinx|sin2xcosx+cos2xsinx",trig.identity,proof,A,false,keyword
+2023_P2_Q5.4,3,Expand sin(2x-x),1,"sin2x cosx - cos2x sinx","sin2x cosx - cos2x sinx|sin2xcosx-cos2xsinx",trig.identity,proof,A,false,keyword
+2023_P2_Q5.4,4,Combine numerator,1,"=2 sin2x cosx","2 sin2x cosx|2sin2xcosx",trig.identity,proof,A,false,keyword
+2023_P2_Q5.4,5,Double angle of cos2x,1,"cos2x+1=2cos^2x","cos2x+1=2cos^2x|cos2x+1=2cos²x",trig.identity,proof,A,false,keyword
+2023_P2_Q5.4,6,Answer,1,"=2 sinx","=2 sinx|2 sinx|2sinx",trig.identity,proof,A,true,keyword
+2023_P2_Q8.1,1,Construction,1,"Draw KO produced","draw ko|ko produced|construction",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.1,2,Ext angle of triangle,1,"O1=K1+T [ext angle]","ext angle|exterior angle|ext ∠",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.1,3,Opp equal sides,1,"K1=T [opp equal sides]","opp equal|equal sides|opp ∠s|opposite sides",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.1,4,O1=2K1 and O2=2K2,1,"O1=2K1 and O2=2K2","2k1|2k2|2(k1+k2)",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.1,5,Conclusion,1,"TOP=2TKP","top=2tkp|top = 2tkp|2tkp",euclidean.circle,euclid,A,true,keyword
+2023_P2_Q8.2,1,Angles in same segment,1,"D1=AFG=x [tan-chord]","tan-chord|tan chord|D1=AFG",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.2,2,DC parallel FG,1,"DC parallel FG","dc parallel fg|dc || fg|parallel",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.2,3,Proportionality,1,"AG/AC = AF/AD","ag/ac = af/ad|proportional|prop theorem",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.2,4,Answer AG.AD=AC.AF,1,"AG.AD=AC.AF","ag.ad = ac.af|ag×ad|ag ad = ac af",euclidean.circle,euclid,A,true,keyword
+2023_P2_Q8.3.1,1,Angle in semi-circle,1,"OMB=90 [angle in semi-circle]","angle in semi|90° in semi|semi-circle",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.3.1,2,Statement and reason,1,"OMB=90° [S/R]","omb=90|omb = 90",euclidean.circle,euclid,A,true,keyword
+2023_P2_Q8.3.2,1,AB length,1,"AB=10sqrt(3)","10sqrt(3)|10√3|ab=10√3",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.3.2,2,MB length,1,"MB=5sqrt(3)","5sqrt(3)|5√3|mb=5√3",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.3.2,3,Pythagoras,1,"OB^2 = OM^2 + MB^2","pythagoras|om^2+mb^2|ob²=om²+mb²",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q8.3.2,4,Answer OB,1,"OB=10","ob=10|ob = 10 units",euclidean.circle,euclid,A,true,keyword
+2023_P2_Q9.1,1,Proportionality,1,"FB/EB = DA/EA","fb/eb=da/ea|prop theorem|fb/eb = da/ea",euclidean.similarity,euclid,A,false,keyword
+2023_P2_Q9.1,2,Substitute,1,"FB/4p = 21/7p","fb/4p=21/7p",euclidean.similarity,euclid,A,false,keyword
+2023_P2_Q9.1,3,Answer,1,"FB=12","fb=12|fb=12 units",euclidean.similarity,euclid,A,true,keyword
+2023_P2_Q9.2,1,Common angle E,1,"E is common","common angle|e is common|shared angle",euclidean.similarity,euclid,A,false,keyword
+2023_P2_Q9.2,2,Corresponding angles,1,"EDF=A and EFD=B [corresp]","corresp|corresponding|edf=a",euclidean.similarity,euclid,A,false,keyword
+2023_P2_Q9.2,3,Similar triangles,1,"EDF || EAB","edf || eab|edf ||| eab|similar",euclidean.similarity,euclid,A,true,keyword
+2023_P2_Q9.3,1,Proportionality,1,"DF/AB = ED/EA","df/ab=ed/ea|prop theorem",euclidean.similarity,euclid,A,false,keyword
+2023_P2_Q9.3,2,DF value,1,"DF=6","df=6",euclidean.similarity,euclid,A,false,keyword
+2023_P2_Q9.3,3,FC value,1,"FC=8","fc=8",euclidean.similarity,euclid,A,true,keyword
+2023_P2_Q10.1,1,Ext angle of cyclic quad,1,"S3=PQR [ext angle]","ext angle|exterior angle|cyclic quad",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.1,2,Opp equal sides,1,"R3=PQR [opp equal sides]","opp equal|opposite sides|equal sides",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.1,3,Angles in same segment,1,"S4=R3 [same seg]","same seg|same segment|s3=s4",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.1,4,S3=S4,1,"S3=S4","s3=s4",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.1,5,Conclusion,1,"Proven","proven|therefore",euclidean.circle,euclid,A,true,keyword
+2023_P2_Q10.2,1,tan-chord,1,"R1+R2=PQR [tan-chord]","tan-chord|tan chord",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.2,2,S4=PQR,1,"S4=PQR","s4=pqr",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.2,3,S4=R1+R2,1,"S4=R1+R2","s4=r1+r2",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.2,4,Converse cyclic quad,1,"SMRC is cyclic quad","cyclic quad|smrc",euclidean.circle,euclid,A,true,keyword
+2023_P2_Q10.3,1,Ext angle of triangle,1,"S3=R2+P2 [ext angle]","ext angle|exterior angle|s3=r2+p2",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.3,2,Ext angle again,1,"S4=P1+A2 [ext angle]","ext angle|exterior angle|s4=p1+a2",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.3,3,Combine,1,"R2+P2=A2+P1","r2+p2=a2+p1",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.3,4,Equal angles,1,"P1=R2 and P2=A2","p1=r2 and p2=a2|p1=r2|p2=a2",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.3,5,Converse tan-chord,1,"converse tan-chord","converse tan-chord|converse tangent",euclidean.circle,euclid,A,false,keyword
+2023_P2_Q10.3,6,Conclusion RP tangent,1,"RP is tangent","rp is tangent|rp tangent",euclidean.circle,euclid,A,true,keyword

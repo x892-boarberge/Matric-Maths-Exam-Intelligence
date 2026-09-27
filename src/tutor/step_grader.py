@@ -26,6 +26,7 @@ def _load_one(path: Path, by_q: dict) -> None:
                 "method_tag": row["method_tag"].strip(),
                 "method_group": mg,
                 "is_final": str(row.get("is_final", "false")).strip().lower() == "true",
+                "match_mode": (row.get("match_mode") or "exact").strip().lower() or "exact",
             })
 
 
@@ -61,7 +62,21 @@ def _tokens(s: str) -> list[str]:
     return sorted(re.sub(r"\s+", "", p) for p in parts if p.strip())
 
 
-def _line_matches(line: str, forms: list[str], is_final: bool = False) -> bool:
+def _line_matches(line: str, forms: list[str], is_final: bool = False, mode: str = "exact") -> bool:
+    if mode == "keyword":
+        nline = _norm(line)
+        if not nline:
+            return False
+        # Compact all whitespace: "X = Y" must match "X=Y"
+        nline_compact = re.sub(r"\s+", "", nline)
+        for form in forms:
+            nf = _norm(form)
+            if not nf:
+                continue
+            nf_compact = re.sub(r"\s+", "", nf)
+            if nf_compact and nf_compact in nline_compact:
+                return True
+        return False
     lt = _tokens(line)
     if not lt:
         return False
@@ -87,10 +102,11 @@ def _grade_group(steps, learner_lines):
         matched = False
         matched_line = None
         is_final = step.get("is_final", False)
+        mode = step.get("match_mode", "exact")
         for i, line in enumerate(learner_lines):
             if i in used and not is_final:
                 continue
-            if _line_matches(line, step["forms"], is_final=is_final):
+            if _line_matches(line, step["forms"], is_final=is_final, mode=mode):
                 matched = True
                 matched_line = line
                 if not is_final:

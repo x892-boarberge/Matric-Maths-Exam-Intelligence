@@ -1,0 +1,51 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final,match_mode
+2025_P2_Q6,1,Expand tan,1,"tan(180-x)=-tanx","tan(180-x)=-tanx|tan(180-x)=-tan",trig.identity,proof,A,false,keyword
+2025_P2_Q6,2,cos^2=1-sin^2,1,"1-cos^2x=sin^2x","1-cos^2x=sin^2x|1-cos²x=sin²x",trig.identity,proof,A,false,keyword
+2025_P2_Q6,3,Quotient identity,1,"sinx/cosx = tanx","sinx/cosx=tanx|quotient identity",trig.identity,proof,A,false,keyword
+2025_P2_Q6,4,Simplify,1,"= (sin^3x - cos^3x)/(-cosx)","(sin^3x - cos^3x)/(-cosx)|sin^3x-cos^3x",trig.identity,proof,A,false,keyword
+2025_P2_Q6,5,Difference of cubes,1,"(sinx-cosx)(sin^2x+sinxcosx+cos^2x)","difference of cubes|sin^2x+sinxcosx+cos^2x",trig.identity,proof,A,false,keyword
+2025_P2_Q6,6,Answer,1,"=RHS","rhs|1+sinxcosx",trig.identity,proof,A,true,keyword
+2025_P2_Q9.1,1,Construction,1,"Draw KO produced","draw ko|ko produced|construction",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q9.1,2,Ext angle of triangle,1,"O1=K1+T [ext angle]","ext angle|exterior angle",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q9.1,3,Opp equal sides,1,"K1=T [opp equal sides]","opp equal|equal sides|opposite sides",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q9.1,4,O1=2K1,1,"O1=2K1","o1=2k1|2k1",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q9.1,5,Conclusion,1,"TOP=2TKP","top=2tkp|2tkp",euclidean.circle,euclid,A,true,keyword
+2025_P2_Q9.2.1,1,O2=64 [angle at centre],1,"O2=64 [angle at centre]","angle at centre|o2=64|64",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q9.2.1,2,Statement and reason,1,"S/R","s/r|o2=64",euclidean.circle,euclid,A,true,keyword
+2025_P2_Q9.2.2,1,Tangent perpendicular to diameter,1,"PMF=90 [tan perp diameter]","tan perp|tangent perpendicular|pmf=90",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q9.2.2,2,Sum of angles,1,"M=26 [sum of angles]","sum of angles|m=26",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q9.2.2,3,Answer,1,"26","26|m=26",euclidean.circle,euclid,A,true,keyword
+2025_P2_Q10.1,1,Sum of angles,1,"R=55 [sum of angles]","sum of angles|r=55|r=55°",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q10.1,2,Same segment,1,"QTS=55 [same seg]","same seg|same segment|qts=55",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q10.1,3,Answer,1,"QTS=55","qts=55|55",euclidean.circle,euclid,A,true,keyword
+2025_P2_Q10.2,1,Opp angles of cyclic quad,1,"SPQ=125","opp angles|cyclic quad|spq=125",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q10.2,2,Given S1=R=55,1,"S1=R=55","s1=r=55|s1=r",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q10.2,3,Co-interior angles,1,"PQ parallel SR","co-int|co-interior|pq parallel sr",euclidean.circle,euclid,A,true,keyword
+2025_P2_Q10.3,1,Co-interior Q1=90,1,"Q1=90","co-int|q1=90",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q10.3,2,Converse angle in semi,1,"PT is diameter","converse|pt is diameter|pt diameter",euclidean.circle,euclid,A,false,keyword
+2025_P2_Q10.3,3,Answer,1,"PT is diameter","pt is diameter",euclidean.circle,euclid,A,true,keyword
+2025_P2_Q11.1.1,1,FD/CF from proportional,1,"FD/CF = GA/CF","fd/cf = ga/cf|fd/cf=ga/cf",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.1.1,2,Answer,1,"=2/3","2/3|fd=2/3cf",euclidean.similarity,euclid,A,true,keyword
+2025_P2_Q11.1.2,1,FD expression,1,"FD=2/3CF","fd=2/3cf",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.1.2,2,Substitute,1,"FD=2/3(2x)","fd=2/3(2x)|fd=4/3x",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.1.2,3,BA/ED ratio,1,"BA/ED","ba/ed|ba/ed ratio",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.1.2,4,Answer,1,"=4/3x","4/3x",euclidean.similarity,euclid,A,true,keyword
+2025_P2_Q11.1.3,1,Area difference,1,"GFDA = CDA - CGF","gfda = cda - cgf|area difference",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.1.3,2,Area GCF,1,"1/2(GC)(FC)sinC","1/2(gc)(fc)sinc|area gcf",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.1.3,3,Area CDA - CGF,1,"1/2 AC.CD sinC - 1/2 GC.CF sinC","ac.cdsinc|gc.cfsinc|ac.cd sinc",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.1.3,4,Answer,1,"=9/16","9/16",euclidean.similarity,euclid,A,true,keyword
+2025_P2_Q11.2.1,1,Proportional,1,"QE/PR = QW/PR","qe/pr=qw/pr|prop theorem",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.1,2,Answer,1,"Proven","proven",euclidean.similarity,euclid,A,true,keyword
+2025_P2_Q11.2.2,1,Similar triangles,1,"PQ/QR = QZ/QR","pq/qr=qz/qr",euclidean.similarity,euclid,A,true,keyword
+2025_P2_Q11.2.3,1,Common angle,1,"Q2 common","common angle|q2 common",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.3,2,Tan-chord theorem,1,"S1=R2 [tan-chord]","tan-chord|tan chord|s1=r2",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.3,3,Third angle,1,"Z1=QSR","z1=qsr",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.3,4,Similar,1,"QSZ || QRS","qsz || qrs|qsz ||| qrs",euclidean.similarity,euclid,A,true,keyword
+2025_P2_Q11.2.4,1,Ratio,1,"QS/QR = QZ/QS","qs/qr=qz/qs",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.4,2,Square,1,"QS^2=QZ.QR","qs^2=qz.qr|qs²=qz.qr",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.4,3,Answer PQ=QS,1,"PQ=QS","pq=qs",euclidean.similarity,euclid,A,true,keyword
+2025_P2_Q11.2.5,1,First ratio,1,"PQ/RQ = PZ/PR","pq/rq=pz/pr",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.5,2,PR from 11.2.1,1,"PR = PW.QR/QE","pr=pw.qr/qe",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.5,3,Set equal,1,"PW.QR/QE = QR.PZ/PQ","pw.qr/qe=qr.pz/pq",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.5,4,PQ from 11.2.2,1,"PQ=sqrt(RQ.QZ)","pq=sqrt(rq.qz)",euclidean.similarity,euclid,A,false,keyword
+2025_P2_Q11.2.5,5,Answer,1,"PW = QE.PZ/sqrt(RQ.QZ)","pw=qe.pz/sqrt(rq.qz)",euclidean.similarity,euclid,A,true,keyword
