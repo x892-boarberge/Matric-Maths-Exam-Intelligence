@@ -6,15 +6,15 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_CSV = ROOT / "data" / "processed" / "memo_step_marks" / "memo_step_marks_2023_P1.csv"
+CSV_DIR = ROOT / "data" / "processed" / "memo_step_marks"
 
 
-def load_steps(csv_path: Path | None = None) -> dict[str, list[dict[str, Any]]]:
-    path = csv_path or DEFAULT_CSV
-    by_q: dict[str, list[dict[str, Any]]] = {}
+def _load_one(path: Path, by_q: dict) -> None:
     with open(path, encoding="utf-8") as f:
         for row in csv.DictReader(f):
             qid = row["question_id"].strip()
+            if not qid:
+                continue
             mg = (row.get("method_group") or "A").strip() or "A"
             by_q.setdefault(qid, []).append({
                 "index": int(row["step_index"]),
@@ -27,13 +27,22 @@ def load_steps(csv_path: Path | None = None) -> dict[str, list[dict[str, Any]]]:
                 "method_group": mg,
                 "is_final": str(row.get("is_final", "false")).strip().lower() == "true",
             })
+
+
+def load_steps(csv_path: Path | None = None) -> dict[str, list[dict[str, Any]]]:
+    by_q: dict[str, list[dict[str, Any]]] = {}
+    if csv_path is not None:
+        _load_one(csv_path, by_q)
+    else:
+        for p in sorted(CSV_DIR.glob("memo_step_marks_*.csv")):
+            _load_one(p, by_q)
     for qid in by_q:
         by_q[qid].sort(key=lambda s: (s["method_group"], s["index"]))
     return by_q
 
 
 _SEP = re.compile(r"\s*(?:,|\bor\b|;|\band\b)\s*")
-_METHOD_MARKERS = re.compile(r"sqrt|\u00b1|\+/-|/2a|b2-4ac|b\^2|\\pm|\u221a")
+_METHOD_MARKERS = re.compile(r"sqrt|\u00b1|\+/-|/2a|b2-4ac|b\^2|\\pm|\u221a|\u221a|\u00b1")
 
 
 def _norm(s: str) -> str:
@@ -127,9 +136,6 @@ def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | Non
     awarded = best_awarded
     g_steps = best_group
 
-    # UNCERTAIN heuristic: only look at learner lines that no step matched.
-    # Uses learner_line values from results, so lines consumed by final steps
-    # (which don't add to `used`) are still excluded from the "leftover" check.
     matched_values = {r["learner_line"] for r in results if r["matched"]}
     unmatched_lines = [ln for ln in learner_lines if ln not in matched_values]
 

@@ -1,0 +1,85 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2023_P2_Q1.1,1,Compute a,1,a=-23.85,"a=-23.85|a=-23.846",statistics.regression,regression,A,false
+2023_P2_Q1.1,2,Compute b,1,b=0.23,"b=0.23|b=0.227",statistics.regression,regression,A,false
+2023_P2_Q1.1,3,Write regression equation,1,"y_hat=-23.85+0.23x","y_hat=-23.85+0.23x|yhat=-23.85+0.23x|y=-23.85+0.23x",statistics.regression,regression,A,true
+2023_P2_Q1.2,1,Substitute 550,1,"y_hat=-23.85+0.23(550)","y_hat=-23.85+0.23(550)|y=-23.85+0.23(550)",statistics.regression,regression,A,false
+2023_P2_Q1.2,2,Compute prediction,1,"y_hat=102.65","y_hat=102.65|y=102.65|102.65|101.02",statistics.regression,regression,A,true
+2023_P2_Q1.3,1,Correlation coefficient,1,r=0.98,r=0.98,statistics.regression,regression,A,true
+2023_P2_Q1.4,1,Describe correlation,1,strong positive,"strong positive|very strong positive",statistics.regression,regression,A,true
+2023_P2_Q1.5.1,1,Compute mean,1,"x_bar=1200/8","x_bar=1200/8|xbar=1200/8",statistics.mean,mean,A,false
+2023_P2_Q1.5.1,2,State mean,1,x_bar=150,"x_bar=150|xbar=150|150",statistics.mean,mean,A,true
+2023_P2_Q1.5.2,1,Standard deviation,1,sigma=50.50,"sigma=50.50|σ=50.50|50.50",statistics.stdev,stdev,A,true
+2023_P2_Q1.5.3,1,Compute lower bound,1,"x_bar-sigma=99.50","x_bar-sigma=99.50|xbar-sigma=99.50",statistics.stdev,stdev,A,false
+2023_P2_Q1.5.3,2,State answer,1,1 stop,"1 stop|1 bus stop",statistics.stdev,stdev,A,true
+2023_P2_Q2.2,1,State total staff,1,40 staff,"40 staff|40",statistics.frequency,frequency,A,true
+2023_P2_Q2.3,1,State answer,1,33 staff,"33 staff|33",statistics.frequency,frequency,A,true
+2023_P2_Q2.4,1,Substitute into mean formula,1,"x_bar=(1(5+k/2)+3(15)+5(13+k/2)+7(5)+9(2))/(40+k)","x_bar=(1(5+k/2)+3(15)+5(13+k/2)+7(5)+9(2))/(40+k)",statistics.frequency,frequency,A,false
+2023_P2_Q2.4,2,Simplify to equation,1,"3k+168=160+4k","3k+168=160+4k",statistics.frequency,frequency,A,false
+2023_P2_Q2.4,3,Solve for k,1,k=8,k=8,statistics.frequency,frequency,A,true
+2023_P2_Q3.1,1,Substitute into distance formula,1,"SL=sqrt((4-(-4))^2+(5-1)^2)","SL=sqrt((4-(-4))^2+(5-1)^2)|SL=√((4+4)^2+(5-1)^2)",analytical.distance,distance,A,false
+2023_P2_Q3.1,2,Answer,1,"SL=4sqrt(5)=8.94","SL=4sqrt(5)=8.94|4√5|8.94",analytical.distance,distance,A,true
+2023_P2_Q3.2,1,Substitute into gradient formula,1,"m_SN=(5-(-3))/(4-(-2))","m_SN=(5-(-3))/(4-(-2))",analytical.gradient,gradient,A,false
+2023_P2_Q3.2,2,Answer gradient,1,m_SN=4/3,"m_SN=4/3|4/3",analytical.gradient,gradient,A,true
+2023_P2_Q3.3,1,Set tan theta equal to gradient,1,"tan theta=m_SN","tan theta=m_SN|tan(theta)=m_SN|tanθ=m_SN",analytical.gradient,gradient,A,false
+2023_P2_Q3.3,2,Answer angle,1,theta=53.13,"theta=53.13|θ=53.13|53.13",analytical.gradient,gradient,A,true
+2023_P2_Q3.4,1,Find m_LN,1,m_LN=-2,"m_LN=-2|m=−2",analytical.gradient,gradient,A,false
+2023_P2_Q3.4,2,Angle LKO,1,LKO=116.57,"LKO=116.57|116.57",analytical.gradient,gradient,A,false
+2023_P2_Q3.4,3,Answer angle LNS,1,LNS=63.44,"LNS=63.44|63.44",analytical.gradient,gradient,A,true
+2023_P2_Q3.5,1,Substitute point into line,1,"y=4/3x+19/3","y=4/3x+19/3|y=(4/3)x+19/3",analytical.line,line,A,true
+2023_P2_Q3.6,1,Length LN,1,"LN=2sqrt(5)","LN=2sqrt(5)|2√5",analytical.area,area,A,false
+2023_P2_Q3.6,2,Area formula,1,"Area=1/2(4sqrt(5))(2sqrt(5))","Area=1/2(4sqrt(5))(2sqrt(5))",analytical.area,area,A,false
+2023_P2_Q3.6,3,Area answer,1,"Area=20","Area=20|20 units^2|20",analytical.area,area,A,true
+2023_P2_Q3.7,1,Right angle at L,1,L=90,"L=90|L_hat=90|angle L=90",analytical.circle,circle,A,false
+2023_P2_Q3.7,2,Centre coordinates,1,"P(1;1)","P(1;1)|P(1,1)",analytical.circle,circle,A,true
+2023_P2_Q3.8,1,Find angle LPN,1,"LPN=53.13","LPN=53.13|LPN=θ=53.13",analytical.circle,circle,A,false
+2023_P2_Q3.8,2,Find angle LPS,1,"LPS=126.87","LPS=126.87|L_PS=126.87",analytical.circle,circle,A,true
+2023_P2_Q4.1,1,Substitute into circle eq,1,"p^2+(-2)^2=20","p^2+(-2)^2=20",analytical.circle,circle,A,false
+2023_P2_Q4.1,2,Solve for p,1,p=4,"p=4",analytical.circle,circle,A,true
+2023_P2_Q4.2,1,x-coordinate of F,1,x_F=8,"x_F=8",analytical.circle,circle,A,false
+2023_P2_Q4.2,2,F coordinates,1,"F(8;6)","F(8;6)|F(8,6)",analytical.circle,circle,A,true
+2023_P2_Q4.3,1,Gradient of DE,1,m_DE=2,"m_DE=2",analytical.line,line,A,false
+2023_P2_Q4.3,2,Substitute point,1,"-2=2(4)+c","-2=2(4)+c",analytical.line,line,A,false
+2023_P2_Q4.3,3,Equation of DE,1,y=2x-10,"y=2x-10|y=2x−10",analytical.line,line,A,true
+2023_P2_Q4.4,1,Gradient of GF,1,m_GF=-1/2,"m_GF=-1/2|m_GF=−0.5",analytical.line,line,A,false
+2023_P2_Q4.4,2,Substitute F,1,"(0-6)/(t-8)=-1/2","(0-6)/(t-8)=-1/2",analytical.line,line,A,false
+2023_P2_Q4.4,3,Solve for t,1,t=20,t=20,analytical.line,line,A,true
+2023_P2_Q4.5,1,Substitute F and G,1,"(8-20)^2+(6-0)^2=r^2","(8-20)^2+(6-0)^2=r^2",analytical.circle,circle,A,false
+2023_P2_Q4.5,2,Value of r squared,1,r^2=180,"r^2=180|r2=180",analytical.circle,circle,A,false
+2023_P2_Q4.5,3,Circle equation,1,"(x-20)^2+y^2=180","(x-20)^2+y^2=180",analytical.circle,circle,A,false
+2023_P2_Q4.5,4,General form,1,"x^2+y^2-40x+220=0","x^2+y^2-40x+220=0",analytical.circle,circle,A,true
+2023_P2_Q4.6,1,Method for k,1,"k=20-(6sqrt(5)-2sqrt(5)) or k=20+(6sqrt(5)-2sqrt(5))","k=20-4sqrt(5) or k=20+4sqrt(5)",analytical.circle,circle,A,false
+2023_P2_Q4.6,2,Smaller value,1,k=11.06,"k=11.06|11.06",analytical.circle,circle,A,false
+2023_P2_Q4.6,3,Larger value,1,k=28.94,"k=28.94|28.94",analytical.circle,circle,A,true
+2023_P2_Q5.1.1,1,Pythagoras for third side,1,"x^2+y^2=r^2","x^2+y^2=r^2",trig.identity,trig,A,false
+2023_P2_Q5.1.1,2,Compute x,1,"x=-2sqrt(2)","x=-2sqrt(2)|-2√2",trig.identity,trig,A,false
+2023_P2_Q5.1.1,3,Answer cos beta,1,"cos beta=-2sqrt(2)/3","cos beta=-2sqrt(2)/3|cosβ=-2√2/3",trig.identity,trig,A,true
+2023_P2_Q5.1.2,1,Double angle formula,1,"sin 2beta=2 sin beta cos beta","sin2beta=2sinb cosb|sin2β=2sinβcosβ",trig.identity,trig,A,false
+2023_P2_Q5.1.2,2,Substitute,1,"=2(1/3)(-sqrt(8)/3)","2(1/3)(-sqrt(8)/3)",trig.identity,trig,A,false
+2023_P2_Q5.1.2,3,Answer,1,"sin 2beta=-4sqrt(2)/9","sin2beta=-4sqrt(2)/9|−4√2/9",trig.identity,trig,A,true
+2023_P2_Q5.2,1,Rewrite cos(450-beta),1,"cos(450-beta)","cos(450-beta)|cos(450−β)",trig.reduction,trig,A,false
+2023_P2_Q5.2,2,Expand,1,"cos450 cosb + sin450 sinb","cos450cosb+sin450sinb",trig.reduction,trig,A,false
+2023_P2_Q5.2,3,Answer,1,"=sin beta=1/3","sin beta=1/3|sinβ=1/3",trig.reduction,trig,A,true
+2023_P2_Q5.2.2,1,Factor equals zero,1,"sin x+1=0","sin x+1=0|sinx=−1",trig.equation,trig,A,false
+2023_P2_Q5.2.2,2,Answer x,1,x=270,"x=270|x=270°",trig.equation,trig,A,true
+2023_P2_Q5.2.3,1,Minimum value,1,min=0,"min=0|minimum=0",trig.equation,trig,A,true
+2023_P2_Q5.3.2,1,Apply compound formula,1,"sin(48-x)=cos 2x","sin(48-x)=cos2x",trig.equation,trig,A,false
+2023_P2_Q5.3.2,2,Rewrite cos as sin,1,"sin(48-x)=sin(90-2x)","sin(48-x)=sin(90-2x)",trig.equation,trig,A,false
+2023_P2_Q5.3.2,3,First solution,1,"x=42+k.360","x=42+k.360|x=42°+k.360°",trig.equation,trig,A,false
+2023_P2_Q5.3.2,4,Second solution,1,"x=-14-k.120","x=-14-k.120|x=-14°-k.120°",trig.equation,trig,A,true
+2023_P2_Q6.1,1,State period,1,period=180,"period=180|180|180°",trig.graph,graph,A,true
+2023_P2_Q6.2,1,State range,1,"y in [-sqrt(2)/2;1]","y in [-sqrt(2)/2;1]|y∈[−√2/2;1]",trig.graph,graph,A,true
+2023_P2_Q6.3.1,1,State interval,1,"x in (45;90)","x in (45;90)|45<x<90",trig.graph,graph,A,true
+2023_P2_Q6.3.2,1,State interval,1,"x in [105;165]","x in [105;165]|105<=x<=165",trig.graph,graph,A,true
+2023_P2_Q6.4,1,Set up equation,1,"-2sin2x=-1 or 2sin2x=1","-2sin2x=-1|2sin2x=1",trig.graph,graph,A,false
+2023_P2_Q6.4,2,First value k,1,k=15,k=15,trig.graph,graph,A,false
+2023_P2_Q6.4,3,Second value k,1,k=75,k=75,trig.graph,graph,A,true
+2023_P2_Q6.5,1,Substitute shift,1,"h(x)=-cos(x+90)","h(x)=-cos(x+90)|h(x)=−cos(x+90)",trig.graph,graph,A,false
+2023_P2_Q6.5,2,Simplify answer,1,"h(x)=sin x","h(x)=sin x|h(x)=sinx",trig.graph,graph,A,true
+2023_P2_Q7.1,1,Area formula for triangle,1,"q=1/2 p(SK) sin alpha","q=1/2 p(SK) sin alpha|q=1/2 p(SK) sinα",trig.3d,trig3d,A,false
+2023_P2_Q7.1,2,Solve for SK,1,"SK=2q/(p sin alpha)","SK=2q/(p sin alpha)|SK=2q/(p sinα)",trig.3d,trig3d,A,true
+2023_P2_Q7.2,1,Right angle at S,1,RKS=beta,"RKS=beta|RKS=β",trig.3d,trig3d,A,false
+2023_P2_Q7.2,2,Correct trig ratio,1,"RS/SK=tan beta","RS/SK=tan beta|RS/SK=tanβ",trig.3d,trig3d,A,false
+2023_P2_Q7.2,3,Answer RS,1,"RS=2q tan beta/(p sin alpha)","RS=2q tan beta/(p sin alpha)|RS=2q tanβ/(p sinα)",trig.3d,trig3d,A,true
+2023_P2_Q7.3,1,Substitute values,1,"70=2(2500)tan42/(80 sin alpha)","70=2(2500)tan42/(80 sin alpha)",trig.3d,trig3d,A,false
+2023_P2_Q7.3,2,Value of sin alpha,1,"sin alpha=25/28 tan42","sin alpha=25/28 tan42|sinα=0.80",trig.3d,trig3d,A,false
+2023_P2_Q7.3,3,Answer alpha,1,alpha=53.51,"alpha=53.51|α=53.51|53.51",trig.3d,trig3d,A,true
