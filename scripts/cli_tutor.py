@@ -319,248 +319,198 @@ def show_learner_dashboard(store, learner_id):
 
 
 def main() -> None:
-    item = pick_problem()
-
-    if item == "__corpus__":
-        problem = pick_navigated_problem(load_corpus())
-        if problem is None:
-            sys.exit(0)
-        item = {
-            "skill_id": problem.skill_id,
-            "topic": problem.topic,
-            "subtopic": problem.subtopic,
-            "structure_type": problem.structure_type,
-            "prompt": problem.prompt,
-            "expected": problem.expected_answer,
-            "hint_correct": "Answer as you would in the exam.",
-            "_preloaded_problem": problem,
-        }
-
-    # Ask for a learner id so the session can be persisted.
+    # ---- Setup once: learner id and store persist across topics ----
     learner_id = input("\nEnter learner id (or press Enter for 'cli_user'): ").strip()
     if not learner_id:
         learner_id = "cli_user"
 
-    # Open the persistent learner store.
     store_path = ROOT / "data" / "learner_store" / "learners.db"
     store = open_store(store_path)
     store.load_learner(learner_id)
     print("Learner:", learner_id, "| store:", store_path)
 
-    session_attempts = []
+    # ============================================================
+    # Topic loop — learner can jump between topics freely
+    # ============================================================
+    while True:
+        item = pick_problem()
+        # pick_problem() exits the process on Q, so item is either "__corpus__" or a dict
 
-    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    session_id = "cli_" + stamp
-    # Register this session against the learner
-    store.start_session(learner_id, item["skill_id"])
-    log_dir = ROOT / "data" / "processed" / "tutor" / "logs"
-    log_dir.mkdir(parents=True, exist_ok=True)
-    log_path = log_dir / (session_id + ".jsonl")
+        if item == "__corpus__":
+            problem = pick_navigated_problem(load_corpus())
+            if problem is None:
+                # User chose Back/Quit inside navigation — go back to the main menu
+                continue
+            item = {
+                "skill_id": problem.skill_id,
+                "topic": problem.topic,
+                "subtopic": problem.subtopic,
+                "structure_type": problem.structure_type,
+                "prompt": problem.prompt,
+                "expected": problem.expected_answer,
+                "hint_correct": "Answer as you would in the exam.",
+                "_preloaded_problem": problem,
+            }
 
-    logger = SessionLogger(session_id, log_path)
-    logger.emit(
-        EventType.SESSION_STARTED,
-        {"mode": "cli", "skill_id": item["skill_id"]},
-    )
+        # ---- Fresh session for this topic ----
+        stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        session_id = "cli_" + stamp
+        store.start_session(learner_id, item["skill_id"], session_id=session_id)
 
-    problem = item.get("_preloaded_problem") or Problem(
-        problem_id="CLI1",
-        skill_id=item["skill_id"],
-        topic=item["topic"],
-        topic_v2=v1_to_v2(item["topic"]),
-        subtopic=item["subtopic"],
-        structure_type=item["structure_type"],
-        prompt=item["prompt"],
-        expected_answer=item["expected"],
-    )
+        log_dir = ROOT / "data" / "processed" / "tutor" / "logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        log_path = log_dir / (session_id + ".jsonl")
 
-    state = LearnerState(
-        learner_id=learner_id,
-        skill_id=item["skill_id"],
-        current_session_id=session_id,
-    )
-
-    engine = TutorEngine(session_logger=logger, learner_store=store, session_id=session_id)
-
-    logger.emit(
-        EventType.PROBLEM_PRESENTED,
-        {
-            "problem_id": problem.problem_id,
-            "skill_id": problem.skill_id,
-            "topic": problem.topic,
-            "topic_v2": problem.topic_v2,
-            "prompt": problem.prompt,
-        },
-    )
-
-    print("\n" + "-" * 60)
-    print(format_topic_line(problem))
-    print("Problem: " + problem.prompt)
-
-    _diagram = _diagram_path_for(problem)
-    if _diagram is not None:
-        print("Diagram page: " + str(_diagram))
-        _opened = _open_diagram(problem)
-        if _opened is not None:
-            print("(opened in your image viewer - type \"diagram\" to reopen)")
-        else:
-            print("(open the image manually to see the diagram)")
-    print("-" * 60)
-    print("Commands:  quit  |  answer  (ask for more help)  |  just type your attempt")
-    print("Note: " + item["hint_correct"])
-    print("-" * 60)
-
-    # --- Drill mode: offer it up front ---
-    print()
-    print("  Start a drill on this skill?")
-    print("    d  → drill (4 questions, mastery tracked)")
-    print("    Enter → single attempt (legacy)")
-    mode = input("  > ").strip().lower()
-
-    if mode in ("d", "drill"):
-        result = run_drill(
-            engine=engine,
-            store=store,
-            learner_id=learner_id,
-            session_id=session_id,
-            anchor=problem,
-            logger=logger,
+        logger = SessionLogger(session_id, log_path)
+        logger.emit(
+            EventType.SESSION_STARTED,
+            {"mode": "cli", "skill_id": item["skill_id"]},
         )
+
+        problem = item.get("_preloaded_problem") or Problem(
+            problem_id="CLI1",
+            skill_id=item["skill_id"],
+            topic=item["topic"],
+            topic_v2=v1_to_v2(item["topic"]),
+            subtopic=item["subtopic"],
+            structure_type=item["structure_type"],
+            prompt=item["prompt"],
+            expected_answer=item["expected"],
+        )
+
+        state = LearnerState(
+            learner_id=learner_id,
+            skill_id=item["skill_id"],
+            current_session_id=session_id,
+        )
+
+        engine = TutorEngine(session_logger=logger, learner_store=store, session_id=session_id)
+
+        logger.emit(
+            EventType.PROBLEM_PRESENTED,
+            {
+                "problem_id": problem.problem_id,
+                "skill_id": problem.skill_id,
+                "topic": problem.topic,
+                "topic_v2": problem.topic_v2,
+                "prompt": problem.prompt,
+            },
+        )
+
+        print("\n" + "-" * 60)
+        print(format_topic_line(problem))
+        print("Problem: " + problem.prompt)
+
+        _diagram = _diagram_path_for(problem)
+        if _diagram is not None:
+            print("Diagram page: " + str(_diagram))
+            _opened = _open_diagram(problem)
+            if _opened is not None:
+                print("(opened in your image viewer - type \"diagram\" to reopen)")
+            else:
+                print("(open the image manually to see the diagram)")
+        print("-" * 60)
+        print("Commands:  quit  |  answer (ask for more help)  |  just type your attempt")
+        print("Note: " + item["hint_correct"])
+        print("-" * 60)
+
+        # ---- Drill mode? ----
         print()
-        print("  Drill finished:", result)
-        # Skip legacy loop
+        print("  Start a drill on this skill?")
+        print("    d  → drill (5 questions, mastery tracked)")
+        print("    Enter → single attempt (legacy)")
+        mode = input("  > ").strip().lower()
+
+        if mode in ("d", "drill"):
+            result = run_drill(
+                engine=engine,
+                store=store,
+                learner_id=learner_id,
+                session_id=session_id,
+                anchor=problem,
+                logger=logger,
+            )
+            print()
+            print("  Drill finished:", result)
+
+            summary = logger.close()
+            store.end_session(session_id)
+
+            print("\n" + "=" * 60)
+            print("Session log: " + str(log_path))
+            print("SESSION_ENDED: " + str(summary))
+            print("=" * 60)
+
+            exit_reason = result.get("exit_reason", "completed")
+
+            if exit_reason == "quit":
+                break
+            if exit_reason == "menu":
+                # back to topic picker
+                continue
+
+            # completed / learner_end — offer next choice
+            print()
+            again = input("  Pick another topic? [Y/n]: ").strip().lower()
+            if again == "n":
+                break
+            continue
+
+        # ---- Legacy single-attempt loop ----
+        while True:
+            submission = collect_working()
+            if submission is None:
+                break
+
+            action = engine.step(
+                state,
+                problem,
+                submission,
+                explicit_solution_request=False,
+            )
+
+            print("\n  diagnosis:    " + action.diagnosis.error_type.value, end="")
+            if action.diagnosis.misconception_id:
+                print(" [" + action.diagnosis.misconception_id + "]", end="")
+            print()
+            print(
+                "  intervention: " + action.intervention.intervention_pattern
+                + " [" + action.intervention.provenance.value + "] "
+                + str(action.intervention.n08_intervention_id or "")
+            )
+            print("  hint level:   " + (action.hint_level.value if action.hint_level else "-"))
+            print("  action:       " + action.action.value)
+            print("  tutor:        " + action.tutor_message)
+
+            if action.diagnosis.error_type.value == "none":
+                print()
+                print("=" * 60)
+                print("Correct.")
+                print("=" * 60)
+                print("  [Enter]  pick another topic")
+                print("  q        end the tutor session")
+                choice = input("  > ").strip().lower()
+                if choice in ("q", "quit", "exit"):
+                    break
+                break  # fall through to topic loop
+
         summary = logger.close()
         store.end_session(session_id)
+
         print("\n" + "=" * 60)
         print("Session log: " + str(log_path))
         print("SESSION_ENDED: " + str(summary))
         print("=" * 60)
-        return
 
-    while True:
-        submission = collect_working()
-        if submission is None:
+        # After legacy attempt — offer next topic
+        again = input("  Pick another topic? [Y/n]: ").strip().lower()
+        if again == "n":
             break
+        continue
 
-        # Detect answer-demand shortcut (e.g. "answer:" was already stripped
-        # inside collect_working, so we don't need to detect it here)
-
-        action = engine.step(
-            state,
-            problem,
-            submission,
-            explicit_solution_request=False,
-        )
-
-        print("\n  diagnosis:    " + action.diagnosis.error_type.value, end="")
-        if action.diagnosis.misconception_id:
-            print(" [" + action.diagnosis.misconception_id + "]", end="")
-        print()
-        print(
-            "  intervention: " + action.intervention.intervention_pattern
-            + " [" + action.intervention.provenance.value + "] "
-            + str(action.intervention.n08_intervention_id or "")
-        )
-        print("  hint level:   " + (action.hint_level.value if action.hint_level else "-"))
-        print("  action:       " + action.action.value)
-        print("  tutor:        " + action.tutor_message)
-
-        # Track attempts for the session summary
-        try:
-            session_attempts
-        except NameError:
-            session_attempts = []
-        session_attempts.append(action.diagnosis.error_type.value)
-
-        if action.diagnosis.error_type.value == "none":
-            print()
-            print("=" * 60)
-            print("Correct.")
-            print("=" * 60)
-            n = len(session_attempts)
-            c = sum(1 for e in session_attempts if e == "none")
-            print(f"  This session: {c}/{n} correct on {item['skill_id']}")
-            print()
-            print("  [Enter]   next question on the same skill")
-            print("  s         show session summary")
-            print("  d         dashboard (all skills)")
-            print("  q         end session")
-            choice = input("  > ").strip().lower()
-
-            if choice in ("q", "quit", "exit"):
-                break
-
-            if choice in ("s", "summary"):
-                show_session_summary(store, learner_id, session_id, item["skill_id"], session_attempts)
-                again = input("\n  Continue? [Y/n]: ").strip().lower()
-                if again == "n":
-                    break
-                continue
-
-            if choice in ("d", "dashboard"):
-                show_learner_dashboard(store, learner_id)
-                again = input("\n  Continue? [Y/n]: ").strip().lower()
-                if again == "n":
-                    break
-                continue
-
-            # Default: load another question on the same skill
-            all_problems = load_corpus()
-            same_skill = [p for p in all_problems if p.skill_id == item["skill_id"]]
-            if len(same_skill) > 1:
-                # Pick a different one than the current
-                import random as _r
-                options = [p for p in same_skill if p.problem_id != problem.problem_id]
-                if options:
-                    new_problem = _r.choice(options)
-                    problem = new_problem
-                    print()
-                    print("-" * 60)
-                    print(format_topic_line(new_problem))
-                    print("Problem: " + new_problem.prompt)
-                    _new_diag = _diagram_path_for(new_problem)
-                    if _new_diag is not None:
-                        print("Diagram page: " + str(_new_diag))
-                        _open_diagram(new_problem)
-                    print("-" * 60)
-                    state = LearnerState(
-                        learner_id=learner_id,
-                        skill_id=item["skill_id"],
-                        current_session_id=session_id,
-                    )
-                    print()
-                    print("Commands:  quit  |  answer  (ask for more help)  |  just type your attempt")
-                    print("-" * 60)
-                    continue
-
-            # No other questions on this skill — end
-            print("(No more questions on this skill. Ending session.)")
-            break
-
-    # Session summary
-    try:
-        show_session_summary(store, learner_id, session_id, item["skill_id"], session_attempts)
-    except Exception:
-        pass
-
-    summary = logger.close()
-
-    # Close the store session and print mastery.
-    store.end_session(session_id)
-    try:
-        m = store.get_mastery(learner_id, item["skill_id"])
-        print("\n" + "=" * 60)
-        print("Mastery for", item["skill_id"] + ":", m["mastery_state"])
-        print("Sittings passed:", m["sittings_passed"])
-    except Exception:
-        pass
+    # ---- Clean shutdown ----
     store.close()
-
-    print("\n" + "=" * 60)
-    print("Session log: " + str(log_path))
-    print("SESSION_ENDED: " + str(summary))
-    print("Events: " + str(len(read_events(log_path))))
-    print("=" * 60)
+    print("\nTutor session ended. See you next time.")
 
 
 if __name__ == "__main__":

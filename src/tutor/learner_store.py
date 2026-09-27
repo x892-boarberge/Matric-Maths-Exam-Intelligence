@@ -107,8 +107,10 @@ class LearnerStore:
 
     # ---------- session ----------
 
-    def start_session(self, learner_id: str, skill_id: str) -> str:
-        session_id = "sess_" + uuid.uuid4().hex[:12]
+    def start_session(self, learner_id: str, skill_id: str,
+                      session_id: Optional[str] = None) -> str:
+        if session_id is None:
+            session_id = "sess_" + uuid.uuid4().hex[:12]
         self.conn.execute(
             "INSERT INTO session (session_id, learner_id, started_at, skill_id) "
             "VALUES (?, ?, ?, ?)",
