@@ -1,0 +1,90 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2025_P2_Q1.1,1,Compute a,1,"a=331397.20","a=331397.20|a=331397.2",statistics.regression,regression,A,false
+2025_P2_Q1.1,2,Compute b,1,"b=-22988.32","b=-22988.32",statistics.regression,regression,A,false
+2025_P2_Q1.1,3,Regression equation,1,"y_hat=331397.20-22988.32x","y_hat=331397.20-22988.32x|y=331397.20-22988.32x",statistics.regression,regression,A,true
+2025_P2_Q1.2,1,Substitute 5,1,"y_hat=331397.20-22988.32(5)","y_hat=331397.20-22988.32(5)",statistics.regression,regression,A,false
+2025_P2_Q1.2,2,Answer,1,"y_hat=216455.60","y_hat=216455.60|216455.60",statistics.regression,regression,A,true
+2025_P2_Q1.3,1,Strong correlation,1,"strong correlation","strong correlation|r=-0.95",statistics.regression,regression,A,false
+2025_P2_Q1.3,2,Valid prediction,1,valid,"valid|prediction is valid",statistics.regression,regression,A,true
+2025_P2_Q1.4,1,Average decrease,1,"22988.32","22988.32|R22988.32",statistics.regression,regression,A,true
+2025_P2_Q2.1.1,1,Total number of people,1,70,70,statistics.frequency,frequency,A,true
+2025_P2_Q2.1.2,1,Subtract,1,"67-40","67-40",statistics.frequency,frequency,A,false
+2025_P2_Q2.1.2,2,Answer,1,27,27,statistics.frequency,frequency,A,true
+2025_P2_Q2.1.4,1,Skew description,1,skewed right,"skewed to the right|positively skewed|skewed right",statistics.frequency,frequency,A,true
+2025_P2_Q2.2,1,Equation for mean,1,"(11+14+19+20+8+10+2+14+x)/9","(11+14+19+20+8+10+2+14+x)/9",statistics.mean,mean,A,false
+2025_P2_Q2.2,2,Solve for x,1,x=10,x=10,statistics.mean,mean,A,false
+2025_P2_Q2.2,3,Standard deviation,1,"sigma=5.23","sigma=5.23|5.23",statistics.stdev,stdev,A,false
+2025_P2_Q2.2,4,Interval,1,"(6.77;17.23)","(6.77;17.23)|6.77<x<17.23",statistics.stdev,stdev,A,false
+2025_P2_Q2.2,5,Answer count,1,3 players,"3 players|3",statistics.stdev,stdev,A,true
+2025_P2_Q3.1,1,Distance formula,1,"QR=sqrt((-4-12)^2+(-6-2)^2)","QR=sqrt((-4-12)^2+(-6-2)^2)",analytical.distance,distance,A,false
+2025_P2_Q3.1,2,Answer,1,"QR=8sqrt(5)","QR=8sqrt(5)|8√5",analytical.distance,distance,A,true
+2025_P2_Q3.2,1,Gradient formula,1,"m_QR=(-6-2)/(-4-12)","m_QR=(-6-2)/(-4-12)|m_QR=(2-(-6))/(12-(-4))",analytical.gradient,gradient,A,false
+2025_P2_Q3.2,2,Answer,1,"m_QR=1/2","m_QR=1/2",analytical.gradient,gradient,A,true
+2025_P2_Q3.3,1,tan theta = gradient,1,"tan theta=1/2","tan theta=1/2|tanθ=m_QR",analytical.gradient,gradient,A,false
+2025_P2_Q3.3,2,Answer theta,1,"theta=26.57","theta=26.57|θ=26.57",analytical.gradient,gradient,A,true
+2025_P2_Q3.4,1,Substitute point,1,"-6=1/2(-4)+c","-6=1/2(-4)+c",analytical.line,line,A,false
+2025_P2_Q3.4,2,Equation,1,"y=1/2x-4","y=1/2x-4",analytical.line,line,A,true
+2025_P2_Q3.5,1,x_s,1,"x_s=15","x_s=15",analytical.line,line,A,false
+2025_P2_Q3.5,2,y_s,1,"y_s=16","y_s=16|S(15;16)",analytical.line,line,A,true
+2025_P2_Q3.6,1,Gradient PT,1,"m_PT=-2","m_PT=-2",analytical.line,line,A,false
+2025_P2_Q3.6,2,Equation PT,1,"y=-2x+6","y=-2x+6",analytical.line,line,A,false
+2025_P2_Q3.6,3,Solve for x,1,x=4,x=4,analytical.line,line,A,false
+2025_P2_Q3.6,4,T coordinates,1,"T(4;-2)","T(4;-2)|T(4,-2)",analytical.line,line,A,true
+2025_P2_Q3.7,1,Length PT,1,"PT=5sqrt(5)","PT=5sqrt(5)|5√5",analytical.area,area,A,false
+2025_P2_Q3.7,2,Area of PQRS,1,"Area=200","Area=200|200 units^2",analytical.area,area,A,true
+2025_P2_Q4.1,1,Value of p,1,p=-6,"p=-6",analytical.circle,circle,A,true
+2025_P2_Q4.2,1,AM and MD,1,"AM=q+1; MD=q","AM=q+1; MD=q",analytical.circle,circle,A,false
+2025_P2_Q4.2,2,Pythagoras,1,"(q+1)^2=(q-1)^2+q^2","(q+1)^2=(q-1)^2+q^2",analytical.circle,circle,A,false
+2025_P2_Q4.2,3,Standard form,1,"q^2-4q=0","q^2-4q=0|q(q-4)=0",analytical.circle,circle,A,false
+2025_P2_Q4.2,4,Answer q,1,q=4,q=4,analytical.circle,circle,A,true
+2025_P2_Q4.3,1,LHS/RHS,1,"(x+6)^2+(y-4)^2=25","(x+6)^2+(y-4)^2=25",analytical.circle,circle,A,true
+2025_P2_Q4.4,1,Answer radius,1,3,3,analytical.circle,circle,A,true
+2025_P2_Q4.5,1,Substitute y=0,1,"(x+6)^2+(0-4)^2=25","(x+6)^2+(0-4)^2=25",analytical.circle,circle,A,false
+2025_P2_Q4.5,2,A coordinates,1,"A(-9;0)","A(-9;0)|A(-9,0)",analytical.circle,circle,A,false
+2025_P2_Q4.5,3,B coordinates,1,"B(-3;0)","B(-3;0)|B(-3,0)",analytical.circle,circle,A,true
+2025_P2_Q4.6,1,m_MB,1,"m_MB=-4/3","m_MB=-4/3",analytical.line,line,A,false
+2025_P2_Q4.6,2,m_BC,1,"m_BC=3/4","m_BC=3/4",analytical.line,line,A,false
+2025_P2_Q4.6,3,Substitute point,1,"0=3/4(-3)+c","0=3/4(-3)+c",analytical.line,line,A,false
+2025_P2_Q4.6,4,Answer,1,"y=3/4x+9/4","y=3/4x+9/4",analytical.line,line,A,true
+2025_P2_Q4.7,1,x_C,1,x_C=-6,"x_C=-6",analytical.circle,circle,A,false
+2025_P2_Q4.7,2,y_C,1,"y_C=-9/4","y_C=-9/4|y_C=-2.25",analytical.circle,circle,A,true
+2025_P2_Q4.8,1,tan alpha=3/4,1,"tan alpha=3/4","tan alpha=3/4",analytical.gradient,gradient,A,false
+2025_P2_Q4.8,2,alpha value,1,"alpha=36.87","alpha=36.87|α=36.87",analytical.gradient,gradient,A,false
+2025_P2_Q4.8,3,tan beta,1,"tan beta=-3/4","tan beta=-3/4",analytical.gradient,gradient,A,false
+2025_P2_Q4.8,4,beta value,1,"beta=143.13","beta=143.13|β=143.13",analytical.gradient,gradient,A,false
+2025_P2_Q4.8,5,Answer ACB,1,"ACB=106.26","ACB=106.26|ACB=106.26°",analytical.gradient,gradient,A,true
+2025_P2_Q5.1.1,1,Third side,1,"sqrt(k^2+1)","sqrt(k^2+1)|√(k²+1)",trig.identity,trig,A,false
+2025_P2_Q5.1.1,2,Answer cos40,1,"cos40=k/sqrt(k^2+1)","cos40=k/sqrt(k^2+1)",trig.identity,trig,A,true
+2025_P2_Q5.1.2,1,sin50 expression,1,"sin50=k/sqrt(k^2+1)","sin50=k/sqrt(k^2+1)",trig.identity,trig,A,false
+2025_P2_Q5.1.2,2,Double angle,1,"-2(1-2sin^2 25)","-2(1-2sin^2 25)|−2(1−2sin²25)",trig.identity,trig,A,false
+2025_P2_Q5.1.2,3,Substitute,1,"=sin50/-2cos50","sin50/-2cos50",trig.identity,trig,A,false
+2025_P2_Q5.1.2,4,Quotient identity,1,"=-1/2 tan50","-1/2 tan50",trig.identity,trig,A,false
+2025_P2_Q5.1.2,5,Answer,1,"=-k/2","-k/2|-1/2 k",trig.identity,trig,A,true
+2025_P2_Q5.1.3,1,sin10 = sin(50-40),1,"sin10=sin(50-40)","sin10=sin(50-40)",trig.identity,trig,A,false
+2025_P2_Q5.1.3,2,Expansion,1,"=sin50cos40-cos50sin40","sin50cos40-cos50sin40",trig.identity,trig,A,false
+2025_P2_Q5.1.3,3,Substitute,1,"=(k)(k)-(1)(1)","(k)(k)-(1)(1)",trig.identity,trig,A,false
+2025_P2_Q5.1.3,4,Answer,1,"=(k^2-1)/(k^2+1)","(k^2-1)/(k^2+1)",trig.identity,trig,A,true
+2025_P2_Q5.2.1,1,sin(540+x),1,"sin(540+x)=-sinx","sin(540+x)=-sinx",trig.reduction,trig,A,false
+2025_P2_Q5.2.1,2,cos(90+x),1,"cos(90+x)=-sinx","cos(90+x)=-sinx",trig.reduction,trig,A,false
+2025_P2_Q5.2.1,3,sin(-x),1,"sin(-x)=-sinx","sin(-x)=-sinx",trig.reduction,trig,A,false
+2025_P2_Q5.2.1,4,Answer,1,"=-sinx","-sinx",trig.reduction,trig,A,true
+2025_P2_Q5.2.2,1,State interval,2,"x in (180;360)","x in (180;360)|180<x<360",trig.reduction,trig,A,true
+2025_P2_Q7.1,1,State period,1,180,180,trig.graph,graph,A,true
+2025_P2_Q7.3,1,Substitute x+45,1,"h(x)=cos2(x+45)","h(x)=cos2(x+45)",trig.graph,graph,A,false
+2025_P2_Q7.3,2,Simplify,1,"=-sin2x","-sin2x",trig.graph,graph,A,true
+2025_P2_Q7.4,1,Range,1,"y in [-1;1]","y in [-1;1]|-1<=y<=1",trig.graph,graph,A,true
+2025_P2_Q7.5,1,tan2x=1,1,"tan2x=1","tan2x=1",trig.equation,trig,A,false
+2025_P2_Q7.5,2,x=22.5,1,"x=22.5","x=22.5|x=22.5°",trig.equation,trig,A,false
+2025_P2_Q7.5,3,First interval,1,"0<=x<=22.5","0<=x<=22.5|0°≤x≤22.5°",trig.equation,trig,A,false
+2025_P2_Q7.5,4,Second interval,1,"112.5<=x<135","112.5<=x<135|112.5°≤x<135°",trig.equation,trig,A,true
+2025_P2_Q8.1,1,BC=2AB,1,"BC=2AB","BC=2AB",trig.3d,trig3d,A,false
+2025_P2_Q8.1,2,Substitute into area,1,"648=2AB*AB","648=2AB*AB|648=2AB^2",trig.3d,trig3d,A,false
+2025_P2_Q8.1,3,AB value,1,AB=18,"AB=18",trig.3d,trig3d,A,true
+2025_P2_Q8.2,1,Substitute into Pythagoras,1,"AC^2=18^2+36^2","AC^2=18^2+36^2",trig.3d,trig3d,A,false
+2025_P2_Q8.2,2,Answer,1,"AC=18sqrt(5)","AC=18sqrt(5)|40.25",trig.3d,trig3d,A,true
+2025_P2_Q8.3,1,Sine rule,1,"KC/sin104=36/sin52.6","KC/sin104=36/sin52.6",trig.3d,trig3d,A,false
+2025_P2_Q8.3,2,Answer KC,1,KC=43.97,"KC=43.97|43.97",trig.3d,trig3d,A,true
+2025_P2_Q8.4,1,AK length,1,"AK=18sqrt(2)","AK=18sqrt(2)|25.46",trig.3d,trig3d,A,false
+2025_P2_Q8.4,2,Cosine rule,1,"43.97^2=(18sqrt(2))^2+(18sqrt(5))^2-2(18sqrt(2))(18sqrt(5))cosKAC","43.97^2=(18sqrt(2))^2+(18sqrt(5))^2-2(18sqrt(2))(18sqrt(5))cosKAC",trig.3d,trig3d,A,false
+2025_P2_Q8.4,3,Simplify,1,"cos KAC=0.16","cos KAC=0.16",trig.3d,trig3d,A,false
+2025_P2_Q8.4,4,Answer,1,"KAC=80.60","KAC=80.60|80.60",trig.3d,trig3d,A,true
