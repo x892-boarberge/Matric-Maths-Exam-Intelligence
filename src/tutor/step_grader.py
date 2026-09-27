@@ -15,6 +15,7 @@ def load_steps(csv_path: Path | None = None) -> dict[str, list[dict[str, Any]]]:
     with open(path, encoding="utf-8") as f:
         for row in csv.DictReader(f):
             qid = row["question_id"].strip()
+            mg = (row.get("method_group") or "A").strip() or "A"
             by_q.setdefault(qid, []).append({
                 "index": int(row["step_index"]),
                 "desc": row["step_description"].strip(),
@@ -23,11 +24,11 @@ def load_steps(csv_path: Path | None = None) -> dict[str, list[dict[str, Any]]]:
                 "forms": [x.strip() for x in row["acceptable_forms"].split("|") if x.strip()],
                 "skill_id": row["skill_id"].strip(),
                 "method_tag": row["method_tag"].strip(),
-                "method_group": row.get("method_group", "A").strip(),
+                "method_group": mg,
                 "is_final": str(row.get("is_final", "false")).strip().lower() == "true",
             })
     for qid in by_q:
-        by_q[qid].sort(key=lambda s: s["index"])
+        by_q[qid].sort(key=lambda s: (s["method_group"], s["index"]))
     return by_q
 
 
@@ -40,8 +41,7 @@ def _norm(s: str) -> str:
     s = s.replace("\u00d7", "*").replace("\u2212", "-").replace("\u2013", "-")
     s = s.replace("\u2234", " ").replace("\u2235", " ")
     s = re.sub(r"^\s*(therefore|so|hence|thus)\b\s*", "", s)
-    # Decimal comma -> period (SA/European notation). Do this before tokenising
-    # so "x=1,79" doesn't split into tokens "x=1" and "79".
+    # Decimal comma -> period (SA/European notation). Do this before tokenising.
     s = re.sub(r"(\d),(\d)", r"\1.\2", s)
     return s
 
@@ -61,8 +61,6 @@ def _line_matches(line: str, forms: list[str], is_final: bool = False) -> bool:
         if not ft:
             continue
         if is_final:
-            # Final-answer steps: form tokens must all appear in line tokens.
-            # Lets "x=1.79 or x=-1.12" satisfy both "x=1.79" and "x=-1.12" steps.
             if set(ft).issubset(lt_set):
                 return True
         else:
@@ -71,17 +69,7 @@ def _line_matches(line: str, forms: list[str], is_final: bool = False) -> bool:
     return False
 
 
-def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | None = None) -> dict[str, Any]:
-    steps_map = load_steps(csv_path)
-    steps = steps_map.get(question_id, [])
-    if not steps:
-        return {
-            "question_id": question_id,
-            "total_marks": 0,
-            "awarded_marks": 0,
-            "steps": [],
-            "feedback": "No step scheme for " + question_id,
-        }
+def _grade_group(steps: list[dict[str, Any]], learner_lines: list[str]):
     used: set[int] = set()
     results = []
     awarded = 0
@@ -107,6 +95,41 @@ def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | Non
             "learner_line": matched_line,
             "is_final": is_final,
         })
+    return awarded, results, used
+
+
+def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | None = None) -> dict[str, Any]:
+    steps_map = load_steps(csv_path)
+    steps = steps_map.get(question_id, [])
+    if not steps:
+        return {
+            "question_id": question_id,
+            "total_marks": 0,
+            "awarded_marks": 0,
+            "steps": [],
+            "feedback": "No step scheme for " + question_id,
+        }
+
+    groups: dict[str, list[dict[str, Any]]] = {}
+    for s in steps:
+        groups.setdefault(s["method_group"], []).append(s)
+
+    best_awarded = -1
+    best_results = None
+    best_used = None
+    best_group = None
+    for g_name, g_steps in groups.items():
+        awarded, results, used = _grade_group(g_steps, learner_lines)
+        if awarded > best_awarded:
+            best_awarded = awarded
+            best_results = results
+            best_used = used
+            best_group = g_steps
+
+    results = best_results
+    used = best_used
+    awarded = best_awarded
+    g_steps = best_group
 
     final_matched = any(r["matched"] and r["is_final"] for r in results)
     unmatched_lines = [ln for i, ln in enumerate(learner_lines) if i not in used]
@@ -120,7 +143,7 @@ def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | Non
         else:
             r["match_status"] = "NOT_MATCHED"
 
-    total = sum(s["marks"] for s in steps)
+    total = sum(s["marks"] for s in g_steps)
     missing = [r for r in results if r["match_status"] == "NOT_MATCHED"]
     uncertain = [r for r in results if r["match_status"] == "UNCERTAIN"]
 
