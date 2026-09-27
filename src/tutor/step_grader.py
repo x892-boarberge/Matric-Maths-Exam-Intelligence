@@ -51,6 +51,7 @@ def _norm(s: str) -> str:
     s = s.replace("\u2234", " ").replace("\u2235", " ")
     s = re.sub(r"^\s*(therefore|so|hence|thus)\b\s*", "", s)
     s = re.sub(r"^=+\s*", "", s)  # strip leading '=' (continuation lines)
+    s = s.replace("!=", "\u2260")  # != to ≠
     s = re.sub(r"(\d),(\d)", r"\1.\2", s)
     return s
 

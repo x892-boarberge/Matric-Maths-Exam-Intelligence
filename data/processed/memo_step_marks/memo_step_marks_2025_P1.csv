@@ -1,0 +1,141 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2025_P1_Q1.1.1,1,First root,1,x=-5,x=-5,algebra.quadratic.solve,factorise,A,true
+2025_P1_Q1.1.1,2,Second root,1,x=2,x=2,algebra.quadratic.solve,factorise,A,true
+2025_P1_Q1.1.2,1,Rearrange standard form,1,"5x^2+9x+2=0","5x^2+9x+2=0",algebra.quadratic.solve,formula,A,false
+2025_P1_Q1.1.2,2,Substitute into formula,1,"x=(-9±sqrt(41))/10","x=(-9±sqrt(41))/10|x=(-9±√41)/10",algebra.quadratic.solve,formula,A,false
+2025_P1_Q1.1.2,3,First root,1,x=-0.26,"x=-0.26|x=-0,26",algebra.quadratic.solve,formula,A,true
+2025_P1_Q1.1.2,4,Second root,1,x=-1.54,"x=-1.54|x=-1,54",algebra.quadratic.solve,formula,A,true
+2025_P1_Q1.1.3,1,Standard form,1,"8x^2-2x>0","8x^2-2x>0",algebra.quadratic.inequality,inequality,A,false
+2025_P1_Q1.1.3,2,Factorise,1,"2x(4x-1)>0","2x(4x-1)>0",algebra.quadratic.inequality,inequality,A,false
+2025_P1_Q1.1.3,3,Critical values,1,"x=0; x=1/4","x=0; x=1/4|x=0 or x=1/4",algebra.quadratic.inequality,inequality,A,false
+2025_P1_Q1.1.3,4,Solution,1,"x<0 or x>1/4","x<0 or x>1/4",algebra.quadratic.inequality,inequality,A,true
+2025_P1_Q1.1.4,1,Factorise,1,"(2.2^x-1)(2^x-4)=0","(2.2^x-1)(2^x-4)=0",algebra.exponential.solve,exponential,A,false
+2025_P1_Q1.1.4,2,Both equations,1,"2^x=1/2 or 2^x=4","2^x=1/2 or 2^x=4",algebra.exponential.solve,exponential,A,false
+2025_P1_Q1.1.4,3,First x,1,x=-1,x=-1,algebra.exponential.solve,exponential,A,true
+2025_P1_Q1.1.4,4,Second x,1,x=2,x=2,algebra.exponential.solve,exponential,A,true
+2025_P1_Q1.1.5,1,Square both sides,1,"1/sqrt(x)+2=(1/sqrt(x))^2","1/sqrt(x)+2=(1/sqrt(x))^2",algebra.surd.solve,surd,A,false
+2025_P1_Q1.1.5,2,Isolate surd,1,"1/sqrt(x)=1/sqrt(x)-2","1/sqrt(x)=1/sqrt(x)-2",algebra.surd.solve,surd,A,false
+2025_P1_Q1.1.5,3,Square again,1,"(1/sqrt(x))^2=(1/sqrt(x)-2)^2","(1/sqrt(x))^2=(1/sqrt(x)-2)^2",algebra.surd.solve,surd,A,false
+2025_P1_Q1.1.5,4,Standard form,1,"4x^2-5x+1=0","4x^2-5x+1=0",algebra.surd.solve,surd,A,false
+2025_P1_Q1.1.5,5,Answer with selection,1,"x=1/4","x=1/4|x≠1, x=1/4",algebra.surd.solve,surd,A,true
+2025_P1_Q1.2,1,Write eq 1,1,"x=y+2","x=y+2",algebra.simultaneous.solve,substitution,A,false
+2025_P1_Q1.2,2,Substitute into eq 2,1,"5(y+2)y=(y+2)^2+6","5(y+2)y=(y+2)^2+6",algebra.simultaneous.solve,substitution,A,false
+2025_P1_Q1.2,3,Standard form,1,"2y^2+3y-5=0","2y^2+3y-5=0",algebra.simultaneous.solve,substitution,A,false
+2025_P1_Q1.2,4,y-values,1,"y=-5/2 or y=1","y=-5/2 or y=1|y=1 or y=-5/2",algebra.simultaneous.solve,substitution,A,true
+2025_P1_Q1.2,5,x-values,1,"x=-1/2 or x=3","x=-1/2 or x=3|x=3 or x=-1/2",algebra.simultaneous.solve,substitution,A,true
+2025_P1_Q1.2,1,Write eq 1,1,"y=x-2","y=x-2",algebra.simultaneous.solve,substitution,B,false
+2025_P1_Q1.2,2,Substitute into eq 2,1,"5x(x-2)-6=x^2","5x(x-2)-6=x^2",algebra.simultaneous.solve,substitution,B,false
+2025_P1_Q1.2,3,Standard form,1,"2x^2-5x-3=0","2x^2-5x-3=0",algebra.simultaneous.solve,substitution,B,false
+2025_P1_Q1.2,4,x-values,1,"x=-1/2 or x=3","x=-1/2 or x=3|x=3 or x=-1/2",algebra.simultaneous.solve,substitution,B,true
+2025_P1_Q1.2,5,y-values,1,"y=-5/2 or y=1","y=-5/2 or y=1|y=1 or y=-5/2",algebra.simultaneous.solve,substitution,B,true
+2025_P1_Q2.1.1,1,Equate ratios,1,"(t-2)/(t+10)=(t+4)/(t-2)","(t-2)/(t+10)=(t+4)/(t-2)",sequences.geometric,geom,A,false
+2025_P1_Q2.1.1,2,Cross multiply,1,"(t-2)^2=(t+4)(t+10)","(t-2)^2=(t+4)(t+10)",sequences.geometric,geom,A,false
+2025_P1_Q2.1.1,3,Answer t,1,t=-2,t=-2,sequences.geometric,geom,A,true
+2025_P1_Q2.1.2,1,State a and r,1,"a=8; r=-1/2","8 and -1/2|a=8, r=-1/2",sequences.geometric,geom,A,false
+2025_P1_Q2.1.2,2,Substitute into Tn,1,"T25=8(-1/2)^24","T25=8(-1/2)^24",sequences.geometric,geom,A,false
+2025_P1_Q2.1.2,3,Answer in exponential form,1,"T25=(1/2)^21","T25=(1/2)^21|(2)^-21|(8)^-7|(128)^-3|(2097152)^-1",sequences.geometric,geom,A,true
+2025_P1_Q2.1.3,1,Substitute into S_inf,1,"S_inf=8/(1-(-1/2))","S_inf=8/(1-(-1/2))",sequences.geometric,geom,A,false
+2025_P1_Q2.1.3,2,Answer,1,"S_inf=16/3","S_inf=16/3|5.33",sequences.geometric,geom,A,true
+2025_P1_Q2.2.1,1,Compute T14-T6,1,"T14-T6=4x8","T14-T6=4x8|T14-T6=32",sequences.arithmetic,arith,A,false
+2025_P1_Q2.2.1,2,Answer,1,"=32","32",sequences.arithmetic,arith,A,true
+2025_P1_Q2.2.2,1,Number of terms,1,"n=118-k","n=118-k",sequences.arithmetic,arith,A,false
+2025_P1_Q2.2.2,2,Last term,1,"T117=467","T117=467",sequences.arithmetic,arith,A,false
+2025_P1_Q2.2.2,3,Substitute S formula,1,"S_(118-k)=(118-k)/2[4k-1+467]","S_(118-k)=(118-k)/2[4k-1+467]",sequences.arithmetic,arith,A,false
+2025_P1_Q2.2.2,4,Standard form,1,"2k^2-3k-819=0","2k^2-3k-819=0",sequences.arithmetic,arith,A,false
+2025_P1_Q2.2.2,5,Answer with selection,1,"k=21","k=21",sequences.arithmetic,arith,A,true
+2025_P1_Q3.1,1,First differences,1,"35; 33; 31; 29","35; 33; 31; 29|35 33 31 29",sequences.quadratic,arith,A,false
+2025_P1_Q3.1,2,Answer T5,1,T5=164,"T5=164|164",sequences.quadratic,arith,A,true
+2025_P1_Q3.2,1,2a=-2,1,"2a=-2","2a=-2",sequences.quadratic,arith,A,false
+2025_P1_Q3.2,2,3(-1)+b=35,1,"3(-1)+b=35","3(-1)+b=35",sequences.quadratic,arith,A,false
+2025_P1_Q3.2,3,-1+38+c=36,1,"-1+38+c=36","-1+38+c=36",sequences.quadratic,arith,A,false
+2025_P1_Q3.2,4,Write Tn,1,"Tn=-n^2+38n-1","Tn=-n^2+38n-1",sequences.quadratic,arith,A,true
+2025_P1_Q3.3,1,Method for n,1,"n=-38/(2(-1))","n=-38/(2(-1))|T_n'=-2n+38=0",sequences.quadratic,arith,A,false
+2025_P1_Q3.3,2,Value n,1,n=19,"n=19",sequences.quadratic,arith,A,false
+2025_P1_Q3.3,3,Answer T19,1,T19=360,"T19=360|360",sequences.quadratic,arith,A,true
+2025_P1_Q3.4,1,Solve for n,1,n=35,"n=35",sequences.quadratic,arith,A,true
+2025_P1_Q4.1,1,Compute t,1,t=-1,"t=-1",functions.log,log,A,true
+2025_P1_Q4.2,1,x-intercept A,1,"A(1;0)","A(1;0)|A(1,0)",functions.log,log,A,true
+2025_P1_Q4.3,1,Swap x and y,1,"x=log_(1/3) y","x=log_(1/3) y",functions.log,log,A,false
+2025_P1_Q4.3,2,Answer inverse,1,"y=3^-x","y=3^-x|y=(1/3)^x",functions.log,log,A,true
+2025_P1_Q4.4,1,Asymptote,1,y=0,"y=0",functions.log,log,A,true
+2025_P1_Q4.6,1,Range,1,"0<y<3","0<y<3|y in (0;3)",functions.log,log,A,true
+2025_P1_Q5.1,1,Domain,1,"x in R, x != 3","x in R, x≠3|x∈R, x≠3",functions.hyperbola,hyperbola,A,true
+2025_P1_Q5.2,1,Range,1,y<=8,"y<=8",functions.hyperbola,hyperbola,A,true
+2025_P1_Q5.3.1,1,Interval answer,2,"3<=x<=5","3<=x<=5|x in [3;5]",functions.hyperbola,hyperbola,A,true
+2025_P1_Q5.3.2,1,First interval,1,x<1,"x<1",functions.hyperbola,hyperbola,A,false
+2025_P1_Q5.3.2,2,Second interval,1,x>5,"x>5",functions.hyperbola,hyperbola,A,true
+2025_P1_Q5.4,1,p and q values,1,"p=3; q=8","p=3; q=8",functions.parabola,parabola,A,false
+2025_P1_Q5.4,2,Substitute point,1,"6=a(5-3)^2+8","6=a(5-3)^2+8",functions.parabola,parabola,A,false
+2025_P1_Q5.4,3,Simplify,1,"y=-1/2(x-3)^2+8","y=-1/2(x-3)^2+8",functions.parabola,parabola,A,true
+2025_P1_Q5.5,1,Find x-intercepts,1,"x^2-6x-7=0","x^2-6x-7=0",functions.parabola,parabola,A,false
+2025_P1_Q5.5,2,x=7 or x=-1,1,"x=7 or x=-1","x=7 or x=-1",functions.parabola,parabola,A,false
+2025_P1_Q5.5,3,M coordinates,1,"M(-1;0)","M(-1;0)|M(-1,0)",functions.parabola,parabola,A,false
+2025_P1_Q5.5,4,T coordinates,1,"T(7/2;0)","T(7/2;0)|T(3.5;0)",functions.parabola,parabola,A,false
+2025_P1_Q5.5,5,Length MT,1,"MT=9/2","MT=9/2|MT=4.5",functions.parabola,parabola,A,true
+2025_P1_Q5.6,1,Derivative,1,"f'(x)=-x+3","f'(x)=-x+3",calculus.polynomial,derivative,A,false
+2025_P1_Q5.6,2,Gradient at 5,1,"m=f'(5)=-2","m=f'(5)=-2",calculus.polynomial,derivative,A,false
+2025_P1_Q5.6,3,Substitute point,1,"6=-2(5)+c","6=-2(5)+c",calculus.polynomial,derivative,A,false
+2025_P1_Q5.6,4,Equation of tangent,1,"y=-2x+16","y=-2x+16",calculus.polynomial,derivative,A,true
+2025_P1_Q6.1,1,x-intercept,1,"(-p;0)","(-p;0)|(-p,0)",functions.hyperbola,hyperbola,A,true
+2025_P1_Q6.2,1,q=1+c,1,"q=1+c","q=1+c",functions.hyperbola,hyperbola,A,false
+2025_P1_Q6.2,2,f(x) form,1,"f(x)=a/(x+c)+1+c","f(x)=a/(x+c)+1+c",functions.hyperbola,hyperbola,A,false
+2025_P1_Q6.2,3,Solve a and c,1,"a=2; c=-2","a=2; c=-2|a=2, c=-2",functions.hyperbola,hyperbola,A,false
+2025_P1_Q6.2,4,q value,1,q=-1,"q=-1",functions.hyperbola,hyperbola,A,false
+2025_P1_Q6.2,5,Answer f,1,"f(x)=2/(x-2)-1","f(x)=2/(x-2)-1",functions.hyperbola,hyperbola,A,true
+2025_P1_Q6.3,1,Translation down,1,translate 1 down,"1 unit down|translation 1 unit down",functions.hyperbola,hyperbola,A,false
+2025_P1_Q6.3,2,Or right,1,translate 1 right,"1 unit right|translation 1 unit right",functions.hyperbola,hyperbola,A,true
+2025_P1_Q7.1,1,Substitute into compound,1,"A=40000(1+7.8%)^5","A=40000(1+7.8%)^5|A=40000(1+0.078)^5",finance.compound,finance,A,false
+2025_P1_Q7.1,2,Answer,1,A=58230.94,"A=58230.94|58230.94",finance.compound,finance,A,true
+2025_P1_Q7.2,1,i value,1,i=0.058/4,"i=0.058/4",finance.future_value,finance,A,false
+2025_P1_Q7.2,2,Substitute into F,1,"F=2300((1+0.058/4)^n-1)/(0.058/4)","F=2300((1+0.058/4)^n-1)/(0.058/4)",finance.future_value,finance,A,false
+2025_P1_Q7.2,3,Compute future value,1,F=66411.60,"F=66411.60|66411.60",finance.future_value,finance,A,false
+2025_P1_Q7.2,4,Answer,1,F=66411.60,"66411.60|F=66411.60",finance.future_value,finance,A,true
+2025_P1_Q7.3.1,1,Amount after 12 months,1,"A=900000(1+0.068/12)^12","A=900000(1+0.068/12)^12",finance.compound,finance,A,false
+2025_P1_Q7.3.1,2,Substitute P formula,1,"915386.86=10000[1-(1+0.068/12)^-n]/(0.068/12)","915386.86=10000[1-(1+0.068/12)^-n]/(0.068/12)",finance.present_value,finance,A,false
+2025_P1_Q7.3.1,3,Logs,1,"-n=log_(1+0.068/12)(0.4812)","-n=log_(1+0.068/12)(0.4812)",finance.present_value,finance,A,false
+2025_P1_Q7.3.1,4,n value,1,n=129.42,"n=129.42|n=129.419",finance.present_value,finance,A,false
+2025_P1_Q7.3.1,5,Final answer,1,n=133,"n=133|133",finance.present_value,finance,A,true
+2025_P1_Q7.3.2,1,Balance after 129,1,"P=4173.55","P=4173.55|4173.55",finance.present_value,finance,A,false
+2025_P1_Q7.3.2,2,Final payment,1,"=4197.21","=4197.21|4197.21",finance.present_value,finance,A,true
+2025_P1_Q8.1,1,f(x+h),1,"f(x+h)=-2(x+h)+3","f(x+h)=-2(x+h)+3",calculus.first_principles,first_principles,A,false
+2025_P1_Q8.1,2,Simplify numerator,1,"-2h","-2h",calculus.first_principles,first_principles,A,false
+2025_P1_Q8.1,3,Substitute into formula,1,"f'(x)=lim(-2h)/h","f'(x)=lim(-2h)/h",calculus.first_principles,first_principles,A,false
+2025_P1_Q8.1,4,Answer,1,-2,"-2",calculus.first_principles,first_principles,A,true
+2025_P1_Q8.2.1,1,First term,1,-12x^3,"-12x^3|-12x3",calculus.polynomial,derivative,A,false
+2025_P1_Q8.2.1,2,Second term,1,2,"2",calculus.polynomial,derivative,A,true
+2025_P1_Q8.2.2,1,Rewrite as 2x^2 + x^-2,1,"y=2x^2+x^-2","y=2x^2+x^-2",calculus.polynomial,derivative,A,false
+2025_P1_Q8.2.2,2,Derivative first term,1,"4x","4x",calculus.polynomial,derivative,A,false
+2025_P1_Q8.2.2,3,Derivative second term,1,"-2x^-3","-2x^-3",calculus.polynomial,derivative,A,true
+2025_P1_Q9.1,1,Find f prime,1,"f'(x)=3x^2-16x+5","f'(x)=3x^2-16x+5",calculus.cubic,derivative,A,false
+2025_P1_Q9.1,2,Set f prime = 0,1,"f'(x)=0","f'(x)=0|3x^2-16x+5=0",calculus.cubic,derivative,A,false
+2025_P1_Q9.1,3,x-value,1,"x=1/3 or x=5","x=1/3 or x=5|x=5 or x=1/3",calculus.cubic,derivative,A,false
+2025_P1_Q9.1,4,E coordinates,1,"E(5;-36)","E(5;-36)|E(5,-36)",calculus.cubic,derivative,A,true
+2025_P1_Q9.2,1,Second derivative,1,"f''(x)=6x-16","f''(x)=6x-16",calculus.cubic,derivative,A,false
+2025_P1_Q9.2,2,f''<0,1,"f''(x)<0","f''(x)<0|6x-16<0",calculus.cubic,derivative,A,false
+2025_P1_Q9.2,3,Answer,1,x<8/3,"x<8/3",calculus.cubic,derivative,A,true
+2025_P1_Q9.3,1,x-intercepts,1,"(-1;0) and (7;0)","(-1;0) and (7;0)|(-1,0) and (7,0)",calculus.cubic,derivative,A,false
+2025_P1_Q9.3,2,First interval,1,"-1<x<2","-1<x<2",calculus.cubic,derivative,A,false
+2025_P1_Q9.3,3,Second interval,1,"8/3<x<7","8/3<x<7",calculus.cubic,derivative,A,true
+2025_P1_Q9.4,1,Set up equation,1,"3x^2-16x+16=0","3x^2-16x+16=0|3x^2-16x+5=-11",calculus.cubic,derivative,A,false
+2025_P1_Q9.4,2,x-values,1,"x=4 or x=4/3","x=4 or x=4/3|x=4/3 or x=4",calculus.cubic,derivative,A,false
+2025_P1_Q9.4,3,First t,1,t=14,"t=14",calculus.cubic,derivative,A,false
+2025_P1_Q9.4,4,Second t,1,"t=634/27","t=634/27|23.48|23.48",calculus.cubic,derivative,A,true
+2025_P1_Q10.1,1,Equation for h,1,"2x+2h=50","2x+2h=50",calculus.optimisation,optimisation,A,false
+2025_P1_Q10.1,2,Radius relation,1,"r=x/(2pi)","r=x/(2pi)",calculus.optimisation,optimisation,A,false
+2025_P1_Q10.1,3,Substitute into V,1,"V=25x^2/(4pi)-x^3/(4pi)","V=25x^2/(4pi)-x^3/(4pi)",calculus.optimisation,optimisation,A,true
+2025_P1_Q10.2,1,Derivative=0,1,"50x-3x^2=0","50x-3x^2=0",calculus.optimisation,optimisation,A,false
+2025_P1_Q10.2,2,Factor,1,"x(50-3x)=0","x(50-3x)=0",calculus.optimisation,optimisation,A,false
+2025_P1_Q10.2,3,Answer with selection,1,"x=50/3","x=50/3|x=16.67",calculus.optimisation,optimisation,A,true
+2025_P1_Q11.1.1,1,Independence equation,1,"36/210=90/210 x e/210","36/210=90/210 x e/210|P(M and J)=P(M)P(J)",probability.independent,probability,A,false
+2025_P1_Q11.1.1,2,Solve for e,1,e=84,e=84,probability.independent,probability,A,true
+2025_P1_Q11.1.2,1,Find d,1,d=126,d=126,probability.tables,tables,A,false
+2025_P1_Q11.1.2,2,Find b,1,b=72,b=72,probability.tables,tables,A,false
+2025_P1_Q11.1.2,3,Answer,1,"72/210=12/35","72/210=12/35|12/35",probability.tables,tables,A,true
+2025_P1_Q11.2,1,Set up equation,1,"3/4(3x)+1/4 x=7/12","3/4(3x)+1/4 x=7/12",probability.tables,tables,A,false
+2025_P1_Q11.2,2,Solve,1,"30x=7","30x=7",probability.tables,tables,A,false
+2025_P1_Q11.2,3,x value,1,x=7/30,x=7/30,probability.tables,tables,A,false
+2025_P1_Q11.2,4,Answer cups,1,28 cups,"28 cups|28",probability.tables,tables,A,true
+2025_P1_Q11.3.1,1,n(S),1,"n(S)=7!","n(S)=7!|7!=504",probability.counting,counting,A,true
+2025_P1_Q11.3.2,1,Count outcomes,1,"5x6!+4x6!+3x6!+2x6!+1x6!","5x6!+4x6!+3x6!+2x6!+1x6!",probability.counting,counting,A,false
+2025_P1_Q11.3.2,2,Simplify,1,"6!(15)","6!(15)|15x720",probability.counting,counting,A,false
+2025_P1_Q11.3.2,3,Answer,1,15/56,"15/56|0.27",probability.counting,counting,A,true
