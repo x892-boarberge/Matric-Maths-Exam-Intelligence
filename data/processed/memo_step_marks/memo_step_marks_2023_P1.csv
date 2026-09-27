@@ -114,3 +114,41 @@ question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_i
 2023_P1_Q7.2.2,3,Derivative of second term,1,-10x^(-6),"-10x^(-6)|-10x^-6",calculus.polynomial,derivative,A,true
 2023_P1_Q7.3,1,Critical values,1,"x=-2/sqrt(3) or x=2/sqrt(3)","x=-2/sqrt(3) or x=2/sqrt(3)|x=2/sqrt(3) or x=-2/sqrt(3)|x=±2/sqrt(3)",calculus.inequality,inequality,A,false
 2023_P1_Q7.3,2,Interval answer,2,"-2/sqrt(3)<x<2/sqrt(3)","-2/sqrt(3)<x<2/sqrt(3)|-2/sqrt(3) < x < 2/sqrt(3)",calculus.inequality,inequality,A,true
+2023_P1_Q8.1,1,Find f prime of x,1,"f'(x)=-3x^2+12x-9","f'(x)=-3x^2+12x-9|-3x^2+12x-9|f'(x)=-3x2+12x-9",calculus.cubic,derivative,A,false
+2023_P1_Q8.1,2,Set derivative equal to zero,1,"f'(x)=0","f'(x)=0|-3x^2+12x-9=0",calculus.cubic,derivative,A,false
+2023_P1_Q8.1,3,Solve for x-values,1,"x=3 or x=1","x=3 or x=1|x=1 or x=3",calculus.cubic,derivative,A,false
+2023_P1_Q8.1,4,Compute both y-values,1,"(3;4) and (1;0)","(3;4) and (1;0)|(1;0) and (3;4)|(3,4) and (1,0)|(1,0) and (3,4)",calculus.cubic,derivative,A,true
+2023_P1_Q8.3,1,State range for k,2,"0<k<4","0<k<4|k in (0;4)|k∈(0;4)|k between 0 and 4",calculus.cubic,derivative,A,true
+2023_P1_Q8.4,1,Find second derivative,1,"f''(x)=-6x+12","f''(x)=-6x+12|-6x+12",calculus.cubic,derivative,A,false
+2023_P1_Q8.4,2,Set second derivative equal to zero,1,"f''(x)=0","f''(x)=0|-6x+12=0",calculus.cubic,derivative,A,false
+2023_P1_Q8.4,3,Solve for x,1,x=2,x=2,calculus.cubic,derivative,A,false
+2023_P1_Q8.4,4,Compute y-value,1,y=2,"y=2|(2;2)|(2,2)",calculus.cubic,derivative,A,false
+2023_P1_Q8.4,5,Gradient at point of inflection,1,"f'(2)=3","f'(2)=3|gradient=3|m=3",calculus.cubic,derivative,A,false
+2023_P1_Q8.4,6,Equation of tangent,1,"g(x)=3x-4","g(x)=3x-4|y=3x-4",calculus.cubic,derivative,A,true
+2023_P1_Q8.5,1,Write tangent of theta equals gradient,1,"tan theta=3","tan theta=3|tanθ=3",calculus.cubic,derivative,A,false
+2023_P1_Q8.5,2,Solve for theta,1,"theta=71.57","theta=71.57|θ=71.57|71.57",calculus.cubic,derivative,A,true
+2023_P1_Q9.1,1,Express b in terms of x,1,"b=432/x","b=432/x",calculus.optimisation,optimisation,A,false
+2023_P1_Q9.1,2,Set up A of x,2,"A(x)=(x+8)(432/x+6)","A(x)=(x+8)(432/x+6)|(x+8)(432/x+6)",calculus.optimisation,optimisation,A,true
+2023_P1_Q9.2,1,Rewrite with negative power,1,"A(x)=3456x^-1+6x+480","A(x)=3456x^-1+6x+480|3456x^-1+6x+480",calculus.optimisation,optimisation,A,false
+2023_P1_Q9.2,2,Differentiate A of x,1,"A'(x)=-3456/x^2+6","A'(x)=-3456/x^2+6|-3456/x^2+6",calculus.optimisation,optimisation,A,false
+2023_P1_Q9.2,3,Solve for x,1,x=24,x=24,calculus.optimisation,optimisation,A,true
+2023_P1_Q10.1.1,1,Formula for independent events,1,"P(A and B)=P(A)*P(B)","P(A and B)=P(A)*P(B)|P(A and B)=1/3*3/4",probability.independent,probability,A,false
+2023_P1_Q10.1.1,2,Compute answer,1,"P(A and B)=1/4","P(A and B)=1/4|1/4",probability.independent,probability,A,true
+2023_P1_Q10.1.2,1,Addition rule substitution,1,"P(A or B)=1/3+3/4-1/4","P(A or B)=1/3+3/4-1/4|P(A or B)=P(A)+P(B)-P(A and B)",probability.independent,probability,A,false
+2023_P1_Q10.1.2,2,Compute answer,1,"P(A or B)=5/6","P(A or B)=5/6|5/6",probability.independent,probability,A,true
+2023_P1_Q10.2.1,1,Tree diagram probabilities,1,"0.72; 0.28; 0.05; 0.95","0.72; 0.28; 0.05; 0.95",probability.tree,tree,A,true
+2023_P1_Q10.2.2,1,Compute first branch,1,"P(S; NOT below 0)=0.05*0.28","P(S; NOT below 0)=0.05*0.28",probability.tree,tree,A,false
+2023_P1_Q10.2.2,2,Compute second branch,1,"P(NS; NOT below 0)=0.95*0.65","P(NS; NOT below 0)=0.95*0.65",probability.tree,tree,A,false
+2023_P1_Q10.2.2,3,Total probability,1,"P(NOT below 0)=0.6315","P(NOT below 0)=0.6315|0.6315",probability.tree,tree,A,true
+2023_P1_Q10.3.1,1,Total permutations,1,"n(S)=10!","n(S)=10!|10!",probability.counting,counting,A,true
+2023_P1_Q10.3.2,1,Count valid arrangements,1,"4*2*8!","4*2*8!|4(2x8!x1)",probability.counting,counting,A,false
+2023_P1_Q10.3.2,2,Compute probability,1,"P=322560/10!","P=322560/10!|15/56",probability.counting,counting,A,false
+2023_P1_Q10.3.2,3,Simplify answer,1,"P=15/56","P=15/56|15/56",probability.counting,counting,A,true
+2023_P1_Q11.1.1,1,Algebra with powers,1,"n=8.81","n=8.81",algebra.sequences,arithmetic,A,true
+2023_P1_Q11.1.2,1,Second difference,1,"d=-3 or d=4","d=-3 or d=4|d=4 or d=-3",algebra.sequences,arithmetic,A,false
+2023_P1_Q11.1.2,2,Final answer,1,n=8,n=8,algebra.sequences,arithmetic,A,true
+2023_P1_Q11.2.1,1,Find k,1,k=9,k=9,algebra.sequences,arithmetic,A,false
+2023_P1_Q11.2.1,2,Compute Tk,1,"Tk=199","Tk=199",algebra.sequences,arithmetic,A,true
+2023_P1_Q11.3.1,1,k=21,1,k=21,k=21,algebra.sequences,arithmetic,A,true
+2023_P1_Q11.3.2,1,Count outcomes,1,"4(2*8!*1)","4(2*8!*1)|322560",probability.counting,counting,A,false
+2023_P1_Q11.3.2,2,Probability,1,"15/56","15/56|P=15/56",probability.counting,counting,A,true
