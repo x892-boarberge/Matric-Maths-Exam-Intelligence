@@ -53,3 +53,37 @@ question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_i
 2023_P1_Q3.2,3,Substitute into S_inf formula,1,"S_inf=3a/2","S_inf=3a/2|S_inf=a/(1-1/3)|S∞=3a/2|S∞=a/(1-1/3)",sequences.geometric,geom,A,false
 2023_P1_Q3.2,4,Set S22 equal to S_inf plus 734,1,"22a+693=3a/2+734","22a+693=3a/2+734|44a+1386=3a+1468",sequences.geometric,geom,A,false
 2023_P1_Q3.2,5,Solve for a,1,a=2,a=2,sequences.geometric,geom,A,true
+2023_P1_Q4.1,1,Write the asymptote,1,y=-4,y=-4,functions.exponential,exponential,A,true
+2023_P1_Q4.2,1,Set y equals zero,1,0=2^x-4,0=2^x-4,functions.exponential,exponential,A,false
+2023_P1_Q4.2,2,Solve for x-intercept,1,x=2,"x=2|B(2;0)|B(2,0)",functions.exponential,exponential,A,true
+2023_P1_Q4.3,1,Compute y-intercept,1,y=2^0-4=-3,"y=-3|y=2^0-4=-3|y=2^0-4|A(0;-3)|A(0,-3)",functions.exponential,exponential,A,false
+2023_P1_Q4.3,2,Find gradient,1,m=3/2,m=3/2,functions.exponential,exponential,A,false
+2023_P1_Q4.3,3,Write equation of k,1,"k(x)=3/2x-3","k(x)=3/2x-3|y=3/2x-3",functions.exponential,exponential,A,true
+2023_P1_Q4.4,1,Compute k(1),1,k(1)=-3/2,"k(1)=-3/2|k(1)=-1.5",functions.exponential,exponential,A,false
+2023_P1_Q4.4,2,Compute f(1),1,f(1)=-2,f(1)=-2,functions.exponential,exponential,A,false
+2023_P1_Q4.4,3,Vertical distance,1,1/2,"1/2|0.5",functions.exponential,exponential,A,true
+2023_P1_Q4.5,1,Write g(x),1,"g(x)=2^x","g(x)=2^x|y=2^x",functions.exponential,exponential,A,true
+2023_P1_Q4.6,1,State domain of inverse,1,"x in [1/4;16]","x in [1/4;16]|x∈[1/4;16]|1/4<=x<=16",functions.exponential,exponential,A,true
+2023_P1_Q4.7,1,Swap x and y,1,x=2^y,x=2^y,functions.exponential,exponential,A,false
+2023_P1_Q4.7,2,Write inverse,1,"g^-1(x)=log_2 x","g^-1(x)=log_2 x|g^-1(x)=log2x",functions.exponential,exponential,A,true
+2023_P1_Q5.1,1,State x-coordinate of turning point,1,x=1,x=1,functions.parabola,parabola,A,false
+2023_P1_Q5.1,2,State y-coordinate of turning point,1,y=8,"y=8|(1;8)|(1,8)",functions.parabola,parabola,A,true
+2023_P1_Q5.2,1,Substitute x=0 into f,1,"y=-1/2(0-1)^2+8","y=-1/2(0-1)^2+8|y=-1/2(0-1)2+8",functions.parabola,parabola,A,false
+2023_P1_Q5.2,2,Compute y-intercept,1,"C(0;15/2)","C(0;15/2)|C(0,15/2)|15/2|7.5",functions.parabola,parabola,A,true
+2023_P1_Q5.3,1,Substitute point,1,"8=d/1","8=d/1|d=8",functions.parabola,parabola,A,true
+2023_P1_Q5.4,1,State range excluding zero,1,"y != 0","y != 0|y≠0|y not equal 0",functions.parabola,parabola,A,true
+2023_P1_Q5.5,1,First interval,1,-3<=x<0,"-3<=x<0|-3≤x<0",functions.parabola,parabola,A,false
+2023_P1_Q5.5,2,Second interval,1,x>=5,"x>=5|x≥5",functions.parabola,parabola,A,false
+2023_P1_Q5.5,3,State both intervals,1,"-3<=x<0 or x>=5","-3<=x<0 or x>=5|-3≤x<0 or x≥5",functions.parabola,parabola,A,true
+2023_P1_Q5.6,1,Set functions equal,1,"-2x+k=8/x","-2x+k=8/x",functions.parabola,parabola,A,false
+2023_P1_Q5.6,2,Rearrange to standard form,1,"-2x^2+kx-8=0","-2x^2+kx-8=0|-2x2+kx-8=0",functions.parabola,parabola,A,false
+2023_P1_Q5.6,3,Discriminant less than zero,1,"k^2-64<0","k^2-64<0|k2-64<0",functions.parabola,parabola,A,false
+2023_P1_Q5.6,4,Solve inequality,1,"-8<k<8","-8<k<8",functions.parabola,parabola,A,true
+2023_P1_Q5.6,1,Set derivatives equal,1,"-8/x^2=-2","-8/x^2=-2",functions.parabola,parabola,B,false
+2023_P1_Q5.6,2,Solve for x-values,1,"x=2 or x=-2","x=2 or x=-2|x=±2",functions.parabola,parabola,B,false
+2023_P1_Q5.6,3,Tangent k at x=2,1,k=8,k=8,functions.parabola,parabola,B,false
+2023_P1_Q5.6,4,Conclude range,1,"-8<k<8","-8<k<8",functions.parabola,parabola,B,true
+2023_P1_Q5.7,1,Set h(x) equals 8/x,1,"-2x+8=8/x","-2x+8=8/x",functions.parabola,parabola,A,false
+2023_P1_Q5.7,2,Solve for x,1,"(x-2)^2=0","(x-2)^2=0|(x-2)2=0|x=2",functions.parabola,parabola,A,false
+2023_P1_Q5.7,3,Compute f(2) and h(2),1,"f(2)=15/2; h(2)=4","f(2)=15/2; h(2)=4|f(2)=7.5; h(2)=4",functions.parabola,parabola,A,false
+2023_P1_Q5.7,4,Compute t,1,"t=-7/2","t=-7/2|t=-3.5",functions.parabola,parabola,A,true
