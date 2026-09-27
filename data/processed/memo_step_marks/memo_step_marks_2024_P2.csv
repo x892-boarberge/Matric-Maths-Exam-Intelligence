@@ -1,0 +1,88 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2024_P2_Q1.1,1,Compute a,1,a=39.46,"a=39.46|a=39.456",statistics.regression,regression,A,false
+2024_P2_Q1.1,2,Compute b,1,b=-0.59,"b=-0.59|b=-0.590",statistics.regression,regression,A,false
+2024_P2_Q1.1,3,Equation,1,"y=39.46-0.59x","y=39.46-0.59x|y_hat=39.46-0.59x",statistics.regression,regression,A,true
+2024_P2_Q1.2,1,Correlation coefficient,1,r=-0.8,"r=-0.8",statistics.regression,regression,A,true
+2024_P2_Q1.3,1,Substitute 29,1,"y=39.46-0.59(29)","y=39.46-0.59(29)",statistics.regression,regression,A,false
+2024_P2_Q1.3,2,Answer,1,y=22.35,"y=22.35|22.35",statistics.regression,regression,A,true
+2024_P2_Q1.4,1,Predicted value,1,y=18.33,"y=18.33|18.33",statistics.regression,regression,A,true
+2024_P2_Q1.5,1,No influence,1,no influence,"no influence|stays the same|remains the same",statistics.stdev,stdev,A,true
+2024_P2_Q1.6,1,Identify member,1,6,6,statistics.regression,regression,A,false
+2024_P2_Q1.6,2,Difference,1,10,10,statistics.regression,regression,A,true
+2024_P2_Q2.1,1,State median,1,median=65,"median=65|65",statistics.quartiles,quartiles,A,true
+2024_P2_Q2.2,1,State Q1,1,Q1=44,"Q1=44|44",statistics.quartiles,quartiles,A,true
+2024_P2_Q2.3,1,State Q3,1,Q3=84,"Q3=84|84",statistics.quartiles,quartiles,A,false
+2024_P2_Q2.3,2,IQR,1,IQR=40,"IQR=40|40",statistics.quartiles,quartiles,A,true
+2024_P2_Q2.5,1,Count employees,1,34 employees,"34 employees|34",statistics.quartiles,quartiles,A,false
+2024_P2_Q2.5,2,Percentage,1,56.67%,"56.67%|56.67",statistics.quartiles,quartiles,A,true
+2024_P2_Q2.6,1,Number of intervals,1,3,"3",statistics.quartiles,quartiles,A,false
+2024_P2_Q2.6,2,Total time,1,90 minutes,"90 minutes|90 min|1.5 hours",statistics.quartiles,quartiles,A,true
+2024_P2_Q3.1,1,Gradient formula,1,"m_DC=(-9-0)/(3-(-9))","m_DC=(-9-0)/(3-(-9))|m_DC=(0-(-9))/(-9-3)",analytical.gradient,gradient,A,false
+2024_P2_Q3.1,2,Gradient answer,1,m_DC=-3/4,"m_DC=-3/4|m=−3/4",analytical.gradient,gradient,A,true
+2024_P2_Q3.2,1,Substitute point,1,"0=-3/4(-9)+c","0=-3/4(-9)+c",analytical.line,line,A,false
+2024_P2_Q3.2,2,Equation of DC,1,"y=-3/4x-27/4","y=-3/4x-27/4|y=-3/4x-6.75",analytical.line,line,A,true
+2024_P2_Q3.3,1,Substitute B into line,1,"k=-3/4(-1)-27/4","k=-3/4(-1)-27/4",analytical.line,line,A,false
+2024_P2_Q3.3,2,Answer k,1,k=-6,"k=-6",analytical.line,line,A,true
+2024_P2_Q3.4,1,Distance formula,1,"DC=sqrt((3+9)^2+(-9-0)^2)","DC=sqrt((3+9)^2+(-9-0)^2)",analytical.distance,distance,A,false
+2024_P2_Q3.4,2,Answer DC,1,DC=15,"DC=15|15 units",analytical.distance,distance,A,true
+2024_P2_Q3.5,1,DB length,1,DB=5,"DB=5",analytical.distance,distance,A,false
+2024_P2_Q3.5,2,Ratio DB/DC,1,DB/DC=1/3,"DB/DC=1/3|1/3",analytical.distance,distance,A,true
+2024_P2_Q3.6,1,Ratio DM/DA,1,"DM/DA=1/3","DM/DA=1/3",analytical.area,area,A,false
+2024_P2_Q3.6,2,Area rule,1,"Area MBD / Area ACD = 1/2(DM)(DB) sin D / 1/2(DA)(DC) sin D","1/2(DM)(DB)sinD/1/2(DA)(DC)sinD",analytical.area,area,A,false
+2024_P2_Q3.6,3,Substitute,1,"=1/3 x 1/3","1/3x1/3",analytical.area,area,A,false
+2024_P2_Q3.6,4,Answer ratio,1,=1/9,"1/9",analytical.area,area,A,true
+2024_P2_Q3.7,1,Gradient of AD,1,m_AD=-4,"m_AD=-4",analytical.line,line,A,false
+2024_P2_Q3.7,2,Equation AD,1,"y=-4x+3","y=-4x+3",analytical.line,line,A,false
+2024_P2_Q3.7,3,Substitute into circle,1,"(x-3)^2+(y+9)^2=612","(x-3)^2+(y+9)^2=612",analytical.circle,circle,A,false
+2024_P2_Q3.7,4,Standard form,1,"17x^2-102x-459=0","17x^2-102x-459=0|x^2-6x-27=0",analytical.circle,circle,A,false
+2024_P2_Q3.7,5,x-values,1,"x=9 or x=-3","x=9 or x=-3|x=-3 or x=9",analytical.circle,circle,A,false
+2024_P2_Q3.7,6,A coordinates,1,"A(-3;15)","A(-3;15)|A(-3,15)",analytical.circle,circle,A,true
+2024_P2_Q4.1,1,L coordinates,1,"L(-1;-3)","L(-1;-3)|L(-1,-3)",analytical.circle,circle,A,true
+2024_P2_Q4.2,1,Gradient MP,1,m_MP=3,"m_MP=3",analytical.line,line,A,false
+2024_P2_Q4.2,2,Gradient ST,1,m_ST=-1/3,"m_ST=-1/3",analytical.line,line,A,false
+2024_P2_Q4.2,3,Substitute point,1,"9=-1/3(3)+c","9=-1/3(3)+c",analytical.line,line,A,false
+2024_P2_Q4.2,4,Equation of tangent,1,"y=-1/3x+10","y=-1/3x+10",analytical.line,line,A,true
+2024_P2_Q4.3,1,Substitute point for r2,1,"(3-1)^2+(9-3)^2=r^2","(3-1)^2+(9-3)^2=r^2",analytical.circle,circle,A,false
+2024_P2_Q4.3,2,Value of r squared,1,r^2=40,"r^2=40",analytical.circle,circle,A,false
+2024_P2_Q4.3,3,LHS of equation,1,"(x-1)^2+(y-3)^2=40","(x-1)^2+(y-3)^2=40",analytical.circle,circle,A,false
+2024_P2_Q4.3,4,Expand to general form,1,"x^2+y^2-2x-6y-30=0","x^2+y^2-2x-6y-30=0",analytical.circle,circle,A,true
+2024_P2_Q4.4,1,Substitute y=1,1,"d^2+(1)^2-2d-6(1)-30=0","d^2+(1)^2-2d-6(1)-30=0",analytical.circle,circle,A,false
+2024_P2_Q4.4,2,Standard form,1,"d^2-2d-35=0","d^2-2d-35=0",analytical.circle,circle,A,false
+2024_P2_Q4.4,3,Answer d,1,d=7,"d=7",analytical.circle,circle,A,true
+2024_P2_Q4.5,1,tan angle POV,1,"tan POV=3","tan POV=3|tanPOV=m_PO",analytical.gradient,gradient,A,false
+2024_P2_Q4.5,2,Angle POV,1,POV=71.57,"POV=71.57|POV=71.565",analytical.gradient,gradient,A,false
+2024_P2_Q4.5,3,Gradient RL,1,m_RL=1/2,"m_RL=1/2",analytical.gradient,gradient,A,false
+2024_P2_Q4.5,4,Angle RUN,1,RUN=26.57,"RUN=26.57|RUN=26.565",analytical.gradient,gradient,A,false
+2024_P2_Q4.5,5,Angle L,1,L=45,"L=45|L_hat=45|angle L=45",analytical.gradient,gradient,A,true
+2024_P2_Q4.6,1,Gradient RM,1,m_RM=-1/3,"m_RM=-1/3",analytical.line,line,A,false
+2024_P2_Q4.6,2,Gradient RT,1,m_RT=3,"m_RT=3",analytical.line,line,A,false
+2024_P2_Q4.6,3,Product equals -1,1,"m_RT x m_PT=-1","m_RT x m_PT=-1|m_RT*m_PT=-1",analytical.line,line,A,false
+2024_P2_Q4.6,4,Conclude perpendicular,1,"PT perp RT","PT ⟂ RT|PT perp RT|PT perpendicular RT",analytical.line,line,A,true
+2024_P2_Q5.1.1,1,Value of r,1,r=5,r=5,trig.unitcircle,trig,A,false
+2024_P2_Q5.1.1,2,Cos A,1,"cos A=-3/5","cosA=-3/5|cos A=-3/5",trig.unitcircle,trig,A,true
+2024_P2_Q5.1.2,1,Double angle formula,1,"cos 2A=2cos^2 A-1","cos2A=2cos^2A-1|cos2A=2cos2A-1",trig.identity,trig,A,false
+2024_P2_Q5.1.2,2,Substitute,1,"=2(-3/5)^2-1","2(-3/5)^2-1",trig.identity,trig,A,false
+2024_P2_Q5.1.2,3,Answer,1,"cos 2A=-7/25","cos2A=-7/25|-7/25",trig.identity,trig,A,true
+2024_P2_Q5.1.3,1,State x,1,x=-3,x=-3,trig.identity,trig,A,false
+2024_P2_Q5.1.3,2,Compound formula,1,"sin(A-B)=sinA cosB-cosA sinB","sin(A-B)=sinAcosB-cosAsinB",trig.identity,trig,A,false
+2024_P2_Q5.1.3,3,Substitute values,1,"=(-4/5)(-3/5)-(-3/5)(4/5)","(-4/5)(-3/5)-(-3/5)(4/5)",trig.identity,trig,A,false
+2024_P2_Q5.1.3,4,Answer,1,"sin(A-B)=24/25","sin(A-B)=24/25|24/25",trig.identity,trig,A,true
+2024_P2_Q5.2,1,Multiply by 2 over 2,1,"x2/2","x2/2|multiply by 2/2",trig.identity,trig,A,false
+2024_P2_Q5.2,2,Double angle,1,"=sin(a-90)/4","sin(a-90)/4",trig.identity,trig,A,false
+2024_P2_Q5.2,3,Co-function,1,"=-cos a/4","-cosa/4|-cos alpha/4",trig.identity,trig,A,false
+2024_P2_Q5.2,4,Answer,1,"=-p/4","-p/4",trig.identity,trig,A,true
+2024_P2_Q7.1,1,State x,1,x=90,"x=90|x=90°",trig.graph,graph,A,true
+2024_P2_Q7.2,1,State interval,2,"x=-180 or x in (-90;0]","x=-180 or x in (-90;0]|x=-180° or -90°<x≤0°",trig.graph,graph,A,true
+2024_P2_Q7.3.1,1,State period,1,period=180,"period=180|180",trig.graph,graph,A,true
+2024_P2_Q7.4,1,Rewrite 2cos^2x as tanx,1,"2cos^2x=tanx","2cos^2x=tanx",trig.equation,trig,A,false
+2024_P2_Q7.4,2,Use cos2x,1,"cos2x+1=tanx","cos2x+1=tanx",trig.equation,trig,A,false
+2024_P2_Q7.4,3,Answer,1,"x=45+k.180","x=45+k.180|x=45°+k.180°",trig.equation,trig,A,true
+2024_P2_Q8.1,1,Trig ratio,1,"tan DAC=DC/AC","tan DAC=DC/AC|tanDAC=16/AC",trig.3d,trig3d,A,false
+2024_P2_Q8.1,2,Answer AC,1,AC=15,"AC=15|AC=15m",trig.3d,trig3d,A,true
+2024_P2_Q8.2,1,Cosine rule,1,"(19)^2=x^2+(15)^2-2x(15)cos105.61","19^2=x^2+15^2-2(15)x cos105.61|(19)^2=x^2+(15)^2-2x(15)cos105.61|(19)^2=x^2+(15)^2-2(x)(15)cos105.61",trig.3d,trig3d,A,false
+2024_P2_Q8.2,2,Quadratic form,1,"x^2+8.07x-136=0","x^2+8.07x-136=0",trig.3d,trig3d,A,false
+2024_P2_Q8.2,3,Quadratic formula,1,"x=(-8.07±sqrt(8.07^2-4(1)(-136)))/2","x=(-8.07±sqrt(8.07^2-4(1)(-136)))/2",trig.3d,trig3d,A,false
+2024_P2_Q8.2,4,Length BC,1,BC=8.30,"BC=8.30|BC=8.3",trig.3d,trig3d,A,false
+2024_P2_Q8.2,5,Angle BEC,1,BEC=58,"BEC=58|BEC=58°",trig.3d,trig3d,A,false
+2024_P2_Q8.2,6,Length EC,1,EC=5.19,"EC=5.19|EC=5.2",trig.3d,trig3d,A,false
+2024_P2_Q8.2,7,Length DE,1,DE=10.81,"DE=10.81|DE=10.8",trig.3d,trig3d,A,true
