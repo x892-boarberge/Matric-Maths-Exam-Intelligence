@@ -1,8 +1,5 @@
 """
 Test harness for step_grader.py
-
-Run:  python tests/test_step_grader.py
-Exit code 0 if all cases pass, 1 otherwise.
 """
 from __future__ import annotations
 import sys
@@ -82,16 +79,16 @@ CASES = [
 
     # ---- 2023 P1 Q1.1.2 (formula) ----
     ("Q1.1.2 / 01 perfect separate roots", "2023_P1_Q1.1.2",
-     ["3x^2-2x-6=0", "x=(2±√76)/6", "x=1.79", "x=-1.12"],
+     ["3x^2-2x-6=0", "x=(2\u00b1\u221a76)/6", "x=1.79", "x=-1.12"],
      4, [], "", False),
     ("Q1.1.2 / 02 perfect roots on one line", "2023_P1_Q1.1.2",
-     ["3x^2-2x-6=0", "x=(2±√76)/6", "x=1.79 or x=-1.12"],
+     ["3x^2-2x-6=0", "x=(2\u00b1\u221a76)/6", "x=1.79 or x=-1.12"],
      4, [], "", False),
     ("Q1.1.2 / 03 standard form only", "2023_P1_Q1.1.2",
      ["3x^2-2x-6=0"],
      1, [2, 3, 4], "", False),
     ("Q1.1.2 / 04 standard form + formula", "2023_P1_Q1.1.2",
-     ["3x^2-2x-6=0", "x=(2±√76)/6"],
+     ["3x^2-2x-6=0", "x=(2\u00b1\u221a76)/6"],
      2, [3, 4], "", False),
     ("Q1.1.2 / 05 answers only both roots", "2023_P1_Q1.1.2",
      ["x=1.79 or x=-1.12"],
@@ -100,10 +97,36 @@ CASES = [
      ["x=1.79"],
      1, [1, 2, 4], "", False),
     ("Q1.1.2 / 07 wrong rounding", "2023_P1_Q1.1.2",
-     ["3x^2-2x-6=0", "x=(2±√76)/6", "x=1.8 or x=-1.1"],
+     ["3x^2-2x-6=0", "x=(2\u00b1\u221a76)/6", "x=1.8 or x=-1.1"],
      2, [3, 4], "", False),
     ("Q1.1.2 / 08 comma decimal notation", "2023_P1_Q1.1.2",
-     ["3x^2-2x-6=0", "x=(2±√76)/6", "x=1,79 or x=-1,12"],
+     ["3x^2-2x-6=0", "x=(2\u00b1\u221a76)/6", "x=1,79 or x=-1,12"],
+     4, [], "", False),
+
+    # ---- 2023 P1 Q1.1.3 (surd) ----
+    ("Q1.1.3 / 01 perfect working with rejection", "2023_P1_Q1.1.3",
+     ["2x+1=(x-1)^2", "x^2-4x=0", "x=0 or x=4", "x=4"],
+     4, [], "", False),
+    ("Q1.1.3 / 02 perfect compact", "2023_P1_Q1.1.3",
+     ["2x+1=(x-1)^2", "x(x-4)=0", "x=0 or x=4", "x=4 only"],
+     4, [], "", False),
+    ("Q1.1.3 / 03 both roots, no rejection", "2023_P1_Q1.1.3",
+     ["2x+1=(x-1)^2", "x^2-4x=0", "x=0 or x=4"],
+     3, [4], "", False),
+    ("Q1.1.3 / 04 answer only", "2023_P1_Q1.1.3",
+     ["x=4"],
+     1, [1, 2, 3], "", False),
+    ("Q1.1.3 / 05 no rejection, wrong root given", "2023_P1_Q1.1.3",
+     ["2x+1=(x-1)^2", "x^2-4x=0", "x=0 or x=4", "x=0"],
+     3, [4], "", False),
+    ("Q1.1.3 / 06 squaring only", "2023_P1_Q1.1.3",
+     ["2x+1=(x-1)^2"],
+     1, [2, 3, 4], "", False),
+    ("Q1.1.3 / 07 standard form only", "2023_P1_Q1.1.3",
+     ["x^2-4x=0"],
+     1, [1, 3, 4], "", False),
+    ("Q1.1.3 / 08 reversed candidate order", "2023_P1_Q1.1.3",
+     ["2x+1=(x-1)^2", "x^2-4x=0", "x=4 or x=0", "x=4"],
      4, [], "", False),
 ]
 
