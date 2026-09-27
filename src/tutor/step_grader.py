@@ -40,6 +40,9 @@ def _norm(s: str) -> str:
     s = s.replace("\u00d7", "*").replace("\u2212", "-").replace("\u2013", "-")
     s = s.replace("\u2234", " ").replace("\u2235", " ")
     s = re.sub(r"^\s*(therefore|so|hence|thus)\b\s*", "", s)
+    # Decimal comma -> period (SA/European notation). Do this before tokenising
+    # so "x=1,79" doesn't split into tokens "x=1" and "79".
+    s = re.sub(r"(\d),(\d)", r"\1.\2", s)
     return s
 
 
@@ -48,13 +51,23 @@ def _tokens(s: str) -> list[str]:
     return sorted(re.sub(r"\s+", "", p) for p in parts if p.strip())
 
 
-def _line_matches(line: str, forms: list[str]) -> bool:
+def _line_matches(line: str, forms: list[str], is_final: bool = False) -> bool:
     lt = _tokens(line)
     if not lt:
         return False
+    lt_set = set(lt)
     for form in forms:
-        if _tokens(form) == lt:
-            return True
+        ft = _tokens(form)
+        if not ft:
+            continue
+        if is_final:
+            # Final-answer steps: form tokens must all appear in line tokens.
+            # Lets "x=1.79 or x=-1.12" satisfy both "x=1.79" and "x=-1.12" steps.
+            if set(ft).issubset(lt_set):
+                return True
+        else:
+            if ft == lt:
+                return True
     return False
 
 
@@ -72,17 +85,18 @@ def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | Non
     used: set[int] = set()
     results = []
     awarded = 0
-
     for step in steps:
         matched = False
         matched_line = None
+        is_final = step.get("is_final", False)
         for i, line in enumerate(learner_lines):
-            if i in used:
+            if i in used and not is_final:
                 continue
-            if _line_matches(line, step["forms"]):
+            if _line_matches(line, step["forms"], is_final=is_final):
                 matched = True
                 matched_line = line
-                used.add(i)
+                if not is_final:
+                    used.add(i)
                 awarded += step["marks"]
                 break
         results.append({
@@ -91,13 +105,9 @@ def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | Non
             "marks": step["marks"],
             "matched": matched,
             "learner_line": matched_line,
-            "is_final": step.get("is_final", False),
+            "is_final": is_final,
         })
 
-    # --- UNCERTAIN detection -------------------------------------------------
-    # If the final step matched (answer is right) but there are leftover
-    # learner lines containing method-signalling tokens (sqrt, +/-, formula
-    # markers), the unmatched steps likely used an alternate valid method.
     final_matched = any(r["matched"] and r["is_final"] for r in results)
     unmatched_lines = [ln for i, ln in enumerate(learner_lines) if i not in used]
     has_method_evidence = any(_METHOD_MARKERS.search(ln) for ln in unmatched_lines)
@@ -132,19 +142,3 @@ def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | Non
         "steps": results,
         "feedback": feedback,
     }
-
-
-if __name__ == "__main__":
-    demo = grade_steps("2023_P1_Q1.1.1", ["(x+4)(x-3)=0", "x=-4 or x=3"])
-    print(demo["feedback"])
-    for s in demo["steps"]:
-        print(s)
-
-    print()
-    alt = grade_steps(
-        "2023_P1_Q1.1.1",
-        ["x = (-1 +/- sqrt(49))/2", "x = (-1 +/- 7)/2", "x = 3 or x = -4"],
-    )
-    print(alt["feedback"])
-    for s in alt["steps"]:
-        print(s)
