@@ -41,7 +41,6 @@ def _norm(s: str) -> str:
     s = s.replace("\u00d7", "*").replace("\u2212", "-").replace("\u2013", "-")
     s = s.replace("\u2234", " ").replace("\u2235", " ")
     s = re.sub(r"^\s*(therefore|so|hence|thus)\b\s*", "", s)
-    # Decimal comma -> period (SA/European notation). Do this before tokenising.
     s = re.sub(r"(\d),(\d)", r"\1.\2", s)
     return s
 
@@ -69,7 +68,7 @@ def _line_matches(line: str, forms: list[str], is_final: bool = False) -> bool:
     return False
 
 
-def _grade_group(steps: list[dict[str, Any]], learner_lines: list[str]):
+def _grade_group(steps, learner_lines):
     used: set[int] = set()
     results = []
     awarded = 0
@@ -110,29 +109,31 @@ def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | Non
             "feedback": "No step scheme for " + question_id,
         }
 
-    groups: dict[str, list[dict[str, Any]]] = {}
+    groups: dict[str, list] = {}
     for s in steps:
         groups.setdefault(s["method_group"], []).append(s)
 
     best_awarded = -1
     best_results = None
-    best_used = None
     best_group = None
     for g_name, g_steps in groups.items():
         awarded, results, used = _grade_group(g_steps, learner_lines)
         if awarded > best_awarded:
             best_awarded = awarded
             best_results = results
-            best_used = used
             best_group = g_steps
 
     results = best_results
-    used = best_used
     awarded = best_awarded
     g_steps = best_group
 
+    # UNCERTAIN heuristic: only look at learner lines that no step matched.
+    # Uses learner_line values from results, so lines consumed by final steps
+    # (which don't add to `used`) are still excluded from the "leftover" check.
+    matched_values = {r["learner_line"] for r in results if r["matched"]}
+    unmatched_lines = [ln for ln in learner_lines if ln not in matched_values]
+
     final_matched = any(r["matched"] and r["is_final"] for r in results)
-    unmatched_lines = [ln for i, ln in enumerate(learner_lines) if i not in used]
     has_method_evidence = any(_METHOD_MARKERS.search(ln) for ln in unmatched_lines)
 
     for r in results:

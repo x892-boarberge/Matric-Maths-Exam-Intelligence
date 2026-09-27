@@ -87,3 +87,30 @@ question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_i
 2023_P1_Q5.7,2,Solve for x,1,"(x-2)^2=0","(x-2)^2=0|(x-2)2=0|x=2",functions.parabola,parabola,A,false
 2023_P1_Q5.7,3,Compute f(2) and h(2),1,"f(2)=15/2; h(2)=4","f(2)=15/2; h(2)=4|f(2)=7.5; h(2)=4",functions.parabola,parabola,A,false
 2023_P1_Q5.7,4,Compute t,1,"t=-7/2","t=-7/2|t=-3.5",functions.parabola,parabola,A,true
+2023_P1_Q6.1.1,1,State n,1,n=6,n=6,finance.compound,finance,A,false
+2023_P1_Q6.1.1,2,Substitute into A=P(1+i)^n,1,"19319.48=18500(1+r/1200)^6","19319.48=18500(1+r/1200)^6|19319.48=18500(1+r/1200)6",finance.compound,finance,A,false
+2023_P1_Q6.1.1,3,Solve for r,1,r=8.7%,"r=8.7%|r=8.7|r=0.087",finance.compound,finance,A,true
+2023_P1_Q6.1.2,1,Substitute into nominal rate formula,1,"1+i/100=(1+8.7/1200)^12","1+i/100=(1+8.7/1200)^12|1+i/100=(1+8.7/1200)12",finance.compound,finance,A,false
+2023_P1_Q6.1.2,2,Solve for effective rate,1,r=9.06%,"r=9.06%|r=9.06|r=0.0906",finance.compound,finance,A,true
+2023_P1_Q6.2.1,1,Substitute into A=P(1-in),1,"0=10000(1-0.2n)","0=10000(1-0.2n)",finance.simple,finance,A,false
+2023_P1_Q6.2.1,2,Solve for n,1,n=5,n=5,finance.simple,finance,A,true
+2023_P1_Q6.2.2,1,State i,1,i=8.7/1200,i=8.7/1200,finance.future_value,finance,A,false
+2023_P1_Q6.2.2,2,State n,1,n=60,n=60,finance.future_value,finance,A,false
+2023_P1_Q6.2.2,3,Substitute into F formula,1,"20000=x[(1+8.7/1200)^60-1]/(8.7/1200)","20000=x[(1+8.7/1200)^60-1]/(8.7/1200)",finance.future_value,finance,A,false
+2023_P1_Q6.2.2,4,Solve for x,1,x=267.26,"x=267.26|x=R267.26|x=267",finance.future_value,finance,A,true
+2023_P1_Q6.3,1,State i,1,i=0.112/12,i=0.112/12,finance.present_value,finance,A,false
+2023_P1_Q6.3,2,Substitute into P formula,1,"1600000=20000[1-(1+0.112/12)^-n]/(0.112/12)","1600000=20000[1-(1+0.112/12)^-n]/(0.112/12)",finance.present_value,finance,A,false
+2023_P1_Q6.3,3,Use logs,1,"-n=log_(1+0.112/12)(19/75)","-n=log_(1+0.112/12)(19/75)|log_(1+0.112/12)(19/75)|-n=log(1+0.112/12)^(19/75)",finance.present_value,finance,A,false
+2023_P1_Q6.3,4,Compute -n,1,-n=-147.80,-n=-147.80,finance.present_value,finance,A,false
+2023_P1_Q6.3,5,Answer n,1,n=147,"n=147|147 withdrawals|147",finance.present_value,finance,A,true
+2023_P1_Q7.1,1,Substitute into first-principles formula,1,"f'(x)=lim(f(x+h)-f(x))/h","f'(x)=lim(f(x+h)-f(x))/h|lim(f(x+h)-f(x))/h|f'(x)=lim (f(x+h)-f(x))/h",calculus.first_principles,first_principles,A,false
+2023_P1_Q7.1,2,Expand f(x+h),1,"f(x+h)=-4x^2-8xh-4h^2","f(x+h)=-4x^2-8xh-4h^2|f(x+h)=-4x2-8xh-4h2",calculus.first_principles,first_principles,A,false
+2023_P1_Q7.1,3,Simplify numerator,1,"-8xh-4h^2","-8xh-4h^2|-8xh-4h2",calculus.first_principles,first_principles,A,false
+2023_P1_Q7.1,4,Factor out h,1,"h(-8x-4h)","h(-8x-4h)",calculus.first_principles,first_principles,A,false
+2023_P1_Q7.1,5,Final answer,1,-8x,-8x,calculus.first_principles,first_principles,A,true
+2023_P1_Q7.2.1,1,Derivative of f,2,"f'(x)=6x^2-3","f'(x)=6x^2-3|6x^2-3|6x^2 - 3",calculus.polynomial,derivative,A,true
+2023_P1_Q7.2.2,1,Rewrite as rational exponent,1,x^(2/3),x^(2/3),calculus.polynomial,derivative,A,false
+2023_P1_Q7.2.2,2,Derivative of first term,1,(14/3)x^(-1/3),(14/3)x^(-1/3),calculus.polynomial,derivative,A,false
+2023_P1_Q7.2.2,3,Derivative of second term,1,-10x^(-6),"-10x^(-6)|-10x^-6",calculus.polynomial,derivative,A,true
+2023_P1_Q7.3,1,Critical values,1,"x=-2/sqrt(3) or x=2/sqrt(3)","x=-2/sqrt(3) or x=2/sqrt(3)|x=2/sqrt(3) or x=-2/sqrt(3)|x=±2/sqrt(3)",calculus.inequality,inequality,A,false
+2023_P1_Q7.3,2,Interval answer,2,"-2/sqrt(3)<x<2/sqrt(3)","-2/sqrt(3)<x<2/sqrt(3)|-2/sqrt(3) < x < 2/sqrt(3)",calculus.inequality,inequality,A,true
