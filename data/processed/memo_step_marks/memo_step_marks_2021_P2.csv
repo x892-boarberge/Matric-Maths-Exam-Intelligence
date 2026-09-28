@@ -1,0 +1,128 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2021_P2_Q1.1.1,1,Sum,1,396,396,statistics.mean,mean,A,false
+2021_P2_Q1.1.1,2,Mean,1,x=22,"x=22|22",statistics.mean,mean,A,true
+2021_P2_Q1.1.2,1,Sigma,1,10.17,"10.17|10.1707",statistics.stdev,stdev,A,true
+2021_P2_Q1.1.3,1,x+sigma,1,32.17,"32.17|x+sigma=32.17",statistics.stdev,stdev,A,false
+2021_P2_Q1.1.3,2,Count days,1,5,"5|5 days",statistics.stdev,stdev,A,true
+2021_P2_Q1.2,1,Ordered and sold,1,"22*18=396; 20*18=360","22*18=396|20*18=360|22*18=396; 20*18=360",statistics.mean,mean,A,false
+2021_P2_Q1.2,2,Answer 36,1,36,36,statistics.mean,mean,A,true
+2021_P2_Q1.3.1,1,Option B,1,B,B,statistics.quartiles,quartiles,A,false
+2021_P2_Q1.3.1,2,Reason,1,"IQR=21 or mean>median","IQR=21|Q1=14|median=18.5|mean>median",statistics.quartiles,quartiles,A,true
+2021_P2_Q1.3.2,1,Skewness,1,"positively skewed or skewed right","positively skewed|skewed to the right|skewed right",statistics.quartiles,quartiles,A,true
+2021_P2_Q2.2,1,a value,1,a=90.48,"a=90.48|90.48",statistics.regression,regression,A,false
+2021_P2_Q2.2,2,b value,1,b=-1.77,"b=-1.77|-1.77",statistics.regression,regression,A,false
+2021_P2_Q2.2,3,Equation,1,"y_hat=90.48-1.77x","y_hat=90.48-1.77x|y=90.48-1.77x",statistics.regression,regression,A,true
+2021_P2_Q2.3,1,Answer,1,"23.07 units","23.07|23.22|23.07 units",statistics.regression,regression,A,true
+2021_P2_Q2.4,1,r value,1,r=-0.94,"r=-0.94|-0.94",statistics.regression,regression,A,false
+2021_P2_Q2.4,2,Strong accurate,1,"strong relationship accurate","strong relationship|strong|accurate prediction|strong relationship accurate",statistics.regression,regression,A,true
+2021_P2_Q3.1.1,1,Substitute,1,"m_BE=(0-(-2))/(12-4)","m_BE=(0-(-2))/(12-4)|m_CE=(0-(-2))/(12-4)",analytical.gradient,gradient,A,false
+2021_P2_Q3.1.1,2,m_BE=1/4,1,m_BE=1/4,m_BE=1/4,analytical.gradient,gradient,A,true
+2021_P2_Q3.1.2,1,tan 81.87,1,"tan 81.87","tan 81.87|tan(81.87)",analytical.gradient,gradient,A,false
+2021_P2_Q3.1.2,2,m_AB=7,1,m_AB=7,m_AB=7,analytical.gradient,gradient,A,true
+2021_P2_Q3.2,1,Substitute E,1,"0=1/4(12)+c","0=1/4(12)+c",analytical.line,line,A,false
+2021_P2_Q3.2,2,Equation,1,"y=1/4x-3","y=1/4x-3",analytical.line,line,A,true
+2021_P2_Q3.3.1,1,Substitute k,1,"k=1/4k-3","k=1/4k-3",analytical.line,line,A,false
+2021_P2_Q3.3.1,2,k=-4,1,k=-4,k=-4,analytical.line,line,A,false
+2021_P2_Q3.3.1,3,B coordinates,1,"B(-4;-4)","B(-4;-4)|B(-4,-4)",analytical.line,line,A,true
+2021_P2_Q3.3.2,1,m_AC=-2,1,"m_AC=-2","m_AC=-2|m=-2",analytical.gradient,gradient,A,false
+2021_P2_Q3.3.2,2,tan theta,1,"tan theta=-2","tan theta=-2|tanθ=-2",analytical.gradient,gradient,A,false
+2021_P2_Q3.3.2,3,theta=116.57,1,theta=116.57,"theta=116.57|θ=116.57|116.57",analytical.gradient,gradient,A,false
+2021_P2_Q3.3.2,4,A=34.70,1,A=34.70,"A=34.70|34.70",analytical.gradient,gradient,A,true
+2021_P2_Q3.3.3,1,M coords,1,"M(5;5)","M(5;5)|M(5,5)",analytical.midpoint,midpoint,A,true
+2021_P2_Q3.4.1,1,BE=ET,1,"4sqrt(17)=sqrt((12-p)^2+(0-p)^2)","4sqrt(17)=sqrt((12-p)^2+(0-p)^2)",analytical.distance,distance,A,false
+2021_P2_Q3.4.1,2,Square both sides,1,"272=144-24p+p^2+p^2","272=144-24p+p^2+p^2",analytical.distance,distance,A,false
+2021_P2_Q3.4.1,3,Standard form,1,"p^2-12p-64=0","p^2-12p-64=0",analytical.distance,distance,A,false
+2021_P2_Q3.4.1,4,Factorise,1,"(p-16)(p+4)=0","(p-16)(p+4)=0",analytical.distance,distance,A,false
+2021_P2_Q3.4.1,5,p=16,1,p=16,p=16,analytical.distance,distance,A,true
+2021_P2_Q3.4.2a,1,Circle equation,1,"(x-12)^2+y^2=272","(x-12)^2+y^2=272|(x-12)^2+y^2=(4sqrt(17))^2",analytical.circle,circle,A,true
+2021_P2_Q3.4.2b,1,m_radius=1/4,1,m_radius=1/4,m_radius=1/4,analytical.line,line,A,false
+2021_P2_Q3.4.2b,2,m_tangent=-4,1,"m_tangent=-4","m_tangent=-4",analytical.line,line,A,false
+2021_P2_Q3.4.2b,3,Equation tangent,1,"y=-4x-20","y=-4x-20",analytical.line,line,A,true
+2021_P2_Q4.1,1,Radius,1,4,4,analytical.circle,circle,A,true
+2021_P2_Q4.2.1,1,C coordinates,1,"C(-1;7)","C(-1;7)|C(-1,7)",analytical.circle,circle,A,true
+2021_P2_Q4.2.2,1,D coordinates,1,"D(5;7)","D(5;7)|D(5,7)",analytical.circle,circle,A,true
+2021_P2_Q4.2.3,1,h=5,1,h=5,h=5,analytical.area,area,A,false
+2021_P2_Q4.2.3,2,Area formula,1,"1/2(6)(5)","1/2(6)(5)",analytical.area,area,A,false
+2021_P2_Q4.2.3,3,Area=15,1,"15 units^2","15|15 units^2",analytical.area,area,A,true
+2021_P2_Q4.3.1,1,M coords,1,"M(3;-1)","M(3;-1)|M(3,-1)",analytical.circle,circle,A,false
+2021_P2_Q4.3.1,2,Substitute,1,"MN=sqrt((3-(-1))^2+(-1-3)^2)","MN=sqrt((3-(-1))^2+(-1-3)^2)",analytical.distance,distance,A,false
+2021_P2_Q4.3.1,3,MN=4sqrt2,1,"MN=4sqrt(2)=5.66","4sqrt(2)|5.66|4√2|MN=4sqrt(2)=5.66",analytical.distance,distance,A,true
+2021_P2_Q4.3.2,1,Equation MN,1,"y=-x+2","y=-x+2",analytical.line,line,A,false
+2021_P2_Q4.3.2,2,Equate,1,"x=-x+2","x=-x+2",analytical.line,line,A,false
+2021_P2_Q4.3.2,3,x=1,1,x=1,x=1,analytical.line,line,A,false
+2021_P2_Q4.3.2,4,Midpoint (1;1),1,"(1;1)","(1;1)|(1,1)",analytical.midpoint,midpoint,A,true
+2021_P2_Q5.1,1,sin40,1,"sin 40","sin 40|sin40",trig.reduction,trig,A,false
+2021_P2_Q5.1,2,-sinx,1,-sinx,"-sin x|-sinx",trig.reduction,trig,A,false
+2021_P2_Q5.1,3,Co-ratio,1,"sin40","sin40|sin 40",trig.reduction,trig,A,false
+2021_P2_Q5.1,4,-tanx,1,"-tanx","-tanx|-tan x",trig.reduction,trig,A,false
+2021_P2_Q5.1,5,Answer cos x,1,"cos x","cos x|cosx",trig.reduction,trig,A,true
+2021_P2_Q5.2,1,Identity,1,"-2(1-cos^2x)+cosx+1","-2(1-cos^2x)+cosx+1|-2+2cos^2x+cosx+1",trig.identity,trig,A,false
+2021_P2_Q5.2,2,cos(540-x)=-cosx,1,"cos(540-x)=-cosx","cos(540-x)=-cosx",trig.identity,trig,A,false
+2021_P2_Q5.2,3,Standard form,1,"2cos^2x+cosx-1","2cos^2x+cosx-1",trig.identity,trig,A,false
+2021_P2_Q5.2,4,Factorise,1,"(2cosx-1)(cosx+1)","(2cosx-1)(cosx+1)",trig.identity,trig,A,false
+2021_P2_Q5.2,5,Answer 2cosx-1,1,"2cosx-1","2cosx-1",trig.identity,trig,A,true
+2021_P2_Q5.3.1,1,Method,1,"cos^2 36=1-sin^2 36","cos^2 36=1-sin^2 36",trig.identity,trig,A,false
+2021_P2_Q5.3.1,2,cos36=p,1,"cos36=p","cos36=p",trig.identity,trig,A,false
+2021_P2_Q5.3.1,3,tan36 answer,1,"tan36=sqrt(1-p^2)/p","tan36=sqrt(1-p^2)/p|tan36=√(1-p²)/p",trig.identity,trig,A,true
+2021_P2_Q5.3.2,1,Reduction,1,"-cos72","-cos72|-cos 72",trig.identity,trig,A,false
+2021_P2_Q5.3.2,2,Double angle,1,"-(2cos^2 36-1)","-(2cos^2 36-1)",trig.identity,trig,A,false
+2021_P2_Q5.3.2,3,Expansion,1,"-2p^2+1","-2p^2+1|1-2p^2",trig.identity,trig,A,true
+2021_P2_Q6.1.1,1,Rewrite cos(α-(-β)),1,"cos(α-(-β))","cos(α-(-β))|cos(a-(-b))",trig.identity,trig,A,false
+2021_P2_Q6.1.1,2,Expansion,1,"cosαcosβ+sinαsin(-β)","cosαcosβ+sinαsin(-β)",trig.identity,trig,A,false
+2021_P2_Q6.1.1,3,Answer,1,"cosαcosβ-sinαsinβ","cosαcosβ-sinαsinβ",trig.identity,trig,A,true
+2021_P2_Q6.1.2,1,cos10x=cos(6x+4x),1,"cos10x=cos(6x+4x)","cos10x=cos(6x+4x)",trig.identity,trig,A,false
+2021_P2_Q6.1.2,2,Expand,1,"cos6xcos4x-sin6xsin4x","cos6xcos4x-sin6xsin4x",trig.identity,trig,A,false
+2021_P2_Q6.1.2,3,Simplify to cos2x,1,"cos2x","cos2x",trig.identity,trig,A,false
+2021_P2_Q6.1.2,4,1-2sin^2x,1,"1-2sin^2x","1-2sin^2x",trig.identity,trig,A,false
+2021_P2_Q6.1.2,5,Answer 1,1,1,"1",trig.identity,trig,A,true
+2021_P2_Q6.2,1,Quotient,1,"sinx/cosx=4sinxcos^2x","sinx/cosx=4sinxcos^2x|tanx=2sin2x",trig.equation,trig,A,false
+2021_P2_Q6.2,2,Standard form,1,"sinx(4cos^2x-1)=0","sinx(4cos^2x-1)=0",trig.equation,trig,A,false
+2021_P2_Q6.2,3,Both equations,1,"sinx=0 or cosx=-1/2","sinx=0|cosx=-1/2|cos^2x=1/4|sinx=0 or cosx=-1/2",trig.equation,trig,A,false
+2021_P2_Q6.2,4,x=180+k.360,1,"x=180+k.360","x=180+k.360|x=180°+k.360°",trig.equation,trig,A,false
+2021_P2_Q6.2,5,x=120+k.360,1,"x=120+k.360","x=120+k.360|x=120°+k.360°",trig.equation,trig,A,false
+2021_P2_Q6.2,6,x=240+k.360,1,"x=240+k.360","x=240+k.360|x=240°+k.360°",trig.equation,trig,A,false
+2021_P2_Q6.2,7,k in Z,1,"k in Z","k in Z|k ∈ Z|k∈Z",trig.equation,trig,A,true
+2021_P2_Q7.2,1,Period=120,1,120,"120|120°",trig.graph,graph,A,true
+2021_P2_Q7.3,1,x=-30,1,x=-30,"x=-30|x=-30°",trig.graph,graph,A,true
+2021_P2_Q7.4,1,Range,1,"y in [1/2;3/2]","y in [1/2;3/2]|1/2<=y<=3/2",trig.graph,graph,A,true
+2021_P2_Q8.1,1,Sine rule,1,"QS/sinx=5/sin(90+x)","QS/sinx=5/sin(90+x)",trig.3d,trig3d,A,false
+2021_P2_Q8.1,2,sin(90+x)=cosx,1,"sin(90+x)=cosx","sin(90+x)=cosx",trig.3d,trig3d,A,false
+2021_P2_Q8.1,3,Answer QS=5tanx,1,"QS=5tanx","QS=5tanx",trig.3d,trig3d,A,true
+2021_P2_Q8.2,1,Sine rule setup,1,"QT/sin(180-2x)=5tanx/sinx","QT/sin(180-2x)=5tanx/sinx",trig.3d,trig3d,A,false
+2021_P2_Q8.2,2,TS=QS,1,"TS=QS=5tanx","TS=QS=5tanx",trig.3d,trig3d,A,false
+2021_P2_Q8.2,3,Multiply out,1,"QT=5tanx sin2x/sinx","QT=5tanx sin2x/sinx",trig.3d,trig3d,A,false
+2021_P2_Q8.2,4,tanx and sin2x,1,"tanx=sinx/cosx, sin2x=2sinxcosx","tanx=sinx/cosx|sin2x=2sinxcosx",trig.3d,trig3d,A,false
+2021_P2_Q8.2,5,Answer QT=10sinx,1,"QT=10sinx","QT=10sinx",trig.3d,trig3d,A,true
+2021_P2_Q8.3,1,Area rule,1,"Area=1/2(10sin25)(5)sin70","Area=1/2(10sin25)(5)sin70",trig.3d,trig3d,A,false
+2021_P2_Q8.3,2,Answer,1,9.93,9.93,trig.3d,trig3d,A,true
+2021_P2_Q9.1,1,Tangents same pt,1,"Tangents from same point","tangents from same point|tangents from same pt",euclidean.circle,euclid,A,true
+2021_P2_Q9.2.1,1,S2=SṘT,1,"S2=SRT","S2=SRT",euclidean.circle,euclid,A,true
+2021_P2_Q9.2.2,1,S2+S3=93,1,"S2+S3=93","S2+S3=93|S1=87",euclidean.circle,euclid,A,false
+2021_P2_Q9.2.2,2,Answer 42,1,S3=42,"S3=42|42",euclidean.circle,euclid,A,true
+2021_P2_Q10.1,1,Line from centre,1,"line from centre perp chord","line from centre perp chord|line from centre perpendicular to chord",euclidean.circle,euclid,A,true
+2021_P2_Q10.2,1,A1,1,"A1=90-x","A1=90-x|A1=90°-x",euclidean.circle,euclid,A,false
+2021_P2_Q10.2,2,M1,1,"M1=180-2x","M1=180-2x|M1=180°-2x",euclidean.circle,euclid,A,true
+2021_P2_Q10.3,1,CAD=90,1,"CAD=90","CAD=90|CAD=90°",euclidean.circle,euclid,A,false
+2021_P2_Q10.3,2,A2=x,1,"A2=x","A2=x",euclidean.circle,euclid,A,false
+2021_P2_Q10.3,3,A2=C=x,1,"A2=C=x","A2=C=x",euclidean.circle,euclid,A,false
+2021_P2_Q10.3,4,AD is tangent,1,"AD is tangent","AD is tangent|converse tan-chord",euclidean.circle,euclid,A,true
+2021_P2_Q10.4,1,FM=12,1,FM=12,FM=12,euclidean.circle,euclid,A,false
+2021_P2_Q10.4,2,EM=18,1,EM=18,EM=18,euclidean.circle,euclid,A,false
+2021_P2_Q10.4,3,Pythagoras,1,"AE^2=36^2-24^2","AE^2=36^2-24^2",euclidean.circle,euclid,A,false
+2021_P2_Q10.4,4,Answer AE=12sqrt5,1,"AE=12sqrt(5)=26.83","12sqrt(5)|26.83|12√5|AE=12sqrt(5)=26.83",euclidean.circle,euclid,A,true
+2021_P2_Q11.2.1a,1,K4=S1,1,"K4=S1","K4=S1|tan chord",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.1a,2,M2+M3=S1,1,"M2+M3=S1","M2+M3=S1",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.1a,3,Conclusion K4=NML,1,"K4=M2+M3=NML","K4=M2+M3=NML",euclidean.circle,euclid,A,true
+2021_P2_Q11.2.1b,1,KLMN cyclic,1,"KLMN is cyclic quad","KLMN is cyclic quad|KLMN cyclic",euclidean.circle,euclid,A,true
+2021_P2_Q11.2.2,1,N3=M3,1,"N3=M3","N3=M3",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.2,2,L1=M2,1,"L1=M2","L1=M2",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.2,3,K2 alt,1,"K2=M2","K2=M2|alt angle",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.2,4,NKL=MSK,1,"NKL=MSK","NKL=MSK|sum of angles",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.2,5,Answer similar,1,"LKN || KSM","triangle LKN similar to KSM|LKN similar KSM|similar LKN KSM",euclidean.circle,euclid,A,true
+2021_P2_Q11.2.3,1,Ratio,1,"LK/KS=KN/SM","LK/KS=KN/SM",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.3,2,Substitute,1,"12/KS=4/3","12/KS=4/3",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.3,3,Answer KS=9,1,KS=9,"KS=9|9 units",euclidean.circle,euclid,A,true
+2021_P2_Q11.2.4,1,SM=6,1,SM=6,SM=6,euclidean.circle,euclid,A,false
+2021_P2_Q11.2.4,2,LT/NL=LS/ML,1,"LT/NL=LS/ML","LT/NL=LS/ML",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.4,3,Substitute,1,"LT/16=13/19","LT/16=13/19",euclidean.circle,euclid,A,false
+2021_P2_Q11.2.4,4,Answer LT=10.95,1,LT=10.95,"LT=10.95|208/19",euclidean.circle,euclid,A,true
