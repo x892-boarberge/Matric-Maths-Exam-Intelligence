@@ -1,0 +1,146 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2020_P1_Q1.1.1,1,Common factor,1,"x(x-6)=0","x(x-6)=0",algebra.quadratic.solve,factorise,A,false
+2020_P1_Q1.1.1,2,Root x=0,1,x=0,x=0,algebra.quadratic.solve,factorise,A,true
+2020_P1_Q1.1.1,3,Root x=6,1,x=6,x=6,algebra.quadratic.solve,factorise,A,true
+2020_P1_Q1.1.2,1,Substitute formula,1,"x=(-10±sqrt(68))/2","x=(-10±sqrt(68))/2|x=(-10±√68)/2",algebra.quadratic.solve,formula,A,false
+2020_P1_Q1.1.2,2,x=-0.88,1,x=-0.88,"x=-0.88|-0.88",algebra.quadratic.solve,formula,A,true
+2020_P1_Q1.1.2,3,x=-9.12,1,x=-9.12,"x=-9.12|-9.12",algebra.quadratic.solve,formula,A,true
+2020_P1_Q1.1.3,1,Critical values,1,"CV: x=1 or x=-2","CV: x=1 or x=-2|x=1 or x=-2",algebra.quadratic.inequality,inequality,A,false
+2020_P1_Q1.1.3,2,Method,1,"(1-x)(x+2)<0","(1-x)(x+2)<0",algebra.quadratic.inequality,inequality,A,false
+2020_P1_Q1.1.3,3,Answer x<-2 or x>1,1,"x<-2 or x>1","x<-2 or x>1|x>1 or x<-2",algebra.quadratic.inequality,inequality,A,true
+2020_P1_Q1.1.4,1,Square both sides,1,"x+18=x^2-4x+4","x+18=x^2-4x+4|x+18=(x-2)^2",algebra.surd.solve,surd,A,false
+2020_P1_Q1.1.4,2,Standard form,1,"x^2-5x-14=0","x^2-5x-14=0",algebra.surd.solve,surd,A,false
+2020_P1_Q1.1.4,3,Factorise,1,"(x-7)(x+2)=0","(x-7)(x+2)=0|(x+2)(x-7)=0",algebra.surd.solve,surd,A,false
+2020_P1_Q1.1.4,4,Answer x=7,1,"x=7 (x=-2 rejected)","x=7|x≠-2, x=7",algebra.surd.solve,surd,A,true
+2020_P1_Q1.2,1,Write eq1 method A,1,"y=3-x","y=3-x",algebra.simultaneous.solve,substitution,A,false
+2020_P1_Q1.2,2,Substitute,1,"2x^2+4x(3-x)-(3-x)=15","2x^2+4x(3-x)-(3-x)=15",algebra.simultaneous.solve,substitution,A,false
+2020_P1_Q1.2,3,Standard form,1,"2x^2-13x+18=0","2x^2-13x+18=0",algebra.simultaneous.solve,substitution,A,false
+2020_P1_Q1.2,4,Factorise,1,"(2x-9)(x-2)=0","(2x-9)(x-2)=0|(x-2)(2x-9)=0",algebra.simultaneous.solve,substitution,A,false
+2020_P1_Q1.2,5,x-values,1,"x=9/2 or x=2","x=9/2 or x=2|x=2 or x=9/2|x=4.5 or x=2",algebra.simultaneous.solve,substitution,A,true
+2020_P1_Q1.2,6,y-values,1,"y=-3/2 or y=1","y=-3/2 or y=1|y=1 or y=-3/2",algebra.simultaneous.solve,substitution,A,true
+2020_P1_Q1.2,1,Write eq1 method B,1,"x=3-y","x=3-y",algebra.simultaneous.solve,substitution,B,false
+2020_P1_Q1.2,2,Substitute,1,"2(3-y)^2+4(3-y)y-y=15","2(3-y)^2+4(3-y)y-y=15",algebra.simultaneous.solve,substitution,B,false
+2020_P1_Q1.2,3,Standard form,1,"2y^2+y-3=0","2y^2+y-3=0",algebra.simultaneous.solve,substitution,B,false
+2020_P1_Q1.2,4,Factorise,1,"(2y+3)(y-1)=0","(2y+3)(y-1)=0|(y-1)(2y+3)=0",algebra.simultaneous.solve,substitution,B,false
+2020_P1_Q1.2,5,y-values,1,"y=-3/2 or y=1","y=-3/2 or y=1|y=1 or y=-3/2",algebra.simultaneous.solve,substitution,B,true
+2020_P1_Q1.2,6,x-values,1,"x=9/2 or x=2","x=9/2 or x=2|x=2 or x=9/2|x=4.5 or x=2",algebra.simultaneous.solve,substitution,B,true
+2020_P1_Q1.3,1,Power law,1,"(n^2)^100<(5^3)^100","(n^2)^100<(5^3)^100|n^200<5^300",algebra.exponential.proof,proof,A,false
+2020_P1_Q1.3,2,Simplify n^2<125,1,"n^2<125","n^2<125",algebra.exponential.proof,proof,A,false
+2020_P1_Q1.3,3,Answer 11,1,11,11,algebra.exponential.proof,proof,A,true
+2020_P1_Q2.1,1,Write 7+3d=-11,1,"7+3d=-11","7+3d=-11",sequences.arithmetic,arith,A,false
+2020_P1_Q2.1,2,d=-6,1,d=-6,d=-6,sequences.arithmetic,arith,A,false
+2020_P1_Q2.1,3,x=1,1,x=1,x=1,sequences.arithmetic,arith,A,false
+2020_P1_Q2.1,4,y=-5,1,y=-5,y=-5,sequences.arithmetic,arith,A,true
+2020_P1_Q2.2.1,1,Second difference,1,"2a=12","2a=12",sequences.quadratic,arith,A,false
+2020_P1_Q2.2.1,2,a=6,1,a=6,a=6,sequences.quadratic,arith,A,false
+2020_P1_Q2.2.1,3,3a+b=9,1,"3(6)+b=9","3(6)+b=9|18+b=9",sequences.quadratic,arith,A,false
+2020_P1_Q2.2.1,4,b=-9,1,b=-9,b=-9,sequences.quadratic,arith,A,false
+2020_P1_Q2.2.1,5,c=0,1,c=0,c=0,sequences.quadratic,arith,A,false
+2020_P1_Q2.2.1,6,Write Tn,1,"Tn=6n^2-9n","Tn=6n^2-9n|6n^2-9n",sequences.quadratic,arith,A,true
+2020_P1_Q2.2.2,1,Substitute 50,1,"T50=6(50)^2-9(50)","T50=6(50)^2-9(50)",sequences.quadratic,arith,A,false
+2020_P1_Q2.2.2,2,Answer 14550,1,14550,14550,sequences.quadratic,arith,A,true
+2020_P1_Q2.2.3,1,a=9 and d=12,1,"a=9; d=12","a=9; d=12|a=9 d=12",sequences.quadratic,arith,A,false
+2020_P1_Q2.2.3,2,Substitute S_n,1,"S_n=n/2[2(9)+(n-1)(12)]","S_n=n/2[2(9)+(n-1)(12)]",sequences.quadratic,arith,A,false
+2020_P1_Q2.2.3,3,Simplify,1,"S_n=6n^2+3n","6n^2+3n",sequences.quadratic,arith,A,true
+2020_P1_Q2.2.4,1,Equation,1,"-3+S_n=21060","-3+S_n=21060",sequences.quadratic,arith,A,false
+2020_P1_Q2.2.4,2,Standard form,1,"6n^2+3n-21063=0","6n^2+3n-21063=0|2n^2+n-7021=0",sequences.quadratic,arith,A,false
+2020_P1_Q2.2.4,3,n=59,1,n=59,n=59,sequences.quadratic,arith,A,true
+2020_P1_Q3.1,1,Series expansion,1,"12+4+4/3","12+4+4/3",sequences.geometric,geom,A,false
+2020_P1_Q3.1,2,r=1/3,1,r=1/3,r=1/3,sequences.geometric,geom,A,false
+2020_P1_Q3.1,3,Convergent,1,"series is convergent","convergent|-1<1/3<1",sequences.geometric,geom,A,true
+2020_P1_Q3.2,1,a expression,1,"a=4.3^(2-p)","a=4.3^(2-p)",sequences.geometric,geom,A,false
+2020_P1_Q3.2,2,Substitute into S_inf,1,"2/9=4.3^(2-p)/(1-1/3)","2/9=4.3^(2-p)/(1-1/3)",sequences.geometric,geom,A,false
+2020_P1_Q3.2,3,Simplify,1,"4.3^(2-p)=4/27","4.3^(2-p)=4/27",sequences.geometric,geom,A,false
+2020_P1_Q3.2,4,3^(2-p)=3^-3,1,"3^(2-p)=3^(-3)","3^(2-p)=3^(-3)",sequences.geometric,geom,A,false
+2020_P1_Q3.2,5,p=5,1,p=5,p=5,sequences.geometric,geom,A,true
+2020_P1_Q4.1.1,1,x=1,1,x=1,x=1,functions.hyperbola,hyperbola,A,false
+2020_P1_Q4.1.1,2,y=2,1,y=2,y=2,functions.hyperbola,hyperbola,A,true
+2020_P1_Q4.1.2,1,Substitute,1,"2=-1+c","2=-1+c|2=m(1)+c",functions.hyperbola,hyperbola,A,false
+2020_P1_Q4.1.2,2,Equation y=-x+3,1,"y=-x+3","y=-x+3",functions.hyperbola,hyperbola,A,true
+2020_P1_Q4.2.1,1,Turning point,1,"(-5;-8)","(-5;-8)|(-5,-8)",functions.parabola,parabola,A,true
+2020_P1_Q4.2.2,1,Range,1,"y>=-8","y>=-8|y≥-8|[-8;∞)",functions.parabola,parabola,A,true
+2020_P1_Q4.2.3,1,m=-5,1,m=-5,m=-5,functions.parabola,parabola,A,false
+2020_P1_Q4.2.3,2,Substitute,1,"n=1/2(-5)+9/2","n=1/2(-5)+9/2",functions.parabola,parabola,A,false
+2020_P1_Q4.2.3,3,n=2,1,n=2,n=2,functions.parabola,parabola,A,true
+2020_P1_Q4.2.4,1,Method,1,"1/2(DE+OC)*OE","1/2(DE+OC)*OE",functions.parabola,parabola,A,false
+2020_P1_Q4.2.4,2,Substitute,1,"1/2(2+4.5)*5","1/2(2+4.5)*5",functions.parabola,parabola,A,false
+2020_P1_Q4.2.4,3,Answer 16.25,1,"65/4 or 16.25","65/4|16.25",functions.parabola,parabola,A,true
+2020_P1_Q4.2.5,1,Inverse,1,"y=2x-9","y=2x-9|g^-1=2x-9",functions.hyperbola,hyperbola,A,true
+2020_P1_Q4.2.6,1,f'(x),1,"f'(x)=x+5","f'(x)=x+5",calculus.polynomial,derivative,A,false
+2020_P1_Q4.2.6,2,Equate,1,"x+5=2","x+5=2",calculus.polynomial,derivative,A,false
+2020_P1_Q4.2.6,3,x=-3,1,x=-3,x=-3,calculus.polynomial,derivative,A,false
+2020_P1_Q4.2.6,4,y=-6,1,y=-6,y=-6,calculus.polynomial,derivative,A,true
+2020_P1_Q5.1,1,A coordinates,1,"A(0;1)","A(0;1)|A(0,1)",functions.exponential,exponential,A,true
+2020_P1_Q5.2,1,Equate,1,"9=3^(-x)","9=3^(-x)",functions.exponential,exponential,A,false
+2020_P1_Q5.2,2,3^2=3^-x,1,"3^2=3^(-x)","3^2=3^(-x)",functions.exponential,exponential,A,false
+2020_P1_Q5.2,3,x=-2,1,x=-2,x=-2,functions.exponential,exponential,A,false
+2020_P1_Q5.2,4,B coordinates,1,"B(-2;9)","B(-2;9)|B(-2,9)",functions.exponential,exponential,A,true
+2020_P1_Q5.3,1,x>0,1,x>0,x>0,functions.exponential,exponential,A,true
+2020_P1_Q5.4,1,h(x) rewrite,1,"h(x)=3^(-(x-3))","h(x)=3^(-(x-3))",functions.exponential,exponential,A,false
+2020_P1_Q5.4,2,3 units right,1,"3 units to the right","3 units right|shift 3 right|3 units to the right",functions.exponential,exponential,A,true
+2020_P1_Q5.5,1,27/3^x<1,1,"27/3^x<1","27/3^x<1",functions.exponential,exponential,A,false
+2020_P1_Q5.5,2,3^x>27,1,"3^x>27","3^x>27",functions.exponential,exponential,A,false
+2020_P1_Q5.5,3,x>3,1,x>3,x>3,functions.exponential,exponential,A,true
+2020_P1_Q6.1.1,1,n=145,1,n=145,n=145,finance.future_value,finance,A,false
+2020_P1_Q6.1.1,2,i value,1,i=0.075/12,i=0.075/12,finance.future_value,finance,A,false
+2020_P1_Q6.1.1,3,Substitute,1,"F=1000[(1+0.075/12)^145-1]/(0.075/12)","F=1000[(1+0.075/12)^145-1]/(0.075/12)",finance.future_value,finance,A,false
+2020_P1_Q6.1.1,4,F=234888.53,1,234888.53,234888.53,finance.future_value,finance,A,true
+2020_P1_Q6.1.2,1,Substitute,1,"A=234888.53(1+0.075/12)","A=234888.53(1+0.075/12)",finance.compound,finance,A,false
+2020_P1_Q6.1.2,2,Answer 253123.54,1,253123.54,253123.54,finance.compound,finance,A,true
+2020_P1_Q6.2,1,Substitute,1,"92537.64=250000(1-0.22)^n","92537.64=250000(1-0.22)^n",finance.compound,finance,A,false
+2020_P1_Q6.2,2,Logs,1,"log(0.37015056)=n log(0.78)","log(0.37015056)=n log(0.78)",finance.compound,finance,A,false
+2020_P1_Q6.2,3,n=4,1,n=4,"n=4|4 years",finance.compound,finance,A,true
+2020_P1_Q6.3.1,1,n=72,1,n=72,n=72,finance.present_value,finance,A,false
+2020_P1_Q6.3.1,2,Substitute,1,"P=1500[1-(1+0.113/12)^-72]/(0.113/12)","P=1500[1-(1+0.113/12)^-72]/(0.113/12)",finance.present_value,finance,A,false
+2020_P1_Q6.3.1,3,Answer 78173.49,1,78173.49,78173.49,finance.present_value,finance,A,true
+2020_P1_Q6.3.2,1,Substitute,1,"P=1500[1-(1+0.113/12)^-12]/(0.113/12)","P=1500[1-(1+0.113/12)^-12]/(0.113/12)",finance.present_value,finance,A,false
+2020_P1_Q6.3.2,2,Balance 16945.00,1,16945.00,16945.00,finance.present_value,finance,A,false
+2020_P1_Q6.3.2,3,Method,1,"90000-[78173.49-16945.00]","90000-(78173.49-16945.00)",finance.present_value,finance,A,false
+2020_P1_Q6.3.2,4,Answer 28771.51,1,28771.51,28771.51,finance.present_value,finance,A,true
+2020_P1_Q7.1,1,f(x+h),1,"f(x+h)=2(x+h)^2-1","f(x+h)=2(x+h)^2-1",calculus.first_principles,first_principles,A,false
+2020_P1_Q7.1,2,Expand,1,"2x^2+4xh+2h^2-1","2x^2+4xh+2h^2-1",calculus.first_principles,first_principles,A,false
+2020_P1_Q7.1,3,Difference,1,"4xh+2h^2","4xh+2h^2",calculus.first_principles,first_principles,A,false
+2020_P1_Q7.1,4,Substitute limit,1,"4x+2h","4x+2h",calculus.first_principles,first_principles,A,false
+2020_P1_Q7.1,5,Answer 4x,1,4x,4x,calculus.first_principles,first_principles,A,true
+2020_P1_Q7.2.1,1,Simplify,1,"x^2+x^3","x^2+x^3",calculus.polynomial,derivative,A,false
+2020_P1_Q7.2.1,2,Derivative,1,"2/5 x^3+3x^2","2/5 x^3+3x^2",calculus.polynomial,derivative,A,true
+2020_P1_Q7.2.2,1,Factorise,1,"(2x-3)(2x+3)","(2x-3)(2x+3)|(2x+3)(2x-3)",calculus.polynomial,derivative,A,false
+2020_P1_Q7.2.2,2,Simplify,1,"2(2x+3)","2(2x+3)",calculus.polynomial,derivative,A,false
+2020_P1_Q7.2.2,3,Answer x-3,1,"x-3","x-3",calculus.polynomial,derivative,A,true
+2020_P1_Q8.1,1,Answer,1,"-1<x<2","-1<x<2",calculus.cubic,derivative,A,true
+2020_P1_Q8.2,1,Method,1,"x=(-1+2)/2=1/2","x=(-1+2)/2=1/2|x=1/2",calculus.cubic,derivative,A,false
+2020_P1_Q8.2,2,Answer 1/2,1,1/2,1/2,calculus.cubic,derivative,A,true
+2020_P1_Q8.3,1,x>1/2,1,x>1/2,"x>1/2|x>0.5",calculus.cubic,derivative,A,true
+2020_P1_Q8.4,1,g'(x),1,"g'(x)=3ax^2+2bx+c","g'(x)=3ax^2+2bx+c",calculus.cubic,derivative,A,false
+2020_P1_Q8.4,2,a=-2,1,a=-2,a=-2,calculus.cubic,derivative,A,false
+2020_P1_Q8.4,3,b=3,1,b=3,b=3,calculus.cubic,derivative,A,false
+2020_P1_Q8.4,4,g(x),1,"g(x)=-2x^3+3x^2+12x","g(x)=-2x^3+3x^2+12x",calculus.cubic,derivative,A,true
+2020_P1_Q8.5,1,Substitute x=1/2,1,"g'(1/2)=-6(1/2)^2+6(1/2)+12","g'(1/2)=-6(1/2)^2+6(1/2)+12",calculus.cubic,derivative,A,false
+2020_P1_Q8.5,2,m=27/2,1,"m=27/2=13.5","m=27/2|13.5|m=27/2=13.5",calculus.cubic,derivative,A,false
+2020_P1_Q8.5,3,y=13/2,1,"y=13/2=6.5","y=13/2|6.5|y=13/2=6.5",calculus.cubic,derivative,A,false
+2020_P1_Q8.5,4,Substitute point,1,"y-6.5=13.5(x-0.5)","y-6.5=13.5(x-0.5)",calculus.cubic,derivative,A,false
+2020_P1_Q8.5,5,Answer y=13.5x-0.25,1,"y=13.5x-0.25","y=13.5x-0.25",calculus.cubic,derivative,A,true
+2020_P1_Q9.1,1,Surface area,1,"SA=2lw+2wh+2lh","SA=2lw+2wh+2lh|l=3w",calculus.optimisation,optimisation,A,false
+2020_P1_Q9.1,2,Substitute l=3w,1,"SA=6w^2+2wh+6wh","SA=6w^2+2wh+6wh",calculus.optimisation,optimisation,A,false
+2020_P1_Q9.1,3,C=15(6w^2)+6(2wh+6wh),1,"C=15(6w^2)+6(8wh)","C=15(6w^2)+6(8wh)|C=90w^2+48wh",calculus.optimisation,optimisation,A,false
+2020_P1_Q9.1,4,Answer C=90w^2+48wh,1,"C=90w^2+48wh","C=90w^2+48wh",calculus.optimisation,optimisation,A,true
+2020_P1_Q9.2,1,h expression,1,"h=5/(3w^2)","h=5/(3w^2)",calculus.optimisation,optimisation,A,false
+2020_P1_Q9.2,2,Substitute,1,"C(w)=90w^2+80w^(-1)","C(w)=90w^2+80w^(-1)",calculus.optimisation,optimisation,A,false
+2020_P1_Q9.2,3,C'(w),1,"C'(w)=180w-80w^(-2)","C'(w)=180w-80w^(-2)",calculus.optimisation,optimisation,A,false
+2020_P1_Q9.2,4,Set to 0,1,"180w-80w^(-2)=0","180w-80w^(-2)=0",calculus.optimisation,optimisation,A,false
+2020_P1_Q9.2,5,Solve for w,1,"w=cbrt(80/180)","w=cbrt(80/180)|w=0.76",calculus.optimisation,optimisation,A,false
+2020_P1_Q9.2,6,Answer 0.76,1,"w=0.76","0.76|w=0.76",calculus.optimisation,optimisation,A,true
+2020_P1_Q10.1,1,10^10,1,"10^10","10^10|10000000000",probability.counting,counting,A,true
+2020_P1_Q10.2.1,1,Area,1,"8*10*10","8*10*10",probability.counting,counting,A,false
+2020_P1_Q10.2.1,2,Exchange,1,"8*8*10","8*8*10",probability.counting,counting,A,false
+2020_P1_Q10.2.1,3,Number,1,"2*10*10*10","2*10*10*10",probability.counting,counting,A,false
+2020_P1_Q10.2.1,4,Answer 1024000000,1,"1.024*10^9","1.024*10^9|1024000000",probability.counting,counting,A,true
+2020_P1_Q10.2.2,1,Numerator,1,"1.024*10^9","1.024*10^9",probability.counting,counting,A,false
+2020_P1_Q10.2.2,2,Answer 10.24%,1,"64/625 or 0.1024","64/625|0.1024|10.24%",probability.counting,counting,A,true
+2020_P1_Q11.1,1,Probability first two,1,"0.5*0.5","0.5*0.5",probability.tree,tree,A,false
+2020_P1_Q11.1,2,Answer 0.25,1,"0.25 or 1/4","0.25|1/4",probability.tree,tree,A,true
+2020_P1_Q11.2,1,Sum three cases,1,"0.125+0.125+0.125+0.125","0.125+0.125+0.125+0.125",probability.tree,tree,A,false
+2020_P1_Q11.2,2,Answer 0.5,1,"0.5 or 1/2","0.5|1/2",probability.tree,tree,A,true
+2020_P1_Q11.3,1,Geometric series,1,"0.5+(0.5)^3+(0.5)^5+...","0.5+(0.5)^3+(0.5)^5+...",probability.tree,tree,A,false
+2020_P1_Q11.3,2,Substitute,1,"P=0.5/(1-0.25)","P=0.5/(1-0.25)|P=a/(1-r)",probability.tree,tree,A,false
+2020_P1_Q11.3,3,Answer 2/3,1,"2/3 or 0.67","2/3|0.67",probability.tree,tree,A,true

@@ -1,0 +1,145 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2020_P2_Q1.1,1,a value,1,a=9.5,"a=9.5|9.5",statistics.regression,regression,A,false
+2020_P2_Q1.1,2,b value,1,b=0.91,"b=0.91|0.91",statistics.regression,regression,A,false
+2020_P2_Q1.1,3,Equation,1,"y_hat=9.5+0.91x","y_hat=9.5+0.91x|y=9.5+0.91x",statistics.regression,regression,A,true
+2020_P2_Q1.2,1,Substitute 69,1,"y_hat=9.5+0.91(69)","y_hat=9.5+0.91(69)",statistics.regression,regression,A,false
+2020_P2_Q1.2,2,Answer 72.22,1,"72.22 or 72.29","72.22|72.29",statistics.regression,regression,A,true
+2020_P2_Q1.4,1,Strong correlation,1,"strong positive","strong positive|very strong positive",statistics.regression,regression,A,false
+2020_P2_Q1.4,2,Higher maths higher physics,1,"higher maths higher physics","higher maths higher physics",statistics.regression,regression,A,true
+2020_P2_Q2.1,1,July,1,July,July,statistics.frequency,frequency,A,true
+2020_P2_Q2.2,1,Mean computation,1,"26941/12","26941/12",statistics.mean,mean,A,false
+2020_P2_Q2.2,2,Answer 2245.08,1,2245.08,"2245.08|2245.1",statistics.mean,mean,A,true
+2020_P2_Q2.3,1,Sigma,1,86.3,"86.3|86.30",statistics.stdev,stdev,A,true
+2020_P2_Q2.4,1,Bounds,1,"2158.78; 2331.38","2158.78; 2331.38|(2158.78;2331.38)",statistics.stdev,stdev,A,false
+2020_P2_Q2.4,2,Answer 9 months,1,9,"9|9 months",statistics.stdev,stdev,A,true
+2020_P2_Q2.5,1,Higher sigma,1,"higher","higher|greater variation",statistics.stdev,stdev,A,true
+2020_P2_Q3.1,1,Gradient formula,1,"m_WP=(4-(-4))/(-4-0)","m_WP=(4-(-4))/(-4-0)",analytical.gradient,gradient,A,false
+2020_P2_Q3.1,2,m_WP=-2,1,m_WP=-2,m_WP=-2,analytical.gradient,gradient,A,true
+2020_P2_Q3.2,1,Product of gradients,1,"(-2)(1/2)","(-2)(1/2)|m_WP*m_ST",analytical.gradient,gradient,A,false
+2020_P2_Q3.2,2,Product=-1,1,"=-1","-1",analytical.gradient,gradient,A,true
+2020_P2_Q3.3,1,Equate lines,1,"5y+2x+60=0 with y=1/2x+6","-2/5x-12=1/2x+6",analytical.line,line,A,false
+2020_P2_Q3.3,2,x=-20,1,x=-20,x=-20,analytical.line,line,A,false
+2020_P2_Q3.3,3,y=-4,1,y=-4,y=-4,analytical.line,line,A,false
+2020_P2_Q3.3,4,S coordinates,1,"S(-20;-4)","S(-20;-4)|S(-20,-4)",analytical.line,line,A,true
+2020_P2_Q3.4,1,Substitute x=-4,1,"y=-2/5(-4)-12","y=-2/5(-4)-12",analytical.line,line,A,false
+2020_P2_Q3.4,2,R coordinates,1,"R(-4;-52/5)","R(-4;-52/5)|R(-4,-10.4)",analytical.line,line,A,false
+2020_P2_Q3.4,3,WR=72/5,1,"72/5 or 14.4","72/5|14.4",analytical.distance,distance,A,true
+2020_P2_Q3.5,1,tan beta,1,"tan beta=m_SK=-2/5","tan beta=-2/5",analytical.gradient,gradient,A,false
+2020_P2_Q3.5,2,beta=158.19,1,beta=158.19,"beta=158.19|158.19",analytical.gradient,gradient,A,false
+2020_P2_Q3.5,3,beta ref=21.8,1,"21.80","21.80|21.8",analytical.gradient,gradient,A,false
+2020_P2_Q3.5,4,Answer 48.37,1,"48.37","48.37|48.37°",analytical.gradient,gradient,A,true
+2020_P2_Q3.6,1,h=16,1,h=16,h=16,analytical.area,area,A,false
+2020_P2_Q3.6,2,Substitute area,1,"1/2(16)(72/5)","1/2(16)(72/5)",analytical.area,area,A,false
+2020_P2_Q3.6,3,Area 115.2,1,"115.2","115.2",analytical.area,area,A,true
+2020_P2_Q4.1,1,Circle equation,1,"x^2+y^2=25","x^2+y^2=25",analytical.circle,circle,A,true
+2020_P2_Q4.2,1,T coordinates,1,"T(-11;4)","T(-11;4)|T(-11,4)",analytical.circle,circle,A,false
+2020_P2_Q4.2,2,Radius=8,1,r=8,r=8,analytical.circle,circle,A,false
+2020_P2_Q4.2,3,Equation,1,"(x+3)^2+(y-4)^2=64","(x+3)^2+(y-4)^2=64",analytical.circle,circle,A,true
+2020_P2_Q4.3,1,m_OM=4/3,1,m_OM=4/3,"m_OM=4/3|m=-4/3",analytical.gradient,gradient,A,false
+2020_P2_Q4.3,2,m_NM=3/4,1,m_NM=3/4,m_NM=3/4,analytical.gradient,gradient,A,false
+2020_P2_Q4.3,3,Substitute,1,"y-4=3/4(x+3)","y-4=3/4(x+3)",analytical.line,line,A,false
+2020_P2_Q4.3,4,Equation,1,"y=3/4x+25/4","y=3/4x+25/4",analytical.line,line,A,true
+2020_P2_Q4.4,1,p=-2,1,p=-2,p=-2,analytical.circle,circle,A,false
+2020_P2_Q4.4,2,S coordinates,1,"S(3;-4)","S(3;-4)|S(3,-4)",analytical.circle,circle,A,false
+2020_P2_Q4.4,3,SN length,1,"SN=10sqrt(2) or 14.14","SN=10sqrt(2)|14.14|10√2",analytical.distance,distance,A,true
+2020_P2_Q4.5,1,B coordinates,1,"B(-2;5)","B(-2;5)|B(-2,5)",analytical.circle,circle,A,false
+2020_P2_Q4.5,2,Radius=8,1,"8 units","r=8|8|8 units",analytical.circle,circle,A,false
+2020_P2_Q4.5,3,k=6.6,1,"k=6.6","k=6.6|6.59",analytical.circle,circle,A,false
+2020_P2_Q4.5,4,k=9.4,1,"k=9.4","k=9.4|9.41",analytical.circle,circle,A,true
+2020_P2_Q5.1,1,Period,1,"360","360|360°",trig.graph,graph,A,true
+2020_P2_Q5.2,1,Amplitude,1,"1/2","1/2|0.5",trig.graph,graph,A,true
+2020_P2_Q5.3,1,f(180)-g(180),1,"1/2-(-1/2)","1/2-(-1/2)",trig.graph,graph,A,false
+2020_P2_Q5.3,2,Answer 1,1,1,"1",trig.graph,graph,A,true
+2020_P2_Q5.4.1,1,x value,1,140.9,"140.9",trig.graph,graph,A,true
+2020_P2_Q5.4.2,1,Divide by 2,1,"(sqrt3/2)sinx+(1/2)cosx>=1/2","(sqrt3/2)sinx+(1/2)cosx>=1/2",trig.graph,graph,A,false
+2020_P2_Q5.4.2,2,cos30 and sin30,1,"sin x cos30+cos x sin30","sin x cos30+cos x sin30",trig.graph,graph,A,false
+2020_P2_Q5.4.2,3,sin(x+30)>=1/2,1,"sin(x+30)>=1/2","sin(x+30)>=1/2",trig.graph,graph,A,false
+2020_P2_Q5.4.2,4,Interval,1,"[0;120]","[0;120]|0<=x<=120",trig.graph,graph,A,true
+2020_P2_Q6.1.1,1,tan value,1,"tan theta=-12/5","tan theta=-12/5",trig.unitcircle,trig,A,true
+2020_P2_Q6.1.2,1,Pythagoras,1,"OP^2=(-5)^2+12^2","OP^2=(-5)^2+12^2",trig.unitcircle,trig,A,false
+2020_P2_Q6.1.2,2,OP=13,1,OP=13,OP=13,trig.unitcircle,trig,A,false
+2020_P2_Q6.1.2,3,cos theta,1,"cos theta=-5/13","cos theta=-5/13",trig.unitcircle,trig,A,true
+2020_P2_Q6.1.3,1,sin(θ+90),1,"sin(θ+90)=b/6.5","sin(theta+90)=b/6.5",trig.unitcircle,trig,A,false
+2020_P2_Q6.1.3,2,cos θ,1,"cos θ","cos theta",trig.unitcircle,trig,A,false
+2020_P2_Q6.1.3,3,Substitute,1,"-5/13=b/6.5","-5/13=b/6.5",trig.unitcircle,trig,A,false
+2020_P2_Q6.1.3,4,b=-2.5,1,"b=-5/2","b=-5/2|-2.5",trig.unitcircle,trig,A,true
+2020_P2_Q6.2,1,Expand numerator,1,"sin2x cosx + cos2x(-sinx)","sin2x cosx + cos2x(-sinx)",trig.identity,trig,A,false
+2020_P2_Q6.2,2,sin(2x-x),1,"sin(2x-x)","sin(2x-x)|sin x",trig.identity,trig,A,false
+2020_P2_Q6.2,3,Denominator,1,"-sin x","-sin x",trig.identity,trig,A,false
+2020_P2_Q6.2,4,Numerator sin x,1,"sin x","sin x",trig.identity,trig,A,false
+2020_P2_Q6.2,5,Answer -1,1,"=-1","-1",trig.identity,trig,A,true
+2020_P2_Q6.3,1,Identity,1,"6(1-cos^2x)+7cosx-3=0","6(1-cos^2x)+7cosx-3=0",trig.equation,trig,A,false
+2020_P2_Q6.3,2,Standard form,1,"6cos^2x-7cosx-3=0","6cos^2x-7cosx-3=0",trig.equation,trig,A,false
+2020_P2_Q6.3,3,Factorise,1,"(3cosx+1)(2cosx-3)=0","(3cosx+1)(2cosx-3)=0",trig.equation,trig,A,false
+2020_P2_Q6.3,4,cosx=-1/3,1,"cosx=-1/3","cosx=-1/3",trig.equation,trig,A,false
+2020_P2_Q6.3,5,x=109.47+k.360,1,"x=109.47+k.360","x=109.47+k.360",trig.equation,trig,A,false
+2020_P2_Q6.3,6,x=250.53+k.360,1,"x=250.53+k.360","x=250.53+k.360",trig.equation,trig,A,false
+2020_P2_Q6.3,7,k in Z,1,"k in Z","k in Z|k∈Z",trig.equation,trig,A,true
+2020_P2_Q6.4,1,x^2-2+1/x^2=0,1,"x^2-2+1/x^2=0","x^2-2+1/x^2=0",trig.identity,trig,A,false
+2020_P2_Q6.4,2,(x-1/x)^2=0,1,"(x-1/x)^2=0","(x-1/x)^2=0",trig.identity,trig,A,false
+2020_P2_Q6.4,3,x=±1,1,"x=±1","x=±1",trig.identity,trig,A,false
+2020_P2_Q6.4,4,cos A=2/3 or -2/3,1,"cos A=2/3 or cos A=-2/3","cos A=2/3 or cos A=-2/3",trig.identity,trig,A,false
+2020_P2_Q6.4,5,cos2A=-1/9,1,"cos2A=-1/9","cos2A=-1/9",trig.identity,trig,A,true
+2020_P2_Q7.1,1,tan30 equation,1,"tan30=sqrt3r/QS","tan30=sqrt3r/QS",trig.3d,trig3d,A,false
+2020_P2_Q7.1,2,QS=3r,1,QS=3r,QS=3r,trig.3d,trig3d,A,false
+2020_P2_Q7.1,3,Answer 3r,1,3r,3r,trig.3d,trig3d,A,true
+2020_P2_Q7.2,1,Area formula,1,"9pi r^2-pi r^2","9pi r^2-pi r^2|9πr²-πr²",trig.3d,trig3d,A,false
+2020_P2_Q7.2,2,Answer 8pi r^2,1,"8pi r^2","8pi r^2|8πr²",trig.3d,trig3d,A,true
+2020_P2_Q7.3,1,Substitute,1,"RS^2=r^2+(3r)^2-2(r)(3r)cos2x","RS^2=r^2+(3r)^2-2(r)(3r)cos2x",trig.3d,trig3d,A,false
+2020_P2_Q7.3,2,Simplify,1,"r^2(10-6cos2x)","r^2(10-6cos2x)",trig.3d,trig3d,A,false
+2020_P2_Q7.3,3,Answer RS=r sqrt(10-6cos2x),1,"RS=r sqrt(10-6cos2x)","RS=r sqrt(10-6cos2x)",trig.3d,trig3d,A,true
+2020_P2_Q7.4,1,Substitute x=56,1,"RS=10 sqrt(10-6cos112)","RS=10 sqrt(10-6cos112)",trig.3d,trig3d,A,false
+2020_P2_Q7.4,2,Answer 35,1,"35 or 34.9966","35|34.9966",trig.3d,trig3d,A,true
+2020_P2_Q8.1.1a,1,O2=64,1,"O2=64","O2=64|O2=64°",euclidean.circle,euclid,A,false
+2020_P2_Q8.1.1a,2,Reason,1,"angle at centre = 2x circumference","angle at centre|midpts angle|angle at centre = 2x circumference",euclidean.circle,euclid,A,true
+2020_P2_Q8.1.1b,1,M2=90,1,"M2=90","M2=90|M2=90°",euclidean.circle,euclid,A,false
+2020_P2_Q8.1.1b,2,O1=52,1,O1=52,O1=52,euclidean.circle,euclid,A,true
+2020_P2_Q8.1.2,1,K2=32,1,K2=32,K2=32,euclidean.circle,euclid,A,false
+2020_P2_Q8.1.2,2,KN bisects,1,"KN bisects OKP","KN bisects|KN bisects OKP",euclidean.circle,euclid,A,true
+2020_P2_Q8.2.1,1,F1=D1,1,"F1=D1","F1=D1|tan chord",euclidean.circle,euclid,A,false
+2020_P2_Q8.2.1,2,D1=B,1,"D1=B","D1=B|given",euclidean.circle,euclid,A,false
+2020_P2_Q8.2.1,3,F1=B,1,"F1=B","F1=B",euclidean.circle,euclid,A,false
+2020_P2_Q8.2.1,4,FG parallel BC,1,"FG parallel BC","FG parallel BC|FG||BC",euclidean.circle,euclid,A,true
+2020_P2_Q8.2.2,1,x=31,1,x=31,x=31,euclidean.circle,euclid,A,true
+2020_P2_Q9.1,1,Construction,1,"Draw diameter KS and KR","draw diameter|KS and KR",euclidean.circle,euclid,A,false
+2020_P2_Q9.1,2,QST=90-TSK,1,"QST=90-TSK","QST=90-TSK",euclidean.circle,euclid,A,false
+2020_P2_Q9.1,3,SRK=90,1,"SRK=90","SRK=90|angle in semi-circle",euclidean.circle,euclid,A,false
+2020_P2_Q9.1,4,SRT=90-KRT,1,"SRT=90-KRT","SRT=90-KRT",euclidean.circle,euclid,A,false
+2020_P2_Q9.1,5,TSK=TRK,1,"TSK=TRK","TSK=TRK",euclidean.circle,euclid,A,false
+2020_P2_Q9.1,6,QST=R,1,"QST=R","QST=R",euclidean.circle,euclid,A,true
+2020_P2_Q9.2.1a,1,N2=x,1,"N2=x","N2=x",euclidean.circle,euclid,A,false
+2020_P2_Q9.2.1a,2,Alt angles,1,"alt angles PR parallel NQ","alt angles|PR parallel NQ|alt angles PR parallel NQ",euclidean.circle,euclid,A,true
+2020_P2_Q9.2.1b,1,Q2=x,1,"Q2=x","Q2=x",euclidean.circle,euclid,A,false
+2020_P2_Q9.2.1b,2,Tan chord,1,"tan chord","tan chord theorem|tan chord",euclidean.circle,euclid,A,true
+2020_P2_Q9.2.2,1,Proportional,1,"MN/NR=MS/SP","MN/NR=MS/SP|prop theorem",euclidean.circle,euclid,A,false
+2020_P2_Q9.2.2,2,N1=N2,1,"N1=N2","N1=N2",euclidean.circle,euclid,A,false
+2020_P2_Q9.2.2,3,P3=x,1,"P3=x","P3=x",euclidean.circle,euclid,A,false
+2020_P2_Q9.2.2,4,P3=Q2,1,"P3=Q2","P3=Q2",euclidean.circle,euclid,A,false
+2020_P2_Q9.2.2,5,SQ=PS,1,"SQ=PS","SQ=PS",euclidean.circle,euclid,A,false
+2020_P2_Q9.2.2,6,MN/NR=MS/SQ,1,"MN/NR=MS/SQ","MN/NR=MS/SQ",euclidean.circle,euclid,A,true
+2020_P2_Q10.1.1,1,DCE=90,1,"DCE=90","DCE=90|angle in semi-circle",euclidean.circle,euclid,A,false
+2020_P2_Q10.1.1,2,DMA=90,1,"DMA=90","DMA=90|AM perpendicular DE",euclidean.circle,euclid,A,false
+2020_P2_Q10.1.1,3,FBDM cyclic,1,"FBDM is cyclic quad","FBDM is cyclic quad|FBDM cyclic",euclidean.circle,euclid,A,true
+2020_P2_Q10.1.2,1,B3=D2,1,"B3=D2","B3=D2|tangent chord",euclidean.circle,euclid,A,false
+2020_P2_Q10.1.2,2,F1=D2,1,"F1=D2","F1=D2|ext angle cyclic quad",euclidean.circle,euclid,A,false
+2020_P2_Q10.1.2,3,B3=F1,1,"B3=F1","B3=F1",euclidean.circle,euclid,A,true
+2020_P2_Q10.1.3,1,Common angle,1,"C common","C common|C=Ĉ",euclidean.circle,euclid,A,false
+2020_P2_Q10.1.3,2,CBD=CEB,1,"CBD=CEB","CBD=CEB|tangent chord",euclidean.circle,euclid,A,false
+2020_P2_Q10.1.3,3,CDB=CBE,1,"CDB=CBE","CDB=CBE|sum of angles",euclidean.circle,euclid,A,false
+2020_P2_Q10.1.3,4,Triangles similar,1,"CDB || CBE","triangle CDB similar CBE|CDB CBE",euclidean.circle,euclid,A,true
+2020_P2_Q10.2.1,1,Ratio,1,"BC/EC=DC/BC","BC/EC=DC/BC",euclidean.circle,euclid,A,false
+2020_P2_Q10.2.1,2,BC^2=16,1,"BC^2=8*2","BC^2=8*2|BC^2=16",euclidean.circle,euclid,A,false
+2020_P2_Q10.2.1,3,BC=4,1,"BC=4","BC=4",euclidean.circle,euclid,A,true
+2020_P2_Q10.2.2,1,BE=2DB,1,"BE=2DB","BE=2DB",euclidean.circle,euclid,A,false
+2020_P2_Q10.2.2,2,Pythagoras,1,"DB^2+(2DB)^2=36","DB^2+(2DB)^2=36",euclidean.circle,euclid,A,false
+2020_P2_Q10.2.2,3,DB^2=36/5,1,"5DB^2=36","5DB^2=36",euclidean.circle,euclid,A,false
+2020_P2_Q10.2.2,4,Answer 2.68,1,"DB=6/sqrt5=2.68","6/sqrt5|2.68|DB=6/sqrt5=2.68",euclidean.circle,euclid,A,true
+2020_P2_Q11.1,1,Similar triangles,1,"equiangular or similar","equiangular|similar",euclidean.similarity,euclid,A,true
+2020_P2_Q11.2.1,1,KP/RN=PM/NM,1,"1.5/0.75=2/1","1.5/0.75|2/1|1.5/0.75=2/1",euclidean.similarity,euclid,A,false
+2020_P2_Q11.2.1,2,Answer similar,1,"KPM similar RNM","KPM similar RNM",euclidean.similarity,euclid,A,true
+2020_P2_Q11.2.2,1,P=90,1,"P=90","P=90|P=90°",euclidean.similarity,euclid,A,false
+2020_P2_Q11.2.2,2,P=common,1,"P common","P common",euclidean.similarity,euclid,A,false
+2020_P2_Q11.2.2,3,RPQ similar KPM,1,"RPQ similar KPM","RPQ similar KPM",euclidean.similarity,euclid,A,false
+2020_P2_Q11.2.2,4,Substitute RQ,1,"RP/KP=RQ/KM","RP/KP=RQ/KM",euclidean.similarity,euclid,A,false
+2020_P2_Q11.2.2,5,RQ=5.42,1,"RQ=5.42","RQ=5.42|RQ=5 5/12",euclidean.similarity,euclid,A,false
+2020_P2_Q11.2.2,6,NQ=4.67,1,"NQ=4.67","NQ=4.67|NQ=4 2/3",euclidean.similarity,euclid,A,true
