@@ -1,0 +1,81 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2022_P2_Q1.1.1,1,Sum of y values,1,155,155,statistics.mean,mean,A,false
+2022_P2_Q1.1.1,2,Mean answer,1,15.5,15.5,statistics.mean,mean,A,true
+2022_P2_Q1.1.2,1,Standard deviation,1,4.59,"4.59|4.6",statistics.stdev,stdev,A,true
+2022_P2_Q1.2,1,Compute x_bar minus sigma,1,"15.5-4.59=10.91","15.5-4.59=10.91|10.91",statistics.stdev,stdev,A,false
+2022_P2_Q1.2,2,Count learners,1,"10-2=8","10-2=8|8 learners|8",statistics.stdev,stdev,A,true
+2022_P2_Q1.3,1,a value,1,a=1.77,"a=1.77|1.77",statistics.regression,regression,A,false
+2022_P2_Q1.3,2,b value,1,b=0.22,"b=0.22|0.22",statistics.regression,regression,A,false
+2022_P2_Q1.3,3,Equation,1,"y_hat=1.77+0.22x","y_hat=1.77+0.22x|y=1.77+0.22x",statistics.regression,regression,A,true
+2022_P2_Q1.4,1,Substitute 72,1,"y_hat=1.77+0.22(72)","y_hat=1.77+0.22(72)|y=1.77+0.22(72)",statistics.regression,regression,A,false
+2022_P2_Q1.4,2,Answer 18 votes,1,"17.61 or 18 votes","17.61|18|18 votes",statistics.regression,regression,A,true
+2022_P2_Q2.1,1,Total staff,1,60 employees,"60 employees|60",statistics.frequency,frequency,A,true
+2022_P2_Q2.2,1,Class interval,1,"20 < x <= 25","20 < x <= 25|20<x<=25",statistics.frequency,frequency,A,true
+2022_P2_Q2.3,1,Compute 60-34,1,60-34,60-34,statistics.frequency,frequency,A,false
+2022_P2_Q2.3,2,Answer 26,1,26 employees,"26 employees|26",statistics.frequency,frequency,A,true
+2022_P2_Q2.4,1,Method,1,"100/7 x 2400","100/7 x 2400|100/7x2400",statistics.frequency,frequency,A,false
+2022_P2_Q2.4,2,Answer salary,1,34285.71,"34285.71|R34285.71|34285.7",statistics.frequency,frequency,A,true
+2022_P2_Q2.5,1,Effect on graph,1,"shift right or steeper","shift right|steeper|shift to the right|become steeper",statistics.frequency,frequency,A,true
+2022_P2_Q3.1.1,1,Substitute into gradient,1,"m_AB=(2-(-4))/(4-6)","m_AB=(2-(-4))/(4-6)|m_AB=(-4-2)/(6-4)",analytical.gradient,gradient,A,false
+2022_P2_Q3.1.1,2,m_AB=-3,1,m_AB=-3,"m_AB=-3|m=-3",analytical.gradient,gradient,A,true
+2022_P2_Q3.1.2,1,tan alpha = m,1,"tan alpha=-3","tan alpha=-3|tan(alpha)=-3|tanα=-3",analytical.gradient,gradient,A,true
+2022_P2_Q3.1.3,1,Midpoint formula,1,"T((x1+x2)/2, (y1+y2)/2)","T((x1+x2)/2, (y1+y2)/2)|T((x1+x2)/2;(y1+y2)/2)",analytical.midpoint,midpoint,A,false
+2022_P2_Q3.1.3,2,T coordinates,1,"T(2;-7/2)","T(2;-7/2)|T(2,-7/2)|T(2;-3.5)",analytical.midpoint,midpoint,A,true
+2022_P2_Q3.1.4,1,Substitute y=0,1,"5(0)-6y=8","5(0)-6y=8|5x-6y=8 x=0",analytical.line,line,A,false
+2022_P2_Q3.1.4,2,S coordinates,1,"S(0;-4/3)","S(0;-4/3)|S(0,-4/3)|S(0;-1.33)",analytical.line,line,A,true
+2022_P2_Q3.2,1,Gradient CD,1,m_CD=-3,"m_CD=-3",analytical.line,line,A,false
+2022_P2_Q3.2,2,Substitute point C,1,"-3=-3(-2)+c","-3=-3(-2)+c",analytical.line,line,A,false
+2022_P2_Q3.2,3,Equation y=-3x-9,1,y=-3x-9,y=-3x-9,analytical.line,line,A,true
+2022_P2_Q3.3.1,1,tan theta = 5/6,1,"tan theta=5/6","tan theta=5/6",analytical.gradient,gradient,A,false
+2022_P2_Q3.3.1,2,theta value,1,theta=39.81,"theta=39.81|θ=39.81|39.81",analytical.gradient,gradient,A,false
+2022_P2_Q3.3.1,3,Angle A,1,A=68.62,"A=68.62|68.62",analytical.gradient,gradient,A,false
+2022_P2_Q3.3.1,4,Angle DCA,1,DCA=68.62,"DCA=68.62|DCA=68.62°",analytical.gradient,gradient,A,true
+2022_P2_Q3.3.2,1,P coordinates,1,"P(-3;0)","P(-3;0)|P(-3,0)",analytical.area,area,A,false
+2022_P2_Q3.3.2,2,Method area PFC,1,"1/2(4.6)(3)","1/2(4.6)(3)|(1/2)(4.6)(3)",analytical.area,area,A,false
+2022_P2_Q3.3.2,3,Method area OFS,1,"1/2(1.6)(4/3)","1/2(1.6)(4/3)|1/2 x 1.6 x 4/3",analytical.area,area,A,false
+2022_P2_Q3.3.2,4,Answer 5.83,1,"5.83 units^2","5.83|5.83 units^2",analytical.area,area,A,true
+2022_P2_Q5.1.1,1,Ratio sin(360+x),1,sin x,"sin x",trig.reduction,trig,A,true
+2022_P2_Q5.1.2,1,Substitute Pythagoras,1,"x^2=13-9","x^2=13-9|x^2=(sqrt13)^2-3^2",trig.unitcircle,trig,A,false
+2022_P2_Q5.1.2,2,x=-2,1,x=-2,x=-2,trig.unitcircle,trig,A,false
+2022_P2_Q5.1.2,3,tan x=-3/2,1,"tan x=-3/2","tan x=-3/2|tan x = -3/-2",trig.unitcircle,trig,A,true
+2022_P2_Q5.1.3,1,Ratio cos(180+x),1,-cos x,"-cos x",trig.reduction,trig,A,true
+2022_P2_Q5.2,1,-sin theta,1,"-sin theta","-sin theta|-sinθ",trig.reduction,trig,A,false
+2022_P2_Q5.2,2,-3sin theta,1,"-3sin theta","-3sin theta|-3sinθ",trig.reduction,trig,A,false
+2022_P2_Q5.2,3,Simplify numerator,1,"-sin theta","-sin theta|-sinθ",trig.reduction,trig,A,false
+2022_P2_Q5.2,4,Final simplification,1,"-4sin theta","-4sin theta|-4sinθ",trig.reduction,trig,A,false
+2022_P2_Q5.2,5,Answer 1/4,1,"1/4","1/4",trig.reduction,trig,A,true
+2022_P2_Q5.3,1,Both equations,1,"cosx+2sinx=0 or 3sin2x-1=0","cosx+2sinx=0|3sin2x-1=0|cosx+2sinx=0 or 3sin2x-1=0|3sin2x-1=0 or cosx+2sinx=0",trig.equation,trig,A,false
+2022_P2_Q5.3,2,tan x=-1/2,1,"tan x=-1/2","tan x=-1/2",trig.equation,trig,A,false
+2022_P2_Q5.3,3,sin 2x=1/3,1,"sin 2x=1/3","sin 2x=1/3",trig.equation,trig,A,false
+2022_P2_Q5.3,4,x=153.43+k.180,1,"x=153.43+k.180","x=153.43+k.180|x=153.43°+k.180°",trig.equation,trig,A,false
+2022_P2_Q5.3,5,x=9.74+k.180,1,"x=9.74+k.180","x=9.74+k.180|x=9.74°+k.180°",trig.equation,trig,A,false
+2022_P2_Q5.3,6,k in Z,1,"k in Z","k in Z|k ∈ Z|k∈Z",trig.equation,trig,A,true
+2022_P2_Q5.4.1,1,Expansion,1,"(cosxcosy-sinxsiny)(cosxcosy+sinxsiny)","(cosxcosy-sinxsiny)(cosxcosy+sinxsiny)",trig.identity,trig,A,false
+2022_P2_Q5.4.1,2,Simplify to cos^2,1,"cos^2x cos^2y - sin^2x sin^2y","cos^2x cos^2y - sin^2x sin^2y",trig.identity,trig,A,false
+2022_P2_Q5.4.1,3,Square identity,1,"(1-sin^2x)(1-sin^2y)-sin^2x sin^2y","(1-sin^2x)(1-sin^2y)-sin^2x sin^2y",trig.identity,trig,A,false
+2022_P2_Q5.4.1,4,Answer = 1-sin^2x-sin^2y,1,"1-sin^2x-sin^2y","1-sin^2x-sin^2y|1-sin^2x-sin^2y=RHS",trig.identity,trig,A,true
+2022_P2_Q5.4.2,1,Identify x and y,1,"x=45; y=15","x=45; y=15|x=45 y=15",trig.identity,trig,A,false
+2022_P2_Q5.4.2,2,Substitute,1,"cos60cos30","cos60cos30|cos60*cos30",trig.identity,trig,A,false
+2022_P2_Q5.4.2,3,Answer sqrt3/4,1,"sqrt3/4","sqrt3/4|√3/4",trig.identity,trig,A,true
+2022_P2_Q5.5.1,1,Factorise,1,"8sinxcosx(2cos^2x-1)","8sinxcosx(2cos^2x-1)|8sinx.cosx(2cos2x)",trig.identity,trig,A,false
+2022_P2_Q5.5.1,2,4sin2x,1,"4sin2x","4sin2x",trig.identity,trig,A,false
+2022_P2_Q5.5.1,3,cos2x,1,cos2x,"cos2x",trig.identity,trig,A,false
+2022_P2_Q5.5.1,4,Answer 2sin4x,1,"2sin4x","2sin4x",trig.identity,trig,A,true
+2022_P2_Q5.5.2,1,Minimum value,1,x=67.5,"x=67.5|x=67.5°|67.5",trig.identity,trig,A,true
+2022_P2_Q6.1,1,Period,1,180,"180|180°",trig.graph,graph,A,true
+2022_P2_Q6.2.1,1,k value,1,"k=sqrt3","k=sqrt3|k=√3|k=1.73",trig.graph,graph,A,true
+2022_P2_Q6.2.2,1,B coords,1,"B(-120;sqrt3)","B(-120;√3)|B(-120,√3)|B(-120;1.73)|B(-120;sqrt3)|B(-120,sqrt3)",trig.graph,graph,A,true
+2022_P2_Q6.3,1,Range of 2g,1,"y in [-4;4]","y in [-4;4]|-4<=y<=4",trig.graph,graph,A,true
+2022_P2_Q6.4,1,Interval,1,"x in [-65;-5]","x in [-65;-5]|-65<=x<=-5",trig.graph,graph,A,true
+2022_P2_Q6.5,1,2sin2x=4p,1,"2sin2x=4p","2sin2x=4p",trig.graph,graph,A,false
+2022_P2_Q6.5,2,4p=±2,1,"4p=±2","4p=±2|4p=+/-2",trig.graph,graph,A,false
+2022_P2_Q6.5,3,p values,1,"p=-1/2 or p=1/2","p=-1/2 or p=1/2|p=1/2 or p=-1/2",trig.graph,graph,A,true
+2022_P2_Q7.1,1,Substitute Pythagoras,1,"AD^2=(sqrt5p)^2+(2p)^2","AD^2=(sqrt5p)^2+(2p)^2|AD^2=5p^2+4p^2",trig.3d,trig3d,A,false
+2022_P2_Q7.1,2,Answer AD=3p,1,AD=3p,"AD=3p|3p",trig.3d,trig3d,A,true
+2022_P2_Q7.2,1,Sine rule setup,1,"CD/sin(135-x)=3p/sinx","CD/sin(135-x)=3p/sinx",trig.3d,trig3d,A,false
+2022_P2_Q7.2,2,135-x angle,1,"135-x","135-x|135°-x",trig.3d,trig3d,A,false
+2022_P2_Q7.2,3,Compound angle,1,"sin(135-x)","sin(135-x)|sin(135°-x)",trig.3d,trig3d,A,false
+2022_P2_Q7.2,4,Special values,1,"sqrt2/2","sqrt2/2|√2/2",trig.3d,trig3d,A,false
+2022_P2_Q7.2,5,Answer CD=3p(sinx+cosx)/(sqrt2 sinx),1,"CD=3p(sinx+cosx)/(sqrt2 sinx)","CD=3p(sinx+cosx)/(sqrt2 sinx)|3p(sinx+cosx)/(sqrt2 sinx)",trig.3d,trig3d,A,true
+2022_P2_Q7.3,1,Area rule,1,"Area=1/2(3p)(CD)(sin45)","Area=1/2(3p)(CD)(sin45)|Area=1/2(AD)(CD)(sin45)",trig.3d,trig3d,A,false
+2022_P2_Q7.3,2,Substitute values,1,"143.11","143.11|143.11 m^2",trig.3d,trig3d,A,true
