@@ -1,0 +1,87 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2017_P2_Q1.1,1,a value,1,a=14.34,a=14.34|14.34,statistics.regression,regression,A,false
+2017_P2_Q1.1,2,b value,1,b=-0.64,b=-0.64|-0.64,statistics.regression,regression,A,true
+2017_P2_Q1.2,1,Substitute 11.7,1,y=14.34-0.64(11.7),y=14.34-0.64(11.7),statistics.regression,regression,A,false
+2017_P2_Q1.2,2,Answer 6.85,1,6.85 or 6.83,6.85|6.83,statistics.regression,regression,A,true
+2017_P2_Q1.3,1,Increases,1,increases,increases|gradient increases,statistics.regression,regression,A,false
+2017_P2_Q1.3,2,Reason,1,point (12.3;7.6) above data,point (12.3;7.6) above data|point (12.3;7.6) lies some distance above|point above data|(12.3;7.6) lies above,statistics.regression,regression,A,true
+2017_P2_Q2.1.1,1,Sum,1,472,472,statistics.mean,mean,A,false
+2017_P2_Q2.1.1,2,Answer 20.52,1,20.52,20.52|x=20.52,statistics.mean,mean,A,true
+2017_P2_Q2.1.2,1,Q1=16,1,Q1=16,Q1=16,statistics.quartiles,quartiles,A,false
+2017_P2_Q2.1.2,2,Q3=24,1,Q3=24,Q3=24,statistics.quartiles,quartiles,A,false
+2017_P2_Q2.1.2,3,IQR=8,1,IQR=8,IQR=8,statistics.quartiles,quartiles,A,true
+2017_P2_Q2.2,1,26.46,1,26.46,26.46,statistics.quartiles,quartiles,A,false
+2017_P2_Q2.2,2,Answer 4 girls,1,4 girls,4 girls|4,statistics.quartiles,quartiles,A,true
+2017_P2_Q2.3,1,Whiskers 12 and 36,1,whiskers 12 and 36,whiskers 12 and 36,statistics.quartiles,quartiles,A,false
+2017_P2_Q2.3,2,Q1 and Q3,1,"Q1=16, Q3=24","Q1=16, Q3=24",statistics.quartiles,quartiles,A,false
+2017_P2_Q2.3,3,Q2=20,1,Q2=20,Q2=20,statistics.quartiles,quartiles,A,true
+2017_P2_Q2.4.1,1,Girls,1,Girls,Girls|girls,statistics.quartiles,quartiles,A,true
+2017_P2_Q2.4.2,1,Boys five-number summary,1,15; 21; 23.5; 26; 38,15; 21; 23.5; 26; 38,statistics.quartiles,quartiles,A,false
+2017_P2_Q2.4.2,2,None of the boys,1,None of the boys,none of the boys|none,statistics.quartiles,quartiles,A,true
+2017_P2_Q3.1.1,1,Substitute,1,m_FC=(3.5-(-4))/(3-8),m_FC=(3.5-(-4))/(3-8),analytical.gradient,gradient,A,false
+2017_P2_Q3.1.1,2,m_FC=-3/2,1,m_FC=-3/2,m_FC=-3/2|-3/2,analytical.gradient,gradient,A,false
+2017_P2_Q3.1.1,3,Substitute C,1,-4=-3/2(8)+c,-4=-3/2(8)+c,analytical.line,line,A,false
+2017_P2_Q3.1.1,4,y=-3/2x+8,1,y=-3/2x+8,y=-3/2x+8,analytical.line,line,A,true
+2017_P2_Q3.1.2,1,AC: 3x+2y=16,1,3x+2y=16,3x+2y=16,analytical.line,line,A,false
+2017_P2_Q3.1.2,2,BG: 7x-10y=8,1,7x-10y=8,7x-10y=8,analytical.line,line,A,false
+2017_P2_Q3.1.2,3,Solve,1,22x=88,22x=88,analytical.line,line,A,false
+2017_P2_Q3.1.2,4,x=4,1,x=4,x=4,analytical.line,line,A,false
+2017_P2_Q3.1.2,5,y=2,1,y=2,y=2,analytical.line,line,A,false
+2017_P2_Q3.1.2,6,G coords,1,G(4;2),"G(4;2)|G(4,2)",analytical.line,line,A,true
+2017_P2_Q3.2,1,Midpoint formula,1,(xA+4)/2=3 and (yA+2)/2=3.5,(xA+4)/2=3 and (yA+2)/2=3.5|(xA+4)/2=3 and (yA+2)/2=7/2|(xA+4)/2=3,analytical.midpoint,midpoint,A,false
+2017_P2_Q3.2,2,A coords,1,A(2;5),"A(2;5)|A(2,5)",analytical.midpoint,midpoint,A,true
+2017_P2_Q3.3,1,Midpoint AB,1,(-2;0),(-2;0),analytical.midpoint,midpoint,A,false
+2017_P2_Q3.3,2,E(-2;0),1,E(-2;0),"E(-2;0)|E(-2,0)",analytical.midpoint,midpoint,A,false
+2017_P2_Q3.3,3,EF parallel BG,1,EF parallel BG,EF parallel BG|midpoint theorem,analytical.line,line,A,false
+2017_P2_Q3.3,4,Reason,1,midpoint theorem,midpoint theorem|line divides 2 sides in prop,analytical.line,line,A,true
+2017_P2_Q3.4,1,D coords,1,D(16;6),"D(16;6)|D(16,6)",analytical.line,line,A,true
+2017_P2_Q5.1,1,sinA,1,sin A,sin A,trig.reduction,trig,A,false
+2017_P2_Q5.1,2,-sinA,1,-sinA,-sin A|-sinA,trig.reduction,trig,A,false
+2017_P2_Q5.1,3,sinA,1,sin A,sin A,trig.reduction,trig,A,false
+2017_P2_Q5.1,4,-tanA,1,-tanA,-tan A|-tanA,trig.reduction,trig,A,false
+2017_P2_Q5.1,5,tan = sin/cos,1,tan = sin/cos,tan = sin/cos|tanA=sinA/cosA,trig.reduction,trig,A,false
+2017_P2_Q5.1,6,Answer cos A,1,cos A,cos A|cosA,trig.reduction,trig,A,true
+2017_P2_Q5.2.1,1,Substitute Pythagoras,1,t^2=34-9,t^2=34-9,trig.unitcircle,trig,A,false
+2017_P2_Q5.2.1,2,t=-5,1,t=-5,t=-5,trig.unitcircle,trig,A,true
+2017_P2_Q5.2.2,1,tan beta,1,tan beta=-5/3,tan beta=-5/3,trig.unitcircle,trig,A,true
+2017_P2_Q5.2.3,1,Double angle,1,2cos^2 beta-1,2cos^2 beta-1,trig.identity,trig,A,false
+2017_P2_Q5.2.3,2,Substitute,1,2(3/sqrt34)^2-1,2(3/sqrt34)^2-1,trig.identity,trig,A,false
+2017_P2_Q5.2.3,3,Simplify,1,18/34-1,18/34-1,trig.identity,trig,A,false
+2017_P2_Q5.2.3,4,Answer -16/34,1,-16/34,-16/34|-8/17,trig.identity,trig,A,true
+2017_P2_Q5.3.1,1,Expand,1,sinAcosB+cosAsinB-(sinAcosB-cosAsinB),sinAcosB+cosAsinB-(sinAcosB-cosAsinB),trig.identity,trig,A,false
+2017_P2_Q5.3.1,2,Simplify,1,2cosA sinB,2cosA sinB,trig.identity,trig,A,true
+2017_P2_Q5.3.2,1,60+17,1,60+17,60+17,trig.identity,trig,A,false
+2017_P2_Q5.3.2,2,60-17,1,60-17,60-17,trig.identity,trig,A,false
+2017_P2_Q5.3.2,3,Simplify,1,2 sin 17 cos 60,2 sin 17 cos 60,trig.identity,trig,A,false
+2017_P2_Q5.3.2,4,Answer sin17,1,sin 17,sin 17|sin17,trig.identity,trig,A,true
+2017_P2_Q6.1,1,-90 intercept,1,-90,-90|-90°,trig.graph,graph,A,false
+2017_P2_Q6.1,2,(0;-1),1,(0;-1),(0;-1),trig.graph,graph,A,false
+2017_P2_Q6.1,3,x-intercepts,1,-210 and 30,"-210 and 30|(-210;0) and (30;0)|(-210,0) and (30,0)|x=-210; x=30|-210; 30",trig.graph,graph,A,false
+2017_P2_Q6.1,4,Shape,1,shape,shape,trig.graph,graph,A,true
+2017_P2_Q6.2,1,cos2x=1-2sin^2x,1,cos2x=1-2sin^2x,cos2x=1-2sin^2x,trig.equation,trig,A,false
+2017_P2_Q6.2,2,Standard form,1,2sin^2x+2sinx-2=0,2sin^2x+2sinx-2=0,trig.equation,trig,A,false
+2017_P2_Q6.2,3,Substitute into formula,1,sinx=(-1±sqrt(5))/2,sinx=(-1±sqrt(5))/2,trig.equation,trig,A,false
+2017_P2_Q6.2,4,Answer (-1+sqrt5)/2,1,(-1+sqrt5)/2,(-1+sqrt5)/2|0.618,trig.equation,trig,A,true
+2017_P2_Q6.3,1,sinx=0.618,1,sinx=0.618,sinx=0.618,trig.equation,trig,A,false
+2017_P2_Q6.3,2,38.17,1,38.17,38.17|38.17°,trig.equation,trig,A,false
+2017_P2_Q6.3,3,141.83,1,141.83,141.83|141.83°,trig.equation,trig,A,false
+2017_P2_Q6.3,4,Points (38.17;0.24) and (141.83;0.24),1,(38.17;0.24) and (141.83;0.24),(38.17;0.24) and (141.83;0.24),trig.equation,trig,A,true
+2017_P2_Q7.1,1,ABC=90,1,ABC=90,ABC=90|ABC=90°,trig.3d,trig3d,A,true
+2017_P2_Q7.2,1,tan y ratio,1,AB=BE tany,AB=BE tan y|AB=k tan y,trig.3d,trig3d,A,false
+2017_P2_Q7.2,2,AB value,1,AB=k tan y,AB=k tan y,trig.3d,trig3d,A,false
+2017_P2_Q7.2,3,Correct ratio,1,AB/AC=sinx,AB/AC=sin x|sin x = AB/AC,trig.3d,trig3d,A,false
+2017_P2_Q7.2,4,Answer AC=k tany/sinx,1,AC=k tan y/sin x,AC=k tan y/sin x,trig.3d,trig3d,A,true
+2017_P2_Q7.3,1,Substitute into sine rule,1,DC/sin2x=AC/sin(90-x),DC/sin2x=AC/sin(90-x),trig.3d,trig3d,A,false
+2017_P2_Q7.3,2,sin2x=2sinxcosx,1,2 sin x cos x,sin2x=2sinxcosx|2sinxcosx,trig.3d,trig3d,A,false
+2017_P2_Q7.3,3,cos x cancel,1,cos x,cos x,trig.3d,trig3d,A,false
+2017_P2_Q7.3,4,Substitute,1,2k tan y/sinx * 2sinxcosx/cosx,2k tan y/sinx * 2sinxcosx/cosx,trig.3d,trig3d,A,false
+2017_P2_Q7.3,5,Answer 2k tan y,1,2k tan y,2k tan y,trig.3d,trig3d,A,true
+2017_P2_Q9.1.1,1,AF/BF=AG/CG,1,AF/BF=AG/CG,AF/BF=AG/CG,euclidean.similarity,euclid,A,false
+2017_P2_Q9.1.1,2,FG parallel BC,1,FG parallel BC,FG parallel BC|FG||BC,euclidean.similarity,euclid,A,true
+2017_P2_Q9.1.2,1,AG/GC=AH/HK,1,AG/GC=AH/HK,AG/GC=AH/HK,euclidean.similarity,euclid,A,false
+2017_P2_Q9.1.2,2,AG/GC=AE/ED,1,AG/GC=AE/ED,AG/GC=AE/ED,euclidean.similarity,euclid,A,false
+2017_P2_Q9.1.2,3,AH/HK=AE/ED,1,AH/HK=AE/ED,AH/HK=AE/ED,euclidean.similarity,euclid,A,true
+2017_P2_Q9.2,1,AE=18,1,AE=18,AE=18,euclidean.similarity,euclid,A,false
+2017_P2_Q9.2,2,HK=10,1,HK=10,HK=10,euclidean.similarity,euclid,A,false
+2017_P2_Q9.2,3,HE=3,1,HE=3,HE=3,euclidean.similarity,euclid,A,false
+2017_P2_Q9.2,4,EK=7,1,EK=7,EK=7,euclidean.similarity,euclid,A,true

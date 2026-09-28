@@ -1,0 +1,135 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2017_P1_Q1.1.1,1,Factorise,1,(x+7)(x+2)=0,(x+7)(x+2)=0|(x+2)(x+7)=0,algebra.quadratic.solve,factorise,A,false
+2017_P1_Q1.1.1,2,Root x=-7,1,x=-7,x=-7,algebra.quadratic.solve,factorise,A,true
+2017_P1_Q1.1.1,3,Root x=-2,1,x=-2,x=-2,algebra.quadratic.solve,factorise,A,true
+2017_P1_Q1.1.2,1,Substitute formula,1,x=(-9±sqrt(129))/8,x=(-9±sqrt(129))/8|x=(-9±√129)/8,algebra.quadratic.solve,formula,A,false
+2017_P1_Q1.1.2,2,x=0.29,1,x=0.29,x=0.29|0.29,algebra.quadratic.solve,formula,A,true
+2017_P1_Q1.1.2,3,x=-2.54,1,x=-2.54,x=-2.54|-2.54,algebra.quadratic.solve,formula,A,true
+2017_P1_Q1.1.3,1,x^2-5=4x,1,x^2-5=4x,x^2-5=4x,algebra.surd.solve,surd,A,false
+2017_P1_Q1.1.3,2,Standard form,1,x^2-4x-5=0,x^2-4x-5=0,algebra.surd.solve,surd,A,false
+2017_P1_Q1.1.3,3,Both answers,1,x=5 or x=-1,x=5 or x=-1|x=-1 or x=5,algebra.surd.solve,surd,A,false
+2017_P1_Q1.1.3,4,Answer x=5,1,x=5 (x=-1 rejected),"x=5|x=5 only|x≠-1, x=5",algebra.surd.solve,surd,A,true
+2017_P1_Q1.2,1,Write eq1 mA,1,y=3x-4,y=3x-4,algebra.simultaneous.solve,substitution,A,false
+2017_P1_Q1.2,2,Substitute,1,x^2+2x(3x-4)-(3x-4)^2=-2,x^2+2x(3x-4)-(3x-4)^2=-2,algebra.simultaneous.solve,substitution,A,false
+2017_P1_Q1.2,3,Standard form,1,x^2-8x+7=0,x^2-8x+7=0,algebra.simultaneous.solve,substitution,A,false
+2017_P1_Q1.2,4,Factorise,1,(x-7)(x-1)=0,(x-7)(x-1)=0|(x-1)(x-7)=0,algebra.simultaneous.solve,substitution,A,false
+2017_P1_Q1.2,5,x-values,1,x=1 or x=7,x=1 or x=7|x=7 or x=1,algebra.simultaneous.solve,substitution,A,true
+2017_P1_Q1.2,6,y-values,1,y=-1 or y=17,y=-1 or y=17|y=17 or y=-1,algebra.simultaneous.solve,substitution,A,true
+2017_P1_Q1.2,1,Write eq1 mB,1,x=(y+4)/3,x=(y+4)/3,algebra.simultaneous.solve,substitution,B,false
+2017_P1_Q1.2,2,Substitute,1,((y+4)/3)^2+2((y+4)/3)y-y^2=-2,((y+4)/3)^2+2((y+4)/3)y-y^2=-2,algebra.simultaneous.solve,substitution,B,false
+2017_P1_Q1.2,3,Standard form,1,y^2-16y-17=0,y^2-16y-17=0,algebra.simultaneous.solve,substitution,B,false
+2017_P1_Q1.2,4,Factorise,1,(y-17)(y+1)=0,(y-17)(y+1)=0|(y+1)(y-17)=0,algebra.simultaneous.solve,substitution,B,false
+2017_P1_Q1.2,5,y-values,1,y=-1 or y=17,y=-1 or y=17|y=17 or y=-1,algebra.simultaneous.solve,substitution,B,true
+2017_P1_Q1.2,6,x-values,1,x=1 or x=7,x=1 or x=7|x=7 or x=1,algebra.simultaneous.solve,substitution,B,true
+2017_P1_Q1.3.1,1,Factorise,1,(x+4)(x+4)>0,(x+4)(x+4)>0|(x+4)^2>0,algebra.quadratic.inequality,inequality,A,false
+2017_P1_Q1.3.1,2,Any one solution,1,x<-4 or x>-4,"x<-4 or x>-4|x!= -4|x in R, x!=-4",algebra.quadratic.inequality,inequality,A,true
+2017_P1_Q1.3.2,1,0<p,1,0,0,algebra.quadratic.inequality,inequality,A,false
+2017_P1_Q1.3.2,2,p<16,1,16,16,algebra.quadratic.inequality,inequality,A,false
+2017_P1_Q1.3.2,3,Answer 0<p<16,1,0<p<16,0<p<16,algebra.quadratic.inequality,inequality,A,true
+2017_P1_Q2.1.1,1,First differences,1,-9; -15; -21,-9; -15; -21,sequences.quadratic,arith,A,false
+2017_P1_Q2.1.1,2,Second difference,1,-6,-6,sequences.quadratic,arith,A,true
+2017_P1_Q2.1.2,1,a=-3,1,a=-3,a=-3,sequences.quadratic,arith,A,false
+2017_P1_Q2.1.2,2,b=0,1,b=0,b=0,sequences.quadratic,arith,A,false
+2017_P1_Q2.1.2,3,c=8,1,c=8,c=8,sequences.quadratic,arith,A,false
+2017_P1_Q2.1.2,4,Write Tn,1,Tn=-3n^2+8,Tn=-3n^2+8|-3n^2+8,sequences.quadratic,arith,A,true
+2017_P1_Q2.1.3,1,Substitute,1,-3n^2+8=-25939,-3n^2+8=-25939,sequences.quadratic,arith,A,false
+2017_P1_Q2.1.3,2,n^2=8649,1,n^2=8649,n^2=8649,sequences.quadratic,arith,A,false
+2017_P1_Q2.1.3,3,Answer 93rd,1,93,93|n=93,sequences.quadratic,arith,A,true
+2017_P1_Q2.2.1,1,Solve k=12,1,k=12,k=12,sequences.arithmetic,arith,A,false
+2017_P1_Q2.2.1,2,Sequence 17;20;23,1,17; 20; 23,17; 20; 23,sequences.arithmetic,arith,A,false
+2017_P1_Q2.2.1,3,d=3,1,d=3,d=3,sequences.arithmetic,arith,A,false
+2017_P1_Q2.2.1,4,T15=59,1,T15=59,T15=59,sequences.arithmetic,arith,A,true
+2017_P1_Q2.2.2,1,a=20,1,a=20; d=6,a=20; d=6|a=20 d=6,sequences.arithmetic,arith,A,false
+2017_P1_Q2.2.2,2,Substitute,1,S30=30/2[2(20)+(29)(6)],S30=30/2[2(20)+(29)(6)],sequences.arithmetic,arith,A,false
+2017_P1_Q2.2.2,3,Answer 3210,1,S30=3210,S30=3210|3210,sequences.arithmetic,arith,A,true
+2017_P1_Q3.1,1,Substitute eq1,1,a+ar=2,a+ar=2,sequences.geometric,geom,A,false
+2017_P1_Q3.1,2,Solve a,1,a=2/(1+r),a=2/(1+r),sequences.geometric,geom,A,true
+2017_P1_Q3.2,1,S_inf=T1+T2+...,1,S_inf=2+1/4,S_inf=2+1/4,sequences.geometric,geom,A,false
+2017_P1_Q3.2,2,a/(1-r)=9/4,1,a/(1-r)=9/4,a/(1-r)=9/4,sequences.geometric,geom,A,false
+2017_P1_Q3.2,3,9r^2=1,1,9r^2=1,9r^2=1,sequences.geometric,geom,A,false
+2017_P1_Q3.2,4,r=1/3,1,r=1/3,r=1/3,sequences.geometric,geom,A,false
+2017_P1_Q3.2,5,a=3/2,1,a=3/2,a=3/2,sequences.geometric,geom,A,true
+2017_P1_Q4.1,1,f'(x),1,f'(x)=-2ax+b,f'(x)=-2ax+b,calculus.polynomial,derivative,A,false
+2017_P1_Q4.1,2,2a+b=3,1,2a+b=3,2a+b=3,calculus.polynomial,derivative,A,false
+2017_P1_Q4.1,3,-a-b+6=7/2,1,-a-b+6=7/2,-a-b+6=7/2,calculus.polynomial,derivative,A,false
+2017_P1_Q4.1,4,Solve simultaneously,1,solve simultaneously,solve simultaneously,calculus.polynomial,derivative,A,false
+2017_P1_Q4.1,5,b=2,1,b=2,b=2,calculus.polynomial,derivative,A,false
+2017_P1_Q4.1,6,a=1/2,1,a=1/2,a=1/2,calculus.polynomial,derivative,A,true
+2017_P1_Q4.2,1,-1/2x^2+2x+6=0,1,-1/2x^2+2x+6=0,-1/2x^2+2x+6=0,functions.parabola,parabola,A,false
+2017_P1_Q4.2,2,Factorise,1,(x-6)(x+2)=0,(x-6)(x+2)=0|(x+2)(x-6)=0,functions.parabola,parabola,A,false
+2017_P1_Q4.2,3,Answers,1,(-2;0) (6;0),"(-2;0) (6;0)|(-2,0) (6,0)",functions.parabola,parabola,A,true
+2017_P1_Q4.3,1,-x+2=0,1,-x+2=0,-x+2=0|x=-b/2a,functions.parabola,parabola,A,false
+2017_P1_Q4.3,2,x=2,1,x=2,x=2,functions.parabola,parabola,A,false
+2017_P1_Q4.3,3,y=8,1,y=8,y=8,functions.parabola,parabola,A,false
+2017_P1_Q4.3,4,TP(2;8),1,(2;8),(2;8)|TP(2;8),functions.parabola,parabola,A,true
+2017_P1_Q4.4,1,Shape,1,shape,shape,functions.parabola,parabola,A,false
+2017_P1_Q4.4,2,x-intercepts,1,x-intercepts,x-intercepts|x intercepts,functions.parabola,parabola,A,false
+2017_P1_Q4.4,3,y-intercept,1,y-intercept,y-intercept|y intercept,functions.parabola,parabola,A,false
+2017_P1_Q4.4,4,(2;8),1,(2;8),(2;8),functions.parabola,parabola,A,true
+2017_P1_Q4.5,1,Answer 4,1,4,4,functions.parabola,parabola,A,false
+2017_P1_Q4.5,2,Answer 0<x<4,1,0<x<4,0<x<4|0<x<4,functions.parabola,parabola,A,true
+2017_P1_Q4.6,1,x-intercepts,1,x-intercepts,x-intercepts,functions.line,line,A,false
+2017_P1_Q4.6,2,y-intercepts,1,y-intercepts,y-intercepts,functions.line,line,A,true
+2017_P1_Q4.7,1,x<=-2,1,x<=-2,x<=-2,functions.parabola,parabola,A,false
+2017_P1_Q4.7,2,-1<=x<=6,1,-1<=x<=6,-1<=x<=6|-1≤x≤6,functions.parabola,parabola,A,true
+2017_P1_Q5.1,1,Range y!=-1,1,"y in R, y!=-1","y in R, y!=-1|y!=-1|y≠-1",functions.hyperbola,hyperbola,A,true
+2017_P1_Q5.2,1,D coords,1,D(2;-1),"D(2;-1)|D(2,-1)",functions.hyperbola,hyperbola,A,false
+2017_P1_Q5.2,2,g(x),1,g(x)=2/(x-2)-1,g(x)=2/(x-2)-1,functions.hyperbola,hyperbola,A,true
+2017_P1_Q5.3,1,Substitute A,1,log_3 t=1,log_3 t=1|log3 t=1,functions.log,log,A,false
+2017_P1_Q5.3,2,t=3,1,t=3,t=3,functions.log,log,A,true
+2017_P1_Q5.4,1,Swap x and y,1,x=log_3 y,x=log_3 y,functions.log,log,A,false
+2017_P1_Q5.4,2,y=3^x,1,y=3^x,y=3^x,functions.log,log,A,true
+2017_P1_Q5.5,1,3^x<3^1,1,3^x<3^1,3^x<3^1,functions.log,log,A,false
+2017_P1_Q5.5,2,x<1,1,x<1,x<1|x in (-inf;1),functions.log,log,A,true
+2017_P1_Q5.6,1,Equation axis,1,y=-x+1,y=-x+1,functions.log,log,A,false
+2017_P1_Q5.6,2,B or (1;0),1,B or (1;0),B(1;0)|(1;0),functions.log,log,A,true
+2017_P1_Q6.1,1,r/12=0.005416,1,(1+r/12)^36=1.214672,(1+r/12)^36=1.214672,finance.compound,finance,A,false
+2017_P1_Q6.1,2,r=6.5%,1,r=0.065,r=0.065|r=6.5%,finance.compound,finance,A,true
+2017_P1_Q6.2.1,1,i=0.11/12,1,i=0.11/12,i=0.11/12,finance.present_value,finance,A,false
+2017_P1_Q6.2.1,2,n=54,1,n=54,n=54,finance.present_value,finance,A,false
+2017_P1_Q6.2.1,3,Substitute,1,235000=x[1-(1+0.11/12)^-54]/(0.11/12),235000=x[1-(1+0.11/12)^-54]/(0.11/12),finance.present_value,finance,A,false
+2017_P1_Q6.2.1,4,x=5536.95,1,x=5536.95,x=5536.95,finance.present_value,finance,A,true
+2017_P1_Q6.2.2,1,Total paid,1,5536.95*12=66443.40,5536.95*12=66443.40,finance.present_value,finance,A,false
+2017_P1_Q6.2.2,2,Balance,1,235000(1+0.11/12)^12-...,235000(1+0.11/12)^12|balance,finance.present_value,finance,A,false
+2017_P1_Q6.2.2,3,192296.17,1,192296.17,192296.17,finance.present_value,finance,A,false
+2017_P1_Q6.2.2,4,Interest 23739.57,1,66443.40-42703.83=23739.57,66443.40-42703.83=23739.57|23739.57|R23739.57|23739.60,finance.present_value,finance,A,true
+2017_P1_Q7.1,1,f(x+h),1,f(x+h)=2(x+h)^2-(x+h),f(x+h)=2(x+h)^2-(x+h),calculus.first_principles,first_principles,A,false
+2017_P1_Q7.1,2,Expand,1,2x^2+4xh+2h^2-x-h,2x^2+4xh+2h^2-x-h,calculus.first_principles,first_principles,A,false
+2017_P1_Q7.1,3,Difference,1,4xh+2h^2-h,4xh+2h^2-h,calculus.first_principles,first_principles,A,false
+2017_P1_Q7.1,4,Factorise,1,h(4x+2h-1),h(4x+2h-1),calculus.first_principles,first_principles,A,false
+2017_P1_Q7.1,5,Answer 4x-1,1,4x-1,4x-1,calculus.first_principles,first_principles,A,true
+2017_P1_Q7.2.1,1,Simplify,1,3x^2-4x-7,3x^2-4x-7,calculus.polynomial,derivative,A,false
+2017_P1_Q7.2.1,2,Derivative,1,6x-4,6x-4,calculus.polynomial,derivative,A,true
+2017_P1_Q7.2.2,1,x^(3/2),1,x^(3/2)-5x^-1+1/2 pi,x^(3/2)-5x^-1+1/2 pi,calculus.polynomial,derivative,A,false
+2017_P1_Q7.2.2,2,3/2 x^(1/2),1,3/2 x^(1/2),3/2 x^(1/2),calculus.polynomial,derivative,A,false
+2017_P1_Q7.2.2,3,+5x^-2,1,5x^-2,5x^-2,calculus.polynomial,derivative,A,false
+2017_P1_Q7.2.2,4,Derivative 1/2 pi is 0,1,derivative of 1/2 pi is 0,derivative of 1/2 pi is 0|derivative 1/2 pi is 0|1/2 pi derivative is 0,calculus.polynomial,derivative,A,true
+2017_P1_Q8.1,1,f(x) givens,1,x^3-6x^2+9x,x^3-6x^2+9x,calculus.cubic,derivative,A,false
+2017_P1_Q8.1,2,f'(x),1,3x^2-12x+9,3x^2-12x+9,calculus.cubic,derivative,A,false
+2017_P1_Q8.1,3,f''(x),1,6x-12,6x-12,calculus.cubic,derivative,A,false
+2017_P1_Q8.1,4,f''(x)=0,1,6x-12=0,6x-12=0,calculus.cubic,derivative,A,false
+2017_P1_Q8.1,5,Explanation,1,explanation,explanation|f'' changes sign,calculus.cubic,derivative,A,true
+2017_P1_Q8.2,1,Shape,1,shape,shape,calculus.cubic,derivative,A,false
+2017_P1_Q8.2,2,(0;0),1,(0;0),(0;0),calculus.cubic,derivative,A,false
+2017_P1_Q8.2,3,(3;0),1,(3;0),(3;0),calculus.cubic,derivative,A,false
+2017_P1_Q8.2,4,(1;4),1,(1;4),(1;4),calculus.cubic,derivative,A,true
+2017_P1_Q8.3,1,x>2,1,x>2,x>2,calculus.cubic,derivative,A,true
+2017_P1_Q8.4.1,1,(3;7),1,(3;7),(3;7),calculus.cubic,derivative,A,true
+2017_P1_Q8.4.2,1,No,1,No,No|no,calculus.cubic,derivative,A,false
+2017_P1_Q8.4.2,2,Justification,1,graph decreasing between 1 and 3,graph decreasing between 1 and 3|decreasing|negative gradient|f decreasing between 1 and 3,calculus.cubic,derivative,A,true
+2017_P1_Q9.1,1,Substitute,1,PB^2=(x-0)^2+(x^2+2-3)^2,PB^2=(x-0)^2+(x^2+2-3)^2,calculus.optimisation,optimisation,A,false
+2017_P1_Q9.1,2,Derivative,1,4x^3-2x,4x^3-2x,calculus.optimisation,optimisation,A,false
+2017_P1_Q9.1,3,Set to 0,1,4x^3-2x=0,4x^3-2x=0,calculus.optimisation,optimisation,A,false
+2017_P1_Q9.1,4,x=1/sqrt2,1,x=1/sqrt2,x=1/sqrt2|1/√2,calculus.optimisation,optimisation,A,false
+2017_P1_Q9.1,5,PB^2=3/4,1,PB^2=3/4,PB^2=3/4,calculus.optimisation,optimisation,A,false
+2017_P1_Q9.1,6,Answer PB=sqrt3/2,1,sqrt3/2,sqrt3/2|0.87,calculus.optimisation,optimisation,A,true
+2017_P1_Q10.1,1,Answer 7,1,7,7,probability.counting,counting,A,false
+2017_P1_Q10.1,2,Answer 6,1,6,6,probability.counting,counting,A,false
+2017_P1_Q10.1,3,Answer 2,1,2,2,probability.counting,counting,A,false
+2017_P1_Q10.1,4,Answer 1,1,1,1,probability.counting,counting,A,true
+2017_P1_Q10.2,1,Standard form,1,x^2-11x+30=0,x^2-11x+30=0,probability.independent,probability,A,false
+2017_P1_Q10.2,2,Answer 5 or 6,1,5 or 6,"5 or 6|5,6",probability.independent,probability,A,true
+2017_P1_Q11.1,1,5*5*10*9,1,5*5*10*9,5*5*10*9,probability.counting,counting,A,false
+2017_P1_Q11.1,2,Answer 2250,1,2250,2250,probability.counting,counting,A,true
+2017_P1_Q11.2,1,5-digit codes,1,5*5*10*9*8*7*6,5*5*10*9*8*7*6,probability.counting,counting,A,false
+2017_P1_Q11.2,2,Answer 756000,1,756000,756000,probability.counting,counting,A,true
