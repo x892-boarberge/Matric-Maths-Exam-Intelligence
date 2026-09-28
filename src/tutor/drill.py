@@ -7,6 +7,7 @@ Works identically for every topic. No answer leaks. No note spam.
 """
 from __future__ import annotations
 
+import json
 import random
 import uuid
 from typing import Optional
@@ -260,6 +261,78 @@ def _print_step_feedback(result: dict) -> None:
     print("    (In the exam, markers award marks per step.)")
 
 
+# ============================================================
+# Auto-outcome measurement
+# ============================================================
+
+def _close_open_interventions(store, learner_id, skill_id, step_result,
+                               current_qid, session_id):
+    """For every open intervention on this learner+skill, record whether the
+    learner now shows what was being taught.
+
+    Called on MATCH. The outcome is:
+      - improved   : the step that was taught is now MATCHED
+                     (or, if no step can be checked, the answer matched)
+      - unchanged  : the step is still NOT_MATCHED
+      - (skip)     : the step is UNCERTAIN, or we can't determine
+
+    This is the piece that makes the loop turn by itself. Every time a
+    learner does well, the tutor learns something about its own teaching.
+    """
+    try:
+        open_invs = store.interventions.list_open(learner_id, skill_id)
+    except Exception:
+        return
+    if not open_invs:
+        return
+
+    # Build a lookup: step_index -> match_status from the current attempt
+    step_status = {}
+    if step_result is not None:
+        for s in step_result.get("steps", []):
+            step_status[int(s.get("index", -1))] = s.get("match_status")
+
+    for inv in open_invs:
+        try:
+            ctx = json.loads(inv.get("context") or "{}")
+        except Exception:
+            ctx = {}
+        step_index = ctx.get("step_index")
+
+        if step_index is not None and int(step_index) in step_status:
+            status = step_status[int(step_index)]
+            if status == "MATCHED":
+                result = "improved"
+            elif status == "NOT_MATCHED":
+                result = "unchanged"
+            else:
+                continue  # UNCERTAIN — cannot judge, leave open
+            evidence = {
+                "measured_via": "step_grader",
+                "step_index": int(step_index),
+                "current_qid": current_qid,
+                "session_id": session_id,
+            }
+        else:
+            # No step to check — fall back to overall answer match.
+            result = "improved"
+            evidence = {
+                "measured_via": "answer_match",
+                "current_qid": current_qid,
+                "session_id": session_id,
+            }
+
+        try:
+            store.interventions.record_outcome(
+                intervention_id=inv["intervention_id"],
+                learner_id=learner_id,
+                result=result,
+                measurement_kind="follow_up",
+                evidence=evidence,
+            )
+        except Exception:
+            pass  # never break the drill
+
 def run(engine, store, learner_id, session_id, anchor, logger=None,
         interactive_input=True, sitting_number=1):
     template_id = route_template(anchor.skill_id, anchor.prompt)
@@ -415,6 +488,39 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
                         step_result = None
                 if step_result is not None:
                     _print_step_feedback(step_result)
+
+
+                    # Log interventions for each missing step shown to the learner.
+                    # When the learner later does this skill again, we check
+                    # whether they showed the step -- that is the outcome.
+                    try:
+                        missing = [
+                            s for s in step_result.get("steps", [])
+                            if s.get("match_status") == "NOT_MATCHED"
+                        ]
+                        for m in missing:
+                            store.interventions.log(
+                                learner_id=learner_id,
+                                skill_id=anchor.skill_id,
+                                action_type="memo_line_shown",
+                                action_desc="Showed memo version of missed step: " + m["desc"],
+                                question_id=drill_problem.problem_id,
+                                session_id=session_id,
+                                context={"step_index": m["index"],
+                                         "step_desc": m["desc"]},
+                            )
+                    except Exception:
+                        pass  # never break the drill
+
+
+                    # Auto-close prior interventions on this skill. If we taught
+                    # something last time and the learner now shows it, we learn
+                    # that our teaching worked. If they still don't, we learn
+                    # that it didn't. Either way, the loop turns itself.
+                    _close_open_interventions(
+                        store, learner_id, anchor.skill_id, step_result,
+                        drill_problem.problem_id, session_id,
+                    )
 
                 # One NEW presentation note per question (dedup)
                 try:

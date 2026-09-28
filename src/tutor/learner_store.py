@@ -93,6 +93,35 @@ CREATE INDEX IF NOT EXISTS idx_discovery_pattern
 CREATE INDEX IF NOT EXISTS idx_discovery_status
     ON tutor_discovery(status, times_seen DESC);
 
+
+
+CREATE TABLE IF NOT EXISTS intervention (
+    intervention_id      TEXT PRIMARY KEY,
+    learner_id           TEXT NOT NULL,
+    discovery_id         TEXT,
+    skill_id             TEXT NOT NULL,
+    question_id          TEXT,
+    action_type          TEXT NOT NULL,
+    action_desc          TEXT NOT NULL,
+    applied_at           TEXT NOT NULL,
+    session_id           TEXT,
+    context              TEXT NOT NULL DEFAULT '{}'
+);
+CREATE INDEX IF NOT EXISTS idx_intervention_learner_skill
+    ON intervention (learner_id, skill_id, applied_at DESC);
+
+CREATE TABLE IF NOT EXISTS outcome (
+    outcome_id           TEXT PRIMARY KEY,
+    intervention_id      TEXT NOT NULL,
+    learner_id           TEXT NOT NULL,
+    measured_at          TEXT NOT NULL,
+    measurement_kind     TEXT NOT NULL,
+    result               TEXT NOT NULL,
+    days_since           INTEGER,
+    evidence             TEXT NOT NULL DEFAULT '{}'
+);
+CREATE INDEX IF NOT EXISTS idx_outcome_intervention
+    ON outcome (intervention_id);
 """
 
 
@@ -109,6 +138,7 @@ class LearnerStore:
         self.conn.executescript(SCHEMA)
         self.conn.commit()
         self.discoveries = DiscoveryStore(self.conn)
+        self.interventions = InterventionStore(self.conn)
 
     # ---------- learner ----------
 
@@ -260,6 +290,7 @@ class LearnerStore:
 # Import here to avoid circular import in tests
 from .schemas import MasteryState
 from .discovery_store import DiscoveryStore
+from .intervention_store import InterventionStore
 
 
 def open_store(path: Path) -> LearnerStore:
