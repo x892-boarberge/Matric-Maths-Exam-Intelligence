@@ -1,0 +1,136 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2018_P1_Q1.1.1,1,Factorise,1,(x-3)(x-1)=0,(x-3)(x-1)=0|(x-1)(x-3)=0,algebra.quadratic.solve,factorise,A,false
+2018_P1_Q1.1.1,2,Root x=3,1,x=3,x=3,algebra.quadratic.solve,factorise,A,true
+2018_P1_Q1.1.1,3,Root x=1,1,x=1,x=1,algebra.quadratic.solve,factorise,A,true
+2018_P1_Q1.1.2,1,Substitute formula,1,x=(5±sqrt(5))/10,x=(5±sqrt(5))/10|x=(5±√5)/10,algebra.quadratic.solve,formula,A,false
+2018_P1_Q1.1.2,2,x=0.72,1,x=0.72,x=0.72|0.72,algebra.quadratic.solve,formula,A,true
+2018_P1_Q1.1.2,3,x=0.28,1,x=0.28,x=0.28|0.28,algebra.quadratic.solve,formula,A,true
+2018_P1_Q1.1.3,1,Factorise,1,(x-5)(x+2)>0,(x-5)(x+2)>0|(x+2)(x-5)>0,algebra.quadratic.inequality,inequality,A,false
+2018_P1_Q1.1.3,2,Answer x<-2 or x>5,2,x<-2 or x>5,x<-2 or x>5|x>5 or x<-2,algebra.quadratic.inequality,inequality,A,true
+2018_P1_Q1.1.4,1,Standard form,1,x^2-17x+16=0,x^2-17x+16=0,algebra.surd.solve,surd,A,false
+2018_P1_Q1.1.4,2,Factorise,1,(x-16)(x-1)=0,(x-16)(x-1)=0|(x-1)(x-16)=0,algebra.surd.solve,surd,A,false
+2018_P1_Q1.1.4,3,Answer x=16,1,x=16 (x=1 rejected),"x=16|x=16 only|x≠1, x=16",algebra.surd.solve,surd,A,true
+2018_P1_Q1.2,1,Write eq1 mA,1,y=3x-2,y=3x-2,algebra.simultaneous.solve,substitution,A,false
+2018_P1_Q1.2,2,Substitute,1,2(3x-2)+9x^2=-1,2(3x-2)+9x^2=-1,algebra.simultaneous.solve,substitution,A,false
+2018_P1_Q1.2,3,Standard form,1,3x^2+2x-1=0,3x^2+2x-1=0|9x^2+6x-3=0,algebra.simultaneous.solve,substitution,A,false
+2018_P1_Q1.2,4,Factorise,1,(3x-1)(x+1)=0,(3x-1)(x+1)=0|(x+1)(3x-1)=0,algebra.simultaneous.solve,substitution,A,false
+2018_P1_Q1.2,5,x-values,1,x=1/3 or x=-1,x=1/3 or x=-1|x=-1 or x=1/3,algebra.simultaneous.solve,substitution,A,true
+2018_P1_Q1.2,6,y-values,1,y=-1 or y=-5,y=-1 or y=-5|y=-5 or y=-1,algebra.simultaneous.solve,substitution,A,true
+2018_P1_Q1.2,1,Write eq1 mB,1,x=(y+2)/3,x=(y+2)/3,algebra.simultaneous.solve,substitution,B,false
+2018_P1_Q1.2,2,Substitute,1,2y+9((y+2)/3)^2=-1,2y+9((y+2)/3)^2=-1,algebra.simultaneous.solve,substitution,B,false
+2018_P1_Q1.2,3,Standard form,1,y^2+6y+5=0,y^2+6y+5=0,algebra.simultaneous.solve,substitution,B,false
+2018_P1_Q1.2,4,Factorise,1,(y+5)(y+1)=0,(y+5)(y+1)=0|(y+1)(y+5)=0,algebra.simultaneous.solve,substitution,B,false
+2018_P1_Q1.2,5,y-values,1,y=-1 or y=-5,y=-1 or y=-5|y=-5 or y=-1,algebra.simultaneous.solve,substitution,B,true
+2018_P1_Q1.2,6,x-values,1,x=1/3 or x=-1,x=1/3 or x=-1|x=-1 or x=1/3,algebra.simultaneous.solve,substitution,B,true
+2018_P1_Q1.3,1,3^(3x)=4,1,3^(3x)=4,3^(3x)=4,algebra.exponential.proof,proof,A,false
+2018_P1_Q1.3,2,5^sqrt(p)=8,1,5^sqrt(p)=8,5^sqrt(p)=8,algebra.exponential.proof,proof,A,false
+2018_P1_Q1.3,3,Rewrite,1,3^(3x-3),3^(3x-3)|3^(3x)*3^-3,algebra.exponential.proof,proof,A,false
+2018_P1_Q1.3,4,Answer 1/54,1,1/54,1/54,algebra.exponential.proof,proof,A,true
+2018_P1_Q2.1.1,1,Answer 42,1,42,42,sequences.quadratic,arith,A,true
+2018_P1_Q2.1.2,1,a=3,1,a=3,a=3,sequences.quadratic,arith,A,false
+2018_P1_Q2.1.2,2,b=-8,1,b=-8,b=-8,sequences.quadratic,arith,A,false
+2018_P1_Q2.1.2,3,c=7,1,c=7,c=7,sequences.quadratic,arith,A,false
+2018_P1_Q2.1.2,4,Write Tn,1,Tn=3n^2-8n+7,Tn=3n^2-8n+7|3n^2-8n+7,sequences.quadratic,arith,A,true
+2018_P1_Q2.1.3,1,Substitute 20,1,T20=3(20)^2-8(20)+7,T20=3(20)^2-8(20)+7,sequences.quadratic,arith,A,false
+2018_P1_Q2.1.3,2,Answer 1047,1,1047,1047,sequences.quadratic,arith,A,true
+2018_P1_Q2.2,1,Tn=-7n+42,1,Tn=-7n+42,Tn=-7n+42|-7n+42,sequences.arithmetic,arith,A,false
+2018_P1_Q2.2,2,Equate to -140,1,-7n+42=-140,-7n+42=-140,sequences.arithmetic,arith,A,false
+2018_P1_Q2.2,3,n=26,1,n=26,n=26,sequences.arithmetic,arith,A,true
+2018_P1_Q2.3,1,Substitute S_n,1,S_n=n/2(-7n+77),S_n=n/2(-7n+77)|S_n=n/2(35-7n+42),sequences.arithmetic,arith,A,false
+2018_P1_Q2.3,2,Equate,1,-7/2 n^2+77/2 n=3n^2-8n+7,-7/2 n^2+77/2 n=3n^2-8n+7,sequences.arithmetic,arith,A,false
+2018_P1_Q2.3,3,Standard form,1,13n^2-93n+14=0,13n^2-93n+14=0,sequences.arithmetic,arith,A,false
+2018_P1_Q2.3,4,Factorise,1,(n-7)(13n-2)=0,(n-7)(13n-2)=0|(13n-2)(n-7)=0,sequences.arithmetic,arith,A,false
+2018_P1_Q2.3,5,n=7,1,n=7,n=7,sequences.arithmetic,arith,A,true
+2018_P1_Q3.1,1,Substitute S_inf,1,6=a/(1-1/2),6=a/(1-1/2)|S_inf=a/(1-r),sequences.geometric,geom,A,false
+2018_P1_Q3.1,2,a=3,1,a=3,a=3,sequences.geometric,geom,A,true
+2018_P1_Q3.2,1,Substitute Tn,1,T8=3(1/2)^7,T8=3(1/2)^7,sequences.geometric,geom,A,false
+2018_P1_Q3.2,2,Answer 3/128,1,3/128,3/128,sequences.geometric,geom,A,true
+2018_P1_Q3.3,1,r=1/2,1,r=1/2,r=1/2,sequences.geometric,geom,A,false
+2018_P1_Q3.3,2,Substitute S_n,1,3(1-(1/2)^n)/(1-1/2)=5.8125,S_n=5.8125,sequences.geometric,geom,A,false
+2018_P1_Q3.3,3,(1/2)^n=1/32,1,(1/2)^n=1/32,(1/2)^n=1/32,sequences.geometric,geom,A,false
+2018_P1_Q3.3,4,n=5,1,n=5,n=5,sequences.geometric,geom,A,true
+2018_P1_Q3.4,1,Expansion,1,12+6+3+...+24.2^-20,12+6+3+...,sequences.geometric,geom,A,false
+2018_P1_Q3.4,2,Factor out 4,1,4(3+3/2+3/4+...+3.2^-19),4(3+3/2+3/4+...),sequences.geometric,geom,A,false
+2018_P1_Q3.4,3,Answer 4p,1,4p,4p,sequences.geometric,geom,A,true
+2018_P1_Q4.1,1,Yes,1,Yes,Yes|one to one mapping,functions.inverse,inverse,A,true
+2018_P1_Q4.2,1,R coordinates,1,R(-12;-6),"R(-12;-6)|R(-12,-6)",functions.inverse,inverse,A,true
+2018_P1_Q4.3,1,Substitute,1,-12=a(-6)^2,-12=a(-6)^2,functions.parabola,parabola,A,false
+2018_P1_Q4.3,2,a=-1/3,1,a=-1/3,a=-1/3,functions.parabola,parabola,A,true
+2018_P1_Q4.4,1,Swap x and y,1,x=-1/3 y^2,x=-1/3 y^2,functions.inverse,inverse,A,false
+2018_P1_Q4.4,2,y^2=-3x,1,y^2=-3x,y^2=-3x,functions.inverse,inverse,A,false
+2018_P1_Q4.4,3,Answer,1,y=-sqrt(-3x),y=-sqrt(-3x)|-sqrt(-3x)|x<=0,functions.inverse,inverse,A,true
+2018_P1_Q5.1,1,Domain,1,"x in R, x!=1","x in R, x!=1|x∈R, x≠1",functions.hyperbola,hyperbola,A,true
+2018_P1_Q5.2,1,x=1,1,x=1,x=1,functions.hyperbola,hyperbola,A,false
+2018_P1_Q5.2,2,y=0,1,y=0,y=0,functions.hyperbola,hyperbola,A,true
+2018_P1_Q5.3,1,y-intercept,1,y-intercept,y-intercept|y intercept|yint,functions.hyperbola,hyperbola,A,false
+2018_P1_Q5.3,2,Vertical asymptote,1,x=1,x=1|vertical asymptote x=1,functions.hyperbola,hyperbola,A,false
+2018_P1_Q5.3,3,Shape,1,shape,shape,functions.hyperbola,hyperbola,A,true
+2018_P1_Q5.4,1,Interval,1,"x>=0, x!=1","x>=0, x!=1|0<=x<1 or x>1",functions.hyperbola,hyperbola,A,true
+2018_P1_Q6.1,1,Substitute,1,5=m(4)+1,5=m(4)+1|m=(5-1)/(4-0),functions.line,line,A,false
+2018_P1_Q6.1,2,Equation g,1,g(x)=x+1,g(x)=x+1|y=x+1,functions.line,line,A,true
+2018_P1_Q6.2,1,Set y=0,1,x^2-2x-3=0,x^2-2x-3=0|y=0,functions.parabola,parabola,A,false
+2018_P1_Q6.2,2,Factorise,1,(x+1)(x-3)=0,(x+1)(x-3)=0|(x-3)(x+1)=0,functions.parabola,parabola,A,false
+2018_P1_Q6.2,3,A and B,1,A(-1;0) B(3;0),"A(-1;0) B(3;0)|A(-1,0) B(3,0)",functions.parabola,parabola,A,true
+2018_P1_Q6.3,1,x=1,1,x=1,x=1|x=-b/2a,functions.parabola,parabola,A,false
+2018_P1_Q6.3,2,y=-4,1,y=-4,y=-4,functions.parabola,parabola,A,false
+2018_P1_Q6.3,3,Range,1,y>=-4,y>=-4|y≥-4|[-4;∞),functions.parabola,parabola,A,true
+2018_P1_Q6.4.1,1,x^2-3x-4,1,x^2-3x-4,x^2-3x-4,functions.parabola,parabola,A,false
+2018_P1_Q6.4.1,2,Substitute y=6,1,x^2-3x-4=6,x^2-3x-4=6,functions.parabola,parabola,A,false
+2018_P1_Q6.4.1,3,x-values,1,x=5 or x=-2,x=5 or x=-2|x=-2 or x=5,functions.parabola,parabola,A,false
+2018_P1_Q6.4.1,4,OT=2,1,OT=2,OT=2|2,functions.parabola,parabola,A,true
+2018_P1_Q6.4.2,1,Substitute x=-2,1,y=-2+1=-1,y=-2+1=-1,functions.parabola,parabola,A,false
+2018_P1_Q6.4.2,2,N coordinates,1,N(-2;-1),"N(-2;-1)|N(-2,-1)",functions.parabola,parabola,A,true
+2018_P1_Q6.5,1,f'(x)=2x-2,1,f'(x)=2x-2,f'(x)=2x-2,calculus.polynomial,derivative,A,false
+2018_P1_Q6.5,2,Equate,1,2x-2=1,2x-2=1,calculus.polynomial,derivative,A,false
+2018_P1_Q6.5,3,x=3/2,1,x=3/2,x=3/2,calculus.polynomial,derivative,A,false
+2018_P1_Q6.5,4,Answer y=x-21/4,1,y=x-21/4,y=x-21/4,calculus.polynomial,derivative,A,true
+2018_P1_Q7.1.1,1,i=0.088/4,1,i=0.088/4,i=0.088/4,finance.future_value,finance,A,false
+2018_P1_Q7.1.1,2,n=16,1,n=16,n=16,finance.future_value,finance,A,false
+2018_P1_Q7.1.1,3,Substitute,1,F=15000[(1+0.088/4)^16-1]/(0.088/4),F=15000[(1+0.088/4)^16-1]/(0.088/4),finance.future_value,finance,A,false
+2018_P1_Q7.1.1,4,Answer 283972.28,1,283972.28,283972.28,finance.future_value,finance,A,true
+2018_P1_Q7.1.2,1,Future value - amount,1,283972.28-100000(1+0.088/4)^4,283972.28-100000(1+0.088/4)^4,finance.compound,finance,A,false
+2018_P1_Q7.1.2,2,Answer 174877.60,1,174877.60,174877.60,finance.compound,finance,A,true
+2018_P1_Q7.2.1,1,i=0.105/12,1,i=0.105/12,i=0.105/12,finance.present_value,finance,A,false
+2018_P1_Q7.2.1,2,n=240,1,n=240,n=240,finance.present_value,finance,A,false
+2018_P1_Q7.2.1,3,Substitute,1,1500000=x[1-(1+0.105/12)^-240]/(0.105/12),1500000=x[1-(1+0.105/12)^-240]/(0.105/12),finance.present_value,finance,A,false
+2018_P1_Q7.2.1,4,x=14975.70,1,14975.70,14975.70,finance.present_value,finance,A,true
+2018_P1_Q7.2.2,1,Substitute,1,P=14975.70[1-(1+0.105/12)^-96]/(0.105/12),P=14975.70[1-(1+0.105/12)^-96]/(0.105/12),finance.present_value,finance,A,false
+2018_P1_Q7.2.2,2,n=96,1,n=96,n=96,finance.present_value,finance,A,false
+2018_P1_Q7.2.2,3,Answer 969927.74,1,969927.74,969927.74,finance.present_value,finance,A,true
+2018_P1_Q8.1,1,Substitute,1,f(x+h)=(x+h)^2-5,f(x+h)=(x+h)^2-5,calculus.first_principles,first_principles,A,false
+2018_P1_Q8.1,2,Difference,1,2xh+h^2,2xh+h^2,calculus.first_principles,first_principles,A,false
+2018_P1_Q8.1,3,Factorise,1,h(2x+h),h(2x+h),calculus.first_principles,first_principles,A,false
+2018_P1_Q8.1,4,Answer 2x,1,2x,2x,calculus.first_principles,first_principles,A,true
+2018_P1_Q8.2.1,1,Derivative,1,dy/dx=9x^2+12x+1,dy/dx=9x^2+12x+1,calculus.polynomial,derivative,A,true
+2018_P1_Q8.3,1,Simplify,1,y=x^12-2x^6+1,y=x^12-2x^6+1,calculus.polynomial,derivative,A,false
+2018_P1_Q8.3,2,Derivative,1,dy/dx=12x^11-12x^5,dy/dx=12x^11-12x^5,calculus.polynomial,derivative,A,false
+2018_P1_Q8.3,3,Factorise,1,12x^5(x^6-1),12x^5(x^6-1),calculus.polynomial,derivative,A,true
+2018_P1_Q8.4,1,f'(x),1,f'(x)=6x^2-4x+4,f'(x)=6x^2-4x+4,calculus.cubic,derivative,A,false
+2018_P1_Q8.4,2,f''(x),1,f''(x)=12x-4,f''(x)=12x-4,calculus.cubic,derivative,A,false
+2018_P1_Q8.4,3,f''>0,1,f''(x)>0,f''(x)>0|12x-4>0,calculus.cubic,derivative,A,false
+2018_P1_Q8.4,4,x>1/3,1,x>1/3,x>1/3|x>0.33,calculus.cubic,derivative,A,true
+2018_P1_Q9.1.1,1,Factorise g,1,g(x)=(x+5)(x-2)^2,g(x)=(x+5)(x-2)^2,calculus.cubic,derivative,A,false
+2018_P1_Q9.1.1,2,Expand,1,g(x)=x^3+x^2-16x+20,g(x)=x^3+x^2-16x+20,calculus.cubic,derivative,A,true
+2018_P1_Q9.1.2,1,g'(x),1,g'(x)=3x^2+2x-16,g'(x)=3x^2+2x-16,calculus.cubic,derivative,A,false
+2018_P1_Q9.1.2,2,Set to 0,1,3x^2+2x-16=0,3x^2+2x-16=0,calculus.cubic,derivative,A,false
+2018_P1_Q9.1.2,3,Factorise,1,(3x+8)(x-2)=0,(3x+8)(x-2)=0|(x-2)(3x+8)=0,calculus.cubic,derivative,A,false
+2018_P1_Q9.1.2,4,x=-8/3,1,x=-8/3,x=-8/3|-2.67,calculus.cubic,derivative,A,false
+2018_P1_Q9.1.2,5,R coordinates,1,R(-8/3;500/27),R(-8/3;500/27)|R(-2.67;18.52),calculus.cubic,derivative,A,true
+2018_P1_Q9.1.3,1,g''(x),1,g''(x)=6x+2,g''(x)=6x+2,calculus.cubic,derivative,A,false
+2018_P1_Q9.1.3,2,g''(0)=2,1,g''(0)=2,g''(0)=2,calculus.cubic,derivative,A,false
+2018_P1_Q9.1.3,3,Concave up,1,concave up,concave up,calculus.cubic,derivative,A,true
+2018_P1_Q10.1,1,AH/HG=3/2,1,AH/HG=3/2,AH/HG=3/2|3/2,euclidean.similarity,euclid,A,true
+2018_P1_Q10.2,1,2/5,1,2/5,2/5,calculus.optimisation,optimisation,A,false
+2018_P1_Q10.2,2,3/5(5-t),1,3/5(5-t),3/5(5-t),calculus.optimisation,optimisation,A,false
+2018_P1_Q10.2,3,A(t),1,A(t)=-6/25 t^2+6/5 t,A(t)=-6/25 t^2+6/5 t,calculus.optimisation,optimisation,A,false
+2018_P1_Q10.2,4,A'(t),1,A'(t)=-12/25 t+6/5,A'(t)=-12/25 t+6/5,calculus.optimisation,optimisation,A,false
+2018_P1_Q10.2,5,Answer 5/2,1,t=5/2,t=5/2|2.5,calculus.optimisation,optimisation,A,true
+2018_P1_Q11.1.1,1,7^5,1,7^5=16807,7^5=16807|16807,probability.counting,counting,A,true
+2018_P1_Q11.1.2,1,Product,1,7*6*5*4*3,7*6*5*4*3|7!,probability.counting,counting,A,false
+2018_P1_Q11.1.2,2,Answer 2520,1,2520,2520,probability.counting,counting,A,true
+2018_P1_Q11.2,1,2*7*1,1,2*7*1,2*7*1,probability.counting,counting,A,false
+2018_P1_Q11.2,2,Answer 14,1,14,14,probability.counting,counting,A,true
+2018_P1_Q12.1,1,Independent formula,1,P(A or B)=P(A)+P(B),P(A or B)=P(A)+P(B),probability.independent,probability,A,false
+2018_P1_Q12.1,2,Substitute,1,0.74=0.45+y,0.74=0.45+y,probability.independent,probability,A,false
+2018_P1_Q12.1,3,y=0.29,1,y=0.29,y=0.29,probability.independent,probability,A,true
+2018_P1_Q12.2,1,x=15,1,x=15,x=15,probability.independent,probability,A,true

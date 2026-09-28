@@ -1,0 +1,92 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2018_P2_Q1.1.1,1,140 items,1,140,140,statistics.frequency,frequency,A,true
+2018_P2_Q1.1.2,1,Modal class,1,20<x<=30,20<x<=30|20 < x <= 30,statistics.frequency,frequency,A,true
+2018_P2_Q1.1.3,1,Number minutes,1,20,20,statistics.frequency,frequency,A,true
+2018_P2_Q1.1.4,1,Difference 140-126,1,140-126=14,140-126=14|140-126|14,statistics.frequency,frequency,A,false
+2018_P2_Q1.1.4,2,Answer 14 orders,1,14 orders,14|14 orders,statistics.frequency,frequency,A,true
+2018_P2_Q1.1.5,1,75th percentile at 105,1,105,105,statistics.quartiles,quartiles,A,false
+2018_P2_Q1.1.5,2,Answer 37,1,37,37|36-38,statistics.quartiles,quartiles,A,true
+2018_P2_Q1.1.6,1,Q1=21.5,1,Q1=21.5,Q1=21.5|21.5,statistics.quartiles,quartiles,A,false
+2018_P2_Q1.1.6,2,IQR=15.5,1,IQR=15.5,IQR=15.5|15.5,statistics.quartiles,quartiles,A,true
+2018_P2_Q1.2.1a,1,x=1420/15,1,1420/15,1420/15,statistics.mean,mean,A,false
+2018_P2_Q1.2.1a,2,Answer 94.67,1,94.67,94.67|94.66,statistics.mean,mean,A,true
+2018_P2_Q1.2.1b,1,Sigma,1,22.69,22.69|22.691,statistics.stdev,stdev,A,true
+2018_P2_Q1.2.2a,1,Equal amount,1,equal amount,equal amount|both same,statistics.mean,mean,A,true
+2018_P2_Q1.2.2b,1,Mary smaller,1,Mary's sigma smaller,Mary's sigma smaller|Mary smaller|Mary's standard deviation is smaller|Mary,statistics.stdev,stdev,A,true
+2018_P2_Q2.1,1,Answer 251,1,251,251,statistics.regression,regression,A,true
+2018_P2_Q2.2.1,1,r=0.52,1,r=0.52,r=0.52|0.52,statistics.regression,regression,A,true
+2018_P2_Q2.2.2,1,Scattered increasing,1,fairly scattered increasing,fairly scattered increasing|fairly scattered and increasing|scattered and increasing,statistics.regression,regression,A,true
+2018_P2_Q2.3,1,Weak positive,1,weak positive relation,weak positive relation|weak positive|weak positive correlation,statistics.regression,regression,A,true
+2018_P2_Q2.4,1,Explanation,1,height 0m impossible,height 0m impossible|height 0 m impossible|0m height impossible,statistics.regression,regression,A,true
+2018_P2_Q3.1.1,1,Substitute,1,m_KN=(2-(-1))/(-1-1),m_KN=(2-(-1))/(-1-1),analytical.gradient,gradient,A,false
+2018_P2_Q3.1.1,2,m_KN=-3/2,1,m_KN=-3/2,m_KN=-3/2,analytical.gradient,gradient,A,true
+2018_P2_Q3.1.2,1,tan theta=-3/2,1,tan theta=-3/2,tan theta=-3/2,analytical.gradient,gradient,A,false
+2018_P2_Q3.1.2,2,theta=123.69,1,theta=123.69,theta=123.69|123.69,analytical.gradient,gradient,A,true
+2018_P2_Q3.2,1,K angle,1,45,45|45°,analytical.gradient,gradient,A,false
+2018_P2_Q3.2,2,m_KL=1,1,m_KL=1,m_KL=1|m=1,analytical.gradient,gradient,A,true
+2018_P2_Q3.3,1,Substitute,1,2=1(-1)+c,2=1(-1)+c|2=-1+c,analytical.line,line,A,false
+2018_P2_Q3.3,2,Answer y=x+3,1,y=x+3,y=x+3,analytical.line,line,A,true
+2018_P2_Q3.4,1,KN length,1,KN=sqrt((1+1)^2+(-1-2)^2),KN=sqrt((1+1)^2+(-1-2)^2),analytical.distance,distance,A,false
+2018_P2_Q3.4,2,Answer sqrt13,1,sqrt13,sqrt13|√13,analytical.distance,distance,A,true
+2018_P2_Q3.5.1,1,Substitute into circle,1,(x+3)^2+(y+5)^2=13,(x+3)^2+(y+5)^2=13,analytical.circle,circle,A,false
+2018_P2_Q3.5.1,2,Substitute y=x+3,1,(x+3)^2+(x+3+5)^2=13,(x+3)^2+(x+3+5)^2=13,analytical.circle,circle,A,false
+2018_P2_Q3.5.1,3,Standard form,1,x^2+11x+30=0,x^2+11x+30=0,analytical.circle,circle,A,false
+2018_P2_Q3.5.1,4,Factorise,1,(x+5)(x+6)=0,(x+5)(x+6)=0|(x+6)(x+5)=0,analytical.circle,circle,A,false
+2018_P2_Q3.5.1,5,L coordinates,1,L(-5;-2),"L(-5;-2)|L(-5,-2)",analytical.circle,circle,A,true
+2018_P2_Q3.5.2,1,Midpoint method,1,x1+1=-4 and y1-1=-3,x1+1=-4 and y1-1=-3|x1+1=-4|y1-1=-3,analytical.midpoint,midpoint,A,false
+2018_P2_Q3.5.2,2,L coordinates,1,L(-5;-2),"L(-5;-2)|L(-5,-2)",analytical.midpoint,midpoint,A,true
+2018_P2_Q3.6,1,T coordinates,1,T(-6;-3),"T(-6;-3)|T(-6,-3)",analytical.circle,circle,A,false
+2018_P2_Q3.6,2,KT length,1,KT=sqrt50,KT=sqrt50|√50,analytical.distance,distance,A,false
+2018_P2_Q3.6,3,Area formula,1,Area=1/2(KT)(KN)sinLKN,1/2(KT)(KN)sinLKN,analytical.area,area,A,false
+2018_P2_Q3.6,4,Answer 12.5,1,12.5,12.5,analytical.area,area,A,true
+2018_P2_Q4.1,1,F coordinates,1,F(3;1),"F(3;1)|F(3,1)",analytical.circle,circle,A,true
+2018_P2_Q4.2,1,FS formula,1,FS=sqrt((6-3)^2+(5-1)^2),FS=sqrt((6-3)^2+(5-1)^2),analytical.distance,distance,A,false
+2018_P2_Q4.2,2,FS=5,1,FS=5,FS=5,analytical.distance,distance,A,true
+2018_P2_Q4.3,1,Answer HG=10,1,HG=10,HG=10,analytical.distance,distance,A,true
+2018_P2_Q4.4,1,Tangents common pt,1,tangents from common point,tangents from common point|tangents common|tangents from same point|tangents from common pt,analytical.circle,circle,A,true
+2018_P2_Q4.5.1,1,FHJ=90,1,FHJ=90,FHJ=90|FHJ=90°,analytical.circle,circle,A,false
+2018_P2_Q4.5.1,2,FJ^2=20^2+5^2,1,FJ^2=20^2+5^2,FJ^2=20^2+5^2,analytical.circle,circle,A,false
+2018_P2_Q4.5.1,3,FJ=5sqrt17,1,FJ=5sqrt17,FJ=5sqrt17|5√17,analytical.distance,distance,A,true
+2018_P2_Q4.5.2,1,Circle equation,1,(x-m)^2+(y-n)^2=100,(x-m)^2+(y-n)^2=100,analytical.circle,circle,A,true
+2018_P2_Q4.5.3,1,K(22;n),1,K(22;n),K(22;n),analytical.circle,circle,A,false
+2018_P2_Q4.5.3,2,m=12,1,m=12,m=12,analytical.circle,circle,A,false
+2018_P2_Q4.5.3,3,FG length,1,FG=15,FG=15|15,analytical.distance,distance,A,false
+2018_P2_Q4.5.3,4,n^2-2n-143=0,1,n^2-2n-143=0,n^2-2n-143=0,analytical.circle,circle,A,false
+2018_P2_Q4.5.3,5,n=-11,1,n=-11,n=-11,analytical.circle,circle,A,false
+2018_P2_Q4.5.3,6,Answer G(12;-11),1,G(12;-11),"G(12;-11)|G(12,-11)",analytical.circle,circle,A,true
+2018_P2_Q5.1.1,1,Substitute Pythagoras,1,k^2=5-1=4,k^2=5-1=4|k^2=5-1|k^2=4,trig.unitcircle,trig,A,false
+2018_P2_Q5.1.1,2,k=-2,1,k=-2,k=-2,trig.unitcircle,trig,A,true
+2018_P2_Q5.1.2a,1,tan theta,1,tan theta=-1/2,tan theta=-1/2,trig.unitcircle,trig,A,true
+2018_P2_Q5.1.2b,1,Reduction,1,cos(180+theta)=-cos theta,cos(180+theta)=-cos theta,trig.reduction,trig,A,false
+2018_P2_Q5.1.2b,2,Answer 2/sqrt5,1,2/sqrt5,2/sqrt5|2/√5,trig.reduction,trig,A,true
+2018_P2_Q5.1.2c,1,Expansion,1,sin theta cos60+cos theta sin60,sin theta cos60+cos theta sin60,trig.identity,trig,A,false
+2018_P2_Q5.1.2c,2,Substitute,1,(1/sqrt5)(1/2)+(-2/sqrt5)(sqrt3/2),(1/sqrt5)(1/2)+(-2/sqrt5)(sqrt3/2),trig.identity,trig,A,false
+2018_P2_Q5.1.2c,3,Answer (1-2sqrt3)/2sqrt5,1,(1-2sqrt3)/(2sqrt5),(1-2sqrt3)/(2sqrt5),trig.identity,trig,A,true
+2018_P2_Q5.1.3,1,theta=153.43,1,theta=153.43,153.43|theta=153.43,trig.unitcircle,trig,A,false
+2018_P2_Q5.1.3,2,Substitute,1,tan((2*153.43)-40),tan((2*153.43)-40),trig.unitcircle,trig,A,false
+2018_P2_Q5.1.3,3,Answer 18.3,1,18.3,18.3,trig.unitcircle,trig,A,true
+2018_P2_Q5.2,1,Single fraction,1,cosx+sinx)/(cosx-sinx),cosx+sinx)/(cosx-sinx),trig.identity,trig,A,false
+2018_P2_Q5.2,2,Expansion,1,(cosx+sinx)^2-(cosx-sinx)^2,(cosx+sinx)^2-(cosx-sinx)^2,trig.identity,trig,A,false
+2018_P2_Q5.2,3,Simplify,1,2(2sinxcosx)/(cos^2x-sin^2x),2(2sinxcosx)/(cos^2x-sin^2x),trig.identity,trig,A,false
+2018_P2_Q5.2,4,Double angle,1,2sin2x/cos2x,2sin2x/cos2x,trig.identity,trig,A,false
+2018_P2_Q5.2,5,Answer 2tan2x,1,2tan2x,2tan2x,trig.identity,trig,A,true
+2018_P2_Q5.3,1,Expansion,1,cos^2 38+cos^2 39+...+cos^2 52,cos^2 38+...+cos^2 52,trig.identity,trig,A,false
+2018_P2_Q5.3,2,Co-ratio,1,sin^2 52+...+cos^2 52,sin^2 52+...+cos^2 52,trig.identity,trig,A,false
+2018_P2_Q5.3,3,cos^2 45,1,cos^2 45,cos^2 45,trig.identity,trig,A,false
+2018_P2_Q5.3,4,7+cos^2 45,1,7+cos^2 45,7+cos^2 45,trig.identity,trig,A,false
+2018_P2_Q5.3,5,Answer 7.5,1,7 1/2,7 1/2|7.5|15/2,trig.identity,trig,A,true
+2018_P2_Q6.1,1,Period=120,1,120,120|120°,trig.graph,graph,A,true
+2018_P2_Q6.2,1,Equate,1,2=-2 tan(3/2 t),2=-2 tan(3/2 t),trig.equation,trig,A,false
+2018_P2_Q6.2,2,tan(3/2t)=-1,1,tan(3/2 t)=-1,tan(3/2 t)=-1,trig.equation,trig,A,false
+2018_P2_Q6.2,3,t=90+k.120,1,t=90+k.120,t=90+k.120|t=90°+k.120°,trig.equation,trig,A,true
+2018_P2_Q6.3,1,Asymptotes,1,x=±60; 180,x=±60; 180,trig.graph,graph,A,false
+2018_P2_Q6.3,2,x-intercepts,1,0; ±120,0; ±120,trig.graph,graph,A,false
+2018_P2_Q6.3,3,Negative shape,1,negative shape,negative shape,trig.graph,graph,A,false
+2018_P2_Q6.3,4,Points,1,(90;2),(90;2),trig.graph,graph,A,true
+2018_P2_Q6.4,1,Interval,1,x in (-60;-30) or (60;90),x in (-60;-30) or (60;90),trig.graph,graph,A,true
+2018_P2_Q6.5,1,Translation 40 left,1,translation 40 left,translation 40 left|translation 40|shift 40 left|translation of 40,trig.graph,graph,A,true
+2018_P2_Q7.1,1,AB=2h,1,AB=2h,AB=2h,trig.3d,trig3d,A,true
+2018_P2_Q7.2,1,Cosine rule,1,BC^2=(2h)^2+(3h)^2-2(2h)(3h)cos2x,BC^2=(2h)^2+(3h)^2-2(2h)(3h)cos2x,trig.3d,trig3d,A,false
+2018_P2_Q7.2,2,Substitute,1,13h^2-12h^2(2cos^2x-1),13h^2-12h^2(2cos^2x-1),trig.3d,trig3d,A,false
+2018_P2_Q7.2,3,Simplify,1,25h^2-24h^2cos^2x,25h^2-24h^2cos^2x,trig.3d,trig3d,A,false
+2018_P2_Q7.2,4,BC length,1,BC=h sqrt(25-24cos^2x),BC=h sqrt(25-24cos^2x),trig.3d,trig3d,A,true
