@@ -67,6 +67,32 @@ CREATE INDEX IF NOT EXISTS idx_attempt_learner_skill
 
 CREATE INDEX IF NOT EXISTS idx_mastery_learner
     ON mastery (learner_id);
+
+CREATE TABLE IF NOT EXISTS tutor_discovery (
+    discovery_id        TEXT PRIMARY KEY,
+    pattern_description TEXT NOT NULL,
+    example_lines       TEXT NOT NULL,
+    first_seen_at       TEXT NOT NULL,
+    last_seen_at        TEXT NOT NULL,
+    times_seen          INTEGER NOT NULL DEFAULT 1,
+    learners_affected   TEXT NOT NULL,
+    confidence          REAL NOT NULL DEFAULT 0.1,
+    skill_id            TEXT,
+    question_id         TEXT,
+    expected_answer     TEXT,
+    session_id          TEXT,
+    llm_explanation     TEXT,
+    promoted_to_rule    INTEGER NOT NULL DEFAULT 0,
+    teacher_notes       TEXT,
+    status              TEXT NOT NULL DEFAULT 'open',
+    evidence_signals    TEXT NOT NULL DEFAULT '{}',
+    tutor_verdict       TEXT NOT NULL DEFAULT '{}'
+);
+CREATE INDEX IF NOT EXISTS idx_discovery_pattern
+    ON tutor_discovery(skill_id, pattern_description);
+CREATE INDEX IF NOT EXISTS idx_discovery_status
+    ON tutor_discovery(status, times_seen DESC);
+
 """
 
 
@@ -82,6 +108,7 @@ class LearnerStore:
         self.conn.row_factory = sqlite3.Row
         self.conn.executescript(SCHEMA)
         self.conn.commit()
+        self.discoveries = DiscoveryStore(self.conn)
 
     # ---------- learner ----------
 
@@ -232,6 +259,7 @@ class LearnerStore:
 
 # Import here to avoid circular import in tests
 from .schemas import MasteryState
+from .discovery_store import DiscoveryStore
 
 
 def open_store(path: Path) -> LearnerStore:

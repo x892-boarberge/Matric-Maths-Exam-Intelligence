@@ -16,6 +16,8 @@ from . import analogue_library
 from .template_router import route_template
 from .presentation_matcher import check_presentation, format_note
 from .math_grader import grade, diagnose_wrong, MatchKind
+from .step_grader import grade_steps as grade_steps_fn, grade_steps_inline
+from .step_schemes import build_scheme
 from .diagnosis import diagnose
 
 
@@ -41,6 +43,8 @@ def _extract_expected(analogue: dict) -> str:
 
 
 def _analogue_to_problem(analogue: dict, template_id: str, skill_id: str) -> Problem:
+    expected = _extract_expected(analogue)
+    scheme = build_scheme(template_id, analogue, expected)
     return Problem(
         problem_id=f"drill_{template_id}_{uuid.uuid4().hex[:6]}",
         skill_id=skill_id,
@@ -48,8 +52,9 @@ def _analogue_to_problem(analogue: dict, template_id: str, skill_id: str) -> Pro
         subtopic="",
         structure_type="routine_calculation",
         prompt=analogue["problem"],
-        expected_answer=_extract_expected(analogue),
+        expected_answer=expected,
         topic_v2=None,
+        step_scheme=scheme,
     )
 
 
@@ -199,6 +204,62 @@ def _speak_mastery(skill_id, template_id, questions_correct, total_questions,
 # ============================================================
 # Main drill
 # ============================================================
+
+# ============================================================
+# Step-level feedback (Phase 5e)
+# ============================================================
+
+import re as _re
+
+
+def _corpus_id_to_memo_id(problem_id: str) -> str:
+    """2023_P1_Q1_1.1.1 -> 2023_P1_Q1.1.1 (drop underscore + repeated digit)."""
+    if not problem_id or problem_id.startswith("drill_"):
+        return ""
+    # Q<n>_<n>. -> Q<n>.
+    return _re.sub(r"Q(\d+)_\1\.", r"Q\1.", problem_id)
+
+
+def _step_feedback(problem_id: str, learner_lines: list[str]) -> dict | None:
+    """Return step-grader result for the anchor, or None if not applicable."""
+    memo_id = _corpus_id_to_memo_id(problem_id)
+    if not memo_id:
+        return None
+    try:
+        r = grade_steps_fn(memo_id, learner_lines)
+    except Exception:
+        return None
+    if r["total_marks"] == 0:
+        return None
+    return r
+
+
+def _print_step_feedback(result: dict) -> None:
+    """Format the step result for the CLI, with help for missing steps."""
+    awarded = result["awarded_marks"]
+    total = result["total_marks"]
+    steps = result["steps"]
+
+    missing = [s for s in steps if s.get("match_status") == "NOT_MATCHED"]
+    uncertain = [s for s in steps if s.get("match_status") == "UNCERTAIN"]
+
+    if not missing and not uncertain:
+        print(f"  Full method shown — memo awards {total}/{total}.")
+        return
+
+    print(f"  Memo would award {awarded}/{total}.")
+    for s in missing:
+        mark_word = "mark" if s["marks"] == 1 else "marks"
+        print(f"    You skipped: {s['desc']}  ({s['marks']} {mark_word})")
+        # Show what the memo wanted, from the FIRST acceptable form
+        forms = s.get("forms") or []
+        if forms:
+            print(f"      The memo would show:   {forms[0]}")
+    for u in uncertain:
+        print(f"    Cannot verify: {u['desc']}")
+    print("    (In the exam, markers award marks per step.)")
+
+
 def run(engine, store, learner_id, session_id, anchor, logger=None,
         interactive_input=True, sitting_number=1):
     template_id = route_template(anchor.skill_id, anchor.prompt)
@@ -337,6 +398,24 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
                 print()
                 print(f"  ✓ Correct.  ({questions_correct}/{i} this sitting)")
 
+                # ---- Phase 5e: step-level feedback ----
+                # Try anchor (CSV lookup) first, fall back to inline scheme (variants)
+                learner_lines_for_steps = [s.raw_text for s in submission.steps]
+                step_result = _step_feedback(
+                    drill_problem.problem_id,
+                    learner_lines_for_steps,
+                )
+                if step_result is None and getattr(drill_problem, "step_scheme", None):
+                    try:
+                        step_result = grade_steps_inline(
+                            drill_problem.step_scheme,
+                            learner_lines_for_steps,
+                        )
+                    except Exception:
+                        step_result = None
+                if step_result is not None:
+                    _print_step_feedback(step_result)
+
                 # One NEW presentation note per question (dedup)
                 try:
                     notes = check_presentation(
@@ -378,6 +457,23 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
             _save_attempt(store, session_id, learner_id, anchor.skill_id,
                           learner_text, "D_NO_MATCH",
                           (kind or "unknown"), misconception_id)
+
+            # Phase 5e: if diagnosis could not explain, record a discovery.
+            # This is the beginning of the Tutor Learning Engine — the tutor
+            # notices what its rules cannot explain, preserves the evidence,
+            # and lets recurrence strengthen the pattern over time.
+            try:
+                if (kind or "unknown") == "unknown":
+                    store.discoveries.record(
+                        learner_id=learner_id,
+                        skill_id=anchor.skill_id,
+                        question_id=drill_problem.problem_id,
+                        learner_lines=[s.raw_text for s in submission.steps],
+                        expected_answer=drill_problem.expected_answer,
+                        session_id=session_id,
+                    )
+            except Exception:
+                pass  # discovery logging must never break the drill
 
             _speak_diagnosis(kind or "unknown")
             if misconception_id:
