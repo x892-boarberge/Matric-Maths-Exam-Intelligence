@@ -1,0 +1,141 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2016_P1_Q1.1.1,1,Common factor,1,x(x-7)=0,x(x-7)=0,algebra.quadratic.solve,factorise,A,false
+2016_P1_Q1.1.1,2,Answer x=0 or x=7,1,x=0 or x=7,x=0 or x=7|x=7 or x=0,algebra.quadratic.solve,factorise,A,true
+2016_P1_Q1.1.2,1,Substitute formula,1,x=(6±sqrt(28))/2,x=(6±sqrt(28))/2|x=(6±√28)/2,algebra.quadratic.solve,formula,A,false
+2016_P1_Q1.1.2,2,x=0.35,1,x=0.35,x=0.35|0.35,algebra.quadratic.solve,formula,A,true
+2016_P1_Q1.1.2,3,x=5.65,1,x=5.65,x=5.65|5.65,algebra.quadratic.solve,formula,A,true
+2016_P1_Q1.1.3,1,Isolate root,1,sqrt(x-1)=x-1,sqrt(x-1)=x-1,algebra.surd.solve,surd,A,false
+2016_P1_Q1.1.3,2,Standard form,1,x^2-3x+2=0,x^2-3x+2=0,algebra.surd.solve,surd,A,false
+2016_P1_Q1.1.3,3,Factorise,1,(x-2)(x-1)=0,(x-2)(x-1)=0|(x-1)(x-2)=0,algebra.surd.solve,surd,A,false
+2016_P1_Q1.1.3,4,Both answers valid,1,x=2 or x=1,x=2 or x=1|x=1 or x=2,algebra.surd.solve,surd,A,true
+2016_P1_Q1.1.4,1,Common factor,1,3^x(3^3-3^2)=486,3^x(3^3-3^2)=486,algebra.exponential.solve,exponential,A,false
+2016_P1_Q1.1.4,2,3^(x+3)=27,1,3^(x+3)=27,3^(x+3)=27|3^(x+3)=243,algebra.exponential.solve,exponential,A,false
+2016_P1_Q1.1.4,3,Answer x=3,1,x=3,x=3,algebra.exponential.solve,exponential,A,true
+2016_P1_Q1.2.1,1,Factorise,1,(x+4)(x-1)=0,(x+4)(x-1)=0|(x-1)(x+4)=0,algebra.quadratic.solve,factorise,A,false
+2016_P1_Q1.2.1,2,Roots,1,x=-4 or x=1,x=-4 or x=1|x=1 or x=-4,algebra.quadratic.solve,factorise,A,true
+2016_P1_Q1.2.2,1,Interval,1,-4<x<1,-4<x<1,algebra.quadratic.inequality,inequality,A,true
+2016_P1_Q1.2.3,1,Set derivative >=0,1,2x+3>=0,2x+3>=0|f'(x)>=0,functions.parabola,parabola,A,false
+2016_P1_Q1.2.3,2,x>=-3/2,1,x>=-3/2,x>=-3/2|x≥-3/2,functions.parabola,parabola,A,true
+2016_P1_Q1.3,1,Substitute 2y,1,(2y)^2-5(2y)y=-24,(2y)^2-5(2y)y=-24,algebra.simultaneous.solve,substitution,A,false
+2016_P1_Q1.3,2,Simplify,1,-6y^2=-24,-6y^2=-24,algebra.simultaneous.solve,substitution,A,false
+2016_P1_Q1.3,3,y-values,1,y=-2 or y=2,y=-2 or y=2|y=2 or y=-2,algebra.simultaneous.solve,substitution,A,true
+2016_P1_Q1.3,4,x-values,1,x=-4 or x=4,x=-4 or x=4|x=4 or x=-4,algebra.simultaneous.solve,substitution,A,true
+2016_P1_Q2.1,1,Answer T4=-7,1,-7,-7,sequences.arithmetic,arith,A,true
+2016_P1_Q2.2,1,a=5 and d=-4,1,a=5; d=-4,a=5; d=-4|a=5 d=-4,sequences.arithmetic,arith,A,false
+2016_P1_Q2.2,2,Substitute,1,-87=5+(n-1)(-4),-87=5+(n-1)(-4),sequences.arithmetic,arith,A,false
+2016_P1_Q2.2,3,n=24,1,n=24,n=24,sequences.arithmetic,arith,A,true
+2016_P1_Q2.3,1,n=22,1,n=22,n=22,sequences.arithmetic,arith,A,false
+2016_P1_Q2.3,2,a=-3,1,a=-3,a=-3,sequences.arithmetic,arith,A,false
+2016_P1_Q2.3,3,S22=-990,1,S22=-990,S22=-990|-990,sequences.arithmetic,arith,A,true
+2016_P1_Q2.4,1,d=-20,1,d=-20,d=-20,sequences.arithmetic,arith,A,false
+2016_P1_Q2.4,2,Tn=-20n+25,1,Tn=-20n+25,Tn=-20n+25|-20n+25,sequences.arithmetic,arith,A,false
+2016_P1_Q2.4,3,Solve -4175,1,-4175=-20n+25,-4175=-20n+25,sequences.arithmetic,arith,A,false
+2016_P1_Q2.4,4,n=210,1,n=210,n=210,sequences.arithmetic,arith,A,true
+2016_P1_Q3.1.1,1,Differences,1,x+1; 3-x; x+5,x+1; 3-x; x+5,sequences.quadratic,arith,A,false
+2016_P1_Q3.1.1,2,Second differences,1,-2x+2; 2x+2,-2x+2; 2x+2,sequences.quadratic,arith,A,false
+2016_P1_Q3.1.1,3,-2x+2=2x+2,1,-2x+2=2x+2,-2x+2=2x+2,sequences.quadratic,arith,A,false
+2016_P1_Q3.1.1,4,Answer x=0,1,x=0,x=0,sequences.quadratic,arith,A,true
+2016_P1_Q3.1.2,1,S_n=n^2,1,S_n=n^2,S_n=n^2|n^2,sequences.quadratic,arith,A,false
+2016_P1_Q3.1.2,2,S_n>250,1,S_n>250,S_n>250|n^2>250,sequences.quadratic,arith,A,false
+2016_P1_Q3.1.2,3,n>15.8,1,n>15.8,"n>15.8|n>15,8",sequences.quadratic,arith,A,false
+2016_P1_Q3.1.2,4,Answer 17,1,n=17,n=17|17,sequences.quadratic,arith,A,true
+2016_P1_Q3.2.1,1,n=10,1,n=10,n=10,sequences.geometric,geom,A,false
+2016_P1_Q3.2.1,2,r=0.85,1,r=0.85,r=0.85|r=17/20,sequences.geometric,geom,A,false
+2016_P1_Q3.2.1,3,Substitute,1,T10=21(0.85)^9,T10=21(0.85)^9,sequences.geometric,geom,A,false
+2016_P1_Q3.2.1,4,Answer 4.86,1,4.86,"4.86|4,86",sequences.geometric,geom,A,true
+2016_P1_Q3.2.2,1,n=15,1,n=15,n=15,sequences.geometric,geom,A,false
+2016_P1_Q3.2.2,2,S15=127.77,1,S15=127.77,S15=127.77|127.77,sequences.geometric,geom,A,false
+2016_P1_Q3.2.2,3,Area 630,1,630,630|30*21,sequences.geometric,geom,A,false
+2016_P1_Q3.2.2,4,Answer 20.28,1,20.28,20.28|20.28%,sequences.geometric,geom,A,true
+2016_P1_Q4.1,1,Answer y=0,1,y=0,y=0,functions.exponential,exponential,A,true
+2016_P1_Q4.2,1,Answer R(0;1),1,R(0;1),"R(0;1)|R(0,1)",functions.exponential,exponential,A,true
+2016_P1_Q4.3,1,Substitute,1,9=a^2,9=a^2,functions.exponential,exponential,A,false
+2016_P1_Q4.3,2,Answer a=3,1,a=3,a=3,functions.exponential,exponential,A,true
+2016_P1_Q4.4,1,Substitute 1/81,1,1/81=3^b,1/81=3^b,functions.exponential,exponential,A,false
+2016_P1_Q4.4,2,b=-4,1,b=-4,b=-4,functions.exponential,exponential,A,false
+2016_P1_Q4.4,3,DP=2-b,1,DP=2-b,DP=2-b,functions.exponential,exponential,A,false
+2016_P1_Q4.4,4,Answer DP=6,1,DP=6 units,DP=6 units|DP=6|6 units,functions.exponential,exponential,A,true
+2016_P1_Q4.5,1,-k<1/81,1,-k<1/81,-k<1/81,functions.exponential,exponential,A,false
+2016_P1_Q4.5,2,Answer -1/81<k<0,1,-1/81<k<0,-1/81<k<0,functions.exponential,exponential,A,true
+2016_P1_Q5.1,1,x=-b/2a,1,x=-b/2a=-4/2(-1)=2,x=-b/2a=-4/2(-1)=2|x=2|x=2,functions.parabola,parabola,A,false
+2016_P1_Q5.1,2,y=1,1,y=1,y=1|y=1|B(2;1),functions.parabola,parabola,A,true
+2016_P1_Q5.2,1,Range,1,y<=1,y<=1|y≤1,functions.parabola,parabola,A,true
+2016_P1_Q5.3,1,Intervals,1,x<=-1 or x>=2,x<=-1 or x>=2|x≥2 or x≤-1,functions.parabola,parabola,A,true
+2016_P1_Q5.4,1,Answer x=-2,1,x=-2,x=-2,functions.hyperbola,hyperbola,A,true
+2016_P1_Q5.5,1,Substitute,1,y=3/(x-2)+4+1,y=3/(x-2)+4+1,functions.hyperbola,hyperbola,A,false
+2016_P1_Q5.5,2,p=2,1,p=2,p=2,functions.hyperbola,hyperbola,A,false
+2016_P1_Q5.5,3,-t=1,1,-t=1,-t=1,functions.hyperbola,hyperbola,A,false
+2016_P1_Q5.5,4,t=-1,1,t=-1,t=-1,functions.hyperbola,hyperbola,A,true
+2016_P1_Q5.6,1,Critical values,1,x=1 or x=3,x=1 or x=3|x=3 or x=1,functions.hyperbola,hyperbola,A,false
+2016_P1_Q5.6,2,x<=1,1,x<=1,x<=1|x≤1,functions.hyperbola,hyperbola,A,false
+2016_P1_Q5.6,3,x>=3,1,x>=3,x>=3|x≥3,functions.hyperbola,hyperbola,A,true
+2016_P1_Q6.1,1,Shape increasing curve,1,shape: increasing curve,increasing curve|shape increasing,functions.log,log,A,false
+2016_P1_Q6.1,2,(1;0) on log,1,(1;0),(1;0),functions.log,log,A,false
+2016_P1_Q6.1,3,(3;0) on f,1,(3;0),(3;0),functions.log,log,A,false
+2016_P1_Q6.1,4,(0;3),1,(0;3),(0;3),functions.log,log,A,true
+2016_P1_Q6.2,1,Swap x and y,1,x=log_2 y,x=log_2 y,functions.log,log,A,false
+2016_P1_Q6.2,2,Answer y=2^x,1,y=2^x,y=2^x,functions.log,log,A,true
+2016_P1_Q6.3,1,2^x=-x+3,1,2^x=-x+3,2^x=-x+3,functions.log,log,A,false
+2016_P1_Q6.3,2,Point of intersection,1,point of intersection,point of intersection|point of intersection of f and g^-1,functions.log,log,A,true
+2016_P1_Q6.4,1,Answer x=1,1,x=1,x=1,functions.log,log,A,true
+2016_P1_Q7.1,1,Substitute i and n,1,A=250000(1+0.15/12),A=250000(1+0.15/12)|A=P(1+i)^n,finance.compound,finance,A,false
+2016_P1_Q7.1,2,Answer 256289.06,1,256289.06,256289.06,finance.compound,finance,A,true
+2016_P1_Q7.2,1,i=0.15/12,1,i=0.15/12,i=0.15/12,finance.present_value,finance,A,false
+2016_P1_Q7.2,2,n=46,1,n=46,n=46,finance.present_value,finance,A,false
+2016_P1_Q7.2,3,Substitute,1,256289.06=x[1-(1+0.15/12)^-46]/(0.15/12),256289.06=x[1-(1+0.15/12)^-46]/(0.15/12),finance.present_value,finance,A,false
+2016_P1_Q7.2,4,x=7359.79,1,7359.79,7359.79,finance.present_value,finance,A,true
+2016_P1_Q7.3,1,Substitute,1,256289.06=9000[1-(1+0.15/12)^-n]/(0.15/12),256289.06=9000[1-(1+0.15/12)^-n]/(0.15/12),finance.present_value,finance,A,false
+2016_P1_Q7.3,2,Logs,1,(1+0.15/12)^-n=0.6440429722,(1+0.15/12)^-n=0.6440429722,finance.present_value,finance,A,false
+2016_P1_Q7.3,3,n=35.42,1,n=35.42,"n=35.42|n=35,42",finance.present_value,finance,A,false
+2016_P1_Q7.3,4,36 payments,1,36 payments,36 payments|36,finance.present_value,finance,A,false
+2016_P1_Q7.3,5,10 months sooner,1,10 months,10 months|10,finance.present_value,finance,A,true
+2016_P1_Q7.4,1,Balance 3735.45,1,3735.45,3735.45,finance.present_value,finance,A,false
+2016_P1_Q7.4,2,Substitute,1,3735.45(1+0.15/12),3735.45(1+0.15/12),finance.present_value,finance,A,false
+2016_P1_Q7.4,3,Answer 3782.14,1,3782.14,3782.14,finance.present_value,finance,A,true
+2016_P1_Q8.1,1,f(x+h),1,f(x+h)=3(x+h)^2,f(x+h)=3(x+h)^2,calculus.first_principles,first_principles,A,false
+2016_P1_Q8.1,2,Expand,1,3x^2+6xh+3h^2,3x^2+6xh+3h^2,calculus.first_principles,first_principles,A,false
+2016_P1_Q8.1,3,Difference,1,6xh+3h^2,6xh+3h^2,calculus.first_principles,first_principles,A,false
+2016_P1_Q8.1,4,Factorise,1,h(6x+3h),h(6x+3h),calculus.first_principles,first_principles,A,false
+2016_P1_Q8.1,5,Answer 6x,1,6x,6x,calculus.first_principles,first_principles,A,true
+2016_P1_Q8.2,1,Answer 4,1,4,4,calculus.first_principles,first_principles,A,true
+2016_P1_Q8.3,1,x^(3/2),1,x^(3/2)-5x^-3,x^(3/2)-5x^-3,calculus.polynomial,derivative,A,false
+2016_P1_Q8.3,2,3/2 x^(1/2),1,3/2 x^(1/2),3/2 x^(1/2),calculus.polynomial,derivative,A,false
+2016_P1_Q8.3,3,15x^-4,1,15x^-4,15x^-4,calculus.polynomial,derivative,A,true
+2016_P1_Q8.4,1,f'(x),1,f'(x)=3x^2+2ax+b,f'(x)=3x^2+2ax+b,calculus.polynomial,derivative,A,false
+2016_P1_Q8.4,2,f'(1)=-8,1,3(1)^2+2a(1)+b=-8,3(1)^2+2a(1)+b=-8|3+2a+b=-8,calculus.polynomial,derivative,A,false
+2016_P1_Q8.4,3,2a+b=-11,1,2a+b=-11,2a+b=-11,calculus.polynomial,derivative,A,false
+2016_P1_Q8.4,4,1+a+b+18=12,1,1+a+b+18=12,1+a+b+18=12,calculus.polynomial,derivative,A,false
+2016_P1_Q8.4,5,a=-4,1,a=-4,a=-4,calculus.polynomial,derivative,A,false
+2016_P1_Q8.4,6,b=-3,1,b=-3,b=-3,calculus.polynomial,derivative,A,true
+2016_P1_Q9.1,1,f'(x),1,f'(x)=3x^2+8x-3,f'(x)=3x^2+8x-3,calculus.cubic,derivative,A,false
+2016_P1_Q9.1,2,Set to 0,1,3x^2+8x-3=0,3x^2+8x-3=0,calculus.cubic,derivative,A,false
+2016_P1_Q9.1,3,Factorise,1,(3x-1)(x+3)=0,(3x-1)(x+3)=0|(x+3)(3x-1)=0,calculus.cubic,derivative,A,false
+2016_P1_Q9.1,4,x=1/3,1,x=1/3,x=1/3,calculus.cubic,derivative,A,true
+2016_P1_Q9.2,1,f''(x),1,f''(x)=6x+8,f''(x)=6x+8,calculus.cubic,derivative,A,false
+2016_P1_Q9.2,2,f''(x)<0,1,6x+8<0,6x+8<0|f''(x)<0,calculus.cubic,derivative,A,false
+2016_P1_Q9.2,3,x<-4/3,1,x<-4/3,x<-4/3|x<−4/3,calculus.cubic,derivative,A,true
+2016_P1_Q9.3,1,x<=-3,1,x<=-3,x<=-3|x≤-3,calculus.cubic,derivative,A,false
+2016_P1_Q9.3,2,x>=1/3,1,x>=1/3,x>=1/3|x≥1/3,calculus.cubic,derivative,A,true
+2016_P1_Q9.4,1,f(0)=-18,1,f(0)=-18,f(0)=-18,calculus.cubic,derivative,A,false
+2016_P1_Q9.4,2,d=-18,1,d=-18,d=-18,calculus.cubic,derivative,A,false
+2016_P1_Q9.4,3,a=1,1,a=1,a=1,calculus.cubic,derivative,A,false
+2016_P1_Q9.4,4,b=4,1,b=4,b=4,calculus.cubic,derivative,A,false
+2016_P1_Q9.4,5,c=-3,1,c=-3,c=-3,calculus.cubic,derivative,A,true
+2016_P1_Q10.1,1,M(3),1,M(3)=-27+27+216,M(3)=-27+27+216,calculus.kinematics,kinematics,A,false
+2016_P1_Q10.1,2,Answer 216,1,216,216|216 molecules,calculus.kinematics,kinematics,A,true
+2016_P1_Q10.2,1,M'(t),1,M'(t)=-3t^2+6t+72,M'(t)=-3t^2+6t+72,calculus.kinematics,kinematics,A,false
+2016_P1_Q10.2,2,Substitute 2,1,M'(2)=-3(2)^2+6(2)+72,M'(2)=-3(2)^2+6(2)+72,calculus.kinematics,kinematics,A,false
+2016_P1_Q10.2,3,Answer 72,1,72,72|72 molecules per hour,calculus.kinematics,kinematics,A,true
+2016_P1_Q10.3,1,M''(t),1,M''(t)=-6t+6,M''(t)=-6t+6,calculus.kinematics,kinematics,A,false
+2016_P1_Q10.3,2,Set to 0,1,-6t+6=0,-6t+6=0,calculus.kinematics,kinematics,A,false
+2016_P1_Q10.3,3,Answer t=1,1,t=1,t=1,calculus.kinematics,kinematics,A,true
+2016_P1_Q11.1,1,a=20,1,a=20,a=20,probability.tables,tables,A,false
+2016_P1_Q11.1,2,b=128,1,b=128,b=128,probability.tables,tables,A,true
+2016_P1_Q11.2,1,No,1,No,No|no,probability.tables,tables,A,true
+2016_P1_Q11.3.1,1,128/160,1,128/160,128/160,probability.tables,tables,A,false
+2016_P1_Q11.3.1,2,Answer 0.8,1,4/5 or 0.8 or 80%,4/5|0.8|80%,probability.tables,tables,A,true
+2016_P1_Q11.3.2,1,12/160,1,12/160,12/160,probability.tables,tables,A,false
+2016_P1_Q11.3.2,2,Answer 0.075,1,3/40 or 0.075 or 7.5%,3/40|0.075|7.5%,probability.tables,tables,A,true
+2016_P1_Q12,1,Case 1: starts with 6,1,1*5*4*2=40,1*5*4*2=40,probability.counting,counting,A,false
+2016_P1_Q12,2,Case 2: starts with 5 or 7,1,2*5*4*3=120,2*5*4*3=120,probability.counting,counting,A,false
+2016_P1_Q12,3,Answer 160,1,160,160,probability.counting,counting,A,true
