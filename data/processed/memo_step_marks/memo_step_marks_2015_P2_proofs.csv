@@ -1,0 +1,40 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final,match_mode
+2015_P2_Q8.1,1,Angle in semi circle,1,angle in semi circle,semi circle|halfsirkel,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q8.1,2,Opp angles cyclic quad,1,opp angles cyclic quad,opp angles|cyclic quad|koordevh,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q8.1,3,Answer sum 180,1,180,180,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q8.2,1,Ext angle cyclic quad,1,ext angle cyclic quad,ext angle|cyclic quad,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q8.2,2,Opp angles cyclic quad,1,opp angles,opp angles|cyclic quad,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q8.2,3,Co-interior,1,co-int angles,co-int|co-interior,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q8.2,4,Answer 180,1,180,180,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q9.1,1,Corresponding angles,1,corresp angles,corresp|corresponding,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q9.1,2,Tangent chord theorem,1,tan chord,tan chord,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q9.1,3,Answer,1,answer,=|answer|value,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q9.2,1,Proved equal angles,1,proved,proved|proven|proved in 9.1,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q9.2,2,Converse cyclic quad,1,cyclic quad,cyclic quad|koordevh,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q9.3,1,Tangent chord theorem,1,tan chord,tan chord,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q9.3,2,Angles in same segment,1,same segment,same segment,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q9.3,3,Opp equal sides,1,opp equal sides,opp equal|isosceles,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q9.3,4,Answer bisects,1,bisects,bisects|halveer,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q9.4,1,Converse tan chord,1,converse tan chord,converse tan chord|tangent,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q9.4,2,Answer tangent,1,tangent,tangent|raaklyn,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q9.5,1,Opp angles cyclic quad,1,opp angles,opp angles|cyclic quad,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q9.5,2,Answer concyclic,1,concyclic,concyclic|cyclic quad,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q10.1,1,Construction,1,construction,construction|draw,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q10.1,2,Angle at centre,1,angle at centre,at centre|omtreks,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q10.1,3,Opp equal sides,1,opp equal sides,opp equal|isosceles,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q10.1,4,Sum of angles,1,sum of angles,sum of angles,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q10.1,5,Answer 180,1,180,180,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q10.2.1,1,Angle in semi circle,1,angle in semi circle,semi circle|halfsirkel,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q10.2.1,2,Reason,1,reason,reason,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q10.2.2,1,Opp angles cyclic quad,1,opp angles cyclic quad,opp angles|cyclic quad,euclidean.circle,euclid,A,false,keyword
+2015_P2_Q10.2.2,2,Conclude,1,bisects,bisects|halveer,euclidean.circle,euclid,A,true,keyword
+2015_P2_Q11.1,1,Similar triangles,1,equiangular,equiangular|similar|gelykvormig,euclidean.similarity,euclid,A,true,keyword
+2015_P2_Q11.2.1,1,Ratios equal,1,ratios equal,ratio|=,euclidean.similarity,euclid,A,false,keyword
+2015_P2_Q11.2.1,2,Similar triangles,1,similar,similar|gelykvormig,euclidean.similarity,euclid,A,false,keyword
+2015_P2_Q11.2.1,3,Substitution,1,substitution,subst,euclidean.similarity,euclid,A,false,keyword
+2015_P2_Q11.2.1,4,Answer,1,prove,proven,euclidean.similarity,euclid,A,true,keyword
+2015_P2_Q11.2.2,1,Similar triangles,1,similar,similar|gelykvormig,euclidean.similarity,euclid,A,false,keyword
+2015_P2_Q11.2.2,2,Common angle,1,common,common|gemeenskaplike,euclidean.similarity,euclid,A,false,keyword
+2015_P2_Q11.2.2,3,Substitution,1,substitution,subst,euclidean.similarity,euclid,A,false,keyword
+2015_P2_Q11.2.2,4,Answer RQ,1,RQ=,rq=,euclidean.similarity,euclid,A,false,keyword
+2015_P2_Q11.2.2,5,Answer NQ,1,NQ=,nq=,euclidean.similarity,euclid,A,true,keyword
