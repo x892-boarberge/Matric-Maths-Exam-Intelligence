@@ -1,0 +1,141 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2015_P1_Q1.1.1,1,Factorise,1,(x-4)(x-5)=0,(x-4)(x-5)=0|(x-5)(x-4)=0,algebra.quadratic.solve,factorise,A,false
+2015_P1_Q1.1.1,2,Root x=4,1,x=4,x=4,algebra.quadratic.solve,factorise,A,true
+2015_P1_Q1.1.1,3,Root x=5,1,x=5,x=5,algebra.quadratic.solve,factorise,A,true
+2015_P1_Q1.1.2,1,Substitute formula,1,x=(-5±sqrt(73))/6,x=(-5±sqrt(73))/6|x=(-5±√73)/6,algebra.quadratic.solve,formula,A,false
+2015_P1_Q1.1.2,2,x=-2.26,1,x=-2.26,x=-2.26|-2.26,algebra.quadratic.solve,formula,A,true
+2015_P1_Q1.1.2,3,x=0.59,1,x=0.59,x=0.59|0.59,algebra.quadratic.solve,formula,A,true
+2015_P1_Q1.1.3,1,x^(-3/5)=32,1,x^(-3/5)=32,x^(-3/5)=32,algebra.exponential.solve,exponential,A,false
+2015_P1_Q1.1.3,2,Answer 1/8,1,1/8 or 0.125,1/8|0.125,algebra.exponential.solve,exponential,A,true
+2015_P1_Q1.1.4,1,Square both sides,1,2-x=(x-2)^2,2-x=(x-2)^2,algebra.surd.solve,surd,A,false
+2015_P1_Q1.1.4,2,Standard form,1,x^2-3x+2=0,x^2-3x+2=0,algebra.surd.solve,surd,A,false
+2015_P1_Q1.1.4,3,Factorise,1,(x-1)(x-2)=0,(x-1)(x-2)=0|(x-2)(x-1)=0,algebra.surd.solve,surd,A,false
+2015_P1_Q1.1.4,4,Answer x=2,1,x=2,x=2,algebra.surd.solve,surd,A,true
+2015_P1_Q1.1.5,1,Common factor,1,x(x+7)<0,x(x+7)<0,algebra.quadratic.inequality,inequality,A,false
+2015_P1_Q1.1.5,2,Answer -7<x<0,1,-7<x<0,-7<x<0|-7<x<0,algebra.quadratic.inequality,inequality,A,true
+2015_P1_Q1.2,1,Sum of squares=0,1,3x-y=0,3x-y=0,algebra.simultaneous.solve,substitution,A,false
+2015_P1_Q1.2,2,x-5=0,1,x-5=0,x-5=0,algebra.simultaneous.solve,substitution,A,false
+2015_P1_Q1.2,3,x=5,1,x=5,x=5,algebra.simultaneous.solve,substitution,A,false
+2015_P1_Q1.2,4,y=15,1,y=15,y=15,algebra.simultaneous.solve,substitution,A,true
+2015_P1_Q1.3,1,Standard form,1,x^2+x-k=0,x^2+x-k=0,algebra.quadratic.solve,formula,A,false
+2015_P1_Q1.3,2,Δ<0,1,Δ<0,Δ<0|Delta<0,algebra.quadratic.solve,formula,A,false
+2015_P1_Q1.3,3,1^2-4(1)(-k)<0,1,1^2-4(1)(-k)<0,1^2-4(1)(-k)<0|1+4k<0,algebra.quadratic.solve,formula,A,false
+2015_P1_Q1.3,4,k<-1/4,1,k<-1/4,k<-1/4,algebra.quadratic.solve,formula,A,true
+2015_P1_Q2.1,1,r=1/2,1,r=1/2,r=1/2,sequences.geometric,geom,A,false
+2015_P1_Q2.1,2,T5=5/8,1,5/8 or 0.625,5/8|0.625,sequences.geometric,geom,A,true
+2015_P1_Q2.2,1,Tn formula,1,Tn=10(1/2)^(n-1),Tn=10(1/2)^(n-1),sequences.geometric,geom,A,true
+2015_P1_Q2.3,1,Convergence condition,1,-1<r<1,-1<r<1,sequences.geometric,geom,A,false
+2015_P1_Q2.3,2,r=1/2,1,r=1/2,r=1/2,sequences.geometric,geom,A,true
+2015_P1_Q2.4,1,S_inf-S_n expression,1,10/(1-1/2),10/(1-1/2)|20-20(1-1/2)^n,sequences.geometric,geom,A,false
+2015_P1_Q2.4,2,20(1-1/2)^n,1,20(1/2)^n,20(1/2)^n,sequences.geometric,geom,A,false
+2015_P1_Q2.4,3,20-20(1-1/2)^n,1,20-20(1-1/2)^n,20-20(1-1/2)^n,sequences.geometric,geom,A,false
+2015_P1_Q2.4,4,Answer 20(1/2)^n,1,20(1/2)^n,20(1/2)^n|20(1-1/2)^n,sequences.geometric,geom,A,true
+2015_P1_Q3.1,1,d=8,1,d=8,d=8,sequences.arithmetic,arith,A,false
+2015_P1_Q3.1,2,Tk expression,1,Tk=8k-11,Tk=8k-11,sequences.arithmetic,arith,A,true
+2015_P1_Q3.2,1,Sigma notation,1,sum_{k=1}^n(8k-11),sum_{k=1}^n(8k-11),sequences.arithmetic,arith,A,true
+2015_P1_Q3.3,1,S_n formula,1,S_n=n/2[2(-3)+(n-1)(8)],S_n=n/2[2(-3)+(n-1)(8)],sequences.arithmetic,arith,A,false
+2015_P1_Q3.3,2,Simplify,1,n(4n-7),n(4n-7),sequences.arithmetic,arith,A,true
+2015_P1_Q3.4.1,1,Q6 sum,1,-6-3+5+13+21+29,-6-3+5+13+21+29,sequences.arithmetic,arith,A,false
+2015_P1_Q3.4.1,2,Answer 59,1,59,59,sequences.arithmetic,arith,A,true
+2015_P1_Q3.4.2,1,Q129 formula,1,-6+4(128)^2-7(128),-6+4(128)^2-7(128),sequences.arithmetic,arith,A,false
+2015_P1_Q3.4.2,2,Answer 64634,1,64634,64634,sequences.arithmetic,arith,A,true
+2015_P1_Q4.1,1,Asymptote y=-8,1,y=-8,y=-8,functions.exponential,exponential,A,true
+2015_P1_Q4.2,1,x-intercept,1,x-intercept,x-intercept|x intercept,functions.exponential,exponential,A,false
+2015_P1_Q4.2,2,y-intercept,1,y-intercept,y-intercept|y intercept,functions.exponential,exponential,A,false
+2015_P1_Q4.2,3,Shape,1,shape,shape,functions.exponential,exponential,A,false
+2015_P1_Q4.2,4,Asymptote,1,asymptote,asymptote|y=-8,functions.exponential,exponential,A,true
+2015_P1_Q4.3,1,g(x),1,g(x)=2^(-x+1)-8,g(x)=2^(-x+1)-8,functions.exponential,exponential,A,true
+2015_P1_Q5.1,1,x-intercept,1,x=1.5,x=1.5|3/2,functions.line,line,A,false
+2015_P1_Q5.1,2,Q coordinates,1,Q(1.5;0),Q(1.5;0)|Q(3/2;0),functions.line,line,A,true
+2015_P1_Q5.2,1,h(-2),1,h(-2)=-7,h(-2)=-7|-7,functions.line,line,A,false
+2015_P1_Q5.2,2,h(4)=5,1,h(4)=5,h(4)=5|5,functions.line,line,A,false
+2015_P1_Q5.2,3,Domain,1,-7<=x<=5,-7<=x<=5|-7≤x≤5,functions.line,line,A,true
+2015_P1_Q5.3,1,y-intercept,1,y-intercept,y-intercept|y intercept,functions.inverse,inverse,A,false
+2015_P1_Q5.3,2,Line segment,1,line segment,line segment,functions.inverse,inverse,A,false
+2015_P1_Q5.3,3,Endpoints,1,endpoints,endpoints|(-7;4) and (5;0),functions.inverse,inverse,A,true
+2015_P1_Q5.4,1,Inverse,1,y=(x+3)/2,y=(x+3)/2,functions.inverse,inverse,A,false
+2015_P1_Q5.4,2,2x-3=(x+3)/2,1,2x-3=(x+3)/2,2x-3=(x+3)/2,functions.inverse,inverse,A,false
+2015_P1_Q5.4,3,x=3,1,x=3,x=3,functions.inverse,inverse,A,true
+2015_P1_Q5.5,1,OP^2,1,OP^2=x^2+(2x-3)^2,OP^2=x^2+(2x-3)^2,calculus.optimisation,optimisation,A,false
+2015_P1_Q5.5,2,Expand,1,5x^2-12x+9,5x^2-12x+9,calculus.optimisation,optimisation,A,false
+2015_P1_Q5.5,3,Derivative=0,1,10x-12=0,10x-12=0,calculus.optimisation,optimisation,A,false
+2015_P1_Q5.5,4,x=6/5,1,x=6/5,x=6/5|1.2,calculus.optimisation,optimisation,A,false
+2015_P1_Q5.5,5,Answer 1.34,1,1.34,1.34|sqrt(9/5),calculus.optimisation,optimisation,A,true
+2015_P1_Q5.6.1,1,f'(x),1,f'(x)=2x-3,f'(x)=2x-3,calculus.polynomial,derivative,A,false
+2015_P1_Q5.6.1,2,x=3/2,1,x=3/2,x=3/2,calculus.polynomial,derivative,A,false
+2015_P1_Q5.6.1,3,f''(x)=2>0,1,f''(x)=2>0,f''(x)=2>0,calculus.polynomial,derivative,A,false
+2015_P1_Q5.6.1,4,Local min,1,local minimum,local minimum,calculus.polynomial,derivative,A,true
+2015_P1_Q5.6.2,1,Left decreasing,1,decreasing,decreasing|left of Q,calculus.polynomial,derivative,A,false
+2015_P1_Q5.6.2,2,Right increasing,1,increasing,increasing|right of Q,calculus.polynomial,derivative,A,true
+2015_P1_Q5.6.3,1,Explanation,1,explanation,explanation,calculus.polynomial,derivative,A,true
+2015_P1_Q6.1.1,1,T coordinates,1,T(0;18),"T(0;18)|T(0,18)",functions.parabola,parabola,A,true
+2015_P1_Q6.1.2,1,Set to 0,1,-2x^2+18=0,-2x^2+18=0,functions.parabola,parabola,A,false
+2015_P1_Q6.1.2,2,Factorise,1,(x-3)(x+3)=0,(x-3)(x+3)=0|(x+3)(x-3)=0,functions.parabola,parabola,A,false
+2015_P1_Q6.1.2,3,Q coords,1,Q(3;0),"Q(3;0)|Q(3,0)",functions.parabola,parabola,A,true
+2015_P1_Q6.1.3,1,S x-coord 4.5,1,x=4.5,x=4.5|9/2,functions.parabola,parabola,A,false
+2015_P1_Q6.1.3,2,R coords,1,R(6;0),"R(6;0)|R(6,0)",functions.parabola,parabola,A,true
+2015_P1_Q6.1.4,1,Range,1,x in R,x in R|(-inf;inf),functions.parabola,parabola,A,true
+2015_P1_Q6.2,1,Hyperbola centre,1,y=x+6 and x=-2,y=x+6 and x=-2|y=x+6|centre|y=x+6 and x=-2,functions.hyperbola,hyperbola,A,false
+2015_P1_Q6.2,2,y=4,1,y=4,y=4,functions.hyperbola,hyperbola,A,false
+2015_P1_Q6.2,3,Asymptotes,1,y=4 and x=-2,y=4 and x=-2,functions.hyperbola,hyperbola,A,false
+2015_P1_Q6.2,4,Shape,1,shape,shape|increasing hyperbolic,functions.hyperbola,hyperbola,A,true
+2015_P1_Q7.1,1,Answer 450000,1,450000,450000,finance.compound,finance,A,true
+2015_P1_Q7.2,1,Substitute,1,243736.90=450000(1-i)^4,243736.90=450000(1-i)^4,finance.compound,finance,A,false
+2015_P1_Q7.2,2,Solve for i,1,i=0.1421,i=0.1421|14.21%,finance.compound,finance,A,false
+2015_P1_Q7.2,3,Answer 14.21%,1,14.21%,14.21%|14.21,finance.compound,finance,A,true
+2015_P1_Q7.3,1,i=0.081 and n=4,1,i=0.081; n=4,i=0.081; n=4,finance.compound,finance,A,false
+2015_P1_Q7.3,2,Substitute,1,A=450000(1+0.081)^4,A=450000(1+0.081)^4,finance.compound,finance,A,false
+2015_P1_Q7.3,3,Answer 614490.66,1,614490.66,614490.66,finance.compound,finance,A,true
+2015_P1_Q7.4,1,Future value diff,1,614490.66-243736.90=370753.76,614490.66-243736.90=370753.76|370753.76|614490.66-243736.90,finance.future_value,finance,A,false
+2015_P1_Q7.4,2,i=0.062/12 and n=36,1,i=0.062/12; n=36,i=0.062/12; n=36,finance.future_value,finance,A,false
+2015_P1_Q7.4,3,Substitute,1,370753.76=x[(1+0.062/12)^36-1]/(0.062/12),370753.76=x[(1+0.062/12)^36-1]/(0.062/12),finance.future_value,finance,A,false
+2015_P1_Q7.4,4,x=9397.11,1,9397.11,9397.11,finance.future_value,finance,A,true
+2015_P1_Q8.1,1,f(x+h),1,f(x+h)=(x+h)^2-3(x+h),f(x+h)=(x+h)^2-3(x+h),calculus.first_principles,first_principles,A,false
+2015_P1_Q8.1,2,Expand,1,x^2+2xh+h^2-3x-3h,x^2+2xh+h^2-3x-3h,calculus.first_principles,first_principles,A,false
+2015_P1_Q8.1,3,Difference,1,2xh+h^2-3h,2xh+h^2-3h,calculus.first_principles,first_principles,A,false
+2015_P1_Q8.1,4,Factorise,1,h(2x+h-3),h(2x+h-3),calculus.first_principles,first_principles,A,false
+2015_P1_Q8.1,5,Answer 2x-3,1,2x-3,2x-3,calculus.first_principles,first_principles,A,true
+2015_P1_Q8.2.1,1,Simplify,1,x^4-2+x^-4,x^4-2+x^-4,calculus.polynomial,derivative,A,false
+2015_P1_Q8.2.1,2,4x^3,1,4x^3,4x^3,calculus.polynomial,derivative,A,false
+2015_P1_Q8.2.1,3,-4x^-5,1,-4x^-5,-4x^-5,calculus.polynomial,derivative,A,true
+2015_P1_Q8.2.2,1,Factorise,1,factorisation,factorisation,calculus.polynomial,derivative,A,false
+2015_P1_Q8.2.2,2,x^2+x+1,1,x^2+x+1,x^2+x+1,calculus.polynomial,derivative,A,false
+2015_P1_Q8.2.2,3,2x+1,1,2x+1,2x+1,calculus.polynomial,derivative,A,true
+2015_P1_Q9.1,1,Substitute Q,1,-8+4a+2b=10,-8+4a+2b=10,calculus.cubic,derivative,A,false
+2015_P1_Q9.1,2,2a+b=9,1,2a+b=9,2a+b=9,calculus.cubic,derivative,A,false
+2015_P1_Q9.1,3,h'(x),1,h'(x)=-3x^2+2ax+b,h'(x)=-3x^2+2ax+b,calculus.cubic,derivative,A,false
+2015_P1_Q9.1,4,h'(2)=0,1,-12+4a+b=0,-12+4a+b=0,calculus.cubic,derivative,A,false
+2015_P1_Q9.1,5,Solve simultaneously,1,a=3/2; b=6,a=3/2; b=6,calculus.cubic,derivative,A,true
+2015_P1_Q9.2,1,f(-1)=-3.5,1,f(-1)=-3.5,f(-1)=-3.5,calculus.cubic,derivative,A,false
+2015_P1_Q9.2,2,Average gradient formula,1,(f(2)-f(-1))/(2-(-1)),(f(2)-f(-1))/(2-(-1)),calculus.cubic,derivative,A,false
+2015_P1_Q9.2,3,Substitute,1,(10-(-3.5))/3,(10-(-3.5))/3,calculus.cubic,derivative,A,false
+2015_P1_Q9.2,4,Answer 4.5,1,4.5,4.5|9/2,calculus.cubic,derivative,A,true
+2015_P1_Q9.3,1,h'(x),1,h'(x)=-3x^2+3x+6,h'(x)=-3x^2+3x+6,calculus.cubic,derivative,A,false
+2015_P1_Q9.3,2,h''(x),1,h''(x)=-6x+3,h''(x)=-6x+3,calculus.cubic,derivative,A,false
+2015_P1_Q9.3,3,Explanation,1,explanation,explanation,calculus.cubic,derivative,A,true
+2015_P1_Q9.4,1,x=1/2,1,x=1/2,x=1/2|0.5,calculus.cubic,derivative,A,true
+2015_P1_Q9.5,1,h'(x)=-12,1,h'(x)=-12,h'(x)=-12,calculus.cubic,derivative,A,false
+2015_P1_Q9.5,2,Factors,1,(x-3)(x+2)=0,(x-3)(x+2)=0|(x+2)(x-3)=0,calculus.cubic,derivative,A,false
+2015_P1_Q9.5,3,x=-2,1,x=-2,x=-2,calculus.cubic,derivative,A,true
+2015_P1_Q10.1,1,tan60,1,h/r=tan60,h/r=tan60,trig.3d,trig3d,A,false
+2015_P1_Q10.1,2,r=h/sqrt3,1,r=h/sqrt3,r=h/sqrt3,trig.3d,trig3d,A,true
+2015_P1_Q10.2,1,V formula,1,V=1/3 pi r^2 h,V=1/3 pi r^2 h,trig.3d,trig3d,A,false
+2015_P1_Q10.2,2,Substitute r,1,V=1/9 pi h^3,V=1/9 pi h^3,trig.3d,trig3d,A,false
+2015_P1_Q10.2,3,dV/dh,1,dV/dh=1/3 pi h^2,dV/dh=1/3 pi h^2,trig.3d,trig3d,A,false
+2015_P1_Q10.2,4,Substitute h=9,1,1/3 pi (81),1/3 pi (81),trig.3d,trig3d,A,false
+2015_P1_Q10.2,5,Answer 27pi,1,27pi or 84.82,27pi|84.82,trig.3d,trig3d,A,true
+2015_P1_Q11.1,1,P(A)*P(B),1,0.2*0.63,0.2*0.63,probability.independent,probability,A,false
+2015_P1_Q11.1,2,Answer 0.126,1,0.126,0.126,probability.independent,probability,A,false
+2015_P1_Q11.1,3,Independent,1,independent,independent|P(A and B)=P(A)*P(B),probability.independent,probability,A,true
+2015_P1_Q11.2.1,1,Answer 7^7,1,7^7,7^7|823543,probability.counting,counting,A,true
+2015_P1_Q11.2.2,1,Answer 7!,1,7!,7!|5040,probability.counting,counting,A,true
+2015_P1_Q11.2.3,1,3 options,1,3,3,probability.counting,counting,A,false
+2015_P1_Q11.2.3,2,4 options,1,4,4,probability.counting,counting,A,false
+2015_P1_Q11.2.3,3,5! arrangement,1,5*4*3*2*1,5*4*3*2*1|5!,probability.counting,counting,A,false
+2015_P1_Q11.2.3,4,Answer 1440,1,1440,1440,probability.counting,counting,A,true
+2015_P1_Q11.3,1,P(O),1,t/(t+2),t/(t+2),probability.tree,tree,A,false
+2015_P1_Q11.3,2,P(Y),1,2/(t+2),2/(t+2),probability.tree,tree,A,false
+2015_P1_Q11.3,3,P(OO),1,(t/(t+2))^2,(t/(t+2))^2,probability.tree,tree,A,false
+2015_P1_Q11.3,4,P(YY),1,(2/(t+2))^2,(2/(t+2))^2,probability.tree,tree,A,false
+2015_P1_Q11.3,5,Equation 52/100,1,52/100,52/100|13/25,probability.tree,tree,A,false
+2015_P1_Q11.3,6,Answer t=3,1,t=3,t=3,probability.tree,tree,A,true

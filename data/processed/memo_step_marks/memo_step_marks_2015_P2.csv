@@ -1,0 +1,90 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2015_P2_Q1.1,1,Plot points,1,plotting,plotting|plot points,statistics.regression,regression,A,true
+2015_P2_Q1.2.1,1,Substitute 18,1,y_hat=154.60+77.13(18),y_hat=154.60+77.13(18),statistics.regression,regression,A,false
+2015_P2_Q1.2.1,2,Answer 1500,1,1542.94 or 1500,1542.94|1500,statistics.regression,regression,A,true
+2015_P2_Q1.3,1,Point (8;300),1,(8;300),"(8;300)|(8,300)",statistics.regression,regression,A,true
+2015_P2_Q1.4,1,r=0.95,1,r=0.95,r=0.95|0.95,statistics.regression,regression,A,true
+2015_P2_Q1.5,1,Very strong,1,very strong positive,very strong positive|strong positive,statistics.regression,regression,A,true
+2015_P2_Q2.1,1,Mean formula,1,mean=202/30,mean=202/30,statistics.mean,mean,A,false
+2015_P2_Q2.1,2,Answer 6.73,1,6.73,6.73,statistics.mean,mean,A,true
+2015_P2_Q2.2,1,Median formula,1,(T15+T16)/2=7/2,(T15+T16)/2=7/2|(T15+T16)/2|T15+T16|median,statistics.median,median,A,false
+2015_P2_Q2.2,2,Answer 7,1,7,7,statistics.median,median,A,true
+2015_P2_Q2.3,1,SD,1,2.26,2.26|2.264,statistics.stdev,stdev,A,true
+2015_P2_Q2.4,1,Bounds,1,(4.47;8.99),(4.47;8.99),statistics.stdev,stdev,A,false
+2015_P2_Q2.4,2,Lower bound,1,6.73-2.26,6.73-2.26,statistics.stdev,stdev,A,false
+2015_P2_Q2.4,3,Answer 19,1,19,19,statistics.stdev,stdev,A,true
+2015_P2_Q3.1,1,m=1,1,m=1,m=1,analytical.gradient,gradient,A,false
+2015_P2_Q3.1,2,Answer 1,1,1,1,analytical.gradient,gradient,A,true
+2015_P2_Q3.2,1,MN parallel QP,1,MN parallel QP,MN parallel QP,analytical.line,line,A,false
+2015_P2_Q3.2,2,mMN=1,1,mMN=1,mMN=1|m=1,analytical.gradient,gradient,A,false
+2015_P2_Q3.2,3,Substitute N,1,y-1=1(x-7),y-1=1(x-7),analytical.line,line,A,false
+2015_P2_Q3.2,4,y=x-6,1,y=x-6,y=x-6,analytical.line,line,A,true
+2015_P2_Q3.3,1,MN=1/2 PQ,1,MN=1/2 PQ,MN=1/2 PQ,analytical.distance,distance,A,false
+2015_P2_Q3.3,2,Answer 4.95,1,7sqrt2/2 or 4.95,7sqrt2/2|4.95,analytical.distance,distance,A,true
+2015_P2_Q3.5,1,xS=16,1,xS=16,xS=16,analytical.midpoint,midpoint,A,false
+2015_P2_Q3.5,2,yS=5,1,yS=5,yS=5,analytical.midpoint,midpoint,A,false
+2015_P2_Q3.5,3,S(16;5),1,S(16;5),"S(16;5)|S(16,5)",analytical.midpoint,midpoint,A,true
+2015_P2_Q3.6,1,Equation PQ,1,y=x-1,y=x-1,analytical.line,line,A,false
+2015_P2_Q3.6,2,Substitute Q,1,7sqrt2=sqrt((a+2)^2+(b+3)^2),7sqrt2=sqrt((a+2)^2+(b+3)^2),analytical.distance,distance,A,false
+2015_P2_Q3.6,3,Standard form,1,b^2+6b-40=0,b^2+6b-40=0,analytical.distance,distance,A,false
+2015_P2_Q3.6,4,b=4,1,b=4,b=4,analytical.distance,distance,A,false
+2015_P2_Q3.6,5,a=5,1,a=5,a=5,analytical.distance,distance,A,false
+2015_P2_Q3.6,6,P(5;4),1,P(5;4),"P(5;4)|P(5,4)",analytical.distance,distance,A,true
+2015_P2_Q4.1,1,Circle equation,1,(x-5)^2+(y-2)^2=41,(x-5)^2+(y-2)^2=41,analytical.circle,circle,A,false
+2015_P2_Q4.1,2,r^2,1,r^2=41,r^2=41,analytical.circle,circle,A,false
+2015_P2_Q4.1,3,Equation,1,(x-5)^2+(y-2)^2=41,(x-5)^2+(y-2)^2=41,analytical.circle,circle,A,true
+2015_P2_Q4.2,1,Substitute x=0,1,(0-5)^2+(y-2)^2=41,(0-5)^2+(y-2)^2=41,analytical.circle,circle,A,false
+2015_P2_Q4.2,2,Standard form,1,y^2-4y-12=0,y^2-4y-12=0,analytical.circle,circle,A,false
+2015_P2_Q4.2,3,Factorise,1,(y-6)(y+2)=0,(y-6)(y+2)=0|(y+2)(y-6)=0,analytical.circle,circle,A,false
+2015_P2_Q4.2,4,S(0;-2),1,S(0;-2),"S(0;-2)|S(0,-2)",analytical.circle,circle,A,true
+2015_P2_Q4.3,1,mPQ=-4/5,1,mPQ=(6-2)/(0-5),mPQ=(6-2)/(0-5)|mPQ=-4/5,analytical.gradient,gradient,A,false
+2015_P2_Q4.3,2,mAPB=5/4,1,mAPB=5/4,mAPB=5/4,analytical.gradient,gradient,A,false
+2015_P2_Q4.3,3,Equation,1,y=5/4x+6,y=5/4x+6,analytical.line,line,A,true
+2015_P2_Q4.4,1,tan alpha,1,5/4,5/4|tan alpha=5/4,analytical.gradient,gradient,A,false
+2015_P2_Q4.4,2,Answer 51.34,1,51.34,51.34|51.34°,analytical.gradient,gradient,A,true
+2015_P2_Q4.5,1,tan-chord,1,tan-chord theorem,tan-chord theorem|tan-chord|theta=BPS|tan-chord theorem,analytical.circle,circle,A,false
+2015_P2_Q4.5,2,90-alpha,1,90-alpha,90-alpha|90-51.34,analytical.circle,circle,A,false
+2015_P2_Q4.5,3,Answer 38.66,1,38.66,38.66,analytical.circle,circle,A,true
+2015_P2_Q4.6,1,Area formula,1,1/2(8)(5),1/2(8)(5),analytical.area,area,A,false
+2015_P2_Q4.6,2,Answer 20,1,20,20,analytical.area,area,A,true
+2015_P2_Q5.1.1,1,Reduction,1,-sin23,-sin23,trig.reduction,trig,A,false
+2015_P2_Q5.1.1,2,-sqrt(k),1,-sqrt(k),-sqrt(k)|-√k,trig.reduction,trig,A,true
+2015_P2_Q5.1.2,1,Identity,1,cos^2 23=1-sin^2 23,cos^2 23=1-sin^2 23,trig.reduction,trig,A,false
+2015_P2_Q5.1.2,2,cos23=sqrt(1-k),1,sqrt(1-k),sqrt(1-k)|√(1-k),trig.reduction,trig,A,false
+2015_P2_Q5.1.2,3,-tan23,1,-tan23,-tan23,trig.reduction,trig,A,true
+2015_P2_Q5.1.3,1,Reduction,1,-sqrt(k)/sqrt(1-k),-sqrt(k)/sqrt(1-k),trig.reduction,trig,A,false
+2015_P2_Q5.1.3,2,Answer,1,-sqrt(k)/sqrt(1-k),-sqrt(k)/sqrt(1-k)|-√k/√(1-k),trig.reduction,trig,A,true
+2015_P2_Q5.2.1,1,cosx,1,cos x,cos x|cosx,trig.reduction,trig,A,false
+2015_P2_Q5.2.1,2,-sinx,1,-sin x,-sin x|-sinx,trig.reduction,trig,A,false
+2015_P2_Q5.2.1,3,sin(30),1,sin(30),sin30|sin(30),trig.reduction,trig,A,false
+2015_P2_Q5.2.1,4,-8sinxcosx,1,-8sinxcosx,-8sinxcosx,trig.reduction,trig,A,false
+2015_P2_Q5.2.1,5,-4sin2x,1,-4sin2x,-4sin2x,trig.reduction,trig,A,true
+2015_P2_Q5.3,1,Identity,1,2cos^2x-1-7cosx-3=0,2cos^2x-7cosx-4=0,trig.equation,trig,A,false
+2015_P2_Q5.3,2,Factorise,1,(2cosx+1)(cosx-4)=0,(2cosx+1)(cosx-4)=0,trig.equation,trig,A,false
+2015_P2_Q5.3,3,cosx=-1/2,1,cosx=-1/2,cosx=-1/2,trig.equation,trig,A,false
+2015_P2_Q5.3,4,x=120+n.360,1,x=120+n.360,x=120+n.360,trig.equation,trig,A,false
+2015_P2_Q5.3,5,x=240+n.360,1,x=240+n.360,x=240+n.360,trig.equation,trig,A,false
+2015_P2_Q5.3,6,n in Z,1,n in Z,n in Z|n∈Z,trig.equation,trig,A,true
+2015_P2_Q5.4,1,Expand sin3x,1,sin(2x+x),sin(2x+x)|sin3x=sin(2x+x),trig.identity,trig,A,false
+2015_P2_Q5.4,2,Expand,1,sin2xcosx+cos2xsinx,sin2xcosx+cos2xsinx,trig.identity,trig,A,false
+2015_P2_Q5.4,3,Substitute,1,2sinxcosx*cosx+(1-2sin^2x)sinx,2sinxcosx*cosx+(1-2sin^2x)sinx,trig.identity,trig,A,false
+2015_P2_Q5.4,4,Simplify,1,3sinx-4sin^3x,3sinx-4sin^3x,trig.identity,trig,A,false
+2015_P2_Q5.4,5,Answer 23/27,1,23/27,23/27,trig.identity,trig,A,true
+2015_P2_Q6.1,1,f(x),1,f(x)=cosx-1/2,f(x)=cosx-1/2,trig.graph,graph,A,false
+2015_P2_Q6.1,2,g(x),1,g(x)=sin(x+30),g(x)=sin(x+30)|g(x)=sin(x+30°),trig.graph,graph,A,false
+2015_P2_Q6.1,3,p=30,1,p=30,p=30,trig.graph,graph,A,false
+2015_P2_Q6.1,4,q=-1/2,1,q=-1/2,q=-1/2,trig.graph,graph,A,true
+2015_P2_Q6.2,1,Critical values,1,-120 and 0,-120 and 0|-120; 0,trig.graph,graph,A,false
+2015_P2_Q6.2,2,Answer -120<x<0,1,-120<x<0,-120<x<0,trig.graph,graph,A,true
+2015_P2_Q6.3,1,Shift 60 left,1,60 left,60 left|shift 60 left,trig.graph,graph,A,false
+2015_P2_Q6.3,2,Reflect x-axis,1,reflect x-axis,reflect x-axis|reflection about x-axis,trig.graph,graph,A,true
+2015_P2_Q7.1,1,CAD angle,1,180-2theta,180-2theta|180-2θ,trig.3d,trig3d,A,true
+2015_P2_Q7.2,1,Sine rule,1,sin(180-2θ)/(x+3)=sinθ/(2x),sine rule,trig.3d,trig3d,A,false
+2015_P2_Q7.2,2,sin2θ,1,sin2θ=2sinθcosθ,sin2θ=2sinθcosθ,trig.3d,trig3d,A,false
+2015_P2_Q7.2,3,cosθ subject,1,cosθ=x/(x+3),cosθ=x/(x+3),trig.3d,trig3d,A,false
+2015_P2_Q7.2,4,Answer x/(x+3),1,x/(x+3),x/(x+3),trig.3d,trig3d,A,true
+2015_P2_Q7.3,1,cosθ=2/5,1,cosθ=2/5,cosθ=2/5,trig.3d,trig3d,A,false
+2015_P2_Q7.3,2,θ=66.42,1,66.42,66.42|66.42°,trig.3d,trig3d,A,false
+2015_P2_Q7.3,3,Ratio,1,sinθ/2=AB/5,sinθ/2=AB/5,trig.3d,trig3d,A,false
+2015_P2_Q7.3,4,Substitute,1,AB=5sin33.21,AB=5sin33.21,trig.3d,trig3d,A,false
+2015_P2_Q7.3,5,Answer 2.74,1,2.74,2.74,trig.3d,trig3d,A,true
