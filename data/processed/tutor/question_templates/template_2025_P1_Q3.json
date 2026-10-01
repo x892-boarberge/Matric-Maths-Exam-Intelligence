@@ -1,0 +1,77 @@
+{
+  "stem": "The depth of a torpedo below sea level forms a quadratic pattern. Depth at end of first second: {T1}. At end of second 2: {T2}. At end of second 3: {T3}.",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Calculate the depth at the end of the first 5 seconds.",
+      "ranges": {
+        "T1": [
+          36
+        ],
+        "T2": [
+          71
+        ],
+        "T3": [
+          104
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.quadratic.term",
+      "expected_fn": "T_5 = {T5}",
+      "steps": [
+        "First differences: {d1}; {d2}",
+        "Second difference: {dd}",
+        "T_5 = T_1 + (d1) + (d1 + dd) + (d1 + 2dd) + (d1 + 3dd)",
+        "T_5 = {T5}"
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Show that T_n = -n^2 + 38n - 1.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.quadratic.general",
+      "expected_fn": "T_n = -n^2 + 38n - 1",
+      "steps": [
+        "2a = second difference = -2, so a = -1.",
+        "3a + b = first first-diff = 35, so b = 38.",
+        "a + b + c = T_1 = 36, so c = -1.",
+        "T_n = -n^2 + 38n - 1"
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Calculate the maximum depth the torpedo reached.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.quadratic.monotone",
+      "expected_fn": "Max depth = {max_val}",
+      "steps": [
+        "T_n = -n^2 + 38n - 1 is a downward parabola.",
+        "Maximum at n = -b/(2a) = 38/2 = 19.",
+        "T_19 = -(19)^2 + 38(19) - 1 = 360",
+        "Maximum depth = 360 m."
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "After how many seconds was the torpedo at 104 m below sea level for the second time?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.quadratic.n",
+      "expected_fn": "n = {n_ans}",
+      "steps": [
+        "Set T_n = 104: -n^2 + 38n - 1 = 104",
+        "n^2 - 38n + 105 = 0",
+        "(n - 3)(n - 35) = 0",
+        "n = 3 or n = 35",
+        "Second time is n = 35 seconds."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "3"
+  }
+}

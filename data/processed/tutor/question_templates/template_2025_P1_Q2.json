@@ -1,0 +1,98 @@
+{
+  "stem": "Given the infinite geometric series: (t + {a}) + (t - {b}) + (t + {c}) + ...",
+  "subquestions": [
+    {
+      "n": "2.1.1",
+      "prompt_template": "Show that t = {t_val}.",
+      "ranges": {
+        "a": [
+          10,
+          12,
+          15
+        ],
+        "b": [
+          2,
+          3,
+          4
+        ],
+        "c": [
+          4,
+          6,
+          8
+        ],
+        "t_val": [
+          -2,
+          -3,
+          -4
+        ]
+      },
+      "marks": 3,
+      "skill_id": "sequences.geometric",
+      "expected_fn": "t = {t_val}",
+      "steps": [
+        "For a geometric series, the ratio of consecutive terms is constant.",
+        "(t - {b}) / (t + {a}) = (t + {c}) / (t - {b})",
+        "Cross-multiply and solve for t.",
+        "t = {t_val}"
+      ]
+    },
+    {
+      "n": "2.1.2",
+      "prompt_template": "Calculate the value of T_25. Write in the form T_n = b^x.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.geometric.term",
+      "expected_fn": "T_25 = b^x form",
+      "steps": [
+        "Identify a and r.",
+        "T_n = a*r^(n-1)",
+        "T_25 = a*r^24",
+        "Write in exponential form."
+      ]
+    },
+    {
+      "n": "2.1.3",
+      "prompt_template": "Calculate the sum of the infinite series.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.gp.sum_infinity",
+      "expected_fn": "S_inf = a/(1-r)",
+      "steps": [
+        "S_inf = a/(1-r) for -1 < r < 1",
+        "Substitute a and r.",
+        "S_inf = ..."
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Given sum_(p={k})^117 (4p - 1) = {total}. Calculate k.",
+      "ranges": {
+        "k": [
+          3,
+          5,
+          8
+        ],
+        "total": [
+          26675,
+          25000,
+          30000
+        ]
+      },
+      "marks": 5,
+      "skill_id": "sequences.ap.sum",
+      "expected_fn": "k = {k_ans}",
+      "steps": [
+        "S_n = n/2[2a + (n-1)d]",
+        "T_p = 4p - 1",
+        "T_1 = 4k - 1, d = 4",
+        "Number of terms = 117 - k + 1",
+        "Set S = {total} and solve for k."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "2"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "stem": "Given f(x) = -x^3 + 6x^2 - 9x + 4 = (x-1)^2(-x+4).",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Determine the coordinates of the turning points of f.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.cubic.turning",
+      "expected_fn": "(1; 0) and (3; 4)",
+      "steps": [
+        "f'(x) = -3x^2 + 12x - 9 = -3(x^2 - 4x + 3)",
+        "= -3(x-1)(x-3)",
+        "Turning points at x = 1 and x = 3.",
+        "f(1) = 0, f(3) = 4",
+        "TPs (1; 0) and (3; 4)"
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "Draw a sketch of f showing all intercepts and turning points.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.cubic.sketch",
+      "expected_fn": "see memo",
+      "steps": [
+        "x-intercepts: x = 1 (twice) and x = 4",
+        "y-intercept: 4",
+        "Turning points from 8.1.",
+        "Shape: negative cubic."
+      ]
+    },
+    {
+      "n": "8.3",
+      "prompt_template": "Values of k for which -x^3 + 6x^2 - 9x + 4 = k has 3 real unequal roots.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.cubic.intercept",
+      "expected_fn": "0 < k < 4",
+      "steps": [
+        "y = k intersects f three times when k is between the turning point y-values.",
+        "0 < k < 4"
+      ]
+    },
+    {
+      "n": "8.4",
+      "prompt_template": "Line g(x) = ax + b is tangent to f at the point of inflection. Find g.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "g(x) = {m}x + {c}",
+      "steps": [
+        "Point of inflection: f''(x) = -6x + 12 = 0, x = 2.",
+        "f(2) = 2.",
+        "f'(2) = -3(4) + 24 - 9 = 3.",
+        "y - 2 = 3(x - 2)",
+        "y = 3x - 4"
+      ]
+    },
+    {
+      "n": "8.5",
+      "prompt_template": "Calculate theta, the acute angle between g and the x-axis.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "theta = {theta}",
+      "steps": [
+        "tan(theta) = m = 3",
+        "theta = arctan(3) = 71.57 degrees"
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P1",
+    "qnum": "8"
+  },
+  "diagram": "cubic"
+}

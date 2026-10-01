@@ -1,0 +1,40 @@
+{
+  "stem": "A rectangular metal sheet has dimensions x and h with x > h, perimeter 50. It is rolled into a cylinder with height h.",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Show that V = 25x^2/(4 pi) - x^3/(4 pi).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.optimisation.volume",
+      "expected_fn": "V = (25x^2 - x^3) / (4 pi)",
+      "steps": [
+        "Perimeter: 2(x + h) = 50 => h = 25 - x.",
+        "The sheet is rolled so x is the circumference: 2 pi r = x => r = x/(2 pi).",
+        "V = pi r^2 h = pi (x/(2 pi))^2 (25 - x) = x^2/(4 pi) (25 - x)",
+        "V = 25x^2/(4 pi) - x^3/(4 pi)"
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Calculate x that maximises the volume.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.optimisation.max",
+      "expected_fn": "x = {x_max}",
+      "steps": [
+        "dV/dx = (50x - 3x^2) / (4 pi)",
+        "Set dV/dx = 0: 50x - 3x^2 = 0",
+        "x(50 - 3x) = 0",
+        "x = 0 or x = 50/3",
+        "Maximum volume at x = 50/3 cm."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "10"
+  },
+  "diagram": "cylinder"
+}

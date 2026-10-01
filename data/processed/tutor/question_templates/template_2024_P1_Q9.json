@@ -1,0 +1,63 @@
+{
+  "source": {
+    "year": 2024,
+    "paper": "P1",
+    "qnum": "9"
+  },
+  "stem": "A({xa}; {ya}) and B({xb}; {yb}) are the turning points of graph f. C(0; {yc}) is the y-intercept of f.",
+  "stem_params": "computed",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "For which values of x is f decreasing?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.cubic.decreasing",
+      "expected_fn": "{xa} < x < {xb}",
+      "steps": [
+        "f is decreasing between the two turning points.",
+        "The turning points are at x = {xa} and x = {xb}.",
+        "So f is decreasing on {xa} < x < {xb}."
+      ]
+    },
+    {
+      "n": "9.2",
+      "prompt_template": "Write down the x-intercepts of f'(x).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "x = {xa} or x = {xb}",
+      "steps": [
+        "f'(x) = 0 at the turning points.",
+        "Turning points at x = {xa} and x = {xb}."
+      ]
+    },
+    {
+      "n": "9.3",
+      "prompt_template": "For which values of x will f be concave up?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.cubic.concave",
+      "expected_fn": "x > {xinf}",
+      "steps": [
+        "Point of inflection is midway between the turning points: x = {xinf}.",
+        "Since the cubic has a positive leading coefficient... (or negative)",
+        "f is concave up for x > {xinf}."
+      ]
+    },
+    {
+      "n": "9.4",
+      "prompt_template": "Determine the value of k for which y = f(x) + k has THREE positive x-intercepts.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.cubic.intercept",
+      "expected_fn": "{k_min} < k < {k_max}",
+      "steps": [
+        "y = f(x) + k shifts f vertically by k.",
+        "For three positive roots, the graph must cross the x-axis three times in x > 0.",
+        "The x-intercepts change with k.",
+        "Answer: {k_min} < k < {k_max}"
+      ]
+    }
+  ]
+}

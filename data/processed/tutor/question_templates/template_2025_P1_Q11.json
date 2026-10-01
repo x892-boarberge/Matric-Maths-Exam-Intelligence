@@ -1,0 +1,86 @@
+{
+  "stem": "A survey among female and male learners about cold drink preference. The data is presented in a two-way table.",
+  "subquestions": [
+    {
+      "n": "11.1.1",
+      "prompt_template": "Events male and preferring juice are independent. Show that e = {e}.",
+      "ranges": {
+        "e": [
+          84
+        ]
+      },
+      "marks": 3,
+      "skill_id": "probability.tables",
+      "expected_fn": "e = {e}",
+      "steps": [
+        "P(male and juice) = P(male) * P(juice)",
+        "Set up the equation from the table.",
+        "Solve for e = {e}."
+      ]
+    },
+    {
+      "n": "11.1.2",
+      "prompt_template": "Calculate the probability that a female prefers energy drinks.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "probability.tables",
+      "expected_fn": "P = {p}",
+      "steps": [
+        "Count from the table.",
+        "Divide by total females."
+      ]
+    },
+    {
+      "n": "11.2",
+      "prompt_template": "120 people buy coffee or water. Chance of rain is {r}%. Chance of coffee on a rainy day is 3x that on a dry day. Overall P(coffee) = {p}. Calculate cups on a dry day.",
+      "ranges": {
+        "r": [
+          75
+        ],
+        "p": [
+          "7/12"
+        ]
+      },
+      "marks": 4,
+      "skill_id": "probability.conditional",
+      "expected_fn": "x = {x_cups}",
+      "steps": [
+        "Let P(coffee | dry) = x.",
+        "P(coffee | rain) = 3x.",
+        "P(coffee) = P(rain)*3x + P(no rain)*x",
+        "Solve for x, then multiply by 120*(1 - r/100)."
+      ]
+    },
+    {
+      "n": "11.3.1",
+      "prompt_template": "8 runners. Bongi finishes immediately after Andrew. How many arrangements?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "7! = 5040",
+      "steps": [
+        "Treat Andrew-Bongi as a single block.",
+        "Total units = 7 (6 individuals + 1 block).",
+        "Arrangements = 7! = 5040."
+      ]
+    },
+    {
+      "n": "11.3.2",
+      "prompt_template": "Probability that 2 or more runners finish after Andrew and before Bongi.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "probability.counting",
+      "expected_fn": "P = {p}",
+      "steps": [
+        "Consider all possible positions for Andrew and Bongi.",
+        "Count favourable: 2+ runners between them.",
+        "Divide by 8! (total arrangements)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "11"
+  }
+}

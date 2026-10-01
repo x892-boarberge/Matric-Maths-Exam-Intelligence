@@ -1,0 +1,71 @@
+{
+  "source": {
+    "year": 2024,
+    "paper": "P1",
+    "qnum": "6"
+  },
+  "stem": "In the diagram below, the graphs of f(x) = {f_disp} and g(x) = {g_disp}, a straight line, are drawn. C({xc}; {yc}) is a point of intersection of f and g. EH is drawn parallel to the y-axis, with E a point on f and H on g.",
+  "stem_params": "computed",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Calculate the coordinates of B, the turning point of f.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.parabola.turning",
+      "expected_fn": "B({p}; {q})",
+      "steps": [
+        "For f(x) = a(x - p)^2 + q the turning point is (p; q).",
+        "From the given equation p = {p}, q = {q}.",
+        "B({p}; {q})"
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Show that the equation of the line through A and C is g(x) = {m}x + {c}.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.line.equation",
+      "expected_fn": "g(x) = {g_disp}",
+      "steps": [
+        "A is the x-intercept of f on the left.",
+        "A({xa}; 0)",
+        "m = (y_C - y_A)/(x_C - x_A) = ({yc} - 0)/({xc} - ({xa})) = {m}",
+        "Substitute C({xc}; {yc}): {yc} = ({m})({xc}) + c",
+        "c = {c}",
+        "g(x) = {g_disp}"
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "Calculate the maximum length of EH for f > g.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "functions.parabola.max_length",
+      "expected_fn": "EH_max = {eh_max_disp} units",
+      "steps": [
+        "EH(x) = f(x) - g(x)",
+        "Maximum occurs where EH'(x) = 0.",
+        "EH(x) is a parabola opening downward, with zeros at A and C.",
+        "Maximum at the midpoint of the x-values: x = {xm}",
+        "EH({xm}) = {eh_max}"
+      ]
+    },
+    {
+      "n": "6.4",
+      "prompt_template": "Determine the value of m such that g is a tangent to k(x) = f(x + m).",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "m = {m_disp}",
+      "steps": [
+        "k(x) = f(x + m) = {f_disp_shifted}",
+        "Set k(x) = g(x): {f_disp_shifted} = {g_disp}",
+        "Expand and set the discriminant to zero.",
+        "Solve for m.",
+        "m = {m_disp}"
+      ]
+    }
+  ],
+  "diagram": "parabola_line"
+}

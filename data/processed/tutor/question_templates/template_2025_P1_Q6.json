@@ -1,0 +1,50 @@
+{
+  "stem": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect at the x-axis.",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Write down the x-intercept of g in terms of p.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.hyperbola.parameter",
+      "expected_fn": "x = -p",
+      "steps": [
+        "The vertical asymptote of f is at x = -p.",
+        "g meets the x-axis here, so the x-intercept of g is x = -p."
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Determine the equation of f.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "functions.hyperbola.equation",
+      "expected_fn": "f(x) = ...",
+      "steps": [
+        "From the diagram read the asymptotes.",
+        "Use intersection conditions given in the question.",
+        "Solve for a, p, q."
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "Describe the transformation that g must undergo to become an axis of symmetry of f cutting f at two points.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.transformation",
+      "expected_fn": "reflection about line ...",
+      "steps": [
+        "Axes of symmetry of f have gradients +1 or -1.",
+        "g has gradient 1.",
+        "g is already parallel to one axis of symmetry.",
+        "Translate g to coincide with the axis of symmetry."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "6"
+  },
+  "diagram": "hyperbola_line"
+}

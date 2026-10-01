@@ -1,0 +1,41 @@
+{
+  "source": {
+    "year": 2024,
+    "paper": "P1",
+    "qnum": "10"
+  },
+  "stem": "A cyclist rode from town P and stopped at town T. The speed (in km/h) at which this cyclist rode is represented by the equation s'(t) = {a}t^2 + {b}t.",
+  "stem_params": "computed",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Calculate the maximum speed that the cyclist reached.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.kinematics",
+      "expected_fn": "Maximum speed = {max_speed} km/h",
+      "steps": [
+        "Set s''(t) = 0: {two_a}t + {b} = 0",
+        "t = {-b_over_two_a}",
+        "s'({t_max}) = {max_speed}"
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Calculate the distance between town P and town T.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.kinematics",
+      "expected_fn": "Distance = {distance} km",
+      "steps": [
+        "s'(t) = 0 gives the stopping time: -{a}t^2 + {b}t = 0",
+        "-t({a}t - {b}) = 0, so t = 0 or t = {t_stop_disp}.",
+        "Distance is s(t), where s'(t) = -{a}t^2 + {b}t.",
+        "Look for s(t) of the form pt^3 + qt^2: derivative pt^3 = 3pt^2, derivative qt^2 = 2qt.",
+        "Match: 3p = -{a} => p = -{a}/3, and 2q = {b} => q = {b}/2.",
+        "So s(t) = -{a}/3 t^3 + {b}/2 t^2.",
+        "s({t_stop_disp}) = -{a}/3 ({t_stop_disp})^3 + {b}/2 ({t_stop_disp})^2 = {distance} km."
+      ]
+    }
+  ]
+}

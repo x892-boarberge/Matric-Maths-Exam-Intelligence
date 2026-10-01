@@ -1,0 +1,115 @@
+{
+  "stem": "Solve for x:",
+  "subquestions": [
+    {
+      "n": "1.1.1",
+      "prompt_template": "(x + {a})(x - {b}) = 0",
+      "ranges": {
+        "a": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "b": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 2,
+      "skill_id": "algebra.quadratic.solve",
+      "expected_fn": "x = -{a} or x = {b}",
+      "steps": [
+        "(x + {a})(x - {b}) = 0",
+        "x + {a} = 0 or x - {b} = 0",
+        "x = -{a} or x = {b}"
+      ]
+    },
+    {
+      "n": "1.1.2",
+      "prompt_template": "{c}x^2 + {b2} = {b1}x (correct to TWO decimal places)",
+      "ranges": {
+        "c": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "b1": [
+          -9,
+          -7,
+          -5,
+          8,
+          10
+        ],
+        "b2": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "algebra.quadratic.formula",
+      "expected_fn": "x = {x1} or x = {x2}",
+      "steps": [
+        "Standard form: {c}x^2 - {b1_abs_signed}x + {b2} = 0",
+        "x = [-b +/- sqrt(b^2 - 4ac)] / (2a)",
+        "a = {c}, b = {b1_neg}, c = {b2}",
+        "Substitute and simplify.",
+        "x = {x1} or x = {x2}"
+      ]
+    },
+    {
+      "n": "1.1.3",
+      "prompt_template": "{k}x^2 > {m}x",
+      "ranges": {
+        "k": [
+          4,
+          6,
+          8,
+          10
+        ],
+        "m": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 3,
+      "skill_id": "algebra.quadratic.inequality",
+      "expected_fn": "x < 0 or x > {bound}",
+      "steps": [
+        "{k}x^2 - {m}x > 0",
+        "x({k}x - {m}) > 0",
+        "Critical values: x = 0 or x = {bound}",
+        "x < 0 or x > {bound}"
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "x is the sum of 2 and y. Five times the product of x and y is 6 more than the square of x.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "algebra.simultaneous.solve",
+      "expected_fn": "x = {x_ans} and y = {y_ans}",
+      "steps": [
+        "x = 2 + y",
+        "5xy = 6 + x^2",
+        "Substitute: 5(2+y)y = 6 + (2+y)^2",
+        "Simplify and solve for y.",
+        "Then find x."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "1"
+  }
+}

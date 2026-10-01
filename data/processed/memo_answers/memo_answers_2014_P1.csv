@@ -1,0 +1,80 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2014,P1,1,1.1.1,algebra.quadratic.solve,x=2 or x=-4,(x-2)4+x)=0,3
+2014,P1,1,1.1.2,algebra.quadratic.solve,x=2.19 or x=-2.19,3x° —2x =14 (correct to TWO decimal places),4
+2014,P1,1,1.1.3,algebra.exponential.solve,x=2,"Pe EF = 2D (3)
+Lad Solve the following equations simultaneously:
+x=2y4+3
+3x? —5xy = 244+16y",3
+2014,P1,1,1.2,algebra.simultaneous.solve,y=-3/2 or y=-1 or x=0 or x=1,,7
+2014,P1,1,1.3,algebra.quadratic.inequality,-1<x<4,"Solve for x: (x—1)x-2)<6 (4)
+14 The roots of a quadratic equation are: x = Bie
+For which values of k are the roots real?",4
+2014,P1,1,1.4,algebra.quadratic.solve,k<=-4,,2
+2014,P1,2,2.1,sequences.arithmetic,23,"Write down the fourth term of the series. (1)
+22 Calculate the 251° term of the series.",1
+2014,P1,2,2.2,sequences.arithmetic,T251=1752,,3
+2014,P1,2,2.3,sequences.arithmetic,sum_{n=1}^{251}(7n-5),Express the series in sigma notation.,1
+2014,P1,2,2.4,sequences.arithmetic,220127,"Calculate the sum of the series. (2)
+25 How many terms in the series are divisible by 4? (4)
+[12]
+Copyright reserved Ple",2
+2014,P1,2,2.5,sequences.arithmetic,63,,3
+2014,P1,3,3.1.1,sequences.quadratic,p=-13,,1
+2014,P1,3,3.1.2,sequences.quadratic,Tn=n^2-9n+7,Determine the n” term of the sequence.,6
+2014,P1,3,3.1.3,sequences.quadratic,T53=2339,,4
+2014,P1,3,3.2.1,sequences.geometric,2^-18 or 1/4^9,,4
+2014,P1,3,3.2.2,sequences.geometric,21.33,,2
+2014,P1,3,3.3,sequences.arithmetic,50,"Determine the value of: (i + aC + AC + + + ‘) ... up to 98 factors.
+2 3 4 5 (4)
+[19]
+Copyright reserved Please turn over",3
+2014,P1,4,4.1,functions.hyperbola,q=1,Write down the values of p and gq.,2
+2014,P1,4,4.2,functions.hyperbola,x=-3,Calculate the x-coordinate of T.,2
+2014,P1,4,4.3,functions.hyperbola,x=-6,"Write down the equation of the vertical asymptote of the graph of A,
+if h(x) = g(x +5)",2
+2014,P1,4,4.4,functions.hyperbola,2.45 or sqrt6,"Calculate the length of OS. (5)
+- 4.5 For which values of k will the equation g(x) =x +k have two real roots that are of",6
+2014,P1,4,4.5,functions.parabola,k<3,,1
+2014,P1,5,5.1,functions.log,a=3,,2
+2014,P1,5,5.2,functions.log,y=3^x,,2
+2014,P1,5,5.3,functions.log,g(x)=-log_3 x,,1
+2014,P1,5,5.4,functions.log,x>0,Write down the domain of g.,1
+2014,P1,5,5.5,functions.log,x>=1/27,,3
+2014,P1,6,6.1,functions.parabola,1.22,"Determine the x-coordinate of S, correct to TWO decimal places.",2
+2014,P1,6,6.2,functions.parabola,(0;-6),Write down the coordinates of the turning point of g.,1
+2014,P1,6,6.3.1,calculus.optimisation,2sqrt(x)-4x^2+6,,3
+2014,P1,6,6.3.2,calculus.optimisation,6.75 or 27/4,,5
+2014,P1,7,7.1,finance.compound,12.94%,"Exactly five years ago Mpume bought a new car for R145 000. The current book
+value of this car is R72 500. If the car de",3
+2014,P1,7,7.2.1,finance.present_value,5505.43,"Calculate the value of Samuel's monthly instalment. (4)
+22 Melissa took out a loan for the same amount and at the same i",4
+2014,P1,7,7.2.2,finance.present_value,181 months,,4
+2014,P1,7,7.2.3,finance.present_value,longer period,,2
+2014,P1,8,8.1,calculus.first_principles,3x^2,Determine /’(x) from first principles if f(x) = x°.,5
+2014,P1,8,8.2,calculus.polynomial,4x+2x^3,Determine the derivative of: f(x) = 2x? + > -3,1
+2014,P1,8,8.3,calculus.polynomial,12x^5(x^6-1),"If y=(x° -1)’, prove that @ a2 7, if x >I, (3)
+x",3
+2014,P1,8,8.4,calculus.cubic,x>1/3,"Given: f(x) =2x° —2x* +4x-1. Determine the interval on which f is concave up. (4)
+[14]
+Copyright reserved Please turn ov",4
+2014,P1,9,9.1,calculus.cubic,y=500/27 or y=0,"Calculate the coordinates of the turning points of the graph of (6)
+92 Sketch the graph of f, clearly indicating the int",5
+2014,P1,9,9.2,calculus.cubic,shape,,4
+2014,P1,9,9.3,calculus.cubic,(-inf;-1/3) or (0;3),For which value(s) of x will x. f/(x) <0? (3),3
+2014,P1,10,10.1,calculus.optimisation,l=40-2h,Express the length / in terms of the height A.,2
+2014,P1,10,10.2,calculus.optimisation,V=h(40-2h)(50-h),Hence prove that the volume of the box is given by V = h(50—h)(40 —2h),3
+2014,P1,10,10.3,calculus.optimisation,8.80,"For which value of / will the volume of the box be a maximum? (5)
+[9]
+Copyright reserved Please turn over
+
+===== Page 10",4
+2014,P1,11,11.1.1,probability.tables,83/180,,1
+2014,P1,11,11.1.2,probability.tables,59/90 or 0.66 or 65.56%,"Does not prefer visiting a game park (2)
+E12 Are the events 'being a male' and 'staying at home' independent events. Mot",2
+2014,P1,11,11.2,probability.independent,not independent,,5
+2014,P1,12,12.1.1,probability.counting,7893600,,2
+2014,P1,12,12.1.2,probability.counting,12144,"The password must start with a 'D' and end with an 'L' (2)
+122 Seven cars of different manufacturers, of which 3 are sil",2
+2014,P1,12,12.2.1,probability.counting,5040,"In how many different ways can ALL the cars be parked? (2)
+22 If the three silver cars must be parked next to each other",2
+2014,P1,12,12.2.2,probability.counting,720,,3

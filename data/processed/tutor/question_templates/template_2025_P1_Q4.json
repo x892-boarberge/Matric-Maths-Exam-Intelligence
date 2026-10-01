@@ -1,0 +1,107 @@
+{
+  "stem": "The graph of f(x) = log_(1/{base}) x is drawn. A is the x-intercept. ({x_pt}; t) lies on f.",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Calculate the value of t.",
+      "ranges": {
+        "base": [
+          2,
+          3,
+          4
+        ],
+        "x_pt": [
+          3,
+          4
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.log.value",
+      "expected_fn": "t = log_(1/{base})({x_pt})",
+      "steps": [
+        "Substitute ({x_pt}; t) into f(x) = log_(1/{base}) x.",
+        "t = log_(1/{base})({x_pt})"
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Write down the coordinates of A.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.log.intercept",
+      "expected_fn": "A(1; 0)",
+      "steps": [
+        "The x-intercept of a log function y = log_a(x) is always (1; 0).",
+        "A(1; 0)"
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Determine the equation of f^(-1) in the form y = ...",
+      "ranges": {
+        "base": [
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.log.inverse",
+      "expected_fn": "y = (1/{base})^x",
+      "steps": [
+        "f(x) = log_(1/{base}) x  =>  y = log_(1/{base}) x",
+        "Swap x and y: x = log_(1/{base}) y",
+        "y = (1/{base})^x"
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Write down the equation of the asymptote of f^(-1).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.log.asymptote",
+      "expected_fn": "y = 0",
+      "steps": [
+        "f^(-1)(x) = (1/{base})^x has horizontal asymptote y = 0."
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Draw the graph of f^(-1) showing intercepts, one other point, asymptotes.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.log.sketch",
+      "expected_fn": "see memo",
+      "steps": [
+        "Standard exponential decay/growth shape.",
+        "Passes through (0; 1).",
+        "Asymptote y = 0."
+      ]
+    },
+    {
+      "n": "4.6",
+      "prompt_template": "h is obtained when f^(-1) is translated 5 units right. Determine y-values of h where x > 4.",
+      "ranges": {
+        "base": [
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.transformation",
+      "expected_fn": "see memo",
+      "steps": [
+        "h(x) = (1/{base})^(x-5)",
+        "For x > 4: x - 5 > -1",
+        "Range of y depends on base."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "4"
+  },
+  "diagram": "log_solo"
+}

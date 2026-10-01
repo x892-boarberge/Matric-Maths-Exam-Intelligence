@@ -1,0 +1,27 @@
+{
+  "stem": "Given f(x) = x^2. Determine the minimum distance between the point (10; 2) and a point on f.",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Determine the minimum distance.",
+      "ranges": {},
+      "marks": 8,
+      "skill_id": "calculus.optimisation.min",
+      "expected_fn": "Distance = 2 sqrt(17) ≈ 8.25",
+      "steps": [
+        "Point on f: (x; x^2).",
+        "Distance d = sqrt((x-10)^2 + (x^2-2)^2).",
+        "Minimise d^2 = x^4 - 3x^2 - 20x + 104.",
+        "Set derivative to zero: 4x^3 - 6x - 20 = 0.",
+        "Factor: (x - 2)(4x^2 + 8x + 10) = 0",
+        "Only real root: x = 2.",
+        "d = sqrt(2^4 - 3(2)^2 - 20(2) + 104) = 2 sqrt(17)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P1",
+    "qnum": "9"
+  }
+}

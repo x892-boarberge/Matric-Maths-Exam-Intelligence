@@ -190,3 +190,70 @@ def grade_steps(question_id: str, learner_lines: list[str], csv_path: Path | Non
         "steps": results,
         "feedback": feedback,
     }
+
+
+def grade_steps_inline(steps: list[dict], learner_lines: list[str]) -> dict:
+    """Same as grade_steps but takes pre-built steps (no CSV lookup).
+
+    Used for drill variants that don't have a memo question_id.
+    Steps must already have: index, desc, marks, forms, match_mode, is_final.
+    """
+    if not steps:
+        return {
+            "question_id": "<inline>",
+            "total_marks": 0,
+            "awarded_marks": 0,
+            "steps": [],
+            "feedback": "No step scheme.",
+        }
+
+    groups: dict[str, list] = {}
+    for s in steps:
+        groups.setdefault(s.get("method_group", "A"), []).append(s)
+
+    best_awarded = -1
+    best_results = None
+    best_group = None
+    for _name, g_steps in groups.items():
+        awarded, results, _used = _grade_group(g_steps, learner_lines)
+        if awarded > best_awarded:
+            best_awarded = awarded
+            best_results = results
+            best_group = g_steps
+
+    results = best_results
+    awarded = best_awarded
+    g_steps = best_group
+
+    matched_values = {r["learner_line"] for r in results if r["matched"]}
+    unmatched_lines = [ln for ln in learner_lines if ln not in matched_values]
+    final_matched = any(r["matched"] and r["is_final"] for r in results)
+    has_method_evidence = any(_METHOD_MARKERS.search(ln) for ln in unmatched_lines)
+
+    for r in results:
+        if r["matched"]:
+            r["match_status"] = "MATCHED"
+        elif final_matched and has_method_evidence:
+            r["match_status"] = "UNCERTAIN"
+        else:
+            r["match_status"] = "NOT_MATCHED"
+
+    total = sum(s["marks"] for s in g_steps)
+    missing = [r for r in results if r["match_status"] == "NOT_MATCHED"]
+    uncertain = [r for r in results if r["match_status"] == "UNCERTAIN"]
+
+    if not missing and not uncertain:
+        feedback = "Full marks: %d/%d" % (awarded, total)
+    else:
+        bits = ["missed '%s'" % m["desc"] for m in missing]
+        if uncertain:
+            bits.append("cannot verify " + ", ".join("'%s'" % u["desc"] for u in uncertain))
+        feedback = "%d/%d. " % (awarded, total) + "; ".join(bits)
+
+    return {
+        "question_id": "<inline>",
+        "total_marks": total,
+        "awarded_marks": awarded,
+        "steps": results,
+        "feedback": feedback,
+    }

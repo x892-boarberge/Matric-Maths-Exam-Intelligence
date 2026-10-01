@@ -1,0 +1,120 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2016,P2,1,1.1,statistics.regression,Strong,"Use the scatter plot to comment on the strength of the relationship between the
+distance a shopper lived from the store ",1
+2016,P2,1,1.2,statistics.regression,-0.95,"Calculate the correlation coefficient of the data. (1)
+153 Calculate the equation of the least squares regression line o",1
+2016,P2,1,1.3,statistics.regression,y=-1.12x+11.71,,3
+2016,P2,1,1.4,statistics.regression,5 times,"Use your answer at QUESTION 1.3 to estimate the average number of times that a
+shopper living 6 km from the supermarket ",2
+2016,P2,1,1.5,statistics.regression,line close to 2 points,,1
+2016,P2,2,2.1,statistics.frequency,positively skewed,,1
+2016,P2,2,2.2,statistics.frequency,0.82,"Calculate the range of the heights. (2)
+235 Complete the cumulative frequency column in the table given in the ANSWER
+BO",2
+2016,P2,2,2.3,statistics.frequency,cumulative frequency column,,1
+2016,P2,2,2.4,statistics.frequency,grounded,"Draw an ogive (cumulative frequency curve) to represent the data on the grid
+provided in the ANSWER BOOK. (4)
+ZS Eighty ",4
+2016,P2,2,2.5,statistics.frequency,1.65,,2
+2016,P2,2,2.6.1,statistics.mean,mean changes by 0.1,Mean of the data set,1
+2016,P2,2,2.6.2,statistics.stdev,no influence,"Standard deviation of the data set (1)
+[13]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Mathematics/P2 5 DBE",1
+2016,P2,3,3.1,analytical.midpoint,5/2 or 2.5,,2
+2016,P2,3,3.2,analytical.gradient,(3-0)/(6-p),,1
+2016,P2,3,3.3,analytical.gradient,9/2,"Hence, calculate the value of p.",3
+2016,P2,3,3.4,analytical.distance,DB=sqrt170,Calculate the length of DB.,3
+2016,P2,3,3.5,analytical.gradient,63.43,Calculate the size of @,2
+2016,P2,3,3.6,analytical.gradient,OGB=116.57,"Calculate the size of OGB. (3)
+A Determine the equation of the circle passing through points D, B and C in the form
+(x-a",3
+2016,P2,3,3.7,analytical.circle,(x+1/2)^2+(y-5/2)^2=85/2,,3
+2016,P2,4,4.1,euclidean.circle,angle in semi-circle,Give a reason why TSR =90°.,1
+2016,P2,4,4.2,analytical.gradient,m_TS=-5/2,"Calculate the gradient of TS. (2)
+43 Determine the equation of the line SR in the form y= mx +c. (3)
+2
+44 The equation o",2
+2016,P2,4,4.3,analytical.gradient,y=2/5x,,3
+2016,P2,4,4.4.1,analytical.circle,TR=sqrt145,,2
+2016,P2,4,4.4.2,analytical.midpoint,R(15;6),Calculate the coordinates of R.,4
+2016,P2,4,4.4.3,analytical.distance,sinR=sqrt5/5,Calculate sinR.,2
+2016,P2,4,4.4.4,analytical.line,y=12x-29,Show that 6 = 12a — 29.,3
+2016,P2,4,4.4.5,analytical.circle,K(2;-5),"If TK =TR, calculate the coordinates of K. (6)
+[23]
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/",6
+2016,P2,5,5.1.1,trig.reduction,-p,,2
+2016,P2,5,5.1.2,trig.reduction,cos16=sqrt(1-p^2),,2
+2016,P2,5,5.2,trig.identity,sinAcosB+cosAsinB,"Given: cos(A —B) =cosAcosB + sinAsinB
+Use the formula for cos(A -B) to derive a formula for sin(A +B) (3)
+/ 2
+a3 Simplif",3
+2016,P2,5,5.3,trig.identity,-2,,4
+2016,P2,5,5.4.1,trig.identity,cosB=2/sqrt5,cosB,3
+2016,P2,5,5.4.2,trig.identity,sinB=1/sqrt5,sinB,2
+2016,P2,5,5.4.3,trig.identity,1/sqrt10,"cos (B + 45°) (4)
+[21]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2016
+NSC",4
+2016,P2,6,6.1,trig.graph,period,"On the system of axes on which / is drawn in the ANSWER BOOK, draw the graph
+of g(x)=—cos2x for x € [-180° ; 180°]. Clea",4
+2016,P2,7,7.1,trig.3d,2.12,"Calculate the length of OB. (3)
+3
+dz Show that cos@ =—_————
+21” 4: a
+2 (5)
+im If the volume of the pyramid is 15 m° , ca",3
+2016,P2,7,7.2,trig.3d,cos theta=3/(2 sqrt(x^2+9/2)),,4
+2016,P2,7,7.3,trig.3d,73.97,,4
+2016,P2,8,8.1.1,euclidean.circle,alternate angles,"Give a reason why P, = 70°.",1
+2016,P2,8,8.1.2a,euclidean.circle,Q1=40,,2
+2016,P2,8,8.1.2b,euclidean.circle,P1=40,,1
+2016,P2,8,8.2.1,euclidean.circle,AT=20,Calculate AT.,2
+2016,P2,8,8.2.2,euclidean.circle,AO=25,"If OS= “or, calculate the radius OA of the circle. (5)
+[12]
+Copyright reserved Please turn over
+
+===== Page 12 =====
+Mat",5
+2016,P2,9,9.1.1,euclidean.circle,tan chord,"B, =x",1
+2016,P2,9,9.1.2,euclidean.circle,corresp angles,"BCD =B,",1
+2016,P2,9,9.2,euclidean.circle,cyclic quad,"Prove that BCDE is a cyclic quadrilateral. (2)
+93 Which TWO other angles are each equal to x?",2
+2016,P2,9,9.3,euclidean.circle,alt angles,,2
+2016,P2,9,9.4,euclidean.circle,B2=C1,"Prove that B, =C,. (3)
+[9]
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 2016
+",3
+2016,P2,10,10.1,euclidean.similarity,conclusion,"In the diagram APQR is drawn. S and T are points on sides PQ and PR
+respectively such that ST || QR.
+P
+S -
+Q R
+Prove the",5
+2016,P2,10,10.2.1,euclidean.similarity,similar,,2
+2016,P2,10,10.2.2,euclidean.similarity,similar,"Prove that:
+(a) GH=y (3)
+(b) AMFH]|||AMGF (5)
+(©) GF _3x
+FH 2y (2)
+y 3",3
+2016,P2,10,10.2.3,euclidean.similarity,y/x=sqrt(3/2),"Show that — = ,/—
+P 4 2 (3)
+[20]
+TOTAL: 150
+Copyright reserved
+
+===== Page 15 =====
+Mathematics/P2 DBE/November 2016
+NSC",3

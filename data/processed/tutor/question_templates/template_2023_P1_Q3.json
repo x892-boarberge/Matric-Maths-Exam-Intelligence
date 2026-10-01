@@ -1,0 +1,66 @@
+{
+  "stem": "Given the geometric series: {a} + {ar} + {ar2} + ... to n terms.",
+  "subquestions": [
+    {
+      "n": "3.1.1",
+      "prompt_template": "Write down the general term.",
+      "ranges": {
+        "a": [
+          3
+        ],
+        "r": [
+          2
+        ]
+      },
+      "marks": 1,
+      "skill_id": "sequences.geometric",
+      "expected_fn": "T_n = {a} * {r}^(n-1)",
+      "steps": [
+        "T_n = a r^(n-1) = {a} * {r}^(n-1)"
+      ]
+    },
+    {
+      "n": "3.1.2",
+      "prompt_template": "Calculate k such that sum_{p=1}^{k} (3/2)(2)^p = {S}.",
+      "ranges": {
+        "S": [
+          98301
+        ]
+      },
+      "marks": 4,
+      "skill_id": "sequences.gp.sum",
+      "expected_fn": "k = {k_ans}",
+      "steps": [
+        "Rewrite: sum = (3/2) sum_{p=1}^k 2^p = (3/2)(2^(k+1) - 2)",
+        "Set equal to {S}",
+        "Solve for k."
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Same first term. GP ratio 1/3. AP diff {d}. Sum 22 terms of AP is {delta} more than S_inf of GP. Find first term.",
+      "ranges": {
+        "d": [
+          3
+        ],
+        "delta": [
+          734
+        ]
+      },
+      "marks": 5,
+      "skill_id": "sequences.geometric",
+      "expected_fn": "a = {a_ans}",
+      "steps": [
+        "S_22 = 22/2[2a + 21d]",
+        "S_inf = a / (1 - 1/3) = 3a/2",
+        "Set S_22 - S_inf = {delta}",
+        "Solve for a."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P1",
+    "qnum": "3"
+  }
+}

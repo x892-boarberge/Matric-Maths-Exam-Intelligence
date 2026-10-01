@@ -1,0 +1,102 @@
+{
+  "source": {
+    "year": 2024,
+    "paper": "P1",
+    "qnum": "7"
+  },
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Mary's grandparents deposited R{P_disp} into a savings account on the day she was born. The account pays interest at {r}% p.a., compounded quarterly. Calculate the accumulated amount on Mary's {years_ord} birthday.",
+      "ranges": {
+        "P": [
+          3000,
+          5000,
+          8000,
+          10000
+        ],
+        "r": [
+          5.5,
+          6.8,
+          7.2,
+          8.0
+        ],
+        "years": [
+          16,
+          18,
+          21
+        ]
+      },
+      "marks": 3,
+      "skill_id": "finance.compound",
+      "expected_fn": "A = R{A_disp}",
+      "derive": "A = P * (1 + r/400)^(4*years); A_disp = round(A, 2)",
+      "steps": [
+        "A = P(1 + i)^n, with i = {r}/400 and n = {n_periods}",
+        "A = {P_disp}(1 + {r}/400)^({n_periods})",
+        "A = R{A_disp}"
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "After {years} years, the value of a printer was half of its original value. Determine the rate at which the value depreciated using the straight-line method.",
+      "ranges": {
+        "years": [
+          4,
+          5,
+          6,
+          8,
+          10
+        ]
+      },
+      "marks": 2,
+      "skill_id": "finance.depreciation.n",
+      "expected_fn": "r = {r_pct}%",
+      "derive": "r_pct = 50 / years",
+      "steps": [
+        "Straight-line depreciation: A = P(1 - i*n)",
+        "After n = {years} years, A = P/2.",
+        "P/2 = P(1 - i*{years})",
+        "1/2 = 1 - {years}i",
+        "{years}i = 1/2, so i = 1/(2*{years}) = {r_dec}",
+        "r = {r_pct}% p.a."
+      ]
+    },
+    {
+      "n": "7.3.1",
+      "prompt_template": "Tshepo was granted a loan of R{P_disp} at an interest rate of {r}% p.a., compounded monthly. He agreed to repay the loan over {years} years in monthly instalments of R{x_disp}. Calculate the total interest he will pay.",
+      "ranges": {
+        "P": [
+          80000,
+          100000,
+          120000
+        ],
+        "r": [
+          11.5,
+          12.5,
+          13.5
+        ],
+        "years": [
+          5,
+          6
+        ],
+        "x": [
+          2300.98,
+          2500.0,
+          1800.0
+        ]
+      },
+      "marks": 2,
+      "skill_id": "finance.loan.interest",
+      "expected_fn": "Total interest = R{total_interest_disp}",
+      "derive": "n = years*12; total_paid = x*n; total_interest = total_paid - P; total_interest_disp = round(total_interest, 2)",
+      "steps": [
+        "Total paid = monthly instalment * number of months",
+        "= {x_disp} * {n} = R{total_paid_disp}",
+        "Total interest = total_paid - loan amount",
+        "= R{total_paid_disp} - R{P_disp} = R{total_interest_disp}"
+      ]
+    }
+  ]
+}

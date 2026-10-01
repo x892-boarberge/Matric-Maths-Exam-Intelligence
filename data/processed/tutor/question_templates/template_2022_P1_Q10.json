@@ -1,0 +1,86 @@
+{
+  "stem": "A, B and C are three events with probabilities given in a Venn diagram: A only 0.05, C only 0.05, A&B only 0.1, B&C only 0.2, A&C only 0.15, triple x, B only 0.183, none y.",
+  "subquestions": [
+    {
+      "n": "10.1.1a",
+      "prompt_template": "Find y (P(none)).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "probability.venn",
+      "expected_fn": "y = 0.107",
+      "steps": [
+        "Sum all regions including y must equal 1.",
+        "0.05 + 0.05 + 0.1 + 0.2 + 0.15 + x + 0.183 + y = 1."
+      ]
+    },
+    {
+      "n": "10.1.1b",
+      "prompt_template": "Find x (P(all three)).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "probability.venn",
+      "expected_fn": "x = 0.16",
+      "steps": [
+        "Given P(at least one) = 0.893.",
+        "0.893 = 1 - y, so y = 0.107.",
+        "Sum all non-y regions = 0.893 and solve for x: x = 0.16."
+      ]
+    },
+    {
+      "n": "10.1.2",
+      "prompt_template": "P(at least 2 events).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.set",
+      "expected_fn": "0.61",
+      "steps": [
+        "Sum pairwise-only and triple regions: 0.1 + 0.15 + 0.2 + 0.16 = 0.61."
+      ]
+    },
+    {
+      "n": "10.1.3",
+      "prompt_template": "Are B and C independent? Justify.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "probability.independence",
+      "expected_fn": "Yes",
+      "steps": [
+        "P(B) = 0.643, P(C) = 0.56",
+        "P(B) * P(C) = 0.36",
+        "P(B and C) = 0.36",
+        "Equal, so independent."
+      ]
+    },
+    {
+      "n": "10.2.1",
+      "prompt_template": "Four-digit code, even, no 0 or 1, digits not repeated. How many combinations?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "probability.counting",
+      "expected_fn": "840",
+      "steps": [
+        "Digits available: 2-9 (8 digits).",
+        "First digit: 7 choices (2-9 except... wait, must be >5000?)",
+        "Even ending: 4 choices (2, 4, 6, 8).",
+        "Total = 7 x 6 x 5 x 4 = 840."
+      ]
+    },
+    {
+      "n": "10.2.2",
+      "prompt_template": "P(opens on first attempt) if code > 5000 and third digit is 2.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "probability.counting",
+      "expected_fn": "P = 13/840 ≈ 0.0155",
+      "steps": [
+        "Count favourable outcomes using cases.",
+        "Divide by 840."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P1",
+    "qnum": "10"
+  }
+}

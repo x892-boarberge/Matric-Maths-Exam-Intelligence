@@ -1,0 +1,114 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2020,P2,1,1.1,statistics.regression,y_hat=9.5+0.91x,Determine the equation of the least squares regression line for the data.,3
+2020,P2,1,1.2,statistics.regression,72.22 or 72.29,"Draw the least squares regression line on the scatter plot provided in the ANSWER
+BOOK.",2
+2020,P2,1,1.4,statistics.regression,higher maths higher physics,"Write down the correlation coefficient between the Mathematics and Physical
+Sciences marks for the data.",2
+2020,P2,2,2.1,statistics.frequency,July,"The number of aircraft landing at the Port Elizabeth Airport exceeds the number of
+aircraft landing at the King Shaka In",1
+2020,P2,2,2.2,statistics.mean,2245.08,"The number of aircraft landing at the King Shaka International Airport during these
+months are:
+2182 | 2323 | 2267 | 233",2
+2020,P2,2,2.3,statistics.stdev,86.3,"Calculate the standard deviation for the number of aircraft landing at the King Shaka
+International Airport for the give",1
+2020,P2,2,2.4,statistics.stdev,9,"Determine the number of months in which the number of aircraft landing at the King
+Shaka International Airport were with",2
+2020,P2,2,2.5,statistics.stdev,higher,"Which ONE of the following statements is CORRECT?
+A. During December and January, there were more landings at the Port
+E",1
+2020,P2,3,3.1,analytical.gradient,m_WP=-2,Calculate the gradient of WP.,2
+2020,P2,3,3.2,analytical.gradient,=-1,Show that WP | ST.,2
+2020,P2,3,3.3,analytical.line,S(-20;-4),"If the equation of SK is given as 5y+2x+60=0, calculate the coordinates of S.",4
+2020,P2,3,3.4,analytical.line,72/5 or 14.4,Calculate the length of WR.,3
+2020,P2,3,3.5,analytical.gradient,48.37,Calculate the size of @.,4
+2020,P2,3,3.6,analytical.area,115.2,"Let L_ be a point in the third quadrant such that SWRL, in that order, forms a
+parallelogram. Calculate the area of SWRL",3
+2020,P2,4,4.1,analytical.circle,x^2+y^2=25,Determine the equation of the small circle.,1
+2020,P2,4,4.2,analytical.circle,(x+3)^2+(y-4)^2=64,"Determine the equation of the circle centred at M in the form
+
+(x-a) +(y-bY =r?",3
+2020,P2,4,4.3,analytical.gradient,y=3/4x+25/4,Determine the equation of NM inthe form y=mx+e,4
+2020,P2,4,4.4,analytical.circle,SN=10sqrt(2) or 14.14,Calculate the length of SN.,3
+2020,P2,4,4.5,analytical.circle,k=9.4,"If another circle with centre B(—2 ; 5) and radius k& touches the circle centred at M,
+
+determine the value(s) of k, cor",4
+2020,P2,5,5.1,trig.graph,360,"Write down the period of g. (1)
+52 Write down the amplitude of f (1)
+53 Determine the value of £(180°) — (180°)",1
+2020,P2,5,5.2,trig.graph,1/2,,1
+2020,P2,5,5.3,trig.graph,1,,2
+2020,P2,5,5.4.1,trig.graph,140.9,f(x-10°) = g(x -10°) ()),1
+2020,P2,5,5.4.2,trig.graph,[0;120],"VJ3sinx+cosx 21 (4)
+[8]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P2 8 DBE/November 2020
+SC/NS",4
+2020,P2,6,6.1.1,trig.unitcircle,tan theta=-12/5,Write down the value of tan@,1
+2020,P2,6,6.1.2,trig.unitcircle,cos theta=-5/13,Calculate the value of cos@,3
+2020,P2,6,6.1.3,trig.unitcircle,b=-5/2,"S(a ; 6) is a point in the third quadrant such that TOS =0+90° and
+OS = 6,5 units. Calculate the value of 5.",4
+2020,P2,6,6.2,trig.identity,=-1,"Determine, without using a calculator, the value of the following trigonometric
+expression:
+sin 2x. cos(—x) + cos 2x. si",5
+2020,P2,6,6.3,trig.equation,k in Z,"Determine the general solution of the following equation:
+6sin’ x + 7cosx—3 =0 (6)
+. 1 > 1",7
+2020,P2,6,6.4,trig.identity,cos2A=-1/9,"Given: x+—=3cosA and x°+—>~=2
+x x
+Determine the value of cos 2A without using a calculator. (5)
+[24]
+Copyright reserved ",5
+2020,P2,7,7.1,trig.3d,3r,Show that QS = 37,3
+2020,P2,7,7.2,trig.3d,8pi r^2,"Determine, in terms of r, the area of the flower garden. (2)
+73 Show that RS =rV10~6 cos 2x",2
+2020,P2,7,7.3,trig.3d,RS=r sqrt(10-6cos2x),,3
+2020,P2,7,7.4,trig.3d,35 or 34.9966,"If r= 10 metres and x = 56°, calculate RS. (2)
+[10]
+
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Mathematic",2
+2020,P2,8,8.1.1a,euclidean.circle,angle at centre = 2x circumference,,2
+2020,P2,8,8.1.1b,euclidean.circle,O1=52,,2
+2020,P2,8,8.1.2,euclidean.circle,KN bisects OKP,"Prove, giving reasons, that KN bisects OKP. (3)
+Copyright reserved Please turn over
+
+===== Page 11 =====
+Mathematics/P2 ",2
+2020,P2,8,8.2.1,euclidean.circle,FG parallel BC,"If AF is a tangent to the circle passing through points F, G and D, then
+prove, giving reasons, that FG || BC. (4)
+ws ; ",4
+2020,P2,8,8.2.2,euclidean.circle,x=31,"If it is further given that cot = 5 AC =2x—6 and GC =x+9, then
+calculate the value of x. (4)
+[17]
+Copyright reserved Ple",1
+2020,P2,9,9.1,euclidean.circle,QST=R,"In the diagram, O is the centre of the circle. Points 5, T and R lie on the circle.
+Chords ST, SR and TR are drawn in th",6
+2020,P2,9,9.2.1a,euclidean.circle,alt angles PR parallel NQ,,2
+2020,P2,9,9.2.1b,euclidean.circle,tan chord,,2
+2020,P2,9,9.2.2,euclidean.circle,MN/NR=MS/SQ,"Prove, giving reasons, that MN _ MS 6
+2. » giving , NR SQ (6)
+[15]
+Copyright reserved Please turn over
+
+===== Page 14 ==",6
+2020,P2,10,10.1.1,euclidean.circle,FBDM is cyclic quad,FBDM is acyclic quadrilateral,3
+2020,P2,10,10.1.2,euclidean.circle,B3=F1,"B,=F (4)
+10.1.3. ACDB ||| ACBE",3
+2020,P2,10,10.1.3,euclidean.circle,CDB || CBE,,4
+2020,P2,10,10.2.1,euclidean.circle,BC=4,BC,3
+2020,P2,10,10.2.2,euclidean.circle,DB=6/sqrt5=2.68,"DB (4)
+[17]
+TOTAL: 150
+Copyright reserved
+
+===== Page 15 =====
+Mathematics/P2 DBE/November 2020
+SC/NSC
+INFORMATION SHEET",4
+2020,P2,11,11.1,euclidean.similarity,equiangular or similar,,1
+2020,P2,11,11.2.1,euclidean.similarity,KPM similar RNM,,2
+2020,P2,11,11.2.2,euclidean.similarity,NQ=4.67,,6

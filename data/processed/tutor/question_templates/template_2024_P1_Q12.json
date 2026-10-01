@@ -1,0 +1,50 @@
+{
+  "source": {
+    "year": 2024,
+    "paper": "P1",
+    "qnum": "12"
+  },
+  "stem": "A company generates a 4-character code using the 26 letters of the alphabet and the 10 digits 0-9. The code is in the form letter-digit-letter-digit.",
+  "subquestions": [
+    {
+      "n": "12.1",
+      "prompt_template": "Determine how many codes can be formed if letters and digits may be repeated.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 26 * 10 * 26 * 10 = 67600",
+      "steps": [
+        "Letters: 26 choices each.",
+        "Digits: 10 choices each.",
+        "Total = 26 * 10 * 26 * 10 = 67600"
+      ]
+    },
+    {
+      "n": "12.2",
+      "prompt_template": "How many codes if: letters D, F, I, Q, U, V may NOT be used; code may NOT start with W or Z; letters or digits may NOT be repeated; code ends with an odd digit.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 18 * 10 * 17 * 5 = 15300",
+      "steps": [
+        "First letter: from 26 - 6 = 20 letters, minus W,Z = 18.",
+        "First digit: 10 choices.",
+        "Second letter: 17 remaining choices (18 - 1).",
+        "Second digit: 5 odd digits.",
+        "Total = 18 * 10 * 17 * 5 = 15300"
+      ]
+    },
+    {
+      "n": "12.3",
+      "prompt_template": "Calculate the percentage increase if D, F, I, Q, U, V are now allowed.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= (27000 - 15300)/15300 * 100 = 76.5%",
+      "steps": [
+        "New count: 24 * 10 * 23 * 5 = 27600 (or as computed).",
+        "Percentage increase = (new - old)/old * 100"
+      ]
+    }
+  ]
+}

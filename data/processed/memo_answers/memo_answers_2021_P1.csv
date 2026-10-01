@@ -1,0 +1,91 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2021,P1,1,1.1.1,algebra.quadratic.solve,x=6 or x=-4,x? ~2x-24=0,3
+2021,P1,1,1.1.2,algebra.quadratic.solve,x=2.19 or x=-0.69,2x*-3x-3=0 (correct to TWO decimal places),3
+2021,P1,1,1.1.3,algebra.quadratic.inequality,-4<=x<=-1,x? +5x<-4,4
+2021,P1,1,1.1.4,algebra.surd.solve,x=-3 (x=8 rejected),Vx+28=2-x,4
+2021,P1,1,1.2,algebra.simultaneous.solve,y=1/2 or y=1 or x=-2 or x=-1,"Solve simultaneously for x and y in:
+2y=3+x and 2xy+7=x7? +4y’",6
+2021,P1,1,1.3,algebra.proof,Δ=-3n^2 or Δ=-3mp,"The roots of an equation are x= ae =e where m, n and p are positive
+real numbers. The numbers m, n and pin that order, f",4
+2021,P1,2,2.1,algebra.surd.solve,x=100,| Calculate the value of x.,2
+2021,P1,2,2.2,sequences.geometric,S_n=1000(1-(0.9)^n),"Show that the sum of the first m termsis S$, =1 ovo(t —(0,9)"" ).",3
+2021,P1,2,2.3,sequences.geometric,S_inf=1000,"Hence, or otherwise, calculate the sum to infinity. (2)
+[6]
+Copyright reserved — Please turn over
+
+===== Page 4 =====
+Ma",2
+2021,P1,3,3.1,sequences.quadratic,-82,"Write down the value of T,.",1
+2021,P1,3,3.2,sequences.quadratic,Tn=-n^2+26n-170,"Show that the general term of this number pattern is T, = —n? + 26n-170.",3
+2021,P1,3,3.3,sequences.quadratic,Between T73 and T74,"Between which TWO terms of the quadratic number pattern will there be a difference
+of —121?",4
+2021,P1,3,3.4,sequences.quadratic,add 2,"What value must be added to each term in the number pattern so that the value of the
+maximum term in the new number patt",3
+2021,P1,4,4.1,sequences.arithmetic,T51=105,"Determine T,,.",3
+2021,P1,4,4.2,sequences.arithmetic,S51=2805,"Calculate the sum of the first 51 terms. (2)
+; 5000",2
+2021,P1,4,4.3,sequences.arithmetic,5+7+9+...+10003,"Write down the expansion of >) (2n+3). Show only the first 3 terms and the last
+n=l
+term of the expansion. (1)
+5000 4999",1
+2021,P1,4,4.4,sequences.arithmetic,20001,"Hence, or otherwise, calculate > (2n+3)+ > (—2n-1).
+n=l n=l
+ALL working details must be shown. (4)",4
+2021,P1,5,5.1,functions.hyperbola,y=2,Write down the equations of the asymptotes of f.,2
+2021,P1,5,5.2,functions.hyperbola,"x in R, x!=3",Write down the domain of,1
+2021,P1,5,5.3,functions.hyperbola,x=7/2,Determine the coordinates of the x-intercept of f,2
+2021,P1,5,5.4,functions.hyperbola,y=7/3,Write down the coordinates of the y-intercept of f,1
+2021,P1,6,6.1,functions.log,k=16,Calculate the value of k.,2
+2021,P1,6,6.2,functions.log,x in [1/4;16],Determine the values of x for which —1< f(x) £2.,2
+2021,P1,6,6.3,functions.log,y=4^x,"Write down the equation of f~', the inverse of f, inthe form y=...",2
+2021,P1,6,6.4,functions.log,x<0,"For which values of x will x.f (x) <0? (2)
+[8]
+Copyright reserved Please turn over
+
+===== Page 6 =====
+Mathematics P1 6 ",1
+2021,P1,7,7.1,functions.parabola,D(6;0),Write down the coordinates of B and D.,2
+2021,P1,7,7.2,functions.parabola,y_p=-25,Calculate the coordinates of C.,2
+2021,P1,7,7.3,functions.parabola,y>=-25,Write down the range of f,1
+2021,P1,7,7.4.1,analytical.gradient,m_AE=1/4,"Calculate the gradient of AE, correct to TWO decimal places.",1
+2021,P1,7,7.4.2,calculus.derivative,y_T=-21,Calculate the coordinates of T.,5
+2021,P1,7,7.5,analytical.line,x=21/4=5.25,"A straight line, g, parallel to AE, cuts f at K(-3 ;-9) and R.
+
+Calculate the x-coordinate of R. (6)
+
+[17]
+
+Copyright re",6
+2021,P1,8,8.1,finance.compound,A=498685.82,"A farmer bought a tractor for R980 000. The value of the tractor depreciates annually
+at a rate of 9,2% p.a. on the redu",2
+2021,P1,8,8.2,finance.compound,n=6.50,"How many years will it take for an amount of R75 000 to accrue to R116 253,50 in
+an account earning interest of 6,8% p.a",3
+2021,P1,8,8.3.1,finance.future_value,x=6068.69,"He deposited a fixed amount of money at the end of every month into an
+account earning interest of 8,35% p.a., compounde",3
+2021,P1,8,8.3.2a,finance.present_value,P=419948.32,,2
+2021,P1,8,8.3.2b,finance.present_value,2156778.52,,3
+2021,P1,9,9.1,calculus.first_principles,4x-3,Determine f ‘(x) from first principles if it is given that f(x) =2x? —3x.,4
+2021,P1,9,9.2.1,calculus.polynomial,20x^4-24x^3+3,"Y i¢ y =4x° —6x* +3x (3)
+dx
+Vx (1y",1
+2021,P1,9,9.2.2,calculus.polynomial,-1/6 x^(-2/3) - 2x^(-3)/9,,1
+2021,P1,10,10.1,calculus.cubic,a=-1; b=6,Show that a=-1 and b=6.,4
+2021,P1,10,10.2,calculus.cubic,A(6;0),Calculate the coordinates of A.,2
+2021,P1,10,10.3.1,calculus.cubic,0<x<4,Increasing,1
+2021,P1,10,10.3.2,calculus.cubic,x>2,Concave down,1
+2021,P1,10,10.4,calculus.cubic,7<k<32,"For which values of & will -—(x—1)’+6(x-1)?-k=0 have one negative and
+
+two distinct positive roots? (3)
+
+[15]
+
+Copyright",1
+2021,P1,12,12.1.1,probability.independent,"No, P(A and B)!=0",Are A and B mutually exclusive? Motivate your answer.,1
+2021,P1,12,12.1.2a,probability.independent,P(only A)=0.3,,4
+2021,P1,12,12.1.2b,probability.independent,0.7,,2
+2021,P1,12,12.2.1,probability.counting,1/4,"Write down the probability that a novel will be the first book placed on
+the shelf.",1
+2021,P1,12,12.2.2,probability.counting,12!=479001600,"Calculate the number of different ways these 12 books can be placed on
+the shelf if any book can be placed in any positi",1
+2021,P1,12,12.2.3,probability.counting,1/99,"Calculate the probability that a poetry book is placed in the first position,
+the three novels are placed next to each o",3

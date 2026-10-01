@@ -1,0 +1,18 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final,match_mode
+2019_P2_Q9.2.1a,1,Angle at centre,1,"O2=2A","o2=2a|angle at centre",euclidean.circle,euclid,A,false,keyword
+2019_P2_Q9.2.1a,2,O2=2C,1,"O2=2C","o2=2c",euclidean.circle,euclid,A,false,keyword
+2019_P2_Q9.2.1a,3,Sum of angles,1,"O1+O2=360","o1+o2=360|revolution",euclidean.circle,euclid,A,false,keyword
+2019_P2_Q9.2.1a,4,Answer 180,1,"A+C=180","a+c=180|180",euclidean.circle,euclid,A,true,keyword
+2019_P2_Q9.2.1b,1,Angle at centre,1,"O1=2x","o1=2x|angle at centre",euclidean.circle,euclid,A,false,keyword
+2019_P2_Q9.2.1b,2,O2=360-2x,1,"O2=360-2x","o2=360-2x",euclidean.circle,euclid,A,false,keyword
+2019_P2_Q9.2.1b,3,C=180-x,1,"C=180-x","c=180-x",euclidean.circle,euclid,A,false,keyword
+2019_P2_Q9.2.1b,4,Answer,1,"A+C=180","a+c=180",euclidean.circle,euclid,A,true,keyword
+2019_P2_Q9.2.2,1,Ext angle cyclic quad,1,"A=C2","a=c2|ext angle",euclidean.circle,euclid,A,false,keyword
+2019_P2_Q9.2.2,2,Opp angles cyclic quad,1,"E=180-C2","e=180-c2|opp angles",euclidean.circle,euclid,A,false,keyword
+2019_P2_Q9.2.2,3,Answer,1,"E=180-A","e=180-a|co-int",euclidean.circle,euclid,A,true,keyword
+2019_P2_Q10.2,1,Ratio BC/EC,1,"BC/EC=DC/BC","bc/ec=dc/bc|ratio",euclidean.similarity,euclid,A,false,keyword
+2019_P2_Q10.2,2,Substitute,1,"BC^2=EC*DC","bc^2=ec*dc|subst",euclidean.similarity,euclid,A,false,keyword
+2019_P2_Q10.2,3,BC value,1,"BC=4","bc=4|4",euclidean.similarity,euclid,A,false,keyword
+2019_P2_Q10.2,4,BE=2DB,1,"BE=2DB","be=2db",euclidean.similarity,euclid,A,false,keyword
+2019_P2_Q10.2,5,Pythagoras,1,"DB^2+(2DB)^2=36","db^2+(2db)^2=36|pyth",euclidean.similarity,euclid,A,false,keyword
+2019_P2_Q10.2,6,Answer,1,"DB=6/sqrt5","db=6/sqrt5|2.68",euclidean.similarity,euclid,A,true,keyword

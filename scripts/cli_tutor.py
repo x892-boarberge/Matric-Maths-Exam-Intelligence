@@ -20,6 +20,7 @@ from src.tutor.question_loader import load_corpus
 from src.tutor.drill import run as run_drill
 from cli_navigation import pick_navigated_problem
 from src.tutor.learner_store import open_store
+from src.tutor.session_open import warm_open, TUTOR_NAME
 from src.tutor.schemas import MasteryState
 
 
@@ -72,12 +73,18 @@ PROBLEMS = [
 ]
 
 
-def pick_problem():
-    print("\nMatricMath CLI Tutor")
+def show_banner(learner_id=None, store_path=None):
+    """Print the session banner (once, at session start)."""
+    print("\nMatricMath CLI Tutor  ·  " + TUTOR_NAME)
     print("=" * 60)
     lib = get_library(force_reload=True)
     print("N08 library: " + str(lib.load_status) + " | misconceptions: " + str(len(lib.by_misconception)))
+    if learner_id is not None:
+        print("Learner:", learner_id, "| store:", store_path)
     print("=" * 60)
+
+
+def pick_problem():
     print("  P. Practise from real NSC corpus (choose topic)")
     for i, p in enumerate(PROBLEMS, 1):
         print("  " + str(i) + ". " + p["topic"] + " - " + p["subtopic"])
@@ -326,8 +333,26 @@ def main() -> None:
 
     store_path = ROOT / "data" / "learner_store" / "learners.db"
     store = open_store(store_path)
+
+    # ---- Session banner (printed once, before the warm open) ----
+    show_banner(learner_id, store_path)
+
+    # ---- Warm open: greeting, progress preview, homework gate ----
+    # NOTE: warm_open reads the PRE-session state. It must run BEFORE
+    #       load_learner(), which stamps last_seen and would otherwise
+    #       make a brand-new learner look like a returning one.
+    warm_open(learner_id, store)
+    answer = input("  > ").strip().lower()
+    print()
+    if answer in ("y", "yes"):
+        print("  Great. Paste the question, or describe it.")
+        hw = input("  > ").strip()
+        print()
+        if hw:
+            print("  (Variant flow is on the backlog — type 'menu' to continue to the drill.)")
+
+    # Now that the session is officially open, stamp last_seen.
     store.load_learner(learner_id)
-    print("Learner:", learner_id, "| store:", store_path)
 
     # ============================================================
     # Topic loop — learner can jump between topics freely

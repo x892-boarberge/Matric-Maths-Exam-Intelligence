@@ -1,0 +1,98 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2019_P2_Q1.1,1,a value,1,"a=-1946.88","a=-1946.88|-1946.88",statistics.regression,regression,A,false
+2019_P2_Q1.1,2,b value,1,b=0.41,"b=0.41|0.41",statistics.regression,regression,A,false
+2019_P2_Q1.1,3,Equation,1,"y_hat=-1946.88+0.41x","y_hat=-1946.88+0.41x|y=-1946.88+0.41x",statistics.regression,regression,A,true
+2019_P2_Q1.2,1,Substitute 14000,1,"y_hat=-1946.88+0.41(14000)","y_hat=-1946.88+0.41(14000)",statistics.regression,regression,A,false
+2019_P2_Q1.2,2,Answer 3793.12,1,"3793.12 or 3727.16","3793.12|3727.16",statistics.regression,regression,A,true
+2019_P2_Q1.3,1,Correlation,1,"0.95","0.95|0.946",statistics.regression,regression,A,true
+2019_P2_Q1.4,1,Not spend 9000,1,no because (18000;9000) far from line,"no because (18000;9000) far from line|no|far from line|not to spend",statistics.regression,regression,A,true
+2019_P2_Q2.1,1,Number paid <=200,1,19,19,statistics.frequency,frequency,A,true
+2019_P2_Q2.2,1,Equation for mean,1,"309=[...]","309|equating mean",statistics.mean,mean,A,false
+2019_P2_Q2.2,2,b=16,1,b=16,b=16,statistics.mean,mean,A,false
+2019_P2_Q2.2,3,a=24,1,a=24,a=24,statistics.mean,mean,A,true
+2019_P2_Q2.4,1,Ogive points,1,"(600;100)","(600;100)|(0;0)",statistics.frequency,frequency,A,false
+2019_P2_Q2.4,2,82,1,82,82,statistics.frequency,frequency,A,true
+2019_P2_Q3.1,1,Equation of PR,1,"y=5","y=5",analytical.line,line,A,true
+2019_P2_Q3.2.1,1,Substitute,1,"m_RS=(5-(-7))/(3-(-3))","m_RS=(5-(-7))/(3-(-3))",analytical.gradient,gradient,A,false
+2019_P2_Q3.2.1,2,m_RS=2,1,m_RS=2,"m_RS=2|2",analytical.gradient,gradient,A,true
+2019_P2_Q3.2.2,1,m_RS=m_PT,1,"m_RS=m_PT","m_RS=m_PT",analytical.gradient,gradient,A,false
+2019_P2_Q3.2.2,2,tan theta=2,1,"tan theta=2","tan theta=2",analytical.gradient,gradient,A,false
+2019_P2_Q3.2.2,3,theta=63.43,1,"63.43","63.43|63.43°",analytical.gradient,gradient,A,true
+2019_P2_Q3.2.3,1,Substitute,1,"5=2(3)+c","5=2(3)+c",analytical.line,line,A,false
+2019_P2_Q3.2.3,2,Equation y=2x-1,1,"y=2x-1","y=2x-1",analytical.line,line,A,false
+2019_P2_Q3.2.3,3,D coords,1,"D(0;-1)","D(0;-1)|D(0,-1)",analytical.line,line,A,true
+2019_P2_Q3.3,1,Substitute,1,"ST=sqrt((-5-(-3))^2+(k+7)^2)","ST=sqrt((-5-(-3))^2+(k+7)^2)",analytical.distance,distance,A,false
+2019_P2_Q3.3,2,Standard form,1,"k^2+14k+33=0","k^2+14k+33=0",analytical.distance,distance,A,false
+2019_P2_Q3.3,3,Factorise,1,"(k+11)(k+3)=0","(k+11)(k+3)=0|(k+3)(k+11)=0",analytical.distance,distance,A,false
+2019_P2_Q3.3,4,k=-3,1,k=-3,k=-3,analytical.distance,distance,A,true
+2019_P2_Q3.4,1,N coordinates,1,"N(2;-5)","N(2;-5)|N(2,-5)",analytical.midpoint,midpoint,A,true
+2019_P2_Q3.5,1,beta=63.43,1,beta=63.43,"63.43|beta=63.43",analytical.gradient,gradient,A,false
+2019_P2_Q3.5,2,ODF=26.57,1,"26.57","26.57|26.565",analytical.gradient,gradient,A,false
+2019_P2_Q3.5,3,Answer 53.13,1,"53.13","53.13",analytical.gradient,gradient,A,true
+2019_P2_Q4.1,1,M coords,1,"M(-1;1)","M(-1;1)|M(-1,1)",analytical.circle,circle,A,false
+2019_P2_Q4.1,2,Equation,1,"(x+1)^2+(y-1)^2=1","(x+1)^2+(y-1)^2=1",analytical.circle,circle,A,true
+2019_P2_Q4.2,1,N midpoint,1,"N(-0.5;1.5)","N(-0.5;1.5)|N(-1/2;3/2)",analytical.midpoint,midpoint,A,false
+2019_P2_Q4.2,2,C coords,1,"C(-1;2)","C(-1;2)|C(-1,2)",analytical.circle,circle,A,true
+2019_P2_Q4.3,1,m_radius=-1/2,1,m_radius=-1/2,m_radius=-1/2,analytical.line,line,A,false
+2019_P2_Q4.3,2,m_tangent=2,1,m_tangent=2,m_tangent=2,analytical.line,line,A,false
+2019_P2_Q4.3,3,Equation,1,"y=2x+4","y=2x+4",analytical.line,line,A,true
+2019_P2_Q4.4,1,B and D coords,1,"B(0;1), D(-3;0)","B(0;1), D(-3;0)",analytical.circle,circle,A,false
+2019_P2_Q4.4,2,Area method,1,"1/2(1+2)(1)","1/2(1+2)(1)",analytical.area,area,A,false
+2019_P2_Q4.4,3,Area OBCD=3.5,1,3.5 or 7/2,"3.5 or 7/2|3.5|7/2",analytical.area,area,A,false
+2019_P2_Q4.4,4,a=sqrt(7)/2,1,"a=sqrt(7)/2","a=sqrt(7)/2|sqrt(7)/2",analytical.area,area,A,true
+2019_P2_Q5.1,1,-sin x,1,-sinx,"-sin x|-sinx",trig.reduction,trig,A,false
+2019_P2_Q5.1,2,sin x,1,sinx,"sin x|sinx",trig.reduction,trig,A,false
+2019_P2_Q5.1,3,1-sin^2x,1,"1-sin^2 x","1-sin^2 x",trig.reduction,trig,A,false
+2019_P2_Q5.1,4,cos^2x,1,"cos^2 x","cos^2 x",trig.reduction,trig,A,true
+2019_P2_Q5.2,1,-(cos^2-sin^2),1,"-(cos^2 35-sin^2 35)","-(cos^2 35-sin^2 35)",trig.reduction,trig,A,false
+2019_P2_Q5.2,2,-cos70,1,"-cos70","-cos70",trig.reduction,trig,A,false
+2019_P2_Q5.2,3,2sin20,1,"2sin20","2sin20",trig.reduction,trig,A,false
+2019_P2_Q5.2,4,Answer -1/2,1,"-1/2","-1/2",trig.reduction,trig,A,true
+2019_P2_Q5.3,1,Co-ratio,1,"2cos^2 13","2cos^2 13|2[sin(90-13)]^2",trig.identity,trig,A,false
+2019_P2_Q5.3,2,2cos^2-1,1,"2cos^2 13-1=cos26","2cos^2 13-1=cos26",trig.identity,trig,A,false
+2019_P2_Q5.3,3,Answer m+1,1,"m+1","m+1",trig.identity,trig,A,true
+2019_P2_Q5.4.1,1,sin(x+10),1,"sin(x+25-15)","sin(x+25-15)|sin(x+10)",trig.equation,trig,A,false
+2019_P2_Q5.4.1,2,-0.2679,1,"-0.2679","-0.2679",trig.equation,trig,A,false
+2019_P2_Q5.4.1,3,x=185.54+k.360,1,"x=185.54+k.360","x=185.54+k.360",trig.equation,trig,A,false
+2019_P2_Q5.4.1,4,x=334.46+k.360,1,"x=334.46+k.360","x=334.46+k.360",trig.equation,trig,A,false
+2019_P2_Q5.4.1,5,k in Z,1,"k in Z","k in Z|k∈Z",trig.equation,trig,A,true
+2019_P2_Q5.4.2,1,f(x)=sin(x+10),1,"f(x)=sin(x+10)","f(x)=sin(x+10)",trig.equation,trig,A,false
+2019_P2_Q5.4.2,2,270,1,270,270,trig.equation,trig,A,false
+2019_P2_Q5.4.2,3,x=260,1,x=260,x=260,trig.equation,trig,A,true
+2019_P2_Q6.1,1,Range,1,"y in [-2;0]","y in [-2;0]|-2<=y<=0",trig.graph,graph,A,true
+2019_P2_Q6.2,1,Interval,1,"x in (90;270)","x in (90;270)|90<x<270",trig.graph,graph,A,true
+2019_P2_Q6.3,1,PQ expression,1,"PQ=cos2x-(sinx-1)","PQ=cos2x-(sinx-1)",trig.graph,graph,A,false
+2019_P2_Q6.3,2,cos2x=1-2sin^2x,1,"cos2x=1-2sin^2x","cos2x=1-2sin^2x",trig.graph,graph,A,false
+2019_P2_Q6.3,3,Substitute formula,1,"sinx=-1/4","sinx=-1/4",trig.graph,graph,A,false
+2019_P2_Q6.3,4,x=194.48,1,194.48,194.48,trig.graph,graph,A,false
+2019_P2_Q6.3,5,x=345.52,1,345.52,345.52,trig.graph,graph,A,true
+2019_P2_Q7.1,1,sin60 ratio,1,"AK=xsin60","AK=xsin60|x*sin60",trig.3d,trig3d,A,false
+2019_P2_Q7.1,2,Answer,1,"sqrt3/2 x","sqrt3/2x|√3/2x",trig.3d,trig3d,A,true
+2019_P2_Q7.2,1,Answer,1,"120","120|120°",trig.3d,trig3d,A,true
+2019_P2_Q7.3,1,Cosine rule,1,"KF^2=x^2+(x/2)^2-2x(x/2)cos120","KF^2=x^2+(x/2)^2-2x(x/2)cos120",trig.3d,trig3d,A,false
+2019_P2_Q7.3,2,Substitute,1,"x^2+x^2/4-x^2(1/2)","x^2+x^2/4-x^2(1/2)",trig.3d,trig3d,A,false
+2019_P2_Q7.3,3,KF length,1,"KF=sqrt7x/2","KF=sqrt7x/2|√7x/2",trig.3d,trig3d,A,false
+2019_P2_Q7.3,4,Area rule,1,"Area=1/2(AK)(KF)sinACF","Area=1/2(AK)(KF)sinACF",trig.3d,trig3d,A,false
+2019_P2_Q7.3,5,Substitute,1,"x^2 sqrt21 siny/8","x^2 sqrt21 siny/8",trig.3d,trig3d,A,true
+2019_P2_Q8.1.1,1,R=80,1,R=80,"R=80|R=80°",euclidean.circle,euclid,A,false
+2019_P2_Q8.1.1,2,Reason,1,"co-int angles QW parallel RK","co-int|QW parallel RK",euclidean.circle,euclid,A,true
+2019_P2_Q8.1.2,1,P=100,1,P=100,"P=100|P=100°",euclidean.circle,euclid,A,false
+2019_P2_Q8.1.2,2,Reason,1,"opp angles cyclic quad","opp angles cyclic quad",euclidean.circle,euclid,A,true
+2019_P2_Q8.1.3,1,PQR=136,1,"PQR=136","PQR=136",euclidean.circle,euclid,A,false
+2019_P2_Q8.1.3,2,Q2=36,1,Q2=36,Q2=36,euclidean.circle,euclid,A,true
+2019_P2_Q8.2.1,1,Ratios equal 1/2,1,"EF/CD=1/2","EF/CD=1/2|1/2",euclidean.similarity,euclid,A,false
+2019_P2_Q8.2.1,2,Similar triangles,1,"EFT similar DCT","EFT similar DCT|similar triangles",euclidean.similarity,euclid,A,false
+2019_P2_Q8.2.1,3,EFD=ECD,1,"EFD=ECD","EFD=ECD",euclidean.similarity,euclid,A,true
+2019_P2_Q8.2.2,1,Concyclic,1,"E,F,C,D concyclic","EFCD cyclic quad|concyclic",euclidean.circle,euclid,A,false
+2019_P2_Q8.2.2,2,DFC=DEC,1,"DFC=DEC","DFC=DEC",euclidean.circle,euclid,A,true
+2019_P2_Q9.1,1,O2=360-x,1,"O2=360-x","O2=360-x",euclidean.circle,euclid,A,false
+2019_P2_Q9.1,2,M=180-x/2,1,"M=180-x/2","M=180-x/2",euclidean.circle,euclid,A,false
+2019_P2_Q9.1,3,T2+P1=x/2,1,"T2+P1=x/2","T2+P1=x/2",euclidean.circle,euclid,A,false
+2019_P2_Q9.1,4,T2=P1=x/4,1,"T2=P1=x/4","T2=P1=x/4",euclidean.circle,euclid,A,false
+2019_P2_Q9.1,5,STM=x/4,1,"STM=x/4","STM=x/4",euclidean.circle,euclid,A,true
+2019_P2_Q10.1,1,Construction,1,"Draw h1 and h2","draw h1 and h2|construction",euclidean.circle,euclid,A,false
+2019_P2_Q10.1,2,Area ADE,1,"Area ADE=1/2 AD*h1","Area ADE=1/2 AD*h1",euclidean.circle,euclid,A,false
+2019_P2_Q10.1,3,Area BDE,1,"Area BDE=1/2 DB*h1","Area BDE=1/2 DB*h1",euclidean.circle,euclid,A,false
+2019_P2_Q10.1,4,Area ADE/AE,1,"AE/EC","Area ADE=AE|AE/EC",euclidean.circle,euclid,A,false
+2019_P2_Q10.1,5,Equal areas,1,area BDE=area DEC,"area BDE=area DEC|equal areas|area BDE = area DEC",euclidean.circle,euclid,A,false
+2019_P2_Q10.1,6,Conclude AD/DB=AE/EC,1,"AD/DB=AE/EC","AD/DB=AE/EC",euclidean.circle,euclid,A,true

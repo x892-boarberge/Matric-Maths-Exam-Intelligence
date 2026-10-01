@@ -1,0 +1,83 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2019,P1,1,1.1.1,algebra.quadratic.solve,x=-6 or x=1,x? +5x-6=0,3
+2019,P1,1,1.1.2,algebra.quadratic.solve,x=-1.55 or x=0.8,4x*+3x-5=0 (correct to TWO decimal places),3
+2019,P1,1,1.1.3,algebra.quadratic.inequality,-1/2<x<1/2,"4x? -1<0 (3)
+114 (Vv32 + x | \v32 - x] =x",3
+2019,P1,1,1.1.4,algebra.surd.solve,x=4 (x=-4 rejected),,4
+2019,P1,1,1.2,algebra.simultaneous.solve,x=14 or x=1 or y=-2 or y=11,"Solve simultaneously for x and y:
+ytx=12 and xy=14-3x",6
+2019,P1,2,2.1.1,sequences.quadratic,209; 186,Write down the values of the next TWO terms of the sequence.,1
+2019,P1,2,2.1.2,sequences.quadratic,Tn=n^2-34n+354 or n=14 or n=20,"Determine the general term of the sequence in the form J, = an’ +bnt+c.",9
+2019,P1,2,2.1.3,sequences.quadratic,Term 17 will have the smallest value,Which term(s) of the sequence will have a value of 74?,3
+2019,P1,2,2.2.1,sequences.geometric,1.25,Determine the value of K ifthe series has 21 terms.,3
+2019,P1,2,2.2.2,sequences.geometric,n=10,"Determine the largest value of n for which 7, > a (4)
+[19]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathe",4
+2019,P1,3,3.1,sequences.arithmetic,1-1/9=8/9,"Without using a calculator, determine the value of: y— — > — (3)
+y=3 ye 2 y=3 Y -1",3
+2019,P1,3,3.2,sequences.arithmetic,52/3 or 34.67,"A steel pavilion at a sports ground comprises of a series of 12 steps, of which the first
+3 are shown in the diagram bel",4
+2019,P1,4,4.1,functions.hyperbola,p=-1,Write down the value of p.,1
+2019,P1,4,4.2,functions.hyperbola,b=2,Show that a=3 and b=2.,4
+2019,P1,4,4.3,functions.parabola,C(-1;-4),Calculate the coordinates of C.,4
+2019,P1,4,4.4,functions.parabola,y>=-4,Write down the range of f,1
+2019,P1,4,4.5,analytical.line,y=x-3,"Determine the equation of the line through C that makes an angle of 45° with the
+positive x-axis. Write your answer in t",3
+2019,P1,4,4.6,analytical.line,line passes through C and D,"Is the straight line, determined in QUESTION 4.5, a tangent to /? Explain
+your answer.",2
+2019,P1,4,4.7,functions.parabola,q=4,"The function h(x) =f(m—x)+q has only one x-intercept at x= 0. Determine the
+values of m and q. (4)
+[19]
+Copyright reserv",2
+2019,P1,5,5.1,functions.exponential,k=2,Determine the value of &.,2
+2019,P1,5,5.2,functions.log,y=log_2 x,"Graph g is obtained by reflecting graph f about the line y= x. Determine the
+
+equation of g inthe form y=...",2
+2019,P1,5,5.3,functions.log,(16;4) or (2;1) or (4;2) or (1;0),Sketch the graph g. Indicate on your graph the coordinates of two points on g.,2
+2019,P1,5,5.4.1,functions.log,x in (1;inf),I(x) x g(x) > 0,1
+2019,P1,5,5.4.2,functions.log,x in (0;1/2],2(x)<-1,1
+2019,P1,5,5.5,algebra.exponential.solve,x=2,"If h(x) =f), calculate the value of x for which f(x)— h(x) = (4)
+
+[16]
+
+Copyright reserved Please turn over
+
+===== Page ",3
+2019,P1,6,6.1,finance.simple,Kuda has better investment,"Two friends, Kuda and Thabo, each want to invest RS 000 for four years. Kuda
+invests his money in an account that pays s",5
+2019,P1,6,6.2.1,finance.present_value,n=158,"Mandy decided to make monthly repayments of R6 000 instead of the
+required R5 066,36. How many payments will she make to",5
+2019,P1,6,6.2.2,finance.present_value,162503.51,"After making monthly repayments of R6 000 for nine years, Mandy
+required money to fund her daughter's university fees. S",4
+2019,P1,7,7.1,calculus.first_principles,-7,Determine f ‘(x) from first principles if it is given that f(x) =4-7x.,4
+2019,P1,7,7.2,calculus.polynomial,3/2 x^(1/2),Determine o if y= 4x8 4x?,3
+2019,P1,7,7.3.1,calculus.polynomial,2ax,,1
+2019,P1,7,7.3.2,calculus.polynomial,x^2+1,,1
+2019,P1,7,7.4,calculus.polynomial,y=1/2x+7,"The curve with equation y=x+— _ passes through the point A(2 ; 6). Determine
+x
+the equation of the line perpendicular to",4
+2019,P1,8,8.1,calculus.kinematics,36,At what height above the floor did the insect start to crawl?,1
+2019,P1,8,8.2,calculus.kinematics,reaches floor only once,How many times did the insect reach the floor?,3
+2019,P1,8,8.3,calculus.kinematics,h=52,Determine the maximum height that the insect reached above the floor. (4),4
+2019,P1,9,9.1,calculus.cubic,x=3,Solve f(x) =f ‘(x),3
+2019,P1,9,9.2.1,calculus.cubic,for f and f',For which of the graphs will (0; 0) be a stationary point?,1
+2019,P1,9,9.2.2,calculus.cubic,f' turning point,"Explain the difference, if any, in the stationary points referred to in",2
+2019,P1,9,9.3,calculus.cubic,9,Determine the vertical distance between the graphs of f’ and f” at x=1.,3
+2019,P1,9,9.4,calculus.cubic,x!=0,For which value(s) of x is f(x)— f (x) <0? (4),4
+2019,P1,10,10.1,probability.counting,1/4 or 0.25,The same day,3
+2019,P1,10,10.2,probability.counting,3/8,"Consecutive days (3)
+[5]
+
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathematics/P 1 9 DBE/November 2019
+NS",2
+2019,P1,11,11.1.1,probability.independent,0.45,"Represent the given information on a Venn diagram. Indicate on the Venn
+diagram the probabilities associated with each r",3
+2019,P1,11,11.1.2,probability.independent,0.85,Determine P(A or NOT B).,2
+2019,P1,11,11.2,probability.counting,not possible because 550>500,"Motors Incorporated manufacture cars with 5 different body styles, 4 different interior
+colours and 6 different exterior",5

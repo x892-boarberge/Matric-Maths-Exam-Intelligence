@@ -1,0 +1,72 @@
+{
+  "stem": "The graphs of g(x) = 2x + 6 and g^(-1) are shown.",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Write down the y-coordinate of B (y-intercept of g).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.line.intercept",
+      "expected_fn": "y = 6",
+      "steps": [
+        "g(0) = 6."
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Determine g^(-1)(x).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.inverse",
+      "expected_fn": "y = x/2 - 3",
+      "steps": [
+        "g: y = 2x + 6. Swap x and y: x = 2y + 6.",
+        "y = (x - 6)/2 = x/2 - 3."
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Determine the coordinates of A, intersection of g and g^(-1).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.inverse",
+      "expected_fn": "A(-6; -6)",
+      "steps": [
+        "Set g(x) = g^(-1)(x): 2x + 6 = x/2 - 3",
+        "4x + 12 = x - 6",
+        "3x = -18, x = -6.",
+        "y = 2(-6) + 6 = -6."
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "Calculate the length of AB.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.distance",
+      "expected_fn": "AB = sqrt(180) = 6 sqrt(5)",
+      "steps": [
+        "A(-6; -6), B(0; 6).",
+        "AB = sqrt((0+6)^2 + (6+6)^2) = sqrt(36 + 144) = sqrt(180)."
+      ]
+    },
+    {
+      "n": "5.5",
+      "prompt_template": "Calculate the area of triangle ABC.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.area",
+      "expected_fn": "Area = 54",
+      "steps": [
+        "C is the x-intercept of g^(-1): 0 = x/2 - 3, x = 6. C(6; 0).",
+        "Use area formula = 1/2 |x1(y2 - y3) + ...|",
+        "Area = 54."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P1",
+    "qnum": "5"
+  }
+}

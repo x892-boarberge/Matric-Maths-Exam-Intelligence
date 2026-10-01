@@ -1,0 +1,36 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final,match_mode
+2017_P2_Q8.1.1,1,Exterior angle of triangle,1,"E=50-15=35","ext angle|50-15|35",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q8.1.1,2,Alternate angles,1,"A=35","alt angles|35",euclidean.circle,euclid,A,true,keyword
+2017_P2_Q8.1.2,1,Angles in same segment,1,"same segment","same segment",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q8.1.2,2,Answer C2=35,1,"C2=35","c2=35|35",euclidean.circle,euclid,A,true,keyword
+2017_P2_Q8.2,1,C2 equals E,1,"C2=E","c2=e",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q8.2,2,Converse tan chord,1,"converse tan chord","converse tan chord|tangent",euclidean.circle,euclid,A,true,keyword
+2017_P2_Q10.1,1,Line from centre,1,"line from centre to midpoint","line from centre|midpt chord",euclidean.circle,euclid,A,true,keyword
+2017_P2_Q10.2.1,1,Radius perpendicular tangent,1,"radius perp tangent","radius perp|raaklyn",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q10.2.1,2,MN parallel TS,1,"MN parallel TS","mn parallel ts|corresp|alt angles",euclidean.circle,euclid,A,true,keyword
+2017_P2_Q10.2.2,1,Angles opp equal sides,1,"M1=N1","m1=n1|opp equal",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q10.2.2,2,Corresponding angles,1,"M1=T","m1=t|corresp",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q10.2.2,3,Conclusion cyclic quad,1,"cyclic quad","cyclic quad|concyclic",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q10.2.2,4,Answer concyclic,1,"concyclic","concyclic|cyclic quad",euclidean.circle,euclid,A,true,keyword
+2017_P2_Q10.2.3,1,Similar triangles,1,"similar","similar|gelykvormig",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q10.2.3,2,Substitution,1,"substitution","subst",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q10.2.3,3,VN=1/2 MN,1,"VN=1/2 MN","vn=1/2mn",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q10.2.3,4,OS*MN=2*ON*WS,1,"OS.MN=2ON.WS","os.mn=2on.ws",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q10.2.3,5,Answer,1,"answer","answer|conclusion",euclidean.similarity,euclid,A,true,keyword
+2017_P2_Q11.1,1,Construction,1,"construction","construction|draw",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q11.1,2,Tangent perpendicular,1,"radius perp tangent","radius perp|raaklyn",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q11.1,3,Angle in semi-circle,1,"semi circle","semi circle|halfsirkel",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q11.1,4,Same segment,1,"same segment","same segment",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q11.1,5,Answer,1,"answer","answer|proven",euclidean.circle,euclid,A,true,keyword
+2017_P2_Q11.2.1,1,Angle in semi circle,1,"angle in semi circle","semi circle|halfsirkel",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q11.2.1,2,Opp angles supplement,1,"opp angles","opp angles|supplementary",euclidean.circle,euclid,A,false,keyword
+2017_P2_Q11.2.1,3,Tangent chord theorem,1,"tan chord","tan chord",euclidean.circle,euclid,A,true,keyword
+2017_P2_Q11.2.2,1,Sum of angles triangle,1,"sum of angles","sum of angles|triangle",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q11.2.2,2,D1=E,1,"D1=E","d1=e|90-x",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q11.2.2,3,AD=AE,1,"AD=AE","ad=ae|sides opp equal",euclidean.similarity,euclid,A,true,keyword
+2017_P2_Q11.2.2,4,Common angle,1,"common angle","common|c common",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q11.2.2,5,Similar triangles ADB ACD,1,"ADB similar ACD","similar|gelykvormig",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q11.2.2,6,Answer similar,1,"answer","similar|gelykvormig",euclidean.similarity,euclid,A,true,keyword
+2017_P2_Q11.2.3,1,Ratio,1,"AD/AC=AB/AD","ad/ac=ab/ad|ratio",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q11.2.3,2,Substitution,1,"AD^2=AC*AB","ad^2=ac*ab|3r^2",euclidean.similarity,euclid,A,false,keyword
+2017_P2_Q11.2.3,3,Answer 3r^2,1,"3r^2","3r^2|3r2",euclidean.similarity,euclid,A,true,keyword

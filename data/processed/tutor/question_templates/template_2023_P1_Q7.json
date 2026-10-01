@@ -1,0 +1,80 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Determine f'(x) from first principles if f(x) = {a}x^2.",
+      "ranges": {
+        "a": [
+          -4,
+          -3,
+          -2,
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 5,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = {two_a}x",
+      "steps": [
+        "f'(x) = lim [f(x+h) - f(x)]/h",
+        "Expand {a}(x+h)^2",
+        "Simplify and factor out h",
+        "Take limit as h->0"
+      ]
+    },
+    {
+      "n": "7.2.1",
+      "prompt_template": "f'(x) if f(x) = {a}x^3 - {b}x.",
+      "ranges": {
+        "a": [
+          2,
+          3
+        ],
+        "b": [
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 1,
+      "skill_id": "calculus.derivative.rules",
+      "expected_fn": "f'(x) = {three_a}x^2 - {b}",
+      "steps": [
+        "Differentiate term by term."
+      ]
+    },
+    {
+      "n": "7.2.2",
+      "prompt_template": "D_x(7*cbrt(x^2) + 2x^-5).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.derivative.rules",
+      "expected_fn": "see memo",
+      "steps": [
+        "Rewrite cube root as power.",
+        "Differentiate."
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "For which x does tangent to f(x) = -2x^3 + 8x have positive gradient?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "see memo",
+      "steps": [
+        "f'(x) = -6x^2 + 8",
+        "-6x^2 + 8 > 0",
+        "x^2 < 4/3",
+        "-2/sqrt(3) < x < 2/sqrt(3)"
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P1",
+    "qnum": "7"
+  }
+}

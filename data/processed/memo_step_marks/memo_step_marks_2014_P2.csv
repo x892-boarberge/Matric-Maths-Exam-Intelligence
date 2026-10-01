@@ -1,0 +1,98 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final
+2014_P2_Q1.1,1,Sum,1,816/12,816/12,statistics.mean,mean,A,false
+2014_P2_Q1.1,2,Answer 68,1,68,68,statistics.mean,mean,A,true
+2014_P2_Q1.2,1,Sigma,1,18.42,18.42,statistics.stdev,stdev,A,true
+2014_P2_Q1.3,1,Bounds,1,(49.58;86.42),(49.58;86.42),statistics.stdev,stdev,A,false
+2014_P2_Q1.3,2,Answer 6,1,6,6,statistics.stdev,stdev,A,true
+2014_P2_Q1.4,1,a value,1,a=22.83,a=22.83|22.828,statistics.regression,regression,A,false
+2014_P2_Q1.4,2,b value,1,b=0.66,b=0.66|0.664,statistics.regression,regression,A,false
+2014_P2_Q1.4,3,Equation,1,y_hat=0.66x+22.83,y_hat=0.66x+22.83|y=22.83+0.66x,statistics.regression,regression,A,true
+2014_P2_Q1.5,1,Substitute 60,1,y=0.66(60)+22.83,y=0.66(60)+22.83|62.43,statistics.regression,regression,A,false
+2014_P2_Q1.5,2,Answer 62%,1,62%,62%|62,statistics.regression,regression,A,true
+2014_P2_Q1.6,1,(82;62),1,(82;62),"(82;62)|(82,62)",statistics.regression,regression,A,true
+2014_P2_Q2.1,1,Answer class,1,50<x<=60,50<x<=60|50 ≤ x < 60,statistics.frequency,frequency,A,true
+2014_P2_Q2.2.1,1,Class intervals table,1,table of values,table of values,statistics.frequency,frequency,A,true
+2014_P2_Q2.2.2,1,Grounding at (20;0),1,(20;0),(20;0),statistics.frequency,frequency,A,false
+2014_P2_Q2.2.2,2,Upper limits plotted,1,upper limits,upper limits,statistics.frequency,frequency,A,false
+2014_P2_Q2.2.2,3,Smooth shape,1,smooth curve,smooth curve|shape,statistics.frequency,frequency,A,true
+2014_P2_Q2.3,1,55-44,1,55-44,55-44,statistics.frequency,frequency,A,false
+2014_P2_Q2.3,2,Answer 11,1,11,11,statistics.frequency,frequency,A,true
+2014_P2_Q3.1,1,Radius,1,5,5|r=5|5 units,analytical.circle,circle,A,true
+2014_P2_Q3.2,1,Equation,1,(x-5)^2+(y-4)^2=25,(x-5)^2+(y-4)^2=25,analytical.circle,circle,A,true
+2014_P2_Q3.3,1,Substitute y=0,1,(x-5)^2+16=25,(x-5)^2+16=25,analytical.circle,circle,A,false
+2014_P2_Q3.3,2,Standard form,1,x^2-10x+16=0,x^2-10x+16=0,analytical.circle,circle,A,false
+2014_P2_Q3.3,3,Factorise,1,(x-8)(x-2)=0,(x-8)(x-2)=0|(x-2)(x-8)=0,analytical.circle,circle,A,false
+2014_P2_Q3.3,4,A(2;0),1,A(2;0),"A(2;0)|A(2,0)",analytical.circle,circle,A,true
+2014_P2_Q3.4.1,1,Substitute,1,m_MB=(4-0)/(5-8),m_MB=(4-0)/(5-8),analytical.gradient,gradient,A,false
+2014_P2_Q3.4.1,2,m_MB=-4/3,1,m_MB=-4/3,m_MB=-4/3,analytical.gradient,gradient,A,true
+2014_P2_Q3.4.2,1,m_MB*m_PB=-1,1,m_MB*m_PB=-1,m_MB*m_PB=-1,analytical.line,line,A,false
+2014_P2_Q3.4.2,2,m_PB=3/4,1,m_PB=3/4,m_PB=3/4,analytical.line,line,A,false
+2014_P2_Q3.4.2,3,Equation,1,y=3/4x-6,y=3/4x-6,analytical.line,line,A,true
+2014_P2_Q3.5,1,9,1,9,9,analytical.circle,circle,A,false
+2014_P2_Q3.5,2,Equation,1,y=9,y=9,analytical.circle,circle,A,true
+2014_P2_Q3.6,1,Solve 3/4x-6=9,1,3/4x-6=9,3/4x-6=9,analytical.line,line,A,false
+2014_P2_Q3.6,2,Answer,1,x=20,x=20,analytical.line,line,A,true
+2014_P2_Q3.6,3,L coordinates,1,L(20;9),"L(20;9)|L(20,9)",analytical.line,line,A,true
+2014_P2_Q3.7,1,Substitute,1,ML=sqrt((20-5)^2+(9-4)^2),ML=sqrt((20-5)^2+(9-4)^2),analytical.distance,distance,A,false
+2014_P2_Q3.7,2,Answer 5sqrt10,1,5sqrt10,5sqrt10|5√10,analytical.distance,distance,A,true
+2014_P2_Q3.8,1,MK perpendicular KL,1,MK perpendicular KL,MK perpendicular KL|MKL=90,analytical.circle,circle,A,false
+2014_P2_Q3.8,2,ML is diameter,1,ML is diameter,ML is diameter,analytical.circle,circle,A,false
+2014_P2_Q3.8,3,r value,1,r=sqrt(125/2),r=sqrt(125/2)|7.91,analytical.circle,circle,A,false
+2014_P2_Q3.8,4,x=12.5,1,x=12.5,x=12.5|25/2,analytical.circle,circle,A,false
+2014_P2_Q3.8,5,y=6.5,1,y=6.5,y=6.5|13/2,analytical.circle,circle,A,false
+2014_P2_Q3.8,6,Equation,1,(x-12.5)^2+(y-6.5)^2=62.5,(x-12.5)^2+(y-6.5)^2=62.5,analytical.circle,circle,A,true
+2014_P2_Q4.1,1,Equation y=0,1,E(-8/3;0),E(-8/3;0),analytical.line,line,A,false
+2014_P2_Q4.1,2,y=0,1,y=0,y=0,analytical.line,line,A,true
+2014_P2_Q4.2,1,tan DEO=3,1,tan DEO=3,tan DEO=3,analytical.gradient,gradient,A,false
+2014_P2_Q4.2,2,DEO=71.565,1,71.565,71.565|71.57,analytical.gradient,gradient,A,false
+2014_P2_Q4.2,3,Answer 26.57,1,26.57,26.57,analytical.gradient,gradient,A,true
+2014_P2_Q4.3,1,m_AB=tan26.57,1,tan 26.57,tan26.57|m_AB=tan26.57,analytical.gradient,gradient,A,false
+2014_P2_Q4.3,2,m_AB=1/2,1,m_AB=1/2,m_AB=1/2,analytical.gradient,gradient,A,false
+2014_P2_Q4.3,3,Substitute,1,5=1/2(1)+c,5=1/2(1)+c,analytical.line,line,A,false
+2014_P2_Q4.3,4,Equation,1,y=1/2x+9/2,y=1/2x+9/2|y=1/2x+4.5,analytical.line,line,A,true
+2014_P2_Q4.4,1,Simultaneous,1,x-2y+9=0 and y=3x+8,x-2y+9=0,analytical.line,line,A,false
+2014_P2_Q4.4,2,Substitute,1,x-2(3x+8)+9=0,x-2(3x+8)+9=0,analytical.line,line,A,false
+2014_P2_Q4.4,3,x=-7/5,1,x=-7/5,x=-7/5|-1.4,analytical.line,line,A,false
+2014_P2_Q4.4,4,y=19/5,1,y=19/5,y=19/5|3.8,analytical.line,line,A,false
+2014_P2_Q4.4,5,D coords,1,D(-7/5;19/5),D(-7/5;19/5),analytical.line,line,A,true
+2014_P2_Q4.5,1,Method area,1,correct method,correct method,analytical.area,area,A,false
+2014_P2_Q4.5,2,xA=-9,1,xA=-9,xA=-9|-9,analytical.area,area,A,false
+2014_P2_Q4.5,3,Area triangle,1,1/2(9)(4.5),1/2(9)(4.5),analytical.area,area,A,false
+2014_P2_Q4.5,4,Answer 8.22,1,8.22,8.22|493/60,analytical.area,area,A,true
+2014_P2_Q5.1,1,Sine ratio,1,sin CAP=4sqrt3/8,sin CAP=4sqrt3/8,trig.3d,trig3d,A,false
+2014_P2_Q5.1,2,Answer 60,1,60,60|60°,trig.3d,trig3d,A,true
+2014_P2_Q5.2,1,DAP=30,1,DAP=30,DAP=30|DAP=30°,trig.3d,trig3d,A,false
+2014_P2_Q5.2,2,Cosine rule,1,AD^2=8^2+4^2-2(8)(4)cos30,AD^2=8^2+4^2-2(8)(4)cos30,trig.3d,trig3d,A,false
+2014_P2_Q5.2,3,AD^2=24.57,1,24.57,24.57,trig.3d,trig3d,A,false
+2014_P2_Q5.2,4,AD=4.96,1,4.96,4.96,trig.3d,trig3d,A,true
+2014_P2_Q5.3,1,Sine rule,1,sin y/4=sin30/4.96,sin y/4=sin30/4.96,trig.3d,trig3d,A,false
+2014_P2_Q5.3,2,siny subject,1,sin y=4sin30/4.96,sin y=4sin30/4.96,trig.3d,trig3d,A,false
+2014_P2_Q5.3,3,Answer 23.78,1,23.78,23.78|23.82,trig.3d,trig3d,A,true
+2014_P2_Q6.1,1,Rewrite (-cosx)^2,1,(-cosx)^2,(-cosx)^2|cos^2x,trig.reduction,trig,A,false
+2014_P2_Q6.1,2,tan substitution,1,sinx/cosx,sinx/cosx|tanx=sinx/cosx,trig.reduction,trig,A,false
+2014_P2_Q6.1,3,-sinx,1,-sin x,-sin x,trig.reduction,trig,A,false
+2014_P2_Q6.1,4,cos^2-sin^2,1,cos^2x-sin^2x,cos^2x-sin^2x,trig.reduction,trig,A,false
+2014_P2_Q6.1,5,Answer cos2x,1,cos2x,cos2x,trig.reduction,trig,A,true
+2014_P2_Q6.2,1,Rewrite,1,cos[(90-a)+b],cos[(90-a)+b],trig.identity,trig,A,false
+2014_P2_Q6.2,2,Expansion,1,cos(90-a)cosb-sin(90-a)sinb,cos(90-a)cosb-sin(90-a)sinb,trig.identity,trig,A,false
+2014_P2_Q6.2,3,Answer,1,sin a cos b - cos a sin b,sin a cos b - cos a sin b,trig.identity,trig,A,true
+2014_P2_Q6.3,1,-(cos^2 76-sin^2 76),1,-(cos^2 76-sin^2 76),-(cos^2 76-sin^2 76),trig.identity,trig,A,false
+2014_P2_Q6.3,2,-cos152,1,-cos152,-cos152,trig.identity,trig,A,false
+2014_P2_Q6.3,3,Answer cos28,1,cos28,cos28,trig.identity,trig,A,true
+2014_P2_Q7.1,1,Range,1,y in [0;2],y in [0;2]|0<=y<=2,trig.graph,graph,A,true
+2014_P2_Q7.2,1,Identity,1,sinx+1=1-2sin^2x,sinx+1=1-2sin^2x|cos2x=1-2sin^2x,trig.equation,trig,A,false
+2014_P2_Q7.2,2,Standard form,1,2sin^2x+sinx=0,2sin^2x+sinx=0,trig.equation,trig,A,false
+2014_P2_Q7.2,3,Factorise,1,sinx(2sinx+1)=0,sinx(2sinx+1)=0,trig.equation,trig,A,true
+2014_P2_Q7.3,1,sinx=0,1,sinx=0,sinx=0,trig.equation,trig,A,false
+2014_P2_Q7.3,2,x=0 or 180,1,x=0 or x=180,x=0 or x=180,trig.equation,trig,A,false
+2014_P2_Q7.3,3,x=210 or 330,1,x=210 or x=330,x=210 or x=330,trig.equation,trig,A,false
+2014_P2_Q7.3,4,k.360,1,k.360,k.360|k*360,trig.equation,trig,A,true
+2014_P2_Q7.4,1,y-intercept,1,y-intercept,y-intercept,trig.graph,graph,A,false
+2014_P2_Q7.4,2,x-intercepts,1,x-intercepts,x-intercepts,trig.graph,graph,A,false
+2014_P2_Q7.4,3,Min/max,1,min/max,min or max|min/max|min and max|minimum and maximum,trig.graph,graph,A,true
+2014_P2_Q7.5,1,f=g at -30;0;180;210,1,-30;0;180;210,-30;0;180;210,trig.graph,graph,A,false
+2014_P2_Q7.5,2,f(x+30)=g(x+30),1,-60;-30;150;180,-60;-30;150;180,trig.graph,graph,A,true
+2014_P2_Q7.6,1,-1<r<1,1,-1<r<1,-1<r<1,trig.graph,graph,A,false
+2014_P2_Q7.6,2,r=2cos2x,1,r=2cos2x,r=2cos2x,trig.graph,graph,A,false
+2014_P2_Q7.6,3,-1/2<cos2x<1/2,1,-1/2<cos2x<1/2,-1/2<cos2x<1/2,trig.graph,graph,A,false
+2014_P2_Q7.6,4,Answer 30<x<60,1,30<x<60,30<x<60|(30;60),trig.graph,graph,A,true

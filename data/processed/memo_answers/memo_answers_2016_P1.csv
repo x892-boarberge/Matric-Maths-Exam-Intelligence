@@ -1,0 +1,92 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2016,P1,1,1.1.1,algebra.quadratic.solve,x=0 or x=7,"x(x-—7)=0 (2)
+Li2 x° —6x +2 =0 (correct to TWO decimal places) (3)
+L153 vx-1+1l=x",2
+2016,P1,1,1.1.2,algebra.quadratic.solve,x=0.35 or x=5.65,,3
+2016,P1,1,1.1.3,algebra.surd.solve,x=2 or x=1,,4
+2016,P1,1,1.1.4,algebra.exponential.solve,x=3,"3**° 3°? = 486 (4)
+ld Given: f(x)=x?+3x-4",3
+2016,P1,1,1.2.1,algebra.quadratic.solve,x=-4 or x=1,"Solve for x if f(x)=0 (2)
+Lee Solve for x if f(x)<0 (2)
+L223 Determine the values of x for which f/(x) > 0",2
+2016,P1,1,1.2.2,algebra.quadratic.inequality,-4<x<1,,1
+2016,P1,1,1.2.3,functions.parabola,x>=-3/2,,2
+2016,P1,1,1.3,algebra.simultaneous.solve,y=-2 or y=2 or x=-4 or x=4,"Solve for x and y: x=2y and x’ —Sxy=-24 (4)
+[24]",4
+2016,P1,2,2.1,sequences.arithmetic,-7,"Write down the fourth term (T4) of the sequence. (1)
+22 Calculate the number of terms in the sequence.",1
+2016,P1,2,2.2,sequences.arithmetic,n=24,,3
+2016,P1,2,2.3,sequences.arithmetic,S22=-990,Calculate the sum of all the negative numbers in the sequence.,3
+2016,P1,2,2.4,sequences.arithmetic,n=210,"Consider the sequence: 5 ; 1 ; -3; ... ; -83 ; -87; ... ; 4187
+Determine the number of terms in this sequence that will ",4
+2016,P1,3,3.1.1,sequences.quadratic,x=0,"Calculate the value(s) of x. (4)
+che Be If x = 0, determine the position of the first term in the quadratic number
+patte",4
+2016,P1,3,3.1.2,sequences.quadratic,n=17,,4
+2016,P1,3,3.2.1,sequences.geometric,4.86,"Calculate the length of the 10"" rectangle.",4
+2016,P1,3,3.2.2,sequences.geometric,20.28,,4
+2016,P1,4,4.1,functions.exponential,y=0,Write down the equation of the asymptote of A.,1
+2016,P1,4,4.2,functions.exponential,R(0;1),Determine the coordinates of R.,1
+2016,P1,4,4.3,functions.exponential,a=3,Calculate the value of a.,2
+2016,P1,4,4.4,functions.exponential,DP=6 units,D isa point such that DQ || y-axis and DP || x-axis. Calculate the length of DP.,4
+2016,P1,4,4.5,functions.exponential,-1/81<k<0,"Determine the values of & for which the equation A(x+2)+k=0 will have a root
+
+that is less than —6. (3)
+(11]
+
+Copyright ",2
+2016,P1,5,5.1,functions.parabola,y=1,,2
+2016,P1,5,5.2,functions.parabola,y<=1,,1
+2016,P1,5,5.3,functions.parabola,x<=-1 or x>=2,,1
+2016,P1,5,5.4,functions.hyperbola,x=-2,"Determine the equation of the vertical asymptote of the graph of A if
+A(x) = g(x +4) (1)
+a5 Determine the values of p an",1
+2016,P1,5,5.5,functions.hyperbola,t=-1,,4
+2016,P1,5,5.6,functions.hyperbola,x>=3,"Write down the values of x for which f(x).g’(x)>0 (4)
+[14]
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathe",3
+2016,P1,6,6.1,functions.log,(0;3),"On the same set of axes, sketch the graphs of f and_ g, clearly showing ALL
+intercepts with the axes.",4
+2016,P1,6,6.2,functions.log,y=2^x,"Write down the equation of g' (x), the inverse of g, inthe form y=...",2
+2016,P1,6,6.3,functions.log,point of intersection,"Explain how you will use QUESTION 6.1 and/or QUESTION 6.2 to solve the
+equation log, (3 ~ x) =X.",2
+2016,P1,6,6.4,functions.log,x=1,"Write down the solution to log, (3— x)= x. (1)",1
+2016,P1,7,7.1,finance.compound,256289.06,,2
+2016,P1,7,7.2,finance.present_value,7359.79,,4
+2016,P1,7,7.3,finance.present_value,10 months,"If Thabiso paid R9 000 as his monthly instalment starting on 1 September 2016,
+how many months sooner will he repay the ",5
+2016,P1,7,7.4,finance.present_value,3782.14,"If Thabiso paid R9 000 as a monthly instalment starting on 1 September 2016,
+calculate the final instalment to repay the",3
+2016,P1,8,8.1,calculus.first_principles,6x,Determine f’(x) from first principles if f(x) =3x?,5
+2016,P1,8,8.2,calculus.first_principles,4,"John determines g’(a), the derivative of a certain function g at x =a, and arrives
+. V4+h-2
+at the answer: -—
+Write down",1
+2016,P1,8,8.3,calculus.polynomial,15x^-4,"Determine wy if y= vx? - z (4)
+dx x",3
+2016,P1,8,8.4,calculus.polynomial,b=-3,"g(x)=-8x+20 isa tangent to f(x)=x°>+ax’+bx+18 at x = 1. Calculate the
+values of a and 5b. (5)
+[16]",6
+2016,P1,9,9.1,calculus.cubic,x=1/3,Calculate the x-coordinates of the stationary points of f.,4
+2016,P1,9,9.2,calculus.cubic,x<-4/3,For which values of x is f concave down?,3
+2016,P1,9,9.3,calculus.cubic,x>=1/3,Determine the values of x for which f is strictly increasing.,2
+2016,P1,9,9.4,calculus.cubic,c=-3,"If it is further given that f(x)=ax'+bx?+cx+d and f(0)=~-18, determine the
+equation of f. (5)",5
+2016,P1,10,10.1,calculus.kinematics,216,"Determine the number of molecules of the drug in the bloodstream 3 hours after the
+drug was taken.",2
+2016,P1,10,10.2,calculus.kinematics,72,"Determine the rate at which the number of molecules of the drug in the bloodstream is
+changing at exactly 2 hours after ",3
+2016,P1,10,10.3,calculus.kinematics,t=1,"How many hours after taking the drug will the rate at which the number of molecules
+of the drug in the bloodstream is ch",3
+2016,P1,11,11.1,probability.tables,b=128,"Calculate the values of a and b. (2)
+LL Are the events ‘being a male’ and 'did not watch TV during examinations’ mutuall",2
+2016,P1,11,11.2,probability.tables,No,,1
+2016,P1,11,11.3.1,probability.tables,4/5 or 0.8 or 80%,Watched TV in the period during which the examinations were written?,2
+2016,P1,11,11.3.2,probability.tables,3/40 or 0.075 or 7.5%,"Is not a male and did not watch TV in the period during which
+examinations were written? (2)",2
+2016,P1,12,12,probability.counting,160,"QUESTION 12
+The digits 1 to 7 are used to create a four-digit code to enter a locked room. How many
+different codes are ",3

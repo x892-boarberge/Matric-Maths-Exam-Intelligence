@@ -1,0 +1,49 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Determine f'(x) from first principles if f(x) = x^2 + x.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = 2x + 1",
+      "steps": [
+        "f(x+h) = (x+h)^2 + (x+h) = x^2 + 2xh + h^2 + x + h",
+        "f(x+h) - f(x) = 2xh + h^2 + h",
+        "[f(x+h) - f(x)]/h = 2x + h + 1",
+        "As h -> 0: f'(x) = 2x + 1."
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Determine f'(x) if f(x) = 2x^5 - 3x^4 + 8x.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.derivative.rules",
+      "expected_fn": "f'(x) = 10x^4 - 12x^3 + 8",
+      "steps": [
+        "Differentiate term by term."
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "Tangent to g(x) = ax^3 + 3x^2 + bx + c has minimum gradient at (-1; -7). For which x is g concave up?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.cubic.concave",
+      "expected_fn": "x > -1",
+      "steps": [
+        "g'(x) = 3ax^2 + 6x + b",
+        "g''(x) = 6ax + 6",
+        "Minimum gradient at x = -1 means g''(-1) = 0: -6a + 6 = 0, a = 1.",
+        "Concave up when g''(x) > 0: 6x + 6 > 0, x > -1."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P1",
+    "qnum": "7"
+  }
+}

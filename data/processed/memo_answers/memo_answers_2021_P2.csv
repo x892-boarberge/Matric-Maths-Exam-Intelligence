@@ -1,0 +1,104 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2021,P2,1,1.1.1,statistics.mean,x=22,Mean number of loaves of bread ordered daily |,2
+2021,P2,1,1.1.2,statistics.stdev,10.17,Standard deviation of the data,1
+2021,P2,1,1.1.3,statistics.stdev,5,"Number of days on which the number of loaves of bread ordered was
+
+more than one standard deviation above the mean",2
+2021,P2,1,1.2,statistics.mean,36,"The tuck-shop owner was not able to sell all the loaves of bread delivered daily.
+
+He calculated the mean number of loav",2
+2021,P2,1,1.3.1,statistics.quartiles,IQR=21 or mean>median,"Which ONE of the two box and whisker diagrams, drawn above, correctly
+represents the data? Write down a reason for your ",2
+2021,P2,1,1.3.2,statistics.quartiles,positively skewed or skewed right,"Describe the skewness of the data. (i)
+[10}
+
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P2 4 DB",1
+2021,P2,2,2.2,statistics.regression,y_hat=90.48-1.77x,Determine the equation of the least squares regression line for the data.,3
+2021,P2,2,2.3,statistics.regression,23.07 units,"If the farmer sells a 5-litre container of milk for R38, predict the number of 5-litre
+
+containers of milk he will sell.",1
+2021,P2,2,2.4,statistics.regression,strong relationship accurate,"Refer to the correlation between the price of 5-litre containers of milk and the number
+
+of 5-litre containers of milk s",2
+2021,P2,3,3.1.1,analytical.gradient,m_BE=1/4,BE,2
+2021,P2,3,3.1.2,analytical.gradient,m_AB=7,AB,2
+2021,P2,3,3.2,analytical.line,y=1/4x-3,Determine the equation of BE inthe form y = mx +c,2
+2021,P2,3,3.3.1,analytical.line,B(-4;-4),"Coordinates of B, where k<0",3
+2021,P2,3,3.3.2,analytical.gradient,A=34.70,Size of A,4
+2021,P2,3,3.3.3,analytical.midpoint,M(5;5),"Coordinates of the point of intersection of the diagonals of parallelogram
+ACES, where S$ is a point in the first quadra",1
+2021,P2,3,3.4.1,analytical.distance,p=16,Calculate the coordinates of T.,5
+2021,P2,3,3.4.2a,analytical.circle,(x-12)^2+y^2=272,,1
+2021,P2,3,3.4.2b,analytical.line,y=-4x-20,,3
+2021,P2,4,4.1,analytical.circle,4,Write down the length of the radius of the circle.,1
+2021,P2,4,4.2.1,analytical.circle,C(-1;7),Coordinates of C,1
+2021,P2,4,4.2.2,analytical.circle,D(5;7),Coordinates of D,1
+2021,P2,4,4.2.3,analytical.area,15 units^2,Area of ABCD,3
+2021,P2,4,4.3.1,analytical.circle,MN=4sqrt(2)=5.66,Length of NM,3
+2021,P2,4,4.3.2,analytical.line,(1;1),"Midpoint of AF (4)
+
+{15}
+
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematics/P2 7 DBE/November 2021
+NSC",4
+2021,P2,5,5.1,trig.reduction,cos x,"Without using a calculator, simplify the following expression to ONE trigonometric
+ratio:
+sin 140°. sin(360° — x) ‘5
+cos",5
+2021,P2,5,5.2,trig.identity,2cosx-1,"Prove the identity: —————__————- = 2cosx-1 (4)
+1 ~cos(540° — x)",5
+2021,P2,5,5.3.1,trig.identity,tan36=sqrt(1-p^2)/p,tan 36°,3
+2021,P2,5,5.3.2,trig.identity,-2p^2+1,cos108° (4),3
+2021,P2,6,6.1.1,trig.identity,cosαcosβ-sinαsinβ,Use the given identity to derive a formula for cos(@ + £),3
+2021,P2,6,6.1.2,trig.identity,1,Simplify completely: 2cos6xcos4x—cos10x+2sin? x,5
+2021,P2,6,6.2,trig.equation,k in Z,"Determine the general solution of tanx =2sin2x where cosx <0. (7)
+[15]
+Copyright reserved Please turn over
+
+===== Page 8",7
+2021,P2,7,7.2,trig.graph,120,Write down the period of f(3x).,1
+2021,P2,7,7.3,trig.graph,x=-30,"Use the graphs to determine the value of x in the interval x <[—180°; 180°] for
+which f(x)- g(x)=1.",1
+2021,P2,7,7.4,trig.graph,y in [1/2;3/2],"Write down the range of k, if k(x) = ; g(x) +1. (2)
+[8]
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Mathemat",1
+2021,P2,8,8.1,trig.3d,QS=5tanx,Prove that QS = 5 tanx,3
+2021,P2,8,8.2,trig.3d,QT=10sinx,Prove that the length of QT =10sinx,5
+2021,P2,8,8.3,trig.3d,9.93,"Calculate the area of ATQR if TQR = 70° and x= 25°. (2)
+[10]
+Copyright reserved Please turn over
+
+===== Page 10 =====
+Ma",2
+2021,P2,9,9.1,euclidean.circle,Tangents from same point,Give areason why ST =TR.,1
+2021,P2,9,9.2.1,euclidean.circle,S2=SRT,"S,",1
+2021,P2,9,9.2.2,euclidean.circle,S3=42,"S, (2)
+[5]
+Copyright reserved Please turn over
+
+===== Page 11 =====
+Mathematics/P2 11 DBE/November 2021
+NSC",2
+2021,P2,10,10.1,euclidean.circle,line from centre perp chord,Give areason why AF = FE.,1
+2021,P2,10,10.2,euclidean.circle,M1=180-2x,"Determine, giving reasons, the size of M, in terms of x.",2
+2021,P2,10,10.3,euclidean.circle,AD is tangent,"Prove, giving reasons, that AD is a tangent to the circle passing through A, C
+and F.",4
+2021,P2,10,10.4,euclidean.circle,AE=12sqrt(5)=26.83,"Given that CF = 6 units and AB = 24 units, calculate, giving reasons, the length
+of AE. (5)
+[13]
+Copyright reserved Plea",4
+2021,P2,11,11.2.1a,euclidean.circle,K4=M2+M3=NML,,3
+2021,P2,11,11.2.1b,euclidean.circle,KLMN is cyclic quad,,1
+2021,P2,11,11.2.2,euclidean.circle,LKN || KSM,"Prove, giving reasons, that ALKN ||| AKSM.",5
+2021,P2,11,11.2.3,euclidean.circle,KS=9,"If LK = 12 units and 3KN =4SM, determine the length of KS.",3
+2021,P2,11,11.2.4,euclidean.circle,LT=10.95,"If it is further given that NL = 16 units, LS = 13 units and KN = 8 units,
+determine, with reasons, the length of LT. (4",4

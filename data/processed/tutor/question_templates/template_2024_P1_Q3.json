@@ -1,0 +1,94 @@
+{
+  "source": {
+    "year": 2024,
+    "paper": "P1",
+    "qnum": "3"
+  },
+  "stem": "A circle with radius {R} cm is drawn. A second, smaller circle is drawn through the centre of the first circle and also touches the first circle internally. A third, smaller circle is drawn through the centre of the second circle and touches the second circle internally. The process of drawing circles continues and forms a geometric pattern.",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Write down the radius of the 3rd circle.",
+      "ranges": {
+        "R": [
+          4,
+          6,
+          8,
+          10,
+          12,
+          16
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.geometric.term",
+      "derive": "r3 = R * (1/2)^2; r3_disp = r3 if r3 != int(r3) else int(r3)",
+      "expected_fn": "radius of 3rd circle = {r3_disp} cm",
+      "steps": [
+        "Each new circle has half the radius of the previous.",
+        "r1 = {R}",
+        "r2 = {R}/2",
+        "r3 = {R}/4 = {r3_disp} cm"
+      ],
+      "diagnostic_class": "procedural"
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Calculate the sum of the areas of the first 10 circles.",
+      "ranges": {
+        "R": [
+          4,
+          6,
+          8,
+          10,
+          12,
+          16
+        ]
+      },
+      "marks": 4,
+      "skill_id": "sequences.geometric.sum",
+      "derive": "a = 3.141592653589793 * R * R; r = 1/4; S10_exact_num = a * (1 - r**10); S10_exact_den = 1 - r; S10 = a * (1 - r**10) / (1 - r)",
+      "expected_fn": "S_10 = {S10_disp} cm^2",
+      "derive_display": "S10_disp = round(S10, 2)",
+      "steps": [
+        "Areas: pi*R^2, pi*(R/2)^2, pi*(R/4)^2, ...",
+        "First term a = pi*R^2 = pi*{R}^2 = {a} cm^2",
+        "Constant ratio r = 1/4",
+        "S_n = a(1 - r^n) / (1 - r)",
+        "S_10 = {a} (1 - (1/4)^10) / (1 - 1/4)",
+        "S_10 = {S10_disp} cm^2"
+      ],
+      "diagnostic_class": "procedural"
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Which circle has a diameter of {D_num}/{D_den} cm?",
+      "ranges": {
+        "R": [
+          6,
+          8
+        ],
+        "n_target": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "marks": 4,
+      "skill_id": "sequences.geometric.term",
+      "derive": "diameter_n = 2*R*(1/2)**(n_target - 1); D_num = 2*R; D_den = 2**(n_target - 1); answer_n = n_target",
+      "expected_fn": "The {answer_n}th circle",
+      "steps": [
+        "Diameter of the first circle = 2R = {D_num} cm",
+        "Each successive diameter = previous * (1/2)",
+        "D_n = {D_num} * (1/2)^(n-1)",
+        "Set {D_num} * (1/2)^(n-1) = {D_num}/{D_den}:",
+        "(1/2)^(n-1) = 1/{D_den} = (1/2)^{power}",
+        "n - 1 = {power}, so n = {answer_n}"
+      ],
+      "diagnostic_class": "procedural"
+    }
+  ]
+}

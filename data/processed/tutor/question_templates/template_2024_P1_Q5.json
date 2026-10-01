@@ -1,0 +1,81 @@
+{
+  "source": {
+    "year": 2024,
+    "paper": "P1",
+    "qnum": "5"
+  },
+  "stem": "Sketched below is the graph of f(x) = {f_disp_hyperbola} having the domain (-inf; {vert}) U ({vert}; inf). The graph of f cuts the y-axis at (0; {yint}).",
+  "stem_params": "computed",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Write down the value of p.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.hyperbola.parameter",
+      "expected_fn": "p = {p}",
+      "steps": [
+        "The domain excludes x = {vert}.",
+        "In f(x) = a/(x + p) + q the denominator is zero at x = -p.",
+        "So -p = {vert}, giving p = {p}."
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Determine the equation of the horizontal asymptote of f.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.hyperbola.asymptote",
+      "expected_fn": "y = {q}",
+      "steps": [
+        "The horizontal asymptote of a/(x+p) + q is y = q.",
+        "From the form, q = {q}.",
+        "So the asymptote is y = {q}."
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Calculate the value of a.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.hyperbola.equation",
+      "expected_fn": "a = {a}",
+      "steps": [
+        "f cuts the y-axis at (0; {yint}), so f(0) = {yint}.",
+        "f(0) = a/(0 {p_disp}) {q_disp}",
+        "{yint} = a/({p}) {q_disp}",
+        "a = {a}"
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "For which values of x is f(x) >= 0?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.hyperbola.inequality",
+      "expected_fn": "{ineq_answer}",
+      "steps": [
+        "f(x) >= 0 means a/(x + p) + q >= 0.",
+        "Solve a/(x + p) + q = 0: x = {x_root}.",
+        "Vertical asymptote at x = {vert}.",
+        "Read signs off the sketch.",
+        "Answer: {ineq_answer}"
+      ]
+    },
+    {
+      "n": "5.5",
+      "prompt_template": "Graph f undergoes a transformation to h where the domain and range of h are the same as that of f and h'(x) is negative on its domain. Describe a possible transformation.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.transformation",
+      "expected_fn": "reflection in the y-axis followed by a translation to restore the domain",
+      "steps": [
+        "To make h decreasing, reflect f in the y-axis.",
+        "Reflection changes the domain (the asymptote moves).",
+        "Translate to bring the vertical asymptote back to x = {vert}.",
+        "Answer: reflection in the y-axis followed by a horizontal translation."
+      ]
+    }
+  ],
+  "diagram": "hyperbola_solo"
+}

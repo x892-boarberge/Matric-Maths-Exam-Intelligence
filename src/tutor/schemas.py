@@ -53,6 +53,7 @@ class Problem:
     prompt: str
     expected_answer: str
     topic_v2: Optional[str] = None
+    step_scheme: Optional[list] = None
 
 
 @dataclass

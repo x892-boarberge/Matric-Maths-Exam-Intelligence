@@ -1,0 +1,99 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "10.1.1",
+      "prompt_template": "A, B independent. P(A) = {pA}, P(B) = {pB}. Determine P(A and B).",
+      "ranges": {
+        "pA": [
+          "1/3"
+        ],
+        "pB": [
+          "3/4"
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.independent",
+      "expected_fn": "P(A and B) = {pAB}",
+      "steps": [
+        "P(A and B) = P(A) * P(B) for independent events."
+      ]
+    },
+    {
+      "n": "10.1.2",
+      "prompt_template": "Determine P(at least one event occurs).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.union",
+      "expected_fn": "P(A or B) = {p}",
+      "steps": [
+        "P(A or B) = P(A) + P(B) - P(A and B)"
+      ]
+    },
+    {
+      "n": "10.2.1",
+      "prompt_template": "Snow with prob {p_snow}%. If snow, temp below 0 with prob {p_below_snow}%. If no snow, below 0 with prob {p_below_nosnow}%. Draw a tree diagram.",
+      "ranges": {
+        "p_snow": [
+          5
+        ],
+        "p_below_snow": [
+          72
+        ],
+        "p_below_nosnow": [
+          35
+        ]
+      },
+      "marks": 3,
+      "skill_id": "probability.tree",
+      "expected_fn": "see tree diagram",
+      "steps": [
+        "First branch: snow (0.05) or no snow (0.95).",
+        "Second branch: below 0 or not below 0.",
+        "Probabilities multiply along branches."
+      ]
+    },
+    {
+      "n": "10.2.2",
+      "prompt_template": "Calculate P(temp NOT below 0).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "probability.tree",
+      "expected_fn": "P(not below 0) = {p}",
+      "steps": [
+        "P = P(snow) * P(not below | snow) + P(no snow) * P(not below | no snow)",
+        "= 0.05 * 0.28 + 0.95 * 0.65",
+        "= 0.014 + 0.6175 = 0.6315"
+      ]
+    },
+    {
+      "n": "10.3.1",
+      "prompt_template": "10 learners in a line. How many arrangements?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "10! = 3 628 800",
+      "steps": [
+        "Permutation of 10 distinct items."
+      ]
+    },
+    {
+      "n": "10.3.2",
+      "prompt_template": "Calculate probability that 5 learners stand between the 2 youngest.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "probability.counting",
+      "expected_fn": "P = {p}",
+      "steps": [
+        "Treat the 2 youngest as ends of a fixed block of 7.",
+        "Count favourable arrangements.",
+        "Divide by 10!"
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P1",
+    "qnum": "10"
+  }
+}

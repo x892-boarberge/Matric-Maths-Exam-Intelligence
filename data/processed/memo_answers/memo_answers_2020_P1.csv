@@ -1,0 +1,87 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2020,P1,1,1.1.1,algebra.quadratic.solve,x=0 or x=6,x’ —-6x =0,3
+2020,P1,1,1.1.2,algebra.quadratic.solve,x=-0.88 or x=-9.12,x’ +10x+8=0 (correct to TWO decimal places),3
+2020,P1,1,1.1.3,algebra.quadratic.inequality,x<-2 or x>1,(l—x\{x+2)<0,3
+2020,P1,1,1.1.4,algebra.surd.solve,x=7 (x=-2 rejected),Vx+18 =x-2,4
+2020,P1,1,1.2,algebra.simultaneous.solve,x=9/2 or x=2 or y=-3/2 or y=1,"Solve simultaneously for x and y:
+x+y=3 and 2x°+4xy—-y=15",6
+2020,P1,1,1.3,algebra.exponential.proof,11,"If is the largest integer for which n° < 5°”, determine the value of 7. (3)
+[22]",3
+2020,P1,2,2.1,sequences.arithmetic,y=-5,73x%3;y3-I1 ; ... isan arithmetic sequence. Determine the values of x and y.,4
+2020,P1,2,2.2.1,sequences.quadratic,Tn=6n^2-9n,"Determine the general term of the pattern in the form 7, =an*+bn+c.",6
+2020,P1,2,2.2.2,sequences.quadratic,14550,"Calculate the value of the 50"" term of the pattern.",2
+2020,P1,2,2.2.3,sequences.quadratic,S_n=6n^2+3n,"Show that the sum of the first n first-differences of this pattern can be
+given by S, =6n*+3n.",3
+2020,P1,2,2.2.4,sequences.quadratic,n=59,"How many consecutive first-differences were added to the first term of
+the quadratic number pattern to obtain a term in ",3
+2020,P1,3,3.1,sequences.geometric,series is convergent,"Prove that 54.37“ is a convergent geometric series. Show ALL your calculations. (3)
+k=l
+Sy qk _ 2",3
+2020,P1,3,3.2,sequences.geometric,p=5,"If > 4.3 =>? determine the value of p. (5)
+k=p",5
+2020,P1,4,4.1.1,functions.hyperbola,y=2,Write down the equations of the asymptotes of A.,2
+2020,P1,4,4.1.2,functions.hyperbola,y=-x+3,"Determine the equation of the axis of symmetry of / that has a negative
+gradient.",2
+2020,P1,4,4.2.1,functions.parabola,(-5;-8),Write down the coordinates of A.,1
+2020,P1,4,4.2.2,functions.parabola,y>=-8,Write down the range of f-,1
+2020,P1,4,4.2.3,functions.parabola,n=2,Calculate the values of m and n.,3
+2020,P1,4,4.2.4,functions.parabola,65/4 or 16.25,Calculate the area of OCDE.,3
+2020,P1,4,4.2.5,functions.hyperbola,y=2x-9,"Determine the equation of g™’, the inverse of g, inthe form y=...",1
+2020,P1,4,4.2.6,calculus.polynomial,y=-6,"If h(x)=g'(x)+k isa tangent to f determine the coordinates of the
+
+point of contact between A and f (4)
+[23]
+
+Copyright ",4
+2020,P1,5,5.1,functions.exponential,A(0;1),Write down the coordinates of A.,1
+2020,P1,5,5.2,functions.exponential,B(-2;9),Determine the coordinates of B.,4
+2020,P1,5,5.3,functions.exponential,x>0,"Write down the domain of f7'. (2)
+. . 27",1
+2020,P1,5,5.4,functions.exponential,3 units to the right,Describe the translation from f to A(x) = 3F,2
+2020,P1,5,5.5,functions.exponential,x>3,"Determine the values of x for which A(x) <1. (3)
+[12]
+Copyright reserved Please turn over
+
+===== Page 7 =====
+Mathematic",3
+2020,P1,6,6.1.1,finance.future_value,234888.53,What will the investment be worth immediately after the last deposit?,4
+2020,P1,6,6.1.2,finance.compound,253123.54,"If he makes no further payments but leaves the money in the account, how
+much money will be in the account on 31 January",2
+2020,P1,6,6.2,finance.compound,n=4,"Jim bought a new car for R250 000. The value of the car depreciated at a rate of
+22% p.a. annually according to the redu",3
+2020,P1,6,6.3.1,finance.present_value,78173.49,Calculate the value of the loan.,3
+2020,P1,6,6.3.2,finance.present_value,28771.51,"How much interest will Mpho pay in total over the first 5 years? (4)
+[16]",4
+2020,P1,7,7.1,calculus.first_principles,4x,Determine f ‘(x) from first principles if f(x)=2x?-1.,5
+2020,P1,7,7.2.1,calculus.polynomial,2/5 x^3+3x^2,,2
+2020,P1,7,7.2.2,calculus.polynomial,x-3,"(x) if f(x)=——_ osx ¥-> 4
+f(x) if £@)- 5 (4)
+[12]
+Copyright reserved Please turn over
+
+===== Page 8 =====
+Mathematics/P ",3
+2020,P1,8,8.1,calculus.cubic,-1<x<2,For which values of x will g increase?,1
+2020,P1,8,8.2,calculus.cubic,1/2,Write down the x-coordinate of the point of inflection of g.,2
+2020,P1,8,8.3,calculus.cubic,x>1/2,For which values of x will g be concave down?,1
+2020,P1,8,8.4,calculus.cubic,g(x)=-2x^3+3x^2+12x,"If g‘(x)=—6x? + 6x+12, determine the equation of g.",4
+2020,P1,8,8.5,calculus.cubic,y=13.5x-0.25,"Determine the equation of the tangent to g that has the maximum gradient. Write
+
+your answer in the form y=mx+c. (5S)
+
+[",5
+2020,P1,9,9.1,calculus.optimisation,C=90w^2+48wh,Show that the cost to construct the box can be calculated by: Cost =90w? +48wh,4
+2020,P1,9,9.2,calculus.optimisation,w=0.76,Determine the width of the box such that the cost to build the box is a minimum. (6),6
+2020,P1,10,10.1,probability.counting,10^10,How many possible 10-digit telephone numbers could be formed?,1
+2020,P1,10,10.2.1,probability.counting,1.024*10^9,"How many valid 10-digit telephone numbers could be formed by applying
+the given restrictions?",4
+2020,P1,10,10.2.2,probability.counting,64/625 or 0.1024,"Determine the probability that any randomly chosen 10-digit telephone
+number would be a valid phone number. (2)
+[7]
+Copy",2
+2020,P1,11,11.1,probability.tree,0.25 or 1/4,"Calculate the probability that Harry will hit the bull's eye in his first shot and his
+second shot.",2
+2020,P1,11,11.2,probability.tree,0.5 or 1/2,"Calculate the probability that Harry will hit the bull's eye at least twice in his first
+three shots.",2
+2020,P1,11,11.3,probability.tree,2/3 or 0.67,"Glenda also has a 50% chance of hitting the bull's eye on each shot. Harry and
+Glenda will take turns to shoot an arrow ",3

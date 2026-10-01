@@ -1,0 +1,62 @@
+{
+  "stem": "Given: T_n = n^2 + bn + 9 and the first first-difference is 7.",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Show that b = 4.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.quadratic.general",
+      "expected_fn": "b = 4",
+      "steps": [
+        "T_n = n^2 + bn + 9",
+        "T_1 = 1 + b + 9 = b + 10",
+        "T_2 = 4 + 2b + 9 = 2b + 13",
+        "T_2 - T_1 = b + 3 = 7, so b = 4."
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Determine T_60.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.quadratic.term",
+      "expected_fn": "T_60 = 3849",
+      "steps": [
+        "T_n = n^2 + 4n + 9",
+        "T_60 = 3600 + 240 + 9 = 3849."
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Determine the general term of first differences T_p = mp + q.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.quadratic.difference",
+      "expected_fn": "T_p = 2p + 5",
+      "steps": [
+        "T_1 - T_0 style: first diff at position 1 = 7",
+        "d increases by 2 (second difference).",
+        "T_p = 2p + 5."
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "Which consecutive terms have a first difference of 157?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.quadratic.n",
+      "expected_fn": "Between T_76 and T_77",
+      "steps": [
+        "T_n - T_{n-1} = 2n + 3",
+        "2n + 3 = 157",
+        "n = 77."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P1",
+    "qnum": "3"
+  }
+}

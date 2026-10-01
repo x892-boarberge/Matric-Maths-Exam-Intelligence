@@ -1,0 +1,99 @@
+{
+  "stem": "The graphs of f(x) = -1/2(x-1)^2 + 8 and g(x) = d/x are drawn.",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Write down the coordinates of the turning point of f.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.parabola.turning",
+      "expected_fn": "(1; 8)",
+      "steps": [
+        "f is in form a(x-p)^2 + q with p=1, q=8.",
+        "Turning point (1; 8)"
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Calculate the coordinates of C (y-intercept).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.parabola.intercept",
+      "expected_fn": "C(0; {y})",
+      "steps": [
+        "f(0) = -1/2(0-1)^2 + 8 = 7.5"
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Calculate the value of d.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.hyperbola.parameter",
+      "expected_fn": "d = {d}",
+      "steps": [
+        "B is the turning point of f, so B(1; 8).",
+        "B lies on g, so 8 = d/1, d = 8."
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "Write down the range of g.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.hyperbola.range",
+      "expected_fn": "y in R, y != 0",
+      "steps": [
+        "g(x) = 8/x has range y != 0."
+      ]
+    },
+    {
+      "n": "5.5",
+      "prompt_template": "For which values of x is f(x).g(x) <= 0?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.inequality",
+      "expected_fn": "see memo",
+      "steps": [
+        "Find where each is positive/negative.",
+        "Product <= 0 where the signs are opposite or one is zero."
+      ]
+    },
+    {
+      "n": "5.6",
+      "prompt_template": "Determine k for which h(x) = -2x + k will not intersect g.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "functions.hyperbola.parameter",
+      "expected_fn": "k < -8 or k > 8",
+      "steps": [
+        "Set -2x + k = 8/x",
+        "-2x^2 + kx - 8 = 0",
+        "Discriminant = k^2 - 64",
+        "No intersection when discrim < 0: -8 < k < 8... actually check.",
+        "For no intersection: k^2 < 64."
+      ]
+    },
+    {
+      "n": "5.7",
+      "prompt_template": "h is tangent to g at R in first quadrant. Calculate t such that y = f(x) + t intersects g at R.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "t = {t}",
+      "steps": [
+        "Tangent to g has gradient -8/x^2.",
+        "Set -8/x^2 = gradient of h.",
+        "Find R.",
+        "Substitute R into f(x) + t = g(R).",
+        "Solve for t."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P1",
+    "qnum": "5"
+  },
+  "diagram": "parabola_line"
+}

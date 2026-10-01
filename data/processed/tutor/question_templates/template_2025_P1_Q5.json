@@ -1,0 +1,98 @@
+{
+  "stem": "The graphs of f(x) = ax^2 + bx + c and g(x) = -4/(x - 3) + 8 are drawn.",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Write down the domain of g.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.hyperbola.domain",
+      "expected_fn": "x in R, x != 3",
+      "steps": [
+        "Denominator x - 3 = 0 when x = 3.",
+        "x in R, x != 3"
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Write down the range of f.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.parabola.range",
+      "expected_fn": "y <= {q}",
+      "steps": [
+        "Read turning point y-value off diagram."
+      ]
+    },
+    {
+      "n": "5.3.1",
+      "prompt_template": "Determine values of x for which g(x) <= f(x).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.inequality",
+      "expected_fn": "see memo",
+      "steps": [
+        "Read intersection points off the diagram.",
+        "g is below f outside the intersection x-values."
+      ]
+    },
+    {
+      "n": "5.3.2",
+      "prompt_template": "Determine values of x for which f(x) < 6.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.inequality",
+      "expected_fn": "see memo",
+      "steps": [
+        "f(x) < 6 means the parabola lies below y = 6."
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "Show that f(x) = -1/2 x^2 + 3x + 7/2.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.parabola.equation",
+      "expected_fn": "f(x) = -1/2 x^2 + 3x + 7/2",
+      "steps": [
+        "Turning point P = (3; 8) — intersection of asymptotes of g.",
+        "Substitute P and D(5; 6) into f(x) = a(x-p)^2 + q.",
+        "Solve for a.",
+        "Expand to standard form."
+      ]
+    },
+    {
+      "n": "5.5",
+      "prompt_template": "Calculate the length of MT.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "analytical.distance",
+      "expected_fn": "MT = {length}",
+      "steps": [
+        "Find x-intercepts M and T of f and g.",
+        "M at x = -1, T at x = 7.",
+        "MT = 8 units."
+      ]
+    },
+    {
+      "n": "5.6",
+      "prompt_template": "Determine the equation of the tangent to f at D.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "y = -2x + 16",
+      "steps": [
+        "f'(x) = -x + 3",
+        "f'(5) = -2",
+        "y - 6 = -2(x - 5)",
+        "y = -2x + 16"
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "5"
+  },
+  "diagram": "parabola_line"
+}

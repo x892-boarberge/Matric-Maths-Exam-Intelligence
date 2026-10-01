@@ -1,0 +1,117 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2018,P2,1,1.1.1,statistics.frequency,140,"Write down the total number of food items ordered from the menu during
+this hour.",1
+2018,P2,1,1.1.2,statistics.frequency,20<x<=30,Write down the modal class of the data.,1
+2018,P2,1,1.1.3,statistics.frequency,20,How long did it take to order the first 30 food items?,1
+2018,P2,1,1.1.4,statistics.frequency,14 orders,How many food items were ordered in the last 15 minutes?,2
+2018,P2,1,1.1.5,statistics.quartiles,37,"Determine the 75"" percentile for the data.",2
+2018,P2,1,1.1.6,statistics.quartiles,IQR=15.5,"Calculate the interquartile range of the data. (2)
+
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/",2
+2018,P2,1,1.2.1a,statistics.mean,94.67,,2
+2018,P2,1,1.2.1b,statistics.stdev,22.69,,1
+2018,P2,1,1.2.2a,statistics.mean,equal amount,,1
+2018,P2,1,1.2.2b,statistics.stdev,Mary's sigma smaller,,1
+2018,P2,2,2.1,statistics.regression,251,Write down the fastest average serve speed (in km/h) achieved in this tournament.,1
+2018,P2,2,2.2.1,statistics.regression,r=0.52,Which ONE of the given correlation coefficients best fits the plotted data?,1
+2018,P2,2,2.2.2,statistics.regression,fairly scattered increasing,"Use the scatter plot and least squares regression line to motivate your
+answer to QUESTION 2.2.1.",1
+2018,P2,2,2.3,statistics.regression,weak positive relation,"What does the data suggest about the speed of a tennis serve (in km/h) and the height
+of a player (in metres)?",1
+2018,P2,2,2.4,statistics.regression,height 0m impossible,"The equation of the regression line is givenas jy = 27,07 + bx.
+Explain why, in this context, the least squares regressi",1
+2018,P2,3,3.1.1,analytical.gradient,m_KN=-3/2,The gradient of KN,2
+2018,P2,3,3.1.2,analytical.gradient,theta=123.69,"The size of @, the inclination of KN",2
+2018,P2,3,3.2,analytical.gradient,m_KL=1,Show that the gradient of KL is equal to 1.,2
+2018,P2,3,3.3,analytical.line,y=x+3,Determine the equation of the straight line KL in the form y=mx+c.,2
+2018,P2,3,3.4,analytical.distance,sqrt13,Calculate the length of KN.,2
+2018,P2,3,3.5.1,analytical.circle,L(-5;-2),Calculate the possible coordinates of L.,5
+2018,P2,3,3.5.2,analytical.midpoint,L(-5;-2),"Determine the coordinates of L if it is given that KLMN is a
+parallelogram.",2
+2018,P2,3,3.6,analytical.circle,12.5,"T is apointon KL produced. TM is drawn such that TM=LM. Calculate the
+areaof AKIN. (4)
+[22]
+Copyright reserved Please tu",4
+2018,P2,4,4.1,analytical.circle,F(3;1),Write down the coordinates of F.,1
+2018,P2,4,4.2,analytical.distance,FS=5,Calculate the length of FS.,2
+2018,P2,4,4.3,analytical.distance,HG=10,Write down the length of HG.,1
+2018,P2,4,4.4,analytical.circle,tangents from common point,Give a reason why JH = JK.,1
+2018,P2,4,4.5.1,analytical.circle,FJ=5sqrt17,"The distance FJ, with reasons, if it is given that JK = 20",3
+2018,P2,4,4.5.2,analytical.circle,(x-m)^2+(y-n)^2=100,"The equation of the circle with centre G in terms of m and 7 in the
+
+form (x-a)’ +(y—-by =r’",1
+2018,P2,4,4.5.3,analytical.circle,G(12;-11),"The coordinates of G, if it is further given that the equation of
+tangent JK is x =22 (7)
+[18]
+
+Copyright reserved Pleas",6
+2018,P2,5,5.1.1,trig.unitcircle,k=-2,Calculate the value of k.,2
+2018,P2,5,5.1.2a,trig.unitcircle,tan theta=-1/2,,1
+2018,P2,5,5.1.2b,trig.reduction,2/sqrt5,,2
+2018,P2,5,5.1.2c,trig.identity,(1-2sqrt3)/(2sqrt5),,3
+2018,P2,5,5.1.3,trig.unitcircle,18.3,"Use a calculator to calculate the value of tan(20-—40°) correct to
+ONE decimal place.",3
+2018,P2,5,5.2,trig.identity,2tan2x,"Prove the following identity: ssn ss — = =2 tan 2x (5)
+cosx—sinx cosx+sinx
+52°",5
+2018,P2,5,5.3,trig.identity,7 1/2,"Evaluate, without using a calculator: > cos* A (5)
+A=38°
+[23]
+Copyright reserved Please turn over
+
+===== Page 9 =====
+Ma",5
+2018,P2,6,6.1,trig.graph,120,Write down the period of ff.,1
+2018,P2,6,6.2,trig.equation,t=90+k.120,The point A(¢; 2) lies on the graph. Determine the general solution of t.,3
+2018,P2,6,6.3,trig.graph,(90;2),"On the grid provided in the ANSWER BOOK, draw the graph of f for the interval
+
+x €[-120° ; 180°]. Clearly show ALL asymp",4
+2018,P2,6,6.4,trig.graph,x in (-60;-30) or (60;90),"Use the graph to determine for which value(s) of x will f(x)22 for
+
+x €[-120° ; 180°].",1
+2018,P2,6,6.5,trig.graph,translation 40 left,"Describe the transformation of graph f to form the graph of
+
+3 o
+[13]
+
+Copyright reserved Please turn over
+
+===== Page 1",1
+2018,P2,7,7.1,trig.3d,AB=2h,Determine the distance AB in terms of h.,1
+2018,P2,7,7.2,trig.3d,BC=h sqrt(25-24cos^2x),"Show that the distance between the strange object at point B and the control room at
+
+point C is given by BC = hy 25—24c",4
+2018,P2,8,8.1.1a,euclidean.circle,angle at centre = 2x circumference,,2
+2018,P2,8,8.1.1b,euclidean.circle,O1=52,,3
+2018,P2,8,8.1.2,euclidean.circle,bisects,"M,",3
+2018,P2,8,8.2.1,euclidean.circle,FG parallel BC,Explain why FC || GH.,4
+2018,P2,8,8.2.2,euclidean.circle,x=31,"Calculate, with reasons, the length of DM. (5)
+[16]
+
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematic",3
+2018,P2,9,9.1,euclidean.circle,answer,"In the diagram, JKLM is acyclic quadrilateral and the circle has centre O.
+Prove the theorem which states that J +L = 18",5
+2018,P2,9,9.2.1a,euclidean.circle,PR parallel NQ,,2
+2018,P2,9,9.2.1b,euclidean.circle,M2=x,,2
+2018,P2,9,9.2.2,euclidean.circle,MN/NR=MS/SQ,Prove that SCDB is a cyclic quadrilateral.,6
+2018,P2,10,10.1.1,euclidean.circle,FBDM cyclic quad,MC isa tangent to the circle at C,3
+2018,P2,10,10.1.2,euclidean.circle,B3=F1,AACB ||| ACMD,3
+2018,P2,10,10.1.3,euclidean.circle,CDB similar CBE,,4
+2018,P2,10,10.2.1,euclidean.circle,BC=4,"CM"" AM (6)
+DC? AB",3
+2018,P2,10,10.2.2,euclidean.circle,DB=6/sqrt5,"AM = sin’? x (2)
+AB
+[16]
+TOTAL: 150
+Copyright reserved
+
+===== Page 16 =====
+Mathematics/P2 DBE/November 2018
+NSC
+INFORMA",4

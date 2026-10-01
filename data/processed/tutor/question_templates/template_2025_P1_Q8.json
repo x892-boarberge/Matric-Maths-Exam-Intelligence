@@ -1,0 +1,77 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Determine f'(x) from first principles if f(x) = {a}x + {b}.",
+      "ranges": {
+        "a": [
+          -2,
+          -3,
+          -4
+        ],
+        "b": [
+          3,
+          5,
+          7
+        ]
+      },
+      "marks": 4,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = {a}",
+      "steps": [
+        "f'(x) = lim_(h->0) [f(x+h) - f(x)]/h",
+        "f(x+h) = {a}(x+h) + {b} = {a}x + {a}h + {b}",
+        "f(x+h) - f(x) = {a}h",
+        "[f(x+h) - f(x)]/h = {a}",
+        "As h -> 0, f'(x) = {a}"
+      ]
+    },
+    {
+      "n": "8.2.1",
+      "prompt_template": "Determine g'(x) if g(x) = {a}x^4 + {b}x.",
+      "ranges": {
+        "a": [
+          -3,
+          -4,
+          5
+        ],
+        "b": [
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.derivative.rules",
+      "expected_fn": "g'(x) = {four_a}x^3 + {b}",
+      "steps": [
+        "g'(x) = {four_a}x^3 + {b}"
+      ]
+    },
+    {
+      "n": "8.2.2",
+      "prompt_template": "Determine dy/dx if y = ({a}x^4 + 1)/x^2.",
+      "ranges": {
+        "a": [
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.derivative.rules",
+      "expected_fn": "dy/dx = {two_a}x - 2/x^3",
+      "steps": [
+        "y = {a}x^2 + x^-2",
+        "dy/dx = {two_a}x - 2x^-3",
+        "= {two_a}x - 2/x^3"
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "8"
+  }
+}

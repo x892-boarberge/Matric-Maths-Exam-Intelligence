@@ -1,0 +1,2121 @@
+[
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "1"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "1.1.1",
+        "marks": 2,
+        "skill_id": "algebra.quadratic.solve",
+        "expected": "x = 0 or x = 3",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "First root x=0",
+            "memo_line": "x=0",
+            "marks": 1,
+            "method_tag": "factorise",
+            "is_final": true
+          },
+          {
+            "i": 2,
+            "desc": "Second root x=3",
+            "memo_line": "x=3",
+            "marks": 1,
+            "method_tag": "factorise",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 28,
+          "classes": {
+            "procedural": 17,
+            "presentation": 3,
+            "conceptual": 2,
+            "notation": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "x(x-3)="
+      },
+      {
+        "n": "1.1.2",
+        "marks": 4,
+        "skill_id": "algebra.quadratic.solve",
+        "expected": "x = 1.71 or x = 0.29",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Rearrange to standard form",
+            "memo_line": "2x^2-4x+1=0",
+            "marks": 1,
+            "method_tag": "formula",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Substitute into formula",
+            "memo_line": "x=(4±sqrt(8))/(4)",
+            "marks": 1,
+            "method_tag": "formula",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "First root",
+            "memo_line": "x=1.71",
+            "marks": 1,
+            "method_tag": "formula",
+            "is_final": true
+          },
+          {
+            "i": 4,
+            "desc": "Second root",
+            "memo_line": "x=0.29",
+            "marks": 1,
+            "method_tag": "formula",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 28,
+          "classes": {
+            "procedural": 17,
+            "presentation": 3,
+            "conceptual": 2,
+            "notation": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "2x* +1=4x (correct to TWO decimal places)"
+      },
+      {
+        "n": "1.1.3",
+        "marks": 4,
+        "skill_id": "algebra.quadratic.inequality",
+        "expected": "x < -1 or x > 3",
+        "question_text": "1.1.3 x? -2x-3>0",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Factorise",
+            "memo_line": "(x-3)(x+1)>0",
+            "marks": 1,
+            "method_tag": "inequality",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Critical values",
+            "memo_line": "x=3 or x=-1",
+            "marks": 1,
+            "method_tag": "inequality",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Solution intervals",
+            "memo_line": "x<-1 or x>3",
+            "marks": 2,
+            "method_tag": "inequality",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 15,
+          "classes": {
+            "notation": 8,
+            "procedural": 2,
+            "conceptual": 2
+          },
+          "diagram_assumption_pct": 6.7
+        },
+        "clean_text": "x?-2x-3>"
+      },
+      {
+        "n": "1.1.4",
+        "marks": 5,
+        "skill_id": "algebra.exponential.solve",
+        "expected": "x = 3",
+        "question_text": "1.1.4 2% —-2*? -32 =0\n\n115 V-2x4+4-x=2",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Apply exponential law",
+            "memo_line": "2^2x-2^2*2^x-32=0",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Factorise",
+            "memo_line": "(2^x-8)(2^x+4)=0",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "State 2^x=8",
+            "memo_line": "2^x=8",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Reject 2^x=-4",
+            "memo_line": "2^x != -4",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": false
+          },
+          {
+            "i": 5,
+            "desc": "Answer x=3",
+            "memo_line": "x=3",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 6,
+          "classes": {
+            "procedural": 3,
+            "conceptual": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "2% 2% _32="
+      },
+      {
+        "n": "1.1.5",
+        "marks": 4,
+        "skill_id": "algebra.surd.solve",
+        "expected": "x = 0",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Isolate root",
+            "memo_line": "sqrt(-2x+4)=2+x",
+            "marks": 1,
+            "method_tag": "surd",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Square both sides",
+            "memo_line": "-2x+4=(2+x)^2",
+            "marks": 1,
+            "method_tag": "surd",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Rearrange to standard form",
+            "memo_line": "x^2+6x=0",
+            "marks": 1,
+            "method_tag": "surd",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Answers with selection",
+            "memo_line": "x=0 (x=-6 rejected)",
+            "marks": 1,
+            "method_tag": "surd",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 11,
+          "classes": {
+            "procedural": 4,
+            "conceptual": 2,
+            "notation": 2,
+            "arithmetic": 1
+          },
+          "diagram_assumption_pct": 9.1
+        },
+        "clean_text": "Vo2x+d-x="
+      },
+      {
+        "n": "1.2",
+        "marks": 5,
+        "skill_id": "algebra.simultaneous.solve",
+        "expected": "x = 7/2 y = -4 or x = 1 y = 1",
+        "question_text": "1.2 Solve for x and y simultaneously:\n\n2x+y=3\n\ny +xy=2",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Write eq 1",
+            "memo_line": "y=3-2x",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": false
+          },
+          {
+            "i": 1,
+            "desc": "Write eq 1",
+            "memo_line": "x=3-y",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Substitute",
+            "memo_line": "y^2+(3-y)^2=2",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Substitute",
+            "memo_line": "(3-2x)^2+(3-2x)x=2",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Standard form",
+            "memo_line": "y^2+3y-4=0",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Standard form",
+            "memo_line": "2x^2-9x+7=0",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Both x-values",
+            "memo_line": "x=7/2 or x=1",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": true
+          },
+          {
+            "i": 4,
+            "desc": "Both y-values",
+            "memo_line": "y=-4 or y=1",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": true
+          },
+          {
+            "i": 5,
+            "desc": "Both y-values",
+            "memo_line": "y=-4 or y=1",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": true
+          },
+          {
+            "i": 5,
+            "desc": "Both x-values",
+            "memo_line": "x=7/2 or x=1",
+            "marks": 1,
+            "method_tag": "substitution",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 9,
+          "classes": {
+            "procedural": 5,
+            "reading": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Solve for x and y simultaneously: 2x+y=3 V+xy="
+      },
+      {
+        "n": "1.3",
+        "marks": 3,
+        "skill_id": "algebra.proof.integer",
+        "expected": "n is odd for n > 2",
+        "question_text": "1.3 Consider the product f + i 1+ i et we\n2 3 4\n\nEach factor in the product is of the form ( + +) for n>2.\nn\n\nDetermine ALL the values of » for which the product will be an integer value.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Express as products",
+            "memo_line": "1x2x3x...x(n+1)=1x2x3x...xnx(n+1)",
+            "marks": 1,
+            "method_tag": "proof",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "n is odd for n>2",
+            "memo_line": "n is odd",
+            "marks": 1,
+            "method_tag": "proof",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {},
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Consider the product [1 + 1][1 + 1)[1 + 1) 20 304 Each factor in the product is of the form (Hlj for n>2. n Determine ALL the values of n for which the product will be an integer value."
+      }
+    ],
+    "total_marks": 27,
+    "diagram_page": 3,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p3.png",
+    "stem_text_clean": ""
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "2"
+    },
+    "stem_text": "2.1.1 Calculate the sum of this series.",
+    "subquestions": [
+      {
+        "n": "2.1.1",
+        "marks": 2,
+        "skill_id": "sequences.ap.sum",
+        "expected": "S_20 = 1090",
+        "question_text": "2.1.1 Calculate the sum of this series.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute into S_n",
+            "memo_line": "S20=20/2[2(7)+(20-1)(5)]",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer",
+            "memo_line": "S20=1090",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "notation": 2,
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Calculate the sum of this series."
+      },
+      {
+        "n": "2.1.2",
+        "marks": 4,
+        "skill_id": "sequences.ap.sum",
+        "expected": "S = 13 310",
+        "question_text": "2.1.2 The original arithmetic series is extended to 75 terms. The sum of these\n75 terms is 14 400. Using sigma notation, write down an equation for the\nsum of the terms added to the original series.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "General term",
+            "memo_line": "Tn=5n+2",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Compute S75-S20",
+            "memo_line": "S75-S20=14400-1090",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Write summation",
+            "memo_line": "sum from 21 to 75",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Answer",
+            "memo_line": "=13310",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "notation": 2,
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "The original arithmetic series is extended to 75 terms. The sum of these 75 terms is 14 400. Using sigma notation, write down an equation for the sum of the terms added to the original series."
+      },
+      {
+        "n": "2.2.1",
+        "marks": 3,
+        "skill_id": "sequences.quadratic.difference",
+        "expected": "T_98 = 9437",
+        "question_text": "2.2.1 If Ty, of this quadratic pattern is 9 632, calculate the value of 7,,.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "98th first difference",
+            "memo_line": "=2(98)-1=195",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Subtract from T98",
+            "memo_line": "T98=9632-195",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Answer",
+            "memo_line": "T98=9437",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "If T, ofthis quadratic patternis 9 632, calculate the value of 7."
+      },
+      {
+        "n": "2.2.2",
+        "marks": 5,
+        "skill_id": "sequences.quadratic.general",
+        "expected": "T_n = n^2 - 2n + 29",
+        "question_text": "2.2.2 If it is further given that the third term of the quadratic pattern is 32,\ndetermine the general term, 7, of the quadratic pattern.\n\nCopyright reserved Please turn over\n\n(2).\n(4)\n(4)\n(5)\n(4)\n\n(6)\n\n(3)\n\n[27]\n\n2)\n\n(4)\n\nG3)\n\n65)\n[14]\n\nMathematics/P 1 4 DBE/November 2024\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Second difference",
+            "memo_line": "2a=2",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Find a",
+            "memo_line": "a=1",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Find b",
+            "memo_line": "b=-2",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Find c",
+            "memo_line": "c=29",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": false
+          },
+          {
+            "i": 5,
+            "desc": "Write Tn",
+            "memo_line": "Tn=n^2-2n+29",
+            "marks": 1,
+            "method_tag": "arith",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "If it is further given that the third term of the quadratic pattern is 32, determine the general term, 7,, of the quadratic pattern."
+      }
+    ],
+    "total_marks": 14,
+    "diagram_page": 3,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p3.png",
+    "stem_text_clean": ""
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "3"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "3.1",
+        "marks": 2,
+        "skill_id": "sequences.gp.term",
+        "expected": "r_3 = 1.5 cm",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Radius of 3rd circle",
+            "memo_line": "1.5",
+            "marks": 1,
+            "method_tag": "geom",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down the radius of the 3™ circle. [©)]"
+      },
+      {
+        "n": "3.2",
+        "marks": 4,
+        "skill_id": "sequences.gp.sum",
+        "expected": "S_10 = 150.80",
+        "question_text": "3.2 Calculate the sum of the areas of the first 10 circles. (4)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State a",
+            "memo_line": "a=36pi",
+            "marks": 1,
+            "method_tag": "geom",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "State r",
+            "memo_line": "r=1/4",
+            "marks": 1,
+            "method_tag": "geom",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Substitute into S_n",
+            "memo_line": "S10=36pi((1/4)^10-1)/(1/4-1)",
+            "marks": 1,
+            "method_tag": "geom",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Answer",
+            "memo_line": "S10=150.80",
+            "marks": 1,
+            "method_tag": "geom",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "notation": 1,
+            "arithmetic": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Calculate the sum of the areas of the first 10 circles. “)"
+      },
+      {
+        "n": "3.3",
+        "marks": 4,
+        "skill_id": "sequences.gp.term",
+        "expected": "n = 10",
+        "question_text": "3.3 Which circle has a diameter of = cm?\n128 (4)\n[10]",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Radius target",
+            "memo_line": "3/256",
+            "marks": 1,
+            "method_tag": "geom",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Set up general term",
+            "memo_line": "3/256=6(1/2)^(n-1)",
+            "marks": 1,
+            "method_tag": "geom",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Simplify",
+            "memo_line": "1/512=(1/2)^(n-1)",
+            "marks": 1,
+            "method_tag": "geom",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Answer n",
+            "memo_line": "n=10",
+            "marks": 1,
+            "method_tag": "geom",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Which circle has a diameter of i& cm? @ {"
+      }
+    ],
+    "total_marks": 10,
+    "diagram_page": 4,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p4.png",
+    "stem_text_clean": "A circle with radius 6 cm is drawn. A second, smaller circle is drawn through the centre of the first circle and also touches the first circle internally, as shown in the diagram. A third, smaller circle is drawn through the centre of the second circle and touches the second circle internally. The process of drawing circles continues and forms a geometric pattern."
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "4"
+    },
+    "stem_text": "4.1 Calculate the value of a. (2)\n42 Write down the range of f. qd)\n43 Sketch the graph of f Clearly show the intercepts with the axes and asymptotes,\n\nif any. (3)\n\n44 It is further given that C isapointon f at y= >.\n\nDetermine the coordinates of C!, the image of C, when C is reflected about the line\ny=x. GB)\n[9]\n\nCopyright reserved Please turn over\n\nMathematics/P1 5 DBE/November 2024\nNSC Confidential",
+    "subquestions": [
+      {
+        "n": "4.1",
+        "marks": 2,
+        "skill_id": "functions.exponential.value",
+        "expected": "a = 2/3",
+        "question_text": "4.1 Calculate the value of a. (2)\n42 Write down the range of f. qd)\n43 Sketch the graph of f Clearly show the intercepts with the axes and asymptotes,\n\nif any. (3)\n\n44 It is further given that C isapointon f at y= >.\n\nDetermine the coordinates of C!, the image of C, when C is reflected about the line\ny=x. GB)\n[9]\n\nCopyright reserved Please turn over\n\nMathematics/P1 5 DBE/November 2024\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute into f",
+            "memo_line": "-5/9=a^2-1",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer a",
+            "memo_line": "a=2/3",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {},
+        "clean_text": "Calculate the value of a. °)"
+      },
+      {
+        "n": "4.2",
+        "marks": 1,
+        "skill_id": "functions.exponential.range",
+        "expected": "y > -1",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Range",
+            "memo_line": "y>-1",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down the range of /."
+      },
+      {
+        "n": "4.3",
+        "marks": 3,
+        "skill_id": "functions.exponential.sketch",
+        "expected": "increasing; asymptote y=-1; y-intercept (0;0)",
+        "question_text": "",
+        "steps": [],
+        "diagnostic": {
+          "total": 1,
+          "classes": {},
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Sketch the graph of f. Clearly show the intercepts with the axes and asymptotes, if any. 3) . . B ."
+      },
+      {
+        "n": "4.4",
+        "marks": 3,
+        "skill_id": "functions.exponential.value",
+        "expected": "x = -3",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute 19",
+            "memo_line": "19=(2/3)^x-1",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer x",
+            "memo_line": "x=-3",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "C coordinates",
+            "memo_line": "C(-3;19/8)",
+            "marks": 1,
+            "method_tag": "exponential",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {},
+        "clean_text": "1t is further given that C isapointon fat y= T Determine the coordinates of C’, the image of C, when C is reflected about the line y=x. 3)"
+      }
+    ],
+    "total_marks": 9,
+    "diagram_page": 4,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p4.png",
+    "stem_text_clean": "Given: f(x)=a*~1 for a>0. B[z;’?s) isa pointon f,"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "5"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "5.1",
+        "marks": 1,
+        "skill_id": "functions.hyperbola.parameter",
+        "expected": "p = -1",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State p",
+            "memo_line": "p=-1",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down the value of p."
+      },
+      {
+        "n": "5.2",
+        "marks": 2,
+        "skill_id": "functions.line.intercept",
+        "expected": "y = -2",
+        "question_text": "5.2 Determine the equation of the horizontal asymptote of f (2)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute x=1",
+            "memo_line": "y=1-3",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer",
+            "memo_line": "y=-2",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Determine the equation of the horizontal asymptote of f [0))"
+      },
+      {
+        "n": "5.3",
+        "marks": 2,
+        "skill_id": "functions.hyperbola.equation",
+        "expected": "a = -3",
+        "question_text": "5.3 Calculate the value of a. (2)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute point",
+            "memo_line": "1=a/(0-1)",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Solve for a",
+            "memo_line": "a=-3",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {},
+          "diagram_assumption_pct": 50.0
+        },
+        "clean_text": "Calculate the value of a."
+      },
+      {
+        "n": "5.4",
+        "marks": 3,
+        "skill_id": "functions.inequality",
+        "expected": "-1/2 <= x < 1",
+        "question_text": "5.4 For which values of x is f(x) >0? G3)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Find x-intercept",
+            "memo_line": "x=-1/2",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "State interval",
+            "memo_line": "x in [-1/2;1]",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "reading": 1,
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "For which values of x is f(x)20?"
+      },
+      {
+        "n": "5.5",
+        "marks": 2,
+        "skill_id": "functions.transformation",
+        "expected": "reflection in y-axis then 2 units right",
+        "question_text": "5.5 Graph f undergoes a transformation to h where:\n\ne The domain and range of / are the same as that of f\n\ne A'(x), the derivative of h, is negative on its domain\n\nDescribe a possible transformation that f could have undergone to result in A. Q)\n\n[10]\n\nCopyright reserved Please turn over\n\nMathematics/P1 6 DBE/November 2024\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Reflection in y-axis",
+            "memo_line": "reflection y-axis",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Translation right",
+            "memo_line": "translate 2 right",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Graph f undergoes a transformation to / where: ® The domain and range of / are the same as that of / o h'!(x), the derivative of A, is negative on its domain Describe a possible transformation that £ could have undergone to result in 4. 2)"
+      }
+    ],
+    "total_marks": 10,
+    "diagram_page": 5,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p5.png",
+    "stem_text_clean": "Sketched below is the graph of f(x) = —2 +¢ having the domain (-0 ;1)U (1; ). x+p The graph of f cuts the y-axisat (0; 1). A line of symmetry of f is givenby g(x)=x-3. y g 1 x 2"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "6"
+    },
+    "stem_text": "6.1 Calculate the coordinates of B, the turning point of f @G)",
+    "subquestions": [
+      {
+        "n": "6.1",
+        "marks": 3,
+        "skill_id": "functions.parabola.turning",
+        "expected": "B(2; 9)",
+        "question_text": "6.1 Calculate the coordinates of B, the turning point of f @G)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Method for x",
+            "memo_line": "x=-4/(2(-1))",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Value of x",
+            "memo_line": "x=2",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Value of y",
+            "memo_line": "y=9",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {},
+        "clean_text": "Calculate the coordinates of B, the turning point of f. [©)]"
+      },
+      {
+        "n": "6.2",
+        "marks": 3,
+        "skill_id": "functions.parabola.intercept",
+        "expected": "A(-1; 0) and AC: y = 2x+2",
+        "question_text": "6.2 Show that the equation of the line through A and C is given by g(x) =2x+2. (3)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Find A",
+            "memo_line": "A(-1;0)",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Gradient of AC",
+            "memo_line": "m=2",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Equation of AC",
+            "memo_line": "y=2x+2",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {},
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Show that the equation of the line through A and C is given by g(x)=2x+2. [©))"
+      },
+      {
+        "n": "6.3",
+        "marks": 5,
+        "skill_id": "functions.optimisation.length",
+        "expected": "Max EH = 4; EH = -x^2+2x+3",
+        "question_text": "6.3 Calculate the maximum length of EH for f > g. (4)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Difference EH",
+            "memo_line": "EH=-x^2+4x+5-(2x+2)",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Simplify",
+            "memo_line": "EH=-x^2+2x+3",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "x-value",
+            "memo_line": "x=1",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Length",
+            "memo_line": "EH_max=4",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Calculate the maximum length of EH for f > g. )"
+      },
+      {
+        "n": "6.4",
+        "marks": 5,
+        "skill_id": "functions.parabola.parameter",
+        "expected": "m = -2",
+        "question_text": "6.4 Given: k(x) = f(x+m)=—x? —2mx—m? +4x+4m+5\nDetermine the value of m such that g is a tangent to &. (5)\n\n[15]\n\nCopyright reserved Please turn over\n\nMathematics/P1 7 DBE/November 2024\n\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "k'(x)",
+            "memo_line": "k'(x)=-2x-2m+4",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "k'(x)=2",
+            "memo_line": "k'(x)=2",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "x=1-m",
+            "memo_line": "x=1-m",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Substitute",
+            "memo_line": "=2(1-m)+2",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": false
+          },
+          {
+            "i": 5,
+            "desc": "Answer m",
+            "memo_line": "m=-2",
+            "marks": 1,
+            "method_tag": "parabola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "conceptual": 2
+          },
+          "diagram_assumption_pct": 33.3
+        },
+        "clean_text": "Given: k(x) = f(x+m)=-x*=2mx—m* +4x+4m+5 Determine the value of m such that g is a tangent to k. )"
+      }
+    ],
+    "total_marks": 16,
+    "diagram_page": 6,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p6.png",
+    "stem_text_clean": "In the diagram below, the graphs of f(x)=—-x* +4x+5 and g, astraight line, are drawn. C(3:8) is a point of intersection of f and g. EH is drawn parallel to the y-axis, with E apointon f and H apointon g. y A ] x"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "7"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "7.1",
+        "marks": 3,
+        "skill_id": "finance.compound",
+        "expected": "A = R14 706.56",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State i and n",
+            "memo_line": "i=6.8/400; n=40",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Substitute",
+            "memo_line": "A=5000(1+6.8/400)^40",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Answer",
+            "memo_line": "A=14706.56",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 9,
+          "classes": {
+            "procedural": 5,
+            "conceptual": 3
+          },
+          "diagram_assumption_pct": 11.1
+        },
+        "clean_text": "Mary's grandparents deposited R5 000 into a savings account on the day that she was born. The account pays interest at a rate of 6,8% p.a., compounded quarterly. Calculate the accumulated amount in this account on Mary's 16\" birthday."
+      },
+      {
+        "n": "7.2",
+        "marks": 2,
+        "skill_id": "finance.simple_interest",
+        "expected": "r = 12.5%",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute into simple decay",
+            "memo_line": "1/2=1-4i",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer r",
+            "memo_line": "r=12.5%",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "After 4 years, the value of a printer was half of its original value. Determine the rate at which the value of the printer depreciated over this period, if depreciation was calculated according to a straight-line method."
+      },
+      {
+        "n": "7.3.1",
+        "marks": 2,
+        "skill_id": "finance.loan.interest",
+        "expected": "R38 058.80",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Amount paid",
+            "memo_line": "2300.98x60",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Interest",
+            "memo_line": "=38058.80",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {},
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Calculate the total interest that he will pay over the 5 years."
+      },
+      {
+        "n": "7.3.2",
+        "marks": 7,
+        "skill_id": "finance.loan.n",
+        "expected": "12 months earlier",
+        "question_text": "7.3.2 Tshepo paid R22 300,98 (his monthly instalment and an additional\nR20 000) on 1 March 2024 into the loan account. He continues to pay the\noriginal monthly instalment thereafter. How many months earlier will\nTshepo repay the loan?",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State i and n",
+            "memo_line": "i=13.5/1200; n=24",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Substitute P formula",
+            "memo_line": "P=2300.98[1-(1+13.5/1200)^-n]/(13.5/1200)",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Logs",
+            "memo_line": "-n=log(0.766)",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Answer n",
+            "memo_line": "n=23.83",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": false
+          },
+          {
+            "i": 5,
+            "desc": "Months earlier",
+            "memo_line": "12 months",
+            "marks": 1,
+            "method_tag": "finance",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "reading": 2,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Tshepo was granted a loan of R100 000 on 1 March2022 at an interest rate of 13,5% p.a., compounded monthly. Tshepo agreed to repay the loan over 5 years in monthly instalments of R2 300,98, starting on 1 April 2022."
+      }
+    ],
+    "total_marks": 14,
+    "diagram_page": 7,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p7.png",
+    "stem_text_clean": ""
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "8"
+    },
+    "stem_text": "8.1.1 — [Bx - 5x\n4.51\"\nWont 2 yr",
+    "subquestions": [
+      {
+        "n": "8.1.1",
+        "marks": 2,
+        "skill_id": "calculus.derivative.rules",
+        "expected": "3 - 10x",
+        "question_text": "8.1.1 — [Bx - 5x\n4.51\"\nWont 2 yr",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Derivative first term",
+            "memo_line": "3",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Derivative second term",
+            "memo_line": "-10x",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Determine: d 1.1 —Px-5x? 8 obese] 0 i 2y"
+      },
+      {
+        "n": "8.1.2",
+        "marks": 4,
+        "skill_id": "calculus.derivative.rules",
+        "expected": "-4x^(-3) - 7/3 x^(4/3)",
+        "question_text": "8.1.2 8 '@) if 8) =a x",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Rewrite as powers",
+            "memo_line": "2x^-2-x^(7/3)",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Derivative of first",
+            "memo_line": "-4x^-3",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Derivative of second",
+            "memo_line": "-(7/3)x^(4/3)",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Determine: d 1.1 —Px-5x? 8 obese] 0 i 2y"
+      },
+      {
+        "n": "8.2",
+        "marks": 3,
+        "skill_id": "calculus.tangent",
+        "expected": "m = -2; y = -2x+3",
+        "question_text": "8.2 Determine the equation of the tangent to f(x)=x'?—4x°+2x+3 at x=2.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Find m",
+            "memo_line": "m=-2",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Find y",
+            "memo_line": "y=-1",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Equation of tangent",
+            "memo_line": "y=-2x+3",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Determine the equation of the tangent to f(x) =x\" —4x* +2x+3 at x=2."
+      },
+      {
+        "n": "8.3.1",
+        "marks": 5,
+        "skill_id": "calculus.derivative.first_principles",
+        "expected": "f'(x) = -12x",
+        "question_text": "8.3.1 Determine f’(x) from first principles.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute into first principles",
+            "memo_line": "f'(x)=lim(f(x+h)-f(x))/h",
+            "marks": 1,
+            "method_tag": "first_principles",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Expand f(x+h)",
+            "memo_line": "f(x+h)=-6x^2-12xh-6h^2",
+            "marks": 1,
+            "method_tag": "first_principles",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Simplify",
+            "memo_line": "-12xh-6h^2",
+            "marks": 1,
+            "method_tag": "first_principles",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Factor out h",
+            "memo_line": "h(-12x-6h)",
+            "marks": 1,
+            "method_tag": "first_principles",
+            "is_final": false
+          },
+          {
+            "i": 5,
+            "desc": "Answer",
+            "memo_line": "-12x",
+            "marks": 1,
+            "method_tag": "first_principles",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "notation": 3
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Given: f(x)=-6x*"
+      },
+      {
+        "n": "8.3.2",
+        "marks": 1,
+        "skill_id": "calculus.derivative.domain",
+        "expected": "x >= 0",
+        "question_text": "8.3.2 Write down how you will restrict the domain of f such that f, the\n\ninverse of f is a function.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Domain of inverse",
+            "memo_line": "x<=0",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {},
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down how you will restrict the domain of f such that f~', the inverse of f; is a function."
+      },
+      {
+        "n": "8.3.3",
+        "marks": 3,
+        "skill_id": "calculus.inverse",
+        "expected": "y = ±sqrt(-x/6); x <= 0",
+        "question_text": "8.3.3 Determine the equation of f' for f(x) <0. Write your answer in the\nform y=...\n\nCopyright reserved Please turn over\n\nG3)\n\n(2)\n\n2)\n\n)\n[14]\n\n(2)\n\n(4)\n\nGB)\n\n(6)\n\n(1)\n\nG3)\n[18]\n\nMathematics/P1 8 DBE/November 2024\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Swap x and y",
+            "memo_line": "x=-6y^2",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Solve for y",
+            "memo_line": "y=±sqrt(-x/6)",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Choose negative branch",
+            "memo_line": "y=-sqrt(-x/6)",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Determine the equation of £~ for f~'(x)<0. Write your answer in the form y=... Copyright rescrved Please tum over 3) @ @) ) [14] @) @) 3) ®) 1) 3)"
+      }
+    ],
+    "total_marks": 18,
+    "diagram_page": 7,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p7.png",
+    "stem_text_clean": ""
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "9"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "9.1",
+        "marks": 2,
+        "skill_id": "calculus.cubic.increasing",
+        "expected": "x < 1 or x > 5/2",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "k(x)",
+            "memo_line": "1/(x-2)",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "For which values of x is f decreasing?"
+      },
+      {
+        "n": "9.2",
+        "marks": 2,
+        "skill_id": "calculus.cubic.intercept",
+        "expected": "(1; 0) and (5/2; 0)",
+        "question_text": "9.2 Write down the x-intercepts of f’, the derivative of (2)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "First x-intercept",
+            "memo_line": "x=1",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Second x-intercept",
+            "memo_line": "x=5/2",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {},
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down the x-intercepts of £, the derivative of f."
+      },
+      {
+        "n": "9.3",
+        "marks": 2,
+        "skill_id": "calculus.cubic.concave",
+        "expected": "x > 7/4",
+        "question_text": "9.3 For which values of x will f be concave up? (2)\n\n94 Determine the value of & for which y= /(x)+k will have THREE positive\nx-intercepts. (2)\n\n[3]",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Method",
+            "memo_line": "5/2+1/2=3",
+            "marks": 1,
+            "method_tag": "hyperbola",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "notation": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "For which values of x will f be concave up?"
+      },
+      {
+        "n": "9.4",
+        "marks": 2,
+        "skill_id": "calculus.cubic.parameter",
+        "expected": "-9 < k < -8",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Point of inflection",
+            "memo_line": "7/4",
+            "marks": 1,
+            "method_tag": "derivative",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 1,
+            "reading": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Determine the value of & for which y= f(x)+k will have THREE positive x-intercepts."
+      }
+    ],
+    "total_marks": 8,
+    "diagram_page": 8,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p8.png",
+    "stem_text_clean": "A(1;9) and B(g;x) are the turning points of graph f below. C(0;7) isthe y-intercept of £ f / 9 x"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "10"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "10.1",
+        "marks": 3,
+        "skill_id": "calculus.optimisation.max",
+        "expected": "t = 3; s'(3) = 27",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Set s'(t)=0",
+            "memo_line": "-6t+18=0",
+            "marks": 1,
+            "method_tag": "kinematics",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Solve for t",
+            "memo_line": "t=3",
+            "marks": 1,
+            "method_tag": "kinematics",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Answer s'(3)",
+            "memo_line": "s'(3)=27",
+            "marks": 1,
+            "method_tag": "kinematics",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 1,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Calculate the maximum speed that the cyclist reached on this ride."
+      },
+      {
+        "n": "10.2",
+        "marks": 5,
+        "skill_id": "calculus.optimisation.model",
+        "expected": "s(t) = -t^3+9t^2; s(6) = 108",
+        "question_text": "10.2 Calculate the distance between town P and town T. (5)\n[8]\n\nCopyright reserved Please turn over\n\nMathematics/P1 9 DBE/November 2024\n\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Factorise",
+            "memo_line": "-3t(t-6)=0",
+            "marks": 1,
+            "method_tag": "kinematics",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Values t",
+            "memo_line": "t=0 or t=6",
+            "marks": 1,
+            "method_tag": "kinematics",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "a and b",
+            "memo_line": "a=-1; b=9",
+            "marks": 1,
+            "method_tag": "kinematics",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Substitute t=6",
+            "memo_line": "s(6)=-216+324",
+            "marks": 1,
+            "method_tag": "kinematics",
+            "is_final": false
+          },
+          {
+            "i": 5,
+            "desc": "Answer",
+            "memo_line": "s(6)=108",
+            "marks": 1,
+            "method_tag": "kinematics",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 4,
+          "classes": {
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Calculate the distance between town P and town T."
+      }
+    ],
+    "total_marks": 8,
+    "diagram_page": 8,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p8.png",
+    "stem_text_clean": "A cyclist rode from town P and stopped at town T. The speed (in km/h) at which this cyclist rode, is represented by the equation s /(f) = ~ 3> +18¢. NOTE: Speed is the rate of change in distance with respect to time."
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "11"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "11.1",
+        "marks": 2,
+        "skill_id": "probability.venn",
+        "expected": "2; 3;4;5; 6;9;11",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Venn diagram values",
+            "memo_line": "2; 3; 4; 5; 6; 9; 11",
+            "marks": 1,
+            "method_tag": "venn",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 100.0
+        },
+        "clean_text": "Draw a Venn diagram to represent ALL the learners sitting for these examinations. [€))"
+      },
+      {
+        "n": "11.2",
+        "marks": 2,
+        "skill_id": "probability.set",
+        "expected": "7/20 = 0.35",
+        "question_text": "11.2 Calculate the probability that a learner, chosen at random, will sit for examinations in\nat least TWO of the subjects.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Numerator",
+            "memo_line": "4+2+5+3",
+            "marks": 1,
+            "method_tag": "venn",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer",
+            "memo_line": "7/20",
+            "marks": 1,
+            "method_tag": "venn",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 100.0
+        },
+        "clean_text": "Calculate the probability that a learner, chosen at random, will sit for examinations in at least TWO of the subjects. [0}"
+      },
+      {
+        "n": "11.3",
+        "marks": 4,
+        "skill_id": "probability.independence",
+        "expected": "not independent",
+        "question_text": "11.3 Determine if the events: sitting for examinations in Mathematics and sitting for\nexaminations in Tourism are independent. Support your answer with the necessary\ncalculations.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "P(M)xP(T)",
+            "memo_line": "22/40 x 16/40",
+            "marks": 1,
+            "method_tag": "probability",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Simplify",
+            "memo_line": "11/50",
+            "marks": 1,
+            "method_tag": "probability",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "P(M and T)",
+            "memo_line": "7/40",
+            "marks": 1,
+            "method_tag": "probability",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Not independent",
+            "memo_line": "not independent",
+            "marks": 1,
+            "method_tag": "probability",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "conceptual": 1,
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 50.0
+        },
+        "clean_text": "Determine if the events: sitting for examinations in Mathematics and sitting for examinations in Tourism are independent. Support your answer with the necessary calculations. “)"
+      }
+    ],
+    "total_marks": 8,
+    "diagram_page": 9,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p9.png",
+    "stem_text_clean": "A certain number of learners are sitting for examinations in Mathematics, Tourism and Geography. All these learners sit for at least one of these examinations. The total number of learners who sit for Mathematics (M), is 22. The total number of learners sitting for Tourism (T), is 16. The total number of learners sitting for Geography (G), is 18. 5 learners sit for Mathematics and Tourism, but not Geography. 4 learners sit for Mathematics and Geography, but not Tourism. 3 learners sit for Tourism and Geography, but not Mathematics. 6 learners sit for only Tourism. s e 0 000 00"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P1",
+      "question_number": "12"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "12.1",
+        "marks": 2,
+        "skill_id": "probability.counting",
+        "expected": "67 600",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Letters",
+            "memo_line": "26x26",
+            "marks": 1,
+            "method_tag": "counting",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Digits and answer",
+            "memo_line": "10x10=67600",
+            "marks": 1,
+            "method_tag": "counting",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 35,
+          "classes": {
+            "conceptual": 7,
+            "procedural": 6,
+            "reading": 6,
+            "notation": 1
+          },
+          "diagram_assumption_pct": 8.6
+        },
+        "clean_text": "Determine how many different codes can be formed if letters and digits may be repeated. @)"
+      },
+      {
+        "n": "12.2",
+        "marks": 4,
+        "skill_id": "probability.counting",
+        "expected": "15 390",
+        "question_text": "12.2 Determine how many different codes can be formed if:\ne = The letters D, F, I, Q, U and V may NOT be used\ne The code may NOT start witha W ora Z\ne Letters or digits may NOT be repeated\ne = The code ends with an odd digit",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "18",
+            "memo_line": "18",
+            "marks": 1,
+            "method_tag": "counting",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "19",
+            "memo_line": "19",
+            "marks": 1,
+            "method_tag": "counting",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "9",
+            "memo_line": "9",
+            "marks": 1,
+            "method_tag": "counting",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "5 and answer",
+            "memo_line": "5; 15390",
+            "marks": 1,
+            "method_tag": "counting",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 35,
+          "classes": {
+            "conceptual": 7,
+            "procedural": 6,
+            "reading": 6,
+            "notation": 1
+          },
+          "diagram_assumption_pct": 8.6
+        },
+        "clean_text": "Determine how many different codes can be formed if: e Theletters D, F, I, Q, U and V may NOT be used e The code may NOT start witha W ora Z e Letters or digits may NOT be repeated o The code ends with an odd digit “)"
+      },
+      {
+        "n": "12.3",
+        "marks": 2,
+        "skill_id": "probability.counting",
+        "expected": "75.44%",
+        "question_text": "12.3 The company wishes to increase the number of 4-character codes formed in",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "24x9x25x5",
+            "memo_line": "24x9x25x5",
+            "marks": 1,
+            "method_tag": "counting",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Percentage",
+            "memo_line": "75.44%",
+            "marks": 1,
+            "method_tag": "counting",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 35,
+          "classes": {
+            "conceptual": 7,
+            "procedural": 6,
+            "reading": 6,
+            "notation": 1
+          },
+          "diagram_assumption_pct": 8.6
+        },
+        "clean_text": "The company wishes to increase the number of 4-character codes formed in QUESTION 12.2 by allowing the letters D, F, I, Q, U and V to be used. Calculate the percentage increase in the number of different codes that can now be formed. ? 18] TOTAL:"
+      }
+    ],
+    "total_marks": 8,
+    "diagram_page": 9,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p1_exam_maths_p9.png",
+    "stem_text_clean": ""
+  }
+]

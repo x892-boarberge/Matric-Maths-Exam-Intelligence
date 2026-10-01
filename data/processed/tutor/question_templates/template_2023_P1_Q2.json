@@ -1,0 +1,115 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "2.1.1",
+      "prompt_template": "Arithmetic series: {a} + {a_d} + {a_2d} + ... Determine T_{91}.",
+      "ranges": {
+        "a": [
+          5,
+          7,
+          9
+        ],
+        "d": [
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 3,
+      "skill_id": "sequences.ap.term",
+      "expected_fn": "T_91 = {T91}",
+      "steps": [
+        "T_n = a + (n-1)d",
+        "T_91 = {a} + 90({d})",
+        "T_91 = {T91}"
+      ]
+    },
+    {
+      "n": "2.1.2",
+      "prompt_template": "Calculate S_{91}.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.ap.sum",
+      "expected_fn": "S_91 = {S91}",
+      "steps": [
+        "S_n = n/2[2a + (n-1)d]",
+        "S_91 = 91/2[2({a}) + 90({d})]",
+        "S_91 = {S91}"
+      ]
+    },
+    {
+      "n": "2.1.3",
+      "prompt_template": "Calculate n for which T_n = {Tn}.",
+      "ranges": {
+        "Tn": [
+          517
+        ]
+      },
+      "marks": 3,
+      "skill_id": "sequences.ap.term",
+      "expected_fn": "n = {n_ans}",
+      "steps": [
+        "T_n = {a} + (n-1)({d})",
+        "Set = {Tn}",
+        "Solve for n."
+      ]
+    },
+    {
+      "n": "2.2.1",
+      "prompt_template": "Quadratic pattern: T_1 = {T1}, T_2 - T_1 = {d1}, T_3 - T_2 = {d2}. Show that T_5 = {T5}.",
+      "ranges": {
+        "T1": [
+          3
+        ],
+        "d1": [
+          9
+        ],
+        "d2": [
+          21
+        ],
+        "T5": [
+          111
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.quadratic.term",
+      "expected_fn": "T_5 = {T5}",
+      "steps": [
+        "Work forward using given differences."
+      ]
+    },
+    {
+      "n": "2.2.2",
+      "prompt_template": "Show T_n = 6n^2 - 9n + 6.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.quadratic.general",
+      "expected_fn": "T_n = 6n^2 - 9n + 6",
+      "steps": [
+        "Second difference = 12, so 2a = 12, a = 6.",
+        "Then 3a + b = 9 gives b = -9.",
+        "a + b + c = 3 gives c = 6."
+      ]
+    },
+    {
+      "n": "2.2.3",
+      "prompt_template": "Show the pattern is increasing for all n in N.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.quadratic.monotone",
+      "expected_fn": "T_n - T_{n-1} > 0 for all n",
+      "steps": [
+        "First difference = 12n - 15.",
+        "For n >= 1, 12n - 15 >= -3.",
+        "For n >= 2, 12n - 15 > 0.",
+        "Pattern is increasing for n >= 2."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P1",
+    "qnum": "2"
+  }
+}

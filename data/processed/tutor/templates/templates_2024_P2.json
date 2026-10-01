@@ -1,0 +1,1707 @@
+[
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "1"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "1.1",
+        "marks": 3,
+        "skill_id": "stats.regression.equation",
+        "expected": "y = 39.46 - 0.59x",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Compute a",
+            "memo_line": "a=39.46",
+            "marks": 1,
+            "method_tag": "regression",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Compute b",
+            "memo_line": "b=-0.59",
+            "marks": 1,
+            "method_tag": "regression",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Equation",
+            "memo_line": "y=39.46-0.59x",
+            "marks": 1,
+            "method_tag": "regression",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 4,
+          "classes": {
+            "procedural": 4
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Determine the equation of the least squares regression line for the data."
+      },
+      {
+        "n": "1.2",
+        "marks": 1,
+        "skill_id": "stats.correlation.r",
+        "expected": "r = -0.8",
+        "question_text": "1.2 Write down the correlation coefficient. qd)\n13 The coach uses the least squares regression line to set the target for the minimum\n\nnumber of push-ups by each team member according to their weight. Predict the\nnumber of push-ups that a member of the team, who weighs 29 kg, should do to meet\n\nthe target. (2)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Correlation coefficient",
+            "memo_line": "r=-0.8",
+            "marks": 1,
+            "method_tag": "regression",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down the correlation coefficient."
+      },
+      {
+        "n": "1.3",
+        "marks": 2,
+        "skill_id": "stats.regression.predict",
+        "expected": "y = 22.35",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute 29",
+            "memo_line": "y=39.46-0.59(29)",
+            "marks": 1,
+            "method_tag": "regression",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer",
+            "memo_line": "y=22.35",
+            "marks": 1,
+            "method_tag": "regression",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 1,
+            "reading": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "The coach uses the least squares regression line to set the target for the minimum number of push-ups by each team member according to their weight. Predict the number of push-ups that a member of the team, who weighs 29 kg, should do to meet the target. &)"
+      },
+      {
+        "n": "1.4",
+        "marks": 1,
+        "skill_id": "stats.regression.predict",
+        "expected": "y = 18.33",
+        "question_text": "1.4 Write down the mean number of push-ups for the given data. (1)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Predicted value",
+            "memo_line": "y=18.33",
+            "marks": 1,
+            "method_tag": "regression",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 1,
+            "reading": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down the mean number of push-ups for the given data. (1) L5 The players trained hard during the season. At the end of the season, the coach reported that each player was able to do 5 more push-ups per minute than they did at the beginning of the season. How does the increase in the number of push-ups influence the standard deviation of the data?"
+      },
+      {
+        "n": "1.5",
+        "marks": 1,
+        "skill_id": "stats.standard_deviation.invariance",
+        "expected": "no influence",
+        "question_text": "1.5 The players trained hard during the season. At the end of the season, the coach reported\n\nthat each player was able to do 5 more push-ups per minute than they did at the\nbeginning of the season. How does the increase in the number of push-ups influence\n\nthe standard deviation of the data? 60)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "No influence",
+            "memo_line": "no influence",
+            "marks": 1,
+            "method_tag": "stdev",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": ""
+      },
+      {
+        "n": "1.6",
+        "marks": 2,
+        "skill_id": "stats.regression.outlier",
+        "expected": "6; difference 10",
+        "question_text": "1.6 At the beginning of the season, the coach used the least squares regression line as the\nminimum target for a player to aim for. Determine the maximum possible increase in\nthe number of push-ups that a team member must obtain to reach the minimum target. (2)\n[10]\n\nCopyright reserved Please turn over\n\nMathematics/P2 4 DBE/November 2024\n\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Identify member",
+            "memo_line": "6",
+            "marks": 1,
+            "method_tag": "regression",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Difference",
+            "memo_line": "10",
+            "marks": 1,
+            "method_tag": "regression",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "At the beginning of the season, the coach used the least squares regression line as the minimum target for a player to aim for. Determine the maximum possible increase in the number of push-ups that a team member must obtain to reach the minimum target. [03)"
+      }
+    ],
+    "total_marks": 10,
+    "diagram_page": 3,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p3.png",
+    "stem_text_clean": "At the beginning of a season, the coach of a junior boys' rugby team recorded the weight (in kg) of the 15 players in his team and the number of push-ups that each player was able to do in one minute. The data is represented in the table and scatter plot below. The least squares regression line for the data is drawn. .. Weight 34 (3240 27|33 |28 | 27| 55|39 |44 | 30| 57|28 3231 (in kg) (x) Number of push-ups per 26 (21| 6 [20]16]26 23| 7 |18 |14 17| 8 | 28|25 |20 minute (y) Scatter plot Ee e i 2 = £ g 5 2, @ & = 3 & Weight (in kg)"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "2"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "2.1",
+        "marks": 1,
+        "skill_id": "stats.median",
+        "expected": "65",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State median",
+            "memo_line": "median=65",
+            "marks": 1,
+            "method_tag": "quartiles",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": ""
+      },
+      {
+        "n": "2.2",
+        "marks": 1,
+        "skill_id": "stats.quartile",
+        "expected": "44",
+        "question_text": "2.2",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State Q1",
+            "memo_line": "Q1=44",
+            "marks": 1,
+            "method_tag": "quartiles",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": ""
+      },
+      {
+        "n": "2.3",
+        "marks": 2,
+        "skill_id": "stats.iqr",
+        "expected": "40",
+        "question_text": "2.3",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State Q3",
+            "memo_line": "Q3=84",
+            "marks": 1,
+            "method_tag": "quartiles",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "IQR",
+            "memo_line": "IQR=40",
+            "marks": 1,
+            "method_tag": "quartiles",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {},
+        "clean_text": ""
+      },
+      {
+        "n": "2.4",
+        "marks": 2,
+        "skill_id": "stats.boxplot",
+        "expected": "box and whiskers ending at 5 and 120",
+        "question_text": "2.4",
+        "steps": [],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 100.0
+        },
+        "clean_text": ""
+      },
+      {
+        "n": "2.5",
+        "marks": 2,
+        "skill_id": "stats.percentage",
+        "expected": "56.67%",
+        "question_text": "2.5",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Count employees",
+            "memo_line": "34 employees",
+            "marks": 1,
+            "method_tag": "quartiles",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Percentage",
+            "memo_line": "56.67%",
+            "marks": 1,
+            "method_tag": "quartiles",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {},
+        "clean_text": ""
+      },
+      {
+        "n": "2.6",
+        "marks": 2,
+        "skill_id": "stats.interval",
+        "expected": "90 minutes",
+        "question_text": "2.6\n\n>\n3\n3\nee\nvo\ni\nvo\nHes\nB\nE\n1o)\n\nTime (in minutes)\nEstimate the median travel time.\nEstimate the lower quartile.\nEstimate the interquartile range.\nThe minimum and maximum times taken for an employee to travel to work are\n5 and 120 minutes respectively. On the scaled line in the ANSWER BOOK, draw a box\n\nand whisker diagram to indicate the distribution of the data as represented in the ogive\nabove.\n\nThe company manager decided that all employees who travel for an hour or more will\nbe allowed to work from home for part of the day. What percentage of the employees\nwill be allowed to work from home for part of the day?\n\nEmployees work 8 hours in a normal working day. The manager decided on the\nfollowing rule for time to work from home:\n\ne An employee is allowed to work half an hour from home for each time\ninterval of 20 minutes, or part thereof, above an hour taken to travel to work.\n\nOn a certain day, an employee takes 110 minutes to travel to work. Calculate the\nnumber of minutes that this employee will be allowed to work from home on this day.\n\nCopyright reserved Please turn over\n\na)\n()\n2)\n\n2)\n\n(2)\n\n2)\n{10]\n\nMathematics/P2 DBE/November 2024\n\n5\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Number of intervals",
+            "memo_line": "3",
+            "marks": 1,
+            "method_tag": "quartiles",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Total time",
+            "memo_line": "90 minutes",
+            "marks": 1,
+            "method_tag": "quartiles",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Ogive 65 - 60 + 55 50 45 40 35"
+      }
+    ],
+    "total_marks": 10,
+    "diagram_page": 4,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p4.png",
+    "stem_text_clean": "The cumulative frequency graph (ogive) shows the time taken (in minutes) for 60 employees to travel to work each morning."
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "3"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "3.1",
+        "marks": 2,
+        "skill_id": "analytical_geom.gradient",
+        "expected": "m_DC = -3/4",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Gradient formula",
+            "memo_line": "m_DC=(-9-0)/(3-(-9))",
+            "marks": 1,
+            "method_tag": "gradient",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Gradient answer",
+            "memo_line": "m_DC=-3/4",
+            "marks": 1,
+            "method_tag": "gradient",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 4,
+          "classes": {
+            "procedural": 4
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Calculate the gradient of DC. )"
+      },
+      {
+        "n": "3.2",
+        "marks": 2,
+        "skill_id": "analytical_geom.line_equation",
+        "expected": "y = -3/4 x - 27/4",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute point",
+            "memo_line": "0=-3/4(-9)+c",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Equation of DC",
+            "memo_line": "y=-3/4x-27/4",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 50.0
+        },
+        "clean_text": "Determine the equation of DC in the form y = + c. @"
+      },
+      {
+        "n": "3.3",
+        "marks": 1,
+        "skill_id": "analytical_geom.parameter",
+        "expected": "k = -6",
+        "question_text": "3.3 Show that k=-6. ()",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute B into line",
+            "memo_line": "k=-3/4(-1)-27/4",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer k",
+            "memo_line": "k=-6",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 3
+          },
+          "diagram_assumption_pct": 66.7
+        },
+        "clean_text": "Show that k=-6."
+      },
+      {
+        "n": "3.4",
+        "marks": 2,
+        "skill_id": "analytical_geom.distance",
+        "expected": "DC = 15 units",
+        "question_text": "3.4 Calculate the length of DC. (2)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Distance formula",
+            "memo_line": "DC=sqrt((3+9)^2+(-9-0)^2)",
+            "marks": 1,
+            "method_tag": "distance",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer DC",
+            "memo_line": "DC=15",
+            "marks": 1,
+            "method_tag": "distance",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 3
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Calculate the length of DC. @"
+      },
+      {
+        "n": "3.5",
+        "marks": 2,
+        "skill_id": "analytical_geom.ratio",
+        "expected": "DB/DC = 1/3",
+        "question_text": "3.5 Calculate the ratio of DB :\nDC (2)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "DB length",
+            "memo_line": "DB=5",
+            "marks": 1,
+            "method_tag": "distance",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Ratio DB/DC",
+            "memo_line": "DB/DC=1/3",
+            "marks": 1,
+            "method_tag": "distance",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 100.0
+        },
+        "clean_text": "Caleulate the ratio of 2. DC @)"
+      },
+      {
+        "n": "3.6",
+        "marks": 4,
+        "skill_id": "analytical_geom.area_ratio",
+        "expected": "1/9",
+        "question_text": "3.6 If M isa point on AD such that AC || MB, calculate the ratio of aa .\nArea AACD (4)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Ratio DM/DA",
+            "memo_line": "DM/DA=1/3",
+            "marks": 1,
+            "method_tag": "area",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Area rule",
+            "memo_line": "Area MBD / Area ACD = 1/2(DM)(DB) sin D / 1/2(DA)(DC) sin D",
+            "marks": 1,
+            "method_tag": "area",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Substitute",
+            "memo_line": "=1/3 x 1/3",
+            "marks": 1,
+            "method_tag": "area",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Answer ratio",
+            "memo_line": "=1/9",
+            "marks": 1,
+            "method_tag": "area",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "If M isapointon AD such that AC || MB, calculate the ratio of AT2AMBD Area AACD"
+      },
+      {
+        "n": "3.7",
+        "marks": 6,
+        "skill_id": "analytical_geom.point",
+        "expected": "A(-3;15)",
+        "question_text": "3.7 If it is further given that the gradient of AD is -—4 and the length of AD is\nV612 units, calculate the coordinates of A. (6)\n[19]\n\nCopyright reserved Please turn over\n\nMathematics/P2 6 DBE/November 2024\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Gradient of AD",
+            "memo_line": "m_AD=-4",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Equation AD",
+            "memo_line": "y=-4x+3",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Substitute into circle",
+            "memo_line": "(x-3)^2+(y+9)^2=612",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Standard form",
+            "memo_line": "17x^2-102x-459=0",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": false
+          },
+          {
+            "i": 5,
+            "desc": "x-values",
+            "memo_line": "x=9 or x=-3",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": false
+          },
+          {
+            "i": 6,
+            "desc": "A coordinates",
+            "memo_line": "A(-3;15)",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 100.0
+        },
+        "clean_text": "Ifit is further given that the gradient of AD is —4 and the length of AD is /612 units, calculate the coordinates of A. (6)"
+      }
+    ],
+    "total_marks": 19,
+    "diagram_page": 5,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p5.png",
+    "stem_text_clean": "In the diagram below, AACD has vertices A, D(3;-9) and C(-9;0), where A isa point in the second quadrant. B(-1 ; k) lies on side DC. y A C(-9;0) [9] X B(-1; 0 DG ;-9)"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "4"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "4.1",
+        "marks": 2,
+        "skill_id": "analytical_geom.circle.point",
+        "expected": "L(-1;-3)",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "L coordinates",
+            "memo_line": "L(-1;-3)",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 6,
+          "classes": {
+            "procedural": 4,
+            "presentation": 1
+          },
+          "diagram_assumption_pct": 16.7
+        },
+        "clean_text": "Write down the coordinates of L. ©)"
+      },
+      {
+        "n": "4.2",
+        "marks": 4,
+        "skill_id": "analytical_geom.tangent.equation",
+        "expected": "y = -1/3 x + 10",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Gradient MP",
+            "memo_line": "m_MP=3",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Gradient ST",
+            "memo_line": "m_ST=-1/3",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Substitute point",
+            "memo_line": "9=-1/3(3)+c",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Equation of tangent",
+            "memo_line": "y=-1/3x+10",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Determine the equation of tangent ST to the circle at P. “@"
+      },
+      {
+        "n": "4.3",
+        "marks": 4,
+        "skill_id": "analytical_geom.circle.equation",
+        "expected": "x^2 + y^2 - 2x - 6y - 30 = 0",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute point for r2",
+            "memo_line": "(3-1)^2+(9-3)^2=r^2",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Value of r squared",
+            "memo_line": "r^2=40",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "LHS of equation",
+            "memo_line": "(x-1)^2+(y-3)^2=40",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Expand to general form",
+            "memo_line": "x^2+y^2-2x-6y-30=0",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Show that the equation of the circle with centre M is x* +)’ —2x—6y—30=0. [©)"
+      },
+      {
+        "n": "4.4",
+        "marks": 2,
+        "skill_id": "analytical_geom.circle.point",
+        "expected": "d = 7",
+        "question_text": "4.4 Show that d=7. (2)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Substitute y=1",
+            "memo_line": "d^2+(1)^2-2d-6(1)-30=0",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Standard form",
+            "memo_line": "d^2-2d-35=0",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Answer d",
+            "memo_line": "d=7",
+            "marks": 1,
+            "method_tag": "circle",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 6,
+          "classes": {
+            "procedural": 4,
+            "presentation": 1
+          },
+          "diagram_assumption_pct": 16.7
+        },
+        "clean_text": "Show that d=7. @"
+      },
+      {
+        "n": "4.5",
+        "marks": 5,
+        "skill_id": "analytical_geom.angle",
+        "expected": "L = 45 degrees",
+        "question_text": "4.5 Calculate the size of L (5)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "tan angle POV",
+            "memo_line": "tan POV=3",
+            "marks": 1,
+            "method_tag": "gradient",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Angle POV",
+            "memo_line": "POV=71.57",
+            "marks": 1,
+            "method_tag": "gradient",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Gradient RL",
+            "memo_line": "m_RL=1/2",
+            "marks": 1,
+            "method_tag": "gradient",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Angle RUN",
+            "memo_line": "RUN=26.57",
+            "marks": 1,
+            "method_tag": "gradient",
+            "is_final": false
+          },
+          {
+            "i": 5,
+            "desc": "Angle L",
+            "memo_line": "L=45",
+            "marks": 1,
+            "method_tag": "gradient",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 4,
+          "classes": {
+            "procedural": 2,
+            "notation": 1
+          },
+          "diagram_assumption_pct": 75.0
+        },
+        "clean_text": "Calculate the size of L ®)"
+      },
+      {
+        "n": "4.6",
+        "marks": 4,
+        "skill_id": "analytical_geom.prove",
+        "expected": "PT is perpendicular to RT",
+        "question_text": "4.6 TR isa tangent to the circle at R. Prove that PT L RT. @G)\n\n[20]\n\nCopyright reserved Please turn over\n\nMathematics/P2 DBE/November 2024\n\n7\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Gradient RM",
+            "memo_line": "m_RM=-1/3",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Gradient RT",
+            "memo_line": "m_RT=3",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Product equals -1",
+            "memo_line": "m_RT x m_PT=-1",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Conclude perpendicular",
+            "memo_line": "PT perp RT",
+            "marks": 1,
+            "method_tag": "line",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {},
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "TR is a tangent to the circle at R. Prove that PT L RT. [©)]"
+      }
+    ],
+    "total_marks": 21,
+    "diagram_page": 6,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p6.png",
+    "stem_text_clean": "In the diagram, M(1 ; 3) is the centre of the circle. The circle cuts the x-axisat N. STisa tangent to the circle at P(3;9). R(d; 1), with >0, and L lie on the circle. O and V are the x-intercepts of PL and RL respectively. Yy S P(3:9) T M(1;3) R@;1) (o} X L"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "5"
+    },
+    "stem_text": "5.1.1 cosA (2)",
+    "subquestions": [
+      {
+        "n": "5.1.1",
+        "marks": 2,
+        "skill_id": "trig.reduction.cos",
+        "expected": "cos A = -3/5",
+        "question_text": "5.1.1 cosA (2)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Value of r",
+            "memo_line": "r=5",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Cos A",
+            "memo_line": "cos A=-3/5",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "cosA [#"
+      },
+      {
+        "n": "5.1.2",
+        "marks": 2,
+        "skill_id": "trig.double_angle",
+        "expected": "cos 2A = -7/25",
+        "question_text": "5.1.2 cos2A (2)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Double angle formula",
+            "memo_line": "cos 2A=2cos^2 A-1",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Substitute",
+            "memo_line": "=2(-3/5)^2-1",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Answer",
+            "memo_line": "cos 2A=-7/25",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "cos2A @"
+      },
+      {
+        "n": "5.1.3",
+        "marks": 4,
+        "skill_id": "trig.compound.sin",
+        "expected": "sin(A-B) = 24/25",
+        "question_text": "5.1.3 sin(A-B), if itis further given that sinB =; and 90° <B<360°\n\n(4)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State x",
+            "memo_line": "x=-3",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Compound formula",
+            "memo_line": "sin(A-B)=sinA cosB-cosA sinB",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Substitute values",
+            "memo_line": "=(-4/5)(-3/5)-(-3/5)(4/5)",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Answer",
+            "memo_line": "sin(A-B)=24/25",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 2,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 33.3
+        },
+        "clean_text": "sin(A-B), ifitis further given that sinB :% and 90° <B <360° @"
+      },
+      {
+        "n": "5.2",
+        "marks": 8,
+        "skill_id": "trig.identity.simplify",
+        "expected": "-p/4",
+        "question_text": "5.2 If cos@=p, express the following expression in terms of p:\ncos( - 45°]sin{ % - 45°]\n2 2\n2 (4)\n[12]\n\nCopyright reserved Please turn over\n\nMathematics/P2 8 DBE/November 2024\nNSC Confidential",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Multiply by 2 over 2",
+            "memo_line": "x2/2",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Double angle",
+            "memo_line": "=sin(a-90)/4",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Co-function",
+            "memo_line": "=-cos a/4",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Answer",
+            "memo_line": "=-p/4",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "conceptual": 1,
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "If cosa=p, express the following expression in terms of p: cos| & — 45° |sin[ & - 45° 2 2 2 “) 12}"
+      }
+    ],
+    "total_marks": 16,
+    "diagram_page": 7,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p7.png",
+    "stem_text_clean": ""
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "6"
+    },
+    "stem_text": "6.1.1 Use the compound angle identity given above to derive a formula for\ncos(x + y).",
+    "subquestions": [
+      {
+        "n": "6.1.1",
+        "marks": 2,
+        "skill_id": "trig.compound.prove",
+        "expected": "cos(x+y) = cosx cosy - sinx siny",
+        "question_text": "6.1.1 Use the compound angle identity given above to derive a formula for\ncos(x + y).",
+        "steps": [],
+        "diagnostic": {
+          "total": 2,
+          "classes": {},
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Use the compound angle identity given above to derive a formula for cos(x+y). )"
+      },
+      {
+        "n": "6.1.2",
+        "marks": 6,
+        "skill_id": "trig.identity.prove",
+        "expected": "tan(x+y) = RHS",
+        "question_text": "6.1.2 Hence, or otherwise, show that:\ncos(90° — x)cos y + sin(— y)cos(180°+ x\n( deosy Cy)eos( ) — tan(e+y)\ncos x cos(360° + y)+ sin(360° — x)sin y",
+        "steps": [],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 3
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Hence, or otherwise, show that: o in(— o cos(90° x)cosy+sm(. »)cos(180 \"+ x) _ wanx+) cosxcos(360° + y)+sin(360° - x)sin y ©"
+      },
+      {
+        "n": "6.2",
+        "marks": 5,
+        "skill_id": "trig.equation",
+        "expected": "x = 199.47 or x = 340.53",
+        "question_text": "6.2 Given: f(x)=/6sin? x —11c0s(90° + x) +7\nSolve for x in the interval x e( ° 5 360°) if f(x)=2.\n—_ in?",
+        "steps": [],
+        "diagnostic": {
+          "total": 10,
+          "classes": {
+            "procedural": 7,
+            "conceptual": 1,
+            "reading": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Given: f(x)=1/6sin” x—11cos(90°+x) +7 Solve for x in the interval x e (0° ; 360°) if f(x)=2. ©) ."
+      },
+      {
+        "n": "6.3.1",
+        "marks": 3,
+        "skill_id": "trig.maximum",
+        "expected": "4/3",
+        "question_text": "6.3.1 Calculate the maximum value of g.",
+        "steps": [],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Calculate the maximum value of g."
+      },
+      {
+        "n": "6.3.2",
+        "marks": 1,
+        "skill_id": "trig.equation",
+        "expected": "x = 180",
+        "question_text": "6.3.2 Write down the smallest possible value of x for which g will have a\n\nmaximum value in the interval x e( a 360°].\n\nCopyright reserved\n\nPlease turn over\n\n(2)\n\n(6)\n\n(6)\n\n3)\n\n(1)\n[18]\n\nMathematics/P2 9 DBE/November 2024\nNSC Confidential",
+        "steps": [],
+        "diagnostic": {
+          "total": 10,
+          "classes": {
+            "procedural": 7,
+            "conceptual": 1,
+            "reading": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down the smallest possible value of x for which g will have a maximum value in the interval x € (0° ; 360°]. ["
+      }
+    ],
+    "total_marks": 17,
+    "diagram_page": 8,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p8.png",
+    "stem_text_clean": ""
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "7"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "7.1",
+        "marks": 1,
+        "skill_id": "trig.graph.value",
+        "expected": "x = 90",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State x",
+            "memo_line": "x=90",
+            "marks": 1,
+            "method_tag": "graph",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 1,
+          "classes": {
+            "reading": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down the equation of the asymptote of 1 in the interval x e [0° ; 180°]."
+      },
+      {
+        "n": "7.2",
+        "marks": 2,
+        "skill_id": "trig.graph.inequality",
+        "expected": "x = -180 or x in (-90;0]",
+        "question_text": "7.2 Write down the values of x in the interval x e[-180° ; 0°] for which f(x)<0. (2)\n73 Given: g(x)=cos 2x+1\n734 Write down the period of g. (1)",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State interval",
+            "memo_line": "x=-180 or x in (-90;0]",
+            "marks": 2,
+            "method_tag": "graph",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 2
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Write down the values of x in the interval xe[-180°; 0°] for which f(x)<0. [#"
+      },
+      {
+        "n": "7.3.1",
+        "marks": 1,
+        "skill_id": "trig.graph.period",
+        "expected": "180",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "State period",
+            "memo_line": "period=180",
+            "marks": 1,
+            "method_tag": "graph",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 2,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Given: g(x)=cos2x+"
+      },
+      {
+        "n": "7.3.2",
+        "marks": 3,
+        "skill_id": "trig.graph.sketch",
+        "expected": "turning points at -90 and 90; shape; y-intercept (0;2)",
+        "question_text": "7.3.2 On the grid given in the ANSWER BOOK, draw the graph of\ng(x)=cos2x+1 for the interval x e[—180°; 180°]. Clearly show the\n\nintercepts with the axes as well as the coordinates of the turning points. G3)\n74 Use the graphs to determine the general solution of 2cos’ x—sinx=0. (4)\n{11}\n\nCopyright reserved Please turn over\n\nMathematics/P2 10 DBE/November 2024\nNSC Confidential",
+        "steps": [],
+        "diagnostic": {
+          "total": 2,
+          "classes": {
+            "reading": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "On the grid given in the ANSWER BOOK, draw the graph of g(x)=cos2x+1 for the interval xe[-180°;180°]. Clearly show the intercepts with the axes as well as the coordinates of the turning points."
+      },
+      {
+        "n": "7.4",
+        "marks": 4,
+        "skill_id": "trig.equation.general",
+        "expected": "x = 45 + k.180; k in Z",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Rewrite 2cos^2x as tanx",
+            "memo_line": "2cos^2x=tanx",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Use cos2x",
+            "memo_line": "cos2x+1=tanx",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Answer",
+            "memo_line": "x=45+k.180",
+            "marks": 1,
+            "method_tag": "trig",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 1,
+            "arithmetic": 1
+          },
+          "diagram_assumption_pct": 0.0
+        },
+        "clean_text": "Use the graphs to determine the general solution of 2cos’ x—sinx=0. “)"
+      }
+    ],
+    "total_marks": 11,
+    "diagram_page": 9,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p9.png",
+    "stem_text_clean": "In the diagram below, the graph of f(x)=tanx is drawn for the interval xe [~180°;180°]. y | i 3 1 | i 2 | | 1 i 1 | | I | : -180° -90° 0 90° 80° ¥ | | | -1 : | i 1 | 1 | 1 -2 | | i | | f i -3 i | i | |"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "8"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "8.1",
+        "marks": 2,
+        "skill_id": "trig.3d.length",
+        "expected": "AC = 15 m",
+        "question_text": "",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Trig ratio",
+            "memo_line": "tan DAC=DC/AC",
+            "marks": 1,
+            "method_tag": "trig3d",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Answer AC",
+            "memo_line": "AC=15",
+            "marks": 1,
+            "method_tag": "trig3d",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 7,
+          "classes": {
+            "procedural": 3,
+            "conceptual": 2,
+            "notation": 1,
+            "reading": 1
+          },
+          "diagram_assumption_pct": 57.1
+        },
+        "clean_text": "Calculate the length of AC, the distance between the observer at A and the foot of the building. @)"
+      },
+      {
+        "n": "8.2",
+        "marks": 6,
+        "skill_id": "trig.3d.length",
+        "expected": "BC = 8.3 m; EC = 5.19 m; DE = 10.81 m",
+        "question_text": "8.2 Calculate how far the painter at E is from the top of the building. (7)\n19]\n\nCopyright reserved Please turn over\n\nMathematics/P2 ll DBE/November 2024\nNSC Confidential\n\nProvide reasons for your statements in QUESTIONS 9, 10 and 11.",
+        "steps": [
+          {
+            "i": 1,
+            "desc": "Cosine rule",
+            "memo_line": "(19)^2=x^2+(15)^2-2x(15)cos105.61",
+            "marks": 1,
+            "method_tag": "trig3d",
+            "is_final": false
+          },
+          {
+            "i": 2,
+            "desc": "Quadratic form",
+            "memo_line": "x^2+8.07x-136=0",
+            "marks": 1,
+            "method_tag": "trig3d",
+            "is_final": false
+          },
+          {
+            "i": 3,
+            "desc": "Quadratic formula",
+            "memo_line": "x=(-8.07±sqrt(8.07^2-4(1)(-136)))/2",
+            "marks": 1,
+            "method_tag": "trig3d",
+            "is_final": false
+          },
+          {
+            "i": 4,
+            "desc": "Length BC",
+            "memo_line": "BC=8.30",
+            "marks": 1,
+            "method_tag": "trig3d",
+            "is_final": false
+          },
+          {
+            "i": 5,
+            "desc": "Angle BEC",
+            "memo_line": "BEC=58",
+            "marks": 1,
+            "method_tag": "trig3d",
+            "is_final": false
+          },
+          {
+            "i": 6,
+            "desc": "Length EC",
+            "memo_line": "EC=5.19",
+            "marks": 1,
+            "method_tag": "trig3d",
+            "is_final": false
+          },
+          {
+            "i": 7,
+            "desc": "Length DE",
+            "memo_line": "DE=10.81",
+            "marks": 1,
+            "method_tag": "trig3d",
+            "is_final": true
+          }
+        ],
+        "diagnostic": {
+          "total": 7,
+          "classes": {
+            "procedural": 3,
+            "conceptual": 2,
+            "notation": 1,
+            "reading": 1
+          },
+          "diagram_assumption_pct": 57.1
+        },
+        "clean_text": "Calculate how far the painter at E is from the top of the building. (U] 0l"
+      }
+    ],
+    "total_marks": 8,
+    "diagram_page": 10,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p10.png",
+    "stem_text_clean": "In the diagram, C is the foot of a vertical building and D is the top of the same building. The height of the building, CD, is 16 m. Two observers are standing 19 m apart at points A and B, where A, B and C lie in the same horizontal plane. A painter is working at point E on the building. The angle of elevation of D from A is 46,85°. DEB=122° and BCA =105,61°."
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "9"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "9.1",
+        "marks": 2,
+        "skill_id": "euclidean.cyclic_quad",
+        "expected": "A1 = 40 degrees",
+        "question_text": "",
+        "steps": [],
+        "diagnostic": {
+          "total": 5,
+          "classes": {
+            "procedural": 4,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 60.0
+        },
+        "clean_text": "Calculate, with a reason, the value of A,. @)"
+      },
+      {
+        "n": "9.2",
+        "marks": 4,
+        "skill_id": "euclidean.cyclic_quad",
+        "expected": "AD = DC",
+        "question_text": "9.2 Hence, prove that AD = DC. (4)\n\n[6]\n\nCopyright reserved Please turn over\n\nMathematics/P2 12 DBE/November 2024\nNSC Confidential",
+        "steps": [],
+        "diagnostic": {
+          "total": 5,
+          "classes": {
+            "procedural": 4,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 60.0
+        },
+        "clean_text": "Hence, prove that AD = DC. )"
+      }
+    ],
+    "total_marks": 6,
+    "diagram_page": 11,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p11.png",
+    "stem_text_clean": "In the diagram, ABCD is a cyclic quadrilateral. BC is produced to E. AC is drawn. A, =%é, A, =46° and G, =86°. A B D B 86° \\ C E"
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "10"
+    },
+    "stem_text": "10.1 In the diagram, ARST is drawn. Line AB intersects RS and RT at A and B\nrespectively such that AB || ST.\n\nR\n\nS T\n\nProve the theorem which states that a line drawn parallel to one side of a triangle divides\nRB\n\nthe other two sides proportionally, i.e. ee)\nAS BT (6)",
+    "subquestions": [
+      {
+        "n": "10.1",
+        "marks": 4,
+        "skill_id": "euclidean.prop_theorem",
+        "expected": "RA/AS = RB/BT",
+        "question_text": "10.1 In the diagram, ARST is drawn. Line AB intersects RS and RT at A and B\nrespectively such that AB || ST.\n\nR\n\nS T\n\nProve the theorem which states that a line drawn parallel to one side of a triangle divides\nRB\n\nthe other two sides proportionally, i.e. ee)\nAS BT (6)",
+        "steps": [],
+        "diagnostic": {
+          "total": 10,
+          "classes": {
+            "procedural": 3,
+            "notation": 1,
+            "presentation": 1,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 30.0
+        },
+        "clean_text": "In the diagram, ARST is drawn. Line AB intersects RS and RT at A and B respectively such that AB || ST. R N T Prove the theorem which states that a line drawn parallel to one side of a triangle divides RA the other two sides proportionally, ie. — = E AS BT"
+      },
+      {
+        "n": "10.2.1",
+        "marks": 5,
+        "skill_id": "euclidean.prop_theorem",
+        "expected": "OR:WS = 1:2",
+        "question_text": "10.2.1 Prove, with reasons, that OR : WS = 1:2 (5)",
+        "steps": [],
+        "diagnostic": {
+          "total": 10,
+          "classes": {
+            "procedural": 3,
+            "notation": 1,
+            "presentation": 1,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 30.0
+        },
+        "clean_text": "In the diagram, O is the centre of the circle. APWS is drawn with P, W and S on the circle. OR L PS. PRS is produced to T. SW and OT intersect at V. OV:0T=1:4 P S 0] T w"
+      },
+      {
+        "n": "10.2.2",
+        "marks": 4,
+        "skill_id": "euclidean.prop_theorem",
+        "expected": "PT = 25 units",
+        "question_text": "10.2.2 Calculate the length of PT if ST = 15 units. (4)\n\n[15]\n\nCopyright reserved Please turn over\n\nMathematics/P2",
+        "steps": [],
+        "diagnostic": {
+          "total": 10,
+          "classes": {
+            "procedural": 3,
+            "notation": 1,
+            "presentation": 1,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 30.0
+        },
+        "clean_text": "Calculate the length of PT if ST =15 units. “@"
+      }
+    ],
+    "total_marks": 13,
+    "diagram_page": 12,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p12.png",
+    "stem_text_clean": ""
+  },
+  {
+    "source": {
+      "year": 2024,
+      "paper": "P2",
+      "question_number": "11"
+    },
+    "stem_text": "",
+    "subquestions": [
+      {
+        "n": "11.1",
+        "marks": 5,
+        "skill_id": "euclidean.tangent_chord",
+        "expected": "proved",
+        "question_text": "",
+        "steps": [],
+        "diagnostic": {
+          "total": 3,
+          "classes": {
+            "procedural": 1
+          },
+          "diagram_assumption_pct": 33.3
+        },
+        "clean_text": ""
+      },
+      {
+        "n": "11.2",
+        "marks": 4,
+        "skill_id": "euclidean.prop_theorem",
+        "expected": "AG.AD = AC.AF",
+        "question_text": "11.2 Prove that AG.AD = AC.AF",
+        "steps": [],
+        "diagnostic": {
+          "total": 10,
+          "classes": {
+            "procedural": 3,
+            "notation": 1,
+            "presentation": 1,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 30.0
+        },
+        "clean_text": "Prove that AG.AD = AC.AF @)"
+      },
+      {
+        "n": "11.3",
+        "marks": 4,
+        "skill_id": "euclidean.similarity",
+        "expected": "AGF is similar to ABC",
+        "question_text": "11.3 Prove that AAGF ||| AABC",
+        "steps": [],
+        "diagnostic": {
+          "total": 14,
+          "classes": {
+            "procedural": 7,
+            "conceptual": 2
+          },
+          "diagram_assumption_pct": 14.3
+        },
+        "clean_text": "Prove that AAGF ||| AABC )"
+      },
+      {
+        "n": "11.4",
+        "marks": 6,
+        "skill_id": "euclidean.prop_theorem",
+        "expected": "GF^2 = (AF.FC.BC)/AD",
+        "question_text": "11.4 Prove that GF’ =\n\nCopyright reserved\n\nBC.FC.AF\n\nAD\n\nTOTAL:\n\n(6)\n(4)\n(4)\n(6)\n[20]\n\n150\n\nMathematics/P2 DBE/November 2024\nNSC Confidential\nINFORMATION SHEET\npnb tvb? = 4a0\n2a\nA= P(l+ni) A=P(\\-ni) A= P(1~i)\" A= P(i+i)\"\nT,=a+(n-1)d 8, = 5 Rat (n—nd]\nT, =ar\"! S _ alr\" -1) sr#l S,= a 3 -l<r<l\n, r-l -r\n\npass\" =! pawl +i\"\n\ni i\n\n_ f(x+h)- f(x)\n1 =|\n#@) h30 h\n\nxX, +X, V,+yV\nd=\\(%,—%) +(,-¥,)° M|/——3;4\n2 2\nyomxte y-y, =m(x—-x,) m= 221 m=tan@\nXy —X,\n\n(x—a) +(y-b) =r?\nbe\nsnA sinB sinC\n\na =b? +c? —2be.cos A\n\na\n\nIn AABC:\n\n1 :\narea AABC = ec Cc\nsin(a + £)=sina.cos B+cosa.sin §\ncos (a + B)=cosa.cos # —sina.sin B\ncos’ a—sin? @\ncos 2a =41-2sin? a\n\n2cos* a1\n\n|\n\nn\n\nx=\n\nn(A)\n\nnS)\n\nP(A)=\n\npoatbx\n\nCopyright reserved\n\nsin (a ~ £)=sina.cos B—cosa.sin 8\n\ncos(a ~ 8) =cosa.cos f +sina.sin 8\nsin 2a = 2sina@.cosa\n\nn\n\n> (x; ~ x)’\n\n— Jeb\n\nco?\n\nn\n\nP(A or B) = P(A) + P(B) — P(A and B)\n\nXe -¥ky-Y)\n\npo ews\nSi@e- xy",
+        "steps": [],
+        "diagnostic": {
+          "total": 10,
+          "classes": {
+            "procedural": 3,
+            "notation": 1,
+            "presentation": 1,
+            "conceptual": 1
+          },
+          "diagram_assumption_pct": 30.0
+        },
+        "clean_text": "Prove that GF* = BCECAF AD ©) 120] TOTAL:"
+      }
+    ],
+    "total_marks": 19,
+    "diagram_page": 13,
+    "diagram_path": "C:\\Users\\Administrator\\Desktop\\Matric-Maths-Exam-Intelligence\\data\\processed\\diagrams\\pages\\2024_nov_p2_exam_maths_p13.png",
+    "stem_text_clean": "In the diagram, A, B, G and F lie on the larger circle. A smaller circle is drawn to touch the larger circle internally at A. EA is a common tangent to both circles. EBCF is a tangent to the smaller circleat C. AC is produced to G. AF cuts the smaller circle at D. AB, CD and GF are drawn. B E G 1.1 If EAG=x, determine with reasons, FOUR other angles that are equal to x. ©) 112 Prove that AG.AD = AC.AF @) 113 Prove that AAGF ||| AABC )"
+  }
+]

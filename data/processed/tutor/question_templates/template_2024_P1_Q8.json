@@ -1,0 +1,119 @@
+{
+  "source": {
+    "year": 2024,
+    "paper": "P1",
+    "qnum": "8"
+  },
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Determine d/dx [3x - {a}x^2].",
+      "ranges": {
+        "a": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.derivative.rules",
+      "expected_fn": "= 3 - {two_a}x",
+      "derive": "two_a = 2*a",
+      "steps": [
+        "Differentiate term by term.",
+        "d/dx(3x) = 3",
+        "d/dx({a}x^2) = {two_a}x",
+        "So the derivative is 3 - {two_a}x."
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "Determine the equation of the tangent to f(x) = x^3 - {a}x^2 + {b}x + {c} at x = {x0}.",
+      "ranges": {
+        "a": [
+          4,
+          5,
+          6
+        ],
+        "b": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "c": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "x0": [
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "y = {m_tangent}x + {c_tangent}",
+      "derive": "fx0 = x0**3 - a*x0**2 + b*x0 + c; fprime = 3*x0**2 - 2*a*x0 + b; m_tangent = fprime; c_tangent = fx0 - fprime*x0",
+      "steps": [
+        "f({x0}) = {x0}^3 - {a}({x0})^2 + {b}({x0}) + {c} = {fx0}",
+        "f'(x) = 3x^2 - {two_a}x + {b}",
+        "f'({x0}) = 3({x0})^2 - {two_a}({x0}) + {b} = {m_tangent}",
+        "y - {fx0} = {m_tangent}(x - {x0})",
+        "y = {m_tangent}x + {c_tangent}"
+      ]
+    },
+    {
+      "n": "8.3.1",
+      "prompt_template": "Determine f'(x) from first principles if f(x) = {a}x^2.",
+      "ranges": {
+        "a": [
+          -6,
+          -4,
+          -2,
+          2,
+          4,
+          6
+        ]
+      },
+      "marks": 5,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = {two_a}x",
+      "derive": "two_a = 2*a",
+      "steps": [
+        "f'(x) = lim_(h->0) [f(x+h) - f(x)]/h",
+        "f(x+h) = {a}(x+h)^2 = {a}(x^2 + 2xh + h^2) = {a}x^2 + {two_a}xh + {a}h^2",
+        "f(x+h) - f(x) = {two_a}xh + {a}h^2",
+        "[f(x+h) - f(x)]/h = {two_a}x + {a}h",
+        "As h -> 0, f'(x) = {two_a}x"
+      ]
+    },
+    {
+      "n": "8.3.3",
+      "prompt_template": "Determine the equation of f^(-1) for f^(-1)(x) <= 0. Write your answer in the form y = ...",
+      "ranges": {
+        "a": [
+          -6,
+          -4,
+          -2,
+          2,
+          4,
+          6
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.inverse",
+      "expected_fn": "y = -sqrt(x/{a}) for x/{a} >= 0 (depending on sign)",
+      "steps": [
+        "f(x) = {a}x^2  =>  y = {a}x^2",
+        "Swap x and y: x = {a}y^2",
+        "y^2 = x/{a}",
+        "y = ±sqrt(x/{a})",
+        "For f^(-1)(x) <= 0 take the negative branch: y = -sqrt(x/{a})."
+      ]
+    }
+  ]
+}

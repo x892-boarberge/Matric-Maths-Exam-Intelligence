@@ -1,0 +1,93 @@
+{
+  "stem": "The graph of f(x) = 2^x - 4 is drawn for x in [-2; 4). A is the y-intercept. B is the x-intercept.",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Write down the equation of the asymptote of f.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.exponential.asymptote",
+      "expected_fn": "y = -4",
+      "steps": [
+        "For f(x) = a^x - 4, the horizontal asymptote is y = -4."
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Determine the coordinates of B.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.exponential.intercept",
+      "expected_fn": "B(2; 0)",
+      "steps": [
+        "Set 2^x - 4 = 0: 2^x = 4",
+        "x = 2. B(2; 0)"
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Determine the equation of k, the straight line through A and B.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.line.equation",
+      "expected_fn": "k(x) = ...",
+      "steps": [
+        "A(0; -3), B(2; 0)",
+        "m = (0 - (-3))/(2 - 0) = 1.5",
+        "k(x) = 1.5x - 3"
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Calculate the vertical distance between k and f at x = 1.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.distance.vertical",
+      "expected_fn": "Distance = {d}",
+      "steps": [
+        "k(1) = -1.5, f(1) = 2 - 4 = -2",
+        "Distance = |-1.5 - (-2)| = 0.5"
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Write down the equation of g if g(x) = f(x) + 4.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.exponential.transform",
+      "expected_fn": "g(x) = 2^x",
+      "steps": [
+        "g(x) = 2^x - 4 + 4 = 2^x"
+      ]
+    },
+    {
+      "n": "4.6",
+      "prompt_template": "Write down the domain of g^(-1).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.inverse.domain",
+      "expected_fn": "x > 0",
+      "steps": [
+        "Domain of g^(-1) = range of g = (0; inf)"
+      ]
+    },
+    {
+      "n": "4.7",
+      "prompt_template": "Write down the equation of g^(-1).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.inverse",
+      "expected_fn": "y = log_2(x)",
+      "steps": [
+        "g(x) = 2^x. Swap x and y: x = 2^y.",
+        "y = log_2(x)"
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P1",
+    "qnum": "4"
+  },
+  "diagram": "exponential_solo"
+}

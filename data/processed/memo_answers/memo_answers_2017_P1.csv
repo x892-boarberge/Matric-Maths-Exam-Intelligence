@@ -1,0 +1,79 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2017,P1,1,1.1.1,algebra.quadratic.solve,x=-7 or x=-2,x? +9x+14=0,3
+2017,P1,1,1.1.2,algebra.quadratic.solve,x=0.29 or x=-2.54,"4x°+9x-3=0 (correct to TWO decimal places) (4)
+11300 Vx?-5 =2vx",3
+2017,P1,1,1.1.3,algebra.surd.solve,x=5 (x=-1 rejected),,4
+2017,P1,1,1.2,algebra.simultaneous.solve,x=1 or x=7 or y=-1 or y=17,"Solve for x and y if:
+3x-y=4 and x*4+2xy-y? =-2",6
+2017,P1,1,1.3.1,algebra.quadratic.inequality,x<-4 or x>-4,Solve for x if f(x) >0.,2
+2017,P1,1,1.3.2,algebra.quadratic.inequality,0<p<16,"For which values of p will f (x) = p have TWO unequal negative roots? (4)
+[24]",3
+2017,P1,2,2.1.1,sequences.quadratic,-6,"Determine the constant second difference of the sequence. (2)
+212 Determine the n"" term (T,) of the pattern.",2
+2017,P1,2,2.1.2,sequences.quadratic,Tn=-3n^2+8,,4
+2017,P1,2,2.1.3,sequences.quadratic,93,Which term of the pattern will be equal to —25 939?,3
+2017,P1,2,2.2.1,sequences.arithmetic,T15=59,Calculate the value of the 15” term of the sequence.,4
+2017,P1,2,2.2.2,sequences.arithmetic,S30=3210,"Calculate the sum of the first 30 even terms of the sequence. (4)
+[138]",3
+2017,P1,3,3.1,sequences.geometric,a=2/(1+r),"If T,+T, =2, write down an expression for a in terms of +.",2
+2017,P1,3,3.2,sequences.geometric,a=3/2,"Calculate the values of a and r. (6)
+[8]
+Copyright reserved Please turn over
+
+===== Page 4 =====
+Mathematics/P1 4 DBE/No",5
+2017,P1,4,4.1,calculus.polynomial,a=1/2,"The gradient of the tangent to the graph of f at the point [-1 ; z) is 3.
+Show that a= ; and b=2.",6
+2017,P1,4,4.2,functions.parabola,(-2;0) (6;0),Calculate the x-intercepts of f.,3
+2017,P1,4,4.3,functions.parabola,(2;8),Calculate the coordinates of the turning point of £,4
+2017,P1,4,4.4,functions.parabola,(2;8),"Sketch the graph of /. Clearly indicate ALL intercepts with the axes and the turing
+point.",4
+2017,P1,4,4.5,functions.parabola,0<x<4,"Use the graph to determine the values of x for which f(x)> 6. (3)
+46 Sketch the graph of g(x) =-x-—1 on the same set of ",2
+2017,P1,4,4.6,functions.line,y-intercepts,,2
+2017,P1,4,4.7,functions.parabola,-1<=x<=6,"Write down the values of x for which /(x).g(x) <0. (3)
+[23]
+Copyright reserved Please turn over
+
+===== Page 5 =====
+Math",2
+2017,P1,5,5.1,functions.hyperbola,"y in R, y!=-1",Write down the range of g.,1
+2017,P1,5,5.2,functions.hyperbola,g(x)=2/(x-2)-1,"Determine the equation of g. (2)
+53 Calculate the value of ¢.",2
+2017,P1,5,5.3,functions.log,t=3,,2
+2017,P1,5,5.4,functions.log,y=3^x,"Write down the equation of f~’, the inverse of /, in the form yr...",2
+2017,P1,5,5.5,functions.log,x<1,For which values of x will f'(x)<3?,2
+2017,P1,5,5.6,functions.log,B or (1;0),"Determine the point of intersection of the graphs of f and the axis of symmetry of g
+that has a negative gradient. (3)
+[",2
+2017,P1,6,6.1,finance.compound,r=0.065,"Mbali invested R10 000 for 3 years at an interest rate of r % p.a., compounded
+monthly. At the end of this period, she r",2
+2017,P1,6,6.2.1,finance.present_value,x=5536.95,Calculate Piet's monthly instalment.,4
+2017,P1,6,6.2.2,finance.present_value,66443.40-42703.83=23739.57,"Calculate the total amount of interest that Piet will pay during the first
+year of the repayment of the loan. (6)",4
+2017,P1,7,7.1,calculus.first_principles,4x-1,"Given: f(x) =2x?-x
+Determine f’(x) from first principles.",5
+2017,P1,7,7.2.1,calculus.polynomial,6x-4,"D,{(x +1)3x-7)] (2)
+dy . 3; ~6(C«<CO;SCd
+722 if yeViP-2 450 (4)
+[12]
+Copyright reserved Please turn over
+
+===== Page 7 =",2
+2017,P1,7,7.2.2,calculus.polynomial,derivative of 1/2 pi is 0,,4
+2017,P1,8,8.1,calculus.cubic,explanation,Show that f has a point of inflection at x = 2.,5
+2017,P1,8,8.2,calculus.cubic,(1;4),"Sketch the graph of f, clearly indicating the intercepts with the axes and the turning
+points.",4
+2017,P1,8,8.3,calculus.cubic,x>2,For which values of x will y=~—f (x) be concave down?,1
+2017,P1,8,8.4.1,calculus.cubic,(3;7),"Determine the coordinates of the local maximum of h if
+A(x) = f(x-2)+3. (2)
+842 Claire claims that f’ (2) =1.
+Do you agr",1
+2017,P1,8,8.4.2,calculus.cubic,graph decreasing between 1 and 3,,2
+2017,P1,9,9.1,calculus.optimisation,sqrt3/2,,6
+2017,P1,10,10.1,probability.counting,1,Draw a Venn diagram to illustrate the information above.,4
+2017,P1,10,10.2,probability.independent,5 or 6,Calculate the value of x.,2
+2017,P1,11,11.1,probability.counting,2250,"How many different clients can be identified with a coding system that is made up of
+TWO letters and TWO digits?",2
+2017,P1,11,11.2,probability.counting,756000,"Determine the least number of digits that is required for a company to uniquely
+identify 700 000 clients using their cod",2

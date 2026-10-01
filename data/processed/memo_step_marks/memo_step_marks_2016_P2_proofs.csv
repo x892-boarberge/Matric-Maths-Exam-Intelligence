@@ -1,0 +1,30 @@
+question_id,step_index,step_description,marks,memo_line,acceptable_forms,skill_id,method_tag,method_group,is_final,match_mode
+2016_P2_Q8.2.1,1,Radius perpendicular chord,1,"line from centre perp chord","line from centre perp|perp to chord|midpt chord",euclidean.circle,euclid,A,false,keyword
+2016_P2_Q8.2.1,2,Answer AT=20,1,"AT=20","at=20|20",euclidean.circle,euclid,A,true,keyword
+2016_P2_Q8.2.2,1,AO squared equals OS sq plus AS sq,1,"AO^2=OS^2+AS^2","ao2=os2+as2|pyth",euclidean.circle,euclid,A,false,keyword
+2016_P2_Q8.2.2,2,Substitute AS=24,1,"AS=24","as=24|line from centre perp",euclidean.circle,euclid,A,false,keyword
+2016_P2_Q8.2.2,3,Equation,1,"OT^2+400=(7/15)^2 OT^2+576","ot2+|225x|176x",euclidean.circle,euclid,A,false,keyword
+2016_P2_Q8.2.2,4,OT value,1,"OT=15","ot=15|ot =15",euclidean.circle,euclid,A,false,keyword
+2016_P2_Q8.2.2,5,Radius AO,1,"AO=25","ao=25|radius 25",euclidean.circle,euclid,A,true,keyword
+2016_P2_Q9.1.1,1,Tangent chord theorem,1,"tan chord","tan chord|raaklyn koord",euclidean.circle,euclid,A,true,keyword
+2016_P2_Q9.1.2,1,Corresponding angles,1,"corresp angles","corresp|corresponding|ooreenk",euclidean.circle,euclid,A,true,keyword
+2016_P2_Q9.2,1,Ext angle cyclic quad,1,"ext angle","ext angle|buite hoek",euclidean.circle,euclid,A,false,keyword
+2016_P2_Q9.2,2,Conclude cyclic quad,1,"cyclic quad","cyclic quad|concyclic",euclidean.circle,euclid,A,true,keyword
+2016_P2_Q9.3,1,Same segment,1,"same segment","same segment|same seg",euclidean.circle,euclid,A,false,keyword
+2016_P2_Q9.3,2,Alternate angles,1,"alt angles","alt angles|alt |verwiss",euclidean.circle,euclid,A,true,keyword
+2016_P2_Q9.4,1,Angles in same segment,1,"same segment","same segment",euclidean.circle,euclid,A,false,keyword
+2016_P2_Q9.4,2,Relation B3+B2=x,1,"B3+B2=x","b3+b2=x",euclidean.circle,euclid,A,false,keyword
+2016_P2_Q9.4,3,Answer B2=C1,1,"B2=C1","b2=c1|angle equals|angles equal",euclidean.circle,euclid,A,true,keyword
+2016_P2_Q10.1,1,Construction,1,"construction","construction|draw|konstr",euclidean.similarity,euclid,A,false,keyword
+2016_P2_Q10.1,2,Area formula,1,"area formula","area|1/2",euclidean.similarity,euclid,A,false,keyword
+2016_P2_Q10.1,3,Equal areas,1,"equal areas","equal areas|common base",euclidean.similarity,euclid,A,false,keyword
+2016_P2_Q10.1,4,Substitution,1,"substitution","subst",euclidean.similarity,euclid,A,false,keyword
+2016_P2_Q10.1,5,Conclusion,1,"conclusion","conclusion|proven|conclude",euclidean.similarity,euclid,A,true,keyword
+2016_P2_Q10.2.1,1,GF equals MF,1,"GF/MF=3x/2y","gf/mf|gf=mf",euclidean.similarity,euclid,A,false,keyword
+2016_P2_Q10.2.1,2,Similar triangles,1,"similar","similar|gelykvormig",euclidean.similarity,euclid,A,true,keyword
+2016_P2_Q10.2.2,1,Common angle,1,"M is common","M common|common angle",euclidean.similarity,euclid,A,false,keyword
+2016_P2_Q10.2.2,2,Equal angles,1,"MHF=GFM","mhf=gfm",euclidean.similarity,euclid,A,false,keyword
+2016_P2_Q10.2.2,3,Similar triangles,1,"similar","similar|gelykvormig",euclidean.similarity,euclid,A,true,keyword
+2016_P2_Q10.2.3,1,Ratio substitution,1,"substitution","subst",euclidean.similarity,euclid,A,false,keyword
+2016_P2_Q10.2.3,2,y^2/x^2=3/2,1,"y^2/x^2=3/2","y2/x2=3/2|y^2/x^2",euclidean.similarity,euclid,A,false,keyword
+2016_P2_Q10.2.3,3,Answer sqrt(3/2),1,"y/x=sqrt(3/2)","sqrt(3/2)|sqrt 3/2",euclidean.similarity,euclid,A,true,keyword

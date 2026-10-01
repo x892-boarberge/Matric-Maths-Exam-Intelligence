@@ -1,0 +1,92 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2017,P2,1,1.1,statistics.regression,b=-0.64,Determine the values of a and 3b.,2
+2017,P2,1,1.2,statistics.regression,6.85 or 6.83,"An athlete runs the 100 metre sprint in 11,7 seconds. Use »=a+bx to predict the
+distance of the best long jump of this a",2
+2017,P2,1,1.3,statistics.regression,point (12.3;7.6) above data,"Another athlete completes the 100 metre sprint in 12,3 seconds and the distance of his
+best long jump is 7,6 metres. If ",2
+2017,P2,2,2.1.1,statistics.mean,20.52,The mean of the data,2
+2017,P2,2,2.1.2,statistics.quartiles,IQR=8,The interquartile range of the data,3
+2017,P2,2,2.2,statistics.quartiles,4 girls,"The standard deviation of the times taken by the girls is 5,94. How many girls took
+longer than ONE standard deviation f",2
+2017,P2,2,2.3,statistics.quartiles,Q2=20,"Draw a box and whisker diagram to represent the data on the number line provided in
+the ANSWER BOOK.",3
+2017,P2,2,2.4.1,statistics.quartiles,Girls,"Which of the two groups, girls or boys, had the lower median time to
+correctly name the colours of the rectangles?",1
+2017,P2,2,2.4.2,statistics.quartiles,None of the boys,"The first three learners who named the colours of all 30 rectangles
+correctly in the shortest time will receive a prize.",2
+2017,P2,3,3.1.1,analytical.gradient,y=-3/2x+8,The equation of AC in the form y=mx+e,4
+2017,P2,3,3.1.2,analytical.line,G(4;2),The coordinates of G if the equation of BG is 7x— 10y=8,6
+2017,P2,3,3.2,analytical.midpoint,A(2;5),Show by calculation that the coordinates of A is (2 ; 5).,2
+2017,P2,3,3.3,analytical.midpoint,midpoint theorem,Prove that EF || BG.,4
+2017,P2,3,3.4,analytical.line,D(16;6),"ABCD is a parallelogram with D in the first quadrant. Calculate the coordinates of D. (4)
+[17]
+Copyright reserved Please",1
+2017,P2,5,5.1,trig.reduction,cos A,,6
+2017,P2,5,5.2.1,trig.unitcircle,t=-5,t,2
+2017,P2,5,5.2.2,trig.unitcircle,tan beta=-5/3,tan B,1
+2017,P2,5,5.2.3,trig.identity,-16/34,cos 28,4
+2017,P2,5,5.3.1,trig.identity,2cosA sinB,sin(A + B)—sin(A -B) = 2cosA.sinB,2
+2017,P2,5,5.3.2,trig.identity,sin 17,"Without using a calculator, that sin77° —sin 43° = sin17° (4)
+
+[19]
+
+Copyright reserved Please turn over
+
+===== Page 8 =",4
+2017,P2,6,6.1,trig.graph,shape,"Draw the graph of g(x)=2sinx—-1 for the interval x €[—270°;90°] on the grid
+given in your ANSWER BOOK. Show ALL the inte",4
+2017,P2,6,6.2,trig.equation,(-1+sqrt5)/2,"Let A be a point of intersection of the graphs of f and g. Show that the x-coordinate
+of A satisfies the equation sin x ",4
+2017,P2,6,6.3,trig.equation,(38.17;0.24) and (141.83;0.24),"Hence, calculate the coordinates of the points of intersection of graphs of f and g for
+the interval x €[—270°; 90°]. (4",4
+2017,P2,7,7.1,trig.3d,ABC=90,Write down the size of ABC.,1
+2017,P2,7,7.2,trig.3d,AC=k tan y/sin x,"Show that AC = Ktany (4)
+sin x",4
+2017,P2,7,7.3,trig.3d,2k tan y,"If it is further given that DAC=2x and AD = AC, show that the distance DC
+between the players at D and C is 2k tan y. (5",5
+2017,P2,9,9.1.1,euclidean.similarity,FG parallel BC,FG || BC,2
+2017,P2,9,9.1.2,euclidean.similarity,AH/HK=AE/ED,"AH _AE (3)
+
+HK ED",3
+2017,P2,9,9.2,euclidean.similarity,EK=7,"If it is further given that AH = 15 and ED = 12, calculate the length of EK. (5)
+[10]
+
+Copyright reserved Please turn ov",4
+2017,P2,8,8.1.1,euclidean.circle,A=35,A,2
+2017,P2,8,8.1.2,euclidean.circle,C2=35,"C,",2
+2017,P2,8,8.2,euclidean.circle,converse tan chord,"Prove, with a reason, that CF is a tangent to the circle passing through points C, D
+
+and E, (2)
+
+[7]
+
+Copyright reserve",2
+2017,P2,10,10.1,euclidean.circle,line from centre to midpoint,Give a reason why OV MN.,1
+2017,P2,10,10.2.1,euclidean.circle,MN parallel TS,MN || TS,2
+2017,P2,10,10.2.2,euclidean.circle,concyclic,TMNS is acyclic quadrilateral,4
+2017,P2,10,10.2.3,euclidean.similarity,answer,"OS . MN =20N . WS (5)
+
+[12]
+
+Copyright reserved Please turn over
+
+===== Page 13 =====
+Mathematics/P2 13 DBE/November 201",5
+2017,P2,11,11.1,euclidean.circle,answer,"In the diagram, chords KM, MN and KN are drawn in the circle with centre O.
+
+PNQ is the tangent to the circle at N.
+
+(
+<",5
+2017,P2,11,11.2.1,euclidean.circle,tan chord,"Give a reason why:
+(a) D,=90° (1)
+(b) ABDE is a cyclic quadrilateral (1)
+() D,=x",3
+2017,P2,11,11.2.2,euclidean.similarity,AD=AE or answer,"Prove that:
+(a) AD=AE (3)
+(b) AADB ||| AACD",6
+2017,P2,11,11.2.3,euclidean.similarity,3r^2,"It is further given that BC = 2AB = 2r.
+(a) Prove that AD’ =3r’ (2)
+(b) Hence, prove that AADE is equilateral. (4)
+[20]
+",3

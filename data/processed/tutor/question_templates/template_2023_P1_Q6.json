@@ -1,0 +1,102 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "6.1.1",
+      "prompt_template": "R{P} at {r}% p.a. compounded monthly. After 6 months balance is R{A}. Calculate r.",
+      "ranges": {
+        "P": [
+          18500
+        ],
+        "A": [
+          19319.48
+        ]
+      },
+      "marks": 3,
+      "skill_id": "finance.compound.r",
+      "expected_fn": "r = {r_ans}%",
+      "steps": [
+        "A = P(1 + r/1200)^6",
+        "Solve for r."
+      ]
+    },
+    {
+      "n": "6.1.2",
+      "prompt_template": "Calculate the effective interest rate.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "finance.effective",
+      "expected_fn": "eff rate = {eff}%",
+      "steps": [
+        "(1 + r/1200)^12 - 1 = effective rate."
+      ]
+    },
+    {
+      "n": "6.2.1",
+      "prompt_template": "R{P} laptop depreciates at {r}% straight-line. After how many years will value be R0?",
+      "ranges": {
+        "P": [
+          10000
+        ],
+        "r": [
+          20
+        ]
+      },
+      "marks": 2,
+      "skill_id": "finance.depreciation.n",
+      "expected_fn": "n = {n} years",
+      "steps": [
+        "A = P(1 - in) = 0",
+        "1 - 0.20n = 0",
+        "n = 5"
+      ]
+    },
+    {
+      "n": "6.2.2",
+      "prompt_template": "R20 000 laptop. Monthly deposits at {r}% compounded monthly over {y} years. Calculate monthly deposit.",
+      "ranges": {
+        "r": [
+          8.7
+        ],
+        "y": [
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "finance.annuity.future",
+      "expected_fn": "x = R{x_ans}",
+      "steps": [
+        "F = x[(1+i)^n - 1]/i",
+        "Set F = 20 000, i = r/1200, n = 12y.",
+        "Solve for x."
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "R{P} at {r}% p.a. compounded monthly. R{x} withdrawn monthly. How many withdrawals?",
+      "ranges": {
+        "P": [
+          1600000
+        ],
+        "r": [
+          11.2
+        ],
+        "x": [
+          20000
+        ]
+      },
+      "marks": 4,
+      "skill_id": "finance.loan.n",
+      "expected_fn": "n = {n} withdrawals",
+      "steps": [
+        "P = x[1 - (1+i)^-n]/i",
+        "Solve for n using logs."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P1",
+    "qnum": "6"
+  }
+}

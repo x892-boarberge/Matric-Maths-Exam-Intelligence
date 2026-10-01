@@ -1,0 +1,47 @@
+{
+  "stem": "A poster: rectangle ABCD has area {A} cm^2, AD = x. ABCD is 4 cm from left/right, 3 cm from top/bottom.",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Show A(x) = {k}/x + 6x + 480.",
+      "ranges": {
+        "A": [
+          432
+        ],
+        "k": [
+          3456
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.optimisation.model",
+      "expected_fn": "A(x) = 3456/x + 6x + 480",
+      "steps": [
+        "ABCD: AD = x, so AB = 432/x.",
+        "Total page width = x + 8, height = 432/x + 6.",
+        "Total area = (x + 8)(432/x + 6)",
+        "= 432 + 6x + 3456/x + 48",
+        "= 3456/x + 6x + 480"
+      ]
+    },
+    {
+      "n": "9.2",
+      "prompt_template": "Determine x for which total area is minimum.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.optimisation.min",
+      "expected_fn": "x = {x_min}",
+      "steps": [
+        "A'(x) = -3456/x^2 + 6",
+        "Set A'(x) = 0: 6x^2 = 3456",
+        "x^2 = 576",
+        "x = 24 cm"
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P1",
+    "qnum": "9"
+  },
+  "diagram": "poster"
+}

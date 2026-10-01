@@ -1,0 +1,95 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "A holiday costs R{P} now. The company predicts the cost will increase by {r}% p.a. What will it cost in {n} years?",
+      "ranges": {
+        "P": [
+          40000,
+          35000,
+          45000
+        ],
+        "r": [
+          7.8,
+          6.5,
+          8.2
+        ],
+        "n": [
+          5,
+          6,
+          7
+        ]
+      },
+      "marks": 2,
+      "skill_id": "finance.compound",
+      "expected_fn": "R{A}",
+      "steps": [
+        "A = P(1+i)^n, i = {r}/100, n = {n}",
+        "A = {P}(1 + {r}/100)^{n}",
+        "A = R{A}"
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Sarah opened a savings account at {r}% p.a., compounded quarterly. She deposited R{P} on 1 January {y1} and continued to deposit R{P} at the beginning of each quarter. Last deposit on 1 October {y2}. Calculate the accumulated amount on 1 January {y3}.",
+      "ranges": {
+        "P": [
+          2300
+        ],
+        "r": [
+          5.8
+        ],
+        "y1": [
+          2020
+        ],
+        "y2": [
+          2025
+        ],
+        "y3": [
+          2026
+        ]
+      },
+      "marks": 4,
+      "skill_id": "finance.annuity.future",
+      "expected_fn": "R{A}",
+      "steps": [
+        "This is a future value annuity due (deposits at beginning of each quarter).",
+        "F = x[(1+i)^n - 1]/i * (1+i)",
+        "i = {r}/400, n = number of deposits",
+        "Calculate F."
+      ]
+    },
+    {
+      "n": "7.3.1",
+      "prompt_template": "A loan of R{P} was granted on 28 February {y}. Monthly repayments of R{x} at {r}% p.a., compounded monthly. First payment was missed for 3 months. How many months to repay?",
+      "ranges": {
+        "P": [
+          900000
+        ],
+        "r": [
+          6.8
+        ],
+        "x": [
+          10000
+        ],
+        "y": [
+          2024
+        ]
+      },
+      "marks": 5,
+      "skill_id": "finance.loan.n",
+      "expected_fn": "n = {n} months",
+      "steps": [
+        "The loan accrues interest during the missed months.",
+        "Use P = x[1 - (1+i)^-n] / i",
+        "Solve for n using logs."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P1",
+    "qnum": "7"
+  }
+}

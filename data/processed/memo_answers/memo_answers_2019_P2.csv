@@ -1,0 +1,88 @@
+year,paper,question_number,subquestion,skill_id,expected_answer,question_text_short,marks
+2019,P2,1,1.1,statistics.regression,y_hat=-1946.88+0.41x,Determine the equation of the least squares regression line for the data.,3
+2019,P2,1,1.2,statistics.regression,3793.12 or 3727.16,"If a person earns R14 000 per month, predict the monthly repayment that the person
+could make towards a motor vehicle.",2
+2019,P2,1,1.3,statistics.regression,0.95,"Determine the correlation coefficient between the monthly income and the monthly
+repayment of a motor vehicle.",1
+2019,P2,1,1.4,statistics.regression,no because (18000;9000) far from line,"A person who earns R18 000 per month has to decide whether to spend R9 000 as a
+monthly repayment of a motor vehicle, or",1
+2019,P2,2,2.1,statistics.frequency,19,How many people paid R200 or less on their monthly cellphone contracts?,1
+2019,P2,2,2.2,statistics.mean,a=24,Use the information above to show that a= 24 and b= 16.,3
+2019,P2,2,2.4,statistics.frequency,82,"On the grid provided in the ANSWER BOOK, draw an ogive (cumulative frequency
+
+graph) to represent the data.",2
+2019,P2,3,3.1,analytical.line,y=5,Write down the equation of PR.,1
+2019,P2,3,3.2.1,analytical.gradient,m_RS=2,Gradient of RS,2
+2019,P2,3,3.2.2,analytical.gradient,63.43,"Sizeof 0 G3)
+3.2.3. Coordinates of D",3
+2019,P2,3,3.2.3,analytical.line,D(0;-1),,3
+2019,P2,3,3.3,analytical.distance,k=-3,"If it is given that TS = 2/5 , calculate the value of &.",4
+2019,P2,3,3.4,analytical.midpoint,N(2;-5),"Parallelogram TDNS, with N in the 4"" quadrant, is drawn. Calculate the
+coordinates of N.",1
+2019,P2,3,3.5,analytical.gradient,53.13,"APRD is reflected about the y-axis to form AP’R'D!. Calculate the size of
+RDR’. (3)
+[19]
+Copyright reserved Please turn ",3
+2019,P2,4,4.1,analytical.circle,(x+1)^2+(y-1)^2=1,,2
+2019,P2,4,4.2,analytical.midpoint,C(-1;2),Calculate the coordinates of C.,2
+2019,P2,4,4.3,analytical.line,y=2x+4,Show that the equation of the tangent CD is y—x=3.,3
+2019,P2,4,4.4,analytical.circle,a=sqrt(7)/2,"Determine the values of ¢ for which the line y =x +7 will NOT touch or cut the
+
+smaller circle.",4
+2019,P2,5,5.1,trig.reduction,cos^2 x,"Simplify the following expression to ONE trigonometric term:
+
+_S* 1 sin(180° + x) cos(90°— x) (5)
+
+cos x.tan x
+
+; sin* 3",4
+2019,P2,5,5.2,trig.reduction,-1/2,"Without using a calculator, determine the value of: =£.————————_— (4)
+4sin10°cos10°",4
+2019,P2,5,5.3,trig.identity,m+1,"Given: cos26°=m
+
+Without using a calculator, determine 2sin’ 77° interms of m.",3
+2019,P2,5,5.4.1,trig.equation,k in Z,,5
+2019,P2,5,5.4.2,trig.equation,x=260,"Determine the value(s) of x in the interval xe[0°;360°] for which
+
+f(x) will have a minimum value. (3)
+[22]
+
+Copyright r",3
+2019,P2,6,6.1,trig.graph,y in [-2;0],Write down the range of f,1
+2019,P2,6,6.2,trig.graph,x in (90;270),"Write down the values of x in the interval x ¢[-90°; 360°] for which graph f is
+
+decreasing.",1
+2019,P2,6,6.3,trig.graph,345.52,"P and Q are points on graphs g and f respectively such that PQ is parallel to the
+
+y-axis. If PQ lies between A and B, d",5
+2019,P2,7,7.1,trig.3d,sqrt3/2 x,Determine AK in terms of x.,2
+2019,P2,7,7.2,trig.3d,120,Write down the size of KCF.,1
+2019,P2,7,7.3,trig.3d,x^2 sqrt21 siny/8,"It is further given that AKF, the angle between the solar panel and the concrete slab,
+
+is y. Determine the areaof AAKF ",5
+2019,P2,8,8.1.1,euclidean.circle,co-int angles QW parallel RK,R,2
+2019,P2,8,8.1.2,euclidean.circle,opp angles cyclic quad,P,2
+2019,P2,8,8.1.3,euclidean.circle,Q2=36,POW,2
+2019,P2,8,8.2.1,euclidean.similarity,EFD=ECD,EFD = ECD,3
+2019,P2,8,8.2.2,euclidean.circle,DFC=DEC,"DFC = DEC (3)
+[16]
+Copyright reserved Please turn over
+
+===== Page 12 =====
+Mathematics/P2 12 DBE/November 2019
+NSC",2
+2019,P2,9,9.1,euclidean.circle,STM=x/4,,5
+2019,P2,10,10.1,euclidean.circle,AD/DB=AE/EC,"In the diagram, AABC is drawn. D isa pointon AB and E isapoint on AC such
+
+that DE || BC. BE and DC are drawn.
+
+A
+D
+E
+B
+",6
+2019,P2,9,9.2.1a,euclidean.circle,A+C=180,,4
+2019,P2,9,9.2.1b,euclidean.circle,A+C=180,,4
+2019,P2,9,9.2.2,euclidean.circle,E=180-A,,3
+2019,P2,10,10.2,euclidean.similarity,DB=6/sqrt5,"In the diagram, ST and VT are tangents to the circle at S and V_ respectively.
+R is a point on the circle and W is a poi",6
