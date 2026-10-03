@@ -1,0 +1,135 @@
+{
+  "stem": "23 girls naming colours, times in seconds.",
+  "subquestions": [
+    {
+      "n": "2.1.1",
+      "prompt_template": "Calculate the mean.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.mean",
+      "expected_fn": "20.52",
+      "steps": [
+        {
+          "s": "Sum = 472",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Mean = 20.52",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.1.2",
+      "prompt_template": "Interquartile range.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.iqr",
+      "expected_fn": "8",
+      "steps": [
+        {
+          "s": "Q1 = 16",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Q3 = 24",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "IQR = 8",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "How many took longer than one SD from mean?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "4",
+      "steps": [
+        {
+          "s": "x_bar + SD = 26.46",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "4 girls",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Draw box-and-whisker.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.box_whisker",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Whiskers at 12 and 36",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Box Q1=16 to Q3=24",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Q2 = 20",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4.1",
+      "prompt_template": "Which group has lower median?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.interpret",
+      "expected_fn": "Girls",
+      "steps": [
+        {
+          "s": "Girls",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4.2",
+      "prompt_template": "How many boys among 3 prizewinners?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.interpret",
+      "expected_fn": "None of the boys",
+      "steps": [
+        {
+          "s": "None",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "5 girls faster than 15 s (boys' min)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P2",
+    "qnum": "2"
+  }
+}

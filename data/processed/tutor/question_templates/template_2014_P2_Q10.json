@@ -1,0 +1,224 @@
+{
+  "stem": "Two circles common tangent XRY at R. W on small circle. RWS meets large circle at S. Chord STQ tangent to small circle. Chord RTP drawn. R4 = x, R2 = y.",
+  "diagram": "circle_similarity",
+  "subquestions": [
+    {
+      "n": "10.1.1",
+      "prompt_template": "Reason why T3 = x.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Tangent-chord theorem",
+      "steps": [
+        {
+          "s": "Tangent-chord theorem",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.1.2",
+      "prompt_template": "Reason why P1 = x.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Tangent-chord theorem",
+      "steps": [
+        {
+          "s": "Tangent-chord theorem",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.1.3",
+      "prompt_template": "Reason why WT || SP.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Corresponding angles equal",
+      "steps": [
+        {
+          "s": "Corresponding angles equal",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.1.4",
+      "prompt_template": "Reason why S1 = y.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Angles in same segment",
+      "steps": [
+        {
+          "s": "Angles in same segment (or chord PQ)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.1.5",
+      "prompt_template": "Reason why T2 = y.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Alternate angles; WT || SP",
+      "steps": [
+        {
+          "s": "Alternate angles; WT || SP",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Prove RT = WR.RP/RS.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "RT = WR.RP/RS",
+      "steps": [
+        {
+          "s": "RW/RS = RT/RP",
+          "r": "prop theorem; WT || SP",
+          "mark": "S/R"
+        },
+        {
+          "s": "RT = WR.RP/RS",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.3",
+      "prompt_template": "Identify TWO other angles equal to y.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "R3 = y; Q1 = y",
+      "steps": [
+        {
+          "s": "y = T2 = R3",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "y = R3 = Q1",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.4",
+      "prompt_template": "Prove Q3 = W2.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Q3 = W2",
+      "steps": [
+        {
+          "s": "Q3 = PSR",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "PSR = W2",
+          "r": "corresponding angles; WT || SP",
+          "mark": "S/R"
+        },
+        {
+          "s": "Q3 = W2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.5",
+      "prompt_template": "Prove triangle RTS ||| triangle RQP.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle RTS ||| triangle RQP",
+      "steps": [
+        {
+          "s": "R3 = R2 = y",
+          "r": "proved in 10.3",
+          "mark": "S"
+        },
+        {
+          "s": "S2 = P2",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "RTS = RQP",
+          "r": "third angle of triangle",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.6",
+      "prompt_template": "Prove WR/RQ = RS^2/RP^2.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "WR/RQ = RS^2/RP^2",
+      "steps": [
+        {
+          "s": "RT/RQ = RS/RP",
+          "r": "triangle RTS ||| triangle RQP",
+          "mark": "S/R"
+        },
+        {
+          "s": "RT/RS = WR/RP",
+          "r": "proved in 10.2",
+          "mark": "S"
+        },
+        {
+          "s": "Multiply: WR/RQ = RS^2/RP^2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2014_P2_p20.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P2_p20.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,219 @@
+{
+  "stem": "h(x) = -3/(x-1) + 2 is drawn. Also f(x) = (x+5)²/2 - 8 and g(x) = x/2 + 9/2.",
+  "diagram": "hyperbola_solo",
+  "subquestions": [
+    {
+      "n": "4.1.1",
+      "prompt_template": "Write down the equations of the asymptotes of h.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "x = 1, y = 2",
+      "steps": [
+        "Vertical: x = 1.",
+        "Horizontal: y = 2."
+      ]
+    },
+    {
+      "n": "4.1.2",
+      "prompt_template": "Determine the axis of symmetry with negative gradient.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "y = -x + 3",
+      "steps": [
+        "Passes through (1; 2) with gradient -1.",
+        "y = -x + 3."
+      ]
+    },
+    {
+      "n": "4.1.3",
+      "prompt_template": "Sketch h showing asymptotes and intercepts.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "see memo",
+      "steps": [
+        "Both branches.",
+        "Dotted asymptotes.",
+        "Mark intercepts."
+      ]
+    },
+    {
+      "n": "4.2.1",
+      "prompt_template": "Coordinates of A, turning point of f.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.parabola",
+      "expected_fn": "A(-5; -8)",
+      "steps": [
+        "f(x) = (x+5)²/2 - 8 has vertex at (-5; -8)."
+      ]
+    },
+    {
+      "n": "4.2.2",
+      "prompt_template": "Range of f.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.parabola",
+      "expected_fn": "y >= -8",
+      "steps": [
+        "a > 0, opens up. Range y >= -8."
+      ]
+    },
+    {
+      "n": "4.2.3",
+      "prompt_template": "Calculate m and n at D(m; n) on g and axis of symmetry.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 3,
+      "skill_id": "analytical.line",
+      "expected_fn": "m = -5, n = 2",
+      "steps": [
+        "Axis of symmetry of f: x = -5.",
+        "g(-5) = -5/2 + 9/2 = 2.",
+        "D(-5; 2)."
+      ]
+    },
+    {
+      "n": "4.2.4",
+      "prompt_template": "Calculate the area of OCDE.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 3,
+      "skill_id": "analytical.area",
+      "expected_fn": "Area = 65/4 = 16.25",
+      "steps": [
+        "Trapezium with parallel sides DE and OC.",
+        "Area = 1/2(DE + OC) × OE.",
+        "= 65/4."
+      ]
+    },
+    {
+      "n": "4.2.5",
+      "prompt_template": "Determine g^(-1)(x).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.inverse",
+      "expected_fn": "y = 2x - 9",
+      "steps": [
+        "Swap x and y in g(x) = x/2 + 9/2.",
+        "y = 2x - 9."
+      ]
+    },
+    {
+      "n": "4.2.6",
+      "prompt_template": "If h(x) = g^(-1)(x) + k is tangent to f, find contact point.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "(-3; -6)",
+      "steps": [
+        "Tangent to f has gradient f'(x).",
+        "Set f'(x) = gradient of h = 2.",
+        "Solve for x, find contact point."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P1",
+    "qnum": "4"
+  },
+  "diagram_page": "2020_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2020_P1_p05.png",
+  "diagram_crop": null
+}

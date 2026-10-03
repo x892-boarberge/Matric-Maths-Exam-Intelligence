@@ -1,0 +1,115 @@
+{
+  "stem": "cos(alpha - beta) given, derive cos(alpha + beta). Simplify 2cos 6x cos 4x - cos 10x + 2sin^2 x. Solve tan x = 2 sin 2x where cos x < 0.",
+  "subquestions": [
+    {
+      "n": "6.1.1",
+      "prompt_template": "Derive formula for cos(alpha + beta).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "cos(a+b) = cos a cos b - sin a sin b",
+      "steps": [
+        {
+          "s": "cos(a+b) = cos(a - (-b))",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Expand",
+          "r": "expansion",
+          "mark": "S/R"
+        },
+        {
+          "s": "cos a cos b - sin a sin b",
+          "r": "reduction",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "6.1.2",
+      "prompt_template": "Simplify 2cos 6x cos 4x - cos 10x + 2sin^2 x.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.identities",
+      "expected_fn": "1",
+      "steps": [
+        {
+          "s": "cos 10x = cos(6x + 4x)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Expand cos(6x+4x)",
+          "r": "expansion",
+          "mark": "S/R"
+        },
+        {
+          "s": "cos 6x cos 4x + sin 6x sin 4x = cos 2x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos 2x = 1 - 2sin^2 x",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "General solution of tan x = 2 sin 2x with cos x < 0.",
+      "ranges": {},
+      "marks": 7,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = 180 + k.360 or x = 120 + k.360 or x = 240 + k.360",
+      "steps": [
+        {
+          "s": "sin x/cos x = 4 sin x cos x",
+          "r": "quotient + double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin x(4cos^2 x - 1) = 0",
+          "r": "factorise",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin x = 0 or cos^2 x = 1/4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos x = -1/2 (cos x < 0)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 180 + k.360",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 120 + k.360",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 240 + k.360",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "6"
+  }
+}

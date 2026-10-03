@@ -1,0 +1,210 @@
+{
+  "stem": "M centre of circle through T(3;7), R, S(5;2). RT diameter. K(a;b) in Q4, KTL tangent at T. Circle equation (x-9)^2 + (y-6.5)^2 = 36.25.",
+  "diagram": "analytical_circle",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Give reason why TSR = 90.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "expected_fn": "Angle in semicircle",
+      "steps": [
+        {
+          "s": "Angle in semicircle",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Gradient of TS.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "-5/2",
+      "steps": [
+        {
+          "s": "m = (7-2)/(3-5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -5/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Equation of SR.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "y = 2/5 x",
+      "steps": [
+        {
+          "s": "m_RS = 2/5",
+          "r": "TS perpendicular SR",
+          "mark": "S/R"
+        },
+        {
+          "s": "2 = 2/5(5) + c -> c = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 2/5 x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4.1",
+      "prompt_template": "Length of TR in surd form.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.distance",
+      "expected_fn": "sqrt(145)",
+      "steps": [
+        {
+          "s": "r = sqrt(36.25)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "TR = 2r = sqrt(145)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4.2",
+      "prompt_template": "Coordinates of R.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "R(15; 6)",
+      "steps": [
+        {
+          "s": "M(9; 6.5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x_R = 2(9) - 3 = 15",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_R = 2(6.5) - 7 = 6",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4.3",
+      "prompt_template": "Calculate sin R.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.angle",
+      "expected_fn": "sqrt(5)/5",
+      "steps": [
+        {
+          "s": "TS = sqrt(29)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "sin R = TS/TR",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "= sqrt(5)/5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4.4",
+      "prompt_template": "Show b = 12a - 29.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.perpendicular",
+      "type": "proof",
+      "expected_fn": "b = 12a - 29",
+      "steps": [
+        {
+          "s": "m_TR = -1/12",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_KTL = 12",
+          "r": "radius perpendicular tangent",
+          "mark": "S/R"
+        },
+        {
+          "s": "b - 7 = 12(a - 3) -> b = 12a - 29",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4.5",
+      "prompt_template": "If TK = TR, find K.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "analytical.solve",
+      "expected_fn": "K(2; -5)",
+      "steps": [
+        {
+          "s": "TK = TR = sqrt(145)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(a-3)^2 + (b-7)^2 = 145",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Substitute b = 12a - 29",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "145a^2 - 870a + 1160 = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "a = 2 or a = 4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "K(2; -5)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P2",
+    "qnum": "4"
+  },
+  "diagram_page": "2016_P2_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2016_P2_p06.png",
+  "diagram_crop": null
+}

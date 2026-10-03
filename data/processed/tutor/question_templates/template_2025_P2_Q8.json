@@ -1,0 +1,252 @@
+{
+  "stem": "BKLC horizontal base, KBC = 104, BKC = 52.6. Rectangular backdrop ABCD area 648 cm^2. AB:BC = 1:2.",
+  "diagram": "three_d_trig",
+  "diagram_spec": {
+    "points_2d": {
+      "A": [
+        -1.5,
+        3.5
+      ],
+      "B": [
+        -1.5,
+        1.5
+      ],
+      "D": [
+        2.5,
+        3.5
+      ],
+      "C": [
+        2.5,
+        1.5
+      ],
+      "K": [
+        -4.5,
+        0.0
+      ],
+      "L": [
+        5.5,
+        0.0
+      ]
+    },
+    "edges": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "B",
+        "C"
+      ],
+      [
+        "C",
+        "D"
+      ],
+      [
+        "D",
+        "A"
+      ],
+      [
+        "A",
+        "K"
+      ],
+      [
+        "B",
+        "K"
+      ],
+      [
+        "C",
+        "L"
+      ],
+      [
+        "D",
+        "L"
+      ],
+      [
+        "K",
+        "C"
+      ],
+      [
+        "K",
+        "L"
+      ],
+      [
+        "B",
+        "L"
+      ]
+    ],
+    "shaded_faces": [
+      [
+        "K",
+        "B",
+        "C",
+        "L"
+      ]
+    ],
+    "right_angles": [
+      [
+        "B",
+        "A",
+        "K"
+      ],
+      [
+        "B",
+        "C",
+        "K"
+      ],
+      [
+        "C",
+        "B",
+        "L"
+      ],
+      [
+        "C",
+        "D",
+        "L"
+      ]
+    ],
+    "angle_labels": [
+      {
+        "vertex": "K",
+        "p1": "B",
+        "p2": "C",
+        "label": "52,6°",
+        "r_arc": 0.6,
+        "label_xy": [
+          -3.5,
+          0.55
+        ]
+      },
+      {
+        "vertex": "B",
+        "p1": "K",
+        "p2": "C",
+        "label": "104°",
+        "r_arc": 0.6,
+        "label_xy": [
+          -2.1,
+          0.85
+        ]
+      }
+    ],
+    "edge_labels": {
+      "A-B": "18",
+      "B-C": "36",
+      "A-K": "18√2",
+      "K-C": "43,97"
+    },
+    "dashed_edges": [
+      [
+        "A",
+        "C"
+      ]
+    ],
+    "xlim": [
+      -5.5,
+      6.5
+    ],
+    "ylim": [
+      -1.0,
+      4.5
+    ]
+  },
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Show that AB = 18 cm.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "AB = 18",
+      "steps": [
+        {
+          "s": "648 = 2AB x AB",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AB = 18",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "Calculate AC.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "18 sqrt(5)",
+      "steps": [
+        {
+          "s": "AC^2 = 18^2 + 36^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "AC = 18 sqrt(5)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.3",
+      "prompt_template": "Calculate KC.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "43.97 cm",
+      "steps": [
+        {
+          "s": "KC/sin 104 = 36/sin 52.6",
+          "r": "sine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "KC = 43.97 cm",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.4",
+      "prompt_template": "If AB = BK, calculate KAC.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.3d",
+      "expected_fn": "80.60 deg",
+      "steps": [
+        {
+          "s": "AK = 18 sqrt(2)",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "(43.97)^2 = (18 sqrt(2))^2 + (18 sqrt(5))^2 - 2(18 sqrt(2))(18 sqrt(5))cos KAC",
+          "r": "cosine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "cos KAC = 0.16",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "KAC = 80.60 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2025_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P2_p09.png",
+  "diagram_crop": null
+}

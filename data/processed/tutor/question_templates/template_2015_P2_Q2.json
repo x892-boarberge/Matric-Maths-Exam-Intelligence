@@ -1,0 +1,90 @@
+{
+  "stem": "Sum of values on uppermost faces of two dice.",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Calculate the mean.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.mean",
+      "expected_fn": "6.73",
+      "steps": [
+        {
+          "s": "Sum = 202",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Mean = 202/30 = 6.73",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Median.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.median",
+      "expected_fn": "7",
+      "steps": [
+        {
+          "s": "(T15 + T16)/2 = 7",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 7",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Standard deviation.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "2.26",
+      "steps": [
+        {
+          "s": "sigma = 2.26",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "How many sums within one SD of the mean?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "19 times",
+      "steps": [
+        {
+          "s": "(4.47; 8.99)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "4 + 4 + 8 + 3 = 19",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "19 times",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "2"
+  }
+}

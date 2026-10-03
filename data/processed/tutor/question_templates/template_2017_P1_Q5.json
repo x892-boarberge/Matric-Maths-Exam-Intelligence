@@ -1,0 +1,156 @@
+{
+  "stem": "g(x) = 2/(x + p) + q with y = -1 horizontal asymptote. f(x) = log_3(x).",
+  "diagram": "hyperbola_solo",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Write down the range of g.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "y in R, y != -1",
+      "steps": [
+        "Horizontal asymptote y = -1."
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Determine g(x).",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "g(x) = 2/(x-2) - 1",
+      "steps": [
+        "From asymptotes and a given point.",
+        "Determine p and q."
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Calculate t at A(t; 1).",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.log",
+      "expected_fn": "t = 3",
+      "steps": [
+        "1 = log_3(t).",
+        "t = 3."
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "Write f^(-1)(x).",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.log",
+      "expected_fn": "y = 3^x",
+      "steps": [
+        "Swap x and y."
+      ]
+    },
+    {
+      "n": "5.5",
+      "prompt_template": "For which x is f^(-1)(x) < 3?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.inequality",
+      "expected_fn": "x < 1",
+      "steps": [
+        "3^x < 3 → x < 1."
+      ]
+    },
+    {
+      "n": "5.6",
+      "prompt_template": "Point of intersection of f and axis of symmetry of g with negative gradient.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "B(1; 0)",
+      "steps": [
+        "Axis of symmetry: y = -x + 1.",
+        "Intersection with f(x) = log_3(x): at (1; 0)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P1",
+    "qnum": "5"
+  },
+  "diagram_page": "2017_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2017_P1_p05.png",
+  "diagram_crop": null
+}

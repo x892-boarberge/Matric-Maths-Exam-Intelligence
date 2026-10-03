@@ -1,0 +1,156 @@
+{
+  "stem": "PON diameter. TM tangent at M. R on circle with OR || PM. NR and MN drawn. M1 = 66.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "8.1.1",
+      "prompt_template": "Calculate P.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "P = 66",
+      "steps": [
+        {
+          "s": "P = M1 = 66",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.1.2",
+      "prompt_template": "Calculate M2.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "M2 = 90",
+      "steps": [
+        {
+          "s": "M2 = 90",
+          "r": "angle in semicircle",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.1.3",
+      "prompt_template": "Calculate N1.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "N1 = 24",
+      "steps": [
+        {
+          "s": "N1 = 180 - 90 - 66 = 24",
+          "r": "sum of angles in triangle",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.1.4",
+      "prompt_template": "Calculate O2.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "O2 = 66",
+      "steps": [
+        {
+          "s": "O2 = P = 66",
+          "r": "corresponding angles; PM || OR",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.1.5",
+      "prompt_template": "Calculate N2.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "N2 = 33",
+      "steps": [
+        {
+          "s": "R + N1 + N2 = 114",
+          "r": "sum of angles in triangle RNO",
+          "mark": "S/R"
+        },
+        {
+          "s": "R = N1 + N2",
+          "r": "angles opposite equal radii",
+          "mark": "S/R"
+        },
+        {
+          "s": "N2 = 33",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.2.1",
+      "prompt_template": "Explain why FC || GH.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.rectangle",
+      "type": "proof",
+      "expected_fn": "Opposite sides of rectangle",
+      "steps": [
+        {
+          "s": "Opposite sides of rectangle",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.2.2",
+      "prompt_template": "Calculate DM.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "DM = 14",
+      "steps": [
+        {
+          "s": "AC/CH = AF/FG",
+          "r": "prop theorem; FC || GH",
+          "mark": "S/R"
+        },
+        {
+          "s": "AC = 28",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "DB = AC = 28",
+          "r": "diagonals of rectangle equal",
+          "mark": "S/R"
+        },
+        {
+          "s": "DM = (1/2) DB = 14",
+          "r": "diagonals bisect",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2018_P2_p12.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P2_p12.png",
+  "diagram_crop": null
+}

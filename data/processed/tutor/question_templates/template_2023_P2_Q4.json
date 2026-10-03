@@ -1,0 +1,174 @@
+{
+  "stem": "Smaller circle x^2 + y^2 = 20. Larger circle centre G(t;0). Common tangent touches at D(p;-2) and F.",
+  "diagram": "analytical_circle",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Show that p = 4.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "p = 4",
+      "steps": [
+        {
+          "s": "p^2 + (-2)^2 = 20",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "p^2 = 16 -> p = 4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "E(6;2) is midpoint of DF. Coordinates of F.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.midpoint",
+      "expected_fn": "F(8;6)",
+      "steps": [
+        {
+          "s": "(x_F + 4)/2 = 6 -> x_F = 8",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(y_F + (-2))/2 = 2 -> y_F = 6",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "F(8; 6)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Equation of tangent DF.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.circle",
+      "expected_fn": "y = 2x - 10",
+      "steps": [
+        {
+          "s": "m_OD = 1/2, m_DF = 2",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "-2 = 2(4) + c",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "c = -10",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 2x - 10",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Calculate t.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "t = 20",
+      "steps": [
+        {
+          "s": "GF perpendicular DF",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "m_GF = -1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "t = 20",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Equation of larger circle.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.circle",
+      "expected_fn": "x^2 + y^2 - 40x + 220 = 0",
+      "steps": [
+        {
+          "s": "r^2 = (8-20)^2 + 6^2 = 180",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x-20)^2 + y^2 = 180",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Expand",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x^2 + y^2 - 40x + 220 = 0",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.6",
+      "prompt_template": "Values of k for internal tangency.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.circle",
+      "expected_fn": "k = 11.06 or 28.94",
+      "steps": [
+        {
+          "s": "r_small = 2 sqrt(5), r_large = 6 sqrt(5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = 20 - (6 sqrt(5) - 2 sqrt(5)) or k = 20 + (6 sqrt(5) - 2 sqrt(5))",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 20 - 4 sqrt(5) or 20 + 4 sqrt(5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = 11.06 or 28.94",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "4"
+  },
+  "diagram_page": "2023_P2_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P2_p06.png",
+  "diagram_crop": null
+}

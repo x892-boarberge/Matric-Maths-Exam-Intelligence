@@ -1,0 +1,87 @@
+{
+  "stem": "A and B independent, P(A) = 0.2, P(B) = 0.63.",
+  "subquestions": [
+    {
+      "n": "11.1",
+      "prompt_template": "Are A and B independent? Justify.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "probability.independent",
+      "expected_fn": "Yes",
+      "steps": [
+        "P(A) × P(B) = 0.2 × 0.63 = 0.126.",
+        "If P(A and B) = 0.126, independent."
+      ]
+    },
+    {
+      "n": "11.2.1",
+      "prompt_template": "Letters of DECIMAL, 7 letters, repeated allowed. How many arrangements?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 7^7 = 823543",
+      "steps": [
+        "Each of 7 positions: 7 choices."
+      ]
+    },
+    {
+      "n": "11.2.2",
+      "prompt_template": "No repetition.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 7! = 5040",
+      "steps": [
+        "Permutations."
+      ]
+    },
+    {
+      "n": "11.2.3",
+      "prompt_template": "Start with vowel, end with consonant, no repetition.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 1440",
+      "steps": [
+        "Vowels in DECIMAL: E, I, A → 3 choices for first.",
+        "Consonants: D, C, M, L → 4 choices for last.",
+        "Middle 5 letters: 5! arrangements.",
+        "Total = 3 × 4 × 5! = 1440."
+      ]
+    },
+    {
+      "n": "11.3",
+      "prompt_template": "t orange balls, 2 yellow. P(same colour) = 52%. Find t.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 6,
+      "skill_id": "probability.independent",
+      "expected_fn": "t = 3",
+      "steps": [
+        "(t/(t+2))² + (2/(t+2))² = 0.52.",
+        "(t² + 4)/(t+2)² = 13/25.",
+        "25(t² + 4) = 13(t² + 4t + 4).",
+        "12t² - 52t + 48 = 0.",
+        "3t² - 13t + 12 = 0.",
+        "(3t - 4)(t - 3) = 0.",
+        "t = 3."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "11"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Kuda invests R5000 at 8.3% simple interest for 4 years + 4% bonus. Thabo invests at 8.1% p.a. compounded monthly. Who earns more?",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "finance.compound",
+      "expected_fn": "Kuda: R6926.40, Thabo: R6905.71. Kuda earns more.",
+      "steps": [
+        "Kuda: A = 5000(1 + 0.083*4) * 1.04",
+        "Thabo: A = 5000(1 + 0.081/12)^48.",
+        "Compare."
+      ]
+    },
+    {
+      "n": "6.2.1",
+      "prompt_template": "Home loan R525 000 at 10% p.a. compounded monthly over 20 years. Mandy pays R6000/month. How many payments?",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "finance.loan",
+      "expected_fn": "n = 158 payments",
+      "steps": [
+        "P = x[1 - (1+i)^-n]/i",
+        "525000 = 6000[1 - (1+0.1/12)^-n]/(0.1/12).",
+        "Solve with logs."
+      ]
+    },
+    {
+      "n": "6.2.2",
+      "prompt_template": "After 9 years of R6000/month, how much can she withdraw (extra over required R5066.36)?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "finance.annuity",
+      "expected_fn": "R162 503.51",
+      "steps": [
+        "Extra = 6000 - 5066.36 = 933.64.",
+        "F = 933.64[(1+i)^108 - 1]/i."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "6"
+  }
+}

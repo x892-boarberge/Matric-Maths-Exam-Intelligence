@@ -1,0 +1,123 @@
+{
+  "stem": "18 days of bread orders. Mean and SD.",
+  "subquestions": [
+    {
+      "n": "1.1.1",
+      "prompt_template": "Mean number of loaves.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.mean",
+      "expected_fn": "22",
+      "steps": [
+        {
+          "s": "Sum = 396",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x_bar = 22",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.1.2",
+      "prompt_template": "Standard deviation.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "10.17",
+      "steps": [
+        {
+          "s": "sigma = 10.17",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.1.3",
+      "prompt_template": "Number of days more than one SD above mean.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "5",
+      "steps": [
+        {
+          "s": "x_bar + sigma = 32.17",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "5 days",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "Number of loaves NOT sold.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.application",
+      "expected_fn": "36",
+      "steps": [
+        {
+          "s": "Sold: 20 x 18 = 360",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "396 - 360 = 36",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.3.1",
+      "prompt_template": "Which box-and-whisker represents data? Give reason.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.box_whisker",
+      "expected_fn": "Graph B; median 18.5, Q1 = 14, IQR = 21, mean > median",
+      "steps": [
+        {
+          "s": "Option B",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Median 18.5; IQR 21; mean > median -> skewed right",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.3.2",
+      "prompt_template": "Describe the skewness.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.skewness",
+      "expected_fn": "Positively skewed (skewed right)",
+      "steps": [
+        {
+          "s": "Positively skewed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "1"
+  },
+  "diagram_page": "2021_P2_p03.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P2_p03.png",
+  "diagram_crop": null
+}

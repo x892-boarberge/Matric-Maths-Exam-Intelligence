@@ -1,0 +1,50 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Determine f'(x) from first principles if f(x) = 2x² - 1.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = 4x",
+      "steps": [
+        "f(x+h) = 2(x+h)² - 1.",
+        "f(x+h) - f(x) = 4xh + 2h².",
+        "Divide by h, take limit.",
+        "f'(x) = 4x."
+      ]
+    },
+    {
+      "n": "7.2.1",
+      "prompt_template": "Determine d/dx(sqrt(x²) + x³).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "= 1 + 3x²",
+      "steps": [
+        "sqrt(x²) = x for x > 0.",
+        "d/dx(x + x³) = 1 + 3x²."
+      ]
+    },
+    {
+      "n": "7.2.2",
+      "prompt_template": "f'(x) if f(x) = (4x²-9)/(4x+6), x != -3/2.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "f'(x) = 1",
+      "steps": [
+        "Factorise numerator: (2x-3)(2x+3).",
+        "Denominator: 2(2x+3).",
+        "f(x) = (2x-3)/2 = x - 3/2.",
+        "f'(x) = 1."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P1",
+    "qnum": "7"
+  }
+}

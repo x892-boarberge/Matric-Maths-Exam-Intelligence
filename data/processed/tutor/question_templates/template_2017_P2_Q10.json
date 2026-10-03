@@ -1,0 +1,118 @@
+{
+  "stem": "W on circle centre O. V on OW. Chord MN with MV = VN. Tangent at W meets OM at T and ON at S.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Give reason why OV perpendicular MN.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Line from centre to midpoint of chord",
+      "steps": [
+        {
+          "s": "Line from centre to midpoint of chord",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.1",
+      "prompt_template": "Prove MN || TS.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "MN || TS",
+      "steps": [
+        {
+          "s": "OWT = OWS = 90",
+          "r": "radius perpendicular tangent",
+          "mark": "S/R"
+        },
+        {
+          "s": "MN || TS",
+          "r": "co-interior angles supplementary",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2",
+      "prompt_template": "Prove TMNS is cyclic quad.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "TMNS cyclic",
+      "steps": [
+        {
+          "s": "M1 = N1",
+          "r": "angles opposite equal sides",
+          "mark": "S/R"
+        },
+        {
+          "s": "M1 = T",
+          "r": "corresponding angles; MN || TS",
+          "mark": "S/R"
+        },
+        {
+          "s": "N1 = T",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "TMNS cyclic",
+          "r": "converse exterior angle of cyclic quad",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.2.3",
+      "prompt_template": "Prove OS.MN = 2 ON.WS.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "OS.MN = 2 ON.WS",
+      "steps": [
+        {
+          "s": "In triangle OVN and triangle OWS: O2 common; OVN = OWS = 90; ONV = OSW",
+          "r": "AAA",
+          "mark": "S/R"
+        },
+        {
+          "s": "triangle OVN ||| triangle OWS",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "VN/WS = ON/OS",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "VN = (1/2) MN",
+          "r": "given",
+          "mark": "S/R"
+        },
+        {
+          "s": "(1/2) MN/WS = ON/OS -> OS.MN = 2 ON.WS",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2017_P2_p12.png",
+  "diagram_image": "data/processed/diagrams/pages/2017_P2_p12.png",
+  "diagram_crop": null
+}

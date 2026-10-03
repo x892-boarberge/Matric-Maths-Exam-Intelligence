@@ -1,0 +1,159 @@
+{
+  "stem": "E and F are x- and y-intercepts of line y = 3x + 8. Line through B(1;5) making angle 45 with EF has intercepts A and M.",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Coordinates of E.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.intercept",
+      "expected_fn": "E(-8/3; 0)",
+      "steps": [
+        {
+          "s": "y = 0: 3x + 8 = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = -8/3 -> E(-8/3; 0)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Size of DAE.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.angle",
+      "expected_fn": "26.57",
+      "steps": [
+        {
+          "s": "tan DEO = 3 -> DEO = 71.57",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "DAE = 71.57 - 45",
+          "r": "exterior angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 26.57",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Equation of AB.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "y = 1/2 x + 9/2",
+      "steps": [
+        {
+          "s": "m_AB = tan 26.57",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_AB = 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "5 = 1/2(1) + c -> c = 9/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 1/2 x + 9/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Coordinates of D.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.solve",
+      "expected_fn": "D(-7/5; 19/5)",
+      "steps": [
+        {
+          "s": "Solve x - 2y + 9 = 0 and y = 3x + 8",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "-5x = 7 -> x = -7/5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 19/5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "D(-7/5; 19/5)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Area of DMOE.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "analytical.area",
+      "expected_fn": "8.22 sq units",
+      "steps": [
+        {
+          "s": "A(-9; 0)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area AMO = (1/2)(9)(9/2) = 20.25",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AE = 19/3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_D = 19/5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area ADE = (1/2)(19/3)(19/5) = 12.03",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area DMOE = 8.22",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "4"
+  },
+  "diagram_page": "2014_P2_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P2_p06.png",
+  "diagram_crop": null
+}

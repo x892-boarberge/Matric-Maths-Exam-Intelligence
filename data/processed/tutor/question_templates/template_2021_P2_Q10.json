@@ -1,0 +1,123 @@
+{
+  "stem": "BE and CD diameters with centre M. Chord AE cuts CD at F, AE perpendicular CD. Let C = x.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Give reason why AF = FE.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Line from centre perpendicular to chord",
+      "steps": [
+        {
+          "s": "Line from centre perpendicular to chord",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Determine M1 in terms of x.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "M1 = 180 - 2x",
+      "steps": [
+        {
+          "s": "A1 = 90 - x",
+          "r": "sum of angles in triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "M1 = 180 - 2x",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.3",
+      "prompt_template": "Prove AD is tangent to circle through A, C, F.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "AD is tangent",
+      "steps": [
+        {
+          "s": "ADC = 90",
+          "r": "angle in semicircle",
+          "mark": "S/R"
+        },
+        {
+          "s": "A2 = 90 - (90-x) = x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "A2 = C = x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AD is tangent",
+          "r": "converse tangent-chord theorem",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.4",
+      "prompt_template": "If CF = 6 and AB = 24, calculate AE.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "AE = 12 sqrt(5) or 26.83",
+      "steps": [
+        {
+          "s": "AF = FE, BM = ME",
+          "r": "given and radii",
+          "mark": "S/R"
+        },
+        {
+          "s": "FM = (1/2)AB = 12",
+          "r": "midpoint theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "EM = 18",
+          "r": "radii",
+          "mark": "S"
+        },
+        {
+          "s": "EB = 36",
+          "r": "diameter",
+          "mark": "S"
+        },
+        {
+          "s": "AE^2 = 36^2 - 24^2 -> AE = 12 sqrt(5)",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2021_P2_p11.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P2_p11.png",
+  "diagram_crop": null
+}

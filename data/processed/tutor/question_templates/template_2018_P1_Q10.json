@@ -1,0 +1,66 @@
+{
+  "stem": "In triangle ABC, DECF is a parallelogram. BF:FC = 2:3. AG = t, BC = 5 - t.",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Write down AH:HG.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 1,
+      "skill_id": "euclidean.similarity",
+      "expected_fn": "AH:HG = 3:2",
+      "steps": [
+        "From similar triangles ABD and ABC."
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Calculate t for maximum area of parallelogram.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 5,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "t = 5/2",
+      "steps": [
+        "Area = base × perp height = (3/5)(5-t) × (2/5)t.",
+        "A(t) = 6/25 t(5-t) = -6/25 t² + 6/5 t.",
+        "A'(t) = -12/25 t + 6/5 = 0.",
+        "t = 5/2."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "10"
+  },
+  "diagram_page": "2018_P1_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P1_p08.png",
+  "diagram_crop": null
+}

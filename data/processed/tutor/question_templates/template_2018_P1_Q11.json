@@ -1,0 +1,46 @@
+{
+  "stem": "Digits 3, 4, 5, 6, 7, 8, 9 available.",
+  "subquestions": [
+    {
+      "n": "11.1.1",
+      "prompt_template": "How many 5-digit codes if digits may be repeated?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 7^5 = 16807",
+      "steps": [
+        "Each of 5 positions: 7 choices."
+      ]
+    },
+    {
+      "n": "11.1.2",
+      "prompt_template": "How many 5-digit codes if digits may NOT be repeated?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 7!/(7-5)! = 2520",
+      "steps": [
+        "7 × 6 × 5 × 4 × 3 = 2520."
+      ]
+    },
+    {
+      "n": "11.2",
+      "prompt_template": "3-digit codes, digits repeated, 400 < code < 600, divisible by 5.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 14",
+      "steps": [
+        "First digit must be 4 or 5: 2 choices.",
+        "Middle digit: 7 choices.",
+        "Last digit must be 5: 1 choice.",
+        "Total = 2 × 7 × 1 = 14."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "11"
+  }
+}

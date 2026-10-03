@@ -1,0 +1,68 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Determine f'(x) from first principles if f(x) = {a}x² - {b}x.",
+      "ranges": {
+        "a": [
+          2,
+          3
+        ],
+        "b": [
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 5,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = {two_a}x - {b}",
+      "steps": [
+        "f(x+h) = {a}(x+h)² - {b}(x+h)",
+        "Expand and simplify",
+        "f(x+h) - f(x) = {two_a}xh + {a}h² - {b}h",
+        "Divide by h",
+        "Take limit: f'(x) = {two_a}x - {b}."
+      ]
+    },
+    {
+      "n": "9.2.1",
+      "prompt_template": "Determine dy/dx if y = {a}x⁵ - {b}x⁴ + {c}x.",
+      "ranges": {
+        "a": [
+          4
+        ],
+        "b": [
+          6
+        ],
+        "c": [
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "dy/dx = {five_a}x⁴ - {four_b}x³ + {c}",
+      "steps": [
+        "Differentiate term by term."
+      ]
+    },
+    {
+      "n": "9.2.2",
+      "prompt_template": "D_x[-cbrt(x)/2 + (1/(3x))²].",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "= -(1/6)x^(-2/3) - (2/9)x^(-3)",
+      "steps": [
+        "Rewrite with exponents.",
+        "Differentiate."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "9"
+  }
+}

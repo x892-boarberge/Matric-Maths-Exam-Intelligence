@@ -4,9 +4,24 @@
     {
       "n": "4.1",
       "prompt_template": "Write down the equation of the asymptote of f.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.exponential.asymptote",
+      "skill_id": "functions.exponential",
       "expected_fn": "y = -4",
       "steps": [
         "For f(x) = a^x - 4, the horizontal asymptote is y = -4."
@@ -15,9 +30,24 @@
     {
       "n": "4.2",
       "prompt_template": "Determine the coordinates of B.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
       "marks": 2,
-      "skill_id": "functions.exponential.intercept",
+      "skill_id": "functions.exponential",
       "expected_fn": "B(2; 0)",
       "steps": [
         "Set 2^x - 4 = 0: 2^x = 4",
@@ -27,9 +57,18 @@
     {
       "n": "4.3",
       "prompt_template": "Determine the equation of k, the straight line through A and B.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 2,
-      "skill_id": "functions.line.equation",
+      "skill_id": "functions.line",
       "expected_fn": "k(x) = ...",
       "steps": [
         "A(0; -3), B(2; 0)",
@@ -40,9 +79,28 @@
     {
       "n": "4.4",
       "prompt_template": "Calculate the vertical distance between k and f at x = 1.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 2,
-      "skill_id": "functions.distance.vertical",
+      "skill_id": "functions.distance",
       "expected_fn": "Distance = {d}",
       "steps": [
         "k(1) = -1.5, f(1) = 2 - 4 = -2",
@@ -52,9 +110,28 @@
     {
       "n": "4.5",
       "prompt_template": "Write down the equation of g if g(x) = f(x) + 4.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.exponential.transform",
+      "skill_id": "functions.exponential",
       "expected_fn": "g(x) = 2^x",
       "steps": [
         "g(x) = 2^x - 4 + 4 = 2^x"
@@ -63,9 +140,24 @@
     {
       "n": "4.6",
       "prompt_template": "Write down the domain of g^(-1).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.inverse.domain",
+      "skill_id": "functions.inverse",
       "expected_fn": "x > 0",
       "steps": [
         "Domain of g^(-1) = range of g = (0; inf)"
@@ -74,7 +166,13 @@
     {
       "n": "4.7",
       "prompt_template": "Write down the equation of g^(-1).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 2,
       "skill_id": "functions.inverse",
       "expected_fn": "y = log_2(x)",
@@ -89,5 +187,8 @@
     "paper": "P1",
     "qnum": "4"
   },
-  "diagram": "exponential_solo"
+  "diagram": "exponential_solo",
+  "diagram_page": "2023_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P1_p05.png",
+  "diagram_crop": null
 }

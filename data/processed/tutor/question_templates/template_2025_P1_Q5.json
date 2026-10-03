@@ -4,9 +4,24 @@
     {
       "n": "5.1",
       "prompt_template": "Write down the domain of g.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.hyperbola.domain",
+      "skill_id": "functions.hyperbola",
       "expected_fn": "x in R, x != 3",
       "steps": [
         "Denominator x - 3 = 0 when x = 3.",
@@ -16,9 +31,18 @@
     {
       "n": "5.2",
       "prompt_template": "Write down the range of f.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.parabola.range",
+      "skill_id": "functions.parabola",
       "expected_fn": "y <= {q}",
       "steps": [
         "Read turning point y-value off diagram."
@@ -27,7 +51,13 @@
     {
       "n": "5.3.1",
       "prompt_template": "Determine values of x for which g(x) <= f(x).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 2,
       "skill_id": "functions.inequality",
       "expected_fn": "see memo",
@@ -39,7 +69,13 @@
     {
       "n": "5.3.2",
       "prompt_template": "Determine values of x for which f(x) < 6.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 2,
       "skill_id": "functions.inequality",
       "expected_fn": "see memo",
@@ -50,9 +86,24 @@
     {
       "n": "5.4",
       "prompt_template": "Show that f(x) = -1/2 x^2 + 3x + 7/2.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 3,
-      "skill_id": "functions.parabola.equation",
+      "skill_id": "functions.parabola",
       "expected_fn": "f(x) = -1/2 x^2 + 3x + 7/2",
       "steps": [
         "Turning point P = (3; 8) — intersection of asymptotes of g.",
@@ -64,7 +115,26 @@
     {
       "n": "5.5",
       "prompt_template": "Calculate the length of MT.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 6,
       "skill_id": "analytical.distance",
       "expected_fn": "MT = {length}",
@@ -94,5 +164,8 @@
     "paper": "P1",
     "qnum": "5"
   },
-  "diagram": "parabola_line"
+  "diagram": "parabola_line",
+  "diagram_page": "2025_P1_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P1_p06.png",
+  "diagram_crop": null
 }

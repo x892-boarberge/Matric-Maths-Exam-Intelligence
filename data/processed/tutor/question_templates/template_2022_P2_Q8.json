@@ -1,0 +1,129 @@
+{
+  "stem": "8.1: Circle centre O, cyclic quad MNPR with MN diameter, M2 = 64. 8.2: Triangle ABG with midpoints D, E, FG || CH.",
+  "diagram": "circle_cyclic_quad",
+  "subquestions": [
+    {
+      "n": "8.1.1",
+      "prompt_template": "Calculate P.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "P = 116",
+      "steps": [
+        {
+          "s": "P = 116",
+          "r": "opposite angles of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.1.2",
+      "prompt_template": "Calculate M1.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "M1 = 26",
+      "steps": [
+        {
+          "s": "M1 + 64 = 90",
+          "r": "angle in semicircle",
+          "mark": "S/R"
+        },
+        {
+          "s": "M1 = 26",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.1.3",
+      "prompt_template": "Calculate O1.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "O1 = 52",
+      "steps": [
+        {
+          "s": "O1 = 52",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.2.1",
+      "prompt_template": "Give a reason why DE || BH.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.midpoint",
+      "type": "proof",
+      "expected_fn": "Midpoint theorem",
+      "steps": [
+        {
+          "s": "Midpoint theorem",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.2.2",
+      "prompt_template": "If FC/BF = 1/4, DE = 3x-1, GH = x+1, calculate x.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "x = 3",
+      "steps": [
+        {
+          "s": "BG = 2DE",
+          "r": "midpoint theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "GH = FC (given)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "BG/GH = BF/FC",
+          "r": "prop theorem; FG || CH",
+          "mark": "S/R"
+        },
+        {
+          "s": "(6x-2)/(x+1) = 4/1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "6x - 2 = 4x + 4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2022_P2_p11.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P2_p11.png",
+  "diagram_crop": null
+}

@@ -10,9 +10,28 @@
     {
       "n": "9.1",
       "prompt_template": "For which values of x is f decreasing?",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -8,
+          -7,
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 2,
-      "skill_id": "calculus.cubic.decreasing",
+      "skill_id": "calculus.cubic",
       "expected_fn": "{xa} < x < {xb}",
       "steps": [
         "f is decreasing between the two turning points.",
@@ -23,7 +42,18 @@
     {
       "n": "9.2",
       "prompt_template": "Write down the x-intercepts of f'(x).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
       "marks": 2,
       "skill_id": "calculus.derivative",
       "expected_fn": "x = {xa} or x = {xb}",
@@ -37,7 +67,7 @@
       "prompt_template": "For which values of x will f be concave up?",
       "ranges": {},
       "marks": 2,
-      "skill_id": "calculus.cubic.concave",
+      "skill_id": "calculus.cubic",
       "expected_fn": "x > {xinf}",
       "steps": [
         "Point of inflection is midway between the turning points: x = {xinf}.",
@@ -48,9 +78,18 @@
     {
       "n": "9.4",
       "prompt_template": "Determine the value of k for which y = f(x) + k has THREE positive x-intercepts.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 2,
-      "skill_id": "calculus.cubic.intercept",
+      "skill_id": "calculus.cubic",
       "expected_fn": "{k_min} < k < {k_max}",
       "steps": [
         "y = f(x) + k shifts f vertically by k.",
@@ -59,5 +98,8 @@
         "Answer: {k_min} < k < {k_max}"
       ]
     }
-  ]
+  ],
+  "diagram_page": "2024_P1_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P1_p08.png",
+  "diagram_crop": null
 }

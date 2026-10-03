@@ -1,0 +1,149 @@
+{
+  "stem": "Heights of 160 learners.",
+  "diagram": "histogram",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Describe skewness.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.skewness",
+      "expected_fn": "Positively skewed",
+      "steps": [
+        {
+          "s": "Positively skewed (right)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Range.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.range",
+      "expected_fn": "0.82 m",
+      "steps": [
+        {
+          "s": "2.21 - 1.39 = 0.82",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "0.82 m",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Complete cumulative frequency column.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.cumulative",
+      "expected_fn": "24; 95; 133; 156; 160",
+      "steps": [
+        {
+          "s": "24; 95",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "133; 156; 160",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Draw ogive.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "stats.ogive",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Upper limits correct",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Cumulative frequencies",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Smooth shape",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Grounded",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.5",
+      "prompt_template": "Estimate x if 80 learners below x metres.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.ogive",
+      "expected_fn": "1.65 m",
+      "steps": [
+        {
+          "s": "Method at 80",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 1.65",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.6.1",
+      "prompt_template": "How does error affect mean?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.interpret",
+      "expected_fn": "Shifts by 0.1 m",
+      "steps": [
+        {
+          "s": "Mean shifts by 0.1 m",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.6.2",
+      "prompt_template": "How does error affect SD?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.interpret",
+      "expected_fn": "No influence",
+      "steps": [
+        {
+          "s": "No influence (no change in variation)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P2",
+    "qnum": "2"
+  },
+  "diagram_page": "2016_P2_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2016_P2_p04.png",
+  "diagram_crop": null
+}

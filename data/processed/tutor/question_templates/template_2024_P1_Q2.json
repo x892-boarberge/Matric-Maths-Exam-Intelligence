@@ -12,29 +12,19 @@
       "ranges": {
         "a": [
           3,
-          5,
-          7,
-          9,
-          11
+          5
         ],
         "d": [
           2,
-          3,
-          4,
-          5,
-          6,
-          7
+          3
         ],
         "n": [
           15,
-          18,
-          20,
-          24,
-          30
+          18
         ]
       },
       "marks": 2,
-      "skill_id": "sequences.ap.sum",
+      "skill_id": "sequences.ap",
       "expected_fn": "S_{n} = {S_n}",
       "derive": "S_n = n/2 * (2*a + (n-1)*d)",
       "steps": [
@@ -51,36 +41,23 @@
       "ranges": {
         "a": [
           3,
-          5,
-          7,
-          9,
-          11
+          5
         ],
         "d": [
           2,
-          3,
-          4,
-          5,
-          6,
-          7
+          3
         ],
         "n": [
           15,
-          18,
-          20,
-          24,
-          30
+          18
         ],
         "n2": [
           60,
-          70,
-          75,
-          80,
-          90
+          70
         ]
       },
       "marks": 3,
-      "skill_id": "sequences.ap.sum",
+      "skill_id": "sequences.ap",
       "expected_fn": "sum_(k={n_plus_1})^{n2}({d}k + {c}) = {S_n2_minus_S_n}",
       "derive": "S_n = n/2*(2a+(n-1)d); S_n2 = n2/2*(2a+(n2-1)d); c = a - d; n_plus_1 = n + 1; S_n2_minus_S_n = S_n2 - S_n",
       "steps": [
@@ -98,31 +75,23 @@
       "ranges": {
         "d1": [
           1,
-          2,
-          3
+          2
         ],
         "step": [
           2,
-          3,
-          4
+          3
         ],
         "N": [
           99,
-          50,
-          100,
-          150,
-          200
+          50
         ],
         "T_N": [
           9632,
-          5000,
-          8000,
-          12000,
-          20000
+          5000
         ]
       },
       "marks": 2,
-      "skill_id": "sequences.quadratic.term",
+      "skill_id": "sequences.quadratic",
       "derive": "d2 = d1 + step; d3 = d1 + 2*step; N_minus_1 = N - 1; D_at_N_minus_1 = d1 + (N - 2)*step; T_N_minus_1 = T_N - D_at_N_minus_1",
       "expected_fn": "T_{N_minus_1} = {T_N_minus_1}",
       "steps": [
@@ -157,7 +126,7 @@
         ]
       },
       "marks": 3,
-      "skill_id": "sequences.quadratic.general",
+      "skill_id": "sequences.quadratic",
       "derive": "a = step / 2; b = d1 - (3*step)/2; c = T3 - 9*a - 3*b",
       "expected_fn": "T_n = {a_disp}n^2 {b_terms} {c_terms}",
       "steps": [

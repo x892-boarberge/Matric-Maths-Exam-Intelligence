@@ -1,0 +1,174 @@
+{
+  "stem": "M(3;-5) is centre. PN is diameter. KL tangent at N(7;-2).",
+  "diagram": "analytical_circle",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Coordinates of P.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "P(-1; -8)",
+      "steps": [
+        {
+          "s": "(x_P + 7)/2 = 3 -> x_P = -1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_P = -8",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2.1",
+      "prompt_template": "Equation of circle.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "(x-3)^2 + (y+5)^2 = 25",
+      "steps": [
+        {
+          "s": "r^2 = (7-3)^2 + (-2+5)^2 = 25",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x-3)^2 + (y+5)^2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 25",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2.2",
+      "prompt_template": "Equation of KL.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.circle",
+      "expected_fn": "y = (4/3)x - 34/3",
+      "steps": [
+        {
+          "s": "m_MN = (-5+2)/(3-7) = 3/4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_KL = -4/3 (tangent perp radius)",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "Substitute N(7;-2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y + 2 = -4/3(x - 7)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = -4/3 x + 22/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Values of k for y = -4/3 x + k secant.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.circle",
+      "expected_fn": "-28/3 < k < 22/3",
+      "steps": [
+        {
+          "s": "Substitute into circle equation",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Discriminant > 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Solve for k",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "-28/3 < k < 22/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4.1",
+      "prompt_template": "Show AB = sqrt(2t^2 + 4t + 9).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.tangent",
+      "expected_fn": "AB = sqrt(2t^2 + 4t + 9)",
+      "steps": [
+        {
+          "s": "AB^2 = AM^2 - MB^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "AB = sqrt(2t^2 + 4t + 9)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4.2",
+      "prompt_template": "Minimum length of AB.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.min_distance",
+      "expected_fn": "sqrt(7)",
+      "steps": [
+        {
+          "s": "t = -4/(2(2)) = -1",
+          "r": "quadratic vertex",
+          "mark": "S/R"
+        },
+        {
+          "s": "Minimum at t = -1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AB = sqrt(2(-1)^2 + 4(-1) + 9)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AB = sqrt(7)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P2",
+    "qnum": "4"
+  },
+  "diagram_page": "2022_P2_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P2_p06.png",
+  "diagram_crop": null
+}

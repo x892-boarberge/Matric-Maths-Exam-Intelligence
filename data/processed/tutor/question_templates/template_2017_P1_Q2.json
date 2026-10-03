@@ -1,0 +1,96 @@
+{
+  "stem": "Quadratic sequence: 5; -4; -19; -40; ...",
+  "subquestions": [
+    {
+      "n": "2.1.1",
+      "prompt_template": "Determine the constant second difference.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "-6",
+      "steps": [
+        "First diffs: -9, -15, -21.",
+        "Second diff: -6."
+      ]
+    },
+    {
+      "n": "2.1.2",
+      "prompt_template": "Determine T_n.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "T_n = -3n² + 8",
+      "steps": [
+        "2a = -6 → a = -3.",
+        "3a + b = -9 → b = 0.",
+        "a + b + c = 5 → c = 8."
+      ]
+    },
+    {
+      "n": "2.1.3",
+      "prompt_template": "Which term equals -25939?",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "n = 93",
+      "steps": [
+        "-3n² + 8 = -25939.",
+        "3n² = 25947.",
+        "n² = 8649.",
+        "n = 93."
+      ]
+    },
+    {
+      "n": "2.2.1",
+      "prompt_template": "2k-7; k+8; 2k-1 is arithmetic. Find T_15.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "sequences.ap",
+      "expected_fn": "T_15 = 59",
+      "steps": [
+        "k + 8 - (2k - 7) = 2k - 1 - (k + 8).",
+        "-k + 15 = k - 9.",
+        "2k = 24.",
+        "k = 12.",
+        "Sequence: 17, 20, 23, ..., d = 3.",
+        "T_15 = 17 + 14(3) = 59."
+      ]
+    },
+    {
+      "n": "2.2.2",
+      "prompt_template": "Sum of first 30 even terms of the sequence.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "sequences.ap",
+      "expected_fn": "S_30 = 3210",
+      "steps": [
+        "Even terms: 20, 26, 32, ...",
+        "a = 20, d = 6.",
+        "S_30 = 30/2[40 + 29*6] = 15[40+174] = 3210."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P1",
+    "qnum": "2"
+  }
+}

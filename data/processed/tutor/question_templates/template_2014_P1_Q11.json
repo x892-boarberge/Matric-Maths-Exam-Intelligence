@@ -1,0 +1,72 @@
+{
+  "stem": "Survey of 180 staff on holiday preferences (coast, game park, home).",
+  "subquestions": [
+    {
+      "n": "11.1.1",
+      "prompt_template": "P(male).",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 1,
+      "skill_id": "probability.tables",
+      "expected_fn": "P = 83/180",
+      "steps": [
+        "From table."
+      ]
+    },
+    {
+      "n": "11.1.2",
+      "prompt_template": "P(not game park).",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.tables",
+      "expected_fn": "P = 118/180 = 59/90",
+      "steps": [
+        "1 - P(game park) = 1 - 62/180 = 118/180."
+      ]
+    },
+    {
+      "n": "11.2",
+      "prompt_template": "Are 'male' and 'home' independent? Motivate.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 4,
+      "skill_id": "probability.independent",
+      "expected_fn": "No",
+      "steps": [
+        "P(male) × P(home) = (83/180)(20/180) = 83/1620.",
+        "P(male and home) = 13/180.",
+        "Not equal → NOT independent."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P1",
+    "qnum": "11"
+  },
+  "diagram_page": "2014_P1_p10.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P1_p10.png",
+  "diagram_crop": null
+}

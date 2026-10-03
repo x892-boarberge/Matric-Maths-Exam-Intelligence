@@ -1,0 +1,56 @@
+{
+  "stem": "Password of 5 different letters from the 26-letter alphabet.",
+  "subquestions": [
+    {
+      "n": "12.1.1",
+      "prompt_template": "How many passwords if all letters may be used?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 26 × 25 × 24 × 23 × 22 = 7 893 600",
+      "steps": [
+        "Permutation: 26P5."
+      ]
+    },
+    {
+      "n": "12.1.2",
+      "prompt_template": "How many if must start with D and end with L?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 24 × 23 × 22 = 12 144",
+      "steps": [
+        "Fix D and L, arrange middle 3."
+      ]
+    },
+    {
+      "n": "12.2.1",
+      "prompt_template": "7 cars, 3 silver. How many arrangements?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 7! = 5040",
+      "steps": [
+        "Permutations."
+      ]
+    },
+    {
+      "n": "12.2.2",
+      "prompt_template": "Three silver cars must be parked next to each other.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 720",
+      "steps": [
+        "Treat 3 silver as a block: 5! arrangements of block + 4 cars.",
+        "Arrange inside block: 3! = 6.",
+        "Total = 5! × 3! = 120 × 6 = 720."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P1",
+    "qnum": "12"
+  }
+}

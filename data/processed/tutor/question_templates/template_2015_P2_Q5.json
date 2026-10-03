@@ -1,0 +1,190 @@
+{
+  "stem": "sin 23 = sqrt(k).",
+  "subquestions": [
+    {
+      "n": "5.1.1",
+      "prompt_template": "sin 203 in terms of k.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "-sqrt(k)",
+      "steps": [
+        {
+          "s": "sin 203 = -sin 23",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "= -sqrt(k)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.2",
+      "prompt_template": "cos 23 in terms of k.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "sqrt(1-k)",
+      "steps": [
+        {
+          "s": "cos^2 23 = 1 - sin^2 23 = 1 - k",
+          "r": "square identity",
+          "mark": "S/R"
+        },
+        {
+          "s": "cos 23 = sqrt(1-k)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.3",
+      "prompt_template": "tan(-23) in terms of k.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "-sqrt(k)/sqrt(1-k)",
+      "steps": [
+        {
+          "s": "tan(-23) = -tan 23",
+          "r": "odd function",
+          "mark": "S"
+        },
+        {
+          "s": "= -sqrt(k)/sqrt(1-k)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Simplify 4 cos(-x) cos(90+x) / (sin(30-x)cos x + cos(30-x)sin x).",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "trig.identities",
+      "expected_fn": "-4 sin 2x",
+      "steps": [
+        {
+          "s": "cos(-x) = cos x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos(90+x) = -sin x",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "Denominator = sin(30-x+x) = sin 30",
+          "r": "compound angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin 30 = 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -8 sin x cos x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -4 sin 2x",
+          "r": "double angle",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "General solution of cos 2x - 7cos x - 3 = 0.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = 120 + k.360 or x = 240 + k.360",
+      "steps": [
+        {
+          "s": "2cos^2 x - 1 - 7cos x - 3 = 0",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "2cos^2 x - 7cos x - 4 = 0",
+          "r": "standard form",
+          "mark": "S"
+        },
+        {
+          "s": "(2cos x + 1)(cos x - 4) = 0",
+          "r": "factorise",
+          "mark": "S"
+        },
+        {
+          "s": "cos x = -1/2 (cos x = 4 n/a)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 120 + k.360",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 240 + k.360; k in Z",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "Calculate sin 3 theta if sin theta = 1/3.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.identities",
+      "expected_fn": "23/27",
+      "steps": [
+        {
+          "s": "sin 3 theta = sin(2theta + theta)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= sin 2theta cos theta + cos 2theta sin theta",
+          "r": "compound angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 2 sin theta cos^2 theta + (1 - 2 sin^2 theta) sin theta",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 3 sin theta - 4 sin^3 theta",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 3(1/3) - 4(1/27) = 23/27",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "5"
+  }
+}

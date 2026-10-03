@@ -1,0 +1,47 @@
+{
+  "stem": "Closed rectangular box. Length = 3*width. Volume 5 m³. Top/bottom R15/m², sides R6/m².",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Show Cost = 90w² + 48wh.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "Cost = 90w² + 48wh",
+      "steps": [
+        "Total surface area = 2lw + 2wh + 2lh, l = 3w.",
+        "= 6w² + 8wh.",
+        "Cost = 15(6w²) + 6(8wh) = 90w² + 48wh."
+      ]
+    },
+    {
+      "n": "9.2",
+      "prompt_template": "Determine w for minimum cost.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 6,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "w ≈ 0.76 m",
+      "steps": [
+        "From V = 3w²h = 5: h = 5/(3w²).",
+        "Cost(w) = 90w² + 48w * 5/(3w²) = 90w² + 80/w.",
+        "C'(w) = 180w - 80/w².",
+        "Set to 0: 180w³ = 80.",
+        "w ≈ 0.76 m."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P1",
+    "qnum": "9"
+  }
+}

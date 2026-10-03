@@ -1,0 +1,209 @@
+{
+  "stem": "Circle centre M(5;4) touches y-axis at N, intersects x-axis at A and B. PBL and SKL tangents, SKL parallel to x-axis.",
+  "diagram": "analytical_circle",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Radius.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "analytical.circle",
+      "expected_fn": "5",
+      "steps": [
+        {
+          "s": "r = 5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Equation of circle.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "analytical.circle",
+      "expected_fn": "(x-5)^2 + (y-4)^2 = 25",
+      "steps": [
+        {
+          "s": "(x-5)^2 + (y-4)^2 = 25",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Coordinates of A.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "A(2; 0)",
+      "steps": [
+        {
+          "s": "Substitute y = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x-5)^2 = 9",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 2 -> A(2;0)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4.1",
+      "prompt_template": "Gradient of MB.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "-4/3",
+      "steps": [
+        {
+          "s": "m_MB = (4-0)/(5-8)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -4/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4.2",
+      "prompt_template": "Equation of tangent PB.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "y = 3/4 x - 6",
+      "steps": [
+        {
+          "s": "m_PB = 3/4",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "0 = 3/4(8) + c -> c = -6",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 3/4 x - 6",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.5",
+      "prompt_template": "Equation of tangent SKL.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "y = 9",
+      "steps": [
+        {
+          "s": "y_K = y_M + r = 4 + 5 = 9",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 9",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.6",
+      "prompt_template": "Show L(20; 9).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.solve",
+      "expected_fn": "L(20; 9)",
+      "steps": [
+        {
+          "s": "3/4 x - 6 = 9",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 20 -> L(20; 9)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.7",
+      "prompt_template": "Length of ML.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.distance",
+      "expected_fn": "5 sqrt(10)",
+      "steps": [
+        {
+          "s": "ML = sqrt(15^2 + 5^2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 5 sqrt(10)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.8",
+      "prompt_template": "Equation of circle through K, L, M.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.circle",
+      "expected_fn": "(x-12.5)^2 + (y-6.5)^2 = 62.5",
+      "steps": [
+        {
+          "s": "MK perpendicular KL -> ML diameter",
+          "r": "converse angle in semicircle",
+          "mark": "S/R"
+        },
+        {
+          "s": "r = ML/2 = sqrt(125/2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Centre = midpoint ML",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 12.5; y = 6.5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x-12.5)^2 + (y-6.5)^2 = 62.5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_page": "2014_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P2_p05.png",
+  "diagram_crop": null
+}

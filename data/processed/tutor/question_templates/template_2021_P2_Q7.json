@@ -1,0 +1,89 @@
+{
+  "stem": "f(x) = -2 sin x for [-180;180]. g(x) = cos(x-60).",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Draw g(x) = cos(x-60) for [-180;180].",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.graph",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Both turning points",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Both x-intercepts (-30 & 150)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Shape",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Period of f(3x).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "120",
+      "steps": [
+        {
+          "s": "120",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "Value of x for which f(x) - g(x) = 1.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = -30",
+      "steps": [
+        {
+          "s": "x = -30",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.4",
+      "prompt_template": "Range of k if k(x) = (1/2)g(x) + 1.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.graph",
+      "expected_fn": "y in [1/2; 3/2]",
+      "steps": [
+        {
+          "s": "(1/2)g range [1/2; 3/2]",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y in [1/2; 3/2]",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2021_P2_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P2_p08.png",
+  "diagram_crop": null
+}

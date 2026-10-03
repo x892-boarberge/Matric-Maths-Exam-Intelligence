@@ -1,0 +1,185 @@
+{
+  "stem": "sin 16 = p.",
+  "subquestions": [
+    {
+      "n": "5.1.1",
+      "prompt_template": "sin 196 in terms of p.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "-p",
+      "steps": [
+        {
+          "s": "sin 196 = -sin 16",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "= -p",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.2",
+      "prompt_template": "cos 16 in terms of p.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "sqrt(1-p^2)",
+      "steps": [
+        {
+          "s": "x^2 + p^2 = 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos 16 = sqrt(1-p^2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Derive sin(A+B) from cos(A-B).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "sin(A+B) = sin A cos B + cos A sin B",
+      "steps": [
+        {
+          "s": "sin(A+B) = cos[90-(A+B)]",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "= cos[(90-A)-B]",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Expand -> sin A cos B + cos A sin B",
+          "r": "expansion",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Simplify sqrt(1-cos^2 2A)/(cos(-A)cos(90+A)).",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.identities",
+      "expected_fn": "-2",
+      "steps": [
+        {
+          "s": "sqrt(1-cos^2 2A) = sin 2A",
+          "r": "square identity",
+          "mark": "S/R"
+        },
+        {
+          "s": "cos(-A) = cos A",
+          "r": "even function",
+          "mark": "S"
+        },
+        {
+          "s": "cos(90+A) = -sin A",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "sin 2A = 2 sin A cos A",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= -2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.4.1",
+      "prompt_template": "cos B if cos 2B = 3/5, B in [0;90].",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "2/sqrt(5)",
+      "steps": [
+        {
+          "s": "2cos^2 B - 1 = 3/5",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "cos^2 B = 4/5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos B = 2/sqrt(5)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.4.2",
+      "prompt_template": "sin B.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "1/sqrt(5)",
+      "steps": [
+        {
+          "s": "sin^2 B = 1 - cos^2 B = 1/5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "sin B = 1/sqrt(5)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.4.3",
+      "prompt_template": "cos(B+45).",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "1/sqrt(10)",
+      "steps": [
+        {
+          "s": "cos(B+45) = cos B cos 45 - sin B sin 45",
+          "r": "compound angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "Special angles",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 2/sqrt(5) . 1/sqrt(2) - 1/sqrt(5) . 1/sqrt(2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 1/sqrt(10)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P2",
+    "qnum": "5"
+  }
+}

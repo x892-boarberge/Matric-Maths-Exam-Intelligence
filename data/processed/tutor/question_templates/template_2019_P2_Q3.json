@@ -1,0 +1,179 @@
+{
+  "stem": "Trapezium PRST with R(3;5), S(-3;-7), T(-5;k). PT || RS. RS and PR cut y-axis at D and C(0;5).",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Equation of PR.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "analytical.horizontal",
+      "expected_fn": "y = 5",
+      "steps": [
+        {
+          "s": "y = 5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2.1",
+      "prompt_template": "Gradient of RS.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "2",
+      "steps": [
+        {
+          "s": "m = (5-(-7))/(3-(-3))",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2.2",
+      "prompt_template": "Size of theta (PEF).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.inclination",
+      "expected_fn": "63.43 deg",
+      "steps": [
+        {
+          "s": "m_RS = m_PT = 2 (parallel)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan theta = 2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "theta = 63.43",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2.3",
+      "prompt_template": "Coordinates of D.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "D(0;-1)",
+      "steps": [
+        {
+          "s": "y = 2x - 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 0 -> y = -1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "D(0; -1)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "If TS = 2 sqrt(5), find k.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.solve",
+      "expected_fn": "k = -3",
+      "steps": [
+        {
+          "s": "(k+7)^2 = 16",
+          "r": "distance formula",
+          "mark": "S"
+        },
+        {
+          "s": "k = -11 or k = -3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = -3 (from diagram)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "Coordinates of N (TDNS parallelogram).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.parallelogram",
+      "expected_fn": "N(2;-5)",
+      "steps": [
+        {
+          "s": "Translation T->S: (x+2; y-4)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x_N = 2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_N = -5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.5",
+      "prompt_template": "Size of RDR' (reflection of triangle PRD about y-axis).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.reflection",
+      "expected_fn": "53.13 deg",
+      "steps": [
+        {
+          "s": "ODF = 26.57",
+          "r": "tan ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "RDR' = 2(26.57)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 53.13 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_page": "2019_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P2_p05.png",
+  "diagram_crop": null
+}

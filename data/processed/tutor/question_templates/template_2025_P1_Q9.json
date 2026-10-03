@@ -4,9 +4,18 @@
     {
       "n": "9.1",
       "prompt_template": "Calculate the coordinates of E.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 4,
-      "skill_id": "calculus.cubic.turning",
+      "skill_id": "calculus.cubic",
       "expected_fn": "E({xE}; {yE})",
       "steps": [
         "f'(x) = 3x^2 - 16x + 5",
@@ -23,7 +32,7 @@
       "prompt_template": "For which values of x is f concave down?",
       "ranges": {},
       "marks": 3,
-      "skill_id": "calculus.cubic.concave",
+      "skill_id": "calculus.cubic",
       "expected_fn": "x < {xinf}",
       "steps": [
         "f''(x) = 6x - 16",
@@ -37,7 +46,7 @@
       "prompt_template": "B is (2; 0). Use the graph to determine x for which f(x) . f''(x) < 0.",
       "ranges": {},
       "marks": 4,
-      "skill_id": "calculus.cubic.concave",
+      "skill_id": "calculus.cubic",
       "expected_fn": "see memo",
       "steps": [
         "f''(x) < 0 for x < 8/3, > 0 for x > 8/3.",
@@ -48,9 +57,18 @@
     {
       "n": "9.4",
       "prompt_template": "For which values of t will y = -11x + t intersect f at 3 distinct points?",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 6,
-      "skill_id": "calculus.cubic.intercept",
+      "skill_id": "calculus.cubic",
       "expected_fn": "see memo",
       "steps": [
         "The line y = -11x + t has gradient -11.",
@@ -64,5 +82,8 @@
     "paper": "P1",
     "qnum": "9"
   },
-  "diagram": "cubic"
+  "diagram": "cubic",
+  "diagram_page": "2025_P1_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P1_p09.png",
+  "diagram_crop": null
 }

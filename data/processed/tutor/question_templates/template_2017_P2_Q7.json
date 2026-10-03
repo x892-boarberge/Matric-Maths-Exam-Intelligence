@@ -1,0 +1,96 @@
+{
+  "stem": "AB vertical pole. D and E on either side. C in horizontal plane. Elevations from C and E to A are x and y. BE = k. DAC = 2x, AD = AC.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Write down ABC.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.3d",
+      "expected_fn": "90",
+      "steps": [
+        {
+          "s": "90",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Show AC = k tan y / sin x.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.3d",
+      "type": "proof",
+      "expected_fn": "AC = k tan y / sin x",
+      "steps": [
+        {
+          "s": "In triangle ABE: AB = k tan y",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "In triangle ABC: sin x = AB/AC",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "AC = AB/sin x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= k tan y / sin x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "If DAC = 2x and AD = AC, show DC = 2k tan y.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.3d",
+      "type": "proof",
+      "expected_fn": "DC = 2k tan y",
+      "steps": [
+        {
+          "s": "ADC = ACD = 90 - x",
+          "r": "isosceles triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "DC/sin 2x = AC/sin(90 - x)",
+          "r": "sine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin 2x = 2 sin x cos x",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "DC = AC(2 sin x cos x)/cos x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 2 AC sin x = 2k tan y",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2017_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2017_P2_p09.png",
+  "diagram_crop": null
+}

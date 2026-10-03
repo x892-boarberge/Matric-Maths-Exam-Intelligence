@@ -1,0 +1,212 @@
+{
+  "stem": "P(-1;8), Q(-4;-6) and R(12;2) are vertices of triangle PQR. Angle of inclination of QR is theta.",
+  "diagram": "analytical_triangle",
+  "diagram_spec": {
+    "named_points": {
+      "P": [
+        -1,
+        8
+      ],
+      "Q": [
+        -4,
+        -6
+      ],
+      "R": [
+        12,
+        2
+      ]
+    },
+    "theta_label": [
+      [
+        12,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        -4,
+        -6
+      ]
+    ],
+    "xlim": [
+      -6,
+      14
+    ],
+    "ylim": [
+      -8,
+      10
+    ]
+  },
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Calculate the length of QR in simplified surd form.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.distance",
+      "expected_fn": "8 sqrt(5)",
+      "steps": [
+        {
+          "s": "QR = sqrt((-4-12)^2 + (-6-2)^2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "QR = 8 sqrt(5)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Calculate the gradient of QR.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "1/2",
+      "steps": [
+        {
+          "s": "m = (-6-2)/(-4-12)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m = 1/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Calculate the size of theta.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.inclination",
+      "expected_fn": "26.57 deg",
+      "steps": [
+        {
+          "s": "tan theta = 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "theta = 26.57 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "Determine the equation of QR.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "y = (1/2)x - 4",
+      "steps": [
+        {
+          "s": "-6 = (1/2)(-4) + c",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = (1/2)x - 4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.5",
+      "prompt_template": "PQRS is a parallelogram. Write down S.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.parallelogram",
+      "expected_fn": "S(15; 16)",
+      "steps": [
+        {
+          "s": "S = R + (R - Q) or translation",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "S(15; 16)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.6",
+      "prompt_template": "T is on QR with PT perpendicular QR. Coordinates of T.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.perpendicular",
+      "expected_fn": "T(4; -2)",
+      "steps": [
+        {
+          "s": "m_QR = 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_PT = -2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = -2x + 6",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "-2x + 6 = (1/2)x - 4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 4, y = -2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.7",
+      "prompt_template": "Calculate the area of parallelogram PQRS.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.area",
+      "expected_fn": "200 units^2",
+      "steps": [
+        {
+          "s": "PT = 5 sqrt(5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area PQRS = QR x PT",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= (8 sqrt(5))(5 sqrt(5)) = 200 units^2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_page": "2025_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P2_p05.png",
+  "diagram_crop": null
+}

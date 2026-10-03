@@ -20,7 +20,7 @@
       "prompt_template": "Determine f'(x) if f(x) = 2x^5 - 3x^4 + 8x.",
       "ranges": {},
       "marks": 3,
-      "skill_id": "calculus.derivative.rules",
+      "skill_id": "calculus.derivative",
       "expected_fn": "f'(x) = 10x^4 - 12x^3 + 8",
       "steps": [
         "Differentiate term by term."
@@ -31,7 +31,7 @@
       "prompt_template": "Tangent to g(x) = ax^3 + 3x^2 + bx + c has minimum gradient at (-1; -7). For which x is g concave up?",
       "ranges": {},
       "marks": 4,
-      "skill_id": "calculus.cubic.concave",
+      "skill_id": "calculus.cubic",
       "expected_fn": "x > -1",
       "steps": [
         "g'(x) = 3ax^2 + 6x + b",

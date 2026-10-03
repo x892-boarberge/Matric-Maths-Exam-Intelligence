@@ -1,0 +1,104 @@
+{
+  "stem": "Milk price vs units sold.",
+  "diagram": "scatter_regression",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Draw the scatter plot.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.scatter",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "3-5 points plotted",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "6-9 points plotted",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "All 10 points",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Equation of least squares regression line.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.regression",
+      "expected_fn": "y_hat = 90.48 - 1.77x",
+      "steps": [
+        {
+          "s": "a = 90.48",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = -1.77",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_hat = 90.48 - 1.77x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Predict units sold for R38.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "23",
+      "steps": [
+        {
+          "s": "y = 90.48 - 1.77(38)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 23.22 ~ 23",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Comment on accuracy using correlation.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.correlation",
+      "expected_fn": "r = -0.94, strong, accurate prediction",
+      "steps": [
+        {
+          "s": "r = -0.94",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Strong; accurate prediction",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "2"
+  },
+  "diagram_page": "2021_P2_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P2_p04.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,71 @@
+{
+  "stem": "Series S_n = -3 + 5 + 13 + 21 + ... to n terms.",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Determine T_k = bk + c.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.ap",
+      "expected_fn": "T_k = 8k - 11",
+      "steps": [
+        "First term -3, d = 8.",
+        "T_k = -3 + (k-1)8 = 8k - 11."
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Write S_n in sigma notation.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.ap",
+      "expected_fn": "sum_(k=1)^n (8k - 11)",
+      "steps": [
+        "Sum from k=1 to n of T_k."
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Show S_n = 4n² - 7n.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.ap",
+      "expected_fn": "S_n = 4n² - 7n",
+      "steps": [
+        "S_n = n/2[2(-3) + (n-1)8].",
+        "= n/2[-6 + 8n - 8].",
+        "= n/2[8n - 14].",
+        "= 4n² - 7n."
+      ]
+    },
+    {
+      "n": "3.4.1",
+      "prompt_template": "Q_1 = -6, Q_2 = -6-3, Q_3 = -6-3+5, ... Write Q_6.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.ap",
+      "expected_fn": "-6 - 3 + 5 + 13 + 21 + 29",
+      "steps": [
+        "Extend the pattern."
+      ]
+    },
+    {
+      "n": "3.4.2",
+      "prompt_template": "Calculate Q_129.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.ap",
+      "expected_fn": "Q_129 = 64634",
+      "steps": [
+        "Q_129 = -6 + S_128.",
+        "S_128 = 4(128)² - 7(128) = 65536 - 896 = 64640.",
+        "Q_129 = -6 + 64640 = 64634."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "3"
+  }
+}

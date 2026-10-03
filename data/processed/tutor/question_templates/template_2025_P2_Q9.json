@@ -1,0 +1,171 @@
+{
+  "stem": "O is centre, K, T, P on circle. Prove angle at centre = 2 x angle at circumference.",
+  "diagram": "circle_centre_angle",
+  "diagram_spec": {
+    "centre": [
+      0,
+      0
+    ],
+    "radius": 3,
+    "points_on_circle": {
+      "K": 90,
+      "T": 205,
+      "P": 335
+    },
+    "chords": [
+      [
+        "K",
+        "T"
+      ],
+      [
+        "K",
+        "P"
+      ]
+    ],
+    "produce": [
+      "K",
+      "O",
+      0.4
+    ],
+    "dashed_lines": [
+      [
+        "O",
+        "T"
+      ],
+      [
+        "O",
+        "P"
+      ]
+    ],
+    "angle_labels": [
+      {
+        "vertex": "K",
+        "p1": "T",
+        "p2": "O",
+        "label": "1",
+        "r_arc": 0.5,
+        "r_label": 0.8
+      },
+      {
+        "vertex": "K",
+        "p1": "O",
+        "p2": "P",
+        "label": "2",
+        "r_arc": 0.5,
+        "r_label": 0.8
+      },
+      {
+        "vertex": "O",
+        "p1": "K",
+        "p2": "T",
+        "label": "1",
+        "r_arc": 0.5,
+        "r_label": 0.8
+      },
+      {
+        "vertex": "O",
+        "p1": "P",
+        "p2": "K",
+        "label": "2",
+        "r_arc": 0.5,
+        "r_label": 0.8
+      }
+    ],
+    "xlim": [
+      -5,
+      5
+    ],
+    "ylim": [
+      -5,
+      5
+    ]
+  },
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Prove: TOP = 2 TKP.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "TOP = 2 TKP",
+      "steps": [
+        {
+          "s": "Construction: Draw KO produced",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "O1 = K1 + T",
+          "r": "exterior angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "K1 = T",
+          "r": "angles opposite equal sides",
+          "mark": "S/R"
+        },
+        {
+          "s": "O1 = 2 K1",
+          "r": "substitution",
+          "mark": "S"
+        },
+        {
+          "s": "O2 = 2 K2",
+          "r": "similarly",
+          "mark": "S"
+        },
+        {
+          "s": "TOP = O1 + O2 = 2(K1 + K2) = 2 TKP",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2.1",
+      "prompt_template": "Calculate O2 with reasons.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "O2 = 64 deg",
+      "steps": [
+        {
+          "s": "O2 = 64 deg",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.2.2",
+      "prompt_template": "Calculate M with reasons.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "M = 26 deg",
+      "steps": [
+        {
+          "s": "PMF = 90 deg",
+          "r": "tangent perpendicular diameter",
+          "mark": "S/R"
+        },
+        {
+          "s": "M = 26 deg",
+          "r": "sum of angles in triangle",
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2025_P2_p11.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P2_p11.png",
+  "diagram_crop": null
+}

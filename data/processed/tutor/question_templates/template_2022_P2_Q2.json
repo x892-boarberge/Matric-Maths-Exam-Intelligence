@@ -1,0 +1,104 @@
+{
+  "stem": "Percentage of salary spent on fuel.",
+  "diagram": "ogive",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "How many people are employed?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.ogive",
+      "expected_fn": "60",
+      "steps": [
+        {
+          "s": "60",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Modal class.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.mode",
+      "expected_fn": "20 < x <= 25",
+      "steps": [
+        {
+          "s": "20 < x <= 25",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "How many spent more than 22.5%?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.percentile",
+      "expected_fn": "26",
+      "steps": [
+        {
+          "s": "60 - 34 = 26",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "26",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Monthly salary if spent R2400 on 7% of salary.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.application",
+      "expected_fn": "R34 285.71",
+      "steps": [
+        {
+          "s": "Salary = 100/7 x 2400",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "R34 285.71",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.5",
+      "prompt_template": "How will ogive change if fuel price increases?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.ogive",
+      "expected_fn": "Shifts right / steeper",
+      "steps": [
+        {
+          "s": "Ogive shifts right",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "or becomes steeper",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P2",
+    "qnum": "2"
+  },
+  "diagram_page": "2022_P2_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P2_p04.png",
+  "diagram_crop": null
+}

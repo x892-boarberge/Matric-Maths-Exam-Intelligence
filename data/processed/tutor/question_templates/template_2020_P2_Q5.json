@@ -1,0 +1,104 @@
+{
+  "stem": "f(x) = -1/2 cos x, g(x) = sin(x+30) on [0;180]. A(130.9;0.33) point of intersection.",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Period of g.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "360",
+      "steps": [
+        {
+          "s": "360",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Amplitude of f.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "1/2",
+      "steps": [
+        {
+          "s": "1/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Determine f(180) - g(180).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "1",
+      "steps": [
+        {
+          "s": "1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.4.1",
+      "prompt_template": "Value of x for which f(x-10) = g(x-10).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = 140.9",
+      "steps": [
+        {
+          "s": "x = 140.9",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.4.2",
+      "prompt_template": "Values of x in [0;180] for which sqrt(3) sin x + cos x >= 1.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.inequality",
+      "expected_fn": "x in [0; 120]",
+      "steps": [
+        {
+          "s": "Divide by 2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos 30, sin 30",
+          "r": "special angles",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin(x+30) >= 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "0 <= x <= 120",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P2",
+    "qnum": "5"
+  },
+  "diagram_page": "2020_P2_p07.png",
+  "diagram_image": "data/processed/diagrams/pages/2020_P2_p07.png",
+  "diagram_crop": null
+}

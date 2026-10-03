@@ -6,7 +6,7 @@
       "prompt_template": "Show that b = 4.",
       "ranges": {},
       "marks": 2,
-      "skill_id": "sequences.quadratic.general",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "b = 4",
       "steps": [
         "T_n = n^2 + bn + 9",
@@ -20,7 +20,7 @@
       "prompt_template": "Determine T_60.",
       "ranges": {},
       "marks": 2,
-      "skill_id": "sequences.quadratic.term",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "T_60 = 3849",
       "steps": [
         "T_n = n^2 + 4n + 9",
@@ -30,9 +30,18 @@
     {
       "n": "3.3",
       "prompt_template": "Determine the general term of first differences T_p = mp + q.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 3,
-      "skill_id": "sequences.quadratic.difference",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "T_p = 2p + 5",
       "steps": [
         "T_1 - T_0 style: first diff at position 1 = 7",
@@ -43,9 +52,18 @@
     {
       "n": "3.4",
       "prompt_template": "Which consecutive terms have a first difference of 157?",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 3,
-      "skill_id": "sequences.quadratic.n",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "Between T_76 and T_77",
       "steps": [
         "T_n - T_{n-1} = 2n + 3",

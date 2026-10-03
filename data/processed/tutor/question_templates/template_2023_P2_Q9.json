@@ -1,0 +1,92 @@
+{
+  "stem": "Parallelogram ABCD, AB = 14. AD produced to E, AD:DE = 4:3. EB intersects DC at F, EB = 21.",
+  "diagram": "triangle_proportion",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Calculate FB.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "FB = 12",
+      "steps": [
+        {
+          "s": "FB/EB = DA/EA",
+          "r": "prop theorem; DC || AB",
+          "mark": "S/R"
+        },
+        {
+          "s": "FB/21 = 4p/(7p)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "FB = 12",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2",
+      "prompt_template": "Prove triangle EDF ||| triangle EAB.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle EDF ||| triangle EAB",
+      "steps": [
+        {
+          "s": "E is common",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "EDF = A",
+          "r": "corresponding angles; EA || CB",
+          "mark": "S/R"
+        },
+        {
+          "s": "EFD = B",
+          "r": "corresponding angles; DC || AB",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.3",
+      "prompt_template": "Calculate FC.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "FC = 8",
+      "steps": [
+        {
+          "s": "DF/AB = ED/EA = 3/7",
+          "r": "similar triangles",
+          "mark": "S/R"
+        },
+        {
+          "s": "DF = 6",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "FC = 14 - 6 = 8",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2023_P2_p12.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P2_p12.png",
+  "diagram_crop": null
+}

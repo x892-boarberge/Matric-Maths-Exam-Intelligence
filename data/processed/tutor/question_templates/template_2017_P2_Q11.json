@@ -1,0 +1,202 @@
+{
+  "stem": "11.1: Chords KM, MN, KN. PNQ tangent at N. Prove MNQ = K. 11.2: BC diameter. Tangent at D meets CB produced at A. CD produced to E with EA perpendicular AC. BD drawn. C = x.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "11.1",
+      "prompt_template": "Prove MNQ = K.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "MNQ = K",
+      "steps": [
+        {
+          "s": "Construction: Draw diameter NR and draw RM",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "ONM + MNQ = 90",
+          "r": "radius perpendicular tangent",
+          "mark": "S/R"
+        },
+        {
+          "s": "NMR = 90",
+          "r": "angle in semicircle",
+          "mark": "S/R"
+        },
+        {
+          "s": "MRN = MNQ",
+          "r": "sum of angles in triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "MRN = MKN",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "11.2.1a",
+      "prompt_template": "Give reason why D3 = 90.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Angle in semicircle",
+      "steps": [
+        {
+          "s": "Angle in semicircle",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.2.1b",
+      "prompt_template": "Give reason why ABDE is cyclic quad.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Exterior angle of quad = opposite interior angle",
+      "steps": [
+        {
+          "s": "Exterior angle = opposite interior angle",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.2.1c",
+      "prompt_template": "Give reason why D2 = x.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Tangent-chord theorem",
+      "steps": [
+        {
+          "s": "Tangent-chord theorem",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.2.2a",
+      "prompt_template": "Prove AD = AE.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "AD = AE",
+      "steps": [
+        {
+          "s": "E = 180 - (90 + x) = 90 - x",
+          "r": "sum of angles in triangle",
+          "mark": "S"
+        },
+        {
+          "s": "D1 = 180 - (90 + x) = 90 - x",
+          "r": "angles on straight line",
+          "mark": "S"
+        },
+        {
+          "s": "AD = AE",
+          "r": "sides opposite equal angles",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "11.2.2b",
+      "prompt_template": "Prove triangle ADB ||| triangle ACD.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle ADB ||| triangle ACD",
+      "steps": [
+        {
+          "s": "A2 = A2",
+          "r": "common angle",
+          "mark": "S"
+        },
+        {
+          "s": "D2 = C",
+          "r": "proved",
+          "mark": "S/R"
+        },
+        {
+          "s": "triangle ADB ||| triangle ACD",
+          "r": "AAA",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "11.2.3a",
+      "prompt_template": "If BC = 2AB = 2r, prove AD^2 = 3r^2.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "AD^2 = 3r^2",
+      "steps": [
+        {
+          "s": "AD/AC = AB/AD",
+          "r": "similar triangles",
+          "mark": "S/R"
+        },
+        {
+          "s": "AD^2 = AC x AB = 3r x r = 3r^2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.2.3b",
+      "prompt_template": "Prove triangle ADE is equilateral.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "triangle ADE equilateral",
+      "steps": [
+        {
+          "s": "AD = AE = sqrt(3)r",
+          "r": null,
+          "mark": "S/R"
+        },
+        {
+          "s": "AB = r, BC = 2r -> AC = 3r",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan E = AC/AE = sqrt(3) -> E = 60",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "All angles 60 -> equilateral",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P2",
+    "qnum": "11"
+  },
+  "diagram_page": "2017_P2_p14.png",
+  "diagram_image": "data/processed/diagrams/pages/2017_P2_p14.png",
+  "diagram_crop": null
+}

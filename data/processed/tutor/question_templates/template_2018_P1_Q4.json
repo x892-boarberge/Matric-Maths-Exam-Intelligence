@@ -1,0 +1,102 @@
+{
+  "stem": "f(x) = ax², x <= 0. P(-6; -12) on f. R is on f^(-1).",
+  "diagram": "parabola_line",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Is f^(-1) a function? Motivate.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.inverse",
+      "expected_fn": "Yes",
+      "steps": [
+        "Domain of f is restricted to x <= 0.",
+        "f is one-to-one on this restricted domain.",
+        "So f^(-1) is a function."
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "If R is reflection of P in y = x, coordinates of R.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.inverse",
+      "expected_fn": "R(-12; -6)",
+      "steps": [
+        "Reflection in y = x swaps coordinates."
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Calculate a.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.parabola",
+      "expected_fn": "a = -1/3",
+      "steps": [
+        "-12 = a(-6)² = 36a.",
+        "a = -1/3."
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Write down f^(-1) in the form y = ...",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.inverse",
+      "expected_fn": "y = -sqrt(-3x)",
+      "steps": [
+        "f: y = -1/3 x², x <= 0.",
+        "Swap x, y: x = -1/3 y².",
+        "y² = -3x.",
+        "y = ±sqrt(-3x).",
+        "Since x <= 0 → y = -sqrt(-3x)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "4"
+  },
+  "diagram_page": "2018_P1_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P1_p04.png",
+  "diagram_crop": null
+}

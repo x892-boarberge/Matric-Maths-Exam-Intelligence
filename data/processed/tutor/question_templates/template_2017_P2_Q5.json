@@ -1,0 +1,169 @@
+{
+  "stem": "Simplify sin(A-360)cos(90+A)/(cos(90-A)tan(-A)).",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Simplify expression to single trig ratio.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "trig.identities",
+      "expected_fn": "cos A",
+      "steps": [
+        {
+          "s": "sin(A-360) = sin A",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "cos(90+A) = -sin A",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "cos(90-A) = sin A",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "tan(-A) = -tan A",
+          "r": "odd function",
+          "mark": "S"
+        },
+        {
+          "s": "tan A = sin A/cos A",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= cos A",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2.1",
+      "prompt_template": "Find t if OP = sqrt(34), P(3;t).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.pythagoras",
+      "expected_fn": "t = -5",
+      "steps": [
+        {
+          "s": "t^2 = 34 - 9 = 25",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "t = -5 (Q4)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2.2",
+      "prompt_template": "Find tan beta.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.identities",
+      "expected_fn": "-5/3",
+      "steps": [
+        {
+          "s": "-5/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2.3",
+      "prompt_template": "Find cos 2 beta.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "-8/17",
+      "steps": [
+        {
+          "s": "cos 2 beta = 2cos^2 beta - 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 2(9/34) - 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Simplify",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -8/17",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.3.1",
+      "prompt_template": "Prove sin(A+B) - sin(A-B) = 2cos A sin B.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.proof",
+      "type": "proof",
+      "expected_fn": "LHS = RHS",
+      "steps": [
+        {
+          "s": "Expand both using compound angle",
+          "r": "compound angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "Simplify -> 2 cos A sin B",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.3.2",
+      "prompt_template": "Show sin 77 - sin 43 = sin 17.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "sin 17",
+      "steps": [
+        {
+          "s": "77 = 60 + 17",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "43 = 60 - 17",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Use identity from 5.3.1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 2 cos 60 sin 17 = sin 17",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P2",
+    "qnum": "5"
+  },
+  "diagram_page": "2017_P2_p07.png",
+  "diagram_image": "data/processed/diagrams/pages/2017_P2_p07.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,172 @@
+{
+  "stem": "h(x) = 2x - 3 for -2 <= x <= 4. Q is x-intercept.",
+  "diagram": "parabola_line",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Determine coordinates of Q.",
+      "ranges": {
+        "shift": [
+          -8,
+          -7,
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.line",
+      "expected_fn": "Q(1.5; 0)",
+      "steps": [
+        "2x - 3 = 0 → x = 1.5."
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Write down the domain of h^(-1).",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.inverse",
+      "expected_fn": "-7 <= x <= 5",
+      "steps": [
+        "Range of h over -2 <= x <= 4.",
+        "h(-2) = -7, h(4) = 5."
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Sketch h^(-1).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.inverse",
+      "expected_fn": "see memo",
+      "steps": [
+        "Line segment reflected in y = x."
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "For which x does h(x) = h^(-1)(x)?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.inverse",
+      "expected_fn": "x = 3",
+      "steps": [
+        "h(x) = h^(-1)(x) → 2x - 3 = (x+3)/2.",
+        "4x - 6 = x + 3.",
+        "x = 3."
+      ]
+    },
+    {
+      "n": "5.5",
+      "prompt_template": "P(x; y) on h closest to origin. Calculate OP.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 5,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "OP ≈ 1.34",
+      "steps": [
+        "OP² = x² + (2x-3)².",
+        "= 5x² - 12x + 9.",
+        "Minimise: 10x - 12 = 0.",
+        "x = 6/5.",
+        "OP² = 9/5, OP = 3/sqrt(5) ≈ 1.34."
+      ]
+    },
+    {
+      "n": "5.6.1",
+      "prompt_template": "h(x) = f'(x). Explain why f has a local minimum.",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "See memo",
+      "steps": [
+        "h = f' changes from negative to positive.",
+        "So f' crosses zero going up → local min."
+      ]
+    },
+    {
+      "n": "5.6.2",
+      "prompt_template": "Maximum gradient of tangent to f.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 1,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "5",
+      "steps": [
+        "Max of h is at x = 4: h(4) = 5."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "5"
+  },
+  "diagram_page": "2015_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P1_p05.png",
+  "diagram_crop": null
+}

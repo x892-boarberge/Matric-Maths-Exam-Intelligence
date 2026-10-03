@@ -10,9 +10,18 @@
     {
       "n": "6.1",
       "prompt_template": "Calculate the coordinates of B, the turning point of f.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 3,
-      "skill_id": "functions.parabola.turning",
+      "skill_id": "functions.parabola",
       "expected_fn": "B({p}; {q})",
       "steps": [
         "For f(x) = a(x - p)^2 + q the turning point is (p; q).",
@@ -23,9 +32,18 @@
     {
       "n": "6.2",
       "prompt_template": "Show that the equation of the line through A and C is g(x) = {m}x + {c}.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 3,
-      "skill_id": "functions.line.equation",
+      "skill_id": "functions.line",
       "expected_fn": "g(x) = {g_disp}",
       "steps": [
         "A is the x-intercept of f on the left.",
@@ -39,9 +57,24 @@
     {
       "n": "6.3",
       "prompt_template": "Calculate the maximum length of EH for f > g.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 4,
-      "skill_id": "functions.parabola.max_length",
+      "skill_id": "functions.parabola",
       "expected_fn": "EH_max = {eh_max_disp} units",
       "steps": [
         "EH(x) = f(x) - g(x)",
@@ -67,5 +100,8 @@
       ]
     }
   ],
-  "diagram": "parabola_line"
+  "diagram": "parabola_line",
+  "diagram_page": "2024_P1_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P1_p06.png",
+  "diagram_crop": null
 }

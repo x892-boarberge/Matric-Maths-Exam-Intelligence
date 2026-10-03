@@ -1,0 +1,142 @@
+{
+  "stem": "f(x) = cos 2x drawn for x in [-135; 135]. g(x) = tan 2x - 1.",
+  "diagram": "trig_graph",
+  "diagram_spec": {
+    "fn_specs": [
+      {
+        "fn": "cos",
+        "coef": [
+          1,
+          2
+        ],
+        "label": "f"
+      },
+      {
+        "fn": "tan",
+        "coef": [
+          1,
+          2
+        ],
+        "label": "g"
+      }
+    ],
+    "xlim": [
+      -135,
+      135
+    ],
+    "ylim": [
+      -3,
+      3
+    ]
+  },
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Write down the period of f.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "180 deg",
+      "steps": [
+        {
+          "s": "180 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Draw g(x) = tan 2x - 1 on the grid.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.graph",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Asymptotes",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Shape",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Intercepts with axes",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "f translated 45 to left gives h. Equation of h.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "h(x) = -sin 2x",
+      "steps": [
+        {
+          "s": "h(x) = -sin 2x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.4",
+      "prompt_template": "Range of h.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "y in [-1;1]",
+      "steps": [
+        {
+          "s": "y in [-1; 1]",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.5",
+      "prompt_template": "Solve (1 - tan 2x)(cos 2x) >= 0 for x in [0; 135].",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.inequality",
+      "expected_fn": "x in [0;22.5] or [112.5;135]",
+      "steps": [
+        {
+          "s": "tan 2x = 1 -> 2x = 45 -> x = 22.5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "First interval [0; 22.5]",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Second interval [112.5; 135)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Combine",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2025_P2_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P2_p08.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,65 @@
+{
+  "stem": "Helicopter at A, h metres above D. Angle of depression to B = 30. Control room at C, 3h from A. BAC = 2x. B, C, D in same horizontal plane.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Determine AB in terms of h.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "AB = 2h",
+      "steps": [
+        {
+          "s": "sin 30 = h/AB",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "AB = 2h",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Show BC = h sqrt(25 - 24 cos^2 x).",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.3d",
+      "type": "proof",
+      "expected_fn": "BC = h sqrt(25 - 24 cos^2 x)",
+      "steps": [
+        {
+          "s": "BC^2 = AB^2 + AC^2 - 2 AB AC cos BAC",
+          "r": "cosine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "= (2h)^2 + (3h)^2 - 2(2h)(3h)cos 2x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 13h^2 - 12h^2(2cos^2 x - 1)",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 25h^2 - 24h^2 cos^2 x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2018_P2_p10.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P2_p10.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,29 @@
+{
+  "stem": "Digits 1 to 7, no repetition, 4-digit code, even, code > 5000.",
+  "subquestions": [
+    {
+      "n": "12",
+      "prompt_template": "How many such codes?",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "probability.counting",
+      "expected_fn": "160",
+      "steps": [
+        "Case 1: first digit is 6.",
+        "4th digit even: 2, 4 (not 6): 2 choices.",
+        "Middle two: 5 × 4 = 20.",
+        "Case 1: 1 × 5 × 4 × 2 = 40.",
+        "Case 2: first digit 5 or 7: 2 choices.",
+        "4th digit even: 2, 4, 6 (not first): 3 choices.",
+        "Middle two: 5 × 4 = 20.",
+        "Case 2: 2 × 5 × 4 × 3 = 120.",
+        "Total = 40 + 120 = 160."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P1",
+    "qnum": "12"
+  }
+}

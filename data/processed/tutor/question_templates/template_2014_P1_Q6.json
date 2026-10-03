@@ -1,0 +1,100 @@
+{
+  "stem": "g(x) = 4x² - 6 and f(x) = 2 sqrt(x). Q on f, T on g, QKT parallel to y-axis.",
+  "diagram": "parabola_line",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Determine the x-coordinate of S (x-intercept of g), correct to 2 decimals.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.parabola",
+      "expected_fn": "x ≈ 1.22",
+      "steps": [
+        "4x² - 6 = 0.",
+        "x² = 3/2.",
+        "x ≈ 1.22."
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Write down the coordinates of the turning point of g.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.parabola",
+      "expected_fn": "(0; -6)",
+      "steps": [
+        "Vertex at (0; -6)."
+      ]
+    },
+    {
+      "n": "6.3.1",
+      "prompt_template": "Write down the length of QKT in terms of x.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.parabola",
+      "expected_fn": "QT = 2 sqrt(x) - 4x² + 6",
+      "steps": [
+        "Q = (x; 2 sqrt(x)) on f.",
+        "T = (x; 4x² - 6) on g.",
+        "QT = Q - T (vertical)."
+      ]
+    },
+    {
+      "n": "6.3.2",
+      "prompt_template": "Calculate the maximum length of QT.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 6,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "QT ≈ 6.75",
+      "steps": [
+        "QT(x) = 2 sqrt(x) - 4x² + 6.",
+        "QT'(x) = 1/sqrt(x) - 8x.",
+        "Set to 0: 1/sqrt(x) = 8x.",
+        "x^(3/2) = 1/8.",
+        "x = 1/4.",
+        "QT(1/4) = 2(1/2) - 4(1/16) + 6 = 1 - 1/4 + 6 = 6.75."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P1",
+    "qnum": "6"
+  },
+  "diagram_page": "2014_P1_p07.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P1_p07.png",
+  "diagram_crop": null
+}

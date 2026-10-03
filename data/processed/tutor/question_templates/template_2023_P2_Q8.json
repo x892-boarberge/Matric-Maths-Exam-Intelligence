@@ -1,0 +1,138 @@
+{
+  "stem": "8.1: Circle centre O. Prove angle at centre = 2x angle at circumference. 8.2: Cyclic quad ABCD with O1 = 4x+100 and C = x+34. 8.3: Larger circle centre O, OB diameter of smaller.",
+  "diagram": "circle_centre_angle",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Prove TOP = 2 TKP.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "TOP = 2 TKP",
+      "steps": [
+        {
+          "s": "Construction: Draw KO produced",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "O1 = K1 + T",
+          "r": "exterior angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "K1 = T",
+          "r": "angles opposite equal sides",
+          "mark": "S/R"
+        },
+        {
+          "s": "O1 = 2K1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "O2 = 2K2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "TOP = 2(K1+K2) = 2 TKP",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "If O1 = 4x + 100 and C = x + 34, calculate x.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "x = 32",
+      "steps": [
+        {
+          "s": "A = 2x + 50",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        },
+        {
+          "s": "x + 34 + 2x + 50 = 180",
+          "r": "opposite angles of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "3x = 96",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 32",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.3.1",
+      "prompt_template": "Write down size of OMB.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "OMB = 90",
+      "steps": [
+        {
+          "s": "OMB = 90",
+          "r": "angle in semicircle",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.3.2",
+      "prompt_template": "If AB = sqrt(300) and OM = 5, find OB.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "OB = 10",
+      "steps": [
+        {
+          "s": "AB = 10 sqrt(3)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "MB = 5 sqrt(3)",
+          "r": "line from centre perp chord",
+          "mark": "S/R"
+        },
+        {
+          "s": "OB^2 = OM^2 + MB^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "OB = 10",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2023_P2_p11.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P2_p11.png",
+  "diagram_crop": null
+}

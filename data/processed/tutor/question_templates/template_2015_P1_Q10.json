@@ -1,0 +1,58 @@
+{
+  "stem": "Cone-shaped rain gauge. h = height of water, r = radius. Angle between cone edge and radius is 60°.",
+  "diagram": "cylinder",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Determine r in terms of h.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "r = h/sqrt(3)",
+      "steps": [
+        "tan(60°) = h/r? Wait — angle between cone edge and radius is 60°.",
+        "r = h/tan(60°) = h/sqrt(3)."
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Determine dV/dh at h = 9.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "= 27π ≈ 84.82",
+      "steps": [
+        "V = (1/3)πr²h = (1/3)π(h²/3)h = πh³/9.",
+        "dV/dh = πh²/3.",
+        "At h = 9: dV/dh = 27π."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "10"
+  },
+  "diagram_page": "2015_P1_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P1_p09.png",
+  "diagram_crop": null
+}

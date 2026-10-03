@@ -1,0 +1,53 @@
+{
+  "stem": "Convergent geometric series with sum from n=3 to inf = 1/4, and T_1 + T_2 = 2.",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Write a in terms of r.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.gp",
+      "expected_fn": "a = 2/(1+r)",
+      "steps": [
+        "T_1 + T_2 = a + ar = a(1+r) = 2.",
+        "a = 2/(1+r)."
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Calculate a and r.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 6,
+      "skill_id": "sequences.gp",
+      "expected_fn": "a = 3/2, r = 1/3",
+      "steps": [
+        "Sum from n=3: ar²/(1-r) = 1/4.",
+        "Substitute a = 2/(1+r): 2r²/((1+r)(1-r)) = 1/4.",
+        "8r² = 1 - r².",
+        "9r² = 1.",
+        "r = 1/3 (positive terms).",
+        "a = 2/(1+1/3) = 3/2."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P1",
+    "qnum": "3"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "stem": "ST: y = (1/2)x + 6 cuts x-axis at M. W(-4;4) on ST. R on SK with WR || y-axis. WK cuts x-axis at V and y-axis at P(0;-4).",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Gradient of WP.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "-2",
+      "steps": [
+        {
+          "s": "m = (4-(-4))/(-4-0)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Show that WP perpendicular ST.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.perpendicular",
+      "expected_fn": "m_WP x m_ST = -1",
+      "steps": [
+        {
+          "s": "m_ST = 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_WP x m_ST = -2 x 1/2 = -1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "If SK: 5y + 2x + 60 = 0, calculate S.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.solve",
+      "expected_fn": "S(-20; -4)",
+      "steps": [
+        {
+          "s": "y = -2/5 x - 12",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Equate with ST: -2/5 x - 12 = 1/2 x + 6",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = -20",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = -4 -> S(-20; -4)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "Length of WR.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.distance",
+      "expected_fn": "14.4 units",
+      "steps": [
+        {
+          "s": "At x = -4 on SK: y = -52/5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "R(-4; -52/5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "WR = 4 - (-52/5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 72/5 = 14.4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.5",
+      "prompt_template": "Size of theta.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.angle",
+      "expected_fn": "48.37 deg",
+      "steps": [
+        {
+          "s": "beta = 158.19 (ref 21.80)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "NMS = 26.56",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "theta = 21.80 + 26.56",
+          "r": "exterior angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 48.37 deg",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.6",
+      "prompt_template": "Area of SWRL parallelogram.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.area",
+      "expected_fn": "230.4 sq units",
+      "steps": [
+        {
+          "s": "h = 16 units",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area SWRL = 16 x 72/5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 230.40",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Answer",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_page": "2020_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2020_P2_p05.png",
+  "diagram_crop": null
+}

@@ -499,4 +499,176 @@ def render_exponential_two_points(base, q, sig):
     plt.close(fig)
     return str(path)
 
+def render_hyperbola_line(a, p, q, m, c, sig):
+    """f(x) = a/(x+p) + q and straight line g(x) = mx + c.
+       Line passes through the origin in the typical 2014 shape."""
+    lim = 10
+    fig, ax = _setup_plane(lim)
 
+    vert = -p
+    # Asymptotes
+    ax.plot([vert, vert], [-lim, lim], color="black",
+            linestyle=(0, (1, 3)), lw=0.9, zorder=1)
+    ax.plot([-lim, lim], [q, q], color="black",
+            linestyle=(0, (1, 3)), lw=0.9, zorder=1)
+
+    # Hyperbola branches
+    eps = 0.06; step = 0.02
+    xs_left = np.arange(-lim, vert - eps, step)
+    ys_left = a / (xs_left + p) + q
+    mask = (ys_left >= -lim) & (ys_left <= lim)
+    if mask.any():
+        ax.plot(xs_left[mask], ys_left[mask], color="black", lw=1.5, zorder=3)
+    xs_right = np.arange(vert + eps, lim, step)
+    ys_right = a / (xs_right + p) + q
+    mask = (ys_right >= -lim) & (ys_right <= lim)
+    if mask.any():
+        ax.plot(xs_right[mask], ys_right[mask], color="black", lw=1.5, zorder=3)
+
+    # Line g
+    xs_line = np.array([-lim, lim])
+    ys_line = m * xs_line + c
+    if ys_line[0] < -lim:
+        xs_line[0] = (-lim - c) / m if m != 0 else -lim
+        ys_line[0] = -lim
+    if ys_line[1] > lim:
+        xs_line[1] = (lim - c) / m if m != 0 else lim
+        ys_line[1] = lim
+    ax.plot(xs_line, ys_line, color="black", lw=1.3, zorder=2)
+
+    # Labels
+    probe_x = vert + 2 if vert < 0 else vert - 2
+    probe_y = a / (probe_x + p) + q
+    if abs(probe_y) < lim - 1:
+        ax.text(probe_x, probe_y + 0.6, "f", fontsize=14, fontstyle="italic",
+                ha="center", va="bottom")
+    gx = 5
+    gy = m * gx + c
+    if abs(gy) < lim:
+        ax.text(gx, gy + 0.4, "g", fontsize=14, fontstyle="italic",
+                ha="left", va="bottom")
+
+    path = OUT / f"{sig}.png"
+    fig.tight_layout(pad=0.2)
+    fig.savefig(path, dpi=110, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return str(path)
+
+
+
+
+
+# ============================================================
+# VENN DIAGRAM — DBE style
+# ============================================================
+
+def render_venn(set_labels=("A", "B", "C"),
+                region_values=None,
+                outer_value=None,
+                universal_label="S",
+                universal_value=None,
+                xlim=(-2.6, 2.6),
+                ylim=(-2.0, 2.0),
+                figsize=(6.5, 5.5),
+                out_path=None):
+    """
+    Three-circle Venn diagram, matching DBE layout.
+
+    set_labels:       (top-left, top-right, bottom) — e.g. ("I", "T", "W")
+    region_values:    dict with any of:
+                        "ABC"  triple intersection
+                        "AB"   A∩B only
+                        "AC"   A∩C only
+                        "BC"   B∩C only
+                        "A"    A only
+                        "B"    B only
+                        "C"    C only
+    outer_value:      value in universal set outside all three circles
+    universal_label:  top-right of box (default "S")
+    universal_value:  if provided, box shows "n(S) = <value>"
+    """
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from matplotlib.patches import Circle, Rectangle
+
+    region_values = region_values or {}
+
+    fig, ax = plt.subplots(figsize=figsize)
+    ax.set_xlim(*xlim)
+    ax.set_ylim(*ylim)
+    ax.set_aspect("equal", adjustable="box")
+    ax.axis("off")
+
+    # Universal-set rectangle — plain white, thin black outline
+    box_pad = 0.05
+    rect = Rectangle(
+        (xlim[0] + box_pad, ylim[0] + box_pad),
+        (xlim[1] - xlim[0]) - 2 * box_pad,
+        (ylim[1] - ylim[0]) - 2 * box_pad,
+        facecolor="white", edgecolor="black", linewidth=1.2, zorder=0)
+    ax.add_patch(rect)
+
+    # Universal-set label top-right
+    if universal_value is not None:
+        label_txt = f"n({universal_label}) = {universal_value}"
+    else:
+        label_txt = universal_label or ""
+    if label_txt:
+        ax.text(xlim[1] - 0.15, ylim[1] - 0.15, label_txt,
+                fontsize=11, ha="right", va="top")
+
+    # Circle geometry — DBE triangle
+    r = 1.05
+    centres = {
+        "A": (-0.55, 0.45),
+        "B": ( 0.55, 0.45),
+        "C": ( 0.00, -0.45),
+    }
+    for name in ("A", "B", "C"):
+        cx, cy = centres[name]
+        ax.add_patch(Circle((cx, cy), r,
+                            facecolor="none", edgecolor="black",
+                            linewidth=1.3, zorder=2))
+
+    # Set labels near outer edge of each circle
+    label_pos = {
+        "A": (-1.65, 1.35),
+        "B": ( 1.65, 1.35),
+        "C": ( 0.00, -1.65),
+    }
+    for key, label in zip(("A", "B", "C"), set_labels):
+        lx, ly = label_pos[key]
+        ax.text(lx, ly, label, fontsize=13,
+                ha="center", va="center")
+
+    # Region value positions
+    region_pos = {
+        "A":   (-1.05,  0.55),
+        "B":   ( 1.05,  0.55),
+        "C":   ( 0.00, -1.15),
+        "AB":  ( 0.00,  0.95),
+        "AC":  (-0.55, -0.35),
+        "BC":  ( 0.55, -0.35),
+        "ABC": ( 0.00,  0.25),
+    }
+
+    for key, (px, py) in region_pos.items():
+        val = region_values.get(key)
+        if val is not None:
+            ax.text(px, py, str(val), fontsize=11,
+                    ha="center", va="center", zorder=4)
+
+    # Outer value — bottom-left of box
+    if outer_value is not None:
+        ax.text(xlim[0] + 0.35, ylim[0] + 0.35, str(outer_value),
+                fontsize=11, ha="center", va="center")
+
+    # Save
+    if out_path is None:
+        out_path = ROOT / "data" / "processed" / "diagrams" / "venn.png"
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(out_path, dpi=150, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return str(out_path)

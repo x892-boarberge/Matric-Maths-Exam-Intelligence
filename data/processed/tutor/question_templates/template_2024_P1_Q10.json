@@ -10,7 +10,16 @@
     {
       "n": "10.1",
       "prompt_template": "Calculate the maximum speed that the cyclist reached.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 3,
       "skill_id": "calculus.kinematics",
       "expected_fn": "Maximum speed = {max_speed} km/h",
@@ -23,7 +32,16 @@
     {
       "n": "10.2",
       "prompt_template": "Calculate the distance between town P and town T.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 5,
       "skill_id": "calculus.kinematics",
       "expected_fn": "Distance = {distance} km",

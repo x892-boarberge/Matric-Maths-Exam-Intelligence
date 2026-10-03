@@ -4,9 +4,18 @@
     {
       "n": "8.1",
       "prompt_template": "Determine the coordinates of the turning points of f.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 4,
-      "skill_id": "calculus.cubic.turning",
+      "skill_id": "calculus.cubic",
       "expected_fn": "(1; 0) and (3; 4)",
       "steps": [
         "f'(x) = -3x^2 + 12x - 9 = -3(x^2 - 4x + 3)",
@@ -19,9 +28,18 @@
     {
       "n": "8.2",
       "prompt_template": "Draw a sketch of f showing all intercepts and turning points.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 4,
-      "skill_id": "calculus.cubic.sketch",
+      "skill_id": "calculus.cubic",
       "expected_fn": "see memo",
       "steps": [
         "x-intercepts: x = 1 (twice) and x = 4",
@@ -33,9 +51,18 @@
     {
       "n": "8.3",
       "prompt_template": "Values of k for which -x^3 + 6x^2 - 9x + 4 = k has 3 real unequal roots.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 2,
-      "skill_id": "calculus.cubic.intercept",
+      "skill_id": "calculus.cubic",
       "expected_fn": "0 < k < 4",
       "steps": [
         "y = k intersects f three times when k is between the turning point y-values.",
@@ -60,7 +87,26 @@
     {
       "n": "8.5",
       "prompt_template": "Calculate theta, the acute angle between g and the x-axis.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 2,
       "skill_id": "analytical.gradient",
       "expected_fn": "theta = {theta}",

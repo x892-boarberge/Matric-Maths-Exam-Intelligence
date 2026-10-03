@@ -1,0 +1,49 @@
+{
+  "stem": "10-digit telephone numbers. Format: 3-digit area code, 3-digit exchange code, 4-digit number.",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "How many possible?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 10^10",
+      "steps": [
+        "Each digit has 10 choices, 10 digits total."
+      ]
+    },
+    {
+      "n": "10.2.1",
+      "prompt_template": "With restrictions: area code first digit not 0/1, exchange first two not 0/1, number first is 0/1.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 1024 × 10^9",
+      "steps": [
+        "Area: 8 × 10 × 10",
+        "Exchange: 8 × 8 × 10",
+        "Number: 2 × 10 × 10 × 10",
+        "Total = 8×10×10 × 8×8×10 × 2×10×10×10 = 1024×10^9."
+      ]
+    },
+    {
+      "n": "10.2.2",
+      "prompt_template": "P(random number is valid).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 0.1024 = 10.24%",
+      "steps": [
+        "P = 1.024×10^12 / 10^10 = 0.1024."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P1",
+    "qnum": "10"
+  },
+  "diagram_page": "2020_P1_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2020_P1_p09.png",
+  "diagram_crop": null
+}

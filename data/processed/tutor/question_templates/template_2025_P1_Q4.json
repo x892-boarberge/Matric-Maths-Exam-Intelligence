@@ -6,17 +6,22 @@
       "prompt_template": "Calculate the value of t.",
       "ranges": {
         "base": [
+          1,
           2,
           3,
-          4
+          4,
+          5,
+          6
         ],
         "x_pt": [
+          2,
           3,
-          4
+          4,
+          5
         ]
       },
       "marks": 1,
-      "skill_id": "functions.log.value",
+      "skill_id": "functions.log",
       "expected_fn": "t = log_(1/{base})({x_pt})",
       "steps": [
         "Substitute ({x_pt}; t) into f(x) = log_(1/{base}) x.",
@@ -26,9 +31,28 @@
     {
       "n": "4.2",
       "prompt_template": "Write down the coordinates of A.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.log.intercept",
+      "skill_id": "functions.log",
       "expected_fn": "A(1; 0)",
       "steps": [
         "The x-intercept of a log function y = log_a(x) is always (1; 0).",
@@ -40,13 +64,26 @@
       "prompt_template": "Determine the equation of f^(-1) in the form y = ...",
       "ranges": {
         "base": [
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
           2,
           3,
-          4
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
         ]
       },
       "marks": 2,
-      "skill_id": "functions.log.inverse",
+      "skill_id": "functions.log",
       "expected_fn": "y = (1/{base})^x",
       "steps": [
         "f(x) = log_(1/{base}) x  =>  y = log_(1/{base}) x",
@@ -57,9 +94,28 @@
     {
       "n": "4.4",
       "prompt_template": "Write down the equation of the asymptote of f^(-1).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.log.asymptote",
+      "skill_id": "functions.log",
       "expected_fn": "y = 0",
       "steps": [
         "f^(-1)(x) = (1/{base})^x has horizontal asymptote y = 0."
@@ -68,9 +124,24 @@
     {
       "n": "4.5",
       "prompt_template": "Draw the graph of f^(-1) showing intercepts, one other point, asymptotes.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 3,
-      "skill_id": "functions.log.sketch",
+      "skill_id": "functions.log",
       "expected_fn": "see memo",
       "steps": [
         "Standard exponential decay/growth shape.",
@@ -103,5 +174,8 @@
     "paper": "P1",
     "qnum": "4"
   },
-  "diagram": "log_solo"
+  "diagram": "log_solo",
+  "diagram_page": "2025_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P1_p05.png",
+  "diagram_crop": null
 }

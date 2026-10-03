@@ -1,0 +1,134 @@
+{
+  "stem": "12 candidates' Maths and Accounting marks.",
+  "diagram": "scatter_regression",
+  "subquestions": [
+    {
+      "n": "1.1",
+      "prompt_template": "Mean of Maths data.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.mean",
+      "expected_fn": "68",
+      "steps": [
+        {
+          "s": "Sum = 816",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Mean = 68",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "Standard deviation.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "18.42",
+      "steps": [
+        {
+          "s": "sigma = 18.42",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "Number within one SD of mean.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "6 candidates",
+      "steps": [
+        {
+          "s": "(49.58; 86.42)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Interval correct",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "6 candidates",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.4",
+      "prompt_template": "Equation of least squares regression line.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.regression",
+      "expected_fn": "y_hat = 22.83 + 0.66x",
+      "steps": [
+        {
+          "s": "a = 22.83",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = 0.66",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_hat = 22.83 + 0.66x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.5",
+      "prompt_template": "Predict Accounting mark for 60% in Maths.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "62%",
+      "steps": [
+        {
+          "s": "y = 22.83 + 0.66(60)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 62%",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.6",
+      "prompt_template": "Identify outlier(s).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.outlier",
+      "expected_fn": "(82; 62)",
+      "steps": [
+        {
+          "s": "(82; 62)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "1"
+  },
+  "diagram_page": "2014_P2_p03.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P2_p03.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,84 @@
+{
+  "stem": "f(x) = cos x - 1/2, g(x) = sin(x+30) for [-240;240]. Intersection at (0; 1/2), (-120;-1), (240;-1).",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Values of p and q.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.graph",
+      "expected_fn": "p = 30, q = -1/2",
+      "steps": [
+        {
+          "s": "f(x) = cos x - 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "g(x) = sin(x+30)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "p = 30",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "q = -1/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Values of x for which f(x) > g(x).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.inequality",
+      "expected_fn": "-120 < x < 0",
+      "steps": [
+        {
+          "s": "Critical values -120; 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "-120 < x < 0",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "Transformation of g to h(x) = -cos x.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.graph",
+      "expected_fn": "Shift 60 left and reflect about x-axis",
+      "steps": [
+        {
+          "s": "Shift 60 left",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Reflect about x-axis",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "6"
+  },
+  "diagram_page": "2015_P2_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P2_p08.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,138 @@
+{
+  "stem": "f(x) = k^x, k > 0, passes through (4; 16).",
+  "diagram": "exponential_solo",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Determine k.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.exponential",
+      "expected_fn": "k = 2",
+      "steps": [
+        "16 = k^4.",
+        "k = 2."
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "g is reflection of f about y = x. Find g.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.inverse",
+      "expected_fn": "y = log_2(x)",
+      "steps": [
+        "Swap x and y."
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Sketch g showing two points.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.log",
+      "expected_fn": "see memo",
+      "steps": [
+        "Log graph.",
+        "Passes through (1; 0) and (16; 4)."
+      ]
+    },
+    {
+      "n": "5.4.1",
+      "prompt_template": "For which x is f(x) * g(x) > 0?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.inequality",
+      "expected_fn": "x > 1",
+      "steps": [
+        "f > 0 always. g > 0 for x > 1."
+      ]
+    },
+    {
+      "n": "5.4.2",
+      "prompt_template": "For which x is g(x) <= -1?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.inequality",
+      "expected_fn": "0 < x <= 1/2",
+      "steps": [
+        "log_2(x) <= -1.",
+        "x <= 1/2. Also x > 0."
+      ]
+    },
+    {
+      "n": "5.5",
+      "prompt_template": "If h(x) = f(-x), find x for which f(x) - h(x) = 15/4.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.exponential",
+      "expected_fn": "x = 2",
+      "steps": [
+        "2^x - 2^(-x) = 15/4.",
+        "Let u = 2^x: 4u² - 15u - 4 = 0.",
+        "(4u + 1)(u - 4) = 0.",
+        "2^x = 4 → x = 2."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "5"
+  },
+  "diagram_page": "2019_P1_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P1_p06.png",
+  "diagram_crop": null
+}

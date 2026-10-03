@@ -39,7 +39,7 @@
         ]
       },
       "marks": 1,
-      "skill_id": "calculus.derivative.rules",
+      "skill_id": "calculus.derivative",
       "expected_fn": "f'(x) = {three_a}x^2 - {b}",
       "steps": [
         "Differentiate term by term."
@@ -50,7 +50,7 @@
       "prompt_template": "D_x(7*cbrt(x^2) + 2x^-5).",
       "ranges": {},
       "marks": 2,
-      "skill_id": "calculus.derivative.rules",
+      "skill_id": "calculus.derivative",
       "expected_fn": "see memo",
       "steps": [
         "Rewrite cube root as power.",
@@ -60,7 +60,18 @@
     {
       "n": "7.3",
       "prompt_template": "For which x does tangent to f(x) = -2x^3 + 8x have positive gradient?",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
       "marks": 4,
       "skill_id": "calculus.derivative",
       "expected_fn": "see memo",

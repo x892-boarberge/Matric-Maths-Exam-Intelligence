@@ -1,0 +1,89 @@
+{
+  "stem": "Tennis players' height vs average serve speed.",
+  "diagram": "scatter_regression",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Fastest average serve speed.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.scatter",
+      "expected_fn": "251 km/h",
+      "steps": [
+        {
+          "s": "251 km/h",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2.1",
+      "prompt_template": "Which correlation coefficient fits?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.correlation",
+      "expected_fn": "C (r = 0.52)",
+      "steps": [
+        {
+          "s": "C",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2.2",
+      "prompt_template": "Motivate answer.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.correlation",
+      "expected_fn": "Points scattered, line increasing",
+      "steps": [
+        {
+          "s": "Points fairly scattered, line increasing",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "What does the data suggest?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.interpret",
+      "expected_fn": "Weak positive; no conclusive evidence",
+      "steps": [
+        {
+          "s": "Weak positive; no conclusive evidence",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Why can't line intersect y-axis at (0; 27.07)?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.regression",
+      "expected_fn": "Player with 0 m height impossible",
+      "steps": [
+        {
+          "s": "0 m height impossible",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P2",
+    "qnum": "2"
+  },
+  "diagram_page": "2018_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P2_p05.png",
+  "diagram_crop": null
+}

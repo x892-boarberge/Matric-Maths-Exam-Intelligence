@@ -1,0 +1,56 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1.1",
+      "prompt_template": "R15000 per quarter for 4 years at 8.8% p.a. compounded quarterly. Future value?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "finance.annuity",
+      "expected_fn": "R283 972.28",
+      "steps": [
+        "F = x[(1+i)^n - 1]/i, i = 0.088/4, n = 16."
+      ]
+    },
+    {
+      "n": "7.1.2",
+      "prompt_template": "Withdraw R100 000 at end of 3 years. Amount at end of 4 years?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "finance.annuity",
+      "expected_fn": "R174 877.60",
+      "steps": [
+        "Amount after 3 years compound.",
+        "Then subtract 100 000 and compound for 1 more year.",
+        "Add last quarter deposits."
+      ]
+    },
+    {
+      "n": "7.2.1",
+      "prompt_template": "Home loan R1 500 000 at 10.5% p.a. over 20 years. Monthly instalment?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "finance.loan",
+      "expected_fn": "x = R14 975.70",
+      "steps": [
+        "P = x[1 - (1+i)^-n]/i, i = 0.105/12, n = 240."
+      ]
+    },
+    {
+      "n": "7.2.2",
+      "prompt_template": "Balance after 144 payments.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "finance.loan",
+      "expected_fn": "R969 927.74",
+      "steps": [
+        "Use P = x[1 - (1+i)^-n]/i with remaining n = 96."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "7"
+  }
+}

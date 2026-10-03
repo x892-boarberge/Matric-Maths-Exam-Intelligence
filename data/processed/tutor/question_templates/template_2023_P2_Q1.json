@@ -1,0 +1,144 @@
+{
+  "stem": "8 trips. Distance travelled (km) and rest time (min).",
+  "diagram": "scatter_regression",
+  "subquestions": [
+    {
+      "n": "1.1",
+      "prompt_template": "Determine the equation of the least squares regression line.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.regression",
+      "expected_fn": "y_hat = -23.85 + 0.23x",
+      "steps": [
+        {
+          "s": "a = -23.846",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = 0.227",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_hat = -23.85 + 0.23x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "Predict the rest time for 550 km.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "102.65",
+      "steps": [
+        {
+          "s": "y = -23.85 + 0.23(550)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 102.65",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "Write down the correlation coefficient.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.correlation",
+      "expected_fn": "r = 0.98",
+      "steps": [
+        {
+          "s": "r = 0.98",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.4",
+      "prompt_template": "Interpret the correlation coefficient.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.correlation",
+      "expected_fn": "Very strong positive correlation",
+      "steps": [
+        {
+          "s": "Very strong positive correlation",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.5.1",
+      "prompt_template": "Mean of the 8 spending amounts.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.mean",
+      "expected_fn": "150",
+      "steps": [
+        {
+          "s": "Sum = 1200",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x_bar = 150",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.5.2",
+      "prompt_template": "Standard deviation.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "50.50",
+      "steps": [
+        {
+          "s": "sigma = 50.50",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.5.3",
+      "prompt_template": "Number of stops spent less than one SD below mean.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "1 stop",
+      "steps": [
+        {
+          "s": "x_bar - sigma = 99.50",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "1 stop",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "1"
+  },
+  "diagram_page": "2023_P2_p03.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P2_p03.png",
+  "diagram_crop": null
+}

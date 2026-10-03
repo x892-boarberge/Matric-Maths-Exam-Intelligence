@@ -1,0 +1,55 @@
+{
+  "stem": "sum from k=1 to inf of 4.3^(2-k)",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Prove that the series converges.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "sequences.gp",
+      "expected_fn": "r = 1/3, -1 < r < 1",
+      "steps": [
+        "Expand: 12 + 4 + 4/3 + ...",
+        "r = 4/12 = 1/3.",
+        "-1 < 1/3 < 1, so converges."
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "If sum = 2/9, determine p.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 5,
+      "skill_id": "sequences.gp",
+      "expected_fn": "p = 5",
+      "steps": [
+        "Sum from k=p: a = 4.3^(2-p), r = 1/3.",
+        "S_inf = a/(1-r).",
+        "2/9 = 4.3^(2-p)/(2/3)",
+        "3^(2-p) = 3^-3 → p = 5."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P1",
+    "qnum": "3"
+  }
+}

@@ -4,9 +4,28 @@
     {
       "n": "5.1",
       "prompt_template": "Write down the y-coordinate of B (y-intercept of g).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -8,
+          -7,
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.line.intercept",
+      "skill_id": "functions.line",
       "expected_fn": "y = 6",
       "steps": [
         "g(0) = 6."
@@ -15,7 +34,13 @@
     {
       "n": "5.2",
       "prompt_template": "Determine g^(-1)(x).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 2,
       "skill_id": "functions.inverse",
       "expected_fn": "y = x/2 - 3",
@@ -27,7 +52,13 @@
     {
       "n": "5.3",
       "prompt_template": "Determine the coordinates of A, intersection of g and g^(-1).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 3,
       "skill_id": "functions.inverse",
       "expected_fn": "A(-6; -6)",
@@ -41,7 +72,26 @@
     {
       "n": "5.4",
       "prompt_template": "Calculate the length of AB.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 2,
       "skill_id": "analytical.distance",
       "expected_fn": "AB = sqrt(180) = 6 sqrt(5)",
@@ -53,7 +103,26 @@
     {
       "n": "5.5",
       "prompt_template": "Calculate the area of triangle ABC.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 5,
       "skill_id": "analytical.area",
       "expected_fn": "Area = 54",
@@ -68,5 +137,8 @@
     "year": 2022,
     "paper": "P1",
     "qnum": "5"
-  }
+  },
+  "diagram_page": "2022_P1_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P1_p06.png",
+  "diagram_crop": null
 }

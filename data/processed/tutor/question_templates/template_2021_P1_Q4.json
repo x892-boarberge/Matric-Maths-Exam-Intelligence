@@ -1,0 +1,79 @@
+{
+  "stem": "Consider the linear pattern: {a}; {a_d}; {a_2d}; ...",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Determine T_{N}.",
+      "ranges": {
+        "a": [
+          4,
+          5,
+          6
+        ],
+        "d": [
+          1,
+          2,
+          3
+        ],
+        "N": [
+          49,
+          50,
+          51
+        ]
+      },
+      "marks": 3,
+      "skill_id": "sequences.ap",
+      "expected_fn": "T_{N} = {TN}",
+      "steps": [
+        "T_n = a + (n-1)d",
+        "T_{N} = {a} + ({N}-1)({d}) = {TN}"
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Calculate the sum of the first {N} terms.",
+      "ranges": {
+        "N": [
+          51
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.ap",
+      "expected_fn": "S_{N} = {SN}",
+      "steps": [
+        "S_n = n/2[2a + (n-1)d]",
+        "S_{N} = {N}/2[2({a}) + ({N}-1)({d})] = {SN}"
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Write down the expansion of sum from n=1 to 5000 of (2n+3), first 3 and last term.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "sequences.ap",
+      "expected_fn": "5 + 7 + 9 + ... + 10 003",
+      "steps": [
+        "First three: n=1, 2, 3 → 5, 7, 9",
+        "Last: n=5000 → 2(5000)+3 = 10003"
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Calculate sum(2n+3, n=1 to 5000) + sum(-2n-1, n=1 to 4999).",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "sequences.ap",
+      "expected_fn": "= {ans}",
+      "steps": [
+        "Expand both sums.",
+        "Notice T_{4999} of the second cancels intermediate terms.",
+        "Result: {ans}"
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "4"
+  }
+}

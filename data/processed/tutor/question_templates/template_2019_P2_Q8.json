@@ -1,0 +1,155 @@
+{
+  "stem": "Cyclic quad PQRS. Chord RS produced to T. K on RS. W on circle such that QRKW parallelogram. PS and QW intersect at U. PST = 136, Q1 = 100.",
+  "diagram": "circle_cyclic_quad",
+  "subquestions": [
+    {
+      "n": "8.1.1",
+      "prompt_template": "Determine R with reasons.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "R = 80",
+      "steps": [
+        {
+          "s": "R = 80",
+          "r": "co-interior angles; QW || RK",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.1.2",
+      "prompt_template": "Determine P.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "P = 100",
+      "steps": [
+        {
+          "s": "P = 100",
+          "r": "opposite angles of cyclic quad",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.1.3",
+      "prompt_template": "Determine PQW.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "PQW = 36",
+      "steps": [
+        {
+          "s": "PQR = 136",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "Q2 = 36",
+          "r": "PQR - Q1",
+          "mark": "S/R"
+        },
+        {
+          "s": "PQW = 36",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.1.4",
+      "prompt_template": "Determine U2.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "U2 = 100",
+      "steps": [
+        {
+          "s": "U2 = 100",
+          "r": "vertically opposite angles",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.2.1",
+      "prompt_template": "Prove EFD = ECD.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "EFD = ECD",
+      "steps": [
+        {
+          "s": "EF/CD = 9/18 = 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "ET/TC = 7/14 = 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "FT/TD = 5/10 = 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "triangle EFT ||| triangle DCT",
+          "r": "sides in proportion",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.2.2",
+      "prompt_template": "Prove DFC = DEC.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "DFC = DEC",
+      "steps": [
+        {
+          "s": "EFD = ECD",
+          "r": "proved in 8.2.1",
+          "mark": "S/R"
+        },
+        {
+          "s": "E, F, C, D concyclic",
+          "r": "converse angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "DFC = DEC",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2019_P2_p11.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P2_p11.png",
+  "diagram_crop": null
+}

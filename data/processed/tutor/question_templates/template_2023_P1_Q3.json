@@ -13,7 +13,7 @@
         ]
       },
       "marks": 1,
-      "skill_id": "sequences.geometric",
+      "skill_id": "sequences.gp",
       "expected_fn": "T_n = {a} * {r}^(n-1)",
       "steps": [
         "T_n = a r^(n-1) = {a} * {r}^(n-1)"
@@ -24,11 +24,13 @@
       "prompt_template": "Calculate k such that sum_{p=1}^{k} (3/2)(2)^p = {S}.",
       "ranges": {
         "S": [
+          98299,
+          98300,
           98301
         ]
       },
       "marks": 4,
-      "skill_id": "sequences.gp.sum",
+      "skill_id": "sequences.gp",
       "expected_fn": "k = {k_ans}",
       "steps": [
         "Rewrite: sum = (3/2) sum_{p=1}^k 2^p = (3/2)(2^(k+1) - 2)",
@@ -48,7 +50,7 @@
         ]
       },
       "marks": 5,
-      "skill_id": "sequences.geometric",
+      "skill_id": "sequences.gp",
       "expected_fn": "a = {a_ans}",
       "steps": [
         "S_22 = 22/2[2a + 21d]",

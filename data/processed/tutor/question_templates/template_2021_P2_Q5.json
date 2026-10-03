@@ -1,0 +1,136 @@
+{
+  "stem": "sin 140 sin(360-x)/(cos 50 tan(-x)).",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Simplify sin 140 sin(360-x)/(cos 50 tan(-x)).",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "trig.identities",
+      "expected_fn": "cos x",
+      "steps": [
+        {
+          "s": "sin 140 = sin 40",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "sin(360-x) = -sin x",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "cos 50 = sin 40",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "tan(-x) = -tan x",
+          "r": "odd function",
+          "mark": "S"
+        },
+        {
+          "s": "tan x = sin x / cos x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Simplify -> cos x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Prove (-2sin^2 x + cos x + 1)/(1 - cos(540 - x)) = 2cos x - 1.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.proof",
+      "type": "proof",
+      "expected_fn": "LHS = RHS",
+      "steps": [
+        {
+          "s": "Use 1 = sin^2 x + cos^2 x",
+          "r": "identity",
+          "mark": "S/R"
+        },
+        {
+          "s": "cos(540-x) = -cos x",
+          "r": "reduction",
+          "mark": "S/R"
+        },
+        {
+          "s": "Simplify to standard form",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Factorise to 2cos x - 1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.3.1",
+      "prompt_template": "Determine tan 36 in terms of p (sin 36 = sqrt(1-p^2)).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "sqrt(1-p^2)/p",
+      "steps": [
+        {
+          "s": "cos 36 = sqrt(1 - sin^2 36)",
+          "r": "square identity",
+          "mark": "S/R"
+        },
+        {
+          "s": "cos 36 = p",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan 36 = sqrt(1-p^2)/p",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.3.2",
+      "prompt_template": "Determine cos 108 in terms of p.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "-2p^2 + 1",
+      "steps": [
+        {
+          "s": "cos 108 = -cos 72",
+          "r": "reduction",
+          "mark": "S/R"
+        },
+        {
+          "s": "= -cos(2 x 36)",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= -(2cos^2 36 - 1)",
+          "r": "double angle cos",
+          "mark": "S/R"
+        },
+        {
+          "s": "= -2p^2 + 1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "5"
+  }
+}

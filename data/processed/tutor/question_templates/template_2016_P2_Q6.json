@@ -1,0 +1,104 @@
+{
+  "stem": "f(x) = 2 sin 2x for [-180; 180]. g(x) = -cos 2x.",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Draw g(x) = -cos 2x.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.graph",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Intercepts",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Turning points",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Shape",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Max value of f(x) - 3.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "-1",
+      "steps": [
+        {
+          "s": "Max f - 3 = 2 - 3 = -1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "General solution of f(x) = g(x).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = 67.5 + k.90",
+      "steps": [
+        {
+          "s": "2 sin 2x = -cos 2x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan 2x = -1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 67.5 + k.90; k in Z",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.4",
+      "prompt_template": "Values of x for f(x) < g(x) in [-180;0].",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.inequality",
+      "expected_fn": "x in [-90; -67.5)",
+      "steps": [
+        {
+          "s": "Interval",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "-90 <= x < -67.5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P2",
+    "qnum": "6"
+  },
+  "diagram_page": "2016_P2_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2016_P2_p08.png",
+  "diagram_crop": null
+}

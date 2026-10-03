@@ -1,0 +1,195 @@
+{
+  "stem": "11.1: Prove DFK = E (tangent-chord theorem). 11.2: PK tangent at K, chord LS produced to P, N and M on KP and SP with MN || SK.",
+  "diagram": "circle_similarity",
+  "subquestions": [
+    {
+      "n": "11.1.1",
+      "prompt_template": "Prove DFK = E.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "DFK = E",
+      "steps": [
+        {
+          "s": "Construction: Draw diameter BF and draw BE",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "BFK = 90",
+          "r": "radius perpendicular tangent",
+          "mark": "S/R"
+        },
+        {
+          "s": "BEF = 90",
+          "r": "angle in semicircle",
+          "mark": "S/R"
+        },
+        {
+          "s": "DEF = 90 - BED",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "DFK = DEF",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.2.1a",
+      "prompt_template": "Prove K4 = NML.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "K4 = NML",
+      "steps": [
+        {
+          "s": "K4 = S1",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "M2 + M3 = S1",
+          "r": "corresponding angles; MN || KS",
+          "mark": "S/R"
+        },
+        {
+          "s": "K4 = M2 + M3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "NML = M2 + M3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.2.1b",
+      "prompt_template": "Prove KLMN is cyclic quad.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "KLMN cyclic",
+      "steps": [
+        {
+          "s": "K4 = NML -> KLMN cyclic",
+          "r": "converse exterior angle of cyclic quad",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "11.2.2",
+      "prompt_template": "Prove triangle LKN ||| triangle KSM.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle LKN ||| triangle KSM",
+      "steps": [
+        {
+          "s": "N3 = M3",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "L1 = M2",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "L1 = K2",
+          "r": "alternate angles; MN || KS",
+          "mark": "S/R"
+        },
+        {
+          "s": "NKL = MSK",
+          "r": "sum of angles in triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "triangle LKN ||| triangle KSM",
+          "r": "AAA",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "11.2.3",
+      "prompt_template": "If LK = 12 and 3KN = 4SM, find KS.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "KS = 9",
+      "steps": [
+        {
+          "s": "LK/KS = KN/SM",
+          "r": "triangle LKN ||| triangle KSM",
+          "mark": "S/R"
+        },
+        {
+          "s": "12/KS = 4/3",
+          "r": "substitution",
+          "mark": "S"
+        },
+        {
+          "s": "KS = 9",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.2.4",
+      "prompt_template": "If NL = 16, LS = 13, KN = 8, find LT.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "LT = 208/19 = 10.95",
+      "steps": [
+        {
+          "s": "SM = 6",
+          "r": "from 3KN = 4SM",
+          "mark": "S"
+        },
+        {
+          "s": "LT/NL = LS/ML",
+          "r": "prop theorem; MN || KS",
+          "mark": "S/R"
+        },
+        {
+          "s": "LT/16 = 13/19",
+          "r": "substitution",
+          "mark": "S"
+        },
+        {
+          "s": "LT = 208/19 = 10.95",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "11"
+  },
+  "diagram_page": "2021_P2_p13.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P2_p13.png",
+  "diagram_crop": null
+}

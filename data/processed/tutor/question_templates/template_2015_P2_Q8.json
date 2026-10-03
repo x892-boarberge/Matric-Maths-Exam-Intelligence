@@ -1,0 +1,91 @@
+{
+  "stem": "8.1: Cyclic quad ABCD in circle with centre O. 8.2: Two circles common chord CD, chords AB, EF drawn, ADE and BCF straight lines.",
+  "diagram": "circle_centre_angle",
+  "subquestions": [
+    {
+      "n": "8.1.1",
+      "prompt_template": "Complete statement about angle at centre.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "expected_fn": "Twice",
+      "steps": [
+        {
+          "s": "Twice",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.1.2",
+      "prompt_template": "Prove A + C = 180.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "A + C = 180",
+      "steps": [
+        {
+          "s": "O1 = 2A",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        },
+        {
+          "s": "O2 = 2C",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        },
+        {
+          "s": "O1 + O2 = 360 -> 2(A + C) = 360 -> A + C = 180",
+          "r": "angles around a point",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "Prove EF || AB.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "EF || AB",
+      "steps": [
+        {
+          "s": "A = C2",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "E = 180 - C2",
+          "r": "opposite angles of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "E = 180 - A",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "EF || AB",
+          "r": "co-interior angles supplementary",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2015_P2_p11.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P2_p11.png",
+  "diagram_crop": null
+}

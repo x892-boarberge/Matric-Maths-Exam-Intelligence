@@ -43,7 +43,7 @@
         ]
       },
       "marks": 2,
-      "skill_id": "calculus.derivative.rules",
+      "skill_id": "calculus.derivative",
       "expected_fn": "g'(x) = {four_a}x^3 + {b}",
       "steps": [
         "g'(x) = {four_a}x^3 + {b}"
@@ -60,7 +60,7 @@
         ]
       },
       "marks": 2,
-      "skill_id": "calculus.derivative.rules",
+      "skill_id": "calculus.derivative",
       "expected_fn": "dy/dx = {two_a}x - 2/x^3",
       "steps": [
         "y = {a}x^2 + x^-2",

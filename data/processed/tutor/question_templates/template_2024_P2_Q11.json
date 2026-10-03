@@ -1,0 +1,356 @@
+{
+  "stem": "Two circles touch internally at A. EA common tangent. EBCF tangent at C. AC produced to G. AF cuts smaller circle at D.",
+  "diagram": "circle_similarity",
+  "subquestions": [
+    {
+      "n": "11.1",
+      "prompt_template": "If EAG = x, find FOUR other angles equal to x.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "D1 = x; C1 = x; C4 = x; AFG = x",
+      "steps": [
+        {
+          "s": "D1 = EAG = x",
+          "r": "tan-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "C1 = D1 = x",
+          "r": "tan-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "C4 = C1 = x",
+          "r": "vertically opposite angles",
+          "mark": "S/R"
+        },
+        {
+          "s": "AFG = EAG = x",
+          "r": "tan-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.2",
+      "prompt_template": "Prove AG.AD = AC.AF.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "AG.AD = AC.AF",
+      "steps": [
+        {
+          "s": "D1 = AFG = x",
+          "r": "corresponding angles; DC || FG",
+          "mark": "S/R"
+        },
+        {
+          "s": "DC || FG",
+          "r": "from above",
+          "mark": "S"
+        },
+        {
+          "s": "AG/AC = AF/AD",
+          "r": "prop theorem; DC || FG",
+          "mark": "S/R"
+        },
+        {
+          "s": "AG.AD = AC.AF",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.3",
+      "prompt_template": "Prove triangle AGF ||| triangle ABC.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle AGF ||| triangle ABC",
+      "steps": [
+        {
+          "s": "G = B2",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "AFG = C1 = x",
+          "r": "proved in 11.1",
+          "mark": "S"
+        },
+        {
+          "s": "A3 = A2",
+          "r": "sum of angles in triangle",
+          "mark": "S"
+        },
+        {
+          "s": "triangle AGF ||| triangle ABC",
+          "r": "AAA",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "11.4",
+      "prompt_template": "Prove GF^2 = (BC.FC.AF)/AD.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "GF^2 = BC.FC.AF/AD",
+      "steps": [
+        {
+          "s": "GF/BC = AF/AC",
+          "r": "triangle AGF ||| triangle ABC",
+          "mark": "S/R"
+        },
+        {
+          "s": "GF = BC.AF/AC",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "triangle ACD ||| triangle FGC",
+          "r": "AAA",
+          "mark": "S"
+        },
+        {
+          "s": "AC/GF = AD/FC",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AC = AD.FG/FC",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "GF^2 = BC.FC.AF/AD",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2024,
+    "paper": "P2",
+    "qnum": "11"
+  },
+  "diagram_spec": {
+    "circle_a": [
+      -0.3,
+      0,
+      3.0
+    ],
+    "circle_b": [
+      0.6,
+      0.6,
+      1.7
+    ],
+    "points": {
+      "A": [
+        -0.3,
+        3.0
+      ],
+      "B": [
+        -2.6,
+        1.0
+      ],
+      "C": [
+        0.6,
+        -1.1
+      ],
+      "D": [
+        0.9,
+        1.7
+      ],
+      "E": [
+        -4.2,
+        -0.6
+      ],
+      "F": [
+        2.6,
+        1.3
+      ],
+      "G": [
+        1.6,
+        -2.0
+      ]
+    },
+    "segments": [
+      [
+        "A",
+        "E"
+      ],
+      [
+        "E",
+        "B"
+      ],
+      [
+        "B",
+        "C"
+      ],
+      [
+        "C",
+        "F"
+      ],
+      [
+        "A",
+        "B"
+      ],
+      [
+        "A",
+        "C"
+      ],
+      [
+        "C",
+        "G"
+      ],
+      [
+        "A",
+        "F"
+      ],
+      [
+        "F",
+        "G"
+      ],
+      [
+        "C",
+        "D"
+      ]
+    ],
+    "angle_labels": [
+      {
+        "vertex": "A",
+        "p1": "E",
+        "p2": "B",
+        "label": "1",
+        "r_arc": 0.5,
+        "r_label": 0.85
+      },
+      {
+        "vertex": "A",
+        "p1": "B",
+        "p2": "C",
+        "label": "2",
+        "r_arc": 0.5,
+        "r_label": 0.85
+      },
+      {
+        "vertex": "A",
+        "p1": "C",
+        "p2": "F",
+        "label": "3",
+        "r_arc": 0.5,
+        "r_label": 0.85
+      },
+      {
+        "vertex": "B",
+        "p1": "A",
+        "p2": "C",
+        "label": "1",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      },
+      {
+        "vertex": "B",
+        "p1": "C",
+        "p2": "E",
+        "label": "2",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      },
+      {
+        "vertex": "C",
+        "p1": "D",
+        "p2": "A",
+        "label": "1",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      },
+      {
+        "vertex": "C",
+        "p1": "B",
+        "p2": "D",
+        "label": "2",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      },
+      {
+        "vertex": "C",
+        "p1": "A",
+        "p2": "F",
+        "label": "3",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      },
+      {
+        "vertex": "C",
+        "p1": "F",
+        "p2": "B",
+        "label": "4",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      },
+      {
+        "vertex": "F",
+        "p1": "C",
+        "p2": "A",
+        "label": "1",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      },
+      {
+        "vertex": "F",
+        "p1": "A",
+        "p2": "G",
+        "label": "2",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      },
+      {
+        "vertex": "D",
+        "p1": "C",
+        "p2": "A",
+        "label": "1",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      },
+      {
+        "vertex": "D",
+        "p1": "A",
+        "p2": "F",
+        "label": "2",
+        "r_arc": 0.4,
+        "r_label": 0.75
+      }
+    ],
+    "xlim": [
+      -5,
+      4
+    ],
+    "ylim": [
+      -3,
+      4
+    ]
+  },
+  "diagram_page": "2024_P2_p13.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P2_p13.png",
+  "diagram_crop": null
+}

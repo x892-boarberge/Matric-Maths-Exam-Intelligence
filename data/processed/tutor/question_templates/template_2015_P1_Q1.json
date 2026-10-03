@@ -1,0 +1,120 @@
+{
+  "stem": "Solve for x:",
+  "subquestions": [
+    {
+      "n": "1.1.1",
+      "prompt_template": "x² - {b}x + {c} = 0",
+      "ranges": {
+        "b": [
+          9,
+          7
+        ],
+        "c": [
+          20,
+          12
+        ]
+      },
+      "marks": 3,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "x = {r1} or x = {r2}",
+      "steps": [
+        "Factorise."
+      ]
+    },
+    {
+      "n": "1.1.2",
+      "prompt_template": "{a}x² + {b}x = {c} (TWO decimals)",
+      "ranges": {
+        "a": [
+          3,
+          4
+        ],
+        "b": [
+          5,
+          6
+        ],
+        "c": [
+          4,
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "x = {x1} or x = {x2}",
+      "steps": [
+        "Standard form.",
+        "Quadratic formula."
+      ]
+    },
+    {
+      "n": "1.1.3",
+      "prompt_template": "2x^(-5/3) = 64",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "algebra.exponential",
+      "expected_fn": "x = 1/8",
+      "steps": [
+        "x^(-5/3) = 32.",
+        "Raise to -3/5: x = 32^(-3/5).",
+        "32 = 2^5, x = 2^(-3) = 1/8."
+      ]
+    },
+    {
+      "n": "1.1.4",
+      "prompt_template": "sqrt(2 - x) = x - 2",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "algebra.surd",
+      "expected_fn": "x = 2",
+      "steps": [
+        "Square both sides.",
+        "2 - x = (x-2)².",
+        "Standard form: x² - 3x + 2 = 0.",
+        "x = 1 or x = 2.",
+        "Reject x = 1."
+      ]
+    },
+    {
+      "n": "1.1.5",
+      "prompt_template": "x² + 7x < 0",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "-7 < x < 0",
+      "steps": [
+        "x(x+7) < 0."
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "(3x - y)² + (x - 5)² = 0",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "algebra.simultaneous",
+      "expected_fn": "x = 5, y = 15",
+      "steps": [
+        "Sum of squares = 0 means each square = 0.",
+        "x - 5 = 0 → x = 5.",
+        "3x - y = 0 → y = 15."
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "For which k does x² + x = k have no real roots?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "k < -1/4",
+      "steps": [
+        "x² + x - k = 0.",
+        "Discrim < 0: 1 + 4k < 0.",
+        "k < -1/4."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "1"
+  }
+}

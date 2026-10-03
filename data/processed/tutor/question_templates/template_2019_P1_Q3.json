@@ -1,0 +1,40 @@
+{
+  "stem": "Steel pavilion with 12 steps, each 5m wide, rise 1/3 m, tread 2/3 m.",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Determine sum from y=3 to 10 of (1/(y-2) - 1/(y-1)).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.ap",
+      "expected_fn": "= 8/9",
+      "steps": [
+        "Expand and telescope.",
+        "= (1/1 + 1/2 + ... + 1/8) - (1/2 + ... + 1/9)",
+        "= 1 - 1/9 = 8/9."
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Area of metal for both sides of 12 steps.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "sequences.ap",
+      "expected_fn": "= 52/3 m² per side",
+      "steps": [
+        "Each step contributes 5 × (1/3 + 2/3) = 5 m².",
+        "But tread diminishes by rise each time.",
+        "Area sequence: 5(1/3 + 2/3), 5(2/3 + 4/3), ...",
+        "Use AP sum."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "3"
+  },
+  "diagram_page": "2019_P1_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P1_p04.png",
+  "diagram_crop": null
+}

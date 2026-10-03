@@ -1,0 +1,94 @@
+{
+  "stem": "55 cars' speeds (histogram).",
+  "diagram": "histogram",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Modal class.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.mode",
+      "expected_fn": "50 < x <= 60",
+      "steps": [
+        {
+          "s": "50 < x <= 60",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2.1",
+      "prompt_template": "Complete cumulative frequency column.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.cumulative",
+      "expected_fn": "8; 21; 38; 47; 52; 54; 55",
+      "steps": [
+        {
+          "s": "8; 21; 38",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "47; 52; 54; 55",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2.2",
+      "prompt_template": "Draw ogive.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.ogive",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Grounded at (20; 0)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Points at upper limits",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Smooth shape",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Estimate number exceeding 66 km/h.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.ogive",
+      "expected_fn": "11 motorists",
+      "steps": [
+        {
+          "s": "Read from ogive: 44",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "55 - 44 = 11",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "2"
+  },
+  "diagram_page": "2014_P2_p15.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P2_p15.png",
+  "diagram_crop": null
+}

@@ -4,7 +4,16 @@
     {
       "n": "10.1.1a",
       "prompt_template": "Find y (P(none)).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 1,
       "skill_id": "probability.venn",
       "expected_fn": "y = 0.107",
@@ -16,7 +25,16 @@
     {
       "n": "10.1.1b",
       "prompt_template": "Find x (P(all three)).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 1,
       "skill_id": "probability.venn",
       "expected_fn": "x = 0.16",
@@ -29,7 +47,18 @@
     {
       "n": "10.1.2",
       "prompt_template": "P(at least 2 events).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
       "marks": 2,
       "skill_id": "probability.set",
       "expected_fn": "0.61",
@@ -40,7 +69,26 @@
     {
       "n": "10.1.3",
       "prompt_template": "Are B and C independent? Justify.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 5,
       "skill_id": "probability.independence",
       "expected_fn": "Yes",
@@ -82,5 +130,8 @@
     "year": 2022,
     "paper": "P1",
     "qnum": "10"
-  }
+  },
+  "diagram_page": "2022_P1_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P1_p09.png",
+  "diagram_crop": null
 }

@@ -4,9 +4,18 @@
     {
       "n": "9.1",
       "prompt_template": "Determine the minimum distance.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 8,
-      "skill_id": "calculus.optimisation.min",
+      "skill_id": "calculus.optimisation",
       "expected_fn": "Distance = 2 sqrt(17) ≈ 8.25",
       "steps": [
         "Point on f: (x; x^2).",

@@ -1,0 +1,138 @@
+{
+  "stem": "ABCD cyclic quad with AC perpendicular CB and DC = CB. AD produced to M with AM perpendicular MC. B = x.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "10.1.1",
+      "prompt_template": "Prove MC is tangent to circle at C.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "MC is tangent",
+      "steps": [
+        {
+          "s": "A2 = A1 = 90 - x",
+          "r": "equal chords subtend equal angles",
+          "mark": "S/R"
+        },
+        {
+          "s": "D2 = x",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "C2 = 90 - x",
+          "r": "sum of angles in triangle DCM",
+          "mark": "S/R"
+        },
+        {
+          "s": "C2 = A1 = 90 - x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "MC is tangent",
+          "r": "converse tangent-chord theorem",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.1.2",
+      "prompt_template": "Prove triangle ACB ||| triangle CMD.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle ACB ||| triangle CMD",
+      "steps": [
+        {
+          "s": "B = D2 = x",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "ACB = AMC = 90",
+          "r": "given",
+          "mark": "S/R"
+        },
+        {
+          "s": "triangle ACB ||| triangle CMD",
+          "r": "AAA",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.2.1",
+      "prompt_template": "Prove CM^2/DC^2 = AM/AB.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "CM^2/DC^2 = AM/AB",
+      "steps": [
+        {
+          "s": "BC/DC = AB/MD",
+          "r": "triangle ACB ||| triangle CMD",
+          "mark": "S/R"
+        },
+        {
+          "s": "DC = BC -> DC^2 = AB x MD",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "In triangle AMC and triangle CMD: M common; A1 = C2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "triangle AMC ||| triangle CMD",
+          "r": "AAA",
+          "mark": "S/R"
+        },
+        {
+          "s": "CM^2 = AM x MD",
+          "r": "similar triangles",
+          "mark": "S/R"
+        },
+        {
+          "s": "CM^2/DC^2 = AM x MD / (AB x MD) = AM/AB",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2",
+      "prompt_template": "Prove AM/AB = sin^2 x.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.trig_ratio",
+      "type": "proof",
+      "expected_fn": "AM/AB = sin^2 x",
+      "steps": [
+        {
+          "s": "CM/DC = sin x",
+          "r": "trig ratio in triangle DCM",
+          "mark": "S/R"
+        },
+        {
+          "s": "Square both sides",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2018_P2_p15.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P2_p15.png",
+  "diagram_crop": null
+}

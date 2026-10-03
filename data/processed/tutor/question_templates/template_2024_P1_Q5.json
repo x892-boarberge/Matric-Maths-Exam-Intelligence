@@ -10,9 +10,18 @@
     {
       "n": "5.1",
       "prompt_template": "Write down the value of p.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.hyperbola.parameter",
+      "skill_id": "functions.hyperbola",
       "expected_fn": "p = {p}",
       "steps": [
         "The domain excludes x = {vert}.",
@@ -25,7 +34,7 @@
       "prompt_template": "Determine the equation of the horizontal asymptote of f.",
       "ranges": {},
       "marks": 2,
-      "skill_id": "functions.hyperbola.asymptote",
+      "skill_id": "functions.hyperbola",
       "expected_fn": "y = {q}",
       "steps": [
         "The horizontal asymptote of a/(x+p) + q is y = q.",
@@ -36,9 +45,24 @@
     {
       "n": "5.3",
       "prompt_template": "Calculate the value of a.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 2,
-      "skill_id": "functions.hyperbola.equation",
+      "skill_id": "functions.hyperbola",
       "expected_fn": "a = {a}",
       "steps": [
         "f cuts the y-axis at (0; {yint}), so f(0) = {yint}.",
@@ -50,9 +74,28 @@
     {
       "n": "5.4",
       "prompt_template": "For which values of x is f(x) >= 0?",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 3,
-      "skill_id": "functions.hyperbola.inequality",
+      "skill_id": "functions.hyperbola",
       "expected_fn": "{ineq_answer}",
       "steps": [
         "f(x) >= 0 means a/(x + p) + q >= 0.",
@@ -65,7 +108,13 @@
     {
       "n": "5.5",
       "prompt_template": "Graph f undergoes a transformation to h where the domain and range of h are the same as that of f and h'(x) is negative on its domain. Describe a possible transformation.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 2,
       "skill_id": "functions.transformation",
       "expected_fn": "reflection in the y-axis followed by a translation to restore the domain",
@@ -77,5 +126,8 @@
       ]
     }
   ],
-  "diagram": "hyperbola_solo"
+  "diagram": "hyperbola_solo",
+  "diagram_page": "2024_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P1_p05.png",
+  "diagram_crop": null
 }

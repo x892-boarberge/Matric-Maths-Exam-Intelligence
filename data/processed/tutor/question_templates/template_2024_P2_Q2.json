@@ -1,0 +1,169 @@
+{
+  "stem": "Travel time to work — ogive and box-and-whisker.",
+  "diagram": "ogive",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Estimate the median travel time.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.ogive",
+      "expected_fn": "65",
+      "steps": [
+        {
+          "s": "65",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Estimate the lower quartile.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.ogive",
+      "expected_fn": "44",
+      "steps": [
+        {
+          "s": "44",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Estimate the interquartile range.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.iqr",
+      "expected_fn": "40",
+      "steps": [
+        {
+          "s": "Q3 = 84",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "IQR = 84 - 44 = 40",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Draw a box-and-whisker diagram.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.box_whisker",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Box from Q1 to Q3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Whiskers at 5 and 120",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.5",
+      "prompt_template": "Percentage who qualify to work from home.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.percentile",
+      "expected_fn": "56.67%",
+      "steps": [
+        {
+          "s": "34 employees",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "56.67%",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.6",
+      "prompt_template": "Minutes allowed to work from home if travel = 110 min.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.application",
+      "expected_fn": "90 minutes",
+      "steps": [
+        {
+          "s": "3 intervals of 20 min above 60 min",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "3 x 30 = 90 minutes",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2024,
+    "paper": "P2",
+    "qnum": "2"
+  },
+  "diagram_spec": {
+    "points": [
+      [
+        0,
+        0
+      ],
+      [
+        20,
+        5
+      ],
+      [
+        40,
+        13
+      ],
+      [
+        60,
+        25
+      ],
+      [
+        80,
+        45
+      ],
+      [
+        100,
+        55
+      ],
+      [
+        120,
+        60
+      ]
+    ],
+    "xlim": [
+      0,
+      140
+    ],
+    "ylim": [
+      0,
+      65
+    ],
+    "x_tick_step": 20,
+    "y_tick_step": 5,
+    "x_label": "Time (in minutes)",
+    "y_label": "Cumulative frequency",
+    "title": "Ogive"
+  },
+  "diagram_page": "2024_P2_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P2_p04.png",
+  "diagram_crop": null
+}

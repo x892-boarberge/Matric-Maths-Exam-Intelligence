@@ -1,0 +1,91 @@
+{
+  "stem": "Geometric series: 3 + 3/2 + 3/4 + ...",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Sum to infinity = 6. Find a.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.gp",
+      "expected_fn": "a = 3",
+      "steps": [
+        "S_inf = a/(1 - r).",
+        "r = 1/2.",
+        "6 = a/(1/2).",
+        "a = 3."
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Calculate T_8.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.gp",
+      "expected_fn": "T_8 = 3/128",
+      "steps": [
+        "T_8 = 3(1/2)^7 = 3/128."
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Sum of first n terms = 5.8125. Find n.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 4,
+      "skill_id": "sequences.gp",
+      "expected_fn": "n = 5",
+      "steps": [
+        "S_n = 3(1 - (1/2)^n)/(1/2) = 6(1 - (1/2)^n).",
+        "6(1 - (1/2)^n) = 5.8125.",
+        "(1/2)^n = 1/32 = (1/2)^5.",
+        "n = 5."
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "If sum from k=1 to 20 of 3(2)^(1-k) = p, write sum from k=1 to 20 of 24(2)^(-k) in terms of p.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "sequences.gp",
+      "expected_fn": "= 4p",
+      "steps": [
+        "Sum of 3(2)^(1-k) = 3*2*2^(-k) = 6*2^(-k)... = p.",
+        "Sum of 24*2^(-k) = 4 * sum of 6*2^(-k) = 4p."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "3"
+  }
+}

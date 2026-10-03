@@ -1,0 +1,101 @@
+{
+  "stem": "f(x) = x(x-3)² with f'(1) = f'(3) = 0 and f(1) = 4.",
+  "diagram": "cubic",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Show that f has a point of inflection at x = 2.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "x = 2",
+      "steps": [
+        "f(x) = x³ - 6x² + 9x.",
+        "f'(x) = 3x² - 12x + 9.",
+        "f''(x) = 6x - 12.",
+        "f''(x) = 0 → x = 2.",
+        "f''(x) changes sign at x = 2."
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "Sketch f showing intercepts and turning points.",
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 4,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "see memo",
+      "steps": [
+        "x-intercepts: 0 (from x), 3 (double).",
+        "Turning points at (1; 4) and (3; 0).",
+        "Shape: positive cubic."
+      ]
+    },
+    {
+      "n": "8.3",
+      "prompt_template": "For which x is y = -f(x) concave down?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "x > 2",
+      "steps": [
+        "-f(x) reflects f in x-axis.",
+        "Concave down where original f is concave up.",
+        "x > 2."
+      ]
+    },
+    {
+      "n": "8.4.1",
+      "prompt_template": "If h(x) = f(x-2) + 3, coordinates of local maximum of h.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.transformation",
+      "expected_fn": "(3; 7)",
+      "steps": [
+        "Local max of f at (1; 4).",
+        "Translate 2 right, 3 up."
+      ]
+    },
+    {
+      "n": "8.4.2",
+      "prompt_template": "Is f'(2) = 1? Justify.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "No, f'(2) = -3",
+      "steps": [
+        "f'(2) = 3(4) - 24 + 9 = -3."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P1",
+    "qnum": "8"
+  }
+}

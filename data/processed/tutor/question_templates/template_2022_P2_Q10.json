@@ -1,0 +1,112 @@
+{
+  "stem": "Cyclic quad PQRS. KP tangent at P. C and D on PQ and PS. CD produced meets RS produced at A. CA || QS. RC drawn.",
+  "diagram": "circle_cyclic_quad",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Prove S1 = T2.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "S1 = T2",
+      "steps": [
+        {
+          "s": "P1 = Q1",
+          "r": "tan-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "S1 = Q1 + Q2",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "T2 = R2 + Q2",
+          "r": "exterior angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "P1 = R2 (given) -> S1 = T2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Prove AD/AR = AS/AC.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "AD/AR = AS/AC",
+      "steps": [
+        {
+          "s": "A = A",
+          "r": "common angle",
+          "mark": "S"
+        },
+        {
+          "s": "S1 = T2",
+          "r": "proved in 10.1",
+          "mark": "S/R"
+        },
+        {
+          "s": "T2 = C2",
+          "r": "alternate angles; QS || CA",
+          "mark": "S/R"
+        },
+        {
+          "s": "D1 = R1",
+          "r": "sum of angles in triangle",
+          "mark": "S"
+        },
+        {
+          "s": "triangle ASD ||| triangle ACR -> AD/AR = AS/AC",
+          "r": "AAA",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.3",
+      "prompt_template": "Prove AC.SD = AR.CT.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "AC.SD = AR.CT",
+      "steps": [
+        {
+          "s": "AS/AC = SD/CR",
+          "r": "triangle ASD ||| triangle ACR",
+          "mark": "S/R"
+        },
+        {
+          "s": "AS/AR = CT/CR",
+          "r": "prop theorem; TS || CA",
+          "mark": "S/R"
+        },
+        {
+          "s": "Equate",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AC.SD = AR.CT",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2022_P2_p13.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P2_p13.png",
+  "diagram_crop": null
+}

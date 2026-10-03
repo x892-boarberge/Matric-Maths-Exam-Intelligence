@@ -1,0 +1,107 @@
+{
+  "stem": "A and B are independent. P(A and B) = 0.3 and P(only B) = 0.2.",
+  "subquestions": [
+    {
+      "n": "12.1.1",
+      "prompt_template": "Are A and B mutually exclusive? Motivate.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 1,
+      "skill_id": "probability.independent",
+      "expected_fn": "No",
+      "steps": [
+        "Mutually exclusive means P(A and B) = 0.",
+        "But P(A and B) = 0.3, so not mutually exclusive."
+      ]
+    },
+    {
+      "n": "12.1.2a",
+      "prompt_template": "Determine P(only A).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 4,
+      "skill_id": "probability.independent",
+      "expected_fn": "P(only A) = {p}",
+      "steps": [
+        "P(A) * P(B) = 0.3.",
+        "P(only B) = P(B) - P(A and B) = 0.2, so P(B) = 0.5.",
+        "P(A) = 0.3/0.5 = 0.6.",
+        "P(only A) = 0.6 - 0.3 = 0.3."
+      ]
+    },
+    {
+      "n": "12.1.2b",
+      "prompt_template": "Determine P(not A or not B).",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.set",
+      "expected_fn": "P(not A or not B) = {p}",
+      "steps": [
+        "P(not A or not B) = 1 - P(A and B) = 1 - 0.3 = 0.7."
+      ]
+    },
+    {
+      "n": "12.2.1",
+      "prompt_template": "5 poetry, 4 drama, 3 novels on shelf. P(novel first).",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "probability.counting",
+      "expected_fn": "P = 3/12 = 1/4",
+      "steps": [
+        "3 novels out of 12 books."
+      ]
+    },
+    {
+      "n": "12.2.2",
+      "prompt_template": "How many arrangements of 12 distinct books?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "probability.counting",
+      "expected_fn": "12! = 479 001 600",
+      "steps": [
+        "Permutation of 12 distinct items."
+      ]
+    },
+    {
+      "n": "12.2.3",
+      "prompt_template": "P(first is poetry, last is drama, novels together).",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "probability.counting",
+      "expected_fn": "P = {p}",
+      "steps": [
+        "Novels as single block: 10 units.",
+        "Choose first (5 choices) and last (4 choices).",
+        "Arrange middle 8 units (including novel block): 8!",
+        "Arrange novels within block: 3!",
+        "P = (5 * 4 * 8! * 3!) / 12!."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "12"
+  }
+}

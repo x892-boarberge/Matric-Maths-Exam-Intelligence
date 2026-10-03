@@ -1,0 +1,47 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "f'(x) from first principles if f(x) = 2x² - x.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = 4x - 1",
+      "steps": [
+        "Expand f(x+h).",
+        "Subtract f(x).",
+        "Divide by h, take limit."
+      ]
+    },
+    {
+      "n": "7.2.1",
+      "prompt_template": "D_x[(x+1)(3x-7)].",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "= 6x - 4",
+      "steps": [
+        "Expand: 3x² - 4x - 7.",
+        "Differentiate."
+      ]
+    },
+    {
+      "n": "7.2.2",
+      "prompt_template": "dy/dx if y = sqrt(x³) - 5/x + π/2.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "dy/dx = (3/2)x^(1/2) + 5x^(-2)",
+      "steps": [
+        "Rewrite cube root form.",
+        "Differentiate each term."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P1",
+    "qnum": "7"
+  }
+}

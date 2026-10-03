@@ -181,7 +181,17 @@ def jitter_template(template, seed=None, max_attempts=5000):
                         params["a"], params["k"], params["m"])
                 else:
                     expected = exp_fn.format(**params)
-                steps = [s.format(**params) for s in sq.get("steps", [])]
+                steps = []
+                for step in sq.get("steps", []):
+                    if isinstance(step, dict):
+                        steps.append({
+                            "s": step.get("s", "").format(**params),
+                            "r": (step.get("r") or "").format(**params)
+                                 if step.get("r") else None,
+                            "mark": step.get("mark"),
+                        })
+                    else:
+                        steps.append(step.format(**params))
             except (KeyError, ValueError):
                 continue
             filled["subquestions"].append({
@@ -203,6 +213,10 @@ def jitter_template(template, seed=None, max_attempts=5000):
                 "marks": sq["marks"], "skill_id": sq["skill_id"], "params": {},
             })
     filled["total_marks"] = sum(s["marks"] for s in filled["subquestions"])
+    for k in ("diagram", "diagram_page", "diagram_image",
+              "diagram_crop", "diagram_spec"):
+        if k in template:
+            filled[k] = template[k]
     return filled
 
 def _human(coef, var=""):

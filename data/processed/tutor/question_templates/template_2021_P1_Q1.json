@@ -1,0 +1,150 @@
+{
+  "stem": "Solve for x:",
+  "subquestions": [
+    {
+      "n": "1.1.1",
+      "prompt_template": "x^2 - 2x - {n} = 0",
+      "ranges": {
+        "n": [
+          24,
+          15
+        ]
+      },
+      "marks": 3,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "x = {r1} or x = {r2}",
+      "steps": [
+        "Factorise: (x - {r1})(x + {r1_abs}) = 0",
+        "x = {r1} or x = {r2}"
+      ]
+    },
+    {
+      "n": "1.1.2",
+      "prompt_template": "{a}x^2 - {b}x - {c} = 0 (TWO decimals)",
+      "ranges": {
+        "a": [
+          2,
+          3
+        ],
+        "b": [
+          3,
+          5
+        ],
+        "c": [
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "x = {x1} or x = {x2}",
+      "steps": [
+        "Substitute into x = [-b ± sqrt(b²-4ac)]/(2a).",
+        "Round to 2 decimals."
+      ]
+    },
+    {
+      "n": "1.1.3",
+      "prompt_template": "x^2 + {b}x <= -{c}",
+      "ranges": {
+        "b": [
+          5,
+          6
+        ],
+        "c": [
+          4,
+          6
+        ]
+      },
+      "marks": 4,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "{r1} <= x <= {r2}",
+      "steps": [
+        "Standard form: x² + {b}x + {c} <= 0",
+        "Factorise: (x + {r1_abs})(x + {r2_abs}) <= 0",
+        "Critical values x = {r1} and x = {r2}",
+        "{r1} <= x <= {r2}"
+      ]
+    },
+    {
+      "n": "1.1.4",
+      "prompt_template": "sqrt(x + {n}) = {a} - x",
+      "ranges": {
+        "n": [
+          28,
+          20,
+          35,
+          44
+        ],
+        "a": [
+          2,
+          3
+        ]
+      },
+      "marks": 4,
+      "skill_id": "algebra.surd",
+      "expected_fn": "x = {x_ans}",
+      "steps": [
+        "Square both sides: x + {n} = ({a} - x)²",
+        "Standard form.",
+        "Factorise.",
+        "Reject extraneous root.",
+        "x = {x_ans}"
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "2y = 3 + x and 2xy + 7 = x² + 4y²",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "algebra.simultaneous",
+      "expected_fn": "(x = -2, y = 1/2) or (x = -1, y = 1)",
+      "steps": [
+        "From 2y = 3 + x: x = 2y - 3.",
+        "Substitute into 2xy + 7 = x² + 4y².",
+        "Simplify to 2y² - 3y + 1 = 0.",
+        "(2y - 1)(y - 1) = 0.",
+        "y = 1/2 or y = 1.",
+        "x = -2 or x = -1."
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "Roots x = [-n ± sqrt(n² - 4mp)]/(2m), m,n,p positive, form a geometric sequence. Prove x is non-real.",
+      "ranges": {
+        "k": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "marks": 4,
+      "skill_id": "algebra.proof",
+      "expected_fn": "x is non-real",
+      "steps": [
+        "m, n, p form a geometric sequence: n² = mp.",
+        "Discriminant: n² - 4mp = mp - 4mp = -3mp.",
+        "Since m, p > 0, -3mp < 0.",
+        "So the discriminant is negative, roots are non-real."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "1"
+  }
+}

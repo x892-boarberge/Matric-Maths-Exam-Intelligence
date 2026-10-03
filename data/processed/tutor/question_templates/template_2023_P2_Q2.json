@@ -1,0 +1,93 @@
+{
+  "stem": "Glasses of water drank per day by staff. Table with cumulative.",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Complete cumulative frequency column.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.cumulative",
+      "expected_fn": "5; 20; 33; 38; 40",
+      "steps": [
+        {
+          "s": "5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "20; 33; 38; 40",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "How many staff members were interviewed?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.cumulative",
+      "expected_fn": "40",
+      "steps": [
+        {
+          "s": "40",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "How many drank fewer than 6 glasses?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.cumulative",
+      "expected_fn": "33",
+      "steps": [
+        {
+          "s": "33",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Find the number k of teachers absent.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "stats.mean",
+      "expected_fn": "k = 8",
+      "steps": [
+        {
+          "s": "40 + k staff",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Mean = 4 with k/2 at [0;2) and k/2 at [4;6)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "3k + 168 = 160 + 4k",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = 8",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "2"
+  },
+  "diagram_page": "2023_P2_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P2_p04.png",
+  "diagram_crop": null
+}

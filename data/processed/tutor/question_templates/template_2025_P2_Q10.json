@@ -1,0 +1,196 @@
+{
+  "stem": "PQRS cyclic quad. QT perpendicular SR at V. Q2 = 35, R = S1.",
+  "diagram": "circle_cyclic_quad",
+  "diagram_spec": {
+    "centre": [
+      0,
+      0
+    ],
+    "radius": 3,
+    "points_on_circle": {
+      "P": 130,
+      "Q": 55,
+      "R": -20,
+      "S": 200,
+      "T": 305
+    },
+    "chords": [
+      [
+        "P",
+        "Q"
+      ],
+      [
+        "Q",
+        "R"
+      ],
+      [
+        "R",
+        "S"
+      ],
+      [
+        "S",
+        "P"
+      ]
+    ],
+    "diagonals": [
+      [
+        "P",
+        "R"
+      ],
+      [
+        "Q",
+        "S"
+      ],
+      [
+        "Q",
+        "T"
+      ],
+      [
+        "S",
+        "T"
+      ],
+      [
+        "P",
+        "T"
+      ]
+    ],
+    "external_points": {
+      "V": [
+        1.72,
+        -1.03
+      ]
+    },
+    "right_angles": [
+      [
+        "V",
+        "Q",
+        "R"
+      ]
+    ],
+    "angle_labels": [
+      {
+        "vertex": "Q",
+        "p1": "P",
+        "p2": "T",
+        "label": "1",
+        "r_arc": 0.55,
+        "r_label": 0.85
+      },
+      {
+        "vertex": "Q",
+        "p1": "T",
+        "p2": "R",
+        "label": "2",
+        "r_arc": 0.55,
+        "r_label": 0.85
+      },
+      {
+        "vertex": "S",
+        "p1": "P",
+        "p2": "R",
+        "label": "1",
+        "r_arc": 0.55,
+        "r_label": 0.85
+      },
+      {
+        "vertex": "S",
+        "p1": "R",
+        "p2": "T",
+        "label": "2",
+        "r_arc": 0.55,
+        "r_label": 0.85
+      }
+    ],
+    "xlim": [
+      -4,
+      4.5
+    ],
+    "ylim": [
+      -4,
+      4
+    ]
+  },
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Calculate QTS.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "QTS = 55 deg",
+      "steps": [
+        {
+          "s": "R = 55 deg",
+          "r": "sum of angles in triangle",
+          "mark": "S"
+        },
+        {
+          "s": "QTS = 55 deg",
+          "r": "angles in the same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "QTS = 55 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Prove PQ || SR.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "PQ || SR",
+      "steps": [
+        {
+          "s": "SPQ = 125 deg",
+          "r": "opposite angles of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "S1 = R = 55 deg",
+          "r": "given",
+          "mark": "S"
+        },
+        {
+          "s": "SPQ + S1 = 180 deg -> PQ || SR",
+          "r": "co-interior angles supplementary",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.3",
+      "prompt_template": "Prove PT is a diameter.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "PT is diameter",
+      "steps": [
+        {
+          "s": "Q1 = 90 deg",
+          "r": "co-interior angles; PQ || SR",
+          "mark": "S"
+        },
+        {
+          "s": "PT is a diameter",
+          "r": "converse angle in semicircle",
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2025_P2_p12.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P2_p12.png",
+  "diagram_crop": null
+}

@@ -6,6 +6,15 @@
       "prompt_template": "Events male and preferring juice are independent. Show that e = {e}.",
       "ranges": {
         "e": [
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
           84
         ]
       },
@@ -21,7 +30,16 @@
     {
       "n": "11.1.2",
       "prompt_template": "Calculate the probability that a female prefers energy drinks.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 3,
       "skill_id": "probability.tables",
       "expected_fn": "P = {p}",
@@ -35,6 +53,26 @@
       "prompt_template": "120 people buy coffee or water. Chance of rain is {r}%. Chance of coffee on a rainy day is 3x that on a dry day. Overall P(coffee) = {p}. Calculate cups on a dry day.",
       "ranges": {
         "r": [
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
           75
         ],
         "p": [

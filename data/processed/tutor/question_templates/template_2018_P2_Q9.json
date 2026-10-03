@@ -1,0 +1,139 @@
+{
+  "stem": "9.1: Prove J + L = 180 (opposite angles cyclic quad). 9.2: Two circles with common chord BT. C is intersection of AS and DR produced.",
+  "diagram": "circle_similarity",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Prove J + L = 180.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "J + L = 180",
+      "steps": [
+        {
+          "s": "Construction: Draw KO and MO",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "O1 = 2J",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        },
+        {
+          "s": "O2 = 2L",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        },
+        {
+          "s": "O1 + O2 = 360",
+          "r": "angles around a point",
+          "mark": "S/R"
+        },
+        {
+          "s": "2(J + L) = 360 -> J + L = 180",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2.1a",
+      "prompt_template": "Name another angle equal to x.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "B1 = x",
+      "steps": [
+        {
+          "s": "B1 = x",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.2.1b",
+      "prompt_template": "Name another angle equal to y.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "B2 = y",
+      "steps": [
+        {
+          "s": "B2 = y",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.2.2",
+      "prompt_template": "Prove SCDB is a cyclic quad.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "SCDB cyclic",
+      "steps": [
+        {
+          "s": "C = 180 - (x + y)",
+          "r": "sum of angles in triangle ACR",
+          "mark": "S/R"
+        },
+        {
+          "s": "B = x + y",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "B + C = 180 -> SCDB cyclic",
+          "r": "converse opposite angles of cyclic quad",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.2.3",
+      "prompt_template": "If D2 = 30 and AST = 100, prove SD not diameter.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "SD not diameter",
+      "steps": [
+        {
+          "s": "T4 = y - 30",
+          "r": "exterior angle of triangle TDR",
+          "mark": "S/R"
+        },
+        {
+          "s": "T1 = y - 30",
+          "r": "vertically opposite angles",
+          "mark": "S/R"
+        },
+        {
+          "s": "y - 30 + x + 100 = 180 -> x + y = 110",
+          "r": "sum of angles in triangle AST",
+          "mark": "S/R"
+        },
+        {
+          "s": "SBD = 110 not 90 -> SD not diameter",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2018_P2_p14.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P2_p14.png",
+  "diagram_crop": null
+}

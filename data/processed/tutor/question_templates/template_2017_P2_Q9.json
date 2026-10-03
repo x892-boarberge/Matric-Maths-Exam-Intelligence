@@ -1,0 +1,97 @@
+{
+  "stem": "Triangle ABC and ACD. F on AB (AF = 3x, FB = 2x), G on AC (AG = 12y, GC = 8y). H, E, K on AD with GH || CK and GE || CD.",
+  "diagram": "triangle_proportion",
+  "subquestions": [
+    {
+      "n": "9.1.1",
+      "prompt_template": "Prove FG || BC.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "FG || BC",
+      "steps": [
+        {
+          "s": "AF/BF = AG/CG = 3/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "FG || BC",
+          "r": "converse proportion theorem",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.1.2",
+      "prompt_template": "Prove AH/HK = AE/ED.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "AH/HK = AE/ED",
+      "steps": [
+        {
+          "s": "AG/GC = AH/HK",
+          "r": "prop theorem; GH || CK",
+          "mark": "S/R"
+        },
+        {
+          "s": "AG/GC = AE/ED",
+          "r": "prop theorem; GE || CD",
+          "mark": "S/R"
+        },
+        {
+          "s": "AH/HK = AE/ED",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2",
+      "prompt_template": "If AH = 15 and ED = 12, find EK.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "EK = 7",
+      "steps": [
+        {
+          "s": "AE/ED = 3/2 -> AE = 18",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AH/HK = 3/2 -> HK = 10",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AD = 30",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "KD = 30 - 15 - 10 = 5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "EK = 12 - 5 = 7",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2017_P2_p11.png",
+  "diagram_image": "data/processed/diagrams/pages/2017_P2_p11.png",
+  "diagram_crop": null
+}

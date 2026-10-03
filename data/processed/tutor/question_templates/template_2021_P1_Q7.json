@@ -1,0 +1,140 @@
+{
+  "stem": "The graph of f(x) = (x + {r1_abs})(x - {r2}) is drawn.",
+  "diagram": "parabola_line",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Write down the coordinates of B and D.",
+      "ranges": {
+        "r1_abs": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "r2": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.parabola",
+      "expected_fn": "B(-{r1_abs}; 0), D({r2}; 0)",
+      "steps": [
+        "x-intercepts where f(x) = 0.",
+        "x = -{r1_abs} or x = {r2}."
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Calculate the coordinates of C, the turning point.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.parabola",
+      "expected_fn": "C({xp}; {yp})",
+      "steps": [
+        "x = -b/(2a).",
+        "Substitute."
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "Write down the range of f.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.parabola",
+      "expected_fn": "y >= {yp}",
+      "steps": [
+        "a > 0, so parabola opens up.",
+        "Range y >= {yp}."
+      ]
+    },
+    {
+      "n": "7.4.1",
+      "prompt_template": "Given θ = {theta}°, calculate m_AE.",
+      "ranges": {
+        "theta": [
+          14.04
+        ]
+      },
+      "marks": 1,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "m = tan({theta}°) ≈ 0.25",
+      "steps": [
+        "m_AE = tan({theta}°)."
+      ]
+    },
+    {
+      "n": "7.4.2",
+      "prompt_template": "Tangent to f at T is perpendicular to AE. Find T.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "T({xT}; {yT})",
+      "steps": [
+        "m_tangent = -1/m_AE = -4.",
+        "f'(x) = 2x - 2.",
+        "2x - 2 = -4 → x = -1.",
+        "y = f(-1)."
+      ]
+    },
+    {
+      "n": "7.5",
+      "prompt_template": "Line g parallel to AE cuts f at K(-3; -9) and R. Find x_R.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.parabola",
+      "expected_fn": "x_R = {xR}",
+      "steps": [
+        "g passes through K with gradient 1/4.",
+        "Set g(x) = f(x).",
+        "Solve resulting quadratic."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "7"
+  },
+  "diagram_page": "2021_P1_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P1_p06.png",
+  "diagram_crop": null
+}

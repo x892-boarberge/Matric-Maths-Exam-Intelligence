@@ -1,0 +1,170 @@
+{
+  "stem": "Circle centre M touches x-axis at A(-1;0) and y-axis at B(0;1). Smaller circle centre N(-1/2;3/2) passes through M and cuts larger at B and C. BNC diameter. Tangent at C cuts x-axis at D.",
+  "diagram": "analytical_circle",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Equation of circle centred at M.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "(x+1)^2 + (y-1)^2 = 1",
+      "steps": [
+        {
+          "s": "M(-1; 1)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x+1)^2 + (y-1)^2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Coordinates of C.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "C(-1;2)",
+      "steps": [
+        {
+          "s": "x_C = -1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_C = 2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Show that equation of tangent CD is y - x = 3.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "y = x + 3",
+      "steps": [
+        {
+          "s": "m_NC = 1 (radius)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_CD = -1 (tangent perp radius)",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "Substitute C(-1;2) -> y = x + 3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Values of t for which y = x + t does NOT touch or cut smaller circle.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "t < 1 - sqrt(2) or t > 1 + sqrt(2)",
+      "steps": [
+        {
+          "s": "Distance from N to line > radius",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Distance = |t - 1|/sqrt(2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "|t - 1| > sqrt(2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Coordinates of E (translation of N along CD by DC).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.translation",
+      "expected_fn": "See memo",
+      "steps": [
+        {
+          "s": "Translate N along tangent",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x_E = ...",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_E = ...",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.6",
+      "prompt_template": "Show that a = sqrt(7)/2 if area of OBCD = 2a^2.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.area",
+      "type": "proof",
+      "expected_fn": "a = sqrt(7)/2",
+      "steps": [
+        {
+          "s": "Area trapezium OBCD",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area triangle ACD",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Total = 7/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "2a^2 = 7/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "a = sqrt(7)/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P2",
+    "qnum": "4"
+  },
+  "diagram_page": "2019_P2_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P2_p06.png",
+  "diagram_crop": null
+}

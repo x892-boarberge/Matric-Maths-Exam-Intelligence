@@ -6,14 +6,26 @@
       "prompt_template": "Show A(x) = {k}/x + 6x + 480.",
       "ranges": {
         "A": [
-          432
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431
         ],
         "k": [
-          3456
+          3449,
+          3450,
+          3451,
+          3452,
+          3453,
+          3454,
+          3455
         ]
       },
       "marks": 3,
-      "skill_id": "calculus.optimisation.model",
+      "skill_id": "calculus.optimisation",
       "expected_fn": "A(x) = 3456/x + 6x + 480",
       "steps": [
         "ABCD: AD = x, so AB = 432/x.",
@@ -26,9 +38,18 @@
     {
       "n": "9.2",
       "prompt_template": "Determine x for which total area is minimum.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 4,
-      "skill_id": "calculus.optimisation.min",
+      "skill_id": "calculus.optimisation",
       "expected_fn": "x = {x_min}",
       "steps": [
         "A'(x) = -3456/x^2 + 6",
@@ -43,5 +64,8 @@
     "paper": "P1",
     "qnum": "9"
   },
-  "diagram": "poster"
+  "diagram": "poster",
+  "diagram_page": "2023_P1_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P1_p08.png",
+  "diagram_crop": null
 }

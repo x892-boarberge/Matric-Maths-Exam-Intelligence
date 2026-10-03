@@ -1,0 +1,114 @@
+{
+  "stem": "ABC tangent to circle BFE at B. CD || BF with D on FE produced. EC and BD drawn. E1 = E2 = x, C2 = y.",
+  "diagram": "circle_similarity",
+  "subquestions": [
+    {
+      "n": "9.1.1",
+      "prompt_template": "Reason why B1 = x.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Tangent-chord theorem",
+      "steps": [
+        {
+          "s": "Tangent-chord theorem",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.1.2",
+      "prompt_template": "Reason why BCD = B1.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Corresponding angles; BF || CD",
+      "steps": [
+        {
+          "s": "Corresponding angles; BF || CD",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2",
+      "prompt_template": "Prove BCDE is cyclic quad.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "BCDE cyclic",
+      "steps": [
+        {
+          "s": "E1 = BCD",
+          "r": "both equal x",
+          "mark": "S/R"
+        },
+        {
+          "s": "BCDE cyclic",
+          "r": "converse exterior angle of cyclic quad",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.3",
+      "prompt_template": "Which TWO other angles equal x?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "D2 = x; B3 = x",
+      "steps": [
+        {
+          "s": "D2 = x",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "B3 = x",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.4",
+      "prompt_template": "Prove B2 = C1.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "B2 = C1",
+      "steps": [
+        {
+          "s": "B3 = y",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "B2 = x - y",
+          "r": "from 9.3 and 9.4",
+          "mark": "S"
+        },
+        {
+          "s": "C1 = x - y -> B2 = C1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2016_P2_p12.png",
+  "diagram_image": "data/processed/diagrams/pages/2016_P2_p12.png",
+  "diagram_crop": null
+}

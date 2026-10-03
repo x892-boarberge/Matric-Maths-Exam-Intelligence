@@ -1,0 +1,93 @@
+{
+  "stem": "f(x) = -2x² + 18 and g(x) = ax² + bx + c drawn. P, Q x-intercepts of f. Q, R x-intercepts of g. S is TP of g.",
+  "diagram": "parabola_hyperbola",
+  "subquestions": [
+    {
+      "n": "6.1.1",
+      "prompt_template": "Coordinates of T, y-intercept of both.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "functions.parabola",
+      "expected_fn": "T(0; 18)",
+      "steps": [
+        "f(0) = 18."
+      ]
+    },
+    {
+      "n": "6.1.2",
+      "prompt_template": "Coordinates of Q.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.parabola",
+      "expected_fn": "Q(3; 0)",
+      "steps": [
+        "-2x² + 18 = 0.",
+        "x² = 9.",
+        "x = ±3."
+      ]
+    },
+    {
+      "n": "6.1.3",
+      "prompt_template": "S at x = 4.5. Coordinates of R.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.parabola",
+      "expected_fn": "R(6; 0)",
+      "steps": [
+        "By symmetry around x = 4.5.",
+        "R = (6; 0)."
+      ]
+    },
+    {
+      "n": "6.1.4",
+      "prompt_template": "For which x is g''(x) > 0?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "x > 4.5",
+      "steps": [
+        "g''(x) > 0 where g is concave up.",
+        "Right of the TP."
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Sketch y = a/(x+p) + q with domain x != -2, axis of symmetry y = x + 6, increasing.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "see memo",
+      "steps": [
+        "Vertical asymptote x = -2.",
+        "Increasing hyperbola.",
+        "Axis of symmetry gives (p, q)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "6"
+  },
+  "diagram_page": "2015_P1_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P1_p06.png",
+  "diagram_crop": null
+}

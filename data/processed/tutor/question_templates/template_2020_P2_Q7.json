@@ -1,0 +1,106 @@
+{
+  "stem": "Concentric circles, vertical light pole PQ. R on inner, S on outer. RS irrigation pipe. Radius inner = r, outer QS. Elevation from S to P = 30. RQS = 2x, PQ = sqrt(3)r.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Show that QS = 3r.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.3d",
+      "type": "proof",
+      "expected_fn": "QS = 3r",
+      "steps": [
+        {
+          "s": "tan 30 = sqrt(3)r / QS",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "QS = sqrt(3)r / tan 30",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 3r",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Determine area of flower garden in terms of r.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "8 pi r^2",
+      "steps": [
+        {
+          "s": "Area = pi(3r)^2 - pi r^2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 8 pi r^2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "Show that RS = r sqrt(10 - 6 cos 2x).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.3d",
+      "type": "proof",
+      "expected_fn": "RS = r sqrt(10 - 6 cos 2x)",
+      "steps": [
+        {
+          "s": "RS^2 = r^2 + (3r)^2 - 2(r)(3r)cos 2x",
+          "r": "cosine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 10r^2 - 6r^2 cos 2x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= r^2(10 - 6 cos 2x)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.4",
+      "prompt_template": "Calculate RS if r = 10 and x = 56.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "35 m",
+      "steps": [
+        {
+          "s": "RS = 10 sqrt(10 - 6cos 112)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 35 m",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2020_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2020_P2_p09.png",
+  "diagram_crop": null
+}

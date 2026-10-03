@@ -18,7 +18,7 @@
         ]
       },
       "marks": 2,
-      "skill_id": "calculus.derivative.rules",
+      "skill_id": "calculus.derivative",
       "expected_fn": "= 3 - {two_a}x",
       "derive": "two_a = 2*a",
       "steps": [
@@ -34,20 +34,15 @@
       "ranges": {
         "a": [
           4,
-          5,
-          6
+          5
         ],
         "b": [
           2,
-          3,
-          4,
-          5
+          3
         ],
         "c": [
           1,
-          2,
-          3,
-          4
+          2
         ],
         "x0": [
           2,

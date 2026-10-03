@@ -129,7 +129,7 @@ Example: [pending]
 
 ### Category D — Creating pressure / anxiety
 - "If you don't get this, you'll fail the exam."
-- "We're running out of time" (repeated as pressure, not pacing).
+- "We're running out of time" (repeated as pressure, not pacing).!
 - Sighing, tone that signals impatience.
 - Silent disappointment.
 - Rushing the learner to a conclusion.

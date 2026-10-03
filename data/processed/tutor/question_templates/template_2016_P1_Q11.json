@@ -1,0 +1,89 @@
+{
+  "stem": "Survey of 100 boys and 60 girls on watching TV during exams.",
+  "subquestions": [
+    {
+      "n": "11.1",
+      "prompt_template": "Calculate a and b.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.tables",
+      "expected_fn": "a = 20, b = 128",
+      "steps": [
+        "From table: a = 32 - 12 = 20.",
+        "b = 80 + 48 = 128."
+      ]
+    },
+    {
+      "n": "11.2",
+      "prompt_template": "Are 'male' and 'did not watch TV' mutually exclusive?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.independent",
+      "expected_fn": "No",
+      "steps": [
+        "P(male and not watching) = 20/160 != 0.",
+        "So not mutually exclusive."
+      ]
+    },
+    {
+      "n": "11.3.1",
+      "prompt_template": "P(watched TV).",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.tables",
+      "expected_fn": "P = 128/160 = 0.8",
+      "steps": [
+        "128/160."
+      ]
+    },
+    {
+      "n": "11.3.2",
+      "prompt_template": "P(female AND not watched TV).",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.tables",
+      "expected_fn": "P = 12/160 = 0.075",
+      "steps": [
+        "12/160."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P1",
+    "qnum": "11"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "stem": "Q(5;2) centre. Circle intersects y-axis at P(0;6) and S. Tangent APB at P intersects x-axis at B, angle alpha with positive x-axis. R on circle, PRS = theta.",
+  "diagram": "analytical_circle",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Equation of circle.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "(x-5)^2 + (y-2)^2 = 41",
+      "steps": [
+        {
+          "s": "(0-5)^2 + (6-2)^2 = r^2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "r^2 = 41",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x-5)^2 + (y-2)^2 = 41",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Coordinates of S.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "S(0; -2)",
+      "steps": [
+        {
+          "s": "Substitute x = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y^2 - 4y - 12 = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = -2 -> S(0; -2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Equation of tangent APB.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.circle",
+      "expected_fn": "y = (5/4)x + 6",
+      "steps": [
+        {
+          "s": "m_PQ = -4/5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_APB = 5/4",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "Substitute P(0; 6)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 5/4 x + 6",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Size of alpha.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.inclination",
+      "expected_fn": "51.34",
+      "steps": [
+        {
+          "s": "tan alpha = 5/4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "alpha = 51.34",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Size of theta with reasons.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "38.66",
+      "steps": [
+        {
+          "s": "theta = BPS",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 90 - alpha",
+          "r": "sum of angles in triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 90 - 51.34",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 38.66",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.6",
+      "prompt_template": "Area of triangle PQS.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.area",
+      "expected_fn": "20 sq units",
+      "steps": [
+        {
+          "s": "PS = 8",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "height = 5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area = (1/2)(8)(5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 20",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "4"
+  },
+  "diagram_page": "2015_P2_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P2_p06.png",
+  "diagram_crop": null
+}

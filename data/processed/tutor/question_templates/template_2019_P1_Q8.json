@@ -1,0 +1,75 @@
+{
+  "stem": "h(t) = (t-6)(-2t² + 3t - 6), where h is height, t is time.",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Height at start.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 1,
+      "skill_id": "calculus.kinematics",
+      "expected_fn": "h(0) = 36 cm",
+      "steps": [
+        "h(0) = (-6)(-6) = 36."
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "How many times does it reach the floor?",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.kinematics",
+      "expected_fn": "Once",
+      "steps": [
+        "h(t) = 0 → t = 6 or -2t² + 3t - 6 = 0.",
+        "Quadratic has no real roots.",
+        "Only t = 6."
+      ]
+    },
+    {
+      "n": "8.3",
+      "prompt_template": "Maximum height.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "h = 52 cm",
+      "steps": [
+        "h'(t) = -6t² + 30t - 24 = 0.",
+        "t² - 5t + 4 = 0.",
+        "(t-4)(t-1) = 0.",
+        "Max at t = 4: h(4) = 52."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "8"
+  }
+}

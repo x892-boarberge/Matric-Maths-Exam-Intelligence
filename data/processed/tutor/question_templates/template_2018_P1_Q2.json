@@ -1,0 +1,88 @@
+{
+  "stem": "Given the quadratic sequence: {T1}; {T2}; {T3}; ...",
+  "subquestions": [
+    {
+      "n": "2.1.1",
+      "prompt_template": "Write down the next term.",
+      "ranges": {
+        "T1": [
+          2
+        ],
+        "T2": [
+          3
+        ],
+        "T3": [
+          10
+        ],
+        "T4": [
+          23
+        ]
+      },
+      "marks": 1,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "T_5 = {T5}",
+      "steps": [
+        "First diffs: 1; 7; 13; ...",
+        "Second diff: 6.",
+        "T_5 = 23 + 19 = 42."
+      ]
+    },
+    {
+      "n": "2.1.2",
+      "prompt_template": "Determine T_n.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "T_n = 3n² - 8n + 7",
+      "steps": [
+        "2a = 6 → a = 3.",
+        "3a + b = 1 → b = -8.",
+        "a + b + c = 2 → c = 7."
+      ]
+    },
+    {
+      "n": "2.1.3",
+      "prompt_template": "Calculate T_20.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "T_20 = 1047",
+      "steps": [
+        "T_20 = 3(20)² - 8(20) + 7 = 1200 - 160 + 7 = 1047."
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Arithmetic sequence: 35; 28; 21; ... Which term equals -140?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.ap",
+      "expected_fn": "n = 26",
+      "steps": [
+        "T_n = 35 + (n-1)(-7) = -7n + 42.",
+        "-7n + 42 = -140.",
+        "n = 26."
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "For which n is S_n (of 2.2) equal to T_n (of 2.1)?",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "sequences.ap",
+      "expected_fn": "n = 7",
+      "steps": [
+        "S_n = n/2[70 + (n-1)(-7)] = n/2(-7n + 77).",
+        "Set equal to 3n² - 8n + 7.",
+        "13n² - 93n + 14 = 0.",
+        "(n - 7)(13n - 2) = 0.",
+        "n = 7."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "2"
+  }
+}

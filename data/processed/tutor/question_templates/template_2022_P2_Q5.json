@@ -1,0 +1,251 @@
+{
+  "stem": "sqrt(13) sin x + 3 = 0, x in (90;270).",
+  "subquestions": [
+    {
+      "n": "5.1.1",
+      "prompt_template": "Determine sin(360 + x).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "sin x = -3/sqrt(13)",
+      "steps": [
+        {
+          "s": "sin(360 + x) = sin x",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "= -3/sqrt(13)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.2",
+      "prompt_template": "Determine tan x.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "3/2",
+      "steps": [
+        {
+          "s": "x-coordinate = -2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "tan x = -3/(-2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 3/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.3",
+      "prompt_template": "Determine cos(180 + x).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "2/sqrt(13)",
+      "steps": [
+        {
+          "s": "cos(180+x) = -cos x",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "= 2/sqrt(13)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Simplify cos(90+theta)/(sin(theta-180) + 3sin(-theta)).",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.identities",
+      "expected_fn": "1/4",
+      "steps": [
+        {
+          "s": "cos(90+theta) = -sin theta",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "sin(theta-180) = -sin(180-theta) = -sin theta",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "sin(-theta) = -sin theta",
+          "r": "odd function",
+          "mark": "S"
+        },
+        {
+          "s": "Simplify",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 1/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "General solution of (cos x + 2sin x)(3sin 2x - 1) = 0.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = 153.43 + k.180 or x = 9.74 + k.180",
+      "steps": [
+        {
+          "s": "cos x + 2sin x = 0 or 3sin 2x - 1 = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan x = -1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "sin 2x = 1/3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "ref angle 26.57 or 19.47",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 153.43 + k.180",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 9.74 + k.180 or x = 80.26 + k.180",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.4.1",
+      "prompt_template": "Prove cos(x+y)cos(x-y) = 1 - sin^2 x - sin^2 y.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.proof",
+      "type": "proof",
+      "expected_fn": "LHS = RHS",
+      "steps": [
+        {
+          "s": "Expand as (cos x cos y - sin x sin y)(cos x cos y + sin x sin y)",
+          "r": "expansion",
+          "mark": "S/R"
+        },
+        {
+          "s": "= cos^2 x cos^2 y - sin^2 x sin^2 y",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= (1-sin^2 x)(1-sin^2 y) - sin^2 x sin^2 y",
+          "r": "square identity",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 1 - sin^2 x - sin^2 y",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.4.2",
+      "prompt_template": "Determine 1 - sin^2 45 - sin^2 15.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "sqrt(3)/4",
+      "steps": [
+        {
+          "s": "= cos(45+15)cos(45-15)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= cos 60 cos 30",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= sqrt(3)/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.5.1",
+      "prompt_template": "Rewrite 16 sin x cos^3 x - 8 sin x cos x.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "2 sin 4x",
+      "steps": [
+        {
+          "s": "Factor out 8 sin x cos x",
+          "r": "factorise",
+          "mark": "S"
+        },
+        {
+          "s": "= 8 sin x cos x (2cos^2 x - 1)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 4 sin 2x cos 2x",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 2 sin 4x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.5.2",
+      "prompt_template": "For which x in [0;90] is expression minimum?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.min_max",
+      "expected_fn": "67.5",
+      "steps": [
+        {
+          "s": "x = 67.5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P2",
+    "qnum": "5"
+  }
+}

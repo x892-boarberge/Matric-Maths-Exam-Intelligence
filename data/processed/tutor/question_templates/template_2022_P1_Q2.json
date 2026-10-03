@@ -6,18 +6,21 @@
       "prompt_template": "Calculate r.",
       "ranges": {
         "a": [
+          12,
+          13,
           14,
           16,
           18
         ],
         "T6": [
-          448,
-          486,
-          512
+          445,
+          446,
+          447,
+          448
         ]
       },
       "marks": 2,
-      "skill_id": "sequences.gp.ratio",
+      "skill_id": "sequences.gp",
       "expected_fn": "r = {r}",
       "steps": [
         "T_n = a r^(n-1)",
@@ -37,7 +40,7 @@
         ]
       },
       "marks": 4,
-      "skill_id": "sequences.gp.sum",
+      "skill_id": "sequences.gp",
       "expected_fn": "n = {n_ans}",
       "steps": [
         "S_n = a(r^n - 1)/(r - 1)",
@@ -47,9 +50,18 @@
     {
       "n": "2.1.3",
       "prompt_template": "If first term is {T6} and 6th term is {a}, calculate sum to infinity.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 3,
-      "skill_id": "sequences.gp.sum_infinity",
+      "skill_id": "sequences.gp",
       "expected_fn": "S_inf = {S}",
       "steps": [
         "Find r.",
@@ -61,7 +73,7 @@
       "prompt_template": "Solve sum_{p=0}^k (1/3 p + 1/6) = 20 1/6 for k.",
       "ranges": {},
       "marks": 5,
-      "skill_id": "sequences.ap.sum",
+      "skill_id": "sequences.ap",
       "expected_fn": "k = 10",
       "steps": [
         "T_1 = 1/6, d = 1/3, n = k + 1.",

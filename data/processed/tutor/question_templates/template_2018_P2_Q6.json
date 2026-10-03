@@ -1,0 +1,121 @@
+{
+  "stem": "f(x) = -2 tan (3/2 x) for [-120; 180].",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Period of f.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "120",
+      "steps": [
+        {
+          "s": "120",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "General solution of t if A(t;2) on f.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.equation",
+      "expected_fn": "t = 90 + k.120; k in Z",
+      "steps": [
+        {
+          "s": "2 = -2 tan(3/2 t)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan(3/2 t) = -1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "t = 90 + k.120; k in Z",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "Draw graph of f.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.graph",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Asymptotes x = ±60; x = 180",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x-intercepts 0; ±120",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Shape (negative tan)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.4",
+      "prompt_template": "Values of x for which f(x) >= 2.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.inequality",
+      "expected_fn": "(-60; -30] or (60; 90]",
+      "steps": [
+        {
+          "s": "First interval",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Second interval",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Combined with correct notation",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.5",
+      "prompt_template": "Describe transformation of f to g(x) = -2tan(3/2 x + 60).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.graph",
+      "expected_fn": "Translation 40 left",
+      "steps": [
+        {
+          "s": "40 left",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P2",
+    "qnum": "6"
+  }
+}

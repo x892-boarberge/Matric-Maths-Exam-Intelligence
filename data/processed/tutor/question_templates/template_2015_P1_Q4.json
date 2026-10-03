@@ -1,0 +1,87 @@
+{
+  "stem": "f(x) = 2^(x+1) - 8",
+  "diagram": "exponential_solo",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Write down the asymptote.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.exponential",
+      "expected_fn": "y = -8",
+      "steps": [
+        "Horizontal asymptote y = -8."
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Sketch f showing all intercepts and asymptote.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.exponential",
+      "expected_fn": "see memo",
+      "steps": [
+        "Shape: exponential growth.",
+        "y-intercept: f(0) = 2 - 8 = -6.",
+        "x-intercept: 2^(x+1) = 8 → x = 2.",
+        "Asymptote y = -8."
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "g obtained by reflecting f in y-axis. Write g(x).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.transformation",
+      "expected_fn": "g(x) = 2^(-x+1) - 8",
+      "steps": [
+        "Replace x with -x."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "4"
+  }
+}

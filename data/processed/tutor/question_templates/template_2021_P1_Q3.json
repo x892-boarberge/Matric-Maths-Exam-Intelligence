@@ -1,0 +1,94 @@
+{
+  "stem": "Consider the quadratic number pattern: {T1}; {T2}; {T3}; ...",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Write down T_4.",
+      "ranges": {
+        "T1": [
+          -145
+        ],
+        "T2": [
+          -122
+        ],
+        "T3": [
+          -101
+        ]
+      },
+      "marks": 1,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "T_4 = {T4}",
+      "steps": [
+        "First differences: {d1}; {d2}",
+        "Second difference: {dd}.",
+        "T_4 = T_3 + (d2 + dd) = {T4}."
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Show that T_n = -n² + 26n - 170.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "T_n = -n² + 26n - 170",
+      "steps": [
+        "2a = {dd} → a = -1.",
+        "3a + b = {d1} → -3 + b = {d1} → b = 26.",
+        "a + b + c = {T1} → -1 + 26 + c = {T1} → c = -170.",
+        "T_n = -n² + 26n - 170."
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Between which TWO terms is there a difference of -121?",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "Between T_{n} and T_{n+1}",
+      "steps": [
+        "T_n - T_{n-1} = -2n + 27",
+        "-2n + 27 = -121",
+        "n = 74",
+        "Between T_73 and T_74."
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "What value must be added to each term so the maximum is 1?",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 3,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "Add {add_val}",
+      "steps": [
+        "Max of T_n at n = -b/(2a) = 13.",
+        "T_13 = -(13)² + 26(13) - 170 = -1.",
+        "To bring max to 1, add 2."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "3"
+  }
+}

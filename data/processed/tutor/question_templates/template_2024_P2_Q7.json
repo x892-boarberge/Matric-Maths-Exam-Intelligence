@@ -1,0 +1,141 @@
+{
+  "stem": "f(x) = tan x for [-180;180]. g(x) = cos 2x + 1.",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Asymptote of f in [0;180].",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "x = 90",
+      "steps": [
+        {
+          "s": "x = 90",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Values of x in [-180;0] for which f(x) <= 0.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.inequality",
+      "expected_fn": "x = -180 or -90 < x <= 0",
+      "steps": [
+        {
+          "s": "x = -180",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "or -90 < x <= 0",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3.1",
+      "prompt_template": "Period of g.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "180",
+      "steps": [
+        {
+          "s": "180",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3.2",
+      "prompt_template": "Draw g(x) = cos 2x + 1 for [-180;180].",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.graph",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Turning points on x-axis: -90; 90",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Shape",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Turning point on y-axis at (0;2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.4",
+      "prompt_template": "General solution of 2cos^3 x - sin x = 0.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = 45 + k.180; k in Z",
+      "steps": [
+        {
+          "s": "2cos^2 x = tan x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "2cos^2 x - 1 = tan x - 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos 2x + 1 = tan x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 45 + k.180; k in Z",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2024,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_spec": {
+    "fn_specs": [
+      {
+        "fn": "tan",
+        "coef": [
+          1,
+          1
+        ],
+        "label": "f"
+      }
+    ],
+    "xlim": [
+      -180,
+      180
+    ],
+    "ylim": [
+      -3,
+      3
+    ],
+    "x_tick_step": 90,
+    "y_tick_step": 1
+  },
+  "diagram_page": "2024_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P2_p09.png",
+  "diagram_crop": null
+}

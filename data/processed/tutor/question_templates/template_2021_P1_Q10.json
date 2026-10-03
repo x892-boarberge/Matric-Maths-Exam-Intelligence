@@ -1,0 +1,128 @@
+{
+  "stem": "The graph of h(x) = ax³ + bx² has turning points at O(0; 0) and B({xb}; {yb}).",
+  "diagram": "cubic",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Show that a = {a} and b = {b}.",
+      "ranges": {
+        "xb": [
+          -1,
+          1
+        ],
+        "yb": [
+          27,
+          28
+        ],
+        "a": [
+          -6,
+          -5
+        ],
+        "b": [
+          1,
+          2
+        ]
+      },
+      "marks": 5,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "a = {a}, b = {b}",
+      "steps": [
+        "h'(x) = 3ax² + 2bx.",
+        "At x = {xb}: h'({xb}) = 0 → 48a + 8b = 0 → 6a + b = 0...",
+        "Also h({xb}) = {yb} → 64a + 16b = {yb}.",
+        "Solve: a = {a}, b = {b}."
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Calculate the coordinates of A, an x-intercept.",
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "A({xA}; 0)",
+      "steps": [
+        "h(x) = {a}x³ + {b}x² = x²({a}x + {b}).",
+        "x = 0 (twice) or x = {xA}."
+      ]
+    },
+    {
+      "n": "10.3.1",
+      "prompt_template": "For which x is h increasing?",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "0 < x < {xb}",
+      "steps": [
+        "h is increasing where h'(x) > 0.",
+        "Turning points at x = 0 and x = {xb}.",
+        "So increasing on 0 < x < {xb}."
+      ]
+    },
+    {
+      "n": "10.3.2",
+      "prompt_template": "For which x is h concave down?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "x > {xinf}",
+      "steps": [
+        "h''(x) = 6ax + 2b.",
+        "Set h''(x) = 0: x = {xinf}.",
+        "Concave down where h''(x) < 0: x > {xinf}."
+      ]
+    },
+    {
+      "n": "10.4",
+      "prompt_template": "For which k does -(x-1)³ + 6(x-1)² - k = 0 have one negative and two distinct positive roots?",
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "{k_lo} < k < {k_hi}",
+      "steps": [
+        "Translate h: the shifted cubic has turning points at x=1 and x={xb}+1.",
+        "Read off the range of k from the graph."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "10"
+  },
+  "diagram_page": "2021_P1_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P1_p08.png",
+  "diagram_crop": null
+}

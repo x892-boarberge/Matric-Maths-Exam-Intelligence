@@ -1,0 +1,119 @@
+{
+  "stem": "Solve for x:",
+  "subquestions": [
+    {
+      "n": "1.1.1",
+      "prompt_template": "x² + {b}x - {c} = 0",
+      "ranges": {
+        "b": [
+          5,
+          6
+        ],
+        "c": [
+          6,
+          8
+        ]
+      },
+      "marks": 3,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "x = {r1} or x = {r2}",
+      "steps": [
+        "Factorise.",
+        "Set each factor to zero."
+      ]
+    },
+    {
+      "n": "1.1.2",
+      "prompt_template": "{a}x² + {b}x - {c} = 0 (TWO decimals)",
+      "ranges": {
+        "a": [
+          4,
+          3
+        ],
+        "b": [
+          3,
+          5
+        ],
+        "c": [
+          5,
+          4
+        ]
+      },
+      "marks": 3,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "x = {x1} or x = {x2}",
+      "steps": [
+        "Quadratic formula.",
+        "Round to 2 decimals."
+      ]
+    },
+    {
+      "n": "1.1.3",
+      "prompt_template": "{a}x² - {b} < 0",
+      "ranges": {
+        "a": [
+          4,
+          9
+        ],
+        "b": [
+          1,
+          4
+        ]
+      },
+      "marks": 3,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "-{half} < x < {half}",
+      "steps": [
+        "Factorise: ({sq_a}x - {sq_b})({sq_a}x + {sq_b}) < 0.",
+        "Critical values.",
+        "Interval."
+      ]
+    },
+    {
+      "n": "1.1.4",
+      "prompt_template": "(sqrt(sqrt(32) + x))(sqrt(sqrt(32) - x)) = x",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "algebra.surd",
+      "expected_fn": "x = 4",
+      "steps": [
+        "Expand: sqrt(32 - x²) = x.",
+        "32 - x² = x².",
+        "x² = 16, x = ±4, reject x = -4."
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "y + x = 12 and xy = 14 - 3x",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "algebra.simultaneous",
+      "expected_fn": "(x = 14, y = -2) or (x = 1, y = 11)",
+      "steps": [
+        "y = 12 - x.",
+        "x(12 - x) = 14 - 3x.",
+        "x² - 15x + 14 = 0.",
+        "(x - 14)(x - 1) = 0."
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "Largest k such that 3^k is a factor of 1×2×3×...×30.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "algebra.exponential",
+      "expected_fn": "k = 14",
+      "steps": [
+        "Count multiples of 3: 10.",
+        "Count multiples of 9: 3.",
+        "Count multiples of 27: 1.",
+        "Total = 10 + 3 + 1 = 14."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "1"
+  }
+}

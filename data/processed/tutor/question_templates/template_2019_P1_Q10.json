@@ -1,0 +1,45 @@
+{
+  "stem": "Library open Mon-Thu. Anna and Ben study one day.",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "P(same day).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.independent",
+      "expected_fn": "P = 1/4",
+      "steps": [
+        "4 days each, 4 same-day outcomes out of 16."
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "P(consecutive days).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "probability.independent",
+      "expected_fn": "P = 3/8",
+      "steps": [
+        "Favourable pairs: (Mon,Tue),(Tue,Mon),(Tue,Wed),(Wed,Tue),(Wed,Thu),(Thu,Wed) = 6.",
+        "P = 6/16 = 3/8."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "10"
+  }
+}

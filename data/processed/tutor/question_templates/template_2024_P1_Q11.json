@@ -10,7 +10,16 @@
     {
       "n": "11.1",
       "prompt_template": "Draw a Venn diagram to represent ALL the learners.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 4,
       "skill_id": "probability.venn",
       "expected_fn": "see diagram",
@@ -23,7 +32,18 @@
     {
       "n": "11.2",
       "prompt_template": "Calculate the probability that a learner sits for at least TWO of the subjects.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
       "marks": 2,
       "skill_id": "probability.set",
       "expected_fn": "P(at least 2) = {p_at_least_2}",
@@ -35,7 +55,26 @@
     {
       "n": "11.3",
       "prompt_template": "Determine if M and T are independent. Support your answer.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
       "marks": 4,
       "skill_id": "probability.independence",
       "expected_fn": "not independent",

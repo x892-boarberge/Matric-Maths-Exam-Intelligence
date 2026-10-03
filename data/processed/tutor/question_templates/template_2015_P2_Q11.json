@@ -1,0 +1,96 @@
+{
+  "stem": "K, M, N on sides PQ, PR, QR of triangle PQR. KP = 1.5, PM = 2, KM = 2.5, MN = 1, MR = 1.25, NR = 0.75.",
+  "diagram": "triangle_proportion",
+  "subquestions": [
+    {
+      "n": "11.1",
+      "prompt_template": "Complete statement about similar triangles.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.similarity",
+      "expected_fn": "Equiangular",
+      "steps": [
+        {
+          "s": "Equiangular (or similar)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "11.2.1",
+      "prompt_template": "Prove triangle KPM ||| triangle RNM.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle KPM ||| triangle RNM",
+      "steps": [
+        {
+          "s": "KP/RN = PM/NM = 2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "KM/RM = 2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "triangle KPM ||| triangle RNM",
+          "r": "SSS",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "11.2.2",
+      "prompt_template": "Determine NQ.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "NQ = 4.67",
+      "steps": [
+        {
+          "s": "PKM = R",
+          "r": "triangle KPM ||| triangle RNM",
+          "mark": "S/R"
+        },
+        {
+          "s": "P common",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "triangle RPQ ||| triangle KPM",
+          "r": "AAA",
+          "mark": "S/R"
+        },
+        {
+          "s": "RP/KP = RQ/KM",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "RQ = 5.42",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "NQ = 5.42 - 0.75 = 4.67",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "11"
+  },
+  "diagram_page": "2015_P2_p14.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P2_p14.png",
+  "diagram_crop": null
+}

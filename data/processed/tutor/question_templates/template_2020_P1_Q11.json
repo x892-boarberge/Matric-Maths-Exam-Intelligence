@@ -1,0 +1,63 @@
+{
+  "stem": "Harry shoots arrows. 50% chance of hitting bull's eye each shot.",
+  "subquestions": [
+    {
+      "n": "11.1",
+      "prompt_template": "P(first AND second shot hit).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.independent",
+      "expected_fn": "= 1/4",
+      "steps": [
+        "P = 0.5 × 0.5 = 1/4."
+      ]
+    },
+    {
+      "n": "11.2",
+      "prompt_template": "P(at least twice in first three shots).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "probability.independent",
+      "expected_fn": "= 1/2",
+      "steps": [
+        "P(2 hits) + P(3 hits)",
+        "C(3,2)(0.5)³ + (0.5)³ = 3/8 + 1/8 = 1/2."
+      ]
+    },
+    {
+      "n": "11.3",
+      "prompt_template": "Harry and Glenda alternate. P(person who shoots first wins).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "probability.independent",
+      "expected_fn": "P = 2/3",
+      "steps": [
+        "Geometric series: 0.5 + 0.5³ + 0.5⁵ + ...",
+        "= 0.5/(1-0.25) = 2/3."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P1",
+    "qnum": "11"
+  }
+}

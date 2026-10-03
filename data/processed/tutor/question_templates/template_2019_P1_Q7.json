@@ -1,0 +1,72 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Determine f'(x) from first principles if f(x) = 4 - 7x.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = -7",
+      "steps": [
+        "f(x+h) = 4 - 7(x+h).",
+        "f(x+h) - f(x) = -7h.",
+        "Divide by h, take limit: -7."
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Determine dy/dx if y = 4x⁸ + sqrt(x³).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "dy/dx = 32x⁷ + (3/2)x^(1/2)",
+      "steps": [
+        "Rewrite sqrt(x³) = x^(3/2).",
+        "Differentiate."
+      ]
+    },
+    {
+      "n": "7.3.1",
+      "prompt_template": "y = ax² + a. Find dy/dx.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "dy/dx = 2ax",
+      "steps": [
+        "Differentiate with respect to x."
+      ]
+    },
+    {
+      "n": "7.3.2",
+      "prompt_template": "Find dy/da of y = ax² + a.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "dy/da = x² + 1",
+      "steps": [
+        "Differentiate with respect to a."
+      ]
+    },
+    {
+      "n": "7.4",
+      "prompt_template": "y = x + 12/x passes through A(2; b). Equation of line perpendicular to tangent at A.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "y = x/2 + 7",
+      "steps": [
+        "b = 2 + 6 = 8.",
+        "dy/dx = 1 - 12/x².",
+        "m_tangent(2) = 1 - 3 = -2.",
+        "m_perp = 1/2.",
+        "y = x/2 + 7."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "7"
+  }
+}

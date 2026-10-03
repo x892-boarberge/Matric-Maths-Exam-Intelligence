@@ -1,0 +1,74 @@
+{
+  "stem": "100 m sprint times and long jump distances.",
+  "diagram": "scatter_regression",
+  "subquestions": [
+    {
+      "n": "1.1",
+      "prompt_template": "Determine a and b.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "a = 14.34, b = -0.64",
+      "steps": [
+        {
+          "s": "a = 14.34",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = -0.64",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "Predict long jump for 11.7 seconds.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "6.85",
+      "steps": [
+        {
+          "s": "y = 14.34 - 0.64(11.7)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 6.85",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "Will gradient increase or decrease if (12.3; 7.6) added?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "Increase",
+      "steps": [
+        {
+          "s": "Gradient increases",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Point lies above current data",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P2",
+    "qnum": "1"
+  },
+  "diagram_page": "2017_P2_p03.png",
+  "diagram_image": "data/processed/diagrams/pages/2017_P2_p03.png",
+  "diagram_crop": null
+}

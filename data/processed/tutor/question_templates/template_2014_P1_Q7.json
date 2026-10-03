@@ -1,0 +1,71 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Car R{P} five years ago, now R{current}. Reducing balance. Find depreciation rate.",
+      "ranges": {
+        "P": [
+          144995,
+          144996
+        ],
+        "current": [
+          72495,
+          72496
+        ]
+      },
+      "marks": 3,
+      "skill_id": "finance.depreciation",
+      "expected_fn": "i ≈ 12.94%",
+      "steps": [
+        "A = P(1-i)^n.",
+        "72500 = 145000(1-i)^5.",
+        "(1-i)^5 = 1/2.",
+        "1-i = (1/2)^(1/5).",
+        "i ≈ 0.1294."
+      ]
+    },
+    {
+      "n": "7.2.1",
+      "prompt_template": "Home loan R500 000 at 12% p.a. compounded monthly over 20 years. Monthly instalment?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "finance.loan",
+      "expected_fn": "x = R5 505.43",
+      "steps": [
+        "P = x[1 - (1+i)^-n]/i, i = 0.12/12, n = 240."
+      ]
+    },
+    {
+      "n": "7.2.2",
+      "prompt_template": "Melissa pays R6 000/month. How many months to settle?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "finance.loan",
+      "expected_fn": "n = 181",
+      "steps": [
+        "500000 = 6000[1-(1.01)^-n]/0.01.",
+        "Solve with logs.",
+        "n ≈ 180.07."
+      ]
+    },
+    {
+      "n": "7.2.3",
+      "prompt_template": "Who pays more interest, Samuel or Melissa? Justify.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "finance.loan",
+      "expected_fn": "Samuel",
+      "steps": [
+        "Samuel: 5505.43 × 240 - 500000 = R821 303.20.",
+        "Melissa: 6000 × 181 - 500000 = R586 000.",
+        "Samuel pays more."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P1",
+    "qnum": "7"
+  }
+}

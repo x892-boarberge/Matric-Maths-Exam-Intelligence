@@ -1,0 +1,196 @@
+{
+  "stem": "Building CD = 16 m. Observers A and B on ground, 19 m apart. Angle of elevation of D from A = 46.85. DEB = 122, BCA = 105.61.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Calculate AC.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "AC = 15 m",
+      "steps": [
+        {
+          "s": "tan DAC = DC/AC",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "AC = 16/tan 46.85 = 15 m",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "Calculate distance from E to top of building (DE).",
+      "ranges": {},
+      "marks": 7,
+      "skill_id": "trig.3d",
+      "expected_fn": "DE = 10.81 m",
+      "steps": [
+        {
+          "s": "(19)^2 = x^2 + (15)^2 - 2x(15)cos 105.61",
+          "r": "cosine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "x^2 + 8.07x - 136 = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 8.30 m (BC)",
+          "r": "quadratic formula",
+          "mark": "S/R"
+        },
+        {
+          "s": "BEC = 58 or EBC",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "EC = 8.3/tan 58 = 5.19 m",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "DE = 16 - 5.19 = 10.81 m",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Answer",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2024,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_spec": {
+    "points_2d": {
+      "D": [
+        0.0,
+        5.0
+      ],
+      "E": [
+        0.0,
+        3.2
+      ],
+      "C": [
+        0.0,
+        0.5
+      ],
+      "A": [
+        4.5,
+        0.2
+      ],
+      "B": [
+        -4.0,
+        0.0
+      ]
+    },
+    "edges": [
+      [
+        "D",
+        "C"
+      ],
+      [
+        "D",
+        "A"
+      ],
+      [
+        "D",
+        "B"
+      ],
+      [
+        "C",
+        "A"
+      ],
+      [
+        "C",
+        "B"
+      ],
+      [
+        "A",
+        "B"
+      ],
+      [
+        "E",
+        "B"
+      ],
+      [
+        "E",
+        "C"
+      ]
+    ],
+    "right_angles": [
+      [
+        "C",
+        "D",
+        "A"
+      ],
+      [
+        "C",
+        "D",
+        "B"
+      ]
+    ],
+    "angle_labels": [
+      {
+        "vertex": "E",
+        "p1": "D",
+        "p2": "B",
+        "label": "122°",
+        "r_arc": 0.55,
+        "label_xy": [
+          -1.2,
+          3.6
+        ]
+      },
+      {
+        "vertex": "C",
+        "p1": "A",
+        "p2": "B",
+        "label": "105,61°",
+        "r_arc": 0.75,
+        "label_xy": [
+          0.0,
+          0.6
+        ]
+      },
+      {
+        "vertex": "A",
+        "p1": "D",
+        "p2": "C",
+        "label": "46,85°",
+        "r_arc": 0.55,
+        "label_xy": [
+          2.6,
+          -0.1
+        ]
+      }
+    ],
+    "edge_labels": {
+      "D-C": "16",
+      "A-B": "19"
+    },
+    "xlim": [
+      -6,
+      6
+    ],
+    "ylim": [
+      -1,
+      6
+    ]
+  },
+  "diagram_page": "2024_P2_p10.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P2_p10.png",
+  "diagram_crop": null
+}

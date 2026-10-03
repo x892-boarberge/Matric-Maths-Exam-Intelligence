@@ -1,0 +1,156 @@
+{
+  "stem": "f(x) = x² - 2x - 3 and line g through A and C(4; 5).",
+  "diagram": "parabola_line",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Show that g(x) = x + 1.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.line",
+      "steps": [
+        "A is x-intercept of f: x = -1. A(-1; 0).",
+        "m = (5-0)/(4-(-1)) = 1.",
+        "c = 1.",
+        "g(x) = x + 1."
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Calculate A and B (x-intercepts of f).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "functions.parabola",
+      "expected_fn": "A(-1; 0), B(3; 0)",
+      "steps": [
+        "x² - 2x - 3 = 0.",
+        "(x - 3)(x + 1) = 0.",
+        "x = 3 or x = -1."
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "Determine the range of f.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.parabola",
+      "expected_fn": "y >= -4",
+      "steps": [
+        "x = 1 (turning point).",
+        "f(1) = -4.",
+        "Range y >= -4."
+      ]
+    },
+    {
+      "n": "6.4.1",
+      "prompt_template": "If MN = 6, determine OT where T on negative x-axis.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.parabola",
+      "expected_fn": "OT = 2",
+      "steps": [
+        "MN(x) = f(x) - g(x) = x² - 3x - 4.",
+        "Set = 6: x² - 3x - 10 = 0.",
+        "(x - 5)(x + 2) = 0.",
+        "x = -2 (T on negative x-axis).",
+        "OT = 2."
+      ]
+    },
+    {
+      "n": "6.4.2",
+      "prompt_template": "Write down N's coordinates.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.line",
+      "expected_fn": "N(-2; -1)",
+      "steps": [
+        "g(-2) = -2 + 1 = -1."
+      ]
+    },
+    {
+      "n": "6.5",
+      "prompt_template": "Equation of tangent to f parallel to g.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "y = x - 21/4",
+      "steps": [
+        "f'(x) = 2x - 2.",
+        "Parallel to g → 2x - 2 = 1.",
+        "x = 3/2.",
+        "f(3/2) = -15/4.",
+        "y + 15/4 = 1(x - 3/2)."
+      ]
+    },
+    {
+      "n": "6.6",
+      "prompt_template": "For which k does f and h(x) = x + k NOT intersect?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.inequality",
+      "expected_fn": "k < -21/4",
+      "steps": [
+        "Set x² - 2x - 3 = x + k.",
+        "x² - 3x - 3 - k = 0.",
+        "Discrim < 0: 9 + 12 + 4k < 0.",
+        "k < -21/4."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "6"
+  },
+  "diagram_page": "2018_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P1_p05.png",
+  "diagram_crop": null
+}

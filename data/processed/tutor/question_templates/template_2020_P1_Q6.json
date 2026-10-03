@@ -1,0 +1,109 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "6.1.1",
+      "prompt_template": "Monthly deposits of R{P} at {r}% p.a. compounded monthly for {y} years. Value at end?",
+      "ranges": {
+        "P": [
+          997,
+          998
+        ],
+        "r": [
+          7.5
+        ],
+        "y": [
+          10,
+          11
+        ]
+      },
+      "marks": 4,
+      "skill_id": "finance.annuity",
+      "expected_fn": "R{F}",
+      "steps": [
+        "F = x[(1+i)^n - 1]/i",
+        "i = {r}/1200, n = 12*{y}.",
+        "F = R{F}."
+      ]
+    },
+    {
+      "n": "6.1.2",
+      "prompt_template": "If no further payments, value one year later?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "finance.compound",
+      "expected_fn": "R{A}",
+      "steps": [
+        "A = F(1 + i)^12."
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Car R{P}, depreciates {r}% p.a. reducing balance. Book value R{A}. How many years?",
+      "ranges": {
+        "P": [
+          249995,
+          249996
+        ],
+        "r": [
+          19,
+          20,
+          21
+        ],
+        "A": [
+          92537.64
+        ]
+      },
+      "marks": 3,
+      "skill_id": "finance.depreciation",
+      "expected_fn": "n = {n} years",
+      "steps": [
+        "A = P(1 - i)^n.",
+        "Log both sides."
+      ]
+    },
+    {
+      "n": "6.3.1",
+      "prompt_template": "Loan R{x} monthly at {r}% p.a. compounded monthly, {y} years. Value of loan?",
+      "ranges": {
+        "x": [
+          1498,
+          1499,
+          1500
+        ],
+        "r": [
+          11.3
+        ],
+        "y": [
+          5,
+          6,
+          7
+        ]
+      },
+      "marks": 3,
+      "skill_id": "finance.loan",
+      "expected_fn": "Loan = R{P}",
+      "steps": [
+        "P = x[1 - (1+i)^-n]/i, n = 12*{y}."
+      ]
+    },
+    {
+      "n": "6.3.2",
+      "prompt_template": "Total interest over first 5 years?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "finance.loan",
+      "expected_fn": "R{interest}",
+      "steps": [
+        "Total paid = 1500 * 60.",
+        "Balance after 5 years computed.",
+        "Interest = Total paid - (Loan - Balance)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P1",
+    "qnum": "6"
+  }
+}

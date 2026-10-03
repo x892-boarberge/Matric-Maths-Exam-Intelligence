@@ -1,0 +1,90 @@
+{
+  "stem": "Triangle ACP with C = 90, CP = 4 sqrt(3), AP = 8. Triangle ADP with DP = 4. PA bisects DPC. CAP = x, DAP = y.",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Show x = 60.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "type": "proof",
+      "expected_fn": "x = 60",
+      "steps": [
+        {
+          "s": "sin x = CP/AP = 4 sqrt(3)/8 = sqrt(3)/2",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "x = 60",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Length of AD.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "4.96",
+      "steps": [
+        {
+          "s": "DAP = 30",
+          "r": "PA bisects DPC",
+          "mark": "S/R"
+        },
+        {
+          "s": "AD^2 = AP^2 + DP^2 - 2(AP)(DP)cos 30",
+          "r": "cosine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 64 + 16 - 64(cos 30)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AD = 4.96",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Size of y.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "23.78",
+      "steps": [
+        {
+          "s": "sin y / 4 = sin 30 / 4.96",
+          "r": "sine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin y = 0.403",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 23.78",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "5"
+  },
+  "diagram_page": "2014_P2_p07.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P2_p07.png",
+  "diagram_crop": null
+}

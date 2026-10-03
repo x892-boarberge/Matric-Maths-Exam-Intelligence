@@ -1,0 +1,144 @@
+{
+  "stem": "10 learners' popularity scores and number of votes.",
+  "diagram": "scatter_regression",
+  "subquestions": [
+    {
+      "n": "1.1.1",
+      "prompt_template": "Calculate the mean number of votes.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.mean",
+      "expected_fn": "15.5",
+      "steps": [
+        {
+          "s": "Sum = 155",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x_bar = 15.5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.1.2",
+      "prompt_template": "Standard deviation of votes.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "4.59",
+      "steps": [
+        {
+          "s": "SD = 4.59",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "How many learners received more votes than one SD below the mean?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "8",
+      "steps": [
+        {
+          "s": "x_bar - SD = 10.91",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "8 learners",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "Equation of least squares regression line.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.regression",
+      "expected_fn": "y_hat = 1.77 + 0.22x",
+      "steps": [
+        {
+          "s": "a = 1.7709",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = 0.2243",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_hat = 1.77 + 0.22x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.4",
+      "prompt_template": "Predict votes for popularity score 72.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "18",
+      "steps": [
+        {
+          "s": "y = 1.77 + 0.22(72)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 17.61 ~ 18",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.5.1",
+      "prompt_template": "Why is IQ not a good indicator?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.correlation",
+      "expected_fn": "Points are scattered, low correlation",
+      "steps": [
+        {
+          "s": "Low correlation, unrealistic prediction",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.5.2",
+      "prompt_template": "Why is prediction in 1.4 reliable?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.correlation",
+      "expected_fn": "r = 0.98, very strong",
+      "steps": [
+        {
+          "s": "r = 0.98, very strong",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P2",
+    "qnum": "1"
+  },
+  "diagram_page": "2022_P2_p03.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P2_p03.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,90 @@
+{
+  "stem": "Geometric sequence: 10; 5; 2.5; 1.25; ...",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Calculate T_5.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.gp",
+      "expected_fn": "T_5 = 5/8 or 0.625",
+      "steps": [
+        "r = 1/2.",
+        "T_5 = 10(1/2)^4 = 5/8."
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Determine T_n.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.gp",
+      "expected_fn": "T_n = 10(1/2)^(n-1)",
+      "steps": [
+        "T_n = a*r^(n-1)."
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Explain why the series converges.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.gp",
+      "expected_fn": "Because -1 < r < 1",
+      "steps": [
+        "r = 1/2, so -1 < r < 1."
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Determine S_inf - S_n in form a*b^n.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 4,
+      "skill_id": "sequences.gp",
+      "expected_fn": "20(1/2)^n",
+      "steps": [
+        "S_inf = 20.",
+        "S_n = 20(1 - (1/2)^n).",
+        "S_inf - S_n = 20(1/2)^n."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "2"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "stem": "M(-3;4) centre of large circle and point on small circle (centre O). N(-11;p) tangent NT at T parallel y-axis. NM tangent to smaller at M, MOS diameter.",
+  "diagram": "analytical_circle",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Equation of small circle.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "x^2 + y^2 = 25",
+      "steps": [
+        {
+          "s": "r^2 = (-3)^2 + 4^2 = 25",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x^2 + y^2 = 25",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Equation of circle centred at M.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "(x+3)^2 + (y-4)^2 = 64",
+      "steps": [
+        {
+          "s": "TM perpendicular TN",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "x_T = -11, r = 8",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x+3)^2 + (y-4)^2 = 64",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Equation of NM.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "y = 3/4 x + 25/4",
+      "steps": [
+        {
+          "s": "m_OM = 4/(-3) = -4/3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_NM = 3/4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Substitute M(-3;4)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 3/4 x + 25/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Length of SN.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.distance",
+      "expected_fn": "10 sqrt(2) or 14.14",
+      "steps": [
+        {
+          "s": "p = 3/4(-11) + 25/4 = -2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "N(-11; -2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "S(3; -4) (S is antipode of M)",
+          "r": null,
+          "mark": "S/R"
+        },
+        {
+          "s": "SN = sqrt(14^2 + 2^2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 10 sqrt(2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Find k if circle centre B(-2;5) radius k touches circle at M.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.circle",
+      "expected_fn": "k = 6.6 or 9.4",
+      "steps": [
+        {
+          "s": "BM = sqrt(2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Radius at M = 8",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = 8 - sqrt(2) or k = 8 + sqrt(2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = 6.59 or 9.41",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = 6.6 or 9.4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P2",
+    "qnum": "4"
+  },
+  "diagram_page": "2020_P2_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2020_P2_p06.png",
+  "diagram_crop": null
+}

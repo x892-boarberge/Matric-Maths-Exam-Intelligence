@@ -7,21 +7,15 @@
       "ranges": {
         "a": [
           2,
-          3,
-          4,
-          5
+          3
         ],
         "b": [
           1,
-          2,
-          3,
-          4,
-          5,
-          6
+          2
         ]
       },
       "marks": 2,
-      "skill_id": "algebra.quadratic.solve",
+      "skill_id": "algebra.quadratic",
       "expected_fn": "x = -{a} or x = {b}",
       "steps": [
         "(x + {a})(x - {b}) = 0",
@@ -35,26 +29,19 @@
       "ranges": {
         "c": [
           2,
-          3,
-          4,
-          5
+          3
         ],
         "b1": [
           -9,
-          -7,
-          -5,
-          8,
-          10
+          -7
         ],
         "b2": [
           2,
-          3,
-          4,
-          5
+          3
         ]
       },
       "marks": 4,
-      "skill_id": "algebra.quadratic.formula",
+      "skill_id": "algebra.quadratic",
       "expected_fn": "x = {x1} or x = {x2}",
       "steps": [
         "Standard form: {c}x^2 - {b1_abs_signed}x + {b2} = 0",
@@ -70,19 +57,15 @@
       "ranges": {
         "k": [
           4,
-          6,
-          8,
-          10
+          6
         ],
         "m": [
           1,
-          2,
-          3,
-          4
+          2
         ]
       },
       "marks": 3,
-      "skill_id": "algebra.quadratic.inequality",
+      "skill_id": "algebra.quadratic",
       "expected_fn": "x < 0 or x > {bound}",
       "steps": [
         "{k}x^2 - {m}x > 0",
@@ -96,7 +79,7 @@
       "prompt_template": "x is the sum of 2 and y. Five times the product of x and y is 6 more than the square of x.",
       "ranges": {},
       "marks": 5,
-      "skill_id": "algebra.simultaneous.solve",
+      "skill_id": "algebra.simultaneous",
       "expected_fn": "x = {x_ans} and y = {y_ans}",
       "steps": [
         "x = 2 + y",

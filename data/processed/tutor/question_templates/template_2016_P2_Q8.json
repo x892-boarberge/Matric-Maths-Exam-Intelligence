@@ -1,0 +1,124 @@
+{
+  "stem": "PQRT cyclic quad with RT || QP. Tangent at P meets RT produced at S. QP = QT. PTS = 70.",
+  "diagram": "circle_cyclic_quad",
+  "subquestions": [
+    {
+      "n": "8.1.1",
+      "prompt_template": "Reason why P2 = 70.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Alternate angles",
+      "steps": [
+        {
+          "s": "Alternate angles; PQ || SR",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.1.2a",
+      "prompt_template": "Calculate Q1.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Q1 = 40",
+      "steps": [
+        {
+          "s": "T2 = 70",
+          "r": "angles opposite equal sides",
+          "mark": "S/R"
+        },
+        {
+          "s": "Q1 = 180 - 2(70) = 40",
+          "r": "sum of angles in triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.1.2b",
+      "prompt_template": "Calculate P1.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "P1 = 40",
+      "steps": [
+        {
+          "s": "P1 = 40",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.2.1",
+      "prompt_template": "Calculate AT.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "AT = 20",
+      "steps": [
+        {
+          "s": "AT = 20",
+          "r": "line from centre perpendicular to chord",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.2.2",
+      "prompt_template": "If OS = 7, OT = 15, find radius.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "radius = 25",
+      "steps": [
+        {
+          "s": "AS = 24",
+          "r": "line from centre perpendicular to chord",
+          "mark": "S/R"
+        },
+        {
+          "s": "AO^2 = OS^2 + AS^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "OT^2 + AT^2 = OS^2 + AS^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "OT = 15, OS = 7",
+          "r": "solve",
+          "mark": "S"
+        },
+        {
+          "s": "AO = 25",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2016_P2_p11.png",
+  "diagram_image": "data/processed/diagrams/pages/2016_P2_p11.png",
+  "diagram_crop": null
+}

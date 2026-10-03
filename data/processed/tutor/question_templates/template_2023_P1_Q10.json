@@ -22,7 +22,22 @@
     {
       "n": "10.1.2",
       "prompt_template": "Determine P(at least one event occurs).",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 2,
       "skill_id": "probability.union",
       "expected_fn": "P(A or B) = {p}",
@@ -35,13 +50,16 @@
       "prompt_template": "Snow with prob {p_snow}%. If snow, temp below 0 with prob {p_below_snow}%. If no snow, below 0 with prob {p_below_nosnow}%. Draw a tree diagram.",
       "ranges": {
         "p_snow": [
-          5
+          -2,
+          -1
         ],
         "p_below_snow": [
-          72
+          58,
+          59
         ],
         "p_below_nosnow": [
-          35
+          26,
+          27
         ]
       },
       "marks": 3,

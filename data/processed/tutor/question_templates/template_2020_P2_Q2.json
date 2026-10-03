@@ -1,0 +1,104 @@
+{
+  "stem": "Aircraft landings at King Shaka International Airport over 12 months.",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "During which month is the difference greatest?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.graph",
+      "expected_fn": "July",
+      "steps": [
+        {
+          "s": "July",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Calculate the mean.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.mean",
+      "expected_fn": "2245.08",
+      "steps": [
+        {
+          "s": "Sum = 26 941",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Mean = 2245.08",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Standard deviation for King Shaka landings.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "86.30",
+      "steps": [
+        {
+          "s": "sigma = 86.30",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Number of months within one SD of the mean.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "9 months",
+      "steps": [
+        {
+          "s": "x_bar - sigma = 2158.78",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x_bar + sigma = 2331.38",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "9 months",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.5",
+      "prompt_template": "Which statement is correct?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.interpret",
+      "expected_fn": "C",
+      "steps": [
+        {
+          "s": "C",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P2",
+    "qnum": "2"
+  },
+  "diagram": "bar_chart",
+  "diagram_page": "2020_P2_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2020_P2_p04.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,224 @@
+{
+  "stem": "A(-2;10), B(k;k), C(4;-2). Line BC produced to E(12;0). Inclination of AB = 81.87.",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "3.1.1",
+      "prompt_template": "Gradient of BE.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "1/4",
+      "steps": [
+        {
+          "s": "m = (0-(-2))/(12-4)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m = 1/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.1.2",
+      "prompt_template": "Gradient of AB.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.inclination",
+      "expected_fn": "7",
+      "steps": [
+        {
+          "s": "m_AB = tan 81.87",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_AB = 7",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Equation of BE.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "y = (1/4)x - 3",
+      "steps": [
+        {
+          "s": "0 = (1/4)(12) + c -> c = -3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = (1/4)x - 3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3.1",
+      "prompt_template": "Coordinates of B, k < 0.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.solve",
+      "expected_fn": "B(-4; -4)",
+      "steps": [
+        {
+          "s": "k = (1/4)k - 3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = -4 -> B(-4;-4)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3.2",
+      "prompt_template": "Size of A.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.angle",
+      "expected_fn": "34.70 deg",
+      "steps": [
+        {
+          "s": "m_AC = -2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan theta = -2 -> theta = 116.57",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "A = 116.57 - 81.87",
+          "r": "exterior angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 34.70 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3.3",
+      "prompt_template": "Point of intersection of diagonals of ACES.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.parallelogram",
+      "expected_fn": "Midpoint of ES",
+      "steps": [
+        {
+          "s": "x = (12+(-2))/2 = 5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = (10+0)/2 = 5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4.1",
+      "prompt_template": "Coordinates of T(p;p) with ET = BE = 4 sqrt(17).",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.solve",
+      "expected_fn": "T(16; 16)",
+      "steps": [
+        {
+          "s": "BE = 4 sqrt(17)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(12-p)^2 + (0-p)^2 = 272",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "p^2 - 12p - 64 = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(p-16)(p+4) = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "p = 16 -> T(16;16)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4.2a",
+      "prompt_template": "Equation of circle centre E through B and T.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "(x-12)^2 + y^2 = 272",
+      "steps": [
+        {
+          "s": "r^2 = 272",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x-12)^2 + y^2 = 272",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4.2b",
+      "prompt_template": "Equation of tangent to circle at B.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "y = -4x - 20",
+      "steps": [
+        {
+          "s": "m_radius = 1/4 -> m_tangent = -4",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "-4 = -4(-4) + c -> c = -20",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = -4x - 20",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_page": "2021_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P2_p05.png",
+  "diagram_crop": null
+}

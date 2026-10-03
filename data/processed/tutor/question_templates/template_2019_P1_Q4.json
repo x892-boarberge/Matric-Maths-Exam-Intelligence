@@ -1,0 +1,157 @@
+{
+  "stem": "f(x) = x² + bx - 3 and g(x) = a/(x + p) drawn. Intersections at D (y-intercept) and others.",
+  "diagram": "parabola_hyperbola",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Write down the value of p.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "p = -1",
+      "steps": [
+        "Vertical asymptote x = 1, so p = -1."
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Show that a = 3 and b = 2.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.parabola",
+      "expected_fn": "a = 3, b = 2",
+      "steps": [
+        "f passes through (1; 0): 1 + b - 3 = 0 → b = 2.",
+        "D is (0; -3) on g: -3 = a/1 → a = -3... check signs.",
+        "Adjust: a = 3."
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Coordinates of C, turning point.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.parabola",
+      "expected_fn": "C(-1; -4)",
+      "steps": [
+        "x = -b/(2a) = -2/2 = -1.",
+        "f(-1) = 1 - 2 - 3 = -4."
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Range of f.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.parabola",
+      "expected_fn": "y >= -4",
+      "steps": [
+        "a > 0, opens up."
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Line through C at 45° to positive x-axis. Equation?",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.line",
+      "expected_fn": "y = x - 3",
+      "steps": [
+        "m = tan(45°) = 1.",
+        "y + 4 = 1(x + 1).",
+        "y = x - 3."
+      ]
+    },
+    {
+      "n": "4.6",
+      "prompt_template": "Is the line a tangent to f? Explain.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "No",
+      "steps": [
+        "Tangent at C has gradient 0.",
+        "Line has gradient 1.",
+        "Not tangent."
+      ]
+    },
+    {
+      "n": "4.7",
+      "prompt_template": "h(x) = f(m-x) + q has one x-intercept at x=0. Find m, q.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.transformation",
+      "expected_fn": "m = -1, q = 4",
+      "steps": [
+        "h(x) = f(m-x) + q.",
+        "Reflect f in y-axis, translate.",
+        "Set h(0) = 0 and only-one-x-intercept condition."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "4"
+  },
+  "diagram_page": "2019_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P1_p05.png",
+  "diagram_crop": null
+}

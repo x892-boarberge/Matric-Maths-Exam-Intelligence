@@ -1,0 +1,149 @@
+{
+  "stem": "9.1: Triangle ABC with D on AB, E on AC, DE || BC. 9.2: Parallelogram ABCD, diagonals intersect at M. F on AD with AF:FD = 4:3. E on AM with EF || BD.",
+  "diagram": "triangle_proportion",
+  "subquestions": [
+    {
+      "n": "9.1.1",
+      "prompt_template": "Explain why areas of triangle DEB and DEC are equal.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "Same base and same height",
+      "steps": [
+        {
+          "s": "Same base DE and same height (between parallel lines)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.1.2",
+      "prompt_template": "Complete proof of AD/DB = AE/EC.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "AD/DB = AE/EC",
+      "steps": [
+        {
+          "s": "Area ADE / Area DEB = AD/DB",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area ADE / Area DEC = AE/EC",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area DEB = Area DEC",
+          "r": "same base & height",
+          "mark": "S/R"
+        },
+        {
+          "s": "Area ADE / Area DEB = Area ADE / Area DEC",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AD/DB = AE/EC",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2.1",
+      "prompt_template": "EM/AM.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "EM/AM = 3/7",
+      "steps": [
+        {
+          "s": "EM/AM = FD/AD",
+          "r": "prop theorem; EF || BD",
+          "mark": "S/R"
+        },
+        {
+          "s": "FD/AD = 3/(4+3) = 3/7",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "EM/AM = 3/7",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2.2",
+      "prompt_template": "CM/ME.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "CM/ME = 7/3",
+      "steps": [
+        {
+          "s": "CM = AM",
+          "r": "diagonals of parallelogram bisect",
+          "mark": "S/R"
+        },
+        {
+          "s": "AM/ME = 7/3",
+          "r": "from 9.2.1",
+          "mark": "S/R"
+        },
+        {
+          "s": "CM/ME = 7/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2.3",
+      "prompt_template": "Ratio of area triangle FDC to area triangle BDC.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.area_ratio",
+      "type": "proof",
+      "expected_fn": "3/7",
+      "steps": [
+        {
+          "s": "h of triangle FDC = h of triangle BDC",
+          "r": "AD || BC",
+          "mark": "S/R"
+        },
+        {
+          "s": "Area FDC = (1/2)(FD)(h)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area BDC = (1/2)(BC)(h)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "FD/BC = FD/AD = 3/7",
+          "r": "opposite sides of parallelogram equal",
+          "mark": "S/R"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2014_P2_p19.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P2_p19.png",
+  "diagram_crop": null
+}

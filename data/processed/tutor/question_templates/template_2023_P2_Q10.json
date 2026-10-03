@@ -1,0 +1,122 @@
+{
+  "stem": "Cyclic quad PQRS with PQ = PR. Tangents at P and R meet QS produced at A. RS meets tangent AP at B. PS meets tangent AR at C.",
+  "diagram": "circle_cyclic_quad",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Prove S3 = S4.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "S3 = S4",
+      "steps": [
+        {
+          "s": "S3 = PQR",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "R3 = PQR",
+          "r": "angles opposite equal sides",
+          "mark": "S/R"
+        },
+        {
+          "s": "S3 = R3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "S4 = R3",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "S3 = S4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Prove SMRC is a cyclic quad.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "SMRC cyclic",
+      "steps": [
+        {
+          "s": "R1 + R2 = PQR",
+          "r": "tan-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "S4 = PQR",
+          "r": "proved in 10.1",
+          "mark": "S"
+        },
+        {
+          "s": "S4 = R1 + R2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "SMRC cyclic quad",
+          "r": "converse exterior angle of cyclic quad",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.3",
+      "prompt_template": "Prove RP is tangent to circle through P, S, A at P.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "RP is tangent",
+      "steps": [
+        {
+          "s": "S3 = R2 + P2",
+          "r": "exterior angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "S4 = P1 + A2",
+          "r": "exterior angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "R2 + P2 = A2 + P1",
+          "r": "from 10.1",
+          "mark": "S"
+        },
+        {
+          "s": "P1 = R2",
+          "r": "tan-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "P2 = A2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "RP is tangent to circle at P",
+          "r": "converse tan-chord theorem",
+          "mark": "S/R"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2023_P2_p13.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P2_p13.png",
+  "diagram_crop": null
+}

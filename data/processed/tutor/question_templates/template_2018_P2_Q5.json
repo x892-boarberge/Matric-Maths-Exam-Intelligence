@@ -1,0 +1,199 @@
+{
+  "stem": "Trig: P(k;1) 2nd quadrant sqrt(5) from origin.",
+  "subquestions": [
+    {
+      "n": "5.1.1",
+      "prompt_template": "Find k.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.pythagoras",
+      "expected_fn": "k = -2",
+      "steps": [
+        {
+          "s": "k^2 + 1 = 5",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "k = -2 (Q2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.2a",
+      "prompt_template": "Find tan theta.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.identities",
+      "expected_fn": "-1/2",
+      "steps": [
+        {
+          "s": "tan theta = -1/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.2b",
+      "prompt_template": "Find cos(180+theta).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "2/sqrt(5)",
+      "steps": [
+        {
+          "s": "cos(180+theta) = -cos theta",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "= 2/sqrt(5)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.2c",
+      "prompt_template": "Find sin(theta+60) in the form (a+b)/sqrt(20).",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.identities",
+      "expected_fn": "(1-2 sqrt(3))/sqrt(20)",
+      "steps": [
+        {
+          "s": "sin(theta+60) = sin theta cos 60 + cos theta sin 60",
+          "r": "compound angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "Substitute sin theta = 1/sqrt(5), cos theta = -2/sqrt(5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Special angles",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(1-2 sqrt(3))/(2 sqrt(5))",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= (1-2 sqrt(3))/sqrt(20)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.3",
+      "prompt_template": "Calculate tan(2theta - 40) correct to ONE decimal.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "18.3",
+      "steps": [
+        {
+          "s": "theta = 153.43",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "2theta - 40 = 266.87",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 18.3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Prove (cos x + sin x)/(cos x - sin x) - (cos x - sin x)/(cos x + sin x) = 2 tan 2x.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.proof",
+      "type": "proof",
+      "expected_fn": "LHS = RHS",
+      "steps": [
+        {
+          "s": "Combine into single fraction",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Expand numerator",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 4 sin x cos x/(cos^2 x - sin^2 x)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Use double angle: 2 sin 2x / cos 2x = 2 tan 2x",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "LHS = RHS",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Evaluate sum from A=38 to 52 of cos^2 A.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.identities",
+      "expected_fn": "7.5",
+      "steps": [
+        {
+          "s": "Expand",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Pair cos^2 A + sin^2 A = 1",
+          "r": "co-ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "7 pairs + cos^2 45",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 7(1) + 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 7.5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P2",
+    "qnum": "5"
+  },
+  "diagram_page": "2018_P2_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P2_p08.png",
+  "diagram_crop": null
+}

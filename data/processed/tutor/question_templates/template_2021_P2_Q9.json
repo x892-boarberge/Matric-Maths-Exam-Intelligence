@@ -1,0 +1,72 @@
+{
+  "stem": "PQRS cyclic quad. PS produced to W. TR and TS tangents at R and S. T = 78, Q = 93.",
+  "diagram": "circle_cyclic_quad",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Give reason why ST = TR.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Tangents from common point",
+      "steps": [
+        {
+          "s": "Tangents from same point",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2.1",
+      "prompt_template": "Calculate S2.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "S2 = 51",
+      "steps": [
+        {
+          "s": "S2 = SRT",
+          "r": "angles opposite equal sides",
+          "mark": "S/R"
+        },
+        {
+          "s": "S2 = 51",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2.2",
+      "prompt_template": "Calculate S3.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "S3 = 42",
+      "steps": [
+        {
+          "s": "S2 + S3 = 93",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "S3 = 93 - 51 = 42",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2021_P2_p10.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P2_p10.png",
+  "diagram_crop": null
+}

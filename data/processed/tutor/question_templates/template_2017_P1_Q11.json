@@ -1,0 +1,37 @@
+{
+  "stem": "Code = 2 letters + sequence of digits. Letters A,D,R,S,U (repeated allowed). Digits 0-9, no repeats.",
+  "subquestions": [
+    {
+      "n": "11.1",
+      "prompt_template": "How many clients with 2 letters + 2 digits?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "probability.counting",
+      "expected_fn": "= 5 × 5 × 10 × 9 = 2250",
+      "steps": [
+        "Letters: 5 × 5 = 25.",
+        "Digits: 10 × 9 = 90.",
+        "Total = 25 × 90 = 2250."
+      ]
+    },
+    {
+      "n": "11.2",
+      "prompt_template": "Least digits to identify 700 000 clients.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "probability.counting",
+      "expected_fn": "5 digits (25 × 10×9×8×7×6 = 756 000)",
+      "steps": [
+        "Letters: 25.",
+        "n digits: 25 × (10 × 9 × ... × (10-n+1)) >= 700 000.",
+        "Try n=5: 25 × 10×9×8×7×6 = 756 000 >= 700 000.",
+        "So 5 digits."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P1",
+    "qnum": "11"
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "stem": "M(p;q) is centre of circle. C is on MC perpendicular to x-axis at D. E(-6;-1) on circle. Tangents from C touch at A and B. AD = (q-1).",
+  "diagram": "analytical_circle",
+  "diagram_spec": {
+    "centre": [
+      -6,
+      4
+    ],
+    "radius": 5,
+    "named_points": {
+      "M": [
+        -6,
+        4
+      ],
+      "A": [
+        -9,
+        0
+      ],
+      "B": [
+        -3,
+        0
+      ],
+      "D": [
+        -6,
+        0
+      ],
+      "E": [
+        -6,
+        -1
+      ],
+      "C": [
+        -6,
+        -2.25
+      ]
+    },
+    "tangents_from": "C",
+    "tangent_points": [
+      "A",
+      "B"
+    ],
+    "dashed_lines": [
+      [
+        "M",
+        "C"
+      ]
+    ],
+    "right_angles": [
+      [
+        "A",
+        "M",
+        "C"
+      ],
+      [
+        "B",
+        "M",
+        "C"
+      ]
+    ],
+    "xlim": [
+      -12,
+      1
+    ],
+    "ylim": [
+      -4,
+      10
+    ]
+  },
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Write down p.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "analytical.circle",
+      "expected_fn": "p = -6",
+      "steps": [
+        {
+          "s": "p = -6",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Show that q = 4.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.circle",
+      "expected_fn": "q = 4",
+      "steps": [
+        {
+          "s": "ME = q + 1 (radii)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "MD = q",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AM^2 = AD^2 + MD^2 (Pythagoras)",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "(q+1)^2 = (q-1)^2 + q^2 -> q = 4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Equation of the circle in the form (x-a)^2 + (y-b)^2 = r^2.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "(x+6)^2 + (y-4)^2 = 25",
+      "steps": [
+        {
+          "s": "AM = 5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x+6)^2 + (y-4)^2 = 25",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Circle translated 2 units left. Minimum distance to y-axis.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "analytical.circle",
+      "expected_fn": "3 units",
+      "steps": [
+        {
+          "s": "3 units",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Calculate the coordinates of A and B.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circle",
+      "expected_fn": "A(-9;0), B(-3;0)",
+      "steps": [
+        {
+          "s": "Substitute y = 0: (x+6)^2 + 16 = 25",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "A(-9; 0)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "B(-3; 0)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.6",
+      "prompt_template": "Equation of tangent BC.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.circle",
+      "expected_fn": "y = (3/4)x + 9/4",
+      "steps": [
+        {
+          "s": "m_MB = -4/3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m_BC = 3/4 (tangent perp radius)",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "Substitute B(-3;0)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = (3/4)x + 9/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.7",
+      "prompt_template": "Write down the coordinates of C.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "C(-6; -9/4)",
+      "steps": [
+        {
+          "s": "x_C = -6",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_C = -9/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.8",
+      "prompt_template": "Calculate the size of ACB.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.circle",
+      "expected_fn": "106.26 deg",
+      "steps": [
+        {
+          "s": "alpha = 36.87 deg",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan beta = -3/4 -> beta = 143.13 deg",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "ACB = 180 - 36.87 - 36.87",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "ACB = 106.26 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P2",
+    "qnum": "4"
+  },
+  "diagram_page": "2025_P2_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P2_p06.png",
+  "diagram_crop": null
+}

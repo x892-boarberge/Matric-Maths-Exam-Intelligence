@@ -1,0 +1,84 @@
+{
+  "stem": "RS vertical tower. Angle of depression from R to K is beta. TSK = alpha. TS = p. Area STK = q.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Determine SK in terms of p, q, alpha.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "SK = 2q/(p sin alpha)",
+      "steps": [
+        {
+          "s": "Area STK = (1/2)p(SK)sin alpha",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "SK = 2q/(p sin alpha)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Show that RS = 2q tan beta/(p sin alpha).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.3d",
+      "expected_fn": "RS = 2q tan beta/(p sin alpha)",
+      "steps": [
+        {
+          "s": "RKS = beta",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan beta = RS/SK",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "RS = SK tan beta = 2q tan beta/(p sin alpha)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "Calculate alpha if RS = 70, p = 80, q = 2500, beta = 42.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.3d",
+      "expected_fn": "alpha = 53.51 deg",
+      "steps": [
+        {
+          "s": "70 = 2(2500) tan 42/(80 sin alpha)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "sin alpha = 25/28 tan 42 = 0.80",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "alpha = 53.51 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2023_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P2_p09.png",
+  "diagram_crop": null
+}

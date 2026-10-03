@@ -1,0 +1,117 @@
+{
+  "stem": "9.1: Circle centre O, chord AB, OD bisects. 9.2: Circle with GB tangent, T midpoint of EF.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "9.1.1",
+      "prompt_template": "Prove OD perpendicular AB (line from centre bisecting chord).",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "OD perpendicular AB",
+      "steps": [
+        {
+          "s": "Construction: Draw OA and OB",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "OA = OB",
+          "r": "radii",
+          "mark": "S/R"
+        },
+        {
+          "s": "OD = OD",
+          "r": "common side",
+          "mark": "S"
+        },
+        {
+          "s": "AD = DB",
+          "r": "given",
+          "mark": "S"
+        },
+        {
+          "s": "triangle ADO = triangle BDO",
+          "r": "SSS",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.2.1",
+      "prompt_template": "Prove OTBG is cyclic quad.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "OTBG cyclic",
+      "steps": [
+        {
+          "s": "OTG = 90",
+          "r": "line from centre to midpoint of chord",
+          "mark": "S/R"
+        },
+        {
+          "s": "OBG = 90",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "OTG = OBG = 90",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "OTBG cyclic quad",
+          "r": "converse angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2.2",
+      "prompt_template": "Prove GOB = S.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "GOB = S",
+      "steps": [
+        {
+          "s": "S = BTG",
+          "r": "corresponding angles; GF || PS",
+          "mark": "S/R"
+        },
+        {
+          "s": "BTG = GOB",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "GOB = S",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2022_P2_p12.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P2_p12.png",
+  "diagram_crop": null
+}

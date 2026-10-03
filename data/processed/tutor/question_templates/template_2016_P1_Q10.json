@@ -1,0 +1,72 @@
+{
+  "stem": "M(t) = -t³ + 3t² + 72t, where M is number of molecules and t is hours.",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Number of molecules 3 hours after.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.kinematics",
+      "expected_fn": "M(3) = 216",
+      "steps": [
+        "M(3) = -27 + 27 + 216 = 216."
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Rate of change at 2 hours.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.kinematics",
+      "expected_fn": "M'(2) = 72",
+      "steps": [
+        "M'(t) = -3t² + 6t + 72.",
+        "M'(2) = -12 + 12 + 72 = 72."
+      ]
+    },
+    {
+      "n": "10.3",
+      "prompt_template": "When is the rate of change maximum?",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "t = 1 hour",
+      "steps": [
+        "M''(t) = -6t + 6 = 0.",
+        "t = 1."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P1",
+    "qnum": "10"
+  }
+}

@@ -11,20 +11,20 @@
       "prompt_template": "Calculate the value of a.",
       "ranges": {
         "base_num": [
-          2,
-          3
+          1,
+          2
         ],
         "base_den": [
-          3,
-          4
+          1,
+          2
         ],
         "xb": [
-          2,
-          3
+          1,
+          2
         ]
       },
       "marks": 2,
-      "skill_id": "functions.exponential.parameter",
+      "skill_id": "functions.exponential",
       "derive": "a_num = base_num; a_den = base_den; yb_num = a_num**xb - a_den**xb; yb_den = a_den**xb; yb_display_num = yb_num; yb_display_den = yb_den",
       "expected_fn": "a = {a_num}/{a_den}",
       "steps": [
@@ -38,9 +38,28 @@
     {
       "n": "4.2",
       "prompt_template": "Write down the range of f.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -8,
+          -7,
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.exponential.range",
+      "skill_id": "functions.exponential",
       "expected_fn": "y > -1",
       "steps": [
         "The horizontal asymptote of f(x) = a^x - 1 is y = -1.",
@@ -55,23 +74,21 @@
       "prompt_template": "It is further given that C is a point on f at y = {yc_num}/{yc_den}. Determine the coordinates of C', the image of C, when C is reflected about the line y = x.",
       "ranges": {
         "base_num": [
+          1,
+          2
+        ],
+        "base_den": [
           2,
           3
         ],
-        "base_den": [
-          3,
-          4
-        ],
         "target_x": [
-          -3,
-          -2,
-          -1,
-          1,
-          2
+          -6,
+          -5,
+          -4
         ]
       },
       "marks": 3,
-      "skill_id": "functions.exponential.inverse",
+      "skill_id": "functions.exponential",
       "derive": "a_num = base_num; a_den = base_den; x_C = target_x; yc_num = a_den**abs(x_C) if x_C < 0 else a_num**x_C; yc_den = a_num**abs(x_C) if x_C < 0 else a_den**x_C; yc_num_total = yc_num - yc_den; yc_den_total = yc_den; Cprime_x_num = yc_num_total; Cprime_x_den = yc_den_total",
       "expected_fn": "C' = ({yc_num}/{yc_den} - 1, {x_C})",
       "steps": [

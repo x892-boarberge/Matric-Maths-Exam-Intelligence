@@ -1,0 +1,62 @@
+{
+  "stem": "Finite arithmetic sequence: 5; 1; -3; ...; -83; -87",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Write down T_4.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "sequences.ap",
+      "expected_fn": "T_4 = -7",
+      "steps": [
+        "Common difference d = -4.",
+        "T_4 = 5 + 3(-4) = -7."
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Calculate the number of terms.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.ap",
+      "expected_fn": "n = 24",
+      "steps": [
+        "T_n = 5 + (n-1)(-4) = -4n + 9.",
+        "-4n + 9 = -87.",
+        "n = 24."
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Sum of all negative terms.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.ap",
+      "expected_fn": "S = -990",
+      "steps": [
+        "Negative terms start from T_3 = -3, end at T_24 = -87.",
+        "Number of negative terms = 22.",
+        "S = 22/2(-3 + -87) = 11(-90) = -990."
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Extended sequence 5; 1; -3; ...; -4187. How many terms divisible by 5?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "sequences.ap",
+      "expected_fn": "n = 210",
+      "steps": [
+        "T_n = -4n + 9.",
+        "Divisible by 5: T_1, T_6, T_11, ...",
+        "Last valid: -4175 → n = 1046.",
+        "Count: (1046-1)/5 + 1 = 210."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P1",
+    "qnum": "2"
+  }
+}

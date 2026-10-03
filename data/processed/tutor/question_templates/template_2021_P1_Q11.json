@@ -1,0 +1,36 @@
+{
+  "stem": "A person travels 20 km from home, remembers an open tap, returns. Water cost R1.60/hour, petrol cost (1.2 + x/4000) rand/km where x = speed in km/h.",
+  "subquestions": [
+    {
+      "n": "11",
+      "prompt_template": "Calculate the average speed that minimises total cost.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 7,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "x = 80 km/h",
+      "steps": [
+        "Time = 20/x hours one way.",
+        "Water cost = 1.6 * (2 * 20/x) = 64/x.",
+        "Petrol cost = 40 * (1.2 + x/4000) = 48 + x/100.",
+        "Total C(x) = 64/x + x/100 + 48.",
+        "C'(x) = -64/x² + 1/100.",
+        "Set to 0: x² = 6400.",
+        "x = 80 km/h."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "11"
+  }
+}

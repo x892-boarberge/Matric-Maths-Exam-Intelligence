@@ -1,0 +1,156 @@
+{
+  "stem": "Cars of the same model at a dealership. Age (years) and selling price (rand).",
+  "diagram": "scatter_regression",
+  "diagram_spec": {
+    "points": [
+      [
+        2,
+        293000
+      ],
+      [
+        3,
+        265000
+      ],
+      [
+        3,
+        256000
+      ],
+      [
+        4,
+        219000
+      ],
+      [
+        4,
+        241000
+      ],
+      [
+        4,
+        246000
+      ],
+      [
+        6,
+        226000
+      ],
+      [
+        6,
+        176000
+      ],
+      [
+        7,
+        154000
+      ],
+      [
+        7,
+        180000
+      ],
+      [
+        8,
+        148000
+      ]
+    ],
+    "a": 331397.2,
+    "b": -22988.32,
+    "xlim": [
+      0,
+      9
+    ],
+    "ylim": [
+      0,
+      300000
+    ],
+    "x_label": "Age of car (years)",
+    "y_label": "Selling price of car (rand)",
+    "y_tick_step": 50000,
+    "grid": true
+  },
+  "subquestions": [
+    {
+      "n": "1.1",
+      "prompt_template": "Determine the equation of the least squares regression line.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.regression",
+      "expected_fn": "y_hat = 331397.20 - 22988.32x",
+      "steps": [
+        {
+          "s": "a = 331397.20",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = -22988.32",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_hat = 331397.20 - 22988.32x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "Predict the selling price of a 5-year-old car.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "R216 455.60",
+      "steps": [
+        {
+          "s": "y_hat = 331397.20 - 22988.32(5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_hat = R216 455.60",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "Use the correlation coefficient to show whether the prediction is valid.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.correlation",
+      "expected_fn": "Strong correlation, prediction valid.",
+      "steps": [
+        {
+          "s": "r = -0.95",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Strong correlation → prediction valid.",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.4",
+      "prompt_template": "Write down the estimated average yearly decrease in price.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.regression",
+      "expected_fn": "R22 988.32",
+      "steps": [
+        {
+          "s": "R22 988.32",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P2",
+    "qnum": "1"
+  },
+  "diagram_page": "2025_P2_p03.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P2_p03.png",
+  "diagram_crop": null
+}

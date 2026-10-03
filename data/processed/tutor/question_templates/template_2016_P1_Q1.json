@@ -1,0 +1,157 @@
+{
+  "stem": "Solve for x:",
+  "subquestions": [
+    {
+      "n": "1.1.1",
+      "prompt_template": "x(x - {b}) = 0",
+      "ranges": {
+        "b": [
+          7,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "x = 0 or x = {b}",
+      "steps": [
+        "x = 0 or x - {b} = 0.",
+        "x = 0 or x = {b}."
+      ]
+    },
+    {
+      "n": "1.1.2",
+      "prompt_template": "x² - {b}x + {c} = 0 (TWO decimals)",
+      "ranges": {
+        "b": [
+          6,
+          8
+        ],
+        "c": [
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "x = {x1} or x = {x2}",
+      "steps": [
+        "Quadratic formula.",
+        "Round to 2 decimals."
+      ]
+    },
+    {
+      "n": "1.1.3",
+      "prompt_template": "sqrt(x - 1) + 1 = x",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "algebra.surd",
+      "expected_fn": "x = 1 or x = 2",
+      "steps": [
+        "Isolate: sqrt(x-1) = x - 1.",
+        "Square both sides: x - 1 = (x-1)².",
+        "Standard form.",
+        "Factorise: (x-1)(x-2) = 0.",
+        "Both answers valid."
+      ]
+    },
+    {
+      "n": "1.1.4",
+      "prompt_template": "3^(x+{a}) - 3^(x+{b}) = 486",
+      "ranges": {
+        "a": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "b": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 4,
+      "skill_id": "algebra.exponential",
+      "expected_fn": "x = {x_ans}",
+      "steps": [
+        "Factor out 3^x.",
+        "3^x(3^{a} - 3^{b}) = 486.",
+        "3^x = 3^{x_ans}.",
+        "x = {x_ans}."
+      ]
+    },
+    {
+      "n": "1.2.1",
+      "prompt_template": "f(x) = x² + 3x - 4. Solve f(x) = 0.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "x = -4 or x = 1",
+      "steps": [
+        "Factorise: (x+4)(x-1) = 0."
+      ]
+    },
+    {
+      "n": "1.2.2",
+      "prompt_template": "Solve f(x) < 0.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "algebra.quadratic",
+      "expected_fn": "-4 < x < 1",
+      "steps": [
+        "Parabola opens up.",
+        "Below the x-axis between roots."
+      ]
+    },
+    {
+      "n": "1.2.3",
+      "prompt_template": "For which x is f'(x) >= 0?",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "x >= -3/2",
+      "steps": [
+        "f'(x) = 2x + 3.",
+        "2x + 3 >= 0 → x >= -3/2."
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "x = 2y and x² - 5xy = -24",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "algebra.simultaneous",
+      "expected_fn": "(x = 4, y = 2) or (x = -4, y = -2)",
+      "steps": [
+        "Substitute x = 2y.",
+        "(2y)² - 5(2y)y = -24.",
+        "-6y² = -24.",
+        "y² = 4.",
+        "y = ±2."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P1",
+    "qnum": "1"
+  }
+}

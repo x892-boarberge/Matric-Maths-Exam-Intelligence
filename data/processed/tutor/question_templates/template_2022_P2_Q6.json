@@ -1,0 +1,124 @@
+{
+  "stem": "f(x) = tan x, g(x) = 2 sin 2x for [-180;180]. A(60;k) and B on both curves.",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Period of g.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "180",
+      "steps": [
+        {
+          "s": "180",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2.1",
+      "prompt_template": "Value of k.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "sqrt(3)",
+      "steps": [
+        {
+          "s": "k = sqrt(3) = 1.73",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2.2",
+      "prompt_template": "Coordinates of B.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "B(-120; sqrt(3))",
+      "steps": [
+        {
+          "s": "B(-120; sqrt(3))",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "Range of 2g(x).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.graph",
+      "expected_fn": "y in [-4; 4]",
+      "steps": [
+        {
+          "s": "g range y in [-2;2]",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "2g range y in [-4;4]",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.4",
+      "prompt_template": "Values of x for which g(x+5) - f(x+5) <= 0 in [-90;0].",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.inequality",
+      "expected_fn": "-65 <= x <= -5",
+      "steps": [
+        {
+          "s": "Read intervals",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "-65 <= x <= -5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.5",
+      "prompt_template": "Values of p for which sin x cos x = p has exactly two real roots in [-180;180].",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.equation",
+      "expected_fn": "p = -1/2 or 1/2",
+      "steps": [
+        {
+          "s": "2sin x cos x = 4p -> sin 2x = 2p",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "2p = 1 -> p = 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "2p = -1 -> p = -1/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P2",
+    "qnum": "6"
+  },
+  "diagram_page": "2022_P2_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P2_p08.png",
+  "diagram_crop": null
+}

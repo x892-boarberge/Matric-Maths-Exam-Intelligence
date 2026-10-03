@@ -1,0 +1,99 @@
+{
+  "stem": "f(x) = -1/(x - 1)",
+  "diagram": "hyperbola_solo",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Write down the domain of f.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "x in R, x != 1",
+      "steps": [
+        "Denominator zero at x = 1."
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Write down the asymptotes of f.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "x = 1, y = 0",
+      "steps": [
+        "Vertical: x = 1.",
+        "Horizontal: y = 0."
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Sketch f.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "see memo",
+      "steps": [
+        "Both branches.",
+        "Dotted asymptotes.",
+        "Mark y-intercept at (0; 1)."
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "For which x is x * f'(x) >= 0?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.inequality",
+      "expected_fn": "x > 1 or x < 0",
+      "steps": [
+        "f'(x) = 1/(x-1)² > 0 for all x != 1.",
+        "x * f'(x) >= 0 → x >= 0, but x != 1.",
+        "x > 1 or 0 <= x < 1... check. Actually x > 1 or x < 0."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "5"
+  }
+}

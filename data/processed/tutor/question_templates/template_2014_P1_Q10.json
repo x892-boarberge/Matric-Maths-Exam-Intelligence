@@ -1,0 +1,58 @@
+{
+  "stem": "Rectangular cardboard 100 cm × 40 cm. Corners cut and folded into open box.",
+  "diagram": "poster",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Express l in terms of h.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "l = 40 - 2h",
+      "steps": [
+        "From the diagram, l + 2h = 40.",
+        "l = 40 - 2h."
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Show V = h(50-h)(40-2h).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "V = h(50-h)(40-2h)",
+      "steps": [
+        "Width: 2b + 2h = 100 → b = 50 - h.",
+        "V = lbh = (40-2h)(50-h)h."
+      ]
+    },
+    {
+      "n": "10.3",
+      "prompt_template": "Find h for maximum volume.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 5,
+      "skill_id": "calculus.optimisation",
+      "expected_fn": "h ≈ 8.80 cm",
+      "steps": [
+        "V = 2h³ - 140h² + 2000h.",
+        "dV/dh = 6h² - 280h + 2000 = 0.",
+        "h = (280 ± sqrt(78400 - 48000))/12.",
+        "h ≈ 8.80 (reject 37.86)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P1",
+    "qnum": "10"
+  }
+}

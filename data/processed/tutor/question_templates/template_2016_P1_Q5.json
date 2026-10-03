@@ -1,0 +1,133 @@
+{
+  "stem": "f(x) = -x² + 4x - 3 and g(x) = 3/(x - p) - t. B is turning point of f and asymptote intersection of g. A(-1; 0) is x-intercept of g.",
+  "diagram": "parabola_hyperbola",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Show B = (2; 1).",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.parabola",
+      "expected_fn": "B(2; 1)",
+      "steps": [
+        "f'(x) = -2x + 4 = 0 → x = 2.",
+        "f(2) = -4 + 8 - 3 = 1."
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Write down the range of f.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.parabola",
+      "expected_fn": "y <= 1",
+      "steps": [
+        "Downward parabola, max at B."
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "For which x is g(x) >= 0?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.inequality",
+      "expected_fn": "x >= -1, x != 2",
+      "steps": [
+        "Read off the graph.",
+        "g is above x-axis for x >= -1 except at x = 2."
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "Vertical asymptote of h if h(x) = g(x+4).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.transformation",
+      "expected_fn": "x = -2",
+      "steps": [
+        "Vertical asymptote of g is x = 2.",
+        "h(x) = g(x+4) shifts left 4 → asymptote at x = -2."
+      ]
+    },
+    {
+      "n": "5.5",
+      "prompt_template": "Determine p and t.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "p = 2, t = -1",
+      "steps": [
+        "Asymptotes meet at B(2; 1).",
+        "Vertical: x = p → p = 2.",
+        "Horizontal: y = -t → -t = 1 → t = -1."
+      ]
+    },
+    {
+      "n": "5.6",
+      "prompt_template": "For which x is f(x) * g'(x) >= 0?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.inequality",
+      "expected_fn": "see memo",
+      "steps": [
+        "g'(x) = -3/(x-2)² < 0 for all x != 2.",
+        "f(x) * g'(x) >= 0 → f(x) <= 0.",
+        "f(x) <= 0 for x <= 1 or x >= 3.",
+        "Exclude x = 2."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P1",
+    "qnum": "5"
+  },
+  "diagram_page": "2016_P1_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2016_P1_p06.png",
+  "diagram_crop": null
+}

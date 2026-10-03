@@ -1,0 +1,54 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "12.1",
+      "prompt_template": "P(A) = 0.45, P(A or B) = 0.74, A and B mutually exclusive. Find P(B).",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 3,
+      "skill_id": "probability.union",
+      "expected_fn": "P(B) = 0.29",
+      "steps": [
+        "Mutually exclusive → P(A and B) = 0.",
+        "P(A or B) = P(A) + P(B).",
+        "P(B) = 0.74 - 0.45 = 0.29."
+      ]
+    },
+    {
+      "n": "12.2",
+      "prompt_template": "Gift bags: 1/4 have mystery gift. P(learner selects 2 with gift) = 7/118. Find total number of bags.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "probability.counting",
+      "expected_fn": "60 bags, 15 with gift",
+      "steps": [
+        "Let number of mystery gift bags = x, total = 4x.",
+        "P(2 gifts) = (x/4x) × ((x-1)/(4x-1)) = 7/118.",
+        "1/4 × (x-1)/(4x-1) = 7/118.",
+        "(x-1)/(4x-1) = 28/118.",
+        "118x - 118 = 112x - 28.",
+        "6x = 90. x = 15."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "12"
+  }
+}

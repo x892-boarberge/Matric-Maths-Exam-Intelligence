@@ -1,0 +1,154 @@
+{
+  "stem": "Circle through D, B, E. BE chord = 8. DC perpendicular BC (larger circle). DE diameter = 17. ECF is a tangent at C.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Calculate DC.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "DC = 15",
+      "steps": [
+        {
+          "s": "DCE = 90",
+          "r": "angle in semicircle",
+          "mark": "S/R"
+        },
+        {
+          "s": "DC^2 = 17^2 - 8^2 = 225",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "DC = 15",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.1",
+      "prompt_template": "Calculate CF (BE:EC = 3:1, EF || BD).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "CF = 3.75",
+      "steps": [
+        {
+          "s": "CF/CE = CD/CB",
+          "r": "prop theorem; EF || BD",
+          "mark": "S/R"
+        },
+        {
+          "s": "CF/15 = 1/4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "CF = 3.75",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2",
+      "prompt_template": "Prove triangle BAC ||| triangle FEC.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle BAC ||| triangle FEC",
+      "steps": [
+        {
+          "s": "DCE = 90",
+          "r": "angle in semicircle",
+          "mark": "S/R"
+        },
+        {
+          "s": "ECF = 90",
+          "r": "tangent perpendicular diameter",
+          "mark": "S/R"
+        },
+        {
+          "s": "ACB = 90",
+          "r": "sum of angles on straight line",
+          "mark": "S/R"
+        },
+        {
+          "s": "ACB = ECF = 90",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "triangle BAC ||| triangle FEC",
+          "r": "AA",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.2.3",
+      "prompt_template": "Calculate AC.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "AC = 19.27",
+      "steps": [
+        {
+          "s": "CE = 4.25",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AC/EC = BC/FC",
+          "r": "similar triangles",
+          "mark": "S/R"
+        },
+        {
+          "s": "AC = 19.27",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.4",
+      "prompt_template": "Radius of circle through A, B, C.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "9.63",
+      "steps": [
+        {
+          "s": "AC is diameter",
+          "r": "chord subtends 90",
+          "mark": "S/R"
+        },
+        {
+          "s": "radius = 19.27/2 = 9.63",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2015_P2_p13.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P2_p13.png",
+  "diagram_crop": null
+}

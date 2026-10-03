@@ -1,0 +1,94 @@
+{
+  "stem": "Solar panel ABCD fixed to slab EFCD. ABCD and EFCD are rhombuses. K on DC with DK = KC, AK perpendicular DC. AF and KF drawn. ADC = CDE = 60, AD = x.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Determine AK in terms of x.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "AK = x sin 60",
+      "steps": [
+        {
+          "s": "AK = x sin 60 = sqrt(3)x/2",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "= sqrt(3)x/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Size of KCF.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.3d",
+      "expected_fn": "120",
+      "steps": [
+        {
+          "s": "120",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "Determine area of triangle AKF in terms of x and y (AKF = y).",
+      "ranges": {},
+      "marks": 7,
+      "skill_id": "trig.3d",
+      "expected_fn": "x^2 sqrt(21) sin y / 8",
+      "steps": [
+        {
+          "s": "KF^2 = x^2 + (x/2)^2 - 2x(x/2)cos 120",
+          "r": "cosine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "KF = sqrt(7)x/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area = (1/2)(AK)(KF) sin AKF",
+          "r": "area rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "= (1/2)(sqrt(3)x/2)(sqrt(7)x/2)sin y",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= x^2 sqrt(21) sin y/8",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2019_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P2_p09.png",
+  "diagram_crop": null
+}

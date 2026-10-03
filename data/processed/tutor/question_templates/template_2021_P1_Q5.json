@@ -1,0 +1,121 @@
+{
+  "stem": "Given: f(x) = {a}/(x - {p}) + {q}",
+  "diagram": "hyperbola_solo",
+  "subquestions": [
+    {
+      "n": "5.1",
+      "prompt_template": "Write down the equations of the asymptotes of f.",
+      "ranges": {
+        "a": [
+          -1,
+          -2,
+          -3
+        ],
+        "p": [
+          3,
+          4,
+          -3,
+          -4
+        ],
+        "q": [
+          2,
+          3,
+          -2
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "x = {p}, y = {q}",
+      "steps": [
+        "Vertical asymptote: x = {p}.",
+        "Horizontal asymptote: y = {q}."
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Write down the domain of f.",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "x in R, x != {p}",
+      "steps": [
+        "Denominator zero at x = {p}."
+      ]
+    },
+    {
+      "n": "5.3",
+      "prompt_template": "Determine the coordinates of the x-intercept of f.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "x-intercept ({x_int}; 0)",
+      "steps": [
+        "Set f(x) = 0: {a}/(x - {p}) + {q} = 0",
+        "Solve for x."
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "Write down the coordinates of the y-intercept of f.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "y-intercept (0; {y_int})",
+      "steps": [
+        "f(0) = {a}/(0 - {p}) + {q}",
+        "Simplify."
+      ]
+    },
+    {
+      "n": "5.5",
+      "prompt_template": "Draw the graph of f showing asymptotes and intercepts.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "see memo",
+      "steps": [
+        "Draw both branches.",
+        "Dotted asymptotes at x = {p}, y = {q}.",
+        "Mark intercepts."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "5"
+  }
+}

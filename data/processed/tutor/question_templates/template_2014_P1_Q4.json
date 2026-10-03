@@ -1,0 +1,122 @@
+{
+  "stem": "g(x) = 2/(x+p) + q with asymptotes y = 1 and x = -1. Graph cuts y-axis at (0; 3). Line y = x intersects at S.",
+  "diagram": "hyperbola_line",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Write down the values of p and q.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "p = 1, q = 1",
+      "steps": [
+        "Vertical asymptote x = -1 → -p = -1 → p = 1.",
+        "Horizontal asymptote y = 1 → q = 1."
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Calculate the x-coordinate of T (x-intercept).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "x = -3",
+      "steps": [
+        "Set g(x) = 0: 2/(x+1) + 1 = 0.",
+        "2/(x+1) = -1.",
+        "x + 1 = -2.",
+        "x = -3."
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Vertical asymptote of h if h(x) = g(x+5).",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.transformation",
+      "expected_fn": "x = -6",
+      "steps": [
+        "Vertical asymptote of g is x = -1.",
+        "h(x) = g(x+5) shifts 5 left → x = -6."
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Calculate the length of OS.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 5,
+      "skill_id": "functions.hyperbola",
+      "expected_fn": "OS = sqrt(6) ≈ 2.45",
+      "steps": [
+        "Set g(x) = x: 2/(x+1) + 1 = x.",
+        "2 = (x - 1)(x + 1) = x² - 1.",
+        "x² = 3.",
+        "x = sqrt(3) (positive).",
+        "S(sqrt(3); sqrt(3)).",
+        "OS = sqrt(3 + 3) = sqrt(6)."
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "For which k does g(x) = x + k have two real roots of opposite signs?",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.inequality",
+      "expected_fn": "k < 3",
+      "steps": [
+        "Set g(x) = x + k.",
+        "2/(x+1) + 1 = x + k.",
+        "2 = (x + k - 1)(x + 1).",
+        "Product of roots < 0 condition gives k < 3."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P1",
+    "qnum": "4"
+  },
+  "diagram_page": "2014_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P1_p05.png",
+  "diagram_crop": null
+}

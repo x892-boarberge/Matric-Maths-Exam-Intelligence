@@ -1,0 +1,95 @@
+{
+  "stem": "Corner of rectangular block cut off. Inclined plane ACD is isosceles with ADC = ACD = theta. ACB = 1/2 theta, AC = x+3, CD = 2x.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Determine CAD in terms of theta.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.3d",
+      "expected_fn": "180 - 2 theta",
+      "steps": [
+        {
+          "s": "CAD = 180 - 2 theta",
+          "r": "sum of angles in triangle",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Prove cos theta = x/(x+3).",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.3d",
+      "type": "proof",
+      "expected_fn": "cos theta = x/(x+3)",
+      "steps": [
+        {
+          "s": "(x+3)/sin theta = 2x/sin(180-2theta)",
+          "r": "sine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin(180-2theta) = 2 sin theta cos theta",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "cos theta = 2x/(2(x+3))",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= x/(x+3)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "If x = 2, calculate AB.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.3d",
+      "expected_fn": "AB = 2.74",
+      "steps": [
+        {
+          "s": "cos theta = 2/5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "theta = 66.42",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "sin(theta/2) = AB/AC",
+          "r": "trig ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "Substitute theta/2 = 33.21",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "AB = 5 sin 33.21 = 2.74",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2015_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P2_p09.png",
+  "diagram_crop": null
+}

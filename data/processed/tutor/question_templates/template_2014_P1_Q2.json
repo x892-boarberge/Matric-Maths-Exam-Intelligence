@@ -1,0 +1,71 @@
+{
+  "stem": "Arithmetic series: 2 + 9 + 16 + ... (251 terms).",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "Write down the fourth term.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "sequences.ap",
+      "expected_fn": "T_4 = 23",
+      "steps": [
+        "d = 7.",
+        "T_4 = 2 + 3(7) = 23."
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Calculate T_251.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "sequences.ap",
+      "expected_fn": "T_251 = 1752",
+      "steps": [
+        "T_n = 2 + (n-1)7.",
+        "T_251 = 2 + 250(7) = 1752."
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Express the series in sigma notation.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.ap",
+      "expected_fn": "sum_(n=1)^251 (7n - 5)",
+      "steps": [
+        "General term T_n = 7n - 5."
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Calculate the sum of the series.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.ap",
+      "expected_fn": "S_251 = 220127",
+      "steps": [
+        "S_n = n/2[2a + (n-1)d].",
+        "S_251 = 251/2[4 + 250*7] = 220127."
+      ]
+    },
+    {
+      "n": "2.5",
+      "prompt_template": "How many terms are divisible by 4?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "sequences.ap",
+      "expected_fn": "n = 63",
+      "steps": [
+        "T_n = 7n - 5.",
+        "Divisible by 4: n ≡ 3 (mod 4).",
+        "First at n = 3, then 7, 11, ...",
+        "Count: (251 - 3)/4 + 1 = 63."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P1",
+    "qnum": "2"
+  }
+}

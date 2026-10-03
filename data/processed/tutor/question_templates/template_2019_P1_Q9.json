@@ -1,0 +1,120 @@
+{
+  "stem": "f(x) = 3x³, f'(x) and f''(x) also pass through origin.",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Solve f(x) = f'(x).",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "x = 0 or x = 3",
+      "steps": [
+        "3x³ = 9x².",
+        "3x²(x - 3) = 0."
+      ]
+    },
+    {
+      "n": "9.2.1",
+      "prompt_template": "For which graphs is (0; 0) a stationary point?",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      },
+      "marks": 1,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "f and f'",
+      "steps": [
+        "f(0) = 0 and f'(0) = 0.",
+        "f''(0) = 0 but is not a turning point for f''."
+      ]
+    },
+    {
+      "n": "9.2.2",
+      "prompt_template": "Explain the difference in stationary points.",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "See memo",
+      "steps": [
+        "For f: point of inflection.",
+        "For f': turning point."
+      ]
+    },
+    {
+      "n": "9.3",
+      "prompt_template": "Vertical distance between f' and f'' at x = 1.",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "9 units",
+      "steps": [
+        "f'(1) = 9.",
+        "f''(1) = 18.",
+        "Distance = |9 - 18| = 9."
+      ]
+    },
+    {
+      "n": "9.4",
+      "prompt_template": "For which x is f(x) - f'(x) < 0?",
+      "ranges": {
+        "shift": [
+          -8,
+          -7,
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 4,
+      "skill_id": "calculus.inequality",
+      "expected_fn": "x < 3, x != 0",
+      "steps": [
+        "3x³ - 9x² < 0.",
+        "3x²(x - 3) < 0.",
+        "3x² > 0 always, so x - 3 < 0.",
+        "x < 3, x != 0."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "9"
+  }
+}

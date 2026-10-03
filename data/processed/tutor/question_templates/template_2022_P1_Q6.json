@@ -4,9 +4,18 @@
     {
       "n": "6.1",
       "prompt_template": "R12 000 invested at m% p.a. compounded quarterly for 24 months. Value = R13 459. Find m.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 4,
-      "skill_id": "finance.compound.r",
+      "skill_id": "finance.compound",
       "expected_fn": "m = 5.78%",
       "steps": [
         "A = P(1 + i)^n, i = m/400, n = 8.",
@@ -21,7 +30,7 @@
       "prompt_template": "Tino deposits R1 000 at end of each month at 7.5% p.a. compounded monthly for 12 months. Can he buy a R13 000 computer?",
       "ranges": {},
       "marks": 4,
-      "skill_id": "finance.annuity.future",
+      "skill_id": "finance.annuity",
       "expected_fn": "F = R12 421.22; cannot afford",
       "steps": [
         "F = x[(1+i)^n - 1]/i, i = 0.075/12, n = 12.",
@@ -34,7 +43,7 @@
       "prompt_template": "Car costs R250 000, 15% deposit, 13% p.a. loan. Calculate loan value.",
       "ranges": {},
       "marks": 1,
-      "skill_id": "finance.loan.n",
+      "skill_id": "finance.loan",
       "expected_fn": "Loan = R212 500",
       "steps": [
         "Loan = 85% of 250 000 = R212 500."
@@ -45,7 +54,7 @@
       "prompt_template": "Loan repaid over 6 years, first payment 6 months after loan. Monthly instalment?",
       "ranges": {},
       "marks": 5,
-      "skill_id": "finance.loan.final",
+      "skill_id": "finance.loan",
       "expected_fn": "x = R4 724.96",
       "steps": [
         "A = 212 500(1 + 0.13/12)^6 (loan accrues 6 months before first payment)",

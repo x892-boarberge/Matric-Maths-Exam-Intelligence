@@ -1,0 +1,136 @@
+{
+  "stem": "Trigonometry: P(-3;-4), expressions.",
+  "subquestions": [
+    {
+      "n": "5.1.1",
+      "prompt_template": "Determine cos A.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.pythagoras",
+      "expected_fn": "-3/5",
+      "steps": [
+        {
+          "s": "r = 5",
+          "r": "Pythagoras",
+          "mark": "S"
+        },
+        {
+          "s": "cos A = -3/5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.2",
+      "prompt_template": "Determine cos 2A.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "-7/25",
+      "steps": [
+        {
+          "s": "cos 2A = 2cos^2 A - 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -7/25",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.3",
+      "prompt_template": "Determine sin(A - B) if sin B = 4/5.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "24/25",
+      "steps": [
+        {
+          "s": "x = -3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "sin(A-B) = sinA cosB - cosA sinB",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= (-4/5)(-3/5) - (-3/5)(4/5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 24/25",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2",
+      "prompt_template": "Express expression in terms of p if cos alpha = p.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "-p/4",
+      "steps": [
+        {
+          "s": "Multiply by 2/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Double angle",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Co-function",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -p/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2024,
+    "paper": "P2",
+    "qnum": "5"
+  },
+  "diagram": "analytical_angle",
+  "diagram_spec": {
+    "origin": [
+      0,
+      0
+    ],
+    "point": [
+      -3,
+      -4
+    ],
+    "vertex_label": "O",
+    "point_label": "P",
+    "x_axis_label": "K",
+    "arc_label": "A",
+    "xlim": [
+      -5,
+      3
+    ],
+    "ylim": [
+      -5,
+      3
+    ]
+  },
+  "diagram_page": "2024_P2_p07.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P2_p07.png",
+  "diagram_crop": null
+}

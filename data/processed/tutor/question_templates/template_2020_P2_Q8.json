@@ -1,0 +1,144 @@
+{
+  "stem": "Circle centre O. KOM bisects chord LN. MNO = 26. NKP = 32. OP drawn.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "8.1.1a",
+      "prompt_template": "Determine O2.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "O2 = 64",
+      "steps": [
+        {
+          "s": "O2 = 64",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.1.1b",
+      "prompt_template": "Determine O1.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "O1 = 52",
+      "steps": [
+        {
+          "s": "M2 = 90",
+          "r": "line from centre to midpoint of chord",
+          "mark": "S/R"
+        },
+        {
+          "s": "KON = 90 + 26 = 116",
+          "r": "exterior angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "O1 = 116 - 64 = 52",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.1.2",
+      "prompt_template": "Prove KN bisects OKP.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "KN bisects OKP",
+      "steps": [
+        {
+          "s": "PKO + P = 128",
+          "r": "sum of angles in triangle",
+          "mark": "S"
+        },
+        {
+          "s": "PKO = P = 64",
+          "r": "angles opposite equal sides",
+          "mark": "S/R"
+        },
+        {
+          "s": "K2 = 32 = K1 -> KN bisects",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.2.1",
+      "prompt_template": "Prove FG || BC.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "FG || BC",
+      "steps": [
+        {
+          "s": "F1 = D1",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "D1 = B",
+          "r": "given",
+          "mark": "S"
+        },
+        {
+          "s": "F1 = B -> FG || BC",
+          "r": "corresponding angles equal",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.2.2",
+      "prompt_template": "If AF/FB = 2/5, AC = 2x-6, GC = x+9, find x.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "x = 31",
+      "steps": [
+        {
+          "s": "GC/AC = FB/AB",
+          "r": "prop theorem; FG || BC",
+          "mark": "S/R"
+        },
+        {
+          "s": "(x+9)/(2x-6) = 5/7",
+          "r": "substitution",
+          "mark": "S"
+        },
+        {
+          "s": "7x + 63 = 10x - 30",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 31",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2020_P2_p11.png",
+  "diagram_image": "data/processed/diagrams/pages/2020_P2_p11.png",
+  "diagram_crop": null
+}

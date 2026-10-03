@@ -1,0 +1,89 @@
+{
+  "stem": "f(x) = sin x - 1, g(x) = cos 2x for [-90;360]. A and B are intersections, B(360;-1).",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Range of f.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.graph",
+      "expected_fn": "y in [-2; 0]",
+      "steps": [
+        {
+          "s": "Critical values -2 and 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y in [-2; 0]",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Values of x for which f is decreasing.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.graph",
+      "expected_fn": "x in (90; 270)",
+      "steps": [
+        {
+          "s": "Critical values 90 and 270",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x in (90; 270)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "Determine max value of PQ where PQ is vertical length between graphs.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.optimisation",
+      "expected_fn": "x = 194.48 or 345.52",
+      "steps": [
+        {
+          "s": "PQ = cos 2x - (sin x - 1)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 1 - 2 sin^2 x - sin x + 1",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= -2 sin^2 x - sin x + 2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "sin x = -b/(2a) = -1/4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 194.48 or 345.52",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P2",
+    "qnum": "6"
+  },
+  "diagram_page": "2019_P2_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P2_p08.png",
+  "diagram_crop": null
+}

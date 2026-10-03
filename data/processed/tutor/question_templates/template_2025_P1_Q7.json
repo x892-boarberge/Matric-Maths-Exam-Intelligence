@@ -7,8 +7,7 @@
       "ranges": {
         "P": [
           40000,
-          35000,
-          45000
+          35000
         ],
         "r": [
           7.8,
@@ -17,8 +16,7 @@
         ],
         "n": [
           5,
-          6,
-          7
+          6
         ]
       },
       "marks": 2,
@@ -35,23 +33,27 @@
       "prompt_template": "Sarah opened a savings account at {r}% p.a., compounded quarterly. She deposited R{P} on 1 January {y1} and continued to deposit R{P} at the beginning of each quarter. Last deposit on 1 October {y2}. Calculate the accumulated amount on 1 January {y3}.",
       "ranges": {
         "P": [
-          2300
+          2297,
+          2298
         ],
         "r": [
           5.8
         ],
         "y1": [
-          2020
+          2017,
+          2018
         ],
         "y2": [
-          2025
+          2022,
+          2023
         ],
         "y3": [
-          2026
+          2023,
+          2024
         ]
       },
       "marks": 4,
-      "skill_id": "finance.annuity.future",
+      "skill_id": "finance.annuity",
       "expected_fn": "R{A}",
       "steps": [
         "This is a future value annuity due (deposits at beginning of each quarter).",
@@ -65,20 +67,26 @@
       "prompt_template": "A loan of R{P} was granted on 28 February {y}. Monthly repayments of R{x} at {r}% p.a., compounded monthly. First payment was missed for 3 months. How many months to repay?",
       "ranges": {
         "P": [
+          899998,
+          899999,
           900000
         ],
         "r": [
           6.8
         ],
         "x": [
+          9998,
+          9999,
           10000
         ],
         "y": [
+          2022,
+          2023,
           2024
         ]
       },
       "marks": 5,
-      "skill_id": "finance.loan.n",
+      "skill_id": "finance.loan",
       "expected_fn": "n = {n} months",
       "steps": [
         "The loan accrues interest during the missed months.",

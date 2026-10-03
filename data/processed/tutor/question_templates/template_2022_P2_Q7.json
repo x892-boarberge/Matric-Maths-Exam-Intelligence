@@ -1,0 +1,94 @@
+{
+  "stem": "AB vertical flagpole. AC and AD cables. B, C, D in same horizontal plane. BD = 2p, ACD = x, ADC = 45, AB = sqrt(5)p.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Determine AD in terms of p.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "AD = 3p",
+      "steps": [
+        {
+          "s": "AD^2 = AB^2 + BD^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "AD = 3p",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Show that CD = 3p(sin x + cos x)/(sqrt(2) sin x).",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.3d",
+      "expected_fn": "CD = 3p(sin x + cos x)/(sqrt(2) sin x)",
+      "steps": [
+        {
+          "s": "CD/sin(135-x) = 3p/sin x",
+          "r": "sine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "135 - x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Compound angle",
+          "r": "compound angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "Special values",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Factorise",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "If p = 10, x = 110, calculate area of triangle ADC.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.3d",
+      "expected_fn": "143.11 m^2",
+      "steps": [
+        {
+          "s": "Area = (1/2)(AD)(CD)sin 45",
+          "r": "area rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "Substitute",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 143.11 m^2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2022,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2022_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2022_P2_p09.png",
+  "diagram_crop": null
+}

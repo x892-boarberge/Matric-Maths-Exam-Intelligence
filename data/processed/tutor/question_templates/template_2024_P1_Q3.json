@@ -11,16 +11,23 @@
       "prompt_template": "Write down the radius of the 3rd circle.",
       "ranges": {
         "R": [
+          -1,
+          1,
+          2,
+          3,
           4,
           6,
           8,
           10,
           12,
-          16
+          16,
+          17,
+          18,
+          19
         ]
       },
       "marks": 2,
-      "skill_id": "sequences.geometric.term",
+      "skill_id": "sequences.gp",
       "derive": "r3 = R * (1/2)^2; r3_disp = r3 if r3 != int(r3) else int(r3)",
       "expected_fn": "radius of 3rd circle = {r3_disp} cm",
       "steps": [
@@ -36,16 +43,39 @@
       "prompt_template": "Calculate the sum of the areas of the first 10 circles.",
       "ranges": {
         "R": [
+          -8,
+          -7,
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
           4,
           6,
           8,
           10,
           12,
-          16
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
         ]
       },
       "marks": 4,
-      "skill_id": "sequences.geometric.sum",
+      "skill_id": "sequences.gp",
       "derive": "a = 3.141592653589793 * R * R; r = 1/4; S10_exact_num = a * (1 - r**10); S10_exact_den = 1 - r; S10 = a * (1 - r**10) / (1 - r)",
       "expected_fn": "S_10 = {S10_disp} cm^2",
       "derive_display": "S10_disp = round(S10, 2)",
@@ -64,20 +94,25 @@
       "prompt_template": "Which circle has a diameter of {D_num}/{D_den} cm?",
       "ranges": {
         "R": [
+          5,
           6,
           8
         ],
         "n_target": [
+          4,
+          5,
+          6,
           7,
           8,
           9,
           10,
           11,
-          12
+          12,
+          13
         ]
       },
       "marks": 4,
-      "skill_id": "sequences.geometric.term",
+      "skill_id": "sequences.gp",
       "derive": "diameter_n = 2*R*(1/2)**(n_target - 1); D_num = 2*R; D_den = 2**(n_target - 1); answer_n = n_target",
       "expected_fn": "The {answer_n}th circle",
       "steps": [
@@ -90,5 +125,8 @@
       ],
       "diagnostic_class": "procedural"
     }
-  ]
+  ],
+  "diagram_page": "2024_P1_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P1_p04.png",
+  "diagram_crop": null
 }

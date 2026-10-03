@@ -1,0 +1,204 @@
+{
+  "stem": "K(-1;2), L, N(1;-1) vertices of triangle KLN with LKN = 78.69. KL meets x-axis at P, KL produced. Inclination of KN = theta. M(-3;-5).",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "3.1.1",
+      "prompt_template": "Gradient of KN.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "-3/2",
+      "steps": [
+        {
+          "s": "m = (2-(-1))/(-1-1)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -3/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.1.2",
+      "prompt_template": "Size of theta.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.inclination",
+      "expected_fn": "123.69 deg",
+      "steps": [
+        {
+          "s": "tan theta = -3/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "theta = 123.69",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Show gradient of KL = 1.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.inclination",
+      "expected_fn": "m_KL = 1",
+      "steps": [
+        {
+          "s": "Inclination KL = 123.69 - 78.69 = 45",
+          "r": "exterior angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "m_KL = tan 45 = 1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Equation of KL.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "y = x + 3",
+      "steps": [
+        {
+          "s": "Substitute K(-1;2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = x + 3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "Length of KN.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.distance",
+      "expected_fn": "sqrt(13)",
+      "steps": [
+        {
+          "s": "KN = sqrt(4+9)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= sqrt(13)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.5.1",
+      "prompt_template": "If KN = LM, find possible L.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "analytical.solve",
+      "expected_fn": "L(-5;-2) or L(-6;-3)",
+      "steps": [
+        {
+          "s": "Substitute y = x+3 into (x+3)^2 + (y+5)^2 = 13",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "2x^2 + 22x + 60 = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x+5)(x+6) = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = -5 -> y = -2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = -6 -> y = -3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.5.2",
+      "prompt_template": "L if KLMN parallelogram.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.parallelogram",
+      "expected_fn": "L(-5;-2)",
+      "steps": [
+        {
+          "s": "Midpoint KM = (-2; -1.5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "L is antipode of N",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "L(-5; -2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.6",
+      "prompt_template": "Area of triangle KTN.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.area",
+      "expected_fn": "12.5 units^2",
+      "steps": [
+        {
+          "s": "T(-6; -3)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "KT = sqrt(50)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area = (1/2) KT x KN x sin LKN",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 12.50 units^2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_page": "2018_P2_p06.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P2_p06.png",
+  "diagram_crop": null
+}

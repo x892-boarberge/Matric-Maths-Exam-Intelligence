@@ -1,0 +1,194 @@
+{
+  "stem": "L(-4;1), S(4;5), N(-2;-3) with SLN = 90.",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Length of SL in surd form.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.distance",
+      "expected_fn": "4 sqrt(5)",
+      "steps": [
+        {
+          "s": "SL = sqrt((4-(-4))^2 + (5-1)^2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "SL = 4 sqrt(5)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Gradient of SN.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "4/3",
+      "steps": [
+        {
+          "s": "m = (5-(-3))/(4-(-2))",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m = 4/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Size of theta, angle of inclination of SN.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.inclination",
+      "expected_fn": "53.13 deg",
+      "steps": [
+        {
+          "s": "tan theta = 4/3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "theta = 53.13 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "Size of angle LNS.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.angle",
+      "expected_fn": "63.44 deg",
+      "steps": [
+        {
+          "s": "m_LN = -2, LKO = 116.57",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "LNS = 116.57 - 53.13",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "LNS = 63.44",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.5",
+      "prompt_template": "Equation of line through L parallel to SN.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.parallel",
+      "expected_fn": "y = 4/3 x + 19/3",
+      "steps": [
+        {
+          "s": "m = 4/3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Substitute L(-4;1)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 4/3 x + 19/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.6",
+      "prompt_template": "Area of triangle LSN.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.area",
+      "expected_fn": "20 units^2",
+      "steps": [
+        {
+          "s": "LN = 2 sqrt(5)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area = (1/2)(4 sqrt(5))(2 sqrt(5))",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 20 units^2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.7",
+      "prompt_template": "Coordinates of P, equidistant from L, S, N.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.circumcentre",
+      "expected_fn": "P(1;1)",
+      "steps": [
+        {
+          "s": "SLN = 90 -> SN is diameter",
+          "r": "chord subtends 90 angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "P is midpoint of SN",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "P(1;1)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.8",
+      "prompt_template": "Size of LPS.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "126.87 deg",
+      "steps": [
+        {
+          "s": "LPN = theta = 53.13",
+          "r": "alternate angles; LP || x-axis",
+          "mark": "S/R"
+        },
+        {
+          "s": "LPS = 126.87",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_page": "2023_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P2_p05.png",
+  "diagram_crop": null
+}

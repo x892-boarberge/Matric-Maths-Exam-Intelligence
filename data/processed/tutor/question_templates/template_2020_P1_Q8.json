@@ -1,0 +1,97 @@
+{
+  "stem": "g(x) = ax³ + bx² + cx, y-intercept 0. Turning points at x = -1 and x = 2.",
+  "diagram": "cubic",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "For which x is g increasing?",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 2,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "-1 < x < 2",
+      "steps": [
+        "g is increasing between the turning points."
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "Write down the x-coordinate of the point of inflection.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "x = 1/2",
+      "steps": [
+        "Midpoint of turning points: (-1+2)/2 = 1/2."
+      ]
+    },
+    {
+      "n": "8.3",
+      "prompt_template": "For which x is g concave down?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "x > 1/2",
+      "steps": [
+        "g''(x) < 0 for x > point of inflection."
+      ]
+    },
+    {
+      "n": "8.4",
+      "prompt_template": "If g'(x) = -6x² + 6x + 12, determine g(x).",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      },
+      "marks": 4,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "g(x) = -2x³ + 3x² + 12x",
+      "steps": [
+        "Integrate g'(x): g(x) = -2x³ + 3x² + 12x + c.",
+        "g(0) = 0 → c = 0.",
+        "Wait — no integrals! Use recognition: derivative of -2x³ is -6x².",
+        "Recognise g(x) = -2x³ + 3x² + 12x."
+      ]
+    },
+    {
+      "n": "8.5",
+      "prompt_template": "Equation of tangent to g with maximum gradient.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.tangent",
+      "expected_fn": "y = 13.5x - 0.25",
+      "steps": [
+        "Max gradient at x where g''(x) = 0: x = 1/2.",
+        "m = g'(1/2) = 13.5.",
+        "y = g(1/2) = 6.5.",
+        "Tangent: y - 6.5 = 13.5(x - 0.5)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2020,
+    "paper": "P1",
+    "qnum": "8"
+  },
+  "diagram_page": "2020_P1_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2020_P1_p08.png",
+  "diagram_crop": null
+}

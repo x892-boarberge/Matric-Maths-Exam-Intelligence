@@ -1,0 +1,46 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "f'(x) from first principles if f(x) = x² - 5.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = 2x",
+      "steps": [
+        "f(x+h) = (x+h)² - 5.",
+        "f(x+h) - f(x) = 2xh + h².",
+        "Divide by h, take limit."
+      ]
+    },
+    {
+      "n": "8.2.1",
+      "prompt_template": "dy/dx if y = 3x³ + 6x² + x - 4.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "dy/dx = 9x² + 12x + 1",
+      "steps": [
+        "Differentiate term by term."
+      ]
+    },
+    {
+      "n": "8.2.2",
+      "prompt_template": "dy/dx if yx - y = 2x² - 2x, x != 1.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "dy/dx = 2",
+      "steps": [
+        "Solve for y: y = 2x(x-1)/(x-1) = 2x (for x != 1).",
+        "dy/dx = 2."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "8"
+  }
+}

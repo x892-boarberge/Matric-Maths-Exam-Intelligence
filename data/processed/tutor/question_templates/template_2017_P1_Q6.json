@@ -1,0 +1,58 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "R10000 → R12146.72 over 3 years at r% p.a. compounded monthly. Find r.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 5,
+      "skill_id": "finance.compound",
+      "expected_fn": "r = 6.5%",
+      "steps": [
+        "12146.72 = 10000(1 + r/1200)^36.",
+        "(1 + r/1200)^36 = 1.214672.",
+        "1 + r/1200 = 1.005416.",
+        "r = 6.5%."
+      ]
+    },
+    {
+      "n": "6.2.1",
+      "prompt_template": "Car loan R235 000 at 11% p.a. compounded monthly over 54 months. Monthly instalment?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "finance.loan",
+      "expected_fn": "x = R5 536.95",
+      "steps": [
+        "P = x[1 - (1+i)^-n]/i.",
+        "i = 0.11/12, n = 54."
+      ]
+    },
+    {
+      "n": "6.2.2",
+      "prompt_template": "Total interest over first year.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "finance.loan",
+      "expected_fn": "R23 739.57",
+      "steps": [
+        "Amount paid year 1 = 5536.95 × 12.",
+        "Balance after 1 year = remaining 42 payments.",
+        "Interest = total paid - (Loan - Balance)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P1",
+    "qnum": "6"
+  }
+}

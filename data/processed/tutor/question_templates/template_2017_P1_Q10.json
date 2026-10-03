@@ -1,0 +1,83 @@
+{
+  "stem": "Survey of 100 learners on Instagram (I), Twitter (T), WhatsApp (W). 8 use all three. 12 use I and T. 5 use T and W (not I). x use I and W (not T). 61 use I. 19 use T. 73 use W. 14 use none.",
+  "diagram": "venn",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Draw a Venn diagram.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "probability.venn",
+      "expected_fn": "see memo",
+      "steps": [
+        "Triple = 8.",
+        "I and T only = 12 - 8 = 4.",
+        "T and W only = 5.",
+        "I and W only = x.",
+        "Only I = 61 - 4 - 8 - x = 49 - x.",
+        "Only T = 19 - 4 - 8 - 5 = 2.",
+        "Only W = 73 - x - 8 - 5 = 60 - x."
+      ]
+    },
+    {
+      "n": "10.2",
+      "prompt_template": "Calculate x.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.venn",
+      "expected_fn": "x = 42",
+      "steps": [
+        "(49-x) + x + 8 + 4 + 5 + 2 + (60-x) + 14 = 100.",
+        "-x + 142 = 100.",
+        "x = 42."
+      ]
+    },
+    {
+      "n": "10.3",
+      "prompt_template": "P(uses only ONE application).",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.set",
+      "expected_fn": "P = 27/100",
+      "steps": [
+        "Only I = 7, Only T = 2, Only W = 18.",
+        "Sum = 27.",
+        "P = 27/100."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P1",
+    "qnum": "10"
+  }
+}

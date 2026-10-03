@@ -1,0 +1,91 @@
+{
+  "stem": "Monthly income (rand) vs monthly car repayment (rand) for 6 people.",
+  "diagram": "scatter_regression",
+  "subquestions": [
+    {
+      "n": "1.1",
+      "prompt_template": "Equation of least squares regression line.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.regression",
+      "expected_fn": "y_hat = -1946.88 + 0.41x",
+      "steps": [
+        {
+          "s": "a = -1946.88",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = 0.41",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_hat = -1946.88 + 0.41x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "Predict monthly repayment for R14 000 income.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "R3 793.12",
+      "steps": [
+        {
+          "s": "y = -1946.88 + 0.41(14000)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= R3 793.12",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "Correlation coefficient.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.correlation",
+      "expected_fn": "0.95",
+      "steps": [
+        {
+          "s": "r = 0.95",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.4",
+      "prompt_template": "Should person spend R9000 on R18000 income?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.correlation",
+      "expected_fn": "D (not to spend)",
+      "steps": [
+        {
+          "s": "D",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Point (18000;9000) far from line",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P2",
+    "qnum": "1"
+  }
+}

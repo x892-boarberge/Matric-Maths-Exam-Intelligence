@@ -1,0 +1,105 @@
+{
+  "stem": "f(x) = cos 2x for [-270; 90].",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Draw g(x) = 2sin x - 1.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.graph",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "(-90; -3)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(0; -1)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x-intercepts -210 and 30",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Shape",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Show A x-coordinate satisfies sin x = (-1+sqrt(5))/2.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.equation",
+      "type": "proof",
+      "expected_fn": "sin x = (-1+sqrt(5))/2",
+      "steps": [
+        {
+          "s": "cos 2x = 2sin x - 1",
+          "r": "equating",
+          "mark": "S"
+        },
+        {
+          "s": "1 - 2sin^2 x = 2sin x - 1",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "2sin^2 x + 2sin x - 2 = 0",
+          "r": "standard form",
+          "mark": "S"
+        },
+        {
+          "s": "Quadratic formula -> sin x = (-1+sqrt(5))/2",
+          "r": "quadratic formula",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "Coordinates of intersection points.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.equation",
+      "expected_fn": "(38.17; 0.24) and (-218.17; 0.24)",
+      "steps": [
+        {
+          "s": "sin x = 0.618",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "ref angle = 38.17",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 38.17",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "or x = -218.17 -> y = 0.24",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P2",
+    "qnum": "6"
+  },
+  "diagram_page": "2017_P2_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2017_P2_p08.png",
+  "diagram_crop": null
+}

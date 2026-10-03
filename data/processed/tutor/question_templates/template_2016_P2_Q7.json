@@ -1,0 +1,105 @@
+{
+  "stem": "Pyramid with square base ABCD. O centre. EB = theta. AB = 3m. EO = x.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Calculate OB.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.3d",
+      "expected_fn": "3/sqrt(2)",
+      "steps": [
+        {
+          "s": "DB = sqrt(18)",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "OB = DB/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 3/sqrt(2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Show cos theta = 3/(2 sqrt(x^2 + 9/2)).",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.3d",
+      "type": "proof",
+      "expected_fn": "cos theta = 3/(2 sqrt(x^2 + 9/2))",
+      "steps": [
+        {
+          "s": "BE^2 = EO^2 + OB^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "BE = sqrt(x^2 + 9/2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos theta = AB^2 + BE^2 - AE^2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Simplify",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 3/(2 sqrt(x^2 + 9/2))",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "If volume = 15 m^3, find theta.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.3d",
+      "expected_fn": "73.97 deg",
+      "steps": [
+        {
+          "s": "15 = (1/3)(9)(x)",
+          "r": "volume formula",
+          "mark": "S/R"
+        },
+        {
+          "s": "x = 5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos theta = 3/(2 sqrt(25 + 4.5))",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "theta = 73.97 deg",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2016_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2016_P2_p09.png",
+  "diagram_crop": null
+}

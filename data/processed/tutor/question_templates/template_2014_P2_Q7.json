@@ -1,0 +1,170 @@
+{
+  "stem": "f(x) = sin x + 1 for [-90; 270].",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Range of f.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.graph",
+      "expected_fn": "y in [0; 2]",
+      "steps": [
+        {
+          "s": "Critical values 0 and 2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y in [0; 2]",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Rewrite sin x + 1 = cos 2x as (2 sin x + 1) sin x = 0.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.equation",
+      "type": "proof",
+      "expected_fn": "(2 sin x + 1) sin x = 0",
+      "steps": [
+        {
+          "s": "cos 2x = 1 - 2 sin^2 x",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "2 sin^2 x + sin x = 0 -> (2 sin x + 1) sin x = 0",
+          "r": "factorise",
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "General solution of sin x + 1 = cos 2x.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = k.180 or x = 210 + k.360 or x = 330 + k.360",
+      "steps": [
+        {
+          "s": "sin x = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 0 or 180 (k.180)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "sin x = -1/2 -> 210, 330",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "+ k.360; k in Z",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.4",
+      "prompt_template": "Draw g(x) = cos 2x.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.graph",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "y-intercept",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x-intercepts",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Min/max points",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.5",
+      "prompt_template": "Solve f(x+30) = g(x+30) for x in [-90; 270].",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = -60; -30; 150; 180",
+      "steps": [
+        {
+          "s": "f(x) = g(x) at x = -30; 0; 180; 210",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "f(x+30) = g(x+30) at x = -60; -30; 150; 180",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "7.6",
+      "prompt_template": "Values of x for geometric series 1 + 2cos 2x + 4cos^2 2x + ... to converge.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "sequences.gp",
+      "expected_fn": "30 < x < 60",
+      "steps": [
+        {
+          "s": "-1 < r < 1",
+          "r": "convergence condition",
+          "mark": "S/R"
+        },
+        {
+          "s": "r = 2 cos 2x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "-1/2 < cos 2x < 1/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "30 < x < 60",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x in (30; 60)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "7"
+  },
+  "diagram_page": "2014_P2_p16.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P2_p16.png",
+  "diagram_crop": null
+}

@@ -1,0 +1,87 @@
+{
+  "stem": "g(x) = x³ + bx² + cx + d. x-intercepts at (-5; 0) and P. y-intercept at (0; 20).",
+  "diagram": "cubic",
+  "subquestions": [
+    {
+      "n": "9.1.1",
+      "prompt_template": "Show b = 1, c = -16, d = 20.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "b = 1, c = -16, d = 20",
+      "steps": [
+        "g(0) = 20 → d = 20.",
+        "g(-5) = 0: -125 + 25b - 5c + 20 = 0.",
+        "g'(x) = 3x² + 2bx + c.",
+        "Turning points: 3x² + 2bx + c = 0 has roots at ...",
+        "Solve system."
+      ]
+    },
+    {
+      "n": "9.1.2",
+      "prompt_template": "Calculate coordinates of P and R.",
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 5,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "P(2; 0), R(-8/3; 1372/27)",
+      "steps": [
+        "g'(x) = 3x² + 2x - 16 = 0.",
+        "(3x + 8)(x - 2) = 0.",
+        "x = -8/3 or x = 2.",
+        "Compute y values."
+      ]
+    },
+    {
+      "n": "9.1.3",
+      "prompt_template": "Concave up or down at (0; 20)?",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "Concave up",
+      "steps": [
+        "g''(x) = 6x + 2.",
+        "g''(0) = 2 > 0.",
+        "Concave up."
+      ]
+    },
+    {
+      "n": "9.2",
+      "prompt_template": "Sketch g with g(3) = g'(3) = 0, g(0) = 27, concave up x<3, down x>3.",
+      "ranges": {
+        "shift": [
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "calculus.cubic",
+      "expected_fn": "see memo",
+      "steps": [
+        "Three roots at x = 3 (triple).",
+        "y-intercept 27.",
+        "Shape: negative cubic."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P1",
+    "qnum": "9"
+  },
+  "diagram_page": "2018_P1_p07.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P1_p07.png",
+  "diagram_crop": null
+}

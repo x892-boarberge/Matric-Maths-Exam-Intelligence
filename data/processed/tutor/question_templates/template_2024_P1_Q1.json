@@ -13,16 +13,11 @@
         "b": [
           1,
           2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
+          3
         ]
       },
       "marks": 2,
-      "skill_id": "algebra.quadratic.solve",
+      "skill_id": "algebra.quadratic",
       "expected_fn": "x = 0 or x = {b}",
       "steps": [
         "The product of two factors is zero, so one factor must be zero.",
@@ -38,21 +33,16 @@
         "r1": [
           -6,
           -5,
-          -4,
-          -3,
-          -2
+          -4
         ],
         "r2": [
           1,
           2,
-          3,
-          4,
-          5,
-          6
+          3
         ]
       },
       "marks": 4,
-      "skill_id": "algebra.quadratic.inequality",
+      "skill_id": "algebra.quadratic",
       "expected_fn": "x < {r1} or x > {r2}",
       "steps": [
         "Factorise: {factor_r1}{factor_r2} > 0",
@@ -86,7 +76,7 @@
         ]
       },
       "marks": 5,
-      "skill_id": "algebra.simultaneous.solve",
+      "skill_id": "algebra.simultaneous",
       "validator": "simultaneous",
       "expected_fn": "__solve__",
       "steps": [

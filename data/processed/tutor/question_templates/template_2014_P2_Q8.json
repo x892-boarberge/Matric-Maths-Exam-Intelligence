@@ -1,0 +1,146 @@
+{
+  "stem": "8.1: O centre, circle through A, B, C. CAB = 48, COB = x, C2 = y. 8.2: O centre, AOD straight line, F midpoint of chord CD. ODF = 30. 8.3: AB and AE tangents at B and E. BC diameter. AC = 13, AE = x, BC = x+7.",
+  "diagram": "circle_centre_angle",
+  "subquestions": [
+    {
+      "n": "8.1.1",
+      "prompt_template": "Calculate x.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "x = 96",
+      "steps": [
+        {
+          "s": "x = 96",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.1.2",
+      "prompt_template": "Calculate y.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "y = 42",
+      "steps": [
+        {
+          "s": "C2 + B2 = 84",
+          "r": "sum of angles in triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "y = B2 = 42",
+          "r": "angles opposite equal radii",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.2.1",
+      "prompt_template": "Calculate F1.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "F1 = 90",
+      "steps": [
+        {
+          "s": "F1 = 90",
+          "r": "line from centre to midpoint of chord",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.2.2",
+      "prompt_template": "Calculate ABC.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "ABC = 150",
+      "steps": [
+        {
+          "s": "ABC = 150",
+          "r": "opposite angles of cyclic quad",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "8.3.1a",
+      "prompt_template": "Give reason why ABC = 90.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Angle in semicircle",
+      "steps": [
+        {
+          "s": "Angle in semicircle",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.3.1b",
+      "prompt_template": "Give reason why AB = x.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Tangents from same point",
+      "steps": [
+        {
+          "s": "Tangents from same point",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.3.2",
+      "prompt_template": "Calculate AB.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "AB = 5",
+      "steps": [
+        {
+          "s": "AB^2 + BC^2 = AC^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "x^2 + (x+7)^2 = 169",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "2x^2 + 14x - 120 = 0",
+          "r": "standard form",
+          "mark": "S"
+        },
+        {
+          "s": "x = 5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2014_P2_p17.png",
+  "diagram_image": "data/processed/diagrams/pages/2014_P2_p17.png",
+  "diagram_crop": null
+}

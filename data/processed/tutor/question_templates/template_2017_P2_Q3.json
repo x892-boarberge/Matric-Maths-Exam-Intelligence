@@ -1,0 +1,150 @@
+{
+  "stem": "A, B(-6;-5), C(8;-4) in Cartesian plane. F(3;3.5) and G on AC with AF = FG. E is x-intercept of AB.",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "3.1.1",
+      "prompt_template": "Equation of AC.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "y = -3/2 x + 8",
+      "steps": [
+        {
+          "s": "m = (3.5-(-4))/(3-8) = -3/2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Substitute",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "c = 8",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = -3/2 x + 8",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.1.2",
+      "prompt_template": "Coordinates of G if BG: 7x - 10y = 8.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.solve",
+      "expected_fn": "G(4;2)",
+      "steps": [
+        {
+          "s": "Solve simultaneously",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 4",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Show A(2;5).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.midpoint",
+      "expected_fn": "A(2;5)",
+      "steps": [
+        {
+          "s": "(x_A + 4)/2 = 3 -> x_A = 2",
+          "r": "midpoint",
+          "mark": "S"
+        },
+        {
+          "s": "y_A = 5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Prove EF || BG.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.midpoint",
+      "type": "proof",
+      "expected_fn": "EF || BG",
+      "steps": [
+        {
+          "s": "E(-2; 0) is midpoint of AB",
+          "r": "midpoint theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "EF || BG",
+          "r": "line divides two sides of triangle in proportion",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "Coordinates of D if ABCD parallelogram.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.parallelogram",
+      "expected_fn": "D(16;6)",
+      "steps": [
+        {
+          "s": "Midpoint of AC",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x_D + (-6))/2 = 5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x_D = 16",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_D = 6 -> D(16;6)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2017,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_page": "2017_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2017_P2_p05.png",
+  "diagram_crop": null
+}

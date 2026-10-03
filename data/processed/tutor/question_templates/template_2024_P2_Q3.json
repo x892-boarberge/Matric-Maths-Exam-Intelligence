@@ -1,0 +1,209 @@
+{
+  "stem": "Triangle ACD with A in Q2, D(3;-9), C(-9;0). B(-1;k) on DC.",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Gradient of DC.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.gradient",
+      "expected_fn": "-3/4",
+      "steps": [
+        {
+          "s": "m = (-9-0)/(3-(-9))",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "m = -3/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Equation of DC.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "y = -3/4 x - 27/4",
+      "steps": [
+        {
+          "s": "0 = -3/4(-9) + c",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = -3/4 x - 27/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Show that k = -6.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "analytical.substitution",
+      "expected_fn": "k = -6",
+      "steps": [
+        {
+          "s": "Substitute B(-1; k) into DC: k = -6",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "Length of DC.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.distance",
+      "expected_fn": "15 units",
+      "steps": [
+        {
+          "s": "DC = sqrt((3+9)^2 + (-9-0)^2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "DC = 15",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.5",
+      "prompt_template": "Ratio DB/DC.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.ratio",
+      "expected_fn": "1/3",
+      "steps": [
+        {
+          "s": "DB = 5",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "DB/DC = 1/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.6",
+      "prompt_template": "M on AD with AC || MB. Ratio of areas.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.area_ratio",
+      "expected_fn": "1/9",
+      "steps": [
+        {
+          "s": "DM/DA = DB/DC = 1/3",
+          "r": "prop theorem; MB || AC",
+          "mark": "S/R"
+        },
+        {
+          "s": "Area MBD = (1/2)(DM)(DB)sin D",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area ACD = (1/2)(DA)(DC)sin D",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Ratio = 1/9",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.7",
+      "prompt_template": "Gradient of AD = -4, AD = sqrt(612). Coordinates of A.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "analytical.solve",
+      "expected_fn": "A(-3; 15)",
+      "steps": [
+        {
+          "s": "y = -4x + c through D(3;-9): c = 3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(x-3)^2 + (y+9)^2 = 612",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Substitute y = -4x + 3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "17x^2 - 102x - 459 = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 9 (n/a) or x = -3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 15 -> A(-3; 15)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2024,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_spec": {
+    "named_points": {
+      "A": [
+        -3,
+        15
+      ],
+      "B": [
+        -1,
+        -6
+      ],
+      "C": [
+        -9,
+        0
+      ],
+      "D": [
+        3,
+        -9
+      ]
+    },
+    "xlim": [
+      -11,
+      5
+    ],
+    "ylim": [
+      -11,
+      17
+    ],
+    "x_tick_step": 1,
+    "y_tick_step": 1
+  },
+  "diagram_page": "2024_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P2_p05.png",
+  "diagram_crop": null
+}

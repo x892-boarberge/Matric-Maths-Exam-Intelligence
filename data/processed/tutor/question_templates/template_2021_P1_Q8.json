@@ -1,0 +1,131 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Tractor R{P} depreciates at {r}% p.a. reducing balance. Book value after {n} years?",
+      "ranges": {
+        "P": [
+          980000
+        ],
+        "r": [
+          9.2
+        ],
+        "n": [
+          7
+        ]
+      },
+      "marks": 3,
+      "skill_id": "finance.compound",
+      "expected_fn": "R{A}",
+      "steps": [
+        "A = P(1 - i)^n",
+        "i = {r}/100, n = {n}.",
+        "A = R{A}"
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "R{P} → R{A} at {r}% p.a. compounded quarterly. How many years?",
+      "ranges": {
+        "P": [
+          74986,
+          74987,
+          74988,
+          74989,
+          74990,
+          74991,
+          74992,
+          74993,
+          74994,
+          74995,
+          74996,
+          74997,
+          74998,
+          74999,
+          75000
+        ],
+        "A": [
+          116253.5
+        ],
+        "r": [
+          6.8
+        ]
+      },
+      "marks": 4,
+      "skill_id": "finance.compound",
+      "expected_fn": "n = {n} years",
+      "steps": [
+        "A = P(1 + i)^n, i = {r}/400.",
+        "Solve for n with logs."
+      ]
+    },
+    {
+      "n": "8.3.1",
+      "prompt_template": "Monthly deposits for 60 months at {r}% p.a. compounded monthly to reach R{A}. Calculate monthly deposit.",
+      "ranges": {
+        "r": [
+          8.35
+        ],
+        "A": [
+          449997,
+          449998
+        ]
+      },
+      "marks": 3,
+      "skill_id": "finance.annuity",
+      "expected_fn": "x = R{x_ans}",
+      "steps": [
+        "F = x[(1+i)^n - 1]/i, i = {r}/1200, n = 60.",
+        "Solve for x."
+      ]
+    },
+    {
+      "n": "8.3.2a",
+      "prompt_template": "Home loan balance R{bal_orig}, {r}% p.a., 25 years, 21 years already paid. Balance outstanding?",
+      "ranges": {
+        "bal_orig": [
+          1049993,
+          1049994,
+          1049995,
+          1049996,
+          1049997,
+          1049998
+        ],
+        "r": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "marks": 3,
+      "skill_id": "finance.loan",
+      "expected_fn": "R{balance}",
+      "steps": [
+        "P = x[1 - (1+i)^-n]/i",
+        "Remaining n = (25-21)*12 = 48."
+      ]
+    },
+    {
+      "n": "8.3.2b",
+      "prompt_template": "Calculate interest paid over first 21 years.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "finance.loan",
+      "expected_fn": "R{interest}",
+      "steps": [
+        "Total paid = 11058.85 * 21 * 12",
+        "Interest = Total paid - (Loan - Balance)."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P1",
+    "qnum": "8"
+  }
+}

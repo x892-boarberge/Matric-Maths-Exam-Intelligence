@@ -1,0 +1,256 @@
+{
+  "stem": "sin beta = 1/3, beta in (90; 270).",
+  "subquestions": [
+    {
+      "n": "5.1.1",
+      "prompt_template": "Determine cos beta.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "-2 sqrt(2)/3",
+      "steps": [
+        {
+          "s": "x^2 + y^2 = r^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "x = -2 sqrt(2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "cos beta = -2 sqrt(2)/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.2",
+      "prompt_template": "Determine sin 2beta.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "-4 sqrt(2)/9",
+      "steps": [
+        {
+          "s": "sin 2beta = 2 sin beta cos beta",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Substitute",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -4 sqrt(2)/9",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.3",
+      "prompt_template": "Determine cos(450 - beta).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "1/3",
+      "steps": [
+        {
+          "s": "cos(450 - beta) = cos(90 - beta)",
+          "r": "reduction",
+          "mark": "S/R"
+        },
+        {
+          "s": "= sin beta",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "= 1/3",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2.1",
+      "prompt_template": "Prove (cos^4 x + sin^2 x cos^2 x)/(1 + sin x) = 1 - sin x.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.proof",
+      "type": "proof",
+      "expected_fn": "LHS = RHS",
+      "steps": [
+        {
+          "s": "Factor numerator: cos^2 x (cos^2 x + sin^2 x)",
+          "r": "factorise",
+          "mark": "S"
+        },
+        {
+          "s": "cos^2 x + sin^2 x = 1",
+          "r": "identity",
+          "mark": "S"
+        },
+        {
+          "s": "= cos^2 x/(1 + sin x)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= (1 - sin^2 x)/(1 + sin x) = 1 - sin x",
+          "r": "difference of squares",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "5.2.2",
+      "prompt_template": "Values of x in [0;360] for which expression is undefined.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.domain",
+      "expected_fn": "x = 270",
+      "steps": [
+        {
+          "s": "1 + sin x = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 270",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2.3",
+      "prompt_template": "Minimum value of y = (cos^4 x + sin^2 x cos^2 x)/(1 + sin x).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.range",
+      "expected_fn": "0",
+      "steps": [
+        {
+          "s": "y = 1 - sin x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Minimum = 0",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.3.1",
+      "prompt_template": "Use cos(A-B) to deduce sin(A-B) formula.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "sin(A-B) = sin A cos B - cos A sin B",
+      "steps": [
+        {
+          "s": "sin(A-B) = cos[90 - (A-B)]",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "= cos[(90 - A) + B]",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Expand -> sin A cos B - cos A sin B",
+          "r": "expansion",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "5.3.2",
+      "prompt_template": "Solve sin 48 cos x - cos 48 sin x = cos 2x.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.equation",
+      "expected_fn": "x = 42 + k.360 or x = -14 - k.120",
+      "steps": [
+        {
+          "s": "sin(48 - x) = cos 2x",
+          "r": "compound angle",
+          "mark": "S"
+        },
+        {
+          "s": "sin(48 - x) = sin(90 - 2x)",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "48 - x = 90 - 2x + k.360",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 42 + k.360",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "or 48 - x = 180 - (90 - 2x) + k.360 -> x = -14 - k.120",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.4",
+      "prompt_template": "Simplify (sin 3x + sin x)/(cos 2x + 1).",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "trig.identities",
+      "expected_fn": "2 sin x",
+      "steps": [
+        {
+          "s": "3x = (2x + x)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "sin(2x+x) expansion",
+          "r": "compound angle",
+          "mark": "S"
+        },
+        {
+          "s": "cos 2x = 2cos^2 x - 1",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin 2x = 2sin x cos x",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "Simplify",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 2 sin x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "5"
+  }
+}

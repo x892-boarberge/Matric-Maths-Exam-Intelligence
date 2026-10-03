@@ -1,0 +1,134 @@
+{
+  "stem": "f(x) = 2 sin 2x, g(x) = -cos(x+45) for [0;180]. A(105;-1) on f.",
+  "diagram": "trig_graph",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Write down the period of f.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "trig.graph",
+      "expected_fn": "90",
+      "steps": [
+        {
+          "s": "90",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Range of g in [0;180].",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.graph",
+      "expected_fn": "y in [-sqrt(2)/2;1]",
+      "steps": [
+        {
+          "s": "Critical values -sqrt(2)/2 and 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y in [-sqrt(2)/2; 1]",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.3.1",
+      "prompt_template": "Values of x for which f(x).g(x) > 0.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.inequality",
+      "expected_fn": "45 < x < 90",
+      "steps": [
+        {
+          "s": "Both f and g same sign",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "45 < x < 90",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.3.2",
+      "prompt_template": "Values of x for which f(x) + 1 <= 0.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.inequality",
+      "expected_fn": "x in [105;165]",
+      "steps": [
+        {
+          "s": "f(x) <= -1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x in [105; 165]",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.4",
+      "prompt_template": "p(x) = -f(x). D(k;-1) on p. Determine k in [0;180].",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.graph",
+      "expected_fn": "k = 15 or 75",
+      "steps": [
+        {
+          "s": "Read off f(x) = 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = 15",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "k = 75",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.5",
+      "prompt_template": "h is g translated 45 left. Equation of h.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.graph",
+      "expected_fn": "h(x) = sin x",
+      "steps": [
+        {
+          "s": "h(x) = -cos(x + 90)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "h(x) = sin x",
+          "r": "co-ratio",
+          "mark": "S/R"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2023,
+    "paper": "P2",
+    "qnum": "6"
+  },
+  "diagram_page": "2023_P2_p08.png",
+  "diagram_image": "data/processed/diagrams/pages/2023_P2_p08.png",
+  "diagram_crop": null
+}

@@ -12,9 +12,7 @@
       "ranges": {
         "P": [
           3000,
-          5000,
-          8000,
-          10000
+          5000
         ],
         "r": [
           5.5,
@@ -24,8 +22,7 @@
         ],
         "years": [
           16,
-          18,
-          21
+          18
         ]
       },
       "marks": 3,
@@ -43,15 +40,15 @@
       "prompt_template": "After {years} years, the value of a printer was half of its original value. Determine the rate at which the value depreciated using the straight-line method.",
       "ranges": {
         "years": [
+          1,
+          2,
+          3,
           4,
-          5,
-          6,
-          8,
-          10
+          5
         ]
       },
       "marks": 2,
-      "skill_id": "finance.depreciation.n",
+      "skill_id": "finance.depreciation",
       "expected_fn": "r = {r_pct}%",
       "derive": "r_pct = 50 / years",
       "steps": [
@@ -88,7 +85,7 @@
         ]
       },
       "marks": 2,
-      "skill_id": "finance.loan.interest",
+      "skill_id": "finance.loan",
       "expected_fn": "Total interest = R{total_interest_disp}",
       "derive": "n = years*12; total_paid = x*n; total_interest = total_paid - P; total_interest_disp = round(total_interest, 2)",
       "steps": [

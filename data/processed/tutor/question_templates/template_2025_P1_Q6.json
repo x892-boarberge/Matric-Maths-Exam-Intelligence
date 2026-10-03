@@ -4,9 +4,18 @@
     {
       "n": "6.1",
       "prompt_template": "Write down the x-intercept of g in terms of p.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 1,
-      "skill_id": "functions.hyperbola.parameter",
+      "skill_id": "functions.hyperbola",
       "expected_fn": "x = -p",
       "steps": [
         "The vertical asymptote of f is at x = -p.",
@@ -16,9 +25,24 @@
     {
       "n": "6.2",
       "prompt_template": "Determine the equation of f.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
       "marks": 5,
-      "skill_id": "functions.hyperbola.equation",
+      "skill_id": "functions.hyperbola",
       "expected_fn": "f(x) = ...",
       "steps": [
         "From the diagram read the asymptotes.",
@@ -29,7 +53,13 @@
     {
       "n": "6.3",
       "prompt_template": "Describe the transformation that g must undergo to become an axis of symmetry of f cutting f at two points.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
       "marks": 3,
       "skill_id": "functions.transformation",
       "expected_fn": "reflection about line ...",
@@ -46,5 +76,8 @@
     "paper": "P1",
     "qnum": "6"
   },
-  "diagram": "hyperbola_line"
+  "diagram": "hyperbola_line",
+  "diagram_page": "2025_P1_p07.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P1_p07.png",
+  "diagram_crop": null
 }

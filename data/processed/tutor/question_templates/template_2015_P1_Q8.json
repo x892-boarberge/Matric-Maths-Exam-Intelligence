@@ -1,0 +1,48 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "f'(x) from first principles if f(x) = x² - 3x.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "calculus.first_principles",
+      "expected_fn": "f'(x) = 2x - 3",
+      "steps": [
+        "Expand f(x+h).",
+        "Subtract, simplify.",
+        "Divide by h, take limit."
+      ]
+    },
+    {
+      "n": "8.2.1",
+      "prompt_template": "dy/dx if y = (x² - 1/x²)².",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "= 4x³ - 4x^(-5)",
+      "steps": [
+        "Expand: y = x⁴ - 2 + x^(-4).",
+        "Differentiate."
+      ]
+    },
+    {
+      "n": "8.2.2",
+      "prompt_template": "D_x[(x³ - 1)/(x - 1)].",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "calculus.derivative",
+      "expected_fn": "= 2x + 1",
+      "steps": [
+        "Factorise numerator: (x-1)(x²+x+1).",
+        "Simplify: x² + x + 1.",
+        "Differentiate: 2x + 1."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "8"
+  }
+}

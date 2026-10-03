@@ -1,0 +1,205 @@
+{
+  "stem": "10.1: Triangle ABC with DE || BC, BE and DC drawn. Prove AD/DB = AE/EC. 10.2: ST and VT tangents at S and V. W on chord RS with WT || RV.",
+  "diagram": "triangle_proportion",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Prove AD/DB = AE/EC (proportion theorem).",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "AD/DB = AE/EC",
+      "steps": [
+        {
+          "s": "Construction: Draw h1 from E perpendicular AD and h2 from D perpendicular AE",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area ADE = (1/2)(AD)(h1)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area BDE = (1/2)(DB)(h1)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area ADE = (1/2)(AE)(h2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area DEC = (1/2)(EC)(h2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area BDE = Area DEC (same base, same height)",
+          "r": "same base, same height",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.2.1",
+      "prompt_template": "Write THREE other angles equal to S2 = x.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "V3 = x; R = x; W3 = x",
+      "steps": [
+        {
+          "s": "V3 = x",
+          "r": "tangents from same point",
+          "mark": "S/R"
+        },
+        {
+          "s": "R = x",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "W3 = x",
+          "r": "corresponding angles; WT || RV",
+          "mark": "S/R"
+        },
+        {
+          "s": "S2 = V3",
+          "r": "isosceles",
+          "mark": "S/R"
+        },
+        {
+          "s": "S2 = W3",
+          "r": "given",
+          "mark": "S/R"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2a",
+      "prompt_template": "Prove WSTV is cyclic quad.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "WSTV cyclic",
+      "steps": [
+        {
+          "s": "V3 = W3 = x",
+          "r": "proved in 10.2.1",
+          "mark": "S/R"
+        },
+        {
+          "s": "WSTV cyclic",
+          "r": "converse angles in same segment",
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2b",
+      "prompt_template": "Prove triangle WRV is isosceles.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "triangle WRV is isosceles",
+      "steps": [
+        {
+          "s": "W2 = S2 = x",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "V1 = W2 = x",
+          "r": "alternate angles; WT || RV",
+          "mark": "S/R"
+        },
+        {
+          "s": "R = x",
+          "r": "proved in 10.2.1",
+          "mark": "S"
+        },
+        {
+          "s": "R = V1 -> WR = WV",
+          "r": "sides opposite equal angles",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2c",
+      "prompt_template": "Prove triangle WRV ||| triangle TSV.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle WRV ||| triangle TSV",
+      "steps": [
+        {
+          "s": "R = S2 = x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "V1 = V3",
+          "r": "vertically opposite angles",
+          "mark": "S/R"
+        },
+        {
+          "s": "RWV = TSV",
+          "r": "third angle of triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "triangle WRV ||| triangle TSV",
+          "r": "AAA",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2d",
+      "prompt_template": "Prove RV/SR = KV/TS.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "RV/SR = KV/TS",
+      "steps": [
+        {
+          "s": "RV/TS = WR/SV",
+          "r": "triangle WRV ||| triangle TSV",
+          "mark": "S/R"
+        },
+        {
+          "s": "KV/TS = WR/SV",
+          "r": "prop theorem; WT || RV",
+          "mark": "S/R"
+        },
+        {
+          "s": "RV/SR = KV/TS",
+          "r": "transitive",
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2019_P2_p14.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P2_p14.png",
+  "diagram_crop": null
+}

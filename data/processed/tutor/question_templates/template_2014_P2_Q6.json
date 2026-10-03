@@ -1,0 +1,102 @@
+{
+  "stem": "Trigonometric identities and equations.",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Prove cos^2(180+x) + tan(x-180) sin(720-x) cos x = cos 2x.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.proof",
+      "type": "proof",
+      "expected_fn": "LHS = RHS",
+      "steps": [
+        {
+          "s": "cos^2(180+x) = cos^2 x",
+          "r": "reduction",
+          "mark": "S/R"
+        },
+        {
+          "s": "tan(x-180) = tan x",
+          "r": "reduction",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin(720-x) = -sin x",
+          "r": "reduction",
+          "mark": "S/R"
+        },
+        {
+          "s": "Simplify -> cos^2 x - sin^2 x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= cos 2x",
+          "r": "double angle",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "Derive sin(A-B) from cos(A+B).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.identities",
+      "expected_fn": "sin(A-B) = sin A cos B - cos A sin B",
+      "steps": [
+        {
+          "s": "sin(A-B) = cos[90 - (A-B)]",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "= cos[(90 - A) + B]",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Expand -> sin A cos B - cos A sin B",
+          "r": "expansion",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "6.3",
+      "prompt_template": "Show x^2 - y^2 = sin 62 if sin 76 = x, cos 76 = y.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "type": "proof",
+      "expected_fn": "x^2 - y^2 = sin 62",
+      "steps": [
+        {
+          "s": "x^2 - y^2 = sin^2 76 - cos^2 76",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -(cos^2 76 - sin^2 76)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= -cos 152",
+          "r": "double angle cos",
+          "mark": "S/R"
+        },
+        {
+          "s": "= cos 28 = sin 62",
+          "r": "co-ratio",
+          "mark": "S/R"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2014,
+    "paper": "P2",
+    "qnum": "6"
+  }
+}

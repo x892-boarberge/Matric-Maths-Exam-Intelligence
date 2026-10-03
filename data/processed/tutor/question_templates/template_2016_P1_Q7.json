@@ -1,0 +1,57 @@
+{
+  "stem": "",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "Loan R250 000 at 15% p.a. compounded monthly. Amount owed 1 month after grant?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "finance.compound",
+      "expected_fn": "R256 289.06",
+      "steps": [
+        "A = P(1 + i)^1, i = 0.15/12."
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "First payment 1 Sept 2016, last 1 June 2020. Monthly instalment?",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "finance.loan",
+      "expected_fn": "x = R7 359.79",
+      "steps": [
+        "P = x[1 - (1+i)^-n]/i, n = 46."
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "R9 000 monthly from 1 Sept 2016. How many months sooner?",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "finance.loan",
+      "expected_fn": "n = 36, 10 months sooner",
+      "steps": [
+        "256289.06 = 9000[1-(1+i)^-n]/i.",
+        "n = 35.42.",
+        "36 payments vs 46 → 10 months sooner."
+      ]
+    },
+    {
+      "n": "7.4",
+      "prompt_template": "Final instalment if R9 000/month.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "finance.loan",
+      "expected_fn": "R3 782.14",
+      "steps": [
+        "Balance after 35 payments.",
+        "Final payment with interest."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P1",
+    "qnum": "7"
+  }
+}

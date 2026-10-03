@@ -1,0 +1,139 @@
+{
+  "stem": "Triangle ABC in circle. TA and TB tangents. THK || AC with H on BA, K on BC. AK drawn. A3 = x.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Prove K3 = x.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "K3 = x",
+      "steps": [
+        {
+          "s": "K3 = C",
+          "r": "corresponding angles; CA || KT",
+          "mark": "S/R"
+        },
+        {
+          "s": "C = A3",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "K3 = A3 = x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.2",
+      "prompt_template": "Prove AKBT is cyclic quad.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "AKBT cyclic",
+      "steps": [
+        {
+          "s": "K3 = A3 = x",
+          "r": "proved in 9.1",
+          "mark": "S"
+        },
+        {
+          "s": "AKBT cyclic",
+          "r": "line (BT) subtends equal angles",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.3",
+      "prompt_template": "Prove TK bisects AKB.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "TK bisects AKB",
+      "steps": [
+        {
+          "s": "K3 = C",
+          "r": "proved in 9.1",
+          "mark": "S"
+        },
+        {
+          "s": "B2 = C",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "K2 = B2",
+          "r": "angles in same segment",
+          "mark": "S/R"
+        },
+        {
+          "s": "K2 = K3 -> TK bisects",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "9.4",
+      "prompt_template": "Prove TA is tangent to circle through A, K, H.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "TA tangent",
+      "steps": [
+        {
+          "s": "A3 = K2 = x",
+          "r": "proved",
+          "mark": "S"
+        },
+        {
+          "s": "TA tangent",
+          "r": "converse tangent-chord theorem",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "9.5",
+      "prompt_template": "Explain why A, S, B, T are concyclic.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "A, S, B, T concyclic",
+      "steps": [
+        {
+          "s": "BKA = BSA = 2x",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "ATB + ASB = 180 -> concyclic",
+          "r": "opposite angles supplementary",
+          "mark": "S/R"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2015_P2_p12.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P2_p12.png",
+  "diagram_crop": null
+}

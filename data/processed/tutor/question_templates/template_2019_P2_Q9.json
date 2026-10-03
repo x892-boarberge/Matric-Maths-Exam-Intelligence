@@ -1,0 +1,55 @@
+{
+  "stem": "Circle centre O. ST tangent at T. M and P on circle with TM = MP. OT, OP, TP drawn. O1 = x.",
+  "diagram": "circle_tangent",
+  "subquestions": [
+    {
+      "n": "9.1",
+      "prompt_template": "Prove STM = x/4.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "STM = x/4",
+      "steps": [
+        {
+          "s": "O2 = 360 - x",
+          "r": "angles around a point",
+          "mark": "S/R"
+        },
+        {
+          "s": "M = 180 - x/2",
+          "r": "angle at centre = 2 x angle at circumference",
+          "mark": "S/R"
+        },
+        {
+          "s": "T2 + P1 = x/2",
+          "r": "sum of angles in triangle",
+          "mark": "S/R"
+        },
+        {
+          "s": "T2 = P1 = x/4",
+          "r": "angles opposite equal sides",
+          "mark": "S/R"
+        },
+        {
+          "s": "STM = P1",
+          "r": "tangent-chord theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "STM = x/4",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P2",
+    "qnum": "9"
+  },
+  "diagram_page": "2019_P2_p12.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P2_p12.png",
+  "diagram_crop": null
+}

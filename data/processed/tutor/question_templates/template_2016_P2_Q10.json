@@ -1,0 +1,180 @@
+{
+  "stem": "10.1: Triangle PQR, ST || QR. Prove PS/SQ = PT/TR. 10.2: HLKF cyclic quad. HL and FK produced to M. Line through F parallel to KL meets MH at G. MK = x, KF = 2x, ML = y, LH = HG.",
+  "diagram": "triangle_proportion",
+  "subquestions": [
+    {
+      "n": "10.1",
+      "prompt_template": "Prove PS/SQ = PT/TR.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "PS/SQ = PT/TR",
+      "steps": [
+        {
+          "s": "Construction: Join S to R and T to Q. Draw h1 from S perp PT, h2 from T perp PS",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area PST / Area QST = PS/SQ",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area PST / Area STR = PT/TR",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Area QST = Area STR",
+          "r": "same base, height; ST || QR",
+          "mark": "S/R"
+        },
+        {
+          "s": "PS/SQ = PT/TR",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Confirmed",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.1",
+      "prompt_template": "Reason why GFM = LKM.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "type": "proof",
+      "expected_fn": "Corresponding angles; GF || LK",
+      "steps": [
+        {
+          "s": "Corresponding angles; GF || LK",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2a",
+      "prompt_template": "Prove GH = y.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.proportion",
+      "type": "proof",
+      "expected_fn": "GH = y",
+      "steps": [
+        {
+          "s": "GL = FK = 2x",
+          "r": "parallel lines",
+          "mark": "S/R"
+        },
+        {
+          "s": "LM = KM = x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "GH = y",
+          "r": "from LH = HG and ML = y",
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2b",
+      "prompt_template": "Prove triangle MFH ||| triangle MFG.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "triangle MFH ||| triangle MFG",
+      "steps": [
+        {
+          "s": "K1 = GFM",
+          "r": "corresponding angles; GF || LK",
+          "mark": "S/R"
+        },
+        {
+          "s": "K1 = MHF",
+          "r": "exterior angle of cyclic quad",
+          "mark": "S/R"
+        },
+        {
+          "s": "MHF = GFM",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "M = M",
+          "r": "common angle",
+          "mark": "S"
+        },
+        {
+          "s": "triangle MFH ||| triangle MFG",
+          "r": "AAA",
+          "mark": "S/R"
+        }
+      ]
+    },
+    {
+      "n": "10.2.2c",
+      "prompt_template": "Prove GF/FH = 3x/(2y).",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "GF/FH = 3x/(2y)",
+      "steps": [
+        {
+          "s": "GF/FH = MF/MH",
+          "r": "triangle MFH ||| triangle MFG",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 3x/(2y)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "10.2.3",
+      "prompt_template": "Show y/x = sqrt(3/2).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "geometry.similarity",
+      "type": "proof",
+      "expected_fn": "y/x = sqrt(3/2)",
+      "steps": [
+        {
+          "s": "MF/MH = MG/MF",
+          "r": "triangle MFH ||| triangle MFG",
+          "mark": "S/R"
+        },
+        {
+          "s": "3x/(2y) = 3y/(3x)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y^2/x^2 = 3/2 -> y/x = sqrt(3/2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P2",
+    "qnum": "10"
+  },
+  "diagram_page": "2016_P2_p14.png",
+  "diagram_image": "data/processed/diagrams/pages/2016_P2_p14.png",
+  "diagram_crop": null
+}

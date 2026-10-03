@@ -1,0 +1,95 @@
+{
+  "stem": "Trigonometric proof and arithmetic sequence problem.",
+  "subquestions": [
+    {
+      "n": "6.1",
+      "prompt_template": "Prove: [tan(180-x)](1-cos^2 x) + cos^2 x = (sin x - cos x)(1 + sin x cos x)/(-cos x).",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "trig.proof",
+      "expected_fn": "LHS = RHS",
+      "steps": [
+        {
+          "s": "tan(180-x) = -tan x",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "1 - cos^2 x = sin^2 x",
+          "r": "identity",
+          "mark": "S"
+        },
+        {
+          "s": "LHS = -sin^3 x / cos x + cos^2 x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Factor using difference of cubes",
+          "r": "difference of cubes",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin^2 x + cos^2 x = 1",
+          "r": "identity",
+          "mark": "S"
+        },
+        {
+          "s": "LHS = RHS",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "6.2",
+      "prompt_template": "sin^2 x; cos^2 x; (1/2) sin 2x are first three terms of an arithmetic sequence. General solution.",
+      "ranges": {},
+      "marks": 7,
+      "skill_id": "trig.identities",
+      "expected_fn": "x = 116.57 + k.180 or x = 45 + k.180",
+      "steps": [
+        {
+          "s": "cos^2 x - sin^2 x = (1/2)sin 2x - cos^2 x",
+          "r": "common difference",
+          "mark": "S"
+        },
+        {
+          "s": "2cos^2 x - sin x cos x - sin^2 x = 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "(2cos x + sin x)(cos x - sin x) = 0",
+          "r": "factorise",
+          "mark": "S"
+        },
+        {
+          "s": "tan x = -2 or tan x = 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "ref angle = 63.43 or 45",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x = 116.57 + k.180",
+          "r": "general solution",
+          "mark": "S"
+        },
+        {
+          "s": "x = 45 + k.180; k in Z",
+          "r": "general solution",
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P2",
+    "qnum": "6"
+  }
+}

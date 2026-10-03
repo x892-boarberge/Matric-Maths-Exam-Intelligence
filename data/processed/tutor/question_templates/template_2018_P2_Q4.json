@@ -1,0 +1,174 @@
+{
+  "stem": "Circle centre F(3;1) with S(6;5) on it. Another circle centre G(m;n) in Q4 touches at H with FH:HG = 1:2. J in Q1, HJ common tangent, JK tangent at K. JK = 20, x = 22.",
+  "diagram": "analytical_circle",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Coordinates of F.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.circle",
+      "expected_fn": "F(3; 1)",
+      "steps": [
+        {
+          "s": "x_F = 3",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_F = 1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Length of FS.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.distance",
+      "expected_fn": "5",
+      "steps": [
+        {
+          "s": "FS = sqrt(9 + 16)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Length of HG.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "analytical.ratio",
+      "expected_fn": "10",
+      "steps": [
+        {
+          "s": "HG = 2 FH = 10",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "Reason why JH = JK.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "geometry.circle",
+      "expected_fn": "Tangents from same point",
+      "steps": [
+        {
+          "s": "Tangents from same point",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.5.1",
+      "prompt_template": "Distance FJ if JK = 20.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.circle",
+      "expected_fn": "sqrt(425) = 5 sqrt(17)",
+      "steps": [
+        {
+          "s": "FJ perpendicular tangent at K",
+          "r": "tangent perpendicular radius",
+          "mark": "S/R"
+        },
+        {
+          "s": "FJ^2 = JH^2 + FH^2",
+          "r": "Pythagoras",
+          "mark": "S/R"
+        },
+        {
+          "s": "FJ = sqrt(400 + 25)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 5 sqrt(17)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.5.2",
+      "prompt_template": "Equation of circle centre G in terms of m and n.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "analytical.circle",
+      "expected_fn": "(x-m)^2 + (y-n)^2 = 100",
+      "steps": [
+        {
+          "s": "(x-m)^2 + (y-n)^2 = 100",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "4.5.3",
+      "prompt_template": "Coordinates of G if tangent JK is x = 22.",
+      "ranges": {},
+      "marks": 7,
+      "skill_id": "analytical.circle",
+      "expected_fn": "G(12; -11)",
+      "steps": [
+        {
+          "s": "K(22; n)",
+          "r": "radius perpendicular tangent",
+          "mark": "S/R"
+        },
+        {
+          "s": "GK = HG = 10",
+          "r": "radii",
+          "mark": "S"
+        },
+        {
+          "s": "m = 22 - 10 = 12",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "F, H, G collinear",
+          "r": "HJ common tangent",
+          "mark": "S/R"
+        },
+        {
+          "s": "FG^2 = (12-3)^2 + (n-1)^2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "225 = 81 + (n-1)^2 -> n = -11 or 13",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Q4 -> n = -11 -> G(12; -11)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2018,
+    "paper": "P2",
+    "qnum": "4"
+  },
+  "diagram_page": "2018_P2_p07.png",
+  "diagram_image": "data/processed/diagrams/pages/2018_P2_p07.png",
+  "diagram_crop": null
+}

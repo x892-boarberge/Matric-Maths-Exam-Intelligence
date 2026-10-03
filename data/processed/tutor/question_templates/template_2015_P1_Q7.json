@@ -1,0 +1,61 @@
+{
+  "stem": "Vehicle cost R450 000, book value R243 736.90 after 4 years. Replacement cost increases at 8.1% p.a.",
+  "subquestions": [
+    {
+      "n": "7.1",
+      "prompt_template": "How much did Joe pay?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "finance.compound",
+      "expected_fn": "R450 000",
+      "steps": [
+        "y-intercept of the graph."
+      ]
+    },
+    {
+      "n": "7.2",
+      "prompt_template": "Reducing-balance depreciation rate.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "finance.depreciation",
+      "expected_fn": "r ≈ 14.21%",
+      "steps": [
+        "243736.90 = 450000(1-i)^4.",
+        "(1-i)^4 = 0.5416.",
+        "i ≈ 0.1421."
+      ]
+    },
+    {
+      "n": "7.3",
+      "prompt_template": "Replacement cost after 4 years at 8.1%.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "finance.compound",
+      "expected_fn": "R614 490.66",
+      "steps": [
+        "A = 450000(1.081)^4."
+      ]
+    },
+    {
+      "n": "7.4",
+      "prompt_template": "Sinking fund: 36 monthly payments at 6.2% p.a. compounded monthly. Monthly amount?",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "finance.annuity",
+      "expected_fn": "x = R9 397.11",
+      "steps": [
+        "F = A - old book value = 370753.76.",
+        "370753.76 = x[(1 + 0.062/12)^36 - 1]/(0.062/12).",
+        "Solve for x."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P1",
+    "qnum": "7"
+  },
+  "diagram_page": "2015_P1_p07.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P1_p07.png",
+  "diagram_crop": null
+}

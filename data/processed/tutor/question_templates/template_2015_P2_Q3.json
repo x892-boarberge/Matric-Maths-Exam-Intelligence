@@ -1,0 +1,164 @@
+{
+  "stem": "Q(-2;-3) and P(a;b) with PQ making 45 angle with positive x-axis. QP = 7 sqrt(2). N(7;1) midpoint of PR, M midpoint of QR.",
+  "diagram": "analytical_triangle",
+  "subquestions": [
+    {
+      "n": "3.1",
+      "prompt_template": "Gradient of PQ.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.inclination",
+      "expected_fn": "1",
+      "steps": [
+        {
+          "s": "m = tan 45",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= 1",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.2",
+      "prompt_template": "Equation of MN.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "analytical.line_equation",
+      "expected_fn": "y = x - 6",
+      "steps": [
+        {
+          "s": "MN || PQ",
+          "r": "midpoint theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "m_MN = 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Substitute N(7;1)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = x - 6",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.3",
+      "prompt_template": "Length of MN.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "analytical.distance",
+      "expected_fn": "7 sqrt(2)/2",
+      "steps": [
+        {
+          "s": "MN = (1/2) PQ",
+          "r": "midpoint theorem",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 7 sqrt(2)/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.4",
+      "prompt_template": "Length of RS.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "analytical.distance",
+      "expected_fn": "7 sqrt(2)",
+      "steps": [
+        {
+          "s": "RS = 7 sqrt(2)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.5",
+      "prompt_template": "Coordinates of S (PQRS parallelogram).",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "analytical.parallelogram",
+      "expected_fn": "S(16; 5)",
+      "steps": [
+        {
+          "s": "QN = NS",
+          "r": "diagonals of parallelogram",
+          "mark": "S/R"
+        },
+        {
+          "s": "x_S = 16",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_S = 5",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "3.6",
+      "prompt_template": "Coordinates of P.",
+      "ranges": {},
+      "marks": 6,
+      "skill_id": "analytical.solve",
+      "expected_fn": "P(5; 4)",
+      "steps": [
+        {
+          "s": "Equation PQ: y = x - 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "PQ = 7 sqrt(2)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "98 = (a+2)^2 + (b+3)^2",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Substitute b = a - 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = 4 (b > 0)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "a = 5 -> P(5; 4)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2015,
+    "paper": "P2",
+    "qnum": "3"
+  },
+  "diagram_page": "2015_P2_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2015_P2_p05.png",
+  "diagram_crop": null
+}

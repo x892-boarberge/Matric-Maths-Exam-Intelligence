@@ -1,0 +1,144 @@
+{
+  "stem": "h(x) = a^x, a > 0. R is y-intercept. P(2; 9) and Q(b; 1/81) lie on h.",
+  "diagram": "exponential_solo",
+  "subquestions": [
+    {
+      "n": "4.1",
+      "prompt_template": "Write down the asymptote of h.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.exponential",
+      "expected_fn": "y = 0",
+      "steps": [
+        "Exponential functions have asymptote y = 0."
+      ]
+    },
+    {
+      "n": "4.2",
+      "prompt_template": "Coordinates of R.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 1,
+      "skill_id": "functions.exponential",
+      "expected_fn": "R(0; 1)",
+      "steps": [
+        "h(0) = a^0 = 1."
+      ]
+    },
+    {
+      "n": "4.3",
+      "prompt_template": "Calculate a.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "functions.exponential",
+      "expected_fn": "a = 3",
+      "steps": [
+        "9 = a².",
+        "a = 3."
+      ]
+    },
+    {
+      "n": "4.4",
+      "prompt_template": "D such that DQ || y-axis and DP || x-axis. Length of DP.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 4,
+      "skill_id": "functions.exponential",
+      "expected_fn": "DP = 6",
+      "steps": [
+        "Q(b; 1/81): 3^b = 1/81 = 3^(-4), so b = -4.",
+        "D is (-4; 9).",
+        "DP = |-4 - 2| = 6."
+      ]
+    },
+    {
+      "n": "4.5",
+      "prompt_template": "Values of k for which h(x+2) + k = 0 has a root less than -6.",
+      "ranges": {
+        "shift": [
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "marks": 3,
+      "skill_id": "functions.exponential",
+      "expected_fn": "-1/81 < k < 0",
+      "steps": [
+        "h(x+2) = -k.",
+        "3^(x+2) = -k.",
+        "x < -6 → x+2 < -4 → 3^(x+2) < 3^(-4) = 1/81.",
+        "So -k < 1/81 and -k > 0.",
+        "-1/81 < k < 0."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2016,
+    "paper": "P1",
+    "qnum": "4"
+  },
+  "diagram_page": "2016_P1_p05.png",
+  "diagram_image": "data/processed/diagrams/pages/2016_P1_p05.png",
+  "diagram_crop": null
+}

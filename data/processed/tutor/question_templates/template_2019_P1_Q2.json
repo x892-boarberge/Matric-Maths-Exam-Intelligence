@@ -1,0 +1,120 @@
+{
+  "stem": "Quadratic sequence: 321; 290; 261; 234; ...",
+  "subquestions": [
+    {
+      "n": "2.1.1",
+      "prompt_template": "Write down the next TWO terms.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "209; 186",
+      "steps": [
+        "First diffs: -31; -29; -27; -25; -23.",
+        "Next terms: 234-25=209, 209-23=186."
+      ]
+    },
+    {
+      "n": "2.1.2",
+      "prompt_template": "Determine T_n = an² + bn + c.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "T_n = n² - 34n + 354",
+      "steps": [
+        "2a = 2 → a = 1.",
+        "3a + b = -31 → b = -34.",
+        "a + b + c = 321 → c = 354."
+      ]
+    },
+    {
+      "n": "2.1.3",
+      "prompt_template": "Which term(s) equal 74?",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "n = 14 or n = 20",
+      "steps": [
+        "n² - 34n + 354 = 74.",
+        "n² - 34n + 280 = 0.",
+        "(n - 14)(n - 20) = 0."
+      ]
+    },
+    {
+      "n": "2.1.4",
+      "prompt_template": "Which term has least value?",
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "marks": 2,
+      "skill_id": "sequences.quadratic",
+      "expected_fn": "Term 17",
+      "steps": [
+        "n = -b/(2a) = 34/2 = 17."
+      ]
+    },
+    {
+      "n": "2.2.1",
+      "prompt_template": "Geometric series 5/8 + 5/16 + ... Sum of first 21 terms.",
+      "ranges": {
+        "shift": [
+          1,
+          2,
+          3
+        ]
+      },
+      "marks": 3,
+      "skill_id": "sequences.gp",
+      "expected_fn": "S_21 ≈ 1.25",
+      "steps": [
+        "a = 5/8, r = 1/2.",
+        "S_n = a(1-r^n)/(1-r)."
+      ]
+    },
+    {
+      "n": "2.2.2",
+      "prompt_template": "Largest n for which T_n > 5/8192.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 4,
+      "skill_id": "sequences.gp",
+      "expected_fn": "n = 10",
+      "steps": [
+        "(5/8)(1/2)^(n-1) > 5/8192.",
+        "(1/2)^(n-1) > 1/1024 = (1/2)^10.",
+        "n - 1 < 10.",
+        "n = 10."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "2"
+  }
+}

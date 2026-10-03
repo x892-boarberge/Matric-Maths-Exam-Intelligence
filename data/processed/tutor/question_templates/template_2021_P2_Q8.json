@@ -1,0 +1,96 @@
+{
+  "stem": "T hook on ceiling. Q, S, R on ground. Angle of elevation Q to T = x. QSR = 90 + x, QRS = x, QR = 5, TS = SQ.",
+  "diagram": "three_d_trig",
+  "subquestions": [
+    {
+      "n": "8.1",
+      "prompt_template": "Prove QS = 5 tan x.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "trig.3d",
+      "type": "proof",
+      "expected_fn": "QS = 5 tan x",
+      "steps": [
+        {
+          "s": "QS/sin x = 5/sin(90+x)",
+          "r": "sine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "sin(90+x) = cos x",
+          "r": "co-ratio",
+          "mark": "S/R"
+        },
+        {
+          "s": "QS = 5 tan x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.2",
+      "prompt_template": "Prove QT = 10 sin x.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.3d",
+      "type": "proof",
+      "expected_fn": "QT = 10 sin x",
+      "steps": [
+        {
+          "s": "QT/sin(180-2x) = QS/sin x",
+          "r": "sine rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "TS = QS = 5 tan x",
+          "r": "given",
+          "mark": "S"
+        },
+        {
+          "s": "QT = 5 tan x sin 2x/sin x",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "tan x = sin x/cos x; sin 2x = 2 sin x cos x",
+          "r": "identities",
+          "mark": "S/R"
+        },
+        {
+          "s": "QT = 10 sin x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "8.3",
+      "prompt_template": "Area of triangle TQR if TQR = 70, x = 25.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.3d",
+      "expected_fn": "9.93",
+      "steps": [
+        {
+          "s": "Area = (1/2)(QT)(QR)sin TQR",
+          "r": "area rule",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 9.93 units^2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2021,
+    "paper": "P2",
+    "qnum": "8"
+  },
+  "diagram_page": "2021_P2_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2021_P2_p09.png",
+  "diagram_crop": null
+}

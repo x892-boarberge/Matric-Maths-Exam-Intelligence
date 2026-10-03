@@ -1,0 +1,140 @@
+{
+  "stem": "Trigonometry: tan 50 = k; simplify expressions.",
+  "subquestions": [
+    {
+      "n": "5.1.1",
+      "prompt_template": "Express cos 40 in terms of k.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "k/sqrt(k^2+1)",
+      "steps": [
+        {
+          "s": "Third side = sqrt(k^2+1)",
+          "r": "Pythagoras",
+          "mark": "S"
+        },
+        {
+          "s": "cos 40 = k/sqrt(k^2+1)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.2",
+      "prompt_template": "Simplify 2 sin25 cos25 / (-2 + 4 sin^2 25).",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "trig.identities",
+      "expected_fn": "-k/2",
+      "steps": [
+        {
+          "s": "= sin 50 / (-2(1-2sin^2 25))",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= sin 50 / (-2 cos 50)",
+          "r": "double angle cos",
+          "mark": "S/R"
+        },
+        {
+          "s": "= -1/2 tan 50",
+          "r": "quotient identity",
+          "mark": "S/R"
+        },
+        {
+          "s": "= -k/2",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.1.3",
+      "prompt_template": "Express sin 10 in terms of k.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "(k^2-1)/(k^2+1)",
+      "steps": [
+        {
+          "s": "sin 10 = cos 80 = cos 2(40)",
+          "r": "co-ratio + double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 2 cos^2 40 - 1",
+          "r": "double angle",
+          "mark": "S/R"
+        },
+        {
+          "s": "= 2(k^2/(k^2+1)) - 1",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "= (k^2-1)/(k^2+1)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2.1",
+      "prompt_template": "Simplify sin(540+x) cos(90+x) / sin(-x) to a single ratio.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "trig.identities",
+      "expected_fn": "-sin x",
+      "steps": [
+        {
+          "s": "sin(540+x) = -sin x",
+          "r": "reduction",
+          "mark": "S"
+        },
+        {
+          "s": "cos(90+x) = -sin x",
+          "r": "co-ratio",
+          "mark": "S"
+        },
+        {
+          "s": "sin(-x) = -sin x",
+          "r": "odd function",
+          "mark": "S"
+        },
+        {
+          "s": "= -sin x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "5.2.2",
+      "prompt_template": "Values of x in [0;360] for which the expression is real.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "trig.identities",
+      "expected_fn": "x in (180; 360)",
+      "steps": [
+        {
+          "s": "Denominator sin(-x) != 0",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "x in (180; 360)",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2025,
+    "paper": "P2",
+    "qnum": "5"
+  }
+}

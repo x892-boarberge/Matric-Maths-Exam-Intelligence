@@ -1,0 +1,125 @@
+{
+  "stem": "100 people's monthly cellphone contract spend.",
+  "subquestions": [
+    {
+      "n": "2.1",
+      "prompt_template": "How many paid R200 or less?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.frequency",
+      "expected_fn": "19",
+      "steps": [
+        {
+          "s": "19",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.2",
+      "prompt_template": "Show that a = 24 and b = 16.",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "stats.mean",
+      "expected_fn": "a = 24, b = 16",
+      "steps": [
+        {
+          "s": "Total frequency = 100",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "a + b = 40",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Mean = 309 formula",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Solve -> a = 24",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = 16",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.3",
+      "prompt_template": "Modal class.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.mode",
+      "expected_fn": "300 < x <= 400",
+      "steps": [
+        {
+          "s": "300 < x <= 400",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.4",
+      "prompt_template": "Draw ogive.",
+      "ranges": {},
+      "marks": 4,
+      "skill_id": "stats.ogive",
+      "expected_fn": "see memo",
+      "steps": [
+        {
+          "s": "Grounded at (0;0)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Point at (600;100)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Cumulative frequencies correct",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Smooth shape",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "2.5",
+      "prompt_template": "How many paid more than R420?",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.ogive",
+      "expected_fn": "18",
+      "steps": [
+        {
+          "s": "Read from ogive at 420",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "100 - 82 = 18",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P2",
+    "qnum": "2"
+  }
+}

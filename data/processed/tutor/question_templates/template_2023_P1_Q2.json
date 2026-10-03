@@ -17,7 +17,7 @@
         ]
       },
       "marks": 3,
-      "skill_id": "sequences.ap.term",
+      "skill_id": "sequences.ap",
       "expected_fn": "T_91 = {T91}",
       "steps": [
         "T_n = a + (n-1)d",
@@ -30,7 +30,7 @@
       "prompt_template": "Calculate S_{91}.",
       "ranges": {},
       "marks": 2,
-      "skill_id": "sequences.ap.sum",
+      "skill_id": "sequences.ap",
       "expected_fn": "S_91 = {S91}",
       "steps": [
         "S_n = n/2[2a + (n-1)d]",
@@ -43,11 +43,13 @@
       "prompt_template": "Calculate n for which T_n = {Tn}.",
       "ranges": {
         "Tn": [
+          515,
+          516,
           517
         ]
       },
       "marks": 3,
-      "skill_id": "sequences.ap.term",
+      "skill_id": "sequences.ap",
       "expected_fn": "n = {n_ans}",
       "steps": [
         "T_n = {a} + (n-1)({d})",
@@ -73,7 +75,7 @@
         ]
       },
       "marks": 2,
-      "skill_id": "sequences.quadratic.term",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "T_5 = {T5}",
       "steps": [
         "Work forward using given differences."
@@ -84,7 +86,7 @@
       "prompt_template": "Show T_n = 6n^2 - 9n + 6.",
       "ranges": {},
       "marks": 3,
-      "skill_id": "sequences.quadratic.general",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "T_n = 6n^2 - 9n + 6",
       "steps": [
         "Second difference = 12, so 2a = 12, a = 6.",
@@ -95,9 +97,20 @@
     {
       "n": "2.2.3",
       "prompt_template": "Show the pattern is increasing for all n in N.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
       "marks": 3,
-      "skill_id": "sequences.quadratic.monotone",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "T_n - T_{n-1} > 0 for all n",
       "steps": [
         "First difference = 12n - 15.",

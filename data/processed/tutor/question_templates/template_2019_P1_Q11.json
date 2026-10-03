@@ -1,0 +1,75 @@
+{
+  "stem": "A, B independent: P(A)=0.4, P(B)=0.25.",
+  "subquestions": [
+    {
+      "n": "11.1.1",
+      "prompt_template": "Venn diagram.",
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "marks": 3,
+      "skill_id": "probability.venn",
+      "expected_fn": "see memo",
+      "steps": [
+        "P(A and B) = 0.4 × 0.25 = 0.1.",
+        "P(only A) = 0.3, P(only B) = 0.15, P(neither) = 0.45."
+      ]
+    },
+    {
+      "n": "11.1.2",
+      "prompt_template": "Determine P(A or not B).",
+      "ranges": {
+        "shift": [
+          -4,
+          -3,
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "marks": 2,
+      "skill_id": "probability.union",
+      "expected_fn": "P = 0.85",
+      "steps": [
+        "P(A or not B) = P(A) + P(not B) - P(A and not B)",
+        "= 0.4 + 0.75 - 0.3 = 0.85."
+      ]
+    },
+    {
+      "n": "11.2",
+      "prompt_template": "Motors Inc: 5 body styles, 4 interior, 6 exterior. Interior != exterior. Display one of each variation?",
+      "ranges": {},
+      "marks": 5,
+      "skill_id": "probability.counting",
+      "expected_fn": "No, 550 > 500",
+      "steps": [
+        "Total variations = 5 × 4 × 6 = 120.",
+        "But interior = exterior disallowed: 5 × 5 = 25 forbidden.",
+        "Valid = 120 - 25 = 95.",
+        "Space needed = 95 × 5 = 475 m². Fits? Check."
+      ]
+    }
+  ],
+  "source": {
+    "year": 2019,
+    "paper": "P1",
+    "qnum": "11"
+  },
+  "diagram_page": "2019_P1_p09.png",
+  "diagram_image": "data/processed/diagrams/pages/2019_P1_p09.png",
+  "diagram_crop": null
+}

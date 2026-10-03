@@ -1,0 +1,204 @@
+{
+  "stem": "15 rugby players' weights and push-ups per minute.",
+  "diagram": "scatter_regression",
+  "subquestions": [
+    {
+      "n": "1.1",
+      "prompt_template": "Determine the equation of the least squares regression line.",
+      "ranges": {},
+      "marks": 3,
+      "skill_id": "stats.regression",
+      "expected_fn": "y_hat = 39.46 - 0.59x",
+      "steps": [
+        {
+          "s": "a = 39.46",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "b = -0.59",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y_hat = 39.46 - 0.59x",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.2",
+      "prompt_template": "Write down the correlation coefficient.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.correlation",
+      "expected_fn": "r = -0.8",
+      "steps": [
+        {
+          "s": "r = -0.8",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.3",
+      "prompt_template": "Predict the push-ups for a 29 kg player.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "22.35",
+      "steps": [
+        {
+          "s": "y = 39.46 - 0.59(29)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "y = 22.35",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.4",
+      "prompt_template": "Write down the mean number of push-ups.",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.mean",
+      "expected_fn": "18.33",
+      "steps": [
+        {
+          "s": "18.33",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.5",
+      "prompt_template": "Each player did 5 more push-ups. How does this affect standard deviation?",
+      "ranges": {},
+      "marks": 1,
+      "skill_id": "stats.std_dev",
+      "expected_fn": "No influence / stays the same",
+      "steps": [
+        {
+          "s": "No influence — SD unchanged",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    },
+    {
+      "n": "1.6",
+      "prompt_template": "Maximum increase to reach minimum target.",
+      "ranges": {},
+      "marks": 2,
+      "skill_id": "stats.regression",
+      "expected_fn": "10",
+      "steps": [
+        {
+          "s": "Player at (40; 6)",
+          "r": null,
+          "mark": "S"
+        },
+        {
+          "s": "Increase = 10",
+          "r": null,
+          "mark": "S"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "year": 2024,
+    "paper": "P2",
+    "qnum": "1"
+  },
+  "diagram_spec": {
+    "points": [
+      [
+        34,
+        26
+      ],
+      [
+        32,
+        21
+      ],
+      [
+        40,
+        6
+      ],
+      [
+        27,
+        20
+      ],
+      [
+        33,
+        16
+      ],
+      [
+        28,
+        26
+      ],
+      [
+        27,
+        23
+      ],
+      [
+        55,
+        7
+      ],
+      [
+        39,
+        18
+      ],
+      [
+        44,
+        14
+      ],
+      [
+        30,
+        17
+      ],
+      [
+        57,
+        8
+      ],
+      [
+        28,
+        28
+      ],
+      [
+        32,
+        25
+      ],
+      [
+        31,
+        20
+      ]
+    ],
+    "a": 39.46,
+    "b": -0.59,
+    "xlim": [
+      0,
+      60
+    ],
+    "ylim": [
+      0,
+      30
+    ],
+    "x_tick_step": 10,
+    "y_tick_step": 5,
+    "x_label": "Weight (in kg)",
+    "y_label": "Push-ups per minute",
+    "title": "Scatter plot",
+    "grid": true
+  },
+  "diagram_page": "2024_P2_p03.png",
+  "diagram_image": "data/processed/diagrams/pages/2024_P2_p03.png",
+  "diagram_crop": null
+}

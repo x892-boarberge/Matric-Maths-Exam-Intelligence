@@ -16,7 +16,7 @@
         ]
       },
       "marks": 2,
-      "skill_id": "sequences.quadratic.term",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "T_5 = {T5}",
       "steps": [
         "First differences: {d1}; {d2}",
@@ -30,7 +30,7 @@
       "prompt_template": "Show that T_n = -n^2 + 38n - 1.",
       "ranges": {},
       "marks": 3,
-      "skill_id": "sequences.quadratic.general",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "T_n = -n^2 + 38n - 1",
       "steps": [
         "2a = second difference = -2, so a = -1.",
@@ -42,9 +42,20 @@
     {
       "n": "3.3",
       "prompt_template": "Calculate the maximum depth the torpedo reached.",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -2,
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
       "marks": 3,
-      "skill_id": "sequences.quadratic.monotone",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "Max depth = {max_val}",
       "steps": [
         "T_n = -n^2 + 38n - 1 is a downward parabola.",
@@ -56,9 +67,18 @@
     {
       "n": "3.4",
       "prompt_template": "After how many seconds was the torpedo at 104 m below sea level for the second time?",
-      "ranges": {},
+      "ranges": {
+        "shift": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
       "marks": 2,
-      "skill_id": "sequences.quadratic.n",
+      "skill_id": "sequences.quadratic",
       "expected_fn": "n = {n_ans}",
       "steps": [
         "Set T_n = 104: -n^2 + 38n - 1 = 104",
@@ -73,5 +93,8 @@
     "year": 2025,
     "paper": "P1",
     "qnum": "3"
-  }
+  },
+  "diagram_page": "2025_P1_p04.png",
+  "diagram_image": "data/processed/diagrams/pages/2025_P1_p04.png",
+  "diagram_crop": null
 }
