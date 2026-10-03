@@ -29,6 +29,119 @@ PASS_THRESHOLD = 4
 # ============================================================
 # Pool helpers
 # ============================================================
+def _template_path_for_anchor(problem_id: str):
+    """Map an anchor problem_id to its DBE template JSON path."""
+    from pathlib import Path as _P
+    _root = _P(__file__).resolve().parents[2]
+    tdir = _root / "data" / "processed" / "tutor" / "question_templates"
+    parts = str(problem_id).split("_")
+    if len(parts) < 3:
+        return None
+    year, paper = parts[0], parts[1]
+    qpart = parts[2].split(".")[0]  # 'Q1.1.1' -> 'Q1'
+    p = tdir / f"template_{year}_{paper}_{qpart}.json"
+    return p if p.exists() else None
+
+
+def _anchor_template_metadata(problem_id: str):
+    """Return the template dict for an anchor problem_id, or None."""
+    tp = _template_path_for_anchor(problem_id)
+    if not tp:
+        return None
+    try:
+        import json as _json
+        return _json.loads(tp.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def _try_get_anchor_diagram_image(problem_id: str):
+    """Return the parent paper's page-image path for this anchor,
+    if the template carries one. Falls through to the rendered spec
+    (see _try_render_anchor_diagram) if the page image is missing."""
+    t = _anchor_template_metadata(problem_id)
+    if not t:
+        return None
+    img = t.get("diagram_image")
+    if not img:
+        return None
+    from pathlib import Path as _P
+    root = _P(__file__).resolve().parents[2]
+    p = root / img
+    return str(p) if p.exists() else None
+
+
+def _try_render_anchor_diagram(problem_id: str):
+    """If the template for this anchor carries a diagram spec,
+    render it to a per-anchor PNG and return the path. Otherwise
+    fall back to the parent paper's page image if present."""
+    t = _anchor_template_metadata(problem_id)
+    if not t:
+        return None
+    d = t.get("diagram")
+    s = t.get("diagram_spec")
+
+    # Preferred: parent paper page image (exact replica of the real DBE diagram)
+    page = _try_get_anchor_diagram_image(problem_id)
+    if page:
+        return page
+
+    # Fallback: render from spec (approximate reconstruction)
+    if d and s:
+        try:
+            from pathlib import Path as _P
+            from tutor import diagram_dispatcher as _disp
+            root = _P(__file__).resolve().parents[2]
+            cache = root / "data" / "processed" / "diagrams" / "drill_cache"
+            cache.mkdir(parents=True, exist_ok=True)
+            safe = str(problem_id).replace(".", "_").replace("/", "_")
+            out = cache / f"{safe}.png"
+            _disp.render_diagram(d, out_path=out, **s)
+            return str(out)
+        except Exception:
+            pass
+    return None
+
+
+
+_SKILL_DIAGRAM_INDEX = None
+
+
+def _load_skill_diagram_index():
+    global _SKILL_DIAGRAM_INDEX
+    if _SKILL_DIAGRAM_INDEX is None:
+        import json as _json
+        from pathlib import Path as _P
+        root = _P(__file__).resolve().parents[2]
+        p = root / "data" / "processed" / "tutor" / "skill_diagram_index.json"
+        _SKILL_DIAGRAM_INDEX = (
+            _json.loads(p.read_text(encoding="utf-8"))
+            if p.exists() else {}
+        )
+    return _SKILL_DIAGRAM_INDEX
+
+
+def _reference_diagram_for_skill(skill_id: str):
+    """Return a parent page image path for a variant of this skill.
+    Uses the skill → diagram index; returns the first page image whose
+    template carries a diagram for this skill. Returns None if no
+    skill-matching image exists."""
+    index = _load_skill_diagram_index()
+    entries = index.get(skill_id, [])
+    if not entries:
+        return None
+    from pathlib import Path as _P
+    root = _P(__file__).resolve().parents[2]
+    for e in entries:
+        img = e.get("image")
+        if not img:
+            continue
+        p = root / img
+        if p.exists():
+            return str(p)
+    return None
+
+
 def _load_pool(template_id: str):
     return analogue_library.POOL.get(template_id, [])
 
@@ -395,6 +508,19 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
 
         print()
         print("-" * 60)
+        if item["type"] == "anchor":
+            _diag = _try_render_anchor_diagram(drill_problem.problem_id)
+            if _diag:
+                print(f"  Diagram: {_diag}")
+                print()
+        else:
+            # Variation — try to show a reference diagram from another
+            # DBE question that uses the same skill.
+            _ref = _reference_diagram_for_skill(drill_problem.skill_id)
+            if _ref:
+                print(f"  Reference diagram: {_ref}")
+                print("  (Same shape, different numbers.)")
+                print()
         print(f"  Problem: {drill_problem.prompt}")
         if item["type"] == "anchor":
             print("  (This is the original question you picked.)")

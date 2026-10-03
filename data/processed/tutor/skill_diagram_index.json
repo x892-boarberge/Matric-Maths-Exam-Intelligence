@@ -1,0 +1,3108 @@
+{
+  "probability.tables": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p10.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "11",
+      "problem_id": "2014_P1_Q11"
+    }
+  ],
+  "probability.independent": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p10.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "11",
+      "problem_id": "2014_P1_Q11"
+    }
+  ],
+  "functions.hyperbola": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p05.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2014_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p06.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2015_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P1_p06.png",
+      "year": 2016,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2016_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P1_p05.png",
+      "year": 2017,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2017_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p05.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2019_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p05.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2020_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p05.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2022_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P1_p06.png",
+      "year": 2023,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2023_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P1_p05.png",
+      "year": 2024,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2024_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p06.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2025_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p07.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2025_P1_Q6"
+    }
+  ],
+  "functions.transformation": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p05.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2014_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p06.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2014_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P1_p06.png",
+      "year": 2016,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2016_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p05.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2019_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p06.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2020_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p05.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2022_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P1_p05.png",
+      "year": 2024,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2024_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p05.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2025_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p07.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2025_P1_Q6"
+    }
+  ],
+  "functions.inequality": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p05.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2014_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P1_p06.png",
+      "year": 2016,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2016_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P1_p05.png",
+      "year": 2017,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2017_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P1_p05.png",
+      "year": 2018,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2018_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p06.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2019_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P1_p05.png",
+      "year": 2021,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2021_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p05.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2022_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P1_p06.png",
+      "year": 2023,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2023_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p06.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2025_P1_Q5"
+    }
+  ],
+  "functions.log": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p06.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2014_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P1_p05.png",
+      "year": 2017,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2017_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p06.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2019_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P1_p05.png",
+      "year": 2021,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2021_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p05.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2025_P1_Q4"
+    }
+  ],
+  "functions.parabola": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p07.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2014_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p06.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2015_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P1_p06.png",
+      "year": 2016,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2016_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P1_p04.png",
+      "year": 2018,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2018_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P1_p05.png",
+      "year": 2018,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2018_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p05.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2019_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p05.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2020_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P1_p06.png",
+      "year": 2021,
+      "paper": "P1",
+      "qnum": "7",
+      "problem_id": "2021_P1_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p05.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2022_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P1_p06.png",
+      "year": 2023,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2023_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P1_p06.png",
+      "year": 2024,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2024_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p06.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2025_P1_Q5"
+    }
+  ],
+  "calculus.optimisation": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p07.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2014_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p05.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2015_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P1_p07.png",
+      "year": 2017,
+      "paper": "P1",
+      "qnum": "9",
+      "problem_id": "2017_P1_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P1_p08.png",
+      "year": 2018,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2018_P1_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P1_p08.png",
+      "year": 2023,
+      "paper": "P1",
+      "qnum": "9",
+      "problem_id": "2023_P1_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p10.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2025_P1_Q10"
+    }
+  ],
+  "calculus.cubic": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p09.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "9",
+      "problem_id": "2014_P1_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p05.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2015_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p06.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2015_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P1_p07.png",
+      "year": 2018,
+      "paper": "P1",
+      "qnum": "9",
+      "problem_id": "2018_P1_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p08.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "8",
+      "problem_id": "2020_P1_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P1_p08.png",
+      "year": 2021,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2021_P1_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p08.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "8",
+      "problem_id": "2022_P1_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P1_p08.png",
+      "year": 2024,
+      "paper": "P1",
+      "qnum": "9",
+      "problem_id": "2024_P1_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p09.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "9",
+      "problem_id": "2025_P1_Q9"
+    }
+  ],
+  "calculus.inequality": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P1_p09.png",
+      "year": 2014,
+      "paper": "P1",
+      "qnum": "9",
+      "problem_id": "2014_P1_Q9"
+    }
+  ],
+  "stats.mean": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p03.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2014_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p03.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2018_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p04.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2020_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p03.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2021_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p03.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2022_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p03.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2023_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p04.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2023_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p03.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2024_P2_Q1"
+    }
+  ],
+  "stats.std_dev": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p03.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2014_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p03.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2018_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p04.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2020_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p03.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2021_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p03.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2022_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p03.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2023_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p03.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2024_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p04.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2025_P2_Q2"
+    }
+  ],
+  "stats.regression": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p03.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2014_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p05.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2016_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p03.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2017_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p05.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2018_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p03.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2020_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p04.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2021_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p03.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2022_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p03.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2023_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p03.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2024_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p03.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2025_P2_Q1"
+    }
+  ],
+  "stats.outlier": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p03.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2014_P2_Q1"
+    }
+  ],
+  "geometry.circle": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p20.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2014_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p17.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2014_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p13.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2015_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p06.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2015_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p11.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2015_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p12.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2015_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p14.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2016_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p06.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2016_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p11.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2016_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p12.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2016_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p12.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2017_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p14.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2017_P2_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p10.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2017_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p15.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2018_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p07.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2018_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p12.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2018_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p14.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2018_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p14.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2019_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p11.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2019_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p12.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2019_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p14.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2020_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p11.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2020_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p13.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2020_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p11.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2021_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p13.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2021_P2_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p10.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2021_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p13.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2022_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p11.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2022_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p12.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2022_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p13.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2023_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p11.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2023_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p13.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2024_P2_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p06.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2024_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p11.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2024_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p12.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2025_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p11.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2025_P2_Q9"
+    }
+  ],
+  "geometry.proportion": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p20.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2014_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p19.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2014_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p13.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2015_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p14.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2016_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p14.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2017_P2_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p11.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2017_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p12.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2018_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p14.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2019_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p11.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2020_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p13.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2021_P2_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p11.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2022_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p12.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2023_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p12.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2024_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p14.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2025_P2_Q11"
+    }
+  ],
+  "geometry.similarity": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p20.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2014_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p13.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2015_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p14.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2015_P2_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p14.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2016_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p12.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2016_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p12.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2017_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p14.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2017_P2_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P1_p08.png",
+      "year": 2018,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2018_P1_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p15.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2018_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p14.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2019_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p11.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2019_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p14.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2020_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p13.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2020_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p13.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2021_P2_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p13.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2022_P2_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p12.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2023_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p13.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2024_P2_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p14.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2025_P2_Q11"
+    }
+  ],
+  "stats.mode": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p15.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2014_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p03.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2018_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p04.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2022_P2_Q2"
+    }
+  ],
+  "stats.cumulative": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p15.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2014_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p04.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2016_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p04.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2023_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p04.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2025_P2_Q2"
+    }
+  ],
+  "stats.ogive": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p15.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2014_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p04.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2016_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p03.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2018_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p04.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2022_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p04.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2024_P2_Q2"
+    }
+  ],
+  "analytical.circle": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p05.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2014_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p06.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2015_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p06.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2016_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p06.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2017_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p07.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2018_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p06.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2019_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p06.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2020_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p05.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2021_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p06.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2021_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p06.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2022_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p05.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2023_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p06.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2023_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p06.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2024_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p06.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2025_P2_Q4"
+    }
+  ],
+  "analytical.gradient": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p05.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2014_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p06.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2016_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p06.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2018_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p05.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2019_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p05.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2020_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P1_p06.png",
+      "year": 2021,
+      "paper": "P1",
+      "qnum": "7",
+      "problem_id": "2021_P1_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p05.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2021_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p05.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2022_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p05.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2023_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p05.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2024_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p05.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2025_P2_Q3"
+    }
+  ],
+  "analytical.solve": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p05.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2014_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p06.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2014_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p05.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2015_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p06.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2016_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p05.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2017_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p06.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2018_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p05.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2019_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p05.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2020_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p05.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2021_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p06.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2021_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p05.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2024_P2_Q3"
+    }
+  ],
+  "analytical.distance": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p05.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2014_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p05.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2015_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p06.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2016_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p06.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2018_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p07.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2018_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p05.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2020_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p06.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2020_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p06.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2021_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p06.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2022_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p05.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2023_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p05.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2024_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p06.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2025_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p05.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2025_P2_Q3"
+    }
+  ],
+  "analytical.intercept": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p06.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2014_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p05.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2022_P2_Q3"
+    }
+  ],
+  "analytical.angle": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p06.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2014_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p06.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2016_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p06.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2017_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p05.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2020_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p05.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2021_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p05.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2022_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p05.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2023_P2_Q3"
+    }
+  ],
+  "analytical.line_equation": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p06.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2014_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p05.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2015_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p06.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2016_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p05.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2017_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p06.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2017_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p06.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2018_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p05.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2019_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p06.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2020_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p05.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2021_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p05.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2024_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p05.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2025_P2_Q3"
+    }
+  ],
+  "analytical.area": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p06.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2014_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p06.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2015_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p06.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2017_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p06.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2018_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p06.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2019_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p05.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2020_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p05.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2020_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p06.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2021_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p06.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2022_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p05.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2022_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p05.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2023_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p05.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2025_P2_Q3"
+    }
+  ],
+  "trig.identities": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p07.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2014_P2_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p07.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2017_P2_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p08.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2018_P2_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p08.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2020_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p07.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2024_P2_Q5"
+    }
+  ],
+  "trig.graph": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p16.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2014_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p08.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2015_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p08.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2016_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p08.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2017_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p08.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2019_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p07.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2020_P2_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p08.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2021_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p08.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2022_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p08.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2023_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p09.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2024_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p08.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2025_P2_Q7"
+    }
+  ],
+  "trig.equation": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p16.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2014_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p08.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2016_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p08.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2017_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p07.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2020_P2_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p08.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2020_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p08.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2021_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p08.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2022_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p09.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2024_P2_Q7"
+    }
+  ],
+  "sequences.gp": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p16.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2014_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P1_p04.png",
+      "year": 2016,
+      "paper": "P1",
+      "qnum": "3",
+      "problem_id": "2016_P1_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P1_p04.png",
+      "year": 2024,
+      "paper": "P1",
+      "qnum": "3",
+      "problem_id": "2024_P1_Q3"
+    }
+  ],
+  "geometry.area_ratio": [
+    {
+      "image": "data/processed/diagrams/pages/2014_P2_p19.png",
+      "year": 2014,
+      "paper": "P2",
+      "qnum": "9",
+      "problem_id": "2014_P2_Q9"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p14.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "11",
+      "problem_id": "2025_P2_Q11"
+    }
+  ],
+  "trig.3d": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p09.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2015_P1_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p09.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2015_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p09.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2016_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p09.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2017_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p10.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2018_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p09.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2019_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p09.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2020_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p09.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2021_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p09.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2022_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p09.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2023_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p10.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2024_P2_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p09.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2025_P2_Q8"
+    }
+  ],
+  "calculus.derivative": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p09.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2015_P1_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p05.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2015_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p08.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "8",
+      "problem_id": "2022_P1_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P1_p08.png",
+      "year": 2024,
+      "paper": "P1",
+      "qnum": "9",
+      "problem_id": "2024_P1_Q9"
+    }
+  ],
+  "functions.line": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p05.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2015_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P1_p05.png",
+      "year": 2018,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2018_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p05.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2019_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p06.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2022_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P1_p05.png",
+      "year": 2023,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2023_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P1_p06.png",
+      "year": 2024,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2024_P1_Q6"
+    }
+  ],
+  "functions.inverse": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p05.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2015_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P1_p04.png",
+      "year": 2018,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2018_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p06.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2019_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p05.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2020_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p06.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2020_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p06.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2022_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P1_p05.png",
+      "year": 2023,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2023_P1_Q4"
+    }
+  ],
+  "finance.compound": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p07.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "7",
+      "problem_id": "2015_P1_Q7"
+    }
+  ],
+  "finance.depreciation": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p07.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "7",
+      "problem_id": "2015_P1_Q7"
+    }
+  ],
+  "finance.annuity": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P1_p07.png",
+      "year": 2015,
+      "paper": "P1",
+      "qnum": "7",
+      "problem_id": "2015_P1_Q7"
+    }
+  ],
+  "analytical.inclination": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p05.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2015_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p06.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2015_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p06.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2018_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p05.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2019_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p05.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2021_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p05.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2022_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p05.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2023_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p05.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2025_P2_Q3"
+    }
+  ],
+  "analytical.parallelogram": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p05.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2015_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p05.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2017_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p06.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2018_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p05.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2019_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p05.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2021_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p06.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2021_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p05.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2025_P2_Q3"
+    }
+  ],
+  "trig.inequality": [
+    {
+      "image": "data/processed/diagrams/pages/2015_P2_p08.png",
+      "year": 2015,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2015_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p08.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2016_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p07.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2020_P2_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p08.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2022_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p08.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2023_P2_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p09.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2024_P2_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p08.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "7",
+      "problem_id": "2025_P2_Q7"
+    }
+  ],
+  "sequences.quadratic": [
+    {
+      "image": "data/processed/diagrams/pages/2016_P1_p04.png",
+      "year": 2016,
+      "paper": "P1",
+      "qnum": "3",
+      "problem_id": "2016_P1_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p04.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "3",
+      "problem_id": "2025_P1_Q3"
+    }
+  ],
+  "functions.exponential": [
+    {
+      "image": "data/processed/diagrams/pages/2016_P1_p05.png",
+      "year": 2016,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2016_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p06.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2019_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p06.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2020_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p05.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2022_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P1_p05.png",
+      "year": 2023,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2023_P1_Q4"
+    }
+  ],
+  "stats.correlation": [
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p05.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2016_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p05.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2018_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p03.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2020_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p04.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2021_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p03.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2022_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p03.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2023_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p03.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2024_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p03.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2025_P2_Q1"
+    }
+  ],
+  "stats.skewness": [
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p04.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2016_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p03.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2021_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p04.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2025_P2_Q2"
+    }
+  ],
+  "stats.range": [
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p04.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2016_P2_Q2"
+    }
+  ],
+  "stats.interpret": [
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p04.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2016_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p03.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2018_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p05.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2018_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p04.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2020_P2_Q2"
+    }
+  ],
+  "analytical.perpendicular": [
+    {
+      "image": "data/processed/diagrams/pages/2016_P2_p06.png",
+      "year": 2016,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2016_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p05.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2020_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p05.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2025_P2_Q3"
+    }
+  ],
+  "analytical.midpoint": [
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p05.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2017_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p05.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2022_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p06.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2023_P2_Q4"
+    }
+  ],
+  "geometry.midpoint": [
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p05.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2017_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p11.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2022_P2_Q8"
+    }
+  ],
+  "trig.pythagoras": [
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p07.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2017_P2_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p08.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2018_P2_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p07.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2024_P2_Q5"
+    }
+  ],
+  "trig.proof": [
+    {
+      "image": "data/processed/diagrams/pages/2017_P2_p07.png",
+      "year": 2017,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2017_P2_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p08.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "5",
+      "problem_id": "2018_P2_Q5"
+    }
+  ],
+  "calculus.tangent": [
+    {
+      "image": "data/processed/diagrams/pages/2018_P1_p05.png",
+      "year": 2018,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2018_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p05.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2019_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p05.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2020_P1_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p08.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "8",
+      "problem_id": "2020_P1_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P1_p06.png",
+      "year": 2021,
+      "paper": "P1",
+      "qnum": "7",
+      "problem_id": "2021_P1_Q7"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p08.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "8",
+      "problem_id": "2022_P1_Q8"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P1_p06.png",
+      "year": 2023,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2023_P1_Q5"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P1_p06.png",
+      "year": 2024,
+      "paper": "P1",
+      "qnum": "6",
+      "problem_id": "2024_P1_Q6"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2025_P1_p06.png",
+      "year": 2025,
+      "paper": "P1",
+      "qnum": "5",
+      "problem_id": "2025_P1_Q5"
+    }
+  ],
+  "stats.percentile": [
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p03.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2018_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p04.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2022_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p04.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2024_P2_Q2"
+    }
+  ],
+  "stats.iqr": [
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p03.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2018_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p04.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2024_P2_Q2"
+    }
+  ],
+  "geometry.trig_ratio": [
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p15.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "10",
+      "problem_id": "2018_P2_Q10"
+    }
+  ],
+  "stats.scatter": [
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p05.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2018_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p04.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2021_P2_Q2"
+    }
+  ],
+  "analytical.ratio": [
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p07.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2018_P2_Q4"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p05.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2024_P2_Q3"
+    }
+  ],
+  "geometry.rectangle": [
+    {
+      "image": "data/processed/diagrams/pages/2018_P2_p12.png",
+      "year": 2018,
+      "paper": "P2",
+      "qnum": "8",
+      "problem_id": "2018_P2_Q8"
+    }
+  ],
+  "probability.venn": [
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p09.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "11",
+      "problem_id": "2019_P1_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p09.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2022_P1_Q10"
+    }
+  ],
+  "probability.union": [
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p09.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "11",
+      "problem_id": "2019_P1_Q11"
+    }
+  ],
+  "probability.counting": [
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p09.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "11",
+      "problem_id": "2019_P1_Q11"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p09.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2020_P1_Q10"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p09.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2022_P1_Q10"
+    }
+  ],
+  "sequences.ap": [
+    {
+      "image": "data/processed/diagrams/pages/2019_P1_p04.png",
+      "year": 2019,
+      "paper": "P1",
+      "qnum": "3",
+      "problem_id": "2019_P1_Q3"
+    }
+  ],
+  "analytical.horizontal": [
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p05.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2019_P2_Q3"
+    }
+  ],
+  "analytical.reflection": [
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p05.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2019_P2_Q3"
+    }
+  ],
+  "analytical.translation": [
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p06.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2019_P2_Q4"
+    }
+  ],
+  "trig.optimisation": [
+    {
+      "image": "data/processed/diagrams/pages/2019_P2_p08.png",
+      "year": 2019,
+      "paper": "P2",
+      "qnum": "6",
+      "problem_id": "2019_P2_Q6"
+    }
+  ],
+  "analytical.line": [
+    {
+      "image": "data/processed/diagrams/pages/2020_P1_p05.png",
+      "year": 2020,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2020_P1_Q4"
+    }
+  ],
+  "stats.graph": [
+    {
+      "image": "data/processed/diagrams/pages/2020_P2_p04.png",
+      "year": 2020,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2020_P2_Q2"
+    }
+  ],
+  "stats.application": [
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p03.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2021_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p04.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2022_P2_Q2"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p04.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2024_P2_Q2"
+    }
+  ],
+  "stats.box_whisker": [
+    {
+      "image": "data/processed/diagrams/pages/2021_P2_p03.png",
+      "year": 2021,
+      "paper": "P2",
+      "qnum": "1",
+      "problem_id": "2021_P2_Q1"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p04.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2024_P2_Q2"
+    }
+  ],
+  "probability.set": [
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p09.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2022_P1_Q10"
+    }
+  ],
+  "probability.independence": [
+    {
+      "image": "data/processed/diagrams/pages/2022_P1_p09.png",
+      "year": 2022,
+      "paper": "P1",
+      "qnum": "10",
+      "problem_id": "2022_P1_Q10"
+    }
+  ],
+  "analytical.parallel": [
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p05.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2022_P2_Q3"
+    },
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p05.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2023_P2_Q3"
+    }
+  ],
+  "analytical.tangent": [
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p06.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2022_P2_Q4"
+    }
+  ],
+  "analytical.min_distance": [
+    {
+      "image": "data/processed/diagrams/pages/2022_P2_p06.png",
+      "year": 2022,
+      "paper": "P2",
+      "qnum": "4",
+      "problem_id": "2022_P2_Q4"
+    }
+  ],
+  "functions.distance": [
+    {
+      "image": "data/processed/diagrams/pages/2023_P1_p05.png",
+      "year": 2023,
+      "paper": "P1",
+      "qnum": "4",
+      "problem_id": "2023_P1_Q4"
+    }
+  ],
+  "analytical.circumcentre": [
+    {
+      "image": "data/processed/diagrams/pages/2023_P2_p05.png",
+      "year": 2023,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2023_P2_Q3"
+    }
+  ],
+  "analytical.substitution": [
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p05.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2024_P2_Q3"
+    }
+  ],
+  "analytical.area_ratio": [
+    {
+      "image": "data/processed/diagrams/pages/2024_P2_p05.png",
+      "year": 2024,
+      "paper": "P2",
+      "qnum": "3",
+      "problem_id": "2024_P2_Q3"
+    }
+  ],
+  "stats.histogram": [
+    {
+      "image": "data/processed/diagrams/pages/2025_P2_p04.png",
+      "year": 2025,
+      "paper": "P2",
+      "qnum": "2",
+      "problem_id": "2025_P2_Q2"
+    }
+  ]
+}

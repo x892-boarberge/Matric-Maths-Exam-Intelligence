@@ -1,0 +1,492 @@
+{
+  "nsc_solve_x": {
+    "topic_v2": "ALG",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q1__1.1",
+      "2023_nov_p1_exam_maths__Q1__1.2",
+      "2024_nov_p1_exam_maths__Q1__1.2",
+      "2024_nov_p2_exam_maths__Q6__6.2"
+    ]
+  },
+  "STRUCT_ALG": {
+    "topic_v2": "ALG",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q1__1.1.2",
+      "2023_nov_p1_exam_maths__Q1__1.1.4",
+      "2024_nov_p1_exam_maths__Q1__1.1.3",
+      "2025_nov_p1_exam_maths__Q1__1.1.3"
+    ]
+  },
+  "standard_dev": {
+    "topic_v2": "STAT",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q1__1.5.2",
+      "2023_nov_p2_exam_maths__Q1__1.5.3",
+      "2024_nov_p2_exam_maths__Q1__1.5",
+      "2025_nov_p2_exam_maths__Q2__2.2"
+    ]
+  },
+  "regression": {
+    "topic_v2": "STAT",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q1__1.5",
+      "2024_nov_p2_exam_maths__Q1__1.2",
+      "2024_nov_p2_exam_maths__Q1__1.4",
+      "2024_nov_p2_exam_maths__Q1__1.6",
+      "2025_nov_p2_exam_maths__Q1__1.1"
+    ]
+  },
+  "STRUCT_SEQ": {
+    "topic_v2": "SEQ",
+    "sample_qids": []
+  },
+  "ogive_reading": {
+    "topic_v2": "STAT",
+    "sample_qids": [
+      "2024_nov_p2_exam_maths__Q2__2.6"
+    ]
+  },
+  "nsc_term_to_term": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q10__10.3.2",
+      "2024_nov_p1_exam_maths__Q10__10.2"
+    ]
+  },
+  "nsc_geometric_seq": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q3__3.2"
+    ]
+  },
+  "circle_equation": {
+    "topic_v2": "AGEO",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q4__4.5",
+      "2023_nov_p2_exam_maths__Q8__8.3",
+      "2024_nov_p1_exam_maths__Q3__3.2",
+      "2024_nov_p1_exam_maths__Q3__3.3",
+      "2024_nov_p2_exam_maths__Q10__10.2"
+    ]
+  },
+  "gradient": {
+    "topic_v2": "AGEO",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q3__3.2",
+      "2024_nov_p2_exam_maths__Q3__3.4",
+      "2024_nov_p2_exam_maths__Q3__3.7",
+      "2025_nov_p2_exam_maths__Q3__3.2"
+    ]
+  },
+  "tangent_gradient": {
+    "topic_v2": "CALC",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q4__4.2",
+      "2023_nov_p1_exam_maths__Q5__5.7",
+      "2023_nov_p1_exam_maths__Q7__7.2.2",
+      "2023_nov_p1_exam_maths__Q8__8.4",
+      "2023_nov_p2_exam_maths__Q10__10.3"
+    ]
+  },
+  "nsc_length": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q3__3.1",
+      "2024_nov_p2_exam_maths__Q3__3.4",
+      "2024_nov_p2_exam_maths__Q10__10.2.2",
+      "2025_nov_p2_exam_maths__Q3__3.1",
+      "2025_nov_p2_exam_maths__Q8__8.4"
+    ]
+  },
+  "asymptotes": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q4__4.1",
+      "2024_nov_p1_exam_maths__Q5__5.2",
+      "2025_nov_p1_exam_maths__Q4__4.4",
+      "2025_nov_p1_exam_maths__Q4__4.5",
+      "2025_nov_p1_exam_maths__Q6__6.2"
+    ]
+  },
+  "nsc_domain": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q4__4.5",
+      "2025_nov_p1_exam_maths__Q5__5.1"
+    ]
+  },
+  "STRUCT_CALC": {
+    "topic_v2": "CALC",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q8__8.1",
+      "2023_nov_p1_exam_maths__Q8__8.2",
+      "2024_nov_p1_exam_maths__Q6__6.1"
+    ]
+  },
+  "nsc_maximum": {
+    "topic_v2": "CALC",
+    "sample_qids": [
+      "2024_nov_p1_exam_maths__Q6__6.3",
+      "2024_nov_p2_exam_maths__Q6__6.3.1",
+      "2024_nov_p2_exam_maths__Q6__6.3.2"
+    ]
+  },
+  "identity_proof": {
+    "topic_v2": "TRIG",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q5__5.3.1",
+      "2024_nov_p2_exam_maths__Q6__6.1",
+      "2024_nov_p2_exam_maths__Q6__6.1.1"
+    ]
+  },
+  "nsc_range": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2024_nov_p1_exam_maths__Q4__4.1",
+      "2025_nov_p1_exam_maths__Q5__5.2"
+    ]
+  },
+  "nsc_loan": {
+    "topic_v2": "FIN",
+    "sample_qids": [
+      "2024_nov_p1_exam_maths__Q7__7.3.2",
+      "2025_nov_p1_exam_maths__Q7__7.2",
+      "2025_nov_p1_exam_maths__Q7__7.3.1"
+    ]
+  },
+  "nsc_first_principles": {
+    "topic_v2": "CALC",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q7__7.1",
+      "2024_nov_p1_exam_maths__Q8__8.3.1",
+      "2025_nov_p1_exam_maths__Q8__8.1"
+    ]
+  },
+  "STRUCT_EUCL": {
+    "topic_v2": "EUCL",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q5__5.2.1",
+      "2024_nov_p2_exam_maths__Q9__9.2",
+      "2024_nov_p2_exam_maths__Q11__11.2",
+      "2024_nov_p2_exam_maths__Q11__11.3",
+      "2024_nov_p2_exam_maths__Q11__11.4"
+    ]
+  },
+  "with_reasons": {
+    "topic_v2": "EUCL",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q9__9.2",
+      "2023_nov_p2_exam_maths__Q9__9.3",
+      "2024_nov_p2_exam_maths__Q10__10.2.1",
+      "2025_nov_p2_exam_maths__Q9__9.2",
+      "2025_nov_p2_exam_maths__Q11__11.2"
+    ]
+  },
+  "nsc_log_graph": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2025_nov_p2_exam_maths__Q3__3.5",
+      "2025_nov_p2_exam_maths__Q3__3.7"
+    ]
+  },
+  "nsc_probability": {
+    "topic_v2": "PROB",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q10__10.2",
+      "2023_nov_p1_exam_maths__Q10__10.2.2",
+      "2024_nov_p1_exam_maths__Q11__11.2",
+      "2025_nov_p1_exam_maths__Q11__11.1.2",
+      "2025_nov_p1_exam_maths__Q11__11.2"
+    ]
+  },
+  "nsc_independent": {
+    "topic_v2": "PROB",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q10__10.1",
+      "2024_nov_p1_exam_maths__Q11__11.3",
+      "2025_nov_p1_exam_maths__Q11__11.1.1"
+    ]
+  },
+  "correlation": {
+    "topic_v2": "STAT",
+    "sample_qids": [
+      "2025_nov_p2_exam_maths__Q1__1.3"
+    ]
+  },
+  "distance": {
+    "topic_v2": "AGEO",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q4__4.3"
+    ]
+  },
+  "general_solution": {
+    "topic_v2": "TRIG",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q5__5.3.2",
+      "2024_nov_p2_exam_maths__Q7__7.3.2"
+    ]
+  },
+  "nsc_graph_interp": {
+    "topic_v2": "FUNC",
+    "sample_qids": []
+  },
+  "nsc_depreciat": {
+    "topic_v2": "FIN",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q6__6.2.1"
+    ]
+  },
+  "nsc_compound": {
+    "topic_v2": "FIN",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q6__6.2.2",
+      "2023_nov_p1_exam_maths__Q6__6.3"
+    ]
+  },
+  "cyclic_quad": {
+    "topic_v2": "EUCL",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q8__8.2",
+      "2023_nov_p2_exam_maths__Q10__10.2"
+    ]
+  },
+  "nsc_no_repeat": {
+    "topic_v2": "PROB",
+    "sample_qids": [
+      "2024_nov_p1_exam_maths__Q12__12.2"
+    ]
+  },
+  "mean": {
+    "topic_v2": "STAT",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q1__1.5.1",
+      "2023_nov_p2_exam_maths__Q2__2.4",
+      "2024_nov_p2_exam_maths__Q1__1.4"
+    ]
+  },
+  "nsc_first_difference": {
+    "topic_v2": "SEQ",
+    "sample_qids": []
+  },
+  "nsc_inverse": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2024_nov_p1_exam_maths__Q8__8.3.2",
+      "2025_nov_p1_exam_maths__Q4__4.2"
+    ]
+  },
+  "nsc_concave": {
+    "topic_v2": "CALC",
+    "sample_qids": [
+      "2025_nov_p1_exam_maths__Q9__9.4"
+    ]
+  },
+  "nsc_quadratic_pattern": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q2__2.2"
+    ]
+  },
+  "second_difference": {
+    "topic_v2": "SEQ",
+    "sample_qids": []
+  },
+  "nsc_arithmetic_seq": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2025_nov_p2_exam_maths__Q6__6.2"
+    ]
+  },
+  "iqr": {
+    "topic_v2": "STAT",
+    "sample_qids": []
+  },
+  "box_whisker": {
+    "topic_v2": "STAT",
+    "sample_qids": []
+  },
+  "nsc_interpret": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2024_nov_p1_exam_maths__Q5__5.4",
+      "2024_nov_p1_exam_maths__Q9__9.3"
+    ]
+  },
+  "nsc_instalment": {
+    "topic_v2": "FIN",
+    "sample_qids": []
+  },
+  "nsc_intersect_3": {
+    "topic_v2": "CALC",
+    "sample_qids": [
+      "2024_nov_p2_exam_maths__Q10__10.1"
+    ]
+  },
+  "venn": {
+    "topic_v2": "PROB",
+    "sample_qids": []
+  },
+  "angle_inclination": {
+    "topic_v2": "AGEO",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q3__3.3"
+    ]
+  },
+  "nsc_cubic": {
+    "topic_v2": "CALC",
+    "sample_qids": []
+  },
+  "nsc_digit_code": {
+    "topic_v2": "PROB",
+    "sample_qids": []
+  },
+  "mutually_exclusive": {
+    "topic_v2": "PROB",
+    "sample_qids": []
+  },
+  "nsc_sigma_pk": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q8__8.3",
+      "2025_nov_p2_exam_maths__Q5__5.1"
+    ]
+  },
+  "simple_interest": {
+    "topic_v2": "FIN",
+    "sample_qids": []
+  },
+  "nsc_simul_x_y": {
+    "topic_v2": "ALG",
+    "sample_qids": [
+      "2025_nov_p1_exam_maths__Q1__1.2"
+    ]
+  },
+  "nsc_geometric_series": {
+    "topic_v2": "SEQ",
+    "sample_qids": []
+  },
+  "nsc_code": {
+    "topic_v2": "PROB",
+    "sample_qids": [
+      "2024_nov_p1_exam_maths__Q12__12.3",
+      "2024_nov_p1_exam_maths__Q12__main"
+    ]
+  },
+  "sum_to_infinity": {
+    "topic_v2": "SEQ",
+    "sample_qids": []
+  },
+  "midpoint": {
+    "topic_v2": "AGEO",
+    "sample_qids": []
+  },
+  "parallel_perp": {
+    "topic_v2": "AGEO",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q3__3.5"
+    ]
+  },
+  "nsc_constant_ratio": {
+    "topic_v2": "SEQ",
+    "sample_qids": []
+  },
+  "nsc_combinations": {
+    "topic_v2": "PROB",
+    "sample_qids": []
+  },
+  "quadratic_pattern": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q2__2.2.2",
+      "2024_nov_p1_exam_maths__Q2__2.2",
+      "2024_nov_p1_exam_maths__Q2__2.2.1",
+      "2024_nov_p1_exam_maths__Q2__2.2.2"
+    ]
+  },
+  "nsc_translation": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2023_nov_p2_exam_maths__Q4__4.6",
+      "2023_nov_p2_exam_maths__Q6__6.5",
+      "2025_nov_p1_exam_maths__Q4__4.6",
+      "2025_nov_p2_exam_maths__Q7__7.2"
+    ]
+  },
+  "nsc_interest": {
+    "topic_v2": "FIN",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q6__6.1.2"
+    ]
+  },
+  "tree": {
+    "topic_v2": "PROB",
+    "sample_qids": [
+      "2023_nov_p1_exam_maths__Q10__10.2.1"
+    ]
+  },
+  "nsc_arithmetic_series": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2024_nov_p1_exam_maths__Q2__2.1",
+      "2024_nov_p1_exam_maths__Q2__2.1.2"
+    ]
+  },
+  "domain_range": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2024_nov_p1_exam_maths__Q5__5.5"
+    ]
+  },
+  "MANUAL_BACKFILL": {
+    "topic_v2": "ALG",
+    "sample_qids": []
+  },
+  "similarity": {
+    "topic_v2": "EUCL",
+    "sample_qids": [
+      "2025_nov_p2_exam_maths__Q1__1.2"
+    ]
+  },
+  "nsc_infinite_series": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2025_nov_p1_exam_maths__Q2__2.1.3"
+    ]
+  },
+  "nsc_first_5_seconds": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2025_nov_p1_exam_maths__Q3__3.1"
+    ]
+  },
+  "nsc_max_depth": {
+    "topic_v2": "SEQ",
+    "sample_qids": [
+      "2025_nov_p1_exam_maths__Q3__3.3"
+    ]
+  },
+  "parabola": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2025_nov_p1_exam_maths__Q5__5.4"
+    ]
+  },
+  "nsc_length_mt": {
+    "topic_v2": "FUNC",
+    "sample_qids": [
+      "2025_nov_p1_exam_maths__Q5__5.5"
+    ]
+  },
+  "nsc_maximise": {
+    "topic_v2": "CALC",
+    "sample_qids": [
+      "2025_nov_p1_exam_maths__Q10__10.2"
+    ]
+  },
+  "nsc_counting": {
+    "topic_v2": "PROB",
+    "sample_qids": [
+      "2025_nov_p1_exam_maths__Q11__11.3.1"
+    ]
+  }
+}

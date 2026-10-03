@@ -25,7 +25,7 @@
         ]
       },
       "marks": 1,
-      "skill_id": "euclidean.similarity",
+      "skill_id": "geometry.similarity",
       "expected_fn": "AH:HG = 3:2",
       "steps": [
         "From similar triangles ABD and ABC."

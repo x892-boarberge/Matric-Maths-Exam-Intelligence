@@ -1,0 +1,1371 @@
+{
+  "schema_version": 1,
+  "pool_file": "variant_pool_spec_canonical.csv",
+  "skill_column": "skill_id",
+  "skills": {
+    "geometry.circle": [
+      {
+        "row": 0,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 34,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 107,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 117,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 118,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 119,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 120,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "trig.graph": [
+      {
+        "row": 1,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "mixed"
+      },
+      {
+        "row": 44,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 78,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 81,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 149,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 150,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "functions.parabola": [
+      {
+        "row": 2,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "coarse"
+      },
+      {
+        "row": 61,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 89,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 90,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 91,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "calculus.cubic": [
+      {
+        "row": 3,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "mixed"
+      },
+      {
+        "row": 59,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 74,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 111,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 121,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.circle": [
+      {
+        "row": 4,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "coarse"
+      },
+      {
+        "row": 35,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 64,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 84,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.regression": [
+      {
+        "row": 5,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "mixed"
+      },
+      {
+        "row": 36,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 71,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 143,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "sequences.ap": [
+      {
+        "row": 6,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 45,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 134,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "algebra.quadratic": [
+      {
+        "row": 7,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "mixed"
+      },
+      {
+        "row": 15,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "probability.counting": [
+      {
+        "row": 8,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "coarse"
+      }
+    ],
+    "calculus.derivative": [
+      {
+        "row": 9,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 73,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 123,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "sequences.gp": [
+      {
+        "row": 10,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 58,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 67,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 135,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 136,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "trig.identities": [
+      {
+        "row": 11,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 32,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 41,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 47,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 57,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 69,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 72,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 77,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 152,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "finance.loan": [
+      {
+        "row": 12,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "coarse"
+      },
+      {
+        "row": 43,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 106,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.gradient": [
+      {
+        "row": 13,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 39,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "functions.hyperbola": [
+      {
+        "row": 14,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 98,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 102,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 103,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 104,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "trig.3d": [
+      {
+        "row": 16,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 25,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 140,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "sequences.quadratic": [
+      {
+        "row": 17,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 68,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 127,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 128,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "functions.log": [
+      {
+        "row": 18,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 93,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 94,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 96,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "euclidean.similarity": [
+      {
+        "row": 19,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "algebra.surd": [
+      {
+        "row": 20,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.line": [
+      {
+        "row": 21,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "trig.equation": [
+      {
+        "row": 22,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 66,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "finance.compound": [
+      {
+        "row": 23,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.mean": [
+      {
+        "row": 24,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 70,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "algebra.simultaneous": [
+      {
+        "row": 26,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.midpoint": [
+      {
+        "row": 27,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.std_dev": [
+      {
+        "row": 28,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 145,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 146,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 147,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 148,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "finance.annuity": [
+      {
+        "row": 29,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 105,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "geometry.proportion": [
+      {
+        "row": 30,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "algebra.exponential": [
+      {
+        "row": 31,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 38,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "probability.independent": [
+      {
+        "row": 33,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "calculus.first_principles": [
+      {
+        "row": 37,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 48,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.iqr": [
+      {
+        "row": 40,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 141,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "functions.exponential": [
+      {
+        "row": 42,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 101,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "functions.inverse": [
+      {
+        "row": 46,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 75,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.distance": [
+      {
+        "row": 49,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 52,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 108,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.angle": [
+      {
+        "row": 50,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.solve": [
+      {
+        "row": 51,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.area": [
+      {
+        "row": 53,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 85,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.cumulative": [
+      {
+        "row": 54,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "probability.tree": [
+      {
+        "row": 55,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "calculus.optimisation": [
+      {
+        "row": 56,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 60,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 92,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 112,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 115,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 116,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "functions.inequality": [
+      {
+        "row": 62,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.line_equation": [
+      {
+        "row": 63,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "probability.independence": [
+      {
+        "row": 65,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.tangent": [
+      {
+        "row": 76,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 109,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "functions.line": [
+      {
+        "row": 79,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 95,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 97,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "finance.simple": [
+      {
+        "row": 80,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 100,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.circumcentre": [
+      {
+        "row": 82,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.inclination": [
+      {
+        "row": 83,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "algebra.proof": [
+      {
+        "row": 86,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.area_ratio": [
+      {
+        "row": 87,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "calculus.inequality": [
+      {
+        "row": 88,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "functions.distance": [
+      {
+        "row": 99,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.translation": [
+      {
+        "row": 110,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "geometry.area_ratio": [
+      {
+        "row": 113,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "calculus.tangent": [
+      {
+        "row": 114,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "analytical.ratio": [
+      {
+        "row": 122,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.correlation": [
+      {
+        "row": 124,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 125,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.box_whisker": [
+      {
+        "row": 126,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "probability.union": [
+      {
+        "row": 129,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "probability.tables": [
+      {
+        "row": 130,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "probability.set": [
+      {
+        "row": 131,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "functions.transformation": [
+      {
+        "row": 132,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "probability.venn": [
+      {
+        "row": 133,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.histogram": [
+      {
+        "row": 137,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.frequency": [
+      {
+        "row": 138,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      },
+      {
+        "row": 139,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.median": [
+      {
+        "row": 142,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "stats.skewness": [
+      {
+        "row": 144,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ],
+    "trig.maximum": [
+      {
+        "row": 151,
+        "signature_id_v2": null,
+        "anchor_qid": null,
+        "template_file": null,
+        "parameters": null,
+        "attribution_quality": "clean"
+      }
+    ]
+  }
+}

@@ -28,6 +28,8 @@ MAP_PATH = ROOT / "data" / "processed" / "tutor" / "analogue_template_map.csv"
 # Load the map: skill_id -> template_id
 # ------------------------------------------------------------------
 def _load_template_map() -> dict:
+    """Returns {skill_id: [template_id, ...]} — allows aggregation
+    when multiple old skill_ids collapse to the same canonical skill."""
     if not MAP_PATH.exists():
         return {}
     mapping = {}
@@ -37,7 +39,7 @@ def _load_template_map() -> dict:
             sid = (row.get("skill_id") or "").strip()
             tid = (row.get("template_id") or "").strip()
             if sid and tid:
-                mapping[sid] = tid
+                mapping.setdefault(sid, []).append(tid)
     return mapping
 
 
@@ -60,15 +62,21 @@ def _stable_key(analogue: dict) -> str:
 # Public API
 # ------------------------------------------------------------------
 def get_template_for(skill_id: str):
-    return SKILL_TO_TEMPLATE.get(str(skill_id).strip())
+    """Return the list of template_ids for a skill, or [] if none.
+    Kept as a thin shim for backwards compatibility with callers that
+    expected a single id — use get_templates_for for the list."""
+    return list(SKILL_TO_TEMPLATE.get(skill_id, []))
+
+
+def get_templates_for(skill_id: str):
+    """Return all template_ids mapped to a canonical skill_id."""
+    return list(SKILL_TO_TEMPLATE.get(skill_id, []))
 
 
 def has_analogue(skill_id: str) -> bool:
-    tid = get_template_for(skill_id)
-    if tid is None:
-        return False
-    return len(POOL.get(tid, [])) > 0
-
+    """Return True if the skill has any analogue pool entries."""
+    tids = SKILL_TO_TEMPLATE.get(skill_id, [])
+    return any(POOL.get(tid, []) for tid in tids)
 
 def all_skills() -> list:
     return sorted(SKILL_TO_TEMPLATE.keys())
@@ -85,25 +93,27 @@ def analogue_key(analogue: dict) -> str:
 def get_random_analogue(skill_id: str, exclude_keys=None):
     """
     Return a random analogue for the given skill, excluding those in
-    exclude_keys (a set of analogue_key() hashes). If every analogue has
-    been shown, falls back to the full pool (so the learner still sees
-    something rather than nothing).
+    exclude_keys (a set of analogue_key() hashes). Samples across every
+    template_id mapped to the canonical skill_id, so aggregation works.
+    Falls back to the full pool if every analogue has been seen.
     """
-    tid = get_template_for(skill_id)
-    if tid is None:
+    tids = SKILL_TO_TEMPLATE.get(skill_id, [])
+    if not tids:
         return None
-    pool = POOL.get(tid, [])
-    if not pool:
+
+    # Gather all analogues across the skill's template pool
+    combined = []
+    for tid in tids:
+        combined.extend(POOL.get(tid, []))
+    if not combined:
         return None
 
     exclude = set(exclude_keys or [])
-    fresh = [a for a in pool if _stable_key(a) not in exclude]
-
+    fresh = [a for a in combined if _stable_key(a) not in exclude]
     if fresh:
         return random.choice(fresh)
+    return random.choice(combined)
 
-    # Every one has been seen. Reset and pick randomly from the full pool.
-    return random.choice(pool)
 
 
 def get_analogue(skill_id: str):
