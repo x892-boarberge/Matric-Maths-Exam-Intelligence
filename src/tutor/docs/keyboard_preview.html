@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>MethodMarker Keyboard</title>
+<style>
+:root{
+  --bg:#eef2f8; --card:#fff; --line:#e4e9f2; --ink:#0b1f44;
+  --ink2:#465a80; --ink3:#9aa8c2; --blue:#3b5bf6; --blue2:#5b8cf6;
+  --amber:#f0ad4e;
+  --key-h: clamp(30px, 5.2vw, 40px);
+  --key-f: clamp(10px, 1.4vw, 13px);
+  --pad: clamp(4px, 0.9vw, 8px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  display:flex;justify-content:center;padding:6px;min-height:100vh;overflow:hidden}
+.app{width:100%;max-width:720px;background:var(--card);border-radius:16px;overflow:hidden;
+  box-shadow:0 8px 32px rgba(20,40,90,.12);display:flex;flex-direction:column;
+  height:calc(100vh - 12px)}
+
+.topbar{display:flex;align-items:center;gap:8px;padding:6px 12px;background:#f6f8fd;
+  border-bottom:1px solid var(--line);flex:none}
+.logo{width:22px;height:22px;border-radius:6px;
+  background:linear-gradient(135deg,var(--blue),var(--blue2));display:flex;
+  align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;flex:none}
+.brand{font-weight:700;font-size:12px;color:var(--ink)}
+.tag{font-size:9px;color:#6b7a99}
+
+/* working area — the whole line is editable, structures are inline spans */
+.work{background:#fff;padding:6px 12px 8px;flex:none;
+  max-height:clamp(100px,20vh,170px);overflow-y:auto}
+.work-head{display:flex;justify-content:space-between;align-items:center;font-size:10px;
+  color:var(--ink2);font-weight:600;margin-bottom:4px;
+  position:sticky;top:0;background:#fff;padding-bottom:2px}
+.work-head .hint{color:var(--ink3);font-weight:500;font-size:9px}
+.lines{display:flex;flex-direction:column;gap:2px}
+.lrow{display:grid;grid-template-columns:20px 1fr;column-gap:5px;align-items:flex-start}
+.lnum{color:#b8c2d6;font-size:9px;text-align:right;padding-top:7px;user-select:none}
+.lbody{min-height:28px;padding:4px 6px;border-radius:5px;
+  font-size:clamp(15px,2vw,18px);line-height:1.7;color:var(--ink);
+  outline:none;font-family:'Cambria Math','Latin Modern Math',Georgia,serif;
+  white-space:pre-wrap;word-break:break-word;caret-color:var(--blue)}
+.lbody:focus{background:#f5f8ff}
+
+/* ─── SLOT — plain inline span, real text nodes inside ─── */
+.slot{
+  display:inline;
+  padding:0 1px;
+  outline:none;
+  vertical-align:baseline;
+  color:var(--ink);
+}
+.slot:empty::before{
+  content:"□";
+  color:#a5b0c4;
+}
+
+/* ─── FRACTION — plain inline-flex shape, no extra padding ─── */
+.mq-frac{
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  vertical-align:middle;
+  padding:0 2px;
+  line-height:1.2;
+}
+.mq-frac .g-num{
+  display:inline-block;
+  padding:1px 3px 3px;
+  border-bottom:1.5px solid var(--ink);
+  text-align:center;
+  min-width:16px;
+}
+.mq-frac .g-den{
+  display:inline-block;
+  padding:3px 3px 1px;
+  text-align:center;
+  min-width:16px;
+}
+
+/* ─── EXPONENT ─── */
+.mq-exp{display:inline-flex;align-items:flex-start;vertical-align:middle;padding:0}
+.mq-exp .mq-pow{font-size:.62em;position:relative;top:-.55em;padding-left:1px}
+
+/* ─── RADICAL ─── */
+.g-sqrt{
+  display:inline-flex;
+  align-items:stretch;
+  vertical-align:middle;
+  line-height:1.25;
+  font-family:'Cambria Math','Latin Modern Math','Times New Roman',Georgia,serif;
+}
+.g-sqrt .g-sign{
+  font-size:1.5em;
+  line-height:0.9;
+  padding:0 1px 0 0;
+  align-self:flex-end;
+  color:var(--ink);
+}
+.g-sqrt .g-rad{
+  display:inline-flex;
+  align-items:center;
+  padding:2px 4px 2px 3px;
+  border-top:1.5px solid var(--ink);
+  min-height:1.4em;
+  min-width:14px;
+}
+.g-sqrt .g-idx{
+  font-size:.62em;
+  align-self:flex-start;
+  padding:2px 0 0 1px;
+  color:var(--ink);
+  line-height:1;
+}
+
+/* ─── SUMMATION ─── */
+.mq-sum{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;
+  padding:0 2px;line-height:1}
+.mq-sum .mq-top{font-size:.6em;min-width:16px;text-align:center;padding:1px 2px}
+.mq-sum .mq-sig{font-size:1.15em;line-height:1;margin:1px 0}
+.mq-sum .mq-bot{font-size:.6em;min-width:16px;text-align:center;padding:1px 2px}
+
+.mq-log{display:inline-flex;align-items:flex-end;vertical-align:middle;padding:0}
+.mq-log .slot{font-size:.62em;text-align:center}
+
+.mq-paren{display:inline-flex;align-items:center;padding:0;
+  font-family:'Cambria Math',Georgia,serif}
+.mq-qf{display:inline-flex;align-items:center;padding:0 2px;
+  font-family:'Cambria Math',Georgia,serif}
+
+.sbc{padding:5px 12px 7px;background:#fff;border-top:1px dashed var(--line);flex:none}
+.sbc-head{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--ink2);
+  font-weight:600;margin-bottom:4px}
+.sbc-head .dot{width:5px;height:5px;border-radius:50%;background:var(--amber)}
+#sbc{width:100%;height:26px;resize:none;font-family:inherit;font-size:11px;
+  padding:5px 8px;border:1px solid var(--line);border-radius:6px;
+  background:#fffdf7;color:var(--ink);outline:none;transition:height .2s ease}
+#sbc:focus{height:60px;box-shadow:0 0 0 3px rgba(240,173,78,.15)}
+
+.tabs{display:flex;overflow-x:auto;gap:3px;padding:4px 8px;background:#f6f8fd;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);flex:none;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;padding:4px 9px;border-radius:12px;font-size:10px;font-weight:600;
+  color:var(--ink2);background:transparent;border:none;cursor:pointer;
+  white-space:nowrap;font-family:inherit}
+.tab.active{background:var(--blue);color:#fff}
+
+.kb-scroll{flex:1 1 auto;overflow-y:auto;background:#fff;display:flex;flex-direction:column}
+.kb{padding:var(--pad);display:flex;flex-direction:column;gap:4px}
+.row{display:grid;gap:4px}
+.key{padding:2px;border-radius:7px;background:#fff;border:1px solid #dfe5ef;color:var(--ink);
+  font-size:var(--key-f);cursor:pointer;text-align:center;user-select:none;
+  font-family:inherit;min-height:var(--key-h);
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+.key:active{transform:scale(.95);background:#eef2fb}
+.key.inv-active{background:var(--amber);color:#111;border-color:var(--amber)}
+
+.acts{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;padding:5px var(--pad) 6px;
+  background:#f6f8fd;border-top:1px solid var(--line);flex:none}
+.act{padding:6px 2px;border-radius:7px;background:#eef2fb;border:1px solid #dfe5ef;
+  color:#223a6b;font-size:10px;font-weight:700;cursor:pointer;text-align:center;
+  user-select:none;min-height:var(--key-h);
+  display:flex;align-items:center;justify-content:center;font-family:inherit}
+.act.done{background:var(--blue);color:#fff;border-color:var(--blue)}
+.act.active-mode{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+.result{padding:6px 12px;background:var(--ink);color:#fff;
+  font-family:'SF Mono',Menlo,monospace;font-size:9px;line-height:1.4;
+  max-height:0;overflow:hidden;transition:max-height .25s ease;flex:none}
+.result.shown{max-height:180px;overflow-y:auto}
+.result .label{color:#9ab;margin-bottom:3px}
+.result pre{margin:0;color:#cfe2ff;white-space:pre-wrap}
+
+@media (max-width:480px){
+  .work{max-height:clamp(90px,16vh,140px)}
+  .lbody{font-size:14px}
+  .kb{padding:4px}
+  .row{gap:3px}
+  .key{min-height:32px;border-radius:6px}
+  .act{font-size:9px;padding:4px 1px;min-height:32px}
+  .topbar{padding:5px 10px}
+  .tab{font-size:9px;padding:3px 8px}
+}
+</style></head><body>
+
+<div class="app">
+  <div class="topbar">
+    <div class="logo">M</div>
+    <div><div class="brand">MethodMarker</div>
+    <div class="tag">Better Methods. Higher Marks.</div></div>
+  </div>
+
+  <div class="work">
+    <div class="work-head">
+      <span>&#9998; Working</span>
+      <span class="hint">tap a line · ⏎ new step · → exits a structure</span>
+    </div>
+    <div class="lines" id="lines"></div>
+  </div>
+
+  <div class="sbc">
+    <div class="sbc-head"><span class="dot"></span>
+      Ask Tanaka — where did you get stuck?</div>
+    <textarea id="sbc" rows="1"
+      placeholder="e.g. I did step 2 but I don't understand why the sign flips"></textarea>
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="kb-scroll"><div class="kb" id="kb"></div></div>
+  <div class="acts" id="acts"></div>
+  <div class="result" id="result"></div>
+</div>
+
+<script>
+const LAYOUT = {"schema_version": 25.0, "base": {"structure": [{"l": "a/b", "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span>"}, {"l": "□/□", "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span>"}, {"l": "x²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}, {"l": "xⁿ", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"}, {"l": "√", "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"}, {"l": "ⁿ√", "i": "<span class='g-sqrt'><span class='g-idx'>□</span><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"}, {"l": "∛", "i": "<span class='g-sqrt'><span class='g-idx'>3</span><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"}, {"l": "log", "i": "<span class='mq-log'>log<span class='slot cur'></span>(</span>"}, {"l": "logₐ", "i": "<span class='mq-log'>log<span class='slot cur'></span>(</span>"}, {"l": "π", "i": "π"}, {"l": "θ", "i": "θ"}, {"l": "∞", "i": "∞"}], "operators": [{"l": "+", "i": "+"}, {"l": "−", "i": "−"}, {"l": "×", "i": "×"}, {"l": "÷", "i": "÷"}, {"l": "=", "i": "="}, {"l": "(", "i": "("}, {"l": ")", "i": ")"}, {"l": "<", "i": "<"}, {"l": ">", "i": ">"}, {"l": "≤", "i": "≤"}, {"l": "≥", "i": "≥"}, {"l": "≠", "i": "≠"}, {"l": "∴", "i": "∴"}, {"l": "∵", "i": "∵"}, {"l": "⇒", "i": "⇒"}], "digits": [{"l": "1", "i": "1"}, {"l": "2", "i": "2"}, {"l": "3", "i": "3"}, {"l": "4", "i": "4"}, {"l": "5", "i": "5"}, {"l": "6", "i": "6"}, {"l": "7", "i": "7"}, {"l": "8", "i": "8"}, {"l": "9", "i": "9"}, {"l": "0", "i": "0"}, {"l": ".", "i": "."}, {"l": "(−)", "i": "−"}], "variables": [{"l": "x", "i": "x"}, {"l": "y", "i": "y"}, {"l": "a", "i": "a"}, {"l": "b", "i": "b"}, {"l": "c", "i": "c"}, {"l": "n", "i": "n"}, {"l": "k", "i": "k"}, {"l": "t", "i": "t"}], "actions": [{"l": "SPACE", "i": "__space__"}, {"l": "DEL", "i": "__del__"}, {"l": "AC", "i": "__clear__"}, {"l": "ABC", "i": "__abc__"}, {"l": "→", "i": "__exit__"}, {"l": "⏎", "i": "__enter__"}, {"l": "?", "i": "__ask__"}, {"l": "✓", "i": "__done__"}], "abc": [[{"l": "A", "i": "A"}, {"l": "B", "i": "B"}, {"l": "C", "i": "C"}, {"l": "D", "i": "D"}, {"l": "E", "i": "E"}, {"l": "F", "i": "F"}, {"l": "G", "i": "G"}, {"l": "H", "i": "H"}, {"l": "I", "i": "I"}, {"l": "J", "i": "J"}], [{"l": "K", "i": "K"}, {"l": "L", "i": "L"}, {"l": "M", "i": "M"}, {"l": "N", "i": "N"}, {"l": "O", "i": "O"}, {"l": "P", "i": "P"}, {"l": "Q", "i": "Q"}, {"l": "R", "i": "R"}, {"l": "S", "i": "S"}, {"l": "T", "i": "T"}], [{"l": "U", "i": "U"}, {"l": "V", "i": "V"}, {"l": "W", "i": "W"}, {"l": "X", "i": "X"}, {"l": "Y", "i": "Y"}, {"l": "Z", "i": "Z"}, {"l": "", "i": ""}, {"l": "", "i": ""}, {"l": "", "i": ""}], [{"l": "x₁", "i": "x₁"}, {"l": "y₁", "i": "y₁"}, {"l": "x₂", "i": "x₂"}, {"l": "y₂", "i": "y₂"}, {"l": "p", "i": "p"}, {"l": "q", "i": "q"}, {"l": "m", "i": "m"}, {"l": "r", "i": "r"}, {"l": "s", "i": "s"}, {"l": "u", "i": "u"}]]}, "tabs_order": ["Algebra", "Sequences", "Functions", "Calculus", "Trig", "Finance", "Analytical", "Euclidean", "Stats", "Probability"], "tabs": {"Algebra": [[{"l": "x²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}, {"l": "y²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}, {"l": "a²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}, {"l": "b²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}, {"l": "c²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}], [{"l": "x³", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>3</span></span>"}, {"l": "xⁿ", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"}, {"l": "aⁿ", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"}, {"l": "bⁿ", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"}], [{"l": "(□)²", "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>2</span></span>"}, {"l": "(□)³", "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>3</span></span>"}, {"l": "(□)ⁿ", "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>□</span></span>"}], [{"l": "±", "i": "±"}, {"l": "QF", "i": "<span class='mq-qf'>x = <span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span></span>"}]], "Sequences": [[{"l": "Σ", "i": "<span class='mq-sum'><span class='slot mq-top cur'>□</span><span class='mq-sig'>Σ</span><span class='slot mq-bot'>□</span></span>"}, {"l": "Tₙ", "i": "<span class='mq-exp'><span class='slot cur'>T</span><span class='slot mq-pow'>n</span></span>"}, {"l": "Sₙ", "i": "<span class='mq-exp'><span class='slot cur'>S</span><span class='slot mq-pow'>n</span></span>"}, {"l": "Tₙ₊₁", "i": "Tₙ₊₁"}, {"l": "Tₙ₋₁", "i": "Tₙ₋₁"}, {"l": "n→∞", "i": "n→∞"}], [{"l": "□²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}, {"l": "□³", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>3</span></span>"}, {"l": "□ⁿ", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"}, {"l": "(□)²", "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>2</span></span>"}, {"l": "(□)³", "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>3</span></span>"}, {"l": "(□)ⁿ", "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>□</span></span>"}], [{"l": "A", "i": "A"}, {"l": "P", "i": "P"}, {"l": "i", "i": "i"}, {"l": "n", "i": "n"}, {"l": "r", "i": "r"}]], "Functions": [[{"l": "f(□)", "i": "f(<span class='slot cur'></span>)"}, {"l": "g(□)", "i": "g(<span class='slot cur'></span>)"}, {"l": "f⁻¹(□)", "i": "f⁻¹(<span class='slot cur'></span>)"}, {"l": "→", "i": "→"}, {"l": "∞", "i": "∞"}, {"l": "Δ", "i": "Δ"}], [{"l": "sin(□)", "i": "sin(<span class='slot cur'></span>)"}, {"l": "cos(□)", "i": "cos(<span class='slot cur'></span>)"}, {"l": "tan(□)", "i": "tan(<span class='slot cur'></span>)"}], [{"l": "a/b", "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span>"}, {"l": "□ⁿ", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"}]], "Calculus": [[{"l": "d/dx", "i": "d/dx"}, {"l": "dy/dx", "i": "dy/dx"}, {"l": "f'(x)", "i": "f'(x)"}, {"l": "f''(x)", "i": "f''(x)"}, {"l": "lim", "i": "lim"}, {"l": "→", "i": "→"}], [{"l": "f(x)", "i": "f(x)"}, {"l": "f(a)", "i": "f(a)"}, {"l": "f(x+h)", "i": "f(x+h)"}, {"l": "Δx", "i": "Δx"}, {"l": "Δy/Δx", "i": "Δy/Δx"}], [{"l": "x²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}, {"l": "x³", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>3</span></span>"}, {"l": "xⁿ", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"}, {"l": "√x", "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"}, {"l": "sin x", "i": "sin x"}, {"l": "cos x", "i": "cos x"}, {"l": "tan x", "i": "tan x"}], [{"l": "Tangent", "i": "Tangent"}, {"l": "Normal", "i": "Normal"}, {"l": "Stationary", "i": "Stationary"}, {"l": "Max/Min", "i": "Max/Min"}, {"l": "Rate", "i": "Rate"}]], "Trig": [[{"l": "INV", "i": "__inv__"}, {"l": "sin(", "i": "sin(<span class='slot cur'></span>)"}, {"l": "cos(", "i": "cos(<span class='slot cur'></span>)"}, {"l": "tan(", "i": "tan(<span class='slot cur'></span>)"}, {"l": "sin²θ", "i": "<span class='mq-exp'><span class='slot cur'>sin θ</span><span class='slot mq-pow'>2</span></span>"}, {"l": "cos²θ", "i": "<span class='mq-exp'><span class='slot cur'>cos θ</span><span class='slot mq-pow'>2</span></span>"}], [{"l": "α", "i": "α"}, {"l": "β", "i": "β"}, {"l": "θ", "i": "θ"}, {"l": "2α", "i": "2α"}, {"l": "°", "i": "°"}, {"l": "π", "i": "π"}], [{"l": "(□±□)", "i": "<span class='mq-paren'>(<span class='slot cur'></span>±<span class='slot'></span>)</span>"}, {"l": "(90°±θ)", "i": "<span class='mq-paren'>(<span class='slot cur'>90°</span>±<span class='slot'>θ</span>)</span>"}, {"l": "(□±θ)", "i": "<span class='mq-paren'>(<span class='slot cur'></span>±<span class='slot'>θ</span>)</span>"}, {"l": "(180°±θ)", "i": "<span class='mq-paren'>(<span class='slot cur'>180°</span>±<span class='slot'>θ</span>)</span>"}, {"l": "(360°±θ)", "i": "<span class='mq-paren'>(<span class='slot cur'>360°</span>±<span class='slot'>θ</span>)</span>"}, {"l": "(−θ)", "i": "(−θ)"}], [{"l": "sin²θ", "i": "<span class='mq-exp'><span class='slot cur'>sin θ</span><span class='slot mq-pow'>2</span></span>"}, {"l": "sinⁿ□", "i": "<span class='mq-exp'><span class='slot cur'>sin </span><span class='slot mq-pow'>□</span></span>"}, {"l": "cos²θ", "i": "<span class='mq-exp'><span class='slot cur'>cos θ</span><span class='slot mq-pow'>2</span></span>"}, {"l": "cosⁿ□", "i": "<span class='mq-exp'><span class='slot cur'>cos </span><span class='slot mq-pow'>□</span></span>"}], [{"l": "tan²θ", "i": "<span class='mq-exp'><span class='slot cur'>tan θ</span><span class='slot mq-pow'>2</span></span>"}, {"l": "tanⁿ□", "i": "<span class='mq-exp'><span class='slot cur'>tan </span><span class='slot mq-pow'>□</span></span>"}, {"l": "sin□/cos□", "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'>sin □</span></span><span class='g-den'><span class='slot'>cos □</span></span></span>"}]], "Finance": [[{"l": "A", "i": "A"}, {"l": "P", "i": "P"}, {"l": "i", "i": "i"}, {"l": "n", "i": "n"}, {"l": "x", "i": "x"}], [{"l": "(1+i)ⁿ", "i": "<span class='mq-exp'><span class='slot cur'>1+i</span><span class='slot mq-pow'>□</span></span>"}, {"l": "(□)ⁿ", "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>□</span></span>"}, {"l": "(1−i)ⁿ", "i": "<span class='mq-exp'><span class='slot cur'>1−i</span><span class='slot mq-pow'>□</span></span>"}], [{"l": "□ⁿ", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"}, {"l": "□/□", "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span>"}]], "Analytical": [[{"l": "(□;□)", "i": "(<span class='slot cur'></span>;<span class='slot'></span>)"}, {"l": "x₁", "i": "x₁"}, {"l": "y₁", "i": "y₁"}, {"l": "x₂", "i": "x₂"}, {"l": "y₂", "i": "y₂"}], [{"l": "√", "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"}, {"l": "□²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}, {"l": "tan(□)", "i": "tan(<span class='slot cur'></span>)"}], [{"l": "θ", "i": "θ"}, {"l": "°", "i": "°"}], [{"l": "(□)²+(□)²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span> + <span class='mq-exp'><span class='slot'></span><span class='slot mq-pow'>2</span></span>"}]], "Euclidean": [[{"l": "△", "i": "△"}, {"l": "∥", "i": "∥"}, {"l": "⊥", "i": "⊥"}, {"l": "∠", "i": "∠"}, {"l": "≅", "i": "≅"}, {"l": "∼", "i": "∼"}], [{"l": "Â", "i": "Â"}, {"l": "B̂", "i": "B̂"}, {"l": "Ĉ", "i": "Ĉ"}, {"l": "D̂", "i": "D̂"}], [{"l": "sin(", "i": "sin(<span class='slot cur'></span>)"}, {"l": "cos(", "i": "cos(<span class='slot cur'></span>)"}, {"l": "tan(", "i": "tan(<span class='slot cur'></span>)"}], [{"l": "√", "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"}, {"l": "∴", "i": "∴"}, {"l": "∵", "i": "∵"}]], "Stats": [[{"l": "x̄", "i": "x̄"}, {"l": "σ", "i": "σ"}, {"l": "n", "i": "n"}, {"l": "r", "i": "r"}, {"l": "r²", "i": "<span class='mq-exp'><span class='slot cur'>r</span><span class='slot mq-pow'>2</span></span>"}], [{"l": "Σ", "i": "<span class='mq-sum'><span class='slot mq-top cur'>□</span><span class='mq-sig'>Σ</span><span class='slot mq-bot'>□</span></span>"}, {"l": "□²", "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"}, {"l": "√", "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"}], [{"l": "E(□)", "i": "E(<span class='slot cur'></span>)"}, {"l": "P(□)", "i": "P(<span class='slot cur'></span>)"}]], "Probability": [[{"l": "P(□)", "i": "P(<span class='slot cur'></span>)"}, {"l": "P(□∪□)", "i": "P(<span class='slot cur'></span>∪<span class='slot'></span>)"}, {"l": "P(□∩□)", "i": "P(<span class='slot cur'></span>∩<span class='slot'></span>)"}, {"l": "P(□')", "i": "P(<span class='slot cur'></span>')"}], [{"l": "∪", "i": "∪"}, {"l": "∩", "i": "∩"}, {"l": "'", "i": "'"}], [{"l": "nCr", "i": "nCr"}, {"l": "nPr", "i": "nPr"}, {"l": "!", "i": "!"}]]}, "trig_default": [{"l": "INV", "i": "__inv__"}, {"l": "sin(", "i": "sin(<span class='slot cur'></span>)"}, {"l": "cos(", "i": "cos(<span class='slot cur'></span>)"}, {"l": "tan(", "i": "tan(<span class='slot cur'></span>)"}, {"l": "sin²θ", "i": "<span class='mq-exp'><span class='slot cur'>sin θ</span><span class='slot mq-pow'>2</span></span>"}, {"l": "cos²θ", "i": "<span class='mq-exp'><span class='slot cur'>cos θ</span><span class='slot mq-pow'>2</span></span>"}], "trig_inverse": [{"l": "INV", "i": "__inv__"}, {"l": "sin⁻¹(", "i": "sin⁻¹(<span class='slot cur'></span>)"}, {"l": "cos⁻¹(", "i": "cos⁻¹(<span class='slot cur'></span>)"}, {"l": "tan⁻¹(", "i": "tan⁻¹(<span class='slot cur'></span>)"}, {"l": "sinⁿ□", "i": "<span class='mq-exp'><span class='slot cur'>sin </span><span class='slot mq-pow'>□</span></span>"}, {"l": "cosⁿ□", "i": "<span class='mq-exp'><span class='slot cur'>cos </span><span class='slot mq-pow'>□</span></span>"}]};
+const state = { tab: LAYOUT.tabs_order[0], abcMode: false, invMode: false };
+const linesEl = document.getElementById('lines');
+
+/* ─────────── helpers ─────────── */
+function addLine(html, focus){
+  const row = document.createElement('div'); row.className='lrow';
+  const n = document.createElement('div'); n.className='lnum';
+  const b = document.createElement('div'); b.className='lbody';
+  b.contentEditable='true'; b.spellcheck=false;
+  if (html) b.innerHTML = html;
+  row.appendChild(n); row.appendChild(b);
+  linesEl.appendChild(row); renumber();
+  if (focus) focusEnd(b);
+  return b;
+}
+function renumber(){
+  [...linesEl.querySelectorAll('.lrow')].forEach((r,i)=>{
+    r.querySelector('.lnum').textContent = i+1;
+  });
+}
+function focusEnd(el){
+  el.focus();
+  const r = document.createRange();
+  r.selectNodeContents(el); r.collapse(false);
+  const s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+}
+function activeLine(){
+  const sel = window.getSelection();
+  if (!sel.rangeCount) return null;
+  let n = sel.getRangeAt(0).startContainer;
+  while (n && n !== linesEl){
+    if (n.classList && n.classList.contains('lbody')) return n;
+    n = n.parentNode;
+  }
+  return null;
+}
+function currentSlot(){
+  const sel = window.getSelection();
+  if (!sel || !sel.rangeCount) return null;
+  let n = sel.getRangeAt(0).startContainer;
+  if (n.nodeType === 3) n = n.parentNode;
+  while (n && n !== linesEl){
+    if (n.classList && n.classList.contains('slot')) return n;
+    n = n.parentNode;
+  }
+  return null;
+}
+function currentStruct(slot){
+  if (!slot) return null;
+  return slot.closest('.mq-frac,.mq-exp,.g-sqrt,.mq-sum,.mq-log,.mq-paren,.mq-qf');
+}
+/* the caret leaves a structure cleanly when we put a marker span after it */
+function caretAfterStruct(struct){
+  // Do NOT insert a zero-width text marker. It becomes real editable content,
+  // confuses Backspace, and makes the caret jump. A Range can sit directly
+  // between inline elements in a contenteditable.
+  if (!struct || !struct.parentNode) return;
+  const sel = window.getSelection();
+  const r = document.createRange();
+  r.setStartAfter(struct);
+  r.collapse(true);
+  sel.removeAllRanges();
+  sel.addRange(r);
+}
+
+// Toolbar/key clicks can steal focus from a contenteditable. Save the exact
+// DOM range before the click, then restore it before inserting/deleting.
+let savedRange = null;
+
+function rememberSelection(){
+  const sel = window.getSelection();
+  if (!sel || !sel.rangeCount) return;
+  const r = sel.getRangeAt(0);
+  const line = activeLineFromNode(r.startContainer);
+  if (line) savedRange = r.cloneRange();
+}
+
+function activeLineFromNode(node){
+  let n = node;
+  if (n && n.nodeType === 3) n = n.parentNode;
+  while (n && n !== linesEl){
+    if (n.classList && n.classList.contains('lbody')) return n;
+    n = n.parentNode;
+  }
+  return null;
+}
+
+function restoreSelection(){
+  if (!savedRange) return false;
+  const start = savedRange.startContainer;
+  const end = savedRange.endContainer;
+  if (!start || !end || !start.isConnected || !end.isConnected) return false;
+  const line = activeLineFromNode(start);
+  if (!line) return false;
+  line.focus({preventScroll:true});
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(savedRange);
+  return true;
+}
+
+/* ─────────── insertion ─────────── */
+function insertAtCursor(html){
+  // Restore the learner's real caret before doing anything that could move it.
+  restoreSelection();
+
+  const sel = window.getSelection();
+  if (!sel || !sel.rangeCount) return;
+  const r = sel.getRangeAt(0);
+  const line = activeLineFromNode(r.startContainer);
+  if (!line) return;
+
+  const slot = currentSlot();
+  const frag = document.createRange().createContextualFragment(html);
+  const insertedNodes = [...frag.childNodes];
+
+  // IMPORTANT: never clear slot.textContent here. That destroys the live
+  // Range's container before insertion, which is why input appeared to work
+  // only after deleting the placeholder/structure.
+  r.deleteContents();
+  r.insertNode(frag);
+
+  // Put the caret in the first editable slot belonging to THIS insertion.
+  // Never search the whole line: an older structure may already have .cur.
+  const newCur = insertedNodes
+    .map(n => n.nodeType === 1 ? n.querySelector('.slot.cur') : null)
+    .find(Boolean);
+  if (newCur){
+    const nr = document.createRange();
+    nr.selectNodeContents(newCur);
+    nr.collapse(true);
+    sel.removeAllRanges(); sel.addRange(nr);
+    savedRange = nr.cloneRange();
+    return;
+  }
+
+  // For ordinary text/symbol insertion, put the caret immediately after the
+  // inserted content. This is deterministic even when the insertion split a
+  // text node.
+  const lastInserted = insertedNodes[insertedNodes.length - 1];
+  if (lastInserted && lastInserted.isConnected){
+    const nr = document.createRange();
+    nr.setStartAfter(lastInserted);
+    nr.collapse(true);
+    sel.removeAllRanges(); sel.addRange(nr);
+    savedRange = nr.cloneRange();
+  }
+}
+
+
+/* ─────────── backspace / DEL ─────────── */
+function doBackspace(){
+  restoreSelection();
+  const sel = window.getSelection();
+  if (!sel || !sel.rangeCount) return;
+  const r = sel.getRangeAt(0);
+  const line = activeLineFromNode(r.startContainer);
+  if (!line) return;
+
+  if (!r.collapsed){
+    r.deleteContents();
+    savedRange = r.cloneRange();
+    return;
+  }
+
+  const slot = currentSlot();
+  if (slot){
+    // At the beginning of a slot, remove the whole structure atomically.
+    const probe = r.cloneRange();
+    probe.selectNodeContents(slot);
+    probe.setEnd(r.startContainer, r.startOffset);
+    const before = probe.toString();
+    if (before.length === 0){
+      const struct = currentStruct(slot);
+      if (struct){
+        const parent = struct.parentNode;
+        const index = [...parent.childNodes].indexOf(struct);
+        struct.remove();
+        const nr = document.createRange();
+        if (index > 0 && parent.childNodes[index-1]){
+          nr.setStartAfter(parent.childNodes[index-1]);
+        } else {
+          nr.setStart(parent, 0);
+        }
+        nr.collapse(true);
+        sel.removeAllRanges(); sel.addRange(nr);
+        savedRange = nr.cloneRange();
+        return;
+      }
+    }
+  }
+
+  // If the caret is immediately after an inline structure, delete the
+  // structure as one object instead of trying to delete its internal markup.
+  let container = r.startContainer;
+  let offset = r.startOffset;
+  if (container.nodeType === 3 && offset === 0){
+    const parent = container.parentNode;
+    const prev = container.previousSibling;
+    if (prev && prev.nodeType === 1 && prev.matches('.mq-frac,.mq-exp,.g-sqrt,.mq-sum,.mq-log,.mq-paren,.mq-qf')){
+      prev.remove();
+      r.setStart(container, 0); r.collapse(true);
+      sel.removeAllRanges(); sel.addRange(r);
+      savedRange = r.cloneRange();
+      return;
+    }
+  }
+
+  // Normal character deletion.
+  if (container.nodeType === 3 && offset > 0){
+    container.deleteData(offset - 1, 1);
+    const nr = document.createRange();
+    nr.setStart(container, offset - 1); nr.collapse(true);
+    sel.removeAllRanges(); sel.addRange(nr);
+    savedRange = nr.cloneRange();
+    return;
+  }
+
+  // Caret at the start of a line: merge with the previous line.
+  const probe = r.cloneRange();
+  probe.selectNodeContents(line);
+  probe.setEnd(r.startContainer, r.startOffset);
+  if (probe.toString().length === 0){
+    const row = line.closest('.lrow');
+    const prevRow = row && row.previousElementSibling;
+    if (prevRow){
+      const pb = prevRow.querySelector('.lbody');
+      while (line.firstChild) pb.appendChild(line.firstChild);
+      row.remove();
+      renumber();
+      focusEnd(pb);
+      rememberSelection();
+      return;
+    }
+  }
+}
+
+
+/* ─────────── line keydown ─────────── */
+linesEl.addEventListener('keyup', () => rememberSelection());
+linesEl.addEventListener('mouseup', () => rememberSelection());
+linesEl.addEventListener('input', () => rememberSelection());
+
+linesEl.addEventListener('keydown', e => {
+  const line = e.target.closest('.lbody'); if (!line) return;
+
+  if (e.key === 'Enter' && !e.shiftKey){
+    e.preventDefault();
+    const sel = window.getSelection();
+    const r = sel.getRangeAt(0);
+    const after = r.cloneRange();
+    after.selectNodeContents(line);
+    after.setStart(r.endContainer, r.endOffset);
+    const rest = after.extractContents();
+    const nb = addLine('', false);
+    while (rest.firstChild) nb.insertBefore(rest.firstChild, nb.firstChild);
+    focusEnd(nb);
+    return;
+  }
+
+  /* Tab — jump to next slot inside current structure; at last, exit */
+  if (e.key === 'Tab'){
+    e.preventDefault();
+    const slot = currentSlot();
+    if (!slot){
+      focusEnd(line); return;
+    }
+    const struct = currentStruct(slot);
+    if (!struct){ focusEnd(line); return; }
+    const slots = [...struct.querySelectorAll('.slot')];
+    const i = slots.indexOf(slot);
+    const next = slots[i+1];
+    const sel = window.getSelection();
+    if (next){
+      const r = document.createRange(); r.selectNodeContents(next); r.collapse(true);
+      sel.removeAllRanges(); sel.addRange(r);
+    } else {
+      caretAfterStruct(struct);
+      rememberSelection();
+    }
+    return;
+  }
+
+  /* Right arrow at the very end of a slot → exit the structure */
+  if (e.key === 'ArrowRight'){
+    const slot = currentSlot();
+    if (slot){
+      const sel = window.getSelection();
+      const r = sel.getRangeAt(0);
+      const probe = r.cloneRange();
+      probe.selectNodeContents(slot);
+      probe.setStart(r.endContainer, r.endOffset);
+      if (probe.toString().replace(/\u200B/g,'').length === 0){
+        const struct = currentStruct(slot);
+        if (struct){ e.preventDefault(); caretAfterStruct(struct); rememberSelection(); }
+      }
+    }
+    return;
+  }
+
+  if (e.key === 'Backspace'){ e.preventDefault(); doBackspace(); }
+});
+
+/* ─────────── key handling ─────────── */
+/* Operators + SPACE never nest inside a slot — they exit first, then insert */
+const NO_NEST = new Set(['+','−','×','÷','=','<','>','≤','≥','≠','∴','∵','⇒',
+                        '__space__']);
+
+function handleKey(key){
+  if (key.i === '__abc__'){
+    state.abcMode = !state.abcMode;
+    document.querySelectorAll('.act').forEach(a => {
+      if (a.textContent === 'ABC') a.classList.toggle('active-mode', state.abcMode);
+    });
+    renderKb(); return;
+  }
+  if (key.i === '__inv__'){ state.invMode = !state.invMode; renderKb(); return; }
+  if (key.i === '__exit__'){
+    const slot = currentSlot();
+    if (slot){
+      const struct = currentStruct(slot);
+      if (struct){ caretAfterStruct(struct); }
+    }
+    return;
+  }
+  if (key.i === '__space__' || NO_NEST.has(key.i)){
+    /* leave the structure first */
+    const slot = currentSlot();
+    if (slot){
+      const struct = currentStruct(slot);
+      if (struct){ caretAfterStruct(struct); }
+    }
+    insertAtCursor(key.i === '__space__' ? ' ' : key.i);
+    return;
+  }
+  if (key.i === '__del__'){ doBackspace(); return; }
+  if (key.i === '__clear__'){ linesEl.innerHTML=''; addLine('', true); return; }
+  if (key.i === '__enter__'){ addLine('', true); return; }
+  if (key.i === '__ask__'){ document.getElementById('sbc').focus(); return; }
+  if (key.i === '__done__'){ submit(); return; }
+  insertAtCursor(key.i);
+}
+
+/* ─────────── tabs ─────────── */
+const tabsEl = document.getElementById('tabs');
+LAYOUT.tabs_order.forEach(name => {
+  const b = document.createElement('button');
+  b.className = 'tab' + (name === state.tab ? ' active' : '');
+  b.textContent = name;
+  b.onclick = () => {
+    state.tab = name; state.abcMode = false; state.invMode = false;
+    document.querySelectorAll('.tab').forEach(t =>
+      t.classList.toggle('active', t.textContent === name));
+    document.querySelectorAll('.act').forEach(a => {
+      if (a.textContent === 'ABC') a.classList.remove('active-mode');
+    });
+    renderKb();
+  };
+  tabsEl.appendChild(b);
+});
+
+/* ─────────── key grid ─────────── */
+const kbEl = document.getElementById('kb');
+function keyBtn(key){
+  const el = document.createElement('div');
+  el.className = 'key';
+  if (key.i === '__inv__' && state.invMode) el.classList.add('inv-active');
+  el.textContent = key.l;
+  el.addEventListener('pointerdown', e => { e.preventDefault(); rememberSelection(); });
+  el.onclick = () => handleKey(key);
+  return el;
+}
+function renderRow(keys){
+  const r = document.createElement('div'); r.className='row';
+  r.style.gridTemplateColumns = `repeat(${keys.length},1fr)`;
+  keys.forEach(k => r.appendChild(keyBtn(k)));
+  kbEl.appendChild(r);
+}
+function renderKb(){
+  kbEl.innerHTML = '';
+  if (state.abcMode){
+    (LAYOUT.base.abc || []).forEach(row => renderRow(row));
+    return;
+  }
+  renderRow(LAYOUT.base.structure);
+  renderRow(LAYOUT.base.operators);
+  renderRow(LAYOUT.base.digits);
+  renderRow(LAYOUT.base.variables);
+  const rows = LAYOUT.tabs[state.tab] || [];
+  rows.forEach(row => {
+    if (state.tab === 'Trig' && row === LAYOUT.trig_default){
+      renderRow(state.invMode ? LAYOUT.trig_inverse : LAYOUT.trig_default);
+    } else {
+      renderRow(row);
+    }
+  });
+}
+
+/* ─────────── actions ─────────── */
+const actsEl = document.getElementById('acts');
+LAYOUT.base.actions.forEach(k => {
+  const el = document.createElement('div');
+  el.className = 'act' + (k.i === '__done__' ? ' done' : '');
+  el.textContent = k.l;
+  el.onclick = () => handleKey(k);
+  actsEl.appendChild(el);
+});
+
+/* ─────────── submit ─────────── */
+const resultEl = document.getElementById('result');
+function submit(){
+  const steps = [...linesEl.querySelectorAll('.lbody')]
+    .map(b => b.innerText.replace(/\u200B/g,'').trim())
+    .filter(s => s.length);
+  const payload = {
+    steps: steps, step_count: steps.length,
+    sbc_message: document.getElementById('sbc').value.trim(),
+    tab_used: state.tab,
+  };
+  resultEl.classList.add('shown');
+  resultEl.innerHTML =
+    "<div class='label'>submitted to step_grader + intervention log</div>"+
+    "<pre>"+JSON.stringify(payload,null,2)+"</pre>";
+}
+
+/* ─────────── boot ─────────── */
+addLine('', true);
+rememberSelection();
+renderKb();
+</script>
+</body></html>

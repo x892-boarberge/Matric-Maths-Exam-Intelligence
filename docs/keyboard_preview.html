@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>MethodMarker Keyboard</title>
+<link rel="stylesheet" href="./libs/mathquill.min.css" />
+<script src="./libs/jquery.min.js"></script>
+<script src="./libs/mathquill.min.js"></script>
+<style>
+:root {
+  --bg:#eef2f8; --card:#fff; --line:#e4e9f2; --ink:#0b1f44; --ink2:#465a80; --ink3:#9aa8c2;
+  --blue:#3b5bf6; --amber:#f0ad4e; --green:#16a34a;
+  --key-h:clamp(34px,5.2vw,44px); --key-f:clamp(11px,1.5vw,14px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  display:flex;justify-content:center;padding:6px;min-height:100vh;overflow:hidden}
+.app{width:100%;max-width:720px;background:var(--card);border-radius:16px;overflow:hidden;
+  box-shadow:0 8px 32px rgba(20,40,90,.12);display:flex;flex-direction:column;height:calc(100vh - 12px)}
+.topbar{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#f6f8fd;border-bottom:1px solid var(--line);flex:none}
+.logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--blue),#5b8cf6);
+  display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:13px;flex:none}
+.brand-wrap{display:flex;flex-direction:column;gap:1px;min-width:0}
+.brand{font-weight:700;font-size:13px;line-height:1.2}
+.motto{font-size:11px;font-weight:700;color:var(--blue);letter-spacing:0.02em}
+.tagline{font-size:10px;font-weight:500;color:var(--ink3);opacity:0.85}
+.err{display:none;padding:10px 12px;background:#fef2f2;color:#991b1b;font-size:12px}
+.err.show{display:block}
+.work{background:#fff;padding:8px 12px;flex:none;max-height:clamp(100px,20vh,170px);overflow-y:auto;border-bottom:1px solid var(--line)}
+.work-head{display:flex;justify-content:space-between;font-size:11px;color:var(--ink2);font-weight:600;margin-bottom:6px;position:sticky;top:0;background:#fff}
+.work-head .hint{color:var(--ink3);font-weight:500;font-size:10px}
+.lines{display:flex;flex-direction:column;gap:6px}
+.lrow{display:grid;grid-template-columns:22px 1fr;column-gap:6px;align-items:start;cursor:pointer}
+.lnum{color:#b8c2d6;font-size:11px;text-align:right;padding-top:12px;user-select:none}
+.lrow.active .lnum{color:var(--blue);font-weight:700}
+.mq-host{min-height:40px;padding:8px 10px;border-radius:6px;width:100%;border:1px solid transparent;cursor:text}
+.mq-host:focus-within,.lrow.active .mq-host{background:#f5f8ff;border-color:#c7d2fe}
+.mq-editable-field{border:none!important;box-shadow:none!important;font-size:clamp(18px,2.5vw,22px)!important;min-width:12px}
+.mq-root-block{width:auto!important;min-width:12px}
+.sbc{padding:6px 12px 8px;background:#fff;border-bottom:1px solid var(--line);flex:none}
+.sbc.sbc-active{background:#fffdf7;box-shadow:inset 0 0 0 2px rgba(240,173,78,.35)}
+.sbc-head{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:11px;color:var(--ink2);font-weight:600;margin-bottom:4px}
+.sbc-head .left{display:flex;align-items:center;gap:6px}
+.sbc-head .dot{width:6px;height:6px;border-radius:50%;background:var(--amber)}
+.sbc-head .where{font-size:10px;font-weight:500;color:var(--ink3)}
+.sbc-head .where.on{color:var(--amber);font-weight:700}
+#sbc{width:100%;height:28px;resize:none;font-family:inherit;font-size:12px;padding:6px 8px;border:1px solid var(--line);
+  border-radius:6px;background:#fff;color:var(--ink);outline:none;transition:height .2s ease}
+#sbc:focus{height:72px;box-shadow:0 0 0 3px rgba(240,173,78,.18)}
+.tabs{display:flex;overflow-x:auto;gap:4px;padding:6px 8px;background:#f6f8fd;border-bottom:1px solid var(--line);flex:none;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;padding:6px 11px;border-radius:14px;font-size:11px;font-weight:600;color:var(--ink2);
+  background:transparent;border:none;cursor:pointer;white-space:nowrap;font-family:inherit}
+.tab.active{background:var(--blue);color:#fff}
+.kb-scroll{flex:1 1 auto;overflow-y:auto;background:#fff}
+.kb{padding:6px;display:flex;flex-direction:column;gap:5px}
+.row{display:grid;gap:4px}
+.key{padding:2px 3px;border-radius:8px;background:#fff;border:1px solid #dfe5ef;color:var(--ink);
+  font-size:var(--key-f);cursor:pointer;text-align:center;user-select:none;font-family:inherit;
+  min-height:var(--key-h);display:flex;align-items:center;justify-content:center}
+.key:active{transform:scale(.96);background:#eef2fb}
+.key.auto{border-color:#c7d2fe;background:#f8faff}
+.key.inv-on{background:var(--amber);border-color:var(--amber);color:#111}
+.key.phone{font-size:15px;font-weight:500;border-radius:7px;background:#f4f6fb}
+.key.phone-fn{font-size:12px;font-weight:600;background:#e8ecf4}
+.key.caps-on{background:#1e293b;color:#fff;border-color:#1e293b}
+.acts{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;padding:6px 8px 8px;background:#f6f8fd;border-top:1px solid var(--line);flex:none}
+.act{padding:6px 2px;border-radius:8px;background:#eef2fb;border:1px solid #dfe5ef;color:#223a6b;font-size:11px;font-weight:700;
+  cursor:pointer;text-align:center;user-select:none;min-height:var(--key-h);display:flex;align-items:center;justify-content:center;font-family:inherit}
+.act.done{background:var(--green);color:#fff;border-color:var(--green)}
+.act.mode-on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.result{padding:8px 12px;background:#0b1f44;color:#fff;font-family:ui-monospace,Menlo,monospace;font-size:10px;line-height:1.45;
+  max-height:0;overflow:hidden;transition:max-height .25s ease;flex:none}
+.result.shown{max-height:200px;overflow-y:auto}
+.result .label{color:#9ab;margin-bottom:4px}
+.result pre{margin:0;color:#cfe2ff;white-space:pre-wrap;word-break:break-word}
+@media(max-width:480px){.work{max-height:clamp(90px,16vh,140px)}.key{min-height:36px}.key.phone{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="logo">M</div>
+    <div class="brand-wrap">
+      <div class="brand">MethodMarker</div>
+      <div class="motto">Be Distinct</div>
+      <div class="tagline">Better Methods. Better Marks.</div>
+    </div>
+  </div>
+  <div class="err" id="err">MathQuill failed to load. Check network or use offline libs/.</div>
+  <div class="work" id="work">
+    <div class="work-head">
+      <span>Working</span>
+      <span class="hint" id="targetHint">Input → Working</span>
+    </div>
+    <div class="lines" id="lines"></div>
+  </div>
+  <div class="sbc" id="sbcWrap">
+    <div class="sbc-head">
+      <span class="left"><span class="dot"></span> Ask Tanaka — message / reason</span>
+      <span class="where" id="sbcWhere">tap here to type a message</span>
+    </div>
+    <textarea id="sbc" rows="1" placeholder="Tap this box, then type with ABC…"></textarea>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div class="kb-scroll"><div class="kb" id="kb"></div></div>
+  <div class="acts" id="acts"></div>
+  <div class="result" id="result"></div>
+</div>
+<script>
+(function () {
+  if (typeof MathQuill === "undefined" || typeof jQuery === "undefined") {
+    document.getElementById("err").classList.add("show");
+    return;
+  }
+  var MQ = MathQuill.getInterface(2);
+
+  function K(label, type, value, opts) {
+    opts = opts || {};
+    return { label: label, type: type, value: value, auto: !!opts.auto, go: opts.go || null };
+  }
+  function goLeft(n) {
+    var a = []; for (var i = 0; i < n; i++) a.push("Left"); return a;
+  }
+
+  var baseStructure = [
+    K("a/b", "cmd", "\\frac", { auto: true }),
+    K("□/□", "cmd", "\\frac"),
+    K("x²", "latex", "x^{2}", { auto: true }),
+    K("xⁿ", "seq", ["t:x", "c:^"]),
+    K("□ₙ", "cmd", "_"),
+    K("√", "cmd", "\\sqrt"),
+    K("∛", "latex", "\\sqrt[3]{}"),
+    K("log", "latex", "\\log\\left(\\right)", { go: goLeft(1) }),
+    K("logₐ", "seq", ["c:\\log", "c:_"]),
+    K("π", "cmd", "\\pi"),
+    K("θ", "cmd", "\\theta"),
+    K("∞", "cmd", "\\infty"),
+  ];
+  var baseOperators = [
+    K("+", "text", "+"), K("−", "text", "-"),
+    K("×", "cmd", "\\times"), K("÷", "cmd", "\\div"),
+    K("=", "text", "="), K("(", "text", "("), K(")", "text", ")"),
+    K("□ⁿ", "cmd", "^"), K("□ₙ", "cmd", "_"),
+    K("<", "text", "<"), K(">", "text", ">"),
+    K("≤", "cmd", "\\le"), K("≥", "cmd", "\\ge"), K("≠", "cmd", "\\ne"),
+    K("∴", "cmd", "\\therefore"), K("∵", "cmd", "\\because"),
+    K("or", "text", " or "),
+  ];
+  var baseDigits = ["1","2","3","4","5","6","7","8","9","0",".","-"].map(function (d) {
+    return K(d === "-" ? "(−)" : d, "text", d);
+  });
+  var baseVars = ["x","y","a","b","c","n","k","t"].map(function (v) {
+    return K(v, "text", v);
+  });
+
+  /* Greek tab — always accessible from the tab strip */
+  var greekTab = [
+    [K("α","cmd","\\alpha"),K("β","cmd","\\beta"),K("γ","cmd","\\gamma"),
+     K("δ","cmd","\\delta"),K("ε","cmd","\\epsilon"),K("ζ","cmd","\\zeta")],
+    [K("η","cmd","\\eta"),K("θ","cmd","\\theta"),K("ι","cmd","\\iota"),
+     K("κ","cmd","\\kappa"),K("λ","cmd","\\lambda"),K("μ","cmd","\\mu")],
+    [K("ν","cmd","\\nu"),K("ξ","cmd","\\xi"),K("π","cmd","\\pi"),
+     K("ρ","cmd","\\rho"),K("σ","cmd","\\sigma"),K("τ","cmd","\\tau")],
+    [K("υ","cmd","\\upsilon"),K("φ","cmd","\\phi"),K("χ","cmd","\\chi"),
+     K("ψ","cmd","\\psi"),K("ω","cmd","\\omega"),K("Γ","cmd","\\Gamma")],
+    [K("Δ","cmd","\\Delta"),K("Θ","cmd","\\Theta"),K("Λ","cmd","\\Lambda"),
+     K("Ξ","cmd","\\Xi"),K("Π","cmd","\\Pi"),K("Σ","cmd","\\Sigma")],
+    [K("Φ","cmd","\\Phi"),K("Ψ","cmd","\\Psi"),K("Ω","cmd","\\Omega")],
+  ];
+
+  var tabsOrder = ["Algebra","Sequences","Functions","Calculus","Trig","Finance","Analytical","Euclidean","Stats","Probability"];
+  var tabs = {
+    Algebra: [
+      [K("x²","latex","x^{2}",{auto:true}),K("xⁿ","seq",["t:x","c:^"]),K("y²","latex","y^{2}",{auto:true}),
+       K("a²","latex","a^{2}",{auto:true}),K("b²","latex","b^{2}",{auto:true}),K("c²","latex","c^{2}",{auto:true})],
+      [K("x³","latex","x^{3}",{auto:true}),
+       K("(□)²","latex","\\left(\\right)^{2}",{auto:true,go:["Left","Left","Left"]}),
+       K("(□)ⁿ","latex","\\left(\\right)^{}",{go:["Left","Left","Left"]}),
+       K("±","cmd","\\pm")],
+    ],
+    Sequences: [
+      [K("Σ","cmd","\\sum"),K("Tₙ","latex","T_{n}"),K("Sₙ","latex","S_{n}"),
+       K("Tₙ₊₁","latex","T_{n+1}"),K("n→∞","latex","n\\to\\infty")],
+      [K("a","text","a"),K("d","text","d"),K("r","text","r"),K("n","text","n"),
+       K("(□)ⁿ","latex","\\left(\\right)^{}",{go:["Left","Left","Left"]})],
+    ],
+    Functions: [
+      [K("f(□)","latex","f\\left(\\right)",{go:goLeft(1)}),K("g(□)","latex","g\\left(\\right)",{go:goLeft(1)}),
+       K("f⁻¹(□)","latex","f^{-1}\\left(\\right)",{go:goLeft(1)}),K("→","cmd","\\to"),K("∞","cmd","\\infty"),K("Δ","cmd","\\Delta")],
+      [K("sin(","latex","\\sin\\left(\\right)",{go:goLeft(1)}),K("cos(","latex","\\cos\\left(\\right)",{go:goLeft(1)}),
+       K("tan(","latex","\\tan\\left(\\right)",{go:goLeft(1)}),K("□/□","cmd","\\frac")],
+    ],
+    Calculus: [
+      [K("dy/dx","latex","\\frac{dy}{dx}"),K("d²y/dx²","latex","\\frac{d^{2}y}{dx^{2}}",{auto:true}),
+       K("dⁿy/dxⁿ","latex","\\frac{d^{n}y}{dx^{n}}"),K("∫","cmd","\\int"),K("lim","latex","\\lim_{x\\to}"),K("→","cmd","\\to")],
+      [K("(□)²","latex","\\left(\\right)^{2}",{auto:true,go:["Left","Left","Left"]}),
+       K("Δx","latex","\\Delta x"),K("1/□","latex","\\frac{1}{}",{go:goLeft(1)})],
+    ],
+    Trig: [
+      [K("INV","action","__inv__"),
+       K("sin(","latex","\\sin\\left(\\right)",{go:goLeft(1)}),K("cos(","latex","\\cos\\left(\\right)",{go:goLeft(1)}),
+       K("tan(","latex","\\tan\\left(\\right)",{go:goLeft(1)}),
+       K("sin²θ","latex","\\sin^{2}\\theta",{auto:true}),K("cos²θ","latex","\\cos^{2}\\theta",{auto:true})],
+      [K("α","cmd","\\alpha"),K("β","cmd","\\beta"),K("θ","cmd","\\theta"),K("°","latex","^{\\circ}"),K("π","cmd","\\pi"),K("2α","latex","2\\alpha")],
+      [K("(90°±θ)","latex","\\left(90^{\\circ}\\pm\\theta\\right)",{auto:true}),
+       K("(□±θ)","latex","\\left(\\pm\\theta\\right)",{go:["Left","Left","Left","Left"]}),
+       K("(−θ)","latex","\\left(-\\theta\\right)")],
+      [K("sinⁿ□","latex","\\sin^{}\\left(\\right)",{go:["Left","Left","Left"]}),
+       K("cosⁿ□","latex","\\cos^{}\\left(\\right)",{go:["Left","Left","Left"]}),
+       K("tan²θ","latex","\\tan^{2}\\theta",{auto:true})],
+    ],
+    Finance: [
+      [K("A","text","A"),K("P","text","P"),K("i","text","i"),K("n","text","n"),K("x","text","x")],
+      [K("(1+i)ⁿ","latex","\\left(1+i\\right)^{}",{auto:true,go:goLeft(1)}),
+       K("(1−i)ⁿ","latex","\\left(1-i\\right)^{}",{auto:true,go:goLeft(1)}),
+       K("(□)ⁿ","latex","\\left(\\right)^{}",{go:["Left","Left","Left"]}),K("□/□","cmd","\\frac")],
+    ],
+    Analytical: [
+      [K("(□;□)","latex","\\left(;\\right)",{go:["Left","Left"]}),
+       K("x₁","latex","x_{1}"),K("y₁","latex","y_{1}"),K("x₂","latex","x_{2}"),K("y₂","latex","y_{2}")],
+      [K("√","cmd","\\sqrt"),K("(□)²","latex","\\left(\\right)^{2}",{auto:true,go:["Left","Left","Left"]}),
+       K("θ","cmd","\\theta"),K("°","latex","^{\\circ}"),K("tan(","latex","\\tan\\left(\\right)",{go:goLeft(1)})],
+    ],
+    Euclidean: [
+      [K("△","cmd","\\triangle"),K("∥","cmd","\\parallel"),K("⊥","cmd","\\perp"),
+       K("∠","cmd","\\angle"),K("≅","cmd","\\cong"),K("∼","cmd","\\sim")],
+      [K("Â","latex","\\hat{A}"),K("B̂","latex","\\hat{B}"),K("Ĉ","latex","\\hat{C}"),
+       K("∴","cmd","\\therefore"),K("∵","cmd","\\because"),K("√","cmd","\\sqrt")],
+      [K("sin(","latex","\\sin\\left(\\right)",{go:goLeft(1)}),K("cos(","latex","\\cos\\left(\\right)",{go:goLeft(1)}),
+       K("tan(","latex","\\tan\\left(\\right)",{go:goLeft(1)})],
+    ],
+    Stats: [
+      [K("x̄","latex","\\bar{x}"),K("σ","cmd","\\sigma"),K("n","text","n"),K("r","text","r"),K("r²","latex","r^{2}",{auto:true})],
+      [K("Σ","cmd","\\sum"),K("(□)²","latex","\\left(\\right)^{2}",{auto:true,go:["Left","Left","Left"]}),
+       K("√","cmd","\\sqrt"),K("E(□)","latex","E\\left(\\right)",{go:goLeft(1)}),K("P(□)","latex","P\\left(\\right)",{go:goLeft(1)})],
+    ],
+    Probability: [
+      [K("P(□)","latex","P\\left(\\right)",{go:goLeft(1)}),K("∪","cmd","\\cup"),K("∩","cmd","\\cap"),K("'","text","'")],
+      [K("nCr","cmd","\\binom"),K("!","text","!"),K("□/□","cmd","\\frac")],
+    ],
+    Greek: greekTab,
+  };
+  /* Greek is in the tab strip: place right beside ABC visually.
+     ABC is an action button, so Greek sits as the last tab. */
+  tabsOrder.push("Greek");
+
+  var trigInvRow = [
+    K("INV","action","__inv__"),
+    K("sin⁻¹(","latex","\\sin^{-1}\\left(\\right)",{go:goLeft(1)}),
+    K("cos⁻¹(","latex","\\cos^{-1}\\left(\\right)",{go:goLeft(1)}),
+    K("tan⁻¹(","latex","\\tan^{-1}\\left(\\right)",{go:goLeft(1)}),
+  ];
+  var actions = [
+    K("SPACE","action","__space__"), K("DEL","action","__del__"), K("AC","action","__clear__"),
+    K("ABC","action","__abc__"), K("⏎","action","__enter__"), K("?","action","__ask__"), K("✓","action","__done__"),
+  ];
+
+  var state = {
+    tab: "Algebra", abcMode: false, invMode: false, capsLock: false, abcNums: false,
+    fields: [], activeIdx: -1, target: "math",
+  };
+  var linesEl = document.getElementById("lines");
+  var tabsEl = document.getElementById("tabs");
+  var kbEl = document.getElementById("kb");
+  var actsEl = document.getElementById("acts");
+  var resultEl = document.getElementById("result");
+  var sbcEl = document.getElementById("sbc");
+  var sbcWrap = document.getElementById("sbcWrap");
+  var targetHint = document.getElementById("targetHint");
+  var sbcWhere = document.getElementById("sbcWhere");
+
+  function updateTargetUI() {
+    if (state.target === "sbc") {
+      sbcWrap.classList.add("sbc-active");
+      targetHint.textContent = "Input → Ask Tanaka";
+      sbcWhere.textContent = "typing here";
+      sbcWhere.classList.add("on");
+    } else {
+      sbcWrap.classList.remove("sbc-active");
+      targetHint.textContent = "Input → Working line " + (state.activeIdx >= 0 ? state.activeIdx + 1 : "1");
+      sbcWhere.textContent = "tap here to type a message";
+      sbcWhere.classList.remove("on");
+    }
+  }
+  function setTarget(t) { state.target = t; updateTargetUI(); }
+
+  function renumber() {
+    Array.prototype.forEach.call(linesEl.querySelectorAll(".lrow"), function (row, i) {
+      row.querySelector(".lnum").textContent = String(i + 1);
+    });
+  }
+  function markActiveRow() {
+    Array.prototype.forEach.call(linesEl.querySelectorAll(".lrow"), function (row, i) {
+      row.classList.toggle("active", i === state.activeIdx);
+    });
+  }
+  function setActive(idx, doFocus) {
+    if (idx < 0 || idx >= state.fields.length) return;
+    state.activeIdx = idx;
+    markActiveRow();
+    setTarget("math");
+    if (doFocus !== false) { try { state.fields[idx].field.focus(); } catch (e) {} }
+  }
+  function current() {
+    if (state.activeIdx < 0 || state.activeIdx >= state.fields.length) return null;
+    return state.fields[state.activeIdx].field;
+  }
+
+  function addLine(focus) {
+    var row = document.createElement("div");
+    row.className = "lrow";
+    var num = document.createElement("div");
+    num.className = "lnum";
+    var host = document.createElement("span");
+    host.className = "mq-host";
+    row.appendChild(num); row.appendChild(host);
+    linesEl.appendChild(row);
+    renumber();
+    var idx = state.fields.length;
+    var field = MQ.MathField(host, {
+      spaceBehavesLikeTab: false,
+      handlers: {
+        enter: function () { addLine(true); },
+        focus: function () { setActive(idx, false); },
+      },
+    });
+    function selectMath(e) { setActive(idx, true); }
+    row.addEventListener("mousedown", function (e) {
+      setTarget("math");
+      state.activeIdx = idx;
+      markActiveRow();
+      updateTargetUI();
+    });
+    row.addEventListener("click", selectMath);
+    host.addEventListener("focusin", function () { setActive(idx, false); });
+    state.fields.push({ field: field, host: host, row: row, idx: idx });
+    if (focus !== false) setActive(idx, true);
+    else markActiveRow();
+    return field;
+  }
+
+  sbcEl.addEventListener("focus", function () { setTarget("sbc"); });
+  sbcEl.addEventListener("click", function () { setTarget("sbc"); });
+  sbcWrap.addEventListener("mousedown", function (e) {
+    if (e.target === sbcEl || sbcWrap.contains(e.target)) setTarget("sbc");
+  });
+
+  function move(field, keys) {
+    if (!keys) return;
+    keys.forEach(function (k) { field.keystroke(k); });
+  }
+  function apply(field, k) {
+    if (!field) return;
+    if (k.type === "text") field.write(k.value);
+    else if (k.type === "cmd") field.cmd(k.value);
+    else if (k.type === "latex") field.write(k.value);
+    else if (k.type === "seq") {
+      k.value.forEach(function (op) {
+        if (op.indexOf("c:") === 0) field.cmd(op.slice(2));
+        else if (op.indexOf("t:") === 0) field.write(op.slice(2));
+      });
+    }
+    if (k.go) move(field, k.go);
+  }
+
+  function insertIntoSbc(ch) {
+    var el = sbcEl;
+    var start = el.selectionStart, end = el.selectionEnd;
+    var v = el.value;
+    el.value = v.slice(0, start) + ch + v.slice(end);
+    el.selectionStart = el.selectionEnd = start + ch.length;
+    setTarget("sbc");
+    el.focus();
+  }
+  function sbcBackspace() {
+    var el = sbcEl;
+    var start = el.selectionStart, end = el.selectionEnd;
+    if (start !== end) {
+      el.value = el.value.slice(0, start) + el.value.slice(end);
+      el.selectionStart = el.selectionEnd = start;
+    } else if (start > 0) {
+      el.value = el.value.slice(0, start - 1) + el.value.slice(start);
+      el.selectionStart = el.selectionEnd = start - 1;
+    }
+    setTarget("sbc");
+    el.focus();
+  }
+
+  function handleKey(k) {
+    if (k.type === "action") { doAction(k.value); return; }
+    if (k.type === "phone") { handlePhone(k.value); return; }
+
+    if (state.target === "sbc") {
+      if (k.type === "text" && k.value.length === 1 && /[a-zA-Z0-9. ]/.test(k.value)) {
+        insertIntoSbc(k.value);
+        return;
+      }
+      setTarget("math");
+    }
+    var f = current();
+    if (!f) { addLine(true); f = current(); }
+    if (!f) return;
+    try { f.focus(); } catch (e) {}
+    apply(f, k);
+  }
+
+  function handlePhone(val) {
+    if (val === "__caps__") { state.capsLock = !state.capsLock; renderKb(); return; }
+    if (val === "__nums__") { state.abcNums = !state.abcNums; renderKb(); return; }
+    if (val === "__del__") {
+      if (state.target === "sbc") sbcBackspace();
+      else { var f = current(); if (f) { try { f.focus(); } catch (e) {} f.keystroke("Backspace"); } }
+      return;
+    }
+    if (val === "__space__") {
+      if (state.target === "sbc") insertIntoSbc(" ");
+      else { var f2 = current(); if (f2) { try { f2.focus(); } catch (e) {} f2.write("\\ "); } }
+      return;
+    }
+    if (val === "__enter_sbc__") {
+      if (state.target === "sbc") insertIntoSbc("\n");
+      else doAction("__enter__");
+      return;
+    }
+    if (state.target === "sbc") insertIntoSbc(val);
+    else {
+      var f3 = current();
+      if (!f3) { addLine(true); f3 = current(); }
+      if (f3) { try { f3.focus(); } catch (e) {} f3.write(val); }
+    }
+  }
+
+  function doAction(id) {
+    var f = current();
+    switch (id) {
+      case "__space__":
+        if (state.target === "sbc") insertIntoSbc(" ");
+        else if (f) { try { f.focus(); } catch (e) {} f.write("\\ "); }
+        break;
+      case "__del__":
+        if (state.target === "sbc") sbcBackspace();
+        else if (f) { try { f.focus(); } catch (e) {} f.keystroke("Backspace"); }
+        break;
+      case "__clear__":
+        if (state.target === "sbc") { sbcEl.value = ""; sbcEl.focus(); }
+        else {
+          linesEl.innerHTML = "";
+          state.fields = [];
+          state.activeIdx = -1;
+          resultEl.classList.remove("shown");
+          addLine(true);
+        }
+        break;
+      case "__enter__":
+        if (state.target === "sbc") insertIntoSbc("\n");
+        else addLine(true);
+        break;
+      case "__ask__": setTarget("sbc"); sbcEl.focus(); break;
+      case "__abc__":
+        state.abcMode = !state.abcMode;
+        renderActs(); renderKb();
+        break;
+      case "__inv__":
+        state.invMode = !state.invMode; renderKb();
+        break;
+      case "__done__": submit(); break;
+    }
+  }
+
+  function submit() {
+    var steps = [];
+    state.fields.forEach(function (item) {
+      var lx = item.field.latex();
+      if (lx && lx.trim()) steps.push(lx.trim());
+    });
+    var payload = {
+      learner_lines_latex: steps,
+      step_count: steps.length,
+      sbc_message: sbcEl.value.trim(),
+      tab_used: state.tab,
+    };
+    resultEl.classList.add("shown");
+    resultEl.innerHTML =
+      "<div class='label'>Payload for step_grader</div>" +
+      "<pre>" + JSON.stringify(payload, null, 2) + "</pre>";
+  }
+
+  function renderTabs() {
+    tabsEl.innerHTML = "";
+    tabsOrder.forEach(function (name) {
+      var b = document.createElement("button");
+      b.className = "tab" + (name === state.tab ? " active" : "");
+      b.textContent = name;
+      b.onclick = function () {
+        state.tab = name;
+        state.abcMode = false;
+        state.invMode = false;
+        setTarget("math");
+        renderTabs(); renderActs(); renderKb();
+      };
+      tabsEl.appendChild(b);
+    });
+  }
+
+  function keyBtn(k, extraClass) {
+    var el = document.createElement("div");
+    el.className = "key" + (k.auto ? " auto" : "") + (extraClass ? " " + extraClass : "");
+    if (k.value === "__inv__" && state.invMode) el.classList.add("inv-on");
+    el.textContent = k.label;
+    el.onmousedown = function (e) { e.preventDefault(); };
+    el.onclick = function () { handleKey(k); };
+    return el;
+  }
+  function renderRow(keys, extraClass) {
+    if (!keys || !keys.length) return;
+    var r = document.createElement("div");
+    r.className = "row";
+    r.style.gridTemplateColumns = "repeat(" + keys.length + ",1fr)";
+    keys.forEach(function (k) { r.appendChild(keyBtn(k, extraClass)); });
+    kbEl.appendChild(r);
+  }
+  function phoneKey(label, value) { return { label: label, type: "phone", value: value }; }
+  function phoneBtn(label, value, cls) {
+    var el = document.createElement("div");
+    el.className = "key " + (cls || "phone");
+    el.textContent = label;
+    el.onmousedown = function (e) { e.preventDefault(); };
+    el.onclick = function () {
+      if (value === "__enter_sbc__") handlePhone("__enter_sbc__");
+      else handlePhone(value);
+    };
+    return el;
+  }
+  function renderPhoneKeys(keys, cols) {
+    var r = document.createElement("div");
+    r.className = "row";
+    r.style.gridTemplateColumns = cols;
+    keys.forEach(function (k) { r.appendChild(keyBtn(k, "phone")); });
+    kbEl.appendChild(r);
+  }
+
+  function renderPhoneAbc() {
+    kbEl.innerHTML = "";
+    var caps = state.capsLock;
+    if (state.abcNums) {
+      renderPhoneKeys("1234567890".split("").map(function(c){return phoneKey(c,c);}), "repeat(10,1fr)");
+      renderPhoneKeys(["@","#","$","%","&","*","-","+","(",")"].map(function(c){return phoneKey(c,c);}), "repeat(10,1fr)");
+      renderPhoneKeys(["!","\"","'",":",";","/", "?", ",", ".", "_"].map(function(c){return phoneKey(c,c);}), "repeat(10,1fr)");
+      var r = document.createElement("div");
+      r.className = "row";
+      r.style.gridTemplateColumns = "1.2fr 1.2fr 3fr 1.2fr 1.2fr";
+      r.appendChild(phoneBtn("ABC", "__nums__", "phone-fn"));
+      r.appendChild(phoneBtn("⌫", "__del__", "phone-fn"));
+      r.appendChild(phoneBtn("space", "__space__", "phone-fn"));
+      r.appendChild(phoneBtn(".", ".", "phone"));
+      r.appendChild(phoneBtn("⏎", "__enter_sbc__", "phone-fn"));
+      kbEl.appendChild(r);
+      return;
+    }
+    function letters(arr) {
+      return arr.map(function (ch) {
+        var L = caps ? ch.toUpperCase() : ch;
+        return phoneKey(L, L);
+      });
+    }
+    renderPhoneKeys(letters("qwertyuiop".split("")), "repeat(10,1fr)");
+    renderPhoneKeys(letters("asdfghjkl".split("")), "repeat(9,1fr)");
+    var r3 = document.createElement("div");
+    r3.className = "row";
+    r3.style.gridTemplateColumns = "1.4fr repeat(7,1fr) 1.4fr";
+    r3.appendChild(phoneBtn(caps ? "CAPS" : "caps", "__caps__", "phone-fn" + (caps ? " caps-on" : "")));
+    letters("zxcvbnm".split("")).forEach(function (k) { r3.appendChild(keyBtn(k, "phone")); });
+    r3.appendChild(phoneBtn("⌫", "__del__", "phone-fn"));
+    kbEl.appendChild(r3);
+    var r4 = document.createElement("div");
+    r4.className = "row";
+    r4.style.gridTemplateColumns = "1.4fr 3.4fr 1.2fr 1.4fr";
+    r4.appendChild(phoneBtn("123", "__nums__", "phone-fn"));
+    r4.appendChild(phoneBtn("space", "__space__", "phone-fn"));
+    r4.appendChild(phoneBtn(".", ".", "phone"));
+    r4.appendChild(phoneBtn("⏎", "__enter_sbc__", "phone-fn"));
+    kbEl.appendChild(r4);
+  }
+
+  function renderKb() {
+    kbEl.innerHTML = "";
+    if (state.abcMode) { renderPhoneAbc(); return; }
+    renderRow(baseStructure);
+    renderRow(baseOperators);
+    renderRow(baseDigits);
+    renderRow(baseVars);
+    var rows = tabs[state.tab] || [];
+    rows.forEach(function (row, idx) {
+      if (state.tab === "Trig" && idx === 0) renderRow(state.invMode ? trigInvRow : row);
+      else renderRow(row);
+    });
+  }
+
+  function renderActs() {
+    actsEl.innerHTML = "";
+    actions.forEach(function (k) {
+      var el = document.createElement("div");
+      el.className = "act";
+      if (k.value === "__done__") el.classList.add("done");
+      if (k.value === "__abc__" && state.abcMode) el.classList.add("mode-on");
+      el.textContent = k.label;
+      el.onmousedown = function (e) { e.preventDefault(); };
+      el.onclick = function () { handleKey(k); };
+      actsEl.appendChild(el);
+    });
+  }
+
+  renderTabs();
+  renderActs();
+  renderKb();
+  addLine(true);
+  updateTargetUI();
+})();
+</script>
+</body>
+</html>

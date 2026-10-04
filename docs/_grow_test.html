@@ -1,0 +1,150 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Growing radical + fraction — sandbox</title>
+<style>
+  body{margin:0;padding:20px;background:#eef2f8;font-family:-apple-system,'Segoe UI',Roboto,sans-serif}
+  h1{font-size:15px;color:#0b1f44;margin:0 0 6px}
+  p.hint{font-size:12px;color:#465a80;margin:0 0 14px}
+  .panel{background:#fff;border-radius:10px;padding:14px;margin-bottom:12px;
+    box-shadow:0 4px 14px rgba(20,40,90,.06)}
+  .panel h2{font-size:12px;color:#465a80;margin:0 0 8px;text-transform:uppercase;letter-spacing:.05em}
+  .editor{
+    min-height:90px;padding:14px 18px;background:#f9fafc;border:1px solid #dfe5ef;
+    border-radius:8px;font-size:26px;line-height:1.7;
+    font-family:'Cambria Math','Latin Modern Math',Georgia,serif;outline:none}
+  .editor:focus{background:#fff;border-color:#3b5bf6}
+
+  /* ═══ SLOT — empty shows a visible box, filled is inline text ═══ */
+  .slot{
+    display:inline;
+    min-width:18px;
+    padding:1px 4px;
+    outline:none;
+    vertical-align:baseline;
+  }
+  .slot:empty::before{
+    content:"";
+    display:inline-block;
+    width:16px;height:14px;
+    border:1px solid #7b8ba6;
+    border-radius:2px;
+    vertical-align:middle;
+    background:#fbfcff;
+  }
+  .slot:focus{
+    background:#e8efff;
+    border-radius:3px;
+    box-shadow:0 0 0 1px rgba(59,91,246,.4);
+  }
+  .slot:focus:empty::before{
+    border-color:#3b5bf6;
+    background:#fff;
+  }
+
+  /* ═══ GROWING RADICAL — diagonal entry + stem + overline ═══ */
+  .g-sqrt{
+    display:inline-flex;
+    align-items:stretch;
+    vertical-align:middle;
+    position:relative;
+    padding-left:14px;
+    line-height:1;
+  }
+  .g-sqrt::before{
+    /* the diagonal entry + left vertical of the radical sign */
+    content:"";
+    position:absolute;
+    left:0;top:2px;bottom:0;
+    width:12px;
+    border-left:1.6px solid #0b1f44;
+    border-bottom:1.6px solid #0b1f44;
+    transform:skewX(-20deg);
+    transform-origin:bottom left;
+  }
+  .g-sqrt .g-rad{
+    display:inline-flex;
+    align-items:center;
+    padding:2px 6px 2px 3px;
+    border-top:1.6px solid #0b1f44;
+    border-right:1.6px solid #0b1f44;
+    min-height:24px;
+    min-width:20px;
+  }
+
+  /* ═══ GROWING FRACTION ═══ */
+  .g-frac{
+    display:inline-flex;
+    flex-direction:column;
+    align-items:center;
+    vertical-align:middle;
+    padding:0 6px;
+    line-height:1.15;
+  }
+  .g-frac .g-num{
+    display:inline-block;
+    padding:2px 8px 4px;
+    border-bottom:1.6px solid #0b1f44;
+    min-width:24px;
+    text-align:center;
+  }
+  .g-frac .g-den{
+    display:inline-block;
+    padding:4px 8px 2px;
+    min-width:24px;
+    text-align:center;
+  }
+</style></head><body>
+
+<h1>Growing radical + growing fraction — sandbox</h1>
+<p class="hint">Type into the boxes. Watch the radical and fraction bar stretch. Empty boxes show a thin outline.</p>
+
+<div class="panel">
+  <h2>1 · Growing radical</h2>
+  <div class="editor" contenteditable="true">
+    <span class="g-sqrt"><span class="g-rad"><span class="slot" contenteditable="true"></span></span></span>
+    &nbsp;+&nbsp;
+    <span class="g-sqrt"><span class="g-rad"><span class="slot" contenteditable="true">x</span></span></span>
+    &nbsp;+&nbsp;
+    <span class="g-sqrt"><span class="g-rad"><span class="slot" contenteditable="true">b² − 4ac</span></span></span>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>2 · Growing fraction</h2>
+  <div class="editor" contenteditable="true">
+    <span class="g-frac">
+      <span class="g-num"><span class="slot" contenteditable="true"></span></span>
+      <span class="g-den"><span class="slot" contenteditable="true"></span></span>
+    </span>
+    &nbsp;=&nbsp;
+    <span class="g-frac">
+      <span class="g-num"><span class="slot" contenteditable="true">x² + 3x − 4</span></span>
+      <span class="g-den"><span class="slot" contenteditable="true">2a</span></span>
+    </span>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>3 · Radical inside fraction (nested)</h2>
+  <div class="editor" contenteditable="true">
+    <span class="g-frac">
+      <span class="g-num">
+        <span class="slot" contenteditable="true">−b ± </span>
+        <span class="g-sqrt"><span class="g-rad"><span class="slot" contenteditable="true">b² − 4ac</span></span></span>
+      </span>
+      <span class="g-den"><span class="slot" contenteditable="true">2a</span></span>
+    </span>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>4 · Trig argument with visible slot</h2>
+  <div class="editor" contenteditable="true">
+    sin(<span class="slot" contenteditable="true"></span>) +
+    cos(<span class="slot" contenteditable="true">θ</span>) +
+    tan(<span class="slot" contenteditable="true">α + β</span>)
+  </div>
+</div>
+
+</body></html>

@@ -1,0 +1,21 @@
+{
+  "keyboard_version": "26.0",
+  "product": "MethodMarker",
+  "curriculum_scope": "South African NSC Mathematics",
+  "calculus_scope": "Differential Calculus only",
+  "integration_enabled": false,
+  "output_contract": "learner_lines: list[str]",
+  "structures": [
+    "fraction",
+    "exponent",
+    "root",
+    "summation",
+    "log",
+    "parentheses",
+    "coordinate_pair",
+    "function"
+  ],
+  "cursor_model": "saved DOM Range + atomic mathematical structures",
+  "cas_mode": false,
+  "created_by": "MethodMarker keyboard build cell"
+}

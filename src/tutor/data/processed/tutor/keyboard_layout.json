@@ -1,0 +1,1147 @@
+{
+  "schema_version": 25.0,
+  "base": {
+    "structure": [
+      {
+        "l": "a/b",
+        "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span>"
+      },
+      {
+        "l": "□/□",
+        "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span>"
+      },
+      {
+        "l": "x²",
+        "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+      },
+      {
+        "l": "xⁿ",
+        "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"
+      },
+      {
+        "l": "√",
+        "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"
+      },
+      {
+        "l": "ⁿ√",
+        "i": "<span class='g-sqrt'><span class='g-idx'>□</span><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"
+      },
+      {
+        "l": "∛",
+        "i": "<span class='g-sqrt'><span class='g-idx'>3</span><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"
+      },
+      {
+        "l": "log",
+        "i": "<span class='mq-log'>log<span class='slot cur'></span>(</span>"
+      },
+      {
+        "l": "logₐ",
+        "i": "<span class='mq-log'>log<span class='slot cur'></span>(</span>"
+      },
+      {
+        "l": "π",
+        "i": "π"
+      },
+      {
+        "l": "θ",
+        "i": "θ"
+      },
+      {
+        "l": "∞",
+        "i": "∞"
+      }
+    ],
+    "operators": [
+      {
+        "l": "+",
+        "i": "+"
+      },
+      {
+        "l": "−",
+        "i": "−"
+      },
+      {
+        "l": "×",
+        "i": "×"
+      },
+      {
+        "l": "÷",
+        "i": "÷"
+      },
+      {
+        "l": "=",
+        "i": "="
+      },
+      {
+        "l": "(",
+        "i": "("
+      },
+      {
+        "l": ")",
+        "i": ")"
+      },
+      {
+        "l": "<",
+        "i": "<"
+      },
+      {
+        "l": ">",
+        "i": ">"
+      },
+      {
+        "l": "≤",
+        "i": "≤"
+      },
+      {
+        "l": "≥",
+        "i": "≥"
+      },
+      {
+        "l": "≠",
+        "i": "≠"
+      },
+      {
+        "l": "∴",
+        "i": "∴"
+      },
+      {
+        "l": "∵",
+        "i": "∵"
+      },
+      {
+        "l": "⇒",
+        "i": "⇒"
+      }
+    ],
+    "digits": [
+      {
+        "l": "1",
+        "i": "1"
+      },
+      {
+        "l": "2",
+        "i": "2"
+      },
+      {
+        "l": "3",
+        "i": "3"
+      },
+      {
+        "l": "4",
+        "i": "4"
+      },
+      {
+        "l": "5",
+        "i": "5"
+      },
+      {
+        "l": "6",
+        "i": "6"
+      },
+      {
+        "l": "7",
+        "i": "7"
+      },
+      {
+        "l": "8",
+        "i": "8"
+      },
+      {
+        "l": "9",
+        "i": "9"
+      },
+      {
+        "l": "0",
+        "i": "0"
+      },
+      {
+        "l": ".",
+        "i": "."
+      },
+      {
+        "l": "(−)",
+        "i": "−"
+      }
+    ],
+    "variables": [
+      {
+        "l": "x",
+        "i": "x"
+      },
+      {
+        "l": "y",
+        "i": "y"
+      },
+      {
+        "l": "a",
+        "i": "a"
+      },
+      {
+        "l": "b",
+        "i": "b"
+      },
+      {
+        "l": "c",
+        "i": "c"
+      },
+      {
+        "l": "n",
+        "i": "n"
+      },
+      {
+        "l": "k",
+        "i": "k"
+      },
+      {
+        "l": "t",
+        "i": "t"
+      }
+    ],
+    "actions": [
+      {
+        "l": "SPACE",
+        "i": "__space__"
+      },
+      {
+        "l": "DEL",
+        "i": "__del__"
+      },
+      {
+        "l": "AC",
+        "i": "__clear__"
+      },
+      {
+        "l": "ABC",
+        "i": "__abc__"
+      },
+      {
+        "l": "→",
+        "i": "__exit__"
+      },
+      {
+        "l": "⏎",
+        "i": "__enter__"
+      },
+      {
+        "l": "?",
+        "i": "__ask__"
+      },
+      {
+        "l": "✓",
+        "i": "__done__"
+      }
+    ],
+    "abc": [
+      [
+        {
+          "l": "A",
+          "i": "A"
+        },
+        {
+          "l": "B",
+          "i": "B"
+        },
+        {
+          "l": "C",
+          "i": "C"
+        },
+        {
+          "l": "D",
+          "i": "D"
+        },
+        {
+          "l": "E",
+          "i": "E"
+        },
+        {
+          "l": "F",
+          "i": "F"
+        },
+        {
+          "l": "G",
+          "i": "G"
+        },
+        {
+          "l": "H",
+          "i": "H"
+        },
+        {
+          "l": "I",
+          "i": "I"
+        },
+        {
+          "l": "J",
+          "i": "J"
+        }
+      ],
+      [
+        {
+          "l": "K",
+          "i": "K"
+        },
+        {
+          "l": "L",
+          "i": "L"
+        },
+        {
+          "l": "M",
+          "i": "M"
+        },
+        {
+          "l": "N",
+          "i": "N"
+        },
+        {
+          "l": "O",
+          "i": "O"
+        },
+        {
+          "l": "P",
+          "i": "P"
+        },
+        {
+          "l": "Q",
+          "i": "Q"
+        },
+        {
+          "l": "R",
+          "i": "R"
+        },
+        {
+          "l": "S",
+          "i": "S"
+        },
+        {
+          "l": "T",
+          "i": "T"
+        }
+      ],
+      [
+        {
+          "l": "U",
+          "i": "U"
+        },
+        {
+          "l": "V",
+          "i": "V"
+        },
+        {
+          "l": "W",
+          "i": "W"
+        },
+        {
+          "l": "X",
+          "i": "X"
+        },
+        {
+          "l": "Y",
+          "i": "Y"
+        },
+        {
+          "l": "Z",
+          "i": "Z"
+        },
+        {
+          "l": "",
+          "i": ""
+        },
+        {
+          "l": "",
+          "i": ""
+        },
+        {
+          "l": "",
+          "i": ""
+        }
+      ],
+      [
+        {
+          "l": "x₁",
+          "i": "x₁"
+        },
+        {
+          "l": "y₁",
+          "i": "y₁"
+        },
+        {
+          "l": "x₂",
+          "i": "x₂"
+        },
+        {
+          "l": "y₂",
+          "i": "y₂"
+        },
+        {
+          "l": "p",
+          "i": "p"
+        },
+        {
+          "l": "q",
+          "i": "q"
+        },
+        {
+          "l": "m",
+          "i": "m"
+        },
+        {
+          "l": "r",
+          "i": "r"
+        },
+        {
+          "l": "s",
+          "i": "s"
+        },
+        {
+          "l": "u",
+          "i": "u"
+        }
+      ]
+    ]
+  },
+  "tabs_order": [
+    "Algebra",
+    "Sequences",
+    "Functions",
+    "Calculus",
+    "Trig",
+    "Finance",
+    "Analytical",
+    "Euclidean",
+    "Stats",
+    "Probability"
+  ],
+  "tabs": {
+    "Algebra": [
+      [
+        {
+          "l": "x²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "y²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "a²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "b²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "c²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+        }
+      ],
+      [
+        {
+          "l": "x³",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>3</span></span>"
+        },
+        {
+          "l": "xⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"
+        },
+        {
+          "l": "aⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"
+        },
+        {
+          "l": "bⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"
+        }
+      ],
+      [
+        {
+          "l": "(□)²",
+          "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "(□)³",
+          "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>3</span></span>"
+        },
+        {
+          "l": "(□)ⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>□</span></span>"
+        }
+      ],
+      [
+        {
+          "l": "±",
+          "i": "±"
+        },
+        {
+          "l": "QF",
+          "i": "<span class='mq-qf'>x = <span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span></span>"
+        }
+      ]
+    ],
+    "Sequences": [
+      [
+        {
+          "l": "Σ",
+          "i": "<span class='mq-sum'><span class='slot mq-top cur'>□</span><span class='mq-sig'>Σ</span><span class='slot mq-bot'>□</span></span>"
+        },
+        {
+          "l": "Tₙ",
+          "i": "<span class='mq-exp'><span class='slot cur'>T</span><span class='slot mq-pow'>n</span></span>"
+        },
+        {
+          "l": "Sₙ",
+          "i": "<span class='mq-exp'><span class='slot cur'>S</span><span class='slot mq-pow'>n</span></span>"
+        },
+        {
+          "l": "Tₙ₊₁",
+          "i": "Tₙ₊₁"
+        },
+        {
+          "l": "Tₙ₋₁",
+          "i": "Tₙ₋₁"
+        },
+        {
+          "l": "n→∞",
+          "i": "n→∞"
+        }
+      ],
+      [
+        {
+          "l": "□²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "□³",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>3</span></span>"
+        },
+        {
+          "l": "□ⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"
+        },
+        {
+          "l": "(□)²",
+          "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "(□)³",
+          "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>3</span></span>"
+        },
+        {
+          "l": "(□)ⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>□</span></span>"
+        }
+      ],
+      [
+        {
+          "l": "A",
+          "i": "A"
+        },
+        {
+          "l": "P",
+          "i": "P"
+        },
+        {
+          "l": "i",
+          "i": "i"
+        },
+        {
+          "l": "n",
+          "i": "n"
+        },
+        {
+          "l": "r",
+          "i": "r"
+        }
+      ]
+    ],
+    "Functions": [
+      [
+        {
+          "l": "f(□)",
+          "i": "f(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "g(□)",
+          "i": "g(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "f⁻¹(□)",
+          "i": "f⁻¹(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "→",
+          "i": "→"
+        },
+        {
+          "l": "∞",
+          "i": "∞"
+        },
+        {
+          "l": "Δ",
+          "i": "Δ"
+        }
+      ],
+      [
+        {
+          "l": "sin(□)",
+          "i": "sin(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "cos(□)",
+          "i": "cos(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "tan(□)",
+          "i": "tan(<span class='slot cur'></span>)"
+        }
+      ],
+      [
+        {
+          "l": "a/b",
+          "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span>"
+        },
+        {
+          "l": "□ⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"
+        }
+      ]
+    ],
+    "Calculus": [
+      [
+        {
+          "l": "d/dx",
+          "i": "d/dx"
+        },
+        {
+          "l": "dy/dx",
+          "i": "dy/dx"
+        },
+        {
+          "l": "f'(x)",
+          "i": "f'(x)"
+        },
+        {
+          "l": "f''(x)",
+          "i": "f''(x)"
+        },
+        {
+          "l": "lim",
+          "i": "lim"
+        },
+        {
+          "l": "→",
+          "i": "→"
+        }
+      ],
+      [
+        {
+          "l": "f(x)",
+          "i": "f(x)"
+        },
+        {
+          "l": "f(a)",
+          "i": "f(a)"
+        },
+        {
+          "l": "f(x+h)",
+          "i": "f(x+h)"
+        },
+        {
+          "l": "Δx",
+          "i": "Δx"
+        },
+        {
+          "l": "Δy/Δx",
+          "i": "Δy/Δx"
+        }
+      ],
+      [
+        {
+          "l": "x²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "x³",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>3</span></span>"
+        },
+        {
+          "l": "xⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"
+        },
+        {
+          "l": "√x",
+          "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"
+        },
+        {
+          "l": "sin x",
+          "i": "sin x"
+        },
+        {
+          "l": "cos x",
+          "i": "cos x"
+        },
+        {
+          "l": "tan x",
+          "i": "tan x"
+        }
+      ],
+      [
+        {
+          "l": "Tangent",
+          "i": "Tangent"
+        },
+        {
+          "l": "Normal",
+          "i": "Normal"
+        },
+        {
+          "l": "Stationary",
+          "i": "Stationary"
+        },
+        {
+          "l": "Max/Min",
+          "i": "Max/Min"
+        },
+        {
+          "l": "Rate",
+          "i": "Rate"
+        }
+      ]
+    ],
+    "Trig": [
+      [
+        {
+          "l": "INV",
+          "i": "__inv__"
+        },
+        {
+          "l": "sin(",
+          "i": "sin(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "cos(",
+          "i": "cos(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "tan(",
+          "i": "tan(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "sin²θ",
+          "i": "<span class='mq-exp'><span class='slot cur'>sin θ</span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "cos²θ",
+          "i": "<span class='mq-exp'><span class='slot cur'>cos θ</span><span class='slot mq-pow'>2</span></span>"
+        }
+      ],
+      [
+        {
+          "l": "α",
+          "i": "α"
+        },
+        {
+          "l": "β",
+          "i": "β"
+        },
+        {
+          "l": "θ",
+          "i": "θ"
+        },
+        {
+          "l": "2α",
+          "i": "2α"
+        },
+        {
+          "l": "°",
+          "i": "°"
+        },
+        {
+          "l": "π",
+          "i": "π"
+        }
+      ],
+      [
+        {
+          "l": "(□±□)",
+          "i": "<span class='mq-paren'>(<span class='slot cur'></span>±<span class='slot'></span>)</span>"
+        },
+        {
+          "l": "(90°±θ)",
+          "i": "<span class='mq-paren'>(<span class='slot cur'>90°</span>±<span class='slot'>θ</span>)</span>"
+        },
+        {
+          "l": "(□±θ)",
+          "i": "<span class='mq-paren'>(<span class='slot cur'></span>±<span class='slot'>θ</span>)</span>"
+        },
+        {
+          "l": "(180°±θ)",
+          "i": "<span class='mq-paren'>(<span class='slot cur'>180°</span>±<span class='slot'>θ</span>)</span>"
+        },
+        {
+          "l": "(360°±θ)",
+          "i": "<span class='mq-paren'>(<span class='slot cur'>360°</span>±<span class='slot'>θ</span>)</span>"
+        },
+        {
+          "l": "(−θ)",
+          "i": "(−θ)"
+        }
+      ],
+      [
+        {
+          "l": "sin²θ",
+          "i": "<span class='mq-exp'><span class='slot cur'>sin θ</span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "sinⁿ□",
+          "i": "<span class='mq-exp'><span class='slot cur'>sin </span><span class='slot mq-pow'>□</span></span>"
+        },
+        {
+          "l": "cos²θ",
+          "i": "<span class='mq-exp'><span class='slot cur'>cos θ</span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "cosⁿ□",
+          "i": "<span class='mq-exp'><span class='slot cur'>cos </span><span class='slot mq-pow'>□</span></span>"
+        }
+      ],
+      [
+        {
+          "l": "tan²θ",
+          "i": "<span class='mq-exp'><span class='slot cur'>tan θ</span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "tanⁿ□",
+          "i": "<span class='mq-exp'><span class='slot cur'>tan </span><span class='slot mq-pow'>□</span></span>"
+        },
+        {
+          "l": "sin□/cos□",
+          "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'>sin □</span></span><span class='g-den'><span class='slot'>cos □</span></span></span>"
+        }
+      ]
+    ],
+    "Finance": [
+      [
+        {
+          "l": "A",
+          "i": "A"
+        },
+        {
+          "l": "P",
+          "i": "P"
+        },
+        {
+          "l": "i",
+          "i": "i"
+        },
+        {
+          "l": "n",
+          "i": "n"
+        },
+        {
+          "l": "x",
+          "i": "x"
+        }
+      ],
+      [
+        {
+          "l": "(1+i)ⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'>1+i</span><span class='slot mq-pow'>□</span></span>"
+        },
+        {
+          "l": "(□)ⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'>()</span><span class='slot mq-pow'>□</span></span>"
+        },
+        {
+          "l": "(1−i)ⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'>1−i</span><span class='slot mq-pow'>□</span></span>"
+        }
+      ],
+      [
+        {
+          "l": "□ⁿ",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>□</span></span>"
+        },
+        {
+          "l": "□/□",
+          "i": "<span class='mq-frac'><span class='g-num'><span class='slot cur'></span></span><span class='g-den'><span class='slot'></span></span></span>"
+        }
+      ]
+    ],
+    "Analytical": [
+      [
+        {
+          "l": "(□;□)",
+          "i": "(<span class='slot cur'></span>;<span class='slot'></span>)"
+        },
+        {
+          "l": "x₁",
+          "i": "x₁"
+        },
+        {
+          "l": "y₁",
+          "i": "y₁"
+        },
+        {
+          "l": "x₂",
+          "i": "x₂"
+        },
+        {
+          "l": "y₂",
+          "i": "y₂"
+        }
+      ],
+      [
+        {
+          "l": "√",
+          "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"
+        },
+        {
+          "l": "□²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "tan(□)",
+          "i": "tan(<span class='slot cur'></span>)"
+        }
+      ],
+      [
+        {
+          "l": "θ",
+          "i": "θ"
+        },
+        {
+          "l": "°",
+          "i": "°"
+        }
+      ],
+      [
+        {
+          "l": "(□)²+(□)²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span> + <span class='mq-exp'><span class='slot'></span><span class='slot mq-pow'>2</span></span>"
+        }
+      ]
+    ],
+    "Euclidean": [
+      [
+        {
+          "l": "△",
+          "i": "△"
+        },
+        {
+          "l": "∥",
+          "i": "∥"
+        },
+        {
+          "l": "⊥",
+          "i": "⊥"
+        },
+        {
+          "l": "∠",
+          "i": "∠"
+        },
+        {
+          "l": "≅",
+          "i": "≅"
+        },
+        {
+          "l": "∼",
+          "i": "∼"
+        }
+      ],
+      [
+        {
+          "l": "Â",
+          "i": "Â"
+        },
+        {
+          "l": "B̂",
+          "i": "B̂"
+        },
+        {
+          "l": "Ĉ",
+          "i": "Ĉ"
+        },
+        {
+          "l": "D̂",
+          "i": "D̂"
+        }
+      ],
+      [
+        {
+          "l": "sin(",
+          "i": "sin(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "cos(",
+          "i": "cos(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "tan(",
+          "i": "tan(<span class='slot cur'></span>)"
+        }
+      ],
+      [
+        {
+          "l": "√",
+          "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"
+        },
+        {
+          "l": "∴",
+          "i": "∴"
+        },
+        {
+          "l": "∵",
+          "i": "∵"
+        }
+      ]
+    ],
+    "Stats": [
+      [
+        {
+          "l": "x̄",
+          "i": "x̄"
+        },
+        {
+          "l": "σ",
+          "i": "σ"
+        },
+        {
+          "l": "n",
+          "i": "n"
+        },
+        {
+          "l": "r",
+          "i": "r"
+        },
+        {
+          "l": "r²",
+          "i": "<span class='mq-exp'><span class='slot cur'>r</span><span class='slot mq-pow'>2</span></span>"
+        }
+      ],
+      [
+        {
+          "l": "Σ",
+          "i": "<span class='mq-sum'><span class='slot mq-top cur'>□</span><span class='mq-sig'>Σ</span><span class='slot mq-bot'>□</span></span>"
+        },
+        {
+          "l": "□²",
+          "i": "<span class='mq-exp'><span class='slot cur'></span><span class='slot mq-pow'>2</span></span>"
+        },
+        {
+          "l": "√",
+          "i": "<span class='g-sqrt'><span class='g-sign'>√</span><span class='g-rad'><span class='slot cur'></span></span></span>"
+        }
+      ],
+      [
+        {
+          "l": "E(□)",
+          "i": "E(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "P(□)",
+          "i": "P(<span class='slot cur'></span>)"
+        }
+      ]
+    ],
+    "Probability": [
+      [
+        {
+          "l": "P(□)",
+          "i": "P(<span class='slot cur'></span>)"
+        },
+        {
+          "l": "P(□∪□)",
+          "i": "P(<span class='slot cur'></span>∪<span class='slot'></span>)"
+        },
+        {
+          "l": "P(□∩□)",
+          "i": "P(<span class='slot cur'></span>∩<span class='slot'></span>)"
+        },
+        {
+          "l": "P(□')",
+          "i": "P(<span class='slot cur'></span>')"
+        }
+      ],
+      [
+        {
+          "l": "∪",
+          "i": "∪"
+        },
+        {
+          "l": "∩",
+          "i": "∩"
+        },
+        {
+          "l": "'",
+          "i": "'"
+        }
+      ],
+      [
+        {
+          "l": "nCr",
+          "i": "nCr"
+        },
+        {
+          "l": "nPr",
+          "i": "nPr"
+        },
+        {
+          "l": "!",
+          "i": "!"
+        }
+      ]
+    ]
+  },
+  "trig_default": [
+    {
+      "l": "INV",
+      "i": "__inv__"
+    },
+    {
+      "l": "sin(",
+      "i": "sin(<span class='slot cur'></span>)"
+    },
+    {
+      "l": "cos(",
+      "i": "cos(<span class='slot cur'></span>)"
+    },
+    {
+      "l": "tan(",
+      "i": "tan(<span class='slot cur'></span>)"
+    },
+    {
+      "l": "sin²θ",
+      "i": "<span class='mq-exp'><span class='slot cur'>sin θ</span><span class='slot mq-pow'>2</span></span>"
+    },
+    {
+      "l": "cos²θ",
+      "i": "<span class='mq-exp'><span class='slot cur'>cos θ</span><span class='slot mq-pow'>2</span></span>"
+    }
+  ],
+  "trig_inverse": [
+    {
+      "l": "INV",
+      "i": "__inv__"
+    },
+    {
+      "l": "sin⁻¹(",
+      "i": "sin⁻¹(<span class='slot cur'></span>)"
+    },
+    {
+      "l": "cos⁻¹(",
+      "i": "cos⁻¹(<span class='slot cur'></span>)"
+    },
+    {
+      "l": "tan⁻¹(",
+      "i": "tan⁻¹(<span class='slot cur'></span>)"
+    },
+    {
+      "l": "sinⁿ□",
+      "i": "<span class='mq-exp'><span class='slot cur'>sin </span><span class='slot mq-pow'>□</span></span>"
+    },
+    {
+      "l": "cosⁿ□",
+      "i": "<span class='mq-exp'><span class='slot cur'>cos </span><span class='slot mq-pow'>□</span></span>"
+    }
+  ]
+}

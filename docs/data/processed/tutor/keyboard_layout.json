@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "tabs": {
+    "Algebra": [
+      {
+        "label": "x",
+        "insert": "x",
+        "engine_token": "x"
+      },
+      {
+        "label": "y",
+        "insert": "y",
+        "engine_token": "y"
+      },
+      {
+        "label": "a",
+        "insert": "a",
+        "engine_token": "a"
+      },
+      {
+        "label": "b",
+        "insert": "b",
+        "engine_token": "b"
+      },
+      {
+        "label": "c",
+        "insert": "c",
+        "engine_token": "c"
+      },
+      {
+        "label": "n",
+        "insert": "n",
+        "engine_token": "n"
+      },
+      {
+        "label": "=",
+        "insert": " = ",
+        "engine_token": "="
+      },
+      {
+        "label": "or",
+        "insert": " or ",
+        "engine_token": " or "
+      },
+      {
+        "label": "=>",
+        "insert": " => ",
+        "engine_token": "=>"
+      },
+      {
+        "label": "<=>",
+        "insert": " <=> ",
+        "engine_token": "<=>"
+      },
+      {
+        "label": ".:",
+        "insert": " .: ",
+        "engine_token": "therefore"
+      },
+      {
+        "label": ":.",
+        "insert": " :. ",
+        "engine_token": "because"
+      },
+      {
+        "label": "( )",
+        "insert": "()",
+        "engine_token": "()"
+      },
+      {
+        "label": "x^2",
+        "insert": "x^2",
+        "engine_token": "x^2"
+      },
+      {
+        "label": "x^n",
+        "insert": "x^",
+        "engine_token": "x^"
+      },
+      {
+        "label": "x^-1",
+        "insert": "x^-1",
+        "engine_token": "x^-1"
+      },
+      {
+        "label": "sqrt",
+        "insert": "sqrt(",
+        "engine_token": "sqrt("
+      },
+      {
+        "label": "cbrt",
+        "insert": "cbrt(",
+        "engine_token": "cbrt("
+      },
+      {
+        "label": "+-",
+        "insert": "+-",
+        "engine_token": "+/-"
+      },
+      {
+        "label": "<",
+        "insert": "<",
+        "engine_token": "<"
+      },
+      {
+        "label": ">",
+        "insert": ">",
+        "engine_token": ">"
+      },
+      {
+        "label": "<=",
+        "insert": "<=",
+        "engine_token": "<="
+      },
+      {
+        "label": ">=",
+        "insert": ">=",
+        "engine_token": ">="
+      },
+      {
+        "label": "!=",
+        "insert": "!=",
+        "engine_token": "!="
+      },
+      {
+        "label": "a/b",
+        "insert": "a/b",
+        "engine_token": "a/b"
+      },
+      {
+        "label": "|x|",
+        "insert": "|x|",
+        "engine_token": "abs(x)"
+      },
+      {
+        "label": "Sum",
+        "insert": "Sum",
+        "engine_token": "sum"
+      },
+      {
+        "label": ";",
+        "insert": "; ",
+        "engine_token": ";"
+      },
+      {
+        "label": "in",
+        "insert": "in",
+        "engine_token": "in"
+      },
+      {
+        "label": "R",
+        "insert": "R",
+        "engine_token": "R"
+      }
+    ],
+    "Trig": [
+      {
+        "label": "sin",
+        "insert": "sin(",
+        "engine_token": "sin("
+      },
+      {
+        "label": "cos",
+        "insert": "cos(",
+        "engine_token": "cos("
+      },
+      {
+        "label": "tan",
+        "insert": "tan(",
+        "engine_token": "tan("
+      },
+      {
+        "label": "sin^-1",
+        "insert": "asin(",
+        "engine_token": "asin("
+      },
+      {
+        "label": "cos^-1",
+        "insert": "acos(",
+        "engine_token": "acos("
+      },
+      {
+        "label": "tan^-1",
+        "insert": "atan(",
+        "engine_token": "atan("
+      },
+      {
+        "label": "theta",
+        "insert": "theta",
+        "engine_token": "theta"
+      },
+      {
+        "label": "alpha",
+        "insert": "alpha",
+        "engine_token": "alpha"
+      },
+      {
+        "label": "beta",
+        "insert": "beta",
+        "engine_token": "beta"
+      },
+      {
+        "label": "gamma",
+        "insert": "gamma",
+        "engine_token": "gamma"
+      },
+      {
+        "label": "pi",
+        "insert": "pi",
+        "engine_token": "pi"
+      },
+      {
+        "label": "deg",
+        "insert": "deg",
+        "engine_token": "deg"
+      },
+      {
+        "label": "2theta",
+        "insert": "2theta",
+        "engine_token": "2theta"
+      },
+      {
+        "label": "sin^2",
+        "insert": "sin^2(",
+        "engine_token": "sin^2("
+      },
+      {
+        "label": "cos^2",
+        "insert": "cos^2(",
+        "engine_token": "cos^2("
+      },
+      {
+        "label": "tan^2",
+        "insert": "tan^2(",
+        "engine_token": "tan^2("
+      },
+      {
+        "label": "rad",
+        "insert": "rad",
+        "engine_token": "rad"
+      },
+      {
+        "label": "=",
+        "insert": " = ",
+        "engine_token": "="
+      },
+      {
+        "label": "or",
+        "insert": " or ",
+        "engine_token": " or "
+      },
+      {
+        "label": "+-",
+        "insert": "+-",
+        "engine_token": "+/-"
+      },
+      {
+        "label": "=>",
+        "insert": " => ",
+        "engine_token": "=>"
+      },
+      {
+        "label": ".:",
+        "insert": " .: ",
+        "engine_token": "therefore"
+      },
+      {
+        "label": "( )",
+        "insert": "()",
+        "engine_token": "()"
+      }
+    ]
+  },
+  "always_visible": {
+    "digits": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "0",
+      ".",
+      "(-)"
+    ],
+    "operators": [
+      "+",
+      "-",
+      "x",
+      "/"
+    ],
+    "actions": [
+      "Backspace",
+      "New Line",
+      "Done",
+      "ABC",
+      "Collapse"
+    ]
+  },
+  "settings": {
+    "line_cap": null,
+    "tab_auto_switch": false,
+    "keyboard_collapsible": true,
+    "keyboard_default": "expanded"
+  },
+  "tab_auto_switch_map": {
+    "calculus": "Calculus",
+    "trig": "Trig",
+    "stats": "Stats",
+    "probability": "Stats",
+    "geometry": "Geometry",
+    "analytical": "Geometry",
+    "algebra": "Algebra",
+    "sequences": "Algebra",
+    "functions": "Algebra",
+    "finance": "Algebra"
+  }
+}

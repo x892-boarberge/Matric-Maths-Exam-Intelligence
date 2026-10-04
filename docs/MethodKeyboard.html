@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MethodKeyboard — design</title>
+<style>
+  body {
+    margin: 0; background: #f6f8fd; color: #0b1f44;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6; padding: 32px 16px;
+  }
+  .container {
+    max-width: 780px; margin: 0 auto; background: #ffffff;
+    padding: 40px 48px; border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(20, 40, 90, .06);
+  }
+  h1 { font-size: 28px; margin: 0 0 8px; color: #0b1f44;
+       border-bottom: 2px solid #e4e9f2; padding-bottom: 12px; }
+  h2 { font-size: 20px; margin: 40px 0 12px; color: #223a6b;
+       border-bottom: 1px solid #e4e9f2; padding-bottom: 6px; }
+  h3 { font-size: 16px; margin: 24px 0 8px; color: #223a6b; }
+  p { margin: 8px 0; }
+  code {
+    background: #eef2fb; color: #223a6b; padding: 2px 6px;
+    border-radius: 4px; font-family: 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 90%;
+  }
+  pre {
+    background: #0b1f44; color: #cfe2ff; padding: 16px 20px;
+    border-radius: 8px; overflow-x: auto; font-size: 12px;
+    font-family: 'SF Mono', Menlo, Consolas, monospace;
+    line-height: 1.5; margin: 12px 0;
+  }
+  pre.code {
+    background: #f6f8fd; color: #223a6b;
+    border: 1px solid #e4e9f2;
+  }
+  table {
+    border-collapse: collapse; margin: 12px 0; width: 100%;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left; padding: 8px 12px;
+    border-bottom: 1px solid #e4e9f2;
+  }
+  th { background: #f6f8fd; color: #223a6b; font-weight: 600; }
+  tr:hover { background: #fafbff; }
+  strong { color: #223a6b; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>MethodKeyboard</h1>
+
+<p>The working surface. An on-screen keyboard for NSC Mathematics</p>
+<p>learners who type instead of write.</p>
+
+<p>Not a calculator. Not a CAS. Not handwriting.</p>
+
+<p>A South African keyboard for SA exam method - built so the memo</p>
+<p>notation comes out the way the DBE prints it.</p>
+<h2>Why a keyboard, not a calculator</h2>
+
+<p>The soul of MethodMarker is *grade the working, not the answer*.</p>
+<p>A calculator computes. The learner needs to <strong>type method</strong>.</p>
+
+<p>Two separate surfaces:</p>
+
+<table><tr><th>Surface</th><th>What it does</th><th>When</th></tr><tr><td>**MethodKeyboard**</td><td>Types working line-by-line</td><td>Always (this notebook)</td></tr><tr><td>Scientific calculator</td><td>Evaluates numbers</td><td>Optional side panel (later, if at all)</td></tr></table>
+
+<p>The keyboard is the entry point to step_grader. No keyboard, no</p>
+<p>typed method, no way for a phone/tablet learner to use MethodMarker.</p>
+<p>This is the pilot&#x27;s hard prerequisite.</p>
+<h2>The learner contract</h2>
+
+<p><strong>Three freedoms</strong></p>
+
+<p>1. <strong>Expand / collapse at will.</strong> Some learners want the working</p>
+<p>   area big; some want the keyboard big. They choose. Setting persists</p>
+<p>   across questions in a sitting.</p>
+<p>2. <strong>No line cap.</strong> Write as many method lines as the question</p>
+<p>   demands. A quadratic takes 3. A Euclidean proof takes 10. Both</p>
+<p>   are fine. The <code>3 steps</code> counter is informative, not a ceiling.</p>
+<p>3. <strong>Optional tab auto-switch.</strong> When a learner enters a calculus</p>
+<p>   drill, should the keyboard jump to the Calculus tab? Only if they</p>
+<p>   opt in. Default off - manual tab selection.</p>
+
+<p><strong>Four locks (non-negotiable)</strong></p>
+
+<p>1. <strong>One line = one method step.</strong> Press Enter -&gt; new line. This is</p>
+<p>   what makes learner_lines map cleanly to step_grader.</p>
+<p>2. <strong>Keyboard never computes.</strong> No <code>=</code> key that evaluates. The <code>=</code></p>
+<p>   key inserts <code> = </code>.</p>
+<p>3. <strong><code>or</code> is one key.</strong> NSC memos write <code>x = -4 or x = 3</code>, never</p>
+<p>   <code>x = -4, x = 3</code>. This single decision prevents an entire class</p>
+<p>   of grading failures.</p>
+<p>4. <strong>Done submits.</strong> Not solve. Not check. The learner types,</p>
+<p>   the learner submits, the grader grades.</p>
+<h2>The notation the keyboard must produce</h2>
+
+<p>Extracted from the memo CSVs already in the corpus. These are the</p>
+<p>symbols the DBE actually prints - not what a textbook preference</p>
+<p>would dictate.</p>
+
+<p><strong>Universal (all tabs)</strong></p>
+<p><code>=</code> <code>or</code> <code>=&gt;</code> <code>&lt;=&gt;</code> <code>therefore</code> <code>because</code> <code>;</code> <code>( )</code></p>
+
+<p><strong>Semicolon, not comma</strong> - SA writes <code>A(1; 9)</code>, not <code>A(1, 9)</code>.</p>
+<p>This is non-negotiable for coordinates and lists.</p>
+
+<p><strong>Algebra-specific</strong></p>
+<p><code>x y a b c n k</code> <code>x^2</code> <code>x^n</code> <code>x^-1</code> <code>sqrt</code> <code>cbrt</code> <code>nth root</code> <code>+-</code> <code>&lt; &gt; &lt;= &gt;= !=</code></p>
+<p><code>a/b</code> <code>|x|</code> <code>Sigma</code> <code>in</code> <code>R</code></p>
+
+<p><strong>Calculus-specific</strong></p>
+<p><code>dy/dx</code> <code>d/dx</code> <code>d2y/dx2</code> <code>D_x[ ]</code> <code>f&#x27;(x)</code> <code>f&#x27;&#x27;(x)</code></p>
+<p><code>lim</code> <code>-&gt;</code> <code>x-&gt;inf</code> <code>h-&gt;0</code> <code>inf</code> <code>e</code> <code>ln</code> <code>log</code> <code>Delta</code></p>
+
+<p><strong>No integral sign</strong> - CAPS P1 is differentiation only. The soul spec forbids it.</p>
+
+<p><strong>Trig-specific</strong></p>
+<p><code>sin cos tan</code> <code>arcsin arccos arctan</code></p>
+<p><code>theta alpha beta gamma</code> <code>pi</code> <code>deg</code> <code>rad</code> <code>2theta</code> <code>half theta</code> <code>sin^2 cos^2 tan^2</code></p>
+
+<p><strong>Stats-specific</strong></p>
+<p><code>x-bar</code> <code>sigma</code> <code>sigma^2</code> <code>Sigma Sigma x Sigma x2</code> <code>n N</code> <code>x_i f_i</code></p>
+<p><code>Q1 Q2 Q3</code> <code>min max</code> <code>P( )</code> <code>P(A)</code> <code>A|B</code> <code>union</code> <code>intersect</code></p>
+
+<p><strong>Geometry-specific</strong></p>
+<p><code>angle</code> <code>triangle</code> <code>parallel</code> <code>perp</code> <code>cong</code> <code>similar</code></p>
+<p><code>A-hat B-hat C-hat</code> (angle with hat)</p>
+<p><code>arc AB</code> <code>chord</code> <code>tan</code> <code>rad</code></p>
+<p>Reason keywords insert as plain text: <code>vert opp angles</code>, <code>alt angles</code>,</p>
+<p><code>co-int angles</code>, <code>tan chord</code>, <code>angle at centre</code> etc.</p>
+<h2>The six tabs</h2>
+
+<table><tr><th>Tab</th><th>Visible in</th><th>Purpose</th></tr><tr><td>**Algebra**</td><td>P1 default</td><td>Solve, factorise, inequality, simultaneous</td></tr><tr><td>**Calculus**</td><td>P1</td><td>First principles, derivatives, tangents, cubic</td></tr><tr><td>**Trig**</td><td>P1 + P2</td><td>Identities, equations, general solution</td></tr><tr><td>**Stats**</td><td>P1 + P2</td><td>Mean, SD, regression, ogive, probability</td></tr><tr><td>**Geometry**</td><td>P2</td><td>Euclidean, analytical circle, proofs</td></tr><tr><td>**Greek**</td><td>Fallback</td><td>alpha beta gamma theta lambda pi sigma phi omega</td></tr></table>
+
+<p><strong>Tab auto-switch mapping</strong> (when learner opts in):</p>
+
+<table><tr><th>Skill prefix</th><th>Tab</th></tr><tr><td>`calculus.*`</td><td>Calculus</td></tr><tr><td>`trig.*`</td><td>Trig</td></tr><tr><td>`stats.*` / `probability.*`</td><td>Stats</td></tr><tr><td>`geometry.*` / `analytical.*`</td><td>Geometry</td></tr><tr><td>`algebra.*` / `sequences.*` / `functions.*` / `finance.*`</td><td>Algebra</td></tr></table>
+<h2>Behaviour rules</h2>
+
+<p><strong>Line model</strong></p>
+<p>- Enter -&gt; new line, cursor at line start of the next one</p>
+<p>- Backspace on empty line -&gt; deletes the line, cursor back to previous</p>
+<p>- Multi-line working area, one memo step per line</p>
+<p>- learner_lines = [&quot;(x+4)(x-3)=0&quot;, &quot;x+4=0 or x-3=0&quot;, &quot;x=-4 or x=3&quot;]</p>
+
+<p><strong>Insert semantics</strong></p>
+<p>- Most keys insert with a leading and trailing space if surrounded</p>
+<p>  by alphanumeric characters (prevents <code>x+4=0</code> becoming <code>x +4=0</code>)</p>
+<p>- <code>or</code> always inserts as <code> or </code> (space both sides)</p>
+<p>- <code>=&gt;</code>, <code>&lt;=&gt;</code>, <code>therefore</code>, <code>because</code> insert as <code> X </code> (space both sides)</p>
+<p>- <code>;</code> inserts as <code>; </code> (trailing space only - coordinates use trailing)</p>
+<p>- <code>sin(</code> <code>cos(</code> <code>tan(</code> - the <code>(</code> is part of the key</p>
+<p>- <code>sqrt</code> inserts <code>sqrt(</code> - cursor inside</p>
+
+<p><strong>Tab switching</strong></p>
+<p>- Manual tap always works</p>
+<p>- Auto-switch (when enabled): on question start, tab matches skill prefix</p>
+<p>- Manual override during a question sticks until the next question</p>
+
+<p><strong>Keyboard mode</strong></p>
+<p>- <code>ABC</code> key toggles letter input for geometry reasons</p>
+<p>- Letters on the ABC layer insert plain text</p>
+<p>- Digits always visible on the number row - never hidden by ABC</p>
+
+<p><strong>What the keyboard does NOT do</strong></p>
+<p>- No <code>=</code> that evaluates</p>
+<p>- No <code>solve</code> key</p>
+<p>- No history / recall that recomputes</p>
+<p>- No import from calculator</p>
+<h2>Wireframe (phone portrait)</h2>
+
+<pre>
++-----------------------------------------+
+|  &lt;- MethodMarker              (gear)    |
++-----------------------------------------+
+|  Working                    3 steps     |
+|                                         |
+|  1  (x+4)(x-3)=0                        |
+|  2  x+4=0 or x-3=0                      |
+|  3  x=-4 or x=3|                        |
+|                                         |
++-----------------------------------------+
+| Algebra|Calculus|Trig|Stats|Geom|Greek  |
++-----------------------------------------+
+|  x    y    a    b    c    n             |
+|  =    or   =&gt;   &lt;=&gt;  .:   :.            |
+|  ( )  x^2  x^n  x^-1 sqrt cbrt          |
+|  +/-  &lt;    &gt;    &lt;=   &gt;=   !=            |
+|  a/b  |x|  Sigma ;   in   R             |
++-----------------------------------------+
+|  1 2 3 4 5 6 7 8 9 0 . (-)  backspace   |
++-----------------------------------------+
+|  Enter New Line   Done   ABC   Collapse |
++-----------------------------------------+
+</pre>
+
+<p>The <code>Collapse</code> control on the bottom-right toggles the symbol grid</p>
+<p>off, leaving the working area, digits, and Done - for learners who</p>
+<p>want more room to review their working before submitting.</p>
+<h2>Output contract</h2>
+
+<p>The keyboard produces, on Done:</p>
+
+<pre>
+learner_lines: list[str] = [
+    &quot;(x+4)(x-3)=0&quot;,
+    &quot;x+4=0 or x-3=0&quot;,
+    &quot;x=-4 or x=3&quot;,
+]
+</pre>
+
+<p>Same shape as the CLI&#x27;s <code>_collect_working</code>. Same shape <code>step_grader</code></p>
+<p>and <code>math_grader</code> already consume. <strong>No interface change</strong> - the</p>
+<p>keyboard is just a different producer.</p>
+
+<h2>Integration with the drill</h2>
+
+<p>The drill&#x27;s existing call site:</p>
+
+<pre>
+submission = _collect_working(i, SITTING_SIZE)
+</pre>
+
+<p>On web/mobile, <code>_collect_working</code> renders the keyboard, waits for</p>
+<p>Done, and returns <code>learner_lines</code>-wrapped working. Same downstream</p>
+<p>pipeline:</p>
+
+<pre>
+keyboard -&gt; learner_lines -&gt; math_grader -&gt; step_grader -&gt; feedback
+</pre>
+
+<p>Nothing else in the drill changes.</p>
+<h2>MVP vs full build</h2>
+
+<p><strong>MVP (ship first)</strong></p>
+<p>- Digits, <code>.</code>, <code>(-)</code>, <code>+ - x /</code>, <code>( )</code>, <code>=</code></p>
+<p>- Backspace, New Line, Done, ABC, Collapse</p>
+<p>- <strong>Algebra tab</strong> (all 30 keys)</p>
+<p>- <strong>Trig tab</strong> (all 24 keys)</p>
+<p>- Line counter, no cap</p>
+<p>- Manual tab switching only</p>
+
+<p>Ships the pilot. Unblocks all quadratic / surd / inequality / trig drills.</p>
+
+<p><strong>Full (after pilot data)</strong></p>
+<p>- Calculus, Stats, Geometry, Greek tabs</p>
+<p>- Tab auto-switch (opt-in)</p>
+<p>- Cursor position persistence across questions</p>
+<p>- Settings panel (persisted to learner row)</p>
+<h2>Open questions</h2>
+
+<p>1. <strong>Cursor tracking.</strong> Does the keyboard need to support mid-line</p>
+<p>   insertion (edit line 2 after line 3 is written)? Probably yes for</p>
+<p>   proofs, but adds complexity. Defer to full build.</p>
+<p>2. <strong>Bilingual.</strong> SA has English + Afrikaans papers. Learners may</p>
+<p>   switch. Do we ship EN-only first, or both?</p>
+<p>3. <strong>Reason shortlist.</strong> Geometry proofs have a fixed vocabulary of</p>
+<p>   reasons. Do we offer a shortlist picker (vert opp angles, alt</p>
+<p>   angles, co-int angles, tan chord, ...), or leave the learner to</p>
+<p>   type? Shortlist risks over-helping; freeform risks misspellings</p>
+<p>   the grader cannot match.</p>
+<p>4. <strong>Line cap on the drill side.</strong> Even if the keyboard has no cap,</p>
+<p>   the step grader has a fixed memo length. What happens when a</p>
+<p>   learner writes 15 lines for a 3-line memo? Log as a discovery</p>
+<p>   for later review.</p>
+<pre class='code'># Emit the keyboard_layout.json the drill will consume.
+
+import json
+from pathlib import Path
+
+KEYBOARD = {
+    &quot;schema_version&quot;: 1,
+    &quot;tabs&quot;: {
+        &quot;Algebra&quot;: [
+            {&quot;label&quot;: &quot;x&quot;,   &quot;insert&quot;: &quot;x&quot;,    &quot;engine_token&quot;: &quot;x&quot;},
+            {&quot;label&quot;: &quot;y&quot;,   &quot;insert&quot;: &quot;y&quot;,    &quot;engine_token&quot;: &quot;y&quot;},
+            {&quot;label&quot;: &quot;a&quot;,   &quot;insert&quot;: &quot;a&quot;,    &quot;engine_token&quot;: &quot;a&quot;},
+            {&quot;label&quot;: &quot;b&quot;,   &quot;insert&quot;: &quot;b&quot;,    &quot;engine_token&quot;: &quot;b&quot;},
+            {&quot;label&quot;: &quot;c&quot;,   &quot;insert&quot;: &quot;c&quot;,    &quot;engine_token&quot;: &quot;c&quot;},
+            {&quot;label&quot;: &quot;n&quot;,   &quot;insert&quot;: &quot;n&quot;,    &quot;engine_token&quot;: &quot;n&quot;},
+            {&quot;label&quot;: &quot;=&quot;,   &quot;insert&quot;: &quot; = &quot;,  &quot;engine_token&quot;: &quot;=&quot;},
+            {&quot;label&quot;: &quot;or&quot;,  &quot;insert&quot;: &quot; or &quot;, &quot;engine_token&quot;: &quot; or &quot;},
+            {&quot;label&quot;: &quot;=&gt;&quot;,  &quot;insert&quot;: &quot; =&gt; &quot;, &quot;engine_token&quot;: &quot;=&gt;&quot;},
+            {&quot;label&quot;: &quot;&lt;=&gt;&quot;, &quot;insert&quot;: &quot; &lt;=&gt; &quot;,&quot;engine_token&quot;: &quot;&lt;=&gt;&quot;},
+            {&quot;label&quot;: &quot;.:&quot;,  &quot;insert&quot;: &quot; .: &quot;, &quot;engine_token&quot;: &quot;therefore&quot;},
+            {&quot;label&quot;: &quot;:.&quot;,  &quot;insert&quot;: &quot; :. &quot;, &quot;engine_token&quot;: &quot;because&quot;},
+            {&quot;label&quot;: &quot;( )&quot;, &quot;insert&quot;: &quot;()&quot;,   &quot;engine_token&quot;: &quot;()&quot;},
+            {&quot;label&quot;: &quot;x^2&quot;, &quot;insert&quot;: &quot;x^2&quot;,  &quot;engine_token&quot;: &quot;x^2&quot;},
+            {&quot;label&quot;: &quot;x^n&quot;, &quot;insert&quot;: &quot;x^&quot;,   &quot;engine_token&quot;: &quot;x^&quot;},
+            {&quot;label&quot;: &quot;x^-1&quot;,&quot;insert&quot;: &quot;x^-1&quot;, &quot;engine_token&quot;: &quot;x^-1&quot;},
+            {&quot;label&quot;: &quot;sqrt&quot;,&quot;insert&quot;: &quot;sqrt(&quot;, &quot;engine_token&quot;: &quot;sqrt(&quot;},
+            {&quot;label&quot;: &quot;cbrt&quot;,&quot;insert&quot;: &quot;cbrt(&quot;, &quot;engine_token&quot;: &quot;cbrt(&quot;},
+            {&quot;label&quot;: &quot;+-&quot;,  &quot;insert&quot;: &quot;+-&quot;,    &quot;engine_token&quot;: &quot;+/-&quot;},
+            {&quot;label&quot;: &quot;&lt;&quot;,   &quot;insert&quot;: &quot;&lt;&quot;,    &quot;engine_token&quot;: &quot;&lt;&quot;},
+            {&quot;label&quot;: &quot;&gt;&quot;,   &quot;insert&quot;: &quot;&gt;&quot;,    &quot;engine_token&quot;: &quot;&gt;&quot;},
+            {&quot;label&quot;: &quot;&lt;=&quot;,  &quot;insert&quot;: &quot;&lt;=&quot;,   &quot;engine_token&quot;: &quot;&lt;=&quot;},
+            {&quot;label&quot;: &quot;&gt;=&quot;,  &quot;insert&quot;: &quot;&gt;=&quot;,   &quot;engine_token&quot;: &quot;&gt;=&quot;},
+            {&quot;label&quot;: &quot;!=&quot;,  &quot;insert&quot;: &quot;!=&quot;,   &quot;engine_token&quot;: &quot;!=&quot;},
+            {&quot;label&quot;: &quot;a/b&quot;, &quot;insert&quot;: &quot;a/b&quot;,  &quot;engine_token&quot;: &quot;a/b&quot;},
+            {&quot;label&quot;: &quot;|x|&quot;, &quot;insert&quot;: &quot;|x|&quot;,  &quot;engine_token&quot;: &quot;abs(x)&quot;},
+            {&quot;label&quot;: &quot;Sum&quot;, &quot;insert&quot;: &quot;Sum&quot;,  &quot;engine_token&quot;: &quot;sum&quot;},
+            {&quot;label&quot;: &quot;;&quot;,   &quot;insert&quot;: &quot;; &quot;,   &quot;engine_token&quot;: &quot;;&quot;},
+            {&quot;label&quot;: &quot;in&quot;,  &quot;insert&quot;: &quot;in&quot;,   &quot;engine_token&quot;: &quot;in&quot;},
+            {&quot;label&quot;: &quot;R&quot;,   &quot;insert&quot;: &quot;R&quot;,    &quot;engine_token&quot;: &quot;R&quot;},
+        ],
+        &quot;Trig&quot;: [
+            {&quot;label&quot;: &quot;sin&quot;,   &quot;insert&quot;: &quot;sin(&quot;, &quot;engine_token&quot;: &quot;sin(&quot;},
+            {&quot;label&quot;: &quot;cos&quot;,   &quot;insert&quot;: &quot;cos(&quot;, &quot;engine_token&quot;: &quot;cos(&quot;},
+            {&quot;label&quot;: &quot;tan&quot;,   &quot;insert&quot;: &quot;tan(&quot;, &quot;engine_token&quot;: &quot;tan(&quot;},
+            {&quot;label&quot;: &quot;sin^-1&quot;,&quot;insert&quot;: &quot;asin(&quot;,&quot;engine_token&quot;: &quot;asin(&quot;},
+            {&quot;label&quot;: &quot;cos^-1&quot;,&quot;insert&quot;: &quot;acos(&quot;,&quot;engine_token&quot;: &quot;acos(&quot;},
+            {&quot;label&quot;: &quot;tan^-1&quot;,&quot;insert&quot;: &quot;atan(&quot;,&quot;engine_token&quot;: &quot;atan(&quot;},
+            {&quot;label&quot;: &quot;theta&quot;, &quot;insert&quot;: &quot;theta&quot;,&quot;engine_token&quot;: &quot;theta&quot;},
+            {&quot;label&quot;: &quot;alpha&quot;, &quot;insert&quot;: &quot;alpha&quot;,&quot;engine_token&quot;: &quot;alpha&quot;},
+            {&quot;label&quot;: &quot;beta&quot;,  &quot;insert&quot;: &quot;beta&quot;, &quot;engine_token&quot;: &quot;beta&quot;},
+            {&quot;label&quot;: &quot;gamma&quot;, &quot;insert&quot;: &quot;gamma&quot;,&quot;engine_token&quot;: &quot;gamma&quot;},
+            {&quot;label&quot;: &quot;pi&quot;,    &quot;insert&quot;: &quot;pi&quot;,   &quot;engine_token&quot;: &quot;pi&quot;},
+            {&quot;label&quot;: &quot;deg&quot;,   &quot;insert&quot;: &quot;deg&quot;,  &quot;engine_token&quot;: &quot;deg&quot;},
+            {&quot;label&quot;: &quot;2theta&quot;,&quot;insert&quot;: &quot;2theta&quot;,&quot;engine_token&quot;: &quot;2theta&quot;},
+            {&quot;label&quot;: &quot;sin^2&quot;, &quot;insert&quot;: &quot;sin^2(&quot;,&quot;engine_token&quot;: &quot;sin^2(&quot;},
+            {&quot;label&quot;: &quot;cos^2&quot;, &quot;insert&quot;: &quot;cos^2(&quot;,&quot;engine_token&quot;: &quot;cos^2(&quot;},
+            {&quot;label&quot;: &quot;tan^2&quot;, &quot;insert&quot;: &quot;tan^2(&quot;,&quot;engine_token&quot;: &quot;tan^2(&quot;},
+            {&quot;label&quot;: &quot;rad&quot;,   &quot;insert&quot;: &quot;rad&quot;,  &quot;engine_token&quot;: &quot;rad&quot;},
+            {&quot;label&quot;: &quot;=&quot;,     &quot;insert&quot;: &quot; = &quot;,  &quot;engine_token&quot;: &quot;=&quot;},
+            {&quot;label&quot;: &quot;or&quot;,    &quot;insert&quot;: &quot; or &quot;, &quot;engine_token&quot;: &quot; or &quot;},
+            {&quot;label&quot;: &quot;+-&quot;,    &quot;insert&quot;: &quot;+-&quot;,    &quot;engine_token&quot;: &quot;+/-&quot;},
+            {&quot;label&quot;: &quot;=&gt;&quot;,    &quot;insert&quot;: &quot; =&gt; &quot;, &quot;engine_token&quot;: &quot;=&gt;&quot;},
+            {&quot;label&quot;: &quot;.:&quot;,    &quot;insert&quot;: &quot; .: &quot;, &quot;engine_token&quot;: &quot;therefore&quot;},
+            {&quot;label&quot;: &quot;( )&quot;,   &quot;insert&quot;: &quot;()&quot;,   &quot;engine_token&quot;: &quot;()&quot;},
+        ],
+    },
+    &quot;always_visible&quot;: {
+        &quot;digits&quot;: [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;0&quot;,&quot;.&quot;,&quot;(-)&quot;],
+        &quot;operators&quot;: [&quot;+&quot;,&quot;-&quot;,&quot;x&quot;,&quot;/&quot;],
+        &quot;actions&quot;: [&quot;Backspace&quot;,&quot;New Line&quot;,&quot;Done&quot;,&quot;ABC&quot;,&quot;Collapse&quot;],
+    },
+    &quot;settings&quot;: {
+        &quot;line_cap&quot;: None,
+        &quot;tab_auto_switch&quot;: False,
+        &quot;keyboard_collapsible&quot;: True,
+        &quot;keyboard_default&quot;: &quot;expanded&quot;,
+    },
+    &quot;tab_auto_switch_map&quot;: {
+        &quot;calculus&quot;: &quot;Calculus&quot;,
+        &quot;trig&quot;: &quot;Trig&quot;,
+        &quot;stats&quot;: &quot;Stats&quot;,
+        &quot;probability&quot;: &quot;Stats&quot;,
+        &quot;geometry&quot;: &quot;Geometry&quot;,
+        &quot;analytical&quot;: &quot;Geometry&quot;,
+        &quot;algebra&quot;: &quot;Algebra&quot;,
+        &quot;sequences&quot;: &quot;Algebra&quot;,
+        &quot;functions&quot;: &quot;Algebra&quot;,
+        &quot;finance&quot;: &quot;Algebra&quot;,
+    },
+}
+
+out = Path(&quot;data/processed/tutor/keyboard_layout.json&quot;)
+out.parent.mkdir(parents=True, exist_ok=True)
+out.write_text(json.dumps(KEYBOARD, indent=2, ensure_ascii=False), encoding=&quot;utf-8&quot;)
+
+n_keys = sum(len(v) for v in KEYBOARD[&quot;tabs&quot;].values())
+print(f&quot;Wrote {out}&quot;)
+print(f&quot;  Tabs  : {len(KEYBOARD[&#x27;tabs&#x27;])}&quot;)
+print(f&quot;  Keys  : {n_keys}&quot;)
+print(f&quot;  Settings: line_cap={KEYBOARD[&#x27;settings&#x27;][&#x27;line_cap&#x27;]}, &quot;
+      f&quot;tab_auto_switch={KEYBOARD[&#x27;settings&#x27;][&#x27;tab_auto_switch&#x27;]}&quot;)</pre>
+</div>
+</body>
+</html>

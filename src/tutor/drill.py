@@ -578,6 +578,22 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
                 print("  Try the question again when ready — or type 'next' to move on.")
                 continue
 
+            # --- slash-command notation expansion ---
+            from . import slash_commands as _sc
+
+            _steps = getattr(submission, "steps", None) or []
+            _first_raw = ""
+            if _steps and hasattr(_steps[0], "raw_text"):
+                _first_raw = _steps[0].raw_text.strip()
+
+            if _sc.is_help(_first_raw) and len(_steps) == 1:
+                print(_sc.HELP_TEXT)
+                continue
+
+            for _s in _steps:
+                if hasattr(_s, "raw_text"):
+                    _s.raw_text = _sc.expand(_s.raw_text)
+
             attempts_on_this_q += 1
             total_attempts += 1
             learner_text = submission.joined()
