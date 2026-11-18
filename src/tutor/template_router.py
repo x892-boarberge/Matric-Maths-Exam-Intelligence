@@ -16,6 +16,27 @@ ROOT = Path(__file__).resolve().parents[2]
 MAP_PATH = ROOT / "data" / "processed" / "tutor" / "analogue_template_map.csv"
 
 
+# Explicit translation from corpus skill_ids to the family-level keys
+# the CSV uses, and to template_ids the CSV does not name directly.
+# This exists because the CSV was authored at family level and the
+# corpus uses leaf-level ids. Documented here rather than hidden in
+# prefix arithmetic. Phase 2 will normalise the CSV and retire this.
+_ALIASES = {
+    "trig.reduction":          "trig_reduction",
+    "trig.reduction.simplify": "trig_reduction",
+    "trig.reduction.cos":      "trig_reduction",
+    "trig.reduction.range":    "trig_reduction",
+    "trig.identity":           "trig_written",
+    "trig.identity.prove":     "trig_written",
+    "trig.identity.simplify":  "trig_reduction",
+    "trig.compound":           "trig_compound",
+    "trig.compound.sin":       "trig_compound",
+    "trig.compound.prove":     "trig_compound",
+    "trig.double_angle":       "trig_double_angle",
+    "trig.unitcircle":         "trig_reduction",
+}
+
+
 def _load_map():
     if not MAP_PATH.exists():
         return {}
@@ -58,6 +79,33 @@ def route_template(skill_id: str, prompt: str = ""):
     if not sid:
         return None
 
+    def _lookup(skill):
+        """Resolve a corpus skill_id to a template_id.
+
+        Order:
+          1. exact alias (corpus leaf -> template)
+          2. family-prefix alias (corpus leaf -> family -> template)
+          3. exact map hit
+          4. family-prefix map hit
+        """
+        tid = _ALIASES.get(skill)
+        if tid:
+            return tid
+        if "." in skill:
+            family = skill.rsplit(".", 1)[0]
+            tid = _ALIASES.get(family)
+            if tid:
+                return tid
+        tid = _MAP.get(skill)
+        if tid:
+            return tid
+        if "." in skill:
+            family = skill.rsplit(".", 1)[0]
+            tid = _MAP.get(family)
+            if tid:
+                return tid
+        return None
+
     # --- Quadratic solve — has multiple templates ---
     if sid == "algebra.quadratic.solve":
         if _is_formula_question(prompt):
@@ -66,11 +114,15 @@ def route_template(skill_id: str, prompt: str = ""):
             return "quadratic_factored"
         if _is_standard_form(prompt):
             return "quadratic_standard_factorable"
-        # Fallback to whatever the map says
-        return _MAP.get(sid)
+        # Prompt shape could not be determined (empty, OCR-garbled, or
+        # unusual wording). The family map holds multiple quadratic
+        # templates and last-wins, so do NOT consult it here — it would
+        # return whichever row happened to be last. Default to the most
+        # general quadratic template instead.
+        return "quadratic_standard_factorable"
 
-    # --- Everything else — use the map ---
-    return _MAP.get(sid)
+    # --- Everything else — map with family-prefix fallback ---
+    return _lookup(sid)
 
 
 def all_routed_templates() -> list:

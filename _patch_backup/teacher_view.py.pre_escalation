@@ -1,0 +1,845 @@
+"""Tanaka's teacher plan — dual artifact.
+
+The PLAN is the source of truth (JSON, machine-actionable).
+The BRIEF is a rendering of the plan for humans (markdown).
+
+Tanaka loads the plan at session start, executes it, and updates it
+after each session. The school teacher reads the brief. Same content,
+two renderings. This is what makes "Tanaka is both tutor and teacher"
+an architecture, not a slogan.
+
+Usage:
+    python scripts/teacher_view.py thabo 30
+"""
+import sys
+import json
+import sqlite3
+from pathlib import Path
+from datetime import datetime, timezone, timedelta
+from collections import Counter, defaultdict
+
+
+def _find_root():
+    r = Path(".").resolve()
+    for c in [r, *r.parents]:
+        if (c / "src" / "tutor").is_dir():
+            return c
+    return r
+
+
+ROOT = _find_root()
+DB = ROOT / "data" / "learner_store" / "learners.db"
+REPORTS = ROOT / "data" / "reports"
+PLANS = ROOT / "data" / "plans"
+
+
+def _parse(s):
+    if not s:
+        return None
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def _is_pass(error_type):
+    return str(error_type or "").lower() in ("none", "match")
+
+
+def _is_variant(qid):
+    return str(qid or "").startswith("VAR_")
+
+
+def _display_name(learner_id):
+    s = str(learner_id).strip()
+    if not s or s.isdigit():
+        return "the learner"
+    return s.replace("_", " ").title()
+
+
+def _friendly_skill(skill_id):
+    mapping = {
+        "algebra.quadratic.solve": "Quadratic equations",
+        "algebra.quadratic.inequality": "Quadratic inequalities",
+        "algebra.surd.solve": "Surd equations",
+        "algebra.simultaneous.solve": "Simultaneous equations",
+        "algebra.exponential.solve": "Exponential equations",
+        "trig.3d.length": "3D trigonometry (length)",
+        "trig.reduction.simplify": "Trig reduction",
+    }
+    return mapping.get(skill_id, skill_id.split(".")[-1].replace("_", " "))
+
+
+def _friendly_misconception(mid):
+    if not mid:
+        return None
+    mapping = {
+        "M_SIGN_ERROR_READING_ROOT": "flips sign when reading a root from a bracket",
+        "M_ALG_SIGN_FLIP_FACTOR": "flips signs when factorising",
+        "M_SIGN_ERROR_FACTORISATION": "flips signs when factorising",
+        "M_INCOMPLETE_ROOTS": "stops after finding one of two roots",
+        "M_CALCULATION_ERROR": "arithmetic slips in the final step",
+        "M_AND_OR_CONFUSION": "uses 'and' instead of 'or'",
+        "M_COORDINATE_SWAP": "swaps x and y",
+        "M_COORDINATE_SIGN_FLIP": "flips a sign on a coordinate",
+        "M_INCOMPLETE_PAIR": "gives only one of x/y",
+        "M_SURD_CALCULATION_ERROR": "arithmetic slips in a surd equation",
+        "M_INEQ_MISSING_INTERVAL": "misses the second interval",
+        "M_INEQ_SIGN_FLIP": "flips a sign in an interval boundary",
+        "M_UNITS_IN_ANSWER": "adds units where the memo wants a number",
+    }
+    return mapping.get(mid, mid.replace("M_", "").replace("_", " ").lower())
+
+
+# ─── Learner-facing prompts per misconception ──────────────────────────────
+# Each entry contains:
+#   learner_says: what the learner says out loud before answering
+#   teacher_says: one-line reinforcement the tutor gives when the habit holds
+# These are the ACTUAL WORDS to use. Not descriptions of the error.
+LEARNER_PROMPTS = {
+    "M_SIGN_ERROR_READING_ROOT": {
+        "learner_says": (
+            '“Plus three in the bracket — minus three as the root.” '
+            '(say the sign inside, then say the opposite as the root)'
+        ),
+        "teacher_says": (
+            '“That’s the habit. The sign inside lies — the root flips it.”'
+        ),
+    },
+    "M_ALG_SIGN_FLIP_FACTOR": {
+        "learner_says": (
+            '“Middle term is negative, last term is positive — both factors take the negative sign.”'
+        ),
+        "teacher_says": (
+            '“The middle term is the middleman — it decides what both signs are.”'
+        ),
+    },
+    "M_SIGN_ERROR_FACTORISATION": {
+        "learner_says": (
+            '“Check the signs: do they add to the middle and multiply to the last?”'
+        ),
+        "teacher_says": '“You checked the signs. That’s the habit.”',
+    },
+    "M_INCOMPLETE_ROOTS": {
+        "learner_says": (
+            '“Two brackets — two roots. I need both before I write done.”'
+        ),
+        "teacher_says": '“Count your roots. Two brackets, two answers.”',
+    },
+    "M_CALCULATION_ERROR": {
+        "learner_says": '“I’ll write every line. Nothing skipped.”',
+        "teacher_says": '“Show me the last two lines before you type done.”',
+    },
+    "M_AND_OR_CONFUSION": {
+        "learner_says": (
+            '“Could both be true at once? No — so it’s or between them.”'
+        ),
+        "teacher_says": '“Two answers that can’t both be true — that’s or.”',
+    },
+    "M_INEQ_MISSING_INTERVAL": {
+        "learner_says": '“Two critical values, two intervals — I need both.”',
+        "teacher_says": '“Sketch the parabola. Two branches, two intervals.”',
+    },
+    "M_INEQ_SIGN_FLIP": {
+        "learner_says": '“Sign of each boundary — negative or positive?”',
+        "teacher_says": '“Check each boundary sign before writing the interval.”',
+    },
+    "M_UNITS_IN_ANSWER": {
+        "learner_says": (
+            '“Solve for x is a number, not a measurement. No units.”'
+        ),
+        "teacher_says": (
+            '“Just the number. Units belong in measurement questions.”'
+        ),
+    },
+    "M_SURD_CALCULATION_ERROR": {
+        "learner_says": (
+            '“Square both sides, then check — did I reject the fake root?”'
+        ),
+        "teacher_says": '“Squaring can create a fake root. Always check.”',
+    },
+}
+
+
+def _learner_prompt_for(mid):
+    """Return (learner_says, teacher_says) or a generic fallback."""
+    entry = LEARNER_PROMPTS.get(mid)
+    if entry:
+        return entry["learner_says"], entry["teacher_says"]
+    # Generic fallback — still actionable
+    return (
+        f"\"Watch the {_friendly_misconception(mid)} trap.\"",
+        f"\"That's the habit — noticing it is half the work.\""
+    )
+
+
+# ─── Reference lookups (verify assets exist before referencing them) ───────
+def _teaching_objective_for(mid):
+    """Find a teaching objective file for a misconception, if one exists."""
+    if not mid:
+        return None
+    obj_dir = ROOT / "data" / "processed" / "tutor" / "teaching_objectives"
+    if not obj_dir.exists():
+        return None
+    # Convention: TO_ALG_READING_ROOT corresponds to M_SIGN_ERROR_READING_ROOT
+    # Try to find by scanning files for matching misconception
+    candidates = list(obj_dir.glob("TO_*.json"))
+    for f in candidates:
+        try:
+            data = json.loads(f.read_text(encoding="utf-8"))
+            if data.get("misconception_id") == mid or mid in f.stem:
+                return f.stem
+        except Exception:
+            pass
+    return None
+
+
+def _playbook_for(question_id):
+    """Find a playbook file if one exists for this question."""
+    if not question_id:
+        return None
+    parts = str(question_id).split("_")
+    if len(parts) < 3:
+        return None
+    parent_id = f"{parts[0]}_{parts[1]}_{parts[2].split('.')[0]}"
+    playbook_dir = ROOT / "data" / "processed" / "tutor" / "playbooks"
+    p = playbook_dir / f"{parent_id}.json"
+    return str(p.relative_to(ROOT)) if p.exists() else None
+
+
+def _variant_pool_for(subq_id):
+    """Find a variant pool for a subquestion if one exists."""
+    if not subq_id:
+        return None
+    pool_dir = ROOT / "data" / "processed" / "tutor" / "variant_pools"
+    p = pool_dir / f"{subq_id}_pool.json"
+    return str(p.relative_to(ROOT)) if p.exists() else None
+
+
+# ─── Data gathering ────────────────────────────────────────────────────────
+def gather(learner_id, days):
+    since = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+    conn = sqlite3.connect(DB)
+    conn.row_factory = sqlite3.Row
+    try:
+        attempts = [dict(r) for r in conn.execute(
+            "SELECT * FROM attempt WHERE learner_id = ? AND timestamp >= ? "
+            "ORDER BY timestamp ASC",
+            (learner_id, since),
+        ).fetchall()]
+
+        events = [dict(r) for r in conn.execute(
+            "SELECT * FROM learner_events WHERE learner_id = ? AND timestamp >= ? "
+            "ORDER BY timestamp ASC",
+            (learner_id, since),
+        ).fetchall()]
+
+        try:
+            retention = [dict(r) for r in conn.execute(
+                "SELECT * FROM mastery_decision WHERE learner_id = ? "
+                "ORDER BY decided_at DESC",
+                (learner_id,),
+            ).fetchall()]
+        except sqlite3.OperationalError:
+            retention = []
+
+        try:
+            mastery = [dict(r) for r in conn.execute(
+                "SELECT * FROM mastery WHERE learner_id = ?",
+                (learner_id,),
+            ).fetchall()]
+        except sqlite3.OperationalError:
+            mastery = []
+
+        try:
+            policy_row = conn.execute(
+                "SELECT version FROM mastery_policy "
+                "ORDER BY created_at DESC LIMIT 1"
+            ).fetchone()
+            policy_version = policy_row[0] if policy_row else "unknown"
+        except sqlite3.OperationalError:
+            policy_version = "unknown"
+    finally:
+        conn.close()
+
+    # Normalise attempts
+    parsed = []
+    for a in attempts:
+        a2 = dict(a)
+        a2["ts"] = _parse(a["timestamp"])
+        a2["is_pass"] = _is_pass(a["error_type"])
+        a2["is_variant"] = _is_variant(a.get("question_id"))
+        if a2["ts"]:
+            parsed.append(a2)
+
+    return parsed, events, retention, mastery, policy_version
+
+
+# ─── Plan building ─────────────────────────────────────────────────────────
+def compute_skill_state(attempts, retention):
+    """Per-skill state dictionary."""
+    by_skill = defaultdict(list)
+    for a in attempts:
+        by_skill[a["skill_id"]].append(a)
+
+    retention_by_skill = {}
+    for r in retention:
+        sid = r.get("skill_id")
+        if sid and sid not in retention_by_skill:
+            retention_by_skill[sid] = r  # most recent first
+
+    state = {}
+    for skill, skill_attempts in by_skill.items():
+        originals = [a for a in skill_attempts if not a["is_variant"]]
+        variants = [a for a in skill_attempts if a["is_variant"]]
+        orig_pass = sum(1 for a in originals if a["is_pass"])
+        var_pass = sum(1 for a in variants if a["is_pass"])
+
+        miscon = Counter(a["misconception_id"] for a in skill_attempts if a["misconception_id"])
+        top_miscon = miscon.most_common(1)[0] if miscon else (None, 0)
+
+        last_attempt = max((a["ts"] for a in skill_attempts), default=None)
+        days_since = (datetime.now(timezone.utc) - last_attempt).days if last_attempt else None
+
+        # Streak per session (longest run of passes within one session)
+        by_session = defaultdict(list)
+        for a in skill_attempts:
+            by_session[a.get("session_id") or "unknown"].append(a)
+        longest_run = 0
+        for sess_attempts in by_session.values():
+            run = 0
+            for a in sess_attempts:
+                if a["is_pass"]:
+                    run += 1
+                    longest_run = max(longest_run, run)
+                else:
+                    run = 0
+
+        state[skill] = {
+            "skill_id": skill,
+            "display_name": _friendly_skill(skill),
+            "total_attempts": len(skill_attempts),
+            "originals": len(originals),
+            "variants": len(variants),
+            "original_correct": orig_pass,
+            "variant_correct": var_pass,
+            "original_accuracy": orig_pass / len(originals) if originals else 0,
+            "variant_accuracy": var_pass / len(variants) if variants else 0,
+            "top_misconception_id": top_miscon[0],
+            "top_misconception_count": top_miscon[1],
+            "all_misconceptions": dict(miscon),
+            "last_attempt_at": last_attempt.isoformat() if last_attempt else None,
+            "days_since_attempt": days_since,
+            "longest_pass_run": longest_run,
+            "retention": retention_by_skill.get(skill),
+        }
+    return state
+
+
+def build_priority_actions(skill_state, events, days):
+    """Return list of priority actions, HIGH first."""
+    actions = []
+    action_num = 0
+
+    # ─── Action 1: Retention checks due (highest priority) ─────────────────
+    for skill, s in skill_state.items():
+        ret = s.get("retention")
+        if ret and ret.get("retention_status") in ("pending", "failed", "missing"):
+            action_num += 1
+            due_at = ret.get("retention_due_at")
+            actions.append({
+                "action_id": f"act_{action_num:03d}_retention",
+                "type": "retention_check",
+                "priority": "HIGH",
+                "skill_id": skill,
+                "display_skill": s["display_name"],
+                "why": (
+                    f"retention check was scheduled at day 30 from the provisional "
+                    f"mastery decision. Current status: {ret.get('retention_status')}."
+                ),
+                "instruction": (
+                    f"At session start, prompt the learner to complete the retention "
+                    f"check for {s['display_name']} — 5 questions, unassisted, "
+                    f"using the current variant pool."
+                ),
+                "variant_pool": _variant_pool_for(subq_from_skill(ret.get("skill_id") or "")),
+                "success_criterion": "4 of 5 correct on the retention check",
+                "failure_branch": {
+                    "trigger": "fewer than 4 of 5 correct",
+                    "next_action": "mark durable mastery as failed, re-teach from playbook",
+                    "escalate_to_human": False,
+                },
+                "evidence": {
+                    "decided_at": ret.get("decided_at"),
+                    "retention_due_at": due_at,
+                    "retention_status": ret.get("retention_status"),
+                },
+            })
+
+    # ─── Action 2: Persistent misconceptions (HIGH) ────────────────────────
+    for skill, s in skill_state.items():
+        mid = s.get("top_misconception_id")
+        count = s.get("top_misconception_count", 0)
+        if not mid or count < 5:
+            continue
+        # Note: retention check and targeted drill are DIFFERENT actions
+        # even if they target the same skill. Retention verifies whether a
+        # past mastery claim held up; drill addresses an ongoing pattern.
+        # Both can fire; the brief will sequence them.
+        action_num += 1
+        natural = _friendly_misconception(mid)
+        # Priority tier
+        if count >= 15:
+            priority = "HIGH"
+            why = (f"{count} occurrences over {days} days on {s['display_name']} — "
+                   f"the pattern is persistent and not breaking with the current approach.")
+        elif count >= 8:
+            priority = "MEDIUM"
+            why = (f"{count} occurrences on {s['display_name']} — a consistent pattern "
+                   f"worth targeting with focused practice.")
+        else:
+            continue  # Under threshold, not worth an action item
+
+        lesson = _teaching_objective_for(mid)
+        _subq = subq_from_skill(skill)
+        playbook = _playbook_for(f"2025_P1_Q{_subq}")
+        pool = _variant_pool_for(_subq)
+
+        # Get the actual words for the learner
+        learner_says, teacher_says = _learner_prompt_for(mid)
+
+        actions.append({
+            "action_id": f"act_{action_num:03d}_misconception",
+            "type": "targeted_drill",
+            "priority": priority,
+            "skill_id": skill,
+            "display_skill": s["display_name"],
+            "misconception_id": mid,
+            "display_misconception": natural,
+            "why": why,
+            "instruction": "\n".join([
+                f"Before each new {s['display_name'].lower()} question:",
+                f"1. Say: \"Before you write anything \u2014 what\u2019s the trap on this one?\"",
+                f"2. When they answer, prompt: {learner_says}",
+                f"3. Let them attempt the question.",
+                f"4. If they avoid the trap, reinforce: {teacher_says}",
+                f"5. If they fall into it, don\u2019t fix it \u2014 the tutor diagnoses as usual.",
+            ]),
+            "learner_prompt": learner_says,
+            "teacher_reinforcement": teacher_says,
+            "lesson_ref": lesson,
+            "playbook_ref": playbook,
+            "variant_pool": pool,
+            "success_criterion": (
+                f"3 consecutive questions on {s['display_name'].lower()} where "
+                f"the learner does NOT exhibit: {natural}"
+            ),
+            "failure_branch": {
+                "trigger": "3 failures in a row on this drill",
+                "next_action": "switch to the teaching objective (if available) for a structured lesson",
+                "escalate_to_human": (count >= 15),
+            },
+            "evidence": {
+                "occurrences": count,
+                "total_attempts": s["total_attempts"],
+                "current_accuracy": round(s["original_accuracy"], 3),
+                "days_since_last": s.get("days_since_attempt"),
+            },
+        })
+
+    # ─── Action 3: Long low-accuracy grind (MEDIUM) ────────────────────────
+    for skill, s in skill_state.items():
+        if any(a["skill_id"] == skill for a in actions):
+            continue
+        if (s["total_attempts"] >= 30
+                and s["original_accuracy"] < 0.20
+                and s.get("days_since_attempt") is not None
+                and s["days_since_attempt"] < 14):
+            action_num += 1
+            actions.append({
+                "action_id": f"act_{action_num:03d}_low_accuracy",
+                "type": "foundational_check",
+                "priority": "MEDIUM",
+                "skill_id": skill,
+                "display_skill": s["display_name"],
+                "why": (
+                    f"{s['total_attempts']} attempts with {s['original_accuracy']*100:.0f}% "
+                    f"accuracy — below 20% despite sustained effort. The current approach "
+                    f"may not be reaching the actual gap."
+                ),
+                "instruction": (
+                    f"Before continuing {s['display_name'].lower()} practice, ask the "
+                    f"learner: \"walk me through the last question you got wrong — where "
+                    f"did it stop making sense?\" Listen for a foundational gap in an "
+                    f"earlier skill."
+                ),
+                "success_criterion": "identify one specific prerequisite gap in the conversation",
+                "failure_branch": {
+                    "trigger": "learner cannot articulate where it stopped making sense",
+                    "next_action": "escalate to human tutor for diagnostic conversation",
+                    "escalate_to_human": True,
+                },
+                "evidence": {
+                    "total_attempts": s["total_attempts"],
+                    "accuracy": round(s["original_accuracy"], 3),
+                },
+            })
+
+    # ─── Action 4: Foundational gap discovered in N08 (MEDIUM/LOW) ─────────
+    # For each learner who quit after variants, check if there's a pattern
+    quits = [e for e in events if e["event_type"] == "QUIT_AFTER_VARIANTS"]
+    if len(quits) >= 2:
+        action_num += 1
+        quit_skills = Counter(e.get("skill_id") for e in quits)
+        top_quit_skill = quit_skills.most_common(1)[0][0] if quit_skills else "unknown"
+        actions.append({
+            "action_id": f"act_{action_num:03d}_frustration",
+            "type": "confidence_check",
+            "priority": "MEDIUM",
+            "skill_id": top_quit_skill,
+            "display_skill": _friendly_skill(top_quit_skill),
+            "why": (
+                f"{len(quits)} voluntary quits after variant practice. "
+                f"Most frequent skill: {_friendly_skill(top_quit_skill)}. "
+                f"This is a frustration signal, not a knowledge signal."
+            ),
+            "instruction": (
+                f"When opening {_friendly_skill(top_quit_skill).lower()} with this learner, "
+                f"start with an easy variant they're likely to pass. Build momentum "
+                f"before the harder questions."
+            ),
+            "success_criterion": "learner completes 3 questions without quitting",
+            "failure_branch": {
+                "trigger": "learner quits again",
+                "next_action": "escalate — the digital format may not suit this learner",
+                "escalate_to_human": True,
+            },
+            "evidence": {
+                "total_quits": len(quits),
+                "skills_affected": dict(quit_skills),
+            },
+        })
+
+    # ─── Action 5: Curriculum gaps (LOW) ────────────────────────────────────
+    # If a learner has never touched a skill with ≥8 attempts on adjacent skills
+    touched = set(skill_state.keys())
+    expected_skills = [
+        "algebra.quadratic.solve", "algebra.quadratic.inequality",
+        "algebra.surd.solve", "algebra.exponential.solve",
+        "algebra.simultaneous.solve",
+    ]
+    for expected in expected_skills:
+        if expected in touched:
+            continue
+        # Only flag if the learner is active (has other skills touched)
+        if len(touched) >= 1:
+            action_num += 1
+            actions.append({
+                "action_id": f"act_{action_num:03d}_gap",
+                "type": "curriculum_gap",
+                "priority": "LOW",
+                "skill_id": expected,
+                "display_skill": _friendly_skill(expected),
+                "why": (
+                    f"No attempts recorded on {_friendly_skill(expected).lower()} "
+                    f"yet. This skill is part of the standard Grade 12 curriculum "
+                    f"and will be needed for Paper 1."
+                ),
+                "instruction": (
+                    f"Introduce {_friendly_skill(expected).lower()} in the next session "
+                    f"when the learner is warmed up and has momentum."
+                ),
+                "success_criterion": "first attempt made and specific errors named",
+                "failure_branch": None,
+                "evidence": {
+                    "attempts": 0,
+                },
+            })
+
+    # Sort by priority
+    priority_order = {"HIGH": 0, "MEDIUM": 1, "LOW": 2}
+    actions.sort(key=lambda a: priority_order.get(a["priority"], 3))
+
+    # Sequencing hint: if two actions target the same skill, order matters.
+    # Retention check first (time-sensitive), then drill.
+    by_skill = defaultdict(list)
+    for a in actions:
+        by_skill[a["skill_id"]].append(a)
+
+    for skill, skill_actions in by_skill.items():
+        if len(skill_actions) <= 1:
+            continue
+        # Order retention_check before other types
+        type_order = {"retention_check": 0, "targeted_drill": 1, "confidence_check": 2,
+                      "foundational_check": 3, "curriculum_gap": 4}
+        skill_actions.sort(key=lambda a: type_order.get(a["type"], 99))
+        for idx, a in enumerate(skill_actions, 1):
+            a["sequencing_hint"] = f"{idx} of {len(skill_actions)} on this skill"
+        # If both HIGH, note the potential overload
+        high_count = sum(1 for a in skill_actions if a["priority"] == "HIGH")
+        if high_count >= 2:
+            for a in skill_actions:
+                a["sequencing_hint"] += " — multiple HIGH items on this skill; sequence carefully"
+
+    return actions
+
+
+def subq_from_skill(skill_id):
+    """Map a skill_id to a representative subquestion number for pool lookup."""
+    mapping = {
+        "algebra.quadratic.solve": "1.1.1",
+        "algebra.quadratic.inequality": "1.1.3",
+        "algebra.surd.solve": "1.1.5",
+        "algebra.exponential.solve": "1.1.4",
+        "algebra.simultaneous.solve": "1.2",
+    }
+    return mapping.get(skill_id, "1.1.1")
+
+
+def build_plan(learner_id, days=30):
+    """Build the full teacher plan JSON."""
+    attempts, events, retention, mastery_rows, policy_version = gather(learner_id, days)
+    name = _display_name(learner_id)
+
+    if not attempts:
+        return {
+            "plan_version": "1.0",
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "learner_id": learner_id,
+            "display_name": name,
+            "window_days": days,
+            "policy_version": policy_version,
+            "status": "no_data",
+            "message": (
+                f"{name} has no attempts in the last {days} days. "
+                f"No plan can be generated until there's activity to analyse."
+            ),
+            "priority_actions": [],
+            "retention_checks_due": [],
+            "curriculum_progress": {},
+            "data_quality": {
+                "sufficient_data": False,
+                "warnings": ["No attempts in window."],
+            },
+        }
+
+    skill_state = compute_skill_state(attempts, retention)
+    actions = build_priority_actions(skill_state, events, days)
+
+    # Compute summary metrics
+    total_attempts = len(attempts)
+    passes = sum(1 for a in attempts if a["is_pass"])
+    overall_accuracy = passes / total_attempts if total_attempts else 0
+
+    # Data quality
+    warnings = []
+    if total_attempts < 20:
+        warnings.append(f"Only {total_attempts} attempts — recommendations are tentative.")
+    high_prio_count = sum(1 for a in actions if a["priority"] == "HIGH")
+    if high_prio_count >= 3:
+        warnings.append(f"{high_prio_count} HIGH priority items — learner may be overloaded.")
+
+    plan = {
+        "plan_version": "1.0",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "learner_id": learner_id,
+        "display_name": name,
+        "window_days": days,
+        "policy_version": policy_version,
+        "status": "active",
+        "summary": {
+            "total_attempts": total_attempts,
+            "overall_accuracy": round(overall_accuracy, 3),
+            "skills_touched": len(skill_state),
+            "high_priority_actions": high_prio_count,
+            "medium_priority_actions": sum(1 for a in actions if a["priority"] == "MEDIUM"),
+            "low_priority_actions": sum(1 for a in actions if a["priority"] == "LOW"),
+            "overall_state": (
+                "mastered" if overall_accuracy >= 0.85 and high_prio_count == 0
+                else "improving" if overall_accuracy >= 0.5
+                else "struggling" if high_prio_count > 0
+                else "practising"
+            ),
+        },
+        "priority_actions": actions,
+        "retention_checks_due": [
+            a for a in actions if a["type"] == "retention_check"
+        ],
+        "curriculum_progress": {
+            skill: {
+                "accuracy": round(s["original_accuracy"], 3),
+                "attempts": s["total_attempts"],
+                "variant_transfer": round(s["variant_accuracy"], 3) if s["variants"] else None,
+                "top_misconception": s["top_misconception_id"],
+                "top_misconception_count": s["top_misconception_count"],
+                "days_since_attempt": s["days_since_attempt"],
+            }
+            for skill, s in skill_state.items()
+        },
+        "data_quality": {
+            "sufficient_data": total_attempts >= 20,
+            "warnings": warnings,
+        },
+    }
+
+    return plan
+
+
+# ─── Markdown rendering (derived from the plan) ────────────────────────────
+def render_markdown(plan):
+    """Render the plan as a human-readable brief. No separate logic —
+    reads from the plan JSON, renders each section."""
+    L = []
+    A = L.append
+
+    name = plan["display_name"]
+    A(f"# Teaching Brief — {name}")
+    A("")
+    A(f"*Generated {datetime.fromisoformat(plan['generated_at'].replace('Z', '+00:00')).strftime('%B %d, %Y')} · "
+      f"covering the last {plan['window_days']} days · "
+      f"policy `{plan['policy_version']}`*")
+    A("")
+
+    # ─── Status ────────────────────────────────────────────────────────────
+    if plan["status"] == "no_data":
+        A("## Status")
+        A("")
+        A(plan["message"])
+        A("")
+        A("*Brief generated from plan. No actions to report.*")
+        return "\n".join(L)
+
+    summary = plan["summary"]
+    A("## Status at a glance")
+    A("")
+    A(f"- **Overall state:** {summary['overall_state']}")
+    A(f"- **Attempts (last {plan['window_days']} days):** {summary['total_attempts']}")
+    A(f"- **Overall first-try accuracy:** {summary['overall_accuracy']*100:.0f}%")
+    A(f"- **Skills worked on:** {summary['skills_touched']}")
+    A(f"- **Priority actions this cycle:** "
+      f"{summary['high_priority_actions']} HIGH, "
+      f"{summary['medium_priority_actions']} MEDIUM, "
+      f"{summary['low_priority_actions']} LOW")
+    A("")
+
+    if plan["data_quality"]["warnings"]:
+        A("**Data quality notes:**")
+        for w in plan["data_quality"]["warnings"]:
+            A(f"- {w}")
+        A("")
+
+    # ─── Priority actions ──────────────────────────────────────────────────
+    if not plan["priority_actions"]:
+        A("## Priority actions")
+        A("")
+        A("*No action items generated — no patterns crossed the threshold. Continue as scheduled.*")
+        A("")
+    else:
+        A("## Priority actions")
+        A("")
+        for action in plan["priority_actions"]:
+            icon = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(action["priority"], "•")
+            A(f"### {icon} {action['display_skill']} — {action['priority']}")
+            if action.get("sequencing_hint"):
+                A(f"*{action['sequencing_hint']}*")
+            A("")
+            A(f"**Type:** {action['type'].replace('_', ' ')}  ")
+            if action.get("misconception_id"):
+                A(f"**Misconception:** `{action['misconception_id']}` — "
+                  f"{action['display_misconception']}  ")
+            A(f"**Why this is prioritized:** {action['why']}")
+            A("")
+            A(f"**Instruction for the tutor:**")
+            A("")
+            import re as _re
+            _inst = str(action.get("instruction", ""))
+            # Normalize literal \n (2 chars) to real newlines
+            _inst = _inst.replace(chr(92) + "n", chr(10))
+            # Split on real newlines AND any stray "> " prefixes that may
+            # have been baked into the source string by prior renders.
+            # Bulletproof: split on newlines first, then on any "> " markers
+            # within each part. Handles both clean and previously-glued strings.
+            _final_parts = []
+            for _outer in _re.split(r"\n", _inst):
+                for _inner in _re.split(r">\s+", _outer):
+                    _st = _inner.strip()
+                    if _st:
+                        _final_parts.append(_st)
+            for _i, _st in enumerate(_final_parts):
+                A(f"> {_st}")
+                if _i < len(_final_parts) - 1:
+                    A(">")  # blank blockquote — forces markdown to separate items
+            A("")
+            A(f"**Success criterion:** {action['success_criterion']}")
+            if action.get("failure_branch"):
+                fb = action["failure_branch"]
+                A("")
+                A(f"**If it fails:** {fb['trigger']} → {fb['next_action']}")
+                if fb.get("escalate_to_human"):
+                    A(f"  *(escalate to human tutor)*")
+            A("")
+            A("**Evidence:**")
+            for k, v in action.get("evidence", {}).items():
+                A(f"- {k.replace('_', ' ')}: {v}")
+            if action.get("lesson_ref"):
+                A(f"- teaching objective: `{action['lesson_ref']}`")
+            if action.get("playbook_ref"):
+                A(f"- playbook: `{action['playbook_ref']}`")
+            if action.get("variant_pool"):
+                A(f"- variant pool: `{action['variant_pool']}`")
+            A("")
+
+    # ─── Curriculum progress ───────────────────────────────────────────────
+    if plan.get("curriculum_progress"):
+        A("## Curriculum progress")
+        A("")
+        A("| Skill | Attempts | Accuracy | Variant transfer | Top misconception |")
+        A("|---|---|---|---|---|")
+        for skill, s in plan["curriculum_progress"].items():
+            vt = f"{s['variant_transfer']*100:.0f}%" if s.get("variant_transfer") is not None else "—"
+            mid = s.get("top_misconception") or "—"
+            mcount = f" ({s['top_misconception_count']}×)" if s.get("top_misconception_count") else ""
+            A(f"| {_friendly_skill(skill)} | {s['attempts']} | "
+              f"{s['accuracy']*100:.0f}% | {vt} | {mid}{mcount} |")
+        A("")
+
+    # ─── Footer ───────────────────────────────────────────────────────────
+    A("---")
+    A("")
+    A("*This brief is a rendering of the executable plan "
+      f"(`data/plans/{name.lower().replace(' ', '_')}_plan.json`). "
+      "The tutor loads the plan at session start, executes each action, "
+      "and revises after each session. Same content, two renderings.*")
+
+    return "\n".join(L)
+
+
+def main():
+    learner = sys.argv[1] if len(sys.argv) > 1 else "thabo"
+    days = 30
+    if len(sys.argv) > 2:
+        try:
+            days = int(sys.argv[2])
+        except ValueError:
+            pass
+
+    plan = build_plan(learner, days)
+    md = render_markdown(plan)
+
+    PLANS.mkdir(parents=True, exist_ok=True)
+    REPORTS.mkdir(parents=True, exist_ok=True)
+
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    plan_path = PLANS / f"{learner}_plan_{ts}.json"
+    brief_path = REPORTS / f"{learner}_teacher_brief_{ts}.md"
+
+    plan_path.write_text(json.dumps(plan, indent=2), encoding="utf-8")
+    brief_path.write_text(md, encoding="utf-8")
+
+    print(md)
+    print(f"\n\n📋 Plan (machine): {plan_path}")
+    print(f"📄 Brief (human):  {brief_path}")
+
+
+if __name__ == "__main__":
+    main()

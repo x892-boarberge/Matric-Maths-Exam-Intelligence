@@ -1,0 +1,37 @@
+{
+  "objective_id": "TO_TRIG_IDENTITY_MISAPPLY",
+  "skill_id": "trig.identity.simplify",
+  "trigger_misconception": "M_IDENTITY_MISAPPLY",
+  "dbe_source": {
+    "years": [
+      "2021",
+      "2022",
+      "2024"
+    ],
+    "recommendation": "Candidates applied an invalid Pythagorean-form identity. sin^2 + cos^2 = 1 is the only fundamental identity, not sin^2 + cos^2 = sin^2 cos^2.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "The fundamental Pythagorean identity is sin^2 x + cos^2 x = 1. Any other combination is not an identity. When you see sin^2 plus cos^2, replace with 1, not with a product.",
+    "why": "Confusing the product of the ratios with the sum of their squares is one of the most common errors. The examiner awards a mark for the identity application on its own line.",
+    "example": {
+      "problem": "Simplify sin^2 x + cos^2 x + sin x cos x",
+      "work": [
+        "Use the Pythagorean identity on the first two terms:",
+        "sin^2 x + cos^2 x = 1",
+        "So the expression becomes 1 + sin x cos x.",
+        "Do NOT write sin^2 x + cos^2 x = sin^2 x cos^2 x."
+      ]
+    },
+    "probe": {
+      "problem": "Simplify sin^2 x + cos^2 x - 1.",
+      "expected": "0",
+      "hint": "Replace sin^2 x + cos^2 x with 1."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_IDENTITY_MISAPPLY",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "sin²x + cos²x = 1 is the fundamental identity. It is not a product like sin²x cos²x."
+}

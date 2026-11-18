@@ -1,0 +1,662 @@
+[
+  {
+    "variant_question": "Given the geometric series: (t-10) + (t+5) + (t-5) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+5)^2 = (t-10)(t-5)\nt^2 + 10t + 25 = t^2 - 15t + 50\n+ 10t + 15t = 50 - 25\n25t = 25\nt = 25/25 = 1\nVerify: -9, 6, -4 — ratio = -2/3 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+5)^2 = (t-10)(t-5)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+5)^2 = (t-10)(t-5)",
+      "t^2 + 10t + 25 = t^2 - 15t + 50",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-10) + (t+2) + (t-2) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+2)^2 = (t-10)(t-2)\nt^2 + 4t + 4 = t^2 - 12t + 20\n+ 4t + 12t = 20 - 4\n16t = 16\nt = 16/16 = 1\nVerify: -9, 3, -1 — ratio = -1/3 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+2)^2 = (t-10)(t-2)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+2)^2 = (t-10)(t-2)",
+      "t^2 + 4t + 4 = t^2 - 12t + 20",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-10) + (t+1) + (t+1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+1)^2 = (t-10)(t+1)\nt^2 + 2t + 1 = t^2 - 9t - 10\n+ 2t + 9t = -10 - 1\n11t = -11\nt = -11/11 = -1\nVerify: -11, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+1)^2 = (t-10)(t+1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+1)^2 = (t-10)(t+1)",
+      "t^2 + 2t + 1 = t^2 - 9t - 10",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-10) + (t-1) + (t-1) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-1)^2 = (t-10)(t-1)\nt^2 - 2t + 1 = t^2 - 11t + 10\n-2t + 11t = 10 - 1\n9t = 9\nt = 9/9 = 1\nVerify: -9, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-1)^2 = (t-10)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-1)^2 = (t-10)(t-1)",
+      "t^2 - 2t + 1 = t^2 - 11t + 10",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-10) + (t-4) + (t-2) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-4)^2 = (t-10)(t-2)\nt^2 - 8t + 16 = t^2 - 12t + 20\n-8t + 12t = 20 - 16\n4t = 4\nt = 4/4 = 1\nVerify: -9, -3, -1 — ratio = 1/3 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-4)^2 = (t-10)(t-2)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-4)^2 = (t-10)(t-2)",
+      "t^2 - 8t + 16 = t^2 - 12t + 20",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-10) + (t-7) + (t-5) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-7)^2 = (t-10)(t-5)\nt^2 - 14t + 49 = t^2 - 15t + 50\n-14t + 15t = 50 - 49\n1t = 1\nt = 1/1 = 1\nVerify: -9, -6, -4 — ratio = 2/3 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-7)^2 = (t-10)(t-5)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-7)^2 = (t-10)(t-5)",
+      "t^2 - 14t + 49 = t^2 - 15t + 50",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-9) + (t+3) + (t-3) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+3)^2 = (t-9)(t-3)\nt^2 + 6t + 9 = t^2 - 12t + 27\n+ 6t + 12t = 27 - 9\n18t = 18\nt = 18/18 = 1\nVerify: -8, 4, -2 — ratio = -1/2 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+3)^2 = (t-9)(t-3)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+3)^2 = (t-9)(t-3)",
+      "t^2 + 6t + 9 = t^2 - 12t + 27",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-9) + (t+1) + (t+1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+1)^2 = (t-9)(t+1)\nt^2 + 2t + 1 = t^2 - 8t - 9\n+ 2t + 8t = -9 - 1\n10t = -10\nt = -10/10 = -1\nVerify: -10, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+1)^2 = (t-9)(t+1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+1)^2 = (t-9)(t+1)",
+      "t^2 + 2t + 1 = t^2 - 8t - 9",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-9) + (t-1) + (t-1) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-1)^2 = (t-9)(t-1)\nt^2 - 2t + 1 = t^2 - 10t + 9\n-2t + 10t = 9 - 1\n8t = 8\nt = 8/8 = 1\nVerify: -8, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-1)^2 = (t-9)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-1)^2 = (t-9)(t-1)",
+      "t^2 - 2t + 1 = t^2 - 10t + 9",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-9) + (t-5) + (t-3) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-5)^2 = (t-9)(t-3)\nt^2 - 10t + 25 = t^2 - 12t + 27\n-10t + 12t = 27 - 25\n2t = 2\nt = 2/2 = 1\nVerify: -8, -4, -2 — ratio = 1/2 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-5)^2 = (t-9)(t-3)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-5)^2 = (t-9)(t-3)",
+      "t^2 - 10t + 25 = t^2 - 12t + 27",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-8) + (t+4) + (t+0) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+4)^2 = (t-8)(t+0)\nt^2 + 8t + 16 = t^2 - 8t + 0\n+ 8t + 8t = 0 - 16\n16t = -16\nt = -16/16 = -1\nVerify: -9, 3, -1 — ratio = -1/3 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+4)^2 = (t-8)(t+0)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+4)^2 = (t-8)(t+0)",
+      "t^2 + 8t + 16 = t^2 - 8t + 0",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-8) + (t+1) + (t+1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+1)^2 = (t-8)(t+1)\nt^2 + 2t + 1 = t^2 - 7t - 8\n+ 2t + 7t = -8 - 1\n9t = -9\nt = -9/9 = -1\nVerify: -9, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+1)^2 = (t-8)(t+1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+1)^2 = (t-8)(t+1)",
+      "t^2 + 2t + 1 = t^2 - 7t - 8",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-8) + (t-1) + (t-1) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-1)^2 = (t-8)(t-1)\nt^2 - 2t + 1 = t^2 - 9t + 8\n-2t + 9t = 8 - 1\n7t = 7\nt = 7/7 = 1\nVerify: -7, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-1)^2 = (t-8)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-1)^2 = (t-8)(t-1)",
+      "t^2 - 2t + 1 = t^2 - 9t + 8",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-8) + (t-2) + (t+0) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-2)^2 = (t-8)(t+0)\nt^2 - 4t + 4 = t^2 - 8t + 0\n-4t + 8t = 0 - 4\n4t = -4\nt = -4/4 = -1\nVerify: -9, -3, -1 — ratio = 1/3 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-2)^2 = (t-8)(t+0)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-2)^2 = (t-8)(t+0)",
+      "t^2 - 4t + 4 = t^2 - 8t + 0",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-8) + (t-5) + (t-3) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-5)^2 = (t-8)(t-3)\nt^2 - 10t + 25 = t^2 - 11t + 24\n-10t + 11t = 24 - 25\n1t = -1\nt = -1/1 = -1\nVerify: -9, -6, -4 — ratio = 2/3 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-5)^2 = (t-8)(t-3)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-5)^2 = (t-8)(t-3)",
+      "t^2 - 10t + 25 = t^2 - 11t + 24",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-7) + (t+5) + (t-1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+5)^2 = (t-7)(t-1)\nt^2 + 10t + 25 = t^2 - 8t + 7\n+ 10t + 8t = 7 - 25\n18t = -18\nt = -18/18 = -1\nVerify: -8, 4, -2 — ratio = -1/2 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+5)^2 = (t-7)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+5)^2 = (t-7)(t-1)",
+      "t^2 + 10t + 25 = t^2 - 8t + 7",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-7) + (t+1) + (t+1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+1)^2 = (t-7)(t+1)\nt^2 + 2t + 1 = t^2 - 6t - 7\n+ 2t + 6t = -7 - 1\n8t = -8\nt = -8/8 = -1\nVerify: -8, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+1)^2 = (t-7)(t+1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+1)^2 = (t-7)(t+1)",
+      "t^2 + 2t + 1 = t^2 - 6t - 7",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-7) + (t-1) + (t-1) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-1)^2 = (t-7)(t-1)\nt^2 - 2t + 1 = t^2 - 8t + 7\n-2t + 8t = 7 - 1\n6t = 6\nt = 6/6 = 1\nVerify: -6, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-1)^2 = (t-7)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-1)^2 = (t-7)(t-1)",
+      "t^2 - 2t + 1 = t^2 - 8t + 7",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-7) + (t-3) + (t-1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-3)^2 = (t-7)(t-1)\nt^2 - 6t + 9 = t^2 - 8t + 7\n-6t + 8t = 7 - 9\n2t = -2\nt = -2/2 = -1\nVerify: -8, -4, -2 — ratio = 1/2 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-3)^2 = (t-7)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-3)^2 = (t-7)(t-1)",
+      "t^2 - 6t + 9 = t^2 - 8t + 7",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-6) + (t+1) + (t+1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+1)^2 = (t-6)(t+1)\nt^2 + 2t + 1 = t^2 - 5t - 6\n+ 2t + 5t = -6 - 1\n7t = -7\nt = -7/7 = -1\nVerify: -7, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+1)^2 = (t-6)(t+1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+1)^2 = (t-6)(t+1)",
+      "t^2 + 2t + 1 = t^2 - 5t - 6",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-6) + (t-1) + (t-1) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-1)^2 = (t-6)(t-1)\nt^2 - 2t + 1 = t^2 - 7t + 6\n-2t + 7t = 6 - 1\n5t = 5\nt = 5/5 = 1\nVerify: -5, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-1)^2 = (t-6)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-1)^2 = (t-6)(t-1)",
+      "t^2 - 2t + 1 = t^2 - 7t + 6",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-5) + (t+1) + (t-2) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+1)^2 = (t-5)(t-2)\nt^2 + 2t + 1 = t^2 - 7t + 10\n+ 2t + 7t = 10 - 1\n9t = 9\nt = 9/9 = 1\nVerify: -4, 2, -1 — ratio = -1/2 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+1)^2 = (t-5)(t-2)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+1)^2 = (t-5)(t-2)",
+      "t^2 + 2t + 1 = t^2 - 7t + 10",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-5) + (t+1) + (t+1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+1)^2 = (t-5)(t+1)\nt^2 + 2t + 1 = t^2 - 4t - 5\n+ 2t + 4t = -5 - 1\n6t = -6\nt = -6/6 = -1\nVerify: -6, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+1)^2 = (t-5)(t+1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+1)^2 = (t-5)(t+1)",
+      "t^2 + 2t + 1 = t^2 - 4t - 5",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-5) + (t-1) + (t-1) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-1)^2 = (t-5)(t-1)\nt^2 - 2t + 1 = t^2 - 6t + 5\n-2t + 6t = 5 - 1\n4t = 4\nt = 4/4 = 1\nVerify: -4, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-1)^2 = (t-5)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-1)^2 = (t-5)(t-1)",
+      "t^2 - 2t + 1 = t^2 - 6t + 5",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-5) + (t-3) + (t-2) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-3)^2 = (t-5)(t-2)\nt^2 - 6t + 9 = t^2 - 7t + 10\n-6t + 7t = 10 - 9\n1t = 1\nt = 1/1 = 1\nVerify: -4, -2, -1 — ratio = 1/2 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-3)^2 = (t-5)(t-2)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-3)^2 = (t-5)(t-2)",
+      "t^2 - 6t + 9 = t^2 - 7t + 10",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-4) + (t+1) + (t+1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+1)^2 = (t-4)(t+1)\nt^2 + 2t + 1 = t^2 - 3t - 4\n+ 2t + 3t = -4 - 1\n5t = -5\nt = -5/5 = -1\nVerify: -5, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+1)^2 = (t-4)(t+1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+1)^2 = (t-4)(t+1)",
+      "t^2 + 2t + 1 = t^2 - 3t - 4",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-4) + (t-1) + (t-1) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-1)^2 = (t-4)(t-1)\nt^2 - 2t + 1 = t^2 - 5t + 4\n-2t + 5t = 4 - 1\n3t = 3\nt = 3/3 = 1\nVerify: -3, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-1)^2 = (t-4)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-1)^2 = (t-4)(t-1)",
+      "t^2 - 2t + 1 = t^2 - 5t + 4",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-3) + (t+3) + (t+0) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+3)^2 = (t-3)(t+0)\nt^2 + 6t + 9 = t^2 - 3t + 0\n+ 6t + 3t = 0 - 9\n9t = -9\nt = -9/9 = -1\nVerify: -4, 2, -1 — ratio = -1/2 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+3)^2 = (t-3)(t+0)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+3)^2 = (t-3)(t+0)",
+      "t^2 + 6t + 9 = t^2 - 3t + 0",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-3) + (t+1) + (t+1) + ..., show that t = -1.",
+    "expected": "t = -1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t+1)^2 = (t-3)(t+1)\nt^2 + 2t + 1 = t^2 - 2t - 3\n+ 2t + 2t = -3 - 1\n4t = -4\nt = -4/4 = -1\nVerify: -4, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t+1)^2 = (t-3)(t+1)",
+      "1 mark for expansion",
+      "1 mark for solving t = -1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t+1)^2 = (t-3)(t+1)",
+      "t^2 + 2t + 1 = t^2 - 2t - 3",
+      "t = -1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  },
+  {
+    "variant_question": "Given the geometric series: (t-3) + (t-1) + (t-1) + ..., show that t = 1.",
+    "expected": "t = 1",
+    "demonstration": "Geometric condition: middle squared = first × third.\n(t-1)^2 = (t-3)(t-1)\nt^2 - 2t + 1 = t^2 - 4t + 3\n-2t + 4t = 3 - 1\n2t = 2\nt = 2/2 = 1\nVerify: -2, 0, 0 — ratio = 0 constant.",
+    "memo_marks": [
+      "1 mark for setting up (t-1)^2 = (t-3)(t-1)",
+      "1 mark for expansion",
+      "1 mark for solving t = 1"
+    ],
+    "fast_path": "Geometric condition: middle squared = product of other two. Expand, solve.",
+    "fatal_error": "DBE says: Candidates use the ratio equation but forget to cross-multiply. Or expand (t+A)(t+C) and lose signs.",
+    "answer_book_layout": [
+      "(t-1)^2 = (t-3)(t-1)",
+      "t^2 - 2t + 1 = t^2 - 4t + 3",
+      "t = 1"
+    ],
+    "hack": "Geometric: middle^2 = outer product. Expand both sides, solve.",
+    "trap": "Sign errors in expansion. Write each step on its own line.",
+    "presentation": "Show the setup, expansion, solution.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_visual"
+  }
+]

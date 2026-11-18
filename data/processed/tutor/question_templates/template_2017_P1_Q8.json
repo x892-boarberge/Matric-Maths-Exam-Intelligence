@@ -37,6 +37,12 @@
         "x-intercepts: 0 (from x), 3 (double).",
         "Turning points at (1; 4) and (3; 0).",
         "Shape: positive cubic."
+      ],
+      "given_from": [
+        "8.1"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -50,6 +56,13 @@
         "-f(x) reflects f in x-axis.",
         "Concave down where original f is concave up.",
         "x > 2."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -68,6 +81,14 @@
       "steps": [
         "Local max of f at (1; 4).",
         "Translate 2 right, 3 up."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2",
+        "8.3"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -90,6 +111,16 @@
       "expected_fn": "No, f'(2) = -3",
       "steps": [
         "f'(2) = 3(4) - 24 + 9 = -3."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4.1"
+      ],
+      "requires_skills": [
+        "calculus.cubic",
+        "functions.transformation"
       ]
     }
   ],

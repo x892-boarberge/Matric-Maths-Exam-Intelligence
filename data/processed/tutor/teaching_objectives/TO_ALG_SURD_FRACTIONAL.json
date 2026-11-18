@@ -1,0 +1,39 @@
+{
+  "objective_id": "TO_ALG_SURD_FRACTIONAL",
+  "skill_id": "algebra.surd.solve",
+  "trigger_misconception": "M_FRACTIONAL_SURD_NOT_HANDLED",
+  "applies_when": "learner encounters a surd with a fraction inside or in front",
+  "dbe_source": {
+    "years": [
+      "2025"
+    ],
+    "recommendation": "Candidates struggled with two surds that had fractions. Handle the fraction inside the surd first, then isolate, then square.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When the surd contains a fraction, isolate the surd first, then square. One step at a time.",
+    "why": "Fractional surds are the hardest shape in the section. The examiner looks for the isolation line and the squaring line as separate marks.",
+    "example": {
+      "problem": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+      "work": [
+        "Let k = 1/sqrt(x). Then the equation reads sqrt(k + 2) = k.",
+        "Square both sides.",
+        "k + 2 = k^2",
+        "Rearrange: k^2 - k - 2 = 0",
+        "Factorise: (k - 2)(k + 1) = 0",
+        "k = 2 or k = -1. Reject k = -1.",
+        "So 1/sqrt(x) = 2, which gives x = 1/4."
+      ]
+    },
+    "probe": {
+      "problem": "Let k = 1/sqrt(x). Solve sqrt(k + 3) = k.",
+      "expected": "k = 3",
+      "hint": "Square both sides, solve the quadratic in k, then reject the negative root."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_FRACTIONAL_SURD_NOT_HANDLED",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "With a fractional surd, isolate first, then square. One step at a time."
+}

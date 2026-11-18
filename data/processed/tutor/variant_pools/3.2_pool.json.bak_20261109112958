@@ -1,0 +1,662 @@
+[
+  {
+    "variant_question": "Show that Tn = -n^2 + 24n - 1.",
+    "expected": "Tn = -n^2 + 24n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=24, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 24n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 42n - 1.",
+    "expected": "Tn = -n^2 + 42n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=42, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 42n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 24n - 1.",
+    "expected": "Tn = -n^2 + 24n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=24, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 24n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 42n - 1.",
+    "expected": "Tn = -n^2 + 42n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=42, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 42n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 42n - 1.",
+    "expected": "Tn = -n^2 + 42n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=42, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 42n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 42n - 1.",
+    "expected": "Tn = -n^2 + 42n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=42, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 42n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 38n - 1.",
+    "expected": "Tn = -n^2 + 38n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=38, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 38n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 42n - 1.",
+    "expected": "Tn = -n^2 + 42n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=42, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 42n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 24n - 1.",
+    "expected": "Tn = -n^2 + 24n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=24, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 24n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 38n - 1.",
+    "expected": "Tn = -n^2 + 38n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=38, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 38n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 38n - 1.",
+    "expected": "Tn = -n^2 + 38n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=38, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 38n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 38n - 1.",
+    "expected": "Tn = -n^2 + 38n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=38, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 38n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 38n - 1.",
+    "expected": "Tn = -n^2 + 38n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=38, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 38n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 24n - 1.",
+    "expected": "Tn = -n^2 + 24n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=24, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 24n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 24n - 1.",
+    "expected": "Tn = -n^2 + 24n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=24, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 24n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 38n - 1.",
+    "expected": "Tn = -n^2 + 38n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=38, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 38n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 24n - 1.",
+    "expected": "Tn = -n^2 + 24n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=24, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 24n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 38n - 1.",
+    "expected": "Tn = -n^2 + 38n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=38, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 38n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 38n - 1.",
+    "expected": "Tn = -n^2 + 38n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=38, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 38n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 30n - 1.",
+    "expected": "Tn = -n^2 + 30n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=30, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 30n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Show that Tn = -n^2 + 24n - 1.",
+    "expected": "Tn = -n^2 + 24n - 1",
+    "demonstration": "First diff, second diff = 2a, use T1 and T2.",
+    "memo_marks": [
+      "1 mark diffs",
+      "1 mark a",
+      "1 mark b/c"
+    ],
+    "fast_path": "2a first.",
+    "fatal_error": "DBE says: Jump to answer.",
+    "answer_book_layout": [
+      "First diffs",
+      "Second diff = -2 => a=-1",
+      "T1, T2 equations",
+      "b=24, c=-1",
+      "_________________________",
+      "Final Answer: Tn = -n² + 24n - 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

@@ -60,6 +60,12 @@
       "steps": [
         "f'(x) = 0 at the turning points.",
         "Turning points at x = {xa} and x = {xb}."
+      ],
+      "given_from": [
+        "9.1"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -73,6 +79,14 @@
         "Point of inflection is midway between the turning points: x = {xinf}.",
         "Since the cubic has a positive leading coefficient... (or negative)",
         "f is concave up for x > {xinf}."
+      ],
+      "given_from": [
+        "9.1",
+        "9.2"
+      ],
+      "requires_skills": [
+        "calculus.cubic",
+        "calculus.derivative"
       ]
     },
     {
@@ -96,6 +110,15 @@
         "For three positive roots, the graph must cross the x-axis three times in x > 0.",
         "The x-intercepts change with k.",
         "Answer: {k_min} < k < {k_max}"
+      ],
+      "given_from": [
+        "9.1",
+        "9.2",
+        "9.3"
+      ],
+      "requires_skills": [
+        "calculus.cubic",
+        "calculus.derivative"
       ]
     }
   ],

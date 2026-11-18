@@ -91,7 +91,8 @@ class TutorEngine:
                 },
             )
 
-        diag = diagnose(problem.skill_id, learner_response, problem.expected_answer)
+        diag = diagnose(problem.skill_id, learner_response,
+                    problem.expected_answer, prompt=problem.prompt)
 
         # Near-miss detection: if the response is close to expected but not
         # exact, ask for clarification instead of saying "unknown".

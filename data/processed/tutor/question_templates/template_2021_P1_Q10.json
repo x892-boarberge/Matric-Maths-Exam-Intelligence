@@ -52,6 +52,12 @@
       "steps": [
         "h(x) = {a}x³ + {b}x² = x²({a}x + {b}).",
         "x = 0 (twice) or x = {xA}."
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -80,6 +86,13 @@
         "h is increasing where h'(x) > 0.",
         "Turning points at x = 0 and x = {xb}.",
         "So increasing on 0 < x < {xb}."
+      ],
+      "given_from": [
+        "10.1",
+        "10.2"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -93,6 +106,14 @@
         "h''(x) = 6ax + 2b.",
         "Set h''(x) = 0: x = {xinf}.",
         "Concave down where h''(x) < 0: x > {xinf}."
+      ],
+      "given_from": [
+        "10.1",
+        "10.2",
+        "10.3.1"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -114,6 +135,15 @@
       "steps": [
         "Translate h: the shifted cubic has turning points at x=1 and x={xb}+1.",
         "Read off the range of k from the graph."
+      ],
+      "given_from": [
+        "10.1",
+        "10.2",
+        "10.3.1",
+        "10.3.2"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     }
   ],

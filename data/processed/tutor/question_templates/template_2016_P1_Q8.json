@@ -23,6 +23,12 @@
       "steps": [
         "Recognise form [g(a+h) - g(a)]/h.",
         "g(x) = sqrt(x), a = 4."
+      ],
+      "given_from": [
+        "8.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles"
       ]
     },
     {
@@ -35,6 +41,13 @@
       "steps": [
         "Rewrite: y = x^(3/2) - 5x^(-3).",
         "Differentiate."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2"
+      ],
+      "requires_skills": [
+        "calculus.first_principles"
       ]
     },
     {
@@ -49,6 +62,15 @@
         "f'(1) = -8: 3 + 2a + b = -8.",
         "f(1) = g(1) = 12: 1 + a + b + 18 = 12.",
         "Solve system."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2",
+        "8.3"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     }
   ],

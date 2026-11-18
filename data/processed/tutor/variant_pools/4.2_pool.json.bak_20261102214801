@@ -1,0 +1,542 @@
+[
+  {
+    "variant_question": "x-intercept of f(x) = log_4(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_4(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_5(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_5(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_5(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_5(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_4(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_4(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_5(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_5(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_2(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_2(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_3(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_3(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_3(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_3(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_4(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_4(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_3(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_3(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_4(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_4(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_2(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_2(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_5(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_5(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_4(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_4(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_2(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_2(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_2(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_2(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_3(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_3(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_4(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_4(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_5(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_5(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_3(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_3(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_5(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_5(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_4(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_4(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_3(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_3(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_2(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_2(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_4(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_4(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_4(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_4(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_2(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_2(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_5(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_5(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_3(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_3(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of f(x) = log_3(x).",
+    "expected": "(1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x",
+      "1 mark coords"
+    ],
+    "fast_path": "Always 1.",
+    "fatal_error": "DBE says: Write (0;1).",
+    "answer_book_layout": [
+      "y = 0",
+      "log_3(x) = 0",
+      "x = 1",
+      "_________________________",
+      "Final Answer: (1 ; 0)"
+    ]
+  }
+]

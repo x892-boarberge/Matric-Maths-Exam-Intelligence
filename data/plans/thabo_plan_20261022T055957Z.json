@@ -1,0 +1,155 @@
+{
+  "plan_version": "1.0",
+  "generated_at": "2026-10-22T05:59:57.860677+00:00",
+  "learner_id": "thabo",
+  "display_name": "Thabo",
+  "window_days": 30,
+  "policy_version": "v1_2026_10",
+  "status": "active",
+  "summary": {
+    "total_attempts": 225,
+    "overall_accuracy": 0.427,
+    "skills_touched": 5,
+    "high_priority_actions": 2,
+    "medium_priority_actions": 0,
+    "low_priority_actions": 1,
+    "overall_state": "struggling"
+  },
+  "priority_actions": [
+    {
+      "action_id": "act_001_retention",
+      "type": "retention_check",
+      "priority": "HIGH",
+      "skill_id": "algebra.quadratic.solve",
+      "display_skill": "Quadratic equations",
+      "why": "retention check was scheduled at day 30 from the provisional mastery decision. Current status: pending.",
+      "instruction": "At session start, prompt the learner to complete the retention check for Quadratic equations \u2014 5 questions, unassisted, using the current variant pool.",
+      "variant_pool": "data\\processed\\tutor\\variant_pools\\1.1.1_pool.json",
+      "success_criterion": "4 of 5 correct on the retention check",
+      "failure_branch": {
+        "trigger": "fewer than 4 of 5 correct",
+        "next_action": "mark durable mastery as failed, re-teach from playbook",
+        "escalate_to_human": false
+      },
+      "evidence": {
+        "decided_at": "2026-10-21T15:14:03.319354+00:00",
+        "retention_due_at": "2026-11-20T15:14:03.319354+00:00",
+        "retention_status": "pending"
+      },
+      "sequencing_hint": "1 of 2 on this skill \u2014 multiple HIGH items on this skill; sequence carefully"
+    },
+    {
+      "action_id": "act_002_misconception",
+      "type": "targeted_drill",
+      "priority": "HIGH",
+      "skill_id": "algebra.quadratic.solve",
+      "display_skill": "Quadratic equations",
+      "misconception_id": "M_SIGN_ERROR_READING_ROOT",
+      "display_misconception": "flips sign when reading a root from a bracket",
+      "why": "19 occurrences over 30 days on Quadratic equations \u2014 the pattern is persistent and not breaking with the current approach.",
+      "instruction": "Before each new quadratic equations question:\n1. Say: \"Before you write anything \u2014 what\u2019s the trap on this one?\"\n2. When they answer, prompt: \u201cPlus three in the bracket \u2014 minus three as the root.\u201d (say the sign inside, then say the opposite as the root)\n3. Let them attempt the question.\n4. If they avoid the trap, reinforce: \u201cThat\u2019s the habit. The sign inside lies \u2014 the root flips it.\u201d\n5. If they fall into it, don\u2019t fix it \u2014 the tutor diagnoses as usual.",
+      "learner_prompt": "\u201cPlus three in the bracket \u2014 minus three as the root.\u201d (say the sign inside, then say the opposite as the root)",
+      "teacher_reinforcement": "\u201cThat\u2019s the habit. The sign inside lies \u2014 the root flips it.\u201d",
+      "lesson_ref": null,
+      "playbook_ref": "data\\processed\\tutor\\playbooks\\2025_P1_Q1.json",
+      "variant_pool": "data\\processed\\tutor\\variant_pools\\1.1.1_pool.json",
+      "success_criterion": "3 consecutive questions on quadratic equations where the learner does NOT exhibit: flips sign when reading a root from a bracket",
+      "failure_branch": {
+        "trigger": "3 failures in a row on this drill",
+        "next_action": "switch to the teaching objective (if available) for a structured lesson",
+        "escalate_to_human": true
+      },
+      "evidence": {
+        "occurrences": 19,
+        "total_attempts": 213,
+        "current_accuracy": 0.452,
+        "days_since_last": 0
+      },
+      "sequencing_hint": "2 of 2 on this skill \u2014 multiple HIGH items on this skill; sequence carefully"
+    },
+    {
+      "action_id": "act_004_gap",
+      "type": "curriculum_gap",
+      "priority": "LOW",
+      "skill_id": "algebra.exponential.solve",
+      "display_skill": "Exponential equations",
+      "why": "No attempts recorded on exponential equations yet. This skill is part of the standard Grade 12 curriculum and will be needed for Paper 1.",
+      "instruction": "Introduce exponential equations in the next session when the learner is warmed up and has momentum.",
+      "success_criterion": "first attempt made and specific errors named",
+      "failure_branch": null,
+      "evidence": {
+        "attempts": 0
+      }
+    }
+  ],
+  "retention_checks_due": [
+    {
+      "action_id": "act_001_retention",
+      "type": "retention_check",
+      "priority": "HIGH",
+      "skill_id": "algebra.quadratic.solve",
+      "display_skill": "Quadratic equations",
+      "why": "retention check was scheduled at day 30 from the provisional mastery decision. Current status: pending.",
+      "instruction": "At session start, prompt the learner to complete the retention check for Quadratic equations \u2014 5 questions, unassisted, using the current variant pool.",
+      "variant_pool": "data\\processed\\tutor\\variant_pools\\1.1.1_pool.json",
+      "success_criterion": "4 of 5 correct on the retention check",
+      "failure_branch": {
+        "trigger": "fewer than 4 of 5 correct",
+        "next_action": "mark durable mastery as failed, re-teach from playbook",
+        "escalate_to_human": false
+      },
+      "evidence": {
+        "decided_at": "2026-10-21T15:14:03.319354+00:00",
+        "retention_due_at": "2026-11-20T15:14:03.319354+00:00",
+        "retention_status": "pending"
+      },
+      "sequencing_hint": "1 of 2 on this skill \u2014 multiple HIGH items on this skill; sequence carefully"
+    }
+  ],
+  "curriculum_progress": {
+    "algebra.quadratic.solve": {
+      "accuracy": 0.452,
+      "attempts": 213,
+      "variant_transfer": 0.375,
+      "top_misconception": "M_SIGN_ERROR_READING_ROOT",
+      "top_misconception_count": 19,
+      "days_since_attempt": 0
+    },
+    "trig.3d.length": {
+      "accuracy": 0.0,
+      "attempts": 8,
+      "variant_transfer": null,
+      "top_misconception": "M_3D_WRONG_RATIO",
+      "top_misconception_count": 5,
+      "days_since_attempt": 8
+    },
+    "algebra.surd.solve": {
+      "accuracy": 0.5,
+      "attempts": 2,
+      "variant_transfer": null,
+      "top_misconception": "M_ALG_SIGN_FLIP_FACTOR",
+      "top_misconception_count": 1,
+      "days_since_attempt": 13
+    },
+    "algebra.quadratic.inequality": {
+      "accuracy": 0.0,
+      "attempts": 1,
+      "variant_transfer": null,
+      "top_misconception": "M_ALG_SIGN_FLIP_FACTOR",
+      "top_misconception_count": 1,
+      "days_since_attempt": 1
+    },
+    "algebra.simultaneous.solve": {
+      "accuracy": 0.0,
+      "attempts": 1,
+      "variant_transfer": null,
+      "top_misconception": "M_ALG_SIGN_FLIP_FACTOR",
+      "top_misconception_count": 1,
+      "days_since_attempt": 1
+    }
+  },
+  "data_quality": {
+    "sufficient_data": true,
+    "warnings": []
+  }
+}

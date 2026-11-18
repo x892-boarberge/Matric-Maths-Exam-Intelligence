@@ -1,8 +1,4 @@
 ﻿skill_id,template_id
-algebra.quadratic,quadratic_factored
-algebra.quadratic,quadratic_inequality
-algebra.exponential,exponential_quadratic
-algebra.simultaneous,simultaneous_linear_quadratic
 sequences.ap,ap_term
 sequences.ap,ap_sum
 sequences.ap,ap_term
@@ -131,3 +127,14 @@ euclidean.similarity,euclidean_written
 euclidean.similarity,euclidean_written
 analytical.parallelogram,euclidean_written
 analytical.collinear,euclidean_written
+algebra.quadratic.solve,quadratic_factored
+algebra.quadratic.solve,quadratic_standard_factorable
+algebra.quadratic.solve,quadratic_formula
+algebra.quadratic.inequality,quadratic_inequality
+algebra.surd.solve,surd_equation_s1
+algebra.exponential.solve,exponential_quadratic
+algebra.exponential.solve,exponential_value
+algebra.exponential.proof,exponential_proof
+algebra.simultaneous.solve,simultaneous_linear_quadratic
+algebra.proof,proof_nonreal
+algebra.proof.integer,proof_integer

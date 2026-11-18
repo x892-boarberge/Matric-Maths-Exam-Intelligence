@@ -1,0 +1,512 @@
+[
+  {
+    "variant_question": "Length of MT if x-intercepts are -3 and 2.",
+    "expected": "5",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-3;0), T(2;0)",
+      "MT = 2 - (-3)",
+      "_________________________",
+      "Final Answer: 5 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -4 and 1.",
+    "expected": "5",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-4;0), T(1;0)",
+      "MT = 1 - (-4)",
+      "_________________________",
+      "Final Answer: 5 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -2 and 4.",
+    "expected": "6",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-2;0), T(4;0)",
+      "MT = 4 - (-2)",
+      "_________________________",
+      "Final Answer: 6 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -5 and 1.",
+    "expected": "6",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-5;0), T(1;0)",
+      "MT = 1 - (-5)",
+      "_________________________",
+      "Final Answer: 6 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -5 and 1.",
+    "expected": "6",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-5;0), T(1;0)",
+      "MT = 1 - (-5)",
+      "_________________________",
+      "Final Answer: 6 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -2 and 2.",
+    "expected": "4",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-2;0), T(2;0)",
+      "MT = 2 - (-2)",
+      "_________________________",
+      "Final Answer: 4 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -5 and 4.",
+    "expected": "9",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-5;0), T(4;0)",
+      "MT = 4 - (-5)",
+      "_________________________",
+      "Final Answer: 9 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are 0 and 2.",
+    "expected": "2",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(0;0), T(2;0)",
+      "MT = 2 - (0)",
+      "_________________________",
+      "Final Answer: 2 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -5 and 5.",
+    "expected": "10",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-5;0), T(5;0)",
+      "MT = 5 - (-5)",
+      "_________________________",
+      "Final Answer: 10 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -5 and 3.",
+    "expected": "8",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-5;0), T(3;0)",
+      "MT = 3 - (-5)",
+      "_________________________",
+      "Final Answer: 8 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -1 and 5.",
+    "expected": "6",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-1;0), T(5;0)",
+      "MT = 5 - (-1)",
+      "_________________________",
+      "Final Answer: 6 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -1 and 1.",
+    "expected": "2",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-1;0), T(1;0)",
+      "MT = 1 - (-1)",
+      "_________________________",
+      "Final Answer: 2 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -1 and 1.",
+    "expected": "2",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-1;0), T(1;0)",
+      "MT = 1 - (-1)",
+      "_________________________",
+      "Final Answer: 2 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -2 and 5.",
+    "expected": "7",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-2;0), T(5;0)",
+      "MT = 5 - (-2)",
+      "_________________________",
+      "Final Answer: 7 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -1 and 4.",
+    "expected": "5",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-1;0), T(4;0)",
+      "MT = 4 - (-1)",
+      "_________________________",
+      "Final Answer: 5 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -3 and 2.",
+    "expected": "5",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-3;0), T(2;0)",
+      "MT = 2 - (-3)",
+      "_________________________",
+      "Final Answer: 5 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -2 and 5.",
+    "expected": "7",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-2;0), T(5;0)",
+      "MT = 5 - (-2)",
+      "_________________________",
+      "Final Answer: 7 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -2 and 2.",
+    "expected": "4",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-2;0), T(2;0)",
+      "MT = 2 - (-2)",
+      "_________________________",
+      "Final Answer: 4 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -5 and 3.",
+    "expected": "8",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-5;0), T(3;0)",
+      "MT = 3 - (-5)",
+      "_________________________",
+      "Final Answer: 8 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are 0 and 2.",
+    "expected": "2",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(0;0), T(2;0)",
+      "MT = 2 - (0)",
+      "_________________________",
+      "Final Answer: 2 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -2 and 2.",
+    "expected": "4",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-2;0), T(2;0)",
+      "MT = 2 - (-2)",
+      "_________________________",
+      "Final Answer: 4 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -5 and 4.",
+    "expected": "9",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-5;0), T(4;0)",
+      "MT = 4 - (-5)",
+      "_________________________",
+      "Final Answer: 9 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are 0 and 2.",
+    "expected": "2",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(0;0), T(2;0)",
+      "MT = 2 - (0)",
+      "_________________________",
+      "Final Answer: 2 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are 0 and 3.",
+    "expected": "3",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(0;0), T(3;0)",
+      "MT = 3 - (0)",
+      "_________________________",
+      "Final Answer: 3 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -1 and 1.",
+    "expected": "2",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-1;0), T(1;0)",
+      "MT = 1 - (-1)",
+      "_________________________",
+      "Final Answer: 2 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are 0 and 4.",
+    "expected": "4",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(0;0), T(4;0)",
+      "MT = 4 - (0)",
+      "_________________________",
+      "Final Answer: 4 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -4 and 5.",
+    "expected": "9",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-4;0), T(5;0)",
+      "MT = 5 - (-4)",
+      "_________________________",
+      "Final Answer: 9 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -2 and 1.",
+    "expected": "3",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-2;0), T(1;0)",
+      "MT = 1 - (-2)",
+      "_________________________",
+      "Final Answer: 3 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -3 and 2.",
+    "expected": "5",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-3;0), T(2;0)",
+      "MT = 2 - (-3)",
+      "_________________________",
+      "Final Answer: 5 units"
+    ]
+  },
+  {
+    "variant_question": "Length of MT if x-intercepts are -3 and 2.",
+    "expected": "5",
+    "demonstration": "Subtract x-values.",
+    "memo_marks": [
+      "1 mark coords",
+      "1 mark dist"
+    ],
+    "fast_path": "Just subtract.",
+    "fatal_error": "DBE says: Use full distance formula.",
+    "answer_book_layout": [
+      "M(-3;0), T(2;0)",
+      "MT = 2 - (-3)",
+      "_________________________",
+      "Final Answer: 5 units"
+    ]
+  }
+]

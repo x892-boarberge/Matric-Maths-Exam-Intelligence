@@ -52,6 +52,12 @@
           "r": "sides opposite equal angles",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "9.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     }
   ],

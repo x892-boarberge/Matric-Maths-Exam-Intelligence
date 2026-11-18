@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "A holiday to a certain destination costs R18,000 now. The company predicts that the cost will increase by 9.5% per annum. What will this holiday cost in 4 years' time?",
+    "expected": "R25,877.90",
+    "demonstration": "FV = PV(1+i)^n\n= 18,000(1 + 0.095)^4\n= 18,000(1.095000)^4\n= R25,877.90",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R25,877.90"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 18,000(1 + 9.5/100)^4",
+      "FV = R25,877.90"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R45,000 now. The company predicts that the cost will increase by 9.0% per annum. What will this holiday cost in 5 years' time?",
+    "expected": "R69,238.08",
+    "demonstration": "FV = PV(1+i)^n\n= 45,000(1 + 0.09)^5\n= 45,000(1.090000)^5\n= R69,238.08",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R69,238.08"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 45,000(1 + 9.0/100)^5",
+      "FV = R69,238.08"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R22,000 now. The company predicts that the cost will increase by 8.4% per annum. What will this holiday cost in 7 years' time?",
+    "expected": "R38,692.58",
+    "demonstration": "FV = PV(1+i)^n\n= 22,000(1 + 0.084)^7\n= 22,000(1.084000)^7\n= R38,692.58",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R38,692.58"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 22,000(1 + 8.4/100)^7",
+      "FV = R38,692.58"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R12,000 now. The company predicts that the cost will increase by 8.1% per annum. What will this holiday cost in 7 years' time?",
+    "expected": "R20,699.56",
+    "demonstration": "FV = PV(1+i)^n\n= 12,000(1 + 0.081)^7\n= 12,000(1.081000)^7\n= R20,699.56",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R20,699.56"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 12,000(1 + 8.1/100)^7",
+      "FV = R20,699.56"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R25,000 now. The company predicts that the cost will increase by 7.8% per annum. What will this holiday cost in 12 years' time?",
+    "expected": "R61,569.43",
+    "demonstration": "FV = PV(1+i)^n\n= 25,000(1 + 0.078)^12\n= 25,000(1.078000)^12\n= R61,569.43",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R61,569.43"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 25,000(1 + 7.8/100)^12",
+      "FV = R61,569.43"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R35,000 now. The company predicts that the cost will increase by 7.0% per annum. What will this holiday cost in 8 years' time?",
+    "expected": "R60,136.52",
+    "demonstration": "FV = PV(1+i)^n\n= 35,000(1 + 0.07)^8\n= 35,000(1.070000)^8\n= R60,136.52",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R60,136.52"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 35,000(1 + 7.0/100)^8",
+      "FV = R60,136.52"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R60,000 now. The company predicts that the cost will increase by 5.5% per annum. What will this holiday cost in 8 years' time?",
+    "expected": "R92,081.19",
+    "demonstration": "FV = PV(1+i)^n\n= 60,000(1 + 0.055)^8\n= 60,000(1.055000)^8\n= R92,081.19",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R92,081.19"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 60,000(1 + 5.5/100)^8",
+      "FV = R92,081.19"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R50,000 now. The company predicts that the cost will increase by 7.2% per annum. What will this holiday cost in 4 years' time?",
+    "expected": "R66,031.19",
+    "demonstration": "FV = PV(1+i)^n\n= 50,000(1 + 0.072)^4\n= 50,000(1.072000)^4\n= R66,031.19",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R66,031.19"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 50,000(1 + 7.2/100)^4",
+      "FV = R66,031.19"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R40,000 now. The company predicts that the cost will increase by 7.8% per annum. What will this holiday cost in 5 years' time?",
+    "expected": "R58,230.94",
+    "demonstration": "FV = PV(1+i)^n\n= 40,000(1 + 0.078)^5\n= 40,000(1.078000)^5\n= R58,230.94",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R58,230.94"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 40,000(1 + 7.8/100)^5",
+      "FV = R58,230.94"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R30,000 now. The company predicts that the cost will increase by 8.8% per annum. What will this holiday cost in 9 years' time?",
+    "expected": "R64,088.68",
+    "demonstration": "FV = PV(1+i)^n\n= 30,000(1 + 0.088)^9\n= 30,000(1.088000)^9\n= R64,088.68",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R64,088.68"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 30,000(1 + 8.8/100)^9",
+      "FV = R64,088.68"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R70,000 now. The company predicts that the cost will increase by 7.0% per annum. What will this holiday cost in 3 years' time?",
+    "expected": "R85,753.01",
+    "demonstration": "FV = PV(1+i)^n\n= 70,000(1 + 0.07)^3\n= 70,000(1.070000)^3\n= R85,753.01",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R85,753.01"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 70,000(1 + 7.0/100)^3",
+      "FV = R85,753.01"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R70,000 now. The company predicts that the cost will increase by 6.5% per annum. What will this holiday cost in 10 years' time?",
+    "expected": "R131,399.62",
+    "demonstration": "FV = PV(1+i)^n\n= 70,000(1 + 0.065)^10\n= 70,000(1.065000)^10\n= R131,399.62",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R131,399.62"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 70,000(1 + 6.5/100)^10",
+      "FV = R131,399.62"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R28,000 now. The company predicts that the cost will increase by 7.5% per annum. What will this holiday cost in 5 years' time?",
+    "expected": "R40,197.62",
+    "demonstration": "FV = PV(1+i)^n\n= 28,000(1 + 0.075)^5\n= 28,000(1.075000)^5\n= R40,197.62",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R40,197.62"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 28,000(1 + 7.5/100)^5",
+      "FV = R40,197.62"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R48,000 now. The company predicts that the cost will increase by 7.2% per annum. What will this holiday cost in 11 years' time?",
+    "expected": "R103,129.73",
+    "demonstration": "FV = PV(1+i)^n\n= 48,000(1 + 0.072)^11\n= 48,000(1.072000)^11\n= R103,129.73",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R103,129.73"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 48,000(1 + 7.2/100)^11",
+      "FV = R103,129.73"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R15,000 now. The company predicts that the cost will increase by 9.2% per annum. What will this holiday cost in 6 years' time?",
+    "expected": "R25,434.73",
+    "demonstration": "FV = PV(1+i)^n\n= 15,000(1 + 0.092)^6\n= 15,000(1.092000)^6\n= R25,434.73",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R25,434.73"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 15,000(1 + 9.2/100)^6",
+      "FV = R25,434.73"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R100,000 now. The company predicts that the cost will increase by 5.8% per annum. What will this holiday cost in 6 years' time?",
+    "expected": "R140,253.60",
+    "demonstration": "FV = PV(1+i)^n\n= 100,000(1 + 0.058)^6\n= 100,000(1.058000)^6\n= R140,253.60",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R140,253.60"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 100,000(1 + 5.8/100)^6",
+      "FV = R140,253.60"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R25,000 now. The company predicts that the cost will increase by 6.5% per annum. What will this holiday cost in 8 years' time?",
+    "expected": "R41,374.89",
+    "demonstration": "FV = PV(1+i)^n\n= 25,000(1 + 0.065)^8\n= 25,000(1.065000)^8\n= R41,374.89",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R41,374.89"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 25,000(1 + 6.5/100)^8",
+      "FV = R41,374.89"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R12,000 now. The company predicts that the cost will increase by 7.8% per annum. What will this holiday cost in 10 years' time?",
+    "expected": "R25,431.32",
+    "demonstration": "FV = PV(1+i)^n\n= 12,000(1 + 0.078)^10\n= 12,000(1.078000)^10\n= R25,431.32",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R25,431.32"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 12,000(1 + 7.8/100)^10",
+      "FV = R25,431.32"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R15,000 now. The company predicts that the cost will increase by 6.8% per annum. What will this holiday cost in 15 years' time?",
+    "expected": "R40,240.19",
+    "demonstration": "FV = PV(1+i)^n\n= 15,000(1 + 0.068)^15\n= 15,000(1.068000)^15\n= R40,240.19",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R40,240.19"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 15,000(1 + 6.8/100)^15",
+      "FV = R40,240.19"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R30,000 now. The company predicts that the cost will increase by 9.8% per annum. What will this holiday cost in 5 years' time?",
+    "expected": "R47,877.66",
+    "demonstration": "FV = PV(1+i)^n\n= 30,000(1 + 0.098)^5\n= 30,000(1.098000)^5\n= R47,877.66",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R47,877.66"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 30,000(1 + 9.8/100)^5",
+      "FV = R47,877.66"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R110,000 now. The company predicts that the cost will increase by 6.0% per annum. What will this holiday cost in 5 years' time?",
+    "expected": "R147,204.81",
+    "demonstration": "FV = PV(1+i)^n\n= 110,000(1 + 0.06)^5\n= 110,000(1.060000)^5\n= R147,204.81",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R147,204.81"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 110,000(1 + 6.0/100)^5",
+      "FV = R147,204.81"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R40,000 now. The company predicts that the cost will increase by 8.5% per annum. What will this holiday cost in 7 years' time?",
+    "expected": "R70,805.69",
+    "demonstration": "FV = PV(1+i)^n\n= 40,000(1 + 0.085)^7\n= 40,000(1.085000)^7\n= R70,805.69",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R70,805.69"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 40,000(1 + 8.5/100)^7",
+      "FV = R70,805.69"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R20,000 now. The company predicts that the cost will increase by 6.2% per annum. What will this holiday cost in 12 years' time?",
+    "expected": "R41,164.63",
+    "demonstration": "FV = PV(1+i)^n\n= 20,000(1 + 0.062)^12\n= 20,000(1.062000)^12\n= R41,164.63",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R41,164.63"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 20,000(1 + 6.2/100)^12",
+      "FV = R41,164.63"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R33,000 now. The company predicts that the cost will increase by 8.6% per annum. What will this holiday cost in 3 years' time?",
+    "expected": "R42,267.19",
+    "demonstration": "FV = PV(1+i)^n\n= 33,000(1 + 0.086)^3\n= 33,000(1.086000)^3\n= R42,267.19",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R42,267.19"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 33,000(1 + 8.6/100)^3",
+      "FV = R42,267.19"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R42,000 now. The company predicts that the cost will increase by 6.8% per annum. What will this holiday cost in 9 years' time?",
+    "expected": "R75,926.01",
+    "demonstration": "FV = PV(1+i)^n\n= 42,000(1 + 0.068)^9\n= 42,000(1.068000)^9\n= R75,926.01",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R75,926.01"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 42,000(1 + 6.8/100)^9",
+      "FV = R75,926.01"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R85,000 now. The company predicts that the cost will increase by 6.3% per annum. What will this holiday cost in 6 years' time?",
+    "expected": "R122,636.15",
+    "demonstration": "FV = PV(1+i)^n\n= 85,000(1 + 0.063)^6\n= 85,000(1.063000)^6\n= R122,636.15",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R122,636.15"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 85,000(1 + 6.3/100)^6",
+      "FV = R122,636.15"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R80,000 now. The company predicts that the cost will increase by 5.5% per annum. What will this holiday cost in 10 years' time?",
+    "expected": "R136,651.56",
+    "demonstration": "FV = PV(1+i)^n\n= 80,000(1 + 0.055)^10\n= 80,000(1.055000)^10\n= R136,651.56",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R136,651.56"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 80,000(1 + 5.5/100)^10",
+      "FV = R136,651.56"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R55,000 now. The company predicts that the cost will increase by 8.2% per annum. What will this holiday cost in 6 years' time?",
+    "expected": "R88,252.35",
+    "demonstration": "FV = PV(1+i)^n\n= 55,000(1 + 0.082)^6\n= 55,000(1.082000)^6\n= R88,252.35",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R88,252.35"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 55,000(1 + 8.2/100)^6",
+      "FV = R88,252.35"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R60,000 now. The company predicts that the cost will increase by 7.5% per annum. What will this holiday cost in 3 years' time?",
+    "expected": "R74,537.81",
+    "demonstration": "FV = PV(1+i)^n\n= 60,000(1 + 0.075)^3\n= 60,000(1.075000)^3\n= R74,537.81",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R74,537.81"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 60,000(1 + 7.5/100)^3",
+      "FV = R74,537.81"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  },
+  {
+    "variant_question": "A holiday to a certain destination costs R95,000 now. The company predicts that the cost will increase by 7.4% per annum. What will this holiday cost in 4 years' time?",
+    "expected": "R126,398.15",
+    "demonstration": "FV = PV(1+i)^n\n= 95,000(1 + 0.074)^4\n= 95,000(1.074000)^4\n= R126,398.15",
+    "memo_marks": [
+      "1 mark for substitution into FV formula",
+      "1 mark for R126,398.15"
+    ],
+    "fast_path": "Growth means FV. Multiply PV by (1+i)^n. Round only at the end.",
+    "fatal_error": "DBE says: Candidates swap FV and PV, or round the rate mid-calculation. Keep the full rate in your calculator.",
+    "answer_book_layout": [
+      "FV = 95,000(1 + 7.4/100)^4",
+      "FV = R126,398.15"
+    ],
+    "hack": "Growth = FV formula. Value at future date = current value × (1 + rate)^years.",
+    "trap": "Rate must stay in decimal form throughout. Don't round 0.078 to 0.08.",
+    "presentation": "Show the formula, the substitution, the answer. Round at the end.",
+    "diagram": "required",
+    "diagram_hint": "growth_curve_over_time"
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  },
+  {
+    "variant_question": "Equation of tangent at D.",
+    "expected": "y = mx + c",
+    "demonstration": "m = f'(x_D), point-slope.",
+    "memo_marks": [
+      "1 mark f'",
+      "1 mark m",
+      "1 mark eq"
+    ],
+    "fast_path": "Derivative gives m.",
+    "fatal_error": "DBE says: Use secant.",
+    "answer_book_layout": [
+      "f'(x) = ...",
+      "m = f'(x_D) = ...",
+      "y - y_D = m(x - x_D)",
+      "Final Answer: y = ..."
+    ]
+  }
+]

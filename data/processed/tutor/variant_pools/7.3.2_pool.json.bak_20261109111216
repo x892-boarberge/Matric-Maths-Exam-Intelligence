@@ -1,0 +1,692 @@
+[
+  {
+    "variant_question": "Rajesh was granted a loan of R500,000 at 11.0% p.a., compounded monthly. He made 44 full monthly repayments of R13,800 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R3,276.85",
+    "demonstration": "i = 11.0/100/12 = 0.009167.\nBalance after 44 payments:\nB = P(1+i)^44 - x·[(1+i)^44 - 1]/i\n= 500,000·(1+0.009167)^44 - 13,800·[(1+0.009167)^44 - 1]/0.009167\n= R3,247.09.\nFinal payment = B × (1+i) = 3,247.09 × 1.009167 = R3,276.85.",
+    "memo_marks": [
+      "1 mark for i = 0.009167",
+      "1 mark for balance after 44 payments",
+      "1 mark for final payment R3,276.85"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.009167",
+      "B = 500,000(1+i)^44 - 13,800·[(1+i)^44 - 1]/i",
+      "B = R3,247.09",
+      "Final = B × (1+i) = R3,276.85"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R800,000 at 9.0% p.a., compounded monthly. He made 92 full monthly repayments of R12,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R9,197.23",
+    "demonstration": "i = 9.0/100/12 = 0.007500.\nBalance after 92 payments:\nB = P(1+i)^92 - x·[(1+i)^92 - 1]/i\n= 800,000·(1+0.007500)^92 - 12,000·[(1+0.007500)^92 - 1]/0.007500\n= R9,128.76.\nFinal payment = B × (1+i) = 9,128.76 × 1.007500 = R9,197.23.",
+    "memo_marks": [
+      "1 mark for i = 0.007500",
+      "1 mark for balance after 92 payments",
+      "1 mark for final payment R9,197.23"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.007500",
+      "B = 800,000(1+i)^92 - 12,000·[(1+i)^92 - 1]/i",
+      "B = R9,128.76",
+      "Final = B × (1+i) = R9,197.23"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R1,000,000 at 8.0% p.a., compounded monthly. He made 76 full monthly repayments of R16,700 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R11,348.74",
+    "demonstration": "i = 8.0/100/12 = 0.006667.\nBalance after 76 payments:\nB = P(1+i)^76 - x·[(1+i)^76 - 1]/i\n= 1,000,000·(1+0.006667)^76 - 16,700·[(1+0.006667)^76 - 1]/0.006667\n= R11,273.58.\nFinal payment = B × (1+i) = 11,273.58 × 1.006667 = R11,348.74.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for balance after 76 payments",
+      "1 mark for final payment R11,348.74"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "B = 1,000,000(1+i)^76 - 16,700·[(1+i)^76 - 1]/i",
+      "B = R11,273.58",
+      "Final = B × (1+i) = R11,348.74"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R700,000 at 8.0% p.a., compounded monthly. He made 61 full monthly repayments of R14,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R312.85",
+    "demonstration": "i = 8.0/100/12 = 0.006667.\nBalance after 61 payments:\nB = P(1+i)^61 - x·[(1+i)^61 - 1]/i\n= 700,000·(1+0.006667)^61 - 14,000·[(1+0.006667)^61 - 1]/0.006667\n= R310.78.\nFinal payment = B × (1+i) = 310.78 × 1.006667 = R312.85.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for balance after 61 payments",
+      "1 mark for final payment R312.85"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "B = 700,000(1+i)^61 - 14,000·[(1+i)^61 - 1]/i",
+      "B = R310.78",
+      "Final = B × (1+i) = R312.85"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R1,000,000 at 8.0% p.a., compounded monthly. He made 50 full monthly repayments of R23,300 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R16,908.69",
+    "demonstration": "i = 8.0/100/12 = 0.006667.\nBalance after 50 payments:\nB = P(1+i)^50 - x·[(1+i)^50 - 1]/i\n= 1,000,000·(1+0.006667)^50 - 23,300·[(1+0.006667)^50 - 1]/0.006667\n= R16,796.71.\nFinal payment = B × (1+i) = 16,796.71 × 1.006667 = R16,908.69.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for balance after 50 payments",
+      "1 mark for final payment R16,908.69"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "B = 1,000,000(1+i)^50 - 23,300·[(1+i)^50 - 1]/i",
+      "B = R16,796.71",
+      "Final = B × (1+i) = R16,908.69"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R200,000 at 7.0% p.a., compounded monthly. He made 88 full monthly repayments of R2,900 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R1,409.38",
+    "demonstration": "i = 7.0/100/12 = 0.005833.\nBalance after 88 payments:\nB = P(1+i)^88 - x·[(1+i)^88 - 1]/i\n= 200,000·(1+0.005833)^88 - 2,900·[(1+0.005833)^88 - 1]/0.005833\n= R1,401.20.\nFinal payment = B × (1+i) = 1,401.20 × 1.005833 = R1,409.38.",
+    "memo_marks": [
+      "1 mark for i = 0.005833",
+      "1 mark for balance after 88 payments",
+      "1 mark for final payment R1,409.38"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.005833",
+      "B = 200,000(1+i)^88 - 2,900·[(1+i)^88 - 1]/i",
+      "B = R1,401.20",
+      "Final = B × (1+i) = R1,409.38"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R700,000 at 9.0% p.a., compounded monthly. He made 29 full monthly repayments of R26,200 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R24,314.21",
+    "demonstration": "i = 9.0/100/12 = 0.007500.\nBalance after 29 payments:\nB = P(1+i)^29 - x·[(1+i)^29 - 1]/i\n= 700,000·(1+0.007500)^29 - 26,200·[(1+0.007500)^29 - 1]/0.007500\n= R24,133.21.\nFinal payment = B × (1+i) = 24,133.21 × 1.007500 = R24,314.21.",
+    "memo_marks": [
+      "1 mark for i = 0.007500",
+      "1 mark for balance after 29 payments",
+      "1 mark for final payment R24,314.21"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.007500",
+      "B = 700,000(1+i)^29 - 26,200·[(1+i)^29 - 1]/i",
+      "B = R24,133.21",
+      "Final = B × (1+i) = R24,314.21"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R600,000 at 6.0% p.a., compounded monthly. He made 50 full monthly repayments of R13,500 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R5,251.92",
+    "demonstration": "i = 6.0/100/12 = 0.005000.\nBalance after 50 payments:\nB = P(1+i)^50 - x·[(1+i)^50 - 1]/i\n= 600,000·(1+0.005000)^50 - 13,500·[(1+0.005000)^50 - 1]/0.005000\n= R5,225.79.\nFinal payment = B × (1+i) = 5,225.79 × 1.005000 = R5,251.92.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for balance after 50 payments",
+      "1 mark for final payment R5,251.92"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "B = 600,000(1+i)^50 - 13,500·[(1+i)^50 - 1]/i",
+      "B = R5,225.79",
+      "Final = B × (1+i) = R5,251.92"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R900,000 at 7.0% p.a., compounded monthly. He made 49 full monthly repayments of R21,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R9,688.37",
+    "demonstration": "i = 7.0/100/12 = 0.005833.\nBalance after 49 payments:\nB = P(1+i)^49 - x·[(1+i)^49 - 1]/i\n= 900,000·(1+0.005833)^49 - 21,000·[(1+0.005833)^49 - 1]/0.005833\n= R9,632.18.\nFinal payment = B × (1+i) = 9,632.18 × 1.005833 = R9,688.37.",
+    "memo_marks": [
+      "1 mark for i = 0.005833",
+      "1 mark for balance after 49 payments",
+      "1 mark for final payment R9,688.37"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.005833",
+      "B = 900,000(1+i)^49 - 21,000·[(1+i)^49 - 1]/i",
+      "B = R9,632.18",
+      "Final = B × (1+i) = R9,688.37"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R600,000 at 10.0% p.a., compounded monthly. He made 34 full monthly repayments of R20,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R13,328.28",
+    "demonstration": "i = 10.0/100/12 = 0.008333.\nBalance after 34 payments:\nB = P(1+i)^34 - x·[(1+i)^34 - 1]/i\n= 600,000·(1+0.008333)^34 - 20,000·[(1+0.008333)^34 - 1]/0.008333\n= R13,218.13.\nFinal payment = B × (1+i) = 13,218.13 × 1.008333 = R13,328.28.",
+    "memo_marks": [
+      "1 mark for i = 0.008333",
+      "1 mark for balance after 34 payments",
+      "1 mark for final payment R13,328.28"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.008333",
+      "B = 600,000(1+i)^34 - 20,000·[(1+i)^34 - 1]/i",
+      "B = R13,218.13",
+      "Final = B × (1+i) = R13,328.28"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R1,000,000 at 6.0% p.a., compounded monthly. He made 67 full monthly repayments of R17,500 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R8,105.36",
+    "demonstration": "i = 6.0/100/12 = 0.005000.\nBalance after 67 payments:\nB = P(1+i)^67 - x·[(1+i)^67 - 1]/i\n= 1,000,000·(1+0.005000)^67 - 17,500·[(1+0.005000)^67 - 1]/0.005000\n= R8,065.04.\nFinal payment = B × (1+i) = 8,065.04 × 1.005000 = R8,105.36.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for balance after 67 payments",
+      "1 mark for final payment R8,105.36"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "B = 1,000,000(1+i)^67 - 17,500·[(1+i)^67 - 1]/i",
+      "B = R8,065.04",
+      "Final = B × (1+i) = R8,105.36"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R1,200,000 at 8.0% p.a., compounded monthly. He made 76 full monthly repayments of R20,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R17,586.53",
+    "demonstration": "i = 8.0/100/12 = 0.006667.\nBalance after 76 payments:\nB = P(1+i)^76 - x·[(1+i)^76 - 1]/i\n= 1,200,000·(1+0.006667)^76 - 20,000·[(1+0.006667)^76 - 1]/0.006667\n= R17,470.07.\nFinal payment = B × (1+i) = 17,470.07 × 1.006667 = R17,586.53.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for balance after 76 payments",
+      "1 mark for final payment R17,586.53"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "B = 1,200,000(1+i)^76 - 20,000·[(1+i)^76 - 1]/i",
+      "B = R17,470.07",
+      "Final = B × (1+i) = R17,586.53"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R500,000 at 8.0% p.a., compounded monthly. He made 27 full monthly repayments of R20,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R8,802.24",
+    "demonstration": "i = 8.0/100/12 = 0.006667.\nBalance after 27 payments:\nB = P(1+i)^27 - x·[(1+i)^27 - 1]/i\n= 500,000·(1+0.006667)^27 - 20,000·[(1+0.006667)^27 - 1]/0.006667\n= R8,743.94.\nFinal payment = B × (1+i) = 8,743.94 × 1.006667 = R8,802.24.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for balance after 27 payments",
+      "1 mark for final payment R8,802.24"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "B = 500,000(1+i)^27 - 20,000·[(1+i)^27 - 1]/i",
+      "B = R8,743.94",
+      "Final = B × (1+i) = R8,802.24"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R600,000 at 10.0% p.a., compounded monthly. He made 30 full monthly repayments of R22,500 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R6,391.30",
+    "demonstration": "i = 10.0/100/12 = 0.008333.\nBalance after 30 payments:\nB = P(1+i)^30 - x·[(1+i)^30 - 1]/i\n= 600,000·(1+0.008333)^30 - 22,500·[(1+0.008333)^30 - 1]/0.008333\n= R6,338.48.\nFinal payment = B × (1+i) = 6,338.48 × 1.008333 = R6,391.30.",
+    "memo_marks": [
+      "1 mark for i = 0.008333",
+      "1 mark for balance after 30 payments",
+      "1 mark for final payment R6,391.30"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.008333",
+      "B = 600,000(1+i)^30 - 22,500·[(1+i)^30 - 1]/i",
+      "B = R6,338.48",
+      "Final = B × (1+i) = R6,391.30"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R400,000 at 6.0% p.a., compounded monthly. He made 67 full monthly repayments of R7,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R3,242.15",
+    "demonstration": "i = 6.0/100/12 = 0.005000.\nBalance after 67 payments:\nB = P(1+i)^67 - x·[(1+i)^67 - 1]/i\n= 400,000·(1+0.005000)^67 - 7,000·[(1+0.005000)^67 - 1]/0.005000\n= R3,226.01.\nFinal payment = B × (1+i) = 3,226.01 × 1.005000 = R3,242.15.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for balance after 67 payments",
+      "1 mark for final payment R3,242.15"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "B = 400,000(1+i)^67 - 7,000·[(1+i)^67 - 1]/i",
+      "B = R3,226.01",
+      "Final = B × (1+i) = R3,242.15"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R500,000 at 12.0% p.a., compounded monthly. He made 69 full monthly repayments of R10,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R6,618.32",
+    "demonstration": "i = 12.0/100/12 = 0.010000.\nBalance after 69 payments:\nB = P(1+i)^69 - x·[(1+i)^69 - 1]/i\n= 500,000·(1+0.010000)^69 - 10,000·[(1+0.010000)^69 - 1]/0.010000\n= R6,552.79.\nFinal payment = B × (1+i) = 6,552.79 × 1.010000 = R6,618.32.",
+    "memo_marks": [
+      "1 mark for i = 0.010000",
+      "1 mark for balance after 69 payments",
+      "1 mark for final payment R6,618.32"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.010000",
+      "B = 500,000(1+i)^69 - 10,000·[(1+i)^69 - 1]/i",
+      "B = R6,552.79",
+      "Final = B × (1+i) = R6,618.32"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R900,000 at 6.0% p.a., compounded monthly. He made 81 full monthly repayments of R13,500 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R3,997.42",
+    "demonstration": "i = 6.0/100/12 = 0.005000.\nBalance after 81 payments:\nB = P(1+i)^81 - x·[(1+i)^81 - 1]/i\n= 900,000·(1+0.005000)^81 - 13,500·[(1+0.005000)^81 - 1]/0.005000\n= R3,977.53.\nFinal payment = B × (1+i) = 3,977.53 × 1.005000 = R3,997.42.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for balance after 81 payments",
+      "1 mark for final payment R3,997.42"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "B = 900,000(1+i)^81 - 13,500·[(1+i)^81 - 1]/i",
+      "B = R3,977.53",
+      "Final = B × (1+i) = R3,997.42"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R1,200,000 at 9.0% p.a., compounded monthly. He made 38 full monthly repayments of R36,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R18,079.40",
+    "demonstration": "i = 9.0/100/12 = 0.007500.\nBalance after 38 payments:\nB = P(1+i)^38 - x·[(1+i)^38 - 1]/i\n= 1,200,000·(1+0.007500)^38 - 36,000·[(1+0.007500)^38 - 1]/0.007500\n= R17,944.81.\nFinal payment = B × (1+i) = 17,944.81 × 1.007500 = R18,079.40.",
+    "memo_marks": [
+      "1 mark for i = 0.007500",
+      "1 mark for balance after 38 payments",
+      "1 mark for final payment R18,079.40"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.007500",
+      "B = 1,200,000(1+i)^38 - 36,000·[(1+i)^38 - 1]/i",
+      "B = R17,944.81",
+      "Final = B × (1+i) = R18,079.40"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R900,000 at 6.0% p.a., compounded monthly. He made 44 full monthly repayments of R22,500 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R16,665.05",
+    "demonstration": "i = 6.0/100/12 = 0.005000.\nBalance after 44 payments:\nB = P(1+i)^44 - x·[(1+i)^44 - 1]/i\n= 900,000·(1+0.005000)^44 - 22,500·[(1+0.005000)^44 - 1]/0.005000\n= R16,582.13.\nFinal payment = B × (1+i) = 16,582.13 × 1.005000 = R16,665.05.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for balance after 44 payments",
+      "1 mark for final payment R16,665.05"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "B = 900,000(1+i)^44 - 22,500·[(1+i)^44 - 1]/i",
+      "B = R16,582.13",
+      "Final = B × (1+i) = R16,665.05"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R200,000 at 6.0% p.a., compounded monthly. He made 138 full monthly repayments of R2,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R1,951.56",
+    "demonstration": "i = 6.0/100/12 = 0.005000.\nBalance after 138 payments:\nB = P(1+i)^138 - x·[(1+i)^138 - 1]/i\n= 200,000·(1+0.005000)^138 - 2,000·[(1+0.005000)^138 - 1]/0.005000\n= R1,941.85.\nFinal payment = B × (1+i) = 1,941.85 × 1.005000 = R1,951.56.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for balance after 138 payments",
+      "1 mark for final payment R1,951.56"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "B = 200,000(1+i)^138 - 2,000·[(1+i)^138 - 1]/i",
+      "B = R1,941.85",
+      "Final = B × (1+i) = R1,951.56"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R800,000 at 12.0% p.a., compounded monthly. He made 28 full monthly repayments of R32,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R29,190.70",
+    "demonstration": "i = 12.0/100/12 = 0.010000.\nBalance after 28 payments:\nB = P(1+i)^28 - x·[(1+i)^28 - 1]/i\n= 800,000·(1+0.010000)^28 - 32,000·[(1+0.010000)^28 - 1]/0.010000\n= R28,901.68.\nFinal payment = B × (1+i) = 28,901.68 × 1.010000 = R29,190.70.",
+    "memo_marks": [
+      "1 mark for i = 0.010000",
+      "1 mark for balance after 28 payments",
+      "1 mark for final payment R29,190.70"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.010000",
+      "B = 800,000(1+i)^28 - 32,000·[(1+i)^28 - 1]/i",
+      "B = R28,901.68",
+      "Final = B × (1+i) = R29,190.70"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R1,500,000 at 8.0% p.a., compounded monthly. He made 104 full monthly repayments of R20,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R6,379.76",
+    "demonstration": "i = 8.0/100/12 = 0.006667.\nBalance after 104 payments:\nB = P(1+i)^104 - x·[(1+i)^104 - 1]/i\n= 1,500,000·(1+0.006667)^104 - 20,000·[(1+0.006667)^104 - 1]/0.006667\n= R6,337.51.\nFinal payment = B × (1+i) = 6,337.51 × 1.006667 = R6,379.76.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for balance after 104 payments",
+      "1 mark for final payment R6,379.76"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "B = 1,500,000(1+i)^104 - 20,000·[(1+i)^104 - 1]/i",
+      "B = R6,337.51",
+      "Final = B × (1+i) = R6,379.76"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R1,000,000 at 8.0% p.a., compounded monthly. He made 33 full monthly repayments of R33,300 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R20,693.62",
+    "demonstration": "i = 8.0/100/12 = 0.006667.\nBalance after 33 payments:\nB = P(1+i)^33 - x·[(1+i)^33 - 1]/i\n= 1,000,000·(1+0.006667)^33 - 33,300·[(1+0.006667)^33 - 1]/0.006667\n= R20,556.58.\nFinal payment = B × (1+i) = 20,556.58 × 1.006667 = R20,693.62.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for balance after 33 payments",
+      "1 mark for final payment R20,693.62"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "B = 1,000,000(1+i)^33 - 33,300·[(1+i)^33 - 1]/i",
+      "B = R20,556.58",
+      "Final = B × (1+i) = R20,693.62"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R500,000 at 8.0% p.a., compounded monthly. He made 43 full monthly repayments of R13,300 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R5,620.39",
+    "demonstration": "i = 8.0/100/12 = 0.006667.\nBalance after 43 payments:\nB = P(1+i)^43 - x·[(1+i)^43 - 1]/i\n= 500,000·(1+0.006667)^43 - 13,300·[(1+0.006667)^43 - 1]/0.006667\n= R5,583.17.\nFinal payment = B × (1+i) = 5,583.17 × 1.006667 = R5,620.39.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for balance after 43 payments",
+      "1 mark for final payment R5,620.39"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "B = 500,000(1+i)^43 - 13,300·[(1+i)^43 - 1]/i",
+      "B = R5,583.17",
+      "Final = B × (1+i) = R5,620.39"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R1,000,000 at 10.0% p.a., compounded monthly. He made 48 full monthly repayments of R25,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R21,469.23",
+    "demonstration": "i = 10.0/100/12 = 0.008333.\nBalance after 48 payments:\nB = P(1+i)^48 - x·[(1+i)^48 - 1]/i\n= 1,000,000·(1+0.008333)^48 - 25,000·[(1+0.008333)^48 - 1]/0.008333\n= R21,291.80.\nFinal payment = B × (1+i) = 21,291.80 × 1.008333 = R21,469.23.",
+    "memo_marks": [
+      "1 mark for i = 0.008333",
+      "1 mark for balance after 48 payments",
+      "1 mark for final payment R21,469.23"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.008333",
+      "B = 1,000,000(1+i)^48 - 25,000·[(1+i)^48 - 1]/i",
+      "B = R21,291.80",
+      "Final = B × (1+i) = R21,469.23"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R800,000 at 6.0% p.a., compounded monthly. He made 36 full monthly repayments of R24,000 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R13,344.29",
+    "demonstration": "i = 6.0/100/12 = 0.005000.\nBalance after 36 payments:\nB = P(1+i)^36 - x·[(1+i)^36 - 1]/i\n= 800,000·(1+0.005000)^36 - 24,000·[(1+0.005000)^36 - 1]/0.005000\n= R13,277.90.\nFinal payment = B × (1+i) = 13,277.90 × 1.005000 = R13,344.29.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for balance after 36 payments",
+      "1 mark for final payment R13,344.29"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "B = 800,000(1+i)^36 - 24,000·[(1+i)^36 - 1]/i",
+      "B = R13,277.90",
+      "Final = B × (1+i) = R13,344.29"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R1,500,000 at 9.0% p.a., compounded monthly. He made 24 full monthly repayments of R67,500 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R27,100.27",
+    "demonstration": "i = 9.0/100/12 = 0.007500.\nBalance after 24 payments:\nB = P(1+i)^24 - x·[(1+i)^24 - 1]/i\n= 1,500,000·(1+0.007500)^24 - 67,500·[(1+0.007500)^24 - 1]/0.007500\n= R26,898.53.\nFinal payment = B × (1+i) = 26,898.53 × 1.007500 = R27,100.27.",
+    "memo_marks": [
+      "1 mark for i = 0.007500",
+      "1 mark for balance after 24 payments",
+      "1 mark for final payment R27,100.27"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.007500",
+      "B = 1,500,000(1+i)^24 - 67,500·[(1+i)^24 - 1]/i",
+      "B = R26,898.53",
+      "Final = B × (1+i) = R27,100.27"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R900,000 at 11.0% p.a., compounded monthly. He made 27 full monthly repayments of R37,100 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R20,917.33",
+    "demonstration": "i = 11.0/100/12 = 0.009167.\nBalance after 27 payments:\nB = P(1+i)^27 - x·[(1+i)^27 - 1]/i\n= 900,000·(1+0.009167)^27 - 37,100·[(1+0.009167)^27 - 1]/0.009167\n= R20,727.33.\nFinal payment = B × (1+i) = 20,727.33 × 1.009167 = R20,917.33.",
+    "memo_marks": [
+      "1 mark for i = 0.009167",
+      "1 mark for balance after 27 payments",
+      "1 mark for final payment R20,917.33"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.009167",
+      "B = 900,000(1+i)^27 - 37,100·[(1+i)^27 - 1]/i",
+      "B = R20,727.33",
+      "Final = B × (1+i) = R20,917.33"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R900,000 at 12.0% p.a., compounded monthly. He made 33 full monthly repayments of R31,500 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R25,701.78",
+    "demonstration": "i = 12.0/100/12 = 0.010000.\nBalance after 33 payments:\nB = P(1+i)^33 - x·[(1+i)^33 - 1]/i\n= 900,000·(1+0.010000)^33 - 31,500·[(1+0.010000)^33 - 1]/0.010000\n= R25,447.31.\nFinal payment = B × (1+i) = 25,447.31 × 1.010000 = R25,701.78.",
+    "memo_marks": [
+      "1 mark for i = 0.010000",
+      "1 mark for balance after 33 payments",
+      "1 mark for final payment R25,701.78"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.010000",
+      "B = 900,000(1+i)^33 - 31,500·[(1+i)^33 - 1]/i",
+      "B = R25,447.31",
+      "Final = B × (1+i) = R25,701.78"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  },
+  {
+    "variant_question": "Rajesh was granted a loan of R800,000 at 8.0% p.a., compounded monthly. He made 77 full monthly repayments of R13,300 each. Calculate the value of the final payment to fully repay the loan one month later.",
+    "expected": "R1,742.60",
+    "demonstration": "i = 8.0/100/12 = 0.006667.\nBalance after 77 payments:\nB = P(1+i)^77 - x·[(1+i)^77 - 1]/i\n= 800,000·(1+0.006667)^77 - 13,300·[(1+0.006667)^77 - 1]/0.006667\n= R1,731.06.\nFinal payment = B × (1+i) = 1,731.06 × 1.006667 = R1,742.60.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for balance after 77 payments",
+      "1 mark for final payment R1,742.60"
+    ],
+    "fast_path": "Find balance after last full payment. Then one more month of interest = final payment.",
+    "fatal_error": "DBE says: Candidates hand in the regular instalment as the final answer. Compute the balance first.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "B = 800,000(1+i)^77 - 13,300·[(1+i)^77 - 1]/i",
+      "B = R1,731.06",
+      "Final = B × (1+i) = R1,742.60"
+    ],
+    "hack": "Balance → ×(1+i) → final payment. The balance already accounts for the last full payment.",
+    "trap": "If you don't compute balance, you hand in R{x:,} as your answer — which is the regular instalment, not the final.",
+    "presentation": "Show balance formula, balance value, then one more month of interest.",
+    "diagram": "required",
+    "diagram_hint": "loan_final_payment_timeline"
+  }
+]

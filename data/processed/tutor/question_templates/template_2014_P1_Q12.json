@@ -21,6 +21,12 @@
       "expected_fn": "= 24 × 23 × 22 = 12 144",
       "steps": [
         "Fix D and L, arrange middle 3."
+      ],
+      "given_from": [
+        "12.1.1"
+      ],
+      "requires_skills": [
+        "probability.counting"
       ]
     },
     {
@@ -32,6 +38,13 @@
       "expected_fn": "= 7! = 5040",
       "steps": [
         "Permutations."
+      ],
+      "given_from": [
+        "12.1.1",
+        "12.1.2"
+      ],
+      "requires_skills": [
+        "probability.counting"
       ]
     },
     {
@@ -45,6 +58,14 @@
         "Treat 3 silver as a block: 5! arrangements of block + 4 cars.",
         "Arrange inside block: 3! = 6.",
         "Total = 5! × 3! = 120 × 6 = 720."
+      ],
+      "given_from": [
+        "12.1.1",
+        "12.1.2",
+        "12.2.1"
+      ],
+      "requires_skills": [
+        "probability.counting"
       ]
     }
   ],

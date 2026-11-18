@@ -1,0 +1,572 @@
+[
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - -1) + 3.",
+    "expected": "x ∈ R, x ≠ -1",
+    "demonstration": "g(x) has a denominator of (x - -1). The function is undefined where x - -1 = 0, so x = -1 is excluded. Domain: x ∈ R, x ≠ -1. (Equivalently: x ∈ (-∞; -1) ∪ (-1; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -1 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -1 = 0 → x = -1",
+      "Domain: x ∈ R, x ≠ -1"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - 6) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ 6",
+    "demonstration": "g(x) has a denominator of (x - 6). The function is undefined where x - 6 = 0, so x = 6 is excluded. Domain: x ∈ R, x ≠ 6. (Equivalently: x ∈ (-∞; 6) ∪ (6; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 6 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 6 = 0 → x = 6",
+      "Domain: x ∈ R, x ≠ 6"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - 4) + 3.",
+    "expected": "x ∈ R, x ≠ 4",
+    "demonstration": "g(x) has a denominator of (x - 4). The function is undefined where x - 4 = 0, so x = 4 is excluded. Domain: x ∈ R, x ≠ 4. (Equivalently: x ∈ (-∞; 4) ∪ (4; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 4 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 4 = 0 → x = 4",
+      "Domain: x ∈ R, x ≠ 4"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - 5) + 3.",
+    "expected": "x ∈ R, x ≠ 5",
+    "demonstration": "g(x) has a denominator of (x - 5). The function is undefined where x - 5 = 0, so x = 5 is excluded. Domain: x ∈ R, x ≠ 5. (Equivalently: x ∈ (-∞; 5) ∪ (5; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 5 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 5 = 0 → x = 5",
+      "Domain: x ∈ R, x ≠ 5"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - -2) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ -2",
+    "demonstration": "g(x) has a denominator of (x - -2). The function is undefined where x - -2 = 0, so x = -2 is excluded. Domain: x ∈ R, x ≠ -2. (Equivalently: x ∈ (-∞; -2) ∪ (-2; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -2 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -2 = 0 → x = -2",
+      "Domain: x ∈ R, x ≠ -2"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - 3) + 5.",
+    "expected": "x ∈ R, x ≠ 3",
+    "demonstration": "g(x) has a denominator of (x - 3). The function is undefined where x - 3 = 0, so x = 3 is excluded. Domain: x ∈ R, x ≠ 3. (Equivalently: x ∈ (-∞; 3) ∪ (3; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 3 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 3 = 0 → x = 3",
+      "Domain: x ∈ R, x ≠ 3"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - -3) + 5.",
+    "expected": "x ∈ R, x ≠ -3",
+    "demonstration": "g(x) has a denominator of (x - -3). The function is undefined where x - -3 = 0, so x = -3 is excluded. Domain: x ∈ R, x ≠ -3. (Equivalently: x ∈ (-∞; -3) ∪ (-3; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -3 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -3 = 0 → x = -3",
+      "Domain: x ∈ R, x ≠ -3"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - 1) + 5.",
+    "expected": "x ∈ R, x ≠ 1",
+    "demonstration": "g(x) has a denominator of (x - 1). The function is undefined where x - 1 = 0, so x = 1 is excluded. Domain: x ∈ R, x ≠ 1. (Equivalently: x ∈ (-∞; 1) ∪ (1; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 1 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 1 = 0 → x = 1",
+      "Domain: x ∈ R, x ≠ 1"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - -1) + 5.",
+    "expected": "x ∈ R, x ≠ -1",
+    "demonstration": "g(x) has a denominator of (x - -1). The function is undefined where x - -1 = 0, so x = -1 is excluded. Domain: x ∈ R, x ≠ -1. (Equivalently: x ∈ (-∞; -1) ∪ (-1; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -1 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -1 = 0 → x = -1",
+      "Domain: x ∈ R, x ≠ -1"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - 5) + 5.",
+    "expected": "x ∈ R, x ≠ 5",
+    "demonstration": "g(x) has a denominator of (x - 5). The function is undefined where x - 5 = 0, so x = 5 is excluded. Domain: x ∈ R, x ≠ 5. (Equivalently: x ∈ (-∞; 5) ∪ (5; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 5 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 5 = 0 → x = 5",
+      "Domain: x ∈ R, x ≠ 5"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - -2) + 3.",
+    "expected": "x ∈ R, x ≠ -2",
+    "demonstration": "g(x) has a denominator of (x - -2). The function is undefined where x - -2 = 0, so x = -2 is excluded. Domain: x ∈ R, x ≠ -2. (Equivalently: x ∈ (-∞; -2) ∪ (-2; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -2 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -2 = 0 → x = -2",
+      "Domain: x ∈ R, x ≠ -2"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - -3) + 3.",
+    "expected": "x ∈ R, x ≠ -3",
+    "demonstration": "g(x) has a denominator of (x - -3). The function is undefined where x - -3 = 0, so x = -3 is excluded. Domain: x ∈ R, x ≠ -3. (Equivalently: x ∈ (-∞; -3) ∪ (-3; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -3 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -3 = 0 → x = -3",
+      "Domain: x ∈ R, x ≠ -3"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - 1) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ 1",
+    "demonstration": "g(x) has a denominator of (x - 1). The function is undefined where x - 1 = 0, so x = 1 is excluded. Domain: x ∈ R, x ≠ 1. (Equivalently: x ∈ (-∞; 1) ∪ (1; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 1 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 1 = 0 → x = 1",
+      "Domain: x ∈ R, x ≠ 1"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - 4) + 5.",
+    "expected": "x ∈ R, x ≠ 4",
+    "demonstration": "g(x) has a denominator of (x - 4). The function is undefined where x - 4 = 0, so x = 4 is excluded. Domain: x ∈ R, x ≠ 4. (Equivalently: x ∈ (-∞; 4) ∪ (4; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 4 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 4 = 0 → x = 4",
+      "Domain: x ∈ R, x ≠ 4"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - -4) + 5.",
+    "expected": "x ∈ R, x ≠ -4",
+    "demonstration": "g(x) has a denominator of (x - -4). The function is undefined where x - -4 = 0, so x = -4 is excluded. Domain: x ∈ R, x ≠ -4. (Equivalently: x ∈ (-∞; -4) ∪ (-4; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -4 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -4 = 0 → x = -4",
+      "Domain: x ∈ R, x ≠ -4"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - 4) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ 4",
+    "demonstration": "g(x) has a denominator of (x - 4). The function is undefined where x - 4 = 0, so x = 4 is excluded. Domain: x ∈ R, x ≠ 4. (Equivalently: x ∈ (-∞; 4) ∪ (4; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 4 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 4 = 0 → x = 4",
+      "Domain: x ∈ R, x ≠ 4"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - 6) + 3.",
+    "expected": "x ∈ R, x ≠ 6",
+    "demonstration": "g(x) has a denominator of (x - 6). The function is undefined where x - 6 = 0, so x = 6 is excluded. Domain: x ∈ R, x ≠ 6. (Equivalently: x ∈ (-∞; 6) ∪ (6; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 6 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 6 = 0 → x = 6",
+      "Domain: x ∈ R, x ≠ 6"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - 6) + 5.",
+    "expected": "x ∈ R, x ≠ 6",
+    "demonstration": "g(x) has a denominator of (x - 6). The function is undefined where x - 6 = 0, so x = 6 is excluded. Domain: x ∈ R, x ≠ 6. (Equivalently: x ∈ (-∞; 6) ∪ (6; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 6 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 6 = 0 → x = 6",
+      "Domain: x ∈ R, x ≠ 6"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - -2) + 5.",
+    "expected": "x ∈ R, x ≠ -2",
+    "demonstration": "g(x) has a denominator of (x - -2). The function is undefined where x - -2 = 0, so x = -2 is excluded. Domain: x ∈ R, x ≠ -2. (Equivalently: x ∈ (-∞; -2) ∪ (-2; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -2 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -2 = 0 → x = -2",
+      "Domain: x ∈ R, x ≠ -2"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - 3) + 3.",
+    "expected": "x ∈ R, x ≠ 3",
+    "demonstration": "g(x) has a denominator of (x - 3). The function is undefined where x - 3 = 0, so x = 3 is excluded. Domain: x ∈ R, x ≠ 3. (Equivalently: x ∈ (-∞; 3) ∪ (3; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 3 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 3 = 0 → x = 3",
+      "Domain: x ∈ R, x ≠ 3"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - 1) + 3.",
+    "expected": "x ∈ R, x ≠ 1",
+    "demonstration": "g(x) has a denominator of (x - 1). The function is undefined where x - 1 = 0, so x = 1 is excluded. Domain: x ∈ R, x ≠ 1. (Equivalently: x ∈ (-∞; 1) ∪ (1; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 1 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 1 = 0 → x = 1",
+      "Domain: x ∈ R, x ≠ 1"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - -1) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ -1",
+    "demonstration": "g(x) has a denominator of (x - -1). The function is undefined where x - -1 = 0, so x = -1 is excluded. Domain: x ∈ R, x ≠ -1. (Equivalently: x ∈ (-∞; -1) ∪ (-1; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -1 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -1 = 0 → x = -1",
+      "Domain: x ∈ R, x ≠ -1"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - -4) + 3.",
+    "expected": "x ∈ R, x ≠ -4",
+    "demonstration": "g(x) has a denominator of (x - -4). The function is undefined where x - -4 = 0, so x = -4 is excluded. Domain: x ∈ R, x ≠ -4. (Equivalently: x ∈ (-∞; -4) ∪ (-4; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -4 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -4 = 0 → x = -4",
+      "Domain: x ∈ R, x ≠ -4"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Determine the domain of g(x) = -4/(x - 2) + 5.",
+    "expected": "x ∈ R, x ≠ 2",
+    "demonstration": "g(x) has a denominator of (x - 2). The function is undefined where x - 2 = 0, so x = 2 is excluded. Domain: x ∈ R, x ≠ 2. (Equivalently: x ∈ (-∞; 2) ∪ (2; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 2 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 2 = 0 → x = 2",
+      "Domain: x ∈ R, x ≠ 2"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - -3) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ -3",
+    "demonstration": "g(x) has a denominator of (x - -3). The function is undefined where x - -3 = 0, so x = -3 is excluded. Domain: x ∈ R, x ≠ -3. (Equivalently: x ∈ (-∞; -3) ∪ (-3; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -3 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -3 = 0 → x = -3",
+      "Domain: x ∈ R, x ≠ -3"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "Write down the domain of g(x) = 2/(x - 2) + 3.",
+    "expected": "x ∈ R, x ≠ 2",
+    "demonstration": "g(x) has a denominator of (x - 2). The function is undefined where x - 2 = 0, so x = 2 is excluded. Domain: x ∈ R, x ≠ 2. (Equivalently: x ∈ (-∞; 2) ∪ (2; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 2 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 2 = 0 → x = 2",
+      "Domain: x ∈ R, x ≠ 2"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - 5) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ 5",
+    "demonstration": "g(x) has a denominator of (x - 5). The function is undefined where x - 5 = 0, so x = 5 is excluded. Domain: x ∈ R, x ≠ 5. (Equivalently: x ∈ (-∞; 5) ∪ (5; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 5 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 5 = 0 → x = 5",
+      "Domain: x ∈ R, x ≠ 5"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - 3) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ 3",
+    "demonstration": "g(x) has a denominator of (x - 3). The function is undefined where x - 3 = 0, so x = 3 is excluded. Domain: x ∈ R, x ≠ 3. (Equivalently: x ∈ (-∞; 3) ∪ (3; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 3 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 3 = 0 → x = 3",
+      "Domain: x ∈ R, x ≠ 3"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - -4) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ -4",
+    "demonstration": "g(x) has a denominator of (x - -4). The function is undefined where x - -4 = 0, so x = -4 is excluded. Domain: x ∈ R, x ≠ -4. (Equivalently: x ∈ (-∞; -4) ∪ (-4; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ -4 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - -4 = 0 → x = -4",
+      "Domain: x ∈ R, x ≠ -4"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  },
+  {
+    "variant_question": "For which values of x is g(x) = 6/(x - 2) - 2 undefined?",
+    "expected": "x ∈ R, x ≠ 2",
+    "demonstration": "g(x) has a denominator of (x - 2). The function is undefined where x - 2 = 0, so x = 2 is excluded. Domain: x ∈ R, x ≠ 2. (Equivalently: x ∈ (-∞; 2) ∪ (2; ∞).)",
+    "memo_marks": [
+      "1 mark for x ≠ 2 (or interval form)"
+    ],
+    "fast_path": "Denominator cannot be zero. Set x - p = 0, exclude that value.",
+    "fatal_error": "DBE says: Candidates give the asymptote as x = p but forget to exclude it from the domain, writing 'x ∈ R' or writing 'x ≠ p' without the 'x ∈ R' qualifier.",
+    "answer_book_layout": [
+      "x - 2 = 0 → x = 2",
+      "Domain: x ∈ R, x ≠ 2"
+    ],
+    "hack": "Where can't you divide? Where the denominator is zero. That single value is the only exclusion from the domain.",
+    "trap": "Write it as 'x ∈ R, x ≠ p', not just 'x ≠ p'. The 'x ∈ R' part is part of the answer.",
+    "presentation": "Show the excluded value, then the domain in inequality or interval notation.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_marked"
+  }
+]

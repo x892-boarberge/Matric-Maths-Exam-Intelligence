@@ -1,0 +1,2347 @@
+{
+  "algebra.surd.solve": [
+    {
+      "step_phrase": "Isolate root",
+      "step_keywords": [
+        "isolate",
+        "root"
+      ],
+      "misconception_id": "M_SURD_NOT_ISOLATED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Isolate surd",
+      "step_keywords": [
+        "isolate",
+        "surd"
+      ],
+      "misconception_id": "M_SURD_NOT_ISOLATED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Square both sides",
+      "step_keywords": [
+        "square",
+        "both",
+        "sides"
+      ],
+      "misconception_id": "M_BINOMIAL_MIDDLE_TERM_DROPPED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Square again",
+      "step_keywords": [
+        "square",
+        "again"
+      ],
+      "misconception_id": "M_BINOMIAL_MIDDLE_TERM_DROPPED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Rearrange to standard form",
+      "step_keywords": [
+        "rearrange",
+        "standard",
+        "form"
+      ],
+      "misconception_id": "M_INCORRECT_SUBSTITUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Standard form",
+      "step_keywords": [
+        "standard",
+        "form"
+      ],
+      "misconception_id": "M_INCORRECT_SUBSTITUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Factorise",
+      "step_keywords": [
+        "factorise"
+      ],
+      "misconception_id": "M_FACTORISATION_INCOMPLETE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Reject invalid root",
+      "step_keywords": [
+        "reject",
+        "invalid",
+        "root"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Reject the invalid root",
+      "step_keywords": [
+        "reject",
+        "invalid",
+        "root"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Both candidate values",
+      "step_keywords": [
+        "both",
+        "candidate",
+        "values"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Both answers",
+      "step_keywords": [
+        "both",
+        "answers"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Both answers valid",
+      "step_keywords": [
+        "both",
+        "answers",
+        "valid"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Answers with selection",
+      "step_keywords": [
+        "answers",
+        "selection"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Answer with selection",
+      "step_keywords": [
+        "answer",
+        "selection"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Answer x=16",
+      "step_keywords": [
+        "answer"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Answer x=2",
+      "step_keywords": [
+        "answer"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Answer x=4",
+      "step_keywords": [
+        "answer"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Answer x=5",
+      "step_keywords": [
+        "answer"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Answer x=7",
+      "step_keywords": [
+        "answer"
+      ],
+      "misconception_id": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "x^2-5=4x",
+      "step_keywords": [],
+      "misconception_id": "M_SURD_NOT_ISOLATED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "x^2=16",
+      "step_keywords": [],
+      "misconception_id": "M_SURD_NOT_ISOLATED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Ratio equation",
+      "step_keywords": [
+        "ratio",
+        "equation"
+      ],
+      "misconception_id": "M_FRACTIONAL_SURD_NOT_HANDLED",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "algebra.quadratic.solve": [
+    {
+      "step_phrase": "Factorise",
+      "step_keywords": [
+        "factorise"
+      ],
+      "misconception_id": "M_FACTORISATION_INCOMPLETE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Factorise the quadratic",
+      "step_keywords": [
+        "factorise",
+        "quadratic"
+      ],
+      "misconception_id": "M_FACTORISATION_INCOMPLETE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Common factor",
+      "step_keywords": [
+        "common",
+        "factor"
+      ],
+      "misconception_id": "M_FACTORISATION_INCOMPLETE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Set each factor to zero",
+      "step_keywords": [
+        "set",
+        "each",
+        "factor",
+        "zero"
+      ],
+      "misconception_id": "M_FACTORISATION_INCOMPLETE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "First root",
+      "step_keywords": [
+        "first",
+        "root"
+      ],
+      "misconception_id": "M_INCOMPLETE_ROOTS",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Second root",
+      "step_keywords": [
+        "second",
+        "root"
+      ],
+      "misconception_id": "M_INCOMPLETE_ROOTS",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Roots",
+      "step_keywords": [
+        "roots"
+      ],
+      "misconception_id": "M_INCOMPLETE_ROOTS",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Write both roots",
+      "step_keywords": [
+        "write",
+        "both",
+        "roots"
+      ],
+      "misconception_id": "M_INCOMPLETE_ROOTS",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Standard form",
+      "step_keywords": [
+        "standard",
+        "form"
+      ],
+      "misconception_id": "M_INCORRECT_SUBSTITUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Rearrange standard form",
+      "step_keywords": [
+        "rearrange",
+        "standard",
+        "form"
+      ],
+      "misconception_id": "M_INCORRECT_SUBSTITUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Rearrange to standard form",
+      "step_keywords": [
+        "rearrange",
+        "standard",
+        "form"
+      ],
+      "misconception_id": "M_INCORRECT_SUBSTITUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute formula",
+      "step_keywords": [
+        "substitute",
+        "formula"
+      ],
+      "misconception_id": "M_INCORRECT_SUBSTITUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into formula",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "formula"
+      ],
+      "misconception_id": "M_INCORRECT_SUBSTITUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into quadratic formula",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "quadratic",
+        "formula"
+      ],
+      "misconception_id": "M_INCORRECT_SUBSTITUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Δ<0",
+      "step_keywords": [],
+      "misconception_id": "M_WRONG_QUADRATIC_FORMULA",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "1^2-4(1)(-k)<0",
+      "step_keywords": [],
+      "misconception_id": "M_WRONG_QUADRATIC_FORMULA",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "-k-4>=0",
+      "step_keywords": [],
+      "misconception_id": "M_WRONG_QUADRATIC_FORMULA",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "k<-1/4",
+      "step_keywords": [],
+      "misconception_id": "M_WRONG_QUADRATIC_FORMULA",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "k<=-4",
+      "step_keywords": [],
+      "misconception_id": "M_WRONG_QUADRATIC_FORMULA",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Answer x=0 or x=7",
+      "step_keywords": [
+        "answer"
+      ],
+      "misconception_id": "M_LOST_ROOT_BY_DIVISION",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "algebra.quadratic.inequality": [
+    {
+      "step_phrase": "Critical values",
+      "step_keywords": [
+        "critical",
+        "values"
+      ],
+      "misconception_id": "M_INEQ_TREATED_AS_EQUATION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Factorise",
+      "step_keywords": [
+        "factorise"
+      ],
+      "misconception_id": "M_FACTORISATION_INCOMPLETE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Number line",
+      "step_keywords": [
+        "number",
+        "line"
+      ],
+      "misconception_id": "M_INEQ_WRONG_INTERVAL",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Answer",
+      "step_keywords": [
+        "answer"
+      ],
+      "misconception_id": "M_INEQ_WRONG_INTERVAL",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Interval",
+      "step_keywords": [
+        "interval"
+      ],
+      "misconception_id": "M_INEQ_WRONG_INTERVAL",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "algebra.exponential.solve": [
+    {
+      "step_phrase": "Factorise",
+      "step_keywords": [
+        "factorise"
+      ],
+      "misconception_id": "M_EXP_FACTORISATION_ERROR",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Common factor",
+      "step_keywords": [
+        "common",
+        "factor"
+      ],
+      "misconception_id": "M_EXP_FACTORISATION_ERROR",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Rewrite same base",
+      "step_keywords": [
+        "rewrite",
+        "same",
+        "base"
+      ],
+      "misconception_id": "M_EXP_DIFFERENT_BASES",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Same base",
+      "step_keywords": [
+        "same",
+        "base"
+      ],
+      "misconception_id": "M_EXP_DIFFERENT_BASES",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Equate exponents",
+      "step_keywords": [
+        "equate",
+        "exponents"
+      ],
+      "misconception_id": "M_EXP_DIFFERENT_BASES",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "k substitution",
+      "step_keywords": [
+        "substitution"
+      ],
+      "misconception_id": "M_EXP_FACTORISATION_ERROR",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Reject invalid k",
+      "step_keywords": [
+        "reject",
+        "invalid"
+      ],
+      "misconception_id": "M_EXP_EXTRA_ROOT_NOT_REJECTED",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "algebra.exponential.proof": [
+    {
+      "step_phrase": "Factor out common factor",
+      "step_keywords": [
+        "factor",
+        "out",
+        "common",
+        "factor"
+      ],
+      "misconception_id": "M_EXP_PROOF_NO_FACTORISE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Common factor",
+      "step_keywords": [
+        "common",
+        "factor"
+      ],
+      "misconception_id": "M_EXP_PROOF_NO_FACTORISE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Conclusion",
+      "step_keywords": [
+        "conclusion"
+      ],
+      "misconception_id": "M_EXP_PROOF_NO_CONCLUSION",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "algebra.simultaneous.solve": [
+    {
+      "step_phrase": "Substitute",
+      "step_keywords": [
+        "substitute"
+      ],
+      "misconception_id": "M_SIM_OVERLOOKED_FACTOR",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitution",
+      "step_keywords": [
+        "substitution"
+      ],
+      "misconception_id": "M_SIM_OVERLOOKED_FACTOR",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Equation from text",
+      "step_keywords": [
+        "equation",
+        "text"
+      ],
+      "misconception_id": "M_SIM_EQUATION_FROM_WORDS",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Set up equations",
+      "step_keywords": [
+        "set",
+        "equations"
+      ],
+      "misconception_id": "M_SIM_EQUATION_FROM_WORDS",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "algebra.proof": [
+    {
+      "step_phrase": "Discriminant",
+      "step_keywords": [
+        "discriminant"
+      ],
+      "misconception_id": "M_PROOF_NONREAL_EXPLANATION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Conclusion",
+      "step_keywords": [
+        "conclusion"
+      ],
+      "misconception_id": "M_PROOF_NONREAL_EXPLANATION",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.reduction": [
+    {
+      "step_phrase": "Reduction",
+      "step_keywords": [
+        "reduction"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Co-ratio",
+      "step_keywords": [
+        "ratio"
+      ],
+      "misconception_id": "M_REDUCTION_COFUNCTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Identity",
+      "step_keywords": [
+        "identity"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Simplify numerator",
+      "step_keywords": [
+        "simplify",
+        "numerator"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Final simplification",
+      "step_keywords": [
+        "final",
+        "simplification"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Rewrite",
+      "step_keywords": [
+        "rewrite"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Expand",
+      "step_keywords": [
+        "expand"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.identity": [
+    {
+      "step_phrase": "Identity",
+      "step_keywords": [
+        "identity"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Apply sin²+cos²=1",
+      "step_keywords": [
+        "apply",
+        "sin",
+        "cos"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Apply cos²=1-sin²",
+      "step_keywords": [
+        "apply",
+        "cos",
+        "sin"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Square identity",
+      "step_keywords": [
+        "square",
+        "identity"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Co-function",
+      "step_keywords": [
+        "function"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Co-ratio",
+      "step_keywords": [
+        "ratio"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Quotient identity",
+      "step_keywords": [
+        "quotient",
+        "identity"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Double angle",
+      "step_keywords": [
+        "double",
+        "angle"
+      ],
+      "misconception_id": "M_DOUBLE_ANGLE_LINEAR",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Double angle formula",
+      "step_keywords": [
+        "double",
+        "angle",
+        "formula"
+      ],
+      "misconception_id": "M_DOUBLE_ANGLE_LINEAR",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Double angle of cos2x",
+      "step_keywords": [
+        "double",
+        "angle",
+        "cos"
+      ],
+      "misconception_id": "M_DOUBLE_ANGLE_LINEAR",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Factorise",
+      "step_keywords": [
+        "factorise"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Expand",
+      "step_keywords": [
+        "expand"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Simplification",
+      "step_keywords": [
+        "simplification"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Difference of cubes",
+      "step_keywords": [
+        "difference",
+        "cubes"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Single fraction",
+      "step_keywords": [
+        "single",
+        "fraction"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Pythagoras for third side",
+      "step_keywords": [
+        "pythagoras",
+        "third",
+        "side"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Standard form",
+      "step_keywords": [
+        "standard",
+        "form"
+      ],
+      "misconception_id": "M_IDENTITY_MISAPPLY",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.equation": [
+    {
+      "step_phrase": "Identity",
+      "step_keywords": [
+        "identity"
+      ],
+      "misconception_id": "M_TRIG_EQ_DIVIDE_BY_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Standard form",
+      "step_keywords": [
+        "standard",
+        "form"
+      ],
+      "misconception_id": "M_TRIG_EQ_DIVIDE_BY_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Factorise",
+      "step_keywords": [
+        "factorise"
+      ],
+      "misconception_id": "M_TRIG_EQ_DIVIDE_BY_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Factor equals zero",
+      "step_keywords": [
+        "factor",
+        "equals",
+        "zero"
+      ],
+      "misconception_id": "M_TRIG_EQ_DIVIDE_BY_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Both equations",
+      "step_keywords": [
+        "both",
+        "equations"
+      ],
+      "misconception_id": "M_TRIG_EQ_MISSING_SOLUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "First solution",
+      "step_keywords": [
+        "first",
+        "solution"
+      ],
+      "misconception_id": "M_TRIG_EQ_MISSING_SOLUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Second solution",
+      "step_keywords": [
+        "second",
+        "solution"
+      ],
+      "misconception_id": "M_TRIG_EQ_MISSING_SOLUTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "First interval",
+      "step_keywords": [
+        "first",
+        "interval"
+      ],
+      "misconception_id": "M_TRIG_EQ_GENERAL_WHEN_INTERVAL",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Second interval",
+      "step_keywords": [
+        "second",
+        "interval"
+      ],
+      "misconception_id": "M_TRIG_EQ_GENERAL_WHEN_INTERVAL",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Apply compound formula",
+      "step_keywords": [
+        "apply",
+        "compound",
+        "formula"
+      ],
+      "misconception_id": "M_TRIG_EQ_DIVIDE_BY_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Rewrite cos as sin",
+      "step_keywords": [
+        "rewrite",
+        "cos",
+        "sin"
+      ],
+      "misconception_id": "M_TRIG_EQ_DIVIDE_BY_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "k in Z",
+      "step_keywords": [],
+      "misconception_id": "M_TRIG_GENERAL_INCOMPLETE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "k.360",
+      "step_keywords": [],
+      "misconception_id": "M_TRIG_GENERAL_INCOMPLETE",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "n in Z",
+      "step_keywords": [],
+      "misconception_id": "M_TRIG_GENERAL_INCOMPLETE",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.unitcircle": [
+    {
+      "step_phrase": "Pythagoras",
+      "step_keywords": [
+        "pythagoras"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute Pythagoras",
+      "step_keywords": [
+        "substitute",
+        "pythagoras"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute",
+      "step_keywords": [
+        "substitute"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Value of r",
+      "step_keywords": [
+        "value"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "tan value",
+      "step_keywords": [
+        "tan",
+        "value"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "tan theta",
+      "step_keywords": [
+        "tan",
+        "theta"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "tan beta",
+      "step_keywords": [
+        "tan",
+        "beta"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "cos theta",
+      "step_keywords": [
+        "cos",
+        "theta"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "cos θ",
+      "step_keywords": [
+        "cos"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "sin(θ+90)",
+      "step_keywords": [
+        "sin"
+      ],
+      "misconception_id": "M_UNIT_QUADRANT_SIGN",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.3d": [
+    {
+      "step_phrase": "Sine rule",
+      "step_keywords": [
+        "sine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Sine ratio",
+      "step_keywords": [
+        "sine",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Sine rule setup",
+      "step_keywords": [
+        "sine",
+        "rule",
+        "setup"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Cosine rule",
+      "step_keywords": [
+        "cosine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Trig ratio",
+      "step_keywords": [
+        "trig",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Correct trig ratio",
+      "step_keywords": [
+        "correct",
+        "trig",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Correct ratio",
+      "step_keywords": [
+        "correct",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Ratio",
+      "step_keywords": [
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area rule",
+      "step_keywords": [
+        "area",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area formula",
+      "step_keywords": [
+        "area",
+        "formula"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area formula for triangle",
+      "step_keywords": [
+        "area",
+        "formula",
+        "triangle"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into Pythagoras",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "pythagoras"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into sine rule",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "sine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into area",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "area"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute Pythagoras",
+      "step_keywords": [
+        "substitute",
+        "pythagoras"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Quadratic formula",
+      "step_keywords": [
+        "quadratic",
+        "formula"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Quadratic form",
+      "step_keywords": [
+        "quadratic",
+        "form"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Compound angle",
+      "step_keywords": [
+        "compound",
+        "angle"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Simplify",
+      "step_keywords": [
+        "simplify"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute",
+      "step_keywords": [
+        "substitute"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute values",
+      "step_keywords": [
+        "substitute",
+        "values"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "algebra.proof.integer": [
+    {
+      "step_phrase": "Pattern",
+      "step_keywords": [
+        "pattern"
+      ],
+      "misconception_id": "M_PROOF_INTEGER_PATTERN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Conclusion",
+      "step_keywords": [
+        "conclusion"
+      ],
+      "misconception_id": "M_PROOF_INTEGER_PATTERN",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.3d.length": [
+    {
+      "step_phrase": "Sine rule",
+      "step_keywords": [
+        "sine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Sine ratio",
+      "step_keywords": [
+        "sine",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Sine rule setup",
+      "step_keywords": [
+        "sine",
+        "rule",
+        "setup"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Cosine rule",
+      "step_keywords": [
+        "cosine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Trig ratio",
+      "step_keywords": [
+        "trig",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Correct trig ratio",
+      "step_keywords": [
+        "correct",
+        "trig",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Correct ratio",
+      "step_keywords": [
+        "correct",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Ratio",
+      "step_keywords": [
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area rule",
+      "step_keywords": [
+        "area",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area formula",
+      "step_keywords": [
+        "area",
+        "formula"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area formula for triangle",
+      "step_keywords": [
+        "area",
+        "formula",
+        "triangle"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into Pythagoras",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "pythagoras"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into sine rule",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "sine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into area",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "area"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute Pythagoras",
+      "step_keywords": [
+        "substitute",
+        "pythagoras"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Quadratic formula",
+      "step_keywords": [
+        "quadratic",
+        "formula"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Quadratic form",
+      "step_keywords": [
+        "quadratic",
+        "form"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Compound angle",
+      "step_keywords": [
+        "compound",
+        "angle"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Simplify",
+      "step_keywords": [
+        "simplify"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute",
+      "step_keywords": [
+        "substitute"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute values",
+      "step_keywords": [
+        "substitute",
+        "values"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.3d.angle": [
+    {
+      "step_phrase": "Sine rule",
+      "step_keywords": [
+        "sine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Sine ratio",
+      "step_keywords": [
+        "sine",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Sine rule setup",
+      "step_keywords": [
+        "sine",
+        "rule",
+        "setup"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Cosine rule",
+      "step_keywords": [
+        "cosine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Trig ratio",
+      "step_keywords": [
+        "trig",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Correct trig ratio",
+      "step_keywords": [
+        "correct",
+        "trig",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Correct ratio",
+      "step_keywords": [
+        "correct",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Ratio",
+      "step_keywords": [
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area rule",
+      "step_keywords": [
+        "area",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area formula",
+      "step_keywords": [
+        "area",
+        "formula"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area formula for triangle",
+      "step_keywords": [
+        "area",
+        "formula",
+        "triangle"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into Pythagoras",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "pythagoras"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into sine rule",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "sine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into area",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "area"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute Pythagoras",
+      "step_keywords": [
+        "substitute",
+        "pythagoras"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Quadratic formula",
+      "step_keywords": [
+        "quadratic",
+        "formula"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Quadratic form",
+      "step_keywords": [
+        "quadratic",
+        "form"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Compound angle",
+      "step_keywords": [
+        "compound",
+        "angle"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Simplify",
+      "step_keywords": [
+        "simplify"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute",
+      "step_keywords": [
+        "substitute"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute values",
+      "step_keywords": [
+        "substitute",
+        "values"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.3d.area": [
+    {
+      "step_phrase": "Sine rule",
+      "step_keywords": [
+        "sine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Sine ratio",
+      "step_keywords": [
+        "sine",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Sine rule setup",
+      "step_keywords": [
+        "sine",
+        "rule",
+        "setup"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Cosine rule",
+      "step_keywords": [
+        "cosine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Trig ratio",
+      "step_keywords": [
+        "trig",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Correct trig ratio",
+      "step_keywords": [
+        "correct",
+        "trig",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Correct ratio",
+      "step_keywords": [
+        "correct",
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Ratio",
+      "step_keywords": [
+        "ratio"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area rule",
+      "step_keywords": [
+        "area",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area formula",
+      "step_keywords": [
+        "area",
+        "formula"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Area formula for triangle",
+      "step_keywords": [
+        "area",
+        "formula",
+        "triangle"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into Pythagoras",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "pythagoras"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into sine rule",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "sine",
+        "rule"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute into area",
+      "step_keywords": [
+        "substitute",
+        "into",
+        "area"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute Pythagoras",
+      "step_keywords": [
+        "substitute",
+        "pythagoras"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Quadratic formula",
+      "step_keywords": [
+        "quadratic",
+        "formula"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Quadratic form",
+      "step_keywords": [
+        "quadratic",
+        "form"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Compound angle",
+      "step_keywords": [
+        "compound",
+        "angle"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Simplify",
+      "step_keywords": [
+        "simplify"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute",
+      "step_keywords": [
+        "substitute"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Substitute values",
+      "step_keywords": [
+        "substitute",
+        "values"
+      ],
+      "misconception_id": "M_3D_WRONG_RATIO",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.graph": [
+    {
+      "step_phrase": "Period",
+      "step_keywords": [
+        "period"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "State period",
+      "step_keywords": [
+        "state",
+        "period"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Period=120",
+      "step_keywords": [
+        "period"
+      ],
+      "misconception_id": "M_PERIOD_COEFFICIENT",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Range",
+      "step_keywords": [
+        "range"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "State range",
+      "step_keywords": [
+        "state",
+        "range"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Range of 2g",
+      "step_keywords": [
+        "range"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Amplitude",
+      "step_keywords": [
+        "amplitude"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Amplitude/intercepts",
+      "step_keywords": [
+        "amplitude",
+        "intercepts"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Interval",
+      "step_keywords": [
+        "interval"
+      ],
+      "misconception_id": "M_TRIG_EQ_GENERAL_WHEN_INTERVAL",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "State interval",
+      "step_keywords": [
+        "state",
+        "interval"
+      ],
+      "misconception_id": "M_TRIG_EQ_GENERAL_WHEN_INTERVAL",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Critical values",
+      "step_keywords": [
+        "critical",
+        "values"
+      ],
+      "misconception_id": "M_GRAPH_VALUE_LABEL_SWAPPED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "State x",
+      "step_keywords": [
+        "state"
+      ],
+      "misconception_id": "M_GRAPH_VALUE_LABEL_SWAPPED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "x value",
+      "step_keywords": [
+        "value"
+      ],
+      "misconception_id": "M_GRAPH_VALUE_LABEL_SWAPPED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Shape",
+      "step_keywords": [
+        "shape"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Turning points",
+      "step_keywords": [
+        "turning",
+        "points"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Asymptotes",
+      "step_keywords": [
+        "asymptotes"
+      ],
+      "misconception_id": "M_PERIOD_DOMAIN_CONFUSION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "x-intercepts",
+      "step_keywords": [
+        "intercepts"
+      ],
+      "misconception_id": "M_GRAPH_VALUE_LABEL_SWAPPED",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "y-intercept",
+      "step_keywords": [
+        "intercept"
+      ],
+      "misconception_id": "M_GRAPH_VALUE_LABEL_SWAPPED",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.reduction.cos": [
+    {
+      "step_phrase": "Reduction",
+      "step_keywords": [
+        "reduction"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Co-ratio",
+      "step_keywords": [
+        "ratio"
+      ],
+      "misconception_id": "M_REDUCTION_COFUNCTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Identity",
+      "step_keywords": [
+        "identity"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Simplify numerator",
+      "step_keywords": [
+        "simplify",
+        "numerator"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Final simplification",
+      "step_keywords": [
+        "final",
+        "simplification"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Rewrite",
+      "step_keywords": [
+        "rewrite"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Expand",
+      "step_keywords": [
+        "expand"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.reduction.range": [
+    {
+      "step_phrase": "Reduction",
+      "step_keywords": [
+        "reduction"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Co-ratio",
+      "step_keywords": [
+        "ratio"
+      ],
+      "misconception_id": "M_REDUCTION_COFUNCTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Identity",
+      "step_keywords": [
+        "identity"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Simplify numerator",
+      "step_keywords": [
+        "simplify",
+        "numerator"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Final simplification",
+      "step_keywords": [
+        "final",
+        "simplification"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Rewrite",
+      "step_keywords": [
+        "rewrite"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Expand",
+      "step_keywords": [
+        "expand"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    }
+  ],
+  "trig.reduction.simplify": [
+    {
+      "step_phrase": "Reduction",
+      "step_keywords": [
+        "reduction"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Co-ratio",
+      "step_keywords": [
+        "ratio"
+      ],
+      "misconception_id": "M_REDUCTION_COFUNCTION",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Identity",
+      "step_keywords": [
+        "identity"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Simplify numerator",
+      "step_keywords": [
+        "simplify",
+        "numerator"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Final simplification",
+      "step_keywords": [
+        "final",
+        "simplification"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Rewrite",
+      "step_keywords": [
+        "rewrite"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    },
+    {
+      "step_phrase": "Expand",
+      "step_keywords": [
+        "expand"
+      ],
+      "misconception_id": "M_REDUCTION_SIGN",
+      "score": 1.0,
+      "source": "override"
+    }
+  ]
+}

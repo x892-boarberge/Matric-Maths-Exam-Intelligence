@@ -1,0 +1,138 @@
+{
+  "question_id": "2025_P1_Q2",
+  "foundation_text": "Seats and Piggy Banks: Sn is the total, Tn is the single seat. GAPS rule, ICE rule, OMS rule.",
+  "acronym_strip": [
+    {
+      "code": "GAPS",
+      "meaning": "Steps between seats = n \u2212 1"
+    },
+    {
+      "code": "ICE",
+      "meaning": "Include both ends under sigma"
+    },
+    {
+      "code": "BRAKE",
+      "meaning": "S_inf check -1 < r < 1"
+    }
+  ],
+  "subquestions": {
+    "2.1.1": {
+      "variant_question": "Show that x = 7 for the series (x+5) + (x-1) + (x-4) + ...",
+      "demonstration": "1. T2/T1 = T3/T2.\n2. (x-1)/(x+5) = (x-4)/(x-1).\n3. Cross multiply: (x-1)^2 = (x-4)(x+5).\n4. x^2 - 2x + 1 = x^2 + x - 20.\n5. -3x = -21 -> x = 7.",
+      "memo_marks": [
+        "1 mark for ratio equation",
+        "1 mark for cross multiplying",
+        "1 mark for x=7"
+      ],
+      "fast_path": "Set up T2/T1 = T3/T2 and cross-multiply. Don't overcomplicate it.",
+      "fatal_error": "DBE says: Candidates jump to the answer x=7 without showing the cross-multiplication. The working is the mark.",
+      "answer_book_layout": [
+        "For a geometric series, T2/T1 = T3/T2",
+        "(x - 1) / (x + 5) = (x - 4) / (x - 1)",
+        "(x - 1)\u00b2 = (x - 4)(x + 5)",
+        "x\u00b2 - 2x + 1 = x\u00b2 + x - 20",
+        "-3x = -21",
+        "x = 7",
+        "_________________________",
+        "Final Answer: x = 7"
+      ],
+      "hack": "For a geometric series, the ratio between consecutive terms is constant.",
+      "trap": "You must show the cross-multiplication.",
+      "presentation": "Write down T2/T1 = T3/T2 as your first line."
+    },
+    "2.1.2": {
+      "variant_question": "Calculate T15 for 4, -2, 1 ... in the form b^x.",
+      "demonstration": "1. r = -1/2. a = 4.\n2. Tn = a*r^(n-1).\n3. T15 = 4*(-1/2)^14.\n4. T15 = 2^2 * 2^-14 = 2^-12.",
+      "memo_marks": [
+        "1 mark for r",
+        "1 mark for substituting",
+        "1 mark for exponent laws"
+      ],
+      "fast_path": "Use your exponent laws. (1/2)^14 becomes 2^-14.",
+      "fatal_error": "DBE says: Candidates write r^15 instead of r^14. Remember GAPS: the power is one less than the seat number.",
+      "answer_book_layout": [
+        "r = T2 / T1 = -2 / 4 = -1/2",
+        "Tn = a * r^(n-1)",
+        "T15 = 4 * (-1/2)^(15-1)",
+        "T15 = 4 * (-1/2)^14",
+        "T15 = 2\u00b2 * 2^-14",
+        "_________________________",
+        "Final Answer: T15 = 2^-12"
+      ],
+      "hack": "The power is always one less than the seat number. GAPS.",
+      "trap": "Don't forget the negative sign on the ratio if it alternates.",
+      "presentation": "Show the substitution Tn = a*r^(n-1) before simplifying."
+    },
+    "2.1.3": {
+      "variant_question": "Calculate S_inf for 4, -2, 1 ...",
+      "demonstration": "1. r = -1/2. Check: -1 < -1/2 < 1.\n2. S_inf = a/(1-r).\n3. S_inf = 4 / (1 - (-1/2)) = 4 / (1.5) = 8/3.",
+      "memo_marks": [
+        "1 mark for brake check",
+        "1 mark for formula",
+        "1 mark for answer"
+      ],
+      "fast_path": "Write the brake check first. It's a free mark.",
+      "fatal_error": "DBE says: Candidates use the S_inf formula without checking if -1 < r < 1. You must write the brake check down.",
+      "answer_book_layout": [
+        "r = -1/2",
+        "Check: -1 < -1/2 < 1 (converges)",
+        "S_\u221e = a / (1 - r)",
+        "S_\u221e = 4 / (1 - (-1/2))",
+        "S_\u221e = 4 / (3/2)",
+        "S_\u221e = 4 * 2/3 = 8/3",
+        "_________________________",
+        "Final Answer: S_\u221e = 8/3"
+      ],
+      "hack": "Before you use S_inf, do the Brake Check.",
+      "trap": "If you don't write the brake check, you lose a mark.",
+      "presentation": "Writing down -1 < r < 1 is a mark on its own."
+    },
+    "2.2.1": {
+      "variant_question": "Given T_p = 4p - 1, write down the difference between T_14 and T_6.",
+      "demonstration": "1. d = 4 (coefficient of p).\n2. Difference = (14 - 6)*d.\n3. 8 * 4 = 32.",
+      "memo_marks": [
+        "1 mark for d=4",
+        "1 mark for 32"
+      ],
+      "fast_path": "The coefficient of p is your d. Just multiply the difference in seats by d.",
+      "fatal_error": "DBE says: Candidates calculate T14 and T6 manually and make arithmetic errors. Use (14-6)*d.",
+      "answer_book_layout": [
+        "d = 4",
+        "Difference = (14 - 6) * d",
+        "Difference = 8 * 4",
+        "_________________________",
+        "Final Answer: 32"
+      ],
+      "hack": "The coefficient of p is your common difference d.",
+      "trap": "Do not waste time calculating T6 and T14 manually.",
+      "presentation": "Write down (14 - 6) * d."
+    },
+    "2.2.2": {
+      "variant_question": "Given sum from p=k to 117 of (4p - 1) = 26675, calculate k.",
+      "demonstration": "1. First term (p=k): 4k-1. Last term: 467.\n2. Number of terms: 118-k.\n3. Sum = (118-k)/2 * (4k - 1 + 467) = 26675.\n4. Solve for k.",
+      "memo_marks": [
+        "1 mark for first/last term",
+        "1 mark for n",
+        "1 mark for sum formula",
+        "2 marks for solving"
+      ],
+      "fast_path": "Use ICE. Number of terms is (117 - k) + 1 = 118 - k.",
+      "fatal_error": "DBE says: Candidates use 117 - k for the number of terms. You must use ICE: (Top - Bottom) + 1.",
+      "answer_book_layout": [
+        "First term (p=k): 4k - 1",
+        "Last term (p=117): 4(117) - 1 = 467",
+        "Number of terms: (117 - k) + 1 = 118 - k",
+        "",
+        "Sn = n/2 (a + l)",
+        "26675 = (118 - k)/2 * (4k - 1 + 467)",
+        "53350 = (118 - k)(4k + 466)",
+        "...solve quadratic...",
+        "_________________________",
+        "Final Answer: k = 21"
+      ],
+      "hack": "Sigma is a recipe card. Use ICE: Include Count Ends.",
+      "trap": "If you just do 117 - k for the number of terms, you will get the wrong answer.",
+      "presentation": "Write down n, first term, last term clearly."
+    }
+  }
+}

@@ -48,6 +48,12 @@
         "(49-x) + x + 8 + 4 + 5 + 2 + (60-x) + 14 = 100.",
         "-x + 142 = 100.",
         "x = 42."
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "probability.venn"
       ]
     },
     {
@@ -72,6 +78,13 @@
         "Only I = 7, Only T = 2, Only W = 18.",
         "Sum = 27.",
         "P = 27/100."
+      ],
+      "given_from": [
+        "10.1",
+        "10.2"
+      ],
+      "requires_skills": [
+        "probability.venn"
       ]
     }
   ],

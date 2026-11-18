@@ -1,0 +1,512 @@
+[
+  {
+    "variant_question": "Find t if (9; t) lies on f(x) = log_4(x).",
+    "expected": "t = 1.58",
+    "demonstration": "t = log_4(9).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_4(9)",
+      "4^t = 9",
+      "t = 1.58",
+      "_________________________",
+      "Final Answer: t = 1.58"
+    ]
+  },
+  {
+    "variant_question": "Find t if (25; t) lies on f(x) = log_5(x).",
+    "expected": "t = 2",
+    "demonstration": "t = log_5(25).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_5(25)",
+      "5^t = 25",
+      "t = 2",
+      "_________________________",
+      "Final Answer: t = 2"
+    ]
+  },
+  {
+    "variant_question": "Find t if (8; t) lies on f(x) = log_5(x).",
+    "expected": "t = 1.29",
+    "demonstration": "t = log_5(8).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_5(8)",
+      "5^t = 8",
+      "t = 1.29",
+      "_________________________",
+      "Final Answer: t = 1.29"
+    ]
+  },
+  {
+    "variant_question": "Find t if (25; t) lies on f(x) = log_4(x).",
+    "expected": "t = 2.32",
+    "demonstration": "t = log_4(25).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_4(25)",
+      "4^t = 25",
+      "t = 2.32",
+      "_________________________",
+      "Final Answer: t = 2.32"
+    ]
+  },
+  {
+    "variant_question": "Find t if (8; t) lies on f(x) = log_5(x).",
+    "expected": "t = 1.29",
+    "demonstration": "t = log_5(8).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_5(8)",
+      "5^t = 8",
+      "t = 1.29",
+      "_________________________",
+      "Final Answer: t = 1.29"
+    ]
+  },
+  {
+    "variant_question": "Find t if (4; t) lies on f(x) = log_2(x).",
+    "expected": "t = 2",
+    "demonstration": "t = log_2(4).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_2(4)",
+      "2^t = 4",
+      "t = 2",
+      "_________________________",
+      "Final Answer: t = 2"
+    ]
+  },
+  {
+    "variant_question": "Find t if (16; t) lies on f(x) = log_3(x).",
+    "expected": "t = 2.52",
+    "demonstration": "t = log_3(16).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_3(16)",
+      "3^t = 16",
+      "t = 2.52",
+      "_________________________",
+      "Final Answer: t = 2.52"
+    ]
+  },
+  {
+    "variant_question": "Find t if (25; t) lies on f(x) = log_3(x).",
+    "expected": "t = 2.93",
+    "demonstration": "t = log_3(25).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_3(25)",
+      "3^t = 25",
+      "t = 2.93",
+      "_________________________",
+      "Final Answer: t = 2.93"
+    ]
+  },
+  {
+    "variant_question": "Find t if (16; t) lies on f(x) = log_4(x).",
+    "expected": "t = 2",
+    "demonstration": "t = log_4(16).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_4(16)",
+      "4^t = 16",
+      "t = 2",
+      "_________________________",
+      "Final Answer: t = 2"
+    ]
+  },
+  {
+    "variant_question": "Find t if (8; t) lies on f(x) = log_3(x).",
+    "expected": "t = 1.89",
+    "demonstration": "t = log_3(8).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_3(8)",
+      "3^t = 8",
+      "t = 1.89",
+      "_________________________",
+      "Final Answer: t = 1.89"
+    ]
+  },
+  {
+    "variant_question": "Find t if (16; t) lies on f(x) = log_4(x).",
+    "expected": "t = 2",
+    "demonstration": "t = log_4(16).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_4(16)",
+      "4^t = 16",
+      "t = 2",
+      "_________________________",
+      "Final Answer: t = 2"
+    ]
+  },
+  {
+    "variant_question": "Find t if (25; t) lies on f(x) = log_2(x).",
+    "expected": "t = 4.64",
+    "demonstration": "t = log_2(25).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_2(25)",
+      "2^t = 25",
+      "t = 4.64",
+      "_________________________",
+      "Final Answer: t = 4.64"
+    ]
+  },
+  {
+    "variant_question": "Find t if (27; t) lies on f(x) = log_5(x).",
+    "expected": "t = 2.05",
+    "demonstration": "t = log_5(27).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_5(27)",
+      "5^t = 27",
+      "t = 2.05",
+      "_________________________",
+      "Final Answer: t = 2.05"
+    ]
+  },
+  {
+    "variant_question": "Find t if (8; t) lies on f(x) = log_4(x).",
+    "expected": "t = 1.5",
+    "demonstration": "t = log_4(8).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_4(8)",
+      "4^t = 8",
+      "t = 1.5",
+      "_________________________",
+      "Final Answer: t = 1.5"
+    ]
+  },
+  {
+    "variant_question": "Find t if (9; t) lies on f(x) = log_2(x).",
+    "expected": "t = 3.17",
+    "demonstration": "t = log_2(9).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_2(9)",
+      "2^t = 9",
+      "t = 3.17",
+      "_________________________",
+      "Final Answer: t = 3.17"
+    ]
+  },
+  {
+    "variant_question": "Find t if (16; t) lies on f(x) = log_2(x).",
+    "expected": "t = 4",
+    "demonstration": "t = log_2(16).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_2(16)",
+      "2^t = 16",
+      "t = 4",
+      "_________________________",
+      "Final Answer: t = 4"
+    ]
+  },
+  {
+    "variant_question": "Find t if (25; t) lies on f(x) = log_3(x).",
+    "expected": "t = 2.93",
+    "demonstration": "t = log_3(25).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_3(25)",
+      "3^t = 25",
+      "t = 2.93",
+      "_________________________",
+      "Final Answer: t = 2.93"
+    ]
+  },
+  {
+    "variant_question": "Find t if (9; t) lies on f(x) = log_4(x).",
+    "expected": "t = 1.58",
+    "demonstration": "t = log_4(9).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_4(9)",
+      "4^t = 9",
+      "t = 1.58",
+      "_________________________",
+      "Final Answer: t = 1.58"
+    ]
+  },
+  {
+    "variant_question": "Find t if (27; t) lies on f(x) = log_5(x).",
+    "expected": "t = 2.05",
+    "demonstration": "t = log_5(27).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_5(27)",
+      "5^t = 27",
+      "t = 2.05",
+      "_________________________",
+      "Final Answer: t = 2.05"
+    ]
+  },
+  {
+    "variant_question": "Find t if (9; t) lies on f(x) = log_3(x).",
+    "expected": "t = 2",
+    "demonstration": "t = log_3(9).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_3(9)",
+      "3^t = 9",
+      "t = 2",
+      "_________________________",
+      "Final Answer: t = 2"
+    ]
+  },
+  {
+    "variant_question": "Find t if (27; t) lies on f(x) = log_5(x).",
+    "expected": "t = 2.05",
+    "demonstration": "t = log_5(27).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_5(27)",
+      "5^t = 27",
+      "t = 2.05",
+      "_________________________",
+      "Final Answer: t = 2.05"
+    ]
+  },
+  {
+    "variant_question": "Find t if (9; t) lies on f(x) = log_4(x).",
+    "expected": "t = 1.58",
+    "demonstration": "t = log_4(9).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_4(9)",
+      "4^t = 9",
+      "t = 1.58",
+      "_________________________",
+      "Final Answer: t = 1.58"
+    ]
+  },
+  {
+    "variant_question": "Find t if (16; t) lies on f(x) = log_3(x).",
+    "expected": "t = 2.52",
+    "demonstration": "t = log_3(16).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_3(16)",
+      "3^t = 16",
+      "t = 2.52",
+      "_________________________",
+      "Final Answer: t = 2.52"
+    ]
+  },
+  {
+    "variant_question": "Find t if (4; t) lies on f(x) = log_2(x).",
+    "expected": "t = 2",
+    "demonstration": "t = log_2(4).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_2(4)",
+      "2^t = 4",
+      "t = 2",
+      "_________________________",
+      "Final Answer: t = 2"
+    ]
+  },
+  {
+    "variant_question": "Find t if (16; t) lies on f(x) = log_4(x).",
+    "expected": "t = 2",
+    "demonstration": "t = log_4(16).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_4(16)",
+      "4^t = 16",
+      "t = 2",
+      "_________________________",
+      "Final Answer: t = 2"
+    ]
+  },
+  {
+    "variant_question": "Find t if (9; t) lies on f(x) = log_4(x).",
+    "expected": "t = 1.58",
+    "demonstration": "t = log_4(9).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_4(9)",
+      "4^t = 9",
+      "t = 1.58",
+      "_________________________",
+      "Final Answer: t = 1.58"
+    ]
+  },
+  {
+    "variant_question": "Find t if (9; t) lies on f(x) = log_2(x).",
+    "expected": "t = 3.17",
+    "demonstration": "t = log_2(9).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_2(9)",
+      "2^t = 9",
+      "t = 3.17",
+      "_________________________",
+      "Final Answer: t = 3.17"
+    ]
+  },
+  {
+    "variant_question": "Find t if (25; t) lies on f(x) = log_5(x).",
+    "expected": "t = 2",
+    "demonstration": "t = log_5(25).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_5(25)",
+      "5^t = 25",
+      "t = 2",
+      "_________________________",
+      "Final Answer: t = 2"
+    ]
+  },
+  {
+    "variant_question": "Find t if (4; t) lies on f(x) = log_3(x).",
+    "expected": "t = 1.26",
+    "demonstration": "t = log_3(4).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_3(4)",
+      "3^t = 4",
+      "t = 1.26",
+      "_________________________",
+      "Final Answer: t = 1.26"
+    ]
+  },
+  {
+    "variant_question": "Find t if (16; t) lies on f(x) = log_3(x).",
+    "expected": "t = 2.52",
+    "demonstration": "t = log_3(16).",
+    "memo_marks": [
+      "1 mark answer"
+    ],
+    "fast_path": "Ask: base to what = x.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "t = log_3(16)",
+      "3^t = 16",
+      "t = 2.52",
+      "_________________________",
+      "Final Answer: t = 2.52"
+    ]
+  }
+]

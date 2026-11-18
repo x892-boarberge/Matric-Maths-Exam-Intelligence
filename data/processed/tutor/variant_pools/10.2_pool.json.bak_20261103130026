@@ -1,0 +1,662 @@
+[
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 30) has volume V(x) = (15x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 10",
+    "demonstration": "V'(x) = (2·15x)/(4π) - (3x^2)/(4π) = (30x - 3x^2)/(4π).\nSet V'(x) = 0: 30x - 3x^2 = 0 -> x(30 - 3x) = 0.\nx = 0 (reject, no volume) or x = 30/3 = 10.\nAnswer: x = 10.",
+    "memo_marks": [
+      "1 mark for V'(x) = (30x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 10 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (30x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(30 - 3x) = 0",
+      "x = 0 (reject) or x = 10"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 32) has volume V(x) = (16x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 32/3",
+    "demonstration": "V'(x) = (2·16x)/(4π) - (3x^2)/(4π) = (32x - 3x^2)/(4π).\nSet V'(x) = 0: 32x - 3x^2 = 0 -> x(32 - 3x) = 0.\nx = 0 (reject, no volume) or x = 32/3 = 32/3.\nAnswer: x = 32/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (32x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 32/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (32x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(32 - 3x) = 0",
+      "x = 0 (reject) or x = 32/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 34) has volume V(x) = (17x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 34/3",
+    "demonstration": "V'(x) = (2·17x)/(4π) - (3x^2)/(4π) = (34x - 3x^2)/(4π).\nSet V'(x) = 0: 34x - 3x^2 = 0 -> x(34 - 3x) = 0.\nx = 0 (reject, no volume) or x = 34/3 = 34/3.\nAnswer: x = 34/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (34x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 34/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (34x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(34 - 3x) = 0",
+      "x = 0 (reject) or x = 34/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 36) has volume V(x) = (18x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 12",
+    "demonstration": "V'(x) = (2·18x)/(4π) - (3x^2)/(4π) = (36x - 3x^2)/(4π).\nSet V'(x) = 0: 36x - 3x^2 = 0 -> x(36 - 3x) = 0.\nx = 0 (reject, no volume) or x = 36/3 = 12.\nAnswer: x = 12.",
+    "memo_marks": [
+      "1 mark for V'(x) = (36x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 12 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (36x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(36 - 3x) = 0",
+      "x = 0 (reject) or x = 12"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 38) has volume V(x) = (19x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 38/3",
+    "demonstration": "V'(x) = (2·19x)/(4π) - (3x^2)/(4π) = (38x - 3x^2)/(4π).\nSet V'(x) = 0: 38x - 3x^2 = 0 -> x(38 - 3x) = 0.\nx = 0 (reject, no volume) or x = 38/3 = 38/3.\nAnswer: x = 38/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (38x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 38/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (38x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(38 - 3x) = 0",
+      "x = 0 (reject) or x = 38/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 40) has volume V(x) = (20x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 40/3",
+    "demonstration": "V'(x) = (2·20x)/(4π) - (3x^2)/(4π) = (40x - 3x^2)/(4π).\nSet V'(x) = 0: 40x - 3x^2 = 0 -> x(40 - 3x) = 0.\nx = 0 (reject, no volume) or x = 40/3 = 40/3.\nAnswer: x = 40/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (40x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 40/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (40x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(40 - 3x) = 0",
+      "x = 0 (reject) or x = 40/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 42) has volume V(x) = (21x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 14",
+    "demonstration": "V'(x) = (2·21x)/(4π) - (3x^2)/(4π) = (42x - 3x^2)/(4π).\nSet V'(x) = 0: 42x - 3x^2 = 0 -> x(42 - 3x) = 0.\nx = 0 (reject, no volume) or x = 42/3 = 14.\nAnswer: x = 14.",
+    "memo_marks": [
+      "1 mark for V'(x) = (42x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 14 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (42x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(42 - 3x) = 0",
+      "x = 0 (reject) or x = 14"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 44) has volume V(x) = (22x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 44/3",
+    "demonstration": "V'(x) = (2·22x)/(4π) - (3x^2)/(4π) = (44x - 3x^2)/(4π).\nSet V'(x) = 0: 44x - 3x^2 = 0 -> x(44 - 3x) = 0.\nx = 0 (reject, no volume) or x = 44/3 = 44/3.\nAnswer: x = 44/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (44x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 44/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (44x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(44 - 3x) = 0",
+      "x = 0 (reject) or x = 44/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 46) has volume V(x) = (23x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 46/3",
+    "demonstration": "V'(x) = (2·23x)/(4π) - (3x^2)/(4π) = (46x - 3x^2)/(4π).\nSet V'(x) = 0: 46x - 3x^2 = 0 -> x(46 - 3x) = 0.\nx = 0 (reject, no volume) or x = 46/3 = 46/3.\nAnswer: x = 46/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (46x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 46/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (46x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(46 - 3x) = 0",
+      "x = 0 (reject) or x = 46/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 48) has volume V(x) = (24x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 16",
+    "demonstration": "V'(x) = (2·24x)/(4π) - (3x^2)/(4π) = (48x - 3x^2)/(4π).\nSet V'(x) = 0: 48x - 3x^2 = 0 -> x(48 - 3x) = 0.\nx = 0 (reject, no volume) or x = 48/3 = 16.\nAnswer: x = 16.",
+    "memo_marks": [
+      "1 mark for V'(x) = (48x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 16 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (48x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(48 - 3x) = 0",
+      "x = 0 (reject) or x = 16"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 50) has volume V(x) = (25x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 50/3",
+    "demonstration": "V'(x) = (2·25x)/(4π) - (3x^2)/(4π) = (50x - 3x^2)/(4π).\nSet V'(x) = 0: 50x - 3x^2 = 0 -> x(50 - 3x) = 0.\nx = 0 (reject, no volume) or x = 50/3 = 50/3.\nAnswer: x = 50/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (50x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 50/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (50x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(50 - 3x) = 0",
+      "x = 0 (reject) or x = 50/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 52) has volume V(x) = (26x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 52/3",
+    "demonstration": "V'(x) = (2·26x)/(4π) - (3x^2)/(4π) = (52x - 3x^2)/(4π).\nSet V'(x) = 0: 52x - 3x^2 = 0 -> x(52 - 3x) = 0.\nx = 0 (reject, no volume) or x = 52/3 = 52/3.\nAnswer: x = 52/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (52x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 52/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (52x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(52 - 3x) = 0",
+      "x = 0 (reject) or x = 52/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 54) has volume V(x) = (27x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 18",
+    "demonstration": "V'(x) = (2·27x)/(4π) - (3x^2)/(4π) = (54x - 3x^2)/(4π).\nSet V'(x) = 0: 54x - 3x^2 = 0 -> x(54 - 3x) = 0.\nx = 0 (reject, no volume) or x = 54/3 = 18.\nAnswer: x = 18.",
+    "memo_marks": [
+      "1 mark for V'(x) = (54x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 18 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (54x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(54 - 3x) = 0",
+      "x = 0 (reject) or x = 18"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 56) has volume V(x) = (28x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 56/3",
+    "demonstration": "V'(x) = (2·28x)/(4π) - (3x^2)/(4π) = (56x - 3x^2)/(4π).\nSet V'(x) = 0: 56x - 3x^2 = 0 -> x(56 - 3x) = 0.\nx = 0 (reject, no volume) or x = 56/3 = 56/3.\nAnswer: x = 56/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (56x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 56/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (56x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(56 - 3x) = 0",
+      "x = 0 (reject) or x = 56/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 58) has volume V(x) = (29x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 58/3",
+    "demonstration": "V'(x) = (2·29x)/(4π) - (3x^2)/(4π) = (58x - 3x^2)/(4π).\nSet V'(x) = 0: 58x - 3x^2 = 0 -> x(58 - 3x) = 0.\nx = 0 (reject, no volume) or x = 58/3 = 58/3.\nAnswer: x = 58/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (58x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 58/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (58x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(58 - 3x) = 0",
+      "x = 0 (reject) or x = 58/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 60) has volume V(x) = (30x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 20",
+    "demonstration": "V'(x) = (2·30x)/(4π) - (3x^2)/(4π) = (60x - 3x^2)/(4π).\nSet V'(x) = 0: 60x - 3x^2 = 0 -> x(60 - 3x) = 0.\nx = 0 (reject, no volume) or x = 60/3 = 20.\nAnswer: x = 20.",
+    "memo_marks": [
+      "1 mark for V'(x) = (60x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 20 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (60x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(60 - 3x) = 0",
+      "x = 0 (reject) or x = 20"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 30) has volume V(x) = (15x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 10",
+    "demonstration": "V'(x) = (2·15x)/(4π) - (3x^2)/(4π) = (30x - 3x^2)/(4π).\nSet V'(x) = 0: 30x - 3x^2 = 0 -> x(30 - 3x) = 0.\nx = 0 (reject, no volume) or x = 30/3 = 10.\nAnswer: x = 10.",
+    "memo_marks": [
+      "1 mark for V'(x) = (30x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 10 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (30x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(30 - 3x) = 0",
+      "x = 0 (reject) or x = 10"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 32) has volume V(x) = (16x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 32/3",
+    "demonstration": "V'(x) = (2·16x)/(4π) - (3x^2)/(4π) = (32x - 3x^2)/(4π).\nSet V'(x) = 0: 32x - 3x^2 = 0 -> x(32 - 3x) = 0.\nx = 0 (reject, no volume) or x = 32/3 = 32/3.\nAnswer: x = 32/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (32x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 32/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (32x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(32 - 3x) = 0",
+      "x = 0 (reject) or x = 32/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 34) has volume V(x) = (17x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 34/3",
+    "demonstration": "V'(x) = (2·17x)/(4π) - (3x^2)/(4π) = (34x - 3x^2)/(4π).\nSet V'(x) = 0: 34x - 3x^2 = 0 -> x(34 - 3x) = 0.\nx = 0 (reject, no volume) or x = 34/3 = 34/3.\nAnswer: x = 34/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (34x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 34/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (34x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(34 - 3x) = 0",
+      "x = 0 (reject) or x = 34/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 36) has volume V(x) = (18x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 12",
+    "demonstration": "V'(x) = (2·18x)/(4π) - (3x^2)/(4π) = (36x - 3x^2)/(4π).\nSet V'(x) = 0: 36x - 3x^2 = 0 -> x(36 - 3x) = 0.\nx = 0 (reject, no volume) or x = 36/3 = 12.\nAnswer: x = 12.",
+    "memo_marks": [
+      "1 mark for V'(x) = (36x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 12 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (36x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(36 - 3x) = 0",
+      "x = 0 (reject) or x = 12"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 38) has volume V(x) = (19x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 38/3",
+    "demonstration": "V'(x) = (2·19x)/(4π) - (3x^2)/(4π) = (38x - 3x^2)/(4π).\nSet V'(x) = 0: 38x - 3x^2 = 0 -> x(38 - 3x) = 0.\nx = 0 (reject, no volume) or x = 38/3 = 38/3.\nAnswer: x = 38/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (38x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 38/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (38x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(38 - 3x) = 0",
+      "x = 0 (reject) or x = 38/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 40) has volume V(x) = (20x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 40/3",
+    "demonstration": "V'(x) = (2·20x)/(4π) - (3x^2)/(4π) = (40x - 3x^2)/(4π).\nSet V'(x) = 0: 40x - 3x^2 = 0 -> x(40 - 3x) = 0.\nx = 0 (reject, no volume) or x = 40/3 = 40/3.\nAnswer: x = 40/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (40x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 40/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (40x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(40 - 3x) = 0",
+      "x = 0 (reject) or x = 40/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 42) has volume V(x) = (21x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 14",
+    "demonstration": "V'(x) = (2·21x)/(4π) - (3x^2)/(4π) = (42x - 3x^2)/(4π).\nSet V'(x) = 0: 42x - 3x^2 = 0 -> x(42 - 3x) = 0.\nx = 0 (reject, no volume) or x = 42/3 = 14.\nAnswer: x = 14.",
+    "memo_marks": [
+      "1 mark for V'(x) = (42x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 14 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (42x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(42 - 3x) = 0",
+      "x = 0 (reject) or x = 14"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 44) has volume V(x) = (22x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 44/3",
+    "demonstration": "V'(x) = (2·22x)/(4π) - (3x^2)/(4π) = (44x - 3x^2)/(4π).\nSet V'(x) = 0: 44x - 3x^2 = 0 -> x(44 - 3x) = 0.\nx = 0 (reject, no volume) or x = 44/3 = 44/3.\nAnswer: x = 44/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (44x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 44/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (44x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(44 - 3x) = 0",
+      "x = 0 (reject) or x = 44/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 46) has volume V(x) = (23x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 46/3",
+    "demonstration": "V'(x) = (2·23x)/(4π) - (3x^2)/(4π) = (46x - 3x^2)/(4π).\nSet V'(x) = 0: 46x - 3x^2 = 0 -> x(46 - 3x) = 0.\nx = 0 (reject, no volume) or x = 46/3 = 46/3.\nAnswer: x = 46/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (46x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 46/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (46x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(46 - 3x) = 0",
+      "x = 0 (reject) or x = 46/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 48) has volume V(x) = (24x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 16",
+    "demonstration": "V'(x) = (2·24x)/(4π) - (3x^2)/(4π) = (48x - 3x^2)/(4π).\nSet V'(x) = 0: 48x - 3x^2 = 0 -> x(48 - 3x) = 0.\nx = 0 (reject, no volume) or x = 48/3 = 16.\nAnswer: x = 16.",
+    "memo_marks": [
+      "1 mark for V'(x) = (48x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 16 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (48x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(48 - 3x) = 0",
+      "x = 0 (reject) or x = 16"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 50) has volume V(x) = (25x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 50/3",
+    "demonstration": "V'(x) = (2·25x)/(4π) - (3x^2)/(4π) = (50x - 3x^2)/(4π).\nSet V'(x) = 0: 50x - 3x^2 = 0 -> x(50 - 3x) = 0.\nx = 0 (reject, no volume) or x = 50/3 = 50/3.\nAnswer: x = 50/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (50x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 50/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (50x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(50 - 3x) = 0",
+      "x = 0 (reject) or x = 50/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 52) has volume V(x) = (26x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 52/3",
+    "demonstration": "V'(x) = (2·26x)/(4π) - (3x^2)/(4π) = (52x - 3x^2)/(4π).\nSet V'(x) = 0: 52x - 3x^2 = 0 -> x(52 - 3x) = 0.\nx = 0 (reject, no volume) or x = 52/3 = 52/3.\nAnswer: x = 52/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (52x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 52/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (52x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(52 - 3x) = 0",
+      "x = 0 (reject) or x = 52/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 54) has volume V(x) = (27x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 18",
+    "demonstration": "V'(x) = (2·27x)/(4π) - (3x^2)/(4π) = (54x - 3x^2)/(4π).\nSet V'(x) = 0: 54x - 3x^2 = 0 -> x(54 - 3x) = 0.\nx = 0 (reject, no volume) or x = 54/3 = 18.\nAnswer: x = 18.",
+    "memo_marks": [
+      "1 mark for V'(x) = (54x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 18 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (54x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(54 - 3x) = 0",
+      "x = 0 (reject) or x = 18"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  },
+  {
+    "variant_question": "A cylinder (from a rectangle with perimeter 56) has volume V(x) = (28x^2)/(4π) - (x^3)/(4π). Calculate the value of x that maximises the volume.",
+    "expected": "x = 56/3",
+    "demonstration": "V'(x) = (2·28x)/(4π) - (3x^2)/(4π) = (56x - 3x^2)/(4π).\nSet V'(x) = 0: 56x - 3x^2 = 0 -> x(56 - 3x) = 0.\nx = 0 (reject, no volume) or x = 56/3 = 56/3.\nAnswer: x = 56/3.",
+    "memo_marks": [
+      "1 mark for V'(x) = (56x - 3x^2)/(4π)",
+      "1 mark for setting V'(x) = 0",
+      "1 mark for x = 56/3 (reject x=0)"
+    ],
+    "fast_path": "Differentiate, set zero, factor. x=0 is minimum, other root is maximum.",
+    "fatal_error": "DBE says: Candidates forget to reject x=0. A volume of 0 is the minimum, not the maximum.",
+    "answer_book_layout": [
+      "V'(x) = (56x - 3x^2)/(4π)",
+      "V'(x) = 0 -> x(56 - 3x) = 0",
+      "x = 0 (reject) or x = 56/3"
+    ],
+    "hack": "Differentiate, set zero, factor. x=0 is min, other root is max.",
+    "trap": "Don't forget to reject x=0.",
+    "presentation": "Show derivative, factor, reject, state x.",
+    "diagram": "required",
+    "diagram_hint": "volume_vs_x_curve"
+  }
+]

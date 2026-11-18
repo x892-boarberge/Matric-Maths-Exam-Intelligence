@@ -1,0 +1,36 @@
+{
+  "objective_id": "TO_TRIG_REDUCTION_COFUNCTION",
+  "skill_id": "trig.reduction",
+  "trigger_misconception": "M_REDUCTION_COFUNCTION",
+  "dbe_source": {
+    "years": [
+      "2017",
+      "2019",
+      "2022"
+    ],
+    "recommendation": "When the angle is 90 or 270, the function changes to its co-function. sin(90 - x) = cos x, cos(90 + x) = -sin x. When the angle is 180 or 360, the function stay",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When the angle is 90 or 270, the function changes to its co-function. sin(90 - x) = cos x, cos(90 + x) = -sin x. When the angle is 180 or 360, the function stays the same.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "Simplify sin(90 - x)",
+      "work": [
+        "Angle is 90, so the function changes to cos.",
+        "90 - x is in Q1, where sine is positive.",
+        "So sin(90 - x) = cos x."
+      ]
+    },
+    "probe": {
+      "problem": "Simplify cos(90 + x).",
+      "expected": "-sin x",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_REDUCTION_COFUNCTION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You changed the sign but kept the same function. When the angle is 90 or 270, the ratio swaps to its co-function."
+}

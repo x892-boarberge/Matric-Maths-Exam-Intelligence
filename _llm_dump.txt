@@ -1,0 +1,802 @@
+
+==============================================================================
+# FILE: src/tutor/llm_config.py  (1,206 bytes)
+==============================================================================
+﻿"""
+LLM configuration for the meta renderer.
+
+Reads environment variables. If MATRICMATH_LLM_URL is not set, the LLM
+is disabled and the meta library pool is used as the only source.
+
+Supported:
+    MATRICMATH_LLM_URL     - OpenAI-compatible endpoint
+                             (e.g. https://api.openai.com/v1/chat/completions
+                              or http://localhost:11434/v1/chat/completions)
+    MATRICMATH_LLM_KEY     - API key (optional for local models)
+    MATRICMATH_LLM_MODEL   - model name (default: gpt-4o-mini)
+    MATRICMATH_LLM_TIMEOUT - seconds (default: 8)
+    MATRICMATH_LLM_OFF     - set to "1" to force disable
+"""
+import os
+
+
+def is_enabled() -> bool:
+    if os.environ.get("MATRICMATH_LLM_OFF") == "1":
+        return False
+    return bool(os.environ.get("MATRICMATH_LLM_URL"))
+
+
+def get_url() -> str:
+    return os.environ.get("MATRICMATH_LLM_URL", "")
+
+
+def get_key() -> str:
+    return os.environ.get("MATRICMATH_LLM_KEY", "")
+
+
+def get_model() -> str:
+    return os.environ.get("MATRICMATH_LLM_MODEL", "gpt-4o-mini")
+
+
+def get_timeout() -> float:
+    try:
+        return float(os.environ.get("MATRICMATH_LLM_TIMEOUT", "8"))
+    except ValueError:
+        return 8.0
+
+
+==============================================================================
+# FILE: src/tutor/llm_caller.py  (3,347 bytes)
+==============================================================================
+﻿"""Send a message to the LLM with tool access. Execute any tool call it
+makes. Return the final assistant message."""
+import json
+from urllib import request as _urllib_request
+from urllib.error import URLError
+
+from . import llm_config
+from .tools import tool_schema, call_tool
+
+
+def _post(url, key, payload, timeout):
+    body = json.dumps(payload).encode("utf-8")
+    headers = {"Content-Type": "application/json"}
+    if key:
+        headers["Authorization"] = "Bearer " + key
+    req = _urllib_request.Request(url, data=body, headers=headers, method="POST")
+    with _urllib_request.urlopen(req, timeout=timeout) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def converse_turn(history, system_prompt, learner_id="anonymous",
+                  max_tool_rounds=1):
+    if not llm_config.is_enabled():
+        return {"assistant_text": "", "tool_calls_made": [],
+                "raw_messages": history, "error": "llm_disabled"}
+
+    url = llm_config.get_url()
+    key = llm_config.get_key()
+    model = llm_config.get_model()
+    timeout = llm_config.get_timeout()
+
+    messages = [{"role": "system", "content": system_prompt}] + list(history)
+    tool_calls_made = []
+
+    for round_i in range(max_tool_rounds + 1):
+        last_round = (round_i == max_tool_rounds)
+        tool_choice = "none" if last_round else "auto"
+
+        payload = {
+            "model": model,
+            "messages": messages,
+            "tools": tool_schema(),
+            "tool_choice": tool_choice,
+            "temperature": 0.6,
+            "max_tokens": 200,
+        }
+        try:
+            data = _post(url, key, payload, timeout)
+        except (URLError, KeyError, ValueError, TimeoutError, OSError) as e:
+            return {"assistant_text": "", "tool_calls_made": tool_calls_made,
+                    "raw_messages": messages, "error": str(e)}
+
+        try:
+            msg = data["choices"][0]["message"]
+        except (KeyError, IndexError):
+            return {"assistant_text": "", "tool_calls_made": tool_calls_made,
+                    "raw_messages": messages, "error": "malformed_response"}
+
+        messages.append(msg)
+        calls = msg.get("tool_calls") or []
+        text = (msg.get("content") or "").strip()
+
+        if text:
+            return {"assistant_text": text,
+                    "tool_calls_made": tool_calls_made,
+                    "raw_messages": messages,
+                    "error": None}
+
+        if not calls:
+            return {"assistant_text": "",
+                    "tool_calls_made": tool_calls_made,
+                    "raw_messages": messages,
+                    "error": "no_text_no_tool"}
+
+        for c in calls:
+            fn = c.get("function", {})
+            name = fn.get("name")
+            try:
+                args = json.loads(fn.get("arguments") or "{}")
+            except json.JSONDecodeError:
+                args = {}
+            result = call_tool(name, args)
+            tool_calls_made.append({"name": name, "args": args, "result": result})
+            messages.append({"role": "tool",
+                             "tool_call_id": c.get("id", "call_0"),
+                             "content": json.dumps(result)})
+
+    return {"assistant_text": "",
+            "tool_calls_made": tool_calls_made,
+            "raw_messages": messages, "error": "max_rounds"}
+
+
+==============================================================================
+# FILE: src/tutor/llm_gate.py  (944 bytes)
+==============================================================================
+﻿"""
+LLM gate.
+
+Decides whether the LLM phraser should be called for a given turn.
+Categorical states and fixed documents use the pool. The LLM is only
+used to rephrase short hint texts in fluent, varied language.
+"""
+
+POOL_ONLY_KINDS = {
+    "celebration",
+    "hostile",
+    "meta_comment",
+    "other_language",
+    "silent",
+    "answer_demand",
+    "off_topic",
+    "help_seeking",
+}
+
+# Actions whose text must be shown verbatim, never paraphrased.
+# These carry fixed mathematical content or fixed messages.
+FIXED_ACTIONS = {
+    "OFFER_WORKED_ANALOGUE",
+    "OFFER_WORKED_STEP",
+    "FLAG_FOR_HUMAN",
+    "HANDLE_DISENGAGEMENT",
+    "ACKNOWLEDGE_CORRECT",   # was leaking into expansion lectures
+}
+
+
+def should_call_llm(disengagement_kind, is_real_attempt, action_type=None):
+    if disengagement_kind in POOL_ONLY_KINDS:
+        return False
+    if action_type in FIXED_ACTIONS:
+        return False
+    return bool(is_real_attempt)
+
+
+==============================================================================
+# FILE: src/tutor/llm_phraser.py  (3,711 bytes)
+==============================================================================
+﻿"""
+LLM phraser (Path C hybrid).
+
+The engine decides. The LLM phrases. It never calls tools. It speaks TO
+the learner, never about them.
+
+Gated by llm_gate.should_call_llm(): only called on real maths attempts.
+"""
+import json
+from typing import Optional, Dict, Any
+from urllib import request as _urllib_request
+from urllib.error import URLError
+
+from . import llm_config
+from .salt_check import is_seasoned, is_seasoned_hint
+
+
+PHRASER_SYSTEM = """You are a Matric Maths tutor. Reply directly to a
+Grade 12 learner. Two sentences maximum. Speak TO the learner.
+
+NEVER: describe the learner, echo input, give the answer, use
+"you must" / "you should" / "just" / "obvious" / "as an AI",
+sound like a therapist, output labels like "learner:".
+
+EXAMPLE GOOD:
+One of your roots has the wrong sign. Look at each factor — what
+value of x makes it zero?
+
+EXAMPLE BAD:
+The learner is in the "answer demand" state. Let's end on a note of
+curiosity.
+
+Write plain text only. No labels. No JSON. No markdown.
+"""
+
+
+FORBIDDEN_PHRASES = [
+    "the learner", "the student", "they seem", "i can see that",
+    "it seems", "challenging situation", "fueling", "hostility",
+    "learner:", "you:", "tutor:",
+]
+
+
+def _post(url, key, payload, timeout):
+    body = json.dumps(payload).encode("utf-8")
+    headers = {"Content-Type": "application/json"}
+    if key:
+        headers["Authorization"] = "Bearer " + key
+    req = _urllib_request.Request(url, data=body, headers=headers, method="POST")
+    with _urllib_request.urlopen(req, timeout=timeout) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def _build_user_message(ctx: Dict[str, Any]) -> str:
+    problem = ctx.get("problem")
+    diag = ctx.get("diagnosis")
+    hint = ctx.get("specific_hint") or ""
+    action = ctx.get("action_type")
+    learner = ctx.get("learner_response", "")
+
+    lines = []
+    lines.append("Learner typed: " + repr(str(learner)[:160]))
+    lines.append("Problem: " + str(getattr(problem, "prompt", ""))[:160])
+    lines.append("Error type: " + str(diag.error_type.value))
+    if diag.misconception_id:
+        lines.append("Misconception: " + str(diag.misconception_id))
+    lines.append("Action: " + str(action.value if action else "NONE"))
+    if hint:
+        lines.append("Use this hint: " + hint)
+    lines.append("")
+    lines.append("Write the reply now. Two sentences. Speak to the learner.")
+    return "\n".join(lines)
+
+
+def phrase_response(ctx: Dict[str, Any]) -> Optional[str]:
+    if not llm_config.is_enabled():
+        return None
+
+    url = llm_config.get_url()
+    key = llm_config.get_key()
+    model = llm_config.get_model()
+    timeout = llm_config.get_timeout()
+
+    user_msg = _build_user_message(ctx)
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": PHRASER_SYSTEM},
+            {"role": "user", "content": user_msg},
+        ],
+        "temperature": 0.5,
+        "max_tokens": 80,
+    }
+
+    try:
+        data = _post(url, key, payload, timeout)
+    except (URLError, KeyError, ValueError, TimeoutError, OSError):
+        return None
+
+    try:
+        text = data["choices"][0]["message"]["content"].strip()
+    except (KeyError, IndexError, AttributeError):
+        return None
+
+    if not text:
+        return None
+
+    if text.startswith("```"):
+        text = text.strip("`").strip()
+    if text.startswith('"') and text.endswith('"'):
+        text = text[1:-1].strip()
+
+    low = text.lower()
+    for phrase in FORBIDDEN_PHRASES:
+        if phrase in low:
+            return None
+
+    ok, _reason = is_seasoned(text)
+    if not ok:
+        ok2, _reason2 = is_seasoned_hint(text)
+        if not ok2:
+            return None
+
+    return text
+
+
+==============================================================================
+# FILE: src/tutor/llm_diagnoser.py  (6,219 bytes)
+==============================================================================
+"""LLM as cognitive instrument for MethodMarker.
+
+When the tutor's layers 1 and 2 cannot explain a learner's error, the LLM
+reasons about it. This is NOT a validator and NOT a gate. It is one
+cognitive instrument inside the Tutor Learning Engine.
+
+Design principles (from docs/spirit.md and docs/architecture.md):
+  - The LLM is optional. If it is off or fails, the discovery is still
+    recorded with all other signals. No exception propagates to the drill.
+  - Its output is a hypothesis with a certainty score, not a verdict.
+  - Its explanation is shown to the learner now and stored in the
+    discovery for later analysis.
+  - It reuses the project HTTP layer (llm_phraser._post) and config
+    (llm_config) -- same infrastructure as the phraser, different prompt.
+  - Its learner-facing text MUST pass salt_check -- the tutor's voice
+    guardrail. Same discipline as phrase_response.
+"""
+from __future__ import annotations
+
+import json
+import re
+from typing import Optional
+
+from . import llm_config
+from .llm_phraser import _post
+from .salt_check import is_seasoned, is_seasoned_hint
+from urllib.error import URLError
+
+
+DIAGNOSER_SYSTEM = """You are a Matric Maths tutor observing a Grade 12
+learner. The tutor's rule library cannot explain this specific error, so
+you are reasoning about it.
+
+Speak TO the learner. Warm. Two or three sentences in the explanation
+field. No laws ("you must", "you should"). No shaming. No blame. No
+therapist tone. No labels. Teach; do not lecture.
+
+You MUST respond with valid JSON only -- no prose, no markdown fences,
+no commentary. Exactly this shape:
+{"hypothesis": "...", "explanation": "...", "certainty": 0.0,
+ "suggested_foundation": null}
+"""
+
+
+def is_enabled() -> bool:
+    """Delegates to llm_config -- enabled when URL is set and OFF is not."""
+    return llm_config.is_enabled()
+
+
+def _extract_json(text: str) -> Optional[dict]:
+    """Parse JSON from LLM response. Handles markdown fences and prose noise."""
+    if not text:
+        return None
+    t = text.strip()
+    if t.startswith("```"):
+        t = re.sub(r"^```[a-zA-Z]*\n", "", t)
+        t = re.sub(r"\n```\s*$", "", t)
+    i = t.find("{")
+    j = t.rfind("}")
+    if i < 0 or j < 0 or j <= i:
+        return None
+    try:
+        return json.loads(t[i:j + 1])
+    except Exception:
+        return None
+
+
+PROMPT_TEMPLATE = """Context:
+- Skill: {skill_id}
+- Expected answer: {expected_answer}
+- Learner's working (verbatim, one line per entry):
+{lines}
+
+Return the JSON object now."""
+
+
+def _safe_explanation(text: str) -> Optional[str]:
+    """Pass the explanation through salt_check. Returns None if it fails.
+
+    Mirrors the discipline of phrase_response: try warmth first
+    (is_seasoned), fall back to hint-level (is_seasoned_hint). If neither
+    passes, drop the explanation entirely -- never speak unseasoned text
+    to the learner.
+    """
+    if not text or not text.strip():
+        return None
+    ok, _reason = is_seasoned(text)
+    if ok:
+        return text.strip()
+    ok2, _reason2 = is_seasoned_hint(text)
+    if ok2:
+        return text.strip()
+    return None
+
+
+def diagnose_unknown(
+    skill_id: str,
+    learner_lines: list[str],
+    expected_answer: str,
+) -> Optional[dict]:
+    """Ask the LLM to reason about an unexplained error.
+
+    Returns dict with keys: hypothesis, explanation, certainty,
+    suggested_foundation. Returns None if disabled / failed / unparseable.
+    If the explanation fails salt_check, the field is set to None but
+    the discovery data is still returned.
+    """
+    if not llm_config.is_enabled():
+        return None
+
+    if not learner_lines or not expected_answer:
+        return None
+
+    url = llm_config.get_url()
+    key = llm_config.get_key()
+    model = llm_config.get_model()
+    timeout = llm_config.get_timeout()
+
+    user_msg = PROMPT_TEMPLATE.format(
+        skill_id=skill_id,
+        expected_answer=expected_answer,
+        lines="\n".join("  " + ln for ln in learner_lines),
+    )
+
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": DIAGNOSER_SYSTEM},
+            {"role": "user", "content": user_msg},
+        ],
+        "temperature": 0.2,
+        "max_tokens": 400,
+    }
+
+    try:
+        data = _post(url, key, payload, timeout)
+    except (URLError, KeyError, ValueError, TimeoutError, OSError):
+        return None
+
+    try:
+        raw = data["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, AttributeError, TypeError):
+        return None
+
+    parsed = _extract_json(raw)
+    if not parsed:
+        return None
+
+    certainty = parsed.get("certainty", 0.0)
+    try:
+        certainty = max(0.0, min(1.0, float(certainty)))
+    except (TypeError, ValueError):
+        certainty = 0.0
+
+    raw_explanation = str(parsed.get("explanation", "")).strip()
+    safe_explanation = _safe_explanation(raw_explanation)
+
+    return {
+        "hypothesis": str(parsed.get("hypothesis", "")).strip(),
+        "explanation": safe_explanation,
+        "explanation_flagged": raw_explanation if not safe_explanation else None,
+        "certainty": certainty,
+        "suggested_foundation": parsed.get("suggested_foundation"),
+    }
+
+
+# ============================================================
+# Learner-facing rendering
+# ============================================================
+
+def render_for_learner(reasoning: dict) -> str:
+    """Format the LLM reasoning for the learner, warmly.
+
+    Explanations are pre-filtered by salt_check in diagnose_unknown.
+    If explanation is None (rejected), returns an empty string.
+    """
+    if not reasoning:
+        return ""
+    explanation = reasoning.get("explanation")
+    if not explanation:
+        return ""
+    cert = reasoning.get("certainty", 0.0)
+    if cert < 0.4:
+        prefix = "  I'm not completely sure, but here's a guess:\n"
+    elif cert < 0.7:
+        prefix = "  I think I see what happened here:\n"
+    else:
+        prefix = "  I see what happened here:\n"
+    return prefix + "  " + explanation
+
+
+==============================================================================
+# FILE: src/tutor/llm_conversation_prompt.py  (2,673 bytes)
+==============================================================================
+﻿"""
+System prompt for the LLM-driven conversation (Path C).
+"""
+CONVERSATION_PROMPT = """You are a Matric Maths tutor in South Africa.
+
+Your motto:
+    "Do not be about giving out laws. Giving out laws only creates
+     lawbreakers. Be graceful. Be distinct."
+
+You are speaking to a Grade 12 learner who is working through an NSC
+maths problem.
+
+TOOLS:
+
+- tool_diagnose(skill_id, response, expected)
+- tool_hint_level(attempts, error_type, explicit_request)
+- tool_intervention(misconception_id)
+- tool_misconception_context(misconception_id)
+- tool_presentation_rules(misconception_id)
+- tool_record_attempt(learner_id, skill_id, response, diagnosis)
+- tool_learner_state(learner_id)
+
+HOW TO USE TOOLS - READ CAREFULLY:
+
+1. When the learner submits a maths answer, call tool_diagnose ONCE.
+2. Optionally call tool_intervention or tool_misconception_context ONCE
+   if you want the pedagogical pattern or the second-person hints.
+3. THEN WRITE YOUR RESPONSE. Do not keep calling tools.
+   Two tool calls is the maximum per turn.
+4. After you have written a response, you are done for this turn.
+   Do not call more tools after writing text.
+
+If you call three tools in a row without writing, you will be cut off
+and the learner will see nothing. That is a failure.
+
+RULES:
+
+1. Never give the mathematical answer, method, or full working.
+   If the learner asks for the answer, refuse gracefully and offer one hint.
+
+2. Never sound like a therapist. No "take a deep breath", no "how does
+   that make you feel", no "I hear that you are feeling".
+
+3. Speak to the learner about the maths, not about the learner.
+   Say "One of your roots has the wrong sign", not "You flipped the sign".
+
+4. When the learner is hostile, stay present and redirect to the work.
+
+5. When the learner says "I don't understand", shrink the question.
+
+6. When the learner solves it, be brief. "You got it. Ready for the next one?"
+
+7. Two or three sentences. One question at the end. No lectures.
+
+8. If the learner repeats the same wrong answer, do not repeat the same
+   hint. Try a smaller step, or a different representation (graph, table,
+   number line).
+
+9. If tool_diagnose returns unknown or confidence below 0.5, say so:
+   "I am not sure what went wrong. Show me your first step."
+
+10. Output plain text only. No JSON. No markdown code fences.
+"""
+
+
+def build_first_user_message(problem_prompt, problem_skill, expected):
+    return (
+        "Problem: " + problem_prompt + "\n"
+        + "Skill: " + problem_skill + "\n"
+        + "Expected answer (do not reveal): " + expected + "\n\n"
+        + "The learner has not responded yet. Greet them and invite their first attempt."
+    )
+
+
+==============================================================================
+# FILE: src/tutor/meta_prompt.py  (2,864 bytes)
+==============================================================================
+﻿"""
+The prompt sent to the LLM for meta-communication.
+
+Small models follow examples better than instructions. The GOOD and BAD
+examples below are the primary teaching signal, not the rules.
+"""
+
+SYSTEM_PROMPT = """You are a Matric Maths tutor in South Africa.
+
+The motto:
+    "Do not be about giving out laws. Giving out laws only creates
+     lawbreakers. Be graceful. Be distinct."
+
+The engine has already decided what happens in the session. Your only
+job is to phrase the response to the learner's human moment.
+
+GOOD responses (study these, this is what you do):
+
+Learner: fuck off
+You: I am still here. Let us come back to the question. What is your first step?
+
+Learner: are you real
+You: I am a tutor program, and I am here for this problem. What do you see?
+
+Learner: this is too hard
+You: That is fair. Let us make it smaller. Read me the first line of the question.
+
+Learner: just give me the answer
+You: Not yet. You are closer than you think. What is your first move?
+
+Learner: am i a genius
+You: You got it. Ready for the next one?
+
+Learner: where did you go
+You: I am here. Back to the problem. What is your first step?
+
+BAD responses (never do these):
+
+Learner: fuck off
+BAD: I understand you are feeling frustrated. Let us take a deep breath.
+
+Learner: this is too hard
+BAD: How does this make you feel? Let us process this together.
+
+Learner: are you real
+BAD: I am an AI language model trained by OpenAI. I do not have feelings.
+
+Learner: ek het n vraag
+BAD: It sounds like you are trying to say something in another language.
+
+HARD RULES:
+
+1. Never give the mathematical answer, method, or first step written out.
+2. Never say "you must", "you should", "it is easy", "just do", "obvious".
+3. Never lecture about respect or behaviour, even if the learner is hostile.
+4. Never sound like a therapist. No "take a deep breath", no "how does
+   that make you feel", no "I hear that you are feeling".
+5. Never pretend to be human. If asked, say briefly that you are a tutor
+   program, then return to the work.
+6. Two or three sentences maximum.
+7. End with a small question or invitation to act.
+
+Tone: warm, patient, direct. Like a tutor with ten years of classroom
+experience. Not cheerful. Not solemn. Not therapeutic. Matter-of-fact.
+Kind. Plain. Focused on the work.
+"""
+
+
+def build_user_prompt(state_kind, learner_text, learner_id, attempts=None):
+    parts = [
+        "The learner's detected state is: " + str(state_kind) + ".",
+        "Their exact words were: " + repr(learner_text) + ".",
+    ]
+    if attempts is not None and attempts > 0:
+        parts.append(
+            "This is attempt " + str(attempts + 1) +
+            " on this state in this session."
+        )
+    parts.append(
+        "Two or three sentences. No maths answer. No therapy language. "
+        "End with a small question."
+    )
+    return " ".join(parts)
+
+
+==============================================================================
+# FILE: src/tutor/meta_renderer.py  (3,668 bytes)
+==============================================================================
+﻿"""
+Meta renderer.
+
+For human-moment responses (hostile input, frustration, help-seeking,
+answer demand, silence), try an LLM first. If unavailable, or the
+response fails the salt check, fall back to the meta library pool.
+
+The engine still decides everything. This module only phrases.
+
+Public:
+    render_meta_response(kind, learner_text, learner_id, attempts=None)
+"""
+import json
+import hashlib
+from typing import Optional
+from urllib import request as _urllib_request
+from urllib.error import URLError
+
+from . import llm_config
+from .meta_prompt import SYSTEM_PROMPT, build_user_prompt
+from .salt_check import is_seasoned
+from . import meta_library as _pool
+
+
+# Simple in-process cache: (kind, hash(learner_text)) -> rendered string
+_CACHE = {}
+_MAX_CACHE = 500
+
+
+def _cache_key(kind, learner_text):
+    h = hashlib.sha256(str(learner_text).encode("utf-8")).hexdigest()[:16]
+    return str(kind) + "|" + h
+
+
+def _cache_get(key):
+    return _CACHE.get(key)
+
+
+def _cache_put(key, value):
+    if len(_CACHE) > _MAX_CACHE:
+        _CACHE.clear()
+    _CACHE[key] = value
+
+
+def _ask_llm(kind, learner_text, learner_id, attempts=None) -> Optional[str]:
+    """Call the LLM. Return the text, or None on any error."""
+    if not llm_config.is_enabled():
+        return None
+
+    url = llm_config.get_url()
+    key = llm_config.get_key()
+    model = llm_config.get_model()
+    timeout = llm_config.get_timeout()
+
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": build_user_prompt(
+                kind, learner_text, learner_id, attempts)},
+        ],
+        "temperature": 0.7,
+        "max_tokens": 200,
+    }
+
+    body = json.dumps(payload).encode("utf-8")
+    headers = {"Content-Type": "application/json"}
+    if key:
+        headers["Authorization"] = "Bearer " + key
+
+    req = _urllib_request.Request(url, data=body, headers=headers, method="POST")
+
+    try:
+        with _urllib_request.urlopen(req, timeout=timeout) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        text = data["choices"][0]["message"]["content"].strip()
+        return text
+    except (URLError, KeyError, ValueError, TimeoutError, OSError):
+        return None
+
+
+def _sanitise(text: str) -> str:
+    """Trim whitespace and strip surrounding quotes if present."""
+    if not text:
+        return ""
+    t = text.strip()
+    if (t.startswith('"') and t.endswith('"')) or (t.startswith("'") and t.endswith("'")):
+        t = t[1:-1].strip()
+    return t
+
+
+def render_meta_response(kind, learner_text, learner_id=None,
+                         attempts=None, context=None) -> str:
+    """
+    Return a phrase for the learner's human moment.
+
+    Order of preference:
+      1. Cached LLM response (same learner text -> same phrase)
+      2. Fresh LLM response, if it passes the salt check
+      3. Meta library pool (always available)
+    """
+    key = _cache_key(kind, learner_text)
+
+    cached = _cache_get(key)
+    if cached:
+        return cached
+
+    # Try the LLM
+    raw = _ask_llm(kind, learner_text, learner_id, attempts)
+    if raw:
+        candidate = _sanitise(raw)
+        if candidate and len(candidate) < 500:
+            ok, _reason = is_seasoned(candidate)
+            if ok:
+                _cache_put(key, candidate)
+                return candidate
+
+    # Fallback to the pool
+    pool_line = _pool.respond_to_disengagement(
+        kind,
+        learner_id=learner_id,
+        attempts=attempts,
+    )
+    if pool_line:
+        return pool_line
+
+    # Last resort
+    return "Let us come back to the question. What is your first step?"

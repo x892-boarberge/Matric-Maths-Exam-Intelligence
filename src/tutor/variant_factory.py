@@ -1,0 +1,168 @@
+"""
+Variant factory.
+
+Every generator in the project produces a raw variant with only
+`problem`, `steps`, and `note`. The factory upgrades that raw dict to
+the full variant standard, so the drill can treat each variant as a
+first-class question.
+"""
+from __future__ import annotations
+import json
+from pathlib import Path
+from typing import Optional
+
+ROOT = Path(__file__).resolve().parents[2]
+SPEC_PATH = ROOT / "data" / "processed" / "tutor" / "variant_specs.json"
+
+_SPECS = None
+
+
+def _load_specs():
+    global _SPECS
+    if _SPECS is None:
+        if SPEC_PATH.exists():
+            _SPECS = json.loads(SPEC_PATH.read_text(encoding="utf-8"))
+        else:
+            _SPECS = {}
+    return _SPECS
+
+
+def _extract_expected(steps: list) -> str:
+    """Pull the expected answer from the steps.
+
+    Prefers, in order:
+      1. A line starting with "answer" — take everything after the colon.
+      2. A line containing an equals sign that looks like an answer.
+      3. Falls back to an empty string when nothing looks like an answer.
+
+    Never returns teaching notes like "leave in surd form".
+    """
+    if not steps:
+        return ""
+    NOTE_OPENERS = (
+        "leave ", "always ", "note", "remember", "check ", "if ",
+        "the memo", "in the exam", "keep ", "do not", "don't ",
+        "round ", "write ", "make sure",
+    )
+    # 1. "Answer: ..." anywhere in the steps
+    for line in steps:
+        text = str(line).strip()
+        if text.lower().startswith("answer"):
+            _, _, rest = text.partition(":")
+            return rest.strip() or text
+    # 2. Last line that contains an equals sign and is NOT a note
+    for line in reversed(steps):
+        text = str(line).strip()
+        low = text.lower()
+        if any(low.startswith(op) for op in NOTE_OPENERS):
+            continue
+        if "=" in text:
+            return text
+    # 3. Give up honestly — empty
+    return ""
+
+
+def _derive_scheme(steps: list, shape_id: str) -> list:
+    scheme = []
+    REASONING_OPENERS = ("when ", "the ", "check ", "note:", "remember",
+                         "if ", "why ", "because", "so ", "set each")
+    for i, line in enumerate(steps):
+        text = str(line).strip()
+        if not text:
+            continue
+        low = text.lower()
+        is_reasoning = any(low.startswith(op) for op in REASONING_OPENERS)
+        scheme.append({
+            "index": i + 1,
+            "desc": text[:120],
+            "marks": 1,
+            "forms": [text],
+            "match_mode": "reasoning" if is_reasoning else "exact",
+            "is_final": (i == len(steps) - 1),
+            "method_group": "A",
+        })
+    return scheme
+
+
+def upgrade(raw: dict, template_id: str) -> Optional[dict]:
+    if not isinstance(raw, dict):
+        return None
+    spec = _load_specs().get(template_id)
+    if spec is None:
+        return None
+    steps = list(raw.get("steps") or [])
+    if not steps:
+        return None
+    return {
+        "shape_id":          spec["shape_id"],
+        "skill_id":          spec["skill_id"],
+        "problem":           str(raw.get("problem", "")),
+        "expected_answer":   _extract_expected(steps),
+        "steps":             steps,
+        "step_scheme":       _derive_scheme(steps, spec["shape_id"]),
+        "misconceptions":    list(spec["misconceptions"]),
+        "note":              raw.get("note", ""),
+        "diagram_spec":      raw.get("diagram_spec"),
+    }
+
+
+def generate_compliant(template_id: str, count: int = 30, seed: int = None):
+    """Return compliant variants for a template.
+
+    Handles three sources:
+      1. TEMPLATES (parameterised generators)
+      2. WRITTEN_ANALOGUES (hand-authored pools)
+      3. EXTRA_WRITTEN_ANALOGUES (extra hand-authored pools)
+    """
+    from . import analogue_generators as ag
+
+    raws = []
+
+    # 1. Parameterised generator
+    entry = ag.TEMPLATES.get(template_id)
+    if entry is not None:
+        fn, default_count = entry
+        kwargs = {"count": count}
+        if seed is not None:
+            kwargs["seed"] = seed
+        try:
+            raws = fn(**kwargs)
+        except TypeError:
+            raws = fn(count=count)
+
+    # 2. Hand-authored pool
+    if not raws:
+        for pool_name in ("WRITTEN_ANALOGUES", "EXTRA_WRITTEN_ANALOGUES"):
+            pool = getattr(ag, pool_name, None)
+            if pool and template_id in pool:
+                raws = list(pool[template_id])
+                break
+
+    out = []
+    for raw in raws:
+        v = upgrade(raw, template_id)
+        if v is not None:
+            out.append(v)
+    return out
+
+
+def audit_all():
+    from . import analogue_generators as ag
+    n_ok, n_bad, bad = 0, 0, []
+    for tid in sorted(ag.TEMPLATES.keys()):
+        try:
+            pool = generate_compliant(tid, count=1)
+            if pool and all(
+                k in pool[0]
+                for k in ("shape_id", "skill_id", "problem",
+                          "expected_answer", "steps", "step_scheme",
+                          "misconceptions")
+            ):
+                n_ok += 1
+            else:
+                n_bad += 1
+                bad.append((tid, "incomplete"))
+        except Exception as e:
+            n_bad += 1
+            bad.append((tid, str(e)))
+    return n_ok, n_bad, bad

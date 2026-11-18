@@ -1,0 +1,100 @@
+{
+  "question_id": "2025_P1_Q9",
+  "foundation_text": "Cubic graphs have turning points and inflection points. Derivatives give you both.",
+  "acronym_strip": [],
+  "subquestions": {
+    "9.1": {
+      "variant_question": "Calculate the coordinates of E (minimum) of f(x) = x^3 - 9x^2 + 24x - 16.",
+      "demonstration": "1. f'(x) = 3x^2 - 18x + 24 = 0.\n2. 3(x-2)(x-4) = 0 -> x = 2 or 4.\n3. E is the minimum, so x=4.\n4. y = (4)^3 - 9(4)^2 + 24(4) - 16 = 0.",
+      "memo_marks": [
+        "1 mark f'(x)=0",
+        "1 mark x values",
+        "1 mark y value"
+      ],
+      "fast_path": "Find both x-values, then substitute the one that gives the minimum.",
+      "fatal_error": "DBE says: Candidates forget to set f'(x) = 0 explicitly, or they draw a parabola instead of a cubic.",
+      "answer_book_layout": [
+        "For turning points, f'(x) = 0",
+        "f'(x) = 3x² - 18x + 24 = 0",
+        "3(x² - 6x + 8) = 0",
+        "3(x - 2)(x - 4) = 0",
+        "x = 2 or x = 4",
+        "Substitute x = 4 (for E, the minimum):",
+        "y = (4)³ - 9(4)² + 24(4) - 16",
+        "y = 64 - 144 + 96 - 16 = 0",
+        "_________________________",
+        "Final Answer: E(4 ; 0)"
+      ],
+      "hack": "Derivative = 0 for turning points.",
+      "trap": "Forgetting to find y.",
+      "presentation": "Show f'(x)=0 first."
+    },
+    "9.2": {
+      "variant_question": "For which values of x is f concave down?",
+      "demonstration": "1. f''(x) < 0.\n2. f''(x) = 6x - 18 < 0.\n3. x < 3.",
+      "memo_marks": [
+        "1 mark f''(x)<0",
+        "1 mark answer"
+      ],
+      "fast_path": "Concave down means f''(x) < 0.",
+      "fatal_error": "DBE says: Candidates use f'(x) < 0 instead of f''(x) < 0. Concavity is the second derivative.",
+      "answer_book_layout": [
+        "For concave down, f''(x) < 0",
+        "f'(x) = 3x² - 18x + 24",
+        "f''(x) = 6x - 18 < 0",
+        "6x < 18",
+        "_________________________",
+        "Final Answer: x < 3"
+      ],
+      "hack": "Second derivative tells concavity.",
+      "trap": "Using f'(x).",
+      "presentation": "Show f''(x)."
+    },
+    "9.3": {
+      "variant_question": "Given f(x) = x^3 - 4x^2 - 7x + 10 with x-intercepts at -2, 1, and 5, and B(1;0), determine the values of x for which f(x)·f''(x) < 0.",
+      "demonstration": "1. f''(x) = 6x - 8, so f''(x) = 0 at x = 4/3. Sign of f'': negative for x < 4/3, positive for x > 4/3.\n2. Sign of f (leading positive cubic): f < 0 on (-inf, -2) and (1, 5); f > 0 on (-2, 1) and (5, inf).\n3. f·f'' < 0 means f and f'' have opposite signs.\n   - x < -2: f<0, f''<0 → product > 0 (not)\n   - -2 < x < 1: f>0, f''<0 → product < 0 (yes)\n   - 1 < x < 4/3: f<0, f''<0 → product > 0 (not)\n   - 4/3 < x < 5: f<0, f''>0 → product < 0 (yes)\n   - x > 5: f>0, f''>0 → product > 0 (not)\n4. Answer: -2 < x < 1  or  4/3 < x < 5.",
+      "memo_marks": [
+        "1 mark for x-intercepts identified",
+        "1 mark for sign of f''(x) (concavity split at x = 4/3)",
+        "1 mark for first interval -2 < x < 1",
+        "1 mark for second interval 4/3 < x < 5"
+      ],
+      "fast_path": "Sign chart. Mark the x-intercepts and the inflection point on a number line. Where f and f'' have opposite signs, the product is negative.",
+      "fatal_error": "DBE says: Candidates solve f(x) < 0 or f''(x) < 0 separately and give that as the answer, without remembering that the product is negative only where the signs are opposite.",
+      "answer_book_layout": [
+        "f''(x) = 6x - 8 = 0 → x = 4/3",
+        "f sign: − on (−∞;−2) and (1;5); + on (−2;1) and (5;∞)",
+        "f'' sign: − on (−∞;4/3); + on (4/3;∞)",
+        "Opposite signs (product < 0): −2 < x < 1  or  4/3 < x < 5"
+      ],
+      "hack": "Two sign charts, one for f and one for f''. The answer is where they disagree. Don't try to solve f(x)·f''(x) < 0 algebraically — that's a quartic you can't factorise cleanly. Use the signs.",
+      "trap": "f and f'' cross zero at different points. f crosses at -2, 1, 5. f'' crosses at 4/3. Get both zero-sets right, then combine.",
+      "presentation": "Show the sign of f and the sign of f'' on separate number lines, then read off the intervals where the signs are opposite. Two marks for the two correct intervals."
+    },
+    "9.4": {
+      "variant_question": "Given f(x) = x^3 - 4x^2 - 7x + 10, for which values of t will y = -7x + t intersect f at 3 distinct points?",
+      "demonstration": "1. The line has slope -7. Set f'(x) = -7: 3x^2 - 8x - 7 = -7 → 3x^2 - 8x = 0 → x(3x - 8) = 0 → x = 0 or x = 8/3.\n2. Find t at each tangency point:\n   - At x=0: f(0) = 10. Line: 10 = -7(0) + t → t = 10.\n   - At x=8/3: f(8/3) = -490/27. Line: -490/27 = -7(8/3) + t = -56/3 + t = -504/27 + t → t = 14/27.\n3. For 3 distinct intersections, t must lie strictly between the two tangency t-values.\n4. Answer: 14/27 < t < 10.",
+      "memo_marks": [
+        "1 mark for setting f'(x) = -7",
+        "1 mark for x = 0 or x = 8/3",
+        "1 mark for t = 10 (tangency at x=0)",
+        "1 mark for t = 14/27 (tangency at x=8/3)",
+        "1 mark for identifying the correct range between the two tangency values",
+        "1 mark for inequality notation 14/27 < t < 10"
+      ],
+      "fast_path": "Two tangent lines. Find where the given slope is tangent to f (two points, because f' is quadratic). Compute t at each. The answer is between those two t-values.",
+      "fatal_error": "DBE says: Candidates find the two t values and hand them in as the answer. The question asks for t BETWEEN the tangencies — where the line cuts through f in three places. Below or above, only one intersection.",
+      "answer_book_layout": [
+        "Slope of line = -7, so set f'(x) = -7",
+        "3x^2 - 8x - 7 = -7",
+        "3x^2 - 8x = 0 → x = 0 or x = 8/3",
+        "At x=0: f(0) = 10 → t = 10",
+        "At x=8/3: f(8/3) = -490/27 → t = 14/27",
+        "Three distinct points: 14/27 < t < 10"
+      ],
+      "hack": "Two tangencies, one answer. When a straight line meets a cubic, the number of intersection points depends on how high the line sits. At the two heights where it's tangent, the count changes. Between those heights, you get 3 points.",
+      "trap": "Don't stop at the two t-values. Those give tangency (2 intersections, one doubled). The answer is the open interval strictly between them.",
+      "presentation": "Show f'(x) = -7, then each tangency substitution, then the interval. The interval notation is the final mark."
+    }
+  }
+}

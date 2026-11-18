@@ -1,0 +1,676 @@
+﻿"""
+render_diagrams.py — DBE-exact diagram renderer for variant pools.
+
+Supports:
+  - Log curves (4.1, 4.2, 4.6, and original 4.5 blank axes)
+  - Parabolas (5.2, 5.3.2, 5.4, 5.6)
+  - Hyperbolas (5.1)
+  - Parabola + hyperbola overlays (5.3.1, 5.5)
+  - Cubic with tangent lines (9.4)
+  - Rectangle + cylinder (10.1 static)
+  - Contingency tables (11.1.1, 11.1.2)
+
+Marks all other pools diagram: "not_required" honestly.
+"""
+import json, re, shutil, sys
+from pathlib import Path
+from datetime import datetime
+from fractions import Fraction
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+import numpy as np
+
+POOL_DIR = Path("data/processed/tutor/variant_pools")
+OUT_DIR = Path("data/processed/tutor/variant_diagrams")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+DBE_STYLE = {
+    "figsize": (5, 4.2),
+    "wide_figsize": (6.5, 4),
+    "dpi": 150,
+    "line_width": 1.4,
+    "point_size": 5,
+    "font_size": 10,
+    "label_size": 11,
+}
+
+# ============================================================
+# Setup helpers
+# ============================================================
+
+def _frac(s):
+    """Parse fraction string to float. Handles '1/2', '3', '2.5'."""
+    if isinstance(s, (int, float)):
+        return float(s)
+    s = str(s).strip()
+    if "/" in s:
+        n, d = s.split("/")
+        return float(n) / float(d)
+    return float(s)
+
+def _save(fig, out_path):
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=DBE_STYLE["dpi"], bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return True
+
+def _style_axes(ax, xlim, ylim):
+    """Apply DBE axis styling: arrows, no grid, labels at ends."""
+    ax.axhline(0, color="k", linewidth=0.6)
+    ax.axvline(0, color="k", linewidth=0.6)
+    for s in ("top", "right"):
+        ax.spines[s].set_visible(False)
+    ax.spines["bottom"].set_position(("data", 0))
+    ax.spines["left"].set_position(("data", 0))
+    ax.plot(1, 0, ">k", transform=ax.get_yaxis_transform(), clip_on=False, markersize=5)
+    ax.plot(0, 1, "^k", transform=ax.get_xaxis_transform(), clip_on=False, markersize=5)
+    ax.set_xlim(*xlim)
+    ax.set_ylim(*ylim)
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.set_xlabel("x", fontsize=DBE_STYLE["font_size"], labelpad=-12, loc="right")
+    ax.set_ylabel("y", fontsize=DBE_STYLE["font_size"], labelpad=-15, loc="top", rotation=0)
+
+# ============================================================
+# Log curve — extended (reuse from prior work, works for 4.1/4.2/4.6)
+# ============================================================
+
+def _parse_log_variant(text):
+    m = re.search(r"\(([0-9./]+);\s*([a-z])\)\s*lies on f\(x\)\s*=\s*log_\{?([0-9/]+)\}?\(x\)", text)
+    if m: return Fraction(m.group(3)), Fraction(m.group(1)), m.group(2), None
+    m = re.search(r"point\s*\(([0-9./]+);\s*([a-z])\)\s*lies on f\(x\)\s*=\s*log_\{?([0-9/]+)\}?\(x\)", text)
+    if m: return Fraction(m.group(3)), Fraction(m.group(1)), m.group(2), None
+    m = re.search(r"log_\{?([0-9/]+)\}?\(([0-9./]+)\)\s*=\s*([a-z])", text)
+    if m: return Fraction(m.group(1)), Fraction(m.group(2)), m.group(3), None
+    ambig = re.search(r"\bIf\s+1/(\d+)\^([a-z])\s*=", text)
+    if ambig:
+        base = Fraction(1, int(ambig.group(1)))
+        m_arg = re.search(r"=\s*(\d+(?:/\d+)?)", text)
+        if m_arg:
+            return base, Fraction(m_arg.group(1)), ambig.group(2), "AMBIGUOUS: '1/N^var' should be '(1/N)^var'"
+    m = re.search(r"(?:If|Given|Calculate)\s*\(?(\d+(?:/\d+)?)\)?\^([a-z])\s*=\s*(\d+(?:/\d+)?)", text)
+    if m: return Fraction(m.group(1)), Fraction(m.group(3)), m.group(2), None
+    return None
+
+def render_log(base, x_marked, var_name, out_path):
+    base_f = float(base); x_f = float(x_marked)
+    if base_f <= 0 or base_f == 1 or x_f <= 0: return False
+    y_marked = float(np.log(x_f) / np.log(base_f))
+    fig, ax = plt.subplots(figsize=DBE_STYLE["figsize"], dpi=DBE_STYLE["dpi"])
+    x_max = max(x_f * 1.8, 5)
+    xs = np.logspace(np.log10(0.05), np.log10(x_max), 400)
+    ys = np.log(xs) / np.log(base_f)
+    y_lim = max(abs(y_marked) * 2.5, 4)
+    mask = (ys > -y_lim) & (ys < y_lim)
+    ax.plot(xs[mask], ys[mask], "k-", linewidth=DBE_STYLE["line_width"])
+    ax.plot(1, 0, "ko", markersize=DBE_STYLE["point_size"])
+    ax.annotate("A", xy=(1, 0), xytext=(1.08, 0.25), fontsize=DBE_STYLE["label_size"], fontweight="bold")
+    ax.plot(x_f, y_marked, "ko", markersize=DBE_STYLE["point_size"])
+    x_disp = int(x_f) if x_f == int(x_f) else x_f
+    y_off = 0.3 if base_f < 1 else -0.35
+    ax.annotate(f"({x_disp:g}; {var_name})", xy=(x_f, y_marked),
+                xytext=(x_f + 0.15, y_marked + y_off), fontsize=DBE_STYLE["font_size"])
+    mid = len(xs[mask]) // 3
+    if mid < len(xs[mask]):
+        ax.annotate("f", xy=(xs[mask][mid], ys[mask][mid]),
+                    xytext=(xs[mask][mid] - 0.15, ys[mask][mid] + 0.3),
+                    fontsize=DBE_STYLE["label_size"], fontstyle="italic")
+    _style_axes(ax, (-0.5, x_max), (-y_lim, y_lim))
+    return _save(fig, out_path)
+
+# ============================================================
+# Blank axes for drawing (4.5) — static template
+# ============================================================
+
+def render_blank_axes(out_path):
+    fig, ax = plt.subplots(figsize=DBE_STYLE["figsize"], dpi=DBE_STYLE["dpi"])
+    _style_axes(ax, (-5, 5), (-5, 5))
+    ax.grid(False)
+    return _save(fig, out_path)
+
+# ============================================================
+# Parabola (5.2, 5.3.2, 5.4, 5.6) — parameterized
+# ============================================================
+
+def _parse_parabola_vertex(text):
+    """Extract a, h, k from 'a(x-h)^2 + k' or expanded form."""
+    # Vertex form: a(x-h)^2 + k or a(x+h)^2 + k
+    m = re.search(r"(-?\d+(?:/\d+)?)?\(x\s*([+-])\s*(\d+)\)\^2\s*([+-])\s*(\d+)", text)
+    if m:
+        a_s = m.group(1) or "1"
+        a = _frac(a_s) if a_s not in ("-", "+") else (-1.0 if a_s == "-" else 1.0)
+        if a_s.startswith("-"): a = -_frac(a_s[1:]) if a_s != "-" else -1.0
+        h = int(m.group(3)) * (-1 if m.group(2) == "+" else 1)
+        k = int(m.group(5)) * (1 if m.group(4) == "+" else -1)
+        return a, h, k
+    # Expanded form: ax^2 + bx + c
+    m = re.search(r"(-?\d+(?:/\d+)?)?x\^2\s*([+-])\s*(\d+)x\s*([+-])\s*(\d+)", text)
+    if m:
+        a_s = m.group(1) or "1"
+        a = _frac(a_s) if a_s not in ("-", "+") else (-1.0 if a_s == "-" else 1.0)
+        b = int(m.group(3)) * (1 if m.group(2) == "+" else -1)
+        c = int(m.group(5)) * (1 if m.group(4) == "+" else -1)
+        # Convert to vertex form
+        if a == 0: return None
+        h_f = -b / (2 * a)
+        k_f = a * h_f * h_f + b * h_f + c
+        return a, h_f, k_f
+    return None
+
+def render_parabola(a, h, k, out_path, mark_point=None, mark_line=None, tangent=None):
+    """Parabola y=a(x-h)^2+k with optional extra point, horizontal line, or tangent."""
+    fig, ax = plt.subplots(figsize=DBE_STYLE["figsize"], dpi=DBE_STYLE["dpi"])
+    x_span = max(6, abs(h) + 4)
+    xs = np.linspace(h - x_span, h + x_span, 300)
+    ys = a * (xs - h)**2 + k
+    ax.plot(xs, ys, "k-", linewidth=DBE_STYLE["line_width"])
+    # Turn point
+    ax.plot(h, k, "ko", markersize=DBE_STYLE["point_size"])
+    ax.annotate(f"({h:g}; {k:g})", xy=(h, k), xytext=(h + 0.2, k + 0.4 if a < 0 else k - 0.8),
+                fontsize=DBE_STYLE["font_size"])
+    # Optional extra point
+    if mark_point:
+        px, py, pl = mark_point
+        ax.plot(px, py, "ko", markersize=DBE_STYLE["point_size"])
+        ax.annotate(f"{pl}({px:g}; {py:g})", xy=(px, py),
+                    xytext=(px + 0.2, py + 0.3), fontsize=DBE_STYLE["font_size"])
+    # Optional horizontal line y = c
+    if mark_line is not None:
+        ax.axhline(mark_line, color="k", linewidth=0.8, linestyle="--")
+        ax.annotate(f"y = {mark_line:g}", xy=(xs[0] + 0.3, mark_line + 0.2),
+                    fontsize=DBE_STYLE["font_size"])
+    # Optional tangent at (x0, y0) with slope m
+    if tangent:
+        x0, y0, m = tangent
+        line_xs = np.linspace(x0 - 2, x0 + 2, 50)
+        line_ys = m * (line_xs - x0) + y0
+        ax.plot(line_xs, line_ys, "k-", linewidth=0.9)
+        ax.plot(x0, y0, "ko", markersize=DBE_STYLE["point_size"])
+    # f label
+    ax.annotate("f", xy=(h + x_span * 0.5, a * (x_span * 0.5)**2 + k),
+                fontsize=DBE_STYLE["label_size"], fontstyle="italic")
+    y_min, y_max = ys.min(), ys.max()
+    y_pad = (y_max - y_min) * 0.15 if y_max > y_min else 2
+    _style_axes(ax, (h - x_span, h + x_span), (y_min - y_pad, y_max + y_pad))
+    return _save(fig, out_path)
+
+# ============================================================
+# Hyperbola (5.1) — a/(x+p) + q
+# ============================================================
+
+def _parse_hyperbola(text):
+    """Extract a, p, q from a/(x+p) + q or a/(x-p) + q."""
+    m = re.search(r"(-?\d+(?:/\d+)?)?/\(x\s*([+-])\s*(\d+)\)\s*([+-])\s*(\d+)", text)
+    if m:
+        a_s = m.group(1) or "1"
+        a = _frac(a_s) if a_s.startswith("-") is False else -_frac(a_s[1:]) if a_s != "-" else -1.0
+        if a_s == "-": a = -1.0
+        p_raw = int(m.group(3))
+        p = p_raw if m.group(2) == "+" else -p_raw
+        q = int(m.group(5)) * (1 if m.group(4) == "+" else -1)
+        return a, p, q
+    return None
+
+def render_hyperbola(a, p, q, out_path):
+    fig, ax = plt.subplots(figsize=DBE_STYLE["figsize"], dpi=DBE_STYLE["dpi"])
+    vert_asym = -p
+    horiz_asym = q
+    # Two branches
+    x_span = 5
+    xs_left = np.linspace(vert_asym - x_span, vert_asym - 0.15, 100)
+    xs_right = np.linspace(vert_asym + 0.15, vert_asym + x_span, 100)
+    ys_left = a / (xs_left + p) + q
+    ys_right = a / (xs_right + p) + q
+    ax.plot(xs_left, ys_left, "k-", linewidth=DBE_STYLE["line_width"])
+    ax.plot(xs_right, ys_right, "k-", linewidth=DBE_STYLE["line_width"])
+    # Asymptotes (dashed)
+    ax.axvline(vert_asym, color="k", linewidth=0.7, linestyle="--")
+    ax.axhline(horiz_asym, color="k", linewidth=0.7, linestyle="--")
+    ax.annotate(f"x = {vert_asym:g}", xy=(vert_asym + 0.15, horiz_asym + 1.5),
+                fontsize=DBE_STYLE["font_size"])
+    ax.annotate(f"y = {horiz_asym:g}", xy=(vert_asym + 2, horiz_asym + 0.2),
+                fontsize=DBE_STYLE["font_size"])
+    ax.annotate("f", xy=(vert_asym + 1.5, a / 1.5 + q),
+                fontsize=DBE_STYLE["label_size"], fontstyle="italic")
+    y_lim = max(6, abs(a) + abs(q) + 2)
+    _style_axes(ax, (vert_asym - x_span, vert_asym + x_span), (q - y_lim, q + y_lim))
+    return _save(fig, out_path)
+
+# ============================================================
+# Overlay (5.3.1, 5.5) — parabola + hyperbola
+# ============================================================
+
+def _parse_overlay(text):
+    """Extract both parabola and hyperbola params from a variant question."""
+    # Find parabola form "a(x-h)^2 + k"
+    m_par = re.search(r"(-?\d+(?:/\d+)?)?\(x\s*([+-])\s*(\d+)\)\^2\s*([+-])\s*(\d+)", text)
+    m_hyp = re.search(r"(-?\d+(?:/\d+)?)?/\(x\s*([+-])\s*(\d+)\)\s*([+-])\s*(\d+)", text)
+    if not m_par or not m_hyp: return None
+    a_s = m_par.group(1) or "1"
+    a = _frac(a_s) if not a_s.startswith("-") else -_frac(a_s[1:])
+    h = int(m_par.group(3)) * (-1 if m_par.group(2) == "+" else 1)
+    k = int(m_par.group(5)) * (1 if m_par.group(4) == "+" else -1)
+    a_h = _frac(m_hyp.group(1) or "1")
+    if m_hyp.group(1) and m_hyp.group(1).startswith("-"):
+        a_h = -_frac(m_hyp.group(1)[1:])
+    p_h = int(m_hyp.group(3)) if m_hyp.group(2) == "+" else -int(m_hyp.group(3))
+    q_h = int(m_hyp.group(5)) * (1 if m_hyp.group(4) == "+" else -1)
+    return (a, h, k), (a_h, p_h, q_h)
+
+def render_overlay(par, hyp, out_path):
+    a, h, k = par
+    a_h, p_h, q_h = hyp
+    fig, ax = plt.subplots(figsize=DBE_STYLE["figsize"], dpi=DBE_STYLE["dpi"])
+    x_span = max(6, abs(h) + 4)
+    xs = np.linspace(h - x_span, h + x_span, 300)
+    ys = a * (xs - h)**2 + k
+    ax.plot(xs, ys, "k-", linewidth=DBE_STYLE["line_width"])
+    vert_asym = -p_h
+    xs_left = np.linspace(vert_asym - x_span, vert_asym - 0.15, 80)
+    xs_right = np.linspace(vert_asym + 0.15, vert_asym + x_span, 80)
+    ax.plot(xs_left, a_h / (xs_left + p_h) + q_h, "k-", linewidth=DBE_STYLE["line_width"])
+    ax.plot(xs_right, a_h / (xs_right + p_h) + q_h, "k-", linewidth=DBE_STYLE["line_width"])
+    # Asymptotes for hyperbola
+    ax.axvline(vert_asym, color="k", linewidth=0.6, linestyle=":")
+    ax.axhline(q_h, color="k", linewidth=0.6, linestyle=":")
+    # Labels
+    ax.annotate("f", xy=(h + x_span * 0.4, a * (x_span * 0.4)**2 + k),
+                fontsize=DBE_STYLE["label_size"], fontstyle="italic")
+    ax.annotate("g", xy=(vert_asym + 1.8, a_h / 1.8 + q_h),
+                fontsize=DBE_STYLE["label_size"], fontstyle="italic")
+    y_vals = np.concatenate([ys, [q_h - abs(a_h), q_h + abs(a_h)]])
+    y_lim = max(abs(y_vals.min()), abs(y_vals.max())) + 2
+    _style_axes(ax, (min(h - x_span, vert_asym - x_span), max(h + x_span, vert_asym + x_span)),
+                (-y_lim, y_lim))
+    return _save(fig, out_path)
+
+# ============================================================
+# Cubic + tangent (9.4)
+# ============================================================
+
+def _parse_cubic(text):
+    """Extract cubic a,b,c,d and line slope m, tangency t values."""
+    m_c = re.search(r"x\^3\s*([+-])\s*(\d+)x\^2\s*([+-])\s*(\d+)x\s*([+-])\s*(\d+)", text)
+    if not m_c: return None
+    b = int(m_c.group(2)) * (1 if m_c.group(1) == "+" else -1)
+    c = int(m_c.group(4)) * (1 if m_c.group(3) == "+" else -1)
+    d = int(m_c.group(6)) * (1 if m_c.group(5) == "+" else -1)
+    m_line = re.search(r"y\s*=\s*(-?\d+(?:/\d+)?)x\s*\+\s*t", text)
+    if not m_line: return None
+    m = _frac(m_line.group(1))
+    # Find tangency t values by solving f'(x)=m
+    A, B, C = 3, 2*b, c - m
+    disc = B*B - 4*A*C
+    if disc < 0: return None
+    import math
+    sqrt_d = int(disc ** 0.5)
+    if sqrt_d ** 2 != disc: return None
+    x1 = (-B - sqrt_d) / (2*A)
+    x2 = (-B + sqrt_d) / (2*A)
+    if x1 == x2: return None
+    def f(x): return x**3 + b*x**2 + c*x + d
+    t1 = f(x1) - m*x1
+    t2 = f(x2) - m*x2
+    return (b, c, d, m, x1, x2, t1, t2)
+
+def render_cubic_with_tangents(cubic, out_path):
+    b, c, d, m, x1, x2, t1, t2 = cubic
+    fig, ax = plt.subplots(figsize=DBE_STYLE["figsize"], dpi=DBE_STYLE["dpi"])
+    xs = np.linspace(-6, 8, 400)
+    ys = xs**3 + b*xs**2 + c*xs + d
+    ax.plot(xs, ys, "k-", linewidth=DBE_STYLE["line_width"])
+    # Tangency lines
+    for x0, t in [(x1, t1), (x2, t2)]:
+        line_xs = np.linspace(x0 - 2.5, x0 + 2.5, 50)
+        line_ys = m * line_xs + t
+        ax.plot(line_xs, line_ys, "k--", linewidth=0.8)
+    ax.annotate("f", xy=(5, 5**3 + b*25 + c*5 + d),
+                fontsize=DBE_STYLE["label_size"], fontstyle="italic")
+    y_lim = max(abs(ys.min()), abs(ys.max())) + 3
+    _style_axes(ax, (-6, 8), (-y_lim, y_lim))
+    return _save(fig, out_path)
+
+# ============================================================
+# Cylinder from rectangle (10.1) — static
+# ============================================================
+
+def render_cylinder(out_path):
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=DBE_STYLE["wide_figsize"], dpi=DBE_STYLE["dpi"])
+    # Rectangle with cutouts
+    ax1.add_patch(patches.Rectangle((0, 0), 4, 2.5, fill=False, linewidth=1.2))
+    ax1.plot([0, 4], [1.5, 1.5], "k--", linewidth=0.6)
+    ax1.plot([0, 4], [1, 1], "k--", linewidth=0.6)
+    ax1.plot([0.5, 0.5], [0, 2.5], "k--", linewidth=0.6)
+    ax1.plot([3.5, 3.5], [0, 2.5], "k--", linewidth=0.6)
+    ax1.annotate("x", xy=(2, -0.3), fontsize=11, style="italic", ha="center")
+    ax1.annotate("h", xy=(-0.4, 1.25), fontsize=11, style="italic")
+    ax1.set_xlim(-0.8, 4.8); ax1.set_ylim(-0.6, 2.9)
+    ax1.set_aspect("equal"); ax1.axis("off")
+    # Cylinder
+    theta = np.linspace(0, 2*np.pi, 100)
+    ax2.plot(np.cos(theta)*1.2, np.sin(theta)*0.3 + 2.3, "k-", linewidth=1.2)  # top ellipse
+    ax2.plot(np.cos(theta)*1.2, np.sin(theta)*0.3, "k-", linewidth=1.2)  # bottom ellipse
+    ax2.plot([-1.2, -1.2], [0, 2.3], "k-", linewidth=1.2)
+    ax2.plot([1.2, 1.2], [0, 2.3], "k-", linewidth=1.2)
+    ax2.plot(np.cos(theta)*1.2, np.sin(theta)*0.3 + 2.3, "k-", linewidth=1.2, alpha=0.4)
+    ax2.annotate("h", xy=(1.5, 1.15), fontsize=11, style="italic")
+    ax2.set_xlim(-2, 2); ax2.set_ylim(-0.6, 2.9)
+    ax2.set_aspect("equal"); ax2.axis("off")
+    fig.tight_layout()
+    return _save(fig, out_path)
+
+# ============================================================
+# Contingency table (11.1.1, 11.1.2)
+# ============================================================
+
+def _parse_contingency(text):
+    """Extract 2x2 table values from variant question."""
+    m = re.search(r"Male-Tea\s*=\s*(\d+),\s*Male-Coffee\s*=\s*(\d+),\s*Female-Tea\s*=\s*(\d+),\s*Female-Coffee\s*=\s*(\d+)", text)
+    if m:
+        return int(m.group(1)), int(m.group(2)), int(m.group(3)), int(m.group(4)), "coffee"
+    m = re.search(r"Male-Tea\s*=\s*(\d+),\s*Male-Coffee\s*=\s*(\d+),\s*Female-Tea\s*=\s*(\d+),\s*Female-Coffee\s*=\s*e", text)
+    if m:
+        return int(m.group(1)), int(m.group(2)), int(m.group(3)), None, "missing_e"
+    m = re.search(r"Male-Tea\s*=\s*(\d+),\s*Male-Coffee\s*=\s*(\d+),\s*Female-Tea\s*=\s*(\d+),\s*Female-Coffee\s*=\s*([a-z])", text)
+    if m:
+        return int(m.group(1)), int(m.group(2)), int(m.group(3)), None, "missing_letter"
+    return None
+
+def render_table(data, out_path):
+    mt, mc, ft, fc, mode = data
+    if fc is None:
+        fc_val = "?"
+    else:
+        fc_val = str(fc)
+    fig, ax = plt.subplots(figsize=(4.5, 2.2), dpi=DBE_STYLE["dpi"])
+    ax.axis("off")
+    cell_data = [
+        ["", "Tea", "Coffee", "Total"],
+        ["Male", str(mt), str(mc), str(mt + mc)],
+        ["Female", str(ft), fc_val, str(ft + (fc if fc else 0)) if fc else "?"],
+        ["Total", str(mt + ft), str(mc + (fc if fc else 0)) if fc else "?", str(mt + mc + ft + (fc if fc else 0)) if fc else "?"],
+    ]
+    table = ax.table(cellText=cell_data, loc="center", cellLoc="center")
+    table.auto_set_font_size(False)
+    table.set_fontsize(11)
+    table.scale(1.2, 1.8)
+    for i in range(len(cell_data)):
+        table[(i, 0)].set_facecolor("#f0f0f0")
+        for j in range(len(cell_data[0])):
+            if i == 0 or j == 0:
+                table[(i, j)].set_facecolor("#e8e8e8")
+                table[(i, j)].set_text_props(weight="bold")
+    return _save(fig, out_path)
+
+# ============================================================
+# Dispatch — pool name → (parser, renderer, params unpacker)
+# ============================================================
+
+def _parse_log_base_only(text):
+    """Extract base from 'f(x) = log_{N}(x)' or 'f(x) = log_N(x)' — for x-intercept-only variants."""
+    m = re.search(r"log_\{?([0-9/.]+)\}?\(x\)", text)
+    if m:
+        try:
+            return Fraction(m.group(1))
+        except (ValueError, ZeroDivisionError):
+            return None
+    return None
+
+def render_log_only(base, out_path):
+    """Render log curve with A at (1,0) only — used for x-intercept questions (4.2)."""
+    try:
+        base_f = float(base)
+    except (ValueError, TypeError):
+        return False
+    if base_f <= 0 or base_f == 1:
+        return False
+    fig, ax = plt.subplots(figsize=DBE_STYLE["figsize"], dpi=DBE_STYLE["dpi"])
+    x_max = 10
+    xs = np.logspace(np.log10(0.05), np.log10(x_max), 400)
+    ys = np.log(xs) / np.log(base_f)
+    y_lim = 4
+    mask = (ys > -y_lim) & (ys < y_lim)
+    ax.plot(xs[mask], ys[mask], "k-", linewidth=DBE_STYLE["line_width"])
+    ax.plot(1, 0, "ko", markersize=DBE_STYLE["point_size"])
+    ax.annotate("A", xy=(1, 0), xytext=(1.08, 0.25),
+                fontsize=DBE_STYLE["label_size"], fontweight="bold")
+    mid = len(xs[mask]) // 3
+    if 0 <= mid < len(xs[mask]):
+        ax.annotate("f", xy=(xs[mask][mid], ys[mask][mid]),
+                    xytext=(xs[mask][mid] - 0.15, ys[mask][mid] + 0.3),
+                    fontsize=DBE_STYLE["label_size"], fontstyle="italic")
+    _style_axes(ax, (-0.5, x_max), (-y_lim, y_lim))
+    return _save(fig, out_path)
+
+RENDERER_MAP = {
+    # Log pools — reuse existing renderer
+    "4.1": "log",
+    "4.2": "log",
+    "4.6": "log",  # actually needs 2 curves but start with log
+    # Blank axes
+    "4.5": "blank",
+    # Parabola pools
+    "5.2": "parabola",
+    "5.4": "parabola_with_point",
+    "5.6": "parabola_with_tangent",
+    "5.3.2": "parabola_with_line",
+    # Hyperbola
+    "5.1": "hyperbola",
+    # Overlay
+    "5.3.1": "overlay",
+    "5.5": "overlay",
+    # Cubic
+    "9.4": "cubic",
+    # Cylinder (static)
+    "10.1": "cylinder",
+    # Tables
+    "11.1.1": "table",
+    "11.1.2": "table",
+}
+
+# Pools that don't need diagrams (text/algebra only)
+NOT_REQUIRED = [
+    "1.1.1","1.1.2","1.1.3","1.1.4","1.1.5","1.2",
+    "2.1.1","2.1.2","2.1.3","2.2.1","2.2.2",
+    "3.1","3.2","3.3","3.4",
+    "4.3","4.4",  # algebraic questions
+    "6.1","6.2","6.3",  # derivable from text
+    "7.1","7.2","7.3.1","7.3.2",  # finance — no diagrams
+    "8.1","8.2.1","8.2.2",  # pure algebra
+    "9.1","9.2","9.3",  # algebra
+    "10.2",  # optimisation algebra
+    "11.2",  # stated in text
+    "11.3.1","11.3.2",  # combinatorics — no diagram
+]
+
+# ============================================================
+# Batch runner
+# ============================================================
+
+def _apply_pool(pool_name, kind, pool_data):
+    """Render each variant in pool. Returns (rendered, partial, skipped, note_count)."""
+    out_subdir = OUT_DIR / pool_name
+    out_subdir.mkdir(parents=True, exist_ok=True)
+    rendered = 0
+    partial = 0
+    skipped = 0
+    notes = 0
+    for i, v in enumerate(pool_data, 1):
+        try:
+            out_path = out_subdir / f"v{i:02d}.png"
+            status = "skipped"
+            partial_reason = None
+            if kind == "log":
+                p = _parse_log_variant(v["variant_question"])
+                if p:
+                    base, x_m, var, note = p
+                    if render_log(base, x_m, var, out_path):
+                        status = "rendered"
+                    if note:
+                        v["diagram_note"] = note
+                        notes += 1
+                else:
+                    TRANSLATION_KEYWORDS = ("translated", "translation", "shifted",
+                                            "moved", "inverse", "range", "domain")
+                    text_lower = v["variant_question"].lower()
+                    is_translation_q = any(kw in text_lower for kw in TRANSLATION_KEYWORDS)
+                    base = _parse_log_base_only(v["variant_question"])
+                    if base is not None and render_log_only(base, out_path):
+                        if is_translation_q:
+                            status = "partial"
+                            partial_reason = "translation/inverse question — needs two-curve renderer"
+                        else:
+                            status = "rendered"
+                            v["diagram_note"] = "log-only (no marked point in variant text)"
+            elif kind == "blank":
+                if render_blank_axes(out_path):
+                    status = "rendered"
+            elif kind in ("parabola", "parabola_with_line", "parabola_with_point", "parabola_with_tangent"):
+                p = _parse_parabola_vertex(v["variant_question"])
+                if p:
+                    a, h, k = p
+                    kwargs = {}
+                    if kind == "parabola_with_line":
+                        m_line = re.search(r"less than\s*(-?\d+)", v["variant_question"])
+                        if m_line:
+                            kwargs["mark_line"] = int(m_line.group(1))
+                        else:
+                            partial_reason = "horizontal line value not parsed (rendered bare parabola)"
+                    if kind == "parabola_with_point":
+                        m_pt = re.search(r"([DP])\s+(?:is|lies|has).*?x\s*=\s*(-?\d+)", v["variant_question"])
+                        if m_pt:
+                            px = int(m_pt.group(2))
+                            py = a * (px - h)**2 + k
+                            kwargs["mark_point"] = (px, py, m_pt.group(1))
+                        else:
+                            partial_reason = "mark_point (D/P) not parsed (rendered bare parabola)"
+                    if kind == "parabola_with_tangent":
+                        m_t = re.search(r"tangent.*?at x = (-?\d+)", v["variant_question"])
+                        if m_t:
+                            x0 = int(m_t.group(1))
+                            y0 = a*(x0-h)**2 + k
+                            kwargs["tangent"] = (x0, y0, 2*a*(x0-h))
+                        else:
+                            partial_reason = "tangent point not parsed"
+                    if render_parabola(a, h, k, out_path, **kwargs):
+                        status = "partial" if partial_reason else "rendered"
+            elif kind == "hyperbola":
+                p = _parse_hyperbola(v["variant_question"])
+                if p and render_hyperbola(*p, out_path):
+                    status = "rendered"
+            elif kind == "overlay":
+                p = _parse_overlay(v["variant_question"])
+                if p and render_overlay(*p, out_path):
+                    if pool_name == "5.5":
+                        status = "partial"
+                        partial_reason = "M and T intercepts not marked (renderer lacks mark_intercepts)"
+                    else:
+                        status = "rendered"
+            elif kind == "cubic":
+                p = _parse_cubic(v["variant_question"])
+                if p and render_cubic_with_tangents(p, out_path):
+                    status = "partial"
+                    partial_reason = "A/B/C/D/E labels not added (pending Tier 3)"
+            elif kind == "cylinder":
+                if render_cylinder(out_path):
+                    status = "rendered"
+            elif kind == "table":
+                p = _parse_contingency(v["variant_question"])
+                if p and render_table(p, out_path):
+                    status = "rendered"
+
+            if status == "rendered":
+                v["diagram_path"] = str(out_path)
+                v["diagram_status"] = "rendered"
+                v.pop("diagram_partial_reason", None)
+                rendered += 1
+            elif status == "partial":
+                v["diagram_path"] = str(out_path)
+                v["diagram_status"] = "partial"
+                if partial_reason:
+                    v["diagram_partial_reason"] = partial_reason
+                partial += 1
+            else:
+                skipped += 1
+        except Exception as e:
+            print(f"    {pool_name} v{i:02d}: {type(e).__name__}: {e}")
+            skipped += 1
+    return rendered, partial, skipped, notes
+
+def main():
+    print("=== Batch renderer ===\n")
+    total_rendered = 0
+    total_partial = 0
+    total_skipped = 0
+    summary = []
+    for pool_name, kind in RENDERER_MAP.items():
+        p = POOL_DIR / f"{pool_name}_pool.json"
+        if not p.exists():
+            print(f"  {pool_name}: pool file missing")
+            continue
+        pool = json.loads(p.read_text(encoding="utf-8-sig"))
+        print(f"  {pool_name} ({kind}): ", end="", flush=True)
+        rendered, partial, skipped, notes = _apply_pool(pool_name, kind, pool)
+        ts = datetime.now().strftime("%Y%m%d%H%M%S")
+        shutil.copy(p, p.with_suffix(f".json.bak_{ts}"))
+        p.write_text(json.dumps(pool, indent=2, ensure_ascii=False), encoding="utf-8")
+        msg = f"{rendered} rendered"
+        if partial: msg += f", {partial} partial"
+        if skipped: msg += f", {skipped} skipped"
+        if notes:   msg += f", {notes} notes"
+        print(msg)
+        summary.append((pool_name, rendered, partial, skipped, notes))
+        total_rendered += rendered
+        total_partial += partial
+        total_skipped += skipped
+
+    print("\n=== Marking not_required ===")
+    for pool_name in NOT_REQUIRED:
+        p = POOL_DIR / f"{pool_name}_pool.json"
+        if not p.exists():
+            continue
+        pool = json.loads(p.read_text(encoding="utf-8-sig"))
+        for v in pool:
+            v["diagram"] = "not_required"
+            v["diagram_hint"] = None
+        ts = datetime.now().strftime("%Y%m%d%H%M%S")
+        shutil.copy(p, p.with_suffix(f".json.bak_{ts}"))
+        p.write_text(json.dumps(pool, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"  {len(NOT_REQUIRED)} pools marked not_required")
+
+    print(f"\n=== TOTAL ===")
+    print(f"Rendered: {total_rendered}")
+    print(f"Partial:  {total_partial}  (content incomplete — see breakdown below)")
+    print(f"Skipped:  {total_skipped}")
+    print(f"\nPer-pool:")
+    for name, r, pa, s, n in summary:
+        parts = f"{r} rendered"
+        if pa: parts += f", {pa} partial"
+        if s:  parts += f", {s} skipped"
+        if n:  parts += f" ({n} notes)"
+        total = r + pa + s
+        print(f"  {name:8}  {parts}  [{r}/{total} correct]")
+
+    print(f"\n=== Partial breakdown ===")
+    reasons = {}
+    for pool_name in RENDERER_MAP:
+        p = POOL_DIR / f"{pool_name}_pool.json"
+        if not p.exists():
+            continue
+        pool = json.loads(p.read_text(encoding="utf-8-sig"))
+        for v in pool:
+            if v.get("diagram_status") == "partial":
+                reason = v.get("diagram_partial_reason", "unknown")
+                reasons[reason] = reasons.get(reason, 0) + 1
+    if reasons:
+        for reason, count in sorted(reasons.items(), key=lambda x: -x[1]):
+            print(f"  {count:3}× {reason}")
+    else:
+        print("  (none)")
+
+
+if __name__ == "__main__":
+    main()

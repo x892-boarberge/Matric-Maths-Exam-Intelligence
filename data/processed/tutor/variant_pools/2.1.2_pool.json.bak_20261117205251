@@ -1,0 +1,662 @@
+[
+  {
+    "variant_question": "Given the geometric series: 1/4 + 1/4·(1/2) + 1/4·(1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-11)",
+    "demonstration": "a = 1/4, r = 1/2.\nT_10 = a·r^(n-1) = (1/4)·(1/2)^9 = 2^(-11).",
+    "memo_marks": [
+      "1 mark for a = 1/4, r = 1/2",
+      "1 mark for substitution",
+      "1 mark for 2^(-11)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/4, r = 1/2",
+      "T_10 = (1/4)·(1/2)^9",
+      "= 2^(-11)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/4 + 1/4·(-1/2) + 1/4·(-1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-11)",
+    "demonstration": "a = 1/4, r = -1/2.\nT_10 = a·r^(n-1) = (1/4)·(-1/2)^9 = -2^(-11).",
+    "memo_marks": [
+      "1 mark for a = 1/4, r = -1/2",
+      "1 mark for substitution",
+      "1 mark for -2^(-11)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/4, r = -1/2",
+      "T_10 = (1/4)·(-1/2)^9",
+      "= -2^(-11)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/4 + 1/4·(1/4) + 1/4·(1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-20)",
+    "demonstration": "a = 1/4, r = 1/4.\nT_10 = a·r^(n-1) = (1/4)·(1/4)^9 = 2^(-20).",
+    "memo_marks": [
+      "1 mark for a = 1/4, r = 1/4",
+      "1 mark for substitution",
+      "1 mark for 2^(-20)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/4, r = 1/4",
+      "T_10 = (1/4)·(1/4)^9",
+      "= 2^(-20)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/4 + 1/4·(-1/4) + 1/4·(-1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-20)",
+    "demonstration": "a = 1/4, r = -1/4.\nT_10 = a·r^(n-1) = (1/4)·(-1/4)^9 = -2^(-20).",
+    "memo_marks": [
+      "1 mark for a = 1/4, r = -1/4",
+      "1 mark for substitution",
+      "1 mark for -2^(-20)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/4, r = -1/4",
+      "T_10 = (1/4)·(-1/4)^9",
+      "= -2^(-20)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/4 + 1/4·(1/8) + 1/4·(1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-29)",
+    "demonstration": "a = 1/4, r = 1/8.\nT_10 = a·r^(n-1) = (1/4)·(1/8)^9 = 2^(-29).",
+    "memo_marks": [
+      "1 mark for a = 1/4, r = 1/8",
+      "1 mark for substitution",
+      "1 mark for 2^(-29)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/4, r = 1/8",
+      "T_10 = (1/4)·(1/8)^9",
+      "= 2^(-29)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/4 + 1/4·(-1/8) + 1/4·(-1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-29)",
+    "demonstration": "a = 1/4, r = -1/8.\nT_10 = a·r^(n-1) = (1/4)·(-1/8)^9 = -2^(-29).",
+    "memo_marks": [
+      "1 mark for a = 1/4, r = -1/8",
+      "1 mark for substitution",
+      "1 mark for -2^(-29)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/4, r = -1/8",
+      "T_10 = (1/4)·(-1/8)^9",
+      "= -2^(-29)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/2 + 1/2·(1/2) + 1/2·(1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-10)",
+    "demonstration": "a = 1/2, r = 1/2.\nT_10 = a·r^(n-1) = (1/2)·(1/2)^9 = 2^(-10).",
+    "memo_marks": [
+      "1 mark for a = 1/2, r = 1/2",
+      "1 mark for substitution",
+      "1 mark for 2^(-10)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/2, r = 1/2",
+      "T_10 = (1/2)·(1/2)^9",
+      "= 2^(-10)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/2 + 1/2·(-1/2) + 1/2·(-1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-10)",
+    "demonstration": "a = 1/2, r = -1/2.\nT_10 = a·r^(n-1) = (1/2)·(-1/2)^9 = -2^(-10).",
+    "memo_marks": [
+      "1 mark for a = 1/2, r = -1/2",
+      "1 mark for substitution",
+      "1 mark for -2^(-10)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/2, r = -1/2",
+      "T_10 = (1/2)·(-1/2)^9",
+      "= -2^(-10)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/2 + 1/2·(1/4) + 1/2·(1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-19)",
+    "demonstration": "a = 1/2, r = 1/4.\nT_10 = a·r^(n-1) = (1/2)·(1/4)^9 = 2^(-19).",
+    "memo_marks": [
+      "1 mark for a = 1/2, r = 1/4",
+      "1 mark for substitution",
+      "1 mark for 2^(-19)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/2, r = 1/4",
+      "T_10 = (1/2)·(1/4)^9",
+      "= 2^(-19)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/2 + 1/2·(-1/4) + 1/2·(-1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-19)",
+    "demonstration": "a = 1/2, r = -1/4.\nT_10 = a·r^(n-1) = (1/2)·(-1/4)^9 = -2^(-19).",
+    "memo_marks": [
+      "1 mark for a = 1/2, r = -1/4",
+      "1 mark for substitution",
+      "1 mark for -2^(-19)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/2, r = -1/4",
+      "T_10 = (1/2)·(-1/4)^9",
+      "= -2^(-19)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/2 + 1/2·(1/8) + 1/2·(1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-28)",
+    "demonstration": "a = 1/2, r = 1/8.\nT_10 = a·r^(n-1) = (1/2)·(1/8)^9 = 2^(-28).",
+    "memo_marks": [
+      "1 mark for a = 1/2, r = 1/8",
+      "1 mark for substitution",
+      "1 mark for 2^(-28)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/2, r = 1/8",
+      "T_10 = (1/2)·(1/8)^9",
+      "= 2^(-28)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 1/2 + 1/2·(-1/8) + 1/2·(-1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-28)",
+    "demonstration": "a = 1/2, r = -1/8.\nT_10 = a·r^(n-1) = (1/2)·(-1/8)^9 = -2^(-28).",
+    "memo_marks": [
+      "1 mark for a = 1/2, r = -1/8",
+      "1 mark for substitution",
+      "1 mark for -2^(-28)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 1/2, r = -1/8",
+      "T_10 = (1/2)·(-1/8)^9",
+      "= -2^(-28)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 2 + 2·(1/2) + 2·(1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-8)",
+    "demonstration": "a = 2, r = 1/2.\nT_10 = a·r^(n-1) = (2)·(1/2)^9 = 2^(-8).",
+    "memo_marks": [
+      "1 mark for a = 2, r = 1/2",
+      "1 mark for substitution",
+      "1 mark for 2^(-8)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 2, r = 1/2",
+      "T_10 = (2)·(1/2)^9",
+      "= 2^(-8)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 2 + 2·(-1/2) + 2·(-1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-8)",
+    "demonstration": "a = 2, r = -1/2.\nT_10 = a·r^(n-1) = (2)·(-1/2)^9 = -2^(-8).",
+    "memo_marks": [
+      "1 mark for a = 2, r = -1/2",
+      "1 mark for substitution",
+      "1 mark for -2^(-8)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 2, r = -1/2",
+      "T_10 = (2)·(-1/2)^9",
+      "= -2^(-8)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 2 + 2·(1/4) + 2·(1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-17)",
+    "demonstration": "a = 2, r = 1/4.\nT_10 = a·r^(n-1) = (2)·(1/4)^9 = 2^(-17).",
+    "memo_marks": [
+      "1 mark for a = 2, r = 1/4",
+      "1 mark for substitution",
+      "1 mark for 2^(-17)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 2, r = 1/4",
+      "T_10 = (2)·(1/4)^9",
+      "= 2^(-17)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 2 + 2·(-1/4) + 2·(-1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-17)",
+    "demonstration": "a = 2, r = -1/4.\nT_10 = a·r^(n-1) = (2)·(-1/4)^9 = -2^(-17).",
+    "memo_marks": [
+      "1 mark for a = 2, r = -1/4",
+      "1 mark for substitution",
+      "1 mark for -2^(-17)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 2, r = -1/4",
+      "T_10 = (2)·(-1/4)^9",
+      "= -2^(-17)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 2 + 2·(1/8) + 2·(1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-26)",
+    "demonstration": "a = 2, r = 1/8.\nT_10 = a·r^(n-1) = (2)·(1/8)^9 = 2^(-26).",
+    "memo_marks": [
+      "1 mark for a = 2, r = 1/8",
+      "1 mark for substitution",
+      "1 mark for 2^(-26)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 2, r = 1/8",
+      "T_10 = (2)·(1/8)^9",
+      "= 2^(-26)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 2 + 2·(-1/8) + 2·(-1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-26)",
+    "demonstration": "a = 2, r = -1/8.\nT_10 = a·r^(n-1) = (2)·(-1/8)^9 = -2^(-26).",
+    "memo_marks": [
+      "1 mark for a = 2, r = -1/8",
+      "1 mark for substitution",
+      "1 mark for -2^(-26)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 2, r = -1/8",
+      "T_10 = (2)·(-1/8)^9",
+      "= -2^(-26)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 4 + 4·(1/2) + 4·(1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-7)",
+    "demonstration": "a = 4, r = 1/2.\nT_10 = a·r^(n-1) = (4)·(1/2)^9 = 2^(-7).",
+    "memo_marks": [
+      "1 mark for a = 4, r = 1/2",
+      "1 mark for substitution",
+      "1 mark for 2^(-7)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 4, r = 1/2",
+      "T_10 = (4)·(1/2)^9",
+      "= 2^(-7)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 4 + 4·(-1/2) + 4·(-1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-7)",
+    "demonstration": "a = 4, r = -1/2.\nT_10 = a·r^(n-1) = (4)·(-1/2)^9 = -2^(-7).",
+    "memo_marks": [
+      "1 mark for a = 4, r = -1/2",
+      "1 mark for substitution",
+      "1 mark for -2^(-7)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 4, r = -1/2",
+      "T_10 = (4)·(-1/2)^9",
+      "= -2^(-7)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 4 + 4·(1/4) + 4·(1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-16)",
+    "demonstration": "a = 4, r = 1/4.\nT_10 = a·r^(n-1) = (4)·(1/4)^9 = 2^(-16).",
+    "memo_marks": [
+      "1 mark for a = 4, r = 1/4",
+      "1 mark for substitution",
+      "1 mark for 2^(-16)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 4, r = 1/4",
+      "T_10 = (4)·(1/4)^9",
+      "= 2^(-16)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 4 + 4·(-1/4) + 4·(-1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-16)",
+    "demonstration": "a = 4, r = -1/4.\nT_10 = a·r^(n-1) = (4)·(-1/4)^9 = -2^(-16).",
+    "memo_marks": [
+      "1 mark for a = 4, r = -1/4",
+      "1 mark for substitution",
+      "1 mark for -2^(-16)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 4, r = -1/4",
+      "T_10 = (4)·(-1/4)^9",
+      "= -2^(-16)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 4 + 4·(1/8) + 4·(1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-25)",
+    "demonstration": "a = 4, r = 1/8.\nT_10 = a·r^(n-1) = (4)·(1/8)^9 = 2^(-25).",
+    "memo_marks": [
+      "1 mark for a = 4, r = 1/8",
+      "1 mark for substitution",
+      "1 mark for 2^(-25)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 4, r = 1/8",
+      "T_10 = (4)·(1/8)^9",
+      "= 2^(-25)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 4 + 4·(-1/8) + 4·(-1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-25)",
+    "demonstration": "a = 4, r = -1/8.\nT_10 = a·r^(n-1) = (4)·(-1/8)^9 = -2^(-25).",
+    "memo_marks": [
+      "1 mark for a = 4, r = -1/8",
+      "1 mark for substitution",
+      "1 mark for -2^(-25)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 4, r = -1/8",
+      "T_10 = (4)·(-1/8)^9",
+      "= -2^(-25)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 8 + 8·(1/2) + 8·(1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-6)",
+    "demonstration": "a = 8, r = 1/2.\nT_10 = a·r^(n-1) = (8)·(1/2)^9 = 2^(-6).",
+    "memo_marks": [
+      "1 mark for a = 8, r = 1/2",
+      "1 mark for substitution",
+      "1 mark for 2^(-6)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 8, r = 1/2",
+      "T_10 = (8)·(1/2)^9",
+      "= 2^(-6)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 8 + 8·(-1/2) + 8·(-1/2)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-6)",
+    "demonstration": "a = 8, r = -1/2.\nT_10 = a·r^(n-1) = (8)·(-1/2)^9 = -2^(-6).",
+    "memo_marks": [
+      "1 mark for a = 8, r = -1/2",
+      "1 mark for substitution",
+      "1 mark for -2^(-6)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 8, r = -1/2",
+      "T_10 = (8)·(-1/2)^9",
+      "= -2^(-6)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 8 + 8·(1/4) + 8·(1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-15)",
+    "demonstration": "a = 8, r = 1/4.\nT_10 = a·r^(n-1) = (8)·(1/4)^9 = 2^(-15).",
+    "memo_marks": [
+      "1 mark for a = 8, r = 1/4",
+      "1 mark for substitution",
+      "1 mark for 2^(-15)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 8, r = 1/4",
+      "T_10 = (8)·(1/4)^9",
+      "= 2^(-15)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 8 + 8·(-1/4) + 8·(-1/4)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-15)",
+    "demonstration": "a = 8, r = -1/4.\nT_10 = a·r^(n-1) = (8)·(-1/4)^9 = -2^(-15).",
+    "memo_marks": [
+      "1 mark for a = 8, r = -1/4",
+      "1 mark for substitution",
+      "1 mark for -2^(-15)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 8, r = -1/4",
+      "T_10 = (8)·(-1/4)^9",
+      "= -2^(-15)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 8 + 8·(1/8) + 8·(1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = 2^(-24)",
+    "demonstration": "a = 8, r = 1/8.\nT_10 = a·r^(n-1) = (8)·(1/8)^9 = 2^(-24).",
+    "memo_marks": [
+      "1 mark for a = 8, r = 1/8",
+      "1 mark for substitution",
+      "1 mark for 2^(-24)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 8, r = 1/8",
+      "T_10 = (8)·(1/8)^9",
+      "= 2^(-24)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the geometric series: 8 + 8·(-1/8) + 8·(-1/8)^2 + ..., calculate T_10. Write your answer in the form T_n = b^x.",
+    "expected": "T_10 = -2^(-24)",
+    "demonstration": "a = 8, r = -1/8.\nT_10 = a·r^(n-1) = (8)·(-1/8)^9 = -2^(-24).",
+    "memo_marks": [
+      "1 mark for a = 8, r = -1/8",
+      "1 mark for substitution",
+      "1 mark for -2^(-24)"
+    ],
+    "fast_path": "T_n = a·r^(n-1). Identify a and r, plug in, simplify power.",
+    "fatal_error": "DBE says: Candidates use n instead of (n-1). GAPS: seats minus 1.",
+    "answer_book_layout": [
+      "a = 8, r = -1/8",
+      "T_10 = (8)·(-1/8)^9",
+      "= -2^(-24)"
+    ],
+    "hack": "Power is seats minus one (GAPS).",
+    "trap": "For 25th term, exponent is 24, not 25.",
+    "presentation": "Show a, r, substitution, simplified power.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "variant_question": "The bank granted Rajesh a loan of R500,000 on 28 February 2024 at an interest rate of 11.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R13,800 on 30 June 2024. He continued to make monthly repayments of R13,800 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "45 months",
+    "demonstration": "i = 11.0/100/12 = 0.009167. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 500,000·0.009167/13,800 = 0.667874.\nTake logs: -n·log(1+i) = log(0.667874). n = -log(0.667874)/log(1.009167) = 44.24.\nRound UP (you can't make a fraction of a payment). Answer: 45 months.",
+    "memo_marks": [
+      "1 mark for i = 0.009167",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 44.24",
+      "1 mark for rounded up to 45"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.009167",
+      "(1+i)^-n = 1 - 500,000·0.009167/13,800 = 0.667874",
+      "-n·log(1+i) = log(0.667874)",
+      "n = 44.24 → 45 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R800,000 on 28 February 2024 at an interest rate of 9.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R12,000 on 30 June 2024. He continued to make monthly repayments of R12,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "93 months",
+    "demonstration": "i = 9.0/100/12 = 0.007500. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 800,000·0.007500/12,000 = 0.500000.\nTake logs: -n·log(1+i) = log(0.500000). n = -log(0.500000)/log(1.007500) = 92.77.\nRound UP (you can't make a fraction of a payment). Answer: 93 months.",
+    "memo_marks": [
+      "1 mark for i = 0.007500",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 92.77",
+      "1 mark for rounded up to 93"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.007500",
+      "(1+i)^-n = 1 - 800,000·0.007500/12,000 = 0.500000",
+      "-n·log(1+i) = log(0.500000)",
+      "n = 92.77 → 93 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R1,000,000 on 28 February 2024 at an interest rate of 8.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R16,700 on 30 June 2024. He continued to make monthly repayments of R16,700 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "77 months",
+    "demonstration": "i = 8.0/100/12 = 0.006667. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 1,000,000·0.006667/16,700 = 0.600798.\nTake logs: -n·log(1+i) = log(0.600798). n = -log(0.600798)/log(1.006667) = 76.68.\nRound UP (you can't make a fraction of a payment). Answer: 77 months.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 76.68",
+      "1 mark for rounded up to 77"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "(1+i)^-n = 1 - 1,000,000·0.006667/16,700 = 0.600798",
+      "-n·log(1+i) = log(0.600798)",
+      "n = 76.68 → 77 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R700,000 on 28 February 2024 at an interest rate of 8.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R14,000 on 30 June 2024. He continued to make monthly repayments of R14,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "62 months",
+    "demonstration": "i = 8.0/100/12 = 0.006667. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 700,000·0.006667/14,000 = 0.666667.\nTake logs: -n·log(1+i) = log(0.666667). n = -log(0.666667)/log(1.006667) = 61.02.\nRound UP (you can't make a fraction of a payment). Answer: 62 months.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 61.02",
+      "1 mark for rounded up to 62"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "(1+i)^-n = 1 - 700,000·0.006667/14,000 = 0.666667",
+      "-n·log(1+i) = log(0.666667)",
+      "n = 61.02 → 62 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R1,000,000 on 28 February 2024 at an interest rate of 8.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R23,300 on 30 June 2024. He continued to make monthly repayments of R23,300 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "51 months",
+    "demonstration": "i = 8.0/100/12 = 0.006667. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 1,000,000·0.006667/23,300 = 0.713877.\nTake logs: -n·log(1+i) = log(0.713877). n = -log(0.713877)/log(1.006667) = 50.73.\nRound UP (you can't make a fraction of a payment). Answer: 51 months.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 50.73",
+      "1 mark for rounded up to 51"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "(1+i)^-n = 1 - 1,000,000·0.006667/23,300 = 0.713877",
+      "-n·log(1+i) = log(0.713877)",
+      "n = 50.73 → 51 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R200,000 on 28 February 2024 at an interest rate of 7.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R2,900 on 30 June 2024. He continued to make monthly repayments of R2,900 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "89 months",
+    "demonstration": "i = 7.0/100/12 = 0.005833. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 200,000·0.005833/2,900 = 0.597701.\nTake logs: -n·log(1+i) = log(0.597701). n = -log(0.597701)/log(1.005833) = 88.49.\nRound UP (you can't make a fraction of a payment). Answer: 89 months.",
+    "memo_marks": [
+      "1 mark for i = 0.005833",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 88.49",
+      "1 mark for rounded up to 89"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.005833",
+      "(1+i)^-n = 1 - 200,000·0.005833/2,900 = 0.597701",
+      "-n·log(1+i) = log(0.597701)",
+      "n = 88.49 → 89 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R700,000 on 28 February 2024 at an interest rate of 9.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R26,200 on 30 June 2024. He continued to make monthly repayments of R26,200 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "30 months",
+    "demonstration": "i = 9.0/100/12 = 0.007500. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 700,000·0.007500/26,200 = 0.799618.\nTake logs: -n·log(1+i) = log(0.799618). n = -log(0.799618)/log(1.007500) = 29.93.\nRound UP (you can't make a fraction of a payment). Answer: 30 months.",
+    "memo_marks": [
+      "1 mark for i = 0.007500",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 29.93",
+      "1 mark for rounded up to 30"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.007500",
+      "(1+i)^-n = 1 - 700,000·0.007500/26,200 = 0.799618",
+      "-n·log(1+i) = log(0.799618)",
+      "n = 29.93 → 30 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R600,000 on 28 February 2024 at an interest rate of 6.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R13,500 on 30 June 2024. He continued to make monthly repayments of R13,500 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "51 months",
+    "demonstration": "i = 6.0/100/12 = 0.005000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 600,000·0.005000/13,500 = 0.777778.\nTake logs: -n·log(1+i) = log(0.777778). n = -log(0.777778)/log(1.005000) = 50.39.\nRound UP (you can't make a fraction of a payment). Answer: 51 months.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 50.39",
+      "1 mark for rounded up to 51"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "(1+i)^-n = 1 - 600,000·0.005000/13,500 = 0.777778",
+      "-n·log(1+i) = log(0.777778)",
+      "n = 50.39 → 51 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R900,000 on 28 February 2024 at an interest rate of 7.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R21,000 on 30 June 2024. He continued to make monthly repayments of R21,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "50 months",
+    "demonstration": "i = 7.0/100/12 = 0.005833. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 900,000·0.005833/21,000 = 0.750000.\nTake logs: -n·log(1+i) = log(0.750000). n = -log(0.750000)/log(1.005833) = 49.46.\nRound UP (you can't make a fraction of a payment). Answer: 50 months.",
+    "memo_marks": [
+      "1 mark for i = 0.005833",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 49.46",
+      "1 mark for rounded up to 50"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.005833",
+      "(1+i)^-n = 1 - 900,000·0.005833/21,000 = 0.750000",
+      "-n·log(1+i) = log(0.750000)",
+      "n = 49.46 → 50 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R600,000 on 28 February 2024 at an interest rate of 10.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R20,000 on 30 June 2024. He continued to make monthly repayments of R20,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "35 months",
+    "demonstration": "i = 10.0/100/12 = 0.008333. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 600,000·0.008333/20,000 = 0.750000.\nTake logs: -n·log(1+i) = log(0.750000). n = -log(0.750000)/log(1.008333) = 34.67.\nRound UP (you can't make a fraction of a payment). Answer: 35 months.",
+    "memo_marks": [
+      "1 mark for i = 0.008333",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 34.67",
+      "1 mark for rounded up to 35"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.008333",
+      "(1+i)^-n = 1 - 600,000·0.008333/20,000 = 0.750000",
+      "-n·log(1+i) = log(0.750000)",
+      "n = 34.67 → 35 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R1,000,000 on 28 February 2024 at an interest rate of 6.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R17,500 on 30 June 2024. He continued to make monthly repayments of R17,500 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "68 months",
+    "demonstration": "i = 6.0/100/12 = 0.005000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 1,000,000·0.005000/17,500 = 0.714286.\nTake logs: -n·log(1+i) = log(0.714286). n = -log(0.714286)/log(1.005000) = 67.46.\nRound UP (you can't make a fraction of a payment). Answer: 68 months.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 67.46",
+      "1 mark for rounded up to 68"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "(1+i)^-n = 1 - 1,000,000·0.005000/17,500 = 0.714286",
+      "-n·log(1+i) = log(0.714286)",
+      "n = 67.46 → 68 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R1,200,000 on 28 February 2024 at an interest rate of 8.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R20,000 on 30 June 2024. He continued to make monthly repayments of R20,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "77 months",
+    "demonstration": "i = 8.0/100/12 = 0.006667. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 1,200,000·0.006667/20,000 = 0.600000.\nTake logs: -n·log(1+i) = log(0.600000). n = -log(0.600000)/log(1.006667) = 76.88.\nRound UP (you can't make a fraction of a payment). Answer: 77 months.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 76.88",
+      "1 mark for rounded up to 77"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "(1+i)^-n = 1 - 1,200,000·0.006667/20,000 = 0.600000",
+      "-n·log(1+i) = log(0.600000)",
+      "n = 76.88 → 77 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R500,000 on 28 February 2024 at an interest rate of 8.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R20,000 on 30 June 2024. He continued to make monthly repayments of R20,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "28 months",
+    "demonstration": "i = 8.0/100/12 = 0.006667. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 500,000·0.006667/20,000 = 0.833333.\nTake logs: -n·log(1+i) = log(0.833333). n = -log(0.833333)/log(1.006667) = 27.44.\nRound UP (you can't make a fraction of a payment). Answer: 28 months.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 27.44",
+      "1 mark for rounded up to 28"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "(1+i)^-n = 1 - 500,000·0.006667/20,000 = 0.833333",
+      "-n·log(1+i) = log(0.833333)",
+      "n = 27.44 → 28 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R600,000 on 28 February 2024 at an interest rate of 10.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R22,500 on 30 June 2024. He continued to make monthly repayments of R22,500 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "31 months",
+    "demonstration": "i = 10.0/100/12 = 0.008333. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 600,000·0.008333/22,500 = 0.777778.\nTake logs: -n·log(1+i) = log(0.777778). n = -log(0.777778)/log(1.008333) = 30.28.\nRound UP (you can't make a fraction of a payment). Answer: 31 months.",
+    "memo_marks": [
+      "1 mark for i = 0.008333",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 30.28",
+      "1 mark for rounded up to 31"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.008333",
+      "(1+i)^-n = 1 - 600,000·0.008333/22,500 = 0.777778",
+      "-n·log(1+i) = log(0.777778)",
+      "n = 30.28 → 31 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R400,000 on 28 February 2024 at an interest rate of 6.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R7,000 on 30 June 2024. He continued to make monthly repayments of R7,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "68 months",
+    "demonstration": "i = 6.0/100/12 = 0.005000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 400,000·0.005000/7,000 = 0.714286.\nTake logs: -n·log(1+i) = log(0.714286). n = -log(0.714286)/log(1.005000) = 67.46.\nRound UP (you can't make a fraction of a payment). Answer: 68 months.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 67.46",
+      "1 mark for rounded up to 68"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "(1+i)^-n = 1 - 400,000·0.005000/7,000 = 0.714286",
+      "-n·log(1+i) = log(0.714286)",
+      "n = 67.46 → 68 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R500,000 on 28 February 2024 at an interest rate of 12.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R10,000 on 30 June 2024. He continued to make monthly repayments of R10,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "70 months",
+    "demonstration": "i = 12.0/100/12 = 0.010000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 500,000·0.010000/10,000 = 0.500000.\nTake logs: -n·log(1+i) = log(0.500000). n = -log(0.500000)/log(1.010000) = 69.66.\nRound UP (you can't make a fraction of a payment). Answer: 70 months.",
+    "memo_marks": [
+      "1 mark for i = 0.010000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 69.66",
+      "1 mark for rounded up to 70"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.010000",
+      "(1+i)^-n = 1 - 500,000·0.010000/10,000 = 0.500000",
+      "-n·log(1+i) = log(0.500000)",
+      "n = 69.66 → 70 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R900,000 on 28 February 2024 at an interest rate of 6.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R13,500 on 30 June 2024. He continued to make monthly repayments of R13,500 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "82 months",
+    "demonstration": "i = 6.0/100/12 = 0.005000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 900,000·0.005000/13,500 = 0.666667.\nTake logs: -n·log(1+i) = log(0.666667). n = -log(0.666667)/log(1.005000) = 81.30.\nRound UP (you can't make a fraction of a payment). Answer: 82 months.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 81.30",
+      "1 mark for rounded up to 82"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "(1+i)^-n = 1 - 900,000·0.005000/13,500 = 0.666667",
+      "-n·log(1+i) = log(0.666667)",
+      "n = 81.30 → 82 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R1,200,000 on 28 February 2024 at an interest rate of 9.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R36,000 on 30 June 2024. He continued to make monthly repayments of R36,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "39 months",
+    "demonstration": "i = 9.0/100/12 = 0.007500. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 1,200,000·0.007500/36,000 = 0.750000.\nTake logs: -n·log(1+i) = log(0.750000). n = -log(0.750000)/log(1.007500) = 38.50.\nRound UP (you can't make a fraction of a payment). Answer: 39 months.",
+    "memo_marks": [
+      "1 mark for i = 0.007500",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 38.50",
+      "1 mark for rounded up to 39"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.007500",
+      "(1+i)^-n = 1 - 1,200,000·0.007500/36,000 = 0.750000",
+      "-n·log(1+i) = log(0.750000)",
+      "n = 38.50 → 39 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R900,000 on 28 February 2024 at an interest rate of 6.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R22,500 on 30 June 2024. He continued to make monthly repayments of R22,500 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "45 months",
+    "demonstration": "i = 6.0/100/12 = 0.005000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 900,000·0.005000/22,500 = 0.800000.\nTake logs: -n·log(1+i) = log(0.800000). n = -log(0.800000)/log(1.005000) = 44.74.\nRound UP (you can't make a fraction of a payment). Answer: 45 months.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 44.74",
+      "1 mark for rounded up to 45"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "(1+i)^-n = 1 - 900,000·0.005000/22,500 = 0.800000",
+      "-n·log(1+i) = log(0.800000)",
+      "n = 44.74 → 45 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R200,000 on 28 February 2024 at an interest rate of 6.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R2,000 on 30 June 2024. He continued to make monthly repayments of R2,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "139 months",
+    "demonstration": "i = 6.0/100/12 = 0.005000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 200,000·0.005000/2,000 = 0.500000.\nTake logs: -n·log(1+i) = log(0.500000). n = -log(0.500000)/log(1.005000) = 138.98.\nRound UP (you can't make a fraction of a payment). Answer: 139 months.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 138.98",
+      "1 mark for rounded up to 139"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "(1+i)^-n = 1 - 200,000·0.005000/2,000 = 0.500000",
+      "-n·log(1+i) = log(0.500000)",
+      "n = 138.98 → 139 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R800,000 on 28 February 2024 at an interest rate of 12.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R32,000 on 30 June 2024. He continued to make monthly repayments of R32,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "29 months",
+    "demonstration": "i = 12.0/100/12 = 0.010000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 800,000·0.010000/32,000 = 0.750000.\nTake logs: -n·log(1+i) = log(0.750000). n = -log(0.750000)/log(1.010000) = 28.91.\nRound UP (you can't make a fraction of a payment). Answer: 29 months.",
+    "memo_marks": [
+      "1 mark for i = 0.010000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 28.91",
+      "1 mark for rounded up to 29"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.010000",
+      "(1+i)^-n = 1 - 800,000·0.010000/32,000 = 0.750000",
+      "-n·log(1+i) = log(0.750000)",
+      "n = 28.91 → 29 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R1,500,000 on 28 February 2024 at an interest rate of 8.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R20,000 on 30 June 2024. He continued to make monthly repayments of R20,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "105 months",
+    "demonstration": "i = 8.0/100/12 = 0.006667. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 1,500,000·0.006667/20,000 = 0.500000.\nTake logs: -n·log(1+i) = log(0.500000). n = -log(0.500000)/log(1.006667) = 104.32.\nRound UP (you can't make a fraction of a payment). Answer: 105 months.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 104.32",
+      "1 mark for rounded up to 105"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "(1+i)^-n = 1 - 1,500,000·0.006667/20,000 = 0.500000",
+      "-n·log(1+i) = log(0.500000)",
+      "n = 104.32 → 105 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R1,000,000 on 28 February 2024 at an interest rate of 8.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R33,300 on 30 June 2024. He continued to make monthly repayments of R33,300 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "34 months",
+    "demonstration": "i = 8.0/100/12 = 0.006667. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 1,000,000·0.006667/33,300 = 0.799800.\nTake logs: -n·log(1+i) = log(0.799800). n = -log(0.799800)/log(1.006667) = 33.62.\nRound UP (you can't make a fraction of a payment). Answer: 34 months.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 33.62",
+      "1 mark for rounded up to 34"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "(1+i)^-n = 1 - 1,000,000·0.006667/33,300 = 0.799800",
+      "-n·log(1+i) = log(0.799800)",
+      "n = 33.62 → 34 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R500,000 on 28 February 2024 at an interest rate of 8.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R13,300 on 30 June 2024. He continued to make monthly repayments of R13,300 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "44 months",
+    "demonstration": "i = 8.0/100/12 = 0.006667. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 500,000·0.006667/13,300 = 0.749373.\nTake logs: -n·log(1+i) = log(0.749373). n = -log(0.749373)/log(1.006667) = 43.42.\nRound UP (you can't make a fraction of a payment). Answer: 44 months.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 43.42",
+      "1 mark for rounded up to 44"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "(1+i)^-n = 1 - 500,000·0.006667/13,300 = 0.749373",
+      "-n·log(1+i) = log(0.749373)",
+      "n = 43.42 → 44 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R1,000,000 on 28 February 2024 at an interest rate of 10.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R25,000 on 30 June 2024. He continued to make monthly repayments of R25,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "49 months",
+    "demonstration": "i = 10.0/100/12 = 0.008333. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 1,000,000·0.008333/25,000 = 0.666667.\nTake logs: -n·log(1+i) = log(0.666667). n = -log(0.666667)/log(1.008333) = 48.86.\nRound UP (you can't make a fraction of a payment). Answer: 49 months.",
+    "memo_marks": [
+      "1 mark for i = 0.008333",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 48.86",
+      "1 mark for rounded up to 49"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.008333",
+      "(1+i)^-n = 1 - 1,000,000·0.008333/25,000 = 0.666667",
+      "-n·log(1+i) = log(0.666667)",
+      "n = 48.86 → 49 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R800,000 on 28 February 2024 at an interest rate of 6.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R24,000 on 30 June 2024. He continued to make monthly repayments of R24,000 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "37 months",
+    "demonstration": "i = 6.0/100/12 = 0.005000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 800,000·0.005000/24,000 = 0.833333.\nTake logs: -n·log(1+i) = log(0.833333). n = -log(0.833333)/log(1.005000) = 36.56.\nRound UP (you can't make a fraction of a payment). Answer: 37 months.",
+    "memo_marks": [
+      "1 mark for i = 0.005000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 36.56",
+      "1 mark for rounded up to 37"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.005000",
+      "(1+i)^-n = 1 - 800,000·0.005000/24,000 = 0.833333",
+      "-n·log(1+i) = log(0.833333)",
+      "n = 36.56 → 37 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R1,500,000 on 28 February 2024 at an interest rate of 9.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R67,500 on 30 June 2024. He continued to make monthly repayments of R67,500 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "25 months",
+    "demonstration": "i = 9.0/100/12 = 0.007500. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 1,500,000·0.007500/67,500 = 0.833333.\nTake logs: -n·log(1+i) = log(0.833333). n = -log(0.833333)/log(1.007500) = 24.40.\nRound UP (you can't make a fraction of a payment). Answer: 25 months.",
+    "memo_marks": [
+      "1 mark for i = 0.007500",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 24.40",
+      "1 mark for rounded up to 25"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.007500",
+      "(1+i)^-n = 1 - 1,500,000·0.007500/67,500 = 0.833333",
+      "-n·log(1+i) = log(0.833333)",
+      "n = 24.40 → 25 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R900,000 on 28 February 2024 at an interest rate of 11.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R37,100 on 30 June 2024. He continued to make monthly repayments of R37,100 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "28 months",
+    "demonstration": "i = 11.0/100/12 = 0.009167. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 900,000·0.009167/37,100 = 0.777628.\nTake logs: -n·log(1+i) = log(0.777628). n = -log(0.777628)/log(1.009167) = 27.56.\nRound UP (you can't make a fraction of a payment). Answer: 28 months.",
+    "memo_marks": [
+      "1 mark for i = 0.009167",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 27.56",
+      "1 mark for rounded up to 28"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.009167",
+      "(1+i)^-n = 1 - 900,000·0.009167/37,100 = 0.777628",
+      "-n·log(1+i) = log(0.777628)",
+      "n = 27.56 → 28 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R900,000 on 28 February 2024 at an interest rate of 12.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R31,500 on 30 June 2024. He continued to make monthly repayments of R31,500 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "34 months",
+    "demonstration": "i = 12.0/100/12 = 0.010000. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 900,000·0.010000/31,500 = 0.714286.\nTake logs: -n·log(1+i) = log(0.714286). n = -log(0.714286)/log(1.010000) = 33.82.\nRound UP (you can't make a fraction of a payment). Answer: 34 months.",
+    "memo_marks": [
+      "1 mark for i = 0.010000",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 33.82",
+      "1 mark for rounded up to 34"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.010000",
+      "(1+i)^-n = 1 - 900,000·0.010000/31,500 = 0.714286",
+      "-n·log(1+i) = log(0.714286)",
+      "n = 33.82 → 34 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "The bank granted Rajesh a loan of R800,000 on 28 February 2024 at an interest rate of 8.0% p.a., compounded monthly. Rajesh was unable to make the first three payments. He made his first repayment of R13,300 on 30 June 2024. He continued to make monthly repayments of R13,300 at the end of each month thereafter. How long, in completed months, will it take Rajesh to repay the loan from the time the loan was granted?",
+    "expected": "78 months",
+    "demonstration": "i = 8.0/100/12 = 0.006667. Use PV formula: P = x[1 - (1+i)^-n]/i.\nRearranging: (1+i)^-n = 1 - P·i/x = 1 - 800,000·0.006667/13,300 = 0.598997.\nTake logs: -n·log(1+i) = log(0.598997). n = -log(0.598997)/log(1.006667) = 77.13.\nRound UP (you can't make a fraction of a payment). Answer: 78 months.",
+    "memo_marks": [
+      "1 mark for i = 0.006667",
+      "1 mark for formula setup",
+      "1 mark for logs applied",
+      "1 mark for n = 77.13",
+      "1 mark for rounded up to 78"
+    ],
+    "fast_path": "PV formula → isolate (1+i)^-n → take logs → solve. Round UP.",
+    "fatal_error": "DBE says: Candidates round to nearest instead of up, or take log of a negative number because the inner term went negative (instalment too small).",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "(1+i)^-n = 1 - 800,000·0.006667/13,300 = 0.598997",
+      "-n·log(1+i) = log(0.598997)",
+      "n = 77.13 → 78 months (round up)"
+    ],
+    "hack": "PV formula, isolate the power, take logs. Round UP for payments.",
+    "trap": "Log of negative is undefined. If (1 - P·i/x) is negative, the instalment is too small — the loan never ends.",
+    "presentation": "Show i, the rearranged formula, the logs, the exact n, and the rounded answer.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

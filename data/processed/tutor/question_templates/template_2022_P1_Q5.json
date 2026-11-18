@@ -47,6 +47,12 @@
       "steps": [
         "g: y = 2x + 6. Swap x and y: x = 2y + 6.",
         "y = (x - 6)/2 = x/2 - 3."
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "functions.line"
       ]
     },
     {
@@ -67,6 +73,14 @@
         "4x + 12 = x - 6",
         "3x = -18, x = -6.",
         "y = 2(-6) + 6 = -6."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "functions.line",
+        "functions.inverse"
       ]
     },
     {
@@ -98,6 +112,15 @@
       "steps": [
         "A(-6; -6), B(0; 6).",
         "AB = sqrt((0+6)^2 + (6+6)^2) = sqrt(36 + 144) = sqrt(180)."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "functions.line",
+        "functions.inverse"
       ]
     },
     {
@@ -130,6 +153,17 @@
         "C is the x-intercept of g^(-1): 0 = x/2 - 3, x = 6. C(6; 0).",
         "Use area formula = 1/2 |x1(y2 - y3) + ...|",
         "Area = 54."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "requires_skills": [
+        "functions.line",
+        "functions.inverse",
+        "analytical.distance"
       ]
     }
   ],

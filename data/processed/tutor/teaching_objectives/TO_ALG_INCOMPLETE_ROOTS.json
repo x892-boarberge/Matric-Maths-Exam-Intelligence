@@ -1,0 +1,40 @@
+{
+  "objective_id": "TO_ALG_INCOMPLETE_ROOTS",
+  "skill_id": "algebra.quadratic.solve",
+  "trigger_misconception": "M_INCOMPLETE_ROOTS",
+  "applies_when": "learner gives one root of a two-root quadratic",
+  "dbe_source": {
+    "years": [
+      "2014",
+      "2019",
+      "2021",
+      "2025"
+    ],
+    "recommendation": "Candidates gave only one root when the question had two. A quadratic equation has two solutions. Both must be written, joined by 'or'.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "A quadratic equation has TWO roots, not one. If you write only one, you have not finished the question. Both roots must be written, joined by 'or'.",
+    "why": "In (x - a)(x - b) = 0, you must set each factor to zero. Setting only one factor to zero gives only one root and loses the mark for the second.",
+    "example": {
+      "problem": "Solve (x - 4)(x + 3) = 0.",
+      "work": [
+        "Set BOTH factors to zero.",
+        "x - 4 = 0  gives  x = 4",
+        "x + 3 = 0  gives  x = -3",
+        "Answer:  x = 4 or x = -3",
+        "Do not stop after the first root."
+      ]
+    },
+    "probe": {
+      "problem": "Solve (x - 6)(x + 1) = 0. Write BOTH roots.",
+      "expected": "x = 6 or x = -1",
+      "hint": "Two factors. Two roots. Write both with 'or' between them."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_INCOMPLETE_ROOTS",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You gave one root. A quadratic has two. The second one is missing."
+}

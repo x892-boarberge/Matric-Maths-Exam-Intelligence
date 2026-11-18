@@ -35,6 +35,12 @@
         "2/(x+1) = -1.",
         "x + 1 = -2.",
         "x = -3."
+      ],
+      "given_from": [
+        "4.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -53,6 +59,13 @@
       "steps": [
         "Vertical asymptote of g is x = -1.",
         "h(x) = g(x+5) shifts 5 left → x = -6."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -88,6 +101,15 @@
         "x = sqrt(3) (positive).",
         "S(sqrt(3); sqrt(3)).",
         "OS = sqrt(3 + 3) = sqrt(6)."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.transformation"
       ]
     },
     {
@@ -108,6 +130,16 @@
         "2/(x+1) + 1 = x + k.",
         "2 = (x + k - 1)(x + 1).",
         "Product of roots < 0 condition gives k < 3."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.transformation"
       ]
     }
   ],

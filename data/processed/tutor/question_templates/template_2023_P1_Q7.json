@@ -43,6 +43,12 @@
       "expected_fn": "f'(x) = {three_a}x^2 - {b}",
       "steps": [
         "Differentiate term by term."
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles"
       ]
     },
     {
@@ -55,6 +61,14 @@
       "steps": [
         "Rewrite cube root as power.",
         "Differentiate."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     },
     {
@@ -80,6 +94,15 @@
         "-6x^2 + 8 > 0",
         "x^2 < 4/3",
         "-2/sqrt(3) < x < 2/sqrt(3)"
+      ],
+      "given_from": [
+        "7.1",
+        "7.2.1",
+        "7.2.2"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     }
   ],

@@ -56,6 +56,12 @@
         "Set A'(x) = 0: 6x^2 = 3456",
         "x^2 = 576",
         "x = 24 cm"
+      ],
+      "given_from": [
+        "9.1"
+      ],
+      "requires_skills": [
+        "calculus.optimisation"
       ]
     }
   ],

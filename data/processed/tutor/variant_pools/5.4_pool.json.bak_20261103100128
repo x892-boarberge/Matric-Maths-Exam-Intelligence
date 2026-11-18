@@ -1,0 +1,632 @@
+[
+  {
+    "variant_question": "Show that f(x) = 2(x-4)^2 + 4 is the parabola.",
+    "expected": "y = 2x^2 - 16x + 36",
+    "demonstration": "Use TP (4;4) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-4)\u00b2 + 4",
+      "Sub point -> find a",
+      "a = 2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 2x\u00b2 - 16x + 36"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -2(x-4)^2 + -2 is the parabola.",
+    "expected": "y = -2x^2 - -16x + -34",
+    "demonstration": "Use TP (4;-2) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-4)\u00b2 + -2",
+      "Sub point -> find a",
+      "a = -2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -2x\u00b2 - -16x + -34"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 1(x-4)^2 + 1 is the parabola.",
+    "expected": "y = 1x^2 - 8x + 17",
+    "demonstration": "Use TP (4;1) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-4)\u00b2 + 1",
+      "Sub point -> find a",
+      "a = 1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 1x\u00b2 - 8x + 17"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-1)^2 + 1 is the parabola.",
+    "expected": "y = -1x^2 - -2x + 0",
+    "demonstration": "Use TP (1;1) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-1)\u00b2 + 1",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -2x + 0"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 2(x-3)^2 + 3 is the parabola.",
+    "expected": "y = 2x^2 - 12x + 21",
+    "demonstration": "Use TP (3;3) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-3)\u00b2 + 3",
+      "Sub point -> find a",
+      "a = 2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 2x\u00b2 - 12x + 21"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 1(x-5)^2 + -4 is the parabola.",
+    "expected": "y = 1x^2 - 10x + 21",
+    "demonstration": "Use TP (5;-4) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-5)\u00b2 + -4",
+      "Sub point -> find a",
+      "a = 1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 1x\u00b2 - 10x + 21"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 2(x-1)^2 + 0 is the parabola.",
+    "expected": "y = 2x^2 - 4x + 2",
+    "demonstration": "Use TP (1;0) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-1)\u00b2 + 0",
+      "Sub point -> find a",
+      "a = 2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 2x\u00b2 - 4x + 2"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 1(x-3)^2 + 0 is the parabola.",
+    "expected": "y = 1x^2 - 6x + 9",
+    "demonstration": "Use TP (3;0) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-3)\u00b2 + 0",
+      "Sub point -> find a",
+      "a = 1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 1x\u00b2 - 6x + 9"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 1(x-3)^2 + -4 is the parabola.",
+    "expected": "y = 1x^2 - 6x + 5",
+    "demonstration": "Use TP (3;-4) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-3)\u00b2 + -4",
+      "Sub point -> find a",
+      "a = 1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 1x\u00b2 - 6x + 5"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-3)^2 + 2 is the parabola.",
+    "expected": "y = -1x^2 - -6x + -7",
+    "demonstration": "Use TP (3;2) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-3)\u00b2 + 2",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -6x + -7"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 1(x-4)^2 + 2 is the parabola.",
+    "expected": "y = 1x^2 - 8x + 18",
+    "demonstration": "Use TP (4;2) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-4)\u00b2 + 2",
+      "Sub point -> find a",
+      "a = 1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 1x\u00b2 - 8x + 18"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-5)^2 + -3 is the parabola.",
+    "expected": "y = -1x^2 - -10x + -28",
+    "demonstration": "Use TP (5;-3) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-5)\u00b2 + -3",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -10x + -28"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-2)^2 + 4 is the parabola.",
+    "expected": "y = -1x^2 - -4x + 0",
+    "demonstration": "Use TP (2;4) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-2)\u00b2 + 4",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -4x + 0"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 1(x-4)^2 + -4 is the parabola.",
+    "expected": "y = 1x^2 - 8x + 12",
+    "demonstration": "Use TP (4;-4) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-4)\u00b2 + -4",
+      "Sub point -> find a",
+      "a = 1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 1x\u00b2 - 8x + 12"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-1)^2 + -5 is the parabola.",
+    "expected": "y = -1x^2 - -2x + -6",
+    "demonstration": "Use TP (1;-5) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-1)\u00b2 + -5",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -2x + -6"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 1(x-4)^2 + -3 is the parabola.",
+    "expected": "y = 1x^2 - 8x + 13",
+    "demonstration": "Use TP (4;-3) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-4)\u00b2 + -3",
+      "Sub point -> find a",
+      "a = 1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 1x\u00b2 - 8x + 13"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-2)^2 + 3 is the parabola.",
+    "expected": "y = -1x^2 - -4x + -1",
+    "demonstration": "Use TP (2;3) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-2)\u00b2 + 3",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -4x + -1"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 1(x-2)^2 + -5 is the parabola.",
+    "expected": "y = 1x^2 - 4x + -1",
+    "demonstration": "Use TP (2;-5) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-2)\u00b2 + -5",
+      "Sub point -> find a",
+      "a = 1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 1x\u00b2 - 4x + -1"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-5)^2 + 1 is the parabola.",
+    "expected": "y = -1x^2 - -10x + -24",
+    "demonstration": "Use TP (5;1) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-5)\u00b2 + 1",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -10x + -24"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-4)^2 + 2 is the parabola.",
+    "expected": "y = -1x^2 - -8x + -14",
+    "demonstration": "Use TP (4;2) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-4)\u00b2 + 2",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -8x + -14"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 2(x-2)^2 + 5 is the parabola.",
+    "expected": "y = 2x^2 - 8x + 13",
+    "demonstration": "Use TP (2;5) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-2)\u00b2 + 5",
+      "Sub point -> find a",
+      "a = 2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 2x\u00b2 - 8x + 13"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -2(x-3)^2 + 3 is the parabola.",
+    "expected": "y = -2x^2 - -12x + -15",
+    "demonstration": "Use TP (3;3) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-3)\u00b2 + 3",
+      "Sub point -> find a",
+      "a = -2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -2x\u00b2 - -12x + -15"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-3)^2 + -5 is the parabola.",
+    "expected": "y = -1x^2 - -6x + -14",
+    "demonstration": "Use TP (3;-5) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-3)\u00b2 + -5",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -6x + -14"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -2(x-3)^2 + 3 is the parabola.",
+    "expected": "y = -2x^2 - -12x + -15",
+    "demonstration": "Use TP (3;3) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-3)\u00b2 + 3",
+      "Sub point -> find a",
+      "a = -2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -2x\u00b2 - -12x + -15"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 2(x-4)^2 + -4 is the parabola.",
+    "expected": "y = 2x^2 - 16x + 28",
+    "demonstration": "Use TP (4;-4) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-4)\u00b2 + -4",
+      "Sub point -> find a",
+      "a = 2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 2x\u00b2 - 16x + 28"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-2)^2 + 0 is the parabola.",
+    "expected": "y = -1x^2 - -4x + -4",
+    "demonstration": "Use TP (2;0) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-2)\u00b2 + 0",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -4x + -4"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 2(x-2)^2 + 0 is the parabola.",
+    "expected": "y = 2x^2 - 8x + 8",
+    "demonstration": "Use TP (2;0) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-2)\u00b2 + 0",
+      "Sub point -> find a",
+      "a = 2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 2x\u00b2 - 8x + 8"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = -1(x-5)^2 + -1 is the parabola.",
+    "expected": "y = -1x^2 - -10x + -26",
+    "demonstration": "Use TP (5;-1) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-5)\u00b2 + -1",
+      "Sub point -> find a",
+      "a = -1",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = -1x\u00b2 - -10x + -26"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 2(x-5)^2 + -3 is the parabola.",
+    "expected": "y = 2x^2 - 20x + 47",
+    "demonstration": "Use TP (5;-3) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-5)\u00b2 + -3",
+      "Sub point -> find a",
+      "a = 2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 2x\u00b2 - 20x + 47"
+    ]
+  },
+  {
+    "variant_question": "Show that f(x) = 2(x-1)^2 + 3 is the parabola.",
+    "expected": "y = 2x^2 - 4x + 5",
+    "demonstration": "Use TP (1;3) and point.",
+    "memo_marks": [
+      "1 mark TP form",
+      "1 mark sub",
+      "1 mark a",
+      "1 mark exp"
+    ],
+    "fast_path": "Start from TP.",
+    "fatal_error": "DBE says: Use given a.",
+    "answer_book_layout": [
+      "y = a(x-1)\u00b2 + 3",
+      "Sub point -> find a",
+      "a = 2",
+      "Expand",
+      "_________________________",
+      "Final Answer: y = 2x\u00b2 - 4x + 5"
+    ]
+  }
+]

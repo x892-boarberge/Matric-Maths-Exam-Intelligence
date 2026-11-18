@@ -1,0 +1,572 @@
+[
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R4283.02",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 108 months = ...",
+      "Balance = R4254.66",
+      "Final = 4254.66 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R4283.02"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R2841.79",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 103 months = ...",
+      "Balance = R2824.84",
+      "Final = 2824.84 * (1+0.006000)",
+      "_________________________",
+      "Final Answer: R2841.79"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R756.68",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 63 months = ...",
+      "Balance = R751.67",
+      "Final = 751.67 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R756.68"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R9327.00",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 52 months = ...",
+      "Balance = R9253.74",
+      "Final = 9253.74 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R9327.00"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R5945.58",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 66 months = ...",
+      "Balance = R5898.88",
+      "Final = 5898.88 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R5945.58"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R9327.00",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 52 months = ...",
+      "Balance = R9253.74",
+      "Final = 9253.74 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R9327.00"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R14780.85",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 38 months = ...",
+      "Balance = R14682.96",
+      "Final = 14682.96 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R14780.85"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R756.68",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 63 months = ...",
+      "Balance = R751.67",
+      "Final = 751.67 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R756.68"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R756.68",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 63 months = ...",
+      "Balance = R751.67",
+      "Final = 751.67 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R756.68"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R7134.70",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 66 months = ...",
+      "Balance = R7078.66",
+      "Final = 7078.66 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R7134.70"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R5945.58",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 66 months = ...",
+      "Balance = R5898.88",
+      "Final = 5898.88 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R5945.58"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R6067.44",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 79 months = ...",
+      "Balance = R6027.26",
+      "Final = 6027.26 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R6067.44"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R2784.52",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 50 months = ...",
+      "Balance = R2762.65",
+      "Final = 2762.65 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R2784.52"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R5356.06",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 49 months = ...",
+      "Balance = R5324.11",
+      "Final = 5324.11 * (1+0.006000)",
+      "_________________________",
+      "Final Answer: R5356.06"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R4462.75",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 85 months = ...",
+      "Balance = R4427.70",
+      "Final = 4427.70 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R4462.75"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R9327.00",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 52 months = ...",
+      "Balance = R9253.74",
+      "Final = 9253.74 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R9327.00"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R4283.02",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 108 months = ...",
+      "Balance = R4254.66",
+      "Final = 4254.66 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R4283.02"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R2398.56",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 48 months = ...",
+      "Balance = R2382.68",
+      "Final = 2382.68 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R2398.56"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R186.18",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 81 months = ...",
+      "Balance = R185.07",
+      "Final = 185.07 * (1+0.006000)",
+      "_________________________",
+      "Final Answer: R186.18"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R2398.56",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 48 months = ...",
+      "Balance = R2382.68",
+      "Final = 2382.68 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R2398.56"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R8918.37",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 66 months = ...",
+      "Balance = R8848.32",
+      "Final = 8848.32 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R8918.37"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R2398.56",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 48 months = ...",
+      "Balance = R2382.68",
+      "Final = 2382.68 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R2398.56"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R4767.55",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 38 months = ...",
+      "Balance = R4739.11",
+      "Final = 4739.11 * (1+0.006000)",
+      "_________________________",
+      "Final Answer: R4767.55"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R8971.68",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 76 months = ...",
+      "Balance = R8918.18",
+      "Final = 8918.18 * (1+0.006000)",
+      "_________________________",
+      "Final Answer: R8971.68"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R756.68",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 63 months = ...",
+      "Balance = R751.67",
+      "Final = 751.67 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R756.68"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R5945.58",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 66 months = ...",
+      "Balance = R5898.88",
+      "Final = 5898.88 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R5945.58"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R9327.00",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 52 months = ...",
+      "Balance = R9253.74",
+      "Final = 9253.74 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R9327.00"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R630.57",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 63 months = ...",
+      "Balance = R626.39",
+      "Final = 626.39 * (1+0.006667)",
+      "_________________________",
+      "Final Answer: R630.57"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R4767.55",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 38 months = ...",
+      "Balance = R4739.11",
+      "Final = 4739.11 * (1+0.006000)",
+      "_________________________",
+      "Final Answer: R4767.55"
+    ]
+  },
+  {
+    "variant_question": "Calculate final payment for the Sipho loan.",
+    "expected": "R4784.86",
+    "demonstration": "Balance after n-1, add interest.",
+    "memo_marks": [
+      "1 mark bal",
+      "1 mark int",
+      "1 mark ans"
+    ],
+    "fast_path": "Balance then multiply.",
+    "fatal_error": "DBE says: Write regular pay.",
+    "answer_book_layout": [
+      "Balance after 40 months = ...",
+      "Balance = R4747.27",
+      "Final = 4747.27 * (1+0.007917)",
+      "_________________________",
+      "Final Answer: R4784.86"
+    ]
+  }
+]

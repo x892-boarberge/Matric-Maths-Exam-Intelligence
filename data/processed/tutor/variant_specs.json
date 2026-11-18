@@ -1,0 +1,90 @@
+{
+  "quadratic_factored": {
+    "shape_id": "quadratic_factored",
+    "skill_id": "algebra.quadratic.solve",
+    "misconceptions": [
+      "M_SIGN_ERROR_READING_ROOT",
+      "M_INCOMPLETE_ROOTS",
+      "M_AND_OR_CONFUSION"
+    ]
+  },
+  "quadratic_standard_factorable": {
+    "shape_id": "quadratic_standard_factorable",
+    "skill_id": "algebra.quadratic.solve",
+    "misconceptions": [
+      "M_SIGN_ERROR_FACTORISATION",
+      "M_FACTORISATION_INCOMPLETE",
+      "M_INCOMPLETE_ROOTS",
+      "M_AND_OR_CONFUSION"
+    ]
+  },
+  "quadratic_formula": {
+    "shape_id": "quadratic_formula",
+    "skill_id": "algebra.quadratic.solve",
+    "misconceptions": [
+      "M_WRONG_QUADRATIC_FORMULA",
+      "M_INCORRECT_SUBSTITUTION",
+      "M_INCOMPLETE_ROOTS"
+    ]
+  },
+  "quadratic_inequality": {
+    "shape_id": "quadratic_inequality",
+    "skill_id": "algebra.quadratic.inequality",
+    "misconceptions": [
+      "M_INEQ_TREATED_AS_EQUATION",
+      "M_INEQ_WRONG_INTERVAL",
+      "M_AND_OR_CONFUSION"
+    ]
+  },
+  "surd_equation_s1": {
+    "shape_id": "surd_equation_s1",
+    "skill_id": "algebra.surd.solve",
+    "misconceptions": [
+      "M_SURD_NOT_ISOLATED",
+      "M_BINOMIAL_MIDDLE_TERM_DROPPED",
+      "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+      "M_LOST_ROOT_BY_DIVISION"
+    ]
+  },
+  "exponential_quadratic": {
+    "shape_id": "exponential_quadratic",
+    "skill_id": "algebra.exponential.solve",
+    "misconceptions": [
+      "M_EXP_LAW_MISAPPLIED",
+      "M_EXP_FACTORISATION_ERROR",
+      "M_EXP_EXTRA_ROOT_NOT_REJECTED",
+      "M_EXP_DIFFERENT_BASES"
+    ]
+  },
+  "exponential_value": {
+    "shape_id": "exponential_value",
+    "skill_id": "algebra.exponential.solve",
+    "misconceptions": [
+      "M_EXP_DIFFERENT_BASES",
+      "M_EXP_LAW_MISAPPLIED"
+    ]
+  },
+  "simultaneous_linear_quadratic": {
+    "shape_id": "simultaneous_linear_quadratic",
+    "skill_id": "algebra.simultaneous.solve",
+    "misconceptions": [
+      "M_SIM_OVERLOOKED_FACTOR",
+      "M_SIM_EQUATION_FROM_WORDS"
+    ]
+  },
+  "exponential_proof": {
+    "shape_id": "exponential_proof",
+    "skill_id": "algebra.exponential.proof",
+    "misconceptions": []
+  },
+  "proof_integer": {
+    "shape_id": "proof_integer",
+    "skill_id": "algebra.proof.integer",
+    "misconceptions": []
+  },
+  "proof_nonreal": {
+    "shape_id": "proof_nonreal",
+    "skill_id": "algebra.proof",
+    "misconceptions": []
+  }
+}

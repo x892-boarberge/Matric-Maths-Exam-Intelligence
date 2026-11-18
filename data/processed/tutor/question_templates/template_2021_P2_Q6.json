@@ -59,6 +59,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1.1"
+      ],
+      "requires_skills": [
+        "trig.identities"
       ]
     },
     {
@@ -104,6 +110,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "requires_skills": [
+        "trig.identities"
       ]
     }
   ],

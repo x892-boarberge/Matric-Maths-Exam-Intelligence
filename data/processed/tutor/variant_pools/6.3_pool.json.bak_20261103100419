@@ -1,0 +1,452 @@
+[
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  },
+  {
+    "variant_question": "Transformation to symmetry.",
+    "expected": "Translate by...",
+    "demonstration": "Move to symmetry line.",
+    "memo_marks": [
+      "1 mark desc"
+    ],
+    "fast_path": "Describe translation.",
+    "fatal_error": "DBE says: Move to asymptote.",
+    "answer_book_layout": [
+      "Centre is (p;q)",
+      "Translate by ... units to lie on symmetry line",
+      "Final Answer: Translate by ..."
+    ]
+  }
+]

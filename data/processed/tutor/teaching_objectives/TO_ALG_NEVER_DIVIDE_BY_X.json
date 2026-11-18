@@ -1,0 +1,39 @@
+{
+  "objective_id": "TO_ALG_NEVER_DIVIDE_BY_X",
+  "skill_id": "algebra.quadratic.solve",
+  "trigger_misconception": "M_LOST_ROOT_BY_DIVISION",
+  "applies_when": "prompt is a quadratic with no constant term, e.g. x² - 7x = 0",
+  "dbe_source": {
+    "years": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "recommendation": "Some candidates divided throughout by x, reducing a quadratic equation to a linear one and losing a root. Never divide an equation through by the variable. Factorise instead.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When an equation has an x in every term, do not divide by x. Factorise x out instead. Dividing by x throws away the root x = 0.",
+    "why": "Every quadratic has two roots. If you divide by x, you only find one of them. The other root is x = 0, and it disappears the moment you divide.",
+    "example": {
+      "problem": "Solve x² - 7x = 0.",
+      "work": [
+        "Do not divide by x. Factorise instead.",
+        "x(x - 7) = 0",
+        "Set each factor to zero:  x = 0  or  x - 7 = 0",
+        "x = 0  or  x = 7"
+      ]
+    },
+    "probe": {
+      "problem": "Solve x² + 5x = 0.",
+      "expected": "x = 0 or x = -5",
+      "hint": "Factorise x out. Do not divide."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_LOST_ROOT_BY_DIVISION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You divided through by x, which throws away the root x = 0. Factorise instead."
+}

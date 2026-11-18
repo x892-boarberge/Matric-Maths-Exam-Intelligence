@@ -1,0 +1,877 @@
+"""Tanaka's letter to the parent.
+
+Same data as the analyst report. Different language. Same truth.
+
+500 words. Front-loaded. Warm but professional. Honest about the
+struggle. Actionable in one small way. Never teaches the parent to
+re-teach their child.
+
+The voice is Tanaka speaking directly — first person, about the child,
+to the parent. Not "the system reports." "I've been working with..."
+
+Writes both .md (email body) and .html (shareable, print-friendly).
+"""
+import sqlite3
+from pathlib import Path
+from datetime import datetime, timezone, timedelta
+from collections import Counter
+
+
+def _find_root():
+    r = Path(".").resolve()
+    for c in [r, *r.parents]:
+        if (c / "src" / "tutor").is_dir():
+            return c
+    return r
+
+
+ROOT = _find_root()
+DB = ROOT / "data" / "learner_store" / "learners.db"
+REPORTS = ROOT / "data" / "reports"
+
+
+# ─── Human-tutor recommendation config ─────────────────────────────────────
+# When the digital tutor has genuinely hit a wall, the parent letter offers
+# an honest path to a human tutor. This is NOT a footer upsell — it fires
+# only when trigger conditions are met, and it's designed to preserve trust.
+#
+# Set "available" to False to suppress the section entirely (e.g., if the
+# human tutor has no capacity for new students this month).
+TUTORING_CONFIG = {
+    "available": True,
+    "company_name": "Tanaka Salvatore Academies",
+    "tutor_first_name": "Tanaka",
+    "tutor_full_name": "Tanaka Peace",
+    "contact_email": "tanakatutor5@gmail.com",
+    "contact_phone": "078 406 1258",
+    "contact_phone_note": "WhatsApp available on this number",
+    "booking_url": "",
+    "areas": ["Gauteng", "Nationwide (online)"],
+    "pitch": (
+        "I also tutor in person through Tanaka Salvatore Academies — same "
+        "approach, same care, different format. If this is what your child "
+        "needs, I'd rather tell you than keep going and hope."
+    ),
+}
+
+
+# ─── Trigger conditions for human-tutor recommendation ─────────────────────
+# The letter only recommends a human tutor when the tutor has genuinely
+# hit a limit. Multiple independent signals, not a single failure.
+TRIGGER_THRESHOLDS = {
+    "misconception_count": 15,      # same error 15+ times — habit not breaking
+    "quit_after_variants": 2,       # 2+ frustrated exits
+    "low_accuracy_attempts": 30,    # long grind with no progress
+    "low_accuracy_threshold": 0.20, # <20% correct despite the grind
+}
+
+
+def _parse(s):
+    if not s:
+        return None
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def _is_pass(error_type):
+    return str(error_type or "").lower() in ("none", "match")
+
+
+def _display_name(learner_id):
+    """Best-effort name from learner_id."""
+    s = str(learner_id).strip()
+    if not s or s.isdigit():
+        return "your child"
+    return s.replace("_", " ").title()
+
+
+# ─── Per-misconception content for parents ──────────────────────────────────
+# Each section: (natural_name, example, homework_action, dont_action)
+
+MISCONCEPTION_PARENT_CONTENT = {
+    "M_SIGN_ERROR_READING_ROOT": {
+        "natural": "flips the sign when reading a root from a bracket",
+        "example": (
+            "In a question like <code>(x + 3)(x - 4) = 0</code>, the correct "
+            "answers are <code>x = -3</code> or <code>x = 4</code>. "
+            "Your child wrote <code>x = 3</code> or <code>x = 4</code> — the "
+            "sign was flipped. The rule is: the root is the *opposite* of the "
+            "sign inside the bracket."
+        ),
+        "homework": (
+            "When your child shows you a factorised question, ask them to say "
+            "the sign out loud before they write the answer. "
+            "<em>“Plus three in the bracket — minus three as the root.”</em> "
+            "That's it. Two minutes, one question, done."
+        ),
+        "dont": (
+            "Don't try to re-teach this yourself. It's not a knowledge gap — "
+            "it's a habit. The tutor's job is to change the habit over many "
+            "attempts. Your job is to notice the effort, not to correct the answer."
+        ),
+    },
+    "M_ALG_SIGN_FLIP_FACTOR": {
+        "natural": "flips signs when factorising quadratics",
+        "example": (
+            "When factorising <code>x² − 5x + 6</code>, the correct factors are "
+            "<code>(x − 2)(x − 3)</code>. Your child wrote <code>(x + 2)(x + 3)</code> — "
+            "both signs flipped. The middle term (−5x) tells you the signs."
+        ),
+        "homework": (
+            "Ask your child: “what two numbers multiply to get the last term and "
+            "add to get the middle one?” Just that question. Say it once. "
+            "Then let them work it out."
+        ),
+        "dont": (
+            "Don't show them the answer. The whole point is that they find the "
+            "sign themselves. The tutor is doing the same thing — asking the "
+            "right question, then stepping back."
+        ),
+    },
+    "M_INCOMPLETE_ROOTS": {
+        "natural": "stops after finding only one of the two answers",
+        "example": (
+            "In <code>(x + 3)(x − 4) = 0</code>, there are TWO correct answers: "
+            "<code>x = −3</code> and <code>x = 4</code>. Your child gave only one. "
+            "A quadratic always has two roots — the second one was missing."
+        ),
+        "homework": (
+            "Ask your child to point to where both answers are in their working. "
+            "If there's only one, ask: <em>“is there a second one?”</em> "
+            "Not “you missed one” — just “is there a second one?” They'll find it."
+        ),
+        "dont": (
+            "Don't write the second root for them. The habit we're building is "
+            "for them to *check* — not for you to catch. One question, one prompt, "
+            "then let them finish."
+        ),
+    },
+    "M_CALCULATION_ERROR": {
+        "natural": "slips on the final arithmetic, not the method",
+        "example": (
+            "The method is right — your child knows *how* to solve the question. "
+            "But somewhere in the final line (adding, subtracting, rounding), "
+            "the number went wrong. This is a habit-of-speed problem, not a "
+            "knowledge problem."
+        ),
+        "homework": (
+            "Ask your child to write every line, even the ones that feel obvious. "
+            "The rule is: nothing skipped. Not because skipping is wrong — but "
+            "because the mistake usually hides in the line that wasn't written."
+        ),
+        "dont": (
+            "Don't ask them to slow down. “Slow down” makes them anxious and "
+            "usually makes it worse. Instead: “say the last two lines out loud "
+            "before you type them.” That changes the habit without the pressure."
+        ),
+    },
+    "M_AND_OR_CONFUSION": {
+        "natural": "joins the answers with “and” instead of “or”",
+        "example": (
+            "The memo expects <code>x = −3 or x = 4</code>. Your child wrote "
+            "<code>x = −3 and x = 4</code>. The two answers can't both be true "
+            "at the same time — that's why the memo says “or.”"
+        ),
+        "homework": (
+            "When they show you an answer with two values, ask: "
+            "<em>“could both of those be true at once?”</em> "
+            "The answer is usually no. That's why we say “or.”"
+        ),
+        "dont": (
+            "Don't correct the word “and” to “or” yourself. Ask the question, "
+            "then let them hear it. The point is for them to notice, "
+            "not for you to fix."
+        ),
+    },
+    "M_UNITS_IN_ANSWER": {
+        "natural": "adds units (m, cm, kg) where the memo wants just a number",
+        "example": (
+            "In “solve for x” questions, the answer is a number — <code>x = 5</code>, "
+            "not <code>x = 5m</code>. Units belong in measurement questions, "
+            "not algebraic solutions."
+        ),
+        "homework": (
+            "Ask your child: “is this a measurement or a number?” If they say "
+            "number, no units. If they say measurement, units. That's the "
+            "whole rule."
+        ),
+        "dont": (
+            "Don't explain the difference between algebraic and physical "
+            "quantities. Just ask the question. It's faster, and it sticks better."
+        ),
+    },
+}
+
+
+def _parent_content(mid):
+    """Return (natural_name, example, homework, dont) for a misconception."""
+    entry = MISCONCEPTION_PARENT_CONTENT.get(mid)
+    if entry:
+        return entry
+    # Fallback for misconceptions without parent-specific content
+    return {
+        "natural": mid.replace("M_", "").replace("_", " ").lower() if mid else "a specific pattern",
+        "example": "This is a specific pattern in how your child approaches these questions.",
+        "homework": (
+            "Ask your child what they worked on recently. Just one question. "
+            "That's all — and it's more than most parents do."
+        ),
+        "dont": (
+            "Don't try to re-teach. The tutor handles the teaching. "
+            "Your role is noticing the effort, not correcting the answer."
+        ),
+    }
+
+
+def _friendly_skill_name(skill_id):
+    mapping = {
+        "algebra.quadratic.solve": "quadratic equations",
+        "algebra.quadratic.inequality": "quadratic inequalities",
+        "algebra.surd.solve": "surd equations",
+        "algebra.simultaneous.solve": "simultaneous equations",
+        "algebra.exponential.solve": "exponential equations",
+        "trig.3d.length": "3D trigonometry",
+        "trig.reduction.simplify": "trig reduction",
+    }
+    return mapping.get(skill_id, skill_id.split(".")[-1].replace("_", " "))
+
+
+def gather(learner_id, days):
+    since = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+    conn = sqlite3.connect(DB)
+    conn.row_factory = sqlite3.Row
+
+    try:
+        attempts_raw = [dict(r) for r in conn.execute(
+            "SELECT * FROM attempt WHERE learner_id = ? AND timestamp >= ? "
+            "ORDER BY timestamp ASC",
+            (learner_id, since),
+        ).fetchall()]
+
+        events = [dict(r) for r in conn.execute(
+            "SELECT * FROM learner_events WHERE learner_id = ? AND timestamp >= ? "
+            "ORDER BY timestamp ASC",
+            (learner_id, since),
+        ).fetchall()]
+
+        # Retention decisions (from the mastery policy)
+        try:
+            retention = [dict(r) for r in conn.execute(
+                "SELECT * FROM mastery_decision WHERE learner_id = ? "
+                "ORDER BY decided_at DESC LIMIT 5",
+                (learner_id,),
+            ).fetchall()]
+        except sqlite3.OperationalError:
+            retention = []
+    finally:
+        conn.close()
+
+    attempts = []
+    for a in attempts_raw:
+        a2 = dict(a)
+        a2["ts"] = _parse(a["timestamp"])
+        a2["is_pass"] = _is_pass(a["error_type"])
+        a2["is_variant"] = str(a.get("question_id") or "").startswith("VAR_")
+        if a2["ts"]:
+            attempts.append(a2)
+
+    return attempts, events, retention
+
+
+def _load_latest_teacher_plan(learner_id):
+    """Load the latest teacher plan for this learner, if one exists."""
+    import json as _j
+    plans_dir = ROOT / "data" / "plans"
+    if not plans_dir.exists():
+        return None
+    files = list(plans_dir.glob(f"{learner_id}_plan_*.json"))
+    if not files:
+        return None
+    latest = max(files, key=lambda p: p.stat().st_mtime)
+    try:
+        return _j.loads(latest.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def check_human_tutor_triggers(attempts, events, retention, top_mid_count,
+                                 pass_rate, skill_label, learner_id=None):
+    """Return a list of specific reasons why a human tutor might help.
+    Empty list means no recommendation should fire.
+    """
+    if not TUTORING_CONFIG.get("available"):
+        return []
+
+    reasons = []
+    t = TRIGGER_THRESHOLDS
+
+    # Signal 1: persistent misconception not breaking
+    if top_mid_count >= t["misconception_count"]:
+        reasons.append(
+            f"the pattern on {skill_label} has appeared {top_mid_count} times "
+            f"across your child's sessions — it isn't breaking with the tutor's approach"
+        )
+
+    # Signal 2: repeated frustration
+    quits = sum(1 for e in events if e["event_type"] == "QUIT_AFTER_VARIANTS")
+    if quits >= t["quit_after_variants"]:
+        reasons.append(
+            f"your child has walked away from the tutor {quits} times this month "
+            f"when the practice got hard — a signal I take seriously"
+        )
+
+    # Signal 3: retention check failed
+    failed_retentions = [r for r in retention
+                         if r.get("retention_status") == "failed"]
+    if failed_retentions:
+        skills_failed = ", ".join(sorted(set(r.get("skill_id", "?") for r in failed_retentions)))
+        reasons.append(
+            f"the retention check was attempted and didn't hold — meaning the "
+            f"skill ({skills_failed}) faded after the initial pass. A human tutor "
+            f"can catch this in the room, week to week"
+        )
+
+    # Signal 4: long low-accuracy grind
+    if (len(attempts) >= t["low_accuracy_attempts"]
+            and pass_rate < t["low_accuracy_threshold"]):
+        reasons.append(
+            f"after {len(attempts)} attempts this month, the accuracy has stayed "
+            f"below {int(t['low_accuracy_threshold']*100)}% — the current approach "
+            f"isn't clicking, and it's not for lack of effort"
+        )
+
+    # Signal 5: drill escalation reached escalate_human.
+    # If the tutor's own drill has failed multiple times on the same
+    # misconception, the digital format is not reaching this specific
+    # error. That is real evidence — it belongs in the human-tutor trigger.
+    if learner_id:
+        plan = _load_latest_teacher_plan(learner_id)
+        if plan:
+            for action in plan.get("priority_actions", []):
+                if (action.get("type") == "targeted_drill"
+                        and action.get("escalation_state") == "escalate_human"):
+                    _skill = action.get("display_skill") or "this skill"
+                    _count = action.get("prior_drill_count", "multiple")
+                    reasons.append(
+                        f"the tutor has drilled {_skill.lower()} {_count} times on "
+                        f"the same misconception and it hasn't broken — the digital "
+                        f"format is not reaching this specific error. This is the "
+                        f"tutor naming its own limit."
+                    )
+                    break  # one reason is enough
+
+    return reasons
+
+
+def build_human_tutor_section(name, reasons, days):
+    """Build the human-tutor recommendation section. Only called if reasons is non-empty."""
+    if not reasons:
+        return ""
+
+    cfg = TUTORING_CONFIG
+    L = []
+    A = L.append
+
+    A("## One more thing, honestly")
+    A("")
+    A(f"I've been working with {name} for {days} days. "
+      f"There's something I want to say straight:")
+    A("")
+    for r in reasons:
+        A(f"- {r}")
+    A("")
+    A(f"That isn't {name} failing. It's a limit of my format.")
+    A("")
+    A(f"I can name the error. I can teach the rule. I can give variant after "
+      f"variant. But I can't sit next to {name}. I can't notice when {name} has "
+      f"stopped listening. I can't read a face that's about to give up. "
+      f"I can't say something in a tone that makes it finally land.")
+    A("")
+    A(f"A human tutor can.")
+    A("")
+    A("---")
+    A("")
+    A(f"{cfg['pitch']}")
+    A("")
+    if cfg.get("booking_url"):
+        A(f"**Book a session:** {cfg['booking_url']}")
+    else:
+        _name = cfg.get("tutor_full_name") or cfg.get("tutor_first_name", "Tanaka")
+        A(f"**To get in touch with {_name}** ({cfg.get('company_name', 'the tutoring service')}):")
+        A("")
+        if cfg.get("contact_email"):
+            A(f"- **Email:** {cfg['contact_email']}")
+        if cfg.get("contact_phone"):
+            _note = cfg.get("contact_phone_note", "")
+            _suffix = f" ({_note})" if _note else ""
+            A(f"- **Phone:** {cfg['contact_phone']}{_suffix}")
+        if cfg.get("areas"):
+            A(f"- **Available in:** {', '.join(cfg['areas'])}")
+    A("")
+    A(f"If you'd rather find a tutor closer to home — a different tutor, "
+      f"not {cfg['tutor_first_name']} — that is the right answer too. "
+      f"What matters is {name}, not who gets the work.")
+    A("")
+    A(f"Nothing changes about the digital tutor. I'll keep teaching here, "
+      f"as long as {name} keeps showing up. This is just an honest offer, "
+      f"not a demand.")
+    A("")
+
+    return "\n".join(L)
+
+
+def build_parent_letter(learner_id, days=7):
+    attempts, events, retention = gather(learner_id, days)
+    name = _display_name(learner_id)
+
+    if not attempts:
+        return _empty_letter(learner_id, name, days)
+
+    total = len(attempts)
+    passes = sum(1 for a in attempts if a["is_pass"])
+    pass_rate = passes / total if total else 0
+
+    days_set = set(a["ts"].date() for a in attempts)
+    today = datetime.now(timezone.utc).date()
+    streak = 0
+    d = today
+    while d in days_set:
+        streak += 1
+        d -= timedelta(days=1)
+
+    # Longest consecutive run of correct answers — per session only.
+    # A "session" is one continuous sitting; cross-session runs inflate the
+    # number with repeat-question passes and misrepresent the learner.
+    from collections import defaultdict
+    _by_session = defaultdict(list)
+    for a in attempts:
+        _sid = a.get("session_id") or "unknown"
+        _by_session[_sid].append(a)
+    longest_run = 0
+    for _sid, _sess_attempts in _by_session.items():
+        current_run = 0
+        for a in _sess_attempts:
+            if a["is_pass"]:
+                current_run += 1
+                longest_run = max(longest_run, current_run)
+            else:
+                current_run = 0
+
+    # Misconception density
+    miscon = Counter(a["misconception_id"] for a in attempts if a["misconception_id"])
+    miscon_skill = Counter()
+    for a in attempts:
+        if a["misconception_id"]:
+            miscon_skill[a["skill_id"]] += 1
+
+    if miscon_skill:
+        top_skill = miscon_skill.most_common(1)[0][0]
+        skill_label = _friendly_skill_name(top_skill)
+    else:
+        skill_label = "mathematics"
+
+    top_mid = miscon.most_common(1)[0][0] if miscon else None
+    top_mid_count = miscon.most_common(1)[0][1] if miscon else 0
+
+    manual_variants = sum(1 for e in events if e["event_type"] == "MANUAL_VARIANT_REQUEST")
+    homework_download = sum(1 for e in events if e["event_type"] == "HOMEWORK_DOWNLOAD")
+    quits = sum(1 for e in events if e["event_type"] == "QUIT_AFTER_VARIANTS")
+
+    # Build the letter
+    L = []
+    A = L.append
+
+    A(f"# A note from Tanaka about {name}")
+    A("")
+    A(f"*Report generated {datetime.now(timezone.utc).strftime('%B %d, %Y')} · "
+      f"covering the last {days} days*")
+    A("")
+
+    # ─── The 30-second version ──────────────────────────────────────────────
+    A("## The 30-second version")
+    A("")
+    if streak >= 3:
+        A(f"- **{name} worked on mathematics {streak} days in a row this week.** "
+          f"That's a real habit forming.")
+    elif total >= 20:
+        A(f"- **{name} worked through {total} questions in the last {days} days.** "
+          f"That's more effort than most.")
+    elif total >= 5:
+        A(f"- **{name} worked through {total} questions in the last {days} days.** "
+          f"Every one of them matters.")
+    else:
+        A(f"- **{name} worked through {total} question{'s' if total != 1 else ''} in the last {days} days.** "
+          f"Small steps still count.")
+
+    if pass_rate >= 0.6:
+        A(f"- **{passes} of {total} answers were correct** — around {pass_rate*100:.0f}%. "
+          f"The work is starting to stick.")
+    elif pass_rate >= 0.4:
+        A(f"- **{passes} of {total} answers were correct** — around {pass_rate*100:.0f}%. "
+          f"Real progress, with room to grow.")
+    else:
+        A(f"- **{passes} of {total} answers were correct** — around {pass_rate*100:.0f}%. "
+          f"This is what learning at the edge looks like.")
+
+    if top_mid and top_mid_count >= 3:
+        content = _parent_content(top_mid)
+        A(f"- **The specific struggle:** {name} {content['natural']}. "
+          f"{top_mid_count} times in the last {days} days.")
+
+    if longest_run >= 3:
+        A(f"- **A win worth naming:** {name} got {longest_run} questions right in a row "
+          f"in a single sitting. That's the level we're building toward.")
+
+    A(f"- **What to do at home:** {_parent_content(top_mid)['homework'] if top_mid else 'Ask about the work. Just one question.'}")
+    A("")
+
+    # ─── What the work looked like ──────────────────────────────────────────
+    A("## What the work looked like")
+    A("")
+    sentence = f"Over the last {days} days, {name} worked through {total} questions on the tutor"
+    if streak >= 2:
+        sentence += f", on {streak} consecutive days"
+    sentence += "."
+    A(sentence)
+    A("")
+
+    if passes > 0 and pass_rate >= 0.3:
+        A(f"Of those, {passes} were correct on the first try. "
+          f"The rest were taught at the point of need — the tutor named the specific "
+          f"error, walked {name} through a similar problem, and gave a variant to "
+          f"practice. That work is the part that actually sticks.")
+    else:
+        A(f"Only {passes} of those {total} were correct on the first try. "
+          f"That's honest — and it's exactly why the tutor teaches the way it does. "
+          f"Every wrong answer becomes a lesson, and every lesson gets tested "
+          f"before moving on.")
+    A("")
+
+    if manual_variants > 0:
+        A(f"One thing worth noting: {name} **chose** to practice "
+          f"{manual_variants} extra time{'s' if manual_variants != 1 else ''} in the last {days} days — "
+          f"not because the tutor pushed, but because {name} asked. That's not ordinary. "
+          f"Most learners do the minimum.")
+        A("")
+
+    # ─── The specific thing that's hard ─────────────────────────────────────
+    if top_mid and top_mid_count >= 3:
+        content = _parent_content(top_mid)
+        A(f"## The specific thing that's hard")
+        A("")
+        A(f"On {skill_label}, {name} keeps **{content['natural']}**. "
+          f"This is not a sign of laziness or confusion — it's a specific, "
+          f"fixable habit.")
+        A("")
+        A(f"**What it looks like in practice:** {content['example']}")
+        A("")
+        A(f"This is one of the most common patterns we see in South African "
+          f"Grade 12 learners. It's not a knowledge gap. It's a habit that "
+          f"builds up over many attempts. It can be broken.")
+        A("")
+
+    # ─── What Tanaka is doing about it ──────────────────────────────────────
+    A("## What I'm doing about it")
+    A("")
+    if top_mid:
+        content = _parent_content(top_mid)
+        A(f"For this specific struggle, {name} has been shown a worked example, "
+          f"told the exact trap in plain language, and given several variants of "
+          f"the same question to practice. Every attempt is recorded, and the "
+          f"pattern is tracked so we can see whether the habit is breaking or "
+          f"whether we need to try a different approach.")
+        A("")
+        A(f"The tutor doesn't just say \"you're wrong.\" It says *\"here's exactly "
+          f"what went wrong, here's the small rule that fixes it, and here's "
+          f"another question to prove you've got it.\"*")
+    else:
+        A(f"{name} is working through new material. The tutor is building a "
+          f"picture of how {name} approaches questions, and will start naming "
+          f"patterns once there's enough data to be specific about them.")
+    A("")
+
+    # ─── One thing to do at home ───────────────────────────────────────────
+    if top_mid:
+        content = _parent_content(top_mid)
+        A("## One thing you can do at home (in five minutes)")
+        A("")
+        A(content["homework"])
+        A("")
+        A("This does **not** require you to teach mathematics. It's just a "
+          "prompt — a question that makes {name} notice the pattern for themselves. "
+          "That's how the habit actually changes.".format(name=name))
+        A("")
+
+    # ─── One thing NOT to do ───────────────────────────────────────────────
+    if top_mid:
+        content = _parent_content(top_mid)
+        A("## And one thing *not* to do")
+        A("")
+        A(content["dont"])
+        A("")
+
+    # ─── Human-tutor recommendation (only if triggers fire) ────────────────
+    _triggers = check_human_tutor_triggers(
+        attempts, events, retention,
+        top_mid_count=top_mid_count,
+        pass_rate=pass_rate,
+        skill_label=skill_label,
+        learner_id=learner_id,
+    )
+    if _triggers:
+        A(build_human_tutor_section(name, _triggers, days))
+        A("")
+
+    # ─── The honest numbers ────────────────────────────────────────────────
+    A("## What the numbers say (in plain English)")
+    A("")
+    A(f"- **{total} questions attempted** in the last {days} days")
+    A(f"- **{passes} correct on the first try** ({pass_rate*100:.0f}%)")
+    if longest_run > 0:
+        A(f"- **Longest run of correct answers:** {longest_run} in a row")
+    if streak > 0:
+        A(f"- **Consecutive days with work:** {streak}")
+    A("")
+    if pass_rate < 0.5:
+        A("These numbers are honest. We don't round up. We don't hide the wrong "
+          "answers. A learner at this level isn't failing — they're pushing at "
+          "the edge of what they can do. That's where learning actually happens.")
+    else:
+        A("These numbers are honest. We don't round up. We don't hide the wrong "
+          "answers either. The work is paying off, and it will keep paying off "
+          "as the habits get more automatic.")
+    A("")
+
+    # ─── If Tanaka is still learning to name this one ──────────────────────
+    # LLM discovery slot — populated when the LLM layer is wired
+    A("## Where I'm still learning")
+    A("")
+    A("Every learner teaches the tutor something new. If {name} makes a mistake "
+      "that the tutor hasn't been taught to name yet, the tutor records it "
+      "carefully. Over many learners, those patterns get promoted into new "
+      "rules — but only after the teacher (Tanaka, the human) has reviewed them.".format(name=name))
+    A("")
+    A(f"This is why every session makes the tutor a little better for the next "
+      f"child. {name} is part of that.")
+    A("")
+
+    # ─── Retention check note ──────────────────────────────────────────────
+    if retention:
+        pending = [r for r in retention if r.get("retention_status") == "pending"]
+        if pending:
+            A("## Upcoming: a retention check")
+            A("")
+            A(f"In a few weeks, {name} will be asked to try a fresh set of questions "
+              f"on skills that were declared \"provisional mastery.\" This isn't "
+              f"an exam — it's a check to make sure the learning stuck. "
+              f"Learning that stays with you across weeks is worth far more than "
+              f"learning that peaks in a single session.".format(name=name))
+            A("")
+
+    # ─── If you want to go deeper ──────────────────────────────────────────
+    A("## If you want to go deeper")
+    A("")
+    A("- **A letter from Tanaka to " + name + ":** the same news, told to them. "
+      "Ask them to read it.")
+    A("- **The teacher's view:** shared with your child's school if you'd like. "
+      "It names exactly which skill and which trap.")
+    A("- **The full statistical report:** the numbers behind these numbers, "
+      "with confidence intervals and comparison to the DBE national pattern.")
+    A("")
+    A("None of this is required. But if you're curious, it's all there.")
+    A("")
+
+    # ─── Closing ───────────────────────────────────────────────────────────
+    A("## A closing word")
+    A("")
+    A(f"{name} is doing real work. The struggle is not a sign that something is "
+      f"wrong — it's a sign that the work is at the right level. I'll keep "
+      f"teaching at the edge, and we'll keep tracking what's working. "
+      f"Thank you for paying attention. That matters more than you know.")
+    A("")
+    A("— Tanaka")
+    A("")
+
+    return "\n".join(L)
+
+
+def _empty_letter(learner_id, name, days):
+    return f"""# A note from Tanaka about {name}
+
+*Week of {datetime.now(timezone.utc).strftime('%B %d, %Y')}*
+
+## The 30-second version
+
+- **{name} hasn't worked on mathematics in the last {days} days.**
+- That's completely okay. Life happens.
+- When {name} is ready, the tutor will be here. Same place. Same patience.
+
+## A thought for you
+
+One of the most common things I see in South African learners is a sense that
+maths is something they either "have" or "don't have." That's not true — and
+it's one of the biggest obstacles to learning.
+
+The truth is: maths is a set of habits. Every learner can build them. The work
+is slow and the failure is frequent, but it's *learnable* by every child who
+keeps showing up.
+
+If {name} is struggling to start again, the smallest possible first step is
+just opening the tutor and picking one question. Not finishing it. Just opening
+it. That's the whole goal.
+
+When {name} is ready, I'm here.
+
+— Tanaka
+"""
+
+
+def render_html(md_text, name):
+    """Wrap the markdown in a friendly, shareable HTML template."""
+    # Very light markdown → HTML conversion (headers, bold, italic, lists, tables)
+    import re
+    lines = md_text.split("\n")
+    html_body = []
+    in_list = False
+
+    for line in lines:
+        s = line.rstrip()
+
+        # Close list if we hit a non-list line
+        if in_list and not s.startswith("- "):
+            html_body.append("</ul>")
+            in_list = False
+
+        if s.startswith("# "):
+            html_body.append(f'<h1>{s[2:]}</h1>')
+        elif s.startswith("## "):
+            html_body.append(f'<h2>{s[3:]}</h2>')
+        elif s.startswith("### "):
+            html_body.append(f'<h3>{s[4:]}</h3>')
+        elif s.startswith("*") and s.endswith("*") and not s.startswith("**"):
+            html_body.append(f'<p class="meta">{s.strip("*")}</p>')
+        elif s.startswith("- "):
+            if not in_list:
+                html_body.append("<ul>")
+                in_list = True
+            item = s[2:]
+            item = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", item)
+            item = re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"<em>\1</em>", item)
+            item = re.sub(r"`([^`]+)`", r"<code>\1</code>", item)
+            html_body.append(f"<li>{item}</li>")
+        elif s == "":
+            html_body.append("")
+        elif s == "---":
+            html_body.append("<hr>")
+        else:
+            body = s
+            body = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", body)
+            body = re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"<em>\1</em>", body)
+            body = re.sub(r"`([^`]+)`", r"<code>\1</code>", body)
+            html_body.append(f"<p>{body}</p>")
+
+    if in_list:
+        html_body.append("</ul>")
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A note from Tanaka about {name}</title>
+<style>
+  body {{
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    background: #fafaf7;
+    color: #2b2b2b;
+    line-height: 1.7;
+    font-size: 17px;
+  }}
+  h1 {{
+    font-size: 28px;
+    border-bottom: 2px solid #2b2b2b;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+  }}
+  h2 {{
+    font-size: 20px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+    border-bottom: 1px solid #d8d4c8;
+    padding-bottom: 6px;
+  }}
+  h3 {{ font-size: 17px; margin-top: 24px; }}
+  p {{ margin: 12px 0; }}
+  ul {{ margin: 12px 0; padding-left: 24px; }}
+  li {{ margin: 8px 0; }}
+  code {{
+    background: #efece2;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.92em;
+    color: #4a4a4a;
+  }}
+  .meta {{
+    color: #8a8478;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 32px;
+  }}
+  strong {{ color: #1a1a1a; }}
+  hr {{
+    border: none;
+    border-top: 1px solid #d8d4c8;
+    margin: 32px 0;
+  }}
+  /* Human-tutor recommendation — visually set apart, never aggressive */
+  h2:has(+ p:empty) {{}}
+  a {{ color: #6b4a1f; text-decoration: underline; }}
+  a:hover {{ color: #4a3418; }}
+  @media print {{
+    body {{ background: white; padding: 0; }}
+  }}
+</style>
+</head>
+<body>
+{chr(10).join(html_body)}
+</body>
+</html>
+"""
+
+
+def main():
+    import sys
+    learner = sys.argv[1] if len(sys.argv) > 1 else "tanaka"
+    days = 7
+    if len(sys.argv) > 2:
+        try:
+            days = int(sys.argv[2])
+        except ValueError:
+            pass
+
+    md = build_parent_letter(learner, days)
+    html = render_html(md, _display_name(learner))
+
+    print(md)
+
+    REPORTS.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    md_path = REPORTS / f"{learner}_parent_{ts}.md"
+    html_path = REPORTS / f"{learner}_parent_{ts}.html"
+    md_path.write_text(md, encoding="utf-8")
+    html_path.write_text(html, encoding="utf-8")
+
+    print(f"\n\n📄 Email body (markdown): {md_path}")
+    print(f"🌐 Shareable letter (HTML): {html_path}")
+
+
+if __name__ == "__main__":
+    main()

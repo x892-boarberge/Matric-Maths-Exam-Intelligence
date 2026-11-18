@@ -1,0 +1,51 @@
+{
+  "question_id": "2025_P1_Q3",
+  "foundation_text": "This is still a sequence. The torpedo story only tells you what the numbers mean - time and depth. n is the second; T_n is the depth at that second. Then we do what we always do: differences.",
+  "acronym_strip": "GAPS = seats - 1  |  ICE = Include Count Ends  |  OMS = One More Seat (later total - earlier total)  |  STM = Sequence formula -> Time at vertex -b/2a -> Metre depth",
+  "subquestions": {
+    "3.1": {
+      "variant_question": "A submarine records a diving torpedo's depth. At the end of 1 second it is 14 m deep; at 2 seconds, 23 m; at 3 seconds, 30 m. Calculate the depth at the end of the 5th second.",
+      "demonstration": "First differences: 23-14 = 9; 30-23 = 7. Second difference: 7-9 = -2 (constant -> quadratic). Each next first difference decreases by 2: 7-2 = 5 -> T4 = 30+5 = 35. Next: 5-2 = 3 -> T5 = 35+3 = 38. Answer: depth at 5 s = 38 m.",
+      "memo_marks": ["1 mark for first and second differences shown", "1 mark for answer T5 = 38 m"],
+      "fast_path": "Walk the differences. Second diff is -2, so each next first diff drops by 2. Don't steal the formula from 3.2.",
+      "fatal_error": "Jumping to n=5 in a formula you haven't shown yet. 3.1 is a walk, not a plug-in. The formula is 3.2's job.",
+      "answer_book_layout": ["T1 = 14, T2 = 23, T3 = 30", "1st differences: 9, 7", "2nd difference: -2 (constant)", "Next 1st diff: 7-2 = 5  ->  T4 = 30+5 = 35", "Next 1st diff: 5-2 = 3  ->  T5 = 35+3 = 38", "Final: depth at 5 s = 38 m"],
+      "hack": "Build the staircase before you name the building. The question doesn't give you the formula yet - that's on purpose. Line the depths up. First row of differences: how much does it jump? Second row: how much does the jump itself change? If that second jump is steady, walk the pattern forward one difference at a time. The markers want to see the staircase.",
+      "trap": "Don't jump to n=5 in a formula you haven't proved. The formula belongs to 3.2 - earn it before you use it.",
+      "presentation": "Show two rows: first differences, then the second difference. That staircase is where the 2 marks live. One sanity line before you put your pen down: if the torpedo is still diving, depth should be getting larger each second. If T5 < T4, recheck the differences."
+    },
+    "3.2": {
+      "variant_question": "Show that the depth of the torpedo at the end of n seconds is T_n = -n^2 + 12n + 3.",
+      "demonstration": "Second difference = -2 -> 2a = -2 -> a = -1. First first-difference is 9, so 3a + b = 9 -> 3(-1)+b = 9 -> b = 12. Then a + b + c = T1 = 14 -> -1 + 12 + c = 14 -> c = 3. Check T3: -(3)^2 + 12(3) + 3 = -9 + 36 + 3 = 30. T_n = -n^2 + 12n + 3.",
+      "memo_marks": ["1 mark for 2a = -2 -> a = -1", "1 mark for 3a + b = 9 -> b = 12 (or two equations from T1, T2)", "1 mark for a + b + c = 14 -> c = 3 and the final formula"],
+      "fast_path": "Second difference gives a. One term and the first first-difference give b and c. Finish with the check.",
+      "fatal_error": "Show means show. The answer is already on the paper - your job is to earn it. Skipping the derivation or the check loses marks even if your final line is correct.",
+      "answer_book_layout": ["2a = -2  ->  a = -1", "3a + b = 9  ->  3(-1) + b = 9  ->  b = 12", "a + b + c = 14  ->  -1 + 12 + c = 14  ->  c = 3", "T_n = -n^2 + 12n + 3", "Check: T3 = -9 + 36 + 3 = 30 (correct)"],
+      "hack": "Show means show. In a 'find' question, the marker trusts your method. In a 'show' question, the answer is already printed - every step of the derivation is a mark. Three beats: second difference gives a. One term plus the first first-difference give b. A simple substitution gives c. Then finish the proof with a check against a third term.",
+      "trap": "Don't skip the verification. 'Check with T3' is not decoration - it's finishing the proof. A 'show' answer without the check is a proof that stops one step short.",
+      "presentation": "Write the second difference explicitly on its own line. Show the two equations you solve. End with the verification line - that's the closing bracket on a 'show' answer."
+    },
+    "3.3": {
+      "variant_question": "Calculate the maximum depth the torpedo reached.",
+      "demonstration": "T_n = -n^2 + 12n + 3 is a parabola in n. a = -1 < 0 -> opens down -> has a maximum. n = -b/(2a) = -12/(2*-1) = 6. T6 = -(6)^2 + 12(6) + 3 = -36 + 72 + 3 = 39. Answer: maximum depth = 39 m at 6 s.",
+      "memo_marks": ["1 mark for recognising maximum at vertex n = -b/(2a)", "1 mark for n = 6", "1 mark for T6 = 39 m"],
+      "fast_path": "T_n is a parabola in n. Find the turning point, then substitute the second back into T_n for the depth.",
+      "fatal_error": "Finding n = 6 and stopping. That's the time, not the depth. Every 'maximum depth' question in the DBE asks for the depth in metres.",
+      "answer_book_layout": ["T_n = -n^2 + 12n + 3", "a = -1 < 0  ->  opens down  ->  has a maximum", "n = -b/(2a) = -12/(2*-1) = 6", "T6 = -(6)^2 + 12(6) + 3 = -36 + 72 + 3 = 39", "Final: maximum depth = 39 m at 6 s"],
+      "hack": "The formula isn't only a sequence machine - it's a parabola with time on the horizontal axis. Same family as the parabolas you drew in Functions. a = -1 is negative, so the arch opens down: its peak is the deepest point. Remember STM: the Sequence formula becomes a parabola in n, the Time of the vertex is n = -b/(2a), and the Metre depth comes from putting that second back into T_n.",
+      "trap": "Finding the time and stopping. Two numbers, two lines: time of maximum -> depth of maximum. The mark is on the depth.",
+      "presentation": "Show the vertex formula n = -b/(2a) on its own line. Show the substitution for depth. Underline the depth, not the time. One sanity line at the end: maximum depth should be larger than the depths at earlier seconds - if it isn't, recheck the substitution."
+    },
+    "3.4": {
+      "variant_question": "After how many seconds was the torpedo at 30 m below sea level for the second time?",
+      "demonstration": "Set T_n = 30: -n^2 + 12n + 3 = 30 -> n^2 - 12n + 27 = 0 -> (n-3)(n-9) = 0 -> n = 3 or n = 9. The table already shows 30 m at 3 s (first time). The second time is the later root: n = 9 s.",
+      "memo_marks": ["1 mark for solving -n^2 + 12n + 3 = 30 to n = 3 or n = 9", "1 mark for identifying n = 9 as the second time"],
+      "fast_path": "Solve fully for both roots. One root is already in the table - the other is your answer.",
+      "fatal_error": "Writing 'n = 3 or n = 9' as your final answer. The math is right, the reading is wrong. The question asked for the second time; the answer is n = 9.",
+      "answer_book_layout": ["T_n = 30", "-n^2 + 12n + 3 = 30", "n^2 - 12n + 27 = 0", "(n-3)(n-9) = 0", "n = 3  or  n = 9", "n = 3 is the first time (from the table)", "Final: second time = 9 s"],
+      "hack": "The equation is blind; the question can see the clock. When you solve T_n = 30 you get every n that fits - usually two, because a parabola at the same height cuts twice. But the question isn't asking for 'any time' - it's asking for the second time. The equation doesn't know that word; you do. Three-step answer: solve fully, match one root to the value already in the table (that's the first time), pick the other root as the final answer and say so in English.",
+      "trap": "Writing 'n = 3 or n = 9' as the answer. The math is right, the reading is wrong. Second time = the later root. Name it.",
+      "presentation": "Give both roots first. Then write 'first time = 3 s (from table), second time = 9 s.' That final sentence is the answer mark - it's you reading the question, not just solving the equation. Optional geometric why: draw the arch, draw the horizontal line at depth 30, notice it cuts twice - that's why the quadratic gives two roots."
+    }
+  }
+}

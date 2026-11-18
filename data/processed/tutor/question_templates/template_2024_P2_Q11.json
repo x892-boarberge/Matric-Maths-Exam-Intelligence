@@ -72,6 +72,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -103,6 +109,14 @@
           "r": "AAA",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "11.1",
+        "11.2"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.similarity"
       ]
     },
     {
@@ -144,6 +158,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1",
+        "11.2",
+        "11.3"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.similarity"
       ]
     }
   ],

@@ -24,6 +24,12 @@
       "steps": [
         "Width: 2b + 2h = 100 → b = 50 - h.",
         "V = lbh = (40-2h)(50-h)h."
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "calculus.optimisation"
       ]
     },
     {
@@ -47,6 +53,13 @@
         "dV/dh = 6h² - 280h + 2000 = 0.",
         "h = (280 ± sqrt(78400 - 48000))/12.",
         "h ≈ 8.80 (reject 37.86)."
+      ],
+      "given_from": [
+        "10.1",
+        "10.2"
+      ],
+      "requires_skills": [
+        "calculus.optimisation"
       ]
     }
   ],

@@ -1,0 +1,37 @@
+{
+  "objective_id": "TO_TRIG_EQ_DIVIDE_BY_RATIO",
+  "skill_id": "trig.equation",
+  "trigger_misconception": "M_TRIG_EQ_DIVIDE_BY_RATIO",
+  "dbe_source": {
+    "years": [
+      "2018",
+      "2021"
+    ],
+    "recommendation": "Never divide both sides of a trig equation by sin x or cos x. That throws away the solutions where sin x = 0 or cos x = 0. Factorise instead.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "Never divide both sides of a trig equation by sin x or cos x. That throws away the solutions where sin x = 0 or cos x = 0. Factorise instead.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "Solve sin x cos x = sin x",
+      "work": [
+        "Do not divide by sin x.",
+        "Bring to one side: sin x cos x - sin x = 0.",
+        "Factorise: sin x (cos x - 1) = 0.",
+        "So sin x = 0 or cos x = 1.",
+        "x = 0, 180, 360 (from sin x = 0) or x = 0, 360 (from cos x = 1)."
+      ]
+    },
+    "probe": {
+      "problem": "Solve sin x cos x = cos x.",
+      "expected": "x = 90, 270 or x = 0, 360",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_TRIG_EQ_DIVIDE_BY_RATIO",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You divided by a trig ratio, which throws away roots. Factorise instead so nothing is lost."
+}

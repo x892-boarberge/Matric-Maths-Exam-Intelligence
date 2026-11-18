@@ -40,6 +40,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1"
+      ],
+      "requires_skills": [
+        "analytical.circle"
       ]
     },
     {
@@ -55,6 +61,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1",
+        "4.2"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.distance"
       ]
     },
     {
@@ -70,6 +84,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.distance",
+        "analytical.ratio"
       ]
     },
     {
@@ -100,6 +124,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.distance",
+        "analytical.ratio",
+        "geometry.circle"
       ]
     },
     {
@@ -115,6 +151,19 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5.1"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.distance",
+        "analytical.ratio",
+        "geometry.circle"
       ]
     },
     {
@@ -160,6 +209,20 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5.1",
+        "4.5.2"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.distance",
+        "analytical.ratio",
+        "geometry.circle"
       ]
     }
   ],

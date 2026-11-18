@@ -1,0 +1,482 @@
+[
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-2)) + 3.",
+    "expected": "x != -2",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-2) != 0",
+      "x != -2",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -2"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-4)) + 3.",
+    "expected": "x != -4",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-4) != 0",
+      "x != -4",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -4"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (3)) + 3.",
+    "expected": "x != 3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (3) != 0",
+      "x != 3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (2)) + 3.",
+    "expected": "x != 2",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (2) != 0",
+      "x != 2",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 2"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (2)) + 3.",
+    "expected": "x != 2",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (2) != 0",
+      "x != 2",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 2"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (2)) + 3.",
+    "expected": "x != 2",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (2) != 0",
+      "x != 2",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 2"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (4)) + 3.",
+    "expected": "x != 4",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (4) != 0",
+      "x != 4",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 4"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (4)) + 3.",
+    "expected": "x != 4",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (4) != 0",
+      "x != 4",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 4"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (3)) + 3.",
+    "expected": "x != 3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (3) != 0",
+      "x != 3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (4)) + 3.",
+    "expected": "x != 4",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (4) != 0",
+      "x != 4",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 4"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-4)) + 3.",
+    "expected": "x != -4",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-4) != 0",
+      "x != -4",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -4"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (4)) + 3.",
+    "expected": "x != 4",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (4) != 0",
+      "x != 4",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 4"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (2)) + 3.",
+    "expected": "x != 2",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (2) != 0",
+      "x != 2",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 2"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (3)) + 3.",
+    "expected": "x != 3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (3) != 0",
+      "x != 3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-2)) + 3.",
+    "expected": "x != -2",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-2) != 0",
+      "x != -2",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -2"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (3)) + 3.",
+    "expected": "x != 3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (3) != 0",
+      "x != 3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != 3"
+    ]
+  },
+  {
+    "variant_question": "Domain of g(x) = 2/(x - (-3)) + 3.",
+    "expected": "x != -3",
+    "demonstration": "Denominator != 0.",
+    "memo_marks": [
+      "1 mark x!=p"
+    ],
+    "fast_path": "Set denom = 0.",
+    "fatal_error": "DBE says: Use x > p.",
+    "answer_book_layout": [
+      "x - (-3) != 0",
+      "x != -3",
+      "_________________________",
+      "Final Answer: x \u2208 R, x != -3"
+    ]
+  }
+]

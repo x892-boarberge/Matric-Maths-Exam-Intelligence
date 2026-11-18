@@ -46,6 +46,12 @@
       "expected_fn": "y <= {q}",
       "steps": [
         "Read turning point y-value off diagram."
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -64,6 +70,14 @@
       "steps": [
         "Read intersection points off the diagram.",
         "g is below f outside the intersection x-values."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola"
       ]
     },
     {
@@ -81,6 +95,16 @@
       "expected_fn": "see memo",
       "steps": [
         "f(x) < 6 means the parabola lies below y = 6."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola",
+        "functions.inequality"
       ]
     },
     {
@@ -110,6 +134,17 @@
         "Substitute P and D(5; 6) into f(x) = a(x-p)^2 + q.",
         "Solve for a.",
         "Expand to standard form."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3.1",
+        "5.3.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola",
+        "functions.inequality"
       ]
     },
     {
@@ -142,6 +177,18 @@
         "Find x-intercepts M and T of f and g.",
         "M at x = -1, T at x = 7.",
         "MT = 8 units."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3.1",
+        "5.3.2",
+        "5.4"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola",
+        "functions.inequality"
       ]
     },
     {
@@ -156,6 +203,20 @@
         "f'(5) = -2",
         "y - 6 = -2(x - 5)",
         "y = -2x + 16"
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3.1",
+        "5.3.2",
+        "5.4",
+        "5.5"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola",
+        "functions.inequality",
+        "analytical.distance"
       ]
     }
   ],

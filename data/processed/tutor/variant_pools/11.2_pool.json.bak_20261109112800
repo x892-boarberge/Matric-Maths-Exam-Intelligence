@@ -1,0 +1,722 @@
+[
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 1/2. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 36",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (2/3)·2x + (1/3)·x = 5/3x.\nAlso: expected coffee = 1/2 × 120 = 60.\nSolve: 5/3x = 60 → x = 36.\nAnswer: 36 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/3x = 60",
+      "1 mark for x = 36"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(2/3)·2x + (1/3)·x = 1/2·120",
+      "x = 36"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 2/3. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 48",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (2/3)·2x + (1/3)·x = 5/3x.\nAlso: expected coffee = 2/3 × 120 = 80.\nSolve: 5/3x = 80 → x = 48.\nAnswer: 48 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/3x = 80",
+      "1 mark for x = 48"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(2/3)·2x + (1/3)·x = 2/3·120",
+      "x = 48"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 5/8. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 45",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (2/3)·2x + (1/3)·x = 5/3x.\nAlso: expected coffee = 5/8 × 120 = 75.\nSolve: 5/3x = 75 → x = 45.\nAnswer: 45 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/3x = 75",
+      "1 mark for x = 45"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(2/3)·2x + (1/3)·x = 5/8·120",
+      "x = 45"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/12. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 42",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (2/3)·2x + (1/3)·x = 5/3x.\nAlso: expected coffee = 7/12 × 120 = 70.\nSolve: 5/3x = 70 → x = 42.\nAnswer: 42 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/3x = 70",
+      "1 mark for x = 42"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(2/3)·2x + (1/3)·x = 7/12·120",
+      "x = 42"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 3/4. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 54",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (2/3)·2x + (1/3)·x = 5/3x.\nAlso: expected coffee = 3/4 × 120 = 90.\nSolve: 5/3x = 90 → x = 54.\nAnswer: 54 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/3x = 90",
+      "1 mark for x = 54"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(2/3)·2x + (1/3)·x = 3/4·120",
+      "x = 54"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/12. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 30",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (2/3)·3x + (1/3)·x = 7/3x.\nAlso: expected coffee = 7/12 × 120 = 70.\nSolve: 7/3x = 70 → x = 30.\nAnswer: 30 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 7/3x = 70",
+      "1 mark for x = 30"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(2/3)·3x + (1/3)·x = 7/12·120",
+      "x = 30"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/10. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 36",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (2/3)·3x + (1/3)·x = 7/3x.\nAlso: expected coffee = 7/10 × 120 = 84.\nSolve: 7/3x = 84 → x = 36.\nAnswer: 36 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 7/3x = 84",
+      "1 mark for x = 36"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(2/3)·3x + (1/3)·x = 7/10·120",
+      "x = 36"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 4 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 1/2. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 20",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 4x.\nExpected coffee = P(rain)·(4x) + P(no rain)·x\n= (2/3)·4x + (1/3)·x = 3x.\nAlso: expected coffee = 1/2 × 120 = 60.\nSolve: 3x = 60 → x = 20.\nAnswer: 20 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(4x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 3x = 60",
+      "1 mark for x = 20"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 4x",
+      "(2/3)·4x + (1/3)·x = 1/2·120",
+      "x = 20"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 4 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 3/5. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 24",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 4x.\nExpected coffee = P(rain)·(4x) + P(no rain)·x\n= (2/3)·4x + (1/3)·x = 3x.\nAlso: expected coffee = 3/5 × 120 = 72.\nSolve: 3x = 72 → x = 24.\nAnswer: 24 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(4x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 3x = 72",
+      "1 mark for x = 24"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 4x",
+      "(2/3)·4x + (1/3)·x = 3/5·120",
+      "x = 24"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 4 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 5/8. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 25",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 4x.\nExpected coffee = P(rain)·(4x) + P(no rain)·x\n= (2/3)·4x + (1/3)·x = 3x.\nAlso: expected coffee = 5/8 × 120 = 75.\nSolve: 3x = 75 → x = 25.\nAnswer: 25 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(4x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 3x = 75",
+      "1 mark for x = 25"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 4x",
+      "(2/3)·4x + (1/3)·x = 5/8·120",
+      "x = 25"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 67%. The chance of buying coffee on a rainy day is 4 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/10. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 28",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 4x.\nExpected coffee = P(rain)·(4x) + P(no rain)·x\n= (2/3)·4x + (1/3)·x = 3x.\nAlso: expected coffee = 7/10 × 120 = 84.\nSolve: 3x = 84 → x = 28.\nAnswer: 28 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(4x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 3x = 84",
+      "1 mark for x = 28"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 4x",
+      "(2/3)·4x + (1/3)·x = 7/10·120",
+      "x = 28"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 75%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/12. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 40",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (3/4)·2x + (1/4)·x = 7/4x.\nAlso: expected coffee = 7/12 × 120 = 70.\nSolve: 7/4x = 70 → x = 40.\nAnswer: 40 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 7/4x = 70",
+      "1 mark for x = 40"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(3/4)·2x + (1/4)·x = 7/12·120",
+      "x = 40"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 75%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/10. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 48",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (3/4)·2x + (1/4)·x = 7/4x.\nAlso: expected coffee = 7/10 × 120 = 84.\nSolve: 7/4x = 84 → x = 48.\nAnswer: 48 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 7/4x = 84",
+      "1 mark for x = 48"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(3/4)·2x + (1/4)·x = 7/10·120",
+      "x = 48"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 75%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 1/2. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 24",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (3/4)·3x + (1/4)·x = 5/2x.\nAlso: expected coffee = 1/2 × 120 = 60.\nSolve: 5/2x = 60 → x = 24.\nAnswer: 24 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/2x = 60",
+      "1 mark for x = 24"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(3/4)·3x + (1/4)·x = 1/2·120",
+      "x = 24"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 75%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 2/3. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 32",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (3/4)·3x + (1/4)·x = 5/2x.\nAlso: expected coffee = 2/3 × 120 = 80.\nSolve: 5/2x = 80 → x = 32.\nAnswer: 32 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/2x = 80",
+      "1 mark for x = 32"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(3/4)·3x + (1/4)·x = 2/3·120",
+      "x = 32"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 75%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 5/8. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 30",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (3/4)·3x + (1/4)·x = 5/2x.\nAlso: expected coffee = 5/8 × 120 = 75.\nSolve: 5/2x = 75 → x = 30.\nAnswer: 30 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/2x = 75",
+      "1 mark for x = 30"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(3/4)·3x + (1/4)·x = 5/8·120",
+      "x = 30"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 75%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/12. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 28",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (3/4)·3x + (1/4)·x = 5/2x.\nAlso: expected coffee = 7/12 × 120 = 70.\nSolve: 5/2x = 70 → x = 28.\nAnswer: 28 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/2x = 70",
+      "1 mark for x = 28"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(3/4)·3x + (1/4)·x = 7/12·120",
+      "x = 28"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 75%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 3/4. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 36",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (3/4)·3x + (1/4)·x = 5/2x.\nAlso: expected coffee = 3/4 × 120 = 90.\nSolve: 5/2x = 90 → x = 36.\nAnswer: 36 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 5/2x = 90",
+      "1 mark for x = 36"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(3/4)·3x + (1/4)·x = 3/4·120",
+      "x = 36"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 60%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 3/5. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 45",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (3/5)·2x + (2/5)·x = 8/5x.\nAlso: expected coffee = 3/5 × 120 = 72.\nSolve: 8/5x = 72 → x = 45.\nAnswer: 45 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 8/5x = 72",
+      "1 mark for x = 45"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(3/5)·2x + (2/5)·x = 3/5·120",
+      "x = 45"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 60%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 2/3. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 50",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (3/5)·2x + (2/5)·x = 8/5x.\nAlso: expected coffee = 2/3 × 120 = 80.\nSolve: 8/5x = 80 → x = 50.\nAnswer: 50 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 8/5x = 80",
+      "1 mark for x = 50"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(3/5)·2x + (2/5)·x = 2/3·120",
+      "x = 50"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 60%. The chance of buying coffee on a rainy day is 4 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/12. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 25",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 4x.\nExpected coffee = P(rain)·(4x) + P(no rain)·x\n= (3/5)·4x + (2/5)·x = 14/5x.\nAlso: expected coffee = 7/12 × 120 = 70.\nSolve: 14/5x = 70 → x = 25.\nAnswer: 25 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(4x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 14/5x = 70",
+      "1 mark for x = 25"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 4x",
+      "(3/5)·4x + (2/5)·x = 7/12·120",
+      "x = 25"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 80%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 3/5. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 40",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (4/5)·2x + (1/5)·x = 9/5x.\nAlso: expected coffee = 3/5 × 120 = 72.\nSolve: 9/5x = 72 → x = 40.\nAnswer: 40 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 9/5x = 72",
+      "1 mark for x = 40"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(4/5)·2x + (1/5)·x = 3/5·120",
+      "x = 40"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 80%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 3/4. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 50",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (4/5)·2x + (1/5)·x = 9/5x.\nAlso: expected coffee = 3/4 × 120 = 90.\nSolve: 9/5x = 90 → x = 50.\nAnswer: 50 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 9/5x = 90",
+      "1 mark for x = 50"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(4/5)·2x + (1/5)·x = 3/4·120",
+      "x = 50"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 50%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 1/2. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 40",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (1/2)·2x + (1/2)·x = 3/2x.\nAlso: expected coffee = 1/2 × 120 = 60.\nSolve: 3/2x = 60 → x = 40.\nAnswer: 40 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 3/2x = 60",
+      "1 mark for x = 40"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(1/2)·2x + (1/2)·x = 1/2·120",
+      "x = 40"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 50%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 3/5. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 48",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (1/2)·2x + (1/2)·x = 3/2x.\nAlso: expected coffee = 3/5 × 120 = 72.\nSolve: 3/2x = 72 → x = 48.\nAnswer: 48 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 3/2x = 72",
+      "1 mark for x = 48"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(1/2)·2x + (1/2)·x = 3/5·120",
+      "x = 48"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 50%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 5/8. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 50",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (1/2)·2x + (1/2)·x = 3/2x.\nAlso: expected coffee = 5/8 × 120 = 75.\nSolve: 3/2x = 75 → x = 50.\nAnswer: 50 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 3/2x = 75",
+      "1 mark for x = 50"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(1/2)·2x + (1/2)·x = 5/8·120",
+      "x = 50"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 50%. The chance of buying coffee on a rainy day is 2 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/10. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 56",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 2x.\nExpected coffee = P(rain)·(2x) + P(no rain)·x\n= (1/2)·2x + (1/2)·x = 3/2x.\nAlso: expected coffee = 7/10 × 120 = 84.\nSolve: 3/2x = 84 → x = 56.\nAnswer: 56 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(2x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 3/2x = 84",
+      "1 mark for x = 56"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 2x",
+      "(1/2)·2x + (1/2)·x = 7/10·120",
+      "x = 56"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 50%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 1/2. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 30",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (1/2)·3x + (1/2)·x = 2x.\nAlso: expected coffee = 1/2 × 120 = 60.\nSolve: 2x = 60 → x = 30.\nAnswer: 30 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 2x = 60",
+      "1 mark for x = 30"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(1/2)·3x + (1/2)·x = 1/2·120",
+      "x = 30"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 50%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 3/5. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 36",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (1/2)·3x + (1/2)·x = 2x.\nAlso: expected coffee = 3/5 × 120 = 72.\nSolve: 2x = 72 → x = 36.\nAnswer: 36 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 2x = 72",
+      "1 mark for x = 36"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(1/2)·3x + (1/2)·x = 3/5·120",
+      "x = 36"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 50%. The chance of buying coffee on a rainy day is 3 times the chance on a non-rainy day. The probability of a person buying coffee on any given day is 7/12. Calculate the number of cups of coffee sold on a non-rainy day.",
+    "expected": "x = 35",
+    "demonstration": "Let x = coffee cups on a non-rainy day. Rainy-day cups = 3x.\nExpected coffee = P(rain)·(3x) + P(no rain)·x\n= (1/2)·3x + (1/2)·x = 2x.\nAlso: expected coffee = 7/12 × 120 = 70.\nSolve: 2x = 70 → x = 35.\nAnswer: 35 cups on a non-rainy day.",
+    "memo_marks": [
+      "1 mark for P(rain)·(3x)",
+      "1 mark for P(no rain)·x",
+      "1 mark for equation 2x = 70",
+      "1 mark for x = 35"
+    ],
+    "fast_path": "Let x = non-rainy cups. Rainy = kx. Weighted sum = total expected. Solve.",
+    "fatal_error": "DBE says: Candidates forget the weather weights (write 3x + x = N). The two weather states weight the cup counts.",
+    "answer_book_layout": [
+      "Let x = cups on non-rainy day",
+      "Rainy = 3x",
+      "(1/2)·3x + (1/2)·x = 7/12·120",
+      "x = 35"
+    ],
+    "hack": "Weather weights the cups. Two states, two weights.",
+    "trap": "Not 3x + x = N. Weighted by weather.",
+    "presentation": "Define x, weighted sum, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

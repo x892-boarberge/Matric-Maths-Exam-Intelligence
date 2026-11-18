@@ -1,0 +1,1060 @@
+"""MethodMarker — Statistical Analysis Report.
+
+Reads the learner database, produces a professional statistical report with:
+- Wilson confidence intervals on all rates
+- Bayesian posterior probability of mastery
+- Layered mastery tiers (L0–L4)
+- Trajectory regression with slope CI
+- DBE cohort comparison (chi-square)
+- Variant effectiveness (recovery rate)
+- Methodology and limitations
+
+Outputs both Markdown and HTML (with embedded matplotlib charts).
+
+Usage:
+    python scripts/statistical_report.py tanaka 30
+    python scripts/statistical_report.py --all 30
+"""
+import sys
+import base64
+import io
+import json
+import sqlite3
+from pathlib import Path
+from datetime import datetime, timezone, timedelta
+from collections import Counter, defaultdict
+from math import sqrt
+
+
+import numpy as np
+from scipy import stats
+
+try:
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    HAS_MPL = True
+except ImportError:
+    HAS_MPL = False
+
+
+# ─── PATHS ──────────────────────────────────────────────────────────────────
+def _find_root():
+    r = Path(".").resolve()
+    for c in [r, *r.parents]:
+        if (c / "src" / "tutor").is_dir():
+            return c
+    return r
+
+ROOT = _find_root()
+DB = ROOT / "data" / "learner_store" / "learners.db"
+DBE_DIAG = ROOT / "data" / "processed" / "diagnostics" / "diagnostic_errors_with_skill.csv"
+REPORTS = ROOT / "data" / "reports"
+REPORTS.mkdir(parents=True, exist_ok=True)
+
+# ─── Retention-aware mastery ───────────────────────────────────────────────
+import sys as _sys_retention
+if str(ROOT) not in _sys_retention.path:
+    _sys_retention.path.insert(0, str(ROOT))
+try:
+    from src.tutor.mastery_policy import (
+        seed_initial_policy, load_policy, log_decision,
+    )
+    from src.tutor.retention_scheduler import (
+        get_durable_mastery, get_retention_summary,
+    )
+    RETENTION_AVAILABLE = True
+except Exception as _e:
+    RETENTION_AVAILABLE = False
+    _RETENTION_ERR = str(_e)
+
+
+
+# ─── TOPIC MAP (skill_id → topic code) ──────────────────────────────────────
+TOPIC_MAP = {
+    "algebra": "ALG", "sequences": "SEQ", "functions": "FUNC",
+    "calculus": "CALC", "finance": "FIN", "probability": "PROB",
+    "statistics": "STAT", "analytical_geom": "AGEO",
+    "euclidean": "EUCL", "trig": "TRIG",
+}
+
+def topic_of(skill_id):
+    s = str(skill_id or "").lower()
+    for prefix, code in TOPIC_MAP.items():
+        if s.startswith(prefix):
+            return code
+    return "OTHER"
+
+
+# ─── PASSING RULE (lenient) ─────────────────────────────────────────────────
+def is_pass(error_type):
+    """Lenient: full marks OR method-correct."""
+    return str(error_type or "").lower() in ("none", "match")
+
+
+def is_variant(question_id):
+    return str(question_id or "").startswith("VAR_")
+
+
+# ─── STATISTICS ─────────────────────────────────────────────────────────────
+def wilson_ci(k, n, z=1.96):
+    """Wilson score interval for binomial proportion."""
+    if n == 0:
+        return (0.0, 0.0, 0.0)
+    p = k / n
+    denom = 1 + z * z / n
+    center = (p + z * z / (2 * n)) / denom
+    margin = z * sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / denom
+    return (p, max(0.0, center - margin), min(1.0, center + margin))
+
+
+def beta_p_above(k, n, threshold=0.6, prior_alpha=1, prior_beta=1):
+    """P(true rate >= threshold) given Beta posterior."""
+    if n == 0:
+        return 0.5
+    alpha = prior_alpha + k
+    beta = prior_beta + (n - k)
+    return 1.0 - float(stats.beta.cdf(threshold, alpha, beta))
+
+
+def beta_posterior(k, n, prior_alpha=1, prior_beta=1):
+    """Beta posterior. Returns (mean, ci_lo, ci_hi)."""
+    if n == 0:
+        return (0.5, 0.0, 1.0)
+    alpha = prior_alpha + k
+    beta = prior_beta + (n - k)
+    mean = alpha / (alpha + beta)
+    lo = float(stats.beta.ppf(0.025, alpha, beta))
+    hi = float(stats.beta.ppf(0.975, alpha, beta))
+    return (mean, lo, hi)
+
+
+def trajectory_regression(timestamps, correctness):
+    """Linear regression of rolling accuracy over time. Returns dict."""
+    if len(timestamps) < 5:
+        return {"slope": None, "ci": None, "p_value": None,
+                "direction": "insufficient data", "n": len(timestamps)}
+    t0 = min(timestamps)
+    days = np.array([(t - t0).total_seconds() / 86400.0 for t in timestamps])
+    y = np.array(correctness, dtype=float)
+    slope, intercept, r_value, p_value, se = stats.linregress(days, y)
+    # 95% CI on slope
+    t_crit = stats.t.ppf(0.975, len(days) - 2)
+    ci_lo = slope - t_crit * se
+    ci_hi = slope + t_crit * se
+    if p_value > 0.05:
+        direction = "no significant trend"
+    elif slope > 0:
+        direction = "improving"
+    else:
+        direction = "declining"
+    return {
+        "slope": round(slope, 4),
+        "ci": (round(ci_lo, 4), round(ci_hi, 4)),
+        "p_value": round(p_value, 4),
+        "r_squared": round(r_value ** 2, 3),
+        "direction": direction,
+        "n": len(timestamps),
+    }
+
+
+def mastery_tier(attempts):
+    """L0–L4 mastery tier from attempt history.
+    Attempts: list of dicts with timestamp (datetime), error_type, question_id.
+    """
+    if not attempts:
+        return ("L0", "no attempts yet", [])
+
+    originals = [a for a in attempts if not is_variant(a["question_id"])]
+    variants = [a for a in attempts if is_variant(a["question_id"])]
+
+    orig_passes = [a for a in originals if is_pass(a["error_type"])]
+    var_passes = [a for a in variants if is_pass(a["error_type"])]
+
+    if not orig_passes:
+        return ("L0", "attempted, not yet passed", [])
+
+    # L1: first original pass
+    if len(orig_passes) == 1 and not var_passes:
+        return ("L1", "first pass, transfer not yet proven", orig_passes)
+
+    # L2: original + variant pass (method proven, not memorization)
+    if var_passes and not (len(orig_passes) > 1 and (max(a["timestamp"] for a in orig_passes) - min(a["timestamp"] for a in orig_passes)).days >= 7):
+        return ("L2", "method proven on unseen variant, retention pending", orig_passes + var_passes)
+
+    # L3/L4: need 7+ days between passes
+    if len(orig_passes) >= 2:
+        orig_passes.sort(key=lambda a: a["timestamp"])
+        gaps = [(orig_passes[i+1]["timestamp"] - orig_passes[i]["timestamp"]).days
+                for i in range(len(orig_passes) - 1)]
+        if any(g >= 7 for g in gaps):
+            # L4: two 7+-day passes within 14 days
+            for i in range(len(orig_passes) - 1):
+                for j in range(i+1, len(orig_passes)):
+                    delta = (orig_passes[j]["timestamp"] - orig_passes[i]["timestamp"]).days
+                    if 7 <= delta <= 14 and var_passes:
+                        return ("L4-provisional", "provisional mastery — retention check will verify", orig_passes + var_passes)
+            return ("L3", "retention proven, mastery pending 2nd confirmed pass", orig_passes)
+
+    return ("L2", "practising", orig_passes + var_passes)
+
+
+def recovery_rate(attempts):
+    """Fraction of first-failures that later passed in the same session.
+    Measures how effective the variant/follow-up loop is.
+    """
+    by_session = defaultdict(list)
+    for a in attempts:
+        by_session[a["session_id"]].append(a)
+    total_fail_first = 0
+    recovered = 0
+    for sess_id, sess_attempts in by_session.items():
+        sess_attempts.sort(key=lambda a: a["timestamp"])
+        # Group by question_id
+        by_question = defaultdict(list)
+        for a in sess_attempts:
+            by_question[a["question_id"]].append(a)
+        for qid, q_attempts in by_question.items():
+            if len(q_attempts) < 2:
+                continue
+            first = q_attempts[0]
+            if is_pass(first["error_type"]):
+                continue  # first attempt was a pass
+            total_fail_first += 1
+            later_passes = [a for a in q_attempts[1:] if is_pass(a["error_type"])]
+            if later_passes:
+                recovered += 1
+    if total_fail_first == 0:
+        return None
+    return {
+        "n": total_fail_first,
+        "recovered": recovered,
+        "rate": recovered / total_fail_first,
+        "ci": wilson_ci(recovered, total_fail_first),
+    }
+
+
+# ─── DATA LOADING ───────────────────────────────────────────────────────────
+def parse_ts(s):
+    """Handle both naive and tz-aware ISO strings."""
+    if not s:
+        return None
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def load_learner(learner_id, days):
+    since = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+    conn = sqlite3.connect(DB)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = conn.execute(
+            "SELECT * FROM attempt WHERE learner_id = ? AND timestamp >= ? "
+            "ORDER BY timestamp",
+            (learner_id, since),
+        ).fetchall()
+        attempts = []
+        for r in rows:
+            a = dict(r)
+            a["timestamp"] = parse_ts(a.get("timestamp"))
+            a["skill_id"] = a.get("skill_id") or "UNKNOWN"
+            a["question_id"] = a.get("question_id") or ""
+            a["error_type"] = a.get("error_type") or ""
+            a["misconception_id"] = a.get("misconception_id")
+            attempts.append(a)
+
+        events = [dict(r) for r in conn.execute(
+            "SELECT * FROM learner_events WHERE learner_id = ? AND timestamp >= ? "
+            "ORDER BY timestamp",
+            (learner_id, since),
+        ).fetchall()]
+
+        mastery_rows = [dict(r) for r in conn.execute(
+            "SELECT * FROM mastery WHERE learner_id = ?", (learner_id,),
+        ).fetchall()]
+    finally:
+        conn.close()
+    return attempts, events, mastery_rows
+
+
+def load_dbe_diagnostics():
+    """Load DBE diagnostic error rows grouped by topic."""
+    if not DBE_DIAG.exists():
+        return None
+    import csv
+    rows = []
+    with open(DBE_DIAG, encoding="utf-8", errors="ignore") as f:
+        for r in csv.DictReader(f):
+            skill = (r.get("skill_id") or "").strip()
+            err_class = (r.get("error_class") or "").strip()
+            if not skill:
+                continue
+            rows.append({"topic": topic_of(skill), "error_class": err_class})
+    by_topic = Counter(r["topic"] for r in rows)
+    by_topic_class = defaultdict(Counter)
+    for r in rows:
+        by_topic_class[r["topic"]][r["error_class"]] += 1
+    return {"total": len(rows), "by_topic": by_topic, "by_topic_class": by_topic_class}
+
+
+# ─── ANALYSIS ───────────────────────────────────────────────────────────────
+def analyze_skills(attempts):
+    """Per-skill breakdown."""
+    by_skill = defaultdict(list)
+    for a in attempts:
+        by_skill[a["skill_id"]].append(a)
+
+    results = {}
+    for skill, skill_attempts in by_skill.items():
+        originals = [a for a in skill_attempts if not is_variant(a["question_id"])]
+        variants = [a for a in skill_attempts if is_variant(a["question_id"])]
+
+        orig_correct = sum(1 for a in originals if is_pass(a["error_type"]))
+        var_correct = sum(1 for a in variants if is_pass(a["error_type"]))
+
+        orig_ci = wilson_ci(orig_correct, len(originals))
+        var_ci = wilson_ci(var_correct, len(variants)) if variants else None
+        post = beta_posterior(orig_correct, len(originals))
+
+        tier, tier_reason, tier_passes = mastery_tier(skill_attempts)
+
+        results[skill] = {
+            "topic": topic_of(skill),
+            "attempts_total": len(skill_attempts),
+            "originals": len(originals),
+            "variants": len(variants),
+            "orig_correct": orig_correct,
+            "var_correct": var_correct,
+            "orig_ci": orig_ci,
+            "var_ci": var_ci,
+            "posterior": post,
+            "tier": tier,
+            "tier_reason": tier_reason,
+            "misconceptions": Counter(
+                a["misconception_id"] for a in skill_attempts
+                if a["misconception_id"]
+            ),
+        }
+    return results
+
+
+def analyze_misconceptions(attempts):
+    """Global misconception frequencies + persistence."""
+    counts = Counter()
+    first_seen = {}
+    last_seen = {}
+    skills_with = defaultdict(set)
+
+    for a in attempts:
+        mid = a["misconception_id"]
+        if not mid:
+            continue
+        counts[mid] += 1
+        ts = a["timestamp"]
+        if mid not in first_seen or ts < first_seen[mid]:
+            first_seen[mid] = ts
+        if mid not in last_seen or ts > last_seen[mid]:
+            last_seen[mid] = ts
+        skills_with[mid].add(a["skill_id"])
+
+    rows = []
+    for mid, count in counts.most_common(15):
+        span_days = (last_seen[mid] - first_seen[mid]).total_seconds() / 86400
+        # Persistence: how many distinct days did this error appear?
+        days_seen = len(set(a["timestamp"].date() for a in attempts
+                            if a["misconception_id"] == mid))
+        rows.append({
+            "mid": mid,
+            "count": count,
+            "days_seen": days_seen,
+            "span_days": round(span_days, 1),
+            "skills": sorted(skills_with[mid]),
+        })
+    return rows
+
+
+def analyze_trajectory(attempts):
+    """Time series of correctness."""
+    if not attempts:
+        return None
+    attempts_sorted = sorted(attempts, key=lambda a: a["timestamp"])
+    ts = [a["timestamp"] for a in attempts_sorted]
+    correctness = [1.0 if is_pass(a["error_type"]) else 0.0 for a in attempts_sorted]
+
+    # Daily aggregation
+    by_day = defaultdict(lambda: {"total": 0, "correct": 0})
+    for a in attempts_sorted:
+        d = a["timestamp"].date()
+        by_day[d]["total"] += 1
+        if is_pass(a["error_type"]):
+            by_day[d]["correct"] += 1
+
+    days = sorted(by_day.keys())
+    daily_rates = [by_day[d]["correct"] / by_day[d]["total"] for d in days]
+
+    reg = trajectory_regression(ts, correctness)
+
+    return {
+        "days": days,
+        "daily_rates": daily_rates,
+        "by_day": dict(by_day),
+        "regression": reg,
+        "n_attempts": len(attempts),
+    }
+
+
+def analyze_dbe_comparison(attempts, dbe):
+    """Compare learner's error distribution by topic to DBE's."""
+    if dbe is None:
+        return None
+
+    learner_errors_by_topic = Counter()
+    for a in attempts:
+        if not is_pass(a["error_type"]):
+            learner_errors_by_topic[topic_of(a["skill_id"])] += 1
+
+    if not learner_errors_by_topic:
+        return None
+
+    dbe_topics = dbe["by_topic"]
+    common_topics = set(learner_errors_by_topic.keys()) & set(dbe_topics.keys())
+    if not common_topics:
+        return None
+
+    # Build contingency table: rows = topics, columns = [learner, dbe]
+    obs = []
+    topics = sorted(common_topics)
+    for t in topics:
+        obs.append([learner_errors_by_topic[t], dbe_topics[t]])
+    obs = np.array(obs, dtype=float)
+
+    try:
+        chi2, p, dof, expected = stats.chi2_contingency(obs)
+    except Exception:
+        return None
+
+    # Normalize both columns to percentages for readability
+    learner_pct = {t: learner_errors_by_topic[t] / learner_errors_by_topic.most_common()[0][1] for t in topics}
+    dbe_pct = {t: dbe_topics[t] / max(dbe_topics.values()) for t in topics}
+
+    return {
+        "topics": topics,
+        "learner_counts": {t: learner_errors_by_topic[t] for t in topics},
+        "dbe_counts": {t: dbe_topics[t] for t in topics},
+        "chi2": round(chi2, 3),
+        "p_value": round(p, 4),
+        "dof": int(dof),
+        "significant": p < 0.05,
+        "caveat": "Populations differ (self-selected tutor users vs full Grade 12 cohort). "
+                  "Chi-square tests distribution difference, not superiority.",
+    }
+
+
+# ─── VISUALIZATIONS ─────────────────────────────────────────────────────────
+def chart_mastery_heatmap(skill_results):
+    if not HAS_MPL or not skill_results:
+        return None
+    tiers = {"L0": 0, "L1": 1, "L2": 2, "L3": 3, "L4-provisional": 4, "D": 5}
+    skills = list(skill_results.keys())
+    values = [tiers.get(skill_results[s]["tier"], 0) for s in skills]
+
+    fig, ax = plt.subplots(figsize=(10, max(3, len(skills) * 0.35)))
+    colors = ["#e5e7eb", "#fca5a5", "#fdba74", "#fde047", "#86efac"]
+    bars = ax.barh(skills, values, color=[colors[v] for v in values])
+    for i, (s, v) in enumerate(zip(skills, values)):
+        ax.text(v + 0.05, i, f"L{v}", va="center", fontsize=9)
+    ax.set_xlim(0, 5.5)
+    ax.set_xticks([0, 1, 2, 3, 4, 5])
+    ax.set_xticklabels(["L0\nattempted", "L1\npass", "L2\nvariant",
+                         "L3\n7d gap", "L4p\nprovisional", "D\ndurable"])
+    ax.set_title("Mastery Tier by Skill")
+    ax.invert_yaxis()
+    plt.tight_layout()
+    buf = io.BytesIO()
+    plt.savefig(buf, format="png", dpi=100, bbox_inches="tight")
+    plt.close()
+    return base64.b64encode(buf.getvalue()).decode("ascii")
+
+
+def chart_misconception_freq(misconceptions):
+    if not HAS_MPL or not misconceptions:
+        return None
+    top = misconceptions[:10]
+    labels = [m["mid"].replace("M_", "").replace("_", " ")[:25] for m in top]
+    counts = [m["count"] for m in top]
+
+    fig, ax = plt.subplots(figsize=(10, max(3, len(top) * 0.4)))
+    ax.barh(labels, counts, color="#3b82f6")
+    ax.set_title("Top Misconceptions (frequency)")
+    ax.invert_yaxis()
+    plt.tight_layout()
+    buf = io.BytesIO()
+    plt.savefig(buf, format="png", dpi=100, bbox_inches="tight")
+    plt.close()
+    return base64.b64encode(buf.getvalue()).decode("ascii")
+
+
+def chart_trajectory(traj):
+    if not HAS_MPL or not traj or not traj["days"]:
+        return None
+    days = traj["days"]
+    rates = traj["daily_rates"]
+    x = list(range(len(days)))
+
+    fig, ax = plt.subplots(figsize=(10, 4))
+    ax.plot(x, rates, marker="o", linestyle="-", color="#3b82f6", label="Daily accuracy")
+    # Fit line if possible
+    if len(x) >= 3:
+        slope, intercept, _, _, _ = stats.linregress(x, rates)
+        fit = [slope * i + intercept for i in x]
+        ax.plot(x, fit, "--", color="#ef4444", alpha=0.7, label="Trend")
+    ax.set_xticks(x[::max(1, len(x) // 6)])
+    ax.set_xticklabels([d.strftime("%m-%d") for d in days[::max(1, len(x) // 6)]], rotation=45)
+    ax.set_ylabel("Accuracy")
+    ax.set_ylim(0, 1.05)
+    ax.set_title("Accuracy Over Time")
+    ax.legend()
+    ax.grid(True, alpha=0.3)
+    plt.tight_layout()
+    buf = io.BytesIO()
+    plt.savefig(buf, format="png", dpi=100, bbox_inches="tight")
+    plt.close()
+    return base64.b64encode(buf.getvalue()).decode("ascii")
+
+
+def chart_dbe_comparison(dbe_cmp):
+    if not HAS_MPL or not dbe_cmp:
+        return None
+    topics = dbe_cmp["topics"]
+    learner = [dbe_cmp["learner_counts"][t] for t in topics]
+    dbe = [dbe_cmp["dbe_counts"][t] for t in topics]
+
+    fig, ax = plt.subplots(figsize=(10, 4))
+    x = np.arange(len(topics))
+    width = 0.35
+    ax.bar(x - width/2, learner, width, label="Learner errors", color="#3b82f6")
+    ax.bar(x + width/2, dbe, width, label="DBE error rows", color="#94a3b8")
+    ax.set_xticks(x)
+    ax.set_xticklabels(topics)
+    ax.set_ylabel("Count")
+    ax.set_title(f"Error Distribution: Learner vs DBE (χ²={dbe_cmp['chi2']}, p={dbe_cmp['p_value']})")
+    ax.legend()
+    plt.tight_layout()
+    buf = io.BytesIO()
+    plt.savefig(buf, format="png", dpi=100, bbox_inches="tight")
+    plt.close()
+    return base64.b64encode(buf.getvalue()).decode("ascii")
+
+
+# ─── RECOMMENDATION ─────────────────────────────────────────────────────────
+def build_recommendation(skill_results, misconceptions, trajectory, recovery):
+    """Return list of (priority, action, evidence) tuples."""
+    recs = []
+
+    # 1. Top misconception
+    if misconceptions:
+        top = misconceptions[0]
+        if top["count"] >= 3:
+            persistence = "persistent" if top["days_seen"] >= 2 else "single-session"
+            recs.append((
+                "HIGH",
+                f"Drill: {top['mid'].replace('_', ' ')}",
+                f"{top['count']} occurrences over {top['days_seen']} day(s) — {persistence}. "
+                f"Skills affected: {', '.join(top['skills'][:3])}."
+            ))
+
+    # 1b. Retention checks due
+    _due = [s for s, r in skill_results.items()
+            if r.get("retention") and r["retention"]["status"] == "pending"]
+    if _due:
+        recs.insert(0, (
+            "HIGH",
+            f"Retention check due: {_due[0]}",
+            f"Provisional mastery was granted. A 30-day retention check "
+            f"verifies whether the skill persisted. This distinguishes a "
+            f"provisional claim from a durable one."
+        ))
+
+    # 1c. Retention checks missing (survivorship concern)
+    _missing = [s for s, r in skill_results.items()
+                if r.get("retention") and r["retention"]["status"] == "missing"]
+    if _missing:
+        recs.insert(0, (
+            "MEDIUM",
+            f"Retention check missed: {_missing[0]}",
+            f"The learner did not return for the scheduled check. "
+            f"Recorded as missing (not failed). If this pattern repeats, "
+            f"investigate attrition rather than assuming retention."
+        ))
+
+    # 2. Skills stuck at L2
+    stuck = [s for s, r in skill_results.items() if r["tier"] == "L2" and r["variants"] >= 1]
+    if stuck:
+        recs.append((
+            "MEDIUM",
+            f"Schedule retention test for: {stuck[0]}",
+            f"Passed on variant but not re-tested 7+ days later. "
+            f"One 7-day test would advance to L3."
+        ))
+
+    # 3. Any skill where accuracy is trending down
+    if trajectory and trajectory["regression"] and trajectory["regression"].get("direction") == "declining":
+        reg = trajectory["regression"]
+        recs.append((
+            "HIGH",
+            "Check engagement — accuracy is declining",
+            f"Slope={reg['slope']}/day (95% CI {reg['ci']}), p={reg['p_value']}. "
+            f"Consider shorter sessions or a confidence boost."
+        ))
+
+    # 4. Recovery rate insight
+    if recovery and recovery["n"] >= 5:
+        rate = recovery["rate"]
+        if rate >= 0.6:
+            recs.append((
+                "INFO",
+                "Current teaching loop is working",
+                f"Of {recovery['n']} first-failures, {recovery['recovered']} recovered in the same session "
+                f"({rate*100:.0f}%, 95% CI {recovery['ci'][1]*100:.0f}%–{recovery['ci'][2]*100:.0f}%)."
+            ))
+        elif rate < 0.3:
+            recs.append((
+                "HIGH",
+                "Recovery rate is low — review teaching content",
+                f"Only {recovery['recovered']}/{recovery['n']} recovered after first-failures. "
+                f"Variants may not be reaching the core misunderstanding."
+            ))
+
+    return recs[:4]
+
+
+# ─── RENDER ─────────────────────────────────────────────────────────────────
+def fmt_pct(p, ci_lo=None, ci_hi=None):
+    if ci_lo is not None:
+        return f"{p*100:.0f}% (95% CI {ci_lo*100:.0f}%–{ci_hi*100:.0f}%)"
+    return f"{p*100:.0f}%"
+
+
+def render_markdown(learner_id, days, skill_results, misconceptions, trajectory,
+                    dbe_cmp, recovery, events, charts):
+    L = []
+    A = L.append
+
+    A(f"# Statistical Learning Report — {learner_id}")
+    A("")
+    A(f"**Analysis window:** last {days} days  ")
+    A(f"**Generated:** {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
+    A("")
+
+    # ─── Executive summary ───
+    A("## Executive Summary")
+    A("")
+    total_orig = sum(r["originals"] for r in skill_results.values())
+    total_orig_correct = sum(r["orig_correct"] for r in skill_results.values())
+    overall_ci = wilson_ci(total_orig_correct, total_orig) if total_orig else (0, 0, 0)
+    A(f"- **Attempts:** {total_orig} original + "
+      f"{sum(r['variants'] for r in skill_results.values())} variant")
+    if total_orig:
+        A(f"- **First-try accuracy:** {fmt_pct(*overall_ci)}")
+    _durable = [s for s, r in skill_results.items() if r["tier"] == "D"]
+    _provisional = [s for s, r in skill_results.items() if r["tier"] == "L4-provisional"]
+    if _durable:
+        A(f"- **Durable mastery (retention verified):** {', '.join(_durable)}")
+    if _provisional:
+        A(f"- **Provisional mastery (retention pending):** {', '.join(_provisional)}")
+    if not _durable and not _provisional:
+        A(f"- **Mastery:** none yet")
+
+    # Durable mastery but low current accuracy — genuine warning
+    for _s in _durable:
+        _r = skill_results[_s]
+        _recent = _r["orig_ci"][0] if _r["originals"] else 0
+        if _r["originals"] >= 10 and _recent < 0.6:
+            A(f"- ⚠️ **Note on {_s}:** durable mastery was verified earlier, "
+              f"but current accuracy is {_recent*100:.0f}%. Consider re-testing retention.")
+
+    # Provisional mastery but low current accuracy — informational note
+    for _s in _provisional:
+        _r = skill_results[_s]
+        _recent = _r["orig_ci"][0] if _r["originals"] else 0
+        if _r["originals"] >= 10 and _recent < 0.6:
+            A(f"- ℹ️ **Note on {_s}:** provisional mastery was met earlier, "
+              f"but current accuracy is {_recent*100:.0f}%. Retention check will "
+              f"determine whether it persists.")
+    if misconceptions:
+        A(f"- **Top struggle:** {misconceptions[0]['mid'].replace('_',' ')} "
+          f"({misconceptions[0]['count']} occurrences)")
+    if recovery:
+        A(f"- **Recovery rate:** {recovery['recovered']}/{recovery['n']} "
+          f"({fmt_pct(*recovery['ci'])})")
+    A("")
+
+    # ─── Recommendation ───
+    recs = build_recommendation(skill_results, misconceptions, trajectory, recovery)
+    if recs:
+        A("### 🎯 What to Teach Next")
+        A("")
+        for pri, action, evidence in recs:
+            badge = {"HIGH": "🔴", "MEDIUM": "🟡", "INFO": "🟢"}.get(pri, "•")
+            A(f"**{badge} {action}**")
+            A(f"  {evidence}")
+            A("")
+
+    # ─── Per-skill analysis ───
+    A("## Per-Skill Analysis")
+    A("")
+    A("| Skill | Tier | Retention | Attempts | Original acc. | Variant acc. | Post. rate (95% CrI) | P(≥60%) |")
+    A("|---|---|---|---|---|---|---|---|")
+    _retention_labels = {
+        "pending": "⏳ pending",
+        "passed": "✅ passed",
+        "failed": "❌ failed",
+        "missing": "⚠️ missing",
+        "dismissed": "dismissed",
+    }
+    for skill in sorted(skill_results.keys()):
+        r = skill_results[skill]
+        orig = fmt_pct(*r["orig_ci"]) if r["originals"] else "—"
+        var = fmt_pct(*r["var_ci"]) if r["var_ci"] else "—"
+        mean, lo, hi = r["posterior"]
+        post = f"{mean*100:.0f}% ({lo*100:.0f}–{hi*100:.0f})"
+        p60 = beta_p_above(r["orig_correct"], r["originals"], 0.6) if r["originals"] else 0.0
+        _ret = r.get("retention")
+        if _ret:
+            _ret_str = _retention_labels.get(_ret["status"], _ret["status"])
+        elif r["tier"] == "D":
+            _ret_str = "✅ passed"
+        elif r["tier"] == "L4-provisional":
+            _ret_str = "⏳ scheduled"
+        else:
+            _ret_str = "—"
+        A(f"| {skill} | **{r['tier']}** | {_ret_str} | {r['attempts_total']} | {orig} | {var} | {post} | {p60*100:.0f}% |")
+    A("")
+
+    # ─── Misconceptions ───
+    A("## Misconception Analysis")
+    A("")
+    if not misconceptions:
+        A("_No misconceptions logged._")
+    else:
+        A("| Misconception | Count | Days seen | Span | Affected skills |")
+        A("|---|---|---|---|---|")
+        for m in misconceptions[:10]:
+            A(f"| {m['mid']} | {m['count']} | {m['days_seen']} | {m['span_days']}d | "
+              f"{', '.join(m['skills'][:2])} |")
+    A("")
+
+    # ─── Trajectory ───
+    A("## Learning Trajectory")
+    A("")
+    if trajectory and trajectory["regression"]:
+        reg = trajectory["regression"]
+        A(f"**Trend:** {reg['direction']}  ")
+        if reg["slope"] is not None:
+            A(f"**Slope:** {reg['slope']}/day (95% CI {reg['ci'][0]} to {reg['ci'][1]})  ")
+            A(f"**R²:** {reg['r_squared']}, **p-value:** {reg['p_value']}")
+            if reg["p_value"] > 0.05:
+                A("")
+                A("_Not statistically significant. With current sample size we cannot "
+                  "rule out that this is noise._")
+    else:
+        A("_Insufficient data for trajectory analysis (need 5+ attempts)._")
+    A("")
+
+    # ─── DBE comparison ───
+    A("## DBE Cohort Comparison")
+    A("")
+    if not dbe_cmp:
+        A("_DBE diagnostic data unavailable or no comparable topics._")
+    else:
+        A(f"**Chi-square test of homogeneity:** χ² = {dbe_cmp['chi2']}, "
+          f"df = {dbe_cmp['dof']}, p = {dbe_cmp['p_value']}")
+        if dbe_cmp["significant"]:
+            A(f"→ **Statistically significant** (p < 0.05). "
+              f"The learner's error distribution differs from DBE's aggregated pattern.")
+        else:
+            A(f"→ **Not significant**. Learner's error distribution is consistent "
+              f"with DBE's aggregated pattern at current sample size.")
+        A("")
+        A(f"⚠️ **Caveat:** {dbe_cmp['caveat']}")
+        A("")
+        A("| Topic | Learner errors | DBE error rows |")
+        A("|---|---|---|")
+        for t in dbe_cmp["topics"]:
+            A(f"| {t} | {dbe_cmp['learner_counts'][t]} | {dbe_cmp['dbe_counts'][t]} |")
+    A("")
+
+    # ─── Methodology ───
+    A("## Methodology & Limitations")
+    A("")
+    A("### Measuring sticks")
+    A("")
+    A("**Mastery tiers (layered — each tier makes a distinct claim):**")
+    A("")
+    A("| Tier | Claim | Confidence |")
+    A("|---|---|---|")
+    A("| L0 | Attempted only | No claim |")
+    A("| L1 | Passed once | Weak |")
+    A("| L2 | Passed original AND unseen variant | Moderate — method proven, not memorization |")
+    A("| L3 | Passed again 7+ days later | Strong — retention |")
+    A("| L4-provisional | Two 7+ day passes within 14 days + variant | Provisional mastery — retention pending |")
+    A("| D | Retention check passed at day 30+ | Durable mastery — claim verified |")
+    A("")
+    A("**Statistical methods:**")
+    A("- **Confidence intervals:** Wilson score interval for binomial proportions "
+      "(more accurate than Wald at small n and extreme rates).")
+    A("- **Bayesian posterior:** Beta(1,1) prior, updated with each attempt. "
+      "Reported as 95% credible interval — the *probability range* for the true skill rate.")
+    A("- **Trajectory:** Ordinary least squares on per-attempt correctness. "
+      "Slope reported with 95% CI and p-value. Non-significant trends are marked.")
+    A("- **Cohort comparison:** Chi-square test of homogeneity. "
+      "Assumes independent observations — a simplifying assumption that may be "
+      "violated by repeated attempts on the same question.")
+    A("- **Passing rule (lenient):** An attempt counts as passing if the math grader "
+      "confirms the answer is correct (error_type ∈ {none, match}). "
+      "Presentation-only errors are counted as passing but flagged in the tutor voice.")
+    A("")
+    A("### What this report does NOT claim")
+    A("")
+    A("- **No attribution of improvement to the tutor.** Without a control group, "
+      "we cannot say the tutor caused the improvement.")
+    A("- **Provisional mastery is not durable mastery.** An L4-provisional claim means "
+      "the learner met the operational threshold under policy v1_2026_10. A durable "
+      "(D) claim requires an unassisted retention check passed at day 30+. The two "
+      "are distinguished throughout this report.")
+    A("- **Missed retention checks are marked missing, not failed.** Follow-up "
+      "attrition is tracked explicitly because returning learners may differ "
+      "systematically from those who don't.")
+    A("- **No prediction of exam outcomes.** Trajectory slopes are estimates, not forecasts.")
+    A("- **No causal inference from cohort comparison.** Populations differ "
+      "(voluntary app users vs full national cohort).")
+    A("- **No significance claims without multiple-comparison caveats.** "
+      "Running 20 statistical tests, one will be significant by chance.")
+    A("")
+    A("### Data provenance")
+    A("")
+    A(f"- Learner attempts: `{DB.relative_to(ROOT)}`")
+    A(f"- DBE diagnostics: `{DBE_DIAG.relative_to(ROOT)}` "
+      f"({dbe_cmp['dbe_counts'] and 'loaded' or 'unavailable'})")
+    A(f"- Analysis window: {days} days")
+    A(f"- Total attempts: {sum(r['attempts_total'] for r in skill_results.values())}")
+
+    return "\n".join(L)
+
+
+def render_html(md, charts, learner_id):
+    """Wrap markdown in HTML with embedded charts."""
+    # Minimal markdown-ish rendering (not full markdown library, but readable)
+    import re
+    lines = md.split("\n")
+    html = []
+    html.append("<!DOCTYPE html><html><head><meta charset='utf-8'>")
+    html.append(f"<title>Report — {learner_id}</title>")
+    html.append("""<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           max-width: 900px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #1f2937; }
+    h1 { border-bottom: 3px solid #3b82f6; padding-bottom: 10px; }
+    h2 { margin-top: 40px; color: #1e40af; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; }
+    h3 { color: #1e40af; }
+    table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+    th, td { border: 1px solid #d1d5db; padding: 8px 12px; text-align: left; }
+    th { background: #f3f4f6; font-weight: 600; }
+    tr:nth-child(even) { background: #f9fafb; }
+    code { background: #f3f4f6; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+    img { max-width: 100%; margin: 20px 0; border: 1px solid #e5e7eb; border-radius: 6px; }
+    blockquote { border-left: 4px solid #f59e0b; padding-left: 15px; color: #6b7280; }
+    .badge-high { color: #dc2626; font-weight: 600; }
+    .badge-medium { color: #f59e0b; font-weight: 600; }
+    .badge-info { color: #16a34a; font-weight: 600; }
+    </style></head><body>""")
+
+    # Simple markdown → HTML (headers, tables, bold, italic, lists, hr)
+    in_table = False
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith("# "):
+            html.append(f"<h1>{line[2:]}</h1>")
+        elif line.startswith("## "):
+            html.append(f"<h2>{line[3:]}</h2>")
+        elif line.startswith("### "):
+            html.append(f"<h3>{line[4:]}</h3>")
+        elif line.startswith("| ") and i + 1 < len(lines) and lines[i+1].startswith("|"):
+            # Table start
+            html.append("<table>")
+            header = line
+            html.append("<thead><tr>")
+            for cell in header.strip("|").split("|"):
+                html.append(f"<th>{cell.strip()}</th>")
+            html.append("</tr></thead><tbody>")
+            i += 2  # skip separator
+            while i < len(lines) and lines[i].startswith("|"):
+                html.append("<tr>")
+                for cell in lines[i].strip("|").split("|"):
+                    cell = cell.strip()
+                    # inline bold
+                    cell = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", cell)
+                    cell = re.sub(r"_([^_]+)_", r"<em>\1</em>", cell)
+                    cell = re.sub(r"`([^`]+)`", r"<code>\1</code>", cell)
+                    html.append(f"<td>{cell}</td>")
+                html.append("</tr>")
+                i += 1
+            html.append("</tbody></table>")
+            continue
+        elif line.strip() == "":
+            html.append("")
+        else:
+            # Inline formatting
+            line = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", line)
+            line = re.sub(r"_([^_]+)_", r"<em>\1</em>", line)
+            line = re.sub(r"`([^`]+)`", r"<code>\1</code>", line)
+            if line.startswith("- "):
+                html.append(f"<li>{line[2:]}</li>")
+            elif line.startswith("⚠️") or line.startswith("→"):
+                html.append(f"<blockquote>{line}</blockquote>")
+            else:
+                html.append(f"<p>{line}</p>")
+        i += 1
+
+    # Insert charts before "Methodology" section
+    chart_html = ""
+    if charts.get("mastery"):
+        chart_html += f'<h2>Mastery Map (visual)</h2><img src="data:image/png;base64,{charts["mastery"]}" alt="Mastery heatmap">'
+    if charts.get("trajectory"):
+        chart_html += f'<h2>Learning Trajectory (visual)</h2><img src="data:image/png;base64,{charts["trajectory"]}" alt="Trajectory">'
+    if charts.get("misconceptions"):
+        chart_html += f'<h2>Misconception Frequency (visual)</h2><img src="data:image/png;base64,{charts["misconceptions"]}" alt="Misconceptions">'
+    if charts.get("dbe"):
+        chart_html += f'<h2>DBE Comparison (visual)</h2><img src="data:image/png;base64,{charts["dbe"]}" alt="DBE comparison">'
+
+    html_body = "\n".join(html)
+    html_body = html_body.replace("<h2>Methodology & Limitations</h2>", chart_html + "<h2>Methodology & Limitations</h2>")
+
+    html.append(html_body)
+    html.append("</body></html>")
+    return "\n".join(html)
+
+
+# ─── MAIN ───────────────────────────────────────────────────────────────────
+def generate_report(learner_id, days=30):
+    attempts, events, mastery_rows = load_learner(learner_id, days)
+    if not attempts:
+        print(f"No attempts for {learner_id} in last {days} days.")
+        return None, None
+
+    skill_results = analyze_skills(attempts)
+
+    # ─── Retention integration ──────────────────────────────────────────────
+    _conn = sqlite3.connect(DB)
+    _conn.row_factory = sqlite3.Row
+    try:
+        if RETENTION_AVAILABLE:
+            seed_initial_policy(_conn)
+            _policy = load_policy(_conn)
+
+            for _skill, _r in skill_results.items():
+                # Upgrade to D if learner has a passed retention check
+                if get_durable_mastery(_conn, learner_id, _skill):
+                    if _r["tier"] == "L4-provisional":
+                        _r["tier"] = "D"
+                        _r["tier_reason"] = "durable mastery — retention verified"
+                    continue
+
+                # Log new provisional-mastery decisions
+                if _r["tier"] == "L4-provisional":
+                    _evidence = {
+                        "attempts": _r["attempts_total"],
+                        "originals": _r["originals"],
+                        "variants": _r["variants"],
+                        "orig_correct": _r["orig_correct"],
+                        "var_correct": _r["var_correct"],
+                        "orig_ci": list(_r["orig_ci"]),
+                    }
+                    _qids = [a["question_id"] for a in attempts
+                             if a["skill_id"] == _skill and a["question_id"]]
+                    _qids = list(dict.fromkeys(_qids))[:20]
+                    try:
+                        log_decision(
+                            _conn, learner_id, _skill,
+                            "L4-provisional", _evidence, _qids,
+                            {"skill_id": _skill},
+                            policy_version=_policy["version"] if _policy else None,
+                        )
+                    except Exception as _e:
+                        print(f"  [decision log warning for {_skill}: {_e}]")
+
+            # Attach retention summary to skill_results for the report
+            _retention_summary = get_retention_summary(_conn, learner_id)
+            for _skill, _r in skill_results.items():
+                _rs = _retention_summary.get(_skill)
+                if _rs:
+                    _r["retention"] = _rs
+                else:
+                    _r["retention"] = None
+        else:
+            for _skill in skill_results:
+                skill_results[_skill]["retention"] = None
+            if "RETENTION_AVAILABLE" in globals() and not RETENTION_AVAILABLE:
+                pass  # silent
+    finally:
+        _conn.close()
+    misconceptions = analyze_misconceptions(attempts)
+    trajectory = analyze_trajectory(attempts)
+    dbe = load_dbe_diagnostics()
+    dbe_cmp = analyze_dbe_comparison(attempts, dbe)
+    recovery = recovery_rate(attempts)
+
+    charts = {
+        "mastery": chart_mastery_heatmap(skill_results),
+        "misconceptions": chart_misconception_freq(misconceptions),
+        "trajectory": chart_trajectory(trajectory),
+        "dbe": chart_dbe_comparison(dbe_cmp),
+    }
+
+    md = render_markdown(learner_id, days, skill_results, misconceptions,
+                          trajectory, dbe_cmp, recovery, events, charts)
+    html = render_html(md, charts, learner_id)
+
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    md_path = REPORTS / f"{learner_id}_stat_{ts}.md"
+    html_path = REPORTS / f"{learner_id}_stat_{ts}.html"
+    md_path.write_text(md, encoding="utf-8")
+    html_path.write_text(html, encoding="utf-8")
+
+    return md, (md_path, html_path)
+
+
+def main():
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    days = 30
+    if len(args) >= 2:
+        try:
+            days = int(args[1])
+        except ValueError:
+            pass
+
+    if "--all" in sys.argv:
+        conn = sqlite3.connect(DB)
+        learners = [r[0] for r in conn.execute(
+            "SELECT DISTINCT learner_id FROM attempt ORDER BY learner_id"
+        ).fetchall()]
+        conn.close()
+        for lid in learners:
+            md, paths = generate_report(lid, days)
+            if md:
+                print(f"\n{'='*70}\n{paths[1]}\n{'='*70}\n")
+                print(md[:3000])
+        return
+
+    learner = args[0] if args else "tanaka"
+    md, paths = generate_report(learner, days)
+    if md:
+        print(md)
+        print(f"\n\n📄 Markdown: {paths[0]}")
+        print(f"🌐 HTML:     {paths[1]}")
+
+
+if __name__ == "__main__":
+    main()

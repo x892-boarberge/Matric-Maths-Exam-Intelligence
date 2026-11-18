@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 3 for (x + 3) + (x - 3) + (x - 9) + ...",
+    "expected": "x = 3",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 3)/(x + 3) = (x - 9)/(x - 3)",
+      "(x - 3)\u00b2 = (x - 9)(x + 3)",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 5 for (x + 5) + (x - 5) + (x - 15) + ...",
+    "expected": "x = 5",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 5)/(x + 5) = (x - 15)/(x - 5)",
+      "(x - 5)\u00b2 = (x - 15)(x + 5)",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5"
+    ]
+  },
+  {
+    "variant_question": "Show that x = 2 for (x + 2) + (x - 2) + (x - 6) + ...",
+    "expected": "x = 2",
+    "demonstration": "Set T2/T1 = T3/T2, cross-multiply, solve.",
+    "memo_marks": [
+      "1 mark ratio",
+      "1 mark cross-multiply",
+      "1 mark solve"
+    ],
+    "fast_path": "Set T2/T1 = T3/T2.",
+    "fatal_error": "DBE says: No cross-multiplication shown.",
+    "answer_book_layout": [
+      "T2/T1 = T3/T2",
+      "(x - 2)/(x + 2) = (x - 6)/(x - 2)",
+      "(x - 2)\u00b2 = (x - 6)(x + 2)",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2"
+    ]
+  }
+]

@@ -45,6 +45,12 @@
       "steps": [
         "Substitute into quadratic formula.",
         "Round to 2 decimals."
+      ],
+      "given_from": [
+        "1.1.1"
+      ],
+      "requires_skills": [
+        "algebra.quadratic"
       ]
     },
     {
@@ -67,6 +73,13 @@
         "Factorise.",
         "Critical values.",
         "Solution outside the roots (parabola opens up)."
+      ],
+      "given_from": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "requires_skills": [
+        "algebra.quadratic"
       ]
     },
     {
@@ -91,6 +104,14 @@
         "Square both sides.",
         "Standard form, factorise.",
         "Reject extraneous root."
+      ],
+      "given_from": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "requires_skills": [
+        "algebra.quadratic"
       ]
     },
     {
@@ -113,6 +134,16 @@
         "From {a}x - y = 2: y = {a}x - 2.",
         "Substitute into the other equation.",
         "Solve for x, back-substitute for y."
+      ],
+      "given_from": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3",
+        "1.1.4"
+      ],
+      "requires_skills": [
+        "algebra.quadratic",
+        "algebra.surd"
       ]
     },
     {
@@ -128,6 +159,18 @@
         "[3^(x-1)]³ = 3^(3x-3) = 3^(3x) / 27 = 4/27.",
         "sqrt(5^sqrt(p)) = sqrt(8) = 2sqrt(2)... check.",
         "Simplify."
+      ],
+      "given_from": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3",
+        "1.1.4",
+        "1.2"
+      ],
+      "requires_skills": [
+        "algebra.quadratic",
+        "algebra.surd",
+        "algebra.simultaneous"
       ]
     }
   ],

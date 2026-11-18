@@ -1,0 +1,632 @@
+[
+  {
+    "variant_question": "f(x) = 2/(x - 3) + 1, g(x) = x + (-1). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units up",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-1 + 1) = x + (0). g is y = x + (-1). To transform g into the axis: shift up by 1 units, OR shift left by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units up' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -1",
+      "Shift: Translation 1 units up"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 6/(x - 5) + 1, g(x) = x + (-2). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units up",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-2 + 1) = x + (-1). g is y = x + (-2). To transform g into the axis: shift up by 1 units, OR shift left by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units up' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -2",
+      "Shift: Translation 1 units up"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 6/(x - 5) - 1, g(x) = x + (-3). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-3 + -1) = x + (-4). g is y = x + (-3). To transform g into the axis: shift down by 1 units, OR shift right by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -3",
+      "Shift: Translation 1 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 4/(x - 5) - 3, g(x) = x + (-4). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 3 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-4 + -3) = x + (-7). g is y = x + (-4). To transform g into the axis: shift down by 3 units, OR shift right by 3 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 3 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -4",
+      "Shift: Translation 3 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 5/(x - 6) - 4, g(x) = x + (-5). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 4 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-5 + -4) = x + (-9). g is y = x + (-5). To transform g into the axis: shift down by 4 units, OR shift right by 4 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 4 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -5",
+      "Shift: Translation 4 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 8/(x - 6) - 2, g(x) = x + (-4). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 2 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-4 + -2) = x + (-6). g is y = x + (-4). To transform g into the axis: shift down by 2 units, OR shift right by 2 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 2 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -4",
+      "Shift: Translation 2 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 6/(x - 5) - 1, g(x) = x + (-3). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-3 + -1) = x + (-4). g is y = x + (-3). To transform g into the axis: shift down by 1 units, OR shift right by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -3",
+      "Shift: Translation 1 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 8/(x - 6) - 2, g(x) = x + (-4). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 2 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-4 + -2) = x + (-6). g is y = x + (-4). To transform g into the axis: shift down by 2 units, OR shift right by 2 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 2 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -4",
+      "Shift: Translation 2 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 3/(x - 4) - 2, g(x) = x + (-3). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 2 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-3 + -2) = x + (-5). g is y = x + (-3). To transform g into the axis: shift down by 2 units, OR shift right by 2 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 2 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -3",
+      "Shift: Translation 2 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 5/(x - 6) - 4, g(x) = x + (-5). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 4 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-5 + -4) = x + (-9). g is y = x + (-5). To transform g into the axis: shift down by 4 units, OR shift right by 4 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 4 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -5",
+      "Shift: Translation 4 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 3/(x - 4) - 2, g(x) = x + (-3). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 2 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-3 + -2) = x + (-5). g is y = x + (-3). To transform g into the axis: shift down by 2 units, OR shift right by 2 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 2 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -3",
+      "Shift: Translation 2 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 6/(x - 5) - 1, g(x) = x + (-3). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-3 + -1) = x + (-4). g is y = x + (-3). To transform g into the axis: shift down by 1 units, OR shift right by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -3",
+      "Shift: Translation 1 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 4/(x - 5) - 3, g(x) = x + (-4). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 3 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-4 + -3) = x + (-7). g is y = x + (-4). To transform g into the axis: shift down by 3 units, OR shift right by 3 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 3 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -4",
+      "Shift: Translation 3 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 6/(x - 5) + 1, g(x) = x + (-2). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units up",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-2 + 1) = x + (-1). g is y = x + (-2). To transform g into the axis: shift up by 1 units, OR shift left by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units up' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -2",
+      "Shift: Translation 1 units up"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 3/(x - 4) - 2, g(x) = x + (-3). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 2 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-3 + -2) = x + (-5). g is y = x + (-3). To transform g into the axis: shift down by 2 units, OR shift right by 2 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 2 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -3",
+      "Shift: Translation 2 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 2/(x - 3) - 1, g(x) = x + (-2). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-2 + -1) = x + (-3). g is y = x + (-2). To transform g into the axis: shift down by 1 units, OR shift right by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -2",
+      "Shift: Translation 1 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 6/(x - 5) + 1, g(x) = x + (-2). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units up",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-2 + 1) = x + (-1). g is y = x + (-2). To transform g into the axis: shift up by 1 units, OR shift left by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units up' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -2",
+      "Shift: Translation 1 units up"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 8/(x - 6) - 2, g(x) = x + (-4). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 2 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-4 + -2) = x + (-6). g is y = x + (-4). To transform g into the axis: shift down by 2 units, OR shift right by 2 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 2 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -4",
+      "Shift: Translation 2 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 4/(x - 5) - 3, g(x) = x + (-4). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 3 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-4 + -3) = x + (-7). g is y = x + (-4). To transform g into the axis: shift down by 3 units, OR shift right by 3 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 3 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -4",
+      "Shift: Translation 3 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 2/(x - 3) - 1, g(x) = x + (-2). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-2 + -1) = x + (-3). g is y = x + (-2). To transform g into the axis: shift down by 1 units, OR shift right by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -2",
+      "Shift: Translation 1 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 6/(x - 5) - 1, g(x) = x + (-3). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-3 + -1) = x + (-4). g is y = x + (-3). To transform g into the axis: shift down by 1 units, OR shift right by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -3",
+      "Shift: Translation 1 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 6/(x - 5) + 1, g(x) = x + (-2). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units up",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-2 + 1) = x + (-1). g is y = x + (-2). To transform g into the axis: shift up by 1 units, OR shift left by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units up' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -2",
+      "Shift: Translation 1 units up"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 5/(x - 6) - 4, g(x) = x + (-5). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 4 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-5 + -4) = x + (-9). g is y = x + (-5). To transform g into the axis: shift down by 4 units, OR shift right by 4 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 4 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -5",
+      "Shift: Translation 4 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 2/(x - 3) + 1, g(x) = x + (-1). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units up",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-1 + 1) = x + (0). g is y = x + (-1). To transform g into the axis: shift up by 1 units, OR shift left by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units up' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -1",
+      "Shift: Translation 1 units up"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 2/(x - 3) - 1, g(x) = x + (-2). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-2 + -1) = x + (-3). g is y = x + (-2). To transform g into the axis: shift down by 1 units, OR shift right by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -2",
+      "Shift: Translation 1 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 3/(x - 4) - 2, g(x) = x + (-3). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 2 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-3 + -2) = x + (-5). g is y = x + (-3). To transform g into the axis: shift down by 2 units, OR shift right by 2 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 2 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -3",
+      "Shift: Translation 2 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 2/(x - 3) - 1, g(x) = x + (-2). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-2 + -1) = x + (-3). g is y = x + (-2). To transform g into the axis: shift down by 1 units, OR shift right by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -2",
+      "Shift: Translation 1 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 4/(x - 5) - 3, g(x) = x + (-4). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 3 units down",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-4 + -3) = x + (-7). g is y = x + (-4). To transform g into the axis: shift down by 3 units, OR shift right by 3 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 3 units down' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -4",
+      "Shift: Translation 3 units down"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 2/(x - 3) + 1, g(x) = x + (-1). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units up",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-1 + 1) = x + (0). g is y = x + (-1). To transform g into the axis: shift up by 1 units, OR shift left by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units up' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -1",
+      "Shift: Translation 1 units up"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  },
+  {
+    "variant_question": "f(x) = 2/(x - 3) + 1, g(x) = x + (-1). Describe the transformation that g must undergo to become an axis of symmetry of f that cuts f at two points.",
+    "expected": "Translation 1 units up",
+    "demonstration": "The axis of symmetry of f with positive gradient is y = x + (p + q) = x + (-1 + 1) = x + (0). g is y = x + (-1). To transform g into the axis: shift up by 1 units, OR shift left by 1 units. Either description is accepted.",
+    "memo_marks": [
+      "2 marks for 'Translation 1 units up' (or equivalent)"
+    ],
+    "fast_path": "Axis of symmetry: y = x + (p+q). Compare to g = x + c. Difference in y-intercept = shift.",
+    "fatal_error": "DBE says: Candidates give the wrong axis (the negative-gradient one y = -x + (q-p) usually does not cut f) or describe the shift without the number.",
+    "answer_book_layout": [
+      "Axis of symmetry: y = x + (p+q)",
+      "g is: y = x + -1",
+      "Shift: Translation 1 units up"
+    ],
+    "hack": "Positive-gradient axis is y = x + (p+q). Subtract g from it and you have the shift.",
+    "trap": "The negative-gradient axis (y = -x + (q-p)) does not cut f. Use the positive one.",
+    "presentation": "State the axis, state g, state the shift amount and direction.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_axis_of_symmetry"
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "variant_question": "7 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "720",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 6!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 6",
+      "Ways = 6! = 720",
+      "_________________________",
+      "Final Answer: 720 ways"
+    ]
+  },
+  {
+    "variant_question": "10 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "362880",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 9!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 9",
+      "Ways = 9! = 362880",
+      "_________________________",
+      "Final Answer: 362880 ways"
+    ]
+  },
+  {
+    "variant_question": "10 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "362880",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 9!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 9",
+      "Ways = 9! = 362880",
+      "_________________________",
+      "Final Answer: 362880 ways"
+    ]
+  },
+  {
+    "variant_question": "11 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "3628800",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 10!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 10",
+      "Ways = 10! = 3628800",
+      "_________________________",
+      "Final Answer: 3628800 ways"
+    ]
+  },
+  {
+    "variant_question": "10 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "362880",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 9!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 9",
+      "Ways = 9! = 362880",
+      "_________________________",
+      "Final Answer: 362880 ways"
+    ]
+  },
+  {
+    "variant_question": "6 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "120",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 5!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 5",
+      "Ways = 5! = 120",
+      "_________________________",
+      "Final Answer: 120 ways"
+    ]
+  },
+  {
+    "variant_question": "6 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "120",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 5!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 5",
+      "Ways = 5! = 120",
+      "_________________________",
+      "Final Answer: 120 ways"
+    ]
+  },
+  {
+    "variant_question": "10 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "362880",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 9!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 9",
+      "Ways = 9! = 362880",
+      "_________________________",
+      "Final Answer: 362880 ways"
+    ]
+  },
+  {
+    "variant_question": "12 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "39916800",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 11!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 11",
+      "Ways = 11! = 39916800",
+      "_________________________",
+      "Final Answer: 39916800 ways"
+    ]
+  },
+  {
+    "variant_question": "6 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "120",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 5!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 5",
+      "Ways = 5! = 120",
+      "_________________________",
+      "Final Answer: 120 ways"
+    ]
+  },
+  {
+    "variant_question": "10 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "362880",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 9!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 9",
+      "Ways = 9! = 362880",
+      "_________________________",
+      "Final Answer: 362880 ways"
+    ]
+  },
+  {
+    "variant_question": "5 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "24",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 4!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 4",
+      "Ways = 4! = 24",
+      "_________________________",
+      "Final Answer: 24 ways"
+    ]
+  },
+  {
+    "variant_question": "8 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "5040",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 7!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 7",
+      "Ways = 7! = 5040",
+      "_________________________",
+      "Final Answer: 5040 ways"
+    ]
+  },
+  {
+    "variant_question": "9 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "40320",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 8!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 8",
+      "Ways = 8! = 40320",
+      "_________________________",
+      "Final Answer: 40320 ways"
+    ]
+  },
+  {
+    "variant_question": "9 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "40320",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 8!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 8",
+      "Ways = 8! = 40320",
+      "_________________________",
+      "Final Answer: 40320 ways"
+    ]
+  },
+  {
+    "variant_question": "11 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "3628800",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 10!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 10",
+      "Ways = 10! = 3628800",
+      "_________________________",
+      "Final Answer: 3628800 ways"
+    ]
+  },
+  {
+    "variant_question": "7 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "720",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 6!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 6",
+      "Ways = 6! = 720",
+      "_________________________",
+      "Final Answer: 720 ways"
+    ]
+  },
+  {
+    "variant_question": "7 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "720",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 6!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 6",
+      "Ways = 6! = 720",
+      "_________________________",
+      "Final Answer: 720 ways"
+    ]
+  },
+  {
+    "variant_question": "10 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "362880",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 9!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 9",
+      "Ways = 9! = 362880",
+      "_________________________",
+      "Final Answer: 362880 ways"
+    ]
+  },
+  {
+    "variant_question": "9 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "40320",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 8!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 8",
+      "Ways = 8! = 40320",
+      "_________________________",
+      "Final Answer: 40320 ways"
+    ]
+  },
+  {
+    "variant_question": "7 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "720",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 6!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 6",
+      "Ways = 6! = 720",
+      "_________________________",
+      "Final Answer: 720 ways"
+    ]
+  },
+  {
+    "variant_question": "6 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "120",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 5!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 5",
+      "Ways = 5! = 120",
+      "_________________________",
+      "Final Answer: 120 ways"
+    ]
+  },
+  {
+    "variant_question": "12 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "39916800",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 11!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 11",
+      "Ways = 11! = 39916800",
+      "_________________________",
+      "Final Answer: 39916800 ways"
+    ]
+  },
+  {
+    "variant_question": "8 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "5040",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 7!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 7",
+      "Ways = 7! = 5040",
+      "_________________________",
+      "Final Answer: 5040 ways"
+    ]
+  },
+  {
+    "variant_question": "12 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "39916800",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 11!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 11",
+      "Ways = 11! = 39916800",
+      "_________________________",
+      "Final Answer: 39916800 ways"
+    ]
+  },
+  {
+    "variant_question": "7 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "720",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 6!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 6",
+      "Ways = 6! = 720",
+      "_________________________",
+      "Final Answer: 720 ways"
+    ]
+  },
+  {
+    "variant_question": "5 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "24",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 4!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 4",
+      "Ways = 4! = 24",
+      "_________________________",
+      "Final Answer: 24 ways"
+    ]
+  },
+  {
+    "variant_question": "10 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "362880",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 9!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 9",
+      "Ways = 9! = 362880",
+      "_________________________",
+      "Final Answer: 362880 ways"
+    ]
+  },
+  {
+    "variant_question": "9 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "40320",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 8!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 8",
+      "Ways = 8! = 40320",
+      "_________________________",
+      "Final Answer: 40320 ways"
+    ]
+  },
+  {
+    "variant_question": "10 runners. Bongi immediately after Andrew. Total ways?",
+    "expected": "362880",
+    "demonstration": "Group as 1.",
+    "memo_marks": [
+      "1 mark group",
+      "1 mark 9!"
+    ],
+    "fast_path": "Treat as one.",
+    "fatal_error": "DBE says: Multiply by 2.",
+    "answer_book_layout": [
+      "Group as 1 unit",
+      "Total units = 9",
+      "Ways = 9! = 362880",
+      "_________________________",
+      "Final Answer: 362880 ways"
+    ]
+  }
+]

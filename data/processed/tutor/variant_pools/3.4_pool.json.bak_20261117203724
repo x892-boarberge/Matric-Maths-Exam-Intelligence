@@ -1,0 +1,722 @@
+[
+  {
+    "variant_question": "After how many seconds at 139m for the second time? (Tn = -n^2 + 24n - 1)",
+    "expected": "14 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 139",
+      "-n² + 24n - 1 = 139",
+      "n² - 24n + 140 = 0",
+      "(n - 10)(n - 14) = 0",
+      "Second time = 14",
+      "_________________________",
+      "Final Answer: 14 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 208m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "19 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 208",
+      "-n² + 30n - 1 = 208",
+      "n² - 30n + 209 = 0",
+      "(n - 11)(n - 19) = 0",
+      "Second time = 19",
+      "_________________________",
+      "Final Answer: 19 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 71m for the second time? (Tn = -n^2 + 38n - 1)",
+    "expected": "36 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 71",
+      "-n² + 38n - 1 = 71",
+      "n² - 38n + 72 = 0",
+      "(n - 2)(n - 36) = 0",
+      "Second time = 36",
+      "_________________________",
+      "Final Answer: 36 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 55m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "28 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 55",
+      "-n² + 30n - 1 = 55",
+      "n² - 30n + 56 = 0",
+      "(n - 2)(n - 28) = 0",
+      "Second time = 28",
+      "_________________________",
+      "Final Answer: 28 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 319m for the second time? (Tn = -n^2 + 42n - 1)",
+    "expected": "32 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 319",
+      "-n² + 42n - 1 = 319",
+      "n² - 42n + 320 = 0",
+      "(n - 10)(n - 32) = 0",
+      "Second time = 32",
+      "_________________________",
+      "Final Answer: 32 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 94m for the second time? (Tn = -n^2 + 24n - 1)",
+    "expected": "19 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 94",
+      "-n² + 24n - 1 = 94",
+      "n² - 24n + 95 = 0",
+      "(n - 5)(n - 19) = 0",
+      "Second time = 19",
+      "_________________________",
+      "Final Answer: 19 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 134m for the second time? (Tn = -n^2 + 24n - 1)",
+    "expected": "15 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 134",
+      "-n² + 24n - 1 = 134",
+      "n² - 24n + 135 = 0",
+      "(n - 9)(n - 15) = 0",
+      "Second time = 15",
+      "_________________________",
+      "Final Answer: 15 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 223m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "16 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 223",
+      "-n² + 30n - 1 = 223",
+      "n² - 30n + 224 = 0",
+      "(n - 14)(n - 16) = 0",
+      "Second time = 16",
+      "_________________________",
+      "Final Answer: 16 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 36m for the second time? (Tn = -n^2 + 38n - 1)",
+    "expected": "37 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 36",
+      "-n² + 38n - 1 = 36",
+      "n² - 38n + 37 = 0",
+      "(n - 1)(n - 37) = 0",
+      "Second time = 37",
+      "_________________________",
+      "Final Answer: 37 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 107m for the second time? (Tn = -n^2 + 24n - 1)",
+    "expected": "18 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 107",
+      "-n² + 24n - 1 = 107",
+      "n² - 24n + 108 = 0",
+      "(n - 6)(n - 18) = 0",
+      "Second time = 18",
+      "_________________________",
+      "Final Answer: 18 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 36m for the second time? (Tn = -n^2 + 38n - 1)",
+    "expected": "37 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 36",
+      "-n² + 38n - 1 = 36",
+      "n² - 38n + 37 = 0",
+      "(n - 1)(n - 37) = 0",
+      "Second time = 37",
+      "_________________________",
+      "Final Answer: 37 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 80m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "27 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 80",
+      "-n² + 30n - 1 = 80",
+      "n² - 30n + 81 = 0",
+      "(n - 3)(n - 27) = 0",
+      "Second time = 27",
+      "_________________________",
+      "Final Answer: 27 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 80m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "27 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 80",
+      "-n² + 30n - 1 = 80",
+      "n² - 30n + 81 = 0",
+      "(n - 3)(n - 27) = 0",
+      "Second time = 27",
+      "_________________________",
+      "Final Answer: 27 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 223m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "16 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 223",
+      "-n² + 30n - 1 = 223",
+      "n² - 30n + 224 = 0",
+      "(n - 14)(n - 16) = 0",
+      "Second time = 16",
+      "_________________________",
+      "Final Answer: 16 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 376m for the second time? (Tn = -n^2 + 42n - 1)",
+    "expected": "29 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 376",
+      "-n² + 42n - 1 = 376",
+      "n² - 42n + 377 = 0",
+      "(n - 13)(n - 29) = 0",
+      "Second time = 29",
+      "_________________________",
+      "Final Answer: 29 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 271m for the second time? (Tn = -n^2 + 42n - 1)",
+    "expected": "34 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 271",
+      "-n² + 42n - 1 = 271",
+      "n² - 42n + 272 = 0",
+      "(n - 8)(n - 34) = 0",
+      "Second time = 34",
+      "_________________________",
+      "Final Answer: 34 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 359m for the second time? (Tn = -n^2 + 38n - 1)",
+    "expected": "20 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 359",
+      "-n² + 38n - 1 = 359",
+      "n² - 38n + 360 = 0",
+      "(n - 18)(n - 20) = 0",
+      "Second time = 20",
+      "_________________________",
+      "Final Answer: 20 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 124m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "25 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 124",
+      "-n² + 30n - 1 = 124",
+      "n² - 30n + 125 = 0",
+      "(n - 5)(n - 25) = 0",
+      "Second time = 25",
+      "_________________________",
+      "Final Answer: 25 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 71m for the second time? (Tn = -n^2 + 38n - 1)",
+    "expected": "36 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 71",
+      "-n² + 38n - 1 = 71",
+      "n² - 38n + 72 = 0",
+      "(n - 2)(n - 36) = 0",
+      "Second time = 36",
+      "_________________________",
+      "Final Answer: 36 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 79m for the second time? (Tn = -n^2 + 24n - 1)",
+    "expected": "20 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 79",
+      "-n² + 24n - 1 = 79",
+      "n² - 24n + 80 = 0",
+      "(n - 4)(n - 20) = 0",
+      "Second time = 20",
+      "_________________________",
+      "Final Answer: 20 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 40m for the second time? (Tn = -n^2 + 42n - 1)",
+    "expected": "41 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 40",
+      "-n² + 42n - 1 = 40",
+      "n² - 42n + 41 = 0",
+      "(n - 1)(n - 41) = 0",
+      "Second time = 41",
+      "_________________________",
+      "Final Answer: 41 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 43m for the second time? (Tn = -n^2 + 24n - 1)",
+    "expected": "22 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 43",
+      "-n² + 24n - 1 = 43",
+      "n² - 24n + 44 = 0",
+      "(n - 2)(n - 22) = 0",
+      "Second time = 22",
+      "_________________________",
+      "Final Answer: 22 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 220m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "17 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 220",
+      "-n² + 30n - 1 = 220",
+      "n² - 30n + 221 = 0",
+      "(n - 13)(n - 17) = 0",
+      "Second time = 17",
+      "_________________________",
+      "Final Answer: 17 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 143m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "24 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 143",
+      "-n² + 30n - 1 = 143",
+      "n² - 30n + 144 = 0",
+      "(n - 6)(n - 24) = 0",
+      "Second time = 24",
+      "_________________________",
+      "Final Answer: 24 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 79m for the second time? (Tn = -n^2 + 24n - 1)",
+    "expected": "20 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 79",
+      "-n² + 24n - 1 = 79",
+      "n² - 24n + 80 = 0",
+      "(n - 4)(n - 20) = 0",
+      "Second time = 20",
+      "_________________________",
+      "Final Answer: 20 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 43m for the second time? (Tn = -n^2 + 24n - 1)",
+    "expected": "22 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 43",
+      "-n² + 24n - 1 = 43",
+      "n² - 24n + 44 = 0",
+      "(n - 2)(n - 22) = 0",
+      "Second time = 22",
+      "_________________________",
+      "Final Answer: 22 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 135m for the second time? (Tn = -n^2 + 38n - 1)",
+    "expected": "34 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 135",
+      "-n² + 38n - 1 = 135",
+      "n² - 38n + 136 = 0",
+      "(n - 4)(n - 34) = 0",
+      "Second time = 34",
+      "_________________________",
+      "Final Answer: 34 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 359m for the second time? (Tn = -n^2 + 38n - 1)",
+    "expected": "20 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 359",
+      "-n² + 38n - 1 = 359",
+      "n² - 38n + 360 = 0",
+      "(n - 18)(n - 20) = 0",
+      "Second time = 20",
+      "_________________________",
+      "Final Answer: 20 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 151m for the second time? (Tn = -n^2 + 42n - 1)",
+    "expected": "38 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 151",
+      "-n² + 42n - 1 = 151",
+      "n² - 42n + 152 = 0",
+      "(n - 4)(n - 38) = 0",
+      "Second time = 38",
+      "_________________________",
+      "Final Answer: 38 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "After how many seconds at 208m for the second time? (Tn = -n^2 + 30n - 1)",
+    "expected": "19 seconds",
+    "demonstration": "Set Tn = depth, solve quadratic, take larger n.",
+    "memo_marks": [
+      "1 mark Tn=depth",
+      "1 mark standard form",
+      "1 mark factors",
+      "1 mark second time"
+    ],
+    "fast_path": "Set equal, factor, take bigger n.",
+    "fatal_error": "DBE says: Set n=depth.",
+    "answer_book_layout": [
+      "Tn = 208",
+      "-n² + 30n - 1 = 208",
+      "n² - 30n + 209 = 0",
+      "(n - 11)(n - 19) = 0",
+      "Second time = 19",
+      "_________________________",
+      "Final Answer: 19 seconds"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

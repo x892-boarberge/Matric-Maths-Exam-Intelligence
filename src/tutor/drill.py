@@ -20,10 +20,456 @@ from .math_grader import grade, diagnose_wrong, MatchKind
 from .step_grader import grade_steps as grade_steps_fn, grade_steps_inline
 from .step_schemes import build_scheme
 from .diagnosis import diagnose
+from . import teaching_objectives
+
+
+def _build_evidence(*, problem, submission, interpretation=None,
+                    diagnosis=None, decision=None):
+    """
+    Build the evidence record for one attempt.
+
+    Raw evidence is immutable. Interpretation, diagnosis, and decision
+    are separate concerns. Do not merge them.
+    """
+    steps = getattr(submission, "steps", None) or []
+    learner_lines = [s.raw_text for s in steps]
+    final_answer = learner_lines[-1] if learner_lines else ""
+
+    return {
+        "version": 1,
+        "raw": {
+            "question_id": getattr(problem, "problem_id", None),
+            "skill_id":    getattr(problem, "skill_id", None),
+            "learner_lines": learner_lines,
+            "final_answer":  final_answer,
+            "line_count":    len(learner_lines),
+        },
+        "interpretation": interpretation,
+        "diagnosis":      diagnosis,
+        "decision":       decision,
+    }
+
+
+# ============================================================
+# LaTeX → plain text (MathQuill → memo-gradeable strings)
+# ============================================================
+import re as _re_latex
+
+
+_LATEX_MAP = [
+    (r"\left", ""), (r"\right", ""),
+    (r"\times", "*"), (r"\div", "/"), (r"\cdot", "*"),
+    (r"\pm", "+-"),
+    (r"\leq", "<="), (r"\geq", ">="), (r"\neq", "!="),
+    (r"\le", "<="), (r"\ge", ">="), (r"\ne", "!="),
+    (r"\infty", "inf"), (r"\to", "->"),
+    (r"\Rightarrow", "=>"), (r"\Leftarrow", "<="),
+    (r"\therefore", "therefore"), (r"\because", "because"),
+    (r"\alpha", "alpha"), (r"\beta", "beta"), (r"\gamma", "gamma"),
+    (r"\theta", "theta"), (r"\pi", "pi"), (r"\sigma", "sigma"),
+    (r"\Delta", "Delta"), (r"\Omega", "Omega"),
+    (r"\sum", "sum"), (r"\int", "int"),
+    (r"\sin", "sin"), (r"\cos", "cos"), (r"\tan", "tan"),
+    (r"\log", "log"), (r"\ln", "ln"),
+    (r"\,", " "), (r"\;", " "), (r"\!", ""), (r"\ ", " "),
+]
+
+
+# ============================================================
+# Corpus + intervention loaders (activated)
+# ============================================================
+import csv as _csv_mod
+
+_CORPUS_CACHE = None
+_INTERVENTIONS_CACHE = None
+
+
+def _load_diagnostic_corpus():
+    """Read diagnostic_errors_with_skill.csv into {skill_id: {...}} once."""
+    global _CORPUS_CACHE
+    if _CORPUS_CACHE is not None:
+        return _CORPUS_CACHE
+    from pathlib import Path as _P
+    root = _P(__file__).resolve().parents[2]
+    path = root / "data" / "processed" / "diagnostics" / "diagnostic_errors_with_skill.csv"
+    idx = {}
+    if not path.exists():
+        _CORPUS_CACHE = idx
+        return idx
+    try:
+        with path.open(encoding="utf-8", errors="ignore", newline="") as f:
+            reader = _csv_mod.DictReader(f)
+            for row in reader:
+                skill = (row.get("skill_id") or "").strip()
+                if not skill:
+                    continue
+                cls   = (row.get("error_class") or "general").strip().lower()
+                year  = (row.get("year") or "").strip()
+                text  = (row.get("error_text") or "").strip()
+                sug   = (row.get("suggestion_text") or "").strip()
+                entry = idx.setdefault(skill, {
+                    "counts": {},
+                    "years": set(),
+                    "sample_text": "",
+                    "sample_year": "",
+                    "suggestions": [],
+                    "all_samples": [],
+                })
+                entry["counts"][cls] = entry["counts"].get(cls, 0) + 1
+                if year:
+                    entry["years"].add(year)
+                if text:
+                    entry.setdefault("all_samples", []).append({
+                        "text": text[:400],
+                        "year": year,
+                        "subquestion_ref": (row.get("subquestion_ref") or "").strip(),
+                        "question_number": (row.get("question_number") or "").strip(),
+                    })
+                if not entry["sample_text"] and text:
+                    entry["sample_text"] = text[:400]
+                    entry["sample_year"] = year
+                if sug and len(entry["suggestions"]) < 3:
+                    entry["suggestions"].append(sug[:200])
+    except Exception:
+        pass
+    _CORPUS_CACHE = idx
+    return idx
+
+
+_SHAPE_KEYWORDS = {
+    # template shape → words we look for in the DBE error text
+    "factorable": ("factor", "bracket", "expand", "roots", "product", "sum"),
+    "formula":    ("formula", "discriminant", "substitut", "b^2", "b²", "standard form"),
+    "complete_square": ("complet", "square"),
+    "inequality": ("inequal", "number line", "interval", "direction"),
+}
+
+
+def _score_sample(sample, shape, anchor_subq=""):
+    """Score a corpus sample against a shape. Higher = better match.
+
+    Priority (strongest first):
+      1. subquestion_ref matches the anchor's subquestion
+      2. keyword hits in the text for this shape
+      3. nothing → score 0
+    """
+    if not sample:
+        return 0
+    score = 0
+    ref = (sample.get("subquestion_ref") or "").strip()
+    if anchor_subq and ref and ref == anchor_subq:
+        score += 10
+    elif anchor_subq and ref and ref.startswith(anchor_subq.split(".")[0] + "."):
+        score += 4
+
+    text = sample.get("text", "") or ""
+    low = text.lower()
+    if shape in _SHAPE_KEYWORDS:
+        kws = _SHAPE_KEYWORDS[shape]
+        score += sum(1 for kw in kws if kw.lower() in low)
+
+    # Penalise samples that clearly belong to a *different* shape
+    if shape == "factorable":
+        # formula-style samples should be penalised
+        if "quadratic formula" in low or "b^2" in low or "b²" in low:
+            score -= 5
+    elif shape == "formula":
+        # factor-style samples should be penalised
+        if "factoris" in low or "factor" in low and "formula" not in low:
+            score -= 3
+    return score
+
+
+def _shape_for_template(template_id):
+    """Map a template_id to a shape key used by corpus filtering."""
+    if not template_id:
+        return None
+    if "standard_factorable" in template_id or "factored" in template_id:
+        return "factorable"
+    if "quadratic_formula" in template_id:
+        return "formula"
+    if "quadratic_inequality" in template_id:
+        return "inequality"
+    if "complete" in template_id:
+        return "complete_square"
+    return None
+
+
+def corpus_for_skill(skill_id, shape=None, anchor_subq=""):
+    """Return a compact corpus summary. If `shape` is given, prefer DBE
+    samples whose text actually matches that shape (e.g. factorable vs
+    formula). Falls back to the global top when the shape filter is empty.
+    """
+    idx = _load_diagnostic_corpus()
+    entry = idx.get(skill_id)
+    if not entry:
+        return None
+    counts = entry["counts"]
+    if not counts:
+        return None
+
+    # If we have samples for this skill, choose one that matches the shape
+    # AND (when possible) the anchor's subquestion.
+    samples = entry.get("all_samples") or []
+    if samples and shape and shape in _SHAPE_KEYWORDS:
+        ranked = sorted(
+            samples,
+            key=lambda s: _score_sample(s, shape, anchor_subq),
+            reverse=True,
+        )
+        best_score = _score_sample(ranked[0], shape, anchor_subq) if ranked else 0
+        if best_score >= 1:
+            chosen = ranked[0]
+        else:
+            chosen = None  # no confident match — do not quote anything
+    elif samples and not shape:
+        # no shape info — use the first stored sample
+        chosen = samples[0]
+    else:
+        chosen = {"text": entry.get("sample_text", ""),
+                  "year": entry.get("sample_year", "")}
+
+    top_class = max(counts, key=counts.get)
+    out = {
+        "total_errors":   sum(counts.values()),
+        "top_error_class": top_class,
+        "top_error_count": counts[top_class],
+        "class_counts":    counts,
+        "years_span":      f"{min(entry['years'])}–{max(entry['years'])}" if entry["years"] else "",
+        "years_count":     len(entry["years"]),
+        "shape":           shape or "",
+    }
+    if chosen and chosen.get("text"):
+        out["sample_text"] = chosen["text"]
+        out["sample_year"] = chosen.get("year", "")
+        out["sample_subquestion_ref"] = chosen.get("subquestion_ref", "")
+    # if no shape-matched sample exists, we simply omit the sample entirely.
+    return out
+
+
+def _load_interventions():
+    """Load the N08 intervention library once via the existing loader."""
+    global _INTERVENTIONS_CACHE
+    if _INTERVENTIONS_CACHE is not None:
+        return _INTERVENTIONS_CACHE
+    try:
+        from .n08_loader import load_n08_library
+        lib = load_n08_library()
+        _INTERVENTIONS_CACHE = lib
+    except Exception:
+        _INTERVENTIONS_CACHE = None
+    return _INTERVENTIONS_CACHE
+
+
+_MISCONCEPTION_ALIASES = {
+    "M_ALG_SIGN_FLIP_FACTOR":  "M_SIGN_ERROR_FACTORISATION",
+    "M_ALG_STANDARD_FORM":     "M_SIGN_ERROR_FACTORISATION",
+    "M_ALG_DISCRIMINANT_SIGN": "M_SIGN_ERROR_FACTORISATION",
+}
+
+
+def intervention_for_misconception(misconception_id):
+    """Return {pattern, intervention_id} or None. Falls back to aliases."""
+    if not misconception_id:
+        return None
+    lib = _load_interventions()
+    if lib is None:
+        return None
+
+    def _lookup(mid):
+        try:
+            return lib.by_misconception.get(mid)
+        except Exception:
+            return None
+
+    entry = _lookup(misconception_id)
+    if not entry:
+        alias = _MISCONCEPTION_ALIASES.get(misconception_id)
+        if alias:
+            entry = _lookup(alias)
+    if not entry:
+        # keyword fallback: try to match a prefix / substring
+        try:
+            for mid, e in lib.by_misconception.items():
+                if mid.split("_", 2)[:2] == misconception_id.split("_", 2)[:2]:
+                    entry = e
+                    break
+        except Exception:
+            entry = None
+    if not entry:
+        return None
+    return {
+        "intervention_id":      entry.get("intervention_id", ""),
+        "intervention_pattern": entry.get("intervention_pattern", ""),
+        "matched_misconception": entry.get("misconception_id", misconception_id),
+    }
+
+
+
+# ============================================================
+# Diagnosis → misconceptions_v2 bridge
+# The two libraries were written independently and use different IDs.
+# This maps the diagnosis engine's IDs to the CSV catalogue so a
+# learner sees the human description, severity, and intervention.
+# ============================================================
+_DIAG_TO_MISCONCEPTION = {'M_SIGN_ERROR_FACTORISATION': 'M_ALG_SIGN_FLIP_FACTOR', 'M_SIGN_ERROR_READING_ROOT': 'M_ALG_SIGN_FLIP_FACTOR', 'M_LOST_ROOT_BY_DIVISION': 'M_ALG_DIVIDE_BY_X_LOSE_ROOT', 'M_WRONG_QUADRATIC_FORMULA': 'M_ALG_STANDARD_FORM', 'M_INCORRECT_SUBSTITUTION': 'M_ALG_STANDARD_FORM', 'M_INCOMPLETE_ROOTS': 'M_ALG_SIGN_FLIP_FACTOR', 'M_FACTORISATION_INCOMPLETE': 'M_ALG_SIGN_FLIP_FACTOR', 'M_AND_OR_CONFUSION': 'M_ALG_INEQUALITY_DIRECTION', 'M_INEQ_TREATED_AS_EQUATION': 'M_ALG_INEQUALITY_DIRECTION', 'M_INEQ_WRONG_INTERVAL': 'M_ALG_INEQUALITY_DIRECTION', 'M_EXP_EXTRA_ROOT_NOT_REJECTED': 'M_ALG_EXP_NO_COMMON_BASE', 'M_EXP_LAW_MISAPPLIED': 'M_ALG_EXP_NO_COMMON_BASE', 'M_EXP_FACTORISATION_ERROR': 'M_ALG_EXP_NO_COMMON_BASE', 'M_EXP_DIFFERENT_BASES': 'M_ALG_EXP_NO_COMMON_BASE', 'M_EXP_PROOF_NO_CONCLUSION': 'M_ALG_EXP_NO_COMMON_BASE', 'M_EXP_PROOF_NO_FACTORISE': 'M_ALG_EXP_NO_COMMON_BASE', 'M_FRACTIONAL_SURD_NOT_HANDLED': 'M_ALG_SURD_NOT_ISOLATED', 'M_BINOMIAL_MIDDLE_TERM_DROPPED': 'M_ALG_SURD_NOT_ISOLATED', 'M_SURD_NOT_ISOLATED': 'M_ALG_SURD_NOT_ISOLATED', 'M_RHS_SQUARED_INCORRECTLY': 'M_ALG_SURD_NOT_ISOLATED', 'M_EXTRANEOUS_ROOT_NOT_REJECTED': 'M_ALG_SURD_EXTRANEOUS_ROOT', 'M_SIM_OVERLOOKED_FACTOR': 'M_SIM_MISSING_FACTOR_CASE', 'M_SIM_EQUATION_FROM_WORDS': 'M_SIM_WORD_TO_EQUATION', 'M_PROOF_NONREAL_EXPLANATION': 'M_ALG_DISCRIMINANT_SIGN', 'M_PROOF_INTEGER_PATTERN': 'M_PROOF_NO_CONCLUSION_STATEMENT', 'M_REDUCTION_SIGN': 'M_TRIG_REDUCTION_SIGN', 'M_REDUCTION_COFUNCTION': 'M_TRIG_REDUCTION_SIGN', 'M_DOUBLE_ANGLE_LINEAR': 'M_TRIG_COMPOUND_UNRECOGNISED', 'M_TRIG_EQ_GENERAL_WHEN_INTERVAL': 'M_TRIG_GENERAL_SOLUTION', 'M_TRIG_EQ_DIVIDE_BY_RATIO': 'M_TRIG_GENERAL_SOLUTION', 'M_TRIG_EQ_MISSING_SOLUTION': 'M_TRIG_GENERAL_SOLUTION', 'M_TRIG_GENERAL_INCOMPLETE': 'M_TRIG_GENERAL_SOLUTION', 'M_PERIOD_DOMAIN_CONFUSION': 'M_TRIG_AMPLITUDE_PERIOD', 'M_PERIOD_COEFFICIENT': 'M_TRIG_AMPLITUDE_PERIOD', 'M_GRAPH_VALUE_LABEL_SWAPPED': 'M_TRIG_GRAPH_VALUE_LABEL_SWAPPED', 'M_COMPOUND_WRONG_FORM': 'M_TRIG_COMPOUND_UNRECOGNISED', 'M_MAX_ANGLE_NOT_RATIO': 'M_TRIG_MAX_ANGLE_NOT_RATIO', 'M_UNIT_QUADRANT_SIGN': 'M_TRIG_SPECIAL_VALUES', 'M_IDENTITY_LINEAR': 'M_TRIG_IDENTITY_ONE_SIDE', 'M_IDENTITY_MISAPPLY': 'M_TRIG_IDENTITY_ONE_SIDE', 'M_3D_WRONG_RATIO': 'M_TRIG_3D_RULE_CHOICE', 'M_ASYMPTOTE_CONFUSION': 'M_FUNC_DOMAIN_ASYMPTOTE', 'M_TP_COORD_CONFUSION': 'M_FUNC_RANGE_TURNING_POINT', 'M_GP_COMMON_RATIO': 'M_SEQ_OFF_BY_ONE', 'M_BOXPLOT_IQR': 'M_BOXPLOT_RANGE_NOT_IQR', 'M_CHAIN_RULE_DROP': 'M_CALC_CHAIN_RULE_DROP', 'M_MISSING_THEOREM_CITATION': 'M_EUCL_NO_REASON', 'M_SIMILARITY_RATIO': 'M_EUCL_SIMILARITY_ORDER', 'M_DIAGRAM_ASSUMPTION': 'M_EUCL_ASSUME_FROM_DIAGRAM'}
+
+
+def _resolve_misconception(canonical_id):
+    """Given a diagnosis.py ID, return the CSV catalogue ID (or same)."""
+    if not canonical_id:
+        return None
+    return _DIAG_TO_MISCONCEPTION.get(canonical_id, canonical_id)
+
+
+_MISCONCEPTIONS_CACHE = None
+
+
+def _load_misconceptions():
+    """Read misconceptions_v2.csv into {misconception_id: row} once."""
+    global _MISCONCEPTIONS_CACHE
+    if _MISCONCEPTIONS_CACHE is not None:
+        return _MISCONCEPTIONS_CACHE
+    from pathlib import Path as _P
+    root = _P(__file__).resolve().parents[2]
+    path = root / "data" / "processed" / "tutor" / "misconceptions_v2.csv"
+    idx = {}
+    if path.exists():
+        try:
+            with path.open(encoding="utf-8", errors="ignore", newline="") as f:
+                for row in _csv_mod.DictReader(f):
+                    mid = (row.get("misconception_id") or "").strip()
+                    if mid:
+                        idx[mid] = row
+        except Exception:
+            pass
+    _MISCONCEPTIONS_CACHE = idx
+    return idx
+
+
+def misconception_info(misconception_id):
+    """Return {id, description, severity, error_class, topic, intervention} or None.
+
+    Accepts either a diagnosis.py ID or a misconceptions_v2 ID.
+    """
+    if not misconception_id:
+        return None
+    idx = _load_misconceptions()
+    row = idx.get(misconception_id)
+    canonical = misconception_id
+    if not row:
+        # try the bridge
+        bridged = _resolve_misconception(misconception_id)
+        if bridged and bridged != misconception_id:
+            row = idx.get(bridged)
+            canonical = bridged
+    if not row:
+        return {"id": misconception_id, "canonical_id": canonical}
+    return {
+        "id":           misconception_id,
+        "canonical_id": canonical,
+        "description":  (row.get("description") or "").strip(),
+        "severity":     (row.get("severity") or "").strip(),
+        "error_class":  (row.get("error_class") or "").strip(),
+        "topic":        (row.get("topic") or "").strip(),
+        "intervention": (row.get("intervention") or "").strip(),
+    }
+
+
+
+def _latex_to_plain(s: str) -> str:
+    """Turn MathQuill-style LaTeX into text the memo grader can compare."""
+    if not s:
+        return s
+    out = s
+
+    # \frac{a}{b}  →  (a)/(b)   — repeat for nested fractions
+    frac = _re_latex.compile(r"\\frac\{([^{}]*)\}\{([^{}]*)\}")
+    while frac.search(out):
+        out = frac.sub(r"(\1)/(\2)", out)
+
+    # \sqrt{a}  or  \sqrt[n]{a}  →  sqrt(a)
+    rt = _re_latex.compile(r"\\sqrt(?:\[[^\]]*\])?\{([^{}]*)\}")
+    while rt.search(out):
+        out = rt.sub(r"sqrt(\1)", out)
+
+    # ^{x} → ^x  and  _{x} → _x
+    out = _re_latex.sub(r"\^\{([^{}]*)\}", r"^\1", out)
+    out = _re_latex.sub(r"_\{([^{}]*)\}", r"_\1", out)
+
+    # \text{...} → the text itself
+    out = _re_latex.sub(r"\\text\{([^{}]*)\}", r"\1", out)
+
+    # \hat{A} → A_hat  ·  \bar{x} → x_bar
+    out = _re_latex.sub(r"\\hat\{([^{}]*)\}", r"\1_hat", out)
+    out = _re_latex.sub(r"\\bar\{([^{}]*)\}", r"\1_bar", out)
+
+    # simple command replacements
+    for pat, rep in _LATEX_MAP:
+        out = out.replace(pat, rep)
+
+    # collapse whitespace
+    out = _re_latex.sub(r"\s+", " ", out).strip()
+    return out
 
 
 SITTING_SIZE = 5
 PASS_THRESHOLD = 4
+
+
+# ============================================================
+# Line provider — CLI uses input(); web server sets a callback
+# ============================================================
+_LINE_PROVIDER = None
+
+
+
+# ============================================================
+# Character-level normaliser — makes Unicode math match ASCII
+# ============================================================
+_UNICODE_FIX = {
+    "\u2212": "-",   # − minus sign
+    "\u2013": "-",   # – en dash
+    "\u2014": "-",   # — em dash
+    "\u00d7": "*",   # × multiplication
+    "\u00f7": "/",   # ÷ division
+    "\u2264": "<=",  # ≤
+    "\u2265": ">=",  # ≥
+    "\u2260": "!=",  # ≠
+    "\u2192": "->",  # →
+    "\u21d2": "=>",  # ⇒
+    "\u2234": "therefore",
+    "\u2235": "because",
+    "\u03b1": "alpha", "\u03b2": "beta", "\u03b8": "theta",
+    "\u03c0": "pi",    "\u03c3": "sigma", "\u221e": "inf",
+    "\u221a": "sqrt",
+}
+
+
+def _normalise(s: str) -> str:
+    """Flatten to a canonical form the memo grader can compare."""
+    if not s:
+        return ""
+    out = s
+    for k, v in _UNICODE_FIX.items():
+        out = out.replace(k, v)
+    # collapse whitespace, lowercase, drop decorative spaces around symbols
+    import re as _rn
+    out = _rn.sub(r"\s+", "", out).lower()
+    out = out.replace("or", "|")
+    return out
+
+
+def set_line_provider(fn):
+    """When set, _collect_working calls fn(prompt) instead of input(prompt)."""
+    global _LINE_PROVIDER
+    _LINE_PROVIDER = fn
+
+
+def _read_line(prompt: str) -> str:
+    if _LINE_PROVIDER is not None:
+        return _LINE_PROVIDER(prompt)
+    return input(prompt)
 
 
 # ============================================================
@@ -57,8 +503,7 @@ def _anchor_template_metadata(problem_id: str):
 
 def _try_get_anchor_diagram_image(problem_id: str):
     """Return the parent paper's page-image path for this anchor,
-    if the template carries one. Falls through to the rendered spec
-    (see _try_render_anchor_diagram) if the page image is missing."""
+    if the template carries one."""
     t = _anchor_template_metadata(problem_id)
     if not t:
         return None
@@ -72,21 +517,15 @@ def _try_get_anchor_diagram_image(problem_id: str):
 
 
 def _try_render_anchor_diagram(problem_id: str):
-    """If the template for this anchor carries a diagram spec,
-    render it to a per-anchor PNG and return the path. Otherwise
-    fall back to the parent paper's page image if present."""
+    """Preferred: parent page image. Fallback: rendered spec."""
     t = _anchor_template_metadata(problem_id)
     if not t:
         return None
     d = t.get("diagram")
     s = t.get("diagram_spec")
-
-    # Preferred: parent paper page image (exact replica of the real DBE diagram)
     page = _try_get_anchor_diagram_image(problem_id)
     if page:
         return page
-
-    # Fallback: render from spec (approximate reconstruction)
     if d and s:
         try:
             from pathlib import Path as _P
@@ -101,7 +540,6 @@ def _try_render_anchor_diagram(problem_id: str):
         except Exception:
             pass
     return None
-
 
 
 _SKILL_DIAGRAM_INDEX = None
@@ -122,10 +560,7 @@ def _load_skill_diagram_index():
 
 
 def _reference_diagram_for_skill(skill_id: str):
-    """Return a parent page image path for a variant of this skill.
-    Uses the skill → diagram index; returns the first page image whose
-    template carries a diagram for this skill. Returns None if no
-    skill-matching image exists."""
+    """Return a parent page image path for a variant of this skill."""
     index = _load_skill_diagram_index()
     entries = index.get(skill_id, [])
     if not entries:
@@ -157,10 +592,32 @@ def _extract_expected(analogue: dict) -> str:
 
 
 def _analogue_to_problem(analogue: dict, template_id: str, skill_id: str) -> Problem:
-    expected = _extract_expected(analogue)
-    scheme = build_scheme(template_id, analogue, expected)
+    """Turn a generator variant into a first-class Problem.
+
+    Prefers what the generator emits directly:
+      - analogue["expected_answer"] — the computed answer for this variant
+      - analogue["step_scheme"]     — the per-variant memo step scheme
+      - analogue["shape_id"]        — becomes the problem_id suffix
+
+    Falls back to the legacy extractor only when the generator does not
+    supply these fields. This way modern generators are treated exactly
+    like corpus questions.
+    """
+    # Prefer generator-supplied expected answer
+    expected = analogue.get("expected_answer")
+    if not expected:
+        expected = _extract_expected(analogue)
+
+    # Prefer generator-supplied step scheme
+    scheme = analogue.get("step_scheme")
+    if not scheme:
+        scheme = build_scheme(template_id, analogue, expected)
+
+    # Use the shape id when present so evidence traces back to the shape
+    shape_id = analogue.get("shape_id") or template_id
+
     return Problem(
-        problem_id=f"drill_{template_id}_{uuid.uuid4().hex[:6]}",
+        problem_id=f"drill_{shape_id}_{uuid.uuid4().hex[:6]}",
         skill_id=skill_id,
         topic="",
         subtopic="",
@@ -186,14 +643,13 @@ def _collect_working(q_num: int, total: int):
     while True:
         idx = len(steps) + 1
         try:
-            raw = input(f"    Line {idx}: ").rstrip()
+            raw = _read_line(f"    Line {idx}: ").rstrip()
         except (EOFError, KeyboardInterrupt):
             return None
         s = raw.strip()
         if not s:
             continue
         low = s.lower()
-        # Free will: the learner controls the pace
         if low in ("q", "quit", "exit"):
             return None
         if low in ("next", "skip", "n"):
@@ -248,6 +704,39 @@ def _show_sibling(pool, shown_keys):
     return ex
 
 
+
+
+def _pick_sibling_for_anchor(anchor, exclude_keys=None):
+    """Return one worked variant for this anchor's template, or None.
+
+    Used by the web path: when the learner gets it wrong, they see a
+    fully worked sibling problem from the same template — problem,
+    steps, and note — exactly as the CLI does.
+    """
+    try:
+        template_id = route_template(anchor.skill_id, anchor.prompt)
+        if not template_id:
+            return None
+        pool = _load_pool(template_id)
+        if not pool:
+            return None
+        exclude = exclude_keys or set()
+        candidates = [a for a in pool
+                      if analogue_library.analogue_key(a) not in exclude]
+        if not candidates:
+            candidates = pool
+        import random as _r
+        ex = _r.choice(candidates)
+        return {
+            "problem": ex.get("problem", ""),
+            "steps":   list(ex.get("steps", [])),
+            "note":    ex.get("note", ""),
+            "key":     analogue_library.analogue_key(ex),
+        }
+    except Exception:
+        return None
+
+
 # ============================================================
 # Warm diagnosis message
 # ============================================================
@@ -261,16 +750,23 @@ def _speak_diagnosis(kind: str):
         print("  One of the roots is right. The other is missing or different.")
         print("  Both matter for this question.")
     else:
+        # The mark already tells the learner it is wrong. Do not repeat
+        # it. Go straight into the help.
         print()
-        print("  There's something off. Let's look at a similar one together.")
+        print("  Let's look at a similar one together so we can see the pattern.")
 
 
 # ============================================================
-# Record attempt into the store (correct AND wrong)
+# Record attempt into the store
 # ============================================================
 def _save_attempt(store, session_id, learner_id, skill_id,
                   response, rule_id, error_type,
-                  misconception_id=None, hint_level=None):
+                  misconception_id=None, hint_level=None,
+                  evidence=None):
+    """
+    Persist one attempt. For Claim 1, a failed evidence write must be
+    visible. Do not swallow silently.
+    """
     try:
         store.save_attempt(
             session_id=session_id,
@@ -281,14 +777,39 @@ def _save_attempt(store, session_id, learner_id, skill_id,
             misconception_id=misconception_id,
             hint_level=hint_level,
             error_type=error_type,
+            evidence=evidence,
         )
-    except Exception:
-        pass
+    except Exception as exc:
+        print(f"[WARN] evidence write failed for {skill_id}: {exc}")
+        raise
 
 
 # ============================================================
-# Mastery summary (warm, non-blocking)
+# Mastery summary
 # ============================================================
+def _print_question_mark(step_result, questions_correct, q_num, total_q):
+    """Print the mark for the question just answered, and the running total.
+
+    step_result: the dict from step_grader (may be None)
+    questions_correct: how many questions the learner has correct so far
+    q_num: which question in this sitting (1..5)
+    total_q: how many questions in the sitting (5)
+    """
+    print()
+    if step_result is not None:
+        awarded = step_result.get("awarded_marks", 0)
+        total = step_result.get("total_marks", 0)
+        if total:
+            print(f"  Mark:  {awarded}/{total}   "
+                  f"(sitting: {questions_correct} correct out of {q_num} attempted)")
+        else:
+            print(f"  Mark:  not available for this question.   "
+                  f"(sitting: {questions_correct}/{q_num})")
+    else:
+        print(f"  Mark:  not available for this question.   "
+              f"(sitting: {questions_correct}/{q_num} attempted)")
+
+
 def _speak_mastery(skill_id, template_id, questions_correct, total_questions,
                    topic_label, questions_skipped=0):
     print()
@@ -315,14 +836,6 @@ def _speak_mastery(skill_id, template_id, questions_correct, total_questions,
     print("  line by line, in their format.")
 
 
-# ============================================================
-# Main drill
-# ============================================================
-
-# ============================================================
-# Step-level feedback (Phase 5e)
-# ============================================================
-
 import re as _re
 
 
@@ -330,7 +843,6 @@ def _corpus_id_to_memo_id(problem_id: str) -> str:
     """2023_P1_Q1_1.1.1 -> 2023_P1_Q1.1.1 (drop underscore + repeated digit)."""
     if not problem_id or problem_id.startswith("drill_"):
         return ""
-    # Q<n>_<n>. -> Q<n>.
     return _re.sub(r"Q(\d+)_\1\.", r"Q\1.", problem_id)
 
 
@@ -349,7 +861,7 @@ def _step_feedback(problem_id: str, learner_lines: list[str]) -> dict | None:
 
 
 def _print_step_feedback(result: dict) -> None:
-    """Format the step result for the CLI, with help for missing steps."""
+    """Format the step result for the CLI."""
     awarded = result["awarded_marks"]
     total = result["total_marks"]
     steps = result["steps"]
@@ -365,7 +877,6 @@ def _print_step_feedback(result: dict) -> None:
     for s in missing:
         mark_word = "mark" if s["marks"] == 1 else "marks"
         print(f"    You skipped: {s['desc']}  ({s['marks']} {mark_word})")
-        # Show what the memo wanted, from the FIRST acceptable form
         forms = s.get("forms") or []
         if forms:
             print(f"      The memo would show:   {forms[0]}")
@@ -377,21 +888,9 @@ def _print_step_feedback(result: dict) -> None:
 # ============================================================
 # Auto-outcome measurement
 # ============================================================
-
 def _close_open_interventions(store, learner_id, skill_id, step_result,
                                current_qid, session_id):
-    """For every open intervention on this learner+skill, record whether the
-    learner now shows what was being taught.
-
-    Called on MATCH. The outcome is:
-      - improved   : the step that was taught is now MATCHED
-                     (or, if no step can be checked, the answer matched)
-      - unchanged  : the step is still NOT_MATCHED
-      - (skip)     : the step is UNCERTAIN, or we can't determine
-
-    This is the piece that makes the loop turn by itself. Every time a
-    learner does well, the tutor learns something about its own teaching.
-    """
+    """Record whether each open intervention is now satisfied."""
     try:
         open_invs = store.interventions.list_open(learner_id, skill_id)
     except Exception:
@@ -399,7 +898,6 @@ def _close_open_interventions(store, learner_id, skill_id, step_result,
     if not open_invs:
         return
 
-    # Build a lookup: step_index -> match_status from the current attempt
     step_status = {}
     if step_result is not None:
         for s in step_result.get("steps", []):
@@ -419,7 +917,7 @@ def _close_open_interventions(store, learner_id, skill_id, step_result,
             elif status == "NOT_MATCHED":
                 result = "unchanged"
             else:
-                continue  # UNCERTAIN — cannot judge, leave open
+                continue
             evidence = {
                 "measured_via": "step_grader",
                 "step_index": int(step_index),
@@ -427,7 +925,6 @@ def _close_open_interventions(store, learner_id, skill_id, step_result,
                 "session_id": session_id,
             }
         else:
-            # No step to check — fall back to overall answer match.
             result = "improved"
             evidence = {
                 "measured_via": "answer_match",
@@ -444,8 +941,12 @@ def _close_open_interventions(store, learner_id, skill_id, step_result,
                 evidence=evidence,
             )
         except Exception:
-            pass  # never break the drill
+            pass
 
+
+# ============================================================
+# Main drill
+# ============================================================
 def run(engine, store, learner_id, session_id, anchor, logger=None,
         interactive_input=True, sitting_number=1):
     template_id = route_template(anchor.skill_id, anchor.prompt)
@@ -468,7 +969,6 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
     print(f"  Template: {template_id}  ({len(pool)} variants)")
     print("=" * 60)
 
-    # ---- Build question sequence: anchor first, then variations ----
     sequence = []
     anchor_ok = bool(anchor.expected_answer and anchor.expected_answer.strip())
     if anchor_ok:
@@ -494,7 +994,6 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
             "problem": _analogue_to_problem(analogue, template_id, anchor.skill_id),
         })
 
-    # ---- Drill loop ----
     questions_correct = 0
     questions_first_try = 0
     questions_skipped = 0
@@ -514,8 +1013,6 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
                 print(f"  Diagram: {_diag}")
                 print()
         else:
-            # Variation — try to show a reference diagram from another
-            # DBE question that uses the same skill.
             _ref = _reference_diagram_for_skill(drill_problem.skill_id)
             if _ref:
                 print(f"  Reference diagram: {_ref}")
@@ -550,7 +1047,7 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
                         "exit_reason": "menu"}
 
             if submission == "END":
-                questions_attempted += 1  # counting the question we're on
+                questions_attempted += 1
                 print()
                 print("  Good. Free will beats force. Ending the sitting here.")
                 _try_recompute_mastery(store, learner_id, anchor.skill_id)
@@ -564,21 +1061,18 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
                         "exit_reason": "learner_end"}
 
             if submission == "NEXT":
-                # Learner chose to move on — that is their right.
                 questions_skipped += 1
                 questions_attempted += 1
                 print()
                 print("  Moving on. You can come back to this pattern any time.")
-                break  # exit the attempt loop, advance to next question
+                break
 
             if submission == "HELP" or submission == "MORE":
-                # Show a worked example from the same template, then retry
                 _show_sibling(pool, shown_sibling_keys)
                 print()
                 print("  Try the question again when ready — or type 'next' to move on.")
                 continue
 
-            # --- slash-command notation expansion ---
             from . import slash_commands as _sc
 
             _steps = getattr(submission, "steps", None) or []
@@ -600,21 +1094,36 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
 
             result = grade(learner_text, drill_problem.expected_answer)
 
-            # ---- MATCH ----
             if result.kind == MatchKind.MATCH:
                 questions_correct += 1
                 questions_attempted += 1
                 if attempts_on_this_q == 1:
                     questions_first_try += 1
 
+                evidence = _build_evidence(
+                    problem=drill_problem,
+                    submission=submission,
+                    interpretation={
+                        "match_kind":  result.kind.value,
+                        "matcher":     result.matcher,
+                        "confidence":  result.confidence,
+                        "reason":      result.reason,
+                        "expected_answer": drill_problem.expected_answer,
+                    },
+                    diagnosis=None,
+                    decision={
+                        "action":  "accept",
+                        "reason":  "answer matched memo",
+                        "matcher": result.matcher,
+                    },
+                )
                 _save_attempt(store, session_id, learner_id, anchor.skill_id,
-                              learner_text, f"D_{result.matcher}", "none")
+                              learner_text, f"D_{result.matcher}", "none",
+                              evidence=evidence)
 
                 print()
-                print(f"  ✓ Correct.  ({questions_correct}/{i} this sitting)")
+                print(f"  ✓ Correct.  (sitting: {questions_correct}/{i})")
 
-                # ---- Phase 5e: step-level feedback ----
-                # Try anchor (CSV lookup) first, fall back to inline scheme (variants)
                 learner_lines_for_steps = [s.raw_text for s in submission.steps]
                 step_result = _step_feedback(
                     drill_problem.problem_id,
@@ -630,11 +1139,6 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
                         step_result = None
                 if step_result is not None:
                     _print_step_feedback(step_result)
-
-
-                    # Log interventions for each missing step shown to the learner.
-                    # When the learner later does this skill again, we check
-                    # whether they showed the step -- that is the outcome.
                     try:
                         missing = [
                             s for s in step_result.get("steps", [])
@@ -652,19 +1156,12 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
                                          "step_desc": m["desc"]},
                             )
                     except Exception:
-                        pass  # never break the drill
-
-
-                    # Auto-close prior interventions on this skill. If we taught
-                    # something last time and the learner now shows it, we learn
-                    # that our teaching worked. If they still don't, we learn
-                    # that it didn't. Either way, the loop turns itself.
+                        pass
                     _close_open_interventions(
                         store, learner_id, anchor.skill_id, step_result,
                         drill_problem.problem_id, session_id,
                     )
 
-                # One NEW presentation note per question (dedup)
                 try:
                     notes = check_presentation(
                         [s.raw_text for s in submission.steps],
@@ -680,54 +1177,174 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
                     pass
                 break
 
-            # ---- UNCERTAIN — sibling then retry (NO ANSWER REVEAL) ----
             if result.kind == MatchKind.UNCERTAIN:
-                print()
-                print("  I want to be sure this is the shape the memo expects.")
+                # Before defaulting to "I am not sure", check whether a
+                # specific rule fires. A partial answer is not uncertain —
+                # it is incomplete, and the rule table knows it.
+                uncertain_diag = None
+                try:
+                    uncertain_diag = diagnose(
+                        anchor.skill_id, learner_text,
+                        drill_problem.expected_answer,
+                        prompt=drill_problem.prompt,
+                    )
+                except Exception:
+                    uncertain_diag = None
+
+                uncertain_mid = getattr(uncertain_diag, "misconception_id", None)
+                uncertain_kind = getattr(
+                    getattr(uncertain_diag, "error_type", None), "value", "unknown"
+                )
+
+                evidence = _build_evidence(
+                    problem=drill_problem,
+                    submission=submission,
+                    interpretation={
+                        "match_kind":  result.kind.value,
+                        "matcher":     result.matcher,
+                        "confidence":  result.confidence,
+                        "reason":      result.reason,
+                        "expected_answer": drill_problem.expected_answer,
+                    },
+                    diagnosis=(
+                        {"misconception_id": uncertain_mid,
+                         "rule_id": f"D_{uncertain_mid}" if uncertain_mid else None,
+                         "kind": uncertain_kind}
+                        if uncertain_mid else None
+                    ),
+                    decision={
+                        "action": "teach_and_retry" if uncertain_mid else "ask_clarification",
+                        "reason": ("specific rule fired on partial answer"
+                                   if uncertain_mid
+                                   else "grader could not establish a match"),
+                        "sibling_shown": not bool(uncertain_mid),
+                    },
+                )
+                _save_attempt(store, session_id, learner_id, anchor.skill_id,
+                              learner_text, "D_UNCERTAIN", "uncertain",
+                              misconception_id=uncertain_mid, evidence=evidence)
+
+                if uncertain_mid:
+                    # Name the error plainly, then teach.
+                    print()
+                    if uncertain_mid == "M_INCOMPLETE_ROOTS":
+                        print("  You gave one root. A quadratic has two. "
+                              "The second one is missing.")
+                    else:
+                        print(f"  Noticed: {uncertain_mid}")
+
+                    # Show the mark for this attempt.
+                    _sr_for_mark = _step_feedback(
+                        drill_problem.problem_id,
+                        [s.raw_text for s in submission.steps],
+                    )
+                    if _sr_for_mark is None and getattr(drill_problem, "step_scheme", None):
+                        try:
+                            _sr_for_mark = grade_steps_inline(
+                                drill_problem.step_scheme,
+                                [s.raw_text for s in submission.steps],
+                            )
+                        except Exception:
+                            _sr_for_mark = None
+                    _print_question_mark(_sr_for_mark,
+                                         questions_correct, i, SITTING_SIZE)
+                    _obj = teaching_objectives.find_for(uncertain_mid)
+                    if _obj is not None:
+                        try:
+                            _out = teaching_objectives.teach(_obj)
+                            if _out.get("probe_correct"):
+                                print()
+                                print("  Try the same question again — or type "
+                                      "'next' to move on.")
+                                continue
+                        except Exception as _exc:
+                            print(f"  [WARN] teaching failed: {_exc}")
+                else:
+                    print()
+                    print("  I want to be sure this is the shape the memo expects.")
                 _show_sibling(pool, shown_sibling_keys)
                 print()
                 print("  Try the same question again — or type 'next' to move on.")
                 continue
 
-            # ---- NO_MATCH — diagnose warmly, sibling, retry ----
             kind = diagnose_wrong(learner_text, drill_problem.expected_answer)
 
-            # Get N08 diagnosis for accurate misconception id
+                        # Diagnosis: text predicates name the KIND of error.
+            # Step grader names the LOCATION. Text first — it knows
+            # sign vs incomplete vs and/or. Step fills the location.
             misconception_id = None
+            _step_mid = None
+            _step_desc = None
+
+            # 1. Text-based predicate decides the kind of error.
             try:
                 diag = diagnose(anchor.skill_id, learner_text,
-                                drill_problem.expected_answer)
+                                drill_problem.expected_answer,
+                                prompt=drill_problem.prompt)
                 if diag and diag.misconception_id:
                     misconception_id = diag.misconception_id
             except Exception:
                 pass
 
-            _save_attempt(store, session_id, learner_id, anchor.skill_id,
-                          learner_text, "D_NO_MATCH",
-                          (kind or "unknown"), misconception_id)
-
-            # Phase 5e: if diagnosis could not explain, record a discovery.
-            # This is the beginning of the Tutor Learning Engine — the tutor
-            # notices what its rules cannot explain, preserves the evidence,
-            # and lets recurrence strengthen the pattern over time.
-            try:
-                if (kind or "unknown") == "unknown":
-                    store.discoveries.record(
-                        learner_id=learner_id,
-                        skill_id=anchor.skill_id,
-                        question_id=drill_problem.problem_id,
-                        learner_lines=[s.raw_text for s in submission.steps],
-                        expected_answer=drill_problem.expected_answer,
-                        session_id=session_id,
+            # 2. Step grader runs in parallel — grades steps and,
+            #    when text-based is silent, provides a fallback diagnosis.
+            _step_for_diag = _step_feedback(
+                drill_problem.problem_id,
+                [s.raw_text for s in submission.steps],
+            )
+            if _step_for_diag is None and getattr(drill_problem, "step_scheme", None):
+                try:
+                    _step_for_diag = grade_steps_inline(
+                        drill_problem.step_scheme,
+                        [s.raw_text for s in submission.steps],
                     )
-            except Exception:
-                pass  # discovery logging must never break the drill
+                except Exception:
+                    _step_for_diag = None
+
+            if _step_for_diag is not None:
+                _smid, _sdesc, _srule = first_failed_step_diagnosis(
+                    _step_for_diag,
+                    skill_id=anchor.skill_id,
+                    learner_line_count=len(submission.steps),
+                )
+                _step_mid = _smid
+                _step_desc = _sdesc
+                # Only use the step diagnosis if text-based did not fire.
+                if not misconception_id and _smid:
+                    misconception_id = _smid
 
             _speak_diagnosis(kind or "unknown")
             if misconception_id:
                 print(f"  Noticed: {misconception_id}")
 
-            # One NEW presentation note (dedup)
+            # Show the mark for the question just attempted.
+            _step_result_for_mark = _step_feedback(
+                drill_problem.problem_id,
+                [s.raw_text for s in submission.steps],
+            )
+            if _step_result_for_mark is None and getattr(drill_problem, "step_scheme", None):
+                try:
+                    _step_result_for_mark = grade_steps_inline(
+                        drill_problem.step_scheme,
+                        [s.raw_text for s in submission.steps],
+                    )
+                except Exception:
+                    _step_result_for_mark = None
+            _print_question_mark(_step_result_for_mark,
+                                 questions_correct, i, SITTING_SIZE)
+            if _step_result_for_mark is not None:
+                _print_step_feedback(_step_result_for_mark)
+
+            taught_ok = False
+            if misconception_id:
+                _obj = teaching_objectives.find_for(misconception_id)
+                if _obj is not None:
+                    try:
+                        _outcome = teaching_objectives.teach(_obj)
+                        taught_ok = bool(_outcome.get("probe_correct"))
+                    except Exception as _exc:
+                        print(f"  [WARN] teaching failed: {_exc}")
+
             try:
                 notes = check_presentation(
                     [s.raw_text for s in submission.steps],
@@ -742,11 +1359,11 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
             except Exception:
                 pass
 
-            _show_sibling(pool, shown_sibling_keys)
+            if not taught_ok:
+                _show_sibling(pool, shown_sibling_keys)
             print()
             print("  Try the question again — or type 'next' to move on.")
 
-    # ---- Sitting complete ----
     passed = questions_correct >= PASS_THRESHOLD
     _speak_mastery(anchor.skill_id, template_id,
                    questions_correct, SITTING_SIZE, topic_label,
@@ -754,14 +1371,12 @@ def run(engine, store, learner_id, session_id, anchor, logger=None,
 
     _try_recompute_mastery(store, learner_id, anchor.skill_id)
 
-    # Show mastery state — honest
     try:
         m = store.get_mastery(learner_id, anchor.skill_id)
         print(f"  Mastery: {m['mastery_state']}  |  Sittings passed: {m['sittings_passed']}")
     except Exception:
         pass
 
-    # ---- Another sitting? ----
     if interactive_input:
         print()
         print("  Options:")
@@ -806,3 +1421,622 @@ def _close_early(questions_correct, questions_attempted):
     print(f"  Session closed.  {questions_correct}/{questions_attempted} correct.")
     print("  Progress saved.")
     print("=" * 60)
+
+
+# ============================================================
+# Web entry point — grade ONE submission against ONE anchor
+# ============================================================
+def _sign_mismatch_only(learner, expected):
+    """True if learner and expected differ ONLY in the signs of some numbers."""
+    import re as _rs
+    def nums(s):
+        return _rs.findall(r"-?\d+(?:\.\d+)?", s)
+    l = nums(learner); e = nums(expected)
+    if len(l) != len(e) or not l:
+        return False
+    diffs = 0
+    for a, b in zip(l, e):
+        if a == b:
+            continue
+        if a.lstrip("-") == b.lstrip("-"):
+            diffs += 1
+        else:
+            return False
+    return diffs >= 1
+
+
+def _make_sign_flip_diagnosis(learner, expected):
+    return (
+        f"You wrote: {learner}.  The memo has: {expected}.  "
+        "The numbers match — one sign is wrong. "
+        "When a term crosses the equals sign, its sign flips."
+    )
+
+
+def _make_diagnosis_sentence(learner, expected, kind, misid):
+    if kind == "sign_flip":
+        return _make_sign_flip_diagnosis(learner, expected)
+    if kind == "partial":
+        return "One root is right. The other is missing or wrong."
+    base = f"Your answer ({learner}) does not match the memo ({expected})."
+    if misid:
+        base += f"  Noticed: {misid}."
+    return base
+
+
+# ============================================================
+import re as _diag_re
+
+
+_FACTORED = _diag_re.compile(
+    r"\(\s*x\s*([+-])\s*(\d+)\s*\)\s*\(\s*x\s*([+-])\s*(\d+)\s*\)\s*=\s*0"
+)
+_SET_ZERO = _diag_re.compile(
+    r"x\s*([+-])\s*(\d+)\s*=\s*0.*?x\s*([+-])\s*(\d+)\s*=\s*0"
+)
+_ROOTS = _diag_re.compile(
+    r"x\s*=\s*(-?\d+)\s*(?:or|,)\s*x\s*=\s*(-?\d+)"
+)
+_REASONING = _diag_re.compile(
+    r"(?:multiply|add|product|sum|times|×|×).*(?:\d).*(?:\d)",
+    _diag_re.IGNORECASE,
+)
+
+
+def _sign_const(sign, num):
+    return int(num) if sign == "+" else -int(num)
+
+
+def _diagnose_factorable_line(text, meta):
+    """Return a per-line diagnosis dict for one learner line."""
+    s = (text or "").strip()
+    if not s:
+        return None
+
+    # Try factored form
+    m = _FACTORED.search(s)
+    if m:
+        p_l = _sign_const(m.group(1), m.group(2))
+        q_l = _sign_const(m.group(3), m.group(4))
+        sum_l = p_l + q_l
+        prod_l = p_l * q_l
+        b = meta.get("b"); c = meta.get("c")
+        if sum_l == b and prod_l == c:
+            msg = (f"Correct factorisation. "
+                   f"Bracket constants {p_l} and {q_l} "
+                   f"sum to {b} and multiply to {c}.")
+            return {"line": s, "as": "factorise", "verdict": "correct", "message": msg}
+        # Distinguish sign-only vs total mismatch
+        msg = (f"You used bracket constants {p_l} and {q_l}. "
+               f"Their sum is {sum_l} (should be {b}). "
+               f"Their product is {prod_l} (should be {c}).")
+        if abs(p_l) == abs(meta["p"]) or abs(q_l) == abs(meta["q"]):
+            msg += " One of the constants has the right size but the wrong sign."
+        return {"line": s, "as": "factorise", "verdict": "wrong", "message": msg}
+
+    # Try set-each-factor
+    m = _SET_ZERO.search(s)
+    if m:
+        p_l = _sign_const(m.group(1), m.group(2))
+        q_l = _sign_const(m.group(3), m.group(4))
+        if p_l == meta["p"] and q_l == meta["q"]:
+            return {"line": s, "as": "set-each-factor", "verdict": "correct",
+                    "message": "Correct — each bracket set to zero."}
+        return {"line": s, "as": "set-each-factor", "verdict": "wrong",
+                "message": f"These do not match the memo factorisation. "
+                           f"The memo brackets have constants {meta['p']} and {meta['q']}."}
+
+    # Try roots
+    m = _ROOTS.search(s)
+    if m:
+        lr1, lr2 = int(m.group(1)), int(m.group(2))
+        if {lr1, lr2} == {meta["r1"], meta["r2"]}:
+            return {"line": s, "as": "roots", "verdict": "correct",
+                    "message": "Correct roots."}
+        return {"line": s, "as": "roots", "verdict": "wrong",
+                "message": (f"Your roots are {lr1} and {lr2}. "
+                            f"The memo has {meta['r1']} and {meta['r2']}.")}
+
+    # Reasoning / working line
+    if _REASONING.search(s):
+        return {"line": s, "as": "reasoning", "verdict": "note",
+                "message": "Working noted — this is not a memo step, no mark attached."}
+
+    return {"line": s, "as": "unknown", "verdict": "note",
+            "message": "Cannot classify this line."}
+
+
+def _diagnose_factorable(learner_lines, meta):
+    """Run per-line diagnosis for a factorable-quadratic attempt."""
+    out = []
+    factorise_was_wrong = False
+    for line in learner_lines:
+        d = _diagnose_factorable_line(line, meta)
+        if not d:
+            continue
+        # If factorise was wrong, note the downstream effect
+        if d["as"] == "roots" and d["verdict"] == "wrong" and factorise_was_wrong:
+            d["message"] += (" Your roots match your own factorisation, "
+                             "but both inherit the error from the line above.")
+        if d["as"] == "factorise" and d["verdict"] == "wrong":
+            factorise_was_wrong = True
+        out.append(d)
+    return out
+
+
+# ============================================================
+# Step-oriented diagnostic engine (factorable quadratics)
+# ============================================================
+import re as _diag_re
+
+_FACTORED = _diag_re.compile(
+    r"\(\s*x\s*([+-])\s*(\d+)\s*\)\s*\(\s*x\s*([+-])\s*(\d+)\s*\)\s*=\s*0"
+)
+_SET_ZERO = _diag_re.compile(
+    r"x\s*([+-])\s*(\d+)\s*=\s*0\s*(?:or|,)\s*x\s*([+-])\s*(\d+)\s*=\s*0"
+)
+_ROOTS = _diag_re.compile(
+    r"x\s*=\s*(-?\d+)\s*(?:or|,)\s*x\s*=\s*(-?\d+)"
+)
+_REASONING = _diag_re.compile(
+    r"(?:multiply|add|product|sum|times|\u00d7).*(?:\d).*(?:\d)",
+    _diag_re.IGNORECASE,
+)
+
+
+def _sign_const(sign, num):
+    return int(num) if sign == "+" else -int(num)
+
+
+def _classify_all(text, meta):
+    """Every memo-step classification a single learner line contains."""
+    s = (text or "").strip()
+    if not s:
+        return []
+    results = []
+
+    m = _FACTORED.search(s)
+    if m:
+        p_l = _sign_const(m.group(1), m.group(2))
+        q_l = _sign_const(m.group(3), m.group(4))
+        if p_l + q_l == meta["b"] and p_l * q_l == meta["c"]:
+            results.append({"kind": "factorise", "correct": True, "line": s})
+        else:
+            results.append({
+                "kind": "factorise", "correct": False, "line": s,
+                "reason": (f"Your bracket constants are {p_l} and {q_l}. "
+                           f"Their sum is {p_l + q_l} (should be {meta['b']}). "
+                           f"Their product is {p_l * q_l} (should be {meta['c']})."),
+            })
+
+    m = _SET_ZERO.search(s)
+    if m:
+        p_l = _sign_const(m.group(1), m.group(2))
+        q_l = _sign_const(m.group(3), m.group(4))
+        if {p_l, q_l} == {meta["p"], meta["q"]}:
+            results.append({"kind": "setzero", "correct": True, "line": s})
+        else:
+            results.append({
+                "kind": "setzero", "correct": False, "line": s,
+                "reason": (f"These do not match the memo's factorisation. "
+                           f"The memo brackets have constants {meta['p']} and {meta['q']}."),
+            })
+
+    m = _ROOTS.search(s)
+    if m:
+        lr1, lr2 = int(m.group(1)), int(m.group(2))
+        if {lr1, lr2} == {meta["r1"], meta["r2"]}:
+            results.append({"kind": "roots", "correct": True, "line": s})
+        else:
+            results.append({
+                "kind": "roots", "correct": False, "line": s,
+                "reason": (f"Your roots are {lr1} and {lr2}. "
+                           f"The memo has {meta['r1']} and {meta['r2']}."),
+            })
+
+    if not results and _REASONING.search(s):
+        results.append({"kind": "reasoning", "line": s})
+    return results
+
+
+def _diagnose_factorable_steps(learner_lines, meta):
+    """Per-memo-step verdict for a factorable-quadratic attempt."""
+    # derive expected strings if the meta dict came from the pool without them
+    if "expected_factorised" not in meta:
+        def _br(k):
+            if k == 0: return "(x)"
+            return f"(x - {k})" if k > 0 else f"(x + {abs(k)})"
+        def _sz(k):
+            if k == 0: return "x = 0"
+            return f"x - {k} = 0" if k > 0 else f"x + {abs(k)} = 0"
+        meta = dict(meta)
+        meta["expected_factorised"] = f"{_br(meta['p'])}{_br(meta['q'])} = 0"
+        meta["expected_setzero"]    = f"{_sz(meta['p'])}  or  {_sz(meta['q'])}"
+        meta["expected_roots"]      = f"x = {meta['r1']} or x = {meta['r2']}"
+
+    all_c = []
+    for line in learner_lines:
+        all_c.extend(_classify_all(line, meta))
+
+    def find(kind):
+        return next((c for c in all_c if c.get("kind") == kind), None)
+
+    steps = []
+
+    # Step 1 — Factorise
+    f = find("factorise")
+    if f and f["correct"]:
+        steps.append({"step": 1, "name": "Factorise", "marks": 1,
+                      "status": "CORRECT", "message": "", "evidence": f["line"]})
+    elif f:
+        steps.append({"step": 1, "name": "Factorise", "marks": 1,
+                      "status": "WRONG", "message": f["reason"], "evidence": f["line"]})
+    else:
+        steps.append({"step": 1, "name": "Factorise", "marks": 1,
+                      "status": "MISSING",
+                      "message": (f"You didn't show the factored form. "
+                                  f"The memo wants a line like: {meta['expected_factorised']}."),
+                      "evidence": ""})
+
+    # Step 2 — Set each factor to zero
+    z = find("setzero")
+    r = find("roots")
+    if z and z["correct"]:
+        steps.append({"step": 2, "name": "Set each factor to zero", "marks": 1,
+                      "status": "CORRECT", "message": "", "evidence": z["line"]})
+    elif z:
+        steps.append({"step": 2, "name": "Set each factor to zero", "marks": 1,
+                      "status": "WRONG", "message": z["reason"], "evidence": z["line"]})
+    elif r:
+        steps.append({"step": 2, "name": "Set each factor to zero", "marks": 1,
+                      "status": "MISSING",
+                      "message": (f"You went from brackets straight to the roots. "
+                                  f"The memo wants each factor set to zero, "
+                                  f"e.g. {meta['expected_setzero']}."),
+                      "evidence": ""})
+    else:
+        steps.append({"step": 2, "name": "Set each factor to zero", "marks": 1,
+                      "status": "MISSING",
+                      "message": (f"You didn't set each factor to zero. "
+                                  f"The memo wants a line like: {meta['expected_setzero']}."),
+                      "evidence": ""})
+
+    # Step 3 — Both roots
+    if r and r["correct"]:
+        steps.append({"step": 3, "name": "Write both roots", "marks": 1,
+                      "status": "CORRECT", "message": "", "evidence": r["line"]})
+    elif r:
+        msg = r["reason"]
+        if f and not f["correct"]:
+            msg += " These match your own factorisation, but the factorisation was wrong."
+        steps.append({"step": 3, "name": "Write both roots", "marks": 1,
+                      "status": "WRONG", "message": msg, "evidence": r["line"]})
+    else:
+        steps.append({"step": 3, "name": "Write both roots", "marks": 1,
+                      "status": "MISSING",
+                      "message": (f"The final roots line is missing or incomplete. "
+                                  f"The memo wants both solutions, e.g. {meta['expected_roots']}."),
+                      "evidence": ""})
+
+    return steps
+
+
+def _derive_meta_from_prompt(prompt):
+    """Parse 'x^2 + bx + c = 0' and return the meta dict with roots.
+
+    Works for any factorable quadratic — no pool lookup needed.
+    Returns None if the roots are not integers or the pattern doesn't match.
+    """
+    import re as _rp
+    import math as _math
+    s = (prompt or "").replace(" ", "")
+    m = _rp.search(r"x\^2([+-]?\d*)x([+-]?\d+)=0", s)
+    if not m:
+        return None
+    b_str, c_str = m.group(1), m.group(2)
+    if b_str in ("", "+"):
+        b = 1
+    elif b_str == "-":
+        b = -1
+    else:
+        try:
+            b = int(b_str)
+        except ValueError:
+            return None
+    try:
+        c = int(c_str)
+    except ValueError:
+        return None
+    disc = b * b - 4 * c
+    if disc < 0:
+        return None
+    sd = _math.isqrt(disc)
+    if sd * sd != disc:
+        return None
+    if (b + sd) % 2 != 0:
+        return None
+    r1 = (-b + sd) // 2
+    r2 = (-b - sd) // 2
+    if r1 * r2 != c or r1 + r2 != -b:
+        return None
+    p, q = -r1, -r2
+    return {"r1": r1, "r2": r2, "b": b, "c": c, "p": p, "q": q}
+
+
+def _find_meta_for_anchor(anchor):
+    """Return meta for the anchor. Derives from the prompt first;
+    falls back to a pool lookup only if derivation fails."""
+    try:
+        tid = route_template(anchor.skill_id, anchor.prompt)
+        if tid != "quadratic_standard_factorable":
+            return None
+
+        derived = _derive_meta_from_prompt(anchor.prompt)
+        if derived:
+            return derived
+
+        pool = _load_pool(tid)
+        if not pool:
+            return None
+        s = anchor.prompt.replace(" ", "")
+        m = _diag_re.search(r"x\^2([+-]?\d*)x([+-]?\d+)=0", s)
+        if not m:
+            return pool[0].get("meta")
+        b_str, c_str = m.group(1), m.group(2)
+        try:
+            b = 1 if b_str == "" else (-1 if b_str == "-" else int(b_str))
+            c = int(c_str)
+        except Exception:
+            return pool[0].get("meta")
+        for v in pool:
+            meta = v.get("meta")
+            if meta and meta.get("b") == b and meta.get("c") == c:
+                return meta
+        return pool[0].get("meta")
+    except Exception:
+        return None
+
+
+def grade_submission(store, learner_id, session_id, anchor,
+                     learner_lines, sbc_message=""):
+    """Grade one keyboard submission. Return a marker-style verdict."""
+    from . import slash_commands as _sc
+
+    expanded = [_sc.expand(line) if line else "" for line in learner_lines]
+
+    if sbc_message.strip():
+        try:
+            store.interventions.log(
+                learner_id=learner_id, skill_id=anchor.skill_id,
+                action_type="sbc_message",
+                action_desc=sbc_message.strip()[:400],
+                question_id=anchor.problem_id, session_id=session_id,
+                context={"source": "keyboard"},
+            )
+        except Exception:
+            pass
+
+    plain_lines = [_latex_to_plain(x) for x in expanded]
+    final_answer = plain_lines[-1].strip() if plain_lines else ""
+
+    # strict number-set check before trusting the matcher's UNCERTAIN
+    def _nums(s):
+        import re as _rn
+        return [int(x) for x in _rn.findall(r"-?\d+", s or "")]
+    def _signless(s):
+        return set(abs(n) for n in _nums(s))
+
+    _learner_nums = _signless(final_answer)
+    _expected_nums = _signless(anchor.expected_answer)
+    _num_set_matches = _learner_nums == _expected_nums and bool(_expected_nums)
+
+    # strict: sign-only mismatch is a real error, not ambiguous form
+    sign_only = _sign_mismatch_only(final_answer, anchor.expected_answer)
+
+    try:
+        result = grade(final_answer, anchor.expected_answer)
+    except Exception as e:
+        return {"match": "error", "message": f"grader failed: {e}",
+                "raw_lines": expanded, "your_working": plain_lines,
+                "mark": {"awarded": 0, "total": 0}, "memo_steps": [],
+                "diagnosis": f"Grader error: {e}",
+                "tanaka_message": "", "mastery": None, "sibling": None}
+
+    _tid_shape = _shape_for_template(route_template(anchor.skill_id, anchor.prompt))
+    # derive the anchor's subquestion from its problem_id: 2023_P1_Q1.1.1 → "1.1.1"
+    import re as _re_sub
+    _m = _re_sub.search(r"Q\d+\.(\d+(?:\.\d+)*)", anchor.problem_id or "")
+    _anchor_subq = _m.group(1) if _m else ""
+    corpus_ctx = corpus_for_skill(anchor.skill_id, shape=_tid_shape, anchor_subq=_anchor_subq)
+    # per-step diagnosis for factorable quadratics
+    meta = _find_meta_for_anchor(anchor)
+    step_diagnosis = []
+    if meta:
+        try:
+            step_diagnosis = _diagnose_factorable_steps(plain_lines, meta)
+        except Exception:
+            step_diagnosis = []
+
+    # universal misconception detection — runs regardless of which branch
+    # decides the verdict. Errors here are silent; diagnosis is best-effort.
+    misconception_id = None
+    intervention = None
+    try:
+        _diag = diagnose(anchor.skill_id, final_answer, anchor.expected_answer,
+                    prompt=anchor.prompt)
+        if _diag and getattr(_diag, "misconception_id", None):
+            misconception_id = _diag.misconception_id
+            intervention = intervention_for_misconception(misconception_id)
+    except Exception:
+        pass
+
+
+    outcome = {
+        "match": None,
+        "raw_lines": expanded,
+        "your_working": plain_lines,
+        "step_diagnosis": step_diagnosis,
+        "corpus_context": corpus_ctx,
+        "intervention": intervention,
+        "misconception_id": misconception_id,
+        "misconception_info": misconception_info(misconception_id),
+        "step_feedback": None,
+        "memo_steps": [],
+        "mark": {"awarded": 0, "total": 0},
+        "diagnosis": "",
+        "tanaka_message": "",
+        "mastery": None,
+        "sibling": None,
+    }
+
+    # step grader runs for MATCH and NO_MATCH both
+    step_result = _step_feedback(anchor.problem_id, plain_lines)
+    if step_result is None and getattr(anchor, "step_scheme", None):
+        try:
+            step_result = grade_steps_inline(anchor.step_scheme, plain_lines)
+        except Exception:
+            step_result = None
+
+    if step_result is not None:
+        outcome["mark"] = {
+            "awarded": step_result["awarded_marks"],
+            "total":   step_result["total_marks"],
+        }
+        outcome["memo_steps"] = [
+            {"index": s.get("index"), "desc": s.get("desc"),
+             "marks": s.get("marks"), "status": s.get("match_status"),
+             "first_form": (s.get("forms") or [None])[0]}
+            for s in step_result.get("steps", [])
+        ]
+
+    if sign_only:
+        outcome["match"] = "NO_MATCH"
+        _save_attempt(store, session_id, learner_id, anchor.skill_id,
+                      final_answer, "D_sign_flip", "sign_flip")
+        outcome["diagnosis"] = _make_sign_flip_diagnosis(final_answer,
+                                                         anchor.expected_answer)
+
+        try:
+            store.discoveries.record(
+                learner_id=learner_id, skill_id=anchor.skill_id,
+                question_id=anchor.problem_id, learner_lines=plain_lines,
+                expected_answer=anchor.expected_answer, session_id=session_id,
+            )
+        except Exception:
+            pass
+        sib = _pick_sibling_for_anchor(anchor)
+        if sib: outcome["sibling"] = sib
+
+    elif result.kind == MatchKind.MATCH:
+        outcome["match"] = "MATCH"
+        _save_attempt(store, session_id, learner_id, anchor.skill_id,
+                      final_answer, "D_match", "none")
+
+        if step_result is not None:
+            try:
+                for m in step_result.get("steps", []):
+                    if m.get("match_status") == "NOT_MATCHED":
+                        store.interventions.log(
+                            learner_id=learner_id, skill_id=anchor.skill_id,
+                            action_type="memo_line_shown",
+                            action_desc="Showed memo version of missed step: " + m["desc"],
+                            question_id=anchor.problem_id, session_id=session_id,
+                            context={"step_index": m["index"], "step_desc": m["desc"]},
+                        )
+            except Exception:
+                pass
+            _close_open_interventions(store, learner_id, anchor.skill_id,
+                                      step_result, anchor.problem_id, session_id)
+
+        if step_result is None:
+            outcome["diagnosis"] = "Answer matches the memo."
+        elif step_result["awarded_marks"] == step_result["total_marks"]:
+            outcome["diagnosis"] = "Full method. All memo steps shown."
+        else:
+            missing = [s["desc"] for s in step_result.get("steps", [])
+                       if s.get("match_status") == "NOT_MATCHED"]
+            outcome["diagnosis"] = (
+                "Answer is right, but the method is incomplete. Missing: "
+                + "; ".join(missing) + "."
+            )
+
+    elif result.kind == MatchKind.UNCERTAIN and not _num_set_matches:
+        # Numbers differ from expected → wrong answer, not ambiguous form
+        outcome["match"] = "NO_MATCH"
+        outcome["diagnosis"] = (
+            f"Your final answer ({final_answer}) does not match the memo "
+            f"({anchor.expected_answer})."
+        )
+        sib = _pick_sibling_for_anchor(anchor)
+        if sib: outcome["sibling"] = sib
+
+    elif result.kind == MatchKind.UNCERTAIN:
+        outcome["match"] = "UNCERTAIN"
+        outcome["diagnosis"] = (
+            "Your working does not clearly match the memo's expected form. "
+            "Check the notation."
+        )
+        sib = _pick_sibling_for_anchor(anchor)
+        if sib: outcome["sibling"] = sib
+
+    else:
+        outcome["match"] = "NO_MATCH"
+        try:
+            kind = diagnose_wrong(final_answer, anchor.expected_answer) or "unknown"
+        except Exception:
+            kind = "unknown"
+        misid = None
+        try:
+            diag = diagnose(anchor.skill_id, final_answer, anchor.expected_answer)
+            if diag and diag.misconception_id:
+                misid = diag.misconception_id
+        except Exception:
+            pass
+        _save_attempt(store, session_id, learner_id, anchor.skill_id,
+                      final_answer, "D_NO_MATCH", kind, misid)
+        if kind == "unknown":
+            try:
+                store.discoveries.record(
+                    learner_id=learner_id, skill_id=anchor.skill_id,
+                    question_id=anchor.problem_id, learner_lines=plain_lines,
+                    expected_answer=anchor.expected_answer, session_id=session_id,
+                )
+            except Exception:
+                pass
+        outcome["diagnosis"] = _make_diagnosis_sentence(
+            final_answer, anchor.expected_answer, kind, misid)
+        sib = _pick_sibling_for_anchor(anchor)
+        if sib: outcome["sibling"] = sib
+
+    _try_recompute_mastery(store, learner_id, anchor.skill_id)
+    try:
+        m = store.get_mastery(learner_id, anchor.skill_id)
+        outcome["mastery"] = {"state": m.get("mastery_state"),
+                              "passed": m.get("sittings_passed", 0)}
+    except Exception:
+        outcome["mastery"] = None
+
+    # ── override with step_diagnosis when available ──
+    if step_diagnosis:
+        awarded = sum(1 for d in step_diagnosis if d["status"] == "CORRECT")
+        total   = sum(d["marks"] for d in step_diagnosis)
+        outcome["mark"] = {"awarded": awarded, "total": total}
+
+        wrong = [d for d in step_diagnosis
+                 if d["status"] in ("WRONG", "MISSING")]
+        if not wrong:
+            outcome["diagnosis"] = "Full method. All memo steps shown."
+        else:
+            outcome["diagnosis"] = wrong[0]["message"]
+
+        if awarded == total:
+            outcome["match"] = "MATCH"
+            outcome["sibling"] = None
+        elif _num_set_matches and awarded >= 1:
+            outcome["match"] = "MATCH"
+        else:
+            outcome["match"] = "NO_MATCH"
+
+    return outcome
+
+

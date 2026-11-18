@@ -38,6 +38,12 @@
         "(3x + 8)(x - 2) = 0.",
         "x = -8/3 or x = 2.",
         "Compute y values."
+      ],
+      "given_from": [
+        "9.1.1"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -51,6 +57,13 @@
         "g''(x) = 6x + 2.",
         "g''(0) = 2 > 0.",
         "Concave up."
+      ],
+      "given_from": [
+        "9.1.1",
+        "9.1.2"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -73,6 +86,14 @@
         "Three roots at x = 3 (triple).",
         "y-intercept 27.",
         "Shape: negative cubic."
+      ],
+      "given_from": [
+        "9.1.1",
+        "9.1.2",
+        "9.1.3"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     }
   ],

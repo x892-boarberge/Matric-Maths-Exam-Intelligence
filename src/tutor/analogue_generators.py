@@ -21,89 +21,367 @@ def _x_term(v):
     return "x"
 
 
+
+# ══════════════════════════════════════════════════════════════
+# Step schemes — per variant, matching the DBE memo method
+# ══════════════════════════════════════════════════════════════
+
+def _scheme_factored(r1, r2):
+    lo, hi = sorted([r1, r2])
+    both = [f"x = {lo} or x = {hi}", f"x = {hi} or x = {lo}",
+            f"x={lo} or x={hi}", f"x={hi} or x={lo}"]
+    return [
+        {"index": 1, "desc": f"Root x = {r1}", "marks": 1,
+         "forms": [f"x = {r1}", f"x={r1}", *both],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+        {"index": 2, "desc": f"Root x = {r2}", "marks": 1,
+         "forms": [f"x = {r2}", f"x={r2}", *both],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+    ]
+
+
+def _scheme_standard_factorable(r1, r2, b, c):
+    def _br(k):
+        if k > 0:  return f"(x - {k})"
+        if k < 0:  return f"(x + {abs(k)})"
+        return "x"
+    def _sz(k):
+        if k > 0:  return f"x - {k} = 0"
+        if k < 0:  return f"x + {abs(k)} = 0"
+        return "x = 0"
+    lo, hi = sorted([r1, r2])
+    fact_forms = [f"{_br(r1)}{_br(r2)} = 0",
+                  f"{_br(r2)}{_br(r1)} = 0"]
+    zero_forms = [f"{_sz(r1)}  or  {_sz(r2)}",
+                  f"{_sz(r2)}  or  {_sz(r1)}"]
+    root_forms = [f"x = {lo} or x = {hi}", f"x = {hi} or x = {lo}"]
+    return [
+        {"index": 1, "desc": "Factorise the quadratic", "marks": 1,
+         "forms": fact_forms, "match_mode": "exact",
+         "is_final": False, "method_group": "A"},
+        {"index": 2, "desc": "Set each factor to zero", "marks": 1,
+         "forms": zero_forms, "match_mode": "exact",
+         "is_final": False, "method_group": "A"},
+        {"index": 3, "desc": "Both roots", "marks": 1,
+         "forms": root_forms, "match_mode": "exact",
+         "is_final": True, "method_group": "A"},
+    ]
+
+
+def _scheme_formula(a, b, c, x1, x2):
+    lo, hi = sorted([x1, x2])
+    disc = b * b - 4 * a * c
+    return [
+        {"index": 1, "desc": "Write the quadratic formula", "marks": 1,
+         "forms": ["x = (-b ± sqrt(b^2 - 4ac)) / 2a",
+                   "x = (-b +- sqrt(b^2 - 4ac)) / 2a",
+                   "x = (-b +/- sqrt(b^2 - 4ac)) / 2a"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 2, "desc": "Substitute a, b, c into the formula", "marks": 1,
+         "forms": [f"x = ({-b} ± sqrt({disc})) / {2*a}",
+                   f"x = ({-b} +- sqrt({disc})) / {2*a}",
+                   f"x = ({-b} +/- sqrt({disc})) / {2*a}",
+                   f"disc = {disc}", f"b^2 - 4ac = {disc}"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 3, "desc": "Answer correct to TWO decimal places", "marks": 1,
+         "forms": [f"x = {lo} or x = {hi}", f"x = {hi} or x = {lo}",
+                   f"x = {x1} or x = {x2}", f"x = {x2} or x = {x1}"],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+    ]
+
+
+def _scheme_inequality(lo, hi, direction):
+    if direction == ">":
+        answer_forms = [f"x < {lo} or x > {hi}", f"x > {hi} or x < {lo}",
+                        f"x < {lo}, x > {hi}", f"x in (-inf; {lo}) or ({hi}; inf)"]
+    else:
+        answer_forms = [f"{lo} < x < {hi}", f"{lo}<x<{hi}",
+                        f"x in ({lo}; {hi})"]
+    return [
+        {"index": 1, "desc": "State the critical values", "marks": 1,
+         "forms": [f"x = {lo} or x = {hi}", f"x = {hi} or x = {lo}"],
+         "match_mode": "exact", "is_final": False, "method_group": "A"},
+        {"index": 2, "desc": "Identify the correct interval", "marks": 1,
+         "forms": answer_forms, "match_mode": "exact",
+         "is_final": True, "method_group": "A"},
+    ]
+
+
+def _scheme_exp_quadratic(p, x1, x2):
+    lo, hi = sorted([x1, x2])
+    return [
+        {"index": 1, "desc": f"Substitute k = {p}^x", "marks": 1,
+         "forms": [f"k = {p}^x", f"let k = {p}^x"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 2, "desc": "Solve the quadratic in k", "marks": 1,
+         "forms": [f"k = {p ** x1} or k = {p ** x2}",
+                   f"k = {p ** x2} or k = {p ** x1}"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 3, "desc": "Answer for x", "marks": 1,
+         "forms": [f"x = {lo} or x = {hi}", f"x = {hi} or x = {lo}"],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+    ]
+
+
+def _scheme_exp_value(k):
+    return [
+        {"index": 1, "desc": "Answer", "marks": 1,
+         "forms": [f"x = {k}", f"x={k}"],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+    ]
+
+
+
+
+
+def _scheme_simul(r1, r2, s, p):
+    return [
+        {"index": 1, "desc": "Express y in terms of x", "marks": 1,
+         "forms": [f"y = {s} - x", f"y={s}-x", f"y = {s} -x"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 2, "desc": "Substitute into the product equation", "marks": 1,
+         "forms": [f"x({s} - x) = {p}", f"x({s}-x)={p}",
+                   f"{s}x - x^2 = {p}"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 3, "desc": "Form the quadratic in x", "marks": 1,
+         "forms": [f"x^2 - {s}x + {p} = 0", f"x^2 - {s}x + {p}=0"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 4, "desc": "State both ordered pairs", "marks": 1,
+         "forms": [f"({r1}, {r2}) or ({r2}, {r1})",
+                   f"x = {r1}, y = {r2} or x = {r2}, y = {r1}",
+                   f"x={r1}, y={r2} or x={r2}, y={r1}",
+                   f"({r1}; {r2}) or ({r2}; {r1})"],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+    ]
+
+
+def _scheme_exp_proof(b, c1, c2, c3, E):
+    return [
+        {"index": 1, "desc": f"Write each term with {b}^n", "marks": 1,
+         "forms": [f"{c1}.{b}^n {c2:+d}.{b}^n.{b} {c3:+d}.{b}^n.{b}^2",
+                   f"{b}^n({c1} {c2:+d}.{b} {c3:+d}.{b}^2)"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 2, "desc": f"Factor out {b}^n", "marks": 1,
+         "forms": [f"{b}^n({c1} {c2:+d}.{b} {c3:+d}.{b}^2)",
+                   f"{b}^n * {E}"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 3, "desc": f"Simplify the bracket to {E}", "marks": 1,
+         "forms": [f"{E}", f"{b}^n.{E}", f"{b}^n * {E}"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 4, "desc": "Conclude the expression is even", "marks": 1,
+         "forms": [f"{E} is even, so the whole expression is even",
+                   f"even", f"therefore even",
+                   f"{b}^n * {E} is even"],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+    ]
+
+
+def _scheme_proof_integer():
+    return [
+        {"index": 1, "desc": "Factorise n^2 + n", "marks": 1,
+         "forms": ["n(n + 1)", "n(n+1)", "n * (n + 1)"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 2, "desc": "Note consecutive integers", "marks": 1,
+         "forms": ["n and n+1 are consecutive",
+                   "consecutive integers",
+                   "one of n, n+1 is even"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 3, "desc": "One is even", "marks": 1,
+         "forms": ["one of them is even",
+                   "either n or n+1 is even"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 4, "desc": "Conclude the product is even", "marks": 1,
+         "forms": ["even", "therefore even",
+                   "n(n+1) is even", "the product is even"],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+    ]
+
+
+def _scheme_proof_nonreal(k):
+    return [
+        {"index": 1, "desc": "Write the discriminant", "marks": 1,
+         "forms": [f"delta = {k}^2 - 4(1)({k}^2)",
+                   f"b^2 - 4ac = {k}^2 - 4{k}^2"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 2, "desc": "Simplify", "marks": 1,
+         "forms": [f"delta = -3({k}^2)", f"delta = -3{k*k}",
+                   f"-3{k}^2"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 3, "desc": "Note negative for positive k", "marks": 1,
+         "forms": [f"since {k} > 0, -3({k}^2) < 0",
+                   f"{k} > 0 so delta < 0"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 4, "desc": "Conclude no real roots", "marks": 1,
+         "forms": ["no real roots", "non-real roots",
+                   "delta < 0 means no real roots"],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+    ]
+
+
 def gen_quadratic_factored(count=200, seed=11):
-    rng = random.Random(seed)
+    """
+    Shape: (x + a)(x + b) = 0. Roots are -a, -b.
+
+    Fingerprint: a, b small integers (magnitude 1-9).
+    Both signs, a != b so roots are distinct.
+
+    Every variant:
+      - factored form, no factorisation step
+      - two distinct roots
+      - meta carries roots and constants
+    """
+    import random as _r
+    rng = _r.Random(seed)
     out, seen = [], set()
     tries = 0
     while len(out) < count and tries < count * 30:
         tries += 1
-        a = rng.randint(-9, 9)
-        b = rng.randint(-9, 9)
-        if a == 0 or b == 0 or a == b:
+        a = rng.choice([-9, -8, -7, -6, -5, -4, -3, -2, -1,
+                         1, 2, 3, 4, 5, 6, 7, 8, 9])
+        b = rng.choice([-9, -8, -7, -6, -5, -4, -3, -2, -1,
+                         1, 2, 3, 4, 5, 6, 7, 8, 9])
+        if a == b:
             continue
         key = (min(a, b), max(a, b))
         if key in seen:
             continue
         seen.add(key)
         r1, r2 = -a, -b
+
+        def _xt(v):
+            if v > 0:  return f"x + {v}"
+            if v < 0:  return f"x - {abs(v)}"
+            return "x"
+
+        lo, hi = sorted([r1, r2])
         out.append({
-            "problem": f"Solve ({_x_term(a)})({_x_term(b)}) = 0",
+            "problem": f"Solve for x: ({_xt(a)})({_xt(b)}) = 0",
             "steps": [
-                "When a product is zero, at least one factor is zero.",
-                f"{_x_term(a)} = 0  gives  x = {r1}",
-                f"{_x_term(b)} = 0  gives  x = {r2}",
-                f"Answer:  x = {r1}  or  x = {r2}",
+                "Set each factor to zero.",
+                f"{_xt(a)} = 0  gives  x = {r1}",
+                f"{_xt(b)} = 0  gives  x = {r2}",
+                f"Answer:  x = {lo} or x = {hi}",
             ],
-            "note": "Always remember: The sign inside the bracket is not the root. Flip it.",
+            "note": "The sign inside the bracket is not the root. Flip it.",
+            "expected_answer": f"x = {lo} or x = {hi}",
+            "step_scheme": _scheme_factored(r1, r2),
+            "meta": {"r1": r1, "r2": r2, "a": a, "b": b},
         })
     return out
 
 
 def gen_quadratic_inequality(count=50, seed=13):
-    rng = random.Random(seed)
+    """
+    Shape: x^2 + bx + c > 0 or < 0. Back-solves from roots r1, r2.
+
+    Fingerprint: roots small integers (magnitude 1-8), distinct.
+    Inequality direction alternates.
+
+    Every variant:
+      - standard form quadratic inequality
+      - two real distinct roots
+      - answer is interval or union
+      - meta carries roots, direction
+    """
+    import random as _r
+    rng = _r.Random(seed)
     out, seen = [], set()
     tries = 0
-    while len(out) < count and tries < count * 30:
+    while len(out) < count and tries < count * 40:
         tries += 1
-        r1 = rng.randint(-8, 8)
-        r2 = rng.randint(-8, 8)
+        r1 = rng.choice([-8, -7, -6, -5, -4, -3, -2, -1,
+                          1, 2, 3, 4, 5, 6, 7, 8])
+        r2 = rng.choice([-8, -7, -6, -5, -4, -3, -2, -1,
+                          1, 2, 3, 4, 5, 6, 7, 8])
         if r1 == r2:
             continue
-        lo, hi = min(r1, r2), max(r1, r2)
-        key = (lo, hi)
+        lo, hi = sorted([r1, r2])
+        direction = rng.choice([">", "<"])
+        key = (lo, hi, direction)
         if key in seen:
             continue
         seen.add(key)
+
+        b = -(r1 + r2)
+        c = r1 * r2
+
+        def _sg(v):
+            return f" + {v}" if v > 0 else f" - {abs(v)}"
+        eq = f"x^2{_sg(b)}x{_sg(c)} {direction} 0"
+
+        if direction == ">":
+            answer = f"x < {lo} or x > {hi}"
+            intervals = f"outside the roots: x < {lo} or x > {hi}"
+        else:
+            answer = f"{lo} < x < {hi}"
+            intervals = f"between the roots: {lo} < x < {hi}"
+
+        def _br(k):
+            if k > 0:  return f"(x - {k})"
+            if k < 0:  return f"(x + {abs(k)})"
+            return "x"
+        fact = f"{_br(r1)}{_br(r2)}"
+
         out.append({
-            "problem": f"Solve x^2 - {(r1 + r2)}x + {r1 * r2} > 0",
+            "problem": f"Solve for x: {eq}",
             "steps": [
-                f"Factorise: (x - {r1})(x - {r2}) > 0",
-                f"Critical values: x = {r1} and x = {r2}",
-                "Sketch a quick parabola or number line.",
-                f"Outside the roots: x < {lo} or x > {hi}",
+                f"Critical values: solve {fact} = 0  gives  x = {lo} or x = {hi}",
+                f"Sketch or number line: the parabola opens up.",
+                f"Solution is {intervals}.",
+                f"Answer:  {answer}",
             ],
-            "note": "For '> 0', the answer is outside the roots. For '< 0', between them.",
+            "note": "For > 0 the answer is outside the roots. For < 0 the answer is between them.",
+            "expected_answer": answer,
+            "step_scheme": _scheme_inequality(lo, hi, direction),
+            "meta": {"r1": r1, "r2": r2, "lo": lo, "hi": hi, "direction": direction},
         })
     return out
 
 
 def gen_exponential_quadratic(count=50, seed=14):
-    rng = random.Random(seed)
+    """
+    Shape: p^(2x) - (p^x1 + p^x2) * p^x + p^(x1+x2) = 0.
+
+    Fingerprint: base p in {2, 3}; x1, x2 non-negative integers.
+    Non-negative x1, x2 so that p^x1 and p^x2 are integers — no decimal
+    coefficients ever appear.
+    """
+    import random as _r
+    rng = _r.Random(seed)
     out, seen = [], set()
     tries = 0
-    while len(out) < count and tries < count * 30:
+    while len(out) < count and tries < count * 40:
         tries += 1
-        p = rng.choice([2, 3])
-        x1 = rng.randint(-3, 3)
-        x2 = rng.randint(-3, 3)
+        p_base = rng.choice([2, 3])
+        x1 = rng.choice([0, 1, 2, 3, 4])
+        x2 = rng.choice([0, 1, 2, 3, 4])
         if x1 == x2:
             continue
-        key = (p, min(x1, x2), max(x1, x2))
+        key = (p_base, min(x1, x2), max(x1, x2))
         if key in seen:
             continue
         seen.add(key)
-        s = (p ** x1) + (p ** x2)
-        prod = p ** (x1 + x2)
+
+        k1 = p_base ** x1
+        k2 = p_base ** x2
+        s = k1 + k2
+        prod = k1 * k2
+        lo, hi = sorted([x1, x2])
+
         out.append({
-            "problem": f"Solve {p}^(2x) - {s}.{p}^x + {prod} = 0",
+            "problem": f"Solve {p_base}^(2x) - {s}.{p_base}^x + {prod} = 0",
             "steps": [
-                f"Let k = {p}^x. Then {p}^(2x) = k^2.",
+                f"Let k = {p_base}^x. Then {p_base}^(2x) = k^2.",
                 f"k^2 - {s}k + {prod} = 0",
-                f"Factorise: (k - {p ** x1})(k - {p ** x2}) = 0",
-                f"So {p}^x = {p ** x1}  or  {p}^x = {p ** x2}",
-                f"Answer:  x = {x1}  or  x = {x2}",
+                f"Factorise: (k - {k1})(k - {k2}) = 0",
+                f"So {p_base}^x = {k1}  or  {p_base}^x = {k2}",
+                f"Answer:  x = {lo} or x = {hi}",
             ],
-            "note": "Always remember: Substitute k to turn an exponential equation into a quadratic. Reject negative k.",
+            "note": f"Substitute k = {p_base}^x. Reject any negative k.",
+            "expected_answer": f"x = {lo} or x = {hi}",
+            "step_scheme": _scheme_exp_quadratic(p_base, x1, x2),
+            "meta": {"p": p_base, "x1": x1, "x2": x2, "s": s, "prod": prod,
+                     "k1": k1, "k2": k2},
         })
     return out
 
@@ -503,18 +781,33 @@ def gen_line_equation(count=50, seed=47):
 
 
 def gen_exponential_value(count=50, seed=48):
-    rng = random.Random(seed)
+    """
+    Shape: a^x = a^k. Trivial once both sides share a base.
+
+    Fingerprint: base a in {2, 3, 5}; exponent k in 1..4.
+
+    Every variant:
+      - same base on both sides
+      - answer is a single integer
+      - meta carries base, exponent
+    """
+    import random as _r
+    rng = _r.Random(seed)
     out = []
     for _ in range(count):
         a = rng.choice([2, 3, 5])
-        k = rng.randint(1, 4)
+        k = rng.choice([1, 2, 3, 4])
         out.append({
             "problem": f"Solve {a}^x = {a ** k}.",
             "steps": [
-                f"Write RHS as a power of {a}: {a ** k} = {a}^{k}",
-                f"Same base: equate exponents. x = {k}",
+                f"Write the RHS as a power of {a}: {a ** k} = {a}^{k}",
+                f"Same base, so equate the exponents: x = {k}",
+                f"Answer:  x = {k}",
             ],
-            "note": "Always remember: Same base on both sides: exponents are equal.",
+            "note": f"Same base on both sides: exponents are equal.",
+            "expected_answer": f"x = {k}",
+            "step_scheme": _scheme_exp_value(k),
+            "meta": {"a": a, "k": k},
         })
     return out
 
@@ -1144,34 +1437,50 @@ WRITTEN_ANALOGUES = {
 
 
 def gen_simultaneous_linear_quadratic(count=50, seed=15):
-    rng = random.Random(seed)
-    out = []
-    for _ in range(count):
-        p = rng.randint(1, 4)
-        q = rng.randint(-5, 5)
-        x1 = rng.randint(-4, 4)
-        x2 = rng.randint(-4, 4)
-        if x1 == x2 or q == 0:
+    """
+    Shape: x + y = s and xy = p.
+
+    Back-solves from two distinct integer roots r1, r2.
+    s = r1 + r2, p = r1 * r2. Solutions are (r1, r2) and (r2, r1).
+    """
+    import random as _r
+    rng = _r.Random(seed)
+    out, seen = [], set()
+    tries = 0
+    while len(out) < count and tries < count * 40:
+        tries += 1
+        r1 = rng.choice([-9, -8, -7, -6, -5, -4, -3, -2, -1,
+                          1, 2, 3, 4, 5, 6, 7, 8, 9])
+        r2 = rng.choice([-9, -8, -7, -6, -5, -4, -3, -2, -1,
+                          1, 2, 3, 4, 5, 6, 7, 8, 9])
+        if r1 == r2:
             continue
-        y1 = p * x1 + q
-        y2 = p * x2 + q
+        key = (min(r1, r2), max(r1, r2))
+        if key in seen:
+            continue
+        seen.add(key)
+        s = r1 + r2
+        p = r1 * r2
         out.append({
-            "problem": f"Solve y = {p}x {q:+d} and y^2 + xy = {y1 * y1 + x1 * y1}",
+            "problem": (f"Solve for x and y simultaneously: "
+                        f"x + y = {s} and xy = {p}"),
             "steps": [
-                "Substitute y from the linear equation into the second equation.",
-                "Expand and collect like terms to get a quadratic in x.",
-                "Factorise the quadratic.",
-                f"Answer:  x = {x1}, y = {y1}  or  x = {x2}, y = {y2}",
-                "Substitute each x back to find the matching y.",
+                f"From x + y = {s}, make y the subject: y = {s} - x",
+                f"Substitute into xy = {p}: x({s} - x) = {p}",
+                f"x^2 - {s}x + {p} = 0",
+                f"Factorise: (x - {r1})(x - {r2}) = 0",
+                f"x = {r1} or x = {r2}",
+                f"When x = {r1}, y = {r2}",
+                f"When x = {r2}, y = {r1}",
+                f"Answer: (x, y) = ({r1}, {r2}) or ({r2}, {r1})",
             ],
-            "note": "Always substitute, never guess. Show the substitution step on its own line.",
+            "expected_answer": f"({r1}, {r2}) or ({r2}, {r1})",
+            "step_scheme": _scheme_simul(r1, r2, s, p),
+            "note": "Substitute from the linear equation into the product equation.",
+            "meta": {"r1": r1, "r2": r2, "s": s, "p": p},
         })
     return out
 
-
-# ==================================================================
-# Re-added generators (git checkout had reverted these)
-# ==================================================================
 
 def gen_cubic_concave_v2(count=50, seed=201):
     import random
@@ -1581,81 +1890,428 @@ def gen_stats_regression_predict_v2(count=50, seed=208):
 
 
 def gen_quadratic_standard_factorable(count=50, seed=101):
-    """x^2 + bx + c = 0 with integer roots."""
-    import random
-    rng = random.Random(seed)
+    """
+    Shape: x^2 + bx + c = 0, factors are integers.
+
+    Back-solves from roots r1, r2:
+      b = -(r1 + r2), c = r1 * r2
+
+    Fingerprint: roots small integers (magnitude 1-10).
+    Excludes b = 0 and c = 0 to keep the shape standard.
+
+    Every variant:
+      - standard form, needs factorisation
+      - integer factorisation exists
+      - meta carries roots and coefficients
+    """
+    import random as _r
+    rng = _r.Random(seed)
     out, seen = [], set()
     tries = 0
     while len(out) < count and tries < count * 40:
         tries += 1
-        r1 = rng.randint(-9, 9)
-        r2 = rng.randint(-9, 9)
-        if r1 == 0 or r2 == 0 or r1 == r2:
+        r1 = rng.choice([-10, -9, -8, -7, -6, -5, -4, -3, -2, -1,
+                          1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+        r2 = rng.choice([-10, -9, -8, -7, -6, -5, -4, -3, -2, -1,
+                          1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+        if r1 == r2:
             continue
-        key = tuple(sorted((r1, r2)))
+        key = (min(r1, r2), max(r1, r2))
         if key in seen:
             continue
         seen.add(key)
+
         b = -(r1 + r2)
         c = r1 * r2
-        parts = ["x^2"]
-        if b != 0:
-            if b == 1:
-                parts.append("+ x")
-            elif b == -1:
-                parts.append("- x")
-            else:
-                parts.append(f"{b:+d}x")
-        if c != 0:
-            parts.append(f"{c:+d}")
-        expr = " ".join(parts)
+        if b == 0 or c == 0:
+            continue
+
+        def _sg(v):
+            if v > 0:  return f" + {v}"
+            if v < 0:  return f" - {abs(v)}"
+            return ""
+
+        def _br(k):
+            if k > 0:  return f"(x - {k})"
+            if k < 0:  return f"(x + {abs(k)})"
+            return "x"
+
+        eq = f"x^2{_sg(b)}x{_sg(c)} = 0"
+        fact = f"{_br(r1)}{_br(r2)} = 0"
+        lo, hi = sorted([r1, r2])
         out.append({
-            "problem": f"Solve {expr} = 0",
+            "problem": f"Solve {eq}",
             "steps": [
-                f"Standard form: {expr} = 0",
-                f"Find two numbers that multiply to {c} and add to {b}.",
-                f"That gives (x - ({r1}))(x - ({r2})) = 0",
-                f"x = {r1}",
-                f"x = {r2}",
-                f"Answer: x = {r1} or x = {r2}",
+                f"Need two numbers that multiply to {c} and add to {b}.",
+                f"Factorise: {fact}",
+                f"x = {r1}  or  x = {r2}",
+                f"Answer:  x = {lo} or x = {hi}",
             ],
-            "note": "Always remember: b = -(sum of roots) and c = (product of roots).",
+            "note": ("b = -(sum of roots); c = (product of roots)."),
+            "expected_answer": f"x = {lo} or x = {hi}",
+            "step_scheme": _scheme_standard_factorable(r1, r2, b, c),
+            "meta": {"r1": r1, "r2": r2, "b": b, "c": c, "p": -r1, "q": -r2},
         })
     return out
 
 
 def gen_quadratic_formula(count=50, seed=102):
-    """ax^2 + bx + c = 0 with a > 1 — needs the formula."""
-    import random
-    rng = random.Random(seed)
+    """
+    Shape: ax^2 + bx + c = 0 with a > 1, solved by the quadratic formula.
+
+    Fingerprint: a in {2,3,4,5}; discriminant positive and not a
+    perfect square so roots are irrational to two decimals.
+
+    Every variant:
+      - leading coefficient a > 1
+      - formula required (not factorisable over integers)
+      - computes the numeric roots to two decimals
+      - meta carries a, b, c, discriminant, roots
+    """
+    import random as _r
+    import math as _m
+    rng = _r.Random(seed)
     out, seen = [], set()
     tries = 0
     while len(out) < count and tries < count * 40:
         tries += 1
         a = rng.choice([2, 3, 4, 5])
-        b = rng.randint(-9, 9)
-        c = rng.randint(-9, 9)
-        if b == 0 or c == 0:
-            continue
+        b = rng.choice([-9, -8, -7, -6, -5, -4, -3, -2, -1,
+                         1, 2, 3, 4, 5, 6, 7, 8, 9])
+        c = rng.choice([-9, -8, -7, -6, -5, -4, -3, -2, -1,
+                         1, 2, 3, 4, 5, 6, 7, 8, 9])
         disc = b * b - 4 * a * c
-        if disc <= 0 or int(disc ** 0.5) ** 2 == disc:
+        if disc <= 0:
+            continue
+        r = int(disc ** 0.5)
+        if r * r == disc:
             continue
         key = (a, b, c)
         if key in seen:
             continue
         seen.add(key)
+
+        # compute the two roots to two decimals
+        sqrt_disc = _m.sqrt(disc)
+        x1 = (-b + sqrt_disc) / (2 * a)
+        x2 = (-b - sqrt_disc) / (2 * a)
+        x1r = round(x1, 2)
+        x2r = round(x2, 2)
+        # order small to large for the answer line
+        lo, hi = sorted([x1r, x2r])
+
+        def _sg(v):
+            return f" + {v}" if v > 0 else f" - {abs(v)}"
+        eq = f"{a}x^2{_sg(b)}x{_sg(c)} = 0"
+
         out.append({
-            "problem": f"Solve {a}x^2 {b:+d}x {c:+d} = 0 (correct to TWO decimal places)",
+            "problem": f"Solve {eq} (correct to TWO decimal places)",
             "steps": [
-                f"Standard form: {a}x^2 {b:+d}x {c:+d} = 0",
-                "Formula: x = (-b +/- sqrt(b^2 - 4ac)) / 2a",
+                f"Standard form: {eq}",
+                "Formula: x = (-b ± sqrt(b^2 - 4ac)) / 2a",
                 f"Substitute: a = {a}, b = {b}, c = {c}",
                 f"Discriminant: b^2 - 4ac = {disc}",
-                "Keep full accuracy until the final two-decimal answer.",
+                f"x = {lo} or x = {hi}",
             ],
-            "note": "Always remember: write the formula, then substitute, then compute. Brackets around every negative.",
+            "note": "Write the formula, substitute, compute. Brackets around every negative.",
+            "expected_answer": f"x = {lo} or x = {hi}",
+            "step_scheme": _scheme_formula(a, b, c, x1r, x2r),
+            "meta": {"a": a, "b": b, "c": c, "disc": disc,
+                     "x1": x1r, "x2": x2r},
         })
     return out
+
+
+
+
+def _scheme_surd_s1(a, b, d, r, s):
+    """Memo step scheme for sqrt(ax + b) = x + d with accepted r, rejected s."""
+    def _fmt_surd(a, b):
+        if a == 1:
+            inner = "x"
+        elif a == -1:
+            inner = "-x"
+        else:
+            inner = f"{a}x"
+        if b > 0:
+            inner += f" + {b}"
+        elif b < 0:
+            inner += f" - {abs(b)}"
+        return inner
+
+    def _fmt_rhs(d):
+        if d == 0:  return "x"
+        if d > 0:   return f"x + {d}"
+        return f"x - {abs(d)}"
+
+    inner = _fmt_surd(a, b)
+    rhs = _fmt_rhs(d)
+    std_p = -(r + s)
+    std_q = r * s
+    std = "x^2"
+    if std_p == 1:    std += " + x"
+    elif std_p == -1: std += " - x"
+    elif std_p > 0:   std += f" + {std_p}x"
+    elif std_p < 0:   std += f" - {abs(std_p)}x"
+    if std_q > 0:     std += f" + {std_q}"
+    elif std_q < 0:   std += f" - {abs(std_q)}"
+    std += " = 0"
+
+    def _br(k):
+        if k > 0:  return f"(x - {k})"
+        if k < 0:  return f"(x + {abs(k)})"
+        return "x"
+    fact = f"{_br(r)}{_br(s)} = 0"
+
+    def _sq_rhs(d):
+        if d == 0:  return "(x)^2"
+        if d > 0:   return f"(x + {d})^2"
+        return f"(x - {abs(d)})^2"
+
+    return [
+        {"index": 1, "desc": "Isolate the surd", "marks": 1,
+         "forms": [f"sqrt({inner}) = {rhs}",
+                   f"sqrt({inner})={rhs}"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 2, "desc": "Square both sides", "marks": 1,
+         "forms": [f"{inner} = {_sq_rhs(d)}",
+                   f"{inner} = {_sq_rhs(d)}"],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 3, "desc": "Standard form", "marks": 1,
+         "forms": [std],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 4, "desc": "Factorise", "marks": 1,
+         "forms": [fact],
+         "match_mode": "keyword", "is_final": False, "method_group": "A"},
+        {"index": 5, "desc": f"Reject invalid root, keep x = {r}", "marks": 1,
+         "forms": [f"x = {r}", f"x={r}",
+                   f"x = {r}, x = {s} rejected",
+                   f"x = {r} (reject x = {s})"],
+         "match_mode": "exact", "is_final": True, "method_group": "A"},
+    ]
+
+
+
+def gen_surd_equation_s1(count=30, seed=401):
+    """
+    Shape S1: sqrt(ax + b) = x + d.
+
+    Both signs allowed. Constrained by the DBE fingerprint:
+      a in {-3, -2, -1, 1, 2, 3}
+      b, r, s small integers within the 1-10 band
+      d in {-3, -2, -1, 0, 1, 2, 3}
+
+    Rejection rule: s + d < 0, so the RHS is negative at the rejected
+    root and cannot equal a nonnegative square root.
+
+    Every variant has:
+      1. a surd that must be isolated before squaring
+      2. a middle term in (x + d)^2 that matters
+      3. exactly one extraneous root
+    """
+    import random as _r
+    rng = _r.Random(seed)
+    out, seen = [], set()
+    tries = 0
+    while len(out) < count and tries < count * 1000:
+        tries += 1
+
+        d = rng.choice([-3, -2, -1, 0, 0, 1, 1, 2, 3])
+        r = rng.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12])  # accepted
+        s = rng.choice([-8, -7, -6, -5, -4, -3, -2, -1,
+                        1, 2, 3, 4, 5, 6, 7])                   # rejected
+        if s == r:
+            continue
+
+        a = 2 * d + r + s
+        if a not in (-3, -2, -1, 1, 2, 3):
+            continue
+
+        if r + d < 0:            # accepted root must give nonnegative RHS
+            continue
+        if s + d >= 0:           # rejected root must give negative RHS
+            continue
+
+        b = d * d - r * s
+
+        # both sqrt arguments must be defined (>= 0) at r and s
+        if a * r + b < 0:
+            continue
+        if a * s + b < 0:
+            continue
+
+        key = (r, s, d)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        # ---- question text ----
+        if a == 1:
+            inner = "x"
+        elif a == -1:
+            inner = "-x"
+        else:
+            inner = f"{a}x"
+        if b > 0:
+            inner += f" + {b}"
+        elif b < 0:
+            inner += f" - {abs(b)}"
+
+        if d == 0:
+            rhs = "x"
+        elif d > 0:
+            rhs = f"x + {d}"
+        else:
+            rhs = f"x - {abs(d)}"
+
+        # squared RHS display
+        if d == 0:
+            sq_rhs = "(x)^2"
+        elif d > 0:
+            sq_rhs = f"(x + {d})^2"
+        else:
+            sq_rhs = f"(x - {abs(d)})^2"
+
+        # standard form
+        p_coef = -(r + s)
+        q_coef = r * s
+        std = "x^2"
+        if p_coef == 1:    std += " + x"
+        elif p_coef == -1: std += " - x"
+        elif p_coef > 0:   std += f" + {p_coef}x"
+        elif p_coef < 0:   std += f" - {abs(p_coef)}x"
+        if q_coef > 0:     std += f" + {q_coef}"
+        elif q_coef < 0:   std += f" - {abs(q_coef)}"
+        std += " = 0"
+
+        def _br(k):
+            if k > 0:  return f"(x - {k})"
+            if k < 0:  return f"(x + {abs(k)})"
+            return "x"
+        fact = f"{_br(r)}{_br(s)} = 0"
+
+        out.append({
+            "problem": f"Solve for x: sqrt({inner}) = {rhs}",
+            "steps": [
+                f"Isolate the surd: sqrt({inner}) = {rhs}",
+                f"Square both sides: {inner} = {sq_rhs}",
+                f"Standard form: {std}",
+                f"Factorise: {fact}",
+                f"x = {r}",
+            ],
+            "note": (f"Check both roots in the original equation. "
+                     f"x = {s} does not satisfy it, so reject it. "
+                     f"x = {r} does."),
+            "expected_answer": f"x = {r}",
+            "step_scheme": _scheme_surd_s1(a, b, d, r, s),
+            "meta": {"r": r, "s": s, "d": d, "a": a, "b": b},
+        })
+    return out
+
+
+def gen_exponential_proof(count=50, seed=501):
+    """
+    Shape: c1 * b^n + c2 * b^(n+1) + c3 * b^(n+2).
+
+    Factor out b^n and simplify the bracket to a multiple of 2 (even).
+
+    Fingerprint: b in {2, 3, 5}; coefficients c1, c2, c3 small integers
+    chosen so the bracket simplifies to a multiple of 2.
+    """
+    import random as _r
+    rng = _r.Random(seed)
+    out, seen = [], set()
+    tries = 0
+    while len(out) < count and tries < count * 200:
+        tries += 1
+        b = rng.choice([2, 3, 5])
+        c1 = rng.choice([1, 2, 3, 4])
+        c2 = rng.choice([-3, -2, -1, 1, 2, 3])
+        c3 = rng.choice([1, 2, 3])
+        E = c1 + c2 * b + c3 * b * b
+        if E <= 0 or E % 2 != 0:
+            continue
+        key = (b, c1, c2, c3)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        def _sg(v):
+            return f"+ {v}" if v > 0 else f"- {abs(v)}"
+        terms = (f"{c1}.{b}^n {_sg(c2)}.{b}^(n+1) "
+                 f"{_sg(c3)}.{b}^(n+2)")
+        out.append({
+            "problem": (f"Show that {terms} is even "
+                        f"for all positive integers n."),
+            "steps": [
+                f"Write each term with the smallest power {b}^n:",
+                f"{c1}.{b}^n {_sg(c2 * b)}.{b}^n {_sg(c3 * b * b)}.{b}^n",
+                f"Factor out {b}^n: {b}^n ({c1} {_sg(c2 * b)} {_sg(c3 * b * b)})",
+                f"Simplify the bracket: {b}^n * {E}",
+                f"{E} is even, so the expression is even.",
+                f"Answer: {E} is even, so the whole expression is even",
+            ],
+            "expected_answer": f"{E} is even, so the expression is even",
+            "step_scheme": _scheme_exp_proof(b, c1, c2, c3, E),
+            "note": f"Factor out the smallest power {b}^n.",
+            "meta": {"b": b, "c1": c1, "c2": c2, "c3": c3, "E": E},
+        })
+    return out
+
+
+def gen_proof_integer(count=50, seed=502):
+    """
+    Shape: prove that n(n+1) is even for all positive integers n.
+
+    Fixed shape. Only the note varies.
+    """
+    import random as _r
+    rng = _r.Random(seed)
+    out = []
+    for _ in range(count):
+        out.append({
+            "problem": "Prove that n^2 + n is even for all positive integers n.",
+            "steps": [
+                "Factorise: n^2 + n = n(n + 1)",
+                "n and n + 1 are consecutive integers.",
+                "One of them is even.",
+                "So n(n+1) is even.",
+                "Answer: n(n+1) is even",
+            ],
+            "expected_answer": "n(n+1) is even",
+            "step_scheme": _scheme_proof_integer(),
+            "note": "One of any two consecutive integers is even.",
+            "meta": {},
+        })
+    return out
+
+
+def gen_proof_nonreal(count=50, seed=503):
+    """
+    Shape: prove that x^2 + kx + k^2 = 0 has no real roots for k > 0.
+    """
+    import random as _r
+    rng = _r.Random(seed)
+    out = []
+    for _ in range(count):
+        k = rng.choice([1, 2, 3, 4, 5])
+        out.append({
+            "problem": (f"Prove that x^2 + {k}x + {k * k} = 0 has no real "
+                        f"roots."),
+            "steps": [
+                f"Discriminant: delta = b^2 - 4ac",
+                f"delta = {k}^2 - 4(1)({k * k})",
+                f"delta = -3({k * k})",
+                f"Since {k} > 0, delta < 0",
+                "Answer: delta < 0 means no real roots",
+            ],
+            "expected_answer": "no real roots",
+            "step_scheme": _scheme_proof_nonreal(k),
+            "note": "Delta < 0 means no real roots.",
+            "meta": {"k": k},
+        })
+    return out
+
 
 
 TEMPLATES = {
@@ -1717,6 +2373,7 @@ TEMPLATES = {
     "stats_regression_written":      (gen_stats_regression_predict_v2, 50),
     "quadratic_standard_factorable": (gen_quadratic_standard_factorable, 50),
     "quadratic_formula":             (gen_quadratic_formula, 50),
+    "surd_equation_s1":              (gen_surd_equation_s1, 30),
 }
 
 
@@ -1941,3 +2598,277 @@ EUCLID_PROOFS = [
      "note": "Always remember: tangent-secant theorem."},
 ]
 
+# ══════════════════════════════════════════════════════════════════════
+# V2 EXPANSION + CLEANUP
+# Appended to bring every algebra generator to the standard:
+#   - 30+ unique variants per shape
+#   - expected_answer per variant
+#   - step_scheme per variant, matching the DBE memo method
+# Then removes every template and written pool that does not meet the
+# standard.
+# ══════════════════════════════════════════════════════════════════════
+
+def _v2_gen_exponential_quadratic(count=50, seed=14):
+    """
+    Shape: p^(2x) - (p^x1 + p^x2) * p^x + p^(x1+x2) = 0.
+    Fingerprint: base p in {2, 3, 5}; x1, x2 in 0..4, x1 != x2.
+    Parameter space: 3 bases x 10 unordered pairs = 30 unique.
+    """
+    import random as _r
+    rng = _r.Random(seed)
+    out, seen = [], set()
+    tries = 0
+    while len(out) < count and tries < count * 200:
+        tries += 1
+        p_base = rng.choice([2, 3, 5])
+        x1 = rng.choice([0, 1, 2, 3, 4])
+        x2 = rng.choice([0, 1, 2, 3, 4])
+        if x1 == x2:
+            continue
+        key = (p_base, min(x1, x2), max(x1, x2))
+        if key in seen:
+            continue
+        seen.add(key)
+
+        k1 = p_base ** x1
+        k2 = p_base ** x2
+        s = k1 + k2
+        prod = k1 * k2
+        lo, hi = sorted([x1, x2])
+
+        out.append({
+            "problem": f"Solve {p_base}^(2x) - {s}.{p_base}^x + {prod} = 0",
+            "steps": [
+                f"Let k = {p_base}^x. Then {p_base}^(2x) = k^2.",
+                f"k^2 - {s}k + {prod} = 0",
+                f"Factorise: (k - {k1})(k - {k2}) = 0",
+                f"So {p_base}^x = {k1}  or  {p_base}^x = {k2}",
+                f"Answer:  x = {lo} or x = {hi}",
+            ],
+            "expected_answer": f"x = {lo} or x = {hi}",
+            "note": f"Substitute k = {p_base}^x. Reject any negative k.",
+            "step_scheme": _scheme_exp_quadratic(p_base, x1, x2),
+            "meta": {"p": p_base, "x1": x1, "x2": x2, "s": s, "prod": prod,
+                     "k1": k1, "k2": k2},
+        })
+    return out
+
+
+def _v2_gen_exponential_value(count=50, seed=48):
+    """
+    Shape: a^(m*x) = a^k with answer x = k/m.
+    Fingerprint: base a in {2, 3, 5}; m in {1, 2, 3}; x_ans in 1..4.
+    Parameter space: 3 x 3 x 4 = 36 unique.
+    """
+    import random as _r
+    rng = _r.Random(seed)
+    out, seen = [], set()
+    tries = 0
+    while len(out) < count and tries < count * 100:
+        tries += 1
+        a = rng.choice([2, 3, 5])
+        m = rng.choice([1, 2, 3])
+        x_ans = rng.choice([1, 2, 3, 4])
+        k = m * x_ans
+        key = (a, m, x_ans)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        lhs = f"{a}^x" if m == 1 else f"{a}^({m}x)"
+        if m == 1:
+            eq_line = f"Same base, equate exponents: x = {k}"
+        else:
+            eq_line = f"Same base, equate exponents: {m}x = {k}"
+
+        out.append({
+            "problem": f"Solve {lhs} = {a ** k}.",
+            "steps": [
+                f"Write the RHS as a power of {a}: {a ** k} = {a}^{k}",
+                eq_line,
+                f"x = {x_ans}",
+            ],
+            "expected_answer": f"x = {x_ans}",
+            "note": "Same base on both sides: exponents are equal.",
+            "step_scheme": _scheme_exp_value(x_ans),
+            "meta": {"a": a, "m": m, "k": k, "x": x_ans},
+        })
+    return out
+
+
+# ---- Reregister TEMPLATES entries ----
+TEMPLATES["exponential_quadratic"] = (_v2_gen_exponential_quadratic, 50)
+TEMPLATES["exponential_value"]     = (_v2_gen_exponential_value, 50)
+
+# Register the three proof generators that already exist in this file
+TEMPLATES["exponential_proof"] = (gen_exponential_proof, 50)
+TEMPLATES["proof_integer"]     = (gen_proof_integer, 50)
+TEMPLATES["proof_nonreal"]     = (gen_proof_nonreal, 50)
+
+# ---- Delete everything not in the KEEP set ----
+_KEEP_ALGEBRA = {
+    "quadratic_factored",
+    "quadratic_standard_factorable",
+    "quadratic_formula",
+    "quadratic_inequality",
+    "surd_equation_s1",
+    "exponential_quadratic",
+    "exponential_value",
+    "simultaneous_linear_quadratic",
+    "exponential_proof",
+    "proof_integer",
+    "proof_nonreal",
+}
+for _k in [k for k in list(TEMPLATES.keys()) if k not in _KEEP_ALGEBRA]:
+    del TEMPLATES[_k]
+
+# ---- Empty the hand-authored pools ----
+WRITTEN_ANALOGUES.clear()
+EXTRA_WRITTEN_ANALOGUES.clear()
+
+# ══════════════════════════════════════════════════════════════════════
+# END V2 BLOCK
+# ══════════════════════════════════════════════════════════════════════
+
+
+# ══════════════════════════════════════════════════════════════════════
+# V3 EXPANSION
+#   - expand proof_integer to 30+ unique
+#   - expand proof_nonreal to 30+ unique
+#   - register simultaneous_linear_quadratic
+# ══════════════════════════════════════════════════════════════════════
+
+def _v3_gen_proof_integer(count=50, seed=502):
+    """
+    Shape: prove that n^2 + (2k+1)n + k(k+1) is even.
+    Factorises to (n+k)(n+k+1) — consecutive integers, one is even.
+    Parameter k in 1..30 gives 30 unique variants.
+    """
+    out = []
+    for k in range(1, 31):
+        a = k
+        b = k + 1
+        coeff_n = a + b            # 2k+1
+        const   = a * b            # k(k+1)
+        out.append({
+            "problem": (f"Prove that n^2 + {coeff_n}n + {const} "
+                        f"is even for all positive integers n."),
+            "steps": [
+                f"Factorise: n^2 + {coeff_n}n + {const} = (n + {a})(n + {b})",
+                f"n + {a} and n + {b} are consecutive integers.",
+                "One of them is even.",
+                f"Therefore (n + {a})(n + {b}) is even.",
+                f"Answer: (n + {a})(n + {b}) is even",
+            ],
+            "expected_answer": f"(n + {a})(n + {b}) is even",
+            "step_scheme": _scheme_proof_integer(),
+            "note": "One of any two consecutive integers is even.",
+            "meta": {"k": k, "a": a, "b": b},
+        })
+    return out[:count]
+
+
+def _v3_gen_proof_nonreal(count=50, seed=503):
+    """
+    Shape: prove x^2 + kx + c = 0 has no real roots.
+    delta = k^2 - 4c < 0.
+    Parameter space: k in 1..5, c in {k^2, k^2+1, ..., k^2+5} = 30.
+    """
+    out = []
+    for k in range(1, 6):
+        for offset in range(6):
+            c = k * k + offset
+            delta = k * k - 4 * c
+            if delta >= 0:
+                continue
+            out.append({
+                "problem": (f"Prove that x^2 + {k}x + {c} = 0 "
+                            f"has no real roots."),
+                "steps": [
+                    f"Discriminant: delta = b^2 - 4ac",
+                    f"delta = {k}^2 - 4(1)({c})",
+                    f"delta = {delta}",
+                    f"Since {delta} < 0, the equation has no real roots.",
+                    f"Answer: no real roots",
+                ],
+                "expected_answer": "no real roots",
+                "step_scheme": _scheme_proof_nonreal(k),
+                "note": "Delta < 0 means no real roots.",
+                "meta": {"k": k, "c": c, "delta": delta},
+            })
+    return out[:count]
+
+
+# ---- Reregister all four ----
+TEMPLATES["proof_integer"]                 = (_v3_gen_proof_integer, 30)
+TEMPLATES["proof_nonreal"]                 = (_v3_gen_proof_nonreal, 30)
+TEMPLATES["simultaneous_linear_quadratic"] = (gen_simultaneous_linear_quadratic, 50)
+
+# ══════════════════════════════════════════════════════════════════════
+# END V3 BLOCK
+# ══════════════════════════════════════════════════════════════════════
+
+
+# ══════════════════════════════════════════════════════════════════════
+# V4 — widen quadratic_factored parameter band
+# Old band: -9..9 excluding 0  -> 18 values -> C(18,2) = 153 unique
+# New band: -12..12 excluding 0 -> 24 values -> C(24,2) = 276 unique
+# ══════════════════════════════════════════════════════════════════════
+
+def _v4_gen_quadratic_factored(count=200, seed=11):
+    """
+    Shape: (x + a)(x + b) = 0. Roots -a, -b.
+
+    Fingerprint: a, b integers with magnitude 1..12 (covers the
+    1-10 dominant band from the numbers report).
+
+    Every variant:
+      - factored form, no factorisation step
+      - two distinct roots
+      - expected_answer and step_scheme per variant
+    """
+    import random as _r
+    rng = _r.Random(seed)
+    out, seen = [], set()
+    tries = 0
+    band = [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1,
+             1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    while len(out) < count and tries < count * 30:
+        tries += 1
+        a = rng.choice(band)
+        b = rng.choice(band)
+        if a == b:
+            continue
+        key = (min(a, b), max(a, b))
+        if key in seen:
+            continue
+        seen.add(key)
+        r1, r2 = -a, -b
+
+        def _xt(v):
+            if v > 0:  return f"x + {v}"
+            if v < 0:  return f"x - {abs(v)}"
+            return "x"
+
+        lo, hi = sorted([r1, r2])
+        out.append({
+            "problem": f"Solve for x: ({_xt(a)})({_xt(b)}) = 0",
+            "steps": [
+                "Set each factor to zero.",
+                f"{_xt(a)} = 0  gives  x = {r1}",
+                f"{_xt(b)} = 0  gives  x = {r2}",
+                f"Answer:  x = {lo} or x = {hi}",
+            ],
+            "expected_answer": f"x = {lo} or x = {hi}",
+            "note": "The sign inside the bracket is not the root. Flip it.",
+            "step_scheme": _scheme_factored(r1, r2),
+            "meta": {"r1": r1, "r2": r2, "a": a, "b": b},
+        })
+    return out
+
+
+TEMPLATES["quadratic_factored"] = (_v4_gen_quadratic_factored, 200)
+
+# ══════════════════════════════════════════════════════════════════════
+# END V4 BLOCK
+# ══════════════════════════════════════════════════════════════════════

@@ -58,6 +58,12 @@
         "1/2 = 1 - {years}i",
         "{years}i = 1/2, so i = 1/(2*{years}) = {r_dec}",
         "r = {r_pct}% p.a."
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "finance.compound"
       ]
     },
     {
@@ -93,6 +99,14 @@
         "= {x_disp} * {n} = R{total_paid_disp}",
         "Total interest = total_paid - loan amount",
         "= R{total_paid_disp} - R{P_disp} = R{total_interest_disp}"
+      ],
+      "given_from": [
+        "7.1",
+        "7.2"
+      ],
+      "requires_skills": [
+        "finance.compound",
+        "finance.depreciation"
       ]
     }
   ]

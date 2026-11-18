@@ -40,6 +40,12 @@
         "The horizontal asymptote of a/(x+p) + q is y = q.",
         "From the form, q = {q}.",
         "So the asymptote is y = {q}."
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -69,6 +75,13 @@
         "f(0) = a/(0 {p_disp}) {q_disp}",
         "{yint} = a/({p}) {q_disp}",
         "a = {a}"
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -103,6 +116,14 @@
         "Vertical asymptote at x = {vert}.",
         "Read signs off the sketch.",
         "Answer: {ineq_answer}"
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -123,6 +144,15 @@
         "Reflection changes the domain (the asymptote moves).",
         "Translate to bring the vertical asymptote back to x = {vert}.",
         "Answer: reflection in the y-axis followed by a horizontal translation."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     }
   ],

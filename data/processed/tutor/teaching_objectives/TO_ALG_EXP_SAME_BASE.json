@@ -1,0 +1,36 @@
+{
+  "objective_id": "TO_ALG_EXP_SAME_BASE",
+  "skill_id": "algebra.exponential.solve",
+  "trigger_misconception": "M_EXP_DIFFERENT_BASES",
+  "dbe_source": {
+    "years": [
+      "2014",
+      "2022"
+    ],
+    "recommendation": "Before you can compare exponents, both sides must be written as powers of the SAME base. 3^x = 27 is not solved by comparing 3 and 27. Rewri",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "Before you can compare exponents, both sides must be written as powers of the SAME base. 3^x = 27 is not solved by comparing 3 and 27. Rewrite 27 as 3^3.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "Solve 3^x = 27",
+      "work": [
+        "Step 1: rewrite 27 as a power of 3. 27 = 3^3.",
+        "Step 2: 3^x = 3^3",
+        "Step 3: same base, equate exponents: x = 3",
+        "Do not write x = 27/3. That treats it like linear algebra."
+      ]
+    },
+    "probe": {
+      "problem": "Solve 5^x = 125.",
+      "expected": "x = 3",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_EXP_DIFFERENT_BASES",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "Both sides must be written as powers of the same base before the exponents can be equated."
+}

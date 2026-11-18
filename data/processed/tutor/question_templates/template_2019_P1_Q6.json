@@ -25,6 +25,12 @@
         "P = x[1 - (1+i)^-n]/i",
         "525000 = 6000[1 - (1+0.1/12)^-n]/(0.1/12).",
         "Solve with logs."
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "finance.compound"
       ]
     },
     {
@@ -37,6 +43,14 @@
       "steps": [
         "Extra = 6000 - 5066.36 = 933.64.",
         "F = 933.64[(1+i)^108 - 1]/i."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2.1"
+      ],
+      "requires_skills": [
+        "finance.compound",
+        "finance.loan"
       ]
     }
   ],

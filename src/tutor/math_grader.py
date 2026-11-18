@@ -153,7 +153,7 @@ def _canonical(s: str) -> str:
 # ==================================================================
 
 # Split on 'or' or 'and' or ';' or ', ' (comma followed by space and NOT digit)
-SPLIT_RE = re.compile(r"\s*;\s*|\s+\bor\b\s+|\s+\band\b\s+|\s*,\s*(?![\d])", re.IGNORECASE)
+SPLIT_RE = re.compile(r"\s*;\s*|\s+\bor\b\s+|\s*,\s*(?![\d])", re.IGNORECASE)
 FRACTION_RE = re.compile(r"^-?\d+\s*/\s*-?\d+$")
 
 
@@ -205,6 +205,12 @@ def m_numeric_multi_root(a: str, b: str):
     """Set of numbers — 'x = 2 or x = -5' vs '-5, 2'."""
     if not _HAS_SYMPY:
         return False, 0.0, ""
+    # GUARD: if either side contains labelled pairs (x= and y=), this is a
+    # coordinate pair — do NOT use set comparison.
+    _a_an = _normalise(a).replace(" ", "")
+    _b_an = _normalise(b).replace(" ", "")
+    if ("x=" in _a_an and "y=" in _a_an) or ("x=" in _b_an and "y=" in _b_an):
+        return False, 0.0, ""
     ap = _parts(a)
     bp = _parts(b)
     if not ap or not bp:
@@ -246,6 +252,11 @@ def m_numeric_multi_root(a: str, b: str):
 
 def m_fraction_decimal(a: str, b: str):
     """3/4 ↔ 0.75, multi-part with tolerance."""
+    # GUARD: if either side has labelled pairs (x= AND y=), this isn't a plain fraction/decimal
+    _a_an = _normalise(a).replace(" ", "")
+    _b_an = _normalise(b).replace(" ", "")
+    if ("x=" in _a_an and "y=" in _a_an) or ("x=" in _b_an and "y=" in _b_an):
+        return False, 0.0, ""
     if not _HAS_SYMPY:
         return False, 0.0, ""
     ap = _parts(a)
@@ -338,10 +349,18 @@ def m_currency(a: str, b: str):
 
 
 def m_coordinate_pair(a: str, b: str):
-    """S(15; 16) ↔ S(15, 16) ↔ (15; 16)"""
+    """S(15; 16) ↔ S(15, 16) ↔ (15; 16)
+
+    Only fires when at least one side contains a bracketed pair.
+    Without brackets, two numbers could be two roots, not a coordinate.
+    """
     def _coords(s):
-        nums = re.findall(r"-?\d+(?:\.\d+)?", _normalise(s))
-        return tuple(nums)
+        s = _normalise(s)
+        # must have brackets around the two numbers
+        if not re.search(r"\(\s*-?\d", s):
+            return None
+        nums = re.findall(r"-?\d+(?:\.\d+)?", s)
+        return tuple(nums) if len(nums) == 2 else None
     ca, cb = _coords(a), _coords(b)
     if ca and cb and ca == cb:
         return True, 0.92, "coordinate pair equal"
@@ -463,10 +482,13 @@ def grade(learner_text: str, expected_text: str,
     if not isinstance(expected_text, str) or not expected_text.strip():
         return GradeResult(MatchKind.UNCERTAIN, 0.0, "empty_expected", "no expected")
 
-    # Multi-line: try each line, also the full text
-    candidates = [learner_text]
+    # Exam convention: the last line is the answer. Working goes above.
+    # If there are multiple non-empty lines, only the last one counts.
     if "\n" in learner_text:
-        candidates = [l for l in learner_text.splitlines() if l.strip()] + [learner_text]
+        lines = [l for l in learner_text.splitlines() if l.strip()]
+        candidates = [lines[-1]] if lines else [learner_text]
+    else:
+        candidates = [learner_text]
 
     best = (0.0, None)
     for cand in candidates:
@@ -498,11 +520,108 @@ def grade(learner_text: str, expected_text: str,
         # Something fired but with low confidence
         return GradeResult(MatchKind.UNCERTAIN, best[0], best[1][0], best[1][1])
 
-    # Nothing fired — check if learner text is very different
+    # Nothing fired.
+    # Both sides are numeric. Distinguish three cases:
+    #   same part count, values differ       -> NO_MATCH  (learner wrong)
+    #   fewer parts, all learner parts in exp -> UNCERTAIN (partial answer)
+    #   fewer parts, some learner part wrong -> NO_MATCH  (learner wrong)
+    #   more parts than expected             -> NO_MATCH  (extra values)
+    if _all_parts_numeric(learner_text) and _all_parts_numeric(expected_text):
+        l_parts = _parts(learner_text)
+        e_parts = _parts(expected_text)
+        if len(l_parts) == len(e_parts):
+            return GradeResult(MatchKind.NO_MATCH, 0.0, "numeric_mismatch",
+                               "numeric answers differ")
+        if len(l_parts) < len(e_parts):
+            try:
+                l_syms = {sp.sympify(prt) for prt in l_parts}
+                e_syms = {sp.sympify(prt) for prt in e_parts}
+                if l_syms and l_syms.issubset(e_syms):
+                    # Partial answer: some correct roots present, others missing.
+                    # Let the caller ask instead of marking wrong.
+                    return GradeResult(
+                        MatchKind.UNCERTAIN, 0.0, "partial_numeric",
+                        "learner has a subset of the expected values",
+                    )
+            except Exception:
+                pass
+            return GradeResult(MatchKind.NO_MATCH, 0.0, "numeric_mismatch",
+                               "numeric answers differ")
+        # Learner gave more values than expected
+        return GradeResult(MatchKind.NO_MATCH, 0.0, "numeric_mismatch",
+                           "more numeric values than expected")
+
+    # Connector guard: expected uses "or" between roots, learner used
+    # "and". Same values, wrong connector — the answer is wrong.
+    if re.search(r"\bor\b", expected_text, re.IGNORECASE) and re.search(
+        r"\d\s+and\s+[-x]|x\s*=\s*-?\d+\s+and",
+        learner_text, re.IGNORECASE,
+    ):
+        return GradeResult(MatchKind.NO_MATCH, 0.0, "and_or_connector",
+                           "learner used 'and' where 'or' was expected")
+
+    # Single-value guard: when both sides reduce to one number (with
+    # or without a unit), and they differ meaningfully, this is a
+    # definite mismatch — not an uncertain form.
+    def _single_value(text):
+        if not isinstance(text, str):
+            return None
+        t = _strip_label(_normalise(text))
+        # strip leading currency symbols
+        t = re.sub(r"^[R$\u00a3\u20ac]\s*", "", t, flags=re.IGNORECASE)
+        # strip common measurement units around a number
+        t = re.sub(r"\s*\b(cm|mm|km|m|kg|g|deg|degree|degrees?|units?)\b\s*",
+                   "", t, flags=re.IGNORECASE)
+        t = t.strip()
+        # accept integer, decimal, or simple fraction like 12/5 or -3/4
+        m = re.match(r"^(-?\d+(?:\.\d+)?)(?:\s*/\s*(-?\d+(?:\.\d+)?))?\s*$", t)
+        if not m:
+            return None
+        try:
+            num = float(m.group(1))
+            den = float(m.group(2)) if m.group(2) else 1.0
+            if den == 0:
+                return None
+            return num / den
+        except (ValueError, TypeError):
+            return None
+
+    learner_val = _single_value(learner_text.splitlines()[-1]
+                                if "\n" in learner_text else learner_text)
+    expected_val = _single_value(expected_text)
+    if learner_val is not None and expected_val is not None:
+        tol = 0.005
+        if abs(learner_val - expected_val) > tol:
+            return GradeResult(MatchKind.NO_MATCH, 0.0, "single_value_mismatch",
+                               "single numeric value differs")
+        # values match within tolerance — accept with or without unit
+        return GradeResult(MatchKind.MATCH, 0.98, "single_value_match",
+                           "single numeric value matches")
+
     if _looks_like_valid_attempt(learner_text):
         return GradeResult(MatchKind.UNCERTAIN, 0.0, "none", "no matcher fired")
 
     return GradeResult(MatchKind.NO_MATCH, 0.0, "none", "clearly not the answer")
+
+
+def _all_parts_numeric(text: str) -> bool:
+    """True if every part of the answer parses as a number.
+
+    Used to distinguish 'definitely wrong numbers' from 'unrecognised form'.
+    A learner who writes x = 6 or 7 when the answer is x = -5 or x = 2 has
+    given a definite numeric mismatch, not an ambiguous form.
+    """
+    if not _HAS_SYMPY:
+        return False
+    parts = _parts(text)
+    if not parts:
+        return False
+    for prt in parts:
+        try:
+            sp.sympify(prt)
+        except Exception:
+            return False
+    return True
 
 
 def _looks_like_valid_attempt(text: str) -> bool:
@@ -565,3 +684,29 @@ def diagnose_wrong(learner_text: str, expected_text: str) -> Optional[str]:
             pass
 
     return "unknown"
+
+
+def m_coordinate_pair_labelled(a: str, b: str):
+    """Matches 'x = A, y = B [or x = C, y = D]' pairs — ALL pairs must align."""
+    def _extract(s):
+        s = _normalise(s).replace(" ", "")
+        # Find all (x, y) pairs using a state machine
+        pairs = []
+        current = {}
+        tokens = re.findall(r"x=(-?\d+(?:\.\d+)?)|y=(-?\d+(?:\.\d+)?)", s)
+        for x_val, y_val in tokens:
+            if x_val and "x" not in current:
+                current["x"] = float(x_val)
+            elif y_val and "y" not in current:
+                current["y"] = float(y_val)
+                if "x" in current:
+                    pairs.append((current["x"], current["y"]))
+                    current = {}
+        return pairs
+    pa = _extract(a)
+    pb = _extract(b)
+    if not pa or not pb:
+        return False, 0.0, ""
+    if pa == pb:
+        return True, 0.95, "all labelled pairs align"
+    return False, 0.0, ""

@@ -23,6 +23,12 @@
         "Amount after 3 years compound.",
         "Then subtract 100 000 and compound for 1 more year.",
         "Add last quarter deposits."
+      ],
+      "given_from": [
+        "7.1.1"
+      ],
+      "requires_skills": [
+        "finance.annuity"
       ]
     },
     {
@@ -34,6 +40,13 @@
       "expected_fn": "x = R14 975.70",
       "steps": [
         "P = x[1 - (1+i)^-n]/i, i = 0.105/12, n = 240."
+      ],
+      "given_from": [
+        "7.1.1",
+        "7.1.2"
+      ],
+      "requires_skills": [
+        "finance.annuity"
       ]
     },
     {
@@ -45,6 +58,15 @@
       "expected_fn": "R969 927.74",
       "steps": [
         "Use P = x[1 - (1+i)^-n]/i with remaining n = 96."
+      ],
+      "given_from": [
+        "7.1.1",
+        "7.1.2",
+        "7.2.1"
+      ],
+      "requires_skills": [
+        "finance.annuity",
+        "finance.loan"
       ]
     }
   ],

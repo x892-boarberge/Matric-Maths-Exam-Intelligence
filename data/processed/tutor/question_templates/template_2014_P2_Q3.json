@@ -30,6 +30,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1"
+      ],
+      "requires_skills": [
+        "analytical.circle"
       ]
     },
     {
@@ -55,6 +61,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2"
+      ],
+      "requires_skills": [
+        "analytical.circle"
       ]
     },
     {
@@ -75,6 +88,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ],
+      "requires_skills": [
+        "analytical.circle"
       ]
     },
     {
@@ -100,6 +121,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4.1"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.gradient"
       ]
     },
     {
@@ -120,6 +151,17 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4.1",
+        "3.4.2"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.gradient"
       ]
     },
     {
@@ -140,6 +182,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4.1",
+        "3.4.2",
+        "3.5"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.gradient"
       ]
     },
     {
@@ -160,6 +214,20 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4.1",
+        "3.4.2",
+        "3.5",
+        "3.6"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.gradient",
+        "analytical.solve"
       ]
     },
     {
@@ -195,6 +263,22 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4.1",
+        "3.4.2",
+        "3.5",
+        "3.6",
+        "3.7"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.gradient",
+        "analytical.solve",
+        "analytical.distance"
       ]
     }
   ],

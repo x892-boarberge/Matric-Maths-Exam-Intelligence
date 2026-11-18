@@ -1,0 +1,38 @@
+{
+  "objective_id": "TO_TRIG_AMPLITUDE_PERIOD",
+  "skill_id": "trig.graph",
+  "trigger_misconception": "M_TRIG_AMPLITUDE_PERIOD",
+  "dbe_source": {
+    "years": [
+      "2018",
+      "2020",
+      "2022",
+      "2025"
+    ],
+    "recommendation": "Candidates confused the period with the endpoint of the domain, or confused amplitude with period. Period is a single value derived from the coefficient of x.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "The period of a trig graph is a single number, not an interval and not the endpoint of the given domain. For sin(bx) and cos(bx), period = 360/b. For tan(bx), period = 180/b.",
+    "why": "Candidates often give the endpoint of the interval (135, 180, 360) instead of computing the period. The examiner wants the number, not the domain.",
+    "example": {
+      "problem": "State the period of y = tan 2x for x in [-135; 135].",
+      "work": [
+        "Ignore the interval. It is the domain, not the period.",
+        "Base period of tan: 180.",
+        "Coefficient of x is b = 2.",
+        "Period = 180 / 2 = 90."
+      ]
+    },
+    "probe": {
+      "problem": "State the period of y = cos 3x.",
+      "expected": "120",
+      "hint": "Period = 360 / b."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_TRIG_AMPLITUDE_PERIOD",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The period is a single value: 360/b for sin and cos, 180/b for tan. It is not the endpoint of the interval."
+}

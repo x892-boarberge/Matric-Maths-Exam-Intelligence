@@ -1,0 +1,73 @@
+{
+  "plan_version": "1.1",
+  "generated_at": "2026-10-23T09:21:54.292332+00:00",
+  "scope": "cohort",
+  "window_days": 30,
+  "class_size": 4,
+  "active_learners": 3,
+  "inactive_learners": [
+    {
+      "learner_id": "30",
+      "display_name": "Learner 30"
+    }
+  ],
+  "summary": {
+    "whole_class_issue_count": 0,
+    "small_group_issue_count": 0,
+    "needs_human_count": 0,
+    "urgent_learner_count": 1,
+    "moderate_learner_count": 0,
+    "stable_learner_count": 2
+  },
+  "class_wide_actions": [],
+  "small_group_actions": [],
+  "needs_human_learners": [],
+  "individual_priorities": [
+    {
+      "priority_rank": 1,
+      "learner_id": "thabo",
+      "display_name": "Thabo",
+      "urgency": "urgent",
+      "high_signals": 2,
+      "current_accuracy": 0.421,
+      "attempts": 228,
+      "top_misconception": "M_SIGN_ERROR_READING_ROOT",
+      "top_misconception_display": "flips sign reading a root from a bracket",
+      "pending_retention_checks": 1,
+      "quits_after_variants": 1,
+      "escalated_drills": [],
+      "individual_plan_ref": "data\\plans\\thabo_plan_20261023T091359Z.json",
+      "action": "Review Thabo's individual plan before next 1-on-1 check-in."
+    }
+  ],
+  "stable_learners": [
+    {
+      "learner_id": "1",
+      "display_name": "Learner 1",
+      "accuracy": 1.0,
+      "attempts": 10,
+      "high_signals": 0,
+      "top_misconception": null,
+      "pending_retention": 0,
+      "quits": 0,
+      "escalated_drills": [],
+      "has_drill_escalation": false
+    },
+    {
+      "learner_id": "test001",
+      "display_name": "Test001",
+      "accuracy": 0.6,
+      "attempts": 5,
+      "high_signals": 0,
+      "top_misconception": null,
+      "pending_retention": 0,
+      "quits": 0,
+      "escalated_drills": [],
+      "has_drill_escalation": false
+    }
+  ],
+  "thresholds": {
+    "whole_class_learners": 2,
+    "small_group_learners": 3
+  }
+}

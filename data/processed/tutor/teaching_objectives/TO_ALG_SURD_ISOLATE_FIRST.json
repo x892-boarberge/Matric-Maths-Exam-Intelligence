@@ -1,0 +1,39 @@
+{
+  "objective_id": "TO_ALG_SURD_ISOLATE_FIRST",
+  "skill_id": "algebra.surd.solve",
+  "trigger_misconception": "M_SURD_NOT_ISOLATED",
+  "applies_when": "learner squares both sides while the surd is not alone on one side",
+  "dbe_source": {
+    "years": [
+      "2016",
+      "2022"
+    ],
+    "recommendation": "Candidates did not isolate the square root term before squaring. Isolate the surd first so the square removes it cleanly.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "Before you square both sides, the surd must be alone on one side of the equals sign. If there are other terms on the same side, move them first.",
+    "why": "If you square with the surd mixed in, you do not eliminate it. The whole point of squaring is to remove the root, and that only works if the root is isolated.",
+    "example": {
+      "problem": "Solve sqrt(x + 5) + 2 = x",
+      "work": [
+        "Step 1: isolate the surd. Move +2 to the right.",
+        "sqrt(x + 5) = x - 2",
+        "Step 2: now square both sides.",
+        "x + 5 = (x - 2)^2",
+        "x + 5 = x^2 - 4x + 4",
+        "x^2 - 5x - 1 = 0 ..."
+      ]
+    },
+    "probe": {
+      "problem": "Solve sqrt(2x + 3) - 1 = x. Write the line that isolates the surd.",
+      "expected": "sqrt(2x + 3) = x + 1",
+      "hint": "Move the non-surd term across before you square."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_SURD_NOT_ISOLATED",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You squared with other terms still on the same side as the surd. Isolate the surd first, then square."
+}

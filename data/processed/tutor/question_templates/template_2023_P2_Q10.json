@@ -67,6 +67,12 @@
           "r": "converse exterior angle of cyclic quad",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -108,6 +114,13 @@
           "r": "converse tan-chord theorem",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     }
   ],

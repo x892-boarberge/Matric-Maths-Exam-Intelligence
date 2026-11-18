@@ -23,6 +23,12 @@
       "expected_fn": "dy/dx = 9x² + 12x + 1",
       "steps": [
         "Differentiate term by term."
+      ],
+      "given_from": [
+        "8.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles"
       ]
     },
     {
@@ -35,6 +41,14 @@
       "steps": [
         "Solve for y: y = 2x(x-1)/(x-1) = 2x (for x != 1).",
         "dy/dx = 2."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     }
   ],

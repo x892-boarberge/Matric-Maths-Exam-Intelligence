@@ -1,0 +1,35 @@
+{
+  "objective_id": "TO_TRIG_COMPOUND_WRONG_FORM",
+  "skill_id": "trig.compound.sin",
+  "trigger_misconception": "M_COMPOUND_WRONG_FORM",
+  "dbe_source": {
+    "years": [
+      "2023",
+      "2024"
+    ],
+    "recommendation": "sin(A + B) expands to sin A cos B + cos A sin B. cos(A + B) expands to cos A cos B - sin A sin B. The first product in sin(A+B) has sin, in cos(A+B) has cos.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "sin(A + B) expands to sin A cos B + cos A sin B. cos(A + B) expands to cos A cos B - sin A sin B. The first product in sin(A+B) has sin, in cos(A+B) has cos.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "Expand sin(A + B)",
+      "work": [
+        "First product: sin A cos B.",
+        "Second product: cos A sin B.",
+        "So sin(A + B) = sin A cos B + cos A sin B."
+      ]
+    },
+    "probe": {
+      "problem": "Expand cos(A + B).",
+      "expected": "cos A cos B - sin A sin B",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_COMPOUND_WRONG_FORM",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You used the cosine expansion where the sine expansion was needed. sin(A + B) starts with sin A cos B; cos(A + B) starts with cos A cos B."
+}

@@ -16,6 +16,12 @@
           "r": "angle at centre = 2 x angle at circumference",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "8.1.2"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -47,6 +53,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "8.1.2",
+        "8.1.1a"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -99,6 +112,14 @@
           "r": "corresponding angles equal",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "8.1.2",
+        "8.1.1a",
+        "8.1.1b"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -130,6 +151,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "8.1.2",
+        "8.1.1a",
+        "8.1.1b",
+        "8.2.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     }
   ],

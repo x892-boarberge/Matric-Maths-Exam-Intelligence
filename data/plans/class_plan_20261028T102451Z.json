@@ -1,0 +1,95 @@
+{
+  "plan_version": "1.2",
+  "generated_at": "2026-10-28T10:24:51.892767+00:00",
+  "data_version": "20261028T102451Z",
+  "scope": "cohort",
+  "window_days": 30,
+  "census_or_sample": "census",
+  "class_size": 3,
+  "active_learners": 1,
+  "inactive_learners": [
+    {
+      "learner_id": "1",
+      "display_name": "Learner 1"
+    },
+    {
+      "learner_id": "test001",
+      "display_name": "Test001"
+    }
+  ],
+  "summary": {
+    "aggregate_accuracy": 0.4444444444444444,
+    "aggregate_accuracy_ci": [
+      0.37199932266635044,
+      0.5193308870777836
+    ],
+    "census_or_sample": "census",
+    "whole_class_issue_count": 0,
+    "small_group_issue_count": 0,
+    "needs_human_count": 1,
+    "urgent_learner_count": 0,
+    "moderate_learner_count": 0,
+    "stable_learner_count": 0
+  },
+  "conversation_summary": {
+    "status": "not_yet_captured",
+    "questions_asked": null,
+    "answers_given": null,
+    "answer_acceptance_rate": null,
+    "improvement_after_answer": null
+  },
+  "class_wide_actions": [],
+  "small_group_actions": [],
+  "needs_human_learners": [
+    {
+      "learner_id": "thabo",
+      "display_name": "Thabo",
+      "accuracy": 0.444,
+      "attempts": 171,
+      "high_signals": 3,
+      "top_misconception": "M_SIGN_ERROR_READING_ROOT",
+      "pending_retention": 1,
+      "quits": 1,
+      "escalated_drills": [
+        {
+          "skill_id": "algebra.quadratic.solve",
+          "misconception_id": "M_SIGN_ERROR_READING_ROOT",
+          "failed_drills": 3,
+          "total_drills": 3
+        }
+      ],
+      "has_drill_escalation": true
+    }
+  ],
+  "individual_priorities": [
+    {
+      "priority_rank": 1,
+      "learner_id": "thabo",
+      "display_name": "Thabo",
+      "urgency": "needs_human",
+      "high_signals": 3,
+      "current_accuracy": 0.444,
+      "attempts": 171,
+      "top_misconception": "M_SIGN_ERROR_READING_ROOT",
+      "top_misconception_display": "flips sign reading a root from a bracket",
+      "pending_retention_checks": 1,
+      "quits_after_variants": 1,
+      "escalated_drills": [
+        {
+          "skill_id": "algebra.quadratic.solve",
+          "misconception_id": "M_SIGN_ERROR_READING_ROOT",
+          "failed_drills": 3,
+          "total_drills": 3
+        }
+      ],
+      "individual_plan_ref": "data\\plans\\thabo_plan_20261028T094501Z.json",
+      "action": "Human intervention recommended for Thabo \u2014 drill has exhausted the digital approach. Escalate to in-person tutoring for the escalated skill."
+    }
+  ],
+  "stable_learners": [],
+  "thresholds": {
+    "whole_class_learners": 5,
+    "small_group_learners": 5,
+    "small_group_cap": 200
+  }
+}

@@ -53,6 +53,12 @@
         "Match: 3p = -{a} => p = -{a}/3, and 2q = {b} => q = {b}/2.",
         "So s(t) = -{a}/3 t^3 + {b}/2 t^2.",
         "s({t_stop_disp}) = -{a}/3 ({t_stop_disp})^3 + {b}/2 ({t_stop_disp})^2 = {distance} km."
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "calculus.kinematics"
       ]
     }
   ]

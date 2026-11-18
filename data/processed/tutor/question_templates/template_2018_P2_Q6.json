@@ -40,6 +40,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "trig.graph"
       ]
     },
     {
@@ -65,6 +71,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1",
+        "6.2"
+      ],
+      "requires_skills": [
+        "trig.graph",
+        "trig.equation"
       ]
     },
     {
@@ -90,6 +104,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3"
+      ],
+      "requires_skills": [
+        "trig.graph",
+        "trig.equation"
       ]
     },
     {
@@ -110,6 +133,17 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4"
+      ],
+      "requires_skills": [
+        "trig.graph",
+        "trig.equation",
+        "trig.inequality"
       ]
     }
   ],

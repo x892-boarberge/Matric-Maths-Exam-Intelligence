@@ -1,0 +1,35 @@
+{
+  "objective_id": "TO_TRIG_MAX_ANGLE_NOT_RATIO",
+  "skill_id": "trig.maximum",
+  "trigger_misconception": "M_MAX_ANGLE_NOT_RATIO",
+  "dbe_source": {
+    "years": [
+      "2023",
+      "2024"
+    ],
+    "recommendation": "The maximum of a sin(expression) occurs when the sin part equals 1, not when x equals a number. Set the expression inside the bracket to 90 + k.360, or the sin ",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "The maximum of a sin(expression) occurs when the sin part equals 1, not when x equals a number. Set the expression inside the bracket to 90 + k.360, or the sin term equal to 1.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "Find the maximum value of sin x cos x",
+      "work": [
+        "Use the double angle: sin x cos x = 0.5 sin 2x.",
+        "Maximum of sin 2x is 1.",
+        "Maximum is 0.5."
+      ]
+    },
+    "probe": {
+      "problem": "Find the maximum of 2 cos x.",
+      "expected": "2",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_MAX_ANGLE_NOT_RATIO",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The maximum occurs when the sin (or cos) part equals 1, not when x equals a particular number."
+}

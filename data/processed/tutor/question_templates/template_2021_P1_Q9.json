@@ -45,6 +45,12 @@
       "expected_fn": "dy/dx = {five_a}x⁴ - {four_b}x³ + {c}",
       "steps": [
         "Differentiate term by term."
+      ],
+      "given_from": [
+        "9.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles"
       ]
     },
     {
@@ -57,6 +63,14 @@
       "steps": [
         "Rewrite with exponents.",
         "Differentiate."
+      ],
+      "given_from": [
+        "9.1",
+        "9.2.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     }
   ],

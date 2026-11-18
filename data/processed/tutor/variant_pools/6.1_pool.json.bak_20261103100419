@@ -1,0 +1,482 @@
+[
+  {
+    "variant_question": "x-intercept of g(x) = x + 5.",
+    "expected": "(-5 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 5",
+      "x = -5",
+      "_________________________",
+      "Final Answer: (-5 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -3.",
+    "expected": "(3 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -3",
+      "x = 3",
+      "_________________________",
+      "Final Answer: (3 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -2.",
+    "expected": "(2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -2",
+      "x = 2",
+      "_________________________",
+      "Final Answer: (2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 2.",
+    "expected": "(-2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 2",
+      "x = -2",
+      "_________________________",
+      "Final Answer: (-2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -2.",
+    "expected": "(2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -2",
+      "x = 2",
+      "_________________________",
+      "Final Answer: (2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -4.",
+    "expected": "(4 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -4",
+      "x = 4",
+      "_________________________",
+      "Final Answer: (4 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 1.",
+    "expected": "(-1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 1",
+      "x = -1",
+      "_________________________",
+      "Final Answer: (-1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 2.",
+    "expected": "(-2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 2",
+      "x = -2",
+      "_________________________",
+      "Final Answer: (-2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 2.",
+    "expected": "(-2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 2",
+      "x = -2",
+      "_________________________",
+      "Final Answer: (-2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 2.",
+    "expected": "(-2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 2",
+      "x = -2",
+      "_________________________",
+      "Final Answer: (-2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 2.",
+    "expected": "(-2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 2",
+      "x = -2",
+      "_________________________",
+      "Final Answer: (-2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 0.",
+    "expected": "(0 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 0",
+      "x = 0",
+      "_________________________",
+      "Final Answer: (0 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -5.",
+    "expected": "(5 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -5",
+      "x = 5",
+      "_________________________",
+      "Final Answer: (5 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -4.",
+    "expected": "(4 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -4",
+      "x = 4",
+      "_________________________",
+      "Final Answer: (4 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -3.",
+    "expected": "(3 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -3",
+      "x = 3",
+      "_________________________",
+      "Final Answer: (3 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 3.",
+    "expected": "(-3 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 3",
+      "x = -3",
+      "_________________________",
+      "Final Answer: (-3 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -3.",
+    "expected": "(3 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -3",
+      "x = 3",
+      "_________________________",
+      "Final Answer: (3 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 5.",
+    "expected": "(-5 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 5",
+      "x = -5",
+      "_________________________",
+      "Final Answer: (-5 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 4.",
+    "expected": "(-4 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 4",
+      "x = -4",
+      "_________________________",
+      "Final Answer: (-4 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -2.",
+    "expected": "(2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -2",
+      "x = 2",
+      "_________________________",
+      "Final Answer: (2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 1.",
+    "expected": "(-1 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 1",
+      "x = -1",
+      "_________________________",
+      "Final Answer: (-1 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 3.",
+    "expected": "(-3 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 3",
+      "x = -3",
+      "_________________________",
+      "Final Answer: (-3 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -2.",
+    "expected": "(2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -2",
+      "x = 2",
+      "_________________________",
+      "Final Answer: (2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -5.",
+    "expected": "(5 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -5",
+      "x = 5",
+      "_________________________",
+      "Final Answer: (5 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 4.",
+    "expected": "(-4 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 4",
+      "x = -4",
+      "_________________________",
+      "Final Answer: (-4 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -2.",
+    "expected": "(2 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -2",
+      "x = 2",
+      "_________________________",
+      "Final Answer: (2 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 4.",
+    "expected": "(-4 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 4",
+      "x = -4",
+      "_________________________",
+      "Final Answer: (-4 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 4.",
+    "expected": "(-4 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 4",
+      "x = -4",
+      "_________________________",
+      "Final Answer: (-4 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + 5.",
+    "expected": "(-5 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + 5",
+      "x = -5",
+      "_________________________",
+      "Final Answer: (-5 ; 0)"
+    ]
+  },
+  {
+    "variant_question": "x-intercept of g(x) = x + -5.",
+    "expected": "(5 ; 0)",
+    "demonstration": "Set y=0.",
+    "memo_marks": [
+      "1 mark x"
+    ],
+    "fast_path": "Solve for x.",
+    "fatal_error": "DBE says: Give y-int.",
+    "answer_book_layout": [
+      "0 = x + -5",
+      "x = 5",
+      "_________________________",
+      "Final Answer: (5 ; 0)"
+    ]
+  }
+]

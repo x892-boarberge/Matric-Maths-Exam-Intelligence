@@ -31,6 +31,12 @@
       "expected_fn": "C(0; {y})",
       "steps": [
         "f(0) = -1/2(0-1)^2 + 8 = 7.5"
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "functions.parabola"
       ]
     },
     {
@@ -52,6 +58,13 @@
       "steps": [
         "B is the turning point of f, so B(1; 8).",
         "B lies on g, so 8 = d/1, d = 8."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "functions.parabola"
       ]
     },
     {
@@ -82,6 +95,15 @@
       "expected_fn": "y in R, y != 0",
       "steps": [
         "g(x) = 8/x has range y != 0."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "functions.parabola",
+        "functions.hyperbola"
       ]
     },
     {
@@ -100,6 +122,16 @@
       "steps": [
         "Find where each is positive/negative.",
         "Product <= 0 where the signs are opposite or one is zero."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "requires_skills": [
+        "functions.parabola",
+        "functions.hyperbola"
       ]
     },
     {
@@ -124,6 +156,18 @@
         "Discriminant = k^2 - 64",
         "No intersection when discrim < 0: -8 < k < 8... actually check.",
         "For no intersection: k^2 < 64."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5"
+      ],
+      "requires_skills": [
+        "functions.parabola",
+        "functions.hyperbola",
+        "functions.inequality"
       ]
     },
     {
@@ -139,6 +183,19 @@
         "Find R.",
         "Substitute R into f(x) + t = g(R).",
         "Solve for t."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6"
+      ],
+      "requires_skills": [
+        "functions.parabola",
+        "functions.hyperbola",
+        "functions.inequality"
       ]
     }
   ],

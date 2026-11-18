@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -5. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(-5; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -5. The point where g meets this asymptote lies on the x-axis, so it is (-5, 0). That is the x-intercept of g. Answer: (-5; 0).",
+    "memo_marks": [
+      "1 mark for (-5; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -5",
+      "g meets it at x-axis: (-5, 0)",
+      "Answer: (-5; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -3. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(-3; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -3. The point where g meets this asymptote lies on the x-axis, so it is (-3, 0). That is the x-intercept of g. Answer: (-3; 0).",
+    "memo_marks": [
+      "1 mark for (-3; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -3",
+      "g meets it at x-axis: (-3, 0)",
+      "Answer: (-3; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -3. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(-3; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -3. The point where g meets this asymptote lies on the x-axis, so it is (-3, 0). That is the x-intercept of g. Answer: (-3; 0).",
+    "memo_marks": [
+      "1 mark for (-3; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -3",
+      "g meets it at x-axis: (-3, 0)",
+      "Answer: (-3; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -1. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(-1; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -1. The point where g meets this asymptote lies on the x-axis, so it is (-1, 0). That is the x-intercept of g. Answer: (-1; 0).",
+    "memo_marks": [
+      "1 mark for (-1; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -1",
+      "g meets it at x-axis: (-1, 0)",
+      "Answer: (-1; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = --3. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(3; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 3. The point where g meets this asymptote lies on the x-axis, so it is (3, 0). That is the x-intercept of g. Answer: (3; 0).",
+    "memo_marks": [
+      "1 mark for (3; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 3",
+      "g meets it at x-axis: (3, 0)",
+      "Answer: (3; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -2. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(-2; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -2. The point where g meets this asymptote lies on the x-axis, so it is (-2, 0). That is the x-intercept of g. Answer: (-2; 0).",
+    "memo_marks": [
+      "1 mark for (-2; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -2",
+      "g meets it at x-axis: (-2, 0)",
+      "Answer: (-2; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = --2. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(2; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 2. The point where g meets this asymptote lies on the x-axis, so it is (2, 0). That is the x-intercept of g. Answer: (2; 0).",
+    "memo_marks": [
+      "1 mark for (2; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 2",
+      "g meets it at x-axis: (2, 0)",
+      "Answer: (2; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = --2. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(2; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 2. The point where g meets this asymptote lies on the x-axis, so it is (2, 0). That is the x-intercept of g. Answer: (2; 0).",
+    "memo_marks": [
+      "1 mark for (2; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 2",
+      "g meets it at x-axis: (2, 0)",
+      "Answer: (2; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + -4) + q with vertical asymptote x = 4, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(4; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 4. The point where g meets this asymptote lies on the x-axis, so it is (4, 0). That is the x-intercept of g. Answer: (4; 0).",
+    "memo_marks": [
+      "1 mark for (4; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 4",
+      "g meets it at x-axis: (4, 0)",
+      "Answer: (4; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + 2) + q with vertical asymptote x = -2, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(-2; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -2. The point where g meets this asymptote lies on the x-axis, so it is (-2, 0). That is the x-intercept of g. Answer: (-2; 0).",
+    "memo_marks": [
+      "1 mark for (-2; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -2",
+      "g meets it at x-axis: (-2, 0)",
+      "Answer: (-2; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -4. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(-4; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -4. The point where g meets this asymptote lies on the x-axis, so it is (-4, 0). That is the x-intercept of g. Answer: (-4; 0).",
+    "memo_marks": [
+      "1 mark for (-4; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -4",
+      "g meets it at x-axis: (-4, 0)",
+      "Answer: (-4; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + 1) + q with vertical asymptote x = -1, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(-1; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -1. The point where g meets this asymptote lies on the x-axis, so it is (-1, 0). That is the x-intercept of g. Answer: (-1; 0).",
+    "memo_marks": [
+      "1 mark for (-1; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -1",
+      "g meets it at x-axis: (-1, 0)",
+      "Answer: (-1; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -4. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(-4; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -4. The point where g meets this asymptote lies on the x-axis, so it is (-4, 0). That is the x-intercept of g. Answer: (-4; 0).",
+    "memo_marks": [
+      "1 mark for (-4; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -4",
+      "g meets it at x-axis: (-4, 0)",
+      "Answer: (-4; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -1. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(-1; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -1. The point where g meets this asymptote lies on the x-axis, so it is (-1, 0). That is the x-intercept of g. Answer: (-1; 0).",
+    "memo_marks": [
+      "1 mark for (-1; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -1",
+      "g meets it at x-axis: (-1, 0)",
+      "Answer: (-1; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = --3. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(3; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 3. The point where g meets this asymptote lies on the x-axis, so it is (3, 0). That is the x-intercept of g. Answer: (3; 0).",
+    "memo_marks": [
+      "1 mark for (3; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 3",
+      "g meets it at x-axis: (3, 0)",
+      "Answer: (3; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -5. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(-5; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -5. The point where g meets this asymptote lies on the x-axis, so it is (-5, 0). That is the x-intercept of g. Answer: (-5; 0).",
+    "memo_marks": [
+      "1 mark for (-5; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -5",
+      "g meets it at x-axis: (-5, 0)",
+      "Answer: (-5; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -6. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(-6; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -6. The point where g meets this asymptote lies on the x-axis, so it is (-6, 0). That is the x-intercept of g. Answer: (-6; 0).",
+    "memo_marks": [
+      "1 mark for (-6; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -6",
+      "g meets it at x-axis: (-6, 0)",
+      "Answer: (-6; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + -3) + q with vertical asymptote x = 3, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(3; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 3. The point where g meets this asymptote lies on the x-axis, so it is (3, 0). That is the x-intercept of g. Answer: (3; 0).",
+    "memo_marks": [
+      "1 mark for (3; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 3",
+      "g meets it at x-axis: (3, 0)",
+      "Answer: (3; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = --1. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(1; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 1. The point where g meets this asymptote lies on the x-axis, so it is (1, 0). That is the x-intercept of g. Answer: (1; 0).",
+    "memo_marks": [
+      "1 mark for (1; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 1",
+      "g meets it at x-axis: (1, 0)",
+      "Answer: (1; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + 5) + q with vertical asymptote x = -5, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(-5; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -5. The point where g meets this asymptote lies on the x-axis, so it is (-5, 0). That is the x-intercept of g. Answer: (-5; 0).",
+    "memo_marks": [
+      "1 mark for (-5; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -5",
+      "g meets it at x-axis: (-5, 0)",
+      "Answer: (-5; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -6. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(-6; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -6. The point where g meets this asymptote lies on the x-axis, so it is (-6, 0). That is the x-intercept of g. Answer: (-6; 0).",
+    "memo_marks": [
+      "1 mark for (-6; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -6",
+      "g meets it at x-axis: (-6, 0)",
+      "Answer: (-6; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + -2) + q with vertical asymptote x = 2, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(2; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 2. The point where g meets this asymptote lies on the x-axis, so it is (2, 0). That is the x-intercept of g. Answer: (2; 0).",
+    "memo_marks": [
+      "1 mark for (2; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 2",
+      "g meets it at x-axis: (2, 0)",
+      "Answer: (2; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + -1) + q with vertical asymptote x = 1, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(1; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 1. The point where g meets this asymptote lies on the x-axis, so it is (1, 0). That is the x-intercept of g. Answer: (1; 0).",
+    "memo_marks": [
+      "1 mark for (1; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 1",
+      "g meets it at x-axis: (1, 0)",
+      "Answer: (1; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + 3) + q with vertical asymptote x = -3, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(-3; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -3. The point where g meets this asymptote lies on the x-axis, so it is (-3, 0). That is the x-intercept of g. Answer: (-3; 0).",
+    "memo_marks": [
+      "1 mark for (-3; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -3",
+      "g meets it at x-axis: (-3, 0)",
+      "Answer: (-3; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = --4. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(4; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 4. The point where g meets this asymptote lies on the x-axis, so it is (4, 0). That is the x-intercept of g. Answer: (4; 0).",
+    "memo_marks": [
+      "1 mark for (4; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 4",
+      "g meets it at x-axis: (4, 0)",
+      "Answer: (4; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = --1. Graph g(x) = x + c and this asymptote meet at the x-axis. Write down the coordinates of g's x-intercept.",
+    "expected": "(1; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 1. The point where g meets this asymptote lies on the x-axis, so it is (1, 0). That is the x-intercept of g. Answer: (1; 0).",
+    "memo_marks": [
+      "1 mark for (1; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 1",
+      "g meets it at x-axis: (1, 0)",
+      "Answer: (1; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = --4. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(4; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = 4. The point where g meets this asymptote lies on the x-axis, so it is (4, 0). That is the x-intercept of g. Answer: (4; 0).",
+    "memo_marks": [
+      "1 mark for (4; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = 4",
+      "g meets it at x-axis: (4, 0)",
+      "Answer: (4; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + 6) + q with vertical asymptote x = -6, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(-6; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -6. The point where g meets this asymptote lies on the x-axis, so it is (-6, 0). That is the x-intercept of g. Answer: (-6; 0).",
+    "memo_marks": [
+      "1 mark for (-6; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -6",
+      "g meets it at x-axis: (-6, 0)",
+      "Answer: (-6; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "Given f(x) = a/(x + 4) + q with vertical asymptote x = -4, and g(x) = x + c. The intersection of g with the vertical asymptote of f lies on the x-axis. Determine the x-intercept of g.",
+    "expected": "(-4; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -4. The point where g meets this asymptote lies on the x-axis, so it is (-4, 0). That is the x-intercept of g. Answer: (-4; 0).",
+    "memo_marks": [
+      "1 mark for (-4; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -4",
+      "g meets it at x-axis: (-4, 0)",
+      "Answer: (-4; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  },
+  {
+    "variant_question": "The vertical asymptote of f(x) = a/(x + p) + q is x = -2. The line g(x) = x + c intersects the vertical asymptote of f on the x-axis. Write down the coordinates of the x-intercept of g.",
+    "expected": "(-2; 0)",
+    "demonstration": "The vertical asymptote of f is x = -p = -2. The point where g meets this asymptote lies on the x-axis, so it is (-2, 0). That is the x-intercept of g. Answer: (-2; 0).",
+    "memo_marks": [
+      "1 mark for (-2; 0)"
+    ],
+    "fast_path": "Where g meets the vertical asymptote IS the x-intercept of g.",
+    "fatal_error": "DBE says: Candidates give just -p without the y-coordinate, or swap x and y. Intercepts are written as coordinates.",
+    "answer_book_layout": [
+      "Vertical asymptote: x = -2",
+      "g meets it at x-axis: (-2, 0)",
+      "Answer: (-2; 0)"
+    ],
+    "hack": "The x-intercept is where g meets the vertical asymptote. The x-value is exactly the vertical asymptote.",
+    "trap": "Coordinates, not just the number. Write the y = 0 explicitly.",
+    "presentation": "State the x-value, then the full coordinate pair.",
+    "diagram": "required",
+    "diagram_hint": "hyperbola_with_vertical_asymptote_and_line"
+  }
+]

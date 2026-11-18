@@ -52,6 +52,12 @@
           "r": "corresponding angles; DC || AB",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "9.1"
+      ],
+      "requires_skills": [
+        "geometry.proportion"
       ]
     },
     {
@@ -78,6 +84,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "9.1",
+        "9.2"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.similarity"
       ]
     }
   ],

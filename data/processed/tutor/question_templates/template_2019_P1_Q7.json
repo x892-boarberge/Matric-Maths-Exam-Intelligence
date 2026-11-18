@@ -24,6 +24,12 @@
       "steps": [
         "Rewrite sqrt(x³) = x^(3/2).",
         "Differentiate."
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles"
       ]
     },
     {
@@ -35,6 +41,14 @@
       "expected_fn": "dy/dx = 2ax",
       "steps": [
         "Differentiate with respect to x."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     },
     {
@@ -46,6 +60,15 @@
       "expected_fn": "dy/da = x² + 1",
       "steps": [
         "Differentiate with respect to a."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2",
+        "7.3.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     },
     {
@@ -61,6 +84,16 @@
         "m_tangent(2) = 1 - 3 = -2.",
         "m_perp = 1/2.",
         "y = x/2 + 7."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2",
+        "7.3.1",
+        "7.3.2"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     }
   ],

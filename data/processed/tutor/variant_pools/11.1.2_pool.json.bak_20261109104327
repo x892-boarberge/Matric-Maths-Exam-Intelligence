@@ -1,0 +1,512 @@
+[
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  },
+  {
+    "variant_question": "Probability female likes energy drinks.",
+    "expected": "Fraction",
+    "demonstration": "Read table.",
+    "memo_marks": [
+      "1 mark num",
+      "1 mark denom"
+    ],
+    "fast_path": "Direct read.",
+    "fatal_error": "DBE says: Read wrong row.",
+    "answer_book_layout": [
+      "From table: females who like energy = X",
+      "Total females = Y",
+      "_________________________",
+      "Final Answer: X/Y"
+    ]
+  }
+]

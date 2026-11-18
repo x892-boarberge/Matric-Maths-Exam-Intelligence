@@ -1,0 +1,249 @@
+"""Plan runner — reads the latest teacher plan and answers queries about it.
+
+This is the module the CLI imports. It does NOT decide what to do — it
+answers questions the CLI asks. The CLI decides.
+
+Public API:
+    load_latest_plan(learner_id)              -> dict | None
+    get_retention_check_due(learner_id)       -> dict | None   (HIGH retention_check action)
+    get_drill_for_skill(learner_id, skill_id) -> dict | None   (targeted_drill action)
+    get_all_active_actions(learner_id)        -> list[dict]
+    log_retention_result(conn, decision_id, passed, question_ids, evidence)
+    log_drill_outcome(conn, learner_id, session_id, skill_id, action_id, attempted, passed)
+
+The module is read-mostly. The only write path is log_retention_result
+and log_drill_outcome, which record outcomes back into the database so
+the next plan generation can see what happened.
+"""
+import json
+import sqlite3
+from pathlib import Path
+from datetime import datetime, timezone
+
+
+def _find_root():
+    r = Path(".").resolve()
+    for c in [r, *r.parents]:
+        if (c / "src" / "tutor").is_dir():
+            return c
+    return r
+
+
+ROOT = _find_root()
+PLANS_DIR = ROOT / "data" / "plans"
+DB = ROOT / "data" / "learner_store" / "learners.db"
+
+
+def load_latest_plan(learner_id):
+    """Return the most recent plan for this learner, or None."""
+    if not PLANS_DIR.exists():
+        return None
+    patterns = [f"{learner_id}_plan_*.json"]
+    candidates = []
+    for pat in patterns:
+        candidates.extend(PLANS_DIR.glob(pat))
+    if not candidates:
+        return None
+    # Most recently modified file wins
+    latest = max(candidates, key=lambda p: p.stat().st_mtime)
+    try:
+        return json.loads(latest.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
+def _parse_iso(s):
+    if not s:
+        return None
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def get_retention_check_due(learner_id):
+    """Return the highest-priority retention_check action if one is due,
+    or None if none are due. 'Due' means the retention_due_at timestamp
+    is now or in the past, OR the status is 'failed' (needs re-test)."""
+    plan = load_latest_plan(learner_id)
+    if not plan:
+        return None
+    now = datetime.now(timezone.utc)
+    for action in plan.get("priority_actions", []):
+        if action.get("type") != "retention_check":
+            continue
+        evidence = action.get("evidence") or {}
+        due_at = _parse_iso(evidence.get("retention_due_at"))
+        status = (evidence.get("retention_status") or "").lower()
+        if status == "failed":
+            return action  # Failed check should be re-tested immediately
+        if due_at and due_at <= now:
+            return action
+    return None
+
+
+def get_all_pending_retention_checks(learner_id):
+    """Return all retention_check actions whose due time has arrived."""
+    plan = load_latest_plan(learner_id)
+    if not plan:
+        return []
+    now = datetime.now(timezone.utc)
+    out = []
+    for action in plan.get("priority_actions", []):
+        if action.get("type") != "retention_check":
+            continue
+        evidence = action.get("evidence") or {}
+        due_at = _parse_iso(evidence.get("retention_due_at"))
+        status = (evidence.get("retention_status") or "").lower()
+        if status == "failed" or (due_at and due_at <= now):
+            out.append(action)
+    return out
+
+
+def get_drill_for_skill(learner_id, skill_id):
+    """Return the targeted_drill action for this skill if one exists."""
+    plan = load_latest_plan(learner_id)
+    if not plan:
+        return None
+    for action in plan.get("priority_actions", []):
+        if action.get("type") == "targeted_drill" and action.get("skill_id") == skill_id:
+            return action
+    return None
+
+
+def get_all_active_actions(learner_id):
+    """Return all actions from the latest plan."""
+    plan = load_latest_plan(learner_id)
+    if not plan:
+        return []
+    return plan.get("priority_actions", [])
+
+
+def format_drill_instruction_for_display(action, learner_display_name="the learner"):
+    """Render a drill action as the display lines the CLI should show.
+    Returns a list of strings. The caller decides where to print them.
+    """
+    if not action:
+        return []
+    lines = []
+    lines.append("  ── Tutor focus: " + str(action.get("display_misconception") or "targeted drill") + " ──")
+    lines.append("")
+    inst = str(action.get("instruction", "")).strip()
+    if inst:
+        for part in inst.split("\n"):
+            stripped = part.strip()
+            if stripped:
+                # Strip leading ">" or numbered prefix on re-print if present
+                lines.append("    " + stripped.lstrip("> "))
+        lines.append("")
+    lines.append("  Success criterion: " + str(action.get("success_criterion", "—")))
+    lines.append("")
+    return lines
+
+
+# ─── Write paths (recording outcomes) ──────────────────────────────────────
+
+def log_retention_result(conn, decision_id, passed, question_ids, evidence):
+    """Record the result of a retention check into mastery_decision.
+
+    This is the same function used by retention_scheduler.py, so keeping
+    the logic identical here means the CLI and the scheduler agree on
+    what 'passed' means.
+    """
+    try:
+        from src.tutor.retention_scheduler import log_retention_result as _log
+        return _log(conn, decision_id, passed, question_ids, evidence)
+    except Exception as e:
+        return None
+
+
+def log_drill_outcome(conn, learner_id, session_id, skill_id, action_id,
+                      attempted, passed, misconception_id=None,
+                      evidence_extra=None):
+    """Record a drill attempt outcome into learner_events.
+
+    Returns the event_id or None on failure.
+    """
+    import uuid
+    try:
+        event_id = "evt_" + uuid.uuid4().hex[:12]
+        notes = {
+            "plan_action_id": action_id,
+            "drill_attempted": attempted,
+            "drill_passed": passed,
+            "skill_id": skill_id,
+        }
+        if misconception_id:
+            notes["misconception_id"] = misconception_id
+        if evidence_extra:
+            notes["extra"] = evidence_extra
+        conn.execute(
+            "INSERT INTO learner_events "
+            "(event_id, learner_id, skill_id, question_id, event_type, "
+            " timestamp, notes, session_id) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+            (
+                event_id, learner_id, skill_id, None,
+                "DRILL_OUTCOME", datetime.now(timezone.utc).isoformat(),
+                json.dumps(notes), session_id,
+            ),
+        )
+        conn.commit()
+        return event_id
+    except Exception:
+        return None
+
+
+# ─── Self-test (only runs when this file is executed directly) ────────────
+
+if __name__ == "__main__":
+    import sys
+    learner = sys.argv[1] if len(sys.argv) > 1 else "thabo"
+
+    print("=" * 70)
+    print(f"PLAN RUNNER — self-test for learner={learner}")
+    print("=" * 70)
+
+    plan = load_latest_plan(learner)
+    if not plan:
+        print("  ❌ No plan found.")
+        sys.exit(1)
+
+    print(f"\n  Plan loaded:")
+    print(f"    learner:       {plan.get('display_name')}")
+    print(f"    generated_at:  {plan.get('generated_at')}")
+    print(f"    policy:        {plan.get('policy_version')}")
+    print(f"    status:        {plan.get('status')}")
+    print(f"    actions:       {len(plan.get('priority_actions', []))}")
+
+    print(f"\n  All active actions:")
+    for a in plan.get("priority_actions", []):
+        print(f"    [{a.get('priority'):6}] {a.get('type'):18} {a.get('display_skill')}")
+        if a.get("misconception_id"):
+            print(f"             misconception: {a.get('misconception_id')}")
+
+    print(f"\n  Retention check due right now:")
+    r = get_retention_check_due(learner)
+    if r:
+        print(f"    ✓ {r.get('display_skill')} — due_at {r.get('evidence', {}).get('retention_due_at')}")
+    else:
+        print(f"    (none due)")
+
+    print(f"\n  All retention checks pending:")
+    pending = get_all_pending_retention_checks(learner)
+    print(f"    {len(pending)} pending")
+
+    print(f"\n  Drill for algebra.quadratic.solve:")
+    d = get_drill_for_skill(learner, "algebra.quadratic.solve")
+    if d:
+        print(f"    ✓ Misconception: {d.get('misconception_id')}")
+        print(f"    Display lines:")
+        for line in format_drill_instruction_for_display(d):
+            print(f"      {line}")
+
+    print(f"\n  Drill for algebra.surd.solve:")
+    d = get_drill_for_skill(learner, "algebra.surd.solve")
+    print(f"    {'✓ ' + d.get('misconception_id') if d else '(none)'}")
+
+    print("\n" + "=" * 70)
+    print("✓ Self-test complete.")

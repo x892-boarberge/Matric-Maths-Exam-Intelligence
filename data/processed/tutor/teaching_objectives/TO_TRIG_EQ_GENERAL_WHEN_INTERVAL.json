@@ -1,0 +1,36 @@
+{
+  "objective_id": "TO_TRIG_EQ_GENERAL_WHEN_INTERVAL",
+  "skill_id": "trig.equation",
+  "trigger_misconception": "M_TRIG_EQ_GENERAL_WHEN_INTERVAL",
+  "dbe_source": {
+    "years": [
+      "2023",
+      "2024"
+    ],
+    "recommendation": "When the question says 'solve in the interval [0; 360]', give the specific values inside that interval only. Do not give the general solution with +k.360. Save ",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When the question says 'solve in the interval [0; 360]', give the specific values inside that interval only. Do not give the general solution with +k.360. Save the +k.360 for the general-solution questions.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "Solve for x in [0; 360]: sin x = 0.5",
+      "work": [
+        "Reference angle: 30.",
+        "Sine is positive in Q1 and Q2.",
+        "x = 30 or x = 150.",
+        "Not x = 30 + k.360."
+      ]
+    },
+    "probe": {
+      "problem": "Solve for x in [0; 360]: cos x = 0.5.",
+      "expected": "x = 60 or x = 300",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_TRIG_EQ_GENERAL_WHEN_INTERVAL",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The question asked for x in an interval, so give the specific values only. Save the + k.360 form for questions that ask for a general solution."
+}

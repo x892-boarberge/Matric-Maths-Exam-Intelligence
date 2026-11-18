@@ -1,0 +1,482 @@
+[
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for g(x) <= f(x).",
+    "expected": "Interval",
+    "demonstration": "Find intersections, test intervals.",
+    "memo_marks": [
+      "1 mark int",
+      "1 mark int"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Include asymptote.",
+    "answer_book_layout": [
+      "Intersections...",
+      "Exclude asymptote...",
+      "Final Answer: x < ... or x > ..."
+    ]
+  }
+]

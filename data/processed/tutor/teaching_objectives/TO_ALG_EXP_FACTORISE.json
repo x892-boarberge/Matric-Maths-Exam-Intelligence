@@ -1,0 +1,37 @@
+{
+  "objective_id": "TO_ALG_EXP_FACTORISE",
+  "skill_id": "algebra.exponential.solve",
+  "trigger_misconception": "M_EXP_FACTORISATION_ERROR",
+  "dbe_source": {
+    "years": [
+      "2025"
+    ],
+    "recommendation": "When you substitute k = 2^x, the equation becomes a quadratic in k. Factorise it as you would any quadratic, and be careful with the signs.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When you substitute k = 2^x, the equation becomes a quadratic in k. Factorise it as you would any quadratic, and be careful with the signs.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "Solve 2^(2x) - 9.2^x + 4 = 0",
+      "work": [
+        "Let k = 2^x. Then k^2 - 9k + 4 = 0... wait, 2^(2x) = (2^x)^2 = k^2. So 2k^2 - 9k + 4 = 0.",
+        "The two numbers multiply to 2*4 = 8 and add to -9.",
+        "Those are -8 and -1.",
+        "2k^2 - 8k - k + 4 = 0",
+        "(2k - 1)(k - 4) = 0",
+        "k = 1/2 or k = 4"
+      ]
+    },
+    "probe": {
+      "problem": "Solve 2^(2x) - 5*2^x + 4 = 0.",
+      "expected": "x = 0 or x = 2",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_EXP_FACTORISATION_ERROR",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The substitution turns the equation into a quadratic in k. Factorise carefully, watching the signs."
+}

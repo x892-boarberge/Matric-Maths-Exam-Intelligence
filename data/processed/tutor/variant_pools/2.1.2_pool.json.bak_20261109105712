@@ -1,0 +1,542 @@
+[
+  {
+    "variant_question": "Calculate T15 for 8, 4.00, 2.00 ...",
+    "expected": "T15 = 8 * (0.5)^14",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T15 = 8 * (0.5)^14",
+      "_________________________",
+      "Final Answer: T15 = 8 * (0.5)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T15 for 4, 2.00, 1.00 ...",
+    "expected": "T15 = 4 * (0.5)^14",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T15 = 4 * (0.5)^14",
+      "_________________________",
+      "Final Answer: T15 = 4 * (0.5)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T25 for 8, -4.00, 2.00 ...",
+    "expected": "T25 = 8 * (-0.5)^24",
+    "demonstration": "r = -0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.5",
+      "T25 = 8 * (-0.5)^24",
+      "_________________________",
+      "Final Answer: T25 = 8 * (-0.5)^24"
+    ]
+  },
+  {
+    "variant_question": "Calculate T15 for 4, -1.33, 0.44 ...",
+    "expected": "T15 = 4 * (-0.3333333333333333)^14",
+    "demonstration": "r = -0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "T15 = 4 * (-0.3333333333333333)^14",
+      "_________________________",
+      "Final Answer: T15 = 4 * (-0.3333333333333333)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T25 for 8, -2.67, 0.89 ...",
+    "expected": "T25 = 8 * (-0.3333333333333333)^24",
+    "demonstration": "r = -0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "T25 = 8 * (-0.3333333333333333)^24",
+      "_________________________",
+      "Final Answer: T25 = 8 * (-0.3333333333333333)^24"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 8, 4.00, 2.00 ...",
+    "expected": "T20 = 8 * (0.5)^19",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T20 = 8 * (0.5)^19",
+      "_________________________",
+      "Final Answer: T20 = 8 * (0.5)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T25 for 4, 1.33, 0.44 ...",
+    "expected": "T25 = 4 * (0.3333333333333333)^24",
+    "demonstration": "r = 0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.3333333333333333",
+      "T25 = 4 * (0.3333333333333333)^24",
+      "_________________________",
+      "Final Answer: T25 = 4 * (0.3333333333333333)^24"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 8, -2.67, 0.89 ...",
+    "expected": "T20 = 8 * (-0.3333333333333333)^19",
+    "demonstration": "r = -0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "T20 = 8 * (-0.3333333333333333)^19",
+      "_________________________",
+      "Final Answer: T20 = 8 * (-0.3333333333333333)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 4, -1.33, 0.44 ...",
+    "expected": "T20 = 4 * (-0.3333333333333333)^19",
+    "demonstration": "r = -0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "T20 = 4 * (-0.3333333333333333)^19",
+      "_________________________",
+      "Final Answer: T20 = 4 * (-0.3333333333333333)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T15 for 8, 4.00, 2.00 ...",
+    "expected": "T15 = 8 * (0.5)^14",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T15 = 8 * (0.5)^14",
+      "_________________________",
+      "Final Answer: T15 = 8 * (0.5)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T15 for 8, 4.00, 2.00 ...",
+    "expected": "T15 = 8 * (0.5)^14",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T15 = 8 * (0.5)^14",
+      "_________________________",
+      "Final Answer: T15 = 8 * (0.5)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T15 for 8, 4.00, 2.00 ...",
+    "expected": "T15 = 8 * (0.5)^14",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T15 = 8 * (0.5)^14",
+      "_________________________",
+      "Final Answer: T15 = 8 * (0.5)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T15 for 8, 4.00, 2.00 ...",
+    "expected": "T15 = 8 * (0.5)^14",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T15 = 8 * (0.5)^14",
+      "_________________________",
+      "Final Answer: T15 = 8 * (0.5)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T15 for 8, 4.00, 2.00 ...",
+    "expected": "T15 = 8 * (0.5)^14",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T15 = 8 * (0.5)^14",
+      "_________________________",
+      "Final Answer: T15 = 8 * (0.5)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 4, -1.33, 0.44 ...",
+    "expected": "T20 = 4 * (-0.3333333333333333)^19",
+    "demonstration": "r = -0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "T20 = 4 * (-0.3333333333333333)^19",
+      "_________________________",
+      "Final Answer: T20 = 4 * (-0.3333333333333333)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 4, 1.33, 0.44 ...",
+    "expected": "T20 = 4 * (0.3333333333333333)^19",
+    "demonstration": "r = 0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.3333333333333333",
+      "T20 = 4 * (0.3333333333333333)^19",
+      "_________________________",
+      "Final Answer: T20 = 4 * (0.3333333333333333)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 4, 2.00, 1.00 ...",
+    "expected": "T20 = 4 * (0.5)^19",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T20 = 4 * (0.5)^19",
+      "_________________________",
+      "Final Answer: T20 = 4 * (0.5)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 4, -2.00, 1.00 ...",
+    "expected": "T20 = 4 * (-0.5)^19",
+    "demonstration": "r = -0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.5",
+      "T20 = 4 * (-0.5)^19",
+      "_________________________",
+      "Final Answer: T20 = 4 * (-0.5)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 8, -4.00, 2.00 ...",
+    "expected": "T20 = 8 * (-0.5)^19",
+    "demonstration": "r = -0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.5",
+      "T20 = 8 * (-0.5)^19",
+      "_________________________",
+      "Final Answer: T20 = 8 * (-0.5)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 8, 4.00, 2.00 ...",
+    "expected": "T20 = 8 * (0.5)^19",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T20 = 8 * (0.5)^19",
+      "_________________________",
+      "Final Answer: T20 = 8 * (0.5)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T25 for 6, 3.00, 1.50 ...",
+    "expected": "T25 = 6 * (0.5)^24",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T25 = 6 * (0.5)^24",
+      "_________________________",
+      "Final Answer: T25 = 6 * (0.5)^24"
+    ]
+  },
+  {
+    "variant_question": "Calculate T15 for 4, 1.33, 0.44 ...",
+    "expected": "T15 = 4 * (0.3333333333333333)^14",
+    "demonstration": "r = 0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.3333333333333333",
+      "T15 = 4 * (0.3333333333333333)^14",
+      "_________________________",
+      "Final Answer: T15 = 4 * (0.3333333333333333)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 4, -1.33, 0.44 ...",
+    "expected": "T20 = 4 * (-0.3333333333333333)^19",
+    "demonstration": "r = -0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "T20 = 4 * (-0.3333333333333333)^19",
+      "_________________________",
+      "Final Answer: T20 = 4 * (-0.3333333333333333)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 4, 2.00, 1.00 ...",
+    "expected": "T20 = 4 * (0.5)^19",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T20 = 4 * (0.5)^19",
+      "_________________________",
+      "Final Answer: T20 = 4 * (0.5)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 4, -2.00, 1.00 ...",
+    "expected": "T20 = 4 * (-0.5)^19",
+    "demonstration": "r = -0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.5",
+      "T20 = 4 * (-0.5)^19",
+      "_________________________",
+      "Final Answer: T20 = 4 * (-0.5)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T25 for 4, -1.33, 0.44 ...",
+    "expected": "T25 = 4 * (-0.3333333333333333)^24",
+    "demonstration": "r = -0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "T25 = 4 * (-0.3333333333333333)^24",
+      "_________________________",
+      "Final Answer: T25 = 4 * (-0.3333333333333333)^24"
+    ]
+  },
+  {
+    "variant_question": "Calculate T15 for 8, -2.67, 0.89 ...",
+    "expected": "T15 = 8 * (-0.3333333333333333)^14",
+    "demonstration": "r = -0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "T15 = 8 * (-0.3333333333333333)^14",
+      "_________________________",
+      "Final Answer: T15 = 8 * (-0.3333333333333333)^14"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 4, -2.00, 1.00 ...",
+    "expected": "T20 = 4 * (-0.5)^19",
+    "demonstration": "r = -0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.5",
+      "T20 = 4 * (-0.5)^19",
+      "_________________________",
+      "Final Answer: T20 = 4 * (-0.5)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 6, 3.00, 1.50 ...",
+    "expected": "T20 = 6 * (0.5)^19",
+    "demonstration": "r = 0.5. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = 0.5",
+      "T20 = 6 * (0.5)^19",
+      "_________________________",
+      "Final Answer: T20 = 6 * (0.5)^19"
+    ]
+  },
+  {
+    "variant_question": "Calculate T20 for 6, -2.00, 0.67 ...",
+    "expected": "T20 = 6 * (-0.3333333333333333)^19",
+    "demonstration": "r = -0.3333333333333333. Tn = a*r^(n-1).",
+    "memo_marks": [
+      "1 mark r",
+      "1 mark sub",
+      "1 mark power"
+    ],
+    "fast_path": "GAPS rule.",
+    "fatal_error": "DBE says: Use r^n instead of r^(n-1).",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "T20 = 6 * (-0.3333333333333333)^19",
+      "_________________________",
+      "Final Answer: T20 = 6 * (-0.3333333333333333)^19"
+    ]
+  }
+]

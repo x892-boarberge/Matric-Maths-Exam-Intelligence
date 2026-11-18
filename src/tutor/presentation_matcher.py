@@ -1,12 +1,23 @@
 """
-Presentation matcher.
+Presentation matcher v3.
 
-Reads presentation_rules_v1.csv and matches the learner's working
-against presentation triggers. Returns gentle coaching notes for
-the highest-priority matches only — never blocks the main verdict.
+Behaviour-based. Two tiers.
+
+  generic - behaviour present. The DBE flags this pattern across the corpus.
+            Always fires on every occurrence.
+
+  special - behaviour present AND either:
+              (a) the memo step scheme for THIS question shows a step whose
+                  description matches the behaviour, or
+              (b) the DBE diagnostic report for this question's sub-question
+                  names this behaviour as an error candidates made.
+            Either source is sufficient. Both shown when both exist.
+
+No per-sitting suppression. Every occurrence is reported.
 
 Public:
-    check_presentation(working_lines, topic=None) -> list[PresentationNote]
+    check_presentation(working_lines, topic=None,
+                       step_result=None, dbe_matches=None) -> list[PresentationNote]
     format_note(note) -> str
 """
 from __future__ import annotations
@@ -27,25 +38,26 @@ PRIORITY_RANK = {"critical": 4, "high": 3, "medium": 2, "low": 1}
 @dataclass
 class PresentationNote:
     rule_id: str
-    category: str
-    topic: str
-    priority: str
-    advice: str
-    dbe_note: str
-    evidence: str = ""
+    behaviour: str = ""
+    dbe_pattern: str = ""
+    advice: str = ""
+    priority: str = "medium"
+    tier: str = "generic"                     # "generic" | "special"
+    penalty: int = 0                          # total marks lost
+    evidence_learner: str = ""                # what the learner wrote
+    evidence_memo: str = ""                   # the memo step the learner skipped
+    evidence_dbe: str = ""                    # the DBE diagnostic text
+    penalty_sources: List[str] = field(default_factory=list)  # ["memo","dbe"]
 
 
-# ------------------------------------------------------------------
-# Load rules
-# ------------------------------------------------------------------
+# ==================================================================
+# Rules table
+# ==================================================================
 def _load_rules() -> List[dict]:
     if not CSV_PATH.exists():
         return []
-    out = []
     with CSV_PATH.open(encoding="utf-8", newline="") as f:
-        for row in csv.DictReader(f):
-            out.append(row)
-    return out
+        return list(csv.DictReader(f))
 
 
 _RULES: Optional[List[dict]] = None
@@ -58,117 +70,350 @@ def _rules() -> List[dict]:
     return _RULES
 
 
-# ------------------------------------------------------------------
-# Rule predicates — detect presentation problems in text
-# ------------------------------------------------------------------
-# Each predicate takes the full working string and returns (fires, evidence)
+# ==================================================================
+# Behaviour predicates
+#
+# Each predicate returns the evidence line if the behaviour is present,
+# or None. Behaviour, not answer shape. Not a proxy.
+# ==================================================================
 
-def _has_multiple_equals_one_line(text: str) -> bool:
+def _find_line(text: str, pred) -> Optional[str]:
     for line in text.splitlines():
-        if line.count("=") >= 3:
-            return True
-    return False
+        if pred(line):
+            return line.strip()
+    return None
 
 
-def _has_no_blank_between_parts(text: str) -> bool:
-    # Very heuristic — no blank lines but multiple sub-parts
-    lines = [l for l in text.splitlines() if l.strip()]
-    if len(lines) < 4:
-        return False
-    # No blank lines at all
-    raw = text.splitlines()
-    blanks = sum(1 for l in raw if not l.strip())
-    return blanks == 0 and len(lines) >= 5
+def _p_answer_buried(text: str) -> Optional[str]:
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    if len(lines) < 2:
+        return None
+    last = lines[-1]
+    if "=" in last and len(last) < 40:
+        return None
+    if "=" in last or re.search(r"\bx\s*=", last):
+        return last
+    return None
 
 
-def _has_slash_fraction(text: str) -> bool:
-    # Look for a/b but not date-like
-    for m in re.finditer(r"(?<!\d)(\d+)\s*/\s*(\d+)", text):
-        n, d = int(m.group(1)), int(m.group(2))
-        if d in (2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 100):
-            if len(n) <= 3 and len(str(d)) <= 3:
-                return True
-    return False
+def _p_multi_equals(text: str) -> Optional[str]:
+    return _find_line(text, lambda l: l.count("=") >= 3)
 
 
-def _has_answer_only(text: str) -> bool:
-    # Single line, contains =, no other working lines
-    lines = [l for l in text.splitlines() if l.strip()]
-    if len(lines) != 1:
-        return False
-    return "=" in lines[0] and len(lines[0]) < 60
+def _p_crossout_symbols(text: str) -> Optional[str]:
+    if "!!!" in text or "~~" in text:
+        return "(crossing-out symbols in answer)"
+    return None
 
 
-def _has_single_root(text: str) -> bool:
-    # For quadratic — only one root mentioned
-    matches = re.findall(r"[a-z]\s*=\s*-?\d+", text, re.IGNORECASE)
-    return len(matches) == 1
+def _p_skipped_substitution_with_context(text: str, topic: Optional[str],
+                                          step_result: Optional[dict],
+                                          dbe_matches: Optional[list]) -> Optional[str]:
+    """Only fires when context confirms a substitution step was required
+    and the learner's working does not show it.
+
+    Context sources:
+      - step_result: memo shows a NOT_MATCHED step whose desc contains
+        'substitut'
+      - dbe_matches: a DBE row for this question names skipped substitution
+    """
+    if step_result is None and not dbe_matches:
+        return None
+
+    memo_requires = False
+    if step_result:
+        for step in step_result.get("steps", []):
+            if (step.get("match_status") in ("NOT_MATCHED", "UNCERTAIN")
+                    and "substitut" in (step.get("desc") or "").lower()):
+                memo_requires = True
+                break
+
+    dbe_requires = False
+    if not memo_requires and dbe_matches:
+        for row in dbe_matches:
+            txt = (row.get("error_text") or row.get("text") or "").lower()
+            if "substitut" in txt and ("did not" in txt or "without" in txt
+                                       or "skip" in txt):
+                dbe_requires = True
+                break
+
+    if not (memo_requires or dbe_requires):
+        return None
+
+    # Now check the working shows no substitution line.
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    for line in lines:
+        if "substitut" in line.lower() or "=" in line and len(line) > 30:
+            return None
+    if lines:
+        return lines[-1]
+    return None
 
 
-def _has_no_units(text: str, topic: Optional[str]) -> bool:
+def _p_missing_units(text: str, topic: Optional[str]) -> Optional[str]:
     if topic not in ("FIN", "CALC", "AGEO", "TRIG"):
-        return False
-    if re.search(r"\bcm\b|\bm\b|\bkm\b|\bR\s*\d|\bdegrees\b|°|\bm²|\bcm²|\bcm³", text):
-        return False
-    return True
+        return None
+    if re.search(r"\bcm\b|\bm\b|\bkm\b|\bR\s*\d|\bdegrees\b|deg|\u00b0|\bm\u00b2|\bcm\u00b2|\bcm\u00b3", text):
+        return None
+    for line in text.splitlines():
+        if re.search(r"=\s*-?\d+(\.\d+)?\s*$", line):
+            return line.strip()
+    return None
 
 
-def _has_no_two_decimal(text: str) -> bool:
-    # If the question asked for TWO decimal places but answer is exact
-    # (handled at call site — not detected here)
-    return False
+def _p_single_root(text: str, topic: Optional[str]) -> Optional[str]:
+    roots = re.findall(r"x\s*=\s*-?\d+(?:\.\d+)?", text)
+    if len(roots) == 1:
+        return roots[0]
+    return None
 
 
-def _has_negative_without_brackets(text: str) -> bool:
-    # "-3x" without brackets is fine; "-3(2)" without brackets around the -3 is a problem
-    # Look for patterns like = -3( or + -3 or - -2 that suggest bracketless negatives
-    return bool(re.search(r"[+\-]\s*-\s*\d", text))
+def _p_no_reject(text: str) -> Optional[str]:
+    if "sqrt" not in text.lower() and "\u221a" not in text:
+        return None
+    if "reject" in text.lower() or "extraneous" in text.lower():
+        return None
+    return "(sqrt equation solved without reject check)"
 
 
-def _has_no_reason_column(text: str, topic: Optional[str]) -> bool:
+def _p_negative_no_brackets(text: str) -> Optional[str]:
+    m = re.search(r"[+\-]\s*-\s*\d", text)
+    if m:
+        return text[max(0, m.start()-10):m.end()+10]
+    return None
+
+
+def _p_diagram_assumption(text: str) -> Optional[str]:
+    low = text.lower()
+    if "assum" in low and "because" in low:
+        return _find_line(text, lambda l: "assum" in l.lower())
+    return None
+
+
+def _p_no_reject_line(text: str, topic: Optional[str]) -> Optional[str]:
+    """Learner solved a surd equation but did not write a line
+    rejecting the extraneous root.
+
+    Source: DBE 2015, 2021, 2023.
+    """
+    if "sqrt" not in text.lower() and "\u221a" not in text:
+        return None
+    if "reject" in text.lower() or "extraneous" in text.lower() or "x \u2260" in text:
+        return None
+    lines = [l for l in text.splitlines() if l.strip()]
+    if not lines:
+        return None
+    if len(lines) >= 3:
+        return lines[-1].strip()
+    return None
+
+
+def _p_no_reason_column(text: str, topic: Optional[str]) -> Optional[str]:
     if topic != "EUCL":
-        return False
-    # If the learner's working has no reason-language and lines are short
+        return None
     reason_words = ["reason", "angle", "sides", "cyclic", "semicircle",
                     "tangent", "chord", "radius", "diameter", "opposite"]
     low = text.lower()
-    return not any(w in low for w in reason_words)
+    if not any(w in low for w in reason_words):
+        return "(no reason given for any statement)"
+    return None
 
 
-# ------------------------------------------------------------------
-# Rule registry — predicate per rule_id
-# ------------------------------------------------------------------
+def _p_no_currency(text: str, topic: Optional[str]) -> Optional[str]:
+    if topic != "FIN":
+        return None
+    if "R" in text:
+        return None
+    m = re.search(r"\d+\.\d+", text)
+    if m:
+        return m.group(0)
+    return None
+
+
+def _p_median_no_position(text: str) -> Optional[str]:
+    low = text.lower()
+    if "median" in low and "position" not in low:
+        return _find_line(text, lambda l: "median" in l.lower())
+    return None
+
+
+def _p_prob_over_one(text: str, topic: Optional[str]) -> Optional[str]:
+    if topic != "PROB":
+        return None
+    m = re.search(r"\b([2-9]\.\d+)\b", text)
+    if m:
+        return m.group(0)
+    return None
+
+
+# ==================================================================
+# Registry
+# ==================================================================
+# Rules whose behaviour is detectable from the learner's working alone.
 _RULE_PREDICATES = {
-    "PR_GEN_001": lambda t, top: _has_answer_only(t),
-    "PR_GEN_004": lambda t, top: _has_multiple_equals_one_line(t),
-    "PR_GEN_005": lambda t, top: "!!!" in t or "~~" in t,
-    "PR_GEN_009": lambda t, top: _has_answer_only(t),
-    "PR_GEN_011": lambda t, top: _has_no_units(t, top),
-    "PR_GEN_014": lambda t, top: _has_single_root(t),
-    "PR_ALG_012": lambda t, top: "sqrt" in t and "reject" not in t.lower() and "extraneous" not in t.lower(),
-    "PR_ALG_016": lambda t, top: _has_negative_without_brackets(t),
-    "PR_ALG_020": lambda t, top: False,
-    "PR_AGEO_007": lambda t, top: False,
-    "PR_DIAG_008": lambda t, top: "assum" in t.lower() and "because" in t.lower(),
-    "PR_EUCL_001": lambda t, top: _has_no_reason_column(t, top),
-    "PR_FIN_009": lambda t, top: top == "FIN" and "R" not in t and re.search(r"\d+\.\d+", t) is not None,
-    "PR_STAT_012": lambda t, top: "median" in t.lower() and "position" not in t.lower(),
-    "PR_PROB_014": lambda t, top: bool(re.search(r"\b[2-9]\.\d+\b", t)) and top == "PROB",
-    "PR_DBE_002": lambda t, top: False,
-    "PR_DBE_004": lambda t, top: _has_negative_without_brackets(t),
-    "PR_DBE_005": lambda t, top: _has_single_root(t),
-    "PR_DBE_010": lambda t, top: _has_multiple_equals_one_line(t),
+    "PR_GEN_001":   lambda t, top, sr, db: _p_answer_buried(t),
+    "PR_GEN_004":   lambda t, top, sr, db: _p_multi_equals(t),
+    "PR_GEN_005":   lambda t, top, sr, db: _p_crossout_symbols(t),
+    "PR_GEN_011":   lambda t, top, sr, db: _p_missing_units(t, top),
+    "PR_GEN_014":   lambda t, top, sr, db: _p_single_root(t, top),
+    "PR_ALG_012":   lambda t, top, sr, db: _p_no_reject(t),
+    "PR_ALG_016":   lambda t, top, sr, db: _p_negative_no_brackets(t),
+    "PR_DIAG_008":  lambda t, top, sr, db: _p_diagram_assumption(t),
+    "PR_EUCL_001":  lambda t, top, sr, db: _p_no_reason_column(t, top),
+    "PR_FIN_009":   lambda t, top, sr, db: _p_no_currency(t, top),
+    "PR_STAT_012":  lambda t, top, sr, db: _p_median_no_position(t),
+    "PR_PROB_014":  lambda t, top, sr, db: _p_prob_over_one(t, top),
+    "PR_DBE_004":   lambda t, top, sr, db: _p_negative_no_brackets(t),
+    "PR_DBE_005":   lambda t, top, sr, db: _p_single_root(t, top),
+    "PR_DBE_010":   lambda t, top, sr, db: _p_multi_equals(t),
+    "PR_GEN_009":   lambda t, top, sr, db: _p_skipped_substitution_with_context(t, top, sr, db),
+    "PR_SURD_NO_REJECT_LINE": lambda t, top, sr, db: _p_no_reject_line(t, top),
+}
+
+# Behaviour signatures — rules with the same signature detect the same
+# behaviour. Only the first (highest priority) note is kept.
+_RULE_BEHAVIOUR = {
+    "PR_GEN_014":   "single_root_missing",
+    "PR_DBE_005":   "single_root_missing",     # alias
+    "PR_GEN_004":   "multi_equals_one_line",
+    "PR_DBE_010":   "multi_equals_one_line",   # alias
+    "PR_ALG_016":   "negative_no_brackets",
+    "PR_DBE_004":   "negative_no_brackets",    # alias
+    "PR_GEN_001":   "answer_buried",
+    "PR_GEN_009":   "skipped_substitution",
+    "PR_GEN_011":   "missing_units",
+    "PR_GEN_005":   "crossout_symbols",
+    "PR_ALG_012":   "no_reject_check",
+    "PR_DIAG_008":  "diagram_assumption",
+    "PR_EUCL_001":  "no_reason_column",
+    "PR_FIN_009":   "no_currency",
+    "PR_STAT_012":  "median_no_position",
+    "PR_PROB_014":  "prob_over_one",
 }
 
 
-# ------------------------------------------------------------------
-# Main check
-# ------------------------------------------------------------------
-def check_presentation(working_lines, topic: Optional[str] = None,
-                       max_notes: int = 2) -> List[PresentationNote]:
+# ==================================================================
+# Special-tier detection — source 1: memo step scheme
+# ==================================================================
+_RULE_TO_STEP_KEYWORDS = {
+    "PR_GEN_009":  ["substitut"],
+    "PR_ALG_012":  ["reject", "extraneous"],
+    "PR_GEN_014":  ["root"],
+    "PR_DBE_005":  ["root"],
+    "PR_ALG_016":  ["simplif", "sign"],
+    "PR_DBE_004":  ["simplif", "sign"],
+    "PR_FIN_009":  ["answer", "amount"],
+    "PR_STAT_012": ["median", "position"],
+    "PR_GEN_001":  ["answer", "final"],
+    "PR_GEN_004":  ["simplif"],
+    "PR_EUCL_001": ["reason"],
+    "PR_DIAG_008": ["reason", "given"],
+    "PR_PROB_014": ["probab"],
+}
+
+
+def _penalty_from_memo(rule_id: str, step_result: Optional[dict]):
+    """Return (marks_lost, memo_evidence_text). 0, '' if no penalty."""
+    if not step_result:
+        return 0, ""
+    keywords = _RULE_TO_STEP_KEYWORDS.get(rule_id, [])
+    if not keywords:
+        return 0, ""
+    lost = 0
+    evidence = ""
+    for step in step_result.get("steps", []):
+        status = step.get("match_status")
+        if status not in ("NOT_MATCHED", "UNCERTAIN"):
+            continue
+        desc = (step.get("desc") or "").lower()
+        if any(kw in desc for kw in keywords):
+            lost += int(step.get("marks", 1))
+            if not evidence:
+                evidence = step.get("desc", "")
+    return lost, evidence
+
+
+# ==================================================================
+# Special-tier detection — source 2: DBE diagnostic report
+#
+# Keywords that, if they appear in the DBE error text for this
+# question's sub-question, indicate the DBE flagged the behaviour
+# this rule names. Refined in Phase 2.3b.
+# ==================================================================
+_RULE_TO_DBE_KEYWORDS = {
+    "PR_GEN_009":  ["did not substitut", "without substitut", "did not write down the formula",
+                    "did not show the substitution", "skipped the substitution"],
+    "PR_GEN_014":  ["only one root", "did not give both", "lost the second root",
+                    "second root", "did not give the other root"],
+    "PR_DBE_005":  ["only one root", "did not give both", "lost the second root"],
+    "PR_GEN_001":  ["final answer", "answer not clearly", "answer was not written"],
+    "PR_GEN_004":  ["multiple steps on one line", "combined steps"],
+    "PR_ALG_012":  ["did not reject", "extraneous", "did not check"],
+    "PR_ALG_016":  ["did not use brackets", "bracket", "sign error", "incorrect sign"],
+    "PR_DBE_004":  ["did not use brackets", "bracket", "sign error"],
+    "PR_DIAG_008": ["assumed", "from the diagram", "without proof"],
+    "PR_EUCL_001": ["no reason", "did not give reason", "without reason"],
+    "PR_FIN_009":  ["did not give units", "no units", "without the rand"],
+    "PR_STAT_012": ["did not state the position", "position of the median"],
+    "PR_PROB_014": ["greater than one", "impossible probability"],
+    "PR_GEN_011":  ["did not give units", "no units"],
+}
+
+
+def _penalty_from_dbe(rule_id: str, dbe_matches: Optional[list]):
+    """Return (marks_flag, dbe_evidence_text).
+
+    We do not know the mark count from DBE text; the behaviour being
+    named at all means it cost a mark in at least one year. Return a
+    nominal 1 and the matching text.
     """
-    Match the learner's working against presentation rules.
-    Returns up to max_notes notes, highest priority first.
+    if not dbe_matches:
+        return 0, ""
+    keywords = _RULE_TO_DBE_KEYWORDS.get(rule_id, [])
+    if not keywords:
+        return 0, ""
+    for row in dbe_matches:
+        text = (row.get("error_text") or row.get("text") or "").lower()
+        if not text:
+            continue
+        for kw in keywords:
+            if kw.lower() in text:
+                return 1, (row.get("error_text") or row.get("text") or "")[:200]
+    return 0, ""
+
+
+def _check_penalty(rule_id: str,
+                   step_result: Optional[dict],
+                   dbe_matches: Optional[list]):
+    """Combine both sources. Either is sufficient. Both shown when both fire."""
+    memo_marks, memo_evidence = _penalty_from_memo(rule_id, step_result)
+    dbe_marks, dbe_evidence = _penalty_from_dbe(rule_id, dbe_matches)
+
+    sources = []
+    if memo_marks > 0:
+        sources.append("memo")
+    if dbe_marks > 0:
+        sources.append("dbe")
+
+    if not sources:
+        return 0, "", "", []
+
+    # Penalty = memo marks if present, else a nominal 1 from DBE.
+    penalty = memo_marks if memo_marks > 0 else dbe_marks
+    return penalty, memo_evidence, dbe_evidence, sources
+
+
+# ==================================================================
+# Main check
+# ==================================================================
+def check_presentation(working_lines, topic=None,
+                       step_result=None, dbe_matches=None,
+                       max_notes=None):
+    """
+    Return every presentation note whose behaviour is present.
+
+    max_notes is accepted for backward compatibility but ignored. All
+    matching notes are returned. No suppression.
     """
     if isinstance(working_lines, list):
         text = "\n".join(str(l) for l in working_lines)
@@ -178,72 +423,111 @@ def check_presentation(working_lines, topic: Optional[str] = None,
     if not text.strip():
         return []
 
-    matched: List[PresentationNote] = []
+    notes: List[PresentationNote] = []
+    seen_rule_ids = set()
+    seen_behaviours = set()
 
     for rule in _rules():
-        rid = rule.get("rule_id", "")
+        rid = (rule.get("rule_id") or "").strip()
         pred = _RULE_PREDICATES.get(rid)
         if pred is None:
             continue
-        try:
-            if pred(text, topic):
-                matched.append(PresentationNote(
-                    rule_id=rid,
-                    category=rule.get("category", ""),
-                    topic=rule.get("topic", ""),
-                    priority=rule.get("priority", "medium"),
-                    advice=rule.get("advice", ""),
-                    dbe_note=rule.get("dbe_note", ""),
-                    evidence="",
-                ))
-        except Exception:
+        if rid in seen_rule_ids:
             continue
 
-    # Also try topic-specific rules with generic predicates
-    for rule in _rules():
-        if rule.get("topic") not in (topic, "all"):
+        # Behaviour-level dedup: if another rule already produced a note
+        # for the same behaviour, skip this one.
+        behaviour_key = _RULE_BEHAVIOUR.get(rid, rid)
+        if behaviour_key in seen_behaviours:
             continue
-        rid = rule.get("rule_id", "")
-        if rid in _RULE_PREDICATES:
-            continue  # already handled
-        # For unhandled topic rules, check trigger-keyword overlap with working text
+
+        try:
+            evidence = pred(text, topic, step_result, dbe_matches)
+        except Exception:
+            evidence = None
+        if evidence is None:
+            continue
+        seen_rule_ids.add(rid)
+        seen_behaviours.add(behaviour_key)
+
+        penalty, memo_ev, dbe_ev, sources = _check_penalty(
+            rid, step_result, dbe_matches
+        )
+        notes.append(PresentationNote(
+            rule_id=rid,
+            behaviour=(rule.get("advice") or "").strip(),
+            dbe_pattern=(rule.get("dbe_note") or "").strip(),
+            advice=(rule.get("advice") or "").strip(),
+            priority=(rule.get("priority") or "medium").strip(),
+            tier="special" if penalty > 0 else "generic",
+            penalty=penalty,
+            evidence_learner=str(evidence)[:140],
+            evidence_memo=memo_ev,
+            evidence_dbe=dbe_ev,
+            penalty_sources=sources,
+        ))
+
+    # Unwired rules — keyword-overlap fallback. Always generic.
+    for rule in _rules():
+        rid = (rule.get("rule_id") or "").strip()
+        if rid in _RULE_PREDICATES or rid in seen_rule_ids:
+            continue
+        rule_topic = rule.get("topic")
+        if rule_topic not in (topic, "all", "", None):
+            continue
         trig = (rule.get("trigger") or "").lower()
-        # Simple keyword overlap: 2+ words from trigger appear in working
         words = [w for w in re.findall(r"[a-z]{4,}", trig) if len(w) > 3]
+        if not words:
+            continue
         low = text.lower()
         hits = sum(1 for w in words if w in low)
-        if hits >= 3:
-            matched.append(PresentationNote(
-                rule_id=rid,
-                category=rule.get("category", ""),
-                topic=rule.get("topic", ""),
-                priority=rule.get("priority", "medium"),
-                advice=rule.get("advice", ""),
-                dbe_note=rule.get("dbe_note", ""),
-            ))
-
-    # Sort by priority, deduplicate
-    matched.sort(key=lambda n: -PRIORITY_RANK.get(n.priority, 0))
-    seen = set()
-    out = []
-    for n in matched:
-        if n.rule_id in seen:
+        if hits < 3:
             continue
-        seen.add(n.rule_id)
-        out.append(n)
-        if len(out) >= max_notes:
-            break
-    return out
+        seen_rule_ids.add(rid)
+        notes.append(PresentationNote(
+            rule_id=rid,
+            behaviour=(rule.get("advice") or "").strip(),
+            dbe_pattern=(rule.get("dbe_note") or "").strip(),
+            advice=(rule.get("advice") or "").strip(),
+            priority=(rule.get("priority") or "medium").strip(),
+            tier="generic",
+        ))
+
+    notes.sort(key=lambda n: (
+        -1 if n.tier == "special" else 0,
+        -PRIORITY_RANK.get(n.priority, 0),
+    ))
+    return notes
 
 
+# ==================================================================
+# Rendering
+# ==================================================================
 def format_note(note: PresentationNote) -> str:
-    """Render a single presentation note warmly."""
     lines = []
-    lines.append("")
-    lines.append("  ~ Presentation note ~")
-    if note.dbe_note:
-        lines.append(f"  {note.dbe_note}")
-    if note.advice:
-        lines.append(f"  Rule: {note.advice}")
-    lines.append(f"  ({note.rule_id} | priority: {note.priority})")
+    if note.tier == "special":
+        lines.append("")
+        lines.append("  \u26a0 Mark lost \u2014 " +
+                     (note.behaviour or "step skipped"))
+        sources = set(note.penalty_sources or [])
+        if "memo" in sources and note.penalty:
+            word = "mark" if note.penalty == 1 else "marks"
+            lines.append(f"  The memo awarded {note.penalty} {word} for this step.")
+        elif "dbe" in sources:
+            lines.append("  The DBE diagnostic report flagged this behaviour.")
+        if note.evidence_memo:
+            lines.append(f"  Skipped step: {note.evidence_memo}")
+        if note.evidence_learner:
+            lines.append(f"  You wrote: {note.evidence_learner}")
+        if "dbe" in sources and note.evidence_dbe:
+            lines.append(f"  DBE: \"{note.evidence_dbe.strip()}\"")
+        lines.append(f"  ({note.rule_id})")
+    else:
+        lines.append("")
+        lines.append("  ~ Presentation note ~")
+        if note.dbe_pattern:
+            lines.append(f"  {note.dbe_pattern}")
+        if note.advice:
+            lines.append(f"  Rule: {note.advice}")
+        lines.append(f"  ({note.rule_id} | priority: {note.priority})")
     return "\n".join(lines)

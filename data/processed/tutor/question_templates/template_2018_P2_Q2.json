@@ -30,6 +30,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1"
+      ],
+      "requires_skills": [
+        "stats.scatter"
       ]
     },
     {
@@ -45,6 +51,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2.1"
+      ],
+      "requires_skills": [
+        "stats.scatter",
+        "stats.correlation"
       ]
     },
     {
@@ -60,6 +74,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2.1",
+        "2.2.2"
+      ],
+      "requires_skills": [
+        "stats.scatter",
+        "stats.correlation"
       ]
     },
     {
@@ -75,6 +98,17 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2.1",
+        "2.2.2",
+        "2.3"
+      ],
+      "requires_skills": [
+        "stats.scatter",
+        "stats.correlation",
+        "stats.interpret"
       ]
     }
   ],

@@ -1,0 +1,692 @@
+[
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 6) = 1/sqrt(x)",
+    "expected": "x = 0.1111",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+6) = y. y² - y - 6 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 6) = y",
+      "y + 6 = y²",
+      "y² - y - 6 = 0",
+      "y = 3.00",
+      "1/√x = 3.00",
+      "Final Answer: x = 0.1111"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 6) = 1/sqrt(x)",
+    "expected": "x = 0.1111",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+6) = y. y² - y - 6 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 6) = y",
+      "y + 6 = y²",
+      "y² - y - 6 = 0",
+      "y = 3.00",
+      "1/√x = 3.00",
+      "Final Answer: x = 0.1111"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 6) = 1/sqrt(x)",
+    "expected": "x = 0.1111",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+6) = y. y² - y - 6 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 6) = y",
+      "y + 6 = y²",
+      "y² - y - 6 = 0",
+      "y = 3.00",
+      "1/√x = 3.00",
+      "Final Answer: x = 0.1111"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 6) = 1/sqrt(x)",
+    "expected": "x = 0.1111",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+6) = y. y² - y - 6 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 6) = y",
+      "y + 6 = y²",
+      "y² - y - 6 = 0",
+      "y = 3.00",
+      "1/√x = 3.00",
+      "Final Answer: x = 0.1111"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 6) = 1/sqrt(x)",
+    "expected": "x = 0.1111",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+6) = y. y² - y - 6 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 6) = y",
+      "y + 6 = y²",
+      "y² - y - 6 = 0",
+      "y = 3.00",
+      "1/√x = 3.00",
+      "Final Answer: x = 0.1111"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 6) = 1/sqrt(x)",
+    "expected": "x = 0.1111",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+6) = y. y² - y - 6 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 6) = y",
+      "y + 6 = y²",
+      "y² - y - 6 = 0",
+      "y = 3.00",
+      "1/√x = 3.00",
+      "Final Answer: x = 0.1111"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 6) = 1/sqrt(x)",
+    "expected": "x = 0.1111",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+6) = y. y² - y - 6 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 6) = y",
+      "y + 6 = y²",
+      "y² - y - 6 = 0",
+      "y = 3.00",
+      "1/√x = 3.00",
+      "Final Answer: x = 0.1111"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 6) = 1/sqrt(x)",
+    "expected": "x = 0.1111",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+6) = y. y² - y - 6 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 6) = y",
+      "y + 6 = y²",
+      "y² - y - 6 = 0",
+      "y = 3.00",
+      "1/√x = 3.00",
+      "Final Answer: x = 0.1111"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 6) = 1/sqrt(x)",
+    "expected": "x = 0.1111",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+6) = y. y² - y - 6 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 6) = y",
+      "y + 6 = y²",
+      "y² - y - 6 = 0",
+      "y = 3.00",
+      "1/√x = 3.00",
+      "Final Answer: x = 0.1111"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve sqrt(1/sqrt(x) + 2) = 1/sqrt(x)",
+    "expected": "x = 0.2500",
+    "demonstration": "Let y = 1/sqrt(x). sqrt(y+2) = y. y² - y - 2 = 0.",
+    "memo_marks": [
+      "1 mark substitution",
+      "1 mark squaring",
+      "1 mark reject"
+    ],
+    "fast_path": "Let y = 1/sqrt(x).",
+    "fatal_error": "DBE says: Forget to reject negative root.",
+    "answer_book_layout": [
+      "Let y = 1/√x",
+      "√(y + 2) = y",
+      "y + 2 = y²",
+      "y² - y - 2 = 0",
+      "y = 2.00",
+      "1/√x = 2.00",
+      "Final Answer: x = 0.2500"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

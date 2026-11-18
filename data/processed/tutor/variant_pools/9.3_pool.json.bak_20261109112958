@@ -1,0 +1,692 @@
+[
+  {
+    "variant_question": "Given f(x) = x^3 - 8x^2 + 5x + 14, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-1 < x < 2 or 8/3 < x < 7",
+    "demonstration": "f(x) = 0 at x = -1, 2, 7.\nf''(x) = 6x + -16 = 0 at x = 8/3.\nSign chart: f and f'' have opposite signs on: -1 < x < 2 or 8/3 < x < 7.",
+    "memo_marks": [
+      "1 mark for x-intercepts -1, 2, 7",
+      "1 mark for f'' zero at x = 8/3",
+      "1 mark for sign analysis",
+      "1 mark for -1 < x < 2 or 8/3 < x < 7"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -1, 2, 7",
+      "f''(x) = 0 at 8/3",
+      "Opposite signs: -1 < x < 2 or 8/3 < x < 7"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 - 8x + 12, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-2 < x < 1 or 5/3 < x < 6",
+    "demonstration": "f(x) = 0 at x = -2, 1, 6.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -2 < x < 1 or 5/3 < x < 6.",
+    "memo_marks": [
+      "1 mark for x-intercepts -2, 1, 6",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -2 < x < 1 or 5/3 < x < 6"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -2, 1, 6",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -2 < x < 1 or 5/3 < x < 6"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 10x^2 + 13x + 24, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-1 < x < 3 or 10/3 < x < 8",
+    "demonstration": "f(x) = 0 at x = -1, 3, 8.\nf''(x) = 6x + -20 = 0 at x = 10/3.\nSign chart: f and f'' have opposite signs on: -1 < x < 3 or 10/3 < x < 8.",
+    "memo_marks": [
+      "1 mark for x-intercepts -1, 3, 8",
+      "1 mark for f'' zero at x = 10/3",
+      "1 mark for sign analysis",
+      "1 mark for -1 < x < 3 or 10/3 < x < 8"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -1, 3, 8",
+      "f''(x) = 0 at 10/3",
+      "Opposite signs: -1 < x < 3 or 10/3 < x < 8"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 4x^2 - 21x, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-3 < x < 0 or 4/3 < x < 7",
+    "demonstration": "f(x) = 0 at x = -3, 0, 7.\nf''(x) = 6x + -8 = 0 at x = 4/3.\nSign chart: f and f'' have opposite signs on: -3 < x < 0 or 4/3 < x < 7.",
+    "memo_marks": [
+      "1 mark for x-intercepts -3, 0, 7",
+      "1 mark for f'' zero at x = 4/3",
+      "1 mark for sign analysis",
+      "1 mark for -3 < x < 0 or 4/3 < x < 7"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -3, 0, 7",
+      "f''(x) = 0 at 4/3",
+      "Opposite signs: -3 < x < 0 or 4/3 < x < 7"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 - 4x + 20, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-2 < x < 5/3 or 2 < x < 5",
+    "demonstration": "f(x) = 0 at x = -2, 2, 5.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -2 < x < 5/3 or 2 < x < 5.",
+    "memo_marks": [
+      "1 mark for x-intercepts -2, 2, 5",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -2 < x < 5/3 or 2 < x < 5"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -2, 2, 5",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -2 < x < 5/3 or 2 < x < 5"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 11x^2 + 24x, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "0 < x < 3 or 11/3 < x < 8",
+    "demonstration": "f(x) = 0 at x = 0, 3, 8.\nf''(x) = 6x + -22 = 0 at x = 11/3.\nSign chart: f and f'' have opposite signs on: 0 < x < 3 or 11/3 < x < 8.",
+    "memo_marks": [
+      "1 mark for x-intercepts 0, 3, 8",
+      "1 mark for f'' zero at x = 11/3",
+      "1 mark for sign analysis",
+      "1 mark for 0 < x < 3 or 11/3 < x < 8"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at 0, 3, 8",
+      "f''(x) = 0 at 11/3",
+      "Opposite signs: 0 < x < 3 or 11/3 < x < 8"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 - 1x + 5, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-1 < x < 1 or 5/3 < x < 5",
+    "demonstration": "f(x) = 0 at x = -1, 1, 5.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -1 < x < 1 or 5/3 < x < 5.",
+    "memo_marks": [
+      "1 mark for x-intercepts -1, 1, 5",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -1 < x < 1 or 5/3 < x < 5"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -1, 1, 5",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -1 < x < 1 or 5/3 < x < 5"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 8x^2 + 1x + 42, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-2 < x < 8/3 or 3 < x < 7",
+    "demonstration": "f(x) = 0 at x = -2, 3, 7.\nf''(x) = 6x + -16 = 0 at x = 8/3.\nSign chart: f and f'' have opposite signs on: -2 < x < 8/3 or 3 < x < 7.",
+    "memo_marks": [
+      "1 mark for x-intercepts -2, 3, 7",
+      "1 mark for f'' zero at x = 8/3",
+      "1 mark for sign analysis",
+      "1 mark for -2 < x < 8/3 or 3 < x < 7"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -2, 3, 7",
+      "f''(x) = 0 at 8/3",
+      "Opposite signs: -2 < x < 8/3 or 3 < x < 7"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 4x^2 - 15x + 18, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-3 < x < 1 or 4/3 < x < 6",
+    "demonstration": "f(x) = 0 at x = -3, 1, 6.\nf''(x) = 6x + -8 = 0 at x = 4/3.\nSign chart: f and f'' have opposite signs on: -3 < x < 1 or 4/3 < x < 6.",
+    "memo_marks": [
+      "1 mark for x-intercepts -3, 1, 6",
+      "1 mark for f'' zero at x = 4/3",
+      "1 mark for sign analysis",
+      "1 mark for -3 < x < 1 or 4/3 < x < 6"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -3, 1, 6",
+      "f''(x) = 0 at 4/3",
+      "Opposite signs: -3 < x < 1 or 4/3 < x < 6"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 1x^2 - 26x - 24, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-4 < x < -1 or 1/3 < x < 6",
+    "demonstration": "f(x) = 0 at x = -4, -1, 6.\nf''(x) = 6x + -2 = 0 at x = 1/3.\nSign chart: f and f'' have opposite signs on: -4 < x < -1 or 1/3 < x < 6.",
+    "memo_marks": [
+      "1 mark for x-intercepts -4, -1, 6",
+      "1 mark for f'' zero at x = 1/3",
+      "1 mark for sign analysis",
+      "1 mark for -4 < x < -1 or 1/3 < x < 6"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -4, -1, 6",
+      "f''(x) = 0 at 1/3",
+      "Opposite signs: -4 < x < -1 or 1/3 < x < 6"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 + 2x + 8, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-1 < x < 5/3 or 2 < x < 4",
+    "demonstration": "f(x) = 0 at x = -1, 2, 4.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -1 < x < 5/3 or 2 < x < 4.",
+    "memo_marks": [
+      "1 mark for x-intercepts -1, 2, 4",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -1 < x < 5/3 or 2 < x < 4"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -1, 2, 4",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -1 < x < 5/3 or 2 < x < 4"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 1x^2 - 6x, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-2 < x < 0 or 1/3 < x < 3",
+    "demonstration": "f(x) = 0 at x = -2, 0, 3.\nf''(x) = 6x + -2 = 0 at x = 1/3.\nSign chart: f and f'' have opposite signs on: -2 < x < 0 or 1/3 < x < 3.",
+    "memo_marks": [
+      "1 mark for x-intercepts -2, 0, 3",
+      "1 mark for f'' zero at x = 1/3",
+      "1 mark for sign analysis",
+      "1 mark for -2 < x < 0 or 1/3 < x < 3"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -2, 0, 3",
+      "f''(x) = 0 at 1/3",
+      "Opposite signs: -2 < x < 0 or 1/3 < x < 3"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 - 12x + 36, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-3 < x < 5/3 or 2 < x < 6",
+    "demonstration": "f(x) = 0 at x = -3, 2, 6.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -3 < x < 5/3 or 2 < x < 6.",
+    "memo_marks": [
+      "1 mark for x-intercepts -3, 2, 6",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -3 < x < 5/3 or 2 < x < 6"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -3, 2, 6",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -3 < x < 5/3 or 2 < x < 6"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 9x^2 + 14x, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "0 < x < 2 or 3 < x < 7",
+    "demonstration": "f(x) = 0 at x = 0, 2, 7.\nf''(x) = 6x + -18 = 0 at x = 3.\nSign chart: f and f'' have opposite signs on: 0 < x < 2 or 3 < x < 7.",
+    "memo_marks": [
+      "1 mark for x-intercepts 0, 2, 7",
+      "1 mark for f'' zero at x = 3",
+      "1 mark for sign analysis",
+      "1 mark for 0 < x < 2 or 3 < x < 7"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at 0, 2, 7",
+      "f''(x) = 0 at 3",
+      "Opposite signs: 0 < x < 2 or 3 < x < 7"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 11x^2 + 23x + 35, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-1 < x < 11/3 or 5 < x < 7",
+    "demonstration": "f(x) = 0 at x = -1, 5, 7.\nf''(x) = 6x + -22 = 0 at x = 11/3.\nSign chart: f and f'' have opposite signs on: -1 < x < 11/3 or 5 < x < 7.",
+    "memo_marks": [
+      "1 mark for x-intercepts -1, 5, 7",
+      "1 mark for f'' zero at x = 11/3",
+      "1 mark for sign analysis",
+      "1 mark for -1 < x < 11/3 or 5 < x < 7"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -1, 5, 7",
+      "f''(x) = 0 at 11/3",
+      "Opposite signs: -1 < x < 11/3 or 5 < x < 7"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 13x^2 + 36x, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "0 < x < 4 or 13/3 < x < 9",
+    "demonstration": "f(x) = 0 at x = 0, 4, 9.\nf''(x) = 6x + -26 = 0 at x = 13/3.\nSign chart: f and f'' have opposite signs on: 0 < x < 4 or 13/3 < x < 9.",
+    "memo_marks": [
+      "1 mark for x-intercepts 0, 4, 9",
+      "1 mark for f'' zero at x = 13/3",
+      "1 mark for sign analysis",
+      "1 mark for 0 < x < 4 or 13/3 < x < 9"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at 0, 4, 9",
+      "f''(x) = 0 at 13/3",
+      "Opposite signs: 0 < x < 4 or 13/3 < x < 9"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 6x^2 - 9x + 54, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-3 < x < 2 or 3 < x < 6",
+    "demonstration": "f(x) = 0 at x = -3, 3, 6.\nf''(x) = 6x + -12 = 0 at x = 2.\nSign chart: f and f'' have opposite signs on: -3 < x < 2 or 3 < x < 6.",
+    "memo_marks": [
+      "1 mark for x-intercepts -3, 3, 6",
+      "1 mark for f'' zero at x = 2",
+      "1 mark for sign analysis",
+      "1 mark for -3 < x < 2 or 3 < x < 6"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -3, 3, 6",
+      "f''(x) = 0 at 2",
+      "Opposite signs: -3 < x < 2 or 3 < x < 6"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 8x^2 + 5x + 14, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-1 < x < 2 or 8/3 < x < 7",
+    "demonstration": "f(x) = 0 at x = -1, 2, 7.\nf''(x) = 6x + -16 = 0 at x = 8/3.\nSign chart: f and f'' have opposite signs on: -1 < x < 2 or 8/3 < x < 7.",
+    "memo_marks": [
+      "1 mark for x-intercepts -1, 2, 7",
+      "1 mark for f'' zero at x = 8/3",
+      "1 mark for sign analysis",
+      "1 mark for -1 < x < 2 or 8/3 < x < 7"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -1, 2, 7",
+      "f''(x) = 0 at 8/3",
+      "Opposite signs: -1 < x < 2 or 8/3 < x < 7"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 - 8x + 12, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-2 < x < 1 or 5/3 < x < 6",
+    "demonstration": "f(x) = 0 at x = -2, 1, 6.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -2 < x < 1 or 5/3 < x < 6.",
+    "memo_marks": [
+      "1 mark for x-intercepts -2, 1, 6",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -2 < x < 1 or 5/3 < x < 6"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -2, 1, 6",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -2 < x < 1 or 5/3 < x < 6"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 10x^2 + 13x + 24, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-1 < x < 3 or 10/3 < x < 8",
+    "demonstration": "f(x) = 0 at x = -1, 3, 8.\nf''(x) = 6x + -20 = 0 at x = 10/3.\nSign chart: f and f'' have opposite signs on: -1 < x < 3 or 10/3 < x < 8.",
+    "memo_marks": [
+      "1 mark for x-intercepts -1, 3, 8",
+      "1 mark for f'' zero at x = 10/3",
+      "1 mark for sign analysis",
+      "1 mark for -1 < x < 3 or 10/3 < x < 8"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -1, 3, 8",
+      "f''(x) = 0 at 10/3",
+      "Opposite signs: -1 < x < 3 or 10/3 < x < 8"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 4x^2 - 21x, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-3 < x < 0 or 4/3 < x < 7",
+    "demonstration": "f(x) = 0 at x = -3, 0, 7.\nf''(x) = 6x + -8 = 0 at x = 4/3.\nSign chart: f and f'' have opposite signs on: -3 < x < 0 or 4/3 < x < 7.",
+    "memo_marks": [
+      "1 mark for x-intercepts -3, 0, 7",
+      "1 mark for f'' zero at x = 4/3",
+      "1 mark for sign analysis",
+      "1 mark for -3 < x < 0 or 4/3 < x < 7"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -3, 0, 7",
+      "f''(x) = 0 at 4/3",
+      "Opposite signs: -3 < x < 0 or 4/3 < x < 7"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 - 4x + 20, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-2 < x < 5/3 or 2 < x < 5",
+    "demonstration": "f(x) = 0 at x = -2, 2, 5.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -2 < x < 5/3 or 2 < x < 5.",
+    "memo_marks": [
+      "1 mark for x-intercepts -2, 2, 5",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -2 < x < 5/3 or 2 < x < 5"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -2, 2, 5",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -2 < x < 5/3 or 2 < x < 5"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 11x^2 + 24x, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "0 < x < 3 or 11/3 < x < 8",
+    "demonstration": "f(x) = 0 at x = 0, 3, 8.\nf''(x) = 6x + -22 = 0 at x = 11/3.\nSign chart: f and f'' have opposite signs on: 0 < x < 3 or 11/3 < x < 8.",
+    "memo_marks": [
+      "1 mark for x-intercepts 0, 3, 8",
+      "1 mark for f'' zero at x = 11/3",
+      "1 mark for sign analysis",
+      "1 mark for 0 < x < 3 or 11/3 < x < 8"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at 0, 3, 8",
+      "f''(x) = 0 at 11/3",
+      "Opposite signs: 0 < x < 3 or 11/3 < x < 8"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 - 1x + 5, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-1 < x < 1 or 5/3 < x < 5",
+    "demonstration": "f(x) = 0 at x = -1, 1, 5.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -1 < x < 1 or 5/3 < x < 5.",
+    "memo_marks": [
+      "1 mark for x-intercepts -1, 1, 5",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -1 < x < 1 or 5/3 < x < 5"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -1, 1, 5",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -1 < x < 1 or 5/3 < x < 5"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 8x^2 + 1x + 42, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-2 < x < 8/3 or 3 < x < 7",
+    "demonstration": "f(x) = 0 at x = -2, 3, 7.\nf''(x) = 6x + -16 = 0 at x = 8/3.\nSign chart: f and f'' have opposite signs on: -2 < x < 8/3 or 3 < x < 7.",
+    "memo_marks": [
+      "1 mark for x-intercepts -2, 3, 7",
+      "1 mark for f'' zero at x = 8/3",
+      "1 mark for sign analysis",
+      "1 mark for -2 < x < 8/3 or 3 < x < 7"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -2, 3, 7",
+      "f''(x) = 0 at 8/3",
+      "Opposite signs: -2 < x < 8/3 or 3 < x < 7"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 4x^2 - 15x + 18, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-3 < x < 1 or 4/3 < x < 6",
+    "demonstration": "f(x) = 0 at x = -3, 1, 6.\nf''(x) = 6x + -8 = 0 at x = 4/3.\nSign chart: f and f'' have opposite signs on: -3 < x < 1 or 4/3 < x < 6.",
+    "memo_marks": [
+      "1 mark for x-intercepts -3, 1, 6",
+      "1 mark for f'' zero at x = 4/3",
+      "1 mark for sign analysis",
+      "1 mark for -3 < x < 1 or 4/3 < x < 6"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -3, 1, 6",
+      "f''(x) = 0 at 4/3",
+      "Opposite signs: -3 < x < 1 or 4/3 < x < 6"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 1x^2 - 26x - 24, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-4 < x < -1 or 1/3 < x < 6",
+    "demonstration": "f(x) = 0 at x = -4, -1, 6.\nf''(x) = 6x + -2 = 0 at x = 1/3.\nSign chart: f and f'' have opposite signs on: -4 < x < -1 or 1/3 < x < 6.",
+    "memo_marks": [
+      "1 mark for x-intercepts -4, -1, 6",
+      "1 mark for f'' zero at x = 1/3",
+      "1 mark for sign analysis",
+      "1 mark for -4 < x < -1 or 1/3 < x < 6"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -4, -1, 6",
+      "f''(x) = 0 at 1/3",
+      "Opposite signs: -4 < x < -1 or 1/3 < x < 6"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 + 2x + 8, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-1 < x < 5/3 or 2 < x < 4",
+    "demonstration": "f(x) = 0 at x = -1, 2, 4.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -1 < x < 5/3 or 2 < x < 4.",
+    "memo_marks": [
+      "1 mark for x-intercepts -1, 2, 4",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -1 < x < 5/3 or 2 < x < 4"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -1, 2, 4",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -1 < x < 5/3 or 2 < x < 4"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 1x^2 - 6x, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-2 < x < 0 or 1/3 < x < 3",
+    "demonstration": "f(x) = 0 at x = -2, 0, 3.\nf''(x) = 6x + -2 = 0 at x = 1/3.\nSign chart: f and f'' have opposite signs on: -2 < x < 0 or 1/3 < x < 3.",
+    "memo_marks": [
+      "1 mark for x-intercepts -2, 0, 3",
+      "1 mark for f'' zero at x = 1/3",
+      "1 mark for sign analysis",
+      "1 mark for -2 < x < 0 or 1/3 < x < 3"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -2, 0, 3",
+      "f''(x) = 0 at 1/3",
+      "Opposite signs: -2 < x < 0 or 1/3 < x < 3"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given f(x) = x^3 - 5x^2 - 12x + 36, determine the values of x for which f(x) · f''(x) < 0.",
+    "expected": "-3 < x < 5/3 or 2 < x < 6",
+    "demonstration": "f(x) = 0 at x = -3, 2, 6.\nf''(x) = 6x + -10 = 0 at x = 5/3.\nSign chart: f and f'' have opposite signs on: -3 < x < 5/3 or 2 < x < 6.",
+    "memo_marks": [
+      "1 mark for x-intercepts -3, 2, 6",
+      "1 mark for f'' zero at x = 5/3",
+      "1 mark for sign analysis",
+      "1 mark for -3 < x < 5/3 or 2 < x < 6"
+    ],
+    "fast_path": "Sign chart. Where f and f'' disagree, the product is negative.",
+    "fatal_error": "DBE says: Candidates solve f(x)<0 or f''(x)<0 separately, forgetting the product needs opposite signs.",
+    "answer_book_layout": [
+      "f(x) = 0 at -3, 2, 6",
+      "f''(x) = 0 at 5/3",
+      "Opposite signs: -3 < x < 5/3 or 2 < x < 6"
+    ],
+    "hack": "Two sign charts, one for f, one for f''. Answer is where they disagree.",
+    "trap": "f and f'' have zeroes at different points. Combine carefully.",
+    "presentation": "Show both sign charts then the intervals.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

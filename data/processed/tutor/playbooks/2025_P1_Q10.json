@@ -1,0 +1,58 @@
+{
+  "question_id": "2025_P1_Q10",
+  "foundation_text": "Optimization: Find the formula, differentiate it, set to zero, solve.",
+  "acronym_strip": [],
+  "subquestions": {
+    "10.1": {
+      "variant_question": "Show V = 25x^2/4pi - x^3/4pi for a sheet of perimeter 50.",
+      "demonstration": "1. 2x + 2h = 50 -> h = 25 - x.\n2. x = 2\u03c0r -> r = x/2\u03c0.\n3. V = \u03c0r^2h = \u03c0(x/2\u03c0)^2(25-x) = x^2/4\u03c0(25-x) = 25x^2/4\u03c0 - x^3/4\u03c0.",
+      "memo_marks": [
+        "1 mark h",
+        "1 mark r",
+        "1 mark volume substitute",
+        "1 mark simplify"
+      ],
+      "fast_path": "Get h and r in terms of x first.",
+      "fatal_error": "DBE says: Candidates use x as the radius instead of the circumference. x = 2\u03c0r, so r = x/2\u03c0.",
+      "answer_book_layout": [
+        "Perimeter: 2x + 2h = 50  =>  h = 25 - x",
+        "Circumference: x = 2\u03c0r  =>  r = x / (2\u03c0)",
+        "Volume: V = \u03c0r\u00b2h",
+        "V = \u03c0(x / 2\u03c0)\u00b2 * (25 - x)",
+        "V = \u03c0(x\u00b2 / 4\u03c0\u00b2) * (25 - x)",
+        "V = (x\u00b2 / 4\u03c0) * (25 - x)",
+        "V = 25x\u00b2 / 4\u03c0 - x\u00b3 / 4\u03c0",
+        "_________________________",
+        "Final Answer: V = 25x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+      ],
+      "hack": "x is circumference, not radius.",
+      "trap": "Algebra errors.",
+      "presentation": "Show substitution."
+    },
+    "10.2": {
+      "variant_question": "Calculate x that maximises V.",
+      "demonstration": "1. V' = 50x/4\u03c0 - 3x^2/4\u03c0 = 0.\n2. 50x - 3x^2 = 0 -> x(50-3x) = 0.\n3. x = 50/3.",
+      "memo_marks": [
+        "1 mark V'=0",
+        "1 mark solve",
+        "1 mark justify"
+      ],
+      "fast_path": "Differentiate the formula from 10.1 and set to 0.",
+      "fatal_error": "DBE says: Candidates start over instead of using the formula from 10.1.",
+      "answer_book_layout": [
+        "V = 25x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+        "V'(x) = 50x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+        "Multiply by 4\u03c0:",
+        "50x - 3x\u00b2 = 0",
+        "x(50 - 3x) = 0",
+        "x = 0 or x = 50/3",
+        "Since x > 0, x = 50/3.",
+        "_________________________",
+        "Final Answer: x = 50/3"
+      ],
+      "hack": "Derivative of volume = 0.",
+      "trap": "Not differentiating.",
+      "presentation": "Show V'(x)=0."
+    }
+  }
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) < 6.",
+    "expected": "Interval",
+    "demonstration": "Draw y=6.",
+    "memo_marks": [
+      "1 mark crit",
+      "1 mark ineq"
+    ],
+    "fast_path": "Sketch.",
+    "fatal_error": "DBE says: Use <=",
+    "answer_book_layout": [
+      "Intersections...",
+      "Final Answer: ... < x < ..."
+    ]
+  }
+]

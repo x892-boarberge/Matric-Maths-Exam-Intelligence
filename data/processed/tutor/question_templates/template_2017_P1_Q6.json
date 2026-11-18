@@ -34,6 +34,12 @@
       "steps": [
         "P = x[1 - (1+i)^-n]/i.",
         "i = 0.11/12, n = 54."
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "finance.compound"
       ]
     },
     {
@@ -47,6 +53,14 @@
         "Amount paid year 1 = 5536.95 × 12.",
         "Balance after 1 year = remaining 42 payments.",
         "Interest = total paid - (Loan - Balance)."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2.1"
+      ],
+      "requires_skills": [
+        "finance.compound",
+        "finance.loan"
       ]
     }
   ],

@@ -51,6 +51,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "trig.3d"
       ]
     }
   ],

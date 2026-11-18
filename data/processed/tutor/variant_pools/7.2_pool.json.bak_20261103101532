@@ -1,0 +1,482 @@
+[
+  {
+    "variant_question": "Sarah opened a savings account that pays 7.8% p.a., compounded monthly. She deposited R3,800 into the account on 1 January 2020 and continued to make deposits of R3,800 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R349,742.91",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 3,800·[(1 + 0.078/12)^72 - 1]/(0.078/12) · (1 + 0.078/12)\n= R349,742.91",
+    "memo_marks": [
+      "1 mark for i = 0.078/12",
+      "1 mark for n = 72",
+      "1 mark for substitution",
+      "1 mark for R349,742.91"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.078/12",
+      "n = 12 × 6 = 72",
+      "FV_due = 3,800·[(1+i)^n - 1]/i · (1+i)",
+      "= R349,742.91"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 5.8% p.a., compounded monthly. She deposited R1,000 into the account on 1 January 2020 and continued to make deposits of R1,000 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R162,896.26",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 1,000·[(1 + 0.058/12)^120 - 1]/(0.058/12) · (1 + 0.058/12)\n= R162,896.26",
+    "memo_marks": [
+      "1 mark for i = 0.058/12",
+      "1 mark for n = 120",
+      "1 mark for substitution",
+      "1 mark for R162,896.26"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.058/12",
+      "n = 12 × 10 = 120",
+      "FV_due = 1,000·[(1+i)^n - 1]/i · (1+i)",
+      "= R162,896.26"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 6.5% p.a., compounded monthly. She deposited R4,200 into the account on 1 January 2020 and continued to make deposits of R4,200 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R230,772.98",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 4,200·[(1 + 0.065/12)^48 - 1]/(0.065/12) · (1 + 0.065/12)\n= R230,772.98",
+    "memo_marks": [
+      "1 mark for i = 0.065/12",
+      "1 mark for n = 48",
+      "1 mark for substitution",
+      "1 mark for R230,772.98"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.065/12",
+      "n = 12 × 4 = 48",
+      "FV_due = 4,200·[(1+i)^n - 1]/i · (1+i)",
+      "= R230,772.98"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 5.5% p.a., compounded monthly. She deposited R1,200 into the account on 1 January 2020 and continued to make deposits of R1,200 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R123,177.26",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 1,200·[(1 + 0.055/12)^84 - 1]/(0.055/12) · (1 + 0.055/12)\n= R123,177.26",
+    "memo_marks": [
+      "1 mark for i = 0.055/12",
+      "1 mark for n = 84",
+      "1 mark for substitution",
+      "1 mark for R123,177.26"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.055/12",
+      "n = 12 × 7 = 84",
+      "FV_due = 1,200·[(1+i)^n - 1]/i · (1+i)",
+      "= R123,177.26"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 5.8% p.a., compounded quarterly. She deposited R2,300 into the account on 1 January 2020 and continued to make deposits of R2,300 at the beginning of each quarter thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R66,411.60",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 2,300·[(1 + 0.058/4)^24 - 1]/(0.058/4) · (1 + 0.058/4)\n= R66,411.60",
+    "memo_marks": [
+      "1 mark for i = 0.058/4",
+      "1 mark for n = 24",
+      "1 mark for substitution",
+      "1 mark for R66,411.60"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.058/4",
+      "n = 4 × 6 = 24",
+      "FV_due = 2,300·[(1+i)^n - 1]/i · (1+i)",
+      "= R66,411.60"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 7.5% p.a., compounded monthly. She deposited R1,500 into the account on 1 January 2020 and continued to make deposits of R1,500 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R109,470.60",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 1,500·[(1 + 0.075/12)^60 - 1]/(0.075/12) · (1 + 0.075/12)\n= R109,470.60",
+    "memo_marks": [
+      "1 mark for i = 0.075/12",
+      "1 mark for n = 60",
+      "1 mark for substitution",
+      "1 mark for R109,470.60"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.075/12",
+      "n = 12 × 5 = 60",
+      "FV_due = 1,500·[(1+i)^n - 1]/i · (1+i)",
+      "= R109,470.60"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 7.0% p.a., compounded quarterly. She deposited R2,200 into the account on 1 January 2020 and continued to make deposits of R2,200 at the beginning of each quarter thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R79,999.24",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 2,200·[(1 + 0.07/4)^28 - 1]/(0.07/4) · (1 + 0.07/4)\n= R79,999.24",
+    "memo_marks": [
+      "1 mark for i = 0.07/4",
+      "1 mark for n = 28",
+      "1 mark for substitution",
+      "1 mark for R79,999.24"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.07/4",
+      "n = 4 × 7 = 28",
+      "FV_due = 2,200·[(1+i)^n - 1]/i · (1+i)",
+      "= R79,999.24"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 6.2% p.a., compounded quarterly. She deposited R2,800 into the account on 1 January 2020 and continued to make deposits of R2,800 at the beginning of each quarter thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R116,653.42",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 2,800·[(1 + 0.062/4)^32 - 1]/(0.062/4) · (1 + 0.062/4)\n= R116,653.42",
+    "memo_marks": [
+      "1 mark for i = 0.062/4",
+      "1 mark for n = 32",
+      "1 mark for substitution",
+      "1 mark for R116,653.42"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.062/4",
+      "n = 4 × 8 = 32",
+      "FV_due = 2,800·[(1+i)^n - 1]/i · (1+i)",
+      "= R116,653.42"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 9.0% p.a., compounded monthly. She deposited R900 into the account on 1 January 2020 and continued to make deposits of R900 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R68,390.84",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 900·[(1 + 0.09/12)^60 - 1]/(0.09/12) · (1 + 0.09/12)\n= R68,390.84",
+    "memo_marks": [
+      "1 mark for i = 0.09/12",
+      "1 mark for n = 60",
+      "1 mark for substitution",
+      "1 mark for R68,390.84"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.09/12",
+      "n = 12 × 5 = 60",
+      "FV_due = 900·[(1+i)^n - 1]/i · (1+i)",
+      "= R68,390.84"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 8.5% p.a., compounded monthly. She deposited R1,600 into the account on 1 January 2020 and continued to make deposits of R1,600 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R150,661.58",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 1,600·[(1 + 0.085/12)^72 - 1]/(0.085/12) · (1 + 0.085/12)\n= R150,661.58",
+    "memo_marks": [
+      "1 mark for i = 0.085/12",
+      "1 mark for n = 72",
+      "1 mark for substitution",
+      "1 mark for R150,661.58"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.085/12",
+      "n = 12 × 6 = 72",
+      "FV_due = 1,600·[(1+i)^n - 1]/i · (1+i)",
+      "= R150,661.58"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 6.8% p.a., compounded quarterly. She deposited R5,000 into the account on 1 January 2020 and continued to make deposits of R5,000 at the beginning of each quarter thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R287,939.19",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 5,000·[(1 + 0.068/4)^40 - 1]/(0.068/4) · (1 + 0.068/4)\n= R287,939.19",
+    "memo_marks": [
+      "1 mark for i = 0.068/4",
+      "1 mark for n = 40",
+      "1 mark for substitution",
+      "1 mark for R287,939.19"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.068/4",
+      "n = 4 × 10 = 40",
+      "FV_due = 5,000·[(1+i)^n - 1]/i · (1+i)",
+      "= R287,939.19"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 8.0% p.a., compounded monthly. She deposited R1,800 into the account on 1 January 2020 and continued to make deposits of R1,800 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R285,262.32",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 1,800·[(1 + 0.08/12)^108 - 1]/(0.08/12) · (1 + 0.08/12)\n= R285,262.32",
+    "memo_marks": [
+      "1 mark for i = 0.08/12",
+      "1 mark for n = 108",
+      "1 mark for substitution",
+      "1 mark for R285,262.32"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.08/12",
+      "n = 12 × 9 = 108",
+      "FV_due = 1,800·[(1+i)^n - 1]/i · (1+i)",
+      "= R285,262.32"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 6.5% p.a., compounded quarterly. She deposited R2,500 into the account on 1 January 2020 and continued to make deposits of R2,500 at the beginning of each quarter thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R73,851.35",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 2,500·[(1 + 0.065/4)^24 - 1]/(0.065/4) · (1 + 0.065/4)\n= R73,851.35",
+    "memo_marks": [
+      "1 mark for i = 0.065/4",
+      "1 mark for n = 24",
+      "1 mark for substitution",
+      "1 mark for R73,851.35"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.065/4",
+      "n = 4 × 6 = 24",
+      "FV_due = 2,500·[(1+i)^n - 1]/i · (1+i)",
+      "= R73,851.35"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 7.5% p.a., compounded monthly. She deposited R3,500 into the account on 1 January 2020 and continued to make deposits of R3,500 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R141,689.90",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 3,500·[(1 + 0.075/12)^36 - 1]/(0.075/12) · (1 + 0.075/12)\n= R141,689.90",
+    "memo_marks": [
+      "1 mark for i = 0.075/12",
+      "1 mark for n = 36",
+      "1 mark for substitution",
+      "1 mark for R141,689.90"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.075/12",
+      "n = 12 × 3 = 36",
+      "FV_due = 3,500·[(1+i)^n - 1]/i · (1+i)",
+      "= R141,689.90"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 8.8% p.a., compounded quarterly. She deposited R1,100 into the account on 1 January 2020 and continued to make deposits of R1,100 at the beginning of each quarter thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R27,865.76",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 1,100·[(1 + 0.088/4)^20 - 1]/(0.088/4) · (1 + 0.088/4)\n= R27,865.76",
+    "memo_marks": [
+      "1 mark for i = 0.088/4",
+      "1 mark for n = 20",
+      "1 mark for substitution",
+      "1 mark for R27,865.76"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.088/4",
+      "n = 4 × 5 = 20",
+      "FV_due = 1,100·[(1+i)^n - 1]/i · (1+i)",
+      "= R27,865.76"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 6.2% p.a., compounded monthly. She deposited R800 into the account on 1 January 2020 and continued to make deposits of R800 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R99,615.62",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 800·[(1 + 0.062/12)^96 - 1]/(0.062/12) · (1 + 0.062/12)\n= R99,615.62",
+    "memo_marks": [
+      "1 mark for i = 0.062/12",
+      "1 mark for n = 96",
+      "1 mark for substitution",
+      "1 mark for R99,615.62"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.062/12",
+      "n = 12 × 8 = 96",
+      "FV_due = 800·[(1+i)^n - 1]/i · (1+i)",
+      "= R99,615.62"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 7.2% p.a., compounded quarterly. She deposited R1,400 into the account on 1 January 2020 and continued to make deposits of R1,400 at the beginning of each quarter thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R71,317.65",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 1,400·[(1 + 0.072/4)^36 - 1]/(0.072/4) · (1 + 0.072/4)\n= R71,317.65",
+    "memo_marks": [
+      "1 mark for i = 0.072/4",
+      "1 mark for n = 36",
+      "1 mark for substitution",
+      "1 mark for R71,317.65"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.072/4",
+      "n = 4 × 9 = 36",
+      "FV_due = 1,400·[(1+i)^n - 1]/i · (1+i)",
+      "= R71,317.65"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 5.8% p.a., compounded monthly. She deposited R2,600 into the account on 1 January 2020 and continued to make deposits of R2,600 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R269,906.31",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 2,600·[(1 + 0.058/12)^84 - 1]/(0.058/12) · (1 + 0.058/12)\n= R269,906.31",
+    "memo_marks": [
+      "1 mark for i = 0.058/12",
+      "1 mark for n = 84",
+      "1 mark for substitution",
+      "1 mark for R269,906.31"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.058/12",
+      "n = 12 × 7 = 84",
+      "FV_due = 2,600·[(1+i)^n - 1]/i · (1+i)",
+      "= R269,906.31"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 7.2% p.a., compounded monthly. She deposited R3,000 into the account on 1 January 2020 and continued to make deposits of R3,000 at the beginning of each month thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R167,302.84",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 3,000·[(1 + 0.072/12)^48 - 1]/(0.072/12) · (1 + 0.072/12)\n= R167,302.84",
+    "memo_marks": [
+      "1 mark for i = 0.072/12",
+      "1 mark for n = 48",
+      "1 mark for substitution",
+      "1 mark for R167,302.84"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.072/12",
+      "n = 12 × 4 = 48",
+      "FV_due = 3,000·[(1+i)^n - 1]/i · (1+i)",
+      "= R167,302.84"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  },
+  {
+    "variant_question": "Sarah opened a savings account that pays 6.0% p.a., compounded quarterly. She deposited R4,000 into the account on 1 January 2020 and continued to make deposits of R4,000 at the beginning of each quarter thereafter. She made her last deposit on 1 October 2025. Calculate the accumulated amount in the account on 1 January 2026.",
+    "expected": "R93,882.09",
+    "demonstration": "Annuity due (deposits at beginning):\nFV = x·[(1+i)^n - 1]/i · (1+i)\n= 4,000·[(1 + 0.06/4)^20 - 1]/(0.06/4) · (1 + 0.06/4)\n= R93,882.09",
+    "memo_marks": [
+      "1 mark for i = 0.06/4",
+      "1 mark for n = 20",
+      "1 mark for substitution",
+      "1 mark for R93,882.09"
+    ],
+    "fast_path": "Annuity due = ordinary annuity × (1+i). The extra factor is for the extra compounding period.",
+    "fatal_error": "DBE says: Candidates use ordinary annuity formula (without ×(1+i)) when deposits are at the beginning. Read 'beginning of each month' carefully.",
+    "answer_book_layout": [
+      "i = 0.06/4",
+      "n = 4 × 5 = 20",
+      "FV_due = 4,000·[(1+i)^n - 1]/i · (1+i)",
+      "= R93,882.09"
+    ],
+    "hack": "Beginning of period → annuity due. End of period → ordinary. Annuity due = ordinary × (1+i).",
+    "trap": "The ×(1+i) is the extra compounding on the first deposit.",
+    "presentation": "State the type (annuity due), i, n, formula, answer.",
+    "diagram": "required",
+    "diagram_hint": "annuity_due_timeline"
+  }
+]

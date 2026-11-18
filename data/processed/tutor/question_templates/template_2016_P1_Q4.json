@@ -52,6 +52,12 @@
       "expected_fn": "R(0; 1)",
       "steps": [
         "h(0) = a^0 = 1."
+      ],
+      "given_from": [
+        "4.1"
+      ],
+      "requires_skills": [
+        "functions.exponential"
       ]
     },
     {
@@ -64,6 +70,13 @@
       "steps": [
         "9 = a².",
         "a = 3."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2"
+      ],
+      "requires_skills": [
+        "functions.exponential"
       ]
     },
     {
@@ -96,6 +109,14 @@
         "Q(b; 1/81): 3^b = 1/81 = 3^(-4), so b = -4.",
         "D is (-4; 9).",
         "DP = |-4 - 2| = 6."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "requires_skills": [
+        "functions.exponential"
       ]
     },
     {
@@ -130,6 +151,15 @@
         "x < -6 → x+2 < -4 → 3^(x+2) < 3^(-4) = 1/81.",
         "So -k < 1/81 and -k > 0.",
         "-1/81 < k < 0."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "requires_skills": [
+        "functions.exponential"
       ]
     }
   ],

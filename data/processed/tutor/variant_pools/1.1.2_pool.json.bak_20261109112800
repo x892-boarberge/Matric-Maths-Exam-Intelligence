@@ -1,0 +1,692 @@
+[
+  {
+    "variant_question": "Solve for x: 2x^2 - 10x + 9 = 0 (2 dp)",
+    "expected": "x = 3.82 or x = 1.18",
+    "demonstration": "1. a = 2, b = -10, c = 9.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (10 ± √28) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -10.",
+    "answer_book_layout": [
+      "a = 2, b = -10, c = 9",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (10 ± √28) / 4",
+      "x = 3.82 or x = 1.18",
+      "_________________________",
+      "Final Answer: x = 3.82 or x = 1.18"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 + 4x - 11 = 0 (2 dp)",
+    "expected": "x = 1.36 or x = -2.69",
+    "demonstration": "1. a = 3, b = 4, c = -11.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-4 ± √148) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 4.",
+    "answer_book_layout": [
+      "a = 3, b = 4, c = -11",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-4 ± √148) / 6",
+      "x = 1.36 or x = -2.69",
+      "_________________________",
+      "Final Answer: x = 1.36 or x = -2.69"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 - 9x - 8 = 0 (2 dp)",
+    "expected": "x = 5.26 or x = -0.76",
+    "demonstration": "1. a = 2, b = -9, c = -8.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (9 ± √145) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -9.",
+    "answer_book_layout": [
+      "a = 2, b = -9, c = -8",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (9 ± √145) / 4",
+      "x = 5.26 or x = -0.76",
+      "_________________________",
+      "Final Answer: x = 5.26 or x = -0.76"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 + 8x - 10 = 0 (2 dp)",
+    "expected": "x = 0.93 or x = -3.59",
+    "demonstration": "1. a = 3, b = 8, c = -10.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-8 ± √184) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 8.",
+    "answer_book_layout": [
+      "a = 3, b = 8, c = -10",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-8 ± √184) / 6",
+      "x = 0.93 or x = -3.59",
+      "_________________________",
+      "Final Answer: x = 0.93 or x = -3.59"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 9x - 3 = 0 (2 dp)",
+    "expected": "x = 3.30 or x = -0.30",
+    "demonstration": "1. a = 3, b = -9, c = -3.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (9 ± √117) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -9.",
+    "answer_book_layout": [
+      "a = 3, b = -9, c = -3",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (9 ± √117) / 6",
+      "x = 3.30 or x = -0.30",
+      "_________________________",
+      "Final Answer: x = 3.30 or x = -0.30"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 1x - 12 = 0 (2 dp)",
+    "expected": "x = 2.17 or x = -1.84",
+    "demonstration": "1. a = 3, b = -1, c = -12.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (1 ± √145) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -1.",
+    "answer_book_layout": [
+      "a = 3, b = -1, c = -12",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (1 ± √145) / 6",
+      "x = 2.17 or x = -1.84",
+      "_________________________",
+      "Final Answer: x = 2.17 or x = -1.84"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 + 9x - 12 = 0 (2 dp)",
+    "expected": "x = 1.08 or x = -5.58",
+    "demonstration": "1. a = 2, b = 9, c = -12.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-9 ± √177) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 9.",
+    "answer_book_layout": [
+      "a = 2, b = 9, c = -12",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-9 ± √177) / 4",
+      "x = 1.08 or x = -5.58",
+      "_________________________",
+      "Final Answer: x = 1.08 or x = -5.58"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 + 9x - 3 = 0 (2 dp)",
+    "expected": "x = 0.31 or x = -4.81",
+    "demonstration": "1. a = 2, b = 9, c = -3.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-9 ± √105) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 9.",
+    "answer_book_layout": [
+      "a = 2, b = 9, c = -3",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-9 ± √105) / 4",
+      "x = 0.31 or x = -4.81",
+      "_________________________",
+      "Final Answer: x = 0.31 or x = -4.81"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 8x - 10 = 0 (2 dp)",
+    "expected": "x = 3.59 or x = -0.93",
+    "demonstration": "1. a = 3, b = -8, c = -10.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (8 ± √184) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -8.",
+    "answer_book_layout": [
+      "a = 3, b = -8, c = -10",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (8 ± √184) / 6",
+      "x = 3.59 or x = -0.93",
+      "_________________________",
+      "Final Answer: x = 3.59 or x = -0.93"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 10x - 3 = 0 (2 dp)",
+    "expected": "x = 3.61 or x = -0.28",
+    "demonstration": "1. a = 3, b = -10, c = -3.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (10 ± √136) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -10.",
+    "answer_book_layout": [
+      "a = 3, b = -10, c = -3",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (10 ± √136) / 6",
+      "x = 3.61 or x = -0.28",
+      "_________________________",
+      "Final Answer: x = 3.61 or x = -0.28"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 + 10x + 2 = 0 (2 dp)",
+    "expected": "x = -0.21 or x = -3.12",
+    "demonstration": "1. a = 3, b = 10, c = 2.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-10 ± √76) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 10.",
+    "answer_book_layout": [
+      "a = 3, b = 10, c = 2",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-10 ± √76) / 6",
+      "x = -0.21 or x = -3.12",
+      "_________________________",
+      "Final Answer: x = -0.21 or x = -3.12"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 - 6x - 7 = 0 (2 dp)",
+    "expected": "x = 3.90 or x = -0.90",
+    "demonstration": "1. a = 2, b = -6, c = -7.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (6 ± √92) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -6.",
+    "answer_book_layout": [
+      "a = 2, b = -6, c = -7",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (6 ± √92) / 4",
+      "x = 3.90 or x = -0.90",
+      "_________________________",
+      "Final Answer: x = 3.90 or x = -0.90"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 8x - 6 = 0 (2 dp)",
+    "expected": "x = 3.28 or x = -0.61",
+    "demonstration": "1. a = 3, b = -8, c = -6.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (8 ± √136) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -8.",
+    "answer_book_layout": [
+      "a = 3, b = -8, c = -6",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (8 ± √136) / 6",
+      "x = 3.28 or x = -0.61",
+      "_________________________",
+      "Final Answer: x = 3.28 or x = -0.61"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 6x - 11 = 0 (2 dp)",
+    "expected": "x = 3.16 or x = -1.16",
+    "demonstration": "1. a = 3, b = -6, c = -11.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (6 ± √168) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -6.",
+    "answer_book_layout": [
+      "a = 3, b = -6, c = -11",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (6 ± √168) / 6",
+      "x = 3.16 or x = -1.16",
+      "_________________________",
+      "Final Answer: x = 3.16 or x = -1.16"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 + 12x - 8 = 0 (2 dp)",
+    "expected": "x = 0.58 or x = -4.58",
+    "demonstration": "1. a = 3, b = 12, c = -8.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-12 ± √240) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 12.",
+    "answer_book_layout": [
+      "a = 3, b = 12, c = -8",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-12 ± √240) / 6",
+      "x = 0.58 or x = -4.58",
+      "_________________________",
+      "Final Answer: x = 0.58 or x = -4.58"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 1x - 9 = 0 (2 dp)",
+    "expected": "x = 1.91 or x = -1.57",
+    "demonstration": "1. a = 3, b = -1, c = -9.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (1 ± √109) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -1.",
+    "answer_book_layout": [
+      "a = 3, b = -1, c = -9",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (1 ± √109) / 6",
+      "x = 1.91 or x = -1.57",
+      "_________________________",
+      "Final Answer: x = 1.91 or x = -1.57"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 + 9x - 8 = 0 (2 dp)",
+    "expected": "x = 0.76 or x = -5.26",
+    "demonstration": "1. a = 2, b = 9, c = -8.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-9 ± √145) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 9.",
+    "answer_book_layout": [
+      "a = 2, b = 9, c = -8",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-9 ± √145) / 4",
+      "x = 0.76 or x = -5.26",
+      "_________________________",
+      "Final Answer: x = 0.76 or x = -5.26"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 5x - 9 = 0 (2 dp)",
+    "expected": "x = 2.76 or x = -1.09",
+    "demonstration": "1. a = 3, b = -5, c = -9.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (5 ± √133) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -5.",
+    "answer_book_layout": [
+      "a = 3, b = -5, c = -9",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (5 ± √133) / 6",
+      "x = 2.76 or x = -1.09",
+      "_________________________",
+      "Final Answer: x = 2.76 or x = -1.09"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 + 10x + 6 = 0 (2 dp)",
+    "expected": "x = -0.78 or x = -2.55",
+    "demonstration": "1. a = 3, b = 10, c = 6.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-10 ± √28) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 10.",
+    "answer_book_layout": [
+      "a = 3, b = 10, c = 6",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-10 ± √28) / 6",
+      "x = -0.78 or x = -2.55",
+      "_________________________",
+      "Final Answer: x = -0.78 or x = -2.55"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 + 11x - 9 = 0 (2 dp)",
+    "expected": "x = 0.69 or x = -4.36",
+    "demonstration": "1. a = 3, b = 11, c = -9.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-11 ± √229) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 11.",
+    "answer_book_layout": [
+      "a = 3, b = 11, c = -9",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-11 ± √229) / 6",
+      "x = 0.69 or x = -4.36",
+      "_________________________",
+      "Final Answer: x = 0.69 or x = -4.36"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 + 1x - 11 = 0 (2 dp)",
+    "expected": "x = 1.76 or x = -2.09",
+    "demonstration": "1. a = 3, b = 1, c = -11.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-1 ± √133) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 1.",
+    "answer_book_layout": [
+      "a = 3, b = 1, c = -11",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-1 ± √133) / 6",
+      "x = 1.76 or x = -2.09",
+      "_________________________",
+      "Final Answer: x = 1.76 or x = -2.09"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 + 7x - 5 = 0 (2 dp)",
+    "expected": "x = 0.61 or x = -4.11",
+    "demonstration": "1. a = 2, b = 7, c = -5.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-7 ± √89) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 7.",
+    "answer_book_layout": [
+      "a = 2, b = 7, c = -5",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-7 ± √89) / 4",
+      "x = 0.61 or x = -4.11",
+      "_________________________",
+      "Final Answer: x = 0.61 or x = -4.11"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 5x - 5 = 0 (2 dp)",
+    "expected": "x = 2.37 or x = -0.70",
+    "demonstration": "1. a = 3, b = -5, c = -5.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (5 ± √85) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -5.",
+    "answer_book_layout": [
+      "a = 3, b = -5, c = -5",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (5 ± √85) / 6",
+      "x = 2.37 or x = -0.70",
+      "_________________________",
+      "Final Answer: x = 2.37 or x = -0.70"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 - 11x - 11 = 0 (2 dp)",
+    "expected": "x = 6.36 or x = -0.86",
+    "demonstration": "1. a = 2, b = -11, c = -11.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (11 ± √209) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -11.",
+    "answer_book_layout": [
+      "a = 2, b = -11, c = -11",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (11 ± √209) / 4",
+      "x = 6.36 or x = -0.86",
+      "_________________________",
+      "Final Answer: x = 6.36 or x = -0.86"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 - 9x - 11 = 0 (2 dp)",
+    "expected": "x = 3.93 or x = -0.93",
+    "demonstration": "1. a = 3, b = -9, c = -11.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (9 ± √213) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -9.",
+    "answer_book_layout": [
+      "a = 3, b = -9, c = -11",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (9 ± √213) / 6",
+      "x = 3.93 or x = -0.93",
+      "_________________________",
+      "Final Answer: x = 3.93 or x = -0.93"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 + 5x - 2 = 0 (2 dp)",
+    "expected": "x = 0.35 or x = -2.85",
+    "demonstration": "1. a = 2, b = 5, c = -2.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-5 ± √41) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 5.",
+    "answer_book_layout": [
+      "a = 2, b = 5, c = -2",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-5 ± √41) / 4",
+      "x = 0.35 or x = -2.85",
+      "_________________________",
+      "Final Answer: x = 0.35 or x = -2.85"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 - 10x + 1 = 0 (2 dp)",
+    "expected": "x = 4.90 or x = 0.10",
+    "demonstration": "1. a = 2, b = -10, c = 1.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (10 ± √92) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = -10.",
+    "answer_book_layout": [
+      "a = 2, b = -10, c = 1",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (10 ± √92) / 4",
+      "x = 4.90 or x = 0.10",
+      "_________________________",
+      "Final Answer: x = 4.90 or x = 0.10"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 2x^2 + 4x - 11 = 0 (2 dp)",
+    "expected": "x = 1.55 or x = -3.55",
+    "demonstration": "1. a = 2, b = 4, c = -11.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-4 ± √104) / 4.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 4.",
+    "answer_book_layout": [
+      "a = 2, b = 4, c = -11",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-4 ± √104) / 4",
+      "x = 1.55 or x = -3.55",
+      "_________________________",
+      "Final Answer: x = 1.55 or x = -3.55"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 + 2x - 9 = 0 (2 dp)",
+    "expected": "x = 1.43 or x = -2.10",
+    "demonstration": "1. a = 3, b = 2, c = -9.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-2 ± √112) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 2.",
+    "answer_book_layout": [
+      "a = 3, b = 2, c = -9",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-2 ± √112) / 6",
+      "x = 1.43 or x = -2.10",
+      "_________________________",
+      "Final Answer: x = 1.43 or x = -2.10"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: 3x^2 + 9x - 8 = 0 (2 dp)",
+    "expected": "x = 0.72 or x = -3.72",
+    "demonstration": "1. a = 3, b = 9, c = -8.\n2. x = (-b ± √(b² - 4ac)) / 2a.\n3. x = (-9 ± √177) / 6.",
+    "memo_marks": [
+      "1 mark formula",
+      "1 mark substitute",
+      "1 mark simplify",
+      "1 mark roots"
+    ],
+    "fast_path": "Calculate discriminant first.",
+    "fatal_error": "DBE says: Candidates drop the negative sign on b. Here b = 9.",
+    "answer_book_layout": [
+      "a = 3, b = 9, c = -8",
+      "x = (-b ± √(b² - 4ac)) / 2a",
+      "x = (-9 ± √177) / 6",
+      "x = 0.72 or x = -3.72",
+      "_________________________",
+      "Final Answer: x = 0.72 or x = -3.72"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

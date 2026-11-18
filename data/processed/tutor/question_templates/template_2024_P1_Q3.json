@@ -87,7 +87,13 @@
         "S_10 = {a} (1 - (1/4)^10) / (1 - 1/4)",
         "S_10 = {S10_disp} cm^2"
       ],
-      "diagnostic_class": "procedural"
+      "diagnostic_class": "procedural",
+      "given_from": [
+        "3.1"
+      ],
+      "requires_skills": [
+        "sequences.gp"
+      ]
     },
     {
       "n": "3.3",
@@ -123,7 +129,14 @@
         "(1/2)^(n-1) = 1/{D_den} = (1/2)^{power}",
         "n - 1 = {power}, so n = {answer_n}"
       ],
-      "diagnostic_class": "procedural"
+      "diagnostic_class": "procedural",
+      "given_from": [
+        "3.1",
+        "3.2"
+      ],
+      "requires_skills": [
+        "sequences.gp"
+      ]
     }
   ],
   "diagram_page": "2024_P1_p04.png",

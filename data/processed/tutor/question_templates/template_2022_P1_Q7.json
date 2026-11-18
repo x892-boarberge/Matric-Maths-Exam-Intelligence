@@ -24,6 +24,12 @@
       "expected_fn": "f'(x) = 10x^4 - 12x^3 + 8",
       "steps": [
         "Differentiate term by term."
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles"
       ]
     },
     {
@@ -38,6 +44,14 @@
         "g''(x) = 6ax + 6",
         "Minimum gradient at x = -1 means g''(-1) = 0: -6a + 6 = 0, a = 1.",
         "Concave up when g''(x) > 0: 6x + 6 > 0, x > -1."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     }
   ],

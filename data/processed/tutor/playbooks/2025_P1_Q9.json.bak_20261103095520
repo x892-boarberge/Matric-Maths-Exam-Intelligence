@@ -1,0 +1,54 @@
+{
+  "question_id": "2025_P1_Q9",
+  "foundation_text": "Cubic graphs have turning points and inflection points. Derivatives give you both.",
+  "acronym_strip": [],
+  "subquestions": {
+    "9.1": {
+      "variant_question": "Calculate the coordinates of E (minimum) of f(x) = x^3 - 9x^2 + 24x - 16.",
+      "demonstration": "1. f'(x) = 3x^2 - 18x + 24 = 0.\n2. 3(x-2)(x-4) = 0 -> x = 2 or 4.\n3. E is the minimum, so x=4.\n4. y = (4)^3 - 9(4)^2 + 24(4) - 16 = 0.",
+      "memo_marks": [
+        "1 mark f'(x)=0",
+        "1 mark x values",
+        "1 mark y value"
+      ],
+      "fast_path": "Find both x-values, then substitute the one that gives the minimum.",
+      "fatal_error": "DBE says: Candidates forget to set f'(x) = 0 explicitly, or they draw a parabola instead of a cubic.",
+      "answer_book_layout": [
+        "For turning points, f'(x) = 0",
+        "f'(x) = 3x\u00b2 - 18x + 24 = 0",
+        "3(x\u00b2 - 6x + 8) = 0",
+        "3(x - 2)(x - 4) = 0",
+        "x = 2 or x = 4",
+        "Substitute x = 4 (for E, the minimum):",
+        "y = (4)\u00b3 - 9(4)\u00b2 + 24(4) - 16",
+        "y = 64 - 144 + 96 - 16 = 0",
+        "_________________________",
+        "Final Answer: E(4 ; 0)"
+      ],
+      "hack": "Derivative = 0 for turning points.",
+      "trap": "Forgetting to find y.",
+      "presentation": "Show f'(x)=0 first."
+    },
+    "9.2": {
+      "variant_question": "For which values of x is f concave down?",
+      "demonstration": "1. f''(x) < 0.\n2. f''(x) = 6x - 18 < 0.\n3. x < 3.",
+      "memo_marks": [
+        "1 mark f''(x)<0",
+        "1 mark answer"
+      ],
+      "fast_path": "Concave down means f''(x) < 0.",
+      "fatal_error": "DBE says: Candidates use f'(x) < 0 instead of f''(x) < 0. Concavity is the second derivative.",
+      "answer_book_layout": [
+        "For concave down, f''(x) < 0",
+        "f'(x) = 3x\u00b2 - 18x + 24",
+        "f''(x) = 6x - 18 < 0",
+        "6x < 18",
+        "_________________________",
+        "Final Answer: x < 3"
+      ],
+      "hack": "Second derivative tells concavity.",
+      "trap": "Using f'(x).",
+      "presentation": "Show f''(x)."
+    }
+  }
+}

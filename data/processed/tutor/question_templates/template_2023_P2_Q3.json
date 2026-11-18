@@ -40,6 +40,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1"
+      ],
+      "requires_skills": [
+        "analytical.distance"
       ]
     },
     {
@@ -60,6 +66,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2"
+      ],
+      "requires_skills": [
+        "analytical.distance",
+        "analytical.gradient"
       ]
     },
     {
@@ -85,6 +99,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ],
+      "requires_skills": [
+        "analytical.distance",
+        "analytical.gradient",
+        "analytical.inclination"
       ]
     },
     {
@@ -110,6 +134,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ],
+      "requires_skills": [
+        "analytical.distance",
+        "analytical.gradient",
+        "analytical.inclination",
+        "analytical.angle"
       ]
     },
     {
@@ -135,6 +171,20 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ],
+      "requires_skills": [
+        "analytical.distance",
+        "analytical.gradient",
+        "analytical.inclination",
+        "analytical.angle",
+        "analytical.parallel"
       ]
     },
     {
@@ -160,6 +210,22 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ],
+      "requires_skills": [
+        "analytical.distance",
+        "analytical.gradient",
+        "analytical.inclination",
+        "analytical.angle",
+        "analytical.parallel",
+        "analytical.area"
       ]
     },
     {
@@ -180,6 +246,24 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7"
+      ],
+      "requires_skills": [
+        "analytical.distance",
+        "analytical.gradient",
+        "analytical.inclination",
+        "analytical.angle",
+        "analytical.parallel",
+        "analytical.area",
+        "analytical.circumcentre"
       ]
     }
   ],

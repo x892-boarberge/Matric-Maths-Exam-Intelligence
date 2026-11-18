@@ -1,0 +1,572 @@
+[
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  },
+  {
+    "variant_question": "Show e = ... for independent events.",
+    "expected": "Calculation",
+    "demonstration": "P(A and B) = P(A)P(B).",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark sub",
+      "1 mark solve"
+    ],
+    "fast_path": "Multiply.",
+    "fatal_error": "DBE says: Add.",
+    "answer_book_layout": [
+      "P(M and J) = P(M) * P(J)",
+      "a/210 = (36/210)*(e/210)",
+      "Solve for e",
+      "_________________________",
+      "Final Answer: e = ..."
+    ]
+  }
+]

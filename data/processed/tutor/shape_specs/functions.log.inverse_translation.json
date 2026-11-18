@@ -1,0 +1,26 @@
+{
+  "shape_id": "functions.log.inverse_translation",
+  "mental_move": "translate right means f⁻¹(x-n); bound the range using h(threshold) and asymptote",
+  "valid_bases_frac": [
+    "1/2",
+    "1/3",
+    "1/4",
+    "1/5"
+  ],
+  "answer_form": "inequality",
+  "marks_range": [
+    2
+  ],
+  "valid_phrasings": [
+    "h is obtained when f⁻¹ is translated {n} units to the right. Determine the y-values of h where x > {threshold}.",
+    "The graph of h is the graph of f⁻¹ translated {n} units to the right. Find the range of h for x > {threshold}.",
+    "The graph of h is the inverse of f, then translated {n} units right. Determine the range of h for x > {threshold}.",
+    "f-inverse is translated {n} units horizontally right to give h. Find the y-values of h when x > {threshold}."
+  ],
+  "diagram": "always",
+  "fatal_errors": [
+    "Translates left not right",
+    "Uses f not f⁻¹",
+    "Gives single value not range"
+  ]
+}

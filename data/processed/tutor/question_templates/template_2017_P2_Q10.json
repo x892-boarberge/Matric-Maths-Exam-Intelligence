@@ -37,6 +37,12 @@
           "r": "co-interior angles supplementary",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -68,6 +74,13 @@
           "r": "converse exterior angle of cyclic quad",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -104,6 +117,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1",
+        "10.2.2"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     }
   ],

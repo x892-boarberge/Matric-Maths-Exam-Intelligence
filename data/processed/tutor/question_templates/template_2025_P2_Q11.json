@@ -144,6 +144,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1.1"
+      ],
+      "requires_skills": [
+        "geometry.proportion"
       ]
     },
     {
@@ -175,6 +181,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2"
+      ],
+      "requires_skills": [
+        "geometry.proportion"
       ]
     },
     {
@@ -191,6 +204,15 @@
           "r": "prop theorem; PQ || WE",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2",
+        "11.1.3"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.area_ratio"
       ]
     },
     {
@@ -217,6 +239,17 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2",
+        "11.1.3",
+        "11.2.1"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.area_ratio",
+        "geometry.similarity"
       ]
     },
     {
@@ -243,6 +276,18 @@
           "r": "third angle of triangle",
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2",
+        "11.1.3",
+        "11.2.1",
+        "11.2.2"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.area_ratio",
+        "geometry.similarity"
       ]
     },
     {
@@ -269,6 +314,19 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2",
+        "11.1.3",
+        "11.2.1",
+        "11.2.2",
+        "11.2.3"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.area_ratio",
+        "geometry.similarity"
       ]
     },
     {
@@ -305,6 +363,20 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2",
+        "11.1.3",
+        "11.2.1",
+        "11.2.2",
+        "11.2.3",
+        "11.2.4"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.area_ratio",
+        "geometry.similarity"
       ]
     }
   ],

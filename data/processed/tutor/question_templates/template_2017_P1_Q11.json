@@ -26,6 +26,12 @@
         "n digits: 25 × (10 × 9 × ... × (10-n+1)) >= 700 000.",
         "Try n=5: 25 × 10×9×8×7×6 = 756 000 >= 700 000.",
         "So 5 digits."
+      ],
+      "given_from": [
+        "11.1"
+      ],
+      "requires_skills": [
+        "probability.counting"
       ]
     }
   ],

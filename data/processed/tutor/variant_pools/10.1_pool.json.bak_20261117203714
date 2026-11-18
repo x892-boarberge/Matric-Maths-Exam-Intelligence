@@ -1,0 +1,782 @@
+[
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 30 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (15x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (15x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 30, solve for h:\n  h = (30 - 2x)/2 = 15 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (15 - x)\n  = (x^2/(4π)) · (15 - x)\n  = (15x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 30 -> h = 15 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (15x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v01.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 32 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (16x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (16x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 32, solve for h:\n  h = (32 - 2x)/2 = 16 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (16 - x)\n  = (x^2/(4π)) · (16 - x)\n  = (16x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 32 -> h = 16 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (16x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v02.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 34 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (17x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (17x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 34, solve for h:\n  h = (34 - 2x)/2 = 17 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (17 - x)\n  = (x^2/(4π)) · (17 - x)\n  = (17x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 34 -> h = 17 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (17x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v03.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 36 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (18x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (18x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 36, solve for h:\n  h = (36 - 2x)/2 = 18 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (18 - x)\n  = (x^2/(4π)) · (18 - x)\n  = (18x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 36 -> h = 18 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (18x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v04.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 38 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (19x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (19x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 38, solve for h:\n  h = (38 - 2x)/2 = 19 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (19 - x)\n  = (x^2/(4π)) · (19 - x)\n  = (19x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 38 -> h = 19 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (19x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v05.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 40 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (20x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (20x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 40, solve for h:\n  h = (40 - 2x)/2 = 20 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (20 - x)\n  = (x^2/(4π)) · (20 - x)\n  = (20x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 40 -> h = 20 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (20x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v06.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 42 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (21x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (21x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 42, solve for h:\n  h = (42 - 2x)/2 = 21 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (21 - x)\n  = (x^2/(4π)) · (21 - x)\n  = (21x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 42 -> h = 21 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (21x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v07.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 44 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (22x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (22x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 44, solve for h:\n  h = (44 - 2x)/2 = 22 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (22 - x)\n  = (x^2/(4π)) · (22 - x)\n  = (22x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 44 -> h = 22 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (22x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v08.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 46 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (23x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (23x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 46, solve for h:\n  h = (46 - 2x)/2 = 23 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (23 - x)\n  = (x^2/(4π)) · (23 - x)\n  = (23x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 46 -> h = 23 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (23x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v09.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 48 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (24x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (24x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 48, solve for h:\n  h = (48 - 2x)/2 = 24 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (24 - x)\n  = (x^2/(4π)) · (24 - x)\n  = (24x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 48 -> h = 24 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (24x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v10.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 50 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (25x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (25x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 50, solve for h:\n  h = (50 - 2x)/2 = 25 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (25 - x)\n  = (x^2/(4π)) · (25 - x)\n  = (25x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 50 -> h = 25 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (25x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v11.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 52 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (26x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (26x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 52, solve for h:\n  h = (52 - 2x)/2 = 26 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (26 - x)\n  = (x^2/(4π)) · (26 - x)\n  = (26x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 52 -> h = 26 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (26x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v12.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 54 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (27x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (27x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 54, solve for h:\n  h = (54 - 2x)/2 = 27 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (27 - x)\n  = (x^2/(4π)) · (27 - x)\n  = (27x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 54 -> h = 27 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (27x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v13.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 56 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (28x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (28x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 56, solve for h:\n  h = (56 - 2x)/2 = 28 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (28 - x)\n  = (x^2/(4π)) · (28 - x)\n  = (28x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 56 -> h = 28 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (28x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v14.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 58 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (29x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (29x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 58, solve for h:\n  h = (58 - 2x)/2 = 29 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (29 - x)\n  = (x^2/(4π)) · (29 - x)\n  = (29x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 58 -> h = 29 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (29x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v15.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 60 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (30x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (30x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 60, solve for h:\n  h = (60 - 2x)/2 = 30 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (30 - x)\n  = (x^2/(4π)) · (30 - x)\n  = (30x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 60 -> h = 30 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (30x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v16.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 30 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (15x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (15x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 30, solve for h:\n  h = (30 - 2x)/2 = 15 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (15 - x)\n  = (x^2/(4π)) · (15 - x)\n  = (15x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 30 -> h = 15 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (15x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v17.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 32 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (16x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (16x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 32, solve for h:\n  h = (32 - 2x)/2 = 16 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (16 - x)\n  = (x^2/(4π)) · (16 - x)\n  = (16x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 32 -> h = 16 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (16x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v18.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 34 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (17x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (17x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 34, solve for h:\n  h = (34 - 2x)/2 = 17 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (17 - x)\n  = (x^2/(4π)) · (17 - x)\n  = (17x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 34 -> h = 17 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (17x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v19.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 36 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (18x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (18x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 36, solve for h:\n  h = (36 - 2x)/2 = 18 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (18 - x)\n  = (x^2/(4π)) · (18 - x)\n  = (18x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 36 -> h = 18 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (18x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v20.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 38 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (19x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (19x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 38, solve for h:\n  h = (38 - 2x)/2 = 19 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (19 - x)\n  = (x^2/(4π)) · (19 - x)\n  = (19x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 38 -> h = 19 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (19x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v21.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 40 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (20x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (20x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 40, solve for h:\n  h = (40 - 2x)/2 = 20 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (20 - x)\n  = (x^2/(4π)) · (20 - x)\n  = (20x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 40 -> h = 20 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (20x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v22.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 42 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (21x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (21x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 42, solve for h:\n  h = (42 - 2x)/2 = 21 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (21 - x)\n  = (x^2/(4π)) · (21 - x)\n  = (21x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 42 -> h = 21 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (21x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v23.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 44 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (22x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (22x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 44, solve for h:\n  h = (44 - 2x)/2 = 22 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (22 - x)\n  = (x^2/(4π)) · (22 - x)\n  = (22x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 44 -> h = 22 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (22x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v24.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 46 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (23x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (23x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 46, solve for h:\n  h = (46 - 2x)/2 = 23 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (23 - x)\n  = (x^2/(4π)) · (23 - x)\n  = (23x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 46 -> h = 23 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (23x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v25.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 48 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (24x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (24x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 48, solve for h:\n  h = (48 - 2x)/2 = 24 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (24 - x)\n  = (x^2/(4π)) · (24 - x)\n  = (24x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 48 -> h = 24 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (24x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v26.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 50 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (25x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (25x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 50, solve for h:\n  h = (50 - 2x)/2 = 25 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (25 - x)\n  = (x^2/(4π)) · (25 - x)\n  = (25x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 50 -> h = 25 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (25x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v27.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 52 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (26x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (26x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 52, solve for h:\n  h = (52 - 2x)/2 = 26 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (26 - x)\n  = (x^2/(4π)) · (26 - x)\n  = (26x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 52 -> h = 26 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (26x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v28.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 54 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (27x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (27x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 54, solve for h:\n  h = (54 - 2x)/2 = 27 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (27 - x)\n  = (x^2/(4π)) · (27 - x)\n  = (27x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 54 -> h = 27 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (27x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v29.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "A rectangular metal sheet has dimensions x and h units, with x > h, and a perimeter of 2(x + h) = 56 units. The sheet is rolled into a cylinder with two open ends (top and bottom) and height h units. Show that the volume of the cylinder is V = (28x^2)/(4π) - (x^3)/(4π).",
+    "expected": "V = (28x^2)/(4π) - (x^3)/(4π)",
+    "demonstration": "Step 1: From perimeter 2x + 2h = 56, solve for h:\n  h = (56 - 2x)/2 = 28 - x.\nStep 2: Circumference of base = x, so 2πr = x -> r = x/(2π).\nStep 3: V = πr^2 h = π(x/(2π))^2 · (28 - x)\n  = (x^2/(4π)) · (28 - x)\n  = (28x^2)/(4π) - (x^3)/(4π).  QED",
+    "memo_marks": [
+      "1 mark for h = P/2 - x",
+      "1 mark for r = x/(2π)",
+      "1 mark for substitution into V = πr^2 h"
+    ],
+    "fast_path": "Perimeter -> h. Circumference -> r. Substitute both into V.",
+    "fatal_error": "DBE says: Candidates forget the 2π in the radius, or leave two variables.",
+    "answer_book_layout": [
+      "2x + 2h = 56 -> h = 28 - x",
+      "2πr = x -> r = x/(2π)",
+      "V = πr^2 h = π(x/(2π))^2 · h",
+      "= (28x^2)/(4π) - (x^3)/(4π)"
+    ],
+    "hack": "Perimeter gives h. Circumference gives r. One substitution each, then V = πr²h.",
+    "trap": "Radius is x/(2π), not x/2. The x is the circumference, not the diameter.",
+    "presentation": "Show h, r, then the substitution and simplification.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "cylinder_from_rectangle",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\10.1\\v30.png",
+    "diagram_status": "rendered"
+  }
+]

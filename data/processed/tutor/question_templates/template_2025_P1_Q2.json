@@ -52,6 +52,12 @@
         "T_n = a*r^(n-1)",
         "T_25 = a*r^24",
         "Write in exponential form."
+      ],
+      "given_from": [
+        "2.1.1"
+      ],
+      "requires_skills": [
+        "sequences.gp"
       ]
     },
     {
@@ -74,6 +80,13 @@
         "S_inf = a/(1-r) for -1 < r < 1",
         "Substitute a and r.",
         "S_inf = ..."
+      ],
+      "given_from": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "requires_skills": [
+        "sequences.gp"
       ]
     },
     {
@@ -98,6 +111,14 @@
         "T_1 = 4k - 1, d = 4",
         "Number of terms = 117 - k + 1",
         "Set S = {total} and solve for k."
+      ],
+      "given_from": [
+        "2.1.1",
+        "2.1.2",
+        "2.1.3"
+      ],
+      "requires_skills": [
+        "sequences.gp"
       ]
     }
   ],

@@ -267,6 +267,8 @@ TOPIC_PREFIX = {
     "euclidean.": "EUCL",
     "analytical_geom.": "AGEO",
     "stats.": "STAT",
+    "analytical.": "AGEO",
+    "statistics.": "STAT",
 }
 
 
@@ -353,6 +355,25 @@ def load_overrides(year):
     return pd.read_csv(p)
 
 
+def _build_subq_id(q, s):
+    """Return the subquestion part of the problem_id.
+
+    q is the top-level question number (e.g. '8').
+    s is the subquestion as the corpus writes it (e.g. '8.1' or '1.1.1').
+
+    If s already starts with q + '.', it is the full subquestion — return
+    it as-is. Otherwise it is either empty (return just q) or a bare
+    suffix (return q + '.' + s).
+    """
+    q = (q or "").strip()
+    s = (s or "").strip()
+    if not s:
+        return q
+    if s == q or s.startswith(q + "."):
+        return s
+    return q + "." + s
+
+
 def load_year_questions(year, paper=None):
     memo = load_memo_answers(year, paper=paper)
     if len(memo) == 0:
@@ -432,12 +453,12 @@ def load_year_questions(year, paper=None):
             subtopic = _subtopic_from_skill(skill_str)
 
         problems.append(Problem(
-            problem_id=str(year) + "_" + str(row["paper"]) + "_Q" + str(row["_q"]) + "_" + str(row["_s"]),
+            problem_id=str(year) + "_" + str(row["paper"]) + "_Q" + _build_subq_id(str(row["_q"]), str(row["_s"])),
             skill_id=row["skill_id"],
             topic=topic_v2,
             subtopic=subtopic,
             structure_type="routine_calculation",
-            prompt=prompt[:500],
+            prompt=_apply_prompt_override(row, prompt)[:500],
             expected_answer=str(row["expected_answer"]),
             topic_v2=topic_v2,
         ))
@@ -468,3 +489,74 @@ def load_corpus():
 
 def load_gold_2025():
     return load_year_questions(2025)
+
+def load_template_for(problem_id):
+    """Load the template JSON for a corpus question_id.
+
+    Returns the template dict, or None. Reads from
+    data/processed/tutor/question_templates/template_YYYY_PX_Qn.json.
+    """
+    import json as _j
+    parts = str(problem_id).split("_")
+    if len(parts) < 3:
+        return None
+    year, paper, qpart = parts[0], parts[1], parts[2]
+    qnum = qpart[1:].split(".")[0]  # "Q8.4" -> "8"
+    tpl_dir = ROOT / "data" / "processed" / "tutor" / "question_templates"
+    tpl_path = tpl_dir / f"template_{year}_{paper}_Q{qnum}.json"
+    if not tpl_path.exists():
+        return None
+    try:
+        return _j.loads(tpl_path.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def subquestion_info(problem_id):
+    """Return the subquestion dict for a corpus question_id.
+
+    The dict contains given_from and requires_skills if declared.
+    Both default to [] so callers never have to check for missing keys.
+    """
+    tpl = load_template_for(problem_id)
+    if tpl is None:
+        return None
+    parts = str(problem_id).split("_")
+    if len(parts) < 3:
+        return None
+    target_n = parts[2][1:]  # "Q8.4" -> "8.4"
+    for sq in tpl.get("subquestions", []):
+        if str(sq.get("n", "")).strip() == target_n:
+            return {
+                "n":              sq.get("n"),
+                "skill_id":       sq.get("skill_id"),
+                "prompt_template": sq.get("prompt_template"),
+                "expected_fn":    sq.get("expected_fn"),
+                "given_from":     list(sq.get("given_from") or []),
+                "requires_skills": list(sq.get("requires_skills") or []),
+            }
+    return None
+
+
+# --- Manual prompt overrides for garbled OCR (added 2026-11-02) ---
+PROMPT_OVERRIDES = {
+    ("2025", "1", "4", "4.1"): "Calculate the value of t. Point (3; t) lies on f(x) = log_{1/3}(x).",
+    ("2025", "1", "4", "4.2"): "Write down the coordinates of A, the x-intercept of f.",
+    ("2025", "1", "4", "4.3"): "Determine the equation of f^-1, the inverse of f, in the form y = ...",
+    ("2025", "1", "4", "4.4"): "Write down the equation of the asymptote of f^-1.",
+    ("2025", "1", "4", "4.5"): "Draw the graph of f^-1 on the axes provided. Indicate the intercepts with the axes, the coordinates of ONE other point, and the asymptotes.",
+    ("2025", "1", "4", "4.6"): "h is obtained when f^-1 is translated 5 units to the right. Determine the y-values of h where x > 4.",
+}
+
+
+def _apply_prompt_override(row, default_prompt):
+    """Apply a manual prompt override if one exists for this row."""
+    year = str(row.get("year", "") or "").strip()
+    paper = str(row.get("paper", "") or "").strip().upper().replace("P", "")
+    q = str(row.get("_q", "") or "").strip()
+    s = str(row.get("_s", "") or "").strip()
+    for key in [(year, paper, q, s), ("*", paper, q, s)]:
+        if key in PROMPT_OVERRIDES:
+            return PROMPT_OVERRIDES[key]
+    return default_prompt
+

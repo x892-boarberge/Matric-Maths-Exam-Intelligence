@@ -1,0 +1,662 @@
+[
+  {
+    "variant_question": "A survey of 200 learners found: Male-Tea = 70, Male-Coffee = 30, Female-Tea = 30, Female-Coffee = 70. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "7/10",
+    "demonstration": "Conditional on females: denominator = female total = 100.\nFemale-coffee = 70.\nP(coffee | female) = 70/100 = 7/10.",
+    "memo_marks": [
+      "1 mark for denominator 100",
+      "1 mark for 70/100",
+      "1 mark for 7/10"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 100",
+      "Female-coffee = 70",
+      "P = 70/100 = 7/10"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 150 learners found: Male-Tea = 30, Male-Coffee = 40, Female-Tea = 30, Female-Coffee = 50. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "5/8",
+    "demonstration": "Conditional on females: denominator = female total = 80.\nFemale-coffee = 50.\nP(coffee | female) = 50/80 = 5/8.",
+    "memo_marks": [
+      "1 mark for denominator 80",
+      "1 mark for 50/80",
+      "1 mark for 5/8"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 80",
+      "Female-coffee = 50",
+      "P = 50/80 = 5/8"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 240 learners found: Male-Tea = 60, Male-Coffee = 60, Female-Tea = 40, Female-Coffee = 80. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "2/3",
+    "demonstration": "Conditional on females: denominator = female total = 120.\nFemale-coffee = 80.\nP(coffee | female) = 80/120 = 2/3.",
+    "memo_marks": [
+      "1 mark for denominator 120",
+      "1 mark for 80/120",
+      "1 mark for 2/3"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 120",
+      "Female-coffee = 80",
+      "P = 80/120 = 2/3"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 300 learners found: Male-Tea = 70, Male-Coffee = 80, Female-Tea = 50, Female-Coffee = 100. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "2/3",
+    "demonstration": "Conditional on females: denominator = female total = 150.\nFemale-coffee = 100.\nP(coffee | female) = 100/150 = 2/3.",
+    "memo_marks": [
+      "1 mark for denominator 150",
+      "1 mark for 100/150",
+      "1 mark for 2/3"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 150",
+      "Female-coffee = 100",
+      "P = 100/150 = 2/3"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 160 learners found: Male-Tea = 40, Male-Coffee = 40, Female-Tea = 20, Female-Coffee = 60. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "3/4",
+    "demonstration": "Conditional on females: denominator = female total = 80.\nFemale-coffee = 60.\nP(coffee | female) = 60/80 = 3/4.",
+    "memo_marks": [
+      "1 mark for denominator 80",
+      "1 mark for 60/80",
+      "1 mark for 3/4"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 80",
+      "Female-coffee = 60",
+      "P = 60/80 = 3/4"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 250 learners found: Male-Tea = 50, Male-Coffee = 70, Female-Tea = 40, Female-Coffee = 90. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "9/13",
+    "demonstration": "Conditional on females: denominator = female total = 130.\nFemale-coffee = 90.\nP(coffee | female) = 90/130 = 9/13.",
+    "memo_marks": [
+      "1 mark for denominator 130",
+      "1 mark for 90/130",
+      "1 mark for 9/13"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 130",
+      "Female-coffee = 90",
+      "P = 90/130 = 9/13"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 180 learners found: Male-Tea = 35, Male-Coffee = 45, Female-Tea = 35, Female-Coffee = 65. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "13/20",
+    "demonstration": "Conditional on females: denominator = female total = 100.\nFemale-coffee = 65.\nP(coffee | female) = 65/100 = 13/20.",
+    "memo_marks": [
+      "1 mark for denominator 100",
+      "1 mark for 65/100",
+      "1 mark for 13/20"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 100",
+      "Female-coffee = 65",
+      "P = 65/100 = 13/20"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 220 learners found: Male-Tea = 50, Male-Coffee = 60, Female-Tea = 40, Female-Coffee = 70. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "7/11",
+    "demonstration": "Conditional on females: denominator = female total = 110.\nFemale-coffee = 70.\nP(coffee | female) = 70/110 = 7/11.",
+    "memo_marks": [
+      "1 mark for denominator 110",
+      "1 mark for 70/110",
+      "1 mark for 7/11"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 110",
+      "Female-coffee = 70",
+      "P = 70/110 = 7/11"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 120 learners found: Male-Tea = 20, Male-Coffee = 30, Female-Tea = 25, Female-Coffee = 45. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "9/14",
+    "demonstration": "Conditional on females: denominator = female total = 70.\nFemale-coffee = 45.\nP(coffee | female) = 45/70 = 9/14.",
+    "memo_marks": [
+      "1 mark for denominator 70",
+      "1 mark for 45/70",
+      "1 mark for 9/14"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 70",
+      "Female-coffee = 45",
+      "P = 45/70 = 9/14"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 100 learners found: Male-Tea = 10, Male-Coffee = 30, Female-Tea = 20, Female-Coffee = 40. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "2/3",
+    "demonstration": "Conditional on females: denominator = female total = 60.\nFemale-coffee = 40.\nP(coffee | female) = 40/60 = 2/3.",
+    "memo_marks": [
+      "1 mark for denominator 60",
+      "1 mark for 40/60",
+      "1 mark for 2/3"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 60",
+      "Female-coffee = 40",
+      "P = 40/60 = 2/3"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 280 learners found: Male-Tea = 55, Male-Coffee = 85, Female-Tea = 45, Female-Coffee = 95. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "19/28",
+    "demonstration": "Conditional on females: denominator = female total = 140.\nFemale-coffee = 95.\nP(coffee | female) = 95/140 = 19/28.",
+    "memo_marks": [
+      "1 mark for denominator 140",
+      "1 mark for 95/140",
+      "1 mark for 19/28"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 140",
+      "Female-coffee = 95",
+      "P = 95/140 = 19/28"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 320 learners found: Male-Tea = 60, Male-Coffee = 100, Female-Tea = 50, Female-Coffee = 110. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "11/16",
+    "demonstration": "Conditional on females: denominator = female total = 160.\nFemale-coffee = 110.\nP(coffee | female) = 110/160 = 11/16.",
+    "memo_marks": [
+      "1 mark for denominator 160",
+      "1 mark for 110/160",
+      "1 mark for 11/16"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 160",
+      "Female-coffee = 110",
+      "P = 110/160 = 11/16"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 200 learners found: Male-Tea = 70, Male-Coffee = 30, Female-Tea = 30, Female-Coffee = 70. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "7/10",
+    "demonstration": "Conditional on females: denominator = female total = 100.\nFemale-coffee = 70.\nP(coffee | female) = 70/100 = 7/10.",
+    "memo_marks": [
+      "1 mark for denominator 100",
+      "1 mark for 70/100",
+      "1 mark for 7/10"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 100",
+      "Female-coffee = 70",
+      "P = 70/100 = 7/10"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 150 learners found: Male-Tea = 30, Male-Coffee = 40, Female-Tea = 30, Female-Coffee = 50. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "5/8",
+    "demonstration": "Conditional on females: denominator = female total = 80.\nFemale-coffee = 50.\nP(coffee | female) = 50/80 = 5/8.",
+    "memo_marks": [
+      "1 mark for denominator 80",
+      "1 mark for 50/80",
+      "1 mark for 5/8"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 80",
+      "Female-coffee = 50",
+      "P = 50/80 = 5/8"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 240 learners found: Male-Tea = 60, Male-Coffee = 60, Female-Tea = 40, Female-Coffee = 80. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "2/3",
+    "demonstration": "Conditional on females: denominator = female total = 120.\nFemale-coffee = 80.\nP(coffee | female) = 80/120 = 2/3.",
+    "memo_marks": [
+      "1 mark for denominator 120",
+      "1 mark for 80/120",
+      "1 mark for 2/3"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 120",
+      "Female-coffee = 80",
+      "P = 80/120 = 2/3"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 300 learners found: Male-Tea = 70, Male-Coffee = 80, Female-Tea = 50, Female-Coffee = 100. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "2/3",
+    "demonstration": "Conditional on females: denominator = female total = 150.\nFemale-coffee = 100.\nP(coffee | female) = 100/150 = 2/3.",
+    "memo_marks": [
+      "1 mark for denominator 150",
+      "1 mark for 100/150",
+      "1 mark for 2/3"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 150",
+      "Female-coffee = 100",
+      "P = 100/150 = 2/3"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 160 learners found: Male-Tea = 40, Male-Coffee = 40, Female-Tea = 20, Female-Coffee = 60. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "3/4",
+    "demonstration": "Conditional on females: denominator = female total = 80.\nFemale-coffee = 60.\nP(coffee | female) = 60/80 = 3/4.",
+    "memo_marks": [
+      "1 mark for denominator 80",
+      "1 mark for 60/80",
+      "1 mark for 3/4"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 80",
+      "Female-coffee = 60",
+      "P = 60/80 = 3/4"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 250 learners found: Male-Tea = 50, Male-Coffee = 70, Female-Tea = 40, Female-Coffee = 90. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "9/13",
+    "demonstration": "Conditional on females: denominator = female total = 130.\nFemale-coffee = 90.\nP(coffee | female) = 90/130 = 9/13.",
+    "memo_marks": [
+      "1 mark for denominator 130",
+      "1 mark for 90/130",
+      "1 mark for 9/13"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 130",
+      "Female-coffee = 90",
+      "P = 90/130 = 9/13"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 180 learners found: Male-Tea = 35, Male-Coffee = 45, Female-Tea = 35, Female-Coffee = 65. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "13/20",
+    "demonstration": "Conditional on females: denominator = female total = 100.\nFemale-coffee = 65.\nP(coffee | female) = 65/100 = 13/20.",
+    "memo_marks": [
+      "1 mark for denominator 100",
+      "1 mark for 65/100",
+      "1 mark for 13/20"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 100",
+      "Female-coffee = 65",
+      "P = 65/100 = 13/20"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 220 learners found: Male-Tea = 50, Male-Coffee = 60, Female-Tea = 40, Female-Coffee = 70. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "7/11",
+    "demonstration": "Conditional on females: denominator = female total = 110.\nFemale-coffee = 70.\nP(coffee | female) = 70/110 = 7/11.",
+    "memo_marks": [
+      "1 mark for denominator 110",
+      "1 mark for 70/110",
+      "1 mark for 7/11"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 110",
+      "Female-coffee = 70",
+      "P = 70/110 = 7/11"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 120 learners found: Male-Tea = 20, Male-Coffee = 30, Female-Tea = 25, Female-Coffee = 45. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "9/14",
+    "demonstration": "Conditional on females: denominator = female total = 70.\nFemale-coffee = 45.\nP(coffee | female) = 45/70 = 9/14.",
+    "memo_marks": [
+      "1 mark for denominator 70",
+      "1 mark for 45/70",
+      "1 mark for 9/14"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 70",
+      "Female-coffee = 45",
+      "P = 45/70 = 9/14"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 100 learners found: Male-Tea = 10, Male-Coffee = 30, Female-Tea = 20, Female-Coffee = 40. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "2/3",
+    "demonstration": "Conditional on females: denominator = female total = 60.\nFemale-coffee = 40.\nP(coffee | female) = 40/60 = 2/3.",
+    "memo_marks": [
+      "1 mark for denominator 60",
+      "1 mark for 40/60",
+      "1 mark for 2/3"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 60",
+      "Female-coffee = 40",
+      "P = 40/60 = 2/3"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 280 learners found: Male-Tea = 55, Male-Coffee = 85, Female-Tea = 45, Female-Coffee = 95. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "19/28",
+    "demonstration": "Conditional on females: denominator = female total = 140.\nFemale-coffee = 95.\nP(coffee | female) = 95/140 = 19/28.",
+    "memo_marks": [
+      "1 mark for denominator 140",
+      "1 mark for 95/140",
+      "1 mark for 19/28"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 140",
+      "Female-coffee = 95",
+      "P = 95/140 = 19/28"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 320 learners found: Male-Tea = 60, Male-Coffee = 100, Female-Tea = 50, Female-Coffee = 110. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "11/16",
+    "demonstration": "Conditional on females: denominator = female total = 160.\nFemale-coffee = 110.\nP(coffee | female) = 110/160 = 11/16.",
+    "memo_marks": [
+      "1 mark for denominator 160",
+      "1 mark for 110/160",
+      "1 mark for 11/16"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 160",
+      "Female-coffee = 110",
+      "P = 110/160 = 11/16"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 200 learners found: Male-Tea = 70, Male-Coffee = 30, Female-Tea = 30, Female-Coffee = 70. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "7/10",
+    "demonstration": "Conditional on females: denominator = female total = 100.\nFemale-coffee = 70.\nP(coffee | female) = 70/100 = 7/10.",
+    "memo_marks": [
+      "1 mark for denominator 100",
+      "1 mark for 70/100",
+      "1 mark for 7/10"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 100",
+      "Female-coffee = 70",
+      "P = 70/100 = 7/10"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 150 learners found: Male-Tea = 30, Male-Coffee = 40, Female-Tea = 30, Female-Coffee = 50. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "5/8",
+    "demonstration": "Conditional on females: denominator = female total = 80.\nFemale-coffee = 50.\nP(coffee | female) = 50/80 = 5/8.",
+    "memo_marks": [
+      "1 mark for denominator 80",
+      "1 mark for 50/80",
+      "1 mark for 5/8"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 80",
+      "Female-coffee = 50",
+      "P = 50/80 = 5/8"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 240 learners found: Male-Tea = 60, Male-Coffee = 60, Female-Tea = 40, Female-Coffee = 80. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "2/3",
+    "demonstration": "Conditional on females: denominator = female total = 120.\nFemale-coffee = 80.\nP(coffee | female) = 80/120 = 2/3.",
+    "memo_marks": [
+      "1 mark for denominator 120",
+      "1 mark for 80/120",
+      "1 mark for 2/3"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 120",
+      "Female-coffee = 80",
+      "P = 80/120 = 2/3"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 300 learners found: Male-Tea = 70, Male-Coffee = 80, Female-Tea = 50, Female-Coffee = 100. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "2/3",
+    "demonstration": "Conditional on females: denominator = female total = 150.\nFemale-coffee = 100.\nP(coffee | female) = 100/150 = 2/3.",
+    "memo_marks": [
+      "1 mark for denominator 150",
+      "1 mark for 100/150",
+      "1 mark for 2/3"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 150",
+      "Female-coffee = 100",
+      "P = 100/150 = 2/3"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 160 learners found: Male-Tea = 40, Male-Coffee = 40, Female-Tea = 20, Female-Coffee = 60. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "3/4",
+    "demonstration": "Conditional on females: denominator = female total = 80.\nFemale-coffee = 60.\nP(coffee | female) = 60/80 = 3/4.",
+    "memo_marks": [
+      "1 mark for denominator 80",
+      "1 mark for 60/80",
+      "1 mark for 3/4"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 80",
+      "Female-coffee = 60",
+      "P = 60/80 = 3/4"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "A survey of 250 learners found: Male-Tea = 50, Male-Coffee = 70, Female-Tea = 40, Female-Coffee = 90. Calculate the probability that a female learner, chosen at random, prefers coffee.",
+    "expected": "9/13",
+    "demonstration": "Conditional on females: denominator = female total = 130.\nFemale-coffee = 90.\nP(coffee | female) = 90/130 = 9/13.",
+    "memo_marks": [
+      "1 mark for denominator 130",
+      "1 mark for 90/130",
+      "1 mark for 9/13"
+    ],
+    "fast_path": "'Given female' → denominator = female total.",
+    "fatal_error": "DBE says: Candidates use grand total {N} as denominator. 'Chosen from females' fixes sample space to females.",
+    "answer_book_layout": [
+      "Female total = 130",
+      "Female-coffee = 90",
+      "P = 90/130 = 9/13"
+    ],
+    "hack": "'Given X' → X's total is denominator.",
+    "trap": "Females only. Not all learners.",
+    "presentation": "State conditional group, cell, ratio.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  }
+]

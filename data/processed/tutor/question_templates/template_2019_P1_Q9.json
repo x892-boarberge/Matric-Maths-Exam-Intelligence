@@ -37,6 +37,12 @@
       "steps": [
         "f(0) = 0 and f'(0) = 0.",
         "f''(0) = 0 but is not a turning point for f''."
+      ],
+      "given_from": [
+        "9.1"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -56,6 +62,13 @@
       "steps": [
         "For f: point of inflection.",
         "For f': turning point."
+      ],
+      "given_from": [
+        "9.1",
+        "9.2.1"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -76,6 +89,14 @@
         "f'(1) = 9.",
         "f''(1) = 18.",
         "Distance = |9 - 18| = 9."
+      ],
+      "given_from": [
+        "9.1",
+        "9.2.1",
+        "9.2.2"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -109,6 +130,15 @@
         "3x²(x - 3) < 0.",
         "3x² > 0 always, so x - 3 < 0.",
         "x < 3, x != 0."
+      ],
+      "given_from": [
+        "9.1",
+        "9.2.1",
+        "9.2.2",
+        "9.3"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     }
   ],

@@ -48,6 +48,12 @@
         "From the diagram read the asymptotes.",
         "Use intersection conditions given in the question.",
         "Solve for a, p, q."
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -68,6 +74,13 @@
         "g has gradient 1.",
         "g is already parallel to one axis of symmetry.",
         "Translate g to coincide with the axis of symmetry."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     }
   ],

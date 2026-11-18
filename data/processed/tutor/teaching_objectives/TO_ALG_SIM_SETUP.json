@@ -1,0 +1,37 @@
+{
+  "objective_id": "TO_ALG_SIM_SETUP",
+  "skill_id": "algebra.simultaneous.solve",
+  "trigger_misconception": "M_SIM_EQUATION_FROM_WORDS",
+  "dbe_source": {
+    "years": [
+      "2025"
+    ],
+    "recommendation": "When the question is given in words, write the two equations first. Read one sentence at a time and translate each into an equation before s",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When the question is given in words, write the two equations first. Read one sentence at a time and translate each into an equation before solving anything.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "x is the sum of 2 and y, and 5x = 6 - y",
+      "work": [
+        "First sentence: x = 2 + y",
+        "Second sentence: 5x = 6 - y",
+        "Only now solve. Substitute x from the first equation into the second.",
+        "5(2 + y) = 6 - y",
+        "10 + 5y = 6 - y",
+        "6y = -4, y = -2/3, x = 4/3"
+      ]
+    },
+    "probe": {
+      "problem": "x is 3 more than y, and 2x + y = 12.",
+      "expected": "x = y + 3 and 2x + y = 12",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_SIM_EQUATION_FROM_WORDS",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "Write the two equations from the sentences first, one per sentence, before solving anything."
+}

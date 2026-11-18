@@ -43,6 +43,12 @@
       "expected_fn": "y = 2^x",
       "steps": [
         "Reflection in y = x."
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "functions.log"
       ]
     },
     {
@@ -61,6 +67,14 @@
       "steps": [
         "Set f(x) = g^(-1)(x)...",
         "Draw both, find intersection."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2"
+      ],
+      "requires_skills": [
+        "functions.log",
+        "functions.inverse"
       ]
     },
     {
@@ -81,6 +95,15 @@
       "expected_fn": "x = 1",
       "steps": [
         "Read off the graph."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3"
+      ],
+      "requires_skills": [
+        "functions.log",
+        "functions.inverse"
       ]
     }
   ],

@@ -38,6 +38,12 @@
       "steps": [
         "Vertical: x = 1.",
         "Horizontal: y = 0."
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -69,6 +75,13 @@
         "Both branches.",
         "Dotted asymptotes.",
         "Mark y-intercept at (0; 1)."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -88,6 +101,14 @@
         "f'(x) = 1/(x-1)² > 0 for all x != 1.",
         "x * f'(x) >= 0 → x >= 0, but x != 1.",
         "x > 1 or 0 <= x < 1... check. Actually x > 1 or x < 0."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     }
   ],

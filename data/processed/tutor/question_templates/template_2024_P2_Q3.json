@@ -40,6 +40,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1"
+      ],
+      "requires_skills": [
+        "analytical.gradient"
       ]
     },
     {
@@ -55,6 +61,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2"
+      ],
+      "requires_skills": [
+        "analytical.gradient",
+        "analytical.line_equation"
       ]
     },
     {
@@ -75,6 +89,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ],
+      "requires_skills": [
+        "analytical.gradient",
+        "analytical.line_equation",
+        "analytical.substitution"
       ]
     },
     {
@@ -95,6 +119,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ],
+      "requires_skills": [
+        "analytical.gradient",
+        "analytical.line_equation",
+        "analytical.substitution",
+        "analytical.distance"
       ]
     },
     {
@@ -125,6 +161,20 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ],
+      "requires_skills": [
+        "analytical.gradient",
+        "analytical.line_equation",
+        "analytical.substitution",
+        "analytical.distance",
+        "analytical.ratio"
       ]
     },
     {
@@ -165,6 +215,22 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ],
+      "requires_skills": [
+        "analytical.gradient",
+        "analytical.line_equation",
+        "analytical.substitution",
+        "analytical.distance",
+        "analytical.ratio",
+        "analytical.area_ratio"
       ]
     }
   ],

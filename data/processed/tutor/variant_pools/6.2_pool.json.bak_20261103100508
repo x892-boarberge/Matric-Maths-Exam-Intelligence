@@ -1,0 +1,752 @@
+[
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 3, and g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 9/(x - 6)",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(3) = q → 3 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(6) = f(6) → 6 + c = a/(6 + p) + q.\nSolving: c = p = -3, a = 9, q = 0.\nAnswer: f(x) = 9/(x - 6) .",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(6) = g(6)",
+      "1 mark for a = 9, p = -3, q = 0 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -3",
+      "g(3) = q → q = 3 + c = 0",
+      "f(0) = g(0) → a/p + q = c → a = 9",
+      "f(x) = 9/(x - 6) "
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 3, and g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 5) + 1",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(3) = q → 3 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(5) = f(5) → 5 + c = a/(5 + p) + q.\nSolving: c = p = -2, a = 6, q = 1.\nAnswer: f(x) = 6/(x - 5) + 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(5) = g(5)",
+      "1 mark for a = 6, p = -2, q = 1 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -2",
+      "g(3) = q → q = 3 + c = 1",
+      "f(0) = g(0) → a/p + q = c → a = 6",
+      "f(x) = 6/(x - 5) + 1"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 4. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 3/(x - 4) - 2",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(4) = f(4) → 4 + c = a/(4 + p) + q.\nSolving: c = p = -3, a = 3, q = -2.\nAnswer: f(x) = 3/(x - 4) - 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(4) = g(4)",
+      "1 mark for a = 3, p = -3, q = -2 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -3",
+      "g(1) = q → q = 1 + c = -2",
+      "f(0) = g(0) → a/p + q = c → a = 3",
+      "f(x) = 3/(x - 4) - 2"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 7) - 5",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(7) = f(7) → 7 + c = a/(7 + p) + q.\nSolving: c = p = -6, a = 6, q = -5.\nAnswer: f(x) = 6/(x - 7) - 5.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(7) = g(7)",
+      "1 mark for a = 6, p = -6, q = -5 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -6",
+      "g(1) = q → q = 1 + c = -5",
+      "f(0) = g(0) → a/p + q = c → a = 6",
+      "f(x) = 6/(x - 7) - 5"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 8. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 12/(x - 8) - 4",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(8) = f(8) → 8 + c = a/(8 + p) + q.\nSolving: c = p = -6, a = 12, q = -4.\nAnswer: f(x) = 12/(x - 8) - 4.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(8) = g(8)",
+      "1 mark for a = 12, p = -6, q = -4 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -6",
+      "g(2) = q → q = 2 + c = -4",
+      "f(0) = g(0) → a/p + q = c → a = 12",
+      "f(x) = 12/(x - 8) - 4"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 2. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 1/(x - 2)",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(2) = f(2) → 2 + c = a/(2 + p) + q.\nSolving: c = p = -1, a = 1, q = 0.\nAnswer: f(x) = 1/(x - 2) .",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(2) = g(2)",
+      "1 mark for a = 1, p = -1, q = 0 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -1",
+      "g(1) = q → q = 1 + c = 0",
+      "f(0) = g(0) → a/p + q = c → a = 1",
+      "f(x) = 1/(x - 2) "
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 7) - 5",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(7) = f(7) → 7 + c = a/(7 + p) + q.\nSolving: c = p = -6, a = 6, q = -5.\nAnswer: f(x) = 6/(x - 7) - 5.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(7) = g(7)",
+      "1 mark for a = 6, p = -6, q = -5 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -6",
+      "g(1) = q → q = 1 + c = -5",
+      "f(0) = g(0) → a/p + q = c → a = 6",
+      "f(x) = 6/(x - 7) - 5"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 3. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 2/(x - 3) + 1",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(3) = f(3) → 3 + c = a/(3 + p) + q.\nSolving: c = p = -1, a = 2, q = 1.\nAnswer: f(x) = 2/(x - 3) + 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(3) = g(3)",
+      "1 mark for a = 2, p = -1, q = 1 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -1",
+      "g(2) = q → q = 2 + c = 1",
+      "f(0) = g(0) → a/p + q = c → a = 2",
+      "f(x) = 2/(x - 3) + 1"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 3. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 2/(x - 3) - 1",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(3) = f(3) → 3 + c = a/(3 + p) + q.\nSolving: c = p = -2, a = 2, q = -1.\nAnswer: f(x) = 2/(x - 3) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(3) = g(3)",
+      "1 mark for a = 2, p = -2, q = -1 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -2",
+      "g(1) = q → q = 1 + c = -1",
+      "f(0) = g(0) → a/p + q = c → a = 2",
+      "f(x) = 2/(x - 3) - 1"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 4. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 4/(x - 4)",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(4) = f(4) → 4 + c = a/(4 + p) + q.\nSolving: c = p = -2, a = 4, q = 0.\nAnswer: f(x) = 4/(x - 4) .",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(4) = g(4)",
+      "1 mark for a = 4, p = -2, q = 0 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -2",
+      "g(2) = q → q = 2 + c = 0",
+      "f(0) = g(0) → a/p + q = c → a = 4",
+      "f(x) = 4/(x - 4) "
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 3, and g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 12/(x - 7) - 1",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(3) = q → 3 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(7) = f(7) → 7 + c = a/(7 + p) + q.\nSolving: c = p = -4, a = 12, q = -1.\nAnswer: f(x) = 12/(x - 7) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(7) = g(7)",
+      "1 mark for a = 12, p = -4, q = -1 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -4",
+      "g(3) = q → q = 3 + c = -1",
+      "f(0) = g(0) → a/p + q = c → a = 12",
+      "f(x) = 12/(x - 7) - 1"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 10/(x - 7) - 3",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(7) = f(7) → 7 + c = a/(7 + p) + q.\nSolving: c = p = -5, a = 10, q = -3.\nAnswer: f(x) = 10/(x - 7) - 3.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(7) = g(7)",
+      "1 mark for a = 10, p = -5, q = -3 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -5",
+      "g(2) = q → q = 2 + c = -3",
+      "f(0) = g(0) → a/p + q = c → a = 10",
+      "f(x) = 10/(x - 7) - 3"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 3, and g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 5) + 1",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(3) = q → 3 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(5) = f(5) → 5 + c = a/(5 + p) + q.\nSolving: c = p = -2, a = 6, q = 1.\nAnswer: f(x) = 6/(x - 5) + 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(5) = g(5)",
+      "1 mark for a = 6, p = -2, q = 1 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -2",
+      "g(3) = q → q = 3 + c = 1",
+      "f(0) = g(0) → a/p + q = c → a = 6",
+      "f(x) = 6/(x - 5) + 1"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 2. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 1/(x - 2)",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(2) = f(2) → 2 + c = a/(2 + p) + q.\nSolving: c = p = -1, a = 1, q = 0.\nAnswer: f(x) = 1/(x - 2) .",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(2) = g(2)",
+      "1 mark for a = 1, p = -1, q = 0 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -1",
+      "g(1) = q → q = 1 + c = 0",
+      "f(0) = g(0) → a/p + q = c → a = 1",
+      "f(x) = 1/(x - 2) "
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 4/(x - 5) - 3",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(5) = f(5) → 5 + c = a/(5 + p) + q.\nSolving: c = p = -4, a = 4, q = -3.\nAnswer: f(x) = 4/(x - 5) - 3.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(5) = g(5)",
+      "1 mark for a = 4, p = -4, q = -3 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -4",
+      "g(1) = q → q = 1 + c = -3",
+      "f(0) = g(0) → a/p + q = c → a = 4",
+      "f(x) = 4/(x - 5) - 3"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 8/(x - 6) - 2",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(6) = f(6) → 6 + c = a/(6 + p) + q.\nSolving: c = p = -4, a = 8, q = -2.\nAnswer: f(x) = 8/(x - 6) - 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(6) = g(6)",
+      "1 mark for a = 8, p = -4, q = -2 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -4",
+      "g(2) = q → q = 2 + c = -2",
+      "f(0) = g(0) → a/p + q = c → a = 8",
+      "f(x) = 8/(x - 6) - 2"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 5/(x - 6) - 4",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(6) = f(6) → 6 + c = a/(6 + p) + q.\nSolving: c = p = -5, a = 5, q = -4.\nAnswer: f(x) = 5/(x - 6) - 4.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(6) = g(6)",
+      "1 mark for a = 5, p = -5, q = -4 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -5",
+      "g(1) = q → q = 1 + c = -4",
+      "f(0) = g(0) → a/p + q = c → a = 5",
+      "f(x) = 5/(x - 6) - 4"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 5) - 1",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(5) = f(5) → 5 + c = a/(5 + p) + q.\nSolving: c = p = -3, a = 6, q = -1.\nAnswer: f(x) = 6/(x - 5) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(5) = g(5)",
+      "1 mark for a = 6, p = -3, q = -1 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -3",
+      "g(2) = q → q = 2 + c = -1",
+      "f(0) = g(0) → a/p + q = c → a = 6",
+      "f(x) = 6/(x - 5) - 1"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 4. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 3/(x - 4) - 2",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(4) = f(4) → 4 + c = a/(4 + p) + q.\nSolving: c = p = -3, a = 3, q = -2.\nAnswer: f(x) = 3/(x - 4) - 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(4) = g(4)",
+      "1 mark for a = 3, p = -3, q = -2 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -3",
+      "g(1) = q → q = 1 + c = -2",
+      "f(0) = g(0) → a/p + q = c → a = 3",
+      "f(x) = 3/(x - 4) - 2"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 3. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 2/(x - 3) + 1",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(3) = f(3) → 3 + c = a/(3 + p) + q.\nSolving: c = p = -1, a = 2, q = 1.\nAnswer: f(x) = 2/(x - 3) + 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(3) = g(3)",
+      "1 mark for a = 2, p = -1, q = 1 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -1",
+      "g(2) = q → q = 2 + c = 1",
+      "f(0) = g(0) → a/p + q = c → a = 2",
+      "f(x) = 2/(x - 3) + 1"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 3, and g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 9/(x - 6)",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(3) = q → 3 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(6) = f(6) → 6 + c = a/(6 + p) + q.\nSolving: c = p = -3, a = 9, q = 0.\nAnswer: f(x) = 9/(x - 6) .",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(6) = g(6)",
+      "1 mark for a = 9, p = -3, q = 0 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -3",
+      "g(3) = q → q = 3 + c = 0",
+      "f(0) = g(0) → a/p + q = c → a = 9",
+      "f(x) = 9/(x - 6) "
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 5) - 1",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(5) = f(5) → 5 + c = a/(5 + p) + q.\nSolving: c = p = -3, a = 6, q = -1.\nAnswer: f(x) = 6/(x - 5) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(5) = g(5)",
+      "1 mark for a = 6, p = -3, q = -1 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -3",
+      "g(2) = q → q = 2 + c = -1",
+      "f(0) = g(0) → a/p + q = c → a = 6",
+      "f(x) = 6/(x - 5) - 1"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 4. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 4/(x - 4)",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(4) = f(4) → 4 + c = a/(4 + p) + q.\nSolving: c = p = -2, a = 4, q = 0.\nAnswer: f(x) = 4/(x - 4) .",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(4) = g(4)",
+      "1 mark for a = 4, p = -2, q = 0 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -2",
+      "g(2) = q → q = 2 + c = 0",
+      "f(0) = g(0) → a/p + q = c → a = 4",
+      "f(x) = 4/(x - 4) "
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 3. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 2/(x - 3) - 1",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(3) = f(3) → 3 + c = a/(3 + p) + q.\nSolving: c = p = -2, a = 2, q = -1.\nAnswer: f(x) = 2/(x - 3) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(3) = g(3)",
+      "1 mark for a = 2, p = -2, q = -1 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -2",
+      "g(1) = q → q = 1 + c = -1",
+      "f(0) = g(0) → a/p + q = c → a = 2",
+      "f(x) = 2/(x - 3) - 1"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 4/(x - 5) - 3",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(5) = f(5) → 5 + c = a/(5 + p) + q.\nSolving: c = p = -4, a = 4, q = -3.\nAnswer: f(x) = 4/(x - 5) - 3.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(5) = g(5)",
+      "1 mark for a = 4, p = -4, q = -3 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -4",
+      "g(1) = q → q = 1 + c = -3",
+      "f(0) = g(0) → a/p + q = c → a = 4",
+      "f(x) = 4/(x - 5) - 3"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 4, and g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 8/(x - 6) + 2",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(4) = q → 4 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(6) = f(6) → 6 + c = a/(6 + p) + q.\nSolving: c = p = -2, a = 8, q = 2.\nAnswer: f(x) = 8/(x - 6) + 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 4 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(6) = g(6)",
+      "1 mark for a = 8, p = -2, q = 2 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -2",
+      "g(4) = q → q = 4 + c = 2",
+      "f(0) = g(0) → a/p + q = c → a = 8",
+      "f(x) = 8/(x - 6) + 2"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 1, and g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 5/(x - 6) - 4",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(1) = q → 1 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(6) = f(6) → 6 + c = a/(6 + p) + q.\nSolving: c = p = -5, a = 5, q = -4.\nAnswer: f(x) = 5/(x - 6) - 4.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(6) = g(6)",
+      "1 mark for a = 5, p = -5, q = -4 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -5",
+      "g(1) = q → q = 1 + c = -4",
+      "f(0) = g(0) → a/p + q = c → a = 5",
+      "f(x) = 5/(x - 6) - 4"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 4, and g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 8/(x - 6) + 2",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(4) = q → 4 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(6) = f(6) → 6 + c = a/(6 + p) + q.\nSolving: c = p = -2, a = 8, q = 2.\nAnswer: f(x) = 8/(x - 6) + 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 4 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(6) = g(6)",
+      "1 mark for a = 8, p = -2, q = 2 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -2",
+      "g(4) = q → q = 4 + c = 2",
+      "f(0) = g(0) → a/p + q = c → a = 8",
+      "f(x) = 8/(x - 6) + 2"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 10/(x - 7) - 3",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(7) = f(7) → 7 + c = a/(7 + p) + q.\nSolving: c = p = -5, a = 10, q = -3.\nAnswer: f(x) = 10/(x - 7) - 3.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(7) = g(7)",
+      "1 mark for a = 10, p = -5, q = -3 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -5",
+      "g(2) = q → q = 2 + c = -3",
+      "f(0) = g(0) → a/p + q = c → a = 10",
+      "f(x) = 10/(x - 7) - 3"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  },
+  {
+    "variant_question": "The graphs of g(x) = x + c and f(x) = a/(x + p) + q are drawn. g and the vertical asymptote of f intersect on the x-axis. g intersects the horizontal asymptote of f at x = 2, and g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 8/(x - 6) - 2",
+    "demonstration": "Step 1: From the x-axis intersection, g(-p) = 0 → -p + c = 0 → c = p.\nStep 2: From the horizontal asymptote intersection, g(2) = q → 2 + c = q.\nStep 3: From the y-axis intersection, f(0) = g(0) → a/p + q = c.\nStep 4: From the f intersection, g(6) = f(6) → 6 + c = a/(6 + p) + q.\nSolving: c = p = -4, a = 8, q = -2.\nAnswer: f(x) = 8/(x - 6) - 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c",
+      "1 mark for f(0) = g(0) giving a in terms of p",
+      "1 mark for substitution into f(6) = g(6)",
+      "1 mark for a = 8, p = -4, q = -2 and the final f(x)"
+    ],
+    "fast_path": "Three constraints, three unknowns. c = p from x-axis. q from horizontal asymptote. a from either y-axis or f-intersection.",
+    "fatal_error": "DBE says: Candidates try to use all three points simultaneously without exploiting c = p first. The x-axis intersection is the key — it gives c = p for free.",
+    "answer_book_layout": [
+      "g(-p) = 0 → c = p = -4",
+      "g(2) = q → q = 2 + c = -2",
+      "f(0) = g(0) → a/p + q = c → a = 8",
+      "f(x) = 8/(x - 6) - 2"
+    ],
+    "hack": "c = p from the x-axis. Then everything falls into place. Don't try to solve three equations in three unknowns from scratch — start with the free one.",
+    "trap": "The vertical asymptote is x = -p, so the x-intercept is (-p, 0). Sign matters.",
+    "presentation": "Show each constraint used. The five marks come from four steps plus final answer.",
+    "diagram": "required",
+    "diagram_hint": "line_and_hyperbola_with_all_intersections"
+  }
+]

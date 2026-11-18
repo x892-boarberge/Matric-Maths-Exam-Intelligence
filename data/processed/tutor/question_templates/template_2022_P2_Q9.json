@@ -72,6 +72,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "9.1.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -103,6 +109,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "9.1.1",
+        "9.2.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     }
   ],

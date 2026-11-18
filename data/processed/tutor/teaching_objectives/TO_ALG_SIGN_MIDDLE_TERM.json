@@ -1,0 +1,34 @@
+{
+  "objective_id": "TO_ALG_SIGN_MIDDLE_TERM",
+  "skill_id": "algebra.quadratic.solve",
+  "trigger_misconception": "M_SIGN_ERROR_FACTORISATION",
+  "dbe_source": {
+    "year": "2018",
+    "subquestion_ref": "1.1.1",
+    "recommendation": "Teachers need to emphasise the importance of the sign of the middle term in factorising quadratic equations.",
+    "verbatim": true
+  },
+  "lesson": {
+    "concept": "In x² + bx + c = 0, the two factors are (x - r₁)(x - r₂) where b = -(r₁ + r₂) and c = r₁ · r₂. The sign of b and the sign of c together tell you the signs of the roots.",
+    "why": "If c is positive, the roots have the same sign. If c is negative, the roots have opposite signs. Then b tells you which way each sign goes.",
+    "example": {
+      "problem": "Factorise x² + 7x + 10 = 0",
+      "work": [
+        "c = +10, so the two numbers have the same sign.",
+        "b = +7, so both numbers are positive.",
+        "Find two positive numbers that multiply to 10 and add to 7.",
+        "5 · 2 = 10 and 5 + 2 = 7. So the factors are (x + 5)(x + 2)."
+      ]
+    },
+    "probe": {
+      "problem": "Factorise x² - 3x - 10 = 0",
+      "expected": "(x - 5)(x + 2) = 0",
+      "hint": "c = -10, so the two numbers have opposite signs. b = -3, so the larger magnitude carries the negative sign."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_SIGN_ERROR_FACTORISATION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The two numbers are close, but one sign is wrong. Check that the sum matches b and the product matches c."
+}

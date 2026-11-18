@@ -40,6 +40,12 @@
       "expected_fn": "T_n = 10(1/2)^(n-1)",
       "steps": [
         "T_n = a*r^(n-1)."
+      ],
+      "given_from": [
+        "2.1"
+      ],
+      "requires_skills": [
+        "sequences.gp"
       ]
     },
     {
@@ -60,6 +66,13 @@
       "expected_fn": "Because -1 < r < 1",
       "steps": [
         "r = 1/2, so -1 < r < 1."
+      ],
+      "given_from": [
+        "2.1",
+        "2.2"
+      ],
+      "requires_skills": [
+        "sequences.gp"
       ]
     },
     {
@@ -79,6 +92,14 @@
         "S_inf = 20.",
         "S_n = 20(1 - (1/2)^n).",
         "S_inf - S_n = 20(1/2)^n."
+      ],
+      "given_from": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ],
+      "requires_skills": [
+        "sequences.gp"
       ]
     }
   ],

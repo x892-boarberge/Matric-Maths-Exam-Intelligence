@@ -59,6 +59,12 @@
         "f'({x0}) = 3({x0})^2 - {two_a}({x0}) + {b} = {m_tangent}",
         "y - {fx0} = {m_tangent}(x - {x0})",
         "y = {m_tangent}x + {c_tangent}"
+      ],
+      "given_from": [
+        "8.1"
+      ],
+      "requires_skills": [
+        "calculus.derivative"
       ]
     },
     {
@@ -84,6 +90,14 @@
         "f(x+h) - f(x) = {two_a}xh + {a}h^2",
         "[f(x+h) - f(x)]/h = {two_a}x + {a}h",
         "As h -> 0, f'(x) = {two_a}x"
+      ],
+      "given_from": [
+        "8.1",
+        "8.2"
+      ],
+      "requires_skills": [
+        "calculus.derivative",
+        "calculus.tangent"
       ]
     },
     {
@@ -108,6 +122,16 @@
         "y^2 = x/{a}",
         "y = ±sqrt(x/{a})",
         "For f^(-1)(x) <= 0 take the negative branch: y = -sqrt(x/{a})."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2",
+        "8.3.1"
+      ],
+      "requires_skills": [
+        "calculus.derivative",
+        "calculus.tangent",
+        "calculus.first_principles"
       ]
     }
   ]

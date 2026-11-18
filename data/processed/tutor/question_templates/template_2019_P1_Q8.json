@@ -41,6 +41,12 @@
         "h(t) = 0 → t = 6 or -2t² + 3t - 6 = 0.",
         "Quadratic has no real roots.",
         "Only t = 6."
+      ],
+      "given_from": [
+        "8.1"
+      ],
+      "requires_skills": [
+        "calculus.kinematics"
       ]
     },
     {
@@ -64,6 +70,13 @@
         "t² - 5t + 4 = 0.",
         "(t-4)(t-1) = 0.",
         "Max at t = 4: h(4) = 52."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2"
+      ],
+      "requires_skills": [
+        "calculus.kinematics"
       ]
     }
   ],

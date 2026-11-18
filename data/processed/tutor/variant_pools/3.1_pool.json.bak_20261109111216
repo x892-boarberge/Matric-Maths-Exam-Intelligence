@@ -1,0 +1,512 @@
+[
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 42n - 1.",
+    "expected": "184m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 42(5) - 1",
+      "T5 = 184",
+      "_________________________",
+      "Final Answer: 184m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 30n - 1.",
+    "expected": "124m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 30(5) - 1",
+      "T5 = 124",
+      "_________________________",
+      "Final Answer: 124m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 30n - 1.",
+    "expected": "124m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 30(5) - 1",
+      "T5 = 124",
+      "_________________________",
+      "Final Answer: 124m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 30n - 1.",
+    "expected": "124m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 30(5) - 1",
+      "T5 = 124",
+      "_________________________",
+      "Final Answer: 124m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 30n - 1.",
+    "expected": "124m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 30(5) - 1",
+      "T5 = 124",
+      "_________________________",
+      "Final Answer: 124m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 30n - 1.",
+    "expected": "124m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 30(5) - 1",
+      "T5 = 124",
+      "_________________________",
+      "Final Answer: 124m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 30n - 1.",
+    "expected": "124m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 30(5) - 1",
+      "T5 = 124",
+      "_________________________",
+      "Final Answer: 124m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 30n - 1.",
+    "expected": "124m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 30(5) - 1",
+      "T5 = 124",
+      "_________________________",
+      "Final Answer: 124m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 24n - 1.",
+    "expected": "94m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 24(5) - 1",
+      "T5 = 94",
+      "_________________________",
+      "Final Answer: 94m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 42n - 1.",
+    "expected": "184m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 42(5) - 1",
+      "T5 = 184",
+      "_________________________",
+      "Final Answer: 184m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 38n - 1.",
+    "expected": "164m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 38(5) - 1",
+      "T5 = 164",
+      "_________________________",
+      "Final Answer: 164m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 42n - 1.",
+    "expected": "184m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 42(5) - 1",
+      "T5 = 184",
+      "_________________________",
+      "Final Answer: 184m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 38n - 1.",
+    "expected": "164m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 38(5) - 1",
+      "T5 = 164",
+      "_________________________",
+      "Final Answer: 164m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 24n - 1.",
+    "expected": "94m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 24(5) - 1",
+      "T5 = 94",
+      "_________________________",
+      "Final Answer: 94m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 38n - 1.",
+    "expected": "164m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 38(5) - 1",
+      "T5 = 164",
+      "_________________________",
+      "Final Answer: 164m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 38n - 1.",
+    "expected": "164m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 38(5) - 1",
+      "T5 = 164",
+      "_________________________",
+      "Final Answer: 164m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 24n - 1.",
+    "expected": "94m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 24(5) - 1",
+      "T5 = 94",
+      "_________________________",
+      "Final Answer: 94m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 24n - 1.",
+    "expected": "94m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 24(5) - 1",
+      "T5 = 94",
+      "_________________________",
+      "Final Answer: 94m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 24n - 1.",
+    "expected": "94m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 24(5) - 1",
+      "T5 = 94",
+      "_________________________",
+      "Final Answer: 94m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 42n - 1.",
+    "expected": "184m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 42(5) - 1",
+      "T5 = 184",
+      "_________________________",
+      "Final Answer: 184m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 24n - 1.",
+    "expected": "94m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 24(5) - 1",
+      "T5 = 94",
+      "_________________________",
+      "Final Answer: 94m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 42n - 1.",
+    "expected": "184m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 42(5) - 1",
+      "T5 = 184",
+      "_________________________",
+      "Final Answer: 184m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 42n - 1.",
+    "expected": "184m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 42(5) - 1",
+      "T5 = 184",
+      "_________________________",
+      "Final Answer: 184m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 42n - 1.",
+    "expected": "184m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 42(5) - 1",
+      "T5 = 184",
+      "_________________________",
+      "Final Answer: 184m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 30n - 1.",
+    "expected": "124m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 30(5) - 1",
+      "T5 = 124",
+      "_________________________",
+      "Final Answer: 124m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 42n - 1.",
+    "expected": "184m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 42(5) - 1",
+      "T5 = 184",
+      "_________________________",
+      "Final Answer: 184m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 42n - 1.",
+    "expected": "184m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 42(5) - 1",
+      "T5 = 184",
+      "_________________________",
+      "Final Answer: 184m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 38n - 1.",
+    "expected": "164m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 38(5) - 1",
+      "T5 = 164",
+      "_________________________",
+      "Final Answer: 164m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 38n - 1.",
+    "expected": "164m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 38(5) - 1",
+      "T5 = 164",
+      "_________________________",
+      "Final Answer: 164m"
+    ]
+  },
+  {
+    "variant_question": "Calculate depth at 5s if Tn = -n^2 + 38n - 1.",
+    "expected": "164m",
+    "demonstration": "Sub n=5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark answer"
+    ],
+    "fast_path": "Plug in 5.",
+    "fatal_error": "DBE says: Use n=4.",
+    "answer_book_layout": [
+      "T5 = -(5)\u00b2 + 38(5) - 1",
+      "T5 = 164",
+      "_________________________",
+      "Final Answer: 164m"
+    ]
+  }
+]

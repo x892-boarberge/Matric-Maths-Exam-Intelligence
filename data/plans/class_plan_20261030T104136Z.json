@@ -1,0 +1,44 @@
+{
+  "plan_version": "1.3-node",
+  "generated_at": "2026-10-30T10:32:02.223513+00:00",
+  "data_version": "20261030T103202223463Z",
+  "source": "node",
+  "scope": "cohort",
+  "window_days": 30,
+  "census_or_sample": "census",
+  "class_size": 6,
+  "active_learners": 1,
+  "inactive_learners": [],
+  "summary": {
+    "aggregate_accuracy": 0.4378698224852071,
+    "aggregate_accuracy_ci": [
+      0.0,
+      0.0
+    ],
+    "census_or_sample": "census",
+    "whole_class_issue_count": 0,
+    "small_group_issue_count": 0,
+    "needs_human_count": 1,
+    "urgent_learner_count": 0,
+    "moderate_learner_count": 0,
+    "stable_learner_count": 0
+  },
+  "conversation_summary": {
+    "status": "not_yet_captured",
+    "questions_asked": null,
+    "answers_given": null,
+    "answer_acceptance_rate": null,
+    "improvement_after_answer": null
+  },
+  "class_wide_actions": [],
+  "small_group_actions": [],
+  "needs_human_learners": [],
+  "individual_priorities": [],
+  "stable_learners": [],
+  "thresholds": {
+    "small_group_cap": 200,
+    "small_group_learners": 5,
+    "whole_class_learners": 5,
+    "window_days": 30
+  }
+}

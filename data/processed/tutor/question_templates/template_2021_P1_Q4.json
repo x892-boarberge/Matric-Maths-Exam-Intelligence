@@ -43,6 +43,12 @@
       "steps": [
         "S_n = n/2[2a + (n-1)d]",
         "S_{N} = {N}/2[2({a}) + ({N}-1)({d})] = {SN}"
+      ],
+      "given_from": [
+        "4.1"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     },
     {
@@ -55,6 +61,13 @@
       "steps": [
         "First three: n=1, 2, 3 → 5, 7, 9",
         "Last: n=5000 → 2(5000)+3 = 10003"
+      ],
+      "given_from": [
+        "4.1",
+        "4.2"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     },
     {
@@ -68,6 +81,14 @@
         "Expand both sums.",
         "Notice T_{4999} of the second cancels intermediate terms.",
         "Result: {ans}"
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     }
   ],

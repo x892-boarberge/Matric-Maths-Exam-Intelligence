@@ -1,0 +1,32 @@
+{
+  "shape_id": "functions.log.inverse_equation",
+  "mental_move": "swap x and y, then convert: y=log_b(x) → x=log_b(y) → y=b^x",
+  "valid_bases": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "10",
+    "1/2",
+    "1/3"
+  ],
+  "answer_form": "expression",
+  "marks_range": [
+    2
+  ],
+  "valid_phrasings": [
+    "Determine the equation of f⁻¹, the inverse of f(x) = log_{base}(x), in the form y = ...",
+    "Write down the equation of f⁻¹ in the form y = ...",
+    "Find the equation of the inverse of f(x) = log_{base}(x).",
+    "Write down the equation of the graph that is the reflection of f in the line y = x, in the form y = ...",
+    "Determine f-inverse(x) if f(x) = log_{base}(x).",
+    "If f(x) = log_{base}(x), find f-inverse, the inverse function, in the form y = ...",
+    "Write down f-inverse(x) given f(x) = log_{base}(x)."
+  ],
+  "diagram": "always",
+  "fatal_errors": [
+    "Stops after swapping (x = log_b(y))",
+    "Leaves answer in log form",
+    "Gets base wrong"
+  ]
+}

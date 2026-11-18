@@ -1,0 +1,31 @@
+{
+  "verified_at": "2026-10-22T07:59:57.928568",
+  "learner": "thabo",
+  "window_days": 30,
+  "facts_per_view": {
+    "analyst": {
+      "attempts_found": 209,
+      "accuracy_pct": 43,
+      "top_misconception": "M_SIGN_ERROR_READING_ROOT"
+    },
+    "student": {
+      "attempts_found": 54,
+      "mentions_thabo": true
+    },
+    "parent": {
+      "attempts_found": 225,
+      "accuracy_pct": 43,
+      "mentions_thabo": true
+    },
+    "teacher": {
+      "attempts_found": 5,
+      "accuracy_pct": 43,
+      "top_misconception": "M_SIGN_ERROR_READING_ROOT",
+      "mentions_thabo": true
+    }
+  },
+  "checks_passed": 6,
+  "checks_failed": 0,
+  "issues": [],
+  "ready_for_cli_integration": true
+}

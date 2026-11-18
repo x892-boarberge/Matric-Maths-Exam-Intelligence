@@ -1,0 +1,632 @@
+[
+  {
+    "variant_question": "John deposits R2000 at 7.2% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R17719.65",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 600[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R14548.84",
+      "Balance = [2000(1+0.0180)^20 + 14548.84] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R17719.65"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 6.4% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R14844.25",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0160, n = 20",
+      "Fv = 500[((1+0.0160)^20 - 1)/0.0160] * (1+0.0160) = R11863.19",
+      "Balance = [2000(1+0.0160)^20 + 11863.19] * (1+0.0160)",
+      "_________________________",
+      "Final Answer: R14844.25"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 8.0% p.a. comp quarterly, then R800 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R22496.69",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 800[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R19826.65",
+      "Balance = [1500(1+0.0200)^20 + 19826.65] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R22496.69"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 8.0% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R15670.82",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 500[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R12391.66",
+      "Balance = [2000(1+0.0200)^20 + 12391.66] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R15670.82"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 7.2% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R17719.65",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 600[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R14548.84",
+      "Balance = [2000(1+0.0180)^20 + 14548.84] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R17719.65"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 8.0% p.a. comp quarterly, then R800 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R23254.52",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 800[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R19826.65",
+      "Balance = [2000(1+0.0200)^20 + 19826.65] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R23254.52"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 7.2% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R17719.65",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 600[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R14548.84",
+      "Balance = [2000(1+0.0180)^20 + 14548.84] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R17719.65"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 7.2% p.a. comp quarterly, then R800 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R21929.32",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 800[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R19398.45",
+      "Balance = [1500(1+0.0180)^20 + 19398.45] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R21929.32"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 8.0% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R14912.99",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 500[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R12391.66",
+      "Balance = [1500(1+0.0200)^20 + 12391.66] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R14912.99"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 6.4% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R14146.44",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0160, n = 20",
+      "Fv = 500[((1+0.0160)^20 - 1)/0.0160] * (1+0.0160) = R11863.19",
+      "Balance = [1500(1+0.0160)^20 + 11863.19] * (1+0.0160)",
+      "_________________________",
+      "Final Answer: R14146.44"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 8.0% p.a. comp quarterly, then R800 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R23254.52",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 800[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R19826.65",
+      "Balance = [2000(1+0.0200)^20 + 19826.65] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R23254.52"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 7.2% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R17719.65",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 600[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R14548.84",
+      "Balance = [2000(1+0.0180)^20 + 14548.84] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R17719.65"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 8.0% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R14912.99",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 500[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R12391.66",
+      "Balance = [1500(1+0.0200)^20 + 12391.66] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R14912.99"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 7.2% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R17719.65",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 600[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R14548.84",
+      "Balance = [2000(1+0.0180)^20 + 14548.84] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R17719.65"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 8.0% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R17440.89",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 600[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R14869.99",
+      "Balance = [1500(1+0.0200)^20 + 14869.99] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R17440.89"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 6.4% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R17254.85",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0160, n = 20",
+      "Fv = 600[((1+0.0160)^20 - 1)/0.0160] * (1+0.0160) = R14235.83",
+      "Balance = [2000(1+0.0160)^20 + 14235.83] * (1+0.0160)",
+      "_________________________",
+      "Final Answer: R17254.85"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 7.2% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R14523.96",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 500[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R12124.03",
+      "Balance = [1500(1+0.0180)^20 + 12124.03] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R14523.96"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 8.0% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R18198.72",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 600[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R14869.99",
+      "Balance = [2000(1+0.0200)^20 + 14869.99] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R18198.72"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 8.0% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R14912.99",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 500[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R12391.66",
+      "Balance = [1500(1+0.0200)^20 + 12391.66] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R14912.99"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 6.4% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R16557.04",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0160, n = 20",
+      "Fv = 600[((1+0.0160)^20 - 1)/0.0160] * (1+0.0160) = R14235.83",
+      "Balance = [1500(1+0.0160)^20 + 14235.83] * (1+0.0160)",
+      "_________________________",
+      "Final Answer: R16557.04"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 8.0% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R17440.89",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 600[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R14869.99",
+      "Balance = [1500(1+0.0200)^20 + 14869.99] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R17440.89"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 6.4% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R14146.44",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0160, n = 20",
+      "Fv = 500[((1+0.0160)^20 - 1)/0.0160] * (1+0.0160) = R11863.19",
+      "Balance = [1500(1+0.0160)^20 + 11863.19] * (1+0.0160)",
+      "_________________________",
+      "Final Answer: R14146.44"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 6.4% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R14146.44",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0160, n = 20",
+      "Fv = 500[((1+0.0160)^20 - 1)/0.0160] * (1+0.0160) = R11863.19",
+      "Balance = [1500(1+0.0160)^20 + 11863.19] * (1+0.0160)",
+      "_________________________",
+      "Final Answer: R14146.44"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 7.2% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R16992.42",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 600[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R14548.84",
+      "Balance = [1500(1+0.0180)^20 + 14548.84] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R16992.42"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 7.2% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R15251.20",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 500[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R12124.03",
+      "Balance = [2000(1+0.0180)^20 + 12124.03] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R15251.20"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 8.0% p.a. comp quarterly, then R600 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R17440.89",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 600[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R14869.99",
+      "Balance = [1500(1+0.0200)^20 + 14869.99] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R17440.89"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 8.0% p.a. comp quarterly, then R800 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R22496.69",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 800[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R19826.65",
+      "Balance = [1500(1+0.0200)^20 + 19826.65] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R22496.69"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 8.0% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R15670.82",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0200, n = 20",
+      "Fv = 500[((1+0.0200)^20 - 1)/0.0200] * (1+0.0200) = R12391.66",
+      "Balance = [2000(1+0.0200)^20 + 12391.66] * (1+0.0200)",
+      "_________________________",
+      "Final Answer: R15670.82"
+    ]
+  },
+  {
+    "variant_question": "John deposits R1500 at 7.2% p.a. comp quarterly, then R500 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R14523.96",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 500[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R12124.03",
+      "Balance = [1500(1+0.0180)^20 + 12124.03] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R14523.96"
+    ]
+  },
+  {
+    "variant_question": "John deposits R2000 at 7.2% p.a. comp quarterly, then R800 at BGN each quarter. Last dep 1 Oct 2025. Balance 1 Jan 2026?",
+    "expected": "R22656.56",
+    "demonstration": "Annuity due + initial.",
+    "memo_marks": [
+      "1 mark i/n",
+      "1 mark fv",
+      "1 mark bgn",
+      "1 mark jan",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM BGN mode.",
+    "fatal_error": "DBE says: Use END mode.",
+    "answer_book_layout": [
+      "i = 0.0180, n = 20",
+      "Fv = 800[((1+0.0180)^20 - 1)/0.0180] * (1+0.0180) = R19398.45",
+      "Balance = [2000(1+0.0180)^20 + 19398.45] * (1+0.0180)",
+      "_________________________",
+      "Final Answer: R22656.56"
+    ]
+  }
+]

@@ -40,6 +40,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "trig.graph"
       ]
     },
     {
@@ -75,6 +81,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1",
+        "6.2"
+      ],
+      "requires_skills": [
+        "trig.graph"
       ]
     }
   ],

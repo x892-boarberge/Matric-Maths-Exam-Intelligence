@@ -1,0 +1,155 @@
+{
+  "question_id": "2025_P1_Q5",
+  "foundation_text": "SASXY. Walls first, then intercepts. For inequalities, 'lower' means smaller y.",
+  "acronym_strip": [
+    {
+      "code": "SASXY",
+      "meaning": "Shape, Asymptotes, Shift, X, Y"
+    }
+  ],
+  "subquestions": {
+    "5.1": {
+      "variant_question": "Domain of g(x) = 2/(x+2) - 3.",
+      "demonstration": "Denominator cannot be zero -> x+2 != 0 -> x != -2.",
+      "memo_marks": [
+        "1 mark for x != -2"
+      ],
+      "fast_path": "Set denominator = 0 to find the wall. Domain is everything except the wall.",
+      "fatal_error": "DBE says: Candidates use notation like x > -2. It is x != -2. The wall is never touched.",
+      "answer_book_layout": [
+        "x + 2 \u2260 0",
+        "x \u2260 -2",
+        "_________________________",
+        "Final Answer: x \u2208 R, x \u2260 -2"
+      ],
+      "hack": "Domain is everywhere except the wall.",
+      "trap": "Using only > or <.",
+      "presentation": "Use interval notation."
+    },
+    "5.2": {
+      "variant_question": "Range of f(x) = 2(x-1)^2 - 4.",
+      "demonstration": "Turning point y = -4. Opens up (a>0). Range: y >= -4.",
+      "memo_marks": [
+        "1 mark for y >= -4"
+      ],
+      "fast_path": "Look at the TP y-value. That's your min or max.",
+      "fatal_error": "DBE says: Candidates calculate the y-intercept instead of the turning point. The range is based on the TP.",
+      "answer_book_layout": [
+        "Turning point y-value is -4",
+        "a > 0 (opens upwards)",
+        "_________________________",
+        "Final Answer: y \u2265 -4"
+      ],
+      "hack": "Start from the turning-point height.",
+      "trap": "Using the y-intercept for range.",
+      "presentation": "Use inequalities."
+    },
+    "5.3.1": {
+      "variant_question": "Values of x for g(x) <= f(x).",
+      "demonstration": "Find intersections. Test intervals where g is lower. Exclude asymptote.",
+      "memo_marks": [
+        "1 mark intersections",
+        "1 mark intervals"
+      ],
+      "fast_path": "Look at the sketch. Where is the hyperbola below the parabola?",
+      "fatal_error": "DBE says: Candidates solve equality only and stop, or include the asymptote. 'Lower' means smaller y.",
+      "answer_book_layout": [
+        "Intersection points: x = ...",
+        "g is below f between ...",
+        "Exclude the asymptote x = ...",
+        "_________________________",
+        "Final Answer: x < ... or x > ..."
+      ],
+      "hack": "Lower means smaller y. Include touch points.",
+      "trap": "Reading 'lower' as further left.",
+      "presentation": "Write the interval clearly."
+    },
+    "5.3.2": {
+      "variant_question": "Values of x for f(x) < 6.",
+      "demonstration": "Draw horizontal line y=6. Find where parabola is below it.",
+      "memo_marks": [
+        "1 mark critical values",
+        "1 mark inequality"
+      ],
+      "fast_path": "Use the sketch. It's faster than algebra.",
+      "fatal_error": "DBE says: Candidates use <=. The question is strict <.",
+      "answer_book_layout": [
+        "Draw y = 6",
+        "Intersection points are ...",
+        "Parabola is below y=6 between ...",
+        "_________________________",
+        "Final Answer: ... < x < ..."
+      ],
+      "hack": "Bring to one side, find critical values.",
+      "trap": "Using closed intervals.",
+      "presentation": "Show critical values."
+    },
+    "5.4": {
+      "variant_question": "Show that f(x) = -1/2x^2 + 3x + 7/2.",
+      "demonstration": "TP (3;8) -> y=a(x-3)^2+8. Point D(5;6) -> 6=4a+8 -> a=-1/2. Expand.",
+      "memo_marks": [
+        "1 mark TP form",
+        "1 mark substitute",
+        "1 mark a",
+        "1 mark expand"
+      ],
+      "fast_path": "Start from the TP form. Use D to find a.",
+      "fatal_error": "DBE says: Candidates use the given 'a' in the initial steps instead of proving it. The working is the mark.",
+      "answer_book_layout": [
+        "y = a(x - 3)\u00b2 + 8",
+        "6 = a(5 - 3)\u00b2 + 8",
+        "6 = 4a + 8",
+        "a = -1/2",
+        "y = -1/2(x - 3)\u00b2 + 8",
+        "y = -1/2(x\u00b2 - 6x + 9) + 8",
+        "_________________________",
+        "Final Answer: y = -1/2x\u00b2 + 3x + 3.5"
+      ],
+      "hack": "Build the formula from scratch.",
+      "trap": "Using the given 'a' at the start.",
+      "presentation": "Show the substitution and expansion."
+    },
+    "5.5": {
+      "variant_question": "Length of MT.",
+      "demonstration": "Distance formula: \u221a((x2-x1)\u00b2 + (y2-y1)\u00b2). If horizontal, just x2-x1.",
+      "memo_marks": [
+        "1 mark coords",
+        "1 mark distance"
+      ],
+      "fast_path": "Read M and T from the x-axis. Just subtract the x-values.",
+      "fatal_error": "DBE says: Candidates use the full distance formula for a horizontal line, or pair the wrong points.",
+      "answer_book_layout": [
+        "M(...; 0) and T(...; 0)",
+        "MT = x_T - x_M",
+        "MT = ...",
+        "_________________________",
+        "Final Answer: MT = ... units"
+      ],
+      "hack": "Subtract the x-coordinates.",
+      "trap": "Using the full distance formula for a horizontal line.",
+      "presentation": "Show the coordinates."
+    },
+    "5.6": {
+      "variant_question": "Tangent to f at D.",
+      "demonstration": "f'(x) -> m = f'(x_D) -> point-slope form.",
+      "memo_marks": [
+        "1 mark f'",
+        "1 mark m",
+        "1 mark equation"
+      ],
+      "fast_path": "Derivative gives the gradient. Then use point-slope.",
+      "fatal_error": "DBE says: Candidates use a secant gradient or don't use the exact point D.",
+      "answer_book_layout": [
+        "f'(x) = ...",
+        "m = f'(x_D) = ...",
+        "y - y_D = m(x - x_D)",
+        "y - ... = ...(x - ...)",
+        "_________________________",
+        "Final Answer: y = ..."
+      ],
+      "hack": "Derivative at the point gives the gradient.",
+      "trap": "Using average gradient.",
+      "presentation": "Show f'(x) first."
+    }
+  }
+}

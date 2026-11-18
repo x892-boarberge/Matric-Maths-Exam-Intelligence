@@ -1,0 +1,572 @@
+[
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  },
+  {
+    "variant_question": "Values of t for y = -11x + t to intersect f at 3 points.",
+    "expected": "Range of t",
+    "demonstration": "Tangent condition.",
+    "memo_marks": [
+      "1 mark eq",
+      "1 mark delta",
+      "1 mark interval"
+    ],
+    "fast_path": "Set f(x)=line, delta=0.",
+    "fatal_error": "DBE says: Set f(x)=0.",
+    "answer_book_layout": [
+      "Set f(x) = line",
+      "Discriminant = 0",
+      "Solve for t",
+      "_________________________",
+      "Final Answer: ... < t < ..."
+    ]
+  }
+]

@@ -188,6 +188,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "8.1"
+      ],
+      "requires_skills": [
+        "trig.3d"
       ]
     },
     {
@@ -208,6 +214,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "8.1",
+        "8.2"
+      ],
+      "requires_skills": [
+        "trig.3d"
       ]
     },
     {
@@ -238,6 +251,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "8.1",
+        "8.2",
+        "8.3"
+      ],
+      "requires_skills": [
+        "trig.3d"
       ]
     }
   ],

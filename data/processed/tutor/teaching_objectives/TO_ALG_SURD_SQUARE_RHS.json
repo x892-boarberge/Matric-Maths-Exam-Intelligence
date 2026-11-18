@@ -1,0 +1,38 @@
+{
+  "objective_id": "TO_ALG_SURD_SQUARE_RHS",
+  "skill_id": "algebra.surd.solve",
+  "trigger_misconception": "M_RHS_SQUARED_INCORRECTLY",
+  "applies_when": "learner squares the RHS incorrectly",
+  "dbe_source": {
+    "years": [
+      "2017",
+      "2018"
+    ],
+    "recommendation": "Candidates did not square the RHS correctly. Write the RHS as (expression)^2 on its own line before expanding.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "Squaring the RHS means squaring the whole expression, not each term. (x - 2)^2 is not x^2 - 4. Write the bracket and expand properly.",
+    "why": "The examiner wants to see the bracket written on its own line before expansion. That line earns a method mark.",
+    "example": {
+      "problem": "Square the right side of sqrt(2x + 5) = x - 3",
+      "work": [
+        "Write the RHS as a bracket first: (x - 3)^2",
+        "Then expand: (x - 3)(x - 3)",
+        "x^2 - 3x - 3x + 9",
+        "Answer: x^2 - 6x + 9",
+        "Do not write x^2 - 9. That drops the middle term."
+      ]
+    },
+    "probe": {
+      "problem": "Square the right side of sqrt(3x - 1) = x + 2. Write the squared form before expanding.",
+      "expected": "(x + 2)^2",
+      "hint": "Wrap the whole RHS in a bracket first."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_RHS_SQUARED_INCORRECTLY",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "Squaring the right-hand side means squaring the whole expression. Write the bracket first, then expand."
+}

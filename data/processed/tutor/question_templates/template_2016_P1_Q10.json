@@ -40,6 +40,12 @@
       "steps": [
         "M'(t) = -3t² + 6t + 72.",
         "M'(2) = -12 + 12 + 72 = 72."
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "calculus.kinematics"
       ]
     },
     {
@@ -61,6 +67,13 @@
       "steps": [
         "M''(t) = -6t + 6 = 0.",
         "t = 1."
+      ],
+      "given_from": [
+        "10.1",
+        "10.2"
+      ],
+      "requires_skills": [
+        "calculus.kinematics"
       ]
     }
   ],

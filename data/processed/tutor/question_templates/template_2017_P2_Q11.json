@@ -52,6 +52,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -68,6 +74,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1a"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -84,6 +97,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1a",
+        "11.2.1b"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -110,6 +131,15 @@
           "r": "sides opposite equal angles",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1a",
+        "11.2.1b",
+        "11.2.1c"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -136,6 +166,16 @@
           "r": "AAA",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1a",
+        "11.2.1b",
+        "11.2.1c",
+        "11.2.2a"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -157,6 +197,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1a",
+        "11.2.1b",
+        "11.2.1c",
+        "11.2.2a",
+        "11.2.2b"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.similarity"
       ]
     },
     {
@@ -188,6 +240,19 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1a",
+        "11.2.1b",
+        "11.2.1c",
+        "11.2.2a",
+        "11.2.2b",
+        "11.2.3a"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.similarity"
       ]
     }
   ],

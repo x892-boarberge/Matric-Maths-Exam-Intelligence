@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Prob 2 or more finish between A and B.",
+    "expected": "Fraction",
+    "demonstration": "Complementary counting.",
+    "memo_marks": [
+      "1 mark total",
+      "1 mark count",
+      "1 mark prob"
+    ],
+    "fast_path": "Use complement.",
+    "fatal_error": "DBE says: Guess.",
+    "answer_book_layout": [
+      "Total = 8!",
+      "P(0) = ...",
+      "P(1) = ...",
+      "P(2 or more) = 1 - P(0) - P(1)",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  }
+]

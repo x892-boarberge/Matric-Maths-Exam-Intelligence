@@ -1,0 +1,39 @@
+{
+  "objective_id": "TO_ALG_AND_VS_OR",
+  "skill_id": "algebra.quadratic.solve",
+  "trigger_misconception": "M_AND_OR_CONFUSION",
+  "applies_when": "any multi-root answer",
+  "dbe_source": {
+    "years": [
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "recommendation": "The use of the words 'and' and 'or' were not understood by candidates. Teachers should explain when each is used: 'or' joins the two separate roots of a quadratic; 'and' would mean both at once, which is not possible.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "A quadratic has two roots. They are joined by 'or'. 'x = 2 or x = 3' means the equation is true when x is 2, or when x is 3. 'And' would mean x is both at once, which is impossible.",
+    "why": "Examiners mark the connector. 'x = 2 and x = 3' is not the same answer as 'x = 2 or x = 3'. The first is nonsense; the second is correct. This is a whole mark in some years.",
+    "example": {
+      "problem": "Solve (x - 2)(x - 3) = 0",
+      "work": [
+        "Set each factor to zero.",
+        "x - 2 = 0  gives  x = 2",
+        "x - 3 = 0  gives  x = 3",
+        "Answer:  x = 2 or x = 3",
+        "Not 'x = 2 and x = 3'. The equation has two separate answers."
+      ]
+    },
+    "probe": {
+      "problem": "Solve (x + 4)(x - 1) = 0. Write your answer with the correct connector.",
+      "expected": "x = -4 or x = 1",
+      "hint": "Two separate roots. Which word joins them?"
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_AND_OR_CONFUSION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You joined the two roots with 'and'. A quadratic has two separate roots — the correct connector is 'or'."
+}

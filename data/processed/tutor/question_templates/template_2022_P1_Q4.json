@@ -35,6 +35,12 @@
         "1/(x - 1) = -2",
         "1 = -2(x - 1)",
         "x = 1/2."
+      ],
+      "given_from": [
+        "4.1.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -54,6 +60,13 @@
         "g(x) = h(x + 3) shifts h 3 units left.",
         "Original x-intercept was at 1/2.",
         "New x-intercept at 1/2 - 3 = -5/2."
+      ],
+      "given_from": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -81,6 +94,15 @@
       "steps": [
         "Axis of symmetry passes through asymptote intersection (1; 2).",
         "y = x + t: 2 = 1 + t, t = 1."
+      ],
+      "given_from": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.transformation"
       ]
     },
     {
@@ -102,6 +124,16 @@
         "(2x - 1)/(x - 1) >= 0",
         "Critical values x = 1/2, x = 1.",
         "x <= 1/2 or x > 1."
+      ],
+      "given_from": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.transformation"
       ]
     },
     {
@@ -115,6 +147,18 @@
         "C is the y-intercept of f(x) = x^2 - 4x - 5.",
         "f(0) = -5.",
         "C is also on g's asymptote: q = -5."
+      ],
+      "given_from": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4",
+        "4.1.5"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.transformation",
+        "functions.inequality"
       ]
     },
     {
@@ -137,6 +181,20 @@
         "x = -b/(2a) = 4/2 = 2.",
         "f(2) = 4 - 8 - 5 = -9.",
         "D(2; -9)."
+      ],
+      "given_from": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4",
+        "4.1.5",
+        "4.2.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.transformation",
+        "functions.inequality",
+        "functions.parabola"
       ]
     },
     {
@@ -150,6 +208,21 @@
         "q = -5 (from C).",
         "D(2; -9) on g: -9 = a*4 - 5",
         "a = -1."
+      ],
+      "given_from": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4",
+        "4.1.5",
+        "4.2.1",
+        "4.2.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.transformation",
+        "functions.inequality",
+        "functions.parabola"
       ]
     },
     {
@@ -181,6 +254,23 @@
       "steps": [
         "g(x) = -2^x - 5 has horizontal asymptote y = -5.",
         "Since a < 0, g decreases: range y < -5."
+      ],
+      "given_from": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4",
+        "4.1.5",
+        "4.2.1",
+        "4.2.2",
+        "4.2.3"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.transformation",
+        "functions.inequality",
+        "functions.parabola",
+        "functions.exponential"
       ]
     },
     {
@@ -200,6 +290,24 @@
         "f(x) - k > 0 means k < f(x) for all x.",
         "Minimum of f is -9 (at the turning point).",
         "So k < -9."
+      ],
+      "given_from": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4",
+        "4.1.5",
+        "4.2.1",
+        "4.2.2",
+        "4.2.3",
+        "4.2.4"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.transformation",
+        "functions.inequality",
+        "functions.parabola",
+        "functions.exponential"
       ]
     }
   ],

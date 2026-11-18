@@ -1,0 +1,36 @@
+{
+  "objective_id": "TO_ALG_PROOF_INTEGER",
+  "skill_id": "algebra.proof.integer",
+  "trigger_misconception": "M_PROOF_INTEGER_PATTERN",
+  "dbe_source": {
+    "years": [
+      "2024"
+    ],
+    "recommendation": "In an integer proof, you must state the pattern AND write a concluding sentence. The final line — the conclusion — earns the mark.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "In an integer proof, you must state the pattern AND write a concluding sentence. The final line — the conclusion — earns the mark.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "Prove that the product (1 + 1/1)(1 + 1/2)... is even",
+      "work": [
+        "Each factor has a pattern: 1 + 1/k = (k+1)/k",
+        "Multiply: the k in the denominator cancels the (k+1) in the next numerator",
+        "Product = n + 1",
+        "For n = 2023, the product = 2024",
+        "Conclusion: 2024 is even, so the product is even. Q.E.D."
+      ]
+    },
+    "probe": {
+      "problem": "Write the conclusion sentence that would end a proof that a product is even.",
+      "expected": "the product is even",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_PROOF_INTEGER_PATTERN",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "In an integer proof, state the pattern and finish with a conclusion sentence. The last line earns the mark."
+}

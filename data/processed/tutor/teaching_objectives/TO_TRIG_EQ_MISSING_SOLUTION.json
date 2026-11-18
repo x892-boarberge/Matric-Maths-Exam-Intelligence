@@ -1,0 +1,36 @@
+{
+  "objective_id": "TO_TRIG_EQ_MISSING_SOLUTION",
+  "skill_id": "trig.equation",
+  "trigger_misconception": "M_TRIG_EQ_MISSING_SOLUTION",
+  "dbe_source": {
+    "years": [
+      "2017",
+      "2022"
+    ],
+    "recommendation": "A trig equation in an interval usually has two solutions. If you wrote one, check whether the second falls in the interval too.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "A trig equation in an interval usually has two solutions. If you wrote one, check whether the second falls in the interval too.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "Solve for x in [0; 360]: sin x = 0.5",
+      "work": [
+        "Reference angle: 30.",
+        "Sine is positive in Q1 and Q2.",
+        "x = 30 or x = 150. Both in the interval.",
+        "Two solutions."
+      ]
+    },
+    "probe": {
+      "problem": "Solve for x in [0; 360]: sin x = 0.5.",
+      "expected": "x = 30 or x = 150",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_TRIG_EQ_MISSING_SOLUTION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You gave one solution. Trig equations in an interval usually have two — check whether the second falls inside the interval too."
+}

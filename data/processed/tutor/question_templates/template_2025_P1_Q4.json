@@ -57,6 +57,12 @@
       "steps": [
         "The x-intercept of a log function y = log_a(x) is always (1; 0).",
         "A(1; 0)"
+      ],
+      "given_from": [
+        "4.1"
+      ],
+      "requires_skills": [
+        "functions.log"
       ]
     },
     {
@@ -89,6 +95,13 @@
         "f(x) = log_(1/{base}) x  =>  y = log_(1/{base}) x",
         "Swap x and y: x = log_(1/{base}) y",
         "y = (1/{base})^x"
+      ],
+      "given_from": [
+        "4.1",
+        "4.2"
+      ],
+      "requires_skills": [
+        "functions.log"
       ]
     },
     {
@@ -119,6 +132,14 @@
       "expected_fn": "y = 0",
       "steps": [
         "f^(-1)(x) = (1/{base})^x has horizontal asymptote y = 0."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "requires_skills": [
+        "functions.log"
       ]
     },
     {
@@ -147,6 +168,15 @@
         "Standard exponential decay/growth shape.",
         "Passes through (0; 1).",
         "Asymptote y = 0."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "requires_skills": [
+        "functions.log"
       ]
     },
     {
@@ -166,6 +196,16 @@
         "h(x) = (1/{base})^(x-5)",
         "For x > 4: x - 5 > -1",
         "Range of y depends on base."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "requires_skills": [
+        "functions.log"
       ]
     }
   ],

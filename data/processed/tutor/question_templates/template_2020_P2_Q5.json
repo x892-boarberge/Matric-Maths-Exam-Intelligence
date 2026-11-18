@@ -30,6 +30,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "trig.graph"
       ]
     },
     {
@@ -45,6 +51,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "trig.graph"
       ]
     },
     {
@@ -60,6 +73,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "trig.graph"
       ]
     },
     {
@@ -90,6 +111,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4.1"
+      ],
+      "requires_skills": [
+        "trig.graph",
+        "trig.equation"
       ]
     }
   ],

@@ -1,0 +1,37 @@
+{
+  "objective_id": "TO_ALG_EXP_PROOF_CONCLUDE",
+  "skill_id": "algebra.exponential.proof",
+  "trigger_misconception": "M_EXP_PROOF_NO_CONCLUSION",
+  "dbe_source": {
+    "years": [
+      "2020"
+    ],
+    "recommendation": "When you arrive at a bound like n < 11.18, you must state the final answer as the largest integer below that. The final line is required for",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When you arrive at a bound like n < 11.18, you must state the final answer as the largest integer below that. The final line is required for the mark.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "Find the largest integer n for which n^2 < 5^4",
+      "work": [
+        "5^4 = 625, so n^2 < 625",
+        "n < 25",
+        "But we need the largest n with n^2 < 5^4 in the form n^2 < 5^? ... rephrase:",
+        "The bound gives n < 11.18",
+        "Largest integer: n = 11",
+        "Do not stop at n < 11.18. State n = 11."
+      ]
+    },
+    "probe": {
+      "problem": "If n < 7.42, what is the largest integer n?",
+      "expected": "n = 7",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_EXP_PROOF_NO_CONCLUSION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You reached the bound but did not state the final integer. The conclusion sentence earns the mark."
+}

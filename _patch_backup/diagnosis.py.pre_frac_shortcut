@@ -1,0 +1,1822 @@
+"""Diagnosis rules — v1.1 base + v1.2 additive rules. Matching uses normalised text."""
+
+from __future__ import annotations
+
+import re
+from pathlib import Path
+from .answer_matcher import is_correct as _graceful_is_correct
+from typing import Callable, Dict, List, Tuple
+
+from .schemas import DiagnosisResult, ErrorType
+
+
+def _norm(text: str) -> str:
+    if text is None:
+        return ""
+    s = str(text).lower().strip()
+    s = s.replace("θ", "theta").replace("Θ", "theta")
+    s = s.replace("≥", ">=").replace("≤", "<=")
+    s = s.replace("–", "-").replace("—", "-")
+    s = s.replace("**", "^")  # v1.2
+    s = s.replace("0r", " or ")
+    s = s.replace("ror", " or ")
+    s = re.sub(r"\bor(\d)", r"or \1", s)
+    s = re.sub(r"(\d)or\b", r"\1 or", s)
+    s = re.sub(r"\b(sin|cos|tan|cot|sec|csc)(theta|x|\()", r"\1 \2", s)
+    s = re.sub(r"\s+", " ", s)
+    s = re.sub(r"\bor(\d)", r"or \1", s)   # v1.2: or3 -> or 3
+    s = re.sub(r"(\d)or\b", r"\1 or", s)
+    s = re.sub(r"\s*=\s*", "=", s)
+    s = re.sub(r"\s*>\s*=\s*", ">=", s)
+    s = re.sub(r"\s*<\s*=\s*", "<=", s)
+    s = re.sub(r"\s*\+\s*", "+", s)
+    s = re.sub(r"\s*-\s*", "-", s)
+    s = re.sub(r"\s+or\s+", " or ", s)
+    s = re.sub(r"\s*\(\s*", "(", s)
+    s = re.sub(r"\s*\)\s*", ")", s)
+    s = re.sub(r"\s*\*\s*", "*", s)
+    s = re.sub(r"\s*\^\s*", "^", s)
+    return s.strip()
+
+def _is_correct(response: str, expected: str) -> bool:
+    return _graceful_is_correct(response, expected)
+# ----- v1.1 predicates -----
+
+def _extract_roots(text):
+    """Extracts all numbers, ignoring the 'x =' or 'or' text."""
+    text = _norm(text)
+    nums = re.findall(r"[-+]?\d*\.?\d+", text)
+    try:
+        return [float(n) for n in nums if n not in ('', '-', '+')]
+    except Exception:
+        return []
+
+def _incorrect_substitution(nr: str, expected: str, prompt: str = "") -> bool:
+    """Learner used the formula but substituted the wrong a, b, or c.
+
+    Source: DBE 2014, 2022, 2023, 2024, 2025.
+    """
+    if not isinstance(nr, str) or not isinstance(prompt, str):
+        return False
+
+    low = nr.lower()
+    looks_like_formula = (
+        "4ac" in low
+        or "b^2" in low
+        or "b\u00b2" in low
+        or re.search(r"4\s*\*", nr) is not None
+    )
+    if not looks_like_formula:
+        return False
+
+    # Parse standard-form coefficients from the prompt.
+    p = prompt.replace(" ", "")
+    m = re.search(r"([+-]?\d*)x\^?2([+-]\d*)x([+-]\d+)=0", p)
+    if not m:
+        return False
+    a_raw, b_raw, c_raw = m.group(1), m.group(2), m.group(3)
+    try:
+        if a_raw in ("", "+"):
+            a = 1
+        elif a_raw == "-":
+            a = -1
+        else:
+            a = int(a_raw)
+        b = int(b_raw.replace("x", "").replace("+", "") or "0")
+        c = int(c_raw)
+    except ValueError:
+        return False
+
+    # The learner's substitution of -b:
+    #   "x = (-6 ..."          -> -6
+    #   "x = (6 ..."           ->  6
+    #   "x = -6 ..."           -> -6
+    m_neg_b = re.search(r"x\s*=\s*\(?\s*(-?\d+)", nr)
+    # The learner's number under the sqrt (stands for b^2)
+    m_b_sq = re.search(r"sqrt\(\s*(-?\d+)", nr)
+
+    correct_neg_b = -b
+    correct_b_sq = b * b
+
+    if m_neg_b:
+        try:
+            got_neg_b = int(m_neg_b.group(1))
+        except ValueError:
+            got_neg_b = None
+        if got_neg_b is not None and got_neg_b != correct_neg_b:
+            return True
+
+    if m_b_sq:
+        try:
+            got_b_sq = int(m_b_sq.group(1))
+        except ValueError:
+            got_b_sq = None
+        if got_b_sq is not None and got_b_sq != correct_b_sq:
+            return True
+
+    return False
+
+
+def _and_or_confusion(nr: str, expected: str, prompt: str = "") -> bool:
+    """Learner joined two roots with 'and' instead of 'or'.
+
+    Fires when the expected answer has two roots joined by 'or'
+    and the learner's answer joins them with 'and'.
+
+    Source: DBE 2015, 2016, 2017.
+    """
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    # Expected must be a multi-root disjunction
+    if not re.search(r"\bor\b", expected, re.IGNORECASE):
+        return False
+    # Learner's answer contains "and" between two roots.
+    # Accept any of:
+    #   "2 and 3"           (bare numbers)
+    #   "2 and x = 3"
+    #   "x = 2 and x = 3"
+    #   "x = 2 and 3"
+    if re.search(r"\d\s+and\s+\d", nr, re.IGNORECASE):
+        return True
+    if re.search(r"\d\s+and\s+x\s*=", nr, re.IGNORECASE):
+        return True
+    if re.search(r"x\s*=\s*-?\d+\s+and\s+", nr, re.IGNORECASE):
+        return True
+    return False
+
+
+def _incomplete_roots(nr: str, expected: str, prompt: str = "") -> bool:
+    """Learner gave some but not all expected roots.
+
+    Fires when the expected answer has N roots and the learner declared
+    between 1 and N-1 roots, all of which are among the expected ones.
+
+    Source: DBE multiple years, PR_GEN_014 / PR_DBE_005.
+    """
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    want = _declared_roots(expected)
+    got = _declared_roots(nr)
+    if not want or not got:
+        return False
+    if len(got) >= len(want):
+        return False
+    return got.issubset(want)
+
+
+def _wrong_quadratic_formula(nr: str, expected: str, prompt: str = "") -> bool:
+    """Learner used the quadratic formula but wrote it wrong.
+
+    Detects structural errors only:
+      - plus inside the discriminant (b^2 + 4ac instead of b^2 - 4ac)
+      - missing sqrt
+      - missing denominator
+
+    Wrong substitution of numbers is a separate rule (M_INCORRECT_SUBSTITUTION).
+
+    Source: DBE 2014, 2015, 2017, 2018, 2019.
+    """
+    if not isinstance(nr, str):
+        return False
+    low = nr.lower().replace(" ", "")
+
+    # Must contain a formula attempt
+    if not any(m in low for m in ("4ac", "b^2", "b2", "b\u00b2")):
+        return False
+    if "2a" not in low:
+        return False
+
+    has_plus_discrim = bool(re.search(r"b\^?2\s*\+\s*4ac", nr) or "+4ac" in low)
+    missing_sqrt = "sqrt" not in low
+    missing_2a = "2a" not in low
+
+    return has_plus_discrim or missing_sqrt or missing_2a
+
+def _is_factored_prompt(prompt: str) -> bool:
+    """(x + a)(x + b) = 0 style."""
+    if not isinstance(prompt, str):
+        return False
+    return bool(re.search(
+        r"\(\s*x\s*[+\-]\s*\d+\s*\)\s*\(\s*x\s*[+\-]\s*\d+\s*\)",
+        prompt,
+    ))
+
+
+def _is_standard_form_prompt(prompt: str) -> bool:
+    """x^2 + bx + c = 0 or ax^2 + bx + c = 0 with a = 1."""
+    if not isinstance(prompt, str):
+        return False
+    return bool(re.search(r"x\s*\^?\s*2\s*[+\-]", prompt))
+
+
+def _quad_sign_flip(nr: str, expected: str) -> bool:
+    """
+    General sign-error detector.
+
+    Fires when the learner's roots share the same magnitudes as the
+    expected roots but at least one sign differs. Silent when the
+    roots differ in value (that is a different error).
+    """
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    got = _extract_roots(nr)
+    want = _extract_roots(expected)
+    if not got or not want:
+        return False
+    # Same magnitudes on both sides?
+    if {abs(v) for v in got} != {abs(v) for v in want}:
+        return False
+    # At least one sign differs?
+    if got == want:
+        return False
+    return True
+
+
+def _parab_range_yp(nr: str, expected: str) -> bool:
+    return bool(re.search(r"y\s*>=\s*-1\b", nr))
+
+
+def _trig_red_sign(nr: str, expected: str) -> bool:
+    if re.search(r"-\s*sin\s*\(?\s*theta\s*\)?", nr):
+        return True
+    n = nr.replace(" ", "")
+    return n in ("-sintheta", "-sin(theta)")
+
+
+def _ageo_diagram(nr: str, expected: str) -> bool:
+    return "as seen" in nr or "from the diagram" in nr or "in the diagram" in nr
+
+
+def _eucl_missing_cite(nr: str, expected: str) -> bool:
+    has_90 = "90" in nr or "right angle" in nr
+    has_theorem = "theorem" in nr or "semicircle" in nr or "diameter" in nr
+    if has_90 and not has_theorem:
+        return True
+    if has_90 and "because it's in a semicircle" in nr and "theorem" not in nr:
+        return True
+    return False
+
+
+# ----- v1.2 predicates -----
+
+def _factorisation_incomplete(nr: str, expected: str) -> bool:
+    """Factors present, no solved roots; expected has roots."""
+    if "x=" not in _norm(expected):
+        return False
+    if "x=" in nr:
+        return False
+    # two bracket groups e.g. (x-2)(x-3) or (x-2)(x-3)=0
+    return bool(re.search(r"\([^)]+\)\s*\([^)]+\)", nr))
+
+
+def _asymptote_confusion(nr: str, expected: str) -> bool:
+    if re.search(r"horizontal\s+asymptote\s*:?\s*x\s*=", nr):
+        return True
+    if re.search(r"vertical\s+asymptote\s*:?\s*y\s*=", nr):
+        return True
+    return False
+
+
+def _identity_misapply(nr: str, expected: str) -> bool:
+    n = re.sub(r"\s+", "", nr)
+    n = n.replace("theta", "")
+    bad = [
+        "sin^2+cos^2=sin^2cos^2",
+        "sin^2+cos^2=sin^2*cos^2",
+        "1=sin^2cos^2",
+        "1=sin^2*cos^2",
+        "sin^2cos^2=1",
+        "sin^2*cos^2=1",
+    ]
+    return any(b in n for b in bad)
+
+def _chain_rule_drop(nr: str, expected: str) -> bool:
+    """Demo-scoped: same inner and power; response coeff is proper divisor of expected."""
+    compact = nr.replace(" ", "")
+    # Boundary: already wrote outer * inner factor → not a pure "drop"
+    if re.search(r"\)\^\d+\*\d+", compact):
+        return False
+    if compact.count("*") >= 2:
+        return False
+
+    pat = re.compile(r"(?P<coef>\d+)\*?\((?P<inner>[^)]+)\)\^(?P<pow>\d+)")
+    mr = pat.search(compact)
+    me = pat.search(_norm(expected).replace(" ", ""))
+    if not mr or not me:
+        return False
+    if mr["inner"] != me["inner"] or mr["pow"] != me["pow"]:
+        return False
+    cr, ce = int(mr["coef"]), int(me["coef"])
+    if cr >= ce or cr <= 0:
+        return False
+    return ce % cr == 0
+
+
+
+def _gp_common_ratio(nr: str, expected: str) -> bool:
+    # off-by-one: a*r^n vs a*r^(n-1)
+    if re.search(r"\d+\s*\*\s*\d+\s*\^\s*n\b", nr) and "n-1" in _norm(expected):
+        if "n-1" not in nr and "^(n-1)" not in nr.replace(" ", ""):
+            return True
+    # arithmetic form a+(n-1)d style for GP expected
+    if re.search(r"\d+\s*\+\s*\(?\s*n\s*-\s*1\s*\)?", nr) and "*" in _norm(expected):
+        return True
+    return False
+
+
+def _boxplot_iqr(nr: str, expected: str) -> bool:
+    """Expected embeds {a,b,c,d,e} IQR = val. Fire if response equals range."""
+    m = re.search(
+        r"\{(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\}.*iqr\s*=\s*(\d+)",
+        _norm(expected),
+    )
+    if not m:
+        return False
+    a, b, c, d, e = map(int, m.groups()[:5])
+    iqr = int(m.group(6))
+    rng = e - a
+    # response is a bare number
+    rm = re.search(r"-?\d+", nr)
+    if not rm:
+        return False
+    val = int(rm.group(0))
+    if val == rng and val != iqr:
+        return True
+    return False
+
+
+def _extraneous_root_included(nr: str, expected: str) -> bool:
+    """Both candidate roots present; expected is a single accepted root.
+
+    A candidate root is a declaration of the form "x = N" not preceded
+    by a digit (so "4x = 0" does not count as a root declaration).
+
+    Source: DBE 2015 Q1.1.4, 2025 Q1.1.5.
+    """
+    if not isinstance(nr, str):
+        return False
+    # stricter extraction: "x = N" with a word boundary before x
+    declared = set()
+    for m in re.finditer(r"(?<![0-9a-z])x\s*=\s*(-?\d+(?:\.\d+)?)", nr, re.IGNORECASE):
+        try:
+            declared.add(float(m.group(1)))
+        except ValueError:
+            pass
+    want = _extract_roots(expected)
+    if not declared or not want or len(want) != 1:
+        return False
+    return set(want).issubset(set(declared)) and len(declared) > 1
+
+
+def _surd_not_isolated(nr: str, expected: str) -> bool:
+    """Squared both sides before isolating the surd.
+
+    Detectable when: a line shows a surd on both sides of "=", i.e.
+    sqrt(...) = sqrt(...). The learner squared without isolating.
+
+    Source: DBE 2016 Q1.1.3, 2022 Q1.1.4.
+    """
+    if not isinstance(nr, str) or "sqrt" not in nr.lower():
+        return False
+    return bool(re.search(r"sqrt\s*\([^)]*\)\s*=\s*.*sqrt", nr))
+
+
+def _binomial_middle_term_dropped(nr: str, expected: str) -> bool:
+    """(x + d)^2 expanded as x^2 + d^2, missing the 2xd middle term.
+
+    Detectable when: the working contains an equation that pairs x^2
+    with a perfect square constant, with no middle term.
+
+    Source: DBE 2015, 2016, 2020, 2021.
+    """
+    if not isinstance(nr, str):
+        return False
+    # find "x^2 + N" or "x^2 - N" where N is a perfect square (1,4,9,16,25,36,...)
+    for m in re.finditer(r"x\s*\^?\s*2\s*([+\-])\s*(\d+)", nr):
+        n = int(m.group(2))
+        # perfect square?
+        r = int(n ** 0.5)
+        if r * r == n and n > 0:
+            # check no middle term exists near this expression
+            ctx = nr[max(0, m.start()-20):m.end()+40].lower()
+            if not re.search(r"[+\-]\s*\d+\s*\*?\s*x\b", ctx):
+                return True
+    return False
+
+
+def _rhs_squared_incorrectly(nr: str, expected: str) -> bool:
+    """RHS squared but result is wrong.
+
+    Detectable when: the working shows an "(...)^2" line and the
+    subsequent equation does not match the correct expansion.
+
+    Narrow heuristic for surd equations.
+
+    Source: DBE 2017 Q1.1.3.
+    """
+    if not isinstance(nr, str):
+        return False
+    # look for a squared binomial followed by an equation with no x^2
+    has_squared = bool(re.search(r"\([^)]+\)\s*\^?\s*2", nr))
+    has_x2 = bool(re.search(r"x\s*\^?\s*2", nr))
+    return has_squared and not has_x2
+
+
+def _lost_root_by_division(nr: str, expected: str, prompt: str = "") -> bool:
+    """Divided a quadratic through by x, losing the x=0 root.
+
+    Fires when a quadratic has NO constant term (x^2 ± kx = 0 shape)
+    AND the learner's declared roots do not include 0.
+
+    The shape requires "=" immediately after the x term. This excludes
+    quadratics that have a constant like x^2 - 8x + 15 = 0.
+
+    Source: DBE 2020 Q1.1.1 (quadratic), DBE 2023 Q1.1.3 (surd).
+    """
+    if not isinstance(nr, str):
+        return False
+
+    text = (prompt or "") + "\n" + nr
+    low = text.lower()
+
+    # Strict: x^2 ± Nx = ... (must be followed by =)
+    has_no_const = bool(
+        re.search(r"x\s*\^?\s*2\s*[-+]\s*\d*\s*x\s*=", low)
+    )
+    if not has_no_const:
+        return False
+
+    declared = set()
+    for m in re.finditer(
+        r"(?<![0-9a-z])x\s*=\s*(-?\d+(?:\.\d+)?)", nr, re.IGNORECASE
+    ):
+        try:
+            declared.add(float(m.group(1)))
+        except ValueError:
+            pass
+    for m in re.finditer(
+        r"\b(?:or|and|,)\s*(-?\d+(?:\.\d+)?)", nr, re.IGNORECASE
+    ):
+        try:
+            declared.add(float(m.group(1)))
+        except ValueError:
+            pass
+
+    return bool(declared) and 0.0 not in declared
+
+
+def _fractional_surd_not_handled(nr: str, expected: str) -> bool:
+    """Fractional or nested surd not processed.
+
+    Source: DBE 2025 Q1.1.5.
+    """
+    if not isinstance(nr, str):
+        return False
+    return "1/sqrt" in nr or "/sqrt(" in nr
+
+
+def _similarity_ratio(nr: str, expected: str) -> bool:
+    def parse_ratio(s: str):
+        m = re.search(r"(\d+)\s*:\s*(\d+)", s)
+        if m:
+            return int(m.group(1)), int(m.group(2))
+        m = re.search(r"(\d+)\s*/\s*(\d+)", s)
+        if m:
+            return int(m.group(1)), int(m.group(2))
+        return None
+
+    pr, pe = parse_ratio(nr), parse_ratio(_norm(expected))
+    if not pr or not pe:
+        return False
+    a, b = pr
+    c, d = pe
+    if a * d == b * c:
+        return False  # equivalent
+    if a * c == b * d and (a, b) != (c, d):
+        # reciprocal: a/b == d/c
+        return a * c == b * d
+    # classic reciprocal a:b vs b:a
+    return (a, b) == (d, c)
+
+
+# ------------------------------------------------------------------
+# N08 v2 — trigger-based fallback layer
+# Loads 69 misconceptions from misconceptions_v2.csv.
+# Fires only when skill-scoped rules miss, gated by topic.
+# ------------------------------------------------------------------
+
+_TRIGGER_LIBRARY = None
+
+
+def _load_trigger_library():
+    """Load the trigger regexes from misconceptions_v2.csv (cached)."""
+    global _TRIGGER_LIBRARY
+    if _TRIGGER_LIBRARY is not None:
+        return _TRIGGER_LIBRARY
+
+    import pandas as pd
+    path = Path(__file__).resolve().parents[2] / "data" / "processed" / "tutor" / "misconceptions_v2.csv"
+    if not path.exists():
+        _TRIGGER_LIBRARY = []
+        return _TRIGGER_LIBRARY
+
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        _TRIGGER_LIBRARY = []
+        return _TRIGGER_LIBRARY
+
+    rules = []
+    for _, row in df.iterrows():
+        try:
+            pattern = re.compile(str(row["trigger_pattern"]), re.IGNORECASE)
+        except re.error:
+            continue
+        rules.append({
+            "mid": str(row["misconception_id"]).strip(),
+            "topic": str(row["topic"]).strip(),
+            "error_class": str(row["error_class"]).strip(),
+            "description": str(row["description"]).strip(),
+            "pattern": pattern,
+            "severity": str(row["severity"]).strip(),
+        })
+    _TRIGGER_LIBRARY = rules
+    return rules
+
+
+_TOPIC_PREFIX = {
+    "algebra.": "ALG",
+    "sequences.": "SEQ",
+    "functions.": "FUNC",
+    "finance.": "FIN",
+    "calculus.": "CALC",
+    "probability.": "PROB",
+    "trig.": "TRIG",
+    "euclidean.": "EUCL",
+    "analytical_geom.": "AGEO",
+    "stats.": "STAT",
+}
+
+
+def _topic_from_skill(skill_id: str):
+    if not skill_id:
+        return None
+    s = str(skill_id).lower()
+    for prefix, code in _TOPIC_PREFIX.items():
+        if s.startswith(prefix):
+            return code
+    return None
+
+
+_CLASS_TO_ERROR_TYPE = {
+    "procedural":   ErrorType.PROCEDURAL,
+    "conceptual":   ErrorType.CONCEPTUAL,
+    "notation":     ErrorType.REPRESENTATION,
+    "presentation": ErrorType.PROCEDURAL,
+    "reading":      ErrorType.STRATEGY,
+    "arithmetic":   ErrorType.ARITHMETIC,
+    "general":      ErrorType.UNKNOWN,
+}
+
+
+def _error_type_for_class(cls: str) -> ErrorType:
+    return _CLASS_TO_ERROR_TYPE.get(str(cls).lower(), ErrorType.UNKNOWN)
+
+
+
+# ============================================================
+# Quadratic inequality
+# ============================================================
+def _ineq_treated_as_equation(nr, expected, prompt=""):
+    if not isinstance(prompt, str) or not isinstance(nr, str):
+        return False
+    if not re.search(r"[<>]|<=|>=|\u2264|\u2265", prompt):
+        return False
+    return bool(re.search(r"x\s*=\s*-?\d+", nr)) and not re.search(
+        r"[<>]|<=|>=|\u2264|\u2265|\bin\b|\(|\)|\[|\]", nr)
+
+def _ineq_and_used(nr, expected, prompt=""):
+    if not isinstance(nr, str):
+        return False
+    return bool(re.search(r"[<>].*\band\b.*[<>]|\band\b.*x", nr))
+
+def _ineq_wrong_interval(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    def _nums(s):
+        return sorted(set(re.findall(r"-?\d+(?:\.\d+)?", s)))
+    a, b = _nums(nr), _nums(expected)
+    if a == b and a and nr.strip() != expected.strip():
+        if re.search(r"[<>]|<=|>=|<", nr) and re.search(r"[<>]|<=|>=|<", expected):
+            return True
+    return False
+
+# ============================================================
+# Exponential equations
+# ============================================================
+def _exp_law_misapplied(nr, expected, prompt=""):
+    if not isinstance(nr, str):
+        return False
+    low = nr.lower()
+    if "2^" not in low and "3^" not in low and "5^" not in low:
+        return False
+    if re.search(r"\^\s*\(?\s*-?\s*\d*x\s*-\s*\d+x", low):
+        return True
+    if re.search(r"2\^\s*\(?\s*x\s*-\s*x", low):
+        return True
+    # Prompt has A^x * A^x, learner wrote A^x - A^x
+    if isinstance(prompt, str) and prompt:
+        m = re.search(r"(\d+)\^\(?([a-z][^)*]*?)\)?\s*\*\s*\1\^", prompt, re.IGNORECASE)
+        if m:
+            base = m.group(1)
+            exp  = m.group(2).strip()
+            pat = rf"{base}\^\s*\(?\s*{re.escape(exp)}\s*\)?\s*-\s*{base}\^"
+            if re.search(pat, low):
+                return True
+    return False
+
+def _exp_different_bases(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(prompt, str):
+        return False
+
+    # Strict root extraction: "x = N" only when x is a standalone
+    # variable, not part of a power like 3^x or a coefficient.
+    def _strict_roots(text):
+        out = set()
+        for m in re.finditer(
+            r"(?<![0-9a-zA-Z\^*/])x\s*=\s*(-?\d+(?:\.\d+)?)",
+            text, re.IGNORECASE
+        ):
+            try:
+                out.add(float(m.group(1)))
+            except ValueError:
+                pass
+        return out
+
+    want = _strict_roots(expected)
+    got = _strict_roots(nr)
+    if want and got and got.issubset(want):
+        return False
+
+    if "=" not in nr:
+        return False
+    m = re.search(r"(\d+)\^\s*\(?([^)]+?)\)?\s*=\s*(\d+)", nr)
+    if m:
+        lb = int(m.group(1))
+        rs = int(m.group(3))
+        if lb != rs and not re.search(rf"{lb}\^", nr.split("=", 1)[1]):
+            return True
+    return False
+
+
+def _exp_factorisation_error(nr, expected, prompt=""):
+    if not isinstance(nr, str):
+        return False
+    low = nr.lower()
+    if "2^" in low and re.search(r"\(\s*2\^?x\s*-\s*2\s*\)", low):
+        return True
+    return False
+
+def _exp_extra_root_not_rejected(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    # Strict extraction: "x = N" where the x is not part of a power
+    # expression like 3^x. Exclude if preceded by digit, letter, ^, *, or /.
+    def _strict_roots(text):
+        out = set()
+        for m in re.finditer(
+            r"(?<![0-9a-zA-Z\^*/])x\s*=\s*(-?\d+(?:\.\d+)?)",
+            text, re.IGNORECASE
+        ):
+            try:
+                out.add(float(m.group(1)))
+            except ValueError:
+                pass
+        return out
+    want = _strict_roots(expected)
+    got = _strict_roots(nr)
+    if not want or not got:
+        return False
+    return len(got) > len(want)
+
+
+def _exp_proof_no_factorise(nr, expected, prompt=""):
+    if not isinstance(nr, str):
+        return False
+    # Two or more power-terms with operators between them, no factorisation brackets.
+    power_terms = re.findall(r"\d+\^\s*\(?[^)\s*+\-]+", nr)
+    if len(power_terms) < 2:
+        return False
+    has_factor_bracket = bool(re.search(r"\([^)]+\)\s*\(", nr)) or \
+                         bool(re.search(r"\([^)]+\)\s*\^", nr))
+    return not has_factor_bracket
+
+def _exp_proof_no_conclusion(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    # Learner shows a bound like "n < 11.18" but not the final integer.
+    has_bound = bool(re.search(r"\bn?\s*[<>]\s*\d+(?:\.\d+)?", nr))
+    if not has_bound:
+        return False
+    # Explicit conclusion would be "n = 11" or "n is 11"
+    has_conclusion = bool(re.search(r"\bn\s*=\s*-?\d+", nr))
+    if has_conclusion:
+        return False
+    # Only fires if the expected answer contains an integer (the target)
+    if re.search(r"-?\d+", expected):
+        return True
+    return False
+
+
+def _sim_overlooked_factor(nr, expected, prompt=""):
+    if not isinstance(nr, str):
+        return False
+    if re.search(r"=.*\(\s*[^)]+\s*\)\s*\^?2", nr):
+        if not re.search(r"\by\s*\*|\*\s*y|\by\b.*\*", nr):
+            return True
+    return False
+
+def _sim_equation_from_words(nr, expected, prompt=""):
+    if not isinstance(nr, str):
+        return False
+    if re.search(r"\d+\s*[+\-*]\s*\d", nr) and not re.search(r"\b(x|y)\b", nr):
+        return True
+    return False
+
+# ============================================================
+# Algebraic proofs
+# ============================================================
+def _proof_nonreal_explanation(nr, expected, prompt=""):
+    if not isinstance(nr, str):
+        return False
+    low = nr.lower()
+    if "discriminant" in low or "\u0394" in nr or "delta" in low:
+        if not re.search(r"non-?real|no real roots|complex", low):
+            return True
+    return False
+
+def _proof_integer_pattern(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(prompt, str):
+        return False
+    low_prompt = prompt.lower()
+    if not ("even" in low_prompt or "odd" in low_prompt or "prove" in low_prompt):
+        return False
+    if len(nr.strip()) < 15:
+        return False
+    low = nr.lower()
+    if re.search(r"even|odd|therefore|hence|\u2234|q\.e\.d|shown|conclude", low):
+        return False
+    return True
+
+
+
+RuleFn = Callable[[str, str], bool]
+RuleSpec = Tuple[str, ErrorType, str, RuleFn]
+
+# skill_id -> ordered list of rules (first match wins)
+
+def _robust_sign_flip(nr: str, expected: str) -> bool:
+    """Detects if the learner got the right numbers but the wrong signs."""
+    l_roots = _extract_roots(nr)
+    e_roots = _extract_roots(expected)
+
+    if len(l_roots) < 2 or len(l_roots) != len(e_roots):
+        return False
+
+    # Sort both lists to compare them
+    l_roots.sort()
+    e_roots.sort()
+
+    # If they are exactly the same, it's not a sign flip (it's correct)
+    if l_roots == e_roots:
+        return False
+
+    # Check if the absolute values match (ignoring signs)
+    l_abs = sorted([abs(x) for x in l_roots])
+    e_abs = sorted([abs(x) for x in e_roots])
+
+    if l_abs == e_abs:
+        return True
+
+    return False
+
+RULES: Dict[str, List[RuleSpec]] = {
+    "algebra.surd.solve": [
+        (
+            "M_AND_OR_CONFUSION",
+            ErrorType.REPRESENTATION,
+            "Learner joined two roots with 'and' where the correct connector is 'or'.",
+            _and_or_confusion,
+        ),
+        # Most specific first. Order matters: diagnose() returns on first match.
+        (
+            "M_LOST_ROOT_BY_DIVISION",
+            ErrorType.PROCEDURAL,
+            "Learner divided a quadratic through by x, losing the zero "
+            "root. DBE flagged this in 2023.",
+            _lost_root_by_division,
+        ),
+        (
+            "M_FRACTIONAL_SURD_NOT_HANDLED",
+            ErrorType.PROCEDURAL,
+            "Learner did not handle a fractional or nested surd. "
+            "DBE flagged this in 2025.",
+            _fractional_surd_not_handled,
+        ),
+        (
+            "M_BINOMIAL_MIDDLE_TERM_DROPPED",
+            ErrorType.PROCEDURAL,
+            "Learner expanded (x + d)^2 as x^2 + d^2, dropping the middle "
+            "term. DBE flagged this in 2015, 2016, 2020, 2021.",
+            _binomial_middle_term_dropped,
+        ),
+        (
+            "M_SURD_NOT_ISOLATED",
+            ErrorType.PROCEDURAL,
+            "Learner squared both sides before isolating the surd. "
+            "DBE flagged this in 2016 and 2022.",
+            _surd_not_isolated,
+        ),
+        (
+            "M_RHS_SQUARED_INCORRECTLY",
+            ErrorType.PROCEDURAL,
+            "Learner squared the right-hand side incorrectly. "
+            "DBE flagged this in 2017.",
+            _rhs_squared_incorrectly,
+        ),
+        (
+            "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+            ErrorType.PROCEDURAL,
+            "Learner gave both candidate roots from the quadratic without "
+            "rejecting the one that does not satisfy the original surd "
+            "equation. DBE flagged this in 2015 and 2025.",
+            _extraneous_root_included,
+        ),
+    ],
+    "algebra.quadratic.solve": [
+        # Ordered most-specific first. diagnose() returns on first match.
+
+        # Connector errors: fast to spot and unambiguous.
+        (
+            "M_AND_OR_CONFUSION",
+            ErrorType.REPRESENTATION,
+            "Learner joined two roots with 'and' where the correct connector "
+            "is 'or'. DBE flagged this in 2015, 2016, 2017.",
+            _and_or_confusion,
+        ),
+
+        # Structural errors in the quadratic formula itself.
+        (
+            "M_WRONG_QUADRATIC_FORMULA",
+            ErrorType.PROCEDURAL,
+            "Learner wrote the quadratic formula incorrectly or dropped a "
+            "sign during substitution. DBE flagged this in 2014, 2015, 2017, "
+            "2018, 2019.",
+            _wrong_quadratic_formula,
+        ),
+
+        # Wrong numbers substituted into a correctly written formula.
+        (
+            "M_INCORRECT_SUBSTITUTION",
+            ErrorType.PROCEDURAL,
+            "Learner substituted wrong values of a, b, or c because the "
+            "equation was not in standard form. DBE flagged this in 2014, "
+            "2022, 2023, 2024, 2025.",
+            _incorrect_substitution,
+        ),
+
+        # Divide-by-x: only one root written, and the prompt has no
+        # constant term. Very specific, must be checked before incomplete.
+        (
+            "M_LOST_ROOT_BY_DIVISION",
+            ErrorType.PROCEDURAL,
+            "Learner divided a quadratic through by x, losing the zero "
+            "root. DBE flagged this in 2020.",
+            _lost_root_by_division,
+        ),
+
+        # Sign errors — split by prompt shape.
+        (
+            "M_SIGN_ERROR_READING_ROOT",
+            ErrorType.PROCEDURAL,
+            "Learner read the wrong sign when converting a factor to its "
+            "root. The factor (x + 5) has root x = -5, not x = +5.",
+            lambda nr, expected, prompt="": (
+                _is_factored_prompt(prompt) and _robust_sign_flip(nr, expected)
+            ),
+        ),
+        (
+            "M_SIGN_ERROR_FACTORISATION",
+            ErrorType.PROCEDURAL,
+            "Learner flipped the sign of a root when writing the "
+            "factorisation of a quadratic in standard form.",
+            lambda nr, expected, prompt="": (
+                _is_standard_form_prompt(prompt) and _quad_sign_flip(nr, expected)
+            ),
+        ),
+
+        # Incomplete roots: some correct roots present, others missing.
+        # Falls through only if no more specific rule matched.
+        (
+            "M_INCOMPLETE_ROOTS",
+            ErrorType.REPRESENTATION,
+            "Learner gave one root of a quadratic but not the other. "
+            "A quadratic has two roots; both must be written.",
+            _incomplete_roots,
+        ),
+
+        # Factorised form written but not each factor set to zero.
+        (
+            "M_FACTORISATION_INCOMPLETE",
+            ErrorType.PROCEDURAL,
+            "Factorised form written, but each linear factor not solved for x.",
+            _factorisation_incomplete,
+        ),
+    ],
+    "functions.parabola.range": [
+        (
+            "M_TP_COORD_CONFUSION",
+            ErrorType.REPRESENTATION,
+            "Learner used the x-coordinate of the turning point as the range bound.",
+            _parab_range_yp,
+        ),
+    ],
+    "trig.reduction.simplify": [
+        (
+            "M_REDUCTION_SIGN",
+            ErrorType.CONCEPTUAL,
+            "Learner applied an incorrect sign under the reduction formula.",
+            _trig_red_sign,
+        ),
+    ],
+    "analytical_geom.parallelogram.prove": [
+        (
+            "M_DIAGRAM_ASSUMPTION",
+            ErrorType.STRATEGY,
+            "Learner assumed parallelism from the diagram without proof.",
+            _ageo_diagram,
+        ),
+    ],
+    "euclidean.semicircle.prove": [
+        (
+            "M_MISSING_THEOREM_CITATION",
+            ErrorType.PROCEDURAL,
+            "Learner stated 90 degrees without citing the theorem.",
+            _eucl_missing_cite,
+        ),
+    ],
+    # v1.2 new skills
+    "functions.hyperbola.asymptotes": [
+        (
+            "M_ASYMPTOTE_CONFUSION",
+            ErrorType.REPRESENTATION,
+            "Horizontal and vertical asymptotes swapped or mislabelled.",
+            _asymptote_confusion,
+        ),
+    ],
+    "trig.identity.simplify": [
+        (
+            "M_IDENTITY_MISAPPLY",
+            ErrorType.CONCEPTUAL,
+            "Invalid Pythagorean-form identity applied.",
+            _identity_misapply,
+        ),
+    ],
+    "calculus.chain_rule": [
+        (
+            "M_CHAIN_RULE_DROP",
+            ErrorType.PROCEDURAL,
+            "Outer derivative taken, inner derivative factor omitted. (demo-scoped)",
+            _chain_rule_drop,
+        ),
+    ],
+    "sequences.gp.term": [
+        (
+            "M_GP_COMMON_RATIO",
+            ErrorType.PROCEDURAL,
+            "GP term handled with arithmetic thinking OR wrong ratio OR off-by-one exponent.",
+            _gp_common_ratio,
+        ),
+    ],
+    "statistics.boxplot.iqr": [
+        (
+            "M_BOXPLOT_IQR",
+            ErrorType.REPRESENTATION,
+            "Range used in place of IQR.",
+            _boxplot_iqr,
+        ),
+    ],
+    "euclidean.similarity.ratio": [
+        (
+            "M_SIMILARITY_RATIO",
+            ErrorType.CONCEPTUAL,
+            "Similarity ratio inverted (image:object vs object:image).",
+            _similarity_ratio,
+        ),
+    ],
+    "algebra.quadratic.inequality": [
+        (
+            "M_INEQ_TREATED_AS_EQUATION",
+            ErrorType.CONCEPTUAL,
+            "Learner gave x = a or x = b as if the inequality were an equation.",
+            _ineq_treated_as_equation,
+        ),
+        (
+            "M_AND_OR_CONFUSION",
+            ErrorType.REPRESENTATION,
+            "Learner joined intervals with 'and' where 'or' is correct.",
+            _ineq_and_used,
+        ),
+        (
+            "M_INEQ_WRONG_INTERVAL",
+            ErrorType.PROCEDURAL,
+            "Learner chose the wrong interval (inside vs outside the roots).",
+            _ineq_wrong_interval,
+        ),
+    ],
+    "algebra.exponential.solve": [
+        (
+            "M_EXP_EXTRA_ROOT_NOT_REJECTED",
+            ErrorType.PROCEDURAL,
+            "Learner did not reject an invalid root in an exponential equation.",
+            _exp_extra_root_not_rejected,
+        ),
+        (
+            "M_EXP_LAW_MISAPPLIED",
+            ErrorType.CONCEPTUAL,
+            "Learner misapplied an exponent law.",
+            _exp_law_misapplied,
+        ),
+        (
+            "M_EXP_FACTORISATION_ERROR",
+            ErrorType.PROCEDURAL,
+            "Learner factorised the exponential equation incorrectly.",
+            _exp_factorisation_error,
+        ),
+        (
+            "M_EXP_DIFFERENT_BASES",
+            ErrorType.CONCEPTUAL,
+            "Learner did not get both sides to the same base before comparing exponents.",
+            _exp_different_bases,
+        ),
+    ],
+    "algebra.exponential.proof": [
+        (
+            "M_EXP_PROOF_NO_CONCLUSION",
+            ErrorType.PROCEDURAL,
+            "Learner reached a bound but did not state the required final value or conclusion.",
+            _exp_proof_no_conclusion,
+        ),
+        (
+            "M_EXP_PROOF_NO_FACTORISE",
+            ErrorType.PROCEDURAL,
+            "Learner did not factor out the common power.",
+            _exp_proof_no_factorise,
+        ),
+    ],
+    "algebra.simultaneous.solve": [
+        (
+            "M_SIM_OVERLOOKED_FACTOR",
+            ErrorType.PROCEDURAL,
+            "Learner dropped a factor when substituting into the quadratic.",
+            _sim_overlooked_factor,
+        ),
+        (
+            "M_SIM_EQUATION_FROM_WORDS",
+            ErrorType.CONCEPTUAL,
+            "Learner could not set up the correct equations from the text.",
+            _sim_equation_from_words,
+        ),
+    ],
+    "algebra.proof": [
+        (
+            "M_PROOF_NONREAL_EXPLANATION",
+            ErrorType.CONCEPTUAL,
+            "Learner computed the discriminant but did not explain why the roots are non-real.",
+            _proof_nonreal_explanation,
+        ),
+    ],
+    "algebra.proof.integer": [
+        (
+            "M_PROOF_INTEGER_PATTERN",
+            ErrorType.CONCEPTUAL,
+            "Learner could not establish or conclude the integer proof pattern.",
+            _proof_integer_pattern,
+        ),
+    ],
+
+}
+
+
+def _declared_roots(text):
+    """Extract every root the learner declared.
+
+    Handles three forms:
+        x = 5 or x = 3   -> {5, 3}
+        x = 5 or 3       -> {5, 3}
+        x = 5, 3         -> {5, 3}
+    """
+    if not isinstance(text, str):
+        return set()
+    out = set()
+
+    # 1. Every "x = N" declaration
+    for m in re.finditer(r"(?<![0-9a-z])x\s*=\s*(-?\d+(?:\.\d+)?)",
+                         text, re.IGNORECASE):
+        try:
+            out.add(float(m.group(1)))
+        except ValueError:
+            pass
+
+    # 2. Every bare number after "or", "and", or "," in a root-like
+    #    context. Whitespace is optional — _norm collapses spaces
+    #    around minus signs, so "or -2" becomes "or-2" before this
+    #    runs.
+    for m in re.finditer(r"\b(?:or|and|,)\s*(-?\d+(?:\.\d+)?)",
+                         text, re.IGNORECASE):
+        try:
+            out.add(float(m.group(1)))
+        except ValueError:
+            pass
+
+    return out
+
+
+def diagnose(skill_id: str, learner_response: str, expected_answer: str,
+             prompt: str = "") -> DiagnosisResult:
+    nr = _norm(learner_response)
+
+    if _is_correct(learner_response, expected_answer):
+        return DiagnosisResult(
+            error_type=ErrorType.NONE,
+            misconception_id=None,
+            confidence=1.0,
+            rule_id="D_CORRECT",
+            explanation="Response matches expected answer after normalisation.",
+        )
+
+    # Extra safety net: if the learner's declared roots equal the
+    # expected roots as sets, treat the response as correct even when
+    # the working text includes additional content that the matcher
+    # cannot reduce. Prevents the N08 fallback from firing on noise.
+    _lr = _declared_roots(learner_response)
+    _er = _declared_roots(expected_answer)
+    if _lr and _er and _lr == _er:
+        # Exception 1: if the learner joined two roots with "and" instead
+        # of "or", the roots match but the connector is wrong.
+        _has_and_between_roots = bool(re.search(
+            r"\d\s+and\s+[-x\d]",
+            learner_response, re.IGNORECASE,
+        ))
+        # Exception 2: general-solution form mismatch. If either side
+        # carries a general-solution marker (+ k.360, + 360k, k in Z)
+        # and the other does not, the roots match but the form differs.
+        # Do not short-circuit as "correct".
+        _gen_re = r"\+\s*k\s*\.?\s*\d|\+\s*\d+\s*k|k\s*\u2208|k\s*in\s*Z"
+        _learner_general = bool(re.search(_gen_re, learner_response, re.IGNORECASE))
+        _expected_general = bool(re.search(_gen_re, expected_answer, re.IGNORECASE))
+        _has_general_marker = _learner_general or _expected_general
+        if (not _has_and_between_roots and not _has_general_marker) and not ("y=" in expected_answer.replace(" ","") or "y=" in nr.replace(" ","")):
+            return DiagnosisResult(
+                error_type=ErrorType.NONE,
+                misconception_id=None,
+                confidence=0.95,
+                rule_id="D_CORRECT_ROOTS_MATCH",
+                explanation="Learner declared the same roots as expected, ignoring working text.",
+            )
+
+    for mid, etype, expl, pred in RULES.get(skill_id, []):
+        try:
+            fired = pred(nr, expected_answer, prompt)
+        except TypeError:
+            # Backwards-compatible: predicate only takes two arguments
+            fired = pred(nr, expected_answer)
+        if fired:
+            return DiagnosisResult(
+                error_type=etype,
+                misconception_id=mid,
+                confidence=0.85,
+                rule_id=f"D_{mid}",
+                explanation=expl,
+            )
+
+    # Layer 2 — trigger-based fallback (N08 v2)
+    topic_hint = _topic_from_skill(skill_id)
+    for rule in _load_trigger_library():
+        if topic_hint and rule["topic"] not in (topic_hint, "GEN"):
+            continue
+        if rule["pattern"].search(nr):
+            return DiagnosisResult(
+                error_type=_error_type_for_class(rule["error_class"]),
+                misconception_id=rule["mid"],
+                confidence=0.65,
+                rule_id=f"D_TRIGGER_{rule['mid']}",
+                explanation=rule["description"],
+            )
+
+    return DiagnosisResult(
+        error_type=ErrorType.UNKNOWN,
+        misconception_id=None,
+        confidence=0.3,
+        rule_id="D_UNKNOWN",
+        explanation="No matching correct or misconception pattern after normalisation.",
+    )
+
+
+def reachable_misconception_ids() -> set[str]:
+    ids = set()
+    for rules in RULES.values():
+        for mid, *_ in rules:
+            ids.add(mid)
+    for rule in _load_trigger_library():
+        ids.add(rule["mid"])
+    return ids
+
+# ══════════════════════════════════════════════════════════════════════
+# TRIGONOMETRY — diagnostic rules
+# Appended at the end. RULES, _norm, _declared_roots already exist above.
+# ══════════════════════════════════════════════════════════════════════
+
+_TRIG_FUNCS = ("sin", "cos", "tan")
+
+
+def _extract_trig_func(text):
+    if not isinstance(text, str):
+        return None
+    for f in _TRIG_FUNCS:
+        if re.search(r"\b" + f + r"\b", text, re.IGNORECASE):
+            return f
+    return None
+
+
+def _trig_reduction_sign(nr, expected, prompt=""):
+    """Learner lost the minus sign in a reduction."""
+    if not isinstance(expected, str) or not isinstance(nr, str):
+        return False
+    e = expected.strip()
+    if not e.startswith("-"):
+        return False
+    positive_form = e[1:].strip()
+    if not positive_form:
+        return False
+    fn_e = _extract_trig_func(positive_form)
+    fn_n = _extract_trig_func(nr)
+    if fn_e and fn_n and fn_e == fn_n:
+        return not re.search(r"-\s*" + fn_n, nr, re.IGNORECASE)
+    return False
+
+
+def _trig_reduction_cofunction(nr, expected, prompt=""):
+    """Learner used the wrong co-function (sin<->cos)."""
+    if not isinstance(expected, str) or not isinstance(nr, str):
+        return False
+    fn_e = _extract_trig_func(expected)
+    fn_n = _extract_trig_func(nr)
+    if not fn_e or not fn_n or fn_e == fn_n:
+        return False
+    return {fn_e, fn_n} == {"sin", "cos"}
+
+
+def _trig_identity_linear(nr, expected, prompt=""):
+    """sin 2x written as 2 sin x, or cos 2x written as 2 cos x."""
+    if not isinstance(nr, str):
+        return False
+    low = nr.lower().replace(" ", "")
+    return bool(re.search(r"sin2[a-z]?=2sin[a-z]\b", low)) or \
+           bool(re.search(r"cos2[a-z]?=2cos[a-z]\b", low))
+
+
+def _trig_eq_divide_by_ratio(nr, expected, prompt=""):
+    """Divided both sides by a trig ratio, losing roots."""
+    if not isinstance(nr, str):
+        return False
+    low = nr.lower().replace(" ", "")
+    return bool(re.search(r"/(sin|cos|tan)[a-z]", low))
+
+
+def _trig_eq_missing_solution(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    want = _declared_roots(expected)
+    got = _declared_roots(nr)
+    if not want or not got:
+        return False
+    return len(got) < len(want) and got.issubset(want)
+
+
+def _trig_eq_general_when_interval(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(prompt, str):
+        return False
+    if "interval" not in prompt.lower() and "in the" not in prompt.lower():
+        return False
+    return bool(re.search(r"\+\s*k\s*\.?\s*360|\+\s*360k|k\s*\u2208", nr, re.IGNORECASE))
+
+
+def _trig_period_domain_confusion(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    e = expected.strip()
+    if not re.match(r"^\d+\s*\u00b0?$", e):
+        return False
+    return bool(re.search(r"\[|\]|\(|\)|\bin\b|\binterval\b", nr)) or "domain" in nr.lower()
+
+
+def _trig_period_coefficient(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    try:
+        e_val = float(re.sub(r"[^\d.]", "", expected))
+    except Exception:
+        return False
+    m = re.search(r"\b(\d+)\s*\u00b0?\b", nr)
+    if not m:
+        return False
+    got = float(m.group(1))
+    return got != e_val and got in (180.0, 360.0)
+
+
+def _trig_graph_value_label_swapped(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    if not re.search(r"\bx\s*=", expected):
+        return False
+    return bool(re.search(r"\by\s*=", nr)) and not re.search(r"\bx\s*=", nr)
+
+
+def _trig_compound_wrong_form(nr, expected, prompt=""):
+    """Learner used cos-expansion where sin-expansion was needed.
+
+    Both sin(A+B) and cos(A-B) contain two sin and two cos terms, so
+    counting does not work. Detect the first product pattern instead.
+    """
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    low_e = expected.lower().replace(" ", "")
+    low_n = nr.lower().replace(" ", "")
+    # Expected pattern: sin*cos + cos*sin
+    e_sin_first = bool(re.search(r"sin[abc]?\*?cos[abc]?", low_e))
+    # Learner pattern: cos*cos +/- sin*sin (the cos-expansion)
+    n_cos_first = bool(re.search(r"cos[abc]?\*?cos[abc]?", low_n))
+    if e_sin_first and n_cos_first:
+        return True
+    return False
+
+
+def _trig_3d_wrong_ratio(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    fn_e = _extract_trig_func(expected)
+    fn_n = _extract_trig_func(nr)
+    if not fn_e or not fn_n:
+        return False
+    return fn_e != fn_n and {fn_e, fn_n}.issubset({"sin", "cos", "tan"})
+
+
+def _trig_unitcircle_sign(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    def _nums(s):
+        return re.findall(r"-?\d+(?:\.\d+)?", s)
+    e_nums = _nums(expected)
+    n_nums = _nums(nr)
+    if not e_nums or not n_nums:
+        return False
+    try:
+        e_mag = {abs(float(x)) for x in e_nums}
+        n_mag = {abs(float(x)) for x in n_nums}
+        e_signed = {float(x) for x in e_nums}
+        n_signed = {float(x) for x in n_nums}
+    except ValueError:
+        return False
+    if e_mag != n_mag:
+        return False
+    return e_signed != n_signed
+
+
+def _trig_max_angle_not_ratio(nr, expected, prompt=""):
+    if not isinstance(nr, str):
+        return False
+    if re.search(r"\bx\s*=\s*-?\d+\s*\u00b0?", nr):
+        if not re.search(r"\b(sin|cos|tan)\s*[a-z]?\s*=", nr, re.IGNORECASE):
+            return True
+    return False
+
+
+def _looks_like_general_solution(text):
+    """True if the text expresses a periodic/general solution.
+
+    Covers SA-matric notation:
+      + 360k   + 360 k   + k·360   + k.360   + 2kπ   + kπ
+      + 180n   + n·180   + 2nπ    + k*360
+    """
+    if not text:
+        return False
+    t = str(text).lower()
+    t = t.replace("\u00b0", "").replace("\u00b7", ".").replace("\u03c0", "pi")
+    # remove the "or" separator to avoid false hits on words
+    patterns = [
+        r"[+\-]\s*\d*\s*[kn]\b",                    # + 360k, + k, + 2n
+        r"[+\-]\s*[kn]\s*\.?\s*\d+",               # + k.360, + n.180
+        r"[+\-]\s*\d*\s*[kn]\s*pi",                 # + 2kpi, + kpi
+        r"\b[kn]\s*\.?\s*\d+\s*(?:pi)?",             # k.360, n.180
+    ]
+    for p in patterns:
+        if re.search(p, t):
+            return True
+    return False
+
+
+def _trig_general_solution_incomplete(nr, expected, prompt=""):
+    if not isinstance(nr, str) or not isinstance(expected, str):
+        return False
+    if not _looks_like_general_solution(expected):
+        return False
+    return not _looks_like_general_solution(nr)
+
+
+# ── Rule registrations ──
+
+RULES["trig.reduction"] = [
+    ("M_REDUCTION_COFUNCTION", ErrorType.CONCEPTUAL,
+     "Learner used the wrong co-function in the reduction.",
+     _trig_reduction_cofunction),
+    ("M_REDUCTION_SIGN", ErrorType.PROCEDURAL,
+     "Learner lost the minus sign in the reduced form.",
+     _trig_reduction_sign),
+]
+
+RULES["trig.reduction.cos"] = [
+    ("M_REDUCTION_COFUNCTION", ErrorType.CONCEPTUAL,
+     "Learner used the wrong co-function.",
+     _trig_reduction_cofunction),
+    ("M_REDUCTION_SIGN", ErrorType.PROCEDURAL,
+     "Learner lost the minus sign.",
+     _trig_reduction_sign),
+]
+
+RULES["trig.reduction.range"] = [
+    ("M_REDUCTION_SIGN", ErrorType.PROCEDURAL,
+     "Learner lost the minus sign.",
+     _trig_reduction_sign),
+]
+
+RULES["trig.identity"] = [
+    ("M_DOUBLE_ANGLE_LINEAR", ErrorType.CONCEPTUAL,
+     "Learner treated sin 2x or cos 2x as 2 sin x or 2 cos x.",
+     _trig_identity_linear),
+]
+
+RULES["trig.identity.prove"] = [
+    ("M_DOUBLE_ANGLE_LINEAR", ErrorType.CONCEPTUAL,
+     "Learner treated sin 2x or cos 2x as 2 sin x or 2 cos x.",
+     _trig_identity_linear),
+]
+
+RULES["trig.double_angle"] = [
+    ("M_DOUBLE_ANGLE_LINEAR", ErrorType.CONCEPTUAL,
+     "Learner wrote sin 2x as 2 sin x or cos 2x as 2 cos x.",
+     _trig_identity_linear),
+]
+
+RULES["trig.equation"] = [
+    ("M_TRIG_EQ_GENERAL_WHEN_INTERVAL", ErrorType.PROCEDURAL,
+     "Learner gave a general solution when the interval was asked.",
+     _trig_eq_general_when_interval),
+    ("M_TRIG_EQ_DIVIDE_BY_RATIO", ErrorType.PROCEDURAL,
+     "Learner divided both sides by a trig ratio, losing roots.",
+     _trig_eq_divide_by_ratio),
+    ("M_TRIG_EQ_MISSING_SOLUTION", ErrorType.PROCEDURAL,
+     "Learner gave fewer solutions than the interval requires.",
+     _trig_eq_missing_solution),
+]
+
+RULES["trig.equation.general"] = [
+    ("M_TRIG_GENERAL_INCOMPLETE", ErrorType.PROCEDURAL,
+     "Learner gave an incomplete general solution (no +k.period).",
+     _trig_general_solution_incomplete),
+]
+
+RULES["trig.graph.period"] = [
+    ("M_PERIOD_DOMAIN_CONFUSION", ErrorType.REPRESENTATION,
+     "Learner gave the domain or an interval instead of the period.",
+     _trig_period_domain_confusion),
+    ("M_PERIOD_COEFFICIENT", ErrorType.PROCEDURAL,
+     "Learner did not divide 360 by the coefficient.",
+     _trig_period_coefficient),
+]
+
+RULES["trig.graph.range"] = [
+    ("M_PERIOD_DOMAIN_CONFUSION", ErrorType.REPRESENTATION,
+     "Learner confused domain and range.",
+     _trig_period_domain_confusion),
+]
+
+RULES["trig.graph.inequality"] = [
+    ("M_TRIG_EQ_GENERAL_WHEN_INTERVAL", ErrorType.PROCEDURAL,
+     "Learner gave a general solution when an interval was asked.",
+     _trig_eq_general_when_interval),
+]
+
+RULES["trig.graph.value"] = [
+    ("M_GRAPH_VALUE_LABEL_SWAPPED", ErrorType.REPRESENTATION,
+     "Learner wrote y = value where x = value was expected.",
+     _trig_graph_value_label_swapped),
+]
+
+RULES["trig.compound.sin"] = [
+    ("M_COMPOUND_WRONG_FORM", ErrorType.CONCEPTUAL,
+     "Learner used the cosine expansion where the sine expansion was needed.",
+     _trig_compound_wrong_form),
+]
+
+RULES["trig.compound.prove"] = [
+    ("M_COMPOUND_WRONG_FORM", ErrorType.CONCEPTUAL,
+     "Learner used the wrong expansion.",
+     _trig_compound_wrong_form),
+]
+
+RULES["trig.maximum"] = [
+    ("M_MAX_ANGLE_NOT_RATIO", ErrorType.CONCEPTUAL,
+     "Learner wrote x = value where sin x = value was required.",
+     _trig_max_angle_not_ratio),
+]
+
+RULES["trig.minimum"] = [
+    ("M_MAX_ANGLE_NOT_RATIO", ErrorType.CONCEPTUAL,
+     "Learner did not link the expression to the sine graph.",
+     _trig_max_angle_not_ratio),
+]
+
+RULES["trig.unitcircle"] = [
+    ("M_UNIT_QUADRANT_SIGN", ErrorType.PROCEDURAL,
+     "Learner used the wrong sign for a coordinate in the given quadrant.",
+     _trig_unitcircle_sign),
+]
+
+RULES["trig.3d"] = [
+    ("M_3D_WRONG_RATIO", ErrorType.PROCEDURAL,
+     "Learner selected the wrong trigonometric ratio.",
+     _trig_3d_wrong_ratio),
+]
+
+RULES["trig.3d.length"] = [
+    ("M_3D_WRONG_RATIO", ErrorType.PROCEDURAL,
+     "Learner selected the wrong trigonometric ratio.",
+     _trig_3d_wrong_ratio),
+]
+
+RULES["trig.3d.angle"] = [
+    ("M_3D_WRONG_RATIO", ErrorType.PROCEDURAL,
+     "Learner selected the wrong ratio.",
+     _trig_3d_wrong_ratio),
+]
+
+RULES["trig.3d.area"] = [
+    ("M_3D_WRONG_RATIO", ErrorType.PROCEDURAL,
+     "Learner selected the wrong formula.",
+     _trig_3d_wrong_ratio),
+]
+
+# ══════════════════════════════════════════════════════════════════════
+# END TRIG BLOCK
+# ══════════════════════════════════════════════════════════════════════
+
+
+# ─── BULLETPROOF OVERRIDES (Appended at end) ────────────────────────────────
+def _bulletproof_sign_flip(nr, expected, prompt=""):
+    l_roots = _extract_roots(nr)
+    e_roots = _extract_roots(expected)
+    if len(l_roots) != len(e_roots) or len(l_roots) < 2:
+        return False
+    l_abs = sorted([abs(x) for x in l_roots])
+    e_abs = sorted([abs(x) for x in e_roots])
+    return l_abs == e_abs and sorted(l_roots) != sorted(e_roots)
+
+# Override the quadratic rules with the bulletproof one
+if "algebra.quadratic.solve" in RULES:
+    for i, rule in enumerate(RULES["algebra.quadratic.solve"]):
+        if rule[0] == "M_SIGN_ERROR_READING_ROOT":
+            RULES["algebra.quadratic.solve"][i] = (
+                "M_SIGN_ERROR_READING_ROOT", 
+                ErrorType.CONCEPTUAL, 
+                "Sign flipped on a root.", 
+                _bulletproof_sign_flip
+            )
+
+# Appended missing structural rules
+if "algebra.surd.solve" in RULES:
+    RULES["algebra.surd.solve"].append(
+        ("M_CALCULATION_ERROR", ErrorType.PROCEDURAL, "Wrong number calculated.", lambda nr, ex: len(_extract_roots(nr)) == 1 and len(_extract_roots(ex)) == 1 and _extract_roots(nr) != _extract_roots(ex))
+    )
+
+if "algebra.exponential.solve" in RULES:
+    RULES["algebra.exponential.solve"].append(
+        ("M_CALCULATION_ERROR", ErrorType.PROCEDURAL, "Wrong number calculated.", lambda nr, ex: len(_extract_roots(nr)) >= 1 and len(_extract_roots(ex)) >= 1 and set(_extract_roots(nr)) != set(_extract_roots(ex)))
+    )
+
+
+# ─── FINAL BULLETPROOF OVERRIDE ─────────────────────────────────────────────
+def _final_sign_flip(nr, expected, *args):
+    l_roots = _extract_roots(nr)
+    e_roots = _extract_roots(expected)
+    if len(l_roots) != len(e_roots) or len(l_roots) < 2: return False
+    l_abs = sorted([abs(x) for x in l_roots])
+    e_abs = sorted([abs(x) for x in e_roots])
+    return l_abs == e_abs and sorted(l_roots) != sorted(e_roots)
+
+if "algebra.quadratic.solve" in RULES:
+    for i, r in enumerate(RULES["algebra.quadratic.solve"]):
+        if "SIGN_ERROR" in r[0]:
+            RULES["algebra.quadratic.solve"][i] = ("M_SIGN_ERROR_READING_ROOT", ErrorType.CONCEPTUAL, "Sign flipped", _final_sign_flip)
+
+
+# ─── TRIG BULLETPROOF OVERRIDES ─────────────────────────────────────────────
+def _bulletproof_trig_sign(nr, expected, *args):
+    nr = nr.replace(" ", "").lower()
+    expected = expected.replace(" ", "").lower()
+    # If the function matches but the negative sign is missing/present
+    for func in ["cos", "sin", "tan"]:
+        if func in nr and func in expected:
+            return nr.startswith("-") != expected.startswith("-")
+    return False
+
+def _insufficient_proof_working(nr, expected, *args):
+    # If a student types less than 15 characters for a proof, they didn't write the steps
+    return len(nr.strip()) < 15
+
+# Force the Trig Reduction override
+if "trig.reduction.simplify" in RULES:
+    # Clear existing and add our bulletproof one
+    RULES["trig.reduction.simplify"] = [
+        ("M_TRIG_RED_SIGN", ErrorType.CONCEPTUAL, "Sign error in reduction.", _bulletproof_trig_sign)
+    ]
+
+# Force the Trig Identity Prove override
+if "trig.identity.prove" in RULES:
+    # Add a rule to catch lazy answers like "I proved it"
+    RULES["trig.identity.prove"].insert(0, 
+        ("M_INSUFFICIENT_WORKING", ErrorType.PROCEDURAL, "No working shown.", _insufficient_proof_working)
+    )
+
+
+# ─── APP TESTER ADDITIONS ────────────────────────────────────────────────────
+def _is_gibberish_for_drawing(nr, expected, *args):
+    return expected.strip().lower() in ("drawn", "drawn graph", "") and len(nr.strip()) > 2
+
+# Add to RULES dict
+for skill in ["functions.log.inverse", "functions.inverse"]:
+    if skill in RULES:
+        RULES[skill].insert(0, ("M_NO_DRAWING_ATTEMPTED", ErrorType.PROCEDURAL, "Drawing question requires a sketch.", _is_gibberish_for_drawing))
+
+# ─── 2. Fix the Exponential Rule (1.1.4) ─────────────────────────────────────
+def _exp_hidden_quad_wrong(nr, expected, *args):
+    # If learner wrote two numbers but not the expected ones, and question has '^x'
+    return "x =" in nr and "^" in str(expected) and nr.strip() != expected.strip()
+
+if "algebra.exponential.solve" in RULES:
+    RULES["algebra.exponential.solve"].insert(0, 
+        ("M_EXP_WRONG_BASE", ErrorType.CONCEPTUAL, "Wrong substitution for k.", _exp_hidden_quad_wrong)
+    )
+
+# ─── 3. Fix the Surd Rule (1.1.5) ────────────────────────────────────────────
+def _surd_forgot_to_square(nr, expected, *args):
+    # If the learner wrote a single number but didn't show the square root working
+    return "x =" in nr and len(nr) < 15 and "sqrt" not in nr
+
+if "algebra.surd.solve" in RULES:
+    RULES["algebra.surd.solve"].insert(0, 
+        ("M_SURD_NOT_SQUARED", ErrorType.PROCEDURAL, "Did not square both sides.", _surd_forgot_to_square)
+    )
+
+
+# ─── COVERAGE FIX: Add rules for uncovered errors ────────────────────────────
+def _coord_swap(nr, expected, *args):
+    """x = A, y = B  vs  x = B, y = A  (the pair was swapped)."""
+    def _pair(s):
+        import re as _r
+        s = str(s).lower().replace(" ", "")
+        xm = _r.search(r"x=(-?\d+(?:\.\d+)?)", s)
+        ym = _r.search(r"y=(-?\d+(?:\.\d+)?)", s)
+        if xm and ym:
+            return (float(xm.group(1)), float(ym.group(1)))
+        return None
+    pa = _pair(nr)
+    pb = _pair(expected)
+    if pa is None or pb is None:
+        return False
+    return pa[0] == pb[1] and pa[1] == pb[0] and pa != pb
+
+
+def _calc_error_generic(nr, expected, *args):
+    """Same structure, at least one number wrong (not a swap, not a sign flip)."""
+    import re as _r
+    # Extract all numbers
+    l_nums = [float(n) for n in _r.findall(r"-?\d+(?:\.\d+)?", str(nr))]
+    e_nums = [float(n) for n in _r.findall(r"-?\d+(?:\.\d+)?", str(expected))]
+    if not l_nums or not e_nums:
+        return False
+    # If the multiset of absolute values differs, it's a calculation error
+    l_abs = sorted([abs(x) for x in l_nums])
+    e_abs = sorted([abs(x) for x in e_nums])
+    if l_abs != e_abs:
+        # But not if it's empty or gibberish
+        return 1 <= len(l_nums) <= 5 and 1 <= len(e_nums) <= 5
+    return False
+
+
+def _ineq_missing_interval(nr, expected, *args):
+    """Wrote 'x < 0' but expected 'x < 0 or x > 3' (missed the second interval)."""
+    nr_s = str(nr).lower()
+    ex_s = str(expected).lower()
+    # Expected has 'or' / 'and' (two intervals), learner doesn't
+    ex_has_2 = ("or" in ex_s) or ("and" in ex_s)
+    nr_has_2 = ("or" in nr_s) or ("and" in nr_s)
+    return ex_has_2 and not nr_has_2
+
+
+# Register these in the appropriate skills
+if "algebra.simultaneous.solve" in RULES:
+    RULES["algebra.simultaneous.solve"].insert(0, 
+        ("M_COORDINATE_SWAP", ErrorType.CONCEPTUAL, "Swapped x and y.", _coord_swap))
+    RULES["algebra.simultaneous.solve"].append(
+        ("M_CALCULATION_ERROR", ErrorType.PROCEDURAL, "Wrong number.", _calc_error_generic))
+
+if "algebra.quadratic.solve" in RULES:
+    RULES["algebra.quadratic.solve"].append(
+        ("M_CALCULATION_ERROR", ErrorType.PROCEDURAL, "Wrong number.", _calc_error_generic))
+
+if "algebra.quadratic.inequality" in RULES:
+    RULES["algebra.quadratic.inequality"].insert(0,
+        ("M_INEQ_MISSING_INTERVAL", ErrorType.PROCEDURAL, "Missing interval.", _ineq_missing_interval))
+    RULES["algebra.quadratic.inequality"].append(
+        ("M_CALCULATION_ERROR", ErrorType.PROCEDURAL, "Wrong number.", _calc_error_generic))
+
+
+# ─── SURD + SIMULTANEOUS COVERAGE RULES ─────────────────────────────────────
+def _surd_single_num_wrong(nr, expected, *args):
+    """Surd question: learner wrote a single number/fraction that doesn't match."""
+    import re as _r
+    from fractions import Fraction
+
+    def _parse(s):
+        s = str(s).lower()
+        # strip x=, y=, =, spaces
+        s = _r.sub(r"\bx\s*=\s*", "", s)
+        s = _r.sub(r"\by\s*=\s*", "", s)
+        s = s.replace("=", "").strip()
+        # if the string still has multiple parts, it's not a single-number answer
+        if _r.search(r"\bor\b|\band\b|,", s):
+            return None
+        try:
+            return Fraction(s)
+        except (ValueError, ZeroDivisionError, TypeError):
+            try:
+                return Fraction(float(s))
+            except (ValueError, TypeError):
+                return None
+
+    l = _parse(nr)
+    e = _parse(expected)
+    return l is not None and e is not None and l != e
+
+def _coord_sign_flip(nr, expected, *args):
+    """Simultaneous: x = -3, y = 1 vs x = 3, y = 1 (some signs flipped)."""
+    import re as _r
+    def _pairs(s):
+        s = str(s).lower().replace(" ", "")
+        pairs = []
+        current = {}
+        for x_v, y_v in _r.findall(r"x=(-?\d+(?:\.\d+)?)|y=(-?\d+(?:\.\d+)?)", s):
+            if x_v: current["x"] = float(x_v)
+            if y_v:
+                current["y"] = float(y_v)
+                if "x" in current: pairs.append((current["x"], current["y"]))
+                current = {}
+        return pairs
+    lp = _pairs(nr)
+    ep = _pairs(expected)
+    if not lp or not ep or len(lp) != len(ep):
+        return False
+    # Same absolute values but different signs
+    l_abs = sorted([(abs(a), abs(b)) for a, b in lp])
+    e_abs = sorted([(abs(a), abs(b)) for a, b in ep])
+    return l_abs == e_abs and lp != ep
+
+
+def _coord_missing_y(nr, expected, *args):
+    """Simultaneous: learner wrote only x values, forgot y."""
+    import re as _r
+    nr_s = str(nr).lower().replace(" ", "")
+    ex_s = str(expected).lower().replace(" ", "")
+    return "x=" in nr_s and "y=" not in nr_s and "y=" in ex_s
+
+
+if "algebra.surd.solve" in RULES:
+    RULES["algebra.surd.solve"].insert(0,
+        ("M_SURD_CALCULATION_ERROR", ErrorType.PROCEDURAL, "Wrong number from surd equation.", _surd_single_num_wrong))
+
+if "algebra.simultaneous.solve" in RULES:
+    RULES["algebra.simultaneous.solve"].insert(0,
+        ("M_COORDINATE_SIGN_FLIP", ErrorType.CONCEPTUAL, "Sign flipped on one coordinate.", _coord_sign_flip))
+    RULES["algebra.simultaneous.solve"].insert(1,
+        ("M_INCOMPLETE_PAIR", ErrorType.PROCEDURAL, "Missing y-values.", _coord_missing_y))

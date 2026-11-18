@@ -48,6 +48,12 @@
         "f passes through (1; 0): 1 + b - 3 = 0 → b = 2.",
         "D is (0; -3) on g: -3 = a/1 → a = -3... check signs.",
         "Adjust: a = 3."
+      ],
+      "given_from": [
+        "4.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -69,6 +75,14 @@
       "steps": [
         "x = -b/(2a) = -2/2 = -1.",
         "f(-1) = 1 - 2 - 3 = -4."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola"
       ]
     },
     {
@@ -89,6 +103,15 @@
       "expected_fn": "y >= -4",
       "steps": [
         "a > 0, opens up."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola"
       ]
     },
     {
@@ -111,6 +134,16 @@
         "m = tan(45°) = 1.",
         "y + 4 = 1(x + 1).",
         "y = x - 3."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola"
       ]
     },
     {
@@ -124,6 +157,18 @@
         "Tangent at C has gradient 0.",
         "Line has gradient 1.",
         "Not tangent."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola",
+        "functions.line"
       ]
     },
     {
@@ -143,6 +188,20 @@
         "h(x) = f(m-x) + q.",
         "Reflect f in y-axis, translate.",
         "Set h(0) = 0 and only-one-x-intercept condition."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.parabola",
+        "functions.line",
+        "calculus.tangent"
       ]
     }
   ],

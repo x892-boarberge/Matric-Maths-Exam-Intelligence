@@ -45,6 +45,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "1.1"
+      ],
+      "requires_skills": [
+        "stats.regression"
       ]
     },
     {
@@ -60,6 +66,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "1.1",
+        "1.2"
+      ],
+      "requires_skills": [
+        "stats.regression"
       ]
     },
     {
@@ -80,6 +93,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "requires_skills": [
+        "stats.regression",
+        "stats.correlation"
       ]
     }
   ],

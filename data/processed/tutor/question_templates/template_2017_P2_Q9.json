@@ -47,6 +47,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "9.1.1"
+      ],
+      "requires_skills": [
+        "geometry.proportion"
       ]
     },
     {
@@ -83,6 +89,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "9.1.1",
+        "9.1.2"
+      ],
+      "requires_skills": [
+        "geometry.proportion"
       ]
     }
   ],

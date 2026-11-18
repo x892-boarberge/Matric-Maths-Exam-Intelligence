@@ -1,0 +1,692 @@
+[
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 3",
+    "expected": "x = 2, y = 1",
+    "demonstration": "Sub x = y + 1 into x² - y² = 3.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 3",
+      "y = 1",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 9",
+    "expected": "x = 5, y = 4",
+    "demonstration": "Sub x = y + 1 into x² - y² = 9.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 9",
+      "y = 4",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5, y = 4"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 3 and x^2 - y^2 = 15",
+    "expected": "x = 4, y = 1",
+    "demonstration": "Sub x = y + 3 into x² - y² = 15.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 3",
+      "(y + 3)² - y² = 15",
+      "y = 1",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 8",
+    "expected": "x = 3, y = 1",
+    "demonstration": "Sub x = y + 2 into x² - y² = 8.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 8",
+      "y = 1",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 12",
+    "expected": "x = 4, y = 2",
+    "demonstration": "Sub x = y + 2 into x² - y² = 12.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 12",
+      "y = 2",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 2"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 15",
+    "expected": "x = 8, y = 7",
+    "demonstration": "Sub x = y + 1 into x² - y² = 15.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 15",
+      "y = 7",
+      "x = 8",
+      "_________________________",
+      "Final Answer: x = 8, y = 7"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 3 and x^2 - y^2 = 15",
+    "expected": "x = 4, y = 1",
+    "demonstration": "Sub x = y + 3 into x² - y² = 15.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 3",
+      "(y + 3)² - y² = 15",
+      "y = 1",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 8",
+    "expected": "x = 3, y = 1",
+    "demonstration": "Sub x = y + 2 into x² - y² = 8.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 8",
+      "y = 1",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 20",
+    "expected": "x = 6, y = 4",
+    "demonstration": "Sub x = y + 2 into x² - y² = 20.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 20",
+      "y = 4",
+      "x = 6",
+      "_________________________",
+      "Final Answer: x = 6, y = 4"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 17",
+    "expected": "x = 9, y = 8",
+    "demonstration": "Sub x = y + 1 into x² - y² = 17.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 17",
+      "y = 8",
+      "x = 9",
+      "_________________________",
+      "Final Answer: x = 9, y = 8"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 3 and x^2 - y^2 = 15",
+    "expected": "x = 4, y = 1",
+    "demonstration": "Sub x = y + 3 into x² - y² = 15.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 3",
+      "(y + 3)² - y² = 15",
+      "y = 1",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 11",
+    "expected": "x = 6, y = 5",
+    "demonstration": "Sub x = y + 1 into x² - y² = 11.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 11",
+      "y = 5",
+      "x = 6",
+      "_________________________",
+      "Final Answer: x = 6, y = 5"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 12",
+    "expected": "x = 4, y = 2",
+    "demonstration": "Sub x = y + 2 into x² - y² = 12.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 12",
+      "y = 2",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 2"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 11",
+    "expected": "x = 6, y = 5",
+    "demonstration": "Sub x = y + 1 into x² - y² = 11.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 11",
+      "y = 5",
+      "x = 6",
+      "_________________________",
+      "Final Answer: x = 6, y = 5"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 3",
+    "expected": "x = 2, y = 1",
+    "demonstration": "Sub x = y + 1 into x² - y² = 3.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 3",
+      "y = 1",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 7",
+    "expected": "x = 4, y = 3",
+    "demonstration": "Sub x = y + 1 into x² - y² = 7.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 7",
+      "y = 3",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 3"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 8",
+    "expected": "x = 3, y = 1",
+    "demonstration": "Sub x = y + 2 into x² - y² = 8.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 8",
+      "y = 1",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 8",
+    "expected": "x = 3, y = 1",
+    "demonstration": "Sub x = y + 2 into x² - y² = 8.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 8",
+      "y = 1",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 7",
+    "expected": "x = 4, y = 3",
+    "demonstration": "Sub x = y + 1 into x² - y² = 7.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 7",
+      "y = 3",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 3"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 11",
+    "expected": "x = 6, y = 5",
+    "demonstration": "Sub x = y + 1 into x² - y² = 11.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 11",
+      "y = 5",
+      "x = 6",
+      "_________________________",
+      "Final Answer: x = 6, y = 5"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 12",
+    "expected": "x = 4, y = 2",
+    "demonstration": "Sub x = y + 2 into x² - y² = 12.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 12",
+      "y = 2",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 2"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 8",
+    "expected": "x = 3, y = 1",
+    "demonstration": "Sub x = y + 2 into x² - y² = 8.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 8",
+      "y = 1",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 7",
+    "expected": "x = 4, y = 3",
+    "demonstration": "Sub x = y + 1 into x² - y² = 7.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 7",
+      "y = 3",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 3"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 13",
+    "expected": "x = 7, y = 6",
+    "demonstration": "Sub x = y + 1 into x² - y² = 13.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 13",
+      "y = 6",
+      "x = 7",
+      "_________________________",
+      "Final Answer: x = 7, y = 6"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 5",
+    "expected": "x = 3, y = 2",
+    "demonstration": "Sub x = y + 1 into x² - y² = 5.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 5",
+      "y = 2",
+      "x = 3",
+      "_________________________",
+      "Final Answer: x = 3, y = 2"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 3",
+    "expected": "x = 2, y = 1",
+    "demonstration": "Sub x = y + 1 into x² - y² = 3.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 3",
+      "y = 1",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 3",
+    "expected": "x = 2, y = 1",
+    "demonstration": "Sub x = y + 1 into x² - y² = 3.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 3",
+      "y = 1",
+      "x = 2",
+      "_________________________",
+      "Final Answer: x = 2, y = 1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 7",
+    "expected": "x = 4, y = 3",
+    "demonstration": "Sub x = y + 1 into x² - y² = 7.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 7",
+      "y = 3",
+      "x = 4",
+      "_________________________",
+      "Final Answer: x = 4, y = 3"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 1 and x^2 - y^2 = 9",
+    "expected": "x = 5, y = 4",
+    "demonstration": "Sub x = y + 1 into x² - y² = 9.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 1",
+      "(y + 1)² - y² = 9",
+      "y = 4",
+      "x = 5",
+      "_________________________",
+      "Final Answer: x = 5, y = 4"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x and y: x = y + 2 and x^2 - y^2 = 20",
+    "expected": "x = 6, y = 4",
+    "demonstration": "Sub x = y + 2 into x² - y² = 20.",
+    "memo_marks": [
+      "1 mark sub",
+      "1 mark expand",
+      "1 mark y",
+      "1 mark x"
+    ],
+    "fast_path": "Make x subject, substitute.",
+    "fatal_error": "DBE says: Stop when you find y.",
+    "answer_book_layout": [
+      "x = y + 2",
+      "(y + 2)² - y² = 20",
+      "y = 4",
+      "x = 6",
+      "_________________________",
+      "Final Answer: x = 6, y = 4"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

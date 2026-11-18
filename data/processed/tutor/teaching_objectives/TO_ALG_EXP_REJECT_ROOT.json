@@ -1,0 +1,37 @@
+{
+  "objective_id": "TO_ALG_EXP_REJECT_ROOT",
+  "skill_id": "algebra.exponential.solve",
+  "trigger_misconception": "M_EXP_EXTRA_ROOT_NOT_REJECTED",
+  "dbe_source": {
+    "years": [
+      "2024"
+    ],
+    "recommendation": "When you substitute k = 2^x and solve, you may get values of k that are impossible. 2^x is always positive. Reject any k that is zero or neg",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When you substitute k = 2^x and solve, you may get values of k that are impossible. 2^x is always positive. Reject any k that is zero or negative.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "Solve 2.2^(2x) - 9.2^x + 4 = 0",
+      "work": [
+        "Let k = 2^x. Then 2k^2 - 9k + 4 = 0.",
+        "Factorise: (2k - 1)(k - 4) = 0",
+        "k = 1/2 or k = 4",
+        "Now: 2^x = 1/2 or 2^x = 4",
+        "x = -1 or x = 2",
+        "Both k values are positive, so both are valid here. If k had been negative, reject it."
+      ]
+    },
+    "probe": {
+      "problem": "Solve 2^(2x) - 5*2^x + 4 = 0.",
+      "expected": "x = 0 or x = 2",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_EXP_EXTRA_ROOT_NOT_REJECTED",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "One of those k-values gives no solution for x. Reject it before writing the final answer."
+}

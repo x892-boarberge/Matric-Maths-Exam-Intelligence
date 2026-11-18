@@ -1,0 +1,482 @@
+[
+  {
+    "variant_question": "Range of f(x) = -1(x - 1)^2 - 2.",
+    "expected": "y <= -2",
+    "demonstration": "TP is -2.",
+    "memo_marks": [
+      "1 mark y <= -2"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -2",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= -2"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -2(x - 4)^2 + 3.",
+    "expected": "y <= 3",
+    "demonstration": "TP is 3.",
+    "memo_marks": [
+      "1 mark y <= 3"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 3",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= 3"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -1(x + 0)^2 + 4.",
+    "expected": "y <= 4",
+    "demonstration": "TP is 4.",
+    "memo_marks": [
+      "1 mark y <= 4"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 4",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= 4"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -1(x + 0)^2 + 6.",
+    "expected": "y <= 6",
+    "demonstration": "TP is 6.",
+    "memo_marks": [
+      "1 mark y <= 6"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 6",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= 6"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 1(x - 3)^2 - 9.",
+    "expected": "y >= -9",
+    "demonstration": "TP is -9.",
+    "memo_marks": [
+      "1 mark y >= -9"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -9",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -9"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -1(x - 1)^2 + 7.",
+    "expected": "y <= 7",
+    "demonstration": "TP is 7.",
+    "memo_marks": [
+      "1 mark y <= 7"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 7",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= 7"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 1(x + 2)^2 - 8.",
+    "expected": "y >= -8",
+    "demonstration": "TP is -8.",
+    "memo_marks": [
+      "1 mark y >= -8"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -8",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -8"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -1(x + 2)^2 - 8.",
+    "expected": "y <= -8",
+    "demonstration": "TP is -8.",
+    "memo_marks": [
+      "1 mark y <= -8"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -8",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= -8"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -1(x + 3)^2 - 4.",
+    "expected": "y <= -4",
+    "demonstration": "TP is -4.",
+    "memo_marks": [
+      "1 mark y <= -4"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -4",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= -4"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -2(x - 4)^2 + 10.",
+    "expected": "y <= 10",
+    "demonstration": "TP is 10.",
+    "memo_marks": [
+      "1 mark y <= 10"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 10",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= 10"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 1(x + 3)^2 - 3.",
+    "expected": "y >= -3",
+    "demonstration": "TP is -3.",
+    "memo_marks": [
+      "1 mark y >= -3"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -3",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -3"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -1(x - 5)^2 - 10.",
+    "expected": "y <= -10",
+    "demonstration": "TP is -10.",
+    "memo_marks": [
+      "1 mark y <= -10"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -10",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= -10"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -2(x - 5)^2 + 7.",
+    "expected": "y <= 7",
+    "demonstration": "TP is 7.",
+    "memo_marks": [
+      "1 mark y <= 7"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 7",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= 7"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 2(x - 4)^2 + 10.",
+    "expected": "y >= 10",
+    "demonstration": "TP is 10.",
+    "memo_marks": [
+      "1 mark y >= 10"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 10",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= 10"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 2(x + 0)^2 - 2.",
+    "expected": "y >= -2",
+    "demonstration": "TP is -2.",
+    "memo_marks": [
+      "1 mark y >= -2"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -2",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -2"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 1(x + 4)^2 - 8.",
+    "expected": "y >= -8",
+    "demonstration": "TP is -8.",
+    "memo_marks": [
+      "1 mark y >= -8"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -8",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -8"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -2(x + 5)^2 - 8.",
+    "expected": "y <= -8",
+    "demonstration": "TP is -8.",
+    "memo_marks": [
+      "1 mark y <= -8"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -8",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= -8"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 2(x - 2)^2 + 8.",
+    "expected": "y >= 8",
+    "demonstration": "TP is 8.",
+    "memo_marks": [
+      "1 mark y >= 8"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 8",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= 8"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 2(x - 5)^2 - 9.",
+    "expected": "y >= -9",
+    "demonstration": "TP is -9.",
+    "memo_marks": [
+      "1 mark y >= -9"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -9",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -9"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 2(x - 5)^2 + 9.",
+    "expected": "y >= 9",
+    "demonstration": "TP is 9.",
+    "memo_marks": [
+      "1 mark y >= 9"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 9",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= 9"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -1(x + 4)^2 + 8.",
+    "expected": "y <= 8",
+    "demonstration": "TP is 8.",
+    "memo_marks": [
+      "1 mark y <= 8"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 8",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= 8"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 1(x + 5)^2 - 8.",
+    "expected": "y >= -8",
+    "demonstration": "TP is -8.",
+    "memo_marks": [
+      "1 mark y >= -8"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -8",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -8"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 2(x - 1)^2 + 9.",
+    "expected": "y >= 9",
+    "demonstration": "TP is 9.",
+    "memo_marks": [
+      "1 mark y >= 9"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 9",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= 9"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -2(x - 3)^2 - 10.",
+    "expected": "y <= -10",
+    "demonstration": "TP is -10.",
+    "memo_marks": [
+      "1 mark y <= -10"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -10",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= -10"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 2(x - 3)^2 + 3.",
+    "expected": "y >= 3",
+    "demonstration": "TP is 3.",
+    "memo_marks": [
+      "1 mark y >= 3"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 3",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= 3"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 1(x + 3)^2 - 3.",
+    "expected": "y >= -3",
+    "demonstration": "TP is -3.",
+    "memo_marks": [
+      "1 mark y >= -3"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -3",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -3"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = -2(x - 5)^2 + 5.",
+    "expected": "y <= 5",
+    "demonstration": "TP is 5.",
+    "memo_marks": [
+      "1 mark y <= 5"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 5",
+      "a < 0",
+      "_________________________",
+      "Final Answer: y <= 5"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 2(x + 5)^2 - 7.",
+    "expected": "y >= -7",
+    "demonstration": "TP is -7.",
+    "memo_marks": [
+      "1 mark y >= -7"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -7",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -7"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 1(x - 4)^2 + 3.",
+    "expected": "y >= 3",
+    "demonstration": "TP is 3.",
+    "memo_marks": [
+      "1 mark y >= 3"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = 3",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= 3"
+    ]
+  },
+  {
+    "variant_question": "Range of f(x) = 2(x + 3)^2 - 7.",
+    "expected": "y >= -7",
+    "demonstration": "TP is -7.",
+    "memo_marks": [
+      "1 mark y >= -7"
+    ],
+    "fast_path": "Look at TP.",
+    "fatal_error": "DBE says: Use y-int.",
+    "answer_book_layout": [
+      "TP y = -7",
+      "a > 0",
+      "_________________________",
+      "Final Answer: y >= -7"
+    ]
+  }
+]

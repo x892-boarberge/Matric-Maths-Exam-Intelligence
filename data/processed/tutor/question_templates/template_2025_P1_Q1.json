@@ -49,6 +49,12 @@
         "a = {c}, b = {b1_neg}, c = {b2}",
         "Substitute and simplify.",
         "x = {x1} or x = {x2}"
+      ],
+      "given_from": [
+        "1.1.1"
+      ],
+      "requires_skills": [
+        "algebra.quadratic"
       ]
     },
     {
@@ -72,6 +78,13 @@
         "x({k}x - {m}) > 0",
         "Critical values: x = 0 or x = {bound}",
         "x < 0 or x > {bound}"
+      ],
+      "given_from": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "requires_skills": [
+        "algebra.quadratic"
       ]
     },
     {
@@ -87,6 +100,14 @@
         "Substitute: 5(2+y)y = 6 + (2+y)^2",
         "Simplify and solve for y.",
         "Then find x."
+      ],
+      "given_from": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "requires_skills": [
+        "algebra.quadratic"
       ]
     }
   ],

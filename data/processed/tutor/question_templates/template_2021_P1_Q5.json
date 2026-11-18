@@ -55,6 +55,12 @@
       "expected_fn": "x in R, x != {p}",
       "steps": [
         "Denominator zero at x = {p}."
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -67,6 +73,13 @@
       "steps": [
         "Set f(x) = 0: {a}/(x - {p}) + {q} = 0",
         "Solve for x."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -79,6 +92,14 @@
       "steps": [
         "f(0) = {a}/(0 - {p}) + {q}",
         "Simplify."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -110,6 +131,15 @@
         "Draw both branches.",
         "Dotted asymptotes at x = {p}, y = {q}.",
         "Mark intercepts."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     }
   ],

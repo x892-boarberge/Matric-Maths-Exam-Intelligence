@@ -25,6 +25,12 @@
       "steps": [
         "T_n = n^2 + 4n + 9",
         "T_60 = 3600 + 240 + 9 = 3849."
+      ],
+      "given_from": [
+        "3.1"
+      ],
+      "requires_skills": [
+        "sequences.quadratic"
       ]
     },
     {
@@ -47,6 +53,13 @@
         "T_1 - T_0 style: first diff at position 1 = 7",
         "d increases by 2 (second difference).",
         "T_p = 2p + 5."
+      ],
+      "given_from": [
+        "3.1",
+        "3.2"
+      ],
+      "requires_skills": [
+        "sequences.quadratic"
       ]
     },
     {
@@ -69,6 +82,14 @@
         "T_n - T_{n-1} = 2n + 3",
         "2n + 3 = 157",
         "n = 77."
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ],
+      "requires_skills": [
+        "sequences.quadratic"
       ]
     }
   ],

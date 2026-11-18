@@ -57,6 +57,12 @@
       "steps": [
         "From asymptotes and a given point.",
         "Determine p and q."
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -78,6 +84,13 @@
       "steps": [
         "1 = log_3(t).",
         "t = 3."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "functions.hyperbola"
       ]
     },
     {
@@ -98,6 +111,15 @@
       "expected_fn": "y = 3^x",
       "steps": [
         "Swap x and y."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.log"
       ]
     },
     {
@@ -115,6 +137,16 @@
       "expected_fn": "x < 1",
       "steps": [
         "3^x < 3 → x < 1."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.log"
       ]
     },
     {
@@ -142,6 +174,18 @@
       "steps": [
         "Axis of symmetry: y = -x + 1.",
         "Intersection with f(x) = log_3(x): at (1; 0)."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5"
+      ],
+      "requires_skills": [
+        "functions.hyperbola",
+        "functions.log",
+        "functions.inequality"
       ]
     }
   ],

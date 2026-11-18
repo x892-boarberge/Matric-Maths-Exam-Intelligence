@@ -1,0 +1,572 @@
+[
+  {
+    "variant_question": "Solve for x: (x - 11)(x - 2) = 0",
+    "expected": "x = 11 or x = 2",
+    "demonstration": "Zero Product Property.\n1. x - 11 = 0 -> x = 11\n2. x - 2 = 0 -> x = 2",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 11 = 0    or    x - 2 = 0",
+      "x = 11       or    x = 2",
+      "_________________________",
+      "Final Answer: x = 11 or x = 2"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 12)(x - 4) = 0",
+    "expected": "x = 12 or x = 4",
+    "demonstration": "Zero Product Property.\n1. x - 12 = 0 -> x = 12\n2. x - 4 = 0 -> x = 4",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 12 = 0    or    x - 4 = 0",
+      "x = 12       or    x = 4",
+      "_________________________",
+      "Final Answer: x = 12 or x = 4"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 4)(x + 2) = 0",
+    "expected": "x = 4 or x = -2",
+    "demonstration": "Zero Product Property.\n1. x - 4 = 0 -> x = 4\n2. x + 2 = 0 -> x = -2",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 4 = 0    or    x + 2 = 0",
+      "x = 4       or    x = -2",
+      "_________________________",
+      "Final Answer: x = 4 or x = -2"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 4)(x - 3) = 0",
+    "expected": "x = 4 or x = 3",
+    "demonstration": "Zero Product Property.\n1. x - 4 = 0 -> x = 4\n2. x - 3 = 0 -> x = 3",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 4 = 0    or    x - 3 = 0",
+      "x = 4       or    x = 3",
+      "_________________________",
+      "Final Answer: x = 4 or x = 3"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 3)(x + 5) = 0",
+    "expected": "x = 3 or x = -5",
+    "demonstration": "Zero Product Property.\n1. x - 3 = 0 -> x = 3\n2. x + 5 = 0 -> x = -5",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 3 = 0    or    x + 5 = 0",
+      "x = 3       or    x = -5",
+      "_________________________",
+      "Final Answer: x = 3 or x = -5"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 8)(x - 2) = 0",
+    "expected": "x = -8 or x = 2",
+    "demonstration": "Zero Product Property.\n1. x + 8 = 0 -> x = -8\n2. x - 2 = 0 -> x = 2",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 8 = 0    or    x - 2 = 0",
+      "x = -8       or    x = 2",
+      "_________________________",
+      "Final Answer: x = -8 or x = 2"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 3)(x + 5) = 0",
+    "expected": "x = 3 or x = -5",
+    "demonstration": "Zero Product Property.\n1. x - 3 = 0 -> x = 3\n2. x + 5 = 0 -> x = -5",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 3 = 0    or    x + 5 = 0",
+      "x = 3       or    x = -5",
+      "_________________________",
+      "Final Answer: x = 3 or x = -5"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 1)(x - 6) = 0",
+    "expected": "x = -1 or x = 6",
+    "demonstration": "Zero Product Property.\n1. x + 1 = 0 -> x = -1\n2. x - 6 = 0 -> x = 6",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 1 = 0    or    x - 6 = 0",
+      "x = -1       or    x = 6",
+      "_________________________",
+      "Final Answer: x = -1 or x = 6"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 3)(x - 5) = 0",
+    "expected": "x = -3 or x = 5",
+    "demonstration": "Zero Product Property.\n1. x + 3 = 0 -> x = -3\n2. x - 5 = 0 -> x = 5",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 3 = 0    or    x - 5 = 0",
+      "x = -3       or    x = 5",
+      "_________________________",
+      "Final Answer: x = -3 or x = 5"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 6)(x - 11) = 0",
+    "expected": "x = 6 or x = 11",
+    "demonstration": "Zero Product Property.\n1. x - 6 = 0 -> x = 6\n2. x - 11 = 0 -> x = 11",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 6 = 0    or    x - 11 = 0",
+      "x = 6       or    x = 11",
+      "_________________________",
+      "Final Answer: x = 6 or x = 11"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 10)(x - 8) = 0",
+    "expected": "x = -10 or x = 8",
+    "demonstration": "Zero Product Property.\n1. x + 10 = 0 -> x = -10\n2. x - 8 = 0 -> x = 8",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 10 = 0    or    x - 8 = 0",
+      "x = -10       or    x = 8",
+      "_________________________",
+      "Final Answer: x = -10 or x = 8"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 10)(x + 11) = 0",
+    "expected": "x = -10 or x = -11",
+    "demonstration": "Zero Product Property.\n1. x + 10 = 0 -> x = -10\n2. x + 11 = 0 -> x = -11",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 10 = 0    or    x + 11 = 0",
+      "x = -10       or    x = -11",
+      "_________________________",
+      "Final Answer: x = -10 or x = -11"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 11)(x + 7) = 0",
+    "expected": "x = -11 or x = -7",
+    "demonstration": "Zero Product Property.\n1. x + 11 = 0 -> x = -11\n2. x + 7 = 0 -> x = -7",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 11 = 0    or    x + 7 = 0",
+      "x = -11       or    x = -7",
+      "_________________________",
+      "Final Answer: x = -11 or x = -7"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 1)(x + 7) = 0",
+    "expected": "x = 1 or x = -7",
+    "demonstration": "Zero Product Property.\n1. x - 1 = 0 -> x = 1\n2. x + 7 = 0 -> x = -7",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 1 = 0    or    x + 7 = 0",
+      "x = 1       or    x = -7",
+      "_________________________",
+      "Final Answer: x = 1 or x = -7"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 7)(x - 4) = 0",
+    "expected": "x = -7 or x = 4",
+    "demonstration": "Zero Product Property.\n1. x + 7 = 0 -> x = -7\n2. x - 4 = 0 -> x = 4",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 7 = 0    or    x - 4 = 0",
+      "x = -7       or    x = 4",
+      "_________________________",
+      "Final Answer: x = -7 or x = 4"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 4)(x + 12) = 0",
+    "expected": "x = 4 or x = -12",
+    "demonstration": "Zero Product Property.\n1. x - 4 = 0 -> x = 4\n2. x + 12 = 0 -> x = -12",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 4 = 0    or    x + 12 = 0",
+      "x = 4       or    x = -12",
+      "_________________________",
+      "Final Answer: x = 4 or x = -12"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 8)(x - 4) = 0",
+    "expected": "x = -8 or x = 4",
+    "demonstration": "Zero Product Property.\n1. x + 8 = 0 -> x = -8\n2. x - 4 = 0 -> x = 4",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 8 = 0    or    x - 4 = 0",
+      "x = -8       or    x = 4",
+      "_________________________",
+      "Final Answer: x = -8 or x = 4"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 7)(x - 6) = 0",
+    "expected": "x = -7 or x = 6",
+    "demonstration": "Zero Product Property.\n1. x + 7 = 0 -> x = -7\n2. x - 6 = 0 -> x = 6",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 7 = 0    or    x - 6 = 0",
+      "x = -7       or    x = 6",
+      "_________________________",
+      "Final Answer: x = -7 or x = 6"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 12)(x - 10) = 0",
+    "expected": "x = 12 or x = 10",
+    "demonstration": "Zero Product Property.\n1. x - 12 = 0 -> x = 12\n2. x - 10 = 0 -> x = 10",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 12 = 0    or    x - 10 = 0",
+      "x = 12       or    x = 10",
+      "_________________________",
+      "Final Answer: x = 12 or x = 10"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 8)(x - 9) = 0",
+    "expected": "x = -8 or x = 9",
+    "demonstration": "Zero Product Property.\n1. x + 8 = 0 -> x = -8\n2. x - 9 = 0 -> x = 9",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 8 = 0    or    x - 9 = 0",
+      "x = -8       or    x = 9",
+      "_________________________",
+      "Final Answer: x = -8 or x = 9"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 10)(x - 9) = 0",
+    "expected": "x = -10 or x = 9",
+    "demonstration": "Zero Product Property.\n1. x + 10 = 0 -> x = -10\n2. x - 9 = 0 -> x = 9",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 10 = 0    or    x - 9 = 0",
+      "x = -10       or    x = 9",
+      "_________________________",
+      "Final Answer: x = -10 or x = 9"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 4)(x + 12) = 0",
+    "expected": "x = 4 or x = -12",
+    "demonstration": "Zero Product Property.\n1. x - 4 = 0 -> x = 4\n2. x + 12 = 0 -> x = -12",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 4 = 0    or    x + 12 = 0",
+      "x = 4       or    x = -12",
+      "_________________________",
+      "Final Answer: x = 4 or x = -12"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 6)(x - 5) = 0",
+    "expected": "x = -6 or x = 5",
+    "demonstration": "Zero Product Property.\n1. x + 6 = 0 -> x = -6\n2. x - 5 = 0 -> x = 5",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 6 = 0    or    x - 5 = 0",
+      "x = -6       or    x = 5",
+      "_________________________",
+      "Final Answer: x = -6 or x = 5"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 1)(x - 12) = 0",
+    "expected": "x = -1 or x = 12",
+    "demonstration": "Zero Product Property.\n1. x + 1 = 0 -> x = -1\n2. x - 12 = 0 -> x = 12",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 1 = 0    or    x - 12 = 0",
+      "x = -1       or    x = 12",
+      "_________________________",
+      "Final Answer: x = -1 or x = 12"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 1)(x + 3) = 0",
+    "expected": "x = -1 or x = -3",
+    "demonstration": "Zero Product Property.\n1. x + 1 = 0 -> x = -1\n2. x + 3 = 0 -> x = -3",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 1 = 0    or    x + 3 = 0",
+      "x = -1       or    x = -3",
+      "_________________________",
+      "Final Answer: x = -1 or x = -3"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 11)(x + 2) = 0",
+    "expected": "x = 11 or x = -2",
+    "demonstration": "Zero Product Property.\n1. x - 11 = 0 -> x = 11\n2. x + 2 = 0 -> x = -2",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 11 = 0    or    x + 2 = 0",
+      "x = 11       or    x = -2",
+      "_________________________",
+      "Final Answer: x = 11 or x = -2"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 12)(x - 11) = 0",
+    "expected": "x = -12 or x = 11",
+    "demonstration": "Zero Product Property.\n1. x + 12 = 0 -> x = -12\n2. x - 11 = 0 -> x = 11",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 12 = 0    or    x - 11 = 0",
+      "x = -12       or    x = 11",
+      "_________________________",
+      "Final Answer: x = -12 or x = 11"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 5)(x - 3) = 0",
+    "expected": "x = -5 or x = 3",
+    "demonstration": "Zero Product Property.\n1. x + 5 = 0 -> x = -5\n2. x - 3 = 0 -> x = 3",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 5 = 0    or    x - 3 = 0",
+      "x = -5       or    x = 3",
+      "_________________________",
+      "Final Answer: x = -5 or x = 3"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x + 8)(x + 2) = 0",
+    "expected": "x = -8 or x = -2",
+    "demonstration": "Zero Product Property.\n1. x + 8 = 0 -> x = -8\n2. x + 2 = 0 -> x = -2",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x + 8 = 0    or    x + 2 = 0",
+      "x = -8       or    x = -2",
+      "_________________________",
+      "Final Answer: x = -8 or x = -2"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Solve for x: (x - 8)(x + 1) = 0",
+    "expected": "x = 8 or x = -1",
+    "demonstration": "Zero Product Property.\n1. x - 8 = 0 -> x = 8\n2. x + 1 = 0 -> x = -1",
+    "memo_marks": [
+      "1 mark for first root",
+      "1 mark for second root"
+    ],
+    "fast_path": "Flip the sign of the number inside.",
+    "fatal_error": "DBE says: Candidates copy the sign exactly as it is, or use 'and' instead of 'or'.",
+    "answer_book_layout": [
+      "x - 8 = 0    or    x + 1 = 0",
+      "x = 8       or    x = -1",
+      "_________________________",
+      "Final Answer: x = 8 or x = -1"
+    ],
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

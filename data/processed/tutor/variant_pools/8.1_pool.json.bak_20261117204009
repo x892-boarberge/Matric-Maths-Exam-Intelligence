@@ -1,0 +1,722 @@
+[
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 5x.",
+    "expected": "f'(x) = 5",
+    "demonstration": "1. f(x+h) = 5(x+h) = 5x + 5h.\n2. f(x+h) - f(x) = (5x + 5h) - (5x) = 5h.\n3. [f(x+h) - f(x)]/h = 5h/h = 5.\n4. lim(h→0) 5 = 5.\nAnswer: f'(x) = 5.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 5"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 5(x+h)",
+      "f(x+h) - f(x) = 5h",
+      "[f(x+h) - f(x)]/h = 5",
+      "f'(x) = lim(h→0) 5 = 5"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 5x - 3.",
+    "expected": "f'(x) = 5",
+    "demonstration": "1. f(x+h) = 5(x+h) - 3 = 5x + 5h - 3.\n2. f(x+h) - f(x) = (5x + 5h - 3) - (5x - 3) = 5h.\n3. [f(x+h) - f(x)]/h = 5h/h = 5.\n4. lim(h→0) 5 = 5.\nAnswer: f'(x) = 5.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 5"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 5(x+h) - 3",
+      "f(x+h) - f(x) = 5h",
+      "[f(x+h) - f(x)]/h = 5",
+      "f'(x) = lim(h→0) 5 = 5"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 4x + 7.",
+    "expected": "f'(x) = 4",
+    "demonstration": "1. f(x+h) = 4(x+h) + 7 = 4x + 4h + 7.\n2. f(x+h) - f(x) = (4x + 4h + 7) - (4x + 7) = 4h.\n3. [f(x+h) - f(x)]/h = 4h/h = 4.\n4. lim(h→0) 4 = 4.\nAnswer: f'(x) = 4.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 4"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 4(x+h) + 7",
+      "f(x+h) - f(x) = 4h",
+      "[f(x+h) - f(x)]/h = 4",
+      "f'(x) = lim(h→0) 4 = 4"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -4x.",
+    "expected": "f'(x) = -4",
+    "demonstration": "1. f(x+h) = -4(x+h) = -4x + -4h.\n2. f(x+h) - f(x) = (-4x + -4h) - (-4x) = -4h.\n3. [f(x+h) - f(x)]/h = -4h/h = -4.\n4. lim(h→0) -4 = -4.\nAnswer: f'(x) = -4.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -4"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -4(x+h)",
+      "f(x+h) - f(x) = -4h",
+      "[f(x+h) - f(x)]/h = -4",
+      "f'(x) = lim(h→0) -4 = -4"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -1x - 1.",
+    "expected": "f'(x) = -1",
+    "demonstration": "1. f(x+h) = -1(x+h) - 1 = -1x + -1h - 1.\n2. f(x+h) - f(x) = (-1x + -1h - 1) - (-1x - 1) = -1h.\n3. [f(x+h) - f(x)]/h = -1h/h = -1.\n4. lim(h→0) -1 = -1.\nAnswer: f'(x) = -1.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -1"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -1(x+h) - 1",
+      "f(x+h) - f(x) = -1h",
+      "[f(x+h) - f(x)]/h = -1",
+      "f'(x) = lim(h→0) -1 = -1"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 1x - 1.",
+    "expected": "f'(x) = 1",
+    "demonstration": "1. f(x+h) = 1(x+h) - 1 = 1x + 1h - 1.\n2. f(x+h) - f(x) = (1x + 1h - 1) - (1x - 1) = 1h.\n3. [f(x+h) - f(x)]/h = 1h/h = 1.\n4. lim(h→0) 1 = 1.\nAnswer: f'(x) = 1.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 1"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 1(x+h) - 1",
+      "f(x+h) - f(x) = 1h",
+      "[f(x+h) - f(x)]/h = 1",
+      "f'(x) = lim(h→0) 1 = 1"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 3x.",
+    "expected": "f'(x) = 3",
+    "demonstration": "1. f(x+h) = 3(x+h) = 3x + 3h.\n2. f(x+h) - f(x) = (3x + 3h) - (3x) = 3h.\n3. [f(x+h) - f(x)]/h = 3h/h = 3.\n4. lim(h→0) 3 = 3.\nAnswer: f'(x) = 3.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 3"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 3(x+h)",
+      "f(x+h) - f(x) = 3h",
+      "[f(x+h) - f(x)]/h = 3",
+      "f'(x) = lim(h→0) 3 = 3"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -3x.",
+    "expected": "f'(x) = -3",
+    "demonstration": "1. f(x+h) = -3(x+h) = -3x + -3h.\n2. f(x+h) - f(x) = (-3x + -3h) - (-3x) = -3h.\n3. [f(x+h) - f(x)]/h = -3h/h = -3.\n4. lim(h→0) -3 = -3.\nAnswer: f'(x) = -3.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -3"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -3(x+h)",
+      "f(x+h) - f(x) = -3h",
+      "[f(x+h) - f(x)]/h = -3",
+      "f'(x) = lim(h→0) -3 = -3"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 2x + 7.",
+    "expected": "f'(x) = 2",
+    "demonstration": "1. f(x+h) = 2(x+h) + 7 = 2x + 2h + 7.\n2. f(x+h) - f(x) = (2x + 2h + 7) - (2x + 7) = 2h.\n3. [f(x+h) - f(x)]/h = 2h/h = 2.\n4. lim(h→0) 2 = 2.\nAnswer: f'(x) = 2.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 2"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 2(x+h) + 7",
+      "f(x+h) - f(x) = 2h",
+      "[f(x+h) - f(x)]/h = 2",
+      "f'(x) = lim(h→0) 2 = 2"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -4x + 5.",
+    "expected": "f'(x) = -4",
+    "demonstration": "1. f(x+h) = -4(x+h) + 5 = -4x + -4h + 5.\n2. f(x+h) - f(x) = (-4x + -4h + 5) - (-4x + 5) = -4h.\n3. [f(x+h) - f(x)]/h = -4h/h = -4.\n4. lim(h→0) -4 = -4.\nAnswer: f'(x) = -4.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -4"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -4(x+h) + 5",
+      "f(x+h) - f(x) = -4h",
+      "[f(x+h) - f(x)]/h = -4",
+      "f'(x) = lim(h→0) -4 = -4"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -2x + 5.",
+    "expected": "f'(x) = -2",
+    "demonstration": "1. f(x+h) = -2(x+h) + 5 = -2x + -2h + 5.\n2. f(x+h) - f(x) = (-2x + -2h + 5) - (-2x + 5) = -2h.\n3. [f(x+h) - f(x)]/h = -2h/h = -2.\n4. lim(h→0) -2 = -2.\nAnswer: f'(x) = -2.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -2"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -2(x+h) + 5",
+      "f(x+h) - f(x) = -2h",
+      "[f(x+h) - f(x)]/h = -2",
+      "f'(x) = lim(h→0) -2 = -2"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -2x - 3.",
+    "expected": "f'(x) = -2",
+    "demonstration": "1. f(x+h) = -2(x+h) - 3 = -2x + -2h - 3.\n2. f(x+h) - f(x) = (-2x + -2h - 3) - (-2x - 3) = -2h.\n3. [f(x+h) - f(x)]/h = -2h/h = -2.\n4. lim(h→0) -2 = -2.\nAnswer: f'(x) = -2.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -2"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -2(x+h) - 3",
+      "f(x+h) - f(x) = -2h",
+      "[f(x+h) - f(x)]/h = -2",
+      "f'(x) = lim(h→0) -2 = -2"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -3x + 7.",
+    "expected": "f'(x) = -3",
+    "demonstration": "1. f(x+h) = -3(x+h) + 7 = -3x + -3h + 7.\n2. f(x+h) - f(x) = (-3x + -3h + 7) - (-3x + 7) = -3h.\n3. [f(x+h) - f(x)]/h = -3h/h = -3.\n4. lim(h→0) -3 = -3.\nAnswer: f'(x) = -3.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -3"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -3(x+h) + 7",
+      "f(x+h) - f(x) = -3h",
+      "[f(x+h) - f(x)]/h = -3",
+      "f'(x) = lim(h→0) -3 = -3"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 1x.",
+    "expected": "f'(x) = 1",
+    "demonstration": "1. f(x+h) = 1(x+h) = 1x + 1h.\n2. f(x+h) - f(x) = (1x + 1h) - (1x) = 1h.\n3. [f(x+h) - f(x)]/h = 1h/h = 1.\n4. lim(h→0) 1 = 1.\nAnswer: f'(x) = 1.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 1"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 1(x+h)",
+      "f(x+h) - f(x) = 1h",
+      "[f(x+h) - f(x)]/h = 1",
+      "f'(x) = lim(h→0) 1 = 1"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 5x + 4.",
+    "expected": "f'(x) = 5",
+    "demonstration": "1. f(x+h) = 5(x+h) + 4 = 5x + 5h + 4.\n2. f(x+h) - f(x) = (5x + 5h + 4) - (5x + 4) = 5h.\n3. [f(x+h) - f(x)]/h = 5h/h = 5.\n4. lim(h→0) 5 = 5.\nAnswer: f'(x) = 5.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 5"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 5(x+h) + 4",
+      "f(x+h) - f(x) = 5h",
+      "[f(x+h) - f(x)]/h = 5",
+      "f'(x) = lim(h→0) 5 = 5"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 3x - 1.",
+    "expected": "f'(x) = 3",
+    "demonstration": "1. f(x+h) = 3(x+h) - 1 = 3x + 3h - 1.\n2. f(x+h) - f(x) = (3x + 3h - 1) - (3x - 1) = 3h.\n3. [f(x+h) - f(x)]/h = 3h/h = 3.\n4. lim(h→0) 3 = 3.\nAnswer: f'(x) = 3.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 3"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 3(x+h) - 1",
+      "f(x+h) - f(x) = 3h",
+      "[f(x+h) - f(x)]/h = 3",
+      "f'(x) = lim(h→0) 3 = 3"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -3x - 3.",
+    "expected": "f'(x) = -3",
+    "demonstration": "1. f(x+h) = -3(x+h) - 3 = -3x + -3h - 3.\n2. f(x+h) - f(x) = (-3x + -3h - 3) - (-3x - 3) = -3h.\n3. [f(x+h) - f(x)]/h = -3h/h = -3.\n4. lim(h→0) -3 = -3.\nAnswer: f'(x) = -3.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -3"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -3(x+h) - 3",
+      "f(x+h) - f(x) = -3h",
+      "[f(x+h) - f(x)]/h = -3",
+      "f'(x) = lim(h→0) -3 = -3"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -2x + 7.",
+    "expected": "f'(x) = -2",
+    "demonstration": "1. f(x+h) = -2(x+h) + 7 = -2x + -2h + 7.\n2. f(x+h) - f(x) = (-2x + -2h + 7) - (-2x + 7) = -2h.\n3. [f(x+h) - f(x)]/h = -2h/h = -2.\n4. lim(h→0) -2 = -2.\nAnswer: f'(x) = -2.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -2"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -2(x+h) + 7",
+      "f(x+h) - f(x) = -2h",
+      "[f(x+h) - f(x)]/h = -2",
+      "f'(x) = lim(h→0) -2 = -2"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -2x + 2.",
+    "expected": "f'(x) = -2",
+    "demonstration": "1. f(x+h) = -2(x+h) + 2 = -2x + -2h + 2.\n2. f(x+h) - f(x) = (-2x + -2h + 2) - (-2x + 2) = -2h.\n3. [f(x+h) - f(x)]/h = -2h/h = -2.\n4. lim(h→0) -2 = -2.\nAnswer: f'(x) = -2.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -2"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -2(x+h) + 2",
+      "f(x+h) - f(x) = -2h",
+      "[f(x+h) - f(x)]/h = -2",
+      "f'(x) = lim(h→0) -2 = -2"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 3x + 5.",
+    "expected": "f'(x) = 3",
+    "demonstration": "1. f(x+h) = 3(x+h) + 5 = 3x + 3h + 5.\n2. f(x+h) - f(x) = (3x + 3h + 5) - (3x + 5) = 3h.\n3. [f(x+h) - f(x)]/h = 3h/h = 3.\n4. lim(h→0) 3 = 3.\nAnswer: f'(x) = 3.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 3"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 3(x+h) + 5",
+      "f(x+h) - f(x) = 3h",
+      "[f(x+h) - f(x)]/h = 3",
+      "f'(x) = lim(h→0) 3 = 3"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 4x - 1.",
+    "expected": "f'(x) = 4",
+    "demonstration": "1. f(x+h) = 4(x+h) - 1 = 4x + 4h - 1.\n2. f(x+h) - f(x) = (4x + 4h - 1) - (4x - 1) = 4h.\n3. [f(x+h) - f(x)]/h = 4h/h = 4.\n4. lim(h→0) 4 = 4.\nAnswer: f'(x) = 4.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 4"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 4(x+h) - 1",
+      "f(x+h) - f(x) = 4h",
+      "[f(x+h) - f(x)]/h = 4",
+      "f'(x) = lim(h→0) 4 = 4"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 1x + 2.",
+    "expected": "f'(x) = 1",
+    "demonstration": "1. f(x+h) = 1(x+h) + 2 = 1x + 1h + 2.\n2. f(x+h) - f(x) = (1x + 1h + 2) - (1x + 2) = 1h.\n3. [f(x+h) - f(x)]/h = 1h/h = 1.\n4. lim(h→0) 1 = 1.\nAnswer: f'(x) = 1.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 1"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 1(x+h) + 2",
+      "f(x+h) - f(x) = 1h",
+      "[f(x+h) - f(x)]/h = 1",
+      "f'(x) = lim(h→0) 1 = 1"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 4x.",
+    "expected": "f'(x) = 4",
+    "demonstration": "1. f(x+h) = 4(x+h) = 4x + 4h.\n2. f(x+h) - f(x) = (4x + 4h) - (4x) = 4h.\n3. [f(x+h) - f(x)]/h = 4h/h = 4.\n4. lim(h→0) 4 = 4.\nAnswer: f'(x) = 4.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 4"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 4(x+h)",
+      "f(x+h) - f(x) = 4h",
+      "[f(x+h) - f(x)]/h = 4",
+      "f'(x) = lim(h→0) 4 = 4"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 4x + 5.",
+    "expected": "f'(x) = 4",
+    "demonstration": "1. f(x+h) = 4(x+h) + 5 = 4x + 4h + 5.\n2. f(x+h) - f(x) = (4x + 4h + 5) - (4x + 5) = 4h.\n3. [f(x+h) - f(x)]/h = 4h/h = 4.\n4. lim(h→0) 4 = 4.\nAnswer: f'(x) = 4.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 4"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 4(x+h) + 5",
+      "f(x+h) - f(x) = 4h",
+      "[f(x+h) - f(x)]/h = 4",
+      "f'(x) = lim(h→0) 4 = 4"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 2x - 3.",
+    "expected": "f'(x) = 2",
+    "demonstration": "1. f(x+h) = 2(x+h) - 3 = 2x + 2h - 3.\n2. f(x+h) - f(x) = (2x + 2h - 3) - (2x - 3) = 2h.\n3. [f(x+h) - f(x)]/h = 2h/h = 2.\n4. lim(h→0) 2 = 2.\nAnswer: f'(x) = 2.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 2"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 2(x+h) - 3",
+      "f(x+h) - f(x) = 2h",
+      "[f(x+h) - f(x)]/h = 2",
+      "f'(x) = lim(h→0) 2 = 2"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -1x.",
+    "expected": "f'(x) = -1",
+    "demonstration": "1. f(x+h) = -1(x+h) = -1x + -1h.\n2. f(x+h) - f(x) = (-1x + -1h) - (-1x) = -1h.\n3. [f(x+h) - f(x)]/h = -1h/h = -1.\n4. lim(h→0) -1 = -1.\nAnswer: f'(x) = -1.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -1"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -1(x+h)",
+      "f(x+h) - f(x) = -1h",
+      "[f(x+h) - f(x)]/h = -1",
+      "f'(x) = lim(h→0) -1 = -1"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -4x + 4.",
+    "expected": "f'(x) = -4",
+    "demonstration": "1. f(x+h) = -4(x+h) + 4 = -4x + -4h + 4.\n2. f(x+h) - f(x) = (-4x + -4h + 4) - (-4x + 4) = -4h.\n3. [f(x+h) - f(x)]/h = -4h/h = -4.\n4. lim(h→0) -4 = -4.\nAnswer: f'(x) = -4.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -4"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -4(x+h) + 4",
+      "f(x+h) - f(x) = -4h",
+      "[f(x+h) - f(x)]/h = -4",
+      "f'(x) = lim(h→0) -4 = -4"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = 1x - 3.",
+    "expected": "f'(x) = 1",
+    "demonstration": "1. f(x+h) = 1(x+h) - 3 = 1x + 1h - 3.\n2. f(x+h) - f(x) = (1x + 1h - 3) - (1x - 3) = 1h.\n3. [f(x+h) - f(x)]/h = 1h/h = 1.\n4. lim(h→0) 1 = 1.\nAnswer: f'(x) = 1.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = 1"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = 1(x+h) - 3",
+      "f(x+h) - f(x) = 1h",
+      "[f(x+h) - f(x)]/h = 1",
+      "f'(x) = lim(h→0) 1 = 1"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -2x - 1.",
+    "expected": "f'(x) = -2",
+    "demonstration": "1. f(x+h) = -2(x+h) - 1 = -2x + -2h - 1.\n2. f(x+h) - f(x) = (-2x + -2h - 1) - (-2x - 1) = -2h.\n3. [f(x+h) - f(x)]/h = -2h/h = -2.\n4. lim(h→0) -2 = -2.\nAnswer: f'(x) = -2.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -2"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -2(x+h) - 1",
+      "f(x+h) - f(x) = -2h",
+      "[f(x+h) - f(x)]/h = -2",
+      "f'(x) = lim(h→0) -2 = -2"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Determine f'(x) from first principles if it is given that f(x) = -3x + 2.",
+    "expected": "f'(x) = -3",
+    "demonstration": "1. f(x+h) = -3(x+h) + 2 = -3x + -3h + 2.\n2. f(x+h) - f(x) = (-3x + -3h + 2) - (-3x + 2) = -3h.\n3. [f(x+h) - f(x)]/h = -3h/h = -3.\n4. lim(h→0) -3 = -3.\nAnswer: f'(x) = -3.",
+    "memo_marks": [
+      "1 mark for f(x+h) substitution",
+      "1 mark for simplification",
+      "1 mark for taking the limit",
+      "1 mark for f'(x) = -3"
+    ],
+    "fast_path": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "fatal_error": "DBE says: Candidates skip the h-cancellation step or write the answer without showing the limit. Four marks are earned by showing four steps.",
+    "answer_book_layout": [
+      "f(x+h) = -3(x+h) + 2",
+      "f(x+h) - f(x) = -3h",
+      "[f(x+h) - f(x)]/h = -3",
+      "f'(x) = lim(h→0) -3 = -3"
+    ],
+    "hack": "For a linear function, the derivative is always the gradient. Just show the algebra.",
+    "trap": "The c term cancels. Don't try to keep it.",
+    "presentation": "Show all four steps: f(x+h), difference, quotient, limit.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

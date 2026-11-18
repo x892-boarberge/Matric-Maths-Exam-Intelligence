@@ -46,6 +46,12 @@
       "steps": [
         "Count from the table.",
         "Divide by total females."
+      ],
+      "given_from": [
+        "11.1.1"
+      ],
+      "requires_skills": [
+        "probability.tables"
       ]
     },
     {
@@ -87,6 +93,13 @@
         "P(coffee | rain) = 3x.",
         "P(coffee) = P(rain)*3x + P(no rain)*x",
         "Solve for x, then multiply by 120*(1 - r/100)."
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2"
+      ],
+      "requires_skills": [
+        "probability.tables"
       ]
     },
     {
@@ -100,6 +113,15 @@
         "Treat Andrew-Bongi as a single block.",
         "Total units = 7 (6 individuals + 1 block).",
         "Arrangements = 7! = 5040."
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2",
+        "11.2"
+      ],
+      "requires_skills": [
+        "probability.tables",
+        "probability.conditional"
       ]
     },
     {
@@ -113,6 +135,17 @@
         "Consider all possible positions for Andrew and Bongi.",
         "Count favourable: 2+ runners between them.",
         "Divide by 8! (total arrangements)."
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2",
+        "11.2",
+        "11.3.1"
+      ],
+      "requires_skills": [
+        "probability.tables",
+        "probability.conditional",
+        "probability.counting"
       ]
     }
   ],

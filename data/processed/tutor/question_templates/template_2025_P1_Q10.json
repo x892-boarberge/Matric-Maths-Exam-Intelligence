@@ -56,6 +56,12 @@
         "x(50 - 3x) = 0",
         "x = 0 or x = 50/3",
         "Maximum volume at x = 50/3 cm."
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "calculus.optimisation"
       ]
     }
   ],

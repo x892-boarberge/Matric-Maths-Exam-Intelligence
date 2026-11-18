@@ -1,0 +1,42 @@
+{
+  "objective_id": "TO_ALG_INEQ_AS_EQUATION",
+  "skill_id": "algebra.quadratic.inequality",
+  "trigger_misconception": "M_INEQ_TREATED_AS_EQUATION",
+  "dbe_source": {
+    "years": [
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "recommendation": "An inequality is not an equation. Solve the equation first to find the critical values. Then use a number line or a sketch to decide which i",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "An inequality is not an equation. Solve the equation first to find the critical values. Then use a number line or a sketch to decide which interval satisfies the inequality.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "Solve x^2 - 3x - 10 > 0",
+      "work": [
+        "Step 1: solve x^2 - 3x - 10 = 0 to get x = 5 or x = -2",
+        "Step 2: sketch y = x^2 - 3x - 10 or use a number line",
+        "Step 3: the parabola is positive outside the roots",
+        "Answer: x < -2 or x > 5",
+        "Not x = -2 or x = 5. That is the equation answer, not the inequality answer."
+      ]
+    },
+    "probe": {
+      "problem": "Solve x^2 - x - 6 > 0. Give the interval answer.",
+      "expected": "x < -2 or x > 3",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_INEQ_TREATED_AS_EQUATION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You gave the equation's answer. An inequality asks for an interval, not a pair of values."
+}

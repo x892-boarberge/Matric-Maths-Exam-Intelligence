@@ -1,0 +1,48 @@
+{
+  "objective_id": "TO_ALG_QUADRATIC_FORMULA",
+  "skill_id": "algebra.quadratic.solve",
+  "trigger_misconception": "M_WRONG_QUADRATIC_FORMULA",
+  "applies_when": "prompt is in standard form and the formula is needed",
+  "dbe_source": {
+    "years": [
+      "2014",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2019",
+      "2019",
+      "2024",
+      "2025"
+    ],
+    "recommendation": "Candidates wrote down the quadratic formula incorrectly and lost marks for an incorrect formula. Teachers should ensure the formula is written from the information sheet and each coefficient is substituted with its correct sign.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "The quadratic formula is x = (-b ± √(b² - 4ac)) / 2a. Every sign matters. The leading minus stays. The discriminant is b² minus 4ac, not plus.",
+    "why": "The formula is given on the information sheet. Write it exactly. Then substitute a, b, c with their signs intact. Most lost marks come from a dropped minus or a plus inside the discriminant.",
+    "example": {
+      "problem": "Solve 2x² - 5x - 3 = 0 using the formula.",
+      "work": [
+        "Write the formula:  x = (-b ± √(b² - 4ac)) / 2a",
+        "a = 2, b = -5, c = -3",
+        "x = (5 ± √((-5)² - 4(2)(-3))) / (2·2)",
+        "x = (5 ± √(25 + 24)) / 4",
+        "x = (5 ± 7) / 4",
+        "x = 3 or x = -1/2"
+      ]
+    },
+    "probe": {
+      "problem": "Write the quadratic formula, then use it to solve x² - 4x - 12 = 0.",
+      "expected": "x = 6 or x = -2",
+      "hint": "Write the formula on its own line first. Then substitute a = 1, b = -4, c = -12, keeping the signs."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_WRONG_QUADRATIC_FORMULA",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The quadratic formula is written incorrectly. Write it from the information sheet — every sign matters."
+}

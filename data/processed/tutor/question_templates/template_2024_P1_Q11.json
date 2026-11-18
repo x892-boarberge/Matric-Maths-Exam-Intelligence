@@ -50,6 +50,12 @@
       "steps": [
         "Count learners in exactly 2 or all 3 subjects.",
         "Divide by total n(S)."
+      ],
+      "given_from": [
+        "11.1"
+      ],
+      "requires_skills": [
+        "probability.venn"
       ]
     },
     {
@@ -82,6 +88,14 @@
         "P(M) * P(T) = {pM} * {pT} = {prod}",
         "P(M and T) = {pMT}",
         "Since P(M)*P(T) != P(M and T), M and T are NOT independent."
+      ],
+      "given_from": [
+        "11.1",
+        "11.2"
+      ],
+      "requires_skills": [
+        "probability.venn",
+        "probability.set"
       ]
     }
   ]

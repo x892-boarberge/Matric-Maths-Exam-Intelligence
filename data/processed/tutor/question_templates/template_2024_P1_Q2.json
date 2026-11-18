@@ -67,7 +67,13 @@
         "Sum of terms added: S_{n2} - S_{n} = {S_n2_minus_S_n}",
         "In sigma notation: sum_(k={n_plus_1})^{n2}({d}k + {c}) = {S_n2_minus_S_n}"
       ],
-      "diagnostic_class": "procedural"
+      "diagnostic_class": "procedural",
+      "given_from": [
+        "2.1.1"
+      ],
+      "requires_skills": [
+        "sequences.ap"
+      ]
     },
     {
       "n": "2.2.1",
@@ -101,7 +107,14 @@
         "{T_N} - T_{N_minus_1} = {D_at_N_minus_1}",
         "T_{N_minus_1} = {T_N_minus_1}"
       ],
-      "diagnostic_class": "conceptual"
+      "diagnostic_class": "conceptual",
+      "given_from": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "requires_skills": [
+        "sequences.ap"
+      ]
     },
     {
       "n": "2.2.2",
@@ -137,7 +150,16 @@
         "So c = {c}.",
         "T_n = {a_disp}n^2 {b_terms} {c_terms}"
       ],
-      "diagnostic_class": "conceptual"
+      "diagnostic_class": "conceptual",
+      "given_from": [
+        "2.1.1",
+        "2.1.2",
+        "2.2.1"
+      ],
+      "requires_skills": [
+        "sequences.ap",
+        "sequences.quadratic"
+      ]
     }
   ]
 }

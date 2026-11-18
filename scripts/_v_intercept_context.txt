@@ -1,0 +1,30 @@
+1175:                             print("    2. Next subquestion")
+1176:                             print("    3. Question list")
+1177:                             print("    4. End session")
+1178:                             _nav = input("  > ").strip()
+1179:                             if _nav == "1":
+1180:                                 return "RETRY"
+1181:                             elif _nav == "2":
+1182:                                 return "NEXT"
+1183:                             elif _nav == "3":
+1184:                                 return "MENU"
+1185:                             elif _nav == "4":
+1186:                                 return "QUIT"
+1187:                             else:
+1188:                                 return "RETRY"
+1189:                         if _ln.lower() == "v":
+1190:                             print("  Getting a new variant...")
+1191:                             break  # Break to outer loop to pick a new variant
+1192:                         if _ln.lower() == "done":
+1193:                             break
+1194:                         if _ln.startswith("answer:"):
+1195:                             _var_lines.append(_ln.split(":", 1)[1].strip())
+1196:                             break
+1197:                         if _ln:
+1198:                             _var_lines.append(_ln)
+1199:                     _var_text = "\n".join(_var_lines)
+1200: 
+1201:                     from src.tutor.math_grader import grade as _vg
+1202:                     _gv = _vg(_var_text, _var["expected"])
+1203: 
+1204:                     # Diagnose FIRST so evidence and misconception_id are correct

@@ -43,6 +43,12 @@
         "(x-1)/(4x-1) = 28/118.",
         "118x - 118 = 112x - 28.",
         "6x = 90. x = 15."
+      ],
+      "given_from": [
+        "12.1"
+      ],
+      "requires_skills": [
+        "probability.union"
       ]
     }
   ],

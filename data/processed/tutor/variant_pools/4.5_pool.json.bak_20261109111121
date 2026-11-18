@@ -1,0 +1,752 @@
+[
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = 2^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 2) or (-1; 1/2)).",
+    "demonstration": "f(x) = log_2(x). Inverse: f⁻¹(x) = 2^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 2) or (-1; 1/2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 2^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_3(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = 3^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 3) or (-1; 1/3)).",
+    "demonstration": "f(x) = log_3(x). Inverse: f⁻¹(x) = 3^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 3) or (-1; 1/3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 3^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/2)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/2) or (-1; 2)).",
+    "demonstration": "f(x) = log_{1/2}(x). Inverse: f⁻¹(x) = (1/2)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/2) or (-1; 2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/2)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_{1/3}(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/3)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/3) or (-1; 3)).",
+    "demonstration": "f(x) = log_{1/3}(x). Inverse: f⁻¹(x) = (1/3)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/3) or (-1; 3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/3)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = 2^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 2) or (-1; 1/2)).",
+    "demonstration": "f(x) = log_2(x). Inverse: f⁻¹(x) = 2^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 2) or (-1; 1/2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 2^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_3(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = 3^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 3) or (-1; 1/3)).",
+    "demonstration": "f(x) = log_3(x). Inverse: f⁻¹(x) = 3^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 3) or (-1; 1/3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 3^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/2)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/2) or (-1; 2)).",
+    "demonstration": "f(x) = log_{1/2}(x). Inverse: f⁻¹(x) = (1/2)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/2) or (-1; 2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/2)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_{1/3}(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/3)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/3) or (-1; 3)).",
+    "demonstration": "f(x) = log_{1/3}(x). Inverse: f⁻¹(x) = (1/3)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/3) or (-1; 3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/3)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = 2^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 2) or (-1; 1/2)).",
+    "demonstration": "f(x) = log_2(x). Inverse: f⁻¹(x) = 2^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 2) or (-1; 1/2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 2^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_3(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = 3^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 3) or (-1; 1/3)).",
+    "demonstration": "f(x) = log_3(x). Inverse: f⁻¹(x) = 3^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 3) or (-1; 1/3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 3^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/2)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/2) or (-1; 2)).",
+    "demonstration": "f(x) = log_{1/2}(x). Inverse: f⁻¹(x) = (1/2)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/2) or (-1; 2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/2)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_{1/3}(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/3)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/3) or (-1; 3)).",
+    "demonstration": "f(x) = log_{1/3}(x). Inverse: f⁻¹(x) = (1/3)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/3) or (-1; 3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/3)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = 2^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 2) or (-1; 1/2)).",
+    "demonstration": "f(x) = log_2(x). Inverse: f⁻¹(x) = 2^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 2) or (-1; 1/2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 2^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_3(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = 3^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 3) or (-1; 1/3)).",
+    "demonstration": "f(x) = log_3(x). Inverse: f⁻¹(x) = 3^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 3) or (-1; 1/3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 3^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/2)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/2) or (-1; 2)).",
+    "demonstration": "f(x) = log_{1/2}(x). Inverse: f⁻¹(x) = (1/2)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/2) or (-1; 2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/2)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_{1/3}(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/3)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/3) or (-1; 3)).",
+    "demonstration": "f(x) = log_{1/3}(x). Inverse: f⁻¹(x) = (1/3)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/3) or (-1; 3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/3)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = 2^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 2) or (-1; 1/2)).",
+    "demonstration": "f(x) = log_2(x). Inverse: f⁻¹(x) = 2^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 2) or (-1; 1/2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 2^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_3(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = 3^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 3) or (-1; 1/3)).",
+    "demonstration": "f(x) = log_3(x). Inverse: f⁻¹(x) = 3^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 3) or (-1; 1/3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 3^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/2)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/2) or (-1; 2)).",
+    "demonstration": "f(x) = log_{1/2}(x). Inverse: f⁻¹(x) = (1/2)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/2) or (-1; 2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/2)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_{1/3}(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/3)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/3) or (-1; 3)).",
+    "demonstration": "f(x) = log_{1/3}(x). Inverse: f⁻¹(x) = (1/3)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/3) or (-1; 3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/3)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = 2^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 2) or (-1; 1/2)).",
+    "demonstration": "f(x) = log_2(x). Inverse: f⁻¹(x) = 2^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 2) or (-1; 1/2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 2^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_3(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = 3^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 3) or (-1; 1/3)).",
+    "demonstration": "f(x) = log_3(x). Inverse: f⁻¹(x) = 3^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 3) or (-1; 1/3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 3^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/2)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/2) or (-1; 2)).",
+    "demonstration": "f(x) = log_{1/2}(x). Inverse: f⁻¹(x) = (1/2)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/2) or (-1; 2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/2)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_{1/3}(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/3)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/3) or (-1; 3)).",
+    "demonstration": "f(x) = log_{1/3}(x). Inverse: f⁻¹(x) = (1/3)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/3) or (-1; 3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/3)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = 2^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 2) or (-1; 1/2)).",
+    "demonstration": "f(x) = log_2(x). Inverse: f⁻¹(x) = 2^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 2) or (-1; 1/2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 2^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_3(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = 3^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 3) or (-1; 1/3)).",
+    "demonstration": "f(x) = log_3(x). Inverse: f⁻¹(x) = 3^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 3) or (-1; 1/3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 3^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/2)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/2) or (-1; 2)).",
+    "demonstration": "f(x) = log_{1/2}(x). Inverse: f⁻¹(x) = (1/2)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/2) or (-1; 2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/2)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_{1/3}(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = (1/3)^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 1/3) or (-1; 3)).",
+    "demonstration": "f(x) = log_{1/3}(x). Inverse: f⁻¹(x) = (1/3)^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 1/3) or (-1; 3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 1/3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = (1/3)^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Draw the graph of f⁻¹ on the set of axes provided. Clearly indicate the intercepts with the axes, ONE other point, and the asymptotes.",
+    "expected": "Practice — draw f⁻¹(x) = 2^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 2) or (-1; 1/2)).",
+    "demonstration": "f(x) = log_2(x). Inverse: f⁻¹(x) = 2^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 2) or (-1; 1/2).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 2)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 2^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  },
+  {
+    "variant_question": "Sketch the inverse of f(x) = log_3(x) on the same set of axes.",
+    "expected": "Practice — draw f⁻¹(x) = 3^x showing (0;1), horizontal asymptote y=0, and one other marked point (e.g. (1; 3) or (-1; 1/3)).",
+    "demonstration": "f(x) = log_3(x). Inverse: f⁻¹(x) = 3^x. Draw exponential through (0; 1). Horizontal asymptote y = 0. Mark one other point — (1; 3) or (-1; 1/3).",
+    "memo_marks": [
+      "1 mark for exponential curve",
+      "1 mark for y-intercept (0;1)",
+      "1 mark for one other point",
+      "1 mark for asymptote y=0"
+    ],
+    "fast_path": "Inverse of log is exponential. Always through (0;1). Asymptote y = 0.",
+    "fatal_error": "DBE says: Candidates draw the log again. The inverse must be reflected across y = x.",
+    "answer_book_layout": [
+      "Mark (0; 1)",
+      "Draw exponential curve through (0; 1) and (1; 3)",
+      "Dashed line at y = 0",
+      "Label f⁻¹(x) = 3^x"
+    ],
+    "hack": "Draw exponential. Through (0;1). Asymptote y=0.",
+    "trap": "Don't draw the log. That's the same graph. Reflect across y=x.",
+    "presentation": "Mark (0;1), one other point, and the asymptote.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "blank_axes_for_drawing"
+  }
+]

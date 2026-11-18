@@ -28,6 +28,12 @@
       "expected_fn": "= 7^7 = 823543",
       "steps": [
         "Each of 7 positions: 7 choices."
+      ],
+      "given_from": [
+        "11.1"
+      ],
+      "requires_skills": [
+        "probability.independent"
       ]
     },
     {
@@ -39,6 +45,14 @@
       "expected_fn": "= 7! = 5040",
       "steps": [
         "Permutations."
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.counting"
       ]
     },
     {
@@ -53,6 +67,15 @@
         "Consonants: D, C, M, L → 4 choices for last.",
         "Middle 5 letters: 5! arrangements.",
         "Total = 3 × 4 × 5! = 1440."
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1",
+        "11.2.2"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.counting"
       ]
     },
     {
@@ -76,6 +99,16 @@
         "3t² - 13t + 12 = 0.",
         "(3t - 4)(t - 3) = 0.",
         "t = 3."
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1",
+        "11.2.2",
+        "11.2.3"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.counting"
       ]
     }
   ],

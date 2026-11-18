@@ -52,6 +52,14 @@
           "r": "angles in same segment",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "9.1",
+        "9.2.2",
+        "9.2.3"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -68,6 +76,15 @@
           "r": "exterior angle of cyclic quad",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "9.1",
+        "9.2.2",
+        "9.2.3",
+        "9.2.1a"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -94,6 +111,12 @@
           "r": "converse opposite angles of cyclic quad",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "9.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -125,6 +148,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "9.1",
+        "9.2.2"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     }
   ],

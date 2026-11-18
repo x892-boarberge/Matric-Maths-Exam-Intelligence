@@ -1,0 +1,73 @@
+{
+  "question_id": "2025_P1_Q8",
+  "foundation_text": "First principles is the long route. Derivative rules are the short route. Read the question to know which to use.",
+  "acronym_strip": [],
+  "subquestions": {
+    "8.1": {
+      "variant_question": "Determine f'(x) from first principles if f(x) = -3x^2 + 2x.",
+      "demonstration": "1. Formula: f'(x) = lim (h->0) [f(x+h) - f(x)] / h.\n2. f(x+h) = -3(x+h)^2 + 2(x+h) = -3x^2 - 6xh - 3h^2 + 2x + 2h.\n3. Subtract f(x) (in brackets!).\n4. Simplify and factor out h.",
+      "memo_marks": [
+        "1 mark formula",
+        "1 mark expansion",
+        "1 mark simplification",
+        "1 mark limit"
+      ],
+      "fast_path": "If you know the short rule (-6x+2), use it as a check, but you MUST write the full formula.",
+      "fatal_error": "DBE says: Candidates copy the formula wrong, or drop the limit notation early, or use the short rule when 'first principles' is asked.",
+      "answer_book_layout": [
+        "f'(x) = lim (h -> 0) [f(x+h) - f(x)] / h",
+        "f(x+h) = -3(x+h)² + 2(x+h)",
+        "= -3x² - 6xh - 3h² + 2x + 2h",
+        "f'(x) = lim (h -> 0) [(-3x² - 6xh - 3h² + 2x + 2h) - (-3x² + 2x)] / h",
+        "f'(x) = lim (h -> 0) [-6xh - 3h² + 2h] / h",
+        "f'(x) = lim (h -> 0) h(-6x - 3h + 2) / h",
+        "f'(x) = lim (h -> 0) (-6x - 3h + 2)",
+        "_________________________",
+        "Final Answer: f'(x) = -6x + 2"
+      ],
+      "hack": "Write the formula first. Put f(x) in brackets when subtracting.",
+      "trap": "Dropping the limit notation.",
+      "presentation": "Show the expansion clearly."
+    },
+    "8.2": {
+      "variant_question": "Determine dy/dx if y = (4x^5 + 3)/x^2.",
+      "demonstration": "1. Split the fraction: y = 4x^3 + 3x^-2.\n2. Differentiate: dy/dx = 12x^2 - 6x^-3.",
+      "memo_marks": [
+        "1 mark split",
+        "1 mark differentiate"
+      ],
+      "fast_path": "Split the fraction first. It's faster than the quotient rule.",
+      "fatal_error": "DBE says: Candidates differentiate the top and bottom separately and divide. That is a fatal error.",
+      "answer_book_layout": [
+        "y = (4x^5 + 3) / x²",
+        "y = 4x^3 + 3x^-2",
+        "dy/dx = 12x² - 6x^-3",
+        "_________________________",
+        "Final Answer: dy/dx = 12x² - 6/x³"
+      ],
+      "hack": "Split the fraction and use the power rule.",
+      "trap": "Quotient rule errors.",
+      "presentation": "Show the split."
+    },
+    "8.2.2": {
+      "variant_question": "Determine dy/dx if y = (3x^5 + 4) / x^2.",
+      "demonstration": "1. Split the fraction: y = 3x^5/x^2 + 4/x^2 = 3x^3 + 4x^-2.\n2. Differentiate term by term: d/dx(3x^3) = 9x^2; d/dx(4x^-2) = -8x^-3.\n3. Answer: dy/dx = 9x^2 - 8x^-3.",
+      "memo_marks": [
+        "1 mark for splitting into 3x^3",
+        "1 mark for splitting into 4x^-2",
+        "1 mark for derivative of first term (9x^2)",
+        "1 mark for derivative of second term (-8x^-3)"
+      ],
+      "fast_path": "Split first. Divide each term of the numerator by the denominator, write exponents as negative powers, then differentiate term by term.",
+      "fatal_error": "DBE says: Candidates apply the quotient rule or try to differentiate before splitting, or they forget the negative power rule and derive x^-2 as -2x^-1.",
+      "answer_book_layout": [
+        "y = (3x^5 + 4) / x^2",
+        "y = 3x^3 + 4x^-2",
+        "dy/dx = 9x^2 - 8x^-3"
+      ],
+      "hack": "Split before you differentiate. A quotient rule here is overkill — just divide each top term by x^2 and rewrite with negative exponents, then apply the power rule.",
+      "trap": "The trap is forgetting that x^-2 differentiates to -2x^-3, not to -2x^-1. Drop the exponent by 1, then multiply the coefficient by the original exponent.",
+      "presentation": "Show the split explicitly on its own line. The marker gives 2 marks for the split before any differentiation happens."
+    }
+  }
+}

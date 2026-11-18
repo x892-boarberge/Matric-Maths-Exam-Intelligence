@@ -29,6 +29,12 @@
       "expected_fn": "y = log_2(x)",
       "steps": [
         "Swap x and y."
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "functions.exponential"
       ]
     },
     {
@@ -56,6 +62,14 @@
       "steps": [
         "Log graph.",
         "Passes through (1; 0) and (16; 4)."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "functions.exponential",
+        "functions.inverse"
       ]
     },
     {
@@ -73,6 +87,16 @@
       "expected_fn": "x > 1",
       "steps": [
         "f > 0 always. g > 0 for x > 1."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "functions.exponential",
+        "functions.inverse",
+        "functions.log"
       ]
     },
     {
@@ -91,6 +115,18 @@
       "steps": [
         "log_2(x) <= -1.",
         "x <= 1/2. Also x > 0."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4.1"
+      ],
+      "requires_skills": [
+        "functions.exponential",
+        "functions.inverse",
+        "functions.log",
+        "functions.inequality"
       ]
     },
     {
@@ -124,6 +160,19 @@
         "Let u = 2^x: 4u² - 15u - 4 = 0.",
         "(4u + 1)(u - 4) = 0.",
         "2^x = 4 → x = 2."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4.1",
+        "5.4.2"
+      ],
+      "requires_skills": [
+        "functions.exponential",
+        "functions.inverse",
+        "functions.log",
+        "functions.inequality"
       ]
     }
   ],

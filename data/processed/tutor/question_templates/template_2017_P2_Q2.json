@@ -44,6 +44,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1.1"
+      ],
+      "requires_skills": [
+        "stats.mean"
       ]
     },
     {
@@ -64,6 +70,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "requires_skills": [
+        "stats.mean",
+        "stats.iqr"
       ]
     },
     {
@@ -89,6 +103,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1.1",
+        "2.1.2",
+        "2.2"
+      ],
+      "requires_skills": [
+        "stats.mean",
+        "stats.iqr",
+        "stats.std_dev"
       ]
     },
     {
@@ -104,6 +128,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1.1",
+        "2.1.2",
+        "2.2",
+        "2.3"
+      ],
+      "requires_skills": [
+        "stats.mean",
+        "stats.iqr",
+        "stats.std_dev",
+        "stats.box_whisker"
       ]
     },
     {
@@ -124,6 +160,20 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1.1",
+        "2.1.2",
+        "2.2",
+        "2.3",
+        "2.4.1"
+      ],
+      "requires_skills": [
+        "stats.mean",
+        "stats.iqr",
+        "stats.std_dev",
+        "stats.box_whisker",
+        "stats.interpret"
       ]
     }
   ],

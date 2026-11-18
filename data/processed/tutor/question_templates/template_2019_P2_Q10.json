@@ -82,6 +82,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "geometry.proportion"
       ]
     },
     {
@@ -103,6 +109,14 @@
           "r": "converse angles in same segment",
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.circle"
       ]
     },
     {
@@ -134,6 +148,15 @@
           "r": "sides opposite equal angles",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1",
+        "10.2.2a"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.circle"
       ]
     },
     {
@@ -165,6 +188,16 @@
           "r": "AAA",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1",
+        "10.2.2a",
+        "10.2.2b"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.circle"
       ]
     },
     {
@@ -191,6 +224,18 @@
           "r": "transitive",
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1",
+        "10.2.2a",
+        "10.2.2b",
+        "10.2.2c"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.circle",
+        "geometry.similarity"
       ]
     }
   ],

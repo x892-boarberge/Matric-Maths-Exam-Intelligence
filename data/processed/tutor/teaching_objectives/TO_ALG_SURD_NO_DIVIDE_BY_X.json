@@ -1,0 +1,39 @@
+{
+  "objective_id": "TO_ALG_SURD_NO_DIVIDE_BY_X",
+  "skill_id": "algebra.surd.solve",
+  "trigger_misconception": "M_LOST_ROOT_BY_DIVISION",
+  "applies_when": "learner divides a quadratic through by x",
+  "dbe_source": {
+    "years": [
+      "2019",
+      "2020",
+      "2023"
+    ],
+    "recommendation": "Candidates divided throughout by x and lost a root. Never divide an equation through by the variable. Factorise instead.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When x appears in every term, factorise it out. Do not divide by x. Dividing throws away the root x = 0.",
+    "why": "Every quadratic has two roots. If you divide by x, only one survives. The other is 0.",
+    "example": {
+      "problem": "Solve x^2 - 6x = 0",
+      "work": [
+        "Do not divide by x.",
+        "Factorise: x(x - 6) = 0",
+        "Set each factor to zero: x = 0 or x - 6 = 0",
+        "x = 0 or x = 6",
+        "Two roots. Not one."
+      ]
+    },
+    "probe": {
+      "problem": "Solve x^2 - 5x = 0.",
+      "expected": "x = 0 or x = 5",
+      "hint": "Factorise. Do not divide."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_LOST_ROOT_BY_DIVISION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You divided through by x, which throws away the root x = 0. Factorise instead."
+}

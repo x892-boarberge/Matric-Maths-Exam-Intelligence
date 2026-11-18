@@ -59,6 +59,12 @@
         "y-intercept: f(0) = 2 - 8 = -6.",
         "x-intercept: 2^(x+1) = 8 → x = 2.",
         "Asymptote y = -8."
+      ],
+      "given_from": [
+        "4.1"
+      ],
+      "requires_skills": [
+        "functions.exponential"
       ]
     },
     {
@@ -76,6 +82,13 @@
       "expected_fn": "g(x) = 2^(-x+1) - 8",
       "steps": [
         "Replace x with -x."
+      ],
+      "given_from": [
+        "4.1",
+        "4.2"
+      ],
+      "requires_skills": [
+        "functions.exponential"
       ]
     }
   ],

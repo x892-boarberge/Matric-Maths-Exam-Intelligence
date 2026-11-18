@@ -34,6 +34,12 @@
       "expected_fn": "x = R5 505.43",
       "steps": [
         "P = x[1 - (1+i)^-n]/i, i = 0.12/12, n = 240."
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "finance.depreciation"
       ]
     },
     {
@@ -47,6 +53,14 @@
         "500000 = 6000[1-(1.01)^-n]/0.01.",
         "Solve with logs.",
         "n ≈ 180.07."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2.1"
+      ],
+      "requires_skills": [
+        "finance.depreciation",
+        "finance.loan"
       ]
     },
     {
@@ -60,6 +74,15 @@
         "Samuel: 5505.43 × 240 - 500000 = R821 303.20.",
         "Melissa: 6000 × 181 - 500000 = R586 000.",
         "Samuel pays more."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2.1",
+        "7.2.2"
+      ],
+      "requires_skills": [
+        "finance.depreciation",
+        "finance.loan"
       ]
     }
   ],

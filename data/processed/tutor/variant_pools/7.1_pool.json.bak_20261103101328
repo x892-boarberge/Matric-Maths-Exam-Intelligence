@@ -1,0 +1,542 @@
+[
+  {
+    "variant_question": "Cost R50,000 increases by 7.8% p.a. Cost in 6 years?",
+    "expected": "R78466.19",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.078)^6",
+      "A = R78466.19",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R40,000 increases by 6.5% p.a. Cost in 4 years?",
+    "expected": "R51458.65",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 40,000(1+0.065)^4",
+      "A = R51458.65",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R40,000 increases by 7.8% p.a. Cost in 5 years?",
+    "expected": "R58230.94",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 40,000(1+0.078)^5",
+      "A = R58230.94",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 6.5% p.a. Cost in 4 years?",
+    "expected": "R77187.98",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.065)^4",
+      "A = R77187.98",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R40,000 increases by 8.5% p.a. Cost in 5 years?",
+    "expected": "R60146.27",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 40,000(1+0.085)^5",
+      "A = R60146.27",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 7.8% p.a. Cost in 6 years?",
+    "expected": "R78466.19",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.078)^6",
+      "A = R78466.19",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 6.5% p.a. Cost in 5 years?",
+    "expected": "R68504.33",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.065)^5",
+      "A = R68504.33",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 6.5% p.a. Cost in 6 years?",
+    "expected": "R87548.54",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.065)^6",
+      "A = R87548.54",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R40,000 increases by 6.5% p.a. Cost in 6 years?",
+    "expected": "R58365.69",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 40,000(1+0.065)^6",
+      "A = R58365.69",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 8.5% p.a. Cost in 6 years?",
+    "expected": "R97888.05",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.085)^6",
+      "A = R97888.05",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 6.5% p.a. Cost in 4 years?",
+    "expected": "R64323.32",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.065)^4",
+      "A = R64323.32",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 8.5% p.a. Cost in 4 years?",
+    "expected": "R83151.52",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.085)^4",
+      "A = R83151.52",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 6.5% p.a. Cost in 5 years?",
+    "expected": "R68504.33",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.065)^5",
+      "A = R68504.33",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 6.5% p.a. Cost in 4 years?",
+    "expected": "R77187.98",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.065)^4",
+      "A = R77187.98",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 6.5% p.a. Cost in 4 years?",
+    "expected": "R64323.32",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.065)^4",
+      "A = R64323.32",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 6.5% p.a. Cost in 4 years?",
+    "expected": "R64323.32",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.065)^4",
+      "A = R64323.32",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 6.5% p.a. Cost in 4 years?",
+    "expected": "R64323.32",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.065)^4",
+      "A = R64323.32",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R40,000 increases by 8.5% p.a. Cost in 6 years?",
+    "expected": "R65258.70",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 40,000(1+0.085)^6",
+      "A = R65258.70",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 6.5% p.a. Cost in 4 years?",
+    "expected": "R77187.98",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.065)^4",
+      "A = R77187.98",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 7.8% p.a. Cost in 5 years?",
+    "expected": "R87346.41",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.078)^5",
+      "A = R87346.41",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 7.8% p.a. Cost in 5 years?",
+    "expected": "R87346.41",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.078)^5",
+      "A = R87346.41",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R40,000 increases by 7.8% p.a. Cost in 6 years?",
+    "expected": "R62772.95",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 40,000(1+0.078)^6",
+      "A = R62772.95",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 6.5% p.a. Cost in 6 years?",
+    "expected": "R87548.54",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.065)^6",
+      "A = R87548.54",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 7.8% p.a. Cost in 6 years?",
+    "expected": "R78466.19",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.078)^6",
+      "A = R78466.19",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 6.5% p.a. Cost in 4 years?",
+    "expected": "R64323.32",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.065)^4",
+      "A = R64323.32",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 8.5% p.a. Cost in 6 years?",
+    "expected": "R81573.38",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.085)^6",
+      "A = R81573.38",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R40,000 increases by 8.5% p.a. Cost in 6 years?",
+    "expected": "R65258.70",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 40,000(1+0.085)^6",
+      "A = R65258.70",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 7.8% p.a. Cost in 6 years?",
+    "expected": "R78466.19",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.078)^6",
+      "A = R78466.19",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R50,000 increases by 7.8% p.a. Cost in 4 years?",
+    "expected": "R67521.96",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 50,000(1+0.078)^4",
+      "A = R67521.96",
+      "Final Answer: R{A:.2f}"
+    ]
+  },
+  {
+    "variant_question": "Cost R60,000 increases by 8.5% p.a. Cost in 5 years?",
+    "expected": "R90219.40",
+    "demonstration": "Compound growth formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark sub",
+      "1 mark ans"
+    ],
+    "fast_path": "Compound formula.",
+    "fatal_error": "DBE says: Simple interest.",
+    "answer_book_layout": [
+      "A = P(1+i)^n",
+      "A = 60,000(1+0.085)^5",
+      "A = R90219.40",
+      "Final Answer: R{A:.2f}"
+    ]
+  }
+]

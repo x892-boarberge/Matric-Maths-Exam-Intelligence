@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 5, write down the difference between T_10 and T_3.",
+    "expected": "14",
+    "demonstration": "T_10 = 2·10 - 5 = 15.\nT_3 = 2·3 - 5 = 1.\nDifference = 15 - 1 = 14.\nShortcut: 2·(10-3) = 2·7 = 14.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 14"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_10 = 15, T_3 = 1",
+      "Difference = 14"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 3, write down the difference between T_10 and T_3.",
+    "expected": "14",
+    "demonstration": "T_10 = 2·10 - 3 = 17.\nT_3 = 2·3 - 3 = 3.\nDifference = 17 - 3 = 14.\nShortcut: 2·(10-3) = 2·7 = 14.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 14"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_10 = 17, T_3 = 3",
+      "Difference = 14"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 1, write down the difference between T_10 and T_3.",
+    "expected": "14",
+    "demonstration": "T_10 = 2·10 - 1 = 19.\nT_3 = 2·3 - 1 = 5.\nDifference = 19 - 5 = 14.\nShortcut: 2·(10-3) = 2·7 = 14.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 14"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_10 = 19, T_3 = 5",
+      "Difference = 14"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 1, write down the difference between T_10 and T_3.",
+    "expected": "14",
+    "demonstration": "T_10 = 2·10 + 1 = 21.\nT_3 = 2·3 + 1 = 7.\nDifference = 21 - 7 = 14.\nShortcut: 2·(10-3) = 2·7 = 14.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 14"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_10 = 21, T_3 = 7",
+      "Difference = 14"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 3, write down the difference between T_10 and T_3.",
+    "expected": "14",
+    "demonstration": "T_10 = 2·10 + 3 = 23.\nT_3 = 2·3 + 3 = 9.\nDifference = 23 - 9 = 14.\nShortcut: 2·(10-3) = 2·7 = 14.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 14"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_10 = 23, T_3 = 9",
+      "Difference = 14"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 5, write down the difference between T_10 and T_3.",
+    "expected": "14",
+    "demonstration": "T_10 = 2·10 + 5 = 25.\nT_3 = 2·3 + 5 = 11.\nDifference = 25 - 11 = 14.\nShortcut: 2·(10-3) = 2·7 = 14.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 14"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_10 = 25, T_3 = 11",
+      "Difference = 14"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 5, write down the difference between T_14 and T_6.",
+    "expected": "16",
+    "demonstration": "T_14 = 2·14 - 5 = 23.\nT_6 = 2·6 - 5 = 7.\nDifference = 23 - 7 = 16.\nShortcut: 2·(14-6) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_14 = 23, T_6 = 7",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 3, write down the difference between T_14 and T_6.",
+    "expected": "16",
+    "demonstration": "T_14 = 2·14 - 3 = 25.\nT_6 = 2·6 - 3 = 9.\nDifference = 25 - 9 = 16.\nShortcut: 2·(14-6) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_14 = 25, T_6 = 9",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 1, write down the difference between T_14 and T_6.",
+    "expected": "16",
+    "demonstration": "T_14 = 2·14 - 1 = 27.\nT_6 = 2·6 - 1 = 11.\nDifference = 27 - 11 = 16.\nShortcut: 2·(14-6) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_14 = 27, T_6 = 11",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 1, write down the difference between T_14 and T_6.",
+    "expected": "16",
+    "demonstration": "T_14 = 2·14 + 1 = 29.\nT_6 = 2·6 + 1 = 13.\nDifference = 29 - 13 = 16.\nShortcut: 2·(14-6) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_14 = 29, T_6 = 13",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 3, write down the difference between T_14 and T_6.",
+    "expected": "16",
+    "demonstration": "T_14 = 2·14 + 3 = 31.\nT_6 = 2·6 + 3 = 15.\nDifference = 31 - 15 = 16.\nShortcut: 2·(14-6) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_14 = 31, T_6 = 15",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 5, write down the difference between T_14 and T_6.",
+    "expected": "16",
+    "demonstration": "T_14 = 2·14 + 5 = 33.\nT_6 = 2·6 + 5 = 17.\nDifference = 33 - 17 = 16.\nShortcut: 2·(14-6) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_14 = 33, T_6 = 17",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 5, write down the difference between T_15 and T_7.",
+    "expected": "16",
+    "demonstration": "T_15 = 2·15 - 5 = 25.\nT_7 = 2·7 - 5 = 9.\nDifference = 25 - 9 = 16.\nShortcut: 2·(15-7) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_15 = 25, T_7 = 9",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 3, write down the difference between T_15 and T_7.",
+    "expected": "16",
+    "demonstration": "T_15 = 2·15 - 3 = 27.\nT_7 = 2·7 - 3 = 11.\nDifference = 27 - 11 = 16.\nShortcut: 2·(15-7) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_15 = 27, T_7 = 11",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 1, write down the difference between T_15 and T_7.",
+    "expected": "16",
+    "demonstration": "T_15 = 2·15 - 1 = 29.\nT_7 = 2·7 - 1 = 13.\nDifference = 29 - 13 = 16.\nShortcut: 2·(15-7) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_15 = 29, T_7 = 13",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 1, write down the difference between T_15 and T_7.",
+    "expected": "16",
+    "demonstration": "T_15 = 2·15 + 1 = 31.\nT_7 = 2·7 + 1 = 15.\nDifference = 31 - 15 = 16.\nShortcut: 2·(15-7) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_15 = 31, T_7 = 15",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 3, write down the difference between T_15 and T_7.",
+    "expected": "16",
+    "demonstration": "T_15 = 2·15 + 3 = 33.\nT_7 = 2·7 + 3 = 17.\nDifference = 33 - 17 = 16.\nShortcut: 2·(15-7) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_15 = 33, T_7 = 17",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 5, write down the difference between T_15 and T_7.",
+    "expected": "16",
+    "demonstration": "T_15 = 2·15 + 5 = 35.\nT_7 = 2·7 + 5 = 19.\nDifference = 35 - 19 = 16.\nShortcut: 2·(15-7) = 2·8 = 16.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 16"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_15 = 35, T_7 = 19",
+      "Difference = 16"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 5, write down the difference between T_18 and T_4.",
+    "expected": "28",
+    "demonstration": "T_18 = 2·18 - 5 = 31.\nT_4 = 2·4 - 5 = 3.\nDifference = 31 - 3 = 28.\nShortcut: 2·(18-4) = 2·14 = 28.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 28"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_18 = 31, T_4 = 3",
+      "Difference = 28"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 3, write down the difference between T_18 and T_4.",
+    "expected": "28",
+    "demonstration": "T_18 = 2·18 - 3 = 33.\nT_4 = 2·4 - 3 = 5.\nDifference = 33 - 5 = 28.\nShortcut: 2·(18-4) = 2·14 = 28.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 28"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_18 = 33, T_4 = 5",
+      "Difference = 28"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 1, write down the difference between T_18 and T_4.",
+    "expected": "28",
+    "demonstration": "T_18 = 2·18 - 1 = 35.\nT_4 = 2·4 - 1 = 7.\nDifference = 35 - 7 = 28.\nShortcut: 2·(18-4) = 2·14 = 28.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 28"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_18 = 35, T_4 = 7",
+      "Difference = 28"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 1, write down the difference between T_18 and T_4.",
+    "expected": "28",
+    "demonstration": "T_18 = 2·18 + 1 = 37.\nT_4 = 2·4 + 1 = 9.\nDifference = 37 - 9 = 28.\nShortcut: 2·(18-4) = 2·14 = 28.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 28"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_18 = 37, T_4 = 9",
+      "Difference = 28"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 3, write down the difference between T_18 and T_4.",
+    "expected": "28",
+    "demonstration": "T_18 = 2·18 + 3 = 39.\nT_4 = 2·4 + 3 = 11.\nDifference = 39 - 11 = 28.\nShortcut: 2·(18-4) = 2·14 = 28.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 28"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_18 = 39, T_4 = 11",
+      "Difference = 28"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 5, write down the difference between T_18 and T_4.",
+    "expected": "28",
+    "demonstration": "T_18 = 2·18 + 5 = 41.\nT_4 = 2·4 + 5 = 13.\nDifference = 41 - 13 = 28.\nShortcut: 2·(18-4) = 2·14 = 28.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 28"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_18 = 41, T_4 = 13",
+      "Difference = 28"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 5, write down the difference between T_20 and T_10.",
+    "expected": "20",
+    "demonstration": "T_20 = 2·20 - 5 = 35.\nT_10 = 2·10 - 5 = 15.\nDifference = 35 - 15 = 20.\nShortcut: 2·(20-10) = 2·10 = 20.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 20"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_20 = 35, T_10 = 15",
+      "Difference = 20"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 3, write down the difference between T_20 and T_10.",
+    "expected": "20",
+    "demonstration": "T_20 = 2·20 - 3 = 37.\nT_10 = 2·10 - 3 = 17.\nDifference = 37 - 17 = 20.\nShortcut: 2·(20-10) = 2·10 = 20.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 20"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_20 = 37, T_10 = 17",
+      "Difference = 20"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p - 1, write down the difference between T_20 and T_10.",
+    "expected": "20",
+    "demonstration": "T_20 = 2·20 - 1 = 39.\nT_10 = 2·10 - 1 = 19.\nDifference = 39 - 19 = 20.\nShortcut: 2·(20-10) = 2·10 = 20.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 20"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_20 = 39, T_10 = 19",
+      "Difference = 20"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 1, write down the difference between T_20 and T_10.",
+    "expected": "20",
+    "demonstration": "T_20 = 2·20 + 1 = 41.\nT_10 = 2·10 + 1 = 21.\nDifference = 41 - 21 = 20.\nShortcut: 2·(20-10) = 2·10 = 20.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 20"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_20 = 41, T_10 = 21",
+      "Difference = 20"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 3, write down the difference between T_20 and T_10.",
+    "expected": "20",
+    "demonstration": "T_20 = 2·20 + 3 = 43.\nT_10 = 2·10 + 3 = 23.\nDifference = 43 - 23 = 20.\nShortcut: 2·(20-10) = 2·10 = 20.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 20"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_20 = 43, T_10 = 23",
+      "Difference = 20"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given the arithmetic sequence T_p = 2p + 5, write down the difference between T_20 and T_10.",
+    "expected": "20",
+    "demonstration": "T_20 = 2·20 + 5 = 45.\nT_10 = 2·10 + 5 = 25.\nDifference = 45 - 25 = 20.\nShortcut: 2·(20-10) = 2·10 = 20.",
+    "memo_marks": [
+      "1 mark for both term values",
+      "1 mark for 20"
+    ],
+    "fast_path": "Difference in values = a × difference in positions.",
+    "fatal_error": "DBE says: Candidates confuse T_p formula with sum formula, or drop the b term wrong.",
+    "answer_book_layout": [
+      "T_20 = 45, T_10 = 25",
+      "Difference = 20"
+    ],
+    "hack": "Difference = coefficient × position gap.",
+    "trap": "Subtract carefully. b cancels but am - an doesn't.",
+    "presentation": "Show both terms, then subtraction.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

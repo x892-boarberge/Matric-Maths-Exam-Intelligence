@@ -45,6 +45,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1"
+      ],
+      "requires_skills": [
+        "analytical.circle"
       ]
     },
     {
@@ -80,6 +86,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1",
+        "4.2.1"
+      ],
+      "requires_skills": [
+        "analytical.circle"
       ]
     },
     {
@@ -110,6 +123,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1",
+        "4.2.1",
+        "4.2.2"
+      ],
+      "requires_skills": [
+        "analytical.circle"
       ]
     },
     {
@@ -130,6 +151,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1",
+        "4.2.1",
+        "4.2.2",
+        "4.3"
+      ],
+      "requires_skills": [
+        "analytical.circle"
       ]
     },
     {
@@ -160,6 +190,17 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "4.1",
+        "4.2.1",
+        "4.2.2",
+        "4.3",
+        "4.4.1"
+      ],
+      "requires_skills": [
+        "analytical.circle",
+        "analytical.tangent"
       ]
     }
   ],

@@ -52,6 +52,12 @@
         "Substitute C({xc}; {yc}): {yc} = ({m})({xc}) + c",
         "c = {c}",
         "g(x) = {g_disp}"
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "functions.parabola"
       ]
     },
     {
@@ -82,6 +88,14 @@
         "EH(x) is a parabola opening downward, with zeros at A and C.",
         "Maximum at the midpoint of the x-values: x = {xm}",
         "EH({xm}) = {eh_max}"
+      ],
+      "given_from": [
+        "6.1",
+        "6.2"
+      ],
+      "requires_skills": [
+        "functions.parabola",
+        "functions.line"
       ]
     },
     {
@@ -97,6 +111,15 @@
         "Expand and set the discriminant to zero.",
         "Solve for m.",
         "m = {m_disp}"
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3"
+      ],
+      "requires_skills": [
+        "functions.parabola",
+        "functions.line"
       ]
     }
   ],

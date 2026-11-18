@@ -39,6 +39,12 @@
       "expected_fn": "P = 118/180 = 59/90",
       "steps": [
         "1 - P(game park) = 1 - 62/180 = 118/180."
+      ],
+      "given_from": [
+        "11.1.1"
+      ],
+      "requires_skills": [
+        "probability.tables"
       ]
     },
     {
@@ -58,6 +64,13 @@
         "P(male) × P(home) = (83/180)(20/180) = 83/1620.",
         "P(male and home) = 13/180.",
         "Not equal → NOT independent."
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2"
+      ],
+      "requires_skills": [
+        "probability.tables"
       ]
     }
   ],

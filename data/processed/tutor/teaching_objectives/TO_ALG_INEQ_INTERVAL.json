@@ -1,0 +1,38 @@
+{
+  "objective_id": "TO_ALG_INEQ_INTERVAL",
+  "skill_id": "algebra.quadratic.inequality",
+  "trigger_misconception": "M_INEQ_WRONG_INTERVAL",
+  "dbe_source": {
+    "years": [
+      "2014",
+      "2023",
+      "2025"
+    ],
+    "recommendation": "For > 0 the solution is OUTSIDE the roots. For < 0 the solution is BETWEEN the roots. The sign of the inequality decides which.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "For > 0 the solution is OUTSIDE the roots. For < 0 the solution is BETWEEN the roots. The sign of the inequality decides which.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "Solve x^2 - 4 < 0",
+      "work": [
+        "Critical values: x = -2 or x = 2",
+        "The coefficient of x^2 is positive, so the parabola opens up",
+        "We want y < 0, which is the part below the x-axis",
+        "That is between the roots: -2 < x < 2",
+        "Not x < -2 or x > 2. That would be the > 0 case."
+      ]
+    },
+    "probe": {
+      "problem": "Solve x^2 - 9 < 0.",
+      "expected": "-3 < x < 3",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_INEQ_WRONG_INTERVAL",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The interval is on the wrong side of the roots. For > 0 the answer is outside; for < 0 it is between them."
+}

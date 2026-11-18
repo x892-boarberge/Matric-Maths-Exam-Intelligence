@@ -1,0 +1,47 @@
+{
+  "objective_id": "TO_ALG_STANDARD_FORM_AND_SUBSTITUTION",
+  "skill_id": "algebra.quadratic.solve",
+  "trigger_misconception": "M_INCORRECT_SUBSTITUTION",
+  "applies_when": "prompt is in standard form or can be rearranged to it; learner used the formula with wrong a/b/c",
+  "dbe_source": {
+    "years": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "recommendation": "Candidates did not write the equation in standard form before substituting, so they used the wrong value of b or c. Teachers should emphasise writing the equation in standard form first, then reading off a, b, c with their signs.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "Before you use the quadratic formula, write the equation as ax² + bx + c = 0. Then read off a, b, c with their signs. The formula is x = (-b ± √(b² - 4ac)) / 2a.",
+    "why": "Most incorrect substitution comes from skipping the rearrange step. If the equation is not in standard form, the values of b and c are not what you think they are.",
+    "example": {
+      "problem": "Solve 5x² + 2 = -9x.",
+      "work": [
+        "Rearrange to standard form:  5x² + 9x + 2 = 0",
+        "Read off:  a = 5, b = 9, c = 2",
+        "x = (-9 ± √(9² - 4·5·2)) / (2·5)",
+        "x = (-9 ± √(81 - 40)) / 10",
+        "x = (-9 ± √41) / 10",
+        "x ≈ -0.16 or x ≈ -1.64"
+      ]
+    },
+    "probe": {
+      "problem": "Solve 3x² = 2x + 5 using the formula, correct to TWO decimal places.",
+      "expected": "x = 1.67 or x = -1.00",
+      "hint": "First write the equation as 3x² - 2x - 5 = 0. Then a = 3, b = -2, c = -5. Substitute with signs."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_INCORRECT_SUBSTITUTION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You substituted the wrong value. Write the equation in standard form first, then read off a, b, and c with their signs."
+}

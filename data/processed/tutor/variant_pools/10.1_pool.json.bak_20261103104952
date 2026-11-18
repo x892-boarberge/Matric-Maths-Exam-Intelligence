@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "Show V = (16x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 33.",
+    "expected": "V = 16x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 16 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(16-x)",
+      "_________________________",
+      "Final Answer: V = 16x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (17x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 34.",
+    "expected": "V = 17x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 17 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(17-x)",
+      "_________________________",
+      "Final Answer: V = 17x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (15x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 31.",
+    "expected": "V = 15x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 15 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(15-x)",
+      "_________________________",
+      "Final Answer: V = 15x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (20x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 40.",
+    "expected": "V = 20x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 20 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(20-x)",
+      "_________________________",
+      "Final Answer: V = 20x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (31x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 62.",
+    "expected": "V = 31x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 31 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(31-x)",
+      "_________________________",
+      "Final Answer: V = 31x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (29x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 58.",
+    "expected": "V = 29x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 29 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(29-x)",
+      "_________________________",
+      "Final Answer: V = 29x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (29x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 59.",
+    "expected": "V = 29x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 29 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(29-x)",
+      "_________________________",
+      "Final Answer: V = 29x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (18x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 37.",
+    "expected": "V = 18x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 18 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(18-x)",
+      "_________________________",
+      "Final Answer: V = 18x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (18x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 37.",
+    "expected": "V = 18x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 18 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(18-x)",
+      "_________________________",
+      "Final Answer: V = 18x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (38x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 76.",
+    "expected": "V = 38x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 38 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(38-x)",
+      "_________________________",
+      "Final Answer: V = 38x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (19x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 39.",
+    "expected": "V = 19x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 19 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(19-x)",
+      "_________________________",
+      "Final Answer: V = 19x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (31x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 62.",
+    "expected": "V = 31x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 31 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(31-x)",
+      "_________________________",
+      "Final Answer: V = 31x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (36x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 73.",
+    "expected": "V = 36x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 36 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(36-x)",
+      "_________________________",
+      "Final Answer: V = 36x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (17x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 35.",
+    "expected": "V = 17x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 17 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(17-x)",
+      "_________________________",
+      "Final Answer: V = 17x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (23x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 47.",
+    "expected": "V = 23x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 23 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(23-x)",
+      "_________________________",
+      "Final Answer: V = 23x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (29x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 59.",
+    "expected": "V = 29x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 29 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(29-x)",
+      "_________________________",
+      "Final Answer: V = 29x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (22x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 45.",
+    "expected": "V = 22x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 22 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(22-x)",
+      "_________________________",
+      "Final Answer: V = 22x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (22x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 45.",
+    "expected": "V = 22x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 22 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(22-x)",
+      "_________________________",
+      "Final Answer: V = 22x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (17x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 35.",
+    "expected": "V = 17x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 17 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(17-x)",
+      "_________________________",
+      "Final Answer: V = 17x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (35x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 70.",
+    "expected": "V = 35x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 35 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(35-x)",
+      "_________________________",
+      "Final Answer: V = 35x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (35x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 70.",
+    "expected": "V = 35x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 35 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(35-x)",
+      "_________________________",
+      "Final Answer: V = 35x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (20x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 41.",
+    "expected": "V = 20x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 20 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(20-x)",
+      "_________________________",
+      "Final Answer: V = 20x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (25x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 51.",
+    "expected": "V = 25x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 25 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(25-x)",
+      "_________________________",
+      "Final Answer: V = 25x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (27x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 55.",
+    "expected": "V = 27x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 27 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(27-x)",
+      "_________________________",
+      "Final Answer: V = 27x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (34x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 68.",
+    "expected": "V = 34x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 34 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(34-x)",
+      "_________________________",
+      "Final Answer: V = 34x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (25x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 50.",
+    "expected": "V = 25x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 25 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(25-x)",
+      "_________________________",
+      "Final Answer: V = 25x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (38x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 77.",
+    "expected": "V = 38x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 38 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(38-x)",
+      "_________________________",
+      "Final Answer: V = 38x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (23x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 46.",
+    "expected": "V = 23x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 23 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(23-x)",
+      "_________________________",
+      "Final Answer: V = 23x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (29x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 58.",
+    "expected": "V = 29x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 29 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(29-x)",
+      "_________________________",
+      "Final Answer: V = 29x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  },
+  {
+    "variant_question": "Show V = (35x^2)/4\u03c0 - x^3/4\u03c0 for perimeter 70.",
+    "expected": "V = 35x\u00b2/4\u03c0 - x\u00b3/4\u03c0",
+    "demonstration": "h = perim/2 - x, r = x/2\u03c0.",
+    "memo_marks": [
+      "1 mark h",
+      "1 mark r",
+      "1 mark vol",
+      "1 mark simp"
+    ],
+    "fast_path": "Get h and r.",
+    "fatal_error": "DBE says: x is radius.",
+    "answer_book_layout": [
+      "h = 35 - x",
+      "r = x/2\u03c0",
+      "V = \u03c0(x/2\u03c0)\u00b2(35-x)",
+      "_________________________",
+      "Final Answer: V = 35x\u00b2/4\u03c0 - x\u00b3/4\u03c0"
+    ]
+  }
+]

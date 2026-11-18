@@ -47,6 +47,12 @@
       "expected_fn": "g'(x) = {four_a}x^3 + {b}",
       "steps": [
         "g'(x) = {four_a}x^3 + {b}"
+      ],
+      "given_from": [
+        "8.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles"
       ]
     },
     {
@@ -66,6 +72,14 @@
         "y = {a}x^2 + x^-2",
         "dy/dx = {two_a}x - 2x^-3",
         "= {two_a}x - 2/x^3"
+      ],
+      "given_from": [
+        "8.1",
+        "8.2.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     }
   ],

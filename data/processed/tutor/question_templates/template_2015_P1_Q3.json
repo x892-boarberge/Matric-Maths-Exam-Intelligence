@@ -22,6 +22,12 @@
       "expected_fn": "sum_(k=1)^n (8k - 11)",
       "steps": [
         "Sum from k=1 to n of T_k."
+      ],
+      "given_from": [
+        "3.1"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     },
     {
@@ -36,6 +42,13 @@
         "= n/2[-6 + 8n - 8].",
         "= n/2[8n - 14].",
         "= 4n² - 7n."
+      ],
+      "given_from": [
+        "3.1",
+        "3.2"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     },
     {
@@ -47,6 +60,14 @@
       "expected_fn": "-6 - 3 + 5 + 13 + 21 + 29",
       "steps": [
         "Extend the pattern."
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     },
     {
@@ -60,6 +81,15 @@
         "Q_129 = -6 + S_128.",
         "S_128 = 4(128)² - 7(128) = 65536 - 896 = 64640.",
         "Q_129 = -6 + 64640 = 64634."
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4.1"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     }
   ],

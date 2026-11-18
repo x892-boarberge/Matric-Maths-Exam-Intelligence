@@ -1,0 +1,662 @@
+[
+  {
+    "variant_question": "In a survey of 120 learners, 40 are male and 30 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 10, Male-Coffee = 30, Female-Tea = 20, Female-Coffee = e. Show that e = 60.",
+    "expected": "e = 60",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/120. P(tea) = 30/120. P(male and tea) = 10/120.\nCheck: (40/120)·(30/120) = 1200/14400 = 10/120  ✓ (10 = 1200/120).\nTotal: 10 + 30 + 20 + e = 120 → e = 60.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 10/120 = (40/120)·(30/120)",
+      "1 mark for e = 60"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 10/120",
+      "P(male)·P(tea) = 40/120·30/120 = 10/120",
+      "e = 120 - 10 - 30 - 20 = 60"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 40 are male and 45 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 15, Male-Coffee = 25, Female-Tea = 30, Female-Coffee = e. Show that e = 50.",
+    "expected": "e = 50",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/120. P(tea) = 45/120. P(male and tea) = 15/120.\nCheck: (40/120)·(45/120) = 1800/14400 = 15/120  ✓ (15 = 1800/120).\nTotal: 15 + 25 + 30 + e = 120 → e = 50.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 15/120 = (40/120)·(45/120)",
+      "1 mark for e = 50"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 15/120",
+      "P(male)·P(tea) = 40/120·45/120 = 15/120",
+      "e = 120 - 15 - 25 - 30 = 50"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 40 are male and 60 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 20, Male-Coffee = 20, Female-Tea = 40, Female-Coffee = e. Show that e = 40.",
+    "expected": "e = 40",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/120. P(tea) = 60/120. P(male and tea) = 20/120.\nCheck: (40/120)·(60/120) = 2400/14400 = 20/120  ✓ (20 = 2400/120).\nTotal: 20 + 20 + 40 + e = 120 → e = 40.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 20/120 = (40/120)·(60/120)",
+      "1 mark for e = 40"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 20/120",
+      "P(male)·P(tea) = 40/120·60/120 = 20/120",
+      "e = 120 - 20 - 20 - 40 = 40"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 40 are male and 75 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 25, Male-Coffee = 15, Female-Tea = 50, Female-Coffee = e. Show that e = 30.",
+    "expected": "e = 30",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/120. P(tea) = 75/120. P(male and tea) = 25/120.\nCheck: (40/120)·(75/120) = 3000/14400 = 25/120  ✓ (25 = 3000/120).\nTotal: 25 + 15 + 50 + e = 120 → e = 30.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 25/120 = (40/120)·(75/120)",
+      "1 mark for e = 30"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 25/120",
+      "P(male)·P(tea) = 40/120·75/120 = 25/120",
+      "e = 120 - 25 - 15 - 50 = 30"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 40 are male and 90 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 30, Male-Coffee = 10, Female-Tea = 60, Female-Coffee = e. Show that e = 20.",
+    "expected": "e = 20",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/120. P(tea) = 90/120. P(male and tea) = 30/120.\nCheck: (40/120)·(90/120) = 3600/14400 = 30/120  ✓ (30 = 3600/120).\nTotal: 30 + 10 + 60 + e = 120 → e = 20.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 30/120 = (40/120)·(90/120)",
+      "1 mark for e = 20"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 30/120",
+      "P(male)·P(tea) = 40/120·90/120 = 30/120",
+      "e = 120 - 30 - 10 - 60 = 20"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 50 are male and 60 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 25, Male-Coffee = 25, Female-Tea = 35, Female-Coffee = e. Show that e = 35.",
+    "expected": "e = 35",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 50/120. P(tea) = 60/120. P(male and tea) = 25/120.\nCheck: (50/120)·(60/120) = 3000/14400 = 25/120  ✓ (25 = 3000/120).\nTotal: 25 + 25 + 35 + e = 120 → e = 35.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 25/120 = (50/120)·(60/120)",
+      "1 mark for e = 35"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 25/120",
+      "P(male)·P(tea) = 50/120·60/120 = 25/120",
+      "e = 120 - 25 - 25 - 35 = 35"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 60 are male and 30 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 15, Male-Coffee = 45, Female-Tea = 15, Female-Coffee = e. Show that e = 45.",
+    "expected": "e = 45",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 60/120. P(tea) = 30/120. P(male and tea) = 15/120.\nCheck: (60/120)·(30/120) = 1800/14400 = 15/120  ✓ (15 = 1800/120).\nTotal: 15 + 45 + 15 + e = 120 → e = 45.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 15/120 = (60/120)·(30/120)",
+      "1 mark for e = 45"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 15/120",
+      "P(male)·P(tea) = 60/120·30/120 = 15/120",
+      "e = 120 - 15 - 45 - 15 = 45"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 60 are male and 40 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 20, Male-Coffee = 40, Female-Tea = 20, Female-Coffee = e. Show that e = 40.",
+    "expected": "e = 40",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 60/120. P(tea) = 40/120. P(male and tea) = 20/120.\nCheck: (60/120)·(40/120) = 2400/14400 = 20/120  ✓ (20 = 2400/120).\nTotal: 20 + 40 + 20 + e = 120 → e = 40.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 20/120 = (60/120)·(40/120)",
+      "1 mark for e = 40"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 20/120",
+      "P(male)·P(tea) = 60/120·40/120 = 20/120",
+      "e = 120 - 20 - 40 - 20 = 40"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 60 are male and 50 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 25, Male-Coffee = 35, Female-Tea = 25, Female-Coffee = e. Show that e = 35.",
+    "expected": "e = 35",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 60/120. P(tea) = 50/120. P(male and tea) = 25/120.\nCheck: (60/120)·(50/120) = 3000/14400 = 25/120  ✓ (25 = 3000/120).\nTotal: 25 + 35 + 25 + e = 120 → e = 35.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 25/120 = (60/120)·(50/120)",
+      "1 mark for e = 35"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 25/120",
+      "P(male)·P(tea) = 60/120·50/120 = 25/120",
+      "e = 120 - 25 - 35 - 25 = 35"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 60 are male and 60 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 30, Male-Coffee = 30, Female-Tea = 30, Female-Coffee = e. Show that e = 30.",
+    "expected": "e = 30",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 60/120. P(tea) = 60/120. P(male and tea) = 30/120.\nCheck: (60/120)·(60/120) = 3600/14400 = 30/120  ✓ (30 = 3600/120).\nTotal: 30 + 30 + 30 + e = 120 → e = 30.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 30/120 = (60/120)·(60/120)",
+      "1 mark for e = 30"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 30/120",
+      "P(male)·P(tea) = 60/120·60/120 = 30/120",
+      "e = 120 - 30 - 30 - 30 = 30"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 60 are male and 90 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 45, Male-Coffee = 15, Female-Tea = 45, Female-Coffee = e. Show that e = 15.",
+    "expected": "e = 15",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 60/120. P(tea) = 90/120. P(male and tea) = 45/120.\nCheck: (60/120)·(90/120) = 5400/14400 = 45/120  ✓ (45 = 5400/120).\nTotal: 45 + 15 + 45 + e = 120 → e = 15.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 45/120 = (60/120)·(90/120)",
+      "1 mark for e = 15"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 45/120",
+      "P(male)·P(tea) = 60/120·90/120 = 45/120",
+      "e = 120 - 45 - 15 - 45 = 15"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 60 are male and 100 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 50, Male-Coffee = 10, Female-Tea = 50, Female-Coffee = e. Show that e = 10.",
+    "expected": "e = 10",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 60/120. P(tea) = 100/120. P(male and tea) = 50/120.\nCheck: (60/120)·(100/120) = 6000/14400 = 50/120  ✓ (50 = 6000/120).\nTotal: 50 + 10 + 50 + e = 120 → e = 10.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 50/120 = (60/120)·(100/120)",
+      "1 mark for e = 10"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 50/120",
+      "P(male)·P(tea) = 60/120·100/120 = 50/120",
+      "e = 120 - 50 - 10 - 50 = 10"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 75 are male and 40 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 25, Male-Coffee = 50, Female-Tea = 15, Female-Coffee = e. Show that e = 30.",
+    "expected": "e = 30",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 75/120. P(tea) = 40/120. P(male and tea) = 25/120.\nCheck: (75/120)·(40/120) = 3000/14400 = 25/120  ✓ (25 = 3000/120).\nTotal: 25 + 50 + 15 + e = 120 → e = 30.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 25/120 = (75/120)·(40/120)",
+      "1 mark for e = 30"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 25/120",
+      "P(male)·P(tea) = 75/120·40/120 = 25/120",
+      "e = 120 - 25 - 50 - 15 = 30"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 80 are male and 30 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 20, Male-Coffee = 60, Female-Tea = 10, Female-Coffee = e. Show that e = 30.",
+    "expected": "e = 30",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 80/120. P(tea) = 30/120. P(male and tea) = 20/120.\nCheck: (80/120)·(30/120) = 2400/14400 = 20/120  ✓ (20 = 2400/120).\nTotal: 20 + 60 + 10 + e = 120 → e = 30.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 20/120 = (80/120)·(30/120)",
+      "1 mark for e = 30"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 20/120",
+      "P(male)·P(tea) = 80/120·30/120 = 20/120",
+      "e = 120 - 20 - 60 - 10 = 30"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 80 are male and 45 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 30, Male-Coffee = 50, Female-Tea = 15, Female-Coffee = e. Show that e = 25.",
+    "expected": "e = 25",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 80/120. P(tea) = 45/120. P(male and tea) = 30/120.\nCheck: (80/120)·(45/120) = 3600/14400 = 30/120  ✓ (30 = 3600/120).\nTotal: 30 + 50 + 15 + e = 120 → e = 25.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 30/120 = (80/120)·(45/120)",
+      "1 mark for e = 25"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 30/120",
+      "P(male)·P(tea) = 80/120·45/120 = 30/120",
+      "e = 120 - 30 - 50 - 15 = 25"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 80 are male and 60 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 40, Male-Coffee = 40, Female-Tea = 20, Female-Coffee = e. Show that e = 20.",
+    "expected": "e = 20",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 80/120. P(tea) = 60/120. P(male and tea) = 40/120.\nCheck: (80/120)·(60/120) = 4800/14400 = 40/120  ✓ (40 = 4800/120).\nTotal: 40 + 40 + 20 + e = 120 → e = 20.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 40/120 = (80/120)·(60/120)",
+      "1 mark for e = 20"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 40/120",
+      "P(male)·P(tea) = 80/120·60/120 = 40/120",
+      "e = 120 - 40 - 40 - 20 = 20"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 80 are male and 75 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 50, Male-Coffee = 30, Female-Tea = 25, Female-Coffee = e. Show that e = 15.",
+    "expected": "e = 15",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 80/120. P(tea) = 75/120. P(male and tea) = 50/120.\nCheck: (80/120)·(75/120) = 6000/14400 = 50/120  ✓ (50 = 6000/120).\nTotal: 50 + 30 + 25 + e = 120 → e = 15.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 50/120 = (80/120)·(75/120)",
+      "1 mark for e = 15"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 50/120",
+      "P(male)·P(tea) = 80/120·75/120 = 50/120",
+      "e = 120 - 50 - 30 - 25 = 15"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 80 are male and 90 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 60, Male-Coffee = 20, Female-Tea = 30, Female-Coffee = e. Show that e = 10.",
+    "expected": "e = 10",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 80/120. P(tea) = 90/120. P(male and tea) = 60/120.\nCheck: (80/120)·(90/120) = 7200/14400 = 60/120  ✓ (60 = 7200/120).\nTotal: 60 + 20 + 30 + e = 120 → e = 10.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 60/120 = (80/120)·(90/120)",
+      "1 mark for e = 10"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 60/120",
+      "P(male)·P(tea) = 80/120·90/120 = 60/120",
+      "e = 120 - 60 - 20 - 30 = 10"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 100 are male and 30 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 25, Male-Coffee = 75, Female-Tea = 5, Female-Coffee = e. Show that e = 15.",
+    "expected": "e = 15",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 100/120. P(tea) = 30/120. P(male and tea) = 25/120.\nCheck: (100/120)·(30/120) = 3000/14400 = 25/120  ✓ (25 = 3000/120).\nTotal: 25 + 75 + 5 + e = 120 → e = 15.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 25/120 = (100/120)·(30/120)",
+      "1 mark for e = 15"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 25/120",
+      "P(male)·P(tea) = 100/120·30/120 = 25/120",
+      "e = 120 - 25 - 75 - 5 = 15"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 100 are male and 60 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 50, Male-Coffee = 50, Female-Tea = 10, Female-Coffee = e. Show that e = 10.",
+    "expected": "e = 10",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 100/120. P(tea) = 60/120. P(male and tea) = 50/120.\nCheck: (100/120)·(60/120) = 6000/14400 = 50/120  ✓ (50 = 6000/120).\nTotal: 50 + 50 + 10 + e = 120 → e = 10.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 50/120 = (100/120)·(60/120)",
+      "1 mark for e = 10"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 50/120",
+      "P(male)·P(tea) = 100/120·60/120 = 50/120",
+      "e = 120 - 50 - 50 - 10 = 10"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 120 learners, 100 are male and 90 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 75, Male-Coffee = 25, Female-Tea = 15, Female-Coffee = e. Show that e = 5.",
+    "expected": "e = 5",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 100/120. P(tea) = 90/120. P(male and tea) = 75/120.\nCheck: (100/120)·(90/120) = 9000/14400 = 75/120  ✓ (75 = 9000/120).\nTotal: 75 + 25 + 15 + e = 120 → e = 5.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 75/120 = (100/120)·(90/120)",
+      "1 mark for e = 5"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 75/120",
+      "P(male)·P(tea) = 100/120·90/120 = 75/120",
+      "e = 120 - 75 - 25 - 15 = 5"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 150 learners, 40 are male and 30 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 8, Male-Coffee = 32, Female-Tea = 22, Female-Coffee = e. Show that e = 88.",
+    "expected": "e = 88",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/150. P(tea) = 30/150. P(male and tea) = 8/150.\nCheck: (40/150)·(30/150) = 1200/22500 = 8/150  ✓ (8 = 1200/150).\nTotal: 8 + 32 + 22 + e = 150 → e = 88.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 8/150 = (40/150)·(30/150)",
+      "1 mark for e = 88"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 8/150",
+      "P(male)·P(tea) = 40/150·30/150 = 8/150",
+      "e = 150 - 8 - 32 - 22 = 88"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 150 learners, 40 are male and 45 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 12, Male-Coffee = 28, Female-Tea = 33, Female-Coffee = e. Show that e = 77.",
+    "expected": "e = 77",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/150. P(tea) = 45/150. P(male and tea) = 12/150.\nCheck: (40/150)·(45/150) = 1800/22500 = 12/150  ✓ (12 = 1800/150).\nTotal: 12 + 28 + 33 + e = 150 → e = 77.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 12/150 = (40/150)·(45/150)",
+      "1 mark for e = 77"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 12/150",
+      "P(male)·P(tea) = 40/150·45/150 = 12/150",
+      "e = 150 - 12 - 28 - 33 = 77"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 150 learners, 40 are male and 60 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 16, Male-Coffee = 24, Female-Tea = 44, Female-Coffee = e. Show that e = 66.",
+    "expected": "e = 66",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/150. P(tea) = 60/150. P(male and tea) = 16/150.\nCheck: (40/150)·(60/150) = 2400/22500 = 16/150  ✓ (16 = 2400/150).\nTotal: 16 + 24 + 44 + e = 150 → e = 66.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 16/150 = (40/150)·(60/150)",
+      "1 mark for e = 66"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 16/150",
+      "P(male)·P(tea) = 40/150·60/150 = 16/150",
+      "e = 150 - 16 - 24 - 44 = 66"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 150 learners, 40 are male and 75 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 20, Male-Coffee = 20, Female-Tea = 55, Female-Coffee = e. Show that e = 55.",
+    "expected": "e = 55",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/150. P(tea) = 75/150. P(male and tea) = 20/150.\nCheck: (40/150)·(75/150) = 3000/22500 = 20/150  ✓ (20 = 3000/150).\nTotal: 20 + 20 + 55 + e = 150 → e = 55.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 20/150 = (40/150)·(75/150)",
+      "1 mark for e = 55"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 20/150",
+      "P(male)·P(tea) = 40/150·75/150 = 20/150",
+      "e = 150 - 20 - 20 - 55 = 55"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 150 learners, 40 are male and 90 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 24, Male-Coffee = 16, Female-Tea = 66, Female-Coffee = e. Show that e = 44.",
+    "expected": "e = 44",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 40/150. P(tea) = 90/150. P(male and tea) = 24/150.\nCheck: (40/150)·(90/150) = 3600/22500 = 24/150  ✓ (24 = 3600/150).\nTotal: 24 + 16 + 66 + e = 150 → e = 44.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 24/150 = (40/150)·(90/150)",
+      "1 mark for e = 44"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 24/150",
+      "P(male)·P(tea) = 40/150·90/150 = 24/150",
+      "e = 150 - 24 - 16 - 66 = 44"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 150 learners, 50 are male and 30 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 10, Male-Coffee = 40, Female-Tea = 20, Female-Coffee = e. Show that e = 80.",
+    "expected": "e = 80",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 50/150. P(tea) = 30/150. P(male and tea) = 10/150.\nCheck: (50/150)·(30/150) = 1500/22500 = 10/150  ✓ (10 = 1500/150).\nTotal: 10 + 40 + 20 + e = 150 → e = 80.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 10/150 = (50/150)·(30/150)",
+      "1 mark for e = 80"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 10/150",
+      "P(male)·P(tea) = 50/150·30/150 = 10/150",
+      "e = 150 - 10 - 40 - 20 = 80"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 150 learners, 50 are male and 45 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 15, Male-Coffee = 35, Female-Tea = 30, Female-Coffee = e. Show that e = 70.",
+    "expected": "e = 70",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 50/150. P(tea) = 45/150. P(male and tea) = 15/150.\nCheck: (50/150)·(45/150) = 2250/22500 = 15/150  ✓ (15 = 2250/150).\nTotal: 15 + 35 + 30 + e = 150 → e = 70.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 15/150 = (50/150)·(45/150)",
+      "1 mark for e = 70"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 15/150",
+      "P(male)·P(tea) = 50/150·45/150 = 15/150",
+      "e = 150 - 15 - 35 - 30 = 70"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 150 learners, 50 are male and 60 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 20, Male-Coffee = 30, Female-Tea = 40, Female-Coffee = e. Show that e = 60.",
+    "expected": "e = 60",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 50/150. P(tea) = 60/150. P(male and tea) = 20/150.\nCheck: (50/150)·(60/150) = 3000/22500 = 20/150  ✓ (20 = 3000/150).\nTotal: 20 + 30 + 40 + e = 150 → e = 60.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 20/150 = (50/150)·(60/150)",
+      "1 mark for e = 60"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 20/150",
+      "P(male)·P(tea) = 50/150·60/150 = 20/150",
+      "e = 150 - 20 - 30 - 40 = 60"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  },
+  {
+    "variant_question": "In a survey of 150 learners, 50 are male and 75 prefer tea. The events 'male' and 'preferring tea' are independent. The table shows: Male-Tea = 25, Male-Coffee = 25, Female-Tea = 50, Female-Coffee = e. Show that e = 50.",
+    "expected": "e = 50",
+    "demonstration": "Independence: P(male and tea) = P(male) × P(tea).\nP(male) = 50/150. P(tea) = 75/150. P(male and tea) = 25/150.\nCheck: (50/150)·(75/150) = 3750/22500 = 25/150  ✓ (25 = 3750/150).\nTotal: 25 + 25 + 50 + e = 150 → e = 50.",
+    "memo_marks": [
+      "1 mark for P(male and tea) = P(male)·P(tea)",
+      "1 mark for verifying 25/150 = (50/150)·(75/150)",
+      "1 mark for e = 50"
+    ],
+    "fast_path": "Independence = product. Then total minus known cells gives e.",
+    "fatal_error": "DBE says: Candidates confuse independent with mutually exclusive. Independent → P(A and B) = P(A)·P(B).",
+    "answer_book_layout": [
+      "P(male and tea) = 25/150",
+      "P(male)·P(tea) = 50/150·75/150 = 25/150",
+      "e = 150 - 25 - 25 - 50 = 50"
+    ],
+    "hack": "Independent → multiply. Missing cell → total minus known.",
+    "trap": "Mutually exclusive vs independent. Different concepts.",
+    "presentation": "Show P·P, compare, complete the table.",
+    "diagram": "required",
+    "diagram_hint": "contingency_table"
+  }
+]

@@ -61,6 +61,12 @@
         "f(x) = -1 → x = {lower}",
         "f(x) = 2 → x = {upper}",
         "{lower} <= x <= {upper}."
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "functions.log"
       ]
     },
     {
@@ -82,6 +88,13 @@
       "steps": [
         "Swap x and y.",
         "y = {base}^x."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2"
+      ],
+      "requires_skills": [
+        "functions.log"
       ]
     },
     {
@@ -100,6 +113,14 @@
       "steps": [
         "f^(-1)(x) = {base}^x > 0 always.",
         "x * f^(-1)(x) < 0 requires x < 0."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3"
+      ],
+      "requires_skills": [
+        "functions.log"
       ]
     }
   ],

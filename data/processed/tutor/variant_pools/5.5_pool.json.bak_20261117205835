@@ -1,0 +1,692 @@
+[
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -4/(x-3) + 8, M is the positive x-intercept of f and T is the x-intercept of g. Calculate the length of MT. (variant 1)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 6x + 5 and g(x) = -6/(x-2) + 3, M is the positive x-intercept of f and T is the x-intercept of g. Calculate MT. (variant 2)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -2/(x-1) + 1, M and T as defined. Find MT. (variant 3)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 2x - 8 and g(x) = -3/(x-1) + 1, calculate the length MT. (variant 4)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 5x + 6 and g(x) = -4/(x-2) + 2, find MT. (variant 5)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -4/(x-3) + 8, M is the positive x-intercept of f and T is the x-intercept of g. Calculate the length of MT. (variant 6)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 6x + 5 and g(x) = -6/(x-2) + 3, M is the positive x-intercept of f and T is the x-intercept of g. Calculate MT. (variant 7)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -2/(x-1) + 1, M and T as defined. Find MT. (variant 8)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 2x - 8 and g(x) = -3/(x-1) + 1, calculate the length MT. (variant 9)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 5x + 6 and g(x) = -4/(x-2) + 2, find MT. (variant 10)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -4/(x-3) + 8, M is the positive x-intercept of f and T is the x-intercept of g. Calculate the length of MT. (variant 11)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 6x + 5 and g(x) = -6/(x-2) + 3, M is the positive x-intercept of f and T is the x-intercept of g. Calculate MT. (variant 12)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -2/(x-1) + 1, M and T as defined. Find MT. (variant 13)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 2x - 8 and g(x) = -3/(x-1) + 1, calculate the length MT. (variant 14)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 5x + 6 and g(x) = -4/(x-2) + 2, find MT. (variant 15)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -4/(x-3) + 8, M is the positive x-intercept of f and T is the x-intercept of g. Calculate the length of MT. (variant 16)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 6x + 5 and g(x) = -6/(x-2) + 3, M is the positive x-intercept of f and T is the x-intercept of g. Calculate MT. (variant 17)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -2/(x-1) + 1, M and T as defined. Find MT. (variant 18)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 2x - 8 and g(x) = -3/(x-1) + 1, calculate the length MT. (variant 19)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 5x + 6 and g(x) = -4/(x-2) + 2, find MT. (variant 20)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -4/(x-3) + 8, M is the positive x-intercept of f and T is the x-intercept of g. Calculate the length of MT. (variant 21)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 6x + 5 and g(x) = -6/(x-2) + 3, M is the positive x-intercept of f and T is the x-intercept of g. Calculate MT. (variant 22)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -2/(x-1) + 1, M and T as defined. Find MT. (variant 23)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 2x - 8 and g(x) = -3/(x-1) + 1, calculate the length MT. (variant 24)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 5x + 6 and g(x) = -4/(x-2) + 2, find MT. (variant 25)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -4/(x-3) + 8, M is the positive x-intercept of f and T is the x-intercept of g. Calculate the length of MT. (variant 26)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 6x + 5 and g(x) = -6/(x-2) + 3, M is the positive x-intercept of f and T is the x-intercept of g. Calculate MT. (variant 27)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x - 5 and g(x) = -2/(x-1) + 1, M and T as defined. Find MT. (variant 28)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "For f(x) = x^2 - 2x - 8 and g(x) = -3/(x-1) + 1, calculate the length MT. (variant 29)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 5x + 6 and g(x) = -4/(x-2) + 2, find MT. (variant 30)",
+    "expected": "Practice — find both x-intercepts, then the horizontal distance.",
+    "demonstration": "Step 1: Set f(x) = 0 and solve the quadratic to find M. Step 2: Set g(x) = 0 and solve for T. Step 3: MT = |x_M - x_T|.",
+    "memo_marks": [
+      "1 mark for f's x-intercept",
+      "1 mark for g's x-intercept",
+      "1 mark for the distance"
+    ],
+    "fast_path": "Two intercepts, one distance. Horizontal only, so |difference|.",
+    "fatal_error": "DBE says: Candidates find only one intercept, or compute vertical distance instead of horizontal.",
+    "answer_book_layout": [
+      "f(x) = 0 → x = ...",
+      "g(x) = 0 → x = ...",
+      "MT = |x_M - x_T| = ..."
+    ],
+    "hack": "Two equations, two intercepts, one subtraction. Horizontal distance is just |x₁ - x₂|.",
+    "trap": "Both intercepts, then subtract. Don't skip either.",
+    "presentation": "Show both intercept calculations, then the distance.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_intercepts_marked"
+  }
+]

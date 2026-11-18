@@ -1,0 +1,542 @@
+[
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Values of x for f(x) * f''(x) < 0.",
+    "expected": "Interval",
+    "demonstration": "Sign chart.",
+    "memo_marks": [
+      "1 mark roots",
+      "1 mark signs"
+    ],
+    "fast_path": "Use graph.",
+    "fatal_error": "DBE says: Only f(x).",
+    "answer_book_layout": [
+      "f(x) = 0 at A, B, C",
+      "f''(x) = 0 at x=3",
+      "Test intervals",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  }
+]

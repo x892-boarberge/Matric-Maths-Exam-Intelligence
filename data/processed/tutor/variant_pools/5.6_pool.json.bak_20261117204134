@@ -1,0 +1,782 @@
+[
+  {
+    "variant_question": "Given f(x) = x^2 - 6x + 8, determine the equation of the tangent to f at x = 2.",
+    "expected": "y = -2x + 4",
+    "demonstration": "f'(x) = 2x - 6. At x = 2: m = -2. Point: (2, 0). Line: y - 0 = -2(x - 2) → y = -2x + 4 = y = -2x + 4.",
+    "memo_marks": [
+      "1 mark for m = -2 (from f'(2))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = -2x + 4"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 6",
+      "m = f'(2) = -2",
+      "y = f(2) = 0",
+      "y - 0 = -2(x - 2)",
+      "y = -2x + 4"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v01.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 4x + 5, determine the equation of the tangent to f at x = 1.",
+    "expected": "y = 2x + 6",
+    "demonstration": "f'(x) = -2x + 4. At x = 1: m = 2. Point: (1, 8). Line: y - 8 = 2(x - 1) → y = 2x + 6 = y = 2x + 6.",
+    "memo_marks": [
+      "1 mark for m = 2 (from f'(1))",
+      "1 mark for y = 8 (point)",
+      "1 mark for final y = 2x + 6"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 4",
+      "m = f'(1) = 2",
+      "y = f(1) = 8",
+      "y - 8 = 2(x - 1)",
+      "y = 2x + 6"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v02.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x + 3, determine the equation of the tangent to f at x = 5.",
+    "expected": "y = 6x - 22",
+    "demonstration": "f'(x) = 2x - 4. At x = 5: m = 6. Point: (5, 8). Line: y - 8 = 6(x - 5) → y = 6x + (-22) = y = 6x - 22.",
+    "memo_marks": [
+      "1 mark for m = 6 (from f'(5))",
+      "1 mark for y = 8 (point)",
+      "1 mark for final y = 6x - 22"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 4",
+      "m = f'(5) = 6",
+      "y = f(5) = 8",
+      "y - 8 = 6(x - 5)",
+      "y = 6x - 22"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v03.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 2x + 3, determine the equation of the tangent to f at x = -1.",
+    "expected": "y = 4x + 4",
+    "demonstration": "f'(x) = -2x + 2. At x = -1: m = 4. Point: (-1, 0). Line: y - 0 = 4(x + 1) → y = 4x + 4 = y = 4x + 4.",
+    "memo_marks": [
+      "1 mark for m = 4 (from f'(-1))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = 4x + 4"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 2",
+      "m = f'(-1) = 4",
+      "y = f(-1) = 0",
+      "y - 0 = 4(x + 1)",
+      "y = 4x + 4"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v04.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 2x - 8, determine the equation of the tangent to f at x = 4.",
+    "expected": "y = 6x - 24",
+    "demonstration": "f'(x) = 2x - 2. At x = 4: m = 6. Point: (4, 0). Line: y - 0 = 6(x - 4) → y = 6x + (-24) = y = 6x - 24.",
+    "memo_marks": [
+      "1 mark for m = 6 (from f'(4))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = 6x - 24"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 2",
+      "m = f'(4) = 6",
+      "y = f(4) = 0",
+      "y - 0 = 6(x - 4)",
+      "y = 6x - 24"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v05.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 6x - 2, determine the equation of the tangent to f at x = 3.",
+    "expected": "y = 0x + 7",
+    "demonstration": "f'(x) = -2x + 6. At x = 3: m = 0. Point: (3, 7). Line: y - 7 = 0(x - 3) → y = 0x + 7 = y = 0x + 7.",
+    "memo_marks": [
+      "1 mark for m = 0 (from f'(3))",
+      "1 mark for y = 7 (point)",
+      "1 mark for final y = 0x + 7"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 6",
+      "m = f'(3) = 0",
+      "y = f(3) = 7",
+      "y - 7 = 0(x - 3)",
+      "y = 0x + 7"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v06.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 8x + 12, determine the equation of the tangent to f at x = 6.",
+    "expected": "y = 4x - 24",
+    "demonstration": "f'(x) = 2x - 8. At x = 6: m = 4. Point: (6, 0). Line: y - 0 = 4(x - 6) → y = 4x + (-24) = y = 4x - 24.",
+    "memo_marks": [
+      "1 mark for m = 4 (from f'(6))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = 4x - 24"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 8",
+      "m = f'(6) = 4",
+      "y = f(6) = 0",
+      "y - 0 = 4(x - 6)",
+      "y = 4x - 24"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v07.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 0x + 4, determine the equation of the tangent to f at x = 2.",
+    "expected": "y = -4x + 8",
+    "demonstration": "f'(x) = -2x + 0. At x = 2: m = -4. Point: (2, 0). Line: y - 0 = -4(x - 2) → y = -4x + 8 = y = -4x + 8.",
+    "memo_marks": [
+      "1 mark for m = -4 (from f'(2))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = -4x + 8"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 0",
+      "m = f'(2) = -4",
+      "y = f(2) = 0",
+      "y - 0 = -4(x - 2)",
+      "y = -4x + 8"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v08.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 3x + 2, determine the equation of the tangent to f at x = 3.",
+    "expected": "y = 3x - 7",
+    "demonstration": "f'(x) = 2x - 3. At x = 3: m = 3. Point: (3, 2). Line: y - 2 = 3(x - 3) → y = 3x + (-7) = y = 3x - 7.",
+    "memo_marks": [
+      "1 mark for m = 3 (from f'(3))",
+      "1 mark for y = 2 (point)",
+      "1 mark for final y = 3x - 7"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 3",
+      "m = f'(3) = 3",
+      "y = f(3) = 2",
+      "y - 2 = 3(x - 3)",
+      "y = 3x - 7"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v09.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 4x - 1, determine the equation of the tangent to f at x = 2.",
+    "expected": "y = 0x + 3",
+    "demonstration": "f'(x) = -2x + 4. At x = 2: m = 0. Point: (2, 3). Line: y - 3 = 0(x - 2) → y = 0x + 3 = y = 0x + 3.",
+    "memo_marks": [
+      "1 mark for m = 0 (from f'(2))",
+      "1 mark for y = 3 (point)",
+      "1 mark for final y = 0x + 3"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 4",
+      "m = f'(2) = 0",
+      "y = f(2) = 3",
+      "y - 3 = 0(x - 2)",
+      "y = 0x + 3"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v10.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 10x + 16, determine the equation of the tangent to f at x = 4.",
+    "expected": "y = -2x + 0",
+    "demonstration": "f'(x) = 2x - 10. At x = 4: m = -2. Point: (4, -8). Line: y + 8 = -2(x - 4) → y = -2x + 0 = y = -2x + 0.",
+    "memo_marks": [
+      "1 mark for m = -2 (from f'(4))",
+      "1 mark for y = -8 (point)",
+      "1 mark for final y = -2x + 0"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 10",
+      "m = f'(4) = -2",
+      "y = f(4) = -8",
+      "y + 8 = -2(x - 4)",
+      "y = -2x + 0"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v11.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 8x + 0, determine the equation of the tangent to f at x = 3.",
+    "expected": "y = 2x + 9",
+    "demonstration": "f'(x) = -2x + 8. At x = 3: m = 2. Point: (3, 15). Line: y - 15 = 2(x - 3) → y = 2x + 9 = y = 2x + 9.",
+    "memo_marks": [
+      "1 mark for m = 2 (from f'(3))",
+      "1 mark for y = 15 (point)",
+      "1 mark for final y = 2x + 9"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 8",
+      "m = f'(3) = 2",
+      "y = f(3) = 15",
+      "y - 15 = 2(x - 3)",
+      "y = 2x + 9"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v12.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x + 4, determine the equation of the tangent to f at x = 2.",
+    "expected": "y = 0x + 0",
+    "demonstration": "f'(x) = 2x - 4. At x = 2: m = 0. Point: (2, 0). Line: y - 0 = 0(x - 2) → y = 0x + 0 = y = 0x + 0.",
+    "memo_marks": [
+      "1 mark for m = 0 (from f'(2))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = 0x + 0"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 4",
+      "m = f'(2) = 0",
+      "y = f(2) = 0",
+      "y - 0 = 0(x - 2)",
+      "y = 0x + 0"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v13.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 2x - 3, determine the equation of the tangent to f at x = 1.",
+    "expected": "y = 0x - 2",
+    "demonstration": "f'(x) = -2x + 2. At x = 1: m = 0. Point: (1, -2). Line: y + 2 = 0(x - 1) → y = 0x + (-2) = y = 0x - 2.",
+    "memo_marks": [
+      "1 mark for m = 0 (from f'(1))",
+      "1 mark for y = -2 (point)",
+      "1 mark for final y = 0x - 2"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 2",
+      "m = f'(1) = 0",
+      "y = f(1) = -2",
+      "y + 2 = 0(x - 1)",
+      "y = 0x - 2"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v14.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 6x + 9, determine the equation of the tangent to f at x = 3.",
+    "expected": "y = 0x + 0",
+    "demonstration": "f'(x) = 2x - 6. At x = 3: m = 0. Point: (3, 0). Line: y - 0 = 0(x - 3) → y = 0x + 0 = y = 0x + 0.",
+    "memo_marks": [
+      "1 mark for m = 0 (from f'(3))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = 0x + 0"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 6",
+      "m = f'(3) = 0",
+      "y = f(3) = 0",
+      "y - 0 = 0(x - 3)",
+      "y = 0x + 0"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v15.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 6x - 5, determine the equation of the tangent to f at x = 2.",
+    "expected": "y = 2x - 1",
+    "demonstration": "f'(x) = -2x + 6. At x = 2: m = 2. Point: (2, 3). Line: y - 3 = 2(x - 2) → y = 2x + (-1) = y = 2x - 1.",
+    "memo_marks": [
+      "1 mark for m = 2 (from f'(2))",
+      "1 mark for y = 3 (point)",
+      "1 mark for final y = 2x - 1"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 6",
+      "m = f'(2) = 2",
+      "y = f(2) = 3",
+      "y - 3 = 2(x - 2)",
+      "y = 2x - 1"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v16.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 2x - 3, determine the equation of the tangent to f at x = 1.",
+    "expected": "y = 0x - 4",
+    "demonstration": "f'(x) = 2x - 2. At x = 1: m = 0. Point: (1, -4). Line: y + 4 = 0(x - 1) → y = 0x + (-4) = y = 0x - 4.",
+    "memo_marks": [
+      "1 mark for m = 0 (from f'(1))",
+      "1 mark for y = -4 (point)",
+      "1 mark for final y = 0x - 4"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 2",
+      "m = f'(1) = 0",
+      "y = f(1) = -4",
+      "y + 4 = 0(x - 1)",
+      "y = 0x - 4"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v17.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 0x + 5, determine the equation of the tangent to f at x = 1.",
+    "expected": "y = -2x + 6",
+    "demonstration": "f'(x) = -2x + 0. At x = 1: m = -2. Point: (1, 4). Line: y - 4 = -2(x - 1) → y = -2x + 6 = y = -2x + 6.",
+    "memo_marks": [
+      "1 mark for m = -2 (from f'(1))",
+      "1 mark for y = 4 (point)",
+      "1 mark for final y = -2x + 6"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 0",
+      "m = f'(1) = -2",
+      "y = f(1) = 4",
+      "y - 4 = -2(x - 1)",
+      "y = -2x + 6"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v18.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 8x + 15, determine the equation of the tangent to f at x = 5.",
+    "expected": "y = 2x - 10",
+    "demonstration": "f'(x) = 2x - 8. At x = 5: m = 2. Point: (5, 0). Line: y - 0 = 2(x - 5) → y = 2x + (-10) = y = 2x - 10.",
+    "memo_marks": [
+      "1 mark for m = 2 (from f'(5))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = 2x - 10"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 8",
+      "m = f'(5) = 2",
+      "y = f(5) = 0",
+      "y - 0 = 2(x - 5)",
+      "y = 2x - 10"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v19.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 10x - 9, determine the equation of the tangent to f at x = 5.",
+    "expected": "y = 0x + 16",
+    "demonstration": "f'(x) = -2x + 10. At x = 5: m = 0. Point: (5, 16). Line: y - 16 = 0(x - 5) → y = 0x + 16 = y = 0x + 16.",
+    "memo_marks": [
+      "1 mark for m = 0 (from f'(5))",
+      "1 mark for y = 16 (point)",
+      "1 mark for final y = 0x + 16"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 10",
+      "m = f'(5) = 0",
+      "y = f(5) = 16",
+      "y - 16 = 0(x - 5)",
+      "y = 0x + 16"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v20.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 6x + 8, determine the equation of the tangent to f at x = 2.",
+    "expected": "y = -2x + 4",
+    "demonstration": "f'(x) = 2x - 6. At x = 2: m = -2. Point: (2, 0). Line: y - 0 = -2(x - 2) → y = -2x + 4 = y = -2x + 4.",
+    "memo_marks": [
+      "1 mark for m = -2 (from f'(2))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = -2x + 4"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 6",
+      "m = f'(2) = -2",
+      "y = f(2) = 0",
+      "y - 0 = -2(x - 2)",
+      "y = -2x + 4"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v21.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 4x + 5, determine the equation of the tangent to f at x = 1.",
+    "expected": "y = 2x + 6",
+    "demonstration": "f'(x) = -2x + 4. At x = 1: m = 2. Point: (1, 8). Line: y - 8 = 2(x - 1) → y = 2x + 6 = y = 2x + 6.",
+    "memo_marks": [
+      "1 mark for m = 2 (from f'(1))",
+      "1 mark for y = 8 (point)",
+      "1 mark for final y = 2x + 6"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 4",
+      "m = f'(1) = 2",
+      "y = f(1) = 8",
+      "y - 8 = 2(x - 1)",
+      "y = 2x + 6"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v22.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 4x + 3, determine the equation of the tangent to f at x = 5.",
+    "expected": "y = 6x - 22",
+    "demonstration": "f'(x) = 2x - 4. At x = 5: m = 6. Point: (5, 8). Line: y - 8 = 6(x - 5) → y = 6x + (-22) = y = 6x - 22.",
+    "memo_marks": [
+      "1 mark for m = 6 (from f'(5))",
+      "1 mark for y = 8 (point)",
+      "1 mark for final y = 6x - 22"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 4",
+      "m = f'(5) = 6",
+      "y = f(5) = 8",
+      "y - 8 = 6(x - 5)",
+      "y = 6x - 22"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v23.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 2x + 3, determine the equation of the tangent to f at x = -1.",
+    "expected": "y = 4x + 4",
+    "demonstration": "f'(x) = -2x + 2. At x = -1: m = 4. Point: (-1, 0). Line: y - 0 = 4(x + 1) → y = 4x + 4 = y = 4x + 4.",
+    "memo_marks": [
+      "1 mark for m = 4 (from f'(-1))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = 4x + 4"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 2",
+      "m = f'(-1) = 4",
+      "y = f(-1) = 0",
+      "y - 0 = 4(x + 1)",
+      "y = 4x + 4"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v24.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 2x - 8, determine the equation of the tangent to f at x = 4.",
+    "expected": "y = 6x - 24",
+    "demonstration": "f'(x) = 2x - 2. At x = 4: m = 6. Point: (4, 0). Line: y - 0 = 6(x - 4) → y = 6x + (-24) = y = 6x - 24.",
+    "memo_marks": [
+      "1 mark for m = 6 (from f'(4))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = 6x - 24"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 2",
+      "m = f'(4) = 6",
+      "y = f(4) = 0",
+      "y - 0 = 6(x - 4)",
+      "y = 6x - 24"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v25.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 6x - 2, determine the equation of the tangent to f at x = 3.",
+    "expected": "y = 0x + 7",
+    "demonstration": "f'(x) = -2x + 6. At x = 3: m = 0. Point: (3, 7). Line: y - 7 = 0(x - 3) → y = 0x + 7 = y = 0x + 7.",
+    "memo_marks": [
+      "1 mark for m = 0 (from f'(3))",
+      "1 mark for y = 7 (point)",
+      "1 mark for final y = 0x + 7"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 6",
+      "m = f'(3) = 0",
+      "y = f(3) = 7",
+      "y - 7 = 0(x - 3)",
+      "y = 0x + 7"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v26.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 8x + 12, determine the equation of the tangent to f at x = 6.",
+    "expected": "y = 4x - 24",
+    "demonstration": "f'(x) = 2x - 8. At x = 6: m = 4. Point: (6, 0). Line: y - 0 = 4(x - 6) → y = 4x + (-24) = y = 4x - 24.",
+    "memo_marks": [
+      "1 mark for m = 4 (from f'(6))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = 4x - 24"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 8",
+      "m = f'(6) = 4",
+      "y = f(6) = 0",
+      "y - 0 = 4(x - 6)",
+      "y = 4x - 24"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v27.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 0x + 4, determine the equation of the tangent to f at x = 2.",
+    "expected": "y = -4x + 8",
+    "demonstration": "f'(x) = -2x + 0. At x = 2: m = -4. Point: (2, 0). Line: y - 0 = -4(x - 2) → y = -4x + 8 = y = -4x + 8.",
+    "memo_marks": [
+      "1 mark for m = -4 (from f'(2))",
+      "1 mark for y = 0 (point)",
+      "1 mark for final y = -4x + 8"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 0",
+      "m = f'(2) = -4",
+      "y = f(2) = 0",
+      "y - 0 = -4(x - 2)",
+      "y = -4x + 8"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v28.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = x^2 - 3x + 2, determine the equation of the tangent to f at x = 3.",
+    "expected": "y = 3x - 7",
+    "demonstration": "f'(x) = 2x - 3. At x = 3: m = 3. Point: (3, 2). Line: y - 2 = 3(x - 3) → y = 3x + (-7) = y = 3x - 7.",
+    "memo_marks": [
+      "1 mark for m = 3 (from f'(3))",
+      "1 mark for y = 2 (point)",
+      "1 mark for final y = 3x - 7"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = 2x - 3",
+      "m = f'(3) = 3",
+      "y = f(3) = 2",
+      "y - 2 = 3(x - 3)",
+      "y = 3x - 7"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v29.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Given f(x) = -x^2 + 4x - 1, determine the equation of the tangent to f at x = 2.",
+    "expected": "y = 0x + 3",
+    "demonstration": "f'(x) = -2x + 4. At x = 2: m = 0. Point: (2, 3). Line: y - 3 = 0(x - 2) → y = 0x + 3 = y = 0x + 3.",
+    "memo_marks": [
+      "1 mark for m = 0 (from f'(2))",
+      "1 mark for y = 3 (point)",
+      "1 mark for final y = 0x + 3"
+    ],
+    "fast_path": "Derivative gives slope. Substitute x0 into f for the point. Point-slope form.",
+    "fatal_error": "DBE says: Candidates use f(x0) as the slope, or f'(x0) as the y-value. Derivative is slope; function is the point.",
+    "answer_book_layout": [
+      "f'(x) = -2x + 4",
+      "m = f'(2) = 0",
+      "y = f(2) = 3",
+      "y - 3 = 0(x - 2)",
+      "y = 0x + 3"
+    ],
+    "hack": "Derivative → slope. Function → point. Two different numbers from the same x.",
+    "trap": "f'(x0) is the slope, f(x0) is the y-coordinate. Don't mix them up.",
+    "presentation": "Show f'(x), substitute x0 for slope, substitute x0 for y, then point-slope form.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_tangent_line",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\5.6\\v30.png",
+    "diagram_status": "rendered"
+  }
+]

@@ -24,6 +24,12 @@
         "Exchange: 8 × 8 × 10",
         "Number: 2 × 10 × 10 × 10",
         "Total = 8×10×10 × 8×8×10 × 2×10×10×10 = 1024×10^9."
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "probability.counting"
       ]
     },
     {
@@ -35,6 +41,13 @@
       "expected_fn": "= 0.1024 = 10.24%",
       "steps": [
         "P = 1.024×10^12 / 10^10 = 0.1024."
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1"
+      ],
+      "requires_skills": [
+        "probability.counting"
       ]
     }
   ],

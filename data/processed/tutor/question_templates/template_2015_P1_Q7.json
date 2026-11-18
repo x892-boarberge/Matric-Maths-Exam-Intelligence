@@ -23,6 +23,12 @@
         "243736.90 = 450000(1-i)^4.",
         "(1-i)^4 = 0.5416.",
         "i ≈ 0.1421."
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "finance.compound"
       ]
     },
     {
@@ -34,6 +40,14 @@
       "expected_fn": "R614 490.66",
       "steps": [
         "A = 450000(1.081)^4."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2"
+      ],
+      "requires_skills": [
+        "finance.compound",
+        "finance.depreciation"
       ]
     },
     {
@@ -47,6 +61,15 @@
         "F = A - old book value = 370753.76.",
         "370753.76 = x[(1 + 0.062/12)^36 - 1]/(0.062/12).",
         "Solve for x."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2",
+        "7.3"
+      ],
+      "requires_skills": [
+        "finance.compound",
+        "finance.depreciation"
       ]
     }
   ],

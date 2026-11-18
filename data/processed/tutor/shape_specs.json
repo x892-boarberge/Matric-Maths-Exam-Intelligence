@@ -1,0 +1,31 @@
+{
+  "surd_equation_s1": {
+    "template_id": "surd_equation_s1",
+    "skill_ids": [
+      "algebra.surd.solve"
+    ],
+    "question_form": "sqrt(ax + b) = x + d",
+    "asked_for": "Solve for x",
+    "answer_form": "single integer root; the other root is extraneous",
+    "command_verb": "Solve",
+    "constraints": {
+      "a_positive": true,
+      "r_plus_d_nonnegative": true,
+      "s_plus_d_negative": true,
+      "r_not_equal_s": true
+    },
+    "dbe_error_patterns": [
+      "did not isolate the surd before squaring",
+      "omitted the middle term when squaring the binomial",
+      "did not reject the extraneous root"
+    ],
+    "steps": [
+      "Isolate the surd",
+      "Square both sides",
+      "Standard form",
+      "Factorise",
+      "Reject the extraneous root"
+    ],
+    "variants": 30
+  }
+}

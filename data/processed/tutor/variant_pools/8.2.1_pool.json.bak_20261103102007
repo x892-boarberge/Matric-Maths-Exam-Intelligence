@@ -1,0 +1,482 @@
+[
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^3 + 2x.",
+    "expected": "g'(x) = 12x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 12x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 12x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 3x^2 + 2x.",
+    "expected": "g'(x) = 6x^1 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 6x^1 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 6x^1 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^4 + 2x.",
+    "expected": "g'(x) = 16x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 16x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 16x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 3x^3 + 2x.",
+    "expected": "g'(x) = 9x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 9x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 9x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^4 + 2x.",
+    "expected": "g'(x) = 16x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 16x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 16x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^4 + 2x.",
+    "expected": "g'(x) = 8x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^3 + 2x.",
+    "expected": "g'(x) = 12x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 12x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 12x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^4 + 2x.",
+    "expected": "g'(x) = 8x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^4 + 2x.",
+    "expected": "g'(x) = 16x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 16x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 16x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^3 + 2x.",
+    "expected": "g'(x) = 12x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 12x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 12x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^3 + 2x.",
+    "expected": "g'(x) = 6x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 6x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 6x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^4 + 2x.",
+    "expected": "g'(x) = 8x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 3x^3 + 2x.",
+    "expected": "g'(x) = 9x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 9x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 9x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^3 + 2x.",
+    "expected": "g'(x) = 12x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 12x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 12x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^3 + 2x.",
+    "expected": "g'(x) = 12x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 12x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 12x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 3x^3 + 2x.",
+    "expected": "g'(x) = 9x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 9x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 9x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^4 + 2x.",
+    "expected": "g'(x) = 8x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^4 + 2x.",
+    "expected": "g'(x) = 8x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 3x^3 + 2x.",
+    "expected": "g'(x) = 9x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 9x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 9x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^2 + 2x.",
+    "expected": "g'(x) = 4x^1 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 4x^1 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 4x^1 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 3x^3 + 2x.",
+    "expected": "g'(x) = 9x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 9x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 9x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^4 + 2x.",
+    "expected": "g'(x) = 8x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^2 + 2x.",
+    "expected": "g'(x) = 8x^1 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^1 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^1 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^2 + 2x.",
+    "expected": "g'(x) = 8x^1 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^1 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^1 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^3 + 2x.",
+    "expected": "g'(x) = 12x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 12x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 12x^2 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^4 + 2x.",
+    "expected": "g'(x) = 8x^3 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^3 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^3 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 3x^2 + 2x.",
+    "expected": "g'(x) = 6x^1 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 6x^1 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 6x^1 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 2x^2 + 2x.",
+    "expected": "g'(x) = 4x^1 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 4x^1 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 4x^1 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 4x^2 + 2x.",
+    "expected": "g'(x) = 8x^1 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 8x^1 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 8x^1 + 2"
+    ]
+  },
+  {
+    "variant_question": "Determine g'(x) if g(x) = 3x^3 + 2x.",
+    "expected": "g'(x) = 9x^2 + 2",
+    "demonstration": "Power rule.",
+    "memo_marks": [
+      "1 mark rule",
+      "1 mark ans"
+    ],
+    "fast_path": "Bring down power.",
+    "fatal_error": "DBE says: Integrate.",
+    "answer_book_layout": [
+      "g'(x) = 9x^2 + 2",
+      "_________________________",
+      "Final Answer: g'(x) = 9x^2 + 2"
+    ]
+  }
+]

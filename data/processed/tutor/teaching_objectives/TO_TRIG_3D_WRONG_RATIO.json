@@ -1,0 +1,37 @@
+{
+  "objective_id": "TO_TRIG_3D_WRONG_RATIO",
+  "skill_id": "trig.3d.length",
+  "trigger_misconception": "M_3D_WRONG_RATIO",
+  "dbe_source": {
+    "years": [
+      "2018",
+      "2020",
+      "2021",
+      "2024"
+    ],
+    "recommendation": "Choose the ratio by the sides you know and the side you want. sin = O/H, cos = A/H, tan = O/A. Label the sides first with reference to the given angle.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "Choose the ratio by the sides you know and the side you want. sin = O/H, cos = A/H, tan = O/A. Label the sides first with reference to the given angle.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "Right triangle, angle 46.85, adjacent side 16, find the opposite side.",
+      "work": [
+        "Angle is 46.85, adjacent is 16, opposite is AC.",
+        "tan = opposite / adjacent.",
+        "tan 46.85 = AC / 16."
+      ]
+    },
+    "probe": {
+      "problem": "Right triangle, angle 30, hypotenuse 10, find the opposite side.",
+      "expected": "sin 30 = opposite / 10",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_3D_WRONG_RATIO",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You used the wrong trigonometric ratio. Look at which side is opposite the angle and which is adjacent — that decides between sin, cos, and tan."
+}

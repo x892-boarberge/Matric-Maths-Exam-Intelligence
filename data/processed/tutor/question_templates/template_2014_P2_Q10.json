@@ -32,6 +32,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -48,6 +54,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -64,6 +77,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.1.3"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -80,6 +101,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.1.3",
+        "10.1.4"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -101,6 +131,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.1.3",
+        "10.1.4",
+        "10.1.5"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -132,6 +172,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.1.3",
+        "10.1.4",
+        "10.1.5",
+        "10.2"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.proportion"
       ]
     },
     {
@@ -158,6 +210,19 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.1.3",
+        "10.1.4",
+        "10.1.5",
+        "10.2",
+        "10.3"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.proportion"
       ]
     },
     {
@@ -184,6 +249,20 @@
           "r": "third angle of triangle",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.1.3",
+        "10.1.4",
+        "10.1.5",
+        "10.2",
+        "10.3",
+        "10.4"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.proportion"
       ]
     },
     {
@@ -210,6 +289,22 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.1.3",
+        "10.1.4",
+        "10.1.5",
+        "10.2",
+        "10.3",
+        "10.4",
+        "10.5"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.proportion",
+        "geometry.similarity"
       ]
     }
   ],

@@ -136,6 +136,12 @@
           "r": "angle at centre = 2 x angle at circumference",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "9.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -157,6 +163,13 @@
           "r": "sum of angles in triangle",
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "9.1",
+        "9.2.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     }
   ],

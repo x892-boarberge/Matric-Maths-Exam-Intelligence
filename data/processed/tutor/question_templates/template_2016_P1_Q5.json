@@ -41,6 +41,12 @@
       "expected_fn": "y <= 1",
       "steps": [
         "Downward parabola, max at B."
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "functions.parabola"
       ]
     },
     {
@@ -59,6 +65,13 @@
       "steps": [
         "Read off the graph.",
         "g is above x-axis for x >= -1 except at x = 2."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2"
+      ],
+      "requires_skills": [
+        "functions.parabola"
       ]
     },
     {
@@ -77,6 +90,15 @@
       "steps": [
         "Vertical asymptote of g is x = 2.",
         "h(x) = g(x+4) shifts left 4 → asymptote at x = -2."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "functions.parabola",
+        "functions.inequality"
       ]
     },
     {
@@ -99,6 +121,17 @@
         "Asymptotes meet at B(2; 1).",
         "Vertical: x = p → p = 2.",
         "Horizontal: y = -t → -t = 1 → t = -1."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "requires_skills": [
+        "functions.parabola",
+        "functions.inequality",
+        "functions.transformation"
       ]
     },
     {
@@ -119,6 +152,19 @@
         "f(x) * g'(x) >= 0 → f(x) <= 0.",
         "f(x) <= 0 for x <= 1 or x >= 3.",
         "Exclude x = 2."
+      ],
+      "given_from": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5"
+      ],
+      "requires_skills": [
+        "functions.parabola",
+        "functions.inequality",
+        "functions.transformation",
+        "functions.hyperbola"
       ]
     }
   ],

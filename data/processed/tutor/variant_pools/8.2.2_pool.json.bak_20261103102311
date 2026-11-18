@@ -1,0 +1,692 @@
+[
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x - 2x^-3",
+    "demonstration": "Split first: y = 2x^4/x^2 + 1/x^2 = 2x^2 + 1x^-2.\nDifferentiate term by term:\n  d/dx(2x^2) = 4x^1 if d_coef1 else 0\n  d/dx(+ 1x^-2) = -2x^-3\nAnswer: dy/dx = 4x - 2x^-3.",
+    "memo_marks": [
+      "1 mark for split to 2x^2",
+      "1 mark for split to + 1x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (2x^4 + 1)/x^2",
+      "y = 2x^2 + 1x^-2",
+      "dy/dx = 4x - 2x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^5 + 4)/x^2.",
+    "expected": "dy/dx = 9x^2 - 8x^-3",
+    "demonstration": "Split first: y = 3x^5/x^2 + 4/x^2 = 3x^3 + 4x^-2.\nDifferentiate term by term:\n  d/dx(3x^3) = 9x^2 if d_coef1 else 0\n  d/dx(+ 4x^-2) = -8x^-3\nAnswer: dy/dx = 9x^2 - 8x^-3.",
+    "memo_marks": [
+      "1 mark for split to 3x^3",
+      "1 mark for split to + 4x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (3x^5 + 4)/x^2",
+      "y = 3x^3 + 4x^-2",
+      "dy/dx = 9x^2 - 8x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (5x^6 + 3)/x^2.",
+    "expected": "dy/dx = 20x^3 - 6x^-3",
+    "demonstration": "Split first: y = 5x^6/x^2 + 3/x^2 = 5x^4 + 3x^-2.\nDifferentiate term by term:\n  d/dx(5x^4) = 20x^3 if d_coef1 else 0\n  d/dx(+ 3x^-2) = -6x^-3\nAnswer: dy/dx = 20x^3 - 6x^-3.",
+    "memo_marks": [
+      "1 mark for split to 5x^4",
+      "1 mark for split to + 3x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (5x^6 + 3)/x^2",
+      "y = 5x^4 + 3x^-2",
+      "dy/dx = 20x^3 - 6x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (1x^3 + 5)/x^1.",
+    "expected": "dy/dx = 2x - 5x^-2",
+    "demonstration": "Split first: y = 1x^3/x^1 + 5/x^1 = 1x^2 + 5x^-1.\nDifferentiate term by term:\n  d/dx(1x^2) = 2x^1 if d_coef1 else 0\n  d/dx(+ 5x^-1) = -5x^-2\nAnswer: dy/dx = 2x - 5x^-2.",
+    "memo_marks": [
+      "1 mark for split to 1x^2",
+      "1 mark for split to + 5x^-1",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (1x^3 + 5)/x^1",
+      "y = 1x^2 + 5x^-1",
+      "dy/dx = 2x - 5x^-2"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (4x^5 + 2)/x^2.",
+    "expected": "dy/dx = 12x^2 - 4x^-3",
+    "demonstration": "Split first: y = 4x^5/x^2 + 2/x^2 = 4x^3 + 2x^-2.\nDifferentiate term by term:\n  d/dx(4x^3) = 12x^2 if d_coef1 else 0\n  d/dx(+ 2x^-2) = -4x^-3\nAnswer: dy/dx = 12x^2 - 4x^-3.",
+    "memo_marks": [
+      "1 mark for split to 4x^3",
+      "1 mark for split to + 2x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (4x^5 + 2)/x^2",
+      "y = 4x^3 + 2x^-2",
+      "dy/dx = 12x^2 - 4x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^6 + 3)/x^3.",
+    "expected": "dy/dx = 6x^2 - 9x^-4",
+    "demonstration": "Split first: y = 2x^6/x^3 + 3/x^3 = 2x^3 + 3x^-3.\nDifferentiate term by term:\n  d/dx(2x^3) = 6x^2 if d_coef1 else 0\n  d/dx(+ 3x^-3) = -9x^-4\nAnswer: dy/dx = 6x^2 - 9x^-4.",
+    "memo_marks": [
+      "1 mark for split to 2x^3",
+      "1 mark for split to + 3x^-3",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (2x^6 + 3)/x^3",
+      "y = 2x^3 + 3x^-3",
+      "dy/dx = 6x^2 - 9x^-4"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (6x^4 + 1)/x^2.",
+    "expected": "dy/dx = 12x - 2x^-3",
+    "demonstration": "Split first: y = 6x^4/x^2 + 1/x^2 = 6x^2 + 1x^-2.\nDifferentiate term by term:\n  d/dx(6x^2) = 12x^1 if d_coef1 else 0\n  d/dx(+ 1x^-2) = -2x^-3\nAnswer: dy/dx = 12x - 2x^-3.",
+    "memo_marks": [
+      "1 mark for split to 6x^2",
+      "1 mark for split to + 1x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (6x^4 + 1)/x^2",
+      "y = 6x^2 + 1x^-2",
+      "dy/dx = 12x - 2x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^7 + 2)/x^2.",
+    "expected": "dy/dx = 15x^4 - 4x^-3",
+    "demonstration": "Split first: y = 3x^7/x^2 + 2/x^2 = 3x^5 + 2x^-2.\nDifferentiate term by term:\n  d/dx(3x^5) = 15x^4 if d_coef1 else 0\n  d/dx(+ 2x^-2) = -4x^-3\nAnswer: dy/dx = 15x^4 - 4x^-3.",
+    "memo_marks": [
+      "1 mark for split to 3x^5",
+      "1 mark for split to + 2x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (3x^7 + 2)/x^2",
+      "y = 3x^5 + 2x^-2",
+      "dy/dx = 15x^4 - 4x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^5 + 5)/x^2.",
+    "expected": "dy/dx = 6x^2 - 10x^-3",
+    "demonstration": "Split first: y = 2x^5/x^2 + 5/x^2 = 2x^3 + 5x^-2.\nDifferentiate term by term:\n  d/dx(2x^3) = 6x^2 if d_coef1 else 0\n  d/dx(+ 5x^-2) = -10x^-3\nAnswer: dy/dx = 6x^2 - 10x^-3.",
+    "memo_marks": [
+      "1 mark for split to 2x^3",
+      "1 mark for split to + 5x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (2x^5 + 5)/x^2",
+      "y = 2x^3 + 5x^-2",
+      "dy/dx = 6x^2 - 10x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (7x^4 + 3)/x^2.",
+    "expected": "dy/dx = 14x - 6x^-3",
+    "demonstration": "Split first: y = 7x^4/x^2 + 3/x^2 = 7x^2 + 3x^-2.\nDifferentiate term by term:\n  d/dx(7x^2) = 14x^1 if d_coef1 else 0\n  d/dx(+ 3x^-2) = -6x^-3\nAnswer: dy/dx = 14x - 6x^-3.",
+    "memo_marks": [
+      "1 mark for split to 7x^2",
+      "1 mark for split to + 3x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (7x^4 + 3)/x^2",
+      "y = 7x^2 + 3x^-2",
+      "dy/dx = 14x - 6x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (5x^6 + 7)/x^3.",
+    "expected": "dy/dx = 15x^2 - 21x^-4",
+    "demonstration": "Split first: y = 5x^6/x^3 + 7/x^3 = 5x^3 + 7x^-3.\nDifferentiate term by term:\n  d/dx(5x^3) = 15x^2 if d_coef1 else 0\n  d/dx(+ 7x^-3) = -21x^-4\nAnswer: dy/dx = 15x^2 - 21x^-4.",
+    "memo_marks": [
+      "1 mark for split to 5x^3",
+      "1 mark for split to + 7x^-3",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (5x^6 + 7)/x^3",
+      "y = 5x^3 + 7x^-3",
+      "dy/dx = 15x^2 - 21x^-4"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (4x^7 + 1)/x^2.",
+    "expected": "dy/dx = 20x^4 - 2x^-3",
+    "demonstration": "Split first: y = 4x^7/x^2 + 1/x^2 = 4x^5 + 1x^-2.\nDifferentiate term by term:\n  d/dx(4x^5) = 20x^4 if d_coef1 else 0\n  d/dx(+ 1x^-2) = -2x^-3\nAnswer: dy/dx = 20x^4 - 2x^-3.",
+    "memo_marks": [
+      "1 mark for split to 4x^5",
+      "1 mark for split to + 1x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (4x^7 + 1)/x^2",
+      "y = 4x^5 + 1x^-2",
+      "dy/dx = 20x^4 - 2x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 3)/x^1.",
+    "expected": "dy/dx = 6x^2 - 3x^-2",
+    "demonstration": "Split first: y = 2x^4/x^1 + 3/x^1 = 2x^3 + 3x^-1.\nDifferentiate term by term:\n  d/dx(2x^3) = 6x^2 if d_coef1 else 0\n  d/dx(+ 3x^-1) = -3x^-2\nAnswer: dy/dx = 6x^2 - 3x^-2.",
+    "memo_marks": [
+      "1 mark for split to 2x^3",
+      "1 mark for split to + 3x^-1",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (2x^4 + 3)/x^1",
+      "y = 2x^3 + 3x^-1",
+      "dy/dx = 6x^2 - 3x^-2"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^6 + 5)/x^3.",
+    "expected": "dy/dx = 9x^2 - 15x^-4",
+    "demonstration": "Split first: y = 3x^6/x^3 + 5/x^3 = 3x^3 + 5x^-3.\nDifferentiate term by term:\n  d/dx(3x^3) = 9x^2 if d_coef1 else 0\n  d/dx(+ 5x^-3) = -15x^-4\nAnswer: dy/dx = 9x^2 - 15x^-4.",
+    "memo_marks": [
+      "1 mark for split to 3x^3",
+      "1 mark for split to + 5x^-3",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (3x^6 + 5)/x^3",
+      "y = 3x^3 + 5x^-3",
+      "dy/dx = 9x^2 - 15x^-4"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (6x^5 + 4)/x^2.",
+    "expected": "dy/dx = 18x^2 - 8x^-3",
+    "demonstration": "Split first: y = 6x^5/x^2 + 4/x^2 = 6x^3 + 4x^-2.\nDifferentiate term by term:\n  d/dx(6x^3) = 18x^2 if d_coef1 else 0\n  d/dx(+ 4x^-2) = -8x^-3\nAnswer: dy/dx = 18x^2 - 8x^-3.",
+    "memo_marks": [
+      "1 mark for split to 6x^3",
+      "1 mark for split to + 4x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (6x^5 + 4)/x^2",
+      "y = 6x^3 + 4x^-2",
+      "dy/dx = 18x^2 - 8x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (8x^4 + 2)/x^2.",
+    "expected": "dy/dx = 16x - 4x^-3",
+    "demonstration": "Split first: y = 8x^4/x^2 + 2/x^2 = 8x^2 + 2x^-2.\nDifferentiate term by term:\n  d/dx(8x^2) = 16x^1 if d_coef1 else 0\n  d/dx(+ 2x^-2) = -4x^-3\nAnswer: dy/dx = 16x - 4x^-3.",
+    "memo_marks": [
+      "1 mark for split to 8x^2",
+      "1 mark for split to + 2x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (8x^4 + 2)/x^2",
+      "y = 8x^2 + 2x^-2",
+      "dy/dx = 16x - 4x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (5x^3 + 7)/x^2.",
+    "expected": "dy/dx = 5 - 14x^-3",
+    "demonstration": "Split first: y = 5x^3/x^2 + 7/x^2 = 5x^1 + 7x^-2.\nDifferentiate term by term:\n  d/dx(5x^1) = 5x^0 if d_coef1 else 0\n  d/dx(+ 7x^-2) = -14x^-3\nAnswer: dy/dx = 5 - 14x^-3.",
+    "memo_marks": [
+      "1 mark for split to 5x^1",
+      "1 mark for split to + 7x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (5x^3 + 7)/x^2",
+      "y = 5x^1 + 7x^-2",
+      "dy/dx = 5 - 14x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^7 + 3)/x^2.",
+    "expected": "dy/dx = 10x^4 - 6x^-3",
+    "demonstration": "Split first: y = 2x^7/x^2 + 3/x^2 = 2x^5 + 3x^-2.\nDifferentiate term by term:\n  d/dx(2x^5) = 10x^4 if d_coef1 else 0\n  d/dx(+ 3x^-2) = -6x^-3\nAnswer: dy/dx = 10x^4 - 6x^-3.",
+    "memo_marks": [
+      "1 mark for split to 2x^5",
+      "1 mark for split to + 3x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (2x^7 + 3)/x^2",
+      "y = 2x^5 + 3x^-2",
+      "dy/dx = 10x^4 - 6x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (4x^6 + 1)/x^2.",
+    "expected": "dy/dx = 16x^3 - 2x^-3",
+    "demonstration": "Split first: y = 4x^6/x^2 + 1/x^2 = 4x^4 + 1x^-2.\nDifferentiate term by term:\n  d/dx(4x^4) = 16x^3 if d_coef1 else 0\n  d/dx(+ 1x^-2) = -2x^-3\nAnswer: dy/dx = 16x^3 - 2x^-3.",
+    "memo_marks": [
+      "1 mark for split to 4x^4",
+      "1 mark for split to + 1x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (4x^6 + 1)/x^2",
+      "y = 4x^4 + 1x^-2",
+      "dy/dx = 16x^3 - 2x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 6)/x^2.",
+    "expected": "dy/dx = 6x - 12x^-3",
+    "demonstration": "Split first: y = 3x^4/x^2 + 6/x^2 = 3x^2 + 6x^-2.\nDifferentiate term by term:\n  d/dx(3x^2) = 6x^1 if d_coef1 else 0\n  d/dx(+ 6x^-2) = -12x^-3\nAnswer: dy/dx = 6x - 12x^-3.",
+    "memo_marks": [
+      "1 mark for split to 3x^2",
+      "1 mark for split to + 6x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (3x^4 + 6)/x^2",
+      "y = 3x^2 + 6x^-2",
+      "dy/dx = 6x - 12x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^5 + 7)/x^3.",
+    "expected": "dy/dx = 4x - 21x^-4",
+    "demonstration": "Split first: y = 2x^5/x^3 + 7/x^3 = 2x^2 + 7x^-3.\nDifferentiate term by term:\n  d/dx(2x^2) = 4x^1 if d_coef1 else 0\n  d/dx(+ 7x^-3) = -21x^-4\nAnswer: dy/dx = 4x - 21x^-4.",
+    "memo_marks": [
+      "1 mark for split to 2x^2",
+      "1 mark for split to + 7x^-3",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (2x^5 + 7)/x^3",
+      "y = 2x^2 + 7x^-3",
+      "dy/dx = 4x - 21x^-4"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (5x^5 + 2)/x^2.",
+    "expected": "dy/dx = 15x^2 - 4x^-3",
+    "demonstration": "Split first: y = 5x^5/x^2 + 2/x^2 = 5x^3 + 2x^-2.\nDifferentiate term by term:\n  d/dx(5x^3) = 15x^2 if d_coef1 else 0\n  d/dx(+ 2x^-2) = -4x^-3\nAnswer: dy/dx = 15x^2 - 4x^-3.",
+    "memo_marks": [
+      "1 mark for split to 5x^3",
+      "1 mark for split to + 2x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (5x^5 + 2)/x^2",
+      "y = 5x^3 + 2x^-2",
+      "dy/dx = 15x^2 - 4x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (6x^6 + 4)/x^3.",
+    "expected": "dy/dx = 18x^2 - 12x^-4",
+    "demonstration": "Split first: y = 6x^6/x^3 + 4/x^3 = 6x^3 + 4x^-3.\nDifferentiate term by term:\n  d/dx(6x^3) = 18x^2 if d_coef1 else 0\n  d/dx(+ 4x^-3) = -12x^-4\nAnswer: dy/dx = 18x^2 - 12x^-4.",
+    "memo_marks": [
+      "1 mark for split to 6x^3",
+      "1 mark for split to + 4x^-3",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (6x^6 + 4)/x^3",
+      "y = 6x^3 + 4x^-3",
+      "dy/dx = 18x^2 - 12x^-4"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^3 + 8)/x^2.",
+    "expected": "dy/dx = 2 - 16x^-3",
+    "demonstration": "Split first: y = 2x^3/x^2 + 8/x^2 = 2x^1 + 8x^-2.\nDifferentiate term by term:\n  d/dx(2x^1) = 2x^0 if d_coef1 else 0\n  d/dx(+ 8x^-2) = -16x^-3\nAnswer: dy/dx = 2 - 16x^-3.",
+    "memo_marks": [
+      "1 mark for split to 2x^1",
+      "1 mark for split to + 8x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (2x^3 + 8)/x^2",
+      "y = 2x^1 + 8x^-2",
+      "dy/dx = 2 - 16x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (4x^5 + 5)/x^2.",
+    "expected": "dy/dx = 12x^2 - 10x^-3",
+    "demonstration": "Split first: y = 4x^5/x^2 + 5/x^2 = 4x^3 + 5x^-2.\nDifferentiate term by term:\n  d/dx(4x^3) = 12x^2 if d_coef1 else 0\n  d/dx(+ 5x^-2) = -10x^-3\nAnswer: dy/dx = 12x^2 - 10x^-3.",
+    "memo_marks": [
+      "1 mark for split to 4x^3",
+      "1 mark for split to + 5x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (4x^5 + 5)/x^2",
+      "y = 4x^3 + 5x^-2",
+      "dy/dx = 12x^2 - 10x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (7x^4 + 4)/x^2.",
+    "expected": "dy/dx = 14x - 8x^-3",
+    "demonstration": "Split first: y = 7x^4/x^2 + 4/x^2 = 7x^2 + 4x^-2.\nDifferentiate term by term:\n  d/dx(7x^2) = 14x^1 if d_coef1 else 0\n  d/dx(+ 4x^-2) = -8x^-3\nAnswer: dy/dx = 14x - 8x^-3.",
+    "memo_marks": [
+      "1 mark for split to 7x^2",
+      "1 mark for split to + 4x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (7x^4 + 4)/x^2",
+      "y = 7x^2 + 4x^-2",
+      "dy/dx = 14x - 8x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^6 + 2)/x^2.",
+    "expected": "dy/dx = 12x^3 - 4x^-3",
+    "demonstration": "Split first: y = 3x^6/x^2 + 2/x^2 = 3x^4 + 2x^-2.\nDifferentiate term by term:\n  d/dx(3x^4) = 12x^3 if d_coef1 else 0\n  d/dx(+ 2x^-2) = -4x^-3\nAnswer: dy/dx = 12x^3 - 4x^-3.",
+    "memo_marks": [
+      "1 mark for split to 3x^4",
+      "1 mark for split to + 2x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (3x^6 + 2)/x^2",
+      "y = 3x^4 + 2x^-2",
+      "dy/dx = 12x^3 - 4x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^8 + 1)/x^2.",
+    "expected": "dy/dx = 12x^5 - 2x^-3",
+    "demonstration": "Split first: y = 2x^8/x^2 + 1/x^2 = 2x^6 + 1x^-2.\nDifferentiate term by term:\n  d/dx(2x^6) = 12x^5 if d_coef1 else 0\n  d/dx(+ 1x^-2) = -2x^-3\nAnswer: dy/dx = 12x^5 - 2x^-3.",
+    "memo_marks": [
+      "1 mark for split to 2x^6",
+      "1 mark for split to + 1x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (2x^8 + 1)/x^2",
+      "y = 2x^6 + 1x^-2",
+      "dy/dx = 12x^5 - 2x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (5x^4 + 6)/x^3.",
+    "expected": "dy/dx = 5 - 18x^-4",
+    "demonstration": "Split first: y = 5x^4/x^3 + 6/x^3 = 5x^1 + 6x^-3.\nDifferentiate term by term:\n  d/dx(5x^1) = 5x^0 if d_coef1 else 0\n  d/dx(+ 6x^-3) = -18x^-4\nAnswer: dy/dx = 5 - 18x^-4.",
+    "memo_marks": [
+      "1 mark for split to 5x^1",
+      "1 mark for split to + 6x^-3",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (5x^4 + 6)/x^3",
+      "y = 5x^1 + 6x^-3",
+      "dy/dx = 5 - 18x^-4"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (6x^5 + 3)/x^2.",
+    "expected": "dy/dx = 18x^2 - 6x^-3",
+    "demonstration": "Split first: y = 6x^5/x^2 + 3/x^2 = 6x^3 + 3x^-2.\nDifferentiate term by term:\n  d/dx(6x^3) = 18x^2 if d_coef1 else 0\n  d/dx(+ 3x^-2) = -6x^-3\nAnswer: dy/dx = 18x^2 - 6x^-3.",
+    "memo_marks": [
+      "1 mark for split to 6x^3",
+      "1 mark for split to + 3x^-2",
+      "1 mark for derivative of first term",
+      "1 mark for derivative of second term"
+    ],
+    "fast_path": "Divide each numerator term by x^k, get negative exponents, then power rule.",
+    "fatal_error": "DBE says: Candidates use the quotient rule, or fail to write negative exponents correctly. The split is the shortcut.",
+    "answer_book_layout": [
+      "y = (6x^5 + 3)/x^2",
+      "y = 6x^3 + 3x^-2",
+      "dy/dx = 18x^2 - 6x^-3"
+    ],
+    "hack": "Split first. Every top term divides by x^k. Then power rule on negative exponents.",
+    "trap": "x^{-k} differentiates to -k·x^{-k-1}. The exponent drops by 1 AND gets more negative.",
+    "presentation": "Show the split explicitly. Then differentiate each term.",
+    "diagram": "required",
+    "diagram_hint": "quotient_split_visual"
+  }
+]

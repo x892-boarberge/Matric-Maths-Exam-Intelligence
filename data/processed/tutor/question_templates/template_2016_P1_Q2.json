@@ -24,6 +24,12 @@
         "T_n = 5 + (n-1)(-4) = -4n + 9.",
         "-4n + 9 = -87.",
         "n = 24."
+      ],
+      "given_from": [
+        "2.1"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     },
     {
@@ -37,6 +43,13 @@
         "Negative terms start from T_3 = -3, end at T_24 = -87.",
         "Number of negative terms = 22.",
         "S = 22/2(-3 + -87) = 11(-90) = -990."
+      ],
+      "given_from": [
+        "2.1",
+        "2.2"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     },
     {
@@ -51,6 +64,14 @@
         "Divisible by 5: T_1, T_6, T_11, ...",
         "Last valid: -4175 → n = 1046.",
         "Count: (1046-1)/5 + 1 = 210."
+      ],
+      "given_from": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ],
+      "requires_skills": [
+        "sequences.ap"
       ]
     }
   ],

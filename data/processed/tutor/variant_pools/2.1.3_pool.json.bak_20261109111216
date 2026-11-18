@@ -1,0 +1,692 @@
+[
+  {
+    "variant_question": "Given the geometric series: (1- 10) + (1+ 5) + (1- 5) + ... = -9 + 6 - 4 + ..., calculate the sum of the infinite series.",
+    "expected": "-27/5",
+    "demonstration": "First term a = -9, ratio r = -2/3.\n|r| = 2/3 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -9 / (1 - (-2/3)) = -27/5.",
+    "memo_marks": [
+      "1 mark for a = -9",
+      "1 mark for r = -2/3",
+      "1 mark for |r| < 1 check",
+      "1 mark for -27/5"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -9, r = -2/3",
+      "|r| < 1 ✓",
+      "S_infinity = -9/(1 - (-2/3)) = -27/5"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 10) + (1+ 2) + (1- 2) + ... = -9 + 3 - 1 + ..., calculate the sum of the infinite series.",
+    "expected": "-27/4",
+    "demonstration": "First term a = -9, ratio r = -1/3.\n|r| = 1/3 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -9 / (1 - (-1/3)) = -27/4.",
+    "memo_marks": [
+      "1 mark for a = -9",
+      "1 mark for r = -1/3",
+      "1 mark for |r| < 1 check",
+      "1 mark for -27/4"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -9, r = -1/3",
+      "|r| < 1 ✓",
+      "S_infinity = -9/(1 - (-1/3)) = -27/4"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 10) + (-1+ 1) + (-1+1) + ... = -11 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-11",
+    "demonstration": "First term a = -11, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -11 / (1 - (0)) = -11.",
+    "memo_marks": [
+      "1 mark for a = -11",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -11"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -11, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -11/(1 - (0)) = -11"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 10) + (1-1) + (1- 1) + ... = -9 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-9",
+    "demonstration": "First term a = -9, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -9 / (1 - (0)) = -9.",
+    "memo_marks": [
+      "1 mark for a = -9",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -9"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -9, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -9/(1 - (0)) = -9"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 10) + (1-4) + (1- 2) + ... = -9 - 3 - 1 + ..., calculate the sum of the infinite series.",
+    "expected": "-27/2",
+    "demonstration": "First term a = -9, ratio r = 1/3.\n|r| = 1/3 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -9 / (1 - (1/3)) = -27/2.",
+    "memo_marks": [
+      "1 mark for a = -9",
+      "1 mark for r = 1/3",
+      "1 mark for |r| < 1 check",
+      "1 mark for -27/2"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -9, r = 1/3",
+      "|r| < 1 ✓",
+      "S_infinity = -9/(1 - (1/3)) = -27/2"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 10) + (1-7) + (1- 5) + ... = -9 - 6 - 4 + ..., calculate the sum of the infinite series.",
+    "expected": "-27",
+    "demonstration": "First term a = -9, ratio r = 2/3.\n|r| = 2/3 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -9 / (1 - (2/3)) = -27.",
+    "memo_marks": [
+      "1 mark for a = -9",
+      "1 mark for r = 2/3",
+      "1 mark for |r| < 1 check",
+      "1 mark for -27"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -9, r = 2/3",
+      "|r| < 1 ✓",
+      "S_infinity = -9/(1 - (2/3)) = -27"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 9) + (1+ 3) + (1- 3) + ... = -8 + 4 - 2 + ..., calculate the sum of the infinite series.",
+    "expected": "-16/3",
+    "demonstration": "First term a = -8, ratio r = -1/2.\n|r| = 1/2 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -8 / (1 - (-1/2)) = -16/3.",
+    "memo_marks": [
+      "1 mark for a = -8",
+      "1 mark for r = -1/2",
+      "1 mark for |r| < 1 check",
+      "1 mark for -16/3"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -8, r = -1/2",
+      "|r| < 1 ✓",
+      "S_infinity = -8/(1 - (-1/2)) = -16/3"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 9) + (-1+ 1) + (-1+1) + ... = -10 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-10",
+    "demonstration": "First term a = -10, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -10 / (1 - (0)) = -10.",
+    "memo_marks": [
+      "1 mark for a = -10",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -10"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -10, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -10/(1 - (0)) = -10"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 9) + (1-1) + (1- 1) + ... = -8 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-8",
+    "demonstration": "First term a = -8, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -8 / (1 - (0)) = -8.",
+    "memo_marks": [
+      "1 mark for a = -8",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -8"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -8, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -8/(1 - (0)) = -8"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 9) + (1-5) + (1- 3) + ... = -8 - 4 - 2 + ..., calculate the sum of the infinite series.",
+    "expected": "-16",
+    "demonstration": "First term a = -8, ratio r = 1/2.\n|r| = 1/2 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -8 / (1 - (1/2)) = -16.",
+    "memo_marks": [
+      "1 mark for a = -8",
+      "1 mark for r = 1/2",
+      "1 mark for |r| < 1 check",
+      "1 mark for -16"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -8, r = 1/2",
+      "|r| < 1 ✓",
+      "S_infinity = -8/(1 - (1/2)) = -16"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 8) + (-1+ 4) + (-1+0) + ... = -9 + 3 - 1 + ..., calculate the sum of the infinite series.",
+    "expected": "-27/4",
+    "demonstration": "First term a = -9, ratio r = -1/3.\n|r| = 1/3 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -9 / (1 - (-1/3)) = -27/4.",
+    "memo_marks": [
+      "1 mark for a = -9",
+      "1 mark for r = -1/3",
+      "1 mark for |r| < 1 check",
+      "1 mark for -27/4"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -9, r = -1/3",
+      "|r| < 1 ✓",
+      "S_infinity = -9/(1 - (-1/3)) = -27/4"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 8) + (-1+ 1) + (-1+1) + ... = -9 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-9",
+    "demonstration": "First term a = -9, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -9 / (1 - (0)) = -9.",
+    "memo_marks": [
+      "1 mark for a = -9",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -9"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -9, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -9/(1 - (0)) = -9"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 8) + (1-1) + (1- 1) + ... = -7 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-7",
+    "demonstration": "First term a = -7, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -7 / (1 - (0)) = -7.",
+    "memo_marks": [
+      "1 mark for a = -7",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -7"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -7, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -7/(1 - (0)) = -7"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 8) + (-1-2) + (-1+0) + ... = -9 - 3 - 1 + ..., calculate the sum of the infinite series.",
+    "expected": "-27/2",
+    "demonstration": "First term a = -9, ratio r = 1/3.\n|r| = 1/3 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -9 / (1 - (1/3)) = -27/2.",
+    "memo_marks": [
+      "1 mark for a = -9",
+      "1 mark for r = 1/3",
+      "1 mark for |r| < 1 check",
+      "1 mark for -27/2"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -9, r = 1/3",
+      "|r| < 1 ✓",
+      "S_infinity = -9/(1 - (1/3)) = -27/2"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 8) + (-1-5) + (-1- 3) + ... = -9 - 6 - 4 + ..., calculate the sum of the infinite series.",
+    "expected": "-27",
+    "demonstration": "First term a = -9, ratio r = 2/3.\n|r| = 2/3 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -9 / (1 - (2/3)) = -27.",
+    "memo_marks": [
+      "1 mark for a = -9",
+      "1 mark for r = 2/3",
+      "1 mark for |r| < 1 check",
+      "1 mark for -27"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -9, r = 2/3",
+      "|r| < 1 ✓",
+      "S_infinity = -9/(1 - (2/3)) = -27"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 7) + (-1+ 5) + (-1- 1) + ... = -8 + 4 - 2 + ..., calculate the sum of the infinite series.",
+    "expected": "-16/3",
+    "demonstration": "First term a = -8, ratio r = -1/2.\n|r| = 1/2 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -8 / (1 - (-1/2)) = -16/3.",
+    "memo_marks": [
+      "1 mark for a = -8",
+      "1 mark for r = -1/2",
+      "1 mark for |r| < 1 check",
+      "1 mark for -16/3"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -8, r = -1/2",
+      "|r| < 1 ✓",
+      "S_infinity = -8/(1 - (-1/2)) = -16/3"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 7) + (-1+ 1) + (-1+1) + ... = -8 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-8",
+    "demonstration": "First term a = -8, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -8 / (1 - (0)) = -8.",
+    "memo_marks": [
+      "1 mark for a = -8",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -8"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -8, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -8/(1 - (0)) = -8"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 7) + (1-1) + (1- 1) + ... = -6 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-6",
+    "demonstration": "First term a = -6, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -6 / (1 - (0)) = -6.",
+    "memo_marks": [
+      "1 mark for a = -6",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -6"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -6, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -6/(1 - (0)) = -6"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 7) + (-1-3) + (-1- 1) + ... = -8 - 4 - 2 + ..., calculate the sum of the infinite series.",
+    "expected": "-16",
+    "demonstration": "First term a = -8, ratio r = 1/2.\n|r| = 1/2 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -8 / (1 - (1/2)) = -16.",
+    "memo_marks": [
+      "1 mark for a = -8",
+      "1 mark for r = 1/2",
+      "1 mark for |r| < 1 check",
+      "1 mark for -16"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -8, r = 1/2",
+      "|r| < 1 ✓",
+      "S_infinity = -8/(1 - (1/2)) = -16"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 6) + (-1+ 1) + (-1+1) + ... = -7 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-7",
+    "demonstration": "First term a = -7, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -7 / (1 - (0)) = -7.",
+    "memo_marks": [
+      "1 mark for a = -7",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -7"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -7, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -7/(1 - (0)) = -7"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 6) + (1-1) + (1- 1) + ... = -5 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-5",
+    "demonstration": "First term a = -5, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -5 / (1 - (0)) = -5.",
+    "memo_marks": [
+      "1 mark for a = -5",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -5"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -5, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -5/(1 - (0)) = -5"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 5) + (1+ 1) + (1- 2) + ... = -4 + 2 - 1 + ..., calculate the sum of the infinite series.",
+    "expected": "-8/3",
+    "demonstration": "First term a = -4, ratio r = -1/2.\n|r| = 1/2 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -4 / (1 - (-1/2)) = -8/3.",
+    "memo_marks": [
+      "1 mark for a = -4",
+      "1 mark for r = -1/2",
+      "1 mark for |r| < 1 check",
+      "1 mark for -8/3"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -4, r = -1/2",
+      "|r| < 1 ✓",
+      "S_infinity = -4/(1 - (-1/2)) = -8/3"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 5) + (-1+ 1) + (-1+1) + ... = -6 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-6",
+    "demonstration": "First term a = -6, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -6 / (1 - (0)) = -6.",
+    "memo_marks": [
+      "1 mark for a = -6",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -6"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -6, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -6/(1 - (0)) = -6"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 5) + (1-1) + (1- 1) + ... = -4 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-4",
+    "demonstration": "First term a = -4, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -4 / (1 - (0)) = -4.",
+    "memo_marks": [
+      "1 mark for a = -4",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -4"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -4, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -4/(1 - (0)) = -4"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 5) + (1-3) + (1- 2) + ... = -4 - 2 - 1 + ..., calculate the sum of the infinite series.",
+    "expected": "-8",
+    "demonstration": "First term a = -4, ratio r = 1/2.\n|r| = 1/2 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -4 / (1 - (1/2)) = -8.",
+    "memo_marks": [
+      "1 mark for a = -4",
+      "1 mark for r = 1/2",
+      "1 mark for |r| < 1 check",
+      "1 mark for -8"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -4, r = 1/2",
+      "|r| < 1 ✓",
+      "S_infinity = -4/(1 - (1/2)) = -8"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 4) + (-1+ 1) + (-1+1) + ... = -5 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-5",
+    "demonstration": "First term a = -5, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -5 / (1 - (0)) = -5.",
+    "memo_marks": [
+      "1 mark for a = -5",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -5"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -5, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -5/(1 - (0)) = -5"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 4) + (1-1) + (1- 1) + ... = -3 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-3",
+    "demonstration": "First term a = -3, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -3 / (1 - (0)) = -3.",
+    "memo_marks": [
+      "1 mark for a = -3",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -3"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -3, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -3/(1 - (0)) = -3"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 3) + (-1+ 3) + (-1+0) + ... = -4 + 2 - 1 + ..., calculate the sum of the infinite series.",
+    "expected": "-8/3",
+    "demonstration": "First term a = -4, ratio r = -1/2.\n|r| = 1/2 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -4 / (1 - (-1/2)) = -8/3.",
+    "memo_marks": [
+      "1 mark for a = -4",
+      "1 mark for r = -1/2",
+      "1 mark for |r| < 1 check",
+      "1 mark for -8/3"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -4, r = -1/2",
+      "|r| < 1 ✓",
+      "S_infinity = -4/(1 - (-1/2)) = -8/3"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (-1- 3) + (-1+ 1) + (-1+1) + ... = -4 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-4",
+    "demonstration": "First term a = -4, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -4 / (1 - (0)) = -4.",
+    "memo_marks": [
+      "1 mark for a = -4",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -4"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -4, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -4/(1 - (0)) = -4"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  },
+  {
+    "variant_question": "Given the geometric series: (1- 3) + (1-1) + (1- 1) + ... = -2 + 0 + 0 + ..., calculate the sum of the infinite series.",
+    "expected": "-2",
+    "demonstration": "First term a = -2, ratio r = 0.\n|r| = 0/1 < 1, so S_infinity exists.\nS_infinity = a / (1 - r) = -2 / (1 - (0)) = -2.",
+    "memo_marks": [
+      "1 mark for a = -2",
+      "1 mark for r = 0",
+      "1 mark for |r| < 1 check",
+      "1 mark for -2"
+    ],
+    "fast_path": "S_infinity = a/(1-r). Show |r|<1 first.",
+    "fatal_error": "DBE says: Candidates forget the |r|<1 check or use wrong first term.",
+    "answer_book_layout": [
+      "a = -2, r = 0",
+      "|r| < 1 ✓",
+      "S_infinity = -2/(1 - (0)) = -2"
+    ],
+    "hack": "First term / (1 − ratio). Brake check first.",
+    "trap": "Show |r|<1 explicitly — it's a mark.",
+    "presentation": "State a, r, check, then formula.",
+    "diagram": "required",
+    "diagram_hint": "geometric_series_infinite"
+  }
+]

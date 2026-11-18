@@ -1,0 +1,38 @@
+{
+  "objective_id": "TO_TRIG_PERIOD_DOMAIN_CONFUSION",
+  "skill_id": "trig.graph.period",
+  "trigger_misconception": "M_PERIOD_DOMAIN_CONFUSION",
+  "dbe_source": {
+    "years": [
+      "2018",
+      "2020",
+      "2022",
+      "2023",
+      "2025"
+    ],
+    "recommendation": "The period of a trig graph is a single number (e.g. 180), not an interval. The domain is the interval of x-values. Do not confuse the two.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "The period of a trig graph is a single number (e.g. 180), not an interval. The domain is the interval of x-values. Do not confuse the two.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "State the period of y = sin x",
+      "work": [
+        "Period of sin x is 360.",
+        "Not x in [0; 360]. That is the domain.",
+        "The period is a single value."
+      ]
+    },
+    "probe": {
+      "problem": "State the period of y = cos x.",
+      "expected": "360",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_PERIOD_DOMAIN_CONFUSION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The period is a single number. What you gave is an interval or an endpoint of the domain."
+}

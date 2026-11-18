@@ -257,3 +257,102 @@ def grade_steps_inline(steps: list[dict], learner_lines: list[str]) -> dict:
         "steps": results,
         "feedback": feedback,
     }
+
+# ==================================================================
+# Universal step-to-misconception diagnosis.
+#
+# The map is derived from (misconception ids) x (memo step
+# descriptions) and stored as JSON. It auto-extends when either
+# source grows. To rebuild: run scripts/build_step_role_map.py.
+# ==================================================================
+import json as _json
+from pathlib import Path as _Path
+
+_STEP_ROLE_MAP = None
+
+
+def _load_step_role_map():
+    global _STEP_ROLE_MAP
+    if _STEP_ROLE_MAP is not None:
+        return _STEP_ROLE_MAP
+    p = _Path(__file__).resolve().parents[2] / "data" / "processed" / "tutor" / "step_role_map.json"
+    if p.exists():
+        try:
+            _STEP_ROLE_MAP = _json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            _STEP_ROLE_MAP = {}
+    else:
+        _STEP_ROLE_MAP = {}
+    return _STEP_ROLE_MAP
+
+
+def first_failed_step_diagnosis(step_result, skill_id="", learner_line_count=None):
+    """Return (misconception_id, failed_step_description, rule_id).
+
+    Reads the universal map, filtered by skill_id. Returns
+    (None, None, None) when no step failed or no mapping fits.
+    """
+    if not step_result:
+        return None, None, None
+    steps = step_result.get("steps") or []
+    if not steps:
+        return None, None, None
+
+    entries = _load_step_role_map().get(skill_id or "", [])
+    if not entries:
+        return None, None, None
+
+    # Guard: if the learner gave fewer lines than the scheme has
+    # non-final steps, they did not attempt the working — the step
+    # grader is flagging absence, not error. Do not diagnose a step.
+    if learner_line_count is not None:
+        non_final = sum(
+            1 for s in steps
+            if not s.get("is_final")
+        )
+        if non_final and learner_line_count < non_final:
+            return None, None, None
+
+    STOP_LOCAL = {"m", "the", "a", "an", "of", "and", "or", "to", "in",
+                  "on", "for", "is", "by", "with", "from", "at", "as",
+                  "error", "not"}
+
+    def _kws(text):
+        return [w for w in re.findall(r"[a-z]{3,}", text.lower())
+                if w not in STOP_LOCAL]
+
+    def _prefix(a, b):
+        # Exact match always counts — needed for short stem words like
+        # sin, cos, tan (3 chars). Prefix match requires 4+ characters
+        # so that "sin" does not accidentally match "since".
+        if a == b:
+            return True
+        if len(a) < 4 or len(b) < 4:
+            return False
+        return a.startswith(b[:4]) or b.startswith(a[:4])
+
+    for step in steps:
+        if step.get("match_status") not in ("NOT_MATCHED", "UNCERTAIN"):
+            continue
+        desc = step.get("desc") or ""
+        if not desc:
+            continue
+        desc_kws = _kws(desc)
+        best_score, best_mid = 0.0, None
+        for e in entries:
+            sk = e.get("step_keywords", [])
+            if not sk or not desc_kws:
+                continue
+            hits = 0
+            for a in desc_kws:
+                for b in sk:
+                    if _prefix(a, b):
+                        hits += 1
+                        break
+            score = hits / max(len(desc_kws), len(sk), 1)
+            if score > best_score:
+                best_score, best_mid = score, e.get("misconception_id")
+        if best_mid and best_score >= 0.5:
+            return best_mid, desc, f"D_STEP_{best_mid}"
+
+    return None, None, None

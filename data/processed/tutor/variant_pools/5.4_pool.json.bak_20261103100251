@@ -1,0 +1,698 @@
+[
+  {
+    "variant_question": "The turning point of f is P(3; 8). The graph also passes through D(5; 6). Show that the equation of f is y = -1/2 x^2 + 3x + 7/2.",
+    "expected": "y = -1/2 x^2 + 3x + 7/2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (3, 8). So y = a(x - 3)^2 + 8. Use D(5, 6): 6 = a(5 - 3)^2 + 8 → 6 - 8 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 6x + 9) + 8 = -1/2x^2 - -3x + (-9/2 + 8) = y = -1/2 x^2 + 3x + 7/2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(5; 6)",
+      "1 mark for expanding to y = -1/2 x^2 + 3x + 7/2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 3)^2 + 8",
+      "6 = a(5 - 3)^2 + 8",
+      "a = -1/2",
+      "y = -1/2(x - 3)^2 + 8",
+      "y = -1/2 x^2 + 3x + 7/2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(2; 4). The graph also passes through D(4; 2). Show that the equation of f is y = -1/2 x^2 + 2x + 2.",
+    "expected": "y = -1/2 x^2 + 2x + 2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (2, 4). So y = a(x - 2)^2 + 4. Use D(4, 2): 2 = a(4 - 2)^2 + 4 → 2 - 4 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 4x + 4) + 4 = -1/2x^2 - -2x + (-4/2 + 4) = y = -1/2 x^2 + 2x + 2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; 2)",
+      "1 mark for expanding to y = -1/2 x^2 + 2x + 2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 2)^2 + 4",
+      "2 = a(4 - 2)^2 + 4",
+      "a = -1/2",
+      "y = -1/2(x - 2)^2 + 4",
+      "y = -1/2 x^2 + 2x + 2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(1; 5). The graph also passes through D(3; -3). Show that the equation of f is y = -2x^2 + 4x + 3.",
+    "expected": "y = -2x^2 + 4x + 3",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (1, 5). So y = a(x - 1)^2 + 5. Use D(3, -3): -3 = a(3 - 1)^2 + 5 → -3 - 5 = a(4) → a = -8/4 = -2. Expand: y = -2(x^2 - 2x + 1) + 5 = -2x^2 - -4x + (-2/1 + 5) = y = -2x^2 + 4x + 3.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(3; -3)",
+      "1 mark for expanding to y = -2x^2 + 4x + 3"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 1)^2 + 5",
+      "-3 = a(3 - 1)^2 + 5",
+      "a = -2",
+      "y = -2(x - 1)^2 + 5",
+      "y = -2x^2 + 4x + 3"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(2; 6). The graph also passes through D(4; 4). Show that the equation of f is y = -1/2 x^2 + 2x + 4.",
+    "expected": "y = -1/2 x^2 + 2x + 4",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (2, 6). So y = a(x - 2)^2 + 6. Use D(4, 4): 4 = a(4 - 2)^2 + 6 → 4 - 6 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 4x + 4) + 6 = -1/2x^2 - -2x + (-4/2 + 6) = y = -1/2 x^2 + 2x + 4.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; 4)",
+      "1 mark for expanding to y = -1/2 x^2 + 2x + 4"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 2)^2 + 6",
+      "4 = a(4 - 2)^2 + 6",
+      "a = -1/2",
+      "y = -1/2(x - 2)^2 + 6",
+      "y = -1/2 x^2 + 2x + 4"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(-1; 4). The graph also passes through D(1; 0). Show that the equation of f is y = -x^2 - 2x + 3.",
+    "expected": "y = -x^2 - 2x + 3",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (-1, 4). So y = a(x - -1)^2 + 4. Use D(1, 0): 0 = a(1 - -1)^2 + 4 → 0 - 4 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - -2x + 1) + 4 = -1x^2 - 2x + (-1/1 + 4) = y = -x^2 - 2x + 3.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(1; 0)",
+      "1 mark for expanding to y = -x^2 - 2x + 3"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - -1)^2 + 4",
+      "0 = a(1 - -1)^2 + 4",
+      "a = -1",
+      "y = -1(x - -1)^2 + 4",
+      "y = -x^2 - 2x + 3"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(0; 3). The graph also passes through D(2; -1). Show that the equation of f is y = -x^2 + 3.",
+    "expected": "y = -x^2 + 3",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (0, 3). So y = a(x - 0)^2 + 3. Use D(2, -1): -1 = a(2 - 0)^2 + 3 → -1 - 3 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 0x + 0) + 3 = -1x^2 - 0x + (0/1 + 3) = y = -x^2 + 3.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(2; -1)",
+      "1 mark for expanding to y = -x^2 + 3"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 0)^2 + 3",
+      "-1 = a(2 - 0)^2 + 3",
+      "a = -1",
+      "y = -1(x - 0)^2 + 3",
+      "y = -x^2 + 3"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(1; 2). The graph also passes through D(3; -2). Show that the equation of f is y = -x^2 + 2x + 1.",
+    "expected": "y = -x^2 + 2x + 1",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (1, 2). So y = a(x - 1)^2 + 2. Use D(3, -2): -2 = a(3 - 1)^2 + 2 → -2 - 2 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 2x + 1) + 2 = -1x^2 - -2x + (-1/1 + 2) = y = -x^2 + 2x + 1.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(3; -2)",
+      "1 mark for expanding to y = -x^2 + 2x + 1"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 1)^2 + 2",
+      "-2 = a(3 - 1)^2 + 2",
+      "a = -1",
+      "y = -1(x - 1)^2 + 2",
+      "y = -x^2 + 2x + 1"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(3; 9). The graph also passes through D(5; 7). Show that the equation of f is y = -1/2 x^2 + 3x + 9/2.",
+    "expected": "y = -1/2 x^2 + 3x + 9/2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (3, 9). So y = a(x - 3)^2 + 9. Use D(5, 7): 7 = a(5 - 3)^2 + 9 → 7 - 9 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 6x + 9) + 9 = -1/2x^2 - -3x + (-9/2 + 9) = y = -1/2 x^2 + 3x + 9/2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(5; 7)",
+      "1 mark for expanding to y = -1/2 x^2 + 3x + 9/2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 3)^2 + 9",
+      "7 = a(5 - 3)^2 + 9",
+      "a = -1/2",
+      "y = -1/2(x - 3)^2 + 9",
+      "y = -1/2 x^2 + 3x + 9/2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(2; 5). The graph also passes through D(4; 1). Show that the equation of f is y = -x^2 + 4x + 1.",
+    "expected": "y = -x^2 + 4x + 1",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (2, 5). So y = a(x - 2)^2 + 5. Use D(4, 1): 1 = a(4 - 2)^2 + 5 → 1 - 5 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 4x + 4) + 5 = -1x^2 - -4x + (-4/1 + 5) = y = -x^2 + 4x + 1.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; 1)",
+      "1 mark for expanding to y = -x^2 + 4x + 1"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 2)^2 + 5",
+      "1 = a(4 - 2)^2 + 5",
+      "a = -1",
+      "y = -1(x - 2)^2 + 5",
+      "y = -x^2 + 4x + 1"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(1; 3). The graph also passes through D(3; -1). Show that the equation of f is y = -x^2 + 2x + 2.",
+    "expected": "y = -x^2 + 2x + 2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (1, 3). So y = a(x - 1)^2 + 3. Use D(3, -1): -1 = a(3 - 1)^2 + 3 → -1 - 3 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 2x + 1) + 3 = -1x^2 - -2x + (-1/1 + 3) = y = -x^2 + 2x + 2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(3; -1)",
+      "1 mark for expanding to y = -x^2 + 2x + 2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 1)^2 + 3",
+      "-1 = a(3 - 1)^2 + 3",
+      "a = -1",
+      "y = -1(x - 1)^2 + 3",
+      "y = -x^2 + 2x + 2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(4; 2). The graph also passes through D(5; 1). Show that the equation of f is y = -x^2 + 8x - 14.",
+    "expected": "y = -x^2 + 8x - 14",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (4, 2). So y = a(x - 4)^2 + 2. Use D(5, 1): 1 = a(5 - 4)^2 + 2 → 1 - 2 = a(1) → a = -1/1 = -1. Expand: y = -1(x^2 - 8x + 16) + 2 = -1x^2 - -8x + (-16/1 + 2) = y = -x^2 + 8x - 14.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(5; 1)",
+      "1 mark for expanding to y = -x^2 + 8x - 14"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 4)^2 + 2",
+      "1 = a(5 - 4)^2 + 2",
+      "a = -1",
+      "y = -1(x - 4)^2 + 2",
+      "y = -x^2 + 8x - 14"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(1; 8). The graph also passes through D(3; 6). Show that the equation of f is y = -1/2 x^2 + x + 15/2.",
+    "expected": "y = -1/2 x^2 + x + 15/2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (1, 8). So y = a(x - 1)^2 + 8. Use D(3, 6): 6 = a(3 - 1)^2 + 8 → 6 - 8 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 2x + 1) + 8 = -1/2x^2 - -1x + (-1/2 + 8) = y = -1/2 x^2 + x + 15/2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(3; 6)",
+      "1 mark for expanding to y = -1/2 x^2 + x + 15/2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 1)^2 + 8",
+      "6 = a(3 - 1)^2 + 8",
+      "a = -1/2",
+      "y = -1/2(x - 1)^2 + 8",
+      "y = -1/2 x^2 + x + 15/2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(2; 3). The graph also passes through D(4; -1). Show that the equation of f is y = -x^2 + 4x - 1.",
+    "expected": "y = -x^2 + 4x - 1",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (2, 3). So y = a(x - 2)^2 + 3. Use D(4, -1): -1 = a(4 - 2)^2 + 3 → -1 - 3 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 4x + 4) + 3 = -1x^2 - -4x + (-4/1 + 3) = y = -x^2 + 4x - 1.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; -1)",
+      "1 mark for expanding to y = -x^2 + 4x - 1"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 2)^2 + 3",
+      "-1 = a(4 - 2)^2 + 3",
+      "a = -1",
+      "y = -1(x - 2)^2 + 3",
+      "y = -x^2 + 4x - 1"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(3; 5). The graph also passes through D(5; 3). Show that the equation of f is y = -1/2 x^2 + 3x + 1/2.",
+    "expected": "y = -1/2 x^2 + 3x + 1/2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (3, 5). So y = a(x - 3)^2 + 5. Use D(5, 3): 3 = a(5 - 3)^2 + 5 → 3 - 5 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 6x + 9) + 5 = -1/2x^2 - -3x + (-9/2 + 5) = y = -1/2 x^2 + 3x + 1/2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(5; 3)",
+      "1 mark for expanding to y = -1/2 x^2 + 3x + 1/2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 3)^2 + 5",
+      "3 = a(5 - 3)^2 + 5",
+      "a = -1/2",
+      "y = -1/2(x - 3)^2 + 5",
+      "y = -1/2 x^2 + 3x + 1/2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(0; 2). The graph also passes through D(2; -2). Show that the equation of f is y = -x^2 + 2.",
+    "expected": "y = -x^2 + 2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (0, 2). So y = a(x - 0)^2 + 2. Use D(2, -2): -2 = a(2 - 0)^2 + 2 → -2 - 2 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 0x + 0) + 2 = -1x^2 - 0x + (0/1 + 2) = y = -x^2 + 2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(2; -2)",
+      "1 mark for expanding to y = -x^2 + 2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 0)^2 + 2",
+      "-2 = a(2 - 0)^2 + 2",
+      "a = -1",
+      "y = -1(x - 0)^2 + 2",
+      "y = -x^2 + 2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(2; 7). The graph also passes through D(4; 3). Show that the equation of f is y = -x^2 + 4x + 3.",
+    "expected": "y = -x^2 + 4x + 3",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (2, 7). So y = a(x - 2)^2 + 7. Use D(4, 3): 3 = a(4 - 2)^2 + 7 → 3 - 7 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 4x + 4) + 7 = -1x^2 - -4x + (-4/1 + 7) = y = -x^2 + 4x + 3.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; 3)",
+      "1 mark for expanding to y = -x^2 + 4x + 3"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 2)^2 + 7",
+      "3 = a(4 - 2)^2 + 7",
+      "a = -1",
+      "y = -1(x - 2)^2 + 7",
+      "y = -x^2 + 4x + 3"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(1; 4). The graph also passes through D(4; -5). Show that the equation of f is y = -x^2 + 2x + 3.",
+    "expected": "y = -x^2 + 2x + 3",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (1, 4). So y = a(x - 1)^2 + 4. Use D(4, -5): -5 = a(4 - 1)^2 + 4 → -5 - 4 = a(9) → a = -9/9 = -1. Expand: y = -1(x^2 - 2x + 1) + 4 = -1x^2 - -2x + (-1/1 + 4) = y = -x^2 + 2x + 3.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; -5)",
+      "1 mark for expanding to y = -x^2 + 2x + 3"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 1)^2 + 4",
+      "-5 = a(4 - 1)^2 + 4",
+      "a = -1",
+      "y = -1(x - 1)^2 + 4",
+      "y = -x^2 + 2x + 3"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(3; 6). The graph also passes through D(4; 5). Show that the equation of f is y = -x^2 + 6x - 3.",
+    "expected": "y = -x^2 + 6x - 3",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (3, 6). So y = a(x - 3)^2 + 6. Use D(4, 5): 5 = a(4 - 3)^2 + 6 → 5 - 6 = a(1) → a = -1/1 = -1. Expand: y = -1(x^2 - 6x + 9) + 6 = -1x^2 - -6x + (-9/1 + 6) = y = -x^2 + 6x - 3.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; 5)",
+      "1 mark for expanding to y = -x^2 + 6x - 3"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 3)^2 + 6",
+      "5 = a(4 - 3)^2 + 6",
+      "a = -1",
+      "y = -1(x - 3)^2 + 6",
+      "y = -x^2 + 6x - 3"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(2; 5). The graph also passes through D(3; 4). Show that the equation of f is y = -x^2 + 4x + 1.",
+    "expected": "y = -x^2 + 4x + 1",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (2, 5). So y = a(x - 2)^2 + 5. Use D(3, 4): 4 = a(3 - 2)^2 + 5 → 4 - 5 = a(1) → a = -1/1 = -1. Expand: y = -1(x^2 - 4x + 4) + 5 = -1x^2 - -4x + (-4/1 + 5) = y = -x^2 + 4x + 1.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(3; 4)",
+      "1 mark for expanding to y = -x^2 + 4x + 1"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 2)^2 + 5",
+      "4 = a(3 - 2)^2 + 5",
+      "a = -1",
+      "y = -1(x - 2)^2 + 5",
+      "y = -x^2 + 4x + 1"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(3; 8). The graph also passes through D(5; 6). Show that the equation of f is y = -1/2 x^2 + 3x + 7/2.",
+    "expected": "y = -1/2 x^2 + 3x + 7/2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (3, 8). So y = a(x - 3)^2 + 8. Use D(5, 6): 6 = a(5 - 3)^2 + 8 → 6 - 8 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 6x + 9) + 8 = -1/2x^2 - -3x + (-9/2 + 8) = y = -1/2 x^2 + 3x + 7/2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(5; 6)",
+      "1 mark for expanding to y = -1/2 x^2 + 3x + 7/2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 3)^2 + 8",
+      "6 = a(5 - 3)^2 + 8",
+      "a = -1/2",
+      "y = -1/2(x - 3)^2 + 8",
+      "y = -1/2 x^2 + 3x + 7/2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(2; 4). The graph also passes through D(4; 2). Show that the equation of f is y = -1/2 x^2 + 2x + 2.",
+    "expected": "y = -1/2 x^2 + 2x + 2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (2, 4). So y = a(x - 2)^2 + 4. Use D(4, 2): 2 = a(4 - 2)^2 + 4 → 2 - 4 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 4x + 4) + 4 = -1/2x^2 - -2x + (-4/2 + 4) = y = -1/2 x^2 + 2x + 2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; 2)",
+      "1 mark for expanding to y = -1/2 x^2 + 2x + 2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 2)^2 + 4",
+      "2 = a(4 - 2)^2 + 4",
+      "a = -1/2",
+      "y = -1/2(x - 2)^2 + 4",
+      "y = -1/2 x^2 + 2x + 2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(1; 5). The graph also passes through D(3; -3). Show that the equation of f is y = -2x^2 + 4x + 3.",
+    "expected": "y = -2x^2 + 4x + 3",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (1, 5). So y = a(x - 1)^2 + 5. Use D(3, -3): -3 = a(3 - 1)^2 + 5 → -3 - 5 = a(4) → a = -8/4 = -2. Expand: y = -2(x^2 - 2x + 1) + 5 = -2x^2 - -4x + (-2/1 + 5) = y = -2x^2 + 4x + 3.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(3; -3)",
+      "1 mark for expanding to y = -2x^2 + 4x + 3"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 1)^2 + 5",
+      "-3 = a(3 - 1)^2 + 5",
+      "a = -2",
+      "y = -2(x - 1)^2 + 5",
+      "y = -2x^2 + 4x + 3"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(2; 6). The graph also passes through D(4; 4). Show that the equation of f is y = -1/2 x^2 + 2x + 4.",
+    "expected": "y = -1/2 x^2 + 2x + 4",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (2, 6). So y = a(x - 2)^2 + 6. Use D(4, 4): 4 = a(4 - 2)^2 + 6 → 4 - 6 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 4x + 4) + 6 = -1/2x^2 - -2x + (-4/2 + 6) = y = -1/2 x^2 + 2x + 4.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; 4)",
+      "1 mark for expanding to y = -1/2 x^2 + 2x + 4"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 2)^2 + 6",
+      "4 = a(4 - 2)^2 + 6",
+      "a = -1/2",
+      "y = -1/2(x - 2)^2 + 6",
+      "y = -1/2 x^2 + 2x + 4"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(-1; 4). The graph also passes through D(1; 0). Show that the equation of f is y = -x^2 - 2x + 3.",
+    "expected": "y = -x^2 - 2x + 3",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (-1, 4). So y = a(x - -1)^2 + 4. Use D(1, 0): 0 = a(1 - -1)^2 + 4 → 0 - 4 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - -2x + 1) + 4 = -1x^2 - 2x + (-1/1 + 4) = y = -x^2 - 2x + 3.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(1; 0)",
+      "1 mark for expanding to y = -x^2 - 2x + 3"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - -1)^2 + 4",
+      "0 = a(1 - -1)^2 + 4",
+      "a = -1",
+      "y = -1(x - -1)^2 + 4",
+      "y = -x^2 - 2x + 3"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(0; 3). The graph also passes through D(2; -1). Show that the equation of f is y = -x^2 + 3.",
+    "expected": "y = -x^2 + 3",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (0, 3). So y = a(x - 0)^2 + 3. Use D(2, -1): -1 = a(2 - 0)^2 + 3 → -1 - 3 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 0x + 0) + 3 = -1x^2 - 0x + (0/1 + 3) = y = -x^2 + 3.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(2; -1)",
+      "1 mark for expanding to y = -x^2 + 3"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 0)^2 + 3",
+      "-1 = a(2 - 0)^2 + 3",
+      "a = -1",
+      "y = -1(x - 0)^2 + 3",
+      "y = -x^2 + 3"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(1; 2). The graph also passes through D(3; -2). Show that the equation of f is y = -x^2 + 2x + 1.",
+    "expected": "y = -x^2 + 2x + 1",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (1, 2). So y = a(x - 1)^2 + 2. Use D(3, -2): -2 = a(3 - 1)^2 + 2 → -2 - 2 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 2x + 1) + 2 = -1x^2 - -2x + (-1/1 + 2) = y = -x^2 + 2x + 1.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(3; -2)",
+      "1 mark for expanding to y = -x^2 + 2x + 1"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 1)^2 + 2",
+      "-2 = a(3 - 1)^2 + 2",
+      "a = -1",
+      "y = -1(x - 1)^2 + 2",
+      "y = -x^2 + 2x + 1"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(3; 9). The graph also passes through D(5; 7). Show that the equation of f is y = -1/2 x^2 + 3x + 9/2.",
+    "expected": "y = -1/2 x^2 + 3x + 9/2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (3, 9). So y = a(x - 3)^2 + 9. Use D(5, 7): 7 = a(5 - 3)^2 + 9 → 7 - 9 = a(4) → a = -2/4 = -1/2. Expand: y = -1/2(x^2 - 6x + 9) + 9 = -1/2x^2 - -3x + (-9/2 + 9) = y = -1/2 x^2 + 3x + 9/2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(5; 7)",
+      "1 mark for expanding to y = -1/2 x^2 + 3x + 9/2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 3)^2 + 9",
+      "7 = a(5 - 3)^2 + 9",
+      "a = -1/2",
+      "y = -1/2(x - 3)^2 + 9",
+      "y = -1/2 x^2 + 3x + 9/2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(2; 5). The graph also passes through D(4; 1). Show that the equation of f is y = -x^2 + 4x + 1.",
+    "expected": "y = -x^2 + 4x + 1",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (2, 5). So y = a(x - 2)^2 + 5. Use D(4, 1): 1 = a(4 - 2)^2 + 5 → 1 - 5 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 4x + 4) + 5 = -1x^2 - -4x + (-4/1 + 5) = y = -x^2 + 4x + 1.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(4; 1)",
+      "1 mark for expanding to y = -x^2 + 4x + 1"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 2)^2 + 5",
+      "1 = a(4 - 2)^2 + 5",
+      "a = -1",
+      "y = -1(x - 2)^2 + 5",
+      "y = -x^2 + 4x + 1"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  },
+  {
+    "variant_question": "The turning point of f is P(1; 3). The graph also passes through D(3; -1). Show that the equation of f is y = -x^2 + 2x + 2.",
+    "expected": "y = -x^2 + 2x + 2",
+    "demonstration": "Form: y = a(x - h)^2 + k with (h, k) = (1, 3). So y = a(x - 1)^2 + 3. Use D(3, -1): -1 = a(3 - 1)^2 + 3 → -1 - 3 = a(4) → a = -4/4 = -1. Expand: y = -1(x^2 - 2x + 1) + 3 = -1x^2 - -2x + (-1/1 + 3) = y = -x^2 + 2x + 2.",
+    "memo_marks": [
+      "1 mark for a(x-h)^2 + k form",
+      "1 mark for substitution of D(3; -1)",
+      "1 mark for expanding to y = -x^2 + 2x + 2"
+    ],
+    "fast_path": "Turning point → use y = a(x-h)^2 + k. Plug in the other point to find a. Expand.",
+    "fatal_error": "DBE says: Candidates use y = ax^2 + bx + c directly and set up 3 simultaneous equations without using the turning point. This wastes time and invites arithmetic errors.",
+    "answer_book_layout": [
+      "y = a(x - 1)^2 + 3",
+      "-1 = a(3 - 1)^2 + 3",
+      "a = -1",
+      "y = -1(x - 1)^2 + 3",
+      "y = -x^2 + 2x + 2"
+    ],
+    "hack": "Turning point is the shortcut. Form y = a(x-h)^2 + k uses it immediately. Then one substitution finds a.",
+    "trap": "Remember to expand at the end. The question asks for the form with x² and x terms, not the vertex form.",
+    "presentation": "Show the vertex form, the substitution, and the expansion. The expansion is the final mark.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_and_one_more_point"
+  }
+]

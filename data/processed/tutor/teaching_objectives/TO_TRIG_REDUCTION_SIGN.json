@@ -1,0 +1,38 @@
+{
+  "objective_id": "TO_TRIG_REDUCTION_SIGN",
+  "skill_id": "trig.reduction",
+  "trigger_misconception": "M_REDUCTION_SIGN",
+  "dbe_source": {
+    "years": [
+      "2016",
+      "2017",
+      "2019",
+      "2021",
+      "2022"
+    ],
+    "recommendation": "When you reduce sin(180 + x) or sin(180 - x), the sign depends on the quadrant. sin(180 + x) is in Q3, where sine is negative. So sin(180 + x) = -sin x.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When you reduce sin(180 + x) or sin(180 - x), the sign depends on the quadrant. sin(180 + x) is in Q3, where sine is negative. So sin(180 + x) = -sin x.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "Simplify sin(180 + x)",
+      "work": [
+        "Identify the quadrant: 180 + x is in Q3.",
+        "In Q3, sine is negative.",
+        "So sin(180 + x) = -sin x."
+      ]
+    },
+    "probe": {
+      "problem": "Simplify sin(180 - x).",
+      "expected": "sin x",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_REDUCTION_SIGN",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The magnitude is right, but the sign is off. Check which quadrant the reduced angle sits in — that sets the sign."
+}

@@ -35,6 +35,12 @@
         "x² - 2x - 3 = 0.",
         "(x - 3)(x + 1) = 0.",
         "x = 3 or x = -1."
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "functions.line"
       ]
     },
     {
@@ -57,6 +63,14 @@
         "x = 1 (turning point).",
         "f(1) = -4.",
         "Range y >= -4."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2"
+      ],
+      "requires_skills": [
+        "functions.line",
+        "functions.parabola"
       ]
     },
     {
@@ -87,6 +101,15 @@
         "(x - 5)(x + 2) = 0.",
         "x = -2 (T on negative x-axis).",
         "OT = 2."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3"
+      ],
+      "requires_skills": [
+        "functions.line",
+        "functions.parabola"
       ]
     },
     {
@@ -107,6 +130,16 @@
       "expected_fn": "N(-2; -1)",
       "steps": [
         "g(-2) = -2 + 1 = -1."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4.1"
+      ],
+      "requires_skills": [
+        "functions.line",
+        "functions.parabola"
       ]
     },
     {
@@ -122,6 +155,17 @@
         "x = 3/2.",
         "f(3/2) = -15/4.",
         "y + 15/4 = 1(x - 3/2)."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4.1",
+        "6.4.2"
+      ],
+      "requires_skills": [
+        "functions.line",
+        "functions.parabola"
       ]
     },
     {
@@ -142,6 +186,19 @@
         "x² - 3x - 3 - k = 0.",
         "Discrim < 0: 9 + 12 + 4k < 0.",
         "k < -21/4."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4.1",
+        "6.4.2",
+        "6.5"
+      ],
+      "requires_skills": [
+        "functions.line",
+        "functions.parabola",
+        "calculus.tangent"
       ]
     }
   ],

@@ -1,0 +1,36 @@
+{
+  "objective_id": "TO_TRIG_UNIT_QUADRANT_SIGN",
+  "skill_id": "trig.unitcircle",
+  "trigger_misconception": "M_UNIT_QUADRANT_SIGN",
+  "dbe_source": {
+    "years": [
+      "2017",
+      "2018",
+      "2020"
+    ],
+    "recommendation": "Point P(x; y) on the unit circle. The sign of x and y depends on which quadrant P is in. Q2: x < 0, y > 0. Q3: x < 0, y < 0. Q4: x > 0, y < 0.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "Point P(x; y) on the unit circle. The sign of x and y depends on which quadrant P is in. Q2: x < 0, y > 0. Q3: x < 0, y < 0. Q4: x > 0, y < 0.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "P is in Q2 on the unit circle. If y = 0.6, find x.",
+      "work": [
+        "Q2 means x is negative.",
+        "x² + y² = 1: x² + 0.36 = 1, so x² = 0.64.",
+        "x = -0.8 (negative because Q2)."
+      ]
+    },
+    "probe": {
+      "problem": "P is in Q3 on the unit circle. If x = -0.6, find y.",
+      "expected": "y = -0.8",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_UNIT_QUADRANT_SIGN",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The quadrant decides the sign of each coordinate. Q2: x is negative. Q3: both negative. Q4: y is negative."
+}

@@ -1,0 +1,782 @@
+[
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 3. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 2/(x - 2) - 1",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -1.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 2.\nStep 4: g(3) = f(3) pins down p = -2.\n\nFinal: f(x) = 2/(x - 2) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -1",
+      "1 mark for a = 2",
+      "1 mark for p = -2",
+      "1 mark for f(x) = 2/(x - 2) - 1"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -2",
+      "g(1) = q -> q = -1",
+      "f(0) = g(0) -> a = 2",
+      "g(3) = f(3) -> p = -2",
+      "Final: f(x) = 2/(x - 2) - 1"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 4. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 3/(x - 3) - 2",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -2.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 3.\nStep 4: g(4) = f(4) pins down p = -3.\n\nFinal: f(x) = 3/(x - 3) - 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -2",
+      "1 mark for a = 3",
+      "1 mark for p = -3",
+      "1 mark for f(x) = 3/(x - 3) - 2"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -3",
+      "g(1) = q -> q = -2",
+      "f(0) = g(0) -> a = 3",
+      "g(4) = f(4) -> p = -3",
+      "Final: f(x) = 3/(x - 3) - 2"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 3) - 1",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = -1.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 6.\nStep 4: g(5) = f(5) pins down p = -3.\n\nFinal: f(x) = 6/(x - 3) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = -1",
+      "1 mark for a = 6",
+      "1 mark for p = -3",
+      "1 mark for f(x) = 6/(x - 3) - 1"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -3",
+      "g(2) = q -> q = -1",
+      "f(0) = g(0) -> a = 6",
+      "g(5) = f(5) -> p = -3",
+      "Final: f(x) = 6/(x - 3) - 1"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 2. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 1/(x - 1)",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = 0.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 1.\nStep 4: g(2) = f(2) pins down p = -1.\n\nFinal: f(x) = 1/(x - 1).",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = 0",
+      "1 mark for a = 1",
+      "1 mark for p = -1",
+      "1 mark for f(x) = 1/(x - 1)"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -1",
+      "g(1) = q -> q = 0",
+      "f(0) = g(0) -> a = 1",
+      "g(2) = f(2) -> p = -1",
+      "Final: f(x) = 1/(x - 1)"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 4. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 4/(x - 2)",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = 0.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 4.\nStep 4: g(4) = f(4) pins down p = -2.\n\nFinal: f(x) = 4/(x - 2).",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = 0",
+      "1 mark for a = 4",
+      "1 mark for p = -2",
+      "1 mark for f(x) = 4/(x - 2)"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -2",
+      "g(2) = q -> q = 0",
+      "f(0) = g(0) -> a = 4",
+      "g(4) = f(4) -> p = -2",
+      "Final: f(x) = 4/(x - 2)"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 3. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 2/(x - 1) + 1",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = 1.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 2.\nStep 4: g(3) = f(3) pins down p = -1.\n\nFinal: f(x) = 2/(x - 1) + 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = 1",
+      "1 mark for a = 2",
+      "1 mark for p = -1",
+      "1 mark for f(x) = 2/(x - 1) + 1"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -1",
+      "g(2) = q -> q = 1",
+      "f(0) = g(0) -> a = 2",
+      "g(3) = f(3) -> p = -1",
+      "Final: f(x) = 2/(x - 1) + 1"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 3. g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 2) + 1",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(3) = q (horizontal asymptote) -> q = 3 + c = 1.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 6.\nStep 4: g(5) = f(5) pins down p = -2.\n\nFinal: f(x) = 6/(x - 2) + 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c = 1",
+      "1 mark for a = 6",
+      "1 mark for p = -2",
+      "1 mark for f(x) = 6/(x - 2) + 1"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -2",
+      "g(3) = q -> q = 1",
+      "f(0) = g(0) -> a = 6",
+      "g(5) = f(5) -> p = -2",
+      "Final: f(x) = 6/(x - 2) + 1"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 4/(x - 4) - 3",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -3.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 4.\nStep 4: g(5) = f(5) pins down p = -4.\n\nFinal: f(x) = 4/(x - 4) - 3.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -3",
+      "1 mark for a = 4",
+      "1 mark for p = -4",
+      "1 mark for f(x) = 4/(x - 4) - 3"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -4",
+      "g(1) = q -> q = -3",
+      "f(0) = g(0) -> a = 4",
+      "g(5) = f(5) -> p = -4",
+      "Final: f(x) = 4/(x - 4) - 3"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 8/(x - 4) - 2",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = -2.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 8.\nStep 4: g(6) = f(6) pins down p = -4.\n\nFinal: f(x) = 8/(x - 4) - 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = -2",
+      "1 mark for a = 8",
+      "1 mark for p = -4",
+      "1 mark for f(x) = 8/(x - 4) - 2"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -4",
+      "g(2) = q -> q = -2",
+      "f(0) = g(0) -> a = 8",
+      "g(6) = f(6) -> p = -4",
+      "Final: f(x) = 8/(x - 4) - 2"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 5/(x - 5) - 4",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -4.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 5.\nStep 4: g(6) = f(6) pins down p = -5.\n\nFinal: f(x) = 5/(x - 5) - 4.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -4",
+      "1 mark for a = 5",
+      "1 mark for p = -5",
+      "1 mark for f(x) = 5/(x - 5) - 4"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -5",
+      "g(1) = q -> q = -4",
+      "f(0) = g(0) -> a = 5",
+      "g(6) = f(6) -> p = -5",
+      "Final: f(x) = 5/(x - 5) - 4"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 3. g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 9/(x - 3)",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(3) = q (horizontal asymptote) -> q = 3 + c = 0.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 9.\nStep 4: g(6) = f(6) pins down p = -3.\n\nFinal: f(x) = 9/(x - 3).",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c = 0",
+      "1 mark for a = 9",
+      "1 mark for p = -3",
+      "1 mark for f(x) = 9/(x - 3)"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -3",
+      "g(3) = q -> q = 0",
+      "f(0) = g(0) -> a = 9",
+      "g(6) = f(6) -> p = -3",
+      "Final: f(x) = 9/(x - 3)"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 10/(x - 5) - 3",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = -3.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 10.\nStep 4: g(7) = f(7) pins down p = -5.\n\nFinal: f(x) = 10/(x - 5) - 3.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = -3",
+      "1 mark for a = 10",
+      "1 mark for p = -5",
+      "1 mark for f(x) = 10/(x - 5) - 3"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -5",
+      "g(2) = q -> q = -3",
+      "f(0) = g(0) -> a = 10",
+      "g(7) = f(7) -> p = -5",
+      "Final: f(x) = 10/(x - 5) - 3"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 4. g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 8/(x - 2) + 2",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(4) = q (horizontal asymptote) -> q = 4 + c = 2.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 8.\nStep 4: g(6) = f(6) pins down p = -2.\n\nFinal: f(x) = 8/(x - 2) + 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 4 + c = 2",
+      "1 mark for a = 8",
+      "1 mark for p = -2",
+      "1 mark for f(x) = 8/(x - 2) + 2"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -2",
+      "g(4) = q -> q = 2",
+      "f(0) = g(0) -> a = 8",
+      "g(6) = f(6) -> p = -2",
+      "Final: f(x) = 8/(x - 2) + 2"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 6) - 5",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -5.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 6.\nStep 4: g(7) = f(7) pins down p = -6.\n\nFinal: f(x) = 6/(x - 6) - 5.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -5",
+      "1 mark for a = 6",
+      "1 mark for p = -6",
+      "1 mark for f(x) = 6/(x - 6) - 5"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -6",
+      "g(1) = q -> q = -5",
+      "f(0) = g(0) -> a = 6",
+      "g(7) = f(7) -> p = -6",
+      "Final: f(x) = 6/(x - 6) - 5"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 8. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 12/(x - 6) - 4",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = -4.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 12.\nStep 4: g(8) = f(8) pins down p = -6.\n\nFinal: f(x) = 12/(x - 6) - 4.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = -4",
+      "1 mark for a = 12",
+      "1 mark for p = -6",
+      "1 mark for f(x) = 12/(x - 6) - 4"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -6",
+      "g(2) = q -> q = -4",
+      "f(0) = g(0) -> a = 12",
+      "g(8) = f(8) -> p = -6",
+      "Final: f(x) = 12/(x - 6) - 4"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 3. g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 12/(x - 4) - 1",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(3) = q (horizontal asymptote) -> q = 3 + c = -1.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 12.\nStep 4: g(7) = f(7) pins down p = -4.\n\nFinal: f(x) = 12/(x - 4) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c = -1",
+      "1 mark for a = 12",
+      "1 mark for p = -4",
+      "1 mark for f(x) = 12/(x - 4) - 1"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -4",
+      "g(3) = q -> q = -1",
+      "f(0) = g(0) -> a = 12",
+      "g(7) = f(7) -> p = -4",
+      "Final: f(x) = 12/(x - 4) - 1"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 3. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 2/(x - 2) - 1",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -1.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 2.\nStep 4: g(3) = f(3) pins down p = -2.\n\nFinal: f(x) = 2/(x - 2) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -1",
+      "1 mark for a = 2",
+      "1 mark for p = -2",
+      "1 mark for f(x) = 2/(x - 2) - 1"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -2",
+      "g(1) = q -> q = -1",
+      "f(0) = g(0) -> a = 2",
+      "g(3) = f(3) -> p = -2",
+      "Final: f(x) = 2/(x - 2) - 1"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 4. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 3/(x - 3) - 2",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -2.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 3.\nStep 4: g(4) = f(4) pins down p = -3.\n\nFinal: f(x) = 3/(x - 3) - 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -2",
+      "1 mark for a = 3",
+      "1 mark for p = -3",
+      "1 mark for f(x) = 3/(x - 3) - 2"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -3",
+      "g(1) = q -> q = -2",
+      "f(0) = g(0) -> a = 3",
+      "g(4) = f(4) -> p = -3",
+      "Final: f(x) = 3/(x - 3) - 2"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 3) - 1",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = -1.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 6.\nStep 4: g(5) = f(5) pins down p = -3.\n\nFinal: f(x) = 6/(x - 3) - 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = -1",
+      "1 mark for a = 6",
+      "1 mark for p = -3",
+      "1 mark for f(x) = 6/(x - 3) - 1"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -3",
+      "g(2) = q -> q = -1",
+      "f(0) = g(0) -> a = 6",
+      "g(5) = f(5) -> p = -3",
+      "Final: f(x) = 6/(x - 3) - 1"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 2. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 1/(x - 1)",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = 0.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 1.\nStep 4: g(2) = f(2) pins down p = -1.\n\nFinal: f(x) = 1/(x - 1).",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = 0",
+      "1 mark for a = 1",
+      "1 mark for p = -1",
+      "1 mark for f(x) = 1/(x - 1)"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -1",
+      "g(1) = q -> q = 0",
+      "f(0) = g(0) -> a = 1",
+      "g(2) = f(2) -> p = -1",
+      "Final: f(x) = 1/(x - 1)"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 4. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 4/(x - 2)",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = 0.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 4.\nStep 4: g(4) = f(4) pins down p = -2.\n\nFinal: f(x) = 4/(x - 2).",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = 0",
+      "1 mark for a = 4",
+      "1 mark for p = -2",
+      "1 mark for f(x) = 4/(x - 2)"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -2",
+      "g(2) = q -> q = 0",
+      "f(0) = g(0) -> a = 4",
+      "g(4) = f(4) -> p = -2",
+      "Final: f(x) = 4/(x - 2)"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 3. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 2/(x - 1) + 1",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = 1.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 2.\nStep 4: g(3) = f(3) pins down p = -1.\n\nFinal: f(x) = 2/(x - 1) + 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = 1",
+      "1 mark for a = 2",
+      "1 mark for p = -1",
+      "1 mark for f(x) = 2/(x - 1) + 1"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -1",
+      "g(2) = q -> q = 1",
+      "f(0) = g(0) -> a = 2",
+      "g(3) = f(3) -> p = -1",
+      "Final: f(x) = 2/(x - 1) + 1"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 3. g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 2) + 1",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(3) = q (horizontal asymptote) -> q = 3 + c = 1.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 6.\nStep 4: g(5) = f(5) pins down p = -2.\n\nFinal: f(x) = 6/(x - 2) + 1.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c = 1",
+      "1 mark for a = 6",
+      "1 mark for p = -2",
+      "1 mark for f(x) = 6/(x - 2) + 1"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -2",
+      "g(3) = q -> q = 1",
+      "f(0) = g(0) -> a = 6",
+      "g(5) = f(5) -> p = -2",
+      "Final: f(x) = 6/(x - 2) + 1"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 5. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 4/(x - 4) - 3",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -3.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 4.\nStep 4: g(5) = f(5) pins down p = -4.\n\nFinal: f(x) = 4/(x - 4) - 3.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -3",
+      "1 mark for a = 4",
+      "1 mark for p = -4",
+      "1 mark for f(x) = 4/(x - 4) - 3"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -4",
+      "g(1) = q -> q = -3",
+      "f(0) = g(0) -> a = 4",
+      "g(5) = f(5) -> p = -4",
+      "Final: f(x) = 4/(x - 4) - 3"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 8/(x - 4) - 2",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = -2.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 8.\nStep 4: g(6) = f(6) pins down p = -4.\n\nFinal: f(x) = 8/(x - 4) - 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = -2",
+      "1 mark for a = 8",
+      "1 mark for p = -4",
+      "1 mark for f(x) = 8/(x - 4) - 2"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -4",
+      "g(2) = q -> q = -2",
+      "f(0) = g(0) -> a = 8",
+      "g(6) = f(6) -> p = -4",
+      "Final: f(x) = 8/(x - 4) - 2"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 5/(x - 5) - 4",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -4.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 5.\nStep 4: g(6) = f(6) pins down p = -5.\n\nFinal: f(x) = 5/(x - 5) - 4.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -4",
+      "1 mark for a = 5",
+      "1 mark for p = -5",
+      "1 mark for f(x) = 5/(x - 5) - 4"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -5",
+      "g(1) = q -> q = -4",
+      "f(0) = g(0) -> a = 5",
+      "g(6) = f(6) -> p = -5",
+      "Final: f(x) = 5/(x - 5) - 4"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 3. g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 9/(x - 3)",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(3) = q (horizontal asymptote) -> q = 3 + c = 0.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 9.\nStep 4: g(6) = f(6) pins down p = -3.\n\nFinal: f(x) = 9/(x - 3).",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 3 + c = 0",
+      "1 mark for a = 9",
+      "1 mark for p = -3",
+      "1 mark for f(x) = 9/(x - 3)"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -3",
+      "g(3) = q -> q = 0",
+      "f(0) = g(0) -> a = 9",
+      "g(6) = f(6) -> p = -3",
+      "Final: f(x) = 9/(x - 3)"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 2. g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 10/(x - 5) - 3",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(2) = q (horizontal asymptote) -> q = 2 + c = -3.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 10.\nStep 4: g(7) = f(7) pins down p = -5.\n\nFinal: f(x) = 10/(x - 5) - 3.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 2 + c = -3",
+      "1 mark for a = 10",
+      "1 mark for p = -5",
+      "1 mark for f(x) = 10/(x - 5) - 3"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -5",
+      "g(2) = q -> q = -3",
+      "f(0) = g(0) -> a = 10",
+      "g(7) = f(7) -> p = -5",
+      "Final: f(x) = 10/(x - 5) - 3"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 4. g intersects f at x = 6. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 8/(x - 2) + 2",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(4) = q (horizontal asymptote) -> q = 4 + c = 2.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 8.\nStep 4: g(6) = f(6) pins down p = -2.\n\nFinal: f(x) = 8/(x - 2) + 2.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 4 + c = 2",
+      "1 mark for a = 8",
+      "1 mark for p = -2",
+      "1 mark for f(x) = 8/(x - 2) + 2"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -2",
+      "g(4) = q -> q = 2",
+      "f(0) = g(0) -> a = 8",
+      "g(6) = f(6) -> p = -2",
+      "Final: f(x) = 8/(x - 2) + 2"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "g(x) = x + c and f(x) = a/(x + p) + q are drawn on the same set of axes. g meets the vertical asymptote of f on the x-axis. g intersects the horizontal asymptote of f at x = 1. g intersects f at x = 7. f and g also intersect on the y-axis. Determine the equation of f.",
+    "expected": "f(x) = 6/(x - 6) - 5",
+    "demonstration": "Step 1: g(-p) = 0 (x-axis intersection) -> c = p.\nStep 2: g(1) = q (horizontal asymptote) -> q = 1 + c = -5.\nStep 3: f(0) = g(0) (y-axis intersection) -> a/p + q = c -> a = 6.\nStep 4: g(7) = f(7) pins down p = -6.\n\nFinal: f(x) = 6/(x - 6) - 5.",
+    "memo_marks": [
+      "1 mark for c = p (from x-axis intersection)",
+      "1 mark for q = 1 + c = -5",
+      "1 mark for a = 6",
+      "1 mark for p = -6",
+      "1 mark for f(x) = 6/(x - 6) - 5"
+    ],
+    "fast_path": "c = p from x-axis. Then q from horizontal asymptote. Then a from y-axis. Then p from f-intersection.",
+    "fatal_error": "DBE says: Candidates try to substitute all three points at once without noticing c = p is free from the x-axis intersection.",
+    "answer_book_layout": [
+      "g(-p) = 0 -> c = p = -6",
+      "g(1) = q -> q = -5",
+      "f(0) = g(0) -> a = 6",
+      "g(7) = f(7) -> p = -6",
+      "Final: f(x) = 6/(x - 6) - 5"
+    ],
+    "hack": "The x-axis intersection gives c = p for free. Use it first, then chain the rest.",
+    "trap": "Don't try to solve three equations at once. Chain: c = p, then q, then a, then p.",
+    "presentation": "Show each constraint used. Five marks: c, q, a, p, final.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

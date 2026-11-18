@@ -1,0 +1,171 @@
+﻿"""
+render_diagrams.py — DBE-exact diagram renderer for variant pools.
+
+Phase 1: log curve for Q4.1 (exemplar).
+"""
+import json, re, shutil, sys
+from pathlib import Path
+from datetime import datetime
+from fractions import Fraction
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+
+POOL_DIR = Path("data/processed/tutor/variant_pools")
+OUT_DIR = Path("data/processed/tutor/variant_diagrams")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+# DBE styling constants
+DBE_STYLE = {
+    "figsize": (5, 4.2),
+    "dpi": 150,
+    "line_width": 1.4,
+    "point_size": 5,
+    "font_size": 10,
+    "label_size": 11,
+    "arrow_head": 0.08,
+}
+
+def _parse_log_variant(text):
+    """Extract base and marked point from log-curve variant question."""
+    # Try form 1: "Find t if (8; t) lies on f(x) = log_2(x)."
+    m = re.search(r"\(([0-9./]+);\s*([a-z])\)\s*lies on f\(x\)\s*=\s*log_\{?([0-9/]+)\}?\(x\)", text)
+    if m:
+        return Fraction(m.group(3)), Fraction(m.group(1)), m.group(2)
+    # Try form 2: "The point (25; k) lies on f(x) = log_5(x). Determine k."
+    m = re.search(r"point\s*\(([0-9./]+);\s*([a-z])\)\s*lies on f\(x\)\s*=\s*log_\{?([0-9/]+)\}?\(x\)", text)
+    if m:
+        return Fraction(m.group(3)), Fraction(m.group(1)), m.group(2)
+    # Try form 3: "Calculate p if log_2(8) = p."
+    m = re.search(r"log_\{?([0-9/]+)\}?\(([0-9./]+)\)\s*=\s*([a-z])", text)
+    if m:
+        return Fraction(m.group(1)), Fraction(m.group(2)), m.group(3)
+    # Try form 4: "If 3^t = 27, write down t in log form..."
+    m = re.search(r"\(([0-9./]+);\s*([a-z])\)", text)
+    m2 = re.search(r"log_\{?([0-9/]+)\}?\(x\)", text)
+    if m and m2:
+        return Fraction(m2.group(1)), Fraction(m.group(1)), m.group(2)
+    return None
+
+def render_log_curve(base, x_marked, var_name, out_path):
+    """DBE-exact log curve: f(x) = log_base(x), point (x_marked; y), x-intercept A at (1,0)."""
+    base_f = float(base)
+    x_f = float(x_marked)
+    if base_f <= 0 or base_f == 1 or x_f <= 0:
+        return False
+    
+    y_marked = float(np.log(x_f) / np.log(base_f))
+    
+    fig, ax = plt.subplots(figsize=DBE_STYLE["figsize"], dpi=DBE_STYLE["dpi"])
+    
+    # Domain: log defined for x > 0. Curve from 0.05 to x_marked * 1.8
+    x_max = max(x_f * 1.8, 5)
+    x_vals = np.logspace(np.log10(0.05), np.log10(x_max), 400)
+    y_vals = np.log(x_vals) / np.log(base_f)
+    
+    # Clip y to reasonable range for display
+    y_limit = max(abs(y_marked) * 2.5, 4)
+    mask = (y_vals > -y_limit) & (y_vals < y_limit)
+    x_plot = x_vals[mask]
+    y_plot = y_vals[mask]
+    
+    ax.plot(x_plot, y_plot, "k-", linewidth=DBE_STYLE["line_width"])
+    
+    # Mark (1, 0) as A (x-intercept)
+    ax.plot(1, 0, "ko", markersize=DBE_STYLE["point_size"])
+    ax.annotate("A", xy=(1, 0), xytext=(1.08, 0.25),
+                fontsize=DBE_STYLE["label_size"], fontweight="bold")
+    
+    # Mark (x_marked, y_marked) with variable label
+    ax.plot(x_f, y_marked, "ko", markersize=DBE_STYLE["point_size"])
+    # Label offset: above for increasing, below for decreasing
+    y_off = 0.3 if base_f < 1 else -0.35
+    x_disp = int(x_f) if x_f == int(x_f) else x_f
+    ax.annotate(f"({x_disp:g}; {var_name})",
+                xy=(x_f, y_marked),
+                xytext=(x_f + 0.15, y_marked + y_off),
+                fontsize=DBE_STYLE["font_size"])
+    
+    # f label near curve
+    mid_idx = len(x_plot) // 3
+    if mid_idx < len(x_plot):
+        ax.annotate("f", xy=(x_plot[mid_idx], y_plot[mid_idx]),
+                    xytext=(x_plot[mid_idx] - 0.15, y_plot[mid_idx] + 0.3),
+                    fontsize=DBE_STYLE["label_size"], fontstyle="italic")
+    
+    # Axes
+    ax.axhline(0, color="k", linewidth=0.6)
+    ax.axvline(0, color="k", linewidth=0.6)
+    
+    # Axis styling: DBE convention
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["bottom"].set_position(("data", 0))
+    ax.spines["left"].set_position(("data", 0))
+    ax.plot(1, 0, ">k", transform=ax.get_yaxis_transform(), clip_on=False, markersize=5)
+    ax.plot(0, 1, "^k", transform=ax.get_xaxis_transform(), clip_on=False, markersize=5)
+    
+    ax.set_xlim(-0.5, x_max)
+    ax.set_ylim(-y_limit, y_limit)
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.set_xlabel("x", fontsize=DBE_STYLE["font_size"], labelpad=-12, loc="right")
+    ax.set_ylabel("y", fontsize=DBE_STYLE["font_size"], labelpad=-15, loc="top", rotation=0)
+    
+    plt.tight_layout()
+    plt.savefig(out_path, dpi=DBE_STYLE["dpi"], bbox_inches="tight", facecolor="white")
+    plt.close()
+    return True
+
+
+def render_q4_1_pool():
+    """Render Q4.1's pool as proof-of-concept."""
+    pool_path = POOL_DIR / "4.1_pool.json"
+    if not pool_path.exists():
+        print("ERROR: 4.1_pool.json not found")
+        return
+    
+    pool = json.loads(pool_path.read_text(encoding="utf-8-sig"))
+    out_subdir = OUT_DIR / "4.1"
+    out_subdir.mkdir(parents=True, exist_ok=True)
+    
+    rendered = 0
+    skipped = 0
+    for i, v in enumerate(pool, 1):
+        parsed = _parse_log_variant(v["variant_question"])
+        if not parsed:
+            skipped += 1
+            continue
+        base, x_marked, var_name = parsed
+        out_path = out_subdir / f"v{i:02d}.png"
+        try:
+            if render_log_curve(base, x_marked, var_name, out_path):
+                v["diagram_path"] = str(out_path)
+                v["diagram_status"] = "rendered"
+                rendered += 1
+            else:
+                skipped += 1
+        except Exception as e:
+            print(f"  variant {i}: render failed — {e}")
+            skipped += 1
+    
+    # Backup and rewrite
+    ts = datetime.now().strftime("%Y%m%d%H%M%S")
+    shutil.copy(pool_path, pool_path.with_suffix(f".json.bak_{ts}"))
+    pool_path.write_text(json.dumps(pool, indent=2, ensure_ascii=False), encoding="utf-8")
+    
+    print(f"\nQ4.1 pool: {rendered} rendered, {skipped} skipped")
+    print(f"Output: {out_subdir}")
+    return out_subdir
+
+
+if __name__ == "__main__":
+    print("=== Phase 1: Render Q4.1 log curve exemplar ===\n")
+    out = render_q4_1_pool()
+    if out:
+        samples = sorted(out.glob("*.png"))[:3]
+        print(f"\nSample outputs to inspect:")
+        for s in samples:
+            print(f"  {s}")

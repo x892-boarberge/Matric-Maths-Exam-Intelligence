@@ -1,0 +1,864 @@
+"""
+MatricMath thin CLI tutor loop (no UI).
+Engine decides; template renderer phrases; session is logged to JSONL.
+"""
+from __future__ import annotations
+
+import sys
+import pathlib
+from datetime import datetime, timezone
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from src.tutor.schemas import LearnerState, Problem, EventType
+from src.tutor.tutor_engine import TutorEngine
+from src.tutor.event_log import SessionLogger, read_events
+from src.tutor.n08_loader import get_library
+from src.tutor.mapping_adapter import v1_to_v2
+from src.tutor.question_loader import load_corpus
+from src.tutor.drill import run as run_drill
+from cli_navigation import pick_navigated_problem
+from src.tutor.learner_store import open_store
+from src.tutor.session_open import warm_open, TUTOR_NAME
+from src.tutor.schemas import MasteryState
+
+
+PROBLEMS = [
+    {
+        "skill_id": "algebra.quadratic.solve",
+        "topic": "Algebra & Equations",
+        "subtopic": "Quadratic equations",
+        "structure_type": "routine_calculation",
+        "prompt": "Solve x^2 - 5x + 6 = 0",
+        "expected": "x = 2 or x = 3",
+        "hint_correct": "Accept answers like: x = 2 or x = 3",
+    },
+    {
+        "skill_id": "functions.parabola.range",
+        "topic": "Functions & Graphs",
+        "subtopic": "Parabola",
+        "structure_type": "graph_interpretation",
+        "prompt": "Parabola opens upward with turning point (-1, -4). State the range.",
+        "expected": "y >= -4",
+        "hint_correct": "Accept: y >= -4",
+    },
+    {
+        "skill_id": "trig.reduction.simplify",
+        "topic": "Trigonometry",
+        "subtopic": "Reduction formulae",
+        "structure_type": "routine_calculation",
+        "prompt": "Simplify sin(180 - theta)",
+        "expected": "sin theta",
+        "hint_correct": "Accept: sin theta",
+    },
+    {
+        "skill_id": "analytical_geom.parallelogram.prove",
+        "topic": "Analytical Geometry",
+        "subtopic": "Parallelogram proof",
+        "structure_type": "proof_show_that",
+        "prompt": "Prove ABCD is a parallelogram. (Do not assume from the diagram.)",
+        "expected": "AB parallel CD and BC parallel AD (proved by equal gradients)",
+        "hint_correct": "Need proof language, not 'as seen in the diagram'.",
+    },
+    {
+        "skill_id": "euclidean.semicircle.prove",
+        "topic": "Euclidean Geometry",
+        "subtopic": "Angle in semicircle",
+        "structure_type": "proof_show_that",
+        "prompt": "Prove angle ABC = 90 where AC is a diameter.",
+        "expected": "angle ABC = 90 (angle in semicircle theorem)",
+        "hint_correct": "Need theorem citation, not only the conclusion.",
+    },
+]
+
+
+def show_banner(learner_id=None, store_path=None):
+    """Print the session banner (once, at session start)."""
+    print("\nMatricMath CLI Tutor  ·  " + TUTOR_NAME)
+    print("=" * 60)
+    lib = get_library(force_reload=True)
+    print("N08 library: " + str(lib.load_status) + " | misconceptions: " + str(len(lib.by_misconception)))
+    if learner_id is not None:
+        print("Learner:", learner_id, "| store:", store_path)
+    print("=" * 60)
+
+
+def pick_problem():
+    print("  P. Practise from real NSC corpus (choose topic)")
+    for i, p in enumerate(PROBLEMS, 1):
+        print("  " + str(i) + ". " + p["topic"] + " - " + p["subtopic"])
+    print("  Q. Quit")
+    while True:
+        choice = input("\nChoose [1-5, P, Q]: ").strip().lower()
+        if choice in ("q", "quit", "exit"):
+            sys.exit(0)
+        if choice == "p":
+            return "__corpus__"
+        if choice.isdigit() and 1 <= int(choice) <= len(PROBLEMS):
+            return PROBLEMS[int(choice) - 1]
+        print("Enter 1-5, P, or Q.")
+
+
+def pick_corpus_problem():
+    import random
+    problems = load_corpus()
+    if not problems:
+        print()
+        print('No corpus questions with memo answers yet.')
+        print('Add rows to data/processed/memo_answers/memo_answers_YYYY_P*.csv')
+        sys.exit(1)
+
+    while True:
+        sample = random.sample(problems, min(10, len(problems)))
+        print()
+        print('Real NSC questions (random 10 of ' + str(len(problems)) + ' loaded):')
+        for i, p in enumerate(sample, 1):
+            label = p.prompt[:60].replace(chr(10), ' ')
+            parts = p.problem_id.split('_')
+            yr = parts[0] if len(parts) > 0 else '?'
+            pap = parts[1] if len(parts) > 1 else '?'
+            print(f'  {i}. [{p.topic_v2}] {yr} {pap} :: {p.skill_id}')
+            print('     ' + label + '...')
+        print('  R. Reshuffle   Q. Quit')
+        choice = input('Choose [1-10, R, Q]: ').strip().lower()
+        if choice in ('q', 'quit', 'exit'):
+            sys.exit(0)
+        if choice == 'r':
+            continue
+        if choice.isdigit() and 1 <= int(choice) <= len(sample):
+            return sample[int(choice) - 1]
+        print('Enter 1-10, R, or Q.')
+
+
+
+
+
+# ------------------------------------------------------------------
+# Phase 1.5 - diagram support
+# ------------------------------------------------------------------
+
+import json as _json
+import os as _os
+
+_DIAGRAM_MAP = None
+_DIAGRAM_PAGES_DIR = ROOT / "data" / "processed" / "diagrams" / "pages"
+_DIAGRAM_MAP_PATH = ROOT / "data" / "processed" / "diagrams" / "question_page_map.json"
+
+
+def _load_diagram_map():
+    global _DIAGRAM_MAP
+    if _DIAGRAM_MAP is not None:
+        return _DIAGRAM_MAP
+    if _DIAGRAM_MAP_PATH.exists():
+        try:
+            _DIAGRAM_MAP = _json.loads(_DIAGRAM_MAP_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            _DIAGRAM_MAP = {}
+    else:
+        _DIAGRAM_MAP = {}
+    return _DIAGRAM_MAP
+
+
+def _diagram_path_for(problem):
+    """Return the paper image path for a real exam question.
+
+    Prefers the template's diagram_image field — that is the file
+    that actually exists on disk. Falls back to the page map only
+    when the template has no image.
+    """
+    pid = problem.problem_id or ""
+    parts = pid.split("_")
+    if len(parts) < 3:
+        return None
+    year = parts[0]
+    paper = parts[1]
+    q_part = parts[2]
+    if not q_part.startswith("Q"):
+        return None
+    qnum = q_part[1:].split(".")[0]
+
+    # 1. Try the template's diagram_image field first.
+    tpl_dir = ROOT / "data" / "processed" / "tutor" / "question_templates"
+    tpl_path = tpl_dir / f"template_{year}_{paper}_Q{qnum}.json"
+    if tpl_path.exists():
+        try:
+            import json as _j
+            data = _j.loads(tpl_path.read_text(encoding="utf-8"))
+            img = data.get("diagram_image")
+            if img:
+                full = ROOT / img
+                if full.exists():
+                    return full
+        except Exception:
+            pass
+
+    # 2. Fall back to the page map with the template's naming convention.
+    stem = year + "_nov_p" + paper[1] + "_exam_maths"
+    dmap = _load_diagram_map()
+    if stem not in dmap:
+        return None
+    q_to_page = dmap[stem]
+    if qnum not in q_to_page:
+        return None
+    page = q_to_page[qnum]
+    # try both naming conventions
+    for candidate in (
+        _DIAGRAM_PAGES_DIR / f"{year}_{paper}_p{page:02d}.png",
+        _DIAGRAM_PAGES_DIR / f"{year}_{paper}_p{page}.png",
+        _DIAGRAM_PAGES_DIR / f"{stem}_p{page}.png",
+    ):
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def _open_diagram(problem):
+    path = _diagram_path_for(problem)
+    if path is None:
+        return None
+    try:
+        _os.startfile(str(path))
+        return path
+    except Exception:
+        return None
+
+
+def format_topic_line(problem):
+    if problem.topic and problem.topic_v2 and problem.topic != problem.topic_v2:
+        topic_display = str(problem.topic) + " (" + str(problem.topic_v2) + ")"
+    else:
+        topic_display = str(problem.topic or problem.topic_v2 or "")
+    if problem.subtopic:
+        topic_display = topic_display + " / " + str(problem.subtopic)
+    return "Topic: " + topic_display
+
+
+
+
+def collect_working():
+    """Collect working line-by-line. Returns WorkingSubmission or None to quit."""
+    from src.tutor.schemas import WorkingSubmission, WorkingStep
+    import time as _time
+
+    print()
+    print("Show your working. One line at a time.")
+    print("  - Type 'done' when finished")
+    print("  - Type 'answer: x = ...' for a single-answer attempt")
+    print("  - Type 'q' to quit")
+    print()
+
+    steps = []
+    start = _time.time()
+    while True:
+        idx = len(steps) + 1
+        try:
+            raw = input(f"  Line {idx}: ").rstrip()
+        except (EOFError, KeyboardInterrupt):
+            return None
+        stripped = raw.strip()
+        if not stripped:
+            continue
+        low = stripped.lower()
+
+        if low in ("q", "quit", "exit"):
+            return None
+
+        if low == "done" or low == "submit":
+            if not steps:
+                print("  (no working yet — type at least one line, or 'q' to quit)")
+                continue
+            return WorkingSubmission(
+                steps=[WorkingStep(index=i + 1, raw_text=t) for i, t in enumerate(steps)],
+                source="typed",
+                final_answer=steps[-1],
+            )
+
+        if low.startswith("answer:"):
+            answer = stripped[len("answer:"):].strip()
+            if answer:
+                return WorkingSubmission(
+                    steps=[WorkingStep(index=1, raw_text=answer, timestamp=_time.time() - start)],
+                    source="typed",
+                    final_answer=answer,
+                )
+            print("  (empty answer — try again)")
+            continue
+
+        # Any other line is a working step
+        steps.append(stripped)
+        if len(steps) >= 40:
+            print("  (40 lines — submit with 'done')")
+
+
+
+
+
+def show_session_summary(store, learner_id, session_id, skill_id, seen_attempts):
+    """Print a proper session summary."""
+    print()
+    print("=" * 60)
+    print("Session summary")
+    print("=" * 60)
+    print(f"  Learner: {learner_id}")
+    print(f"  Skill:   {skill_id}")
+    print(f"  Attempts this session: {len(seen_attempts)}")
+    correct = sum(1 for e in seen_attempts if e == "none")
+    print(f"  Correct: {correct}")
+    print(f"  Wrong:   {len(seen_attempts) - correct}")
+    print()
+    m = store.get_mastery(learner_id, skill_id)
+    print(f"  Mastery state: {m['mastery_state']}")
+    print(f"  Sittings passed: {m['sittings_passed']}")
+    if m["mastery_state"] == "near_mastery":
+        print()
+        print("  You need ONE more passing sitting (3 of 4 correct)")
+        print("  within 14 days to reach mastery.")
+    elif m["mastery_state"] == "practising":
+        print()
+        print("  Keep practising. A passing sitting is 3 correct out of 4")
+        print("  attempts on the same skill in a single session.")
+    print("=" * 60)
+
+
+def show_learner_dashboard(store, learner_id):
+    """Show all skills and their mastery state."""
+    import sqlite3
+    print()
+    print("=" * 60)
+    print(f"Dashboard — {learner_id}")
+    print("=" * 60)
+    rows = store.conn.execute(
+        "SELECT skill_id, mastery_state, sittings_passed, last_sitting_at "
+        "FROM mastery WHERE learner_id = ? ORDER BY mastery_state, skill_id",
+        (learner_id,),
+    ).fetchall()
+    if not rows:
+        print("  (no mastery records yet)")
+    else:
+        print(f"  {'Skill':<38s} {'State':<14s} Sittings")
+        print("  " + "-" * 58)
+        for r in rows:
+            print(f"  {r['skill_id']:<38s} {r['mastery_state']:<14s} {r['sittings_passed']}")
+    print()
+    n_sess = store.conn.execute(
+        "SELECT COUNT(*) FROM session WHERE learner_id = ?", (learner_id,)
+    ).fetchone()[0]
+    n_att = store.conn.execute(
+        "SELECT COUNT(*) FROM attempt WHERE learner_id = ?", (learner_id,)
+    ).fetchone()[0]
+    print(f"  Total sessions: {n_sess}")
+    print(f"  Total attempts: {n_att}")
+    print("=" * 60)
+
+
+
+def main() -> None:
+    # ---- Setup once: learner id and store persist across topics ----
+    learner_id = input("\nEnter learner id (or press Enter for 'cli_user'): ").strip()
+    if not learner_id:
+        learner_id = "cli_user"
+
+    store_path = ROOT / "data" / "learner_store" / "learners.db"
+    store = open_store(store_path)
+
+    # ---- Session banner (printed once, before the warm open) ----
+    show_banner(learner_id, store_path)
+
+    # ---- Warm open: greeting, progress preview, homework gate ----
+    # NOTE: warm_open reads the PRE-session state. It must run BEFORE
+    #       load_learner(), which stamps last_seen and would otherwise
+    #       make a brand-new learner look like a returning one.
+    warm_open(learner_id, store)
+    answer = input("  > ").strip().lower()
+    print()
+    if answer in ("y", "yes"):
+        print("  Great. Paste the question, or describe it.")
+        hw = input("  > ").strip()
+        print()
+        if hw:
+            print("  (Variant flow is on the backlog — type 'menu' to continue to the drill.)")
+
+    # Now that the session is officially open, stamp last_seen.
+    store.load_learner(learner_id)
+
+    # ============================================================
+    # Topic loop — learner can jump between topics freely
+    # ============================================================
+    while True:
+        item = pick_problem()
+        # pick_problem() exits the process on Q, so item is either "__corpus__" or a dict
+
+        if item == "__corpus__":
+            problem = pick_navigated_problem(load_corpus())
+            if problem is None:
+                # User chose Back/Quit inside navigation — go back to the main menu
+                continue
+            item = {
+                "skill_id": problem.skill_id,
+                "topic": problem.topic,
+                "subtopic": problem.subtopic,
+                "structure_type": problem.structure_type,
+                "prompt": problem.prompt,
+                "expected": problem.expected_answer,
+                "hint_correct": "Answer as you would in the exam.",
+                "_preloaded_problem": problem,
+            }
+
+        # ---- Fresh session for this topic ----
+        stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        session_id = "cli_" + stamp
+        store.start_session(learner_id, item["skill_id"], session_id=session_id)
+
+        log_dir = ROOT / "data" / "processed" / "tutor" / "logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        log_path = log_dir / (session_id + ".jsonl")
+
+        logger = SessionLogger(session_id, log_path)
+        logger.emit(
+            EventType.SESSION_STARTED,
+            {"mode": "cli", "skill_id": item["skill_id"]},
+        )
+
+        problem = item.get("_preloaded_problem") or Problem(
+            problem_id="CLI1",
+            skill_id=item["skill_id"],
+            topic=item["topic"],
+            topic_v2=v1_to_v2(item["topic"]),
+            subtopic=item["subtopic"],
+            structure_type=item["structure_type"],
+            prompt=item["prompt"],
+            expected_answer=item["expected"],
+        )
+
+        state = LearnerState(
+            learner_id=learner_id,
+            skill_id=item["skill_id"],
+            current_session_id=session_id,
+        )
+
+        engine = TutorEngine(session_logger=logger, learner_store=store, session_id=session_id)
+
+        logger.emit(
+            EventType.PROBLEM_PRESENTED,
+            {
+                "problem_id": problem.problem_id,
+                "skill_id": problem.skill_id,
+                "topic": problem.topic,
+                "topic_v2": problem.topic_v2,
+                "prompt": problem.prompt,
+            },
+        )
+
+        print("\n" + "-" * 60)
+        print(format_topic_line(problem))
+        print("Problem: " + problem.prompt)
+
+        _diagram = _diagram_path_for(problem)
+        if _diagram is not None:
+            print("Diagram page: " + str(_diagram))
+            _opened = _open_diagram(problem)
+            if _opened is not None:
+                print("(opened in your image viewer - type \"diagram\" to reopen)")
+            else:
+                print("(open the image manually to see the diagram)")
+        print("-" * 60)
+        print("Commands:  quit  |  answer (ask for more help)  |  just type your attempt")
+        print("Note: " + item["hint_correct"])
+        print("-" * 60)
+
+        # ---- Mode: drill (default) or single-anchor ----
+        print()
+        print("  Options:")
+        print("    Enter  → drill (5 questions, mastery tracked)")
+        print("    s      → single question with full teaching")
+        print("    q      → quit")
+        _single_mode = False
+        while True:
+            mode = input("  > ").strip().lower()
+            if mode in ("q", "quit", "exit"):
+                sys.exit(0)
+            if mode in ("s", "single"):
+                _single_mode = True
+                break
+            if mode in ("", "d", "drill", "y", "yes", "1", "5"):
+                break
+            print("  Enter for drill, 's' for single, 'q' to quit.")
+
+        if _single_mode:
+            _run_single_anchor(engine, store, learner_id, session_id,
+                               problem, logger)
+            summary = logger.close()
+            store.end_session(session_id)
+            print()
+            print("=" * 60)
+            print("Session log: " + str(log_path))
+            print("SESSION_ENDED: " + str(summary))
+            print("=" * 60)
+            again = input("  Pick another topic? [Y/n]: ").strip().lower()
+            if again == "n":
+                break
+            continue
+
+        if True:
+            result = run_drill(
+                engine=engine,
+                store=store,
+                learner_id=learner_id,
+                session_id=session_id,
+                anchor=problem,
+                logger=logger,
+            )
+            print()
+            print("  Drill finished:", result)
+
+            summary = logger.close()
+            store.end_session(session_id)
+
+            print("\n" + "=" * 60)
+            print("Session log: " + str(log_path))
+            print("SESSION_ENDED: " + str(summary))
+            print("=" * 60)
+
+            exit_reason = result.get("exit_reason", "completed")
+
+            if exit_reason == "quit":
+                break
+            if exit_reason == "menu":
+                # back to topic picker
+                continue
+
+            # completed / learner_end — offer next choice
+            print()
+            again = input("  Pick another topic? [Y/n]: ").strip().lower()
+            if again == "n":
+                break
+            continue
+
+        # ---- Legacy single-attempt loop ----
+        while True:
+            submission = collect_working()
+            if submission is None:
+                break
+
+            action = engine.step(
+                state,
+                problem,
+                submission,
+                explicit_solution_request=False,
+            )
+
+            print("\n  diagnosis:    " + action.diagnosis.error_type.value, end="")
+            if action.diagnosis.misconception_id:
+                print(" [" + action.diagnosis.misconception_id + "]", end="")
+            print()
+            print(
+                "  intervention: " + action.intervention.intervention_pattern
+                + " [" + action.intervention.provenance.value + "] "
+                + str(action.intervention.n08_intervention_id or "")
+            )
+            print("  hint level:   " + (action.hint_level.value if action.hint_level else "-"))
+            print("  action:       " + action.action.value)
+            print("  tutor:        " + action.tutor_message)
+
+            if action.diagnosis.error_type.value == "none":
+                print()
+                print("=" * 60)
+                print("Correct.")
+                print("=" * 60)
+                print("  [Enter]  pick another topic")
+                print("  q        end the tutor session")
+                choice = input("  > ").strip().lower()
+                if choice in ("q", "quit", "exit"):
+                    break
+                break  # fall through to topic loop
+
+        summary = logger.close()
+        store.end_session(session_id)
+
+        print("\n" + "=" * 60)
+        print("Session log: " + str(log_path))
+        print("SESSION_ENDED: " + str(summary))
+        print("=" * 60)
+
+        # After legacy attempt — offer next topic
+        again = input("  Pick another topic? [Y/n]: ").strip().lower()
+        if again == "n":
+            break
+        continue
+
+    # ---- Clean shutdown ----
+    store.close()
+    print("\nTutor session ended. See you next time.")
+
+
+
+
+# ══════════════════════════════════════════════════════════════
+# Single-anchor mode: run one real question through the full
+# teaching pipeline. No variants, no drill.
+# ══════════════════════════════════════════════════════════════
+
+def _run_single_anchor(engine, store, learner_id, session_id, problem, logger):
+    """Run one anchor through observe -> grade -> diagnose -> teach -> retry."""
+    from src.tutor.math_grader import grade as _grade
+    from src.tutor.step_grader import (
+        grade_steps as _grade_steps,
+        first_failed_step_diagnosis as _first_fail,
+    )
+    from src.tutor.diagnosis import diagnose as _diagnose
+    from src.tutor import teaching_objectives as _to
+
+    _diagram = _diagram_path_for(problem)
+    if _diagram is not None:
+        print("  Diagram page: " + str(_diagram))
+        _opened = _open_diagram(problem)
+        if _opened is not None:
+            print("  (opened in your image viewer)")
+
+    _continue = _show_dependencies(problem, store, learner_id)
+    if not _continue:
+        print("  (back — pick a different question)")
+        return
+
+    attempts = 0
+    max_attempts = 3
+    while attempts < max_attempts:
+        attempts += 1
+        submission = collect_working()
+        if submission is None:
+            return
+
+        learner_lines = [s.raw_text for s in submission.steps]
+        learner_text = submission.joined()
+
+        g = _grade(learner_text, problem.expected_answer)
+        print()
+        print(f"  grade:  {g.kind.value}  ({g.matcher})")
+
+        step_result = None
+        try:
+            step_result = _grade_steps(problem.problem_id, learner_lines)
+        except Exception:
+            step_result = None
+
+        if step_result and step_result.get("total_marks", 0) > 0:
+            awarded = step_result.get("awarded_marks", 0)
+            total = step_result.get("total_marks", 0)
+            print(f"  mark:   {awarded}/{total}")
+            for s in step_result.get("steps", []):
+                print(f"    {s.get('match_status','?'):12s} "
+                      f"{s.get('desc','')[:55]}")
+        else:
+            print(f"  mark:   (no memo step scheme for {problem.problem_id})")
+
+        diag = _diagnose(problem.skill_id, learner_text,
+                         problem.expected_answer, prompt=problem.prompt)
+        misconception = diag.misconception_id
+        source = "text" if misconception else None
+
+        if (not misconception and step_result
+                and step_result.get("total_marks", 0) > 0):
+            mid, desc, _ = _first_fail(
+                step_result, skill_id=problem.skill_id,
+                learner_line_count=len(learner_lines),
+            )
+            if mid:
+                misconception = mid
+                source = "step"
+
+        try:
+            store.save_attempt(
+                session_id=session_id,
+                learner_id=learner_id,
+                skill_id=problem.skill_id,
+                response=learner_text[:500],
+                diagnosis_rule_id=diag.rule_id or "",
+                misconception_id=misconception,
+                hint_level=None,
+                error_type=diag.error_type.value,
+                question_id=problem.problem_id,
+            )
+        except Exception:
+            pass
+
+        _all_steps_matched = True
+        _step_awarded = 0
+        _step_total = 0
+        if step_result and step_result.get("total_marks", 0) > 0:
+            _step_awarded = step_result.get("awarded_marks", 0)
+            _step_total = step_result.get("total_marks", 0)
+            for s in step_result.get("steps", []):
+                if s.get("match_status") != "MATCHED":
+                    _all_steps_matched = False
+                    break
+
+        if g.kind.value == "match" and _all_steps_matched:
+            print()
+            print("=" * 60)
+            print("  Correct.")
+            print("=" * 60)
+            return
+
+        if g.kind.value == "match" and not _all_steps_matched:
+            print()
+            print("=" * 60)
+            print(f"  Answer correct. Method incomplete — "
+                  f"{_step_awarded}/{_step_total}.")
+            print("=" * 60)
+            # fall through to diagnosis and teaching
+
+        print()
+        print(f"  diagnosis:  {misconception or '(none)'}  "
+              f"[source: {source or '-'}]")
+
+        if misconception:
+            obj = _to.find_for(misconception)
+            if obj is not None:
+                print(f"  objective:  {obj.get('objective_id')}")
+                try:
+                    _to.teach(obj)
+                except Exception as _e:
+                    print(f"  [teach warning] {_e}")
+            else:
+                print("  objective:  (none)")
+        else:
+            print("  (no rule fired on this answer)")
+
+        print()
+        if attempts >= max_attempts:
+            break
+        retry = input("  Try again? [Enter to retry, q to quit]: ").strip().lower()
+        if retry in ("q", "quit", "exit"):
+            return
+
+    print()
+    print("  (max attempts reached for this question)")
+
+
+
+
+
+def _show_dependencies(problem, store, learner_id):
+    """Flip back through every prior subquestion of this question.
+
+    For each prior subquestion, show:
+      - the number and prompt (from the template)
+      - every line the learner wrote (from evidence_json.raw.learner_lines)
+      - the diagnosis if there was one (misconception_id)
+      - the learner-facing message from the objective (if any)
+      - the mark (from evidence_json.interpretation and step_scheme, if present)
+
+    Returns True to continue, False to go back.
+    """
+    import json as _j
+    try:
+        from src.tutor.question_loader import (
+            subquestion_info, load_template_for,
+        )
+        from src.tutor import teaching_objectives as _to
+        info = subquestion_info(problem.problem_id)
+    except Exception:
+        return True
+    if not info:
+        return True
+
+    given = info.get("given_from") or []
+    if not given:
+        return True
+
+    # Load the parent template so we can read each prior subquestion's
+    # prompt text.
+    tpl = load_template_for(problem.problem_id)
+    prev_by_n = {}
+    if tpl:
+        for sq in tpl.get("subquestions", []):
+            n = str(sq.get("n", "")).strip()
+            if n:
+                prev_by_n[n] = sq
+
+    stem_parts = problem.problem_id.split("_")
+    stem_prefix = stem_parts[0] + "_" + stem_parts[1] + "_Q"
+
+    print()
+    print("  ── flipping back through your work on this question ──")
+    print()
+
+    any_missing = False
+
+    for prev_n in given:
+        prev_id = stem_prefix + str(prev_n)
+        sq = prev_by_n.get(str(prev_n), {})
+        prompt_text = sq.get("prompt_template") or "(question text not available)"
+
+        print(f"  {prev_n}  {prompt_text}")
+
+        try:
+            row = store.conn.execute(
+                "SELECT response, error_type, misconception_id, "
+                "       evidence_json "
+                "FROM attempt "
+                "WHERE learner_id = ? AND question_id = ? "
+                "ORDER BY timestamp DESC LIMIT 1",
+                (learner_id, prev_id),
+            ).fetchone()
+        except Exception:
+            row = None
+
+        if row is None:
+            any_missing = True
+            print(f"      (you have not attempted this)")
+            print()
+            continue
+
+        # Full line-by-line working from evidence_json
+        lines = []
+        try:
+            ev = _j.loads(row["evidence_json"]) if row["evidence_json"] else {}
+            raw = ev.get("raw") or {}
+            lines = raw.get("learner_lines") or []
+        except Exception:
+            lines = []
+        if not lines and row["response"]:
+            lines = [row["response"]]
+
+        for i, ln in enumerate(lines, 1):
+            print(f"      Line {i}:  {ln}")
+
+        # Diagnosis and message
+        mid = row["misconception_id"]
+        if mid:
+            print(f"      Noticed: {mid}")
+            try:
+                obj = _to.find_for(mid)
+                if obj and obj.get("learner_message"):
+                    print(f"      Tanaka:  {obj['learner_message']}")
+            except Exception:
+                pass
+
+        # Result
+        err = row["error_type"]
+        if err == "none":
+            print(f"      Result:  correct")
+        else:
+            print(f"      Result:  {err}")
+
+        print()
+
+    print("  ──────────────────────────────────────────────────────────")
+    if any_missing:
+        print("  Some earlier parts have not been attempted.")
+        print("  The question can still be done if the given values are")
+        print("  clear from the paper.")
+        print()
+        choice = input("  Try now, or go back? [t/b]: ").strip().lower()
+        if choice in ("b", "back", "no", "n"):
+            return False
+    else:
+        print("  All earlier parts have been attempted.")
+    print()
+
+    return True
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,710 @@
+[
+  {
+    "variant_question": "Calculate p if log_2(8) = p.",
+    "expected": "p = 3",
+    "demonstration": "p = log_2(8). Raise both sides to base 2: 2^p = 2^(log_2(8)). Log and base cancel: 2^p = 8. Since 8 = 2^3, p = 3.",
+    "memo_marks": [
+      "1 mark for 2^p = 8",
+      "1 mark for p = 3"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "p = log_2(8)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: p = 3"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v01.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "The point (25; k) lies on f(x) = log_5(x). Determine k.",
+    "expected": "k = 2",
+    "demonstration": "k = log_5(25). Raise both sides to base 5: 5^k = 5^(log_5(25)). Log and base cancel: 5^k = 25. Since 25 = 5^2, k = 2.",
+    "memo_marks": [
+      "1 mark for 5^k = 25",
+      "1 mark for k = 2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "k = log_5(25)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: k = 2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v02.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Find p if (125; p) lies on f(x) = log_5(x).",
+    "expected": "p = 3",
+    "demonstration": "p = log_5(125). Raise both sides to base 5: 5^p = 5^(log_5(125)). Log and base cancel: 5^p = 125. Since 125 = 5^3, p = 3.",
+    "memo_marks": [
+      "1 mark for 5^p = 125",
+      "1 mark for p = 3"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "p = log_5(125)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: p = 3"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v03.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "If 3^t = 27, write down t in log form and hence find t.",
+    "expected": "t = 3",
+    "demonstration": "t = log_3(27). Raise both sides to base 3: 3^t = 3^(log_3(27)). Log and base cancel: 3^t = 27. Since 27 = 3^3, t = 3.",
+    "memo_marks": [
+      "1 mark for 3^t = 27",
+      "1 mark for t = 3"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "t = log_3(27)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: t = 3"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point"
+  },
+  {
+    "variant_question": "Calculate t if log_1/2(4) = t.",
+    "expected": "t = -2",
+    "demonstration": "t = log_{1/2}(4). Raise both sides to base 1/2: (1/2)^t = (1/2)^(log_{1/2}(4)). Log and base cancel: (1/2)^t = 4. Since 4 = (1/2)^(-2), t = -2.",
+    "memo_marks": [
+      "1 mark for {1/2}^t = 4",
+      "1 mark for t = -2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "t = log_{1/2}(4)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: t = -2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v05.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Calculate p if log_1/2(1/8) = p.",
+    "expected": "p = 3",
+    "demonstration": "p = log_{1/2}(1/8). Raise both sides to base 1/2: (1/2)^p = (1/2)^(log_{1/2}(1/8)). Log and base cancel: (1/2)^p = 1/8. Since 1/8 = (1/2)^(3), p = 3.",
+    "memo_marks": [
+      "1 mark for {1/2}^p = 1/8",
+      "1 mark for p = 3"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "p = log_{1/2}(1/8)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: p = 3"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v06.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "If 4^t = 4, write down t in log form and hence find t.",
+    "expected": "t = 1",
+    "demonstration": "t = log_4(4). Raise both sides to base 4: 4^t = 4^(log_4(4)). Log and base cancel: 4^t = 4. Since 4 = 4^1, t = 1.",
+    "memo_marks": [
+      "1 mark for 4^t = 4",
+      "1 mark for t = 1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "t = log_4(4)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: t = 1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point"
+  },
+  {
+    "variant_question": "Find a if (3; a) lies on f(x) = log_3(x).",
+    "expected": "a = 1",
+    "demonstration": "a = log_3(3). Raise both sides to base 3: 3^a = 3^(log_3(3)). Log and base cancel: 3^a = 3. Since 3 = 3^1, a = 1.",
+    "memo_marks": [
+      "1 mark for 3^a = 3",
+      "1 mark for a = 1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "a = log_3(3)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: a = 1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v08.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Find y if (16; y) lies on f(x) = log_4(x).",
+    "expected": "y = 2",
+    "demonstration": "y = log_4(16). Raise both sides to base 4: 4^y = 4^(log_4(16)). Log and base cancel: 4^y = 16. Since 16 = 4^2, y = 2.",
+    "memo_marks": [
+      "1 mark for 4^y = 16",
+      "1 mark for y = 2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "y = log_4(16)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: y = 2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v09.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Calculate a if log_3(9) = a.",
+    "expected": "a = 2",
+    "demonstration": "a = log_3(9). Raise both sides to base 3: 3^a = 3^(log_3(9)). Log and base cancel: 3^a = 9. Since 9 = 3^2, a = 2.",
+    "memo_marks": [
+      "1 mark for 3^a = 9",
+      "1 mark for a = 2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "a = log_3(9)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: a = 2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v10.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Calculate a if log_1/2(1/2) = a.",
+    "expected": "a = 1",
+    "demonstration": "a = log_{1/2}(1/2). Raise both sides to base 1/2: (1/2)^a = (1/2)^(log_{1/2}(1/2)). Log and base cancel: (1/2)^a = 1/2. Since 1/2 = (1/2)^(1), a = 1.",
+    "memo_marks": [
+      "1 mark for {1/2}^a = 1/2",
+      "1 mark for a = 1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "a = log_{1/2}(1/2)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: a = 1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v11.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "The point (1/4; a) lies on f(x) = log_4(x). Determine a.",
+    "expected": "a = -1",
+    "demonstration": "a = log_4(1/4). Raise both sides to base 4: 4^a = 4^(log_4(1/4)). Log and base cancel: 4^a = 1/4. Since 1/4 = 4^-1, a = -1.",
+    "memo_marks": [
+      "1 mark for 4^a = 1/4",
+      "1 mark for a = -1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "a = log_4(1/4)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: a = -1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v12.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Find t if (2; t) lies on f(x) = log_1/2(x).",
+    "expected": "t = -1",
+    "demonstration": "t = log_{1/2}(2). Raise both sides to base 1/2: (1/2)^t = (1/2)^(log_{1/2}(2)). Log and base cancel: (1/2)^t = 2. Since 2 = (1/2)^(-1), t = -1.",
+    "memo_marks": [
+      "1 mark for {1/2}^t = 2",
+      "1 mark for t = -1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "t = log_{1/2}(2)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: t = -1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v13.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Calculate k if log_3(1/3) = k.",
+    "expected": "k = -1",
+    "demonstration": "k = log_3(1/3). Raise both sides to base 3: 3^k = 3^(log_3(1/3)). Log and base cancel: 3^k = 1/3. Since 1/3 = 3^-1, k = -1.",
+    "memo_marks": [
+      "1 mark for 3^k = 1/3",
+      "1 mark for k = -1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "k = log_3(1/3)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: k = -1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v14.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "The point (1/9; t) lies on f(x) = log_3(x). Determine t.",
+    "expected": "t = -2",
+    "demonstration": "t = log_3(1/9). Raise both sides to base 3: 3^t = 3^(log_3(1/9)). Log and base cancel: 3^t = 1/9. Since 1/9 = 3^-2, t = -2.",
+    "memo_marks": [
+      "1 mark for 3^t = 1/9",
+      "1 mark for t = -2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "t = log_3(1/9)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: t = -2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v15.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "If 1/3^t = 27, write down t in log form and hence find t.",
+    "expected": "t = -3",
+    "demonstration": "t = log_{1/3}(27). Raise both sides to base 1/3: (1/3)^t = (1/3)^(log_{1/3}(27)). Log and base cancel: (1/3)^t = 27. Since 27 = (1/3)^(-3), t = -3.",
+    "memo_marks": [
+      "1 mark for {1/3}^t = 27",
+      "1 mark for t = -3"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "t = log_{1/3}(27)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: t = -3"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point"
+  },
+  {
+    "variant_question": "If 2^p = 16, write down p in log form and hence find p.",
+    "expected": "p = 4",
+    "demonstration": "p = log_2(16). Raise both sides to base 2: 2^p = 2^(log_2(16)). Log and base cancel: 2^p = 16. Since 16 = 2^4, p = 4.",
+    "memo_marks": [
+      "1 mark for 2^p = 16",
+      "1 mark for p = 4"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "p = log_2(16)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: p = 4"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point"
+  },
+  {
+    "variant_question": "The point (1000; p) lies on f(x) = log_10(x). Determine p.",
+    "expected": "p = 3",
+    "demonstration": "p = log_10(1000). Raise both sides to base 10: 10^p = 10^(log_10(1000)). Log and base cancel: 10^p = 1000. Since 1000 = 10^3, p = 3.",
+    "memo_marks": [
+      "1 mark for 10^p = 1000",
+      "1 mark for p = 3"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "p = log_10(1000)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: p = 3"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v18.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Calculate p if log_2(1/8) = p.",
+    "expected": "p = -3",
+    "demonstration": "p = log_2(1/8). Raise both sides to base 2: 2^p = 2^(log_2(1/8)). Log and base cancel: 2^p = 1/8. Since 1/8 = 2^-3, p = -3.",
+    "memo_marks": [
+      "1 mark for 2^p = 1/8",
+      "1 mark for p = -3"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "p = log_2(1/8)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: p = -3"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v19.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Calculate k if log_1/3(1/3) = k.",
+    "expected": "k = 1",
+    "demonstration": "k = log_{1/3}(1/3). Raise both sides to base 1/3: (1/3)^k = (1/3)^(log_{1/3}(1/3)). Log and base cancel: (1/3)^k = 1/3. Since 1/3 = (1/3)^(1), k = 1.",
+    "memo_marks": [
+      "1 mark for {1/3}^k = 1/3",
+      "1 mark for k = 1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "k = log_{1/3}(1/3)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: k = 1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v20.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "The point (81; t) lies on f(x) = log_3(x). Determine t.",
+    "expected": "t = 4",
+    "demonstration": "t = log_3(81). Raise both sides to base 3: 3^t = 3^(log_3(81)). Log and base cancel: 3^t = 81. Since 81 = 3^4, t = 4.",
+    "memo_marks": [
+      "1 mark for 3^t = 81",
+      "1 mark for t = 4"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "t = log_3(81)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: t = 4"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v21.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "The point (1/25; a) lies on f(x) = log_5(x). Determine a.",
+    "expected": "a = -2",
+    "demonstration": "a = log_5(1/25). Raise both sides to base 5: 5^a = 5^(log_5(1/25)). Log and base cancel: 5^a = 1/25. Since 1/25 = 5^-2, a = -2.",
+    "memo_marks": [
+      "1 mark for 5^a = 1/25",
+      "1 mark for a = -2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "a = log_5(1/25)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: a = -2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v22.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "If 2^k = 1/2, write down k in log form and hence find k.",
+    "expected": "k = -1",
+    "demonstration": "k = log_2(1/2). Raise both sides to base 2: 2^k = 2^(log_2(1/2)). Log and base cancel: 2^k = 1/2. Since 1/2 = 2^-1, k = -1.",
+    "memo_marks": [
+      "1 mark for 2^k = 1/2",
+      "1 mark for k = -1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "k = log_2(1/2)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: k = -1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point"
+  },
+  {
+    "variant_question": "Calculate y if log_1/3(3) = y.",
+    "expected": "y = -1",
+    "demonstration": "y = log_{1/3}(3). Raise both sides to base 1/3: (1/3)^y = (1/3)^(log_{1/3}(3)). Log and base cancel: (1/3)^y = 3. Since 3 = (1/3)^(-1), y = -1.",
+    "memo_marks": [
+      "1 mark for {1/3}^y = 3",
+      "1 mark for y = -1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "y = log_{1/3}(3)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: y = -1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v24.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "The point (1/4; a) lies on f(x) = log_1/2(x). Determine a.",
+    "expected": "a = 2",
+    "demonstration": "a = log_{1/2}(1/4). Raise both sides to base 1/2: (1/2)^a = (1/2)^(log_{1/2}(1/4)). Log and base cancel: (1/2)^a = 1/4. Since 1/4 = (1/2)^(2), a = 2.",
+    "memo_marks": [
+      "1 mark for {1/2}^a = 1/4",
+      "1 mark for a = 2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "a = log_{1/2}(1/4)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: a = 2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v25.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Find p if (100; p) lies on f(x) = log_10(x).",
+    "expected": "p = 2",
+    "demonstration": "p = log_10(100). Raise both sides to base 10: 10^p = 10^(log_10(100)). Log and base cancel: 10^p = 100. Since 100 = 10^2, p = 2.",
+    "memo_marks": [
+      "1 mark for 10^p = 100",
+      "1 mark for p = 2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "p = log_10(100)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: p = 2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v26.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Find k if (2; k) lies on f(x) = log_2(x).",
+    "expected": "k = 1",
+    "demonstration": "k = log_2(2). Raise both sides to base 2: 2^k = 2^(log_2(2)). Log and base cancel: 2^k = 2. Since 2 = 2^1, k = 1.",
+    "memo_marks": [
+      "1 mark for 2^k = 2",
+      "1 mark for k = 1"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "k = log_2(2)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: k = 1"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v27.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "If 1/2^p = 8, write down p in log form and hence find p.",
+    "expected": "p = -3",
+    "demonstration": "p = log_{1/2}(8). Raise both sides to base 1/2: (1/2)^p = (1/2)^(log_{1/2}(8)). Log and base cancel: (1/2)^p = 8. Since 8 = (1/2)^(-3), p = -3.",
+    "memo_marks": [
+      "1 mark for {1/2}^p = 8",
+      "1 mark for p = -3"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "p = log_{1/2}(8)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: p = -3"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point"
+  },
+  {
+    "variant_question": "Find p if (4; p) lies on f(x) = log_2(x).",
+    "expected": "p = 2",
+    "demonstration": "p = log_2(4). Raise both sides to base 2: 2^p = 2^(log_2(4)). Log and base cancel: 2^p = 4. Since 4 = 2^2, p = 2.",
+    "memo_marks": [
+      "1 mark for 2^p = 4",
+      "1 mark for p = 2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "p = log_2(4)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: p = 2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v29.png",
+    "diagram_status": "rendered"
+  },
+  {
+    "variant_question": "Calculate k if log_1/3(9) = k.",
+    "expected": "k = -2",
+    "demonstration": "k = log_{1/3}(9). Raise both sides to base 1/3: (1/3)^k = (1/3)^(log_{1/3}(9)). Log and base cancel: (1/3)^k = 9. Since 9 = (1/3)^(-2), k = -2.",
+    "memo_marks": [
+      "1 mark for {1/3}^k = 9",
+      "1 mark for k = -2"
+    ],
+    "fast_path": "Raise both sides to the base. The log cancels the base, so whatever was inside comes out alone.",
+    "fatal_error": "DBE says: Candidates stay in log form and guess. Raise both sides to the base, cancel, solve the exponential.",
+    "answer_book_layout": [
+      "k = log_{1/3}(9)",
+      "Raise both sides to the base",
+      "Log and base cancel",
+      "Final Answer: k = -2"
+    ],
+    "hack": "A log and its base are a team. Raise both sides to the base, they cancel.",
+    "trap": "Don't stay in log form. Convert first, solve.",
+    "presentation": "Show the base-raise explicitly.",
+    "diagram": "required",
+    "diagram_hint": "log_curve_with_marked_point",
+    "diagram_path": "data\\processed\\tutor\\variant_diagrams\\4.1\\v30.png",
+    "diagram_status": "rendered"
+  }
+]

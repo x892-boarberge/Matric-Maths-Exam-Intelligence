@@ -32,6 +32,12 @@
         "Second letter: 17 remaining choices (18 - 1).",
         "Second digit: 5 odd digits.",
         "Total = 18 * 10 * 17 * 5 = 15300"
+      ],
+      "given_from": [
+        "12.1"
+      ],
+      "requires_skills": [
+        "probability.counting"
       ]
     },
     {
@@ -44,6 +50,13 @@
       "steps": [
         "New count: 24 * 10 * 23 * 5 = 27600 (or as computed).",
         "Percentage increase = (new - old)/old * 100"
+      ],
+      "given_from": [
+        "12.1",
+        "12.2"
+      ],
+      "requires_skills": [
+        "probability.counting"
       ]
     }
   ]

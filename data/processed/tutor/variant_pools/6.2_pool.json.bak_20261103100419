@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-3, y=3, through (-1;-3).",
+    "expected": "f(x) = -12/(x - (-3)) + 3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-3 -> p=-3",
+      "Horiz: y=3 -> q=3",
+      "-3 = a/(-1 - -3) + 3",
+      "a = -12",
+      "_________________________",
+      "Final Answer: f(x) = -12/(x - (-3)) + 3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=3, y=3, through (-2;2).",
+    "expected": "f(x) = 5/(x - (3)) + 3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=3 -> p=3",
+      "Horiz: y=3 -> q=3",
+      "2 = a/(-2 - 3) + 3",
+      "a = 5",
+      "_________________________",
+      "Final Answer: f(x) = 5/(x - (3)) + 3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-4, y=1, through (0;3).",
+    "expected": "f(x) = 8/(x - (-4)) + 1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-4 -> p=-4",
+      "Horiz: y=1 -> q=1",
+      "3 = a/(0 - -4) + 1",
+      "a = 8",
+      "_________________________",
+      "Final Answer: f(x) = 8/(x - (-4)) + 1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-2, y=-3, through (2;5).",
+    "expected": "f(x) = 32/(x - (-2)) + -3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-2 -> p=-2",
+      "Horiz: y=-3 -> q=-3",
+      "5 = a/(2 - -2) + -3",
+      "a = 32",
+      "_________________________",
+      "Final Answer: f(x) = 32/(x - (-2)) + -3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=3, y=2, through (2;4).",
+    "expected": "f(x) = -2/(x - (3)) + 2",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=3 -> p=3",
+      "Horiz: y=2 -> q=2",
+      "4 = a/(2 - 3) + 2",
+      "a = -2",
+      "_________________________",
+      "Final Answer: f(x) = -2/(x - (3)) + 2"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-4, y=3, through (-2;4).",
+    "expected": "f(x) = 2/(x - (-4)) + 3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-4 -> p=-4",
+      "Horiz: y=3 -> q=3",
+      "4 = a/(-2 - -4) + 3",
+      "a = 2",
+      "_________________________",
+      "Final Answer: f(x) = 2/(x - (-4)) + 3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-3, y=-2, through (-1;1).",
+    "expected": "f(x) = 6/(x - (-3)) + -2",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-3 -> p=-3",
+      "Horiz: y=-2 -> q=-2",
+      "1 = a/(-1 - -3) + -2",
+      "a = 6",
+      "_________________________",
+      "Final Answer: f(x) = 6/(x - (-3)) + -2"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-4, y=-2, through (-3;-5).",
+    "expected": "f(x) = -3/(x - (-4)) + -2",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-4 -> p=-4",
+      "Horiz: y=-2 -> q=-2",
+      "-5 = a/(-3 - -4) + -2",
+      "a = -3",
+      "_________________________",
+      "Final Answer: f(x) = -3/(x - (-4)) + -2"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-2, y=3, through (-1;-3).",
+    "expected": "f(x) = -6/(x - (-2)) + 3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-2 -> p=-2",
+      "Horiz: y=3 -> q=3",
+      "-3 = a/(-1 - -2) + 3",
+      "a = -6",
+      "_________________________",
+      "Final Answer: f(x) = -6/(x - (-2)) + 3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=4, y=-2, through (-3;0).",
+    "expected": "f(x) = -14/(x - (4)) + -2",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=4 -> p=4",
+      "Horiz: y=-2 -> q=-2",
+      "0 = a/(-3 - 4) + -2",
+      "a = -14",
+      "_________________________",
+      "Final Answer: f(x) = -14/(x - (4)) + -2"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=2, y=-2, through (-2;1).",
+    "expected": "f(x) = -12/(x - (2)) + -2",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=2 -> p=2",
+      "Horiz: y=-2 -> q=-2",
+      "1 = a/(-2 - 2) + -2",
+      "a = -12",
+      "_________________________",
+      "Final Answer: f(x) = -12/(x - (2)) + -2"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-2, y=-3, through (2;-2).",
+    "expected": "f(x) = 4/(x - (-2)) + -3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-2 -> p=-2",
+      "Horiz: y=-3 -> q=-3",
+      "-2 = a/(2 - -2) + -3",
+      "a = 4",
+      "_________________________",
+      "Final Answer: f(x) = 4/(x - (-2)) + -3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=4, y=-2, through (-2;1).",
+    "expected": "f(x) = -18/(x - (4)) + -2",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=4 -> p=4",
+      "Horiz: y=-2 -> q=-2",
+      "1 = a/(-2 - 4) + -2",
+      "a = -18",
+      "_________________________",
+      "Final Answer: f(x) = -18/(x - (4)) + -2"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=3, y=3, through (2;-2).",
+    "expected": "f(x) = 5/(x - (3)) + 3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=3 -> p=3",
+      "Horiz: y=3 -> q=3",
+      "-2 = a/(2 - 3) + 3",
+      "a = 5",
+      "_________________________",
+      "Final Answer: f(x) = 5/(x - (3)) + 3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=3, y=-2, through (-3;0).",
+    "expected": "f(x) = -12/(x - (3)) + -2",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=3 -> p=3",
+      "Horiz: y=-2 -> q=-2",
+      "0 = a/(-3 - 3) + -2",
+      "a = -12",
+      "_________________________",
+      "Final Answer: f(x) = -12/(x - (3)) + -2"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-3, y=-1, through (1;4).",
+    "expected": "f(x) = 20/(x - (-3)) + -1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-3 -> p=-3",
+      "Horiz: y=-1 -> q=-1",
+      "4 = a/(1 - -3) + -1",
+      "a = 20",
+      "_________________________",
+      "Final Answer: f(x) = 20/(x - (-3)) + -1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=2, y=1, through (1;-3).",
+    "expected": "f(x) = 4/(x - (2)) + 1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=2 -> p=2",
+      "Horiz: y=1 -> q=1",
+      "-3 = a/(1 - 2) + 1",
+      "a = 4",
+      "_________________________",
+      "Final Answer: f(x) = 4/(x - (2)) + 1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-2, y=-1, through (-1;2).",
+    "expected": "f(x) = 3/(x - (-2)) + -1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-2 -> p=-2",
+      "Horiz: y=-1 -> q=-1",
+      "2 = a/(-1 - -2) + -1",
+      "a = 3",
+      "_________________________",
+      "Final Answer: f(x) = 3/(x - (-2)) + -1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=4, y=1, through (1;2).",
+    "expected": "f(x) = -3/(x - (4)) + 1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=4 -> p=4",
+      "Horiz: y=1 -> q=1",
+      "2 = a/(1 - 4) + 1",
+      "a = -3",
+      "_________________________",
+      "Final Answer: f(x) = -3/(x - (4)) + 1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-2, y=1, through (1;1).",
+    "expected": "f(x) = 0/(x - (-2)) + 1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-2 -> p=-2",
+      "Horiz: y=1 -> q=1",
+      "1 = a/(1 - -2) + 1",
+      "a = 0",
+      "_________________________",
+      "Final Answer: f(x) = 0/(x - (-2)) + 1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=4, y=-3, through (-2;-1).",
+    "expected": "f(x) = -12/(x - (4)) + -3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=4 -> p=4",
+      "Horiz: y=-3 -> q=-3",
+      "-1 = a/(-2 - 4) + -3",
+      "a = -12",
+      "_________________________",
+      "Final Answer: f(x) = -12/(x - (4)) + -3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=2, y=3, through (1;-1).",
+    "expected": "f(x) = 4/(x - (2)) + 3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=2 -> p=2",
+      "Horiz: y=3 -> q=3",
+      "-1 = a/(1 - 2) + 3",
+      "a = 4",
+      "_________________________",
+      "Final Answer: f(x) = 4/(x - (2)) + 3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=2, y=1, through (-2;0).",
+    "expected": "f(x) = 4/(x - (2)) + 1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=2 -> p=2",
+      "Horiz: y=1 -> q=1",
+      "0 = a/(-2 - 2) + 1",
+      "a = 4",
+      "_________________________",
+      "Final Answer: f(x) = 4/(x - (2)) + 1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=4, y=1, through (-3;-5).",
+    "expected": "f(x) = 42/(x - (4)) + 1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=4 -> p=4",
+      "Horiz: y=1 -> q=1",
+      "-5 = a/(-3 - 4) + 1",
+      "a = 42",
+      "_________________________",
+      "Final Answer: f(x) = 42/(x - (4)) + 1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-3, y=-1, through (1;-3).",
+    "expected": "f(x) = -8/(x - (-3)) + -1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-3 -> p=-3",
+      "Horiz: y=-1 -> q=-1",
+      "-3 = a/(1 - -3) + -1",
+      "a = -8",
+      "_________________________",
+      "Final Answer: f(x) = -8/(x - (-3)) + -1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-4, y=1, through (-2;-1).",
+    "expected": "f(x) = -4/(x - (-4)) + 1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-4 -> p=-4",
+      "Horiz: y=1 -> q=1",
+      "-1 = a/(-2 - -4) + 1",
+      "a = -4",
+      "_________________________",
+      "Final Answer: f(x) = -4/(x - (-4)) + 1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-3, y=-1, through (-1;-5).",
+    "expected": "f(x) = -8/(x - (-3)) + -1",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-3 -> p=-3",
+      "Horiz: y=-1 -> q=-1",
+      "-5 = a/(-1 - -3) + -1",
+      "a = -8",
+      "_________________________",
+      "Final Answer: f(x) = -8/(x - (-3)) + -1"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=-3, y=3, through (-2;0).",
+    "expected": "f(x) = -3/(x - (-3)) + 3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=-3 -> p=-3",
+      "Horiz: y=3 -> q=3",
+      "0 = a/(-2 - -3) + 3",
+      "a = -3",
+      "_________________________",
+      "Final Answer: f(x) = -3/(x - (-3)) + 3"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=3, y=2, through (-2;-5).",
+    "expected": "f(x) = 35/(x - (3)) + 2",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=3 -> p=3",
+      "Horiz: y=2 -> q=2",
+      "-5 = a/(-2 - 3) + 2",
+      "a = 35",
+      "_________________________",
+      "Final Answer: f(x) = 35/(x - (3)) + 2"
+    ]
+  },
+  {
+    "variant_question": "Find f(x) = a/(x-p)+q. Asymp x=4, y=-3, through (0;5).",
+    "expected": "f(x) = -32/(x - (4)) + -3",
+    "demonstration": "p and q from walls, a from point.",
+    "memo_marks": [
+      "1 mark p",
+      "1 mark q",
+      "1 mark a"
+    ],
+    "fast_path": "Walls = p,q. Point = a.",
+    "fatal_error": "DBE says: Sign error on p.",
+    "answer_book_layout": [
+      "Vert: x=4 -> p=4",
+      "Horiz: y=-3 -> q=-3",
+      "5 = a/(0 - 4) + -3",
+      "a = -32",
+      "_________________________",
+      "Final Answer: f(x) = -32/(x - (4)) + -3"
+    ]
+  }
+]

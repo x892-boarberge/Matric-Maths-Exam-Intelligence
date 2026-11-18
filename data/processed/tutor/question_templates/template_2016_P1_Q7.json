@@ -21,6 +21,12 @@
       "expected_fn": "x = R7 359.79",
       "steps": [
         "P = x[1 - (1+i)^-n]/i, n = 46."
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "finance.compound"
       ]
     },
     {
@@ -34,6 +40,14 @@
         "256289.06 = 9000[1-(1+i)^-n]/i.",
         "n = 35.42.",
         "36 payments vs 46 → 10 months sooner."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2"
+      ],
+      "requires_skills": [
+        "finance.compound",
+        "finance.loan"
       ]
     },
     {
@@ -46,6 +60,15 @@
       "steps": [
         "Balance after 35 payments.",
         "Final payment with interest."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2",
+        "7.3"
+      ],
+      "requires_skills": [
+        "finance.compound",
+        "finance.loan"
       ]
     }
   ],

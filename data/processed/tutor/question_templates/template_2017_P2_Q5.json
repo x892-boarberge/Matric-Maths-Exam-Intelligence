@@ -59,6 +59,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1"
+      ],
+      "requires_skills": [
+        "trig.identities"
       ]
     },
     {
@@ -74,6 +80,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1",
+        "5.2.1"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.pythagoras"
       ]
     },
     {
@@ -104,6 +118,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1",
+        "5.2.1",
+        "5.2.2"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.pythagoras"
       ]
     },
     {
@@ -125,6 +148,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1",
+        "5.2.1",
+        "5.2.2",
+        "5.2.3"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.pythagoras"
       ]
     },
     {
@@ -155,6 +188,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1",
+        "5.2.1",
+        "5.2.2",
+        "5.2.3",
+        "5.3.1"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.pythagoras",
+        "trig.proof"
       ]
     }
   ],

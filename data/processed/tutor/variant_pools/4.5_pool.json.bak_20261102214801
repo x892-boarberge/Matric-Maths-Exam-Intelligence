@@ -1,0 +1,542 @@
+[
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_4(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_5(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_5(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_4(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_5(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_2(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_3(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_3(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_4(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_3(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_4(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_2(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_5(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_4(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_2(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_2(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_3(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_4(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_5(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_3(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_5(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_4(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_3(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_2(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_4(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_4(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_2(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_5(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_3(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  },
+  {
+    "variant_question": "Draw f^-1 if f(x) = log_3(x).",
+    "expected": "Drawn",
+    "demonstration": "Asymptote, intercept, shape.",
+    "memo_marks": [
+      "1 mark asymp",
+      "1 mark int",
+      "1 mark shape"
+    ],
+    "fast_path": "Plot (0;1).",
+    "fatal_error": "DBE says: Cross asymptote.",
+    "answer_book_layout": [
+      "[Draw dashed y=0]",
+      "[Plot (0;1)]",
+      "[Draw exp curve]",
+      "[Label f^-1]"
+    ]
+  }
+]

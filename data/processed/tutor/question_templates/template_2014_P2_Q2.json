@@ -35,6 +35,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1"
+      ],
+      "requires_skills": [
+        "stats.mode"
       ]
     },
     {
@@ -60,6 +66,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2.1"
+      ],
+      "requires_skills": [
+        "stats.mode",
+        "stats.cumulative"
       ]
     },
     {
@@ -80,6 +94,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2.1",
+        "2.2.2"
+      ],
+      "requires_skills": [
+        "stats.mode",
+        "stats.cumulative",
+        "stats.ogive"
       ]
     }
   ],

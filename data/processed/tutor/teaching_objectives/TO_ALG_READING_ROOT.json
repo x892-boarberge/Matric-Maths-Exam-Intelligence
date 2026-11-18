@@ -1,0 +1,35 @@
+{
+  "objective_id": "TO_ALG_READING_ROOT",
+  "skill_id": "algebra.quadratic.solve",
+  "trigger_misconception": "M_SIGN_ERROR_READING_ROOT",
+  "applies_when": "prompt is already factored, e.g. (x + 5)(x - 2) = 0",
+  "dbe_source": {
+    "year": "2018",
+    "subquestion_ref": "1.1.1",
+    "recommendation": "Teachers need to emphasise the importance of the sign of the middle term in factorising quadratic equations.",
+    "verbatim": true
+  },
+  "lesson": {
+    "concept": "When a quadratic is already written as (x + a)(x + b) = 0, you do not need to factorise. You read the roots directly. The sign inside the bracket is the OPPOSITE of the root.",
+    "why": "For (x + a) = 0, x = -a. For (x - a) = 0, x = +a. The factor is set to zero, and solving for x flips the sign.",
+    "example": {
+      "problem": "Solve (x + 4)(x - 3) = 0",
+      "work": [
+        "Set each factor to zero.",
+        "x + 4 = 0  gives  x = -4",
+        "x - 3 = 0  gives  x = +3",
+        "Answer:  x = -4 or x = 3"
+      ]
+    },
+    "probe": {
+      "problem": "Solve (x + 7)(x - 5) = 0",
+      "expected": "x = -7 or x = 5",
+      "hint": "The sign inside each bracket flips when you solve for x."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_SIGN_ERROR_READING_ROOT",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The number is right, but the sign is flipped. The sign inside each bracket is the opposite of the root."
+}

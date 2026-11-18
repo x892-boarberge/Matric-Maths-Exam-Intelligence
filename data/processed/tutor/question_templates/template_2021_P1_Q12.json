@@ -37,6 +37,12 @@
         "P(only B) = P(B) - P(A and B) = 0.2, so P(B) = 0.5.",
         "P(A) = 0.3/0.5 = 0.6.",
         "P(only A) = 0.6 - 0.3 = 0.3."
+      ],
+      "given_from": [
+        "12.1.1"
+      ],
+      "requires_skills": [
+        "probability.independent"
       ]
     },
     {
@@ -59,6 +65,13 @@
       "expected_fn": "P(not A or not B) = {p}",
       "steps": [
         "P(not A or not B) = 1 - P(A and B) = 1 - 0.3 = 0.7."
+      ],
+      "given_from": [
+        "12.1.1",
+        "12.1.2a"
+      ],
+      "requires_skills": [
+        "probability.independent"
       ]
     },
     {
@@ -70,6 +83,15 @@
       "expected_fn": "P = 3/12 = 1/4",
       "steps": [
         "3 novels out of 12 books."
+      ],
+      "given_from": [
+        "12.1.1",
+        "12.1.2a",
+        "12.1.2b"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.set"
       ]
     },
     {
@@ -81,6 +103,17 @@
       "expected_fn": "12! = 479 001 600",
       "steps": [
         "Permutation of 12 distinct items."
+      ],
+      "given_from": [
+        "12.1.1",
+        "12.1.2a",
+        "12.1.2b",
+        "12.2.1"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.set",
+        "probability.counting"
       ]
     },
     {
@@ -96,6 +129,18 @@
         "Arrange middle 8 units (including novel block): 8!",
         "Arrange novels within block: 3!",
         "P = (5 * 4 * 8! * 3!) / 12!."
+      ],
+      "given_from": [
+        "12.1.1",
+        "12.1.2a",
+        "12.1.2b",
+        "12.2.1",
+        "12.2.2"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.set",
+        "probability.counting"
       ]
     }
   ],

@@ -34,6 +34,12 @@
       "steps": [
         "P(2 hits) + P(3 hits)",
         "C(3,2)(0.5)³ + (0.5)³ = 3/8 + 1/8 = 1/2."
+      ],
+      "given_from": [
+        "11.1"
+      ],
+      "requires_skills": [
+        "probability.independent"
       ]
     },
     {
@@ -52,6 +58,13 @@
       "steps": [
         "Geometric series: 0.5 + 0.5³ + 0.5⁵ + ...",
         "= 0.5/(1-0.25) = 2/3."
+      ],
+      "given_from": [
+        "11.1",
+        "11.2"
+      ],
+      "requires_skills": [
+        "probability.independent"
       ]
     }
   ],

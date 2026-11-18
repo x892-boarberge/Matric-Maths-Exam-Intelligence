@@ -41,6 +41,12 @@
           "r": "SSS",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "11.1"
+      ],
+      "requires_skills": [
+        "geometry.similarity"
       ]
     },
     {
@@ -82,6 +88,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1",
+        "11.2.1"
+      ],
+      "requires_skills": [
+        "geometry.similarity"
       ]
     }
   ],

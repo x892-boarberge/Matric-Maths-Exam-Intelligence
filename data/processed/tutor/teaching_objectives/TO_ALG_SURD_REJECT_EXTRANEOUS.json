@@ -1,0 +1,44 @@
+{
+  "objective_id": "TO_ALG_SURD_REJECT_EXTRANEOUS",
+  "skill_id": "algebra.surd.solve",
+  "trigger_misconception": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+  "applies_when": "learner gives both roots of the squared equation without rejecting the extraneous one",
+  "dbe_source": {
+    "years": [
+      "2015",
+      "2016",
+      "2021",
+      "2023",
+      "2025"
+    ],
+    "recommendation": "Candidates did not exclude the invalid answer. Squaring both sides can introduce a root that does not satisfy the original. Check both roots in the original.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When you square both sides of an equation, the new equation may have roots the original does not. Test each candidate in the original. The one that fails is called extraneous and must be rejected.",
+    "why": "The examiner awards a mark for the reject line. If you give both roots, you lose that mark.",
+    "example": {
+      "problem": "Solve sqrt(2x + 1) = x - 1",
+      "work": [
+        "Square both sides: 2x + 1 = (x - 1)^2",
+        "Expand: 2x + 1 = x^2 - 2x + 1",
+        "Standard form: x^2 - 4x = 0",
+        "Factorise: x(x - 4) = 0",
+        "Candidates: x = 0 or x = 4",
+        "Test x = 0: sqrt(1) = 1, RHS = -1. Not equal. Reject x = 0.",
+        "Test x = 4: sqrt(9) = 3, RHS = 3. Equal. Accept x = 4.",
+        "Answer: x = 4"
+      ]
+    },
+    "probe": {
+      "problem": "Solve sqrt(3x + 4) = x. Give the final answer with the reject line.",
+      "expected": "x = 4",
+      "hint": "Square both sides, solve, then test each candidate in the original equation. One fails."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_EXTRANEOUS_ROOT_NOT_REJECTED",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "One of those roots does not satisfy the original equation. Test each candidate and reject the one that fails."
+}

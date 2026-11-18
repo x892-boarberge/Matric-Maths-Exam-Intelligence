@@ -30,6 +30,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1"
+      ],
+      "requires_skills": [
+        "stats.ogive"
       ]
     },
     {
@@ -50,6 +56,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2"
+      ],
+      "requires_skills": [
+        "stats.ogive",
+        "stats.mode"
       ]
     },
     {
@@ -70,6 +84,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ],
+      "requires_skills": [
+        "stats.ogive",
+        "stats.mode",
+        "stats.percentile"
       ]
     },
     {
@@ -90,6 +114,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ],
+      "requires_skills": [
+        "stats.ogive",
+        "stats.mode",
+        "stats.percentile",
+        "stats.application"
       ]
     }
   ],

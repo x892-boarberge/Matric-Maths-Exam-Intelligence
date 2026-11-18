@@ -38,6 +38,12 @@
       "steps": [
         "P(male and not watching) = 20/160 != 0.",
         "So not mutually exclusive."
+      ],
+      "given_from": [
+        "11.1"
+      ],
+      "requires_skills": [
+        "probability.tables"
       ]
     },
     {
@@ -58,6 +64,14 @@
       "expected_fn": "P = 128/160 = 0.8",
       "steps": [
         "128/160."
+      ],
+      "given_from": [
+        "11.1",
+        "11.2"
+      ],
+      "requires_skills": [
+        "probability.tables",
+        "probability.independent"
       ]
     },
     {
@@ -78,6 +92,15 @@
       "expected_fn": "P = 12/160 = 0.075",
       "steps": [
         "12/160."
+      ],
+      "given_from": [
+        "11.1",
+        "11.2",
+        "11.3.1"
+      ],
+      "requires_skills": [
+        "probability.tables",
+        "probability.independent"
       ]
     }
   ],

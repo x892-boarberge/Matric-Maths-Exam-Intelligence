@@ -37,6 +37,12 @@
       "expected_fn": "x = 1/2",
       "steps": [
         "Midpoint of turning points: (-1+2)/2 = 1/2."
+      ],
+      "given_from": [
+        "8.1"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -48,6 +54,13 @@
       "expected_fn": "x > 1/2",
       "steps": [
         "g''(x) < 0 for x > point of inflection."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -69,6 +82,14 @@
         "g(0) = 0 → c = 0.",
         "Wait — no integrals! Use recognition: derivative of -2x³ is -6x².",
         "Recognise g(x) = -2x³ + 3x² + 12x."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2",
+        "8.3"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     },
     {
@@ -83,6 +104,15 @@
         "m = g'(1/2) = 13.5.",
         "y = g(1/2) = 6.5.",
         "Tangent: y - 6.5 = 13.5(x - 0.5)."
+      ],
+      "given_from": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4"
+      ],
+      "requires_skills": [
+        "calculus.cubic"
       ]
     }
   ],

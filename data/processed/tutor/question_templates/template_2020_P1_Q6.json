@@ -35,6 +35,12 @@
       "expected_fn": "R{A}",
       "steps": [
         "A = F(1 + i)^12."
+      ],
+      "given_from": [
+        "6.1.1"
+      ],
+      "requires_skills": [
+        "finance.annuity"
       ]
     },
     {
@@ -60,6 +66,14 @@
       "steps": [
         "A = P(1 - i)^n.",
         "Log both sides."
+      ],
+      "given_from": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "requires_skills": [
+        "finance.annuity",
+        "finance.compound"
       ]
     },
     {
@@ -85,6 +99,16 @@
       "expected_fn": "Loan = R{P}",
       "steps": [
         "P = x[1 - (1+i)^-n]/i, n = 12*{y}."
+      ],
+      "given_from": [
+        "6.1.1",
+        "6.1.2",
+        "6.2"
+      ],
+      "requires_skills": [
+        "finance.annuity",
+        "finance.compound",
+        "finance.depreciation"
       ]
     },
     {
@@ -98,6 +122,18 @@
         "Total paid = 1500 * 60.",
         "Balance after 5 years computed.",
         "Interest = Total paid - (Loan - Balance)."
+      ],
+      "given_from": [
+        "6.1.1",
+        "6.1.2",
+        "6.2",
+        "6.3.1"
+      ],
+      "requires_skills": [
+        "finance.annuity",
+        "finance.compound",
+        "finance.depreciation",
+        "finance.loan"
       ]
     }
   ],

@@ -1,0 +1,36 @@
+{
+  "objective_id": "TO_TRIG_PERIOD_COEFFICIENT",
+  "skill_id": "trig.graph.period",
+  "trigger_misconception": "M_PERIOD_COEFFICIENT",
+  "dbe_source": {
+    "years": [
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "recommendation": "The period of y = sin(bx) is 360/b. Do not just divide 180; always divide 360 by the coefficient b. For tan, the base period is 180, so period = 180/b.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "The period of y = sin(bx) is 360/b. Do not just divide 180; always divide 360 by the coefficient b. For tan, the base period is 180, so period = 180/b.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "State the period of y = sin 2x",
+      "work": [
+        "Base period: 360.",
+        "Coefficient of x: b = 2.",
+        "Period = 360 / 2 = 180."
+      ]
+    },
+    "probe": {
+      "problem": "State the period of y = tan 2x.",
+      "expected": "90",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_PERIOD_COEFFICIENT",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "The period is 360 divided by the coefficient of x (or 180 divided by it for tan). Yours used a different divisor."
+}

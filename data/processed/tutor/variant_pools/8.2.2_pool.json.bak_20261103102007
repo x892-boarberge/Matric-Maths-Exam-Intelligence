@@ -1,0 +1,512 @@
+[
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^2 + x^-2",
+      "dy/dx = 4x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 4x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^2 + x^-2",
+      "dy/dx = 4x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 4x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^2 + x^-2",
+      "dy/dx = 4x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 4x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^3 + 1)/x^2.",
+    "expected": "dy/dx = 3x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^1 + x^-2",
+      "dy/dx = 3x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 3x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^3 + 1)/x^2.",
+    "expected": "dy/dx = 2x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^1 + x^-2",
+      "dy/dx = 2x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 2x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^2 + x^-2",
+      "dy/dx = 4x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 4x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^3 + 1)/x^2.",
+    "expected": "dy/dx = 2x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^1 + x^-2",
+      "dy/dx = 2x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 2x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^2 + x^-2",
+      "dy/dx = 4x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 4x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^3 + 1)/x^2.",
+    "expected": "dy/dx = 2x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^1 + x^-2",
+      "dy/dx = 2x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 2x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^3 + 1)/x^2.",
+    "expected": "dy/dx = 3x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^1 + x^-2",
+      "dy/dx = 3x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 3x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^2 + x^-2",
+      "dy/dx = 4x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 4x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^3 + 1)/x^2.",
+    "expected": "dy/dx = 2x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^1 + x^-2",
+      "dy/dx = 2x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 2x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^2 + x^-2",
+      "dy/dx = 4x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 4x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^2 + x^-2",
+      "dy/dx = 4x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 4x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^4 + 1)/x^2.",
+    "expected": "dy/dx = 4x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^2 + x^-2",
+      "dy/dx = 4x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 4x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^3 + 1)/x^2.",
+    "expected": "dy/dx = 2x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^1 + x^-2",
+      "dy/dx = 2x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 2x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^3 + 1)/x^2.",
+    "expected": "dy/dx = 3x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^1 + x^-2",
+      "dy/dx = 3x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 3x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^3 + 1)/x^2.",
+    "expected": "dy/dx = 3x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^1 + x^-2",
+      "dy/dx = 3x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 3x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (2x^3 + 1)/x^2.",
+    "expected": "dy/dx = 2x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 2x^1 + x^-2",
+      "dy/dx = 2x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 2x^0 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^4 + 1)/x^2.",
+    "expected": "dy/dx = 6x^1 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^2 + x^-2",
+      "dy/dx = 6x^1 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 6x^1 - 2/x\u00b3"
+    ]
+  },
+  {
+    "variant_question": "Determine dy/dx if y = (3x^3 + 1)/x^2.",
+    "expected": "dy/dx = 3x^0 - 2x^-3",
+    "demonstration": "Split fraction.",
+    "memo_marks": [
+      "1 mark split",
+      "1 mark diff"
+    ],
+    "fast_path": "Split first.",
+    "fatal_error": "DBE says: Divide derivatives.",
+    "answer_book_layout": [
+      "y = 3x^1 + x^-2",
+      "dy/dx = 3x^0 - 2x^-3",
+      "_________________________",
+      "Final Answer: dy/dx = 3x^0 - 2/x\u00b3"
+    ]
+  }
+]

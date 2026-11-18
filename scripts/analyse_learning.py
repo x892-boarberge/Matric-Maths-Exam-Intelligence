@@ -1,0 +1,364 @@
+"""MethodMarker — Learner Learning Report.
+
+Reads the learner database and produces a Markdown report:
+- mastery map
+- behavioural signals (variants, skips, homework)
+- where the learner struggles (top misconceptions)
+- what to teach next
+
+Usage:
+    python scripts/analyse_learning.py                 # last 7 days, tanaka
+    python scripts/analyse_learning.py tanaka 14       # last 14 days
+    python scripts/analyse_learning.py --all           # all learners, 7 days
+"""
+import sys
+import json
+import sqlite3
+from pathlib import Path
+from collections import Counter, defaultdict
+from datetime import datetime, timezone, timedelta
+
+
+def find_root():
+    r = Path(".").resolve()
+    for c in [r, *r.parents]:
+        if (c / "src" / "tutor").is_dir():
+            return c
+    return r
+
+
+ROOT = find_root()
+DB = ROOT / "data" / "learner_store" / "learners.db"
+REPORTS_DIR = ROOT / "data" / "reports"
+REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _since_iso(days):
+    """ISO timestamp for `days` ago (UTC)."""
+    dt = datetime.now(timezone.utc) - timedelta(days=days)
+    return dt.isoformat()
+
+
+def _short_id(qid):
+    """'2025_P1_Q1.1.1' -> 'Q1.1.1'. 'VAR_Q1.1.1' -> 'VAR Q1.1.1'."""
+    if qid is None:
+        return ""
+    s = str(qid)
+    if s.startswith("VAR_"):
+        return "VAR " + s.replace("VAR_Q", "Q")
+    return s.replace("2025_P1_", "").replace("_P1_", " ")
+
+
+def gather_report(learner_id, days=7):
+    since = _since_iso(days)
+    report = {
+        "learner_id": learner_id,
+        "window_days": days,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "sessions": [],
+        "attempts": [],
+        "events": [],
+        "mastery": [],
+        "discoveries": [],
+    }
+    if not DB.exists():
+        return report
+
+    conn = sqlite3.connect(DB)
+    conn.row_factory = sqlite3.Row
+
+    try:
+        report["sessions"] = [dict(r) for r in conn.execute(
+            "SELECT * FROM session WHERE learner_id = ? AND started_at >= ? "
+            "ORDER BY started_at DESC", (learner_id, since)
+        ).fetchall()]
+
+        report["attempts"] = [dict(r) for r in conn.execute(
+            "SELECT attempt_id, session_id, skill_id, timestamp, question_id, "
+            "       error_type, misconception_id, response, evidence_json "
+            "FROM attempt WHERE learner_id = ? AND timestamp >= ? "
+            "ORDER BY timestamp DESC", (learner_id, since)
+        ).fetchall()]
+
+        report["events"] = [dict(r) for r in conn.execute(
+            "SELECT timestamp, event_type, question_id, skill_id, notes "
+            "FROM learner_events WHERE learner_id = ? AND timestamp >= ? "
+            "ORDER BY timestamp DESC", (learner_id, since)
+        ).fetchall()]
+
+        report["mastery"] = [dict(r) for r in conn.execute(
+            "SELECT skill_id, mastery_state, sittings_passed, last_sitting_at "
+            "FROM mastery WHERE learner_id = ? ORDER BY skill_id", (learner_id,)
+        ).fetchall()]
+
+        # NOTE: tutor_discovery has no learner_id — these are team-wide
+        # patterns. We only show them if the learner is active in this window.
+        has_activity = len(report.get("attempts", [])) > 0 or len(report.get("events", [])) > 0
+        if has_activity:
+            report["discoveries"] = [dict(r) for r in conn.execute(
+                "SELECT discovery_id, skill_id, question_id, times_seen, "
+                "       learners_affected, status, confidence "
+                "FROM tutor_discovery WHERE status IN ('noticed', 'recurring', 'open') "
+                "ORDER BY times_seen DESC LIMIT 10"
+            ).fetchall()]
+        else:
+            report["discoveries"] = []
+    finally:
+        conn.close()
+
+    return report
+
+
+def compute_metrics(report):
+    attempts = report["attempts"]
+    events = report["events"]
+    mastery = report["mastery"]
+    window = report["window_days"]
+    learner = report["learner_id"]
+
+    original = [a for a in attempts if a["question_id"] and not str(a["question_id"]).startswith("VAR_")]
+    variants = [a for a in attempts if a["question_id"] and str(a["question_id"]).startswith("VAR_")]
+
+    # Correct answers can be logged as "none" (from diagnosis) or "match"
+    # (from math_grader on the variant path). Both mean correct.
+    _CORRECT_TAGS = {"none", "match"}
+    correct_original = sum(1 for a in original if a["error_type"] in _CORRECT_TAGS)
+    correct_variants = sum(1 for a in variants if a["error_type"] in _CORRECT_TAGS)
+
+    event_counts = Counter(e["event_type"] for e in events)
+
+    miscon_counter = Counter()
+    skill_attempts = Counter()
+    skill_correct = Counter()
+    for a in original:
+        skill_attempts[a["skill_id"]] += 1
+        if a["error_type"] in ("none", "match"):
+            skill_correct[a["skill_id"]] += 1
+        if a["misconception_id"]:
+            miscon_counter[a["misconception_id"]] += 1
+
+    variant_miscon = Counter()
+    for a in variants:
+        if a["misconception_id"]:
+            variant_miscon[a["misconception_id"]] += 1
+
+    # mastery tiers
+    mastered = [m for m in mastery if m["mastery_state"] == "mastered"]
+    practising = [m for m in mastery if m["mastery_state"] == "practising"]
+    not_started = [m for m in mastery if m["mastery_state"] == "not_started"]
+
+    return {
+        "learner": learner,
+        "window_days": window,
+        "session_count": len(report["sessions"]),
+        "attempt_count": len(attempts),
+        "original_count": len(original),
+        "variant_count": len(variants),
+        "correct_original": correct_original,
+        "correct_variants": correct_variants,
+        "original_rate": (correct_original / len(original) * 100) if original else 0,
+        "variant_rate": (correct_variants / len(variants) * 100) if variants else 0,
+        "event_counts": event_counts,
+        "miscon_counter": miscon_counter,
+        "variant_miscon": variant_miscon,
+        "skill_attempts": skill_attempts,
+        "skill_correct": skill_correct,
+        "mastered": mastered,
+        "practising": practising,
+        "not_started": not_started,
+        "discoveries": report["discoveries"],
+    }
+
+
+def build_recommendation(metrics):
+    """Return the single best next action based on the data."""
+    reasons = []
+
+    # 1. If a skill has high misconception frequency, that's the target
+    if metrics["miscon_counter"]:
+        top_miscon, count = metrics["miscon_counter"].most_common(1)[0]
+        reasons.append(f"Repeated misconception: {top_miscon} ({count} times). "
+                       f"This is the specific trap to drill.")
+
+    # 2. If there's a practising skill with attempts but not mastery, that's the closest win
+    if metrics["practising"]:
+        best_skill = None
+        best_progress = 0
+        for m in metrics["practising"]:
+            sid = m["skill_id"]
+            attempts = metrics["skill_attempts"].get(sid, 0)
+            correct = metrics["skill_correct"].get(sid, 0)
+            if attempts > 0:
+                rate = correct / attempts
+                if rate > best_progress:
+                    best_progress = rate
+                    best_skill = m
+        if best_skill:
+            sid = best_skill["skill_id"]
+            attempts = metrics["skill_attempts"].get(sid, 0)
+            correct = metrics["skill_correct"].get(sid, 0)
+            reasons.append(f"Closest to mastery: {sid} ({correct}/{attempts} correct). "
+                           f"One more sitting would lock it in.")
+
+    # 3. If there's not_started skill, that's the gap
+    if metrics["not_started"]:
+        gaps = [m["skill_id"] for m in metrics["not_started"] if "trig" in m["skill_id"] or "3d" in m["skill_id"]]
+        if gaps:
+            reasons.append(f"Untouched topic: {gaps[0]} (0 attempts). "
+                           f"This will need coverage.")
+
+    # 4. Behavioural signals
+    ec = metrics["event_counts"]
+    manual = ec.get("MANUAL_VARIANT_REQUEST", 0)
+    auto = ec.get("AUTO_VARIANT_SERVED", 0)
+    quits = ec.get("QUIT_AFTER_VARIANTS", 0)
+
+    if manual > 0 and manual >= auto * 0.3:
+        reasons.append(f"Strong growth mindset: {manual} voluntary variants requested. "
+                       f"This learner is choosing to practice — lean into it.")
+    if quits >= 2:
+        reasons.append(f"Frustration signal: {quits} quits after variants. "
+                       f"Consider breaking the concept into smaller steps.")
+
+    return reasons
+
+
+def render_markdown(metrics):
+    lines = []
+    L = lines.append
+
+    L(f"# Learning Report — {metrics['learner']}")
+    L("")
+    L(f"**Window:** last {metrics['window_days']} days  ")
+    L(f"**Generated:** {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
+    L("")
+
+    # ─── Overview ───
+    L("## Overview")
+    L("")
+    L(f"- **Sessions:** {metrics['session_count']}")
+    L(f"- **Attempts:** {metrics['attempt_count']}  "
+      f"(original: {metrics['original_count']}, variant: {metrics['variant_count']})")
+    if metrics["original_count"]:
+        L(f"- **First-try accuracy:** {metrics['original_rate']:.0f}% on original questions")
+    if metrics["variant_count"]:
+        L(f"- **Variant accuracy:** {metrics['variant_rate']:.0f}% on practice variants")
+    L("")
+
+    # ─── Mastery Map ───
+    L("## Mastery Map")
+    L("")
+    if not metrics["mastered"] and not metrics["practising"] and not metrics["not_started"]:
+        L("_No mastery records yet._")
+    else:
+        L("| Skill | State | Sittings |")
+        L("|---|---|---|")
+        for m in metrics["mastered"]:
+            L(f"| {m['skill_id']} | **{m['mastery_state']}** | {m['sittings_passed']} |")
+        for m in metrics["practising"]:
+            L(f"| {m['skill_id']} | {m['mastery_state']} | {m['sittings_passed']} |")
+        for m in metrics["not_started"]:
+            L(f"| {m['skill_id']} | {m['mastery_state']} | {m['sittings_passed']} |")
+    L("")
+
+    # ─── Behavioural Signals ───
+    L("## Behavioural Signals")
+    L("")
+    ec = metrics["event_counts"]
+    if not ec:
+        L("_No behavioural events recorded in this window._")
+    else:
+        L("| Signal | Count | Meaning |")
+        L("|---|---|---|")
+        meaning = {
+            "AUTO_VARIANT_SERVED": "System fired practice after failure",
+            "MANUAL_VARIANT_REQUEST": "Learner *chose* to practice (growth mindset)",
+            "QUIT_AFTER_VARIANTS": "Frustration signal — stopped after 1+ variants",
+            "HOMEWORK_ASSIGNED": "5 practice questions saved",
+            "HOMEWORK_DOWNLOAD": "Learner printed the homework",
+            "HOMEWORK_TRY_NOW": "Learner chose to keep practising immediately",
+            "HOMEWORK_REJECTED": "Learner finished the session here",
+        }
+        for ev, ct in ec.most_common():
+            L(f"| {ev} | {ct} | {meaning.get(ev, '—')} |")
+    L("")
+
+    # ─── Struggles ───
+    L("## Where the Learner Struggles")
+    L("")
+    if not metrics["miscon_counter"]:
+        L("_No misconceptions logged in this window._")
+    else:
+        L("| Misconception | Times (original) | Times (variants) |")
+        L("|---|---|---|")
+        for mid, ct in metrics["miscon_counter"].most_common(8):
+            vct = metrics["variant_miscon"].get(mid, 0)
+            L(f"| {mid} | {ct} | {vct} |")
+    L("")
+
+    # ─── Unknown patterns ───
+    if metrics["discoveries"]:
+        L("## Team-Wide Unresolved Patterns (not specific to this learner)")
+        L("")
+        L("| Skill | Times Seen | Status | Confidence |")
+        L("|---|---|---|---|")
+        for d in metrics["discoveries"]:
+            L(f"| {d['skill_id']} | {d['times_seen']} | {d['status']} | {d['confidence']:.2f} |")
+        L("")
+
+    # ─── Recommendation ───
+    L("## The One Thing to Teach Next")
+    L("")
+    reasons = build_recommendation(metrics)
+    if not reasons:
+        L("_Not enough data in this window to recommend. Run a session first._")
+    else:
+        for i, r in enumerate(reasons, 1):
+            L(f"{i}. {r}")
+    L("")
+
+    return "\n".join(lines)
+
+
+def save_report(learner_id, days=7):
+    report = gather_report(learner_id, days=days)
+    metrics = compute_metrics(report)
+    md = render_markdown(metrics)
+
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    out_file = REPORTS_DIR / f"{learner_id}_{ts}.md"
+    out_file.write_text(md, encoding="utf-8")
+    return md, out_file
+
+
+def main():
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    flags = [a for a in sys.argv[1:] if a.startswith("--")]
+
+    days = 7
+    if len(args) >= 2:
+        try:
+            days = int(args[1])
+        except ValueError:
+            pass
+
+    if "--all" in flags:
+        conn = sqlite3.connect(DB)
+        learners = [r[0] for r in conn.execute(
+            "SELECT DISTINCT learner_id FROM attempt ORDER BY learner_id"
+        ).fetchall()]
+        conn.close()
+        for lid in learners:
+            md, path = save_report(lid, days=days)
+            print(f"\n{'='*70}\n{path}\n{'='*70}\n")
+            print(md)
+        return
+
+    learner = args[0] if args else "tanaka"
+    md, path = save_report(learner, days=days)
+    print(md)
+    print(f"\n\n📄 Saved to: {path}")
+
+
+if __name__ == "__main__":
+    main()

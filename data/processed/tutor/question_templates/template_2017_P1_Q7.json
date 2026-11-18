@@ -24,6 +24,12 @@
       "steps": [
         "Expand: 3x² - 4x - 7.",
         "Differentiate."
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles"
       ]
     },
     {
@@ -36,6 +42,14 @@
       "steps": [
         "Rewrite cube root form.",
         "Differentiate each term."
+      ],
+      "given_from": [
+        "7.1",
+        "7.2.1"
+      ],
+      "requires_skills": [
+        "calculus.first_principles",
+        "calculus.derivative"
       ]
     }
   ],

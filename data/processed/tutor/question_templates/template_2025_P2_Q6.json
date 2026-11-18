@@ -84,6 +84,12 @@
           "r": "general solution",
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "trig.proof"
       ]
     }
   ],

@@ -47,6 +47,12 @@
       "steps": [
         "P(A or not B) = P(A) + P(not B) - P(A and not B)",
         "= 0.4 + 0.75 - 0.3 = 0.85."
+      ],
+      "given_from": [
+        "11.1.1"
+      ],
+      "requires_skills": [
+        "probability.venn"
       ]
     },
     {
@@ -61,6 +67,14 @@
         "But interior = exterior disallowed: 5 × 5 = 25 forbidden.",
         "Valid = 120 - 25 = 95.",
         "Space needed = 95 × 5 = 475 m². Fits? Check."
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.1.2"
+      ],
+      "requires_skills": [
+        "probability.venn",
+        "probability.union"
       ]
     }
   ],

@@ -36,6 +36,12 @@
         "C'(w) = 180w - 80/w².",
         "Set to 0: 180w³ = 80.",
         "w ≈ 0.76 m."
+      ],
+      "given_from": [
+        "9.1"
+      ],
+      "requires_skills": [
+        "calculus.optimisation"
       ]
     }
   ],

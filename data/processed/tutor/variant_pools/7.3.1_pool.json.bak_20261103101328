@@ -1,0 +1,662 @@
+[
+  {
+    "variant_question": "Loan R750,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "109 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 750,000(1+0.006667)^4 = R770,200.89",
+      "770,200.89 = 10,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 108.43",
+      "_________________________",
+      "Final Answer: 109 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R750,000 on 28 Feb at 7.2% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "104 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006000",
+      "Loan grows: 750,000(1+0.006000)^4 = R768,162.65",
+      "768,162.65 = 10,000[(1 - (1+0.006000)^-n)/0.006000]",
+      "n = 103.28",
+      "_________________________",
+      "Final Answer: 104 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "64 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 600,000(1+0.006667)^4 = R616,160.71",
+      "616,160.71 = 12,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 63.06",
+      "_________________________",
+      "Final Answer: 64 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "53 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 500,000(1+0.007917)^4 = R516,022.35",
+      "516,022.35 = 12,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 52.78",
+      "_________________________",
+      "Final Answer: 53 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "67 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 500,000(1+0.007917)^4 = R516,022.35",
+      "516,022.35 = 10,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 66.59",
+      "_________________________",
+      "Final Answer: 67 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "53 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 500,000(1+0.007917)^4 = R516,022.35",
+      "516,022.35 = 12,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 52.78",
+      "_________________________",
+      "Final Answer: 53 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R15,000 on 30 June. Time to repay?",
+    "expected": "39 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 500,000(1+0.006667)^4 = R513,467.26",
+      "513,467.26 = 15,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 38.99",
+      "_________________________",
+      "Final Answer: 39 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "64 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 600,000(1+0.006667)^4 = R616,160.71",
+      "616,160.71 = 12,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 63.06",
+      "_________________________",
+      "Final Answer: 64 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "64 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 600,000(1+0.006667)^4 = R616,160.71",
+      "616,160.71 = 12,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 63.06",
+      "_________________________",
+      "Final Answer: 64 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "67 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 600,000(1+0.007917)^4 = R619,226.82",
+      "619,226.82 = 12,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 66.59",
+      "_________________________",
+      "Final Answer: 67 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "67 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 500,000(1+0.007917)^4 = R516,022.35",
+      "516,022.35 = 10,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 66.59",
+      "_________________________",
+      "Final Answer: 67 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "80 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 600,000(1+0.006667)^4 = R616,160.71",
+      "616,160.71 = 10,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 79.61",
+      "_________________________",
+      "Final Answer: 80 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R15,000 on 30 June. Time to repay?",
+    "expected": "51 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 600,000(1+0.007917)^4 = R619,226.82",
+      "619,226.82 = 15,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 50.19",
+      "_________________________",
+      "Final Answer: 51 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 7.2% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "50 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006000",
+      "Loan grows: 500,000(1+0.006000)^4 = R512,108.43",
+      "512,108.43 = 12,000[(1 - (1+0.006000)^-n)/0.006000]",
+      "n = 49.45",
+      "_________________________",
+      "Final Answer: 50 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "86 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 600,000(1+0.007917)^4 = R619,226.82",
+      "619,226.82 = 10,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 85.45",
+      "_________________________",
+      "Final Answer: 86 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "53 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 500,000(1+0.007917)^4 = R516,022.35",
+      "516,022.35 = 12,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 52.78",
+      "_________________________",
+      "Final Answer: 53 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R750,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "109 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 750,000(1+0.006667)^4 = R770,200.89",
+      "770,200.89 = 10,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 108.43",
+      "_________________________",
+      "Final Answer: 109 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R15,000 on 30 June. Time to repay?",
+    "expected": "49 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 600,000(1+0.006667)^4 = R616,160.71",
+      "616,160.71 = 15,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 48.16",
+      "_________________________",
+      "Final Answer: 49 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R750,000 on 28 Feb at 7.2% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "82 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006000",
+      "Loan grows: 750,000(1+0.006000)^4 = R768,162.65",
+      "768,162.65 = 12,000[(1 - (1+0.006000)^-n)/0.006000]",
+      "n = 81.02",
+      "_________________________",
+      "Final Answer: 82 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R15,000 on 30 June. Time to repay?",
+    "expected": "49 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 600,000(1+0.006667)^4 = R616,160.71",
+      "616,160.71 = 15,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 48.16",
+      "_________________________",
+      "Final Answer: 49 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R750,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R15,000 on 30 June. Time to repay?",
+    "expected": "67 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 750,000(1+0.007917)^4 = R774,033.52",
+      "774,033.52 = 15,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 66.59",
+      "_________________________",
+      "Final Answer: 67 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R15,000 on 30 June. Time to repay?",
+    "expected": "49 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 600,000(1+0.006667)^4 = R616,160.71",
+      "616,160.71 = 15,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 48.16",
+      "_________________________",
+      "Final Answer: 49 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 7.2% comp monthly. Missed 3 payments. First R15,000 on 30 June. Time to repay?",
+    "expected": "39 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006000",
+      "Loan grows: 500,000(1+0.006000)^4 = R512,108.43",
+      "512,108.43 = 15,000[(1 - (1+0.006000)^-n)/0.006000]",
+      "n = 38.32",
+      "_________________________",
+      "Final Answer: 39 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 7.2% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "77 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006000",
+      "Loan grows: 600,000(1+0.006000)^4 = R614,530.12",
+      "614,530.12 = 10,000[(1 - (1+0.006000)^-n)/0.006000]",
+      "n = 76.90",
+      "_________________________",
+      "Final Answer: 77 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R600,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "64 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 600,000(1+0.006667)^4 = R616,160.71",
+      "616,160.71 = 12,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 63.06",
+      "_________________________",
+      "Final Answer: 64 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "67 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 500,000(1+0.007917)^4 = R516,022.35",
+      "516,022.35 = 10,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 66.59",
+      "_________________________",
+      "Final Answer: 67 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R12,000 on 30 June. Time to repay?",
+    "expected": "53 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 500,000(1+0.007917)^4 = R516,022.35",
+      "516,022.35 = 12,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 52.78",
+      "_________________________",
+      "Final Answer: 53 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 8.0% comp monthly. Missed 3 payments. First R10,000 on 30 June. Time to repay?",
+    "expected": "64 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006667",
+      "Loan grows: 500,000(1+0.006667)^4 = R513,467.26",
+      "513,467.26 = 10,000[(1 - (1+0.006667)^-n)/0.006667]",
+      "n = 63.06",
+      "_________________________",
+      "Final Answer: 64 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 7.2% comp monthly. Missed 3 payments. First R15,000 on 30 June. Time to repay?",
+    "expected": "39 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.006000",
+      "Loan grows: 500,000(1+0.006000)^4 = R512,108.43",
+      "512,108.43 = 15,000[(1 - (1+0.006000)^-n)/0.006000]",
+      "n = 38.32",
+      "_________________________",
+      "Final Answer: 39 months"
+    ]
+  },
+  {
+    "variant_question": "Loan R500,000 on 28 Feb at 9.5% comp monthly. Missed 3 payments. First R15,000 on 30 June. Time to repay?",
+    "expected": "41 months",
+    "demonstration": "Grow loan 4 months, solve logs.",
+    "memo_marks": [
+      "1 mark grow",
+      "1 mark pv",
+      "1 mark i",
+      "1 mark logs",
+      "1 mark ans"
+    ],
+    "fast_path": "TVM solver.",
+    "fatal_error": "DBE says: Forget 4 months.",
+    "answer_book_layout": [
+      "i = 0.007917",
+      "Loan grows: 500,000(1+0.007917)^4 = R516,022.35",
+      "516,022.35 = 15,000[(1 - (1+0.007917)^-n)/0.007917]",
+      "n = 40.32",
+      "_________________________",
+      "Final Answer: 41 months"
+    ]
+  }
+]

@@ -36,6 +36,12 @@
         "3a + b = {d1} → -3 + b = {d1} → b = 26.",
         "a + b + c = {T1} → -1 + 26 + c = {T1} → c = -170.",
         "T_n = -n² + 26n - 170."
+      ],
+      "given_from": [
+        "3.1"
+      ],
+      "requires_skills": [
+        "sequences.quadratic"
       ]
     },
     {
@@ -59,6 +65,13 @@
         "-2n + 27 = -121",
         "n = 74",
         "Between T_73 and T_74."
+      ],
+      "given_from": [
+        "3.1",
+        "3.2"
+      ],
+      "requires_skills": [
+        "sequences.quadratic"
       ]
     },
     {
@@ -83,6 +96,14 @@
         "Max of T_n at n = -b/(2a) = 13.",
         "T_13 = -(13)² + 26(13) - 170 = -1.",
         "To bring max to 1, add 2."
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ],
+      "requires_skills": [
+        "sequences.quadratic"
       ]
     }
   ],

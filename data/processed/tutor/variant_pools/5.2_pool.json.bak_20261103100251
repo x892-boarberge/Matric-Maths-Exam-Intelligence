@@ -1,0 +1,572 @@
+[
+  {
+    "variant_question": "Write down the range of f(x) = -2(x - 1)^2 + -9.",
+    "expected": "y ≤ -9",
+    "demonstration": "a = -2 < 0, so the parabola opens downward. Turning point is (1, -9), which is a maximum. Range: y ≤ -9.",
+    "memo_marks": [
+      "1 mark for y ≤ -9"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -2, turning point (1, -9)",
+      "y ≤ -9"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = -1(x - 2)^2 + -8.",
+    "expected": "y ≤ -8",
+    "demonstration": "a = -1 < 0, so the parabola opens downward. Turning point is (2, -8), which is a maximum. Range: y ≤ -8.",
+    "memo_marks": [
+      "1 mark for y ≤ -8"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -1, turning point (2, -8)",
+      "y ≤ -8"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = -2(x - 3)^2 + -6.",
+    "expected": "y ≤ -6",
+    "demonstration": "a = -2 < 0, so the parabola opens downward. Turning point is (3, -6), which is a maximum. Range: y ≤ -6.",
+    "memo_marks": [
+      "1 mark for y ≤ -6"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -2, turning point (3, -6)",
+      "y ≤ -6"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = -1(x - 1)^2 + -5.",
+    "expected": "y ≤ -5",
+    "demonstration": "a = -1 < 0, so the parabola opens downward. Turning point is (1, -5), which is a maximum. Range: y ≤ -5.",
+    "memo_marks": [
+      "1 mark for y ≤ -5"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -1, turning point (1, -5)",
+      "y ≤ -5"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = -2(x - 2)^2 + -4.",
+    "expected": "y ≤ -4",
+    "demonstration": "a = -2 < 0, so the parabola opens downward. Turning point is (2, -4), which is a maximum. Range: y ≤ -4.",
+    "memo_marks": [
+      "1 mark for y ≤ -4"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -2, turning point (2, -4)",
+      "y ≤ -4"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = -1(x - 3)^2 + -3.",
+    "expected": "y ≤ -3",
+    "demonstration": "a = -1 < 0, so the parabola opens downward. Turning point is (3, -3), which is a maximum. Range: y ≤ -3.",
+    "memo_marks": [
+      "1 mark for y ≤ -3"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -1, turning point (3, -3)",
+      "y ≤ -3"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = -2(x - 1)^2 + -2.",
+    "expected": "y ≤ -2",
+    "demonstration": "a = -2 < 0, so the parabola opens downward. Turning point is (1, -2), which is a maximum. Range: y ≤ -2.",
+    "memo_marks": [
+      "1 mark for y ≤ -2"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -2, turning point (1, -2)",
+      "y ≤ -2"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = -1(x - 2)^2 + 1.",
+    "expected": "y ≤ 1",
+    "demonstration": "a = -1 < 0, so the parabola opens downward. Turning point is (2, 1), which is a maximum. Range: y ≤ 1.",
+    "memo_marks": [
+      "1 mark for y ≤ 1"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -1, turning point (2, 1)",
+      "y ≤ 1"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = -2(x - 3)^2 + 2.",
+    "expected": "y ≤ 2",
+    "demonstration": "a = -2 < 0, so the parabola opens downward. Turning point is (3, 2), which is a maximum. Range: y ≤ 2.",
+    "memo_marks": [
+      "1 mark for y ≤ 2"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -2, turning point (3, 2)",
+      "y ≤ 2"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = -1(x - 1)^2 + 3.",
+    "expected": "y ≤ 3",
+    "demonstration": "a = -1 < 0, so the parabola opens downward. Turning point is (1, 3), which is a maximum. Range: y ≤ 3.",
+    "memo_marks": [
+      "1 mark for y ≤ 3"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -1, turning point (1, 3)",
+      "y ≤ 3"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = -2(x - 2)^2 + 4.",
+    "expected": "y ≤ 4",
+    "demonstration": "a = -2 < 0, so the parabola opens downward. Turning point is (2, 4), which is a maximum. Range: y ≤ 4.",
+    "memo_marks": [
+      "1 mark for y ≤ 4"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -2, turning point (2, 4)",
+      "y ≤ 4"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = -1(x - 3)^2 + 5.",
+    "expected": "y ≤ 5",
+    "demonstration": "a = -1 < 0, so the parabola opens downward. Turning point is (3, 5), which is a maximum. Range: y ≤ 5.",
+    "memo_marks": [
+      "1 mark for y ≤ 5"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -1, turning point (3, 5)",
+      "y ≤ 5"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = -2(x - 1)^2 + 6.",
+    "expected": "y ≤ 6",
+    "demonstration": "a = -2 < 0, so the parabola opens downward. Turning point is (1, 6), which is a maximum. Range: y ≤ 6.",
+    "memo_marks": [
+      "1 mark for y ≤ 6"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -2, turning point (1, 6)",
+      "y ≤ 6"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = -1(x - 2)^2 + 8.",
+    "expected": "y ≤ 8",
+    "demonstration": "a = -1 < 0, so the parabola opens downward. Turning point is (2, 8), which is a maximum. Range: y ≤ 8.",
+    "memo_marks": [
+      "1 mark for y ≤ 8"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -1, turning point (2, 8)",
+      "y ≤ 8"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = -2(x - 3)^2 + 9.",
+    "expected": "y ≤ 9",
+    "demonstration": "a = -2 < 0, so the parabola opens downward. Turning point is (3, 9), which is a maximum. Range: y ≤ 9.",
+    "memo_marks": [
+      "1 mark for y ≤ 9"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = -2, turning point (3, 9)",
+      "y ≤ 9"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = 1(x - 1)^2 + -9.",
+    "expected": "y ≥ -9",
+    "demonstration": "a = 1 > 0, so the parabola opens upward. Turning point is (1, -9), which is a minimum. Range: y ≥ -9.",
+    "memo_marks": [
+      "1 mark for y ≥ -9"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 1, turning point (1, -9)",
+      "y ≥ -9"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = 2(x - 2)^2 + -8.",
+    "expected": "y ≥ -8",
+    "demonstration": "a = 2 > 0, so the parabola opens upward. Turning point is (2, -8), which is a minimum. Range: y ≥ -8.",
+    "memo_marks": [
+      "1 mark for y ≥ -8"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 2, turning point (2, -8)",
+      "y ≥ -8"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = 1(x - 3)^2 + -6.",
+    "expected": "y ≥ -6",
+    "demonstration": "a = 1 > 0, so the parabola opens upward. Turning point is (3, -6), which is a minimum. Range: y ≥ -6.",
+    "memo_marks": [
+      "1 mark for y ≥ -6"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 1, turning point (3, -6)",
+      "y ≥ -6"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = 2(x - 1)^2 + -5.",
+    "expected": "y ≥ -5",
+    "demonstration": "a = 2 > 0, so the parabola opens upward. Turning point is (1, -5), which is a minimum. Range: y ≥ -5.",
+    "memo_marks": [
+      "1 mark for y ≥ -5"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 2, turning point (1, -5)",
+      "y ≥ -5"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = 1(x - 2)^2 + -4.",
+    "expected": "y ≥ -4",
+    "demonstration": "a = 1 > 0, so the parabola opens upward. Turning point is (2, -4), which is a minimum. Range: y ≥ -4.",
+    "memo_marks": [
+      "1 mark for y ≥ -4"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 1, turning point (2, -4)",
+      "y ≥ -4"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = 2(x - 3)^2 + -3.",
+    "expected": "y ≥ -3",
+    "demonstration": "a = 2 > 0, so the parabola opens upward. Turning point is (3, -3), which is a minimum. Range: y ≥ -3.",
+    "memo_marks": [
+      "1 mark for y ≥ -3"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 2, turning point (3, -3)",
+      "y ≥ -3"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = 1(x - 1)^2 + -2.",
+    "expected": "y ≥ -2",
+    "demonstration": "a = 1 > 0, so the parabola opens upward. Turning point is (1, -2), which is a minimum. Range: y ≥ -2.",
+    "memo_marks": [
+      "1 mark for y ≥ -2"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 1, turning point (1, -2)",
+      "y ≥ -2"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = 2(x - 2)^2 + 1.",
+    "expected": "y ≥ 1",
+    "demonstration": "a = 2 > 0, so the parabola opens upward. Turning point is (2, 1), which is a minimum. Range: y ≥ 1.",
+    "memo_marks": [
+      "1 mark for y ≥ 1"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 2, turning point (2, 1)",
+      "y ≥ 1"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = 1(x - 3)^2 + 2.",
+    "expected": "y ≥ 2",
+    "demonstration": "a = 1 > 0, so the parabola opens upward. Turning point is (3, 2), which is a minimum. Range: y ≥ 2.",
+    "memo_marks": [
+      "1 mark for y ≥ 2"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 1, turning point (3, 2)",
+      "y ≥ 2"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = 2(x - 1)^2 + 3.",
+    "expected": "y ≥ 3",
+    "demonstration": "a = 2 > 0, so the parabola opens upward. Turning point is (1, 3), which is a minimum. Range: y ≥ 3.",
+    "memo_marks": [
+      "1 mark for y ≥ 3"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 2, turning point (1, 3)",
+      "y ≥ 3"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = 1(x - 2)^2 + 4.",
+    "expected": "y ≥ 4",
+    "demonstration": "a = 1 > 0, so the parabola opens upward. Turning point is (2, 4), which is a minimum. Range: y ≥ 4.",
+    "memo_marks": [
+      "1 mark for y ≥ 4"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 1, turning point (2, 4)",
+      "y ≥ 4"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = 2(x - 3)^2 + 5.",
+    "expected": "y ≥ 5",
+    "demonstration": "a = 2 > 0, so the parabola opens upward. Turning point is (3, 5), which is a minimum. Range: y ≥ 5.",
+    "memo_marks": [
+      "1 mark for y ≥ 5"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 2, turning point (3, 5)",
+      "y ≥ 5"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = 1(x - 1)^2 + 6.",
+    "expected": "y ≥ 6",
+    "demonstration": "a = 1 > 0, so the parabola opens upward. Turning point is (1, 6), which is a minimum. Range: y ≥ 6.",
+    "memo_marks": [
+      "1 mark for y ≥ 6"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 1, turning point (1, 6)",
+      "y ≥ 6"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Write down the range of f(x) = 2(x - 2)^2 + 8.",
+    "expected": "y ≥ 8",
+    "demonstration": "a = 2 > 0, so the parabola opens upward. Turning point is (2, 8), which is a minimum. Range: y ≥ 8.",
+    "memo_marks": [
+      "1 mark for y ≥ 8"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 2, turning point (2, 8)",
+      "y ≥ 8"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  },
+  {
+    "variant_question": "Determine the range of the parabola f(x) = 1(x - 3)^2 + 9.",
+    "expected": "y ≥ 9",
+    "demonstration": "a = 1 > 0, so the parabola opens upward. Turning point is (3, 9), which is a minimum. Range: y ≥ 9.",
+    "memo_marks": [
+      "1 mark for y ≥ 9"
+    ],
+    "fast_path": "Sign of a tells you open/close. Turning point y = k is the bound.",
+    "fatal_error": "DBE says: Candidates confuse range with domain, or forget the direction flip when a < 0.",
+    "answer_book_layout": [
+      "a = 1, turning point (3, 9)",
+      "y ≥ 9"
+    ],
+    "hack": "Sign of a → opens up or down. Turning point y-value → the bound. Write the inequality in the right direction.",
+    "trap": "Downward parabola has a MAXIMUM not a minimum. a < 0 means y ≤ k, not y ≥ k.",
+    "presentation": "State the sign of a and the turning point, then write the range inequality.",
+    "diagram": "required",
+    "diagram_hint": "parabola_with_turning_point_marked"
+  }
+]

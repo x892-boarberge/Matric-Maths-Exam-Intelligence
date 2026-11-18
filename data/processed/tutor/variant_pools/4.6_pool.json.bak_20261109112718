@@ -1,0 +1,692 @@
+[
+  {
+    "variant_question": "f(x) = log_{1/2}(x). f-inverse is translated 8 units horizontally right to give h. Find the y-values of h when x > 3.",
+    "expected": "0 < y < 32",
+    "demonstration": "f-inverse(x) = (1/2)^x. Translate 8 right: h(x) = (1/2)^(x-8). For x > 3: h(3) = (1/2)^(3-8) = (1/2)^(-5) = 32. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 32.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/2)^(x-8)",
+      "1 mark for 0 < y < 32"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/2)^x",
+      "h(x) = (1/2)^(x-8)",
+      "h(3) = (1/2)^(-5) = 32",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 32"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/2}(x). The graph of h is the inverse of f, then translated 8 units right. Determine the range of h for x > 4.",
+    "expected": "0 < y < 16",
+    "demonstration": "f-inverse(x) = (1/2)^x. Translate 8 right: h(x) = (1/2)^(x-8). For x > 4: h(4) = (1/2)^(4-8) = (1/2)^(-4) = 16. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 16.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/2)^(x-8)",
+      "1 mark for 0 < y < 16"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/2)^x",
+      "h(x) = (1/2)^(x-8)",
+      "h(4) = (1/2)^(-4) = 16",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 16"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/5}(x). h is obtained when f⁻¹ is translated 7 units to the right. Determine the y-values of h where x > 4.",
+    "expected": "0 < y < 125",
+    "demonstration": "f-inverse(x) = (1/5)^x. Translate 7 right: h(x) = (1/5)^(x-7). For x > 4: h(4) = (1/5)^(4-7) = (1/5)^(-3) = 125. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 125.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/5)^(x-7)",
+      "1 mark for 0 < y < 125"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/5)^x",
+      "h(x) = (1/5)^(x-7)",
+      "h(4) = (1/5)^(-3) = 125",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 125"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/2}(x). The graph of h is the graph of f⁻¹ translated 5 units to the right. Find the range of h for x > 3.",
+    "expected": "0 < y < 4",
+    "demonstration": "f-inverse(x) = (1/2)^x. Translate 5 right: h(x) = (1/2)^(x-5). For x > 3: h(3) = (1/2)^(3-5) = (1/2)^(-2) = 4. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 4.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/2)^(x-5)",
+      "1 mark for 0 < y < 4"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/2)^x",
+      "h(x) = (1/2)^(x-5)",
+      "h(3) = (1/2)^(-2) = 4",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 4"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/2}(x). The graph of h is the inverse of f, then translated 4 units right. Determine the range of h for x > 3.",
+    "expected": "0 < y < 2",
+    "demonstration": "f-inverse(x) = (1/2)^x. Translate 4 right: h(x) = (1/2)^(x-4). For x > 3: h(3) = (1/2)^(3-4) = (1/2)^(-1) = 2. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 2.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/2)^(x-4)",
+      "1 mark for 0 < y < 2"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/2)^x",
+      "h(x) = (1/2)^(x-4)",
+      "h(3) = (1/2)^(-1) = 2",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 2"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/2}(x). The graph of h is the graph of f⁻¹ translated 9 units to the right. Find the range of h for x > 4.",
+    "expected": "0 < y < 32",
+    "demonstration": "f-inverse(x) = (1/2)^x. Translate 9 right: h(x) = (1/2)^(x-9). For x > 4: h(4) = (1/2)^(4-9) = (1/2)^(-5) = 32. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 32.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/2)^(x-9)",
+      "1 mark for 0 < y < 32"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/2)^x",
+      "h(x) = (1/2)^(x-9)",
+      "h(4) = (1/2)^(-5) = 32",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 32"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/3}(x). f-inverse is translated 4 units horizontally right to give h. Find the y-values of h when x > 3.",
+    "expected": "0 < y < 3",
+    "demonstration": "f-inverse(x) = (1/3)^x. Translate 4 right: h(x) = (1/3)^(x-4). For x > 3: h(3) = (1/3)^(3-4) = (1/3)^(-1) = 3. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 3.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/3)^(x-4)",
+      "1 mark for 0 < y < 3"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/3)^x",
+      "h(x) = (1/3)^(x-4)",
+      "h(3) = (1/3)^(-1) = 3",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 3"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/3}(x). f-inverse is translated 9 units horizontally right to give h. Find the y-values of h when x > 5.",
+    "expected": "0 < y < 81",
+    "demonstration": "f-inverse(x) = (1/3)^x. Translate 9 right: h(x) = (1/3)^(x-9). For x > 5: h(5) = (1/3)^(5-9) = (1/3)^(-4) = 81. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 81.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/3)^(x-9)",
+      "1 mark for 0 < y < 81"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(5). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/3)^x",
+      "h(x) = (1/3)^(x-9)",
+      "h(5) = (1/3)^(-4) = 81",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 81"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/5}(x). f-inverse is translated 6 units horizontally right to give h. Find the y-values of h when x > 4.",
+    "expected": "0 < y < 25",
+    "demonstration": "f-inverse(x) = (1/5)^x. Translate 6 right: h(x) = (1/5)^(x-6). For x > 4: h(4) = (1/5)^(4-6) = (1/5)^(-2) = 25. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 25.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/5)^(x-6)",
+      "1 mark for 0 < y < 25"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/5)^x",
+      "h(x) = (1/5)^(x-6)",
+      "h(4) = (1/5)^(-2) = 25",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 25"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/4}(x). The graph of h is the graph of f⁻¹ translated 6 units to the right. Find the range of h for x > 5.",
+    "expected": "0 < y < 4",
+    "demonstration": "f-inverse(x) = (1/4)^x. Translate 6 right: h(x) = (1/4)^(x-6). For x > 5: h(5) = (1/4)^(5-6) = (1/4)^(-1) = 4. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 4.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/4)^(x-6)",
+      "1 mark for 0 < y < 4"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(5). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/4)^x",
+      "h(x) = (1/4)^(x-6)",
+      "h(5) = (1/4)^(-1) = 4",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 4"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/4}(x). The graph of h is the inverse of f, then translated 5 units right. Determine the range of h for x > 4.",
+    "expected": "0 < y < 4",
+    "demonstration": "f-inverse(x) = (1/4)^x. Translate 5 right: h(x) = (1/4)^(x-5). For x > 4: h(4) = (1/4)^(4-5) = (1/4)^(-1) = 4. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 4.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/4)^(x-5)",
+      "1 mark for 0 < y < 4"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/4)^x",
+      "h(x) = (1/4)^(x-5)",
+      "h(4) = (1/4)^(-1) = 4",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 4"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/3}(x). The graph of h is the graph of f⁻¹ translated 5 units to the right. Find the range of h for x > 3.",
+    "expected": "0 < y < 9",
+    "demonstration": "f-inverse(x) = (1/3)^x. Translate 5 right: h(x) = (1/3)^(x-5). For x > 3: h(3) = (1/3)^(3-5) = (1/3)^(-2) = 9. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 9.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/3)^(x-5)",
+      "1 mark for 0 < y < 9"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/3)^x",
+      "h(x) = (1/3)^(x-5)",
+      "h(3) = (1/3)^(-2) = 9",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 9"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/4}(x). The graph of h is the graph of f⁻¹ translated 5 units to the right. Find the range of h for x > 3.",
+    "expected": "0 < y < 16",
+    "demonstration": "f-inverse(x) = (1/4)^x. Translate 5 right: h(x) = (1/4)^(x-5). For x > 3: h(3) = (1/4)^(3-5) = (1/4)^(-2) = 16. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 16.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/4)^(x-5)",
+      "1 mark for 0 < y < 16"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/4)^x",
+      "h(x) = (1/4)^(x-5)",
+      "h(3) = (1/4)^(-2) = 16",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 16"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/3}(x). The graph of h is the inverse of f, then translated 6 units right. Determine the range of h for x > 4.",
+    "expected": "0 < y < 9",
+    "demonstration": "f-inverse(x) = (1/3)^x. Translate 6 right: h(x) = (1/3)^(x-6). For x > 4: h(4) = (1/3)^(4-6) = (1/3)^(-2) = 9. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 9.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/3)^(x-6)",
+      "1 mark for 0 < y < 9"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/3)^x",
+      "h(x) = (1/3)^(x-6)",
+      "h(4) = (1/3)^(-2) = 9",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 9"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/3}(x). f-inverse is translated 5 units horizontally right to give h. Find the y-values of h when x > 4.",
+    "expected": "0 < y < 3",
+    "demonstration": "f-inverse(x) = (1/3)^x. Translate 5 right: h(x) = (1/3)^(x-5). For x > 4: h(4) = (1/3)^(4-5) = (1/3)^(-1) = 3. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 3.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/3)^(x-5)",
+      "1 mark for 0 < y < 3"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/3)^x",
+      "h(x) = (1/3)^(x-5)",
+      "h(4) = (1/3)^(-1) = 3",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 3"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/3}(x). f-inverse is translated 7 units horizontally right to give h. Find the y-values of h when x > 3.",
+    "expected": "0 < y < 81",
+    "demonstration": "f-inverse(x) = (1/3)^x. Translate 7 right: h(x) = (1/3)^(x-7). For x > 3: h(3) = (1/3)^(3-7) = (1/3)^(-4) = 81. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 81.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/3)^(x-7)",
+      "1 mark for 0 < y < 81"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/3)^x",
+      "h(x) = (1/3)^(x-7)",
+      "h(3) = (1/3)^(-4) = 81",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 81"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/5}(x). The graph of h is the inverse of f, then translated 8 units right. Determine the range of h for x > 5.",
+    "expected": "0 < y < 125",
+    "demonstration": "f-inverse(x) = (1/5)^x. Translate 8 right: h(x) = (1/5)^(x-8). For x > 5: h(5) = (1/5)^(5-8) = (1/5)^(-3) = 125. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 125.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/5)^(x-8)",
+      "1 mark for 0 < y < 125"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(5). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/5)^x",
+      "h(x) = (1/5)^(x-8)",
+      "h(5) = (1/5)^(-3) = 125",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 125"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/3}(x). The graph of h is the graph of f⁻¹ translated 8 units to the right. Find the range of h for x > 5.",
+    "expected": "0 < y < 27",
+    "demonstration": "f-inverse(x) = (1/3)^x. Translate 8 right: h(x) = (1/3)^(x-8). For x > 5: h(5) = (1/3)^(5-8) = (1/3)^(-3) = 27. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 27.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/3)^(x-8)",
+      "1 mark for 0 < y < 27"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(5). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/3)^x",
+      "h(x) = (1/3)^(x-8)",
+      "h(5) = (1/3)^(-3) = 27",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 27"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/2}(x). The graph of h is the graph of f⁻¹ translated 7 units to the right. Find the range of h for x > 3.",
+    "expected": "0 < y < 16",
+    "demonstration": "f-inverse(x) = (1/2)^x. Translate 7 right: h(x) = (1/2)^(x-7). For x > 3: h(3) = (1/2)^(3-7) = (1/2)^(-4) = 16. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 16.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/2)^(x-7)",
+      "1 mark for 0 < y < 16"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/2)^x",
+      "h(x) = (1/2)^(x-7)",
+      "h(3) = (1/2)^(-4) = 16",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 16"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/5}(x). f-inverse is translated 5 units horizontally right to give h. Find the y-values of h when x > 4.",
+    "expected": "0 < y < 5",
+    "demonstration": "f-inverse(x) = (1/5)^x. Translate 5 right: h(x) = (1/5)^(x-5). For x > 4: h(4) = (1/5)^(4-5) = (1/5)^(-1) = 5. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 5.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/5)^(x-5)",
+      "1 mark for 0 < y < 5"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/5)^x",
+      "h(x) = (1/5)^(x-5)",
+      "h(4) = (1/5)^(-1) = 5",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 5"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/3}(x). h is obtained when f⁻¹ is translated 7 units to the right. Determine the y-values of h where x > 4.",
+    "expected": "0 < y < 27",
+    "demonstration": "f-inverse(x) = (1/3)^x. Translate 7 right: h(x) = (1/3)^(x-7). For x > 4: h(4) = (1/3)^(4-7) = (1/3)^(-3) = 27. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 27.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/3)^(x-7)",
+      "1 mark for 0 < y < 27"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/3)^x",
+      "h(x) = (1/3)^(x-7)",
+      "h(4) = (1/3)^(-3) = 27",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 27"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/4}(x). h is obtained when f⁻¹ is translated 6 units to the right. Determine the y-values of h where x > 4.",
+    "expected": "0 < y < 16",
+    "demonstration": "f-inverse(x) = (1/4)^x. Translate 6 right: h(x) = (1/4)^(x-6). For x > 4: h(4) = (1/4)^(4-6) = (1/4)^(-2) = 16. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 16.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/4)^(x-6)",
+      "1 mark for 0 < y < 16"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/4)^x",
+      "h(x) = (1/4)^(x-6)",
+      "h(4) = (1/4)^(-2) = 16",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 16"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/2}(x). h is obtained when f⁻¹ is translated 8 units to the right. Determine the y-values of h where x > 5.",
+    "expected": "0 < y < 8",
+    "demonstration": "f-inverse(x) = (1/2)^x. Translate 8 right: h(x) = (1/2)^(x-8). For x > 5: h(5) = (1/2)^(5-8) = (1/2)^(-3) = 8. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 8.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/2)^(x-8)",
+      "1 mark for 0 < y < 8"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(5). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/2)^x",
+      "h(x) = (1/2)^(x-8)",
+      "h(5) = (1/2)^(-3) = 8",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 8"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/3}(x). The graph of h is the graph of f⁻¹ translated 6 units to the right. Find the range of h for x > 5.",
+    "expected": "0 < y < 3",
+    "demonstration": "f-inverse(x) = (1/3)^x. Translate 6 right: h(x) = (1/3)^(x-6). For x > 5: h(5) = (1/3)^(5-6) = (1/3)^(-1) = 3. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 3.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/3)^(x-6)",
+      "1 mark for 0 < y < 3"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(5). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/3)^x",
+      "h(x) = (1/3)^(x-6)",
+      "h(5) = (1/3)^(-1) = 3",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 3"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/4}(x). The graph of h is the graph of f⁻¹ translated 7 units to the right. Find the range of h for x > 4.",
+    "expected": "0 < y < 64",
+    "demonstration": "f-inverse(x) = (1/4)^x. Translate 7 right: h(x) = (1/4)^(x-7). For x > 4: h(4) = (1/4)^(4-7) = (1/4)^(-3) = 64. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 64.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/4)^(x-7)",
+      "1 mark for 0 < y < 64"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(4). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/4)^x",
+      "h(x) = (1/4)^(x-7)",
+      "h(4) = (1/4)^(-3) = 64",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 64"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/2}(x). f-inverse is translated 7 units horizontally right to give h. Find the y-values of h when x > 5.",
+    "expected": "0 < y < 4",
+    "demonstration": "f-inverse(x) = (1/2)^x. Translate 7 right: h(x) = (1/2)^(x-7). For x > 5: h(5) = (1/2)^(5-7) = (1/2)^(-2) = 4. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 4.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/2)^(x-7)",
+      "1 mark for 0 < y < 4"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(5). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/2)^x",
+      "h(x) = (1/2)^(x-7)",
+      "h(5) = (1/2)^(-2) = 4",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 4"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/5}(x). h is obtained when f⁻¹ is translated 5 units to the right. Determine the y-values of h where x > 3.",
+    "expected": "0 < y < 25",
+    "demonstration": "f-inverse(x) = (1/5)^x. Translate 5 right: h(x) = (1/5)^(x-5). For x > 3: h(3) = (1/5)^(3-5) = (1/5)^(-2) = 25. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 25.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/5)^(x-5)",
+      "1 mark for 0 < y < 25"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/5)^x",
+      "h(x) = (1/5)^(x-5)",
+      "h(3) = (1/5)^(-2) = 25",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 25"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/2}(x). f-inverse is translated 6 units horizontally right to give h. Find the y-values of h when x > 3.",
+    "expected": "0 < y < 8",
+    "demonstration": "f-inverse(x) = (1/2)^x. Translate 6 right: h(x) = (1/2)^(x-6). For x > 3: h(3) = (1/2)^(3-6) = (1/2)^(-3) = 8. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 8.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/2)^(x-6)",
+      "1 mark for 0 < y < 8"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/2)^x",
+      "h(x) = (1/2)^(x-6)",
+      "h(3) = (1/2)^(-3) = 8",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 8"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/4}(x). f-inverse is translated 6 units horizontally right to give h. Find the y-values of h when x > 3.",
+    "expected": "0 < y < 64",
+    "demonstration": "f-inverse(x) = (1/4)^x. Translate 6 right: h(x) = (1/4)^(x-6). For x > 3: h(3) = (1/4)^(3-6) = (1/4)^(-3) = 64. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 64.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/4)^(x-6)",
+      "1 mark for 0 < y < 64"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(3). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/4)^x",
+      "h(x) = (1/4)^(x-6)",
+      "h(3) = (1/4)^(-3) = 64",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 64"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  },
+  {
+    "variant_question": "f(x) = log_{1/5}(x). f-inverse is translated 7 units horizontally right to give h. Find the y-values of h when x > 5.",
+    "expected": "0 < y < 25",
+    "demonstration": "f-inverse(x) = (1/5)^x. Translate 7 right: h(x) = (1/5)^(x-7). For x > 5: h(5) = (1/5)^(5-7) = (1/5)^(-2) = 25. As x approaches infinity, h(x) approaches 0. Answer: 0 < y < 25.",
+    "memo_marks": [
+      "1 mark for h(x) = (1/5)^(x-7)",
+      "1 mark for 0 < y < 25"
+    ],
+    "fast_path": "Right translation: subtract inside. Top of range = h(5). Bottom = asymptote (0).",
+    "fatal_error": "DBE says: Candidates translate left or forget the x-range restriction, giving a single value instead of a range.",
+    "answer_book_layout": [
+      "f-inverse(x) = (1/5)^x",
+      "h(x) = (1/5)^(x-7)",
+      "h(5) = (1/5)^(-2) = 25",
+      "As x approaches infinity, h(x) approaches 0",
+      "Final Answer: 0 < y < 25"
+    ],
+    "hack": "Right translation = f-inverse(x - n). Top of range = h(threshold). Bottom = asymptote (0).",
+    "trap": "Don't translate left. Right means subtract inside.",
+    "presentation": "Show translated equation first, then evaluate h at x = threshold for the bound.",
+    "diagram": "required",
+    "diagram_hint": "log_and_translated_inverse_graphed"
+  }
+]

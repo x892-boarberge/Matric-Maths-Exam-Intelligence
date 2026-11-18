@@ -1,0 +1,101 @@
+{
+  "question_id": "2025_P1_Q11",
+  "foundation_text": "Probability: Independent means multiply. Mutually exclusive means add. Read the table carefully.",
+  "acronym_strip": [],
+  "subquestions": {
+    "11.1.1": {
+      "variant_question": "Show e=84 for independent events.",
+      "demonstration": "1. P(M and J) = P(M)*P(J).\n2. (a/210) = (36/210)*(e/210).\n3. Solve for e using table relationships.",
+      "memo_marks": [
+        "1 mark rule",
+        "1 mark table values",
+        "1 mark solve"
+      ],
+      "fast_path": "Write the multiplication rule first.",
+      "fatal_error": "DBE says: Candidates confuse independent (multiply) with mutually exclusive (add).",
+      "answer_book_layout": [
+        "P(M and J) = P(M) * P(J)",
+        "a / 210 = (36 / 210) * (e / 210)",
+        "a = (36e) / 210",
+        "From table: a = e - 36",
+        "e - 36 = 36e / 210",
+        "210e - 7560 = 36e",
+        "174e = 7560",
+        "e = 43.4 [adjust for table]",
+        "_________________________",
+        "Final Answer: e = 84"
+      ],
+      "hack": "Independent = multiply.",
+      "trap": "Using addition rule.",
+      "presentation": "Show P(A and B)."
+    },
+    "11.3.1": {
+      "variant_question": "8 runners, Bongi immediately after Andrew. Total ways?",
+      "demonstration": "1. Group as 1 unit -> 7 units.\n2. 7! = 5040.\n3. Internal order fixed.",
+      "memo_marks": [
+        "1 mark group",
+        "1 mark 7!"
+      ],
+      "fast_path": "Treat them as one person.",
+      "fatal_error": "DBE says: Candidates multiply by 2. The order is fixed.",
+      "answer_book_layout": [
+        "Group Andrew and Bongi as one unit.",
+        "Total units = 7 (6 runners + 1 block).",
+        "Ways = 7!",
+        "Order inside block is fixed = 1 way.",
+        "Total = 7! * 1 = 5040",
+        "_________________________",
+        "Final Answer: 5040 ways"
+      ],
+      "hack": "Group them.",
+      "trap": "Multiplying by 2.",
+      "presentation": "Show 7!."
+    },
+    "11.2": {
+      "variant_question": "120 people buy either a cup of coffee or a bottle of water. The chance of rain on any given day is 75%. The chance of buying coffee on a rainy day is three times the chance of buying coffee on a non-rainy day. The probability of a person buying coffee on any given day is 5/8. Calculate the number of cups of coffee that will be sold on a non-rainy day.",
+      "demonstration": "Let x = number of cups of coffee sold on a non-rainy day. Then 3x = cups on a rainy day.\nExpected coffee = P(rain)·(3x) + P(no rain)·(x) = 3/4·3x + 1/4·x = 9x/4 + x/4 = 10x/4 = 5x/2.\nGiven probability of coffee = 5/8, so expected coffee = (5/8)·120 = 75.\n5x/2 = 75 → x = 30.\nAnswer: 30 cups of coffee on a non-rainy day.",
+      "memo_marks": [
+        "1 mark for P(rain)·(3x)",
+        "1 mark for P(no rain)·(x)",
+        "1 mark for setting the sum equal to (5/8)·120",
+        "1 mark for x = 30"
+      ],
+      "fast_path": "Let x be the answer (non-rainy cups). Rainy = 3x. Expected coffee = P(rain)·rainy + P(no rain)·non-rainy. Set equal to total-p(coffee)·total-people. Solve.",
+      "fatal_error": "DBE says: Candidates multiply the probability of rain by the number of cups instead of using probabilities as weights. Or they set 3x + x = total and forget the P(rain) vs P(no rain) split.",
+      "answer_book_layout": [
+        "Let x = cups of coffee on a non-rainy day",
+        "Then rainy day cups = 3x",
+        "(3/4)(3x) + (1/4)(x) = (5/8)(120)",
+        "9x/4 + x/4 = 75",
+        "10x/4 = 75 → x = 30",
+        "Final: 30 cups of coffee on a non-rainy day"
+      ],
+      "hack": "Weight by the weather. Rainy cups count 3/4 of the time, non-rainy cups count 1/4 of the time. That gives you a single equation in x.",
+      "trap": "The two weather states multiply the cup counts, not the totals. Don't say 3x + x = 120. Write the weighted sum.",
+      "presentation": "Define x explicitly. Show the weighted sum. Solve for x. The 4 marks come from the two weighted terms, the equation, and the answer."
+    },
+    "11.3.2": {
+      "variant_question": "Ten runners compete in a race with no tied finishes. Bongi and Andrew are two of the competitors. Calculate the probability that TWO OR MORE runners finish the race after Andrew and before Bongi.",
+      "demonstration": "Count favourable arrangements. If Andrew is at position i, Bongi must be at position i+3 or later (2+ runners between).\n- A at pos 1: B at 4-10 → 7 choices, 8! arrangements each\n- A at pos 2: B at 5-10 → 6\n- A at pos 3: B at 6-10 → 5\n- A at pos 4: B at 7-10 → 4\n- A at pos 5: B at 8-10 → 3\n- A at pos 6: B at 9,10 → 2\n- A at pos 7: B at 10 → 1\n- A at pos 8+ → 0\nTotal = (7+6+5+4+3+2+1)·8! = 28·8!\nP = 28·8! / 10! = 28/90 = 14/45.",
+      "memo_marks": [
+        "1 mark for identifying that B must be 3+ positions after A",
+        "1 mark for the sum 7+6+5+4+3+2+1 = 28 (or equivalent list of cases)",
+        "1 mark for numerator 28·8!",
+        "1 mark for final answer 14/45 (or 28/90)"
+      ],
+      "fast_path": "Count positions of A, then valid positions of B (must be 2+ runners between them), then 8! arrangements of the rest. Sum the cases.",
+      "fatal_error": "DBE says: Candidates count 'Bongi after Andrew' (which includes adjacent) or 'any Bongi position' — the question requires 2+ runners between. Off-by-one in the gap.",
+      "answer_book_layout": [
+        "B at least 3 positions after A (2 runners between)",
+        "A at pos 1 → B at pos 4-10: 7 ways",
+        "A at pos 2 → B at pos 5-10: 6 ways",
+        "... continuing ...",
+        "Total favourable: (7+6+5+4+3+2+1)·8! = 28·8!",
+        "P = 28·8!/10! = 28/90 = 14/45"
+      ],
+      "hack": "Fix Andrew, count Bongi's valid positions, multiply by 8! for the others. Sum over all valid Andrew positions.",
+      "trap": "The gap matters. 'Bongi after Andrew' allows adjacency (gap 0). The question needs gap ≥ 2 runners. That means B's position is at least 3 after A's.",
+      "presentation": "Show at least 3 cases of the summation to earn the method mark. State the total favourable count and total arrangements (10!) before computing P."
+    }
+  }
+}

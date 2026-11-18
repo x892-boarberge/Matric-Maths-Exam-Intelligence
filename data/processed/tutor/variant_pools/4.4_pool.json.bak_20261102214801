@@ -1,0 +1,482 @@
+[
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_4(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_5(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_5(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_4(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_5(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_2(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_3(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_3(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_4(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_3(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_4(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_2(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_5(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_4(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_2(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_2(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_3(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_4(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_5(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_3(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_5(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_4(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_3(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_2(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_4(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_4(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_2(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_5(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_3(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  },
+  {
+    "variant_question": "Asymptote of f^-1 if f(x) = log_3(x).",
+    "expected": "y = 0",
+    "demonstration": "Vertical becomes horizontal.",
+    "memo_marks": [
+      "1 mark y=0"
+    ],
+    "fast_path": "Flip axes.",
+    "fatal_error": "DBE says: Copy x=0.",
+    "answer_book_layout": [
+      "Vert asymp x = 0",
+      "Inverse swaps axes",
+      "_________________________",
+      "Final Answer: y = 0"
+    ]
+  }
+]

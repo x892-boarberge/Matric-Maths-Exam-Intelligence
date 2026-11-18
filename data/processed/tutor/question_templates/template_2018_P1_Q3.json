@@ -42,6 +42,12 @@
       "expected_fn": "T_8 = 3/128",
       "steps": [
         "T_8 = 3(1/2)^7 = 3/128."
+      ],
+      "given_from": [
+        "3.1"
+      ],
+      "requires_skills": [
+        "sequences.gp"
       ]
     },
     {
@@ -62,6 +68,13 @@
         "6(1 - (1/2)^n) = 5.8125.",
         "(1/2)^n = 1/32 = (1/2)^5.",
         "n = 5."
+      ],
+      "given_from": [
+        "3.1",
+        "3.2"
+      ],
+      "requires_skills": [
+        "sequences.gp"
       ]
     },
     {
@@ -80,6 +93,14 @@
       "steps": [
         "Sum of 3(2)^(1-k) = 3*2*2^(-k) = 6*2^(-k)... = p.",
         "Sum of 24*2^(-k) = 4 * sum of 6*2^(-k) = 4p."
+      ],
+      "given_from": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ],
+      "requires_skills": [
+        "sequences.gp"
       ]
     }
   ],

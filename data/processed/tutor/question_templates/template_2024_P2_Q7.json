@@ -35,6 +35,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "7.1"
+      ],
+      "requires_skills": [
+        "trig.graph"
       ]
     },
     {
@@ -50,6 +56,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "7.1",
+        "7.2"
+      ],
+      "requires_skills": [
+        "trig.graph",
+        "trig.inequality"
       ]
     },
     {
@@ -75,6 +89,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "7.1",
+        "7.2",
+        "7.3.1"
+      ],
+      "requires_skills": [
+        "trig.graph",
+        "trig.inequality"
       ]
     },
     {
@@ -105,6 +128,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "7.1",
+        "7.2",
+        "7.3.1",
+        "7.3.2"
+      ],
+      "requires_skills": [
+        "trig.graph",
+        "trig.inequality"
       ]
     }
   ],

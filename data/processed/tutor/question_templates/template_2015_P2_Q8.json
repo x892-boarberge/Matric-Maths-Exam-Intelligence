@@ -41,6 +41,12 @@
           "r": "angles around a point",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "8.1.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -77,6 +83,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "8.1.1",
+        "8.1.2"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     }
   ],

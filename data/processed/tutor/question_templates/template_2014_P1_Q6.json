@@ -33,6 +33,12 @@
       "expected_fn": "(0; -6)",
       "steps": [
         "Vertex at (0; -6)."
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "functions.parabola"
       ]
     },
     {
@@ -61,6 +67,13 @@
         "Q = (x; 2 sqrt(x)) on f.",
         "T = (x; 4x² - 6) on g.",
         "QT = Q - T (vertical)."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2"
+      ],
+      "requires_skills": [
+        "functions.parabola"
       ]
     },
     {
@@ -86,6 +99,14 @@
         "x^(3/2) = 1/8.",
         "x = 1/4.",
         "QT(1/4) = 2(1/2) - 4(1/16) + 6 = 1 - 1/4 + 6 = 6.75."
+      ],
+      "given_from": [
+        "6.1",
+        "6.2",
+        "6.3.1"
+      ],
+      "requires_skills": [
+        "functions.parabola"
       ]
     }
   ],

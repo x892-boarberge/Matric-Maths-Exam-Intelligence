@@ -1,0 +1,572 @@
+[
+  {
+    "variant_question": "Max volume for V = (16x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 10.67",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 32x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "32x - 3x\u00b2 = 0",
+      "x = 10.67",
+      "_________________________",
+      "Final Answer: x = 10.67"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (17x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 11.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 34x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "34x - 3x\u00b2 = 0",
+      "x = 11.33",
+      "_________________________",
+      "Final Answer: x = 11.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (15x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 10.00",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 30x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "30x - 3x\u00b2 = 0",
+      "x = 10.00",
+      "_________________________",
+      "Final Answer: x = 10.00"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (20x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 13.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 40x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "40x - 3x\u00b2 = 0",
+      "x = 13.33",
+      "_________________________",
+      "Final Answer: x = 13.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (31x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 20.67",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 62x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "62x - 3x\u00b2 = 0",
+      "x = 20.67",
+      "_________________________",
+      "Final Answer: x = 20.67"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (29x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 19.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 58x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "58x - 3x\u00b2 = 0",
+      "x = 19.33",
+      "_________________________",
+      "Final Answer: x = 19.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (29x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 19.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 58x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "58x - 3x\u00b2 = 0",
+      "x = 19.33",
+      "_________________________",
+      "Final Answer: x = 19.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (18x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 12.00",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 36x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "36x - 3x\u00b2 = 0",
+      "x = 12.00",
+      "_________________________",
+      "Final Answer: x = 12.00"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (18x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 12.00",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 36x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "36x - 3x\u00b2 = 0",
+      "x = 12.00",
+      "_________________________",
+      "Final Answer: x = 12.00"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (38x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 25.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 76x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "76x - 3x\u00b2 = 0",
+      "x = 25.33",
+      "_________________________",
+      "Final Answer: x = 25.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (19x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 12.67",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 38x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "38x - 3x\u00b2 = 0",
+      "x = 12.67",
+      "_________________________",
+      "Final Answer: x = 12.67"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (31x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 20.67",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 62x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "62x - 3x\u00b2 = 0",
+      "x = 20.67",
+      "_________________________",
+      "Final Answer: x = 20.67"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (36x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 24.00",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 72x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "72x - 3x\u00b2 = 0",
+      "x = 24.00",
+      "_________________________",
+      "Final Answer: x = 24.00"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (17x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 11.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 34x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "34x - 3x\u00b2 = 0",
+      "x = 11.33",
+      "_________________________",
+      "Final Answer: x = 11.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (23x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 15.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 46x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "46x - 3x\u00b2 = 0",
+      "x = 15.33",
+      "_________________________",
+      "Final Answer: x = 15.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (29x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 19.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 58x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "58x - 3x\u00b2 = 0",
+      "x = 19.33",
+      "_________________________",
+      "Final Answer: x = 19.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (22x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 14.67",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 44x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "44x - 3x\u00b2 = 0",
+      "x = 14.67",
+      "_________________________",
+      "Final Answer: x = 14.67"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (22x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 14.67",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 44x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "44x - 3x\u00b2 = 0",
+      "x = 14.67",
+      "_________________________",
+      "Final Answer: x = 14.67"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (17x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 11.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 34x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "34x - 3x\u00b2 = 0",
+      "x = 11.33",
+      "_________________________",
+      "Final Answer: x = 11.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (35x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 23.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 70x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "70x - 3x\u00b2 = 0",
+      "x = 23.33",
+      "_________________________",
+      "Final Answer: x = 23.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (35x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 23.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 70x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "70x - 3x\u00b2 = 0",
+      "x = 23.33",
+      "_________________________",
+      "Final Answer: x = 23.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (20x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 13.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 40x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "40x - 3x\u00b2 = 0",
+      "x = 13.33",
+      "_________________________",
+      "Final Answer: x = 13.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (25x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 16.67",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 50x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "50x - 3x\u00b2 = 0",
+      "x = 16.67",
+      "_________________________",
+      "Final Answer: x = 16.67"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (27x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 18.00",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 54x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "54x - 3x\u00b2 = 0",
+      "x = 18.00",
+      "_________________________",
+      "Final Answer: x = 18.00"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (34x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 22.67",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 68x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "68x - 3x\u00b2 = 0",
+      "x = 22.67",
+      "_________________________",
+      "Final Answer: x = 22.67"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (25x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 16.67",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 50x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "50x - 3x\u00b2 = 0",
+      "x = 16.67",
+      "_________________________",
+      "Final Answer: x = 16.67"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (38x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 25.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 76x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "76x - 3x\u00b2 = 0",
+      "x = 25.33",
+      "_________________________",
+      "Final Answer: x = 25.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (23x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 15.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 46x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "46x - 3x\u00b2 = 0",
+      "x = 15.33",
+      "_________________________",
+      "Final Answer: x = 15.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (29x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 19.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 58x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "58x - 3x\u00b2 = 0",
+      "x = 19.33",
+      "_________________________",
+      "Final Answer: x = 19.33"
+    ]
+  },
+  {
+    "variant_question": "Max volume for V = (35x^2)/4\u03c0 - x^3/4\u03c0.",
+    "expected": "x = 23.33",
+    "demonstration": "V'=0.",
+    "memo_marks": [
+      "1 mark V'",
+      "1 mark solve",
+      "1 mark justify"
+    ],
+    "fast_path": "Derivative = 0.",
+    "fatal_error": "DBE says: Start over.",
+    "answer_book_layout": [
+      "V' = 70x/4\u03c0 - 3x\u00b2/4\u03c0 = 0",
+      "70x - 3x\u00b2 = 0",
+      "x = 23.33",
+      "_________________________",
+      "Final Answer: x = 23.33"
+    ]
+  }
+]

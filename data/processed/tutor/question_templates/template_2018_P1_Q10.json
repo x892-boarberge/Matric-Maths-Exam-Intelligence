@@ -52,6 +52,12 @@
         "A(t) = 6/25 t(5-t) = -6/25 t² + 6/5 t.",
         "A'(t) = -12/25 t + 6/5 = 0.",
         "t = 5/2."
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "geometry.similarity"
       ]
     }
   ],

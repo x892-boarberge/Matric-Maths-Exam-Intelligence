@@ -1,0 +1,403 @@
+"""Multi-timescale trends + tutor memory.
+
+Same learner data, analysed at every timescale: daily, weekly, monthly,
+quarterly, 6-month, yearly, 3-year, 5-year.
+
+Also manages the tutor's cross-learner memory: reads what the tutor has
+observed across many learners, and refreshes that memory by aggregating
+current data.
+
+Usage:
+    python scripts/trends_view.py thabo                       # one learner
+    python scripts/trends_view.py thabo --days 30             # explicit window
+    python scripts/trends_view.py thabo --timescales daily,weekly,monthly
+    python scripts/trends_view.py --cohort --days 90          # refresh memory
+"""
+import sys
+import json
+import uuid
+import sqlite3
+from pathlib import Path
+from datetime import datetime, timezone, timedelta
+from collections import Counter, defaultdict
+
+
+def _find_root():
+    r = Path(".").resolve()
+    for c in [r, *r.parents]:
+        if (c / "src" / "tutor").is_dir():
+            return c
+    return r
+
+
+ROOT = _find_root()
+DB = ROOT / "data" / "learner_store" / "learners.db"
+REPORTS = ROOT / "data" / "reports"
+
+TIMESCALES = {
+    "daily": 1, "weekly": 7, "monthly": 30, "quarterly": 90,
+    "6month": 180, "yearly": 365, "3year": 3 * 365, "5year": 5 * 365,
+}
+
+
+def _parse(s):
+    if not s:
+        return None
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def _is_pass(error_type):
+    return str(error_type or "").lower() in ("none", "match")
+
+
+def _friendly_skill(skill_id):
+    mapping = {
+        "algebra.quadratic.solve": "Quadratic equations",
+        "algebra.quadratic.inequality": "Quadratic inequalities",
+        "algebra.surd.solve": "Surd equations",
+        "algebra.simultaneous.solve": "Simultaneous equations",
+        "algebra.exponential.solve": "Exponential equations",
+        "trig.3d.length": "3D trigonometry (length)",
+        "trig.reduction.simplify": "Trig reduction",
+    }
+    return mapping.get(skill_id, skill_id.split(".")[-1].replace("_", " "))
+
+
+def _friendly_misconception(mid):
+    if not mid:
+        return None
+    mapping = {
+        "M_SIGN_ERROR_READING_ROOT": "flips sign reading a root from a bracket",
+        "M_ALG_SIGN_FLIP_FACTOR": "flips signs when factorising",
+        "M_INCOMPLETE_ROOTS": "stops after one root",
+        "M_CALCULATION_ERROR": "arithmetic slips",
+        "M_AND_OR_CONFUSION": "uses 'and' instead of 'or'",
+        "M_COORDINATE_SWAP": "swaps x and y",
+        "M_COORDINATE_SIGN_FLIP": "flips a coordinate sign",
+        "M_INCOMPLETE_PAIR": "gives only one of x/y",
+        "M_SURD_CALCULATION_ERROR": "arithmetic slips in surd equations",
+        "M_INEQ_MISSING_INTERVAL": "misses the second interval",
+        "M_INEQ_SIGN_FLIP": "flips an interval sign",
+        "M_UNITS_IN_ANSWER": "adds units to a number answer",
+    }
+    return mapping.get(mid, mid.replace("M_", "").replace("_", " ").lower())
+
+
+def load_attempts(learner_ids=None, since_days=None):
+    conn = sqlite3.connect(DB)
+    conn.row_factory = sqlite3.Row
+    try:
+        query = "SELECT * FROM attempt"
+        params = []
+        where = []
+        if learner_ids:
+            where.append(f"learner_id IN ({','.join('?' * len(learner_ids))})")
+            params.extend(learner_ids)
+        if since_days is not None:
+            since = (datetime.now(timezone.utc) - timedelta(days=since_days)).isoformat()
+            where.append("timestamp >= ?")
+            params.append(since)
+        if where:
+            query += " WHERE " + " AND ".join(where)
+        query += " ORDER BY timestamp ASC"
+        rows = [dict(r) for r in conn.execute(query, params).fetchall()]
+    finally:
+        conn.close()
+
+    parsed = []
+    for a in rows:
+        a2 = dict(a)
+        a2["ts"] = _parse(a["timestamp"])
+        a2["is_pass"] = _is_pass(a["error_type"])
+        if a2["ts"]:
+            parsed.append(a2)
+    return parsed
+
+
+def analyse_at_scale(attempts, days):
+    if days is None:
+        in_window = attempts
+    else:
+        cutoff = datetime.now(timezone.utc) - timedelta(days=days)
+        in_window = [a for a in attempts if a["ts"] >= cutoff]
+
+    if not in_window:
+        return {
+            "window_days": days, "n_attempts": 0, "accuracy": None,
+            "top_misconception": None, "top_count": 0,
+            "unique_misconceptions": 0, "trend_direction": "insufficient data",
+        }
+
+    n = len(in_window)
+    passes = sum(1 for a in in_window if a["is_pass"])
+    accuracy = passes / n
+
+    miscon = Counter(a["misconception_id"] for a in in_window if a["misconception_id"])
+    top = miscon.most_common(1)[0] if miscon else (None, 0)
+
+    if n >= 6:
+        half = n // 2
+        early = in_window[:half]
+        late = in_window[half:]
+        early_acc = sum(1 for a in early if a["is_pass"]) / len(early) if early else 0
+        late_acc = sum(1 for a in late if a["is_pass"]) / len(late) if late else 0
+        delta = late_acc - early_acc
+        if delta > 0.10:
+            trend = "improving"
+        elif delta < -0.10:
+            trend = "declining"
+        else:
+            trend = "stable"
+    else:
+        trend = "insufficient data"
+
+    return {
+        "window_days": days, "n_attempts": n,
+        "accuracy": round(accuracy, 3),
+        "top_misconception": top[0], "top_count": top[1],
+        "unique_misconceptions": len(miscon),
+        "trend_direction": trend,
+    }
+
+
+def build_trend_table(attempts, timescales):
+    rows = []
+    for label, days in timescales.items():
+        r = analyse_at_scale(attempts, days)
+        r["timescale_label"] = label
+        rows.append(r)
+    rows.sort(key=lambda r: r["window_days"])
+    return rows
+
+
+def refresh_tutor_memory(learner_ids=None, days=90, min_learners=3):
+    attempts = load_attempts(learner_ids, since_days=days)
+    if not attempts:
+        return {"written": 0, "updated": 0, "skipped": "no attempts"}
+
+    skill_mid_learners = defaultdict(lambda: defaultdict(set))
+    skill_mid_counts = defaultdict(lambda: defaultdict(Counter))
+    first_seen, last_seen = {}, {}
+
+    for a in attempts:
+        mid = a["misconception_id"]
+        if not mid:
+            continue
+        skill = a["skill_id"]
+        learner = a["learner_id"]
+        skill_mid_learners[skill][mid].add(learner)
+        skill_mid_counts[skill][mid][learner] += 1
+        if mid not in first_seen or a["ts"] < first_seen[mid]:
+            first_seen[mid] = a["ts"]
+        if mid not in last_seen or a["ts"] > last_seen[mid]:
+            last_seen[mid] = a["ts"]
+
+    conn = sqlite3.connect(DB)
+    written = updated = 0
+    try:
+        now_iso = datetime.now(timezone.utc).isoformat()
+        for skill, mids in skill_mid_learners.items():
+            for mid, learners in mids.items():
+                n_learners = len(learners)
+                if n_learners < min_learners:
+                    continue
+                total_occ = sum(skill_mid_counts[skill][mid].values())
+                key = f"misconception|{skill}|{mid}|{days}d"
+                existing = conn.execute(
+                    "SELECT memory_id FROM tutor_memory WHERE pattern_key = ?",
+                    (key,),
+                ).fetchone()
+                evidence = {
+                    "learner_ids": sorted(learners),
+                    "per_learner_counts": dict(skill_mid_counts[skill][mid]),
+                    "window_days": days,
+                }
+                if existing:
+                    conn.execute(
+                        "UPDATE tutor_memory SET learners_affected = ?, "
+                        "total_occurrences = ?, last_seen_at = ?, evidence_json = ? "
+                        "WHERE memory_id = ?",
+                        (n_learners, total_occ, now_iso,
+                         json.dumps(evidence), existing[0]),
+                    )
+                    updated += 1
+                else:
+                    conn.execute(
+                        "INSERT INTO tutor_memory "
+                        "(memory_id, skill_id, misconception_id, pattern_kind, "
+                        " pattern_key, learners_affected, total_occurrences, "
+                        " first_seen_at, last_seen_at, timescale_days, "
+                        " confidence, status, evidence_json, notes) "
+                        "VALUES (?, ?, ?, 'misconception', ?, ?, ?, ?, ?, ?, ?, "
+                        "'observed', ?, ?)",
+                        ("mem_" + uuid.uuid4().hex[:12], skill, mid, key,
+                         n_learners, total_occ, first_seen[mid].isoformat(),
+                         last_seen[mid].isoformat(), days,
+                         min(1.0, n_learners / 10.0), json.dumps(evidence),
+                         f"Observed across {n_learners} learners in {days}d window."),
+                    )
+                    written += 1
+        conn.commit()
+    finally:
+        conn.close()
+    return {"written": written, "updated": updated}
+
+
+def load_memory_for_skills(skill_ids, min_learners=3):
+    if not skill_ids:
+        return []
+    conn = sqlite3.connect(DB)
+    conn.row_factory = sqlite3.Row
+    try:
+        placeholders = ",".join("?" * len(skill_ids))
+        rows = conn.execute(
+            f"SELECT * FROM tutor_memory WHERE skill_id IN ({placeholders}) "
+            f"AND learners_affected >= ? "
+            f"ORDER BY learners_affected DESC",
+            (*skill_ids, min_learners),
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        conn.close()
+
+
+def render_trends(learner_id, trend_rows, memory):
+    L = []
+    A = L.append
+    name = str(learner_id).replace("_", " ").title()
+
+    A(f"# Multi-Timescale Trends — {name}")
+    A("")
+    A(f"*Generated {datetime.now(timezone.utc).strftime('%B %d, %Y')}*")
+    A("")
+
+    A("## Trend at every timescale")
+    A("")
+    A("| Timescale | Attempts | Accuracy | Trend | Top misconception | Frequency |")
+    A("|---|---|---|---|---|---|")
+    for row in trend_rows:
+        n = row["n_attempts"]
+        acc = f"{row['accuracy']*100:.0f}%" if row["accuracy"] is not None else "—"
+        mid = _friendly_misconception(row["top_misconception"]) or "—"
+        top = f"{row['top_count']}×" if row["top_count"] else "—"
+        A(f"| {row['timescale_label']} | {n} | {acc} | "
+          f"{row['trend_direction']} | {mid} | {top} |")
+    A("")
+
+    A("## What this means")
+    A("")
+    if len(trend_rows) >= 3:
+        weekly = next((r for r in trend_rows if r["timescale_label"] == "weekly"), None)
+        monthly = next((r for r in trend_rows if r["timescale_label"] == "monthly"), None)
+        yearly = next((r for r in trend_rows if r["timescale_label"] == "yearly"), None)
+
+        if monthly and monthly["accuracy"] is not None:
+            A(f"- **Last 30 days:** {monthly['accuracy']*100:.0f}% accuracy "
+              f"across {monthly['n_attempts']} attempts.")
+        if weekly and weekly["accuracy"] is not None:
+            A(f"- **Last 7 days:** {weekly['accuracy']*100:.0f}% accuracy "
+              f"across {weekly['n_attempts']} attempts.")
+        if yearly and yearly["accuracy"] is not None and monthly:
+            delta = (monthly["accuracy"] - yearly["accuracy"]) * 100
+            if abs(delta) > 5:
+                direction = "higher" if delta > 0 else "lower"
+                A(f"- **This month vs yearly baseline:** {abs(delta):.0f} pp "
+                  f"{direction}. "
+                  f"{'Recent work is paying off.' if delta > 0 else 'Recent struggles are visible against the long-term picture.'}")
+    A("")
+
+    A("## What the tutor knows across all learners")
+    A("")
+    if not memory:
+        A("*No cross-learner patterns have reached the threshold yet "
+          "(need ≥3 learners with the same misconception on the same skill).*")
+        A("")
+        A("As more learners use the tutor, patterns that appear across "
+          "multiple learners will be recorded in tutor memory. The LLM "
+          "(November) will use this memory to draft new teaching rules "
+          "for teacher review.")
+    else:
+        A(f"The tutor has {len(memory)} cross-learner pattern(s) relevant "
+          f"to this learner's skills:")
+        A("")
+        for mem in memory[:8]:
+            mid = _friendly_misconception(mem["misconception_id"]) or mem["pattern_kind"]
+            A(f"- **{_friendly_skill(mem['skill_id'])}**: {mid} — "
+              f"{mem['learners_affected']} learners, "
+              f"{mem['total_occurrences']} occurrences, status={mem['status']}")
+    A("")
+
+    return "\n".join(L)
+
+
+def main():
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+
+    timescales_to_use = TIMESCALES
+    if "--timescales" in sys.argv:
+        try:
+            idx = sys.argv.index("--timescales")
+            keys = sys.argv[idx + 1].split(",")
+            timescales_to_use = {k: TIMESCALES[k] for k in keys if k in TIMESCALES}
+        except (ValueError, IndexError):
+            pass
+
+    days = None
+    if "--days" in sys.argv:
+        try:
+            days = int(sys.argv[sys.argv.index("--days") + 1])
+        except (ValueError, IndexError):
+            days = None
+
+    # Cohort mode — refresh tutor memory
+    if "--cohort" in sys.argv:
+        window = days or 90
+        result = refresh_tutor_memory(None, days=window)
+        print(f"Tutor memory refreshed ({result}):")
+        print(f"  {result.get('written', 0)} new patterns written")
+        print(f"  {result.get('updated', 0)} patterns updated")
+        print()
+
+        conn = sqlite3.connect(DB)
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute(
+            "SELECT * FROM tutor_memory ORDER BY learners_affected DESC"
+        ).fetchall()
+        print(f"Total patterns in memory: {len(rows)}")
+        for r in rows[:20]:
+            d = dict(r)
+            mid = _friendly_misconception(d["misconception_id"]) or d["pattern_kind"]
+            print(f"  [{d['learners_affected']:3} learners, "
+                  f"{d['total_occurrences']:3} occ] "
+                  f"{_friendly_skill(d['skill_id'])} — {mid}")
+        conn.close()
+        return
+
+    # Individual learner mode
+    learner = args[0] if args else "thabo"
+    attempts = load_attempts([learner])
+    if not attempts:
+        print(f"No attempts found for {learner}.")
+        return
+
+    trend_rows = build_trend_table(attempts, timescales_to_use)
+
+    skills = set(a["skill_id"] for a in attempts)
+    memory = load_memory_for_skills(skills, min_learners=3)
+
+    md = render_trends(learner, trend_rows, memory)
+
+    REPORTS.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    out_path = REPORTS / f"{learner}_trends_{ts}.md"
+    out_path.write_text(md, encoding="utf-8")
+
+    print(md)
+    print(f"\n\n📄 Saved: {out_path}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,35 @@
+{
+  "objective_id": "TO_TRIG_IDENTITY_LINEAR",
+  "skill_id": "trig.double_angle",
+  "trigger_misconception": "M_DOUBLE_ANGLE_LINEAR",
+  "dbe_source": {
+    "years": [
+      "2023",
+      "2024"
+    ],
+    "recommendation": "sin 2x is not 2 sin x. It is 2 sin x cos x. cos 2x is not 2 cos x. It is cos²x - sin²x, or 2cos²x - 1, or 1 - 2sin²x.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "sin 2x is not 2 sin x. It is 2 sin x cos x. cos 2x is not 2 cos x. It is cos²x - sin²x, or 2cos²x - 1, or 1 - 2sin²x.",
+    "why": "This is one of the most frequent errors DBE reported for this section.",
+    "example": {
+      "problem": "Write the expansion of sin 2x",
+      "work": [
+        "The double angle formula: sin 2x = 2 sin x cos x.",
+        "Do not confuse this with 2 sin x.",
+        "The '2' means the angle is doubled, not the ratio."
+      ]
+    },
+    "probe": {
+      "problem": "Write the expansion of cos 2x.",
+      "expected": "cos^2 x - sin^2 x",
+      "hint": "See the example above."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_DOUBLE_ANGLE_LINEAR",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "sin 2x is not 2 sin x. It is 2 sin x cos x. cos 2x is never 2 cos x."
+}

@@ -34,6 +34,12 @@
       "steps": [
         "Favourable pairs: (Mon,Tue),(Tue,Mon),(Tue,Wed),(Wed,Tue),(Wed,Thu),(Thu,Wed) = 6.",
         "P = 6/16 = 3/8."
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "probability.independent"
       ]
     }
   ],

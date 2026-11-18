@@ -1,0 +1,35 @@
+{
+  "objective_id": "TO_ALG_PROOF_NONREAL",
+  "skill_id": "algebra.proof",
+  "trigger_misconception": "M_PROOF_NONREAL_EXPLANATION",
+  "dbe_source": {
+    "years": [
+      "2021"
+    ],
+    "recommendation": "The discriminant tells you the nature of the roots. If Δ < 0, there are no real roots. You must say so explicitly — computing Δ alone is not",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "The discriminant tells you the nature of the roots. If Δ < 0, there are no real roots. You must say so explicitly — computing Δ alone is not the answer.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "Show that the equation x^2 + nx + p = 0 has non-real roots when Δ < 0",
+      "work": [
+        "Discriminant: Δ = n^2 - 4p",
+        "If Δ < 0, then there are no real roots.",
+        "You must write: since the discriminant is negative, the roots are non-real (complex).",
+        "Do not just state Δ = -3. Draw the conclusion explicitly."
+      ]
+    },
+    "probe": {
+      "problem": "If Δ = -5 for a quadratic, what can you say about its roots?",
+      "expected": "non-real",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_PROOF_NONREAL_EXPLANATION",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "You computed the discriminant but did not draw the conclusion. If Δ < 0, say so — that is the mark."
+}

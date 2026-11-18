@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "Using the graph of f(x) = -1/2(x-3)^2 + 8 and g(x) = -4/(x-3) + 8, determine the values of x for which g(x) ≤ f(x). (variant 1)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Given the parabola f(x) = -(x-2)^2 + 4 and the hyperbola g(x) = -2/(x-2) + 4, find where g(x) ≤ f(x). (variant 2)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For f(x) = -1/2(x-1)^2 + 3 and g(x) = -1/(x-1) + 3, determine where g(x) ≤ f(x). (variant 3)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graphs of f(x) = -x^2 + 4 and g(x) = -3/(x-2) + 2, find where g(x) ≤ f(x). (variant 4)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For the given graphs f(x) = -(x-4)^2 + 6 and g(x) = -2/(x-4) + 6, determine where g(x) ≤ f(x). (variant 5)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graph of f(x) = -1/2(x-3)^2 + 8 and g(x) = -4/(x-3) + 8, determine the values of x for which g(x) ≤ f(x). (variant 6)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Given the parabola f(x) = -(x-2)^2 + 4 and the hyperbola g(x) = -2/(x-2) + 4, find where g(x) ≤ f(x). (variant 7)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For f(x) = -1/2(x-1)^2 + 3 and g(x) = -1/(x-1) + 3, determine where g(x) ≤ f(x). (variant 8)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graphs of f(x) = -x^2 + 4 and g(x) = -3/(x-2) + 2, find where g(x) ≤ f(x). (variant 9)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For the given graphs f(x) = -(x-4)^2 + 6 and g(x) = -2/(x-4) + 6, determine where g(x) ≤ f(x). (variant 10)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graph of f(x) = -1/2(x-3)^2 + 8 and g(x) = -4/(x-3) + 8, determine the values of x for which g(x) ≤ f(x). (variant 11)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Given the parabola f(x) = -(x-2)^2 + 4 and the hyperbola g(x) = -2/(x-2) + 4, find where g(x) ≤ f(x). (variant 12)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For f(x) = -1/2(x-1)^2 + 3 and g(x) = -1/(x-1) + 3, determine where g(x) ≤ f(x). (variant 13)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graphs of f(x) = -x^2 + 4 and g(x) = -3/(x-2) + 2, find where g(x) ≤ f(x). (variant 14)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For the given graphs f(x) = -(x-4)^2 + 6 and g(x) = -2/(x-4) + 6, determine where g(x) ≤ f(x). (variant 15)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graph of f(x) = -1/2(x-3)^2 + 8 and g(x) = -4/(x-3) + 8, determine the values of x for which g(x) ≤ f(x). (variant 16)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Given the parabola f(x) = -(x-2)^2 + 4 and the hyperbola g(x) = -2/(x-2) + 4, find where g(x) ≤ f(x). (variant 17)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For f(x) = -1/2(x-1)^2 + 3 and g(x) = -1/(x-1) + 3, determine where g(x) ≤ f(x). (variant 18)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graphs of f(x) = -x^2 + 4 and g(x) = -3/(x-2) + 2, find where g(x) ≤ f(x). (variant 19)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For the given graphs f(x) = -(x-4)^2 + 6 and g(x) = -2/(x-4) + 6, determine where g(x) ≤ f(x). (variant 20)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graph of f(x) = -1/2(x-3)^2 + 8 and g(x) = -4/(x-3) + 8, determine the values of x for which g(x) ≤ f(x). (variant 21)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Given the parabola f(x) = -(x-2)^2 + 4 and the hyperbola g(x) = -2/(x-2) + 4, find where g(x) ≤ f(x). (variant 22)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For f(x) = -1/2(x-1)^2 + 3 and g(x) = -1/(x-1) + 3, determine where g(x) ≤ f(x). (variant 23)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graphs of f(x) = -x^2 + 4 and g(x) = -3/(x-2) + 2, find where g(x) ≤ f(x). (variant 24)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For the given graphs f(x) = -(x-4)^2 + 6 and g(x) = -2/(x-4) + 6, determine where g(x) ≤ f(x). (variant 25)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graph of f(x) = -1/2(x-3)^2 + 8 and g(x) = -4/(x-3) + 8, determine the values of x for which g(x) ≤ f(x). (variant 26)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Given the parabola f(x) = -(x-2)^2 + 4 and the hyperbola g(x) = -2/(x-2) + 4, find where g(x) ≤ f(x). (variant 27)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For f(x) = -1/2(x-1)^2 + 3 and g(x) = -1/(x-1) + 3, determine where g(x) ≤ f(x). (variant 28)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "Using the graphs of f(x) = -x^2 + 4 and g(x) = -3/(x-2) + 2, find where g(x) ≤ f(x). (variant 29)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  },
+  {
+    "variant_question": "For the given graphs f(x) = -(x-4)^2 + 6 and g(x) = -2/(x-4) + 6, determine where g(x) ≤ f(x). (variant 30)",
+    "expected": "Practice — read the interval from the graph where g is below f.",
+    "demonstration": "Find the intersection points. Between them (where g dips below f), g(x) ≤ f(x). Outside, g is above.",
+    "memo_marks": [
+      "2 marks for the correct interval"
+    ],
+    "fast_path": "Intersection points bound the interval. Read 'g below f' directly from the sketch.",
+    "fatal_error": "DBE says: Candidates read the wrong region — g above f instead of below — or miss one of the interval boundaries.",
+    "answer_book_layout": [
+      "Mark the intersection points",
+      "Read the interval where g is below f"
+    ],
+    "hack": "g ≤ f means g is below or equal to f. Read the interval where the hyperbola is under the parabola.",
+    "trap": "Don't forget BOTH boundaries — intervals are closed (≤) not open (<).",
+    "presentation": "State the two intersection x-values, then the interval between them.",
+    "practice_only": true,
+    "diagram": "required",
+    "diagram_hint": "parabola_and_hyperbola_overlaid"
+  }
+]

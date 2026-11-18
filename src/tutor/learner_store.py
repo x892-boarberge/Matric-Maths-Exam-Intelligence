@@ -17,7 +17,10 @@ Mastery criteria (from N08, locked):
   3 correct out of 4 attempts, matching structure type, on two
   separate sittings within 14 days, on unseen items only.
 """
+import json
 import sqlite3
+import threading
+_SQLITE_LOCK = threading.RLock()
 import uuid
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -49,7 +52,9 @@ CREATE TABLE IF NOT EXISTS attempt (
     diagnosis_rule_id TEXT,
     misconception_id TEXT,
     hint_level TEXT,
-    error_type TEXT
+    error_type TEXT,
+    evidence_json TEXT,
+    question_id TEXT
 );
 
 CREATE TABLE IF NOT EXISTS mastery (
@@ -133,10 +138,26 @@ class LearnerStore:
     def __init__(self, db_path: Path):
         self.db_path = Path(db_path)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
-        self.conn = sqlite3.connect(str(self.db_path))
+        self.conn = sqlite3.connect(str(self.db_path), check_same_thread=False)
         self.conn.row_factory = sqlite3.Row
         self.conn.executescript(SCHEMA)
         self.conn.commit()
+        # Idempotent migration: existing databases lack evidence_json
+        cols = {r["name"] for r in self.conn.execute(
+            "PRAGMA table_info(attempt)"
+        ).fetchall()}
+        if "evidence_json" not in cols:
+            self.conn.execute(
+                "ALTER TABLE attempt ADD COLUMN evidence_json TEXT"
+            )
+            self.conn.commit()
+            print("[migration] added attempt.evidence_json")
+        if "question_id" not in cols:
+            self.conn.execute(
+                "ALTER TABLE attempt ADD COLUMN question_id TEXT"
+            )
+            self.conn.commit()
+            print("[migration] added attempt.question_id")
         self.discoveries = DiscoveryStore(self.conn)
         self.interventions = InterventionStore(self.conn)
 
@@ -185,20 +206,44 @@ class LearnerStore:
 
     # ---------- attempt ----------
 
+    def log_event(self, learner_id, skill_id, question_id, event_type, notes="", session_id=None):
+        """Log a behavioral event (manual variant, skip, quit, homework, etc.)."""
+        import uuid as _uuid
+        from datetime import datetime as _dt, timezone as _tz
+        try:
+            self.conn.execute(
+                "INSERT INTO learner_events (event_id, learner_id, skill_id, question_id, event_type, timestamp, notes, session_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                (f"evt_{_uuid.uuid4().hex[:12]}", learner_id, skill_id, question_id,
+                 event_type, _dt.now(_tz.utc).isoformat(), notes, session_id)
+            )
+            self.conn.commit()
+            return True
+        except Exception:
+            return False
+
     def save_attempt(self, session_id: str, learner_id: str, skill_id: str,
                      response: str, diagnosis_rule_id: str,
                      misconception_id: Optional[str],
                      hint_level: Optional[str],
-                     error_type: str) -> str:
+                     error_type: str,
+                     evidence: Optional[dict] = None,
+                     question_id: Optional[str] = None) -> str:
         attempt_id = "att_" + uuid.uuid4().hex[:12]
-        self.conn.execute(
-            "INSERT INTO attempt "
-            "(attempt_id, session_id, learner_id, skill_id, timestamp, "
-            " response, diagnosis_rule_id, misconception_id, hint_level, error_type) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-            (attempt_id, session_id, learner_id, skill_id, _now(),
-             response, diagnosis_rule_id, misconception_id, hint_level, error_type)
+        evidence_json = (
+            json.dumps(evidence, default=str, ensure_ascii=False)
+            if evidence else None
         )
+        with _SQLITE_LOCK:
+            self.conn.execute(
+                        "INSERT INTO attempt "
+                        "(attempt_id, session_id, learner_id, skill_id, timestamp, "
+                        " response, diagnosis_rule_id, misconception_id, hint_level, "
+                        " error_type, evidence_json, question_id) "
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                        (attempt_id, session_id, learner_id, skill_id, _now(),
+                         response, diagnosis_rule_id, misconception_id, hint_level,
+                         error_type, evidence_json, question_id)
+                    )
         self.conn.commit()
         return attempt_id
 
@@ -237,7 +282,9 @@ class LearnerStore:
             ).fetchall()
             correct = sum(1 for r in rows if r["error_type"] == "none")
             total = len(rows)
-            if total >= 4 and correct >= 3:
+            # Drill sitting is 5 questions; passing is 4 of 5.
+            # Threshold must match drill.PASS_THRESHOLD / drill.SITTING_SIZE.
+            if total >= 5 and correct >= 4:
                 sittings_passed.append(s["started_at"])
 
         # Compute state
@@ -282,6 +329,34 @@ class LearnerStore:
         )
         self.conn.commit()
         return state
+
+    def has_completed(self, learner_id: str, question_id: str) -> bool:
+        """Return True if the learner has ever answered this question
+        correctly (error_type = 'none')."""
+        try:
+            row = self.conn.execute(
+                "SELECT COUNT(*) AS n FROM attempt "
+                "WHERE learner_id = ? AND question_id = ? "
+                "AND error_type = 'none'",
+                (learner_id, question_id),
+            ).fetchone()
+            return bool(row and row["n"] > 0)
+        except Exception:
+            return False
+
+    def last_correct_answer(self, learner_id: str, question_id: str):
+        """Return the learner's own answer to this question, or None."""
+        try:
+            row = self.conn.execute(
+                "SELECT response FROM attempt "
+                "WHERE learner_id = ? AND question_id = ? "
+                "AND error_type = 'none' "
+                "ORDER BY timestamp DESC LIMIT 1",
+                (learner_id, question_id),
+            ).fetchone()
+            return row["response"] if row else None
+        except Exception:
+            return None
 
     def close(self):
         self.conn.close()

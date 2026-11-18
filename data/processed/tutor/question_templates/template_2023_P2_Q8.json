@@ -77,6 +77,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "8.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -93,6 +99,13 @@
           "r": "angle in semicircle",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "8.1",
+        "8.2"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -124,6 +137,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "8.1",
+        "8.2",
+        "8.3.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     }
   ],

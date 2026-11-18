@@ -60,6 +60,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1.1"
+      ],
+      "requires_skills": [
+        "trig.identities"
       ]
     },
     {
@@ -100,6 +106,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.proof"
       ]
     },
     {
@@ -125,6 +139,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1.1",
+        "6.1.2",
+        "6.2"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.proof",
+        "trig.equation"
       ]
     },
     {
@@ -140,6 +164,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "6.1.1",
+        "6.1.2",
+        "6.2",
+        "6.3.1"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.proof",
+        "trig.equation",
+        "trig.max_value"
       ]
     }
   ],

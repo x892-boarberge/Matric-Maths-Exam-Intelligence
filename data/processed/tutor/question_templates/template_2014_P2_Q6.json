@@ -60,6 +60,12 @@
           "r": "expansion",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "6.1"
+      ],
+      "requires_skills": [
+        "trig.proof"
       ]
     },
     {
@@ -91,6 +97,14 @@
           "r": "co-ratio",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "6.1",
+        "6.2"
+      ],
+      "requires_skills": [
+        "trig.proof",
+        "trig.identities"
       ]
     }
   ],

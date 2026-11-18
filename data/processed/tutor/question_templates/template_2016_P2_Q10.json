@@ -57,6 +57,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1"
+      ],
+      "requires_skills": [
+        "geometry.proportion"
       ]
     },
     {
@@ -83,6 +89,16 @@
           "r": "from LH = HG and ML = y",
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1",
+        "10.2.3"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.circle",
+        "geometry.similarity"
       ]
     },
     {
@@ -119,6 +135,17 @@
           "r": "AAA",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1",
+        "10.2.3",
+        "10.2.2a"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.circle",
+        "geometry.similarity"
       ]
     },
     {
@@ -140,6 +167,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1",
+        "10.2.3",
+        "10.2.2a",
+        "10.2.2b"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.circle",
+        "geometry.similarity"
       ]
     },
     {
@@ -166,6 +205,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "10.1",
+        "10.2.1"
+      ],
+      "requires_skills": [
+        "geometry.proportion",
+        "geometry.circle"
       ]
     }
   ],

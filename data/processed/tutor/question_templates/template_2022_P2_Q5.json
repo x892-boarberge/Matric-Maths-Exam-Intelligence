@@ -44,6 +44,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1.1"
+      ],
+      "requires_skills": [
+        "trig.identities"
       ]
     },
     {
@@ -64,6 +70,13 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "requires_skills": [
+        "trig.identities"
       ]
     },
     {
@@ -99,6 +112,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3"
+      ],
+      "requires_skills": [
+        "trig.identities"
       ]
     },
     {
@@ -139,6 +160,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3",
+        "5.2"
+      ],
+      "requires_skills": [
+        "trig.identities"
       ]
     },
     {
@@ -170,6 +200,17 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3",
+        "5.2",
+        "5.3"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.equation"
       ]
     },
     {
@@ -195,6 +236,19 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3",
+        "5.2",
+        "5.3",
+        "5.4.1"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.equation",
+        "trig.proof"
       ]
     },
     {
@@ -225,6 +279,20 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3",
+        "5.2",
+        "5.3",
+        "5.4.1",
+        "5.4.2"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.equation",
+        "trig.proof"
       ]
     },
     {
@@ -240,6 +308,21 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3",
+        "5.2",
+        "5.3",
+        "5.4.1",
+        "5.4.2",
+        "5.5.1"
+      ],
+      "requires_skills": [
+        "trig.identities",
+        "trig.equation",
+        "trig.proof"
       ]
     }
   ],

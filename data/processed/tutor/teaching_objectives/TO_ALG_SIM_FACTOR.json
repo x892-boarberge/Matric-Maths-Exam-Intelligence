@@ -1,0 +1,39 @@
+{
+  "objective_id": "TO_ALG_SIM_FACTOR",
+  "skill_id": "algebra.simultaneous.solve",
+  "trigger_misconception": "M_SIM_OVERLOOKED_FACTOR",
+  "dbe_source": {
+    "years": [
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "recommendation": "When you substitute one equation into the other, expand carefully. Watch for a term that contains a product of both variables — that factor ",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "When you substitute one equation into the other, expand carefully. Watch for a term that contains a product of both variables — that factor is easy to drop.",
+    "why": "This is one of the highest-frequency errors DBE reported for this section.",
+    "example": {
+      "problem": "Solve y = 3 - x and x^2 + xy = 14",
+      "work": [
+        "Substitute y = 3 - x into the second equation.",
+        "x^2 + x(3 - x) = 14",
+        "Do not write x^2 + 3 - x = 14. The x multiplies the whole bracket.",
+        "x^2 + 3x - x^2 = 14",
+        "3x = 14",
+        "x = 14/3"
+      ]
+    },
+    "probe": {
+      "problem": "Substitute y = 2 - x into x^2 + xy = 6.",
+      "expected": "x^2 + x(2 - x) = 6",
+      "hint": "See the example for the pattern."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_SIM_OVERLOOKED_FACTOR",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "When you substituted, one term lost its factor. Expand the substitution fully before collecting like terms."
+}

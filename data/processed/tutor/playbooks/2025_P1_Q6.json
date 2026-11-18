@@ -1,0 +1,67 @@
+{
+  "question_id": "2025_P1_Q6",
+  "foundation_text": "Walls vs Symmetry. Asymptotes are walls. Symmetry lines cut through the centre.",
+  "acronym_strip": [],
+  "subquestions": {
+    "6.1": {
+      "variant_question": "x-intercept of g in terms of p.",
+      "demonstration": "Set g(x)=0. Solve for x.",
+      "memo_marks": [
+        "1 mark for x = ..."
+      ],
+      "fast_path": "Just set y=0 and solve.",
+      "fatal_error": "DBE says: Candidates give the y-intercept or forget 'in terms of p'.",
+      "answer_book_layout": [
+        "0 = x + c",
+        "x = -c",
+        "_________________________",
+        "Final Answer: (-c ; 0)"
+      ],
+      "hack": "Set y=0.",
+      "trap": "Forgetting 'in terms of p'.",
+      "presentation": "Give coordinates."
+    },
+    "6.2": {
+      "variant_question": "Equation of f.",
+      "demonstration": "Walls: x=-3 -> p=-3, y=2 -> q=2. Point (1;4) -> a=8.",
+      "memo_marks": [
+        "1 mark p",
+        "1 mark q",
+        "1 mark a"
+      ],
+      "fast_path": "Walls give p and q. Point gives a.",
+      "fatal_error": "DBE says: Candidates mix up the sign of p. If wall is x=-3, bracket is (x+3).",
+      "answer_book_layout": [
+        "Vertical asymptote: x = -3 => p = -3",
+        "Horizontal asymptote: y = 2 => q = 2",
+        "y = a/(x + 3) + 2",
+        "4 = a/(1 + 3) + 2",
+        "a = 8",
+        "_________________________",
+        "Final Answer: f(x) = 8/(x + 3) + 2"
+      ],
+      "hack": "Walls give p and q.",
+      "trap": "Sign error in (x+p).",
+      "presentation": "State p and q first."
+    },
+    "6.3": {
+      "variant_question": "Transformation to symmetry.",
+      "demonstration": "Identify centre (p;q), identify symmetry line, describe translation.",
+      "memo_marks": [
+        "1 mark for translation description"
+      ],
+      "fast_path": "It's always a translation onto the line y = x + c.",
+      "fatal_error": "DBE says: Candidates use vague language like 'shift it' or move it onto an asymptote instead of a symmetry line.",
+      "answer_book_layout": [
+        "Centre is (p; q)",
+        "Symmetry line passes through centre",
+        "Translate g by ... units to lie on the symmetry line",
+        "_________________________",
+        "Final Answer: Translate g by ..."
+      ],
+      "hack": "Name the move so g lands on the symmetry line.",
+      "trap": "Using vague language.",
+      "presentation": "Say exactly how g moves."
+    }
+  }
+}

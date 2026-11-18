@@ -1,0 +1,485 @@
+[
+  {
+    "variant_question": "Determine the equation of f⁻¹, the inverse of f(x) = log_10(x), in the form y = ...",
+    "expected": "y = 10^x",
+    "demonstration": "f(x) = log_10(x). Let y = log_10(x), swap x and y: x = log_10(y). Convert to exponential: y = 10^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 10^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_10(x)",
+      "Swap x and y:",
+      "x = log_10(y)",
+      "Convert: y = 10^x",
+      "Final Answer: f⁻¹(x) = 10^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Write down the equation of f⁻¹ in the form y = ...",
+    "expected": "y = 4^x",
+    "demonstration": "f(x) = log_4(x). Let y = log_4(x), swap x and y: x = log_4(y). Convert to exponential: y = 4^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 4^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_4(x)",
+      "Swap x and y:",
+      "x = log_4(y)",
+      "Convert: y = 4^x",
+      "Final Answer: f⁻¹(x) = 4^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Find the equation of the inverse of f(x) = log_1/3(x).",
+    "expected": "y = (1/3)^x  (equivalently y = 3^(-x))",
+    "demonstration": "f(x) = log_{1/3}(x). Let y = log_{1/3}(x), swap x and y: x = log_{1/3}(y). Convert to exponential: y = {1/3}^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = {1/3}^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_{1/3}(x)",
+      "Swap x and y:",
+      "x = log_{1/3}(y)",
+      "Convert: y = {1/3}^x",
+      "Final Answer: f⁻¹(x) = {1/3}^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Find the equation of the inverse of f(x) = log_5(x).",
+    "expected": "y = 5^x",
+    "demonstration": "f(x) = log_5(x). Let y = log_5(x), swap x and y: x = log_5(y). Convert to exponential: y = 5^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 5^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_5(x)",
+      "Swap x and y:",
+      "x = log_5(y)",
+      "Convert: y = 5^x",
+      "Final Answer: f⁻¹(x) = 5^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Find the equation of the inverse of f(x) = log_10(x).",
+    "expected": "y = 10^x",
+    "demonstration": "f(x) = log_10(x). Let y = log_10(x), swap x and y: x = log_10(y). Convert to exponential: y = 10^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 10^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_10(x)",
+      "Swap x and y:",
+      "x = log_10(y)",
+      "Convert: y = 10^x",
+      "Final Answer: f⁻¹(x) = 10^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Write down the equation of f⁻¹ in the form y = ...",
+    "expected": "y = (1/3)^x  (equivalently y = 3^(-x))",
+    "demonstration": "f(x) = log_{1/3}(x). Let y = log_{1/3}(x), swap x and y: x = log_{1/3}(y). Convert to exponential: y = {1/3}^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = {1/3}^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_{1/3}(x)",
+      "Swap x and y:",
+      "x = log_{1/3}(y)",
+      "Convert: y = {1/3}^x",
+      "Final Answer: f⁻¹(x) = {1/3}^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Write down the equation of f⁻¹ in the form y = ...",
+    "expected": "y = (1/2)^x  (equivalently y = 2^(-x))",
+    "demonstration": "f(x) = log_{1/2}(x). Let y = log_{1/2}(x), swap x and y: x = log_{1/2}(y). Convert to exponential: y = {1/2}^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = {1/2}^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_{1/2}(x)",
+      "Swap x and y:",
+      "x = log_{1/2}(y)",
+      "Convert: y = {1/2}^x",
+      "Final Answer: f⁻¹(x) = {1/2}^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Determine the equation of f⁻¹, the inverse of f(x) = log_5(x), in the form y = ...",
+    "expected": "y = 5^x",
+    "demonstration": "f(x) = log_5(x). Let y = log_5(x), swap x and y: x = log_5(y). Convert to exponential: y = 5^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 5^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_5(x)",
+      "Swap x and y:",
+      "x = log_5(y)",
+      "Convert: y = 5^x",
+      "Final Answer: f⁻¹(x) = 5^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Determine the equation of f⁻¹, the inverse of f(x) = log_4(x), in the form y = ...",
+    "expected": "y = 4^x",
+    "demonstration": "f(x) = log_4(x). Let y = log_4(x), swap x and y: x = log_4(y). Convert to exponential: y = 4^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 4^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_4(x)",
+      "Swap x and y:",
+      "x = log_4(y)",
+      "Convert: y = 4^x",
+      "Final Answer: f⁻¹(x) = 4^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Determine the equation of f⁻¹, the inverse of f(x) = log_1/2(x), in the form y = ...",
+    "expected": "y = (1/2)^x  (equivalently y = 2^(-x))",
+    "demonstration": "f(x) = log_{1/2}(x). Let y = log_{1/2}(x), swap x and y: x = log_{1/2}(y). Convert to exponential: y = {1/2}^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = {1/2}^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_{1/2}(x)",
+      "Swap x and y:",
+      "x = log_{1/2}(y)",
+      "Convert: y = {1/2}^x",
+      "Final Answer: f⁻¹(x) = {1/2}^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Write down the equation of f⁻¹ in the form y = ...",
+    "expected": "y = 2^x",
+    "demonstration": "f(x) = log_2(x). Let y = log_2(x), swap x and y: x = log_2(y). Convert to exponential: y = 2^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 2^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_2(x)",
+      "Swap x and y:",
+      "x = log_2(y)",
+      "Convert: y = 2^x",
+      "Final Answer: f⁻¹(x) = 2^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Find the equation of the inverse of f(x) = log_1/2(x).",
+    "expected": "y = (1/2)^x  (equivalently y = 2^(-x))",
+    "demonstration": "f(x) = log_{1/2}(x). Let y = log_{1/2}(x), swap x and y: x = log_{1/2}(y). Convert to exponential: y = {1/2}^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = {1/2}^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_{1/2}(x)",
+      "Swap x and y:",
+      "x = log_{1/2}(y)",
+      "Convert: y = {1/2}^x",
+      "Final Answer: f⁻¹(x) = {1/2}^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Determine the equation of f⁻¹, the inverse of f(x) = log_3(x), in the form y = ...",
+    "expected": "y = 3^x",
+    "demonstration": "f(x) = log_3(x). Let y = log_3(x), swap x and y: x = log_3(y). Convert to exponential: y = 3^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 3^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_3(x)",
+      "Swap x and y:",
+      "x = log_3(y)",
+      "Convert: y = 3^x",
+      "Final Answer: f⁻¹(x) = 3^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Find the equation of the inverse of f(x) = log_2(x).",
+    "expected": "y = 2^x",
+    "demonstration": "f(x) = log_2(x). Let y = log_2(x), swap x and y: x = log_2(y). Convert to exponential: y = 2^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 2^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_2(x)",
+      "Swap x and y:",
+      "x = log_2(y)",
+      "Convert: y = 2^x",
+      "Final Answer: f⁻¹(x) = 2^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Write down the equation of f⁻¹ in the form y = ...",
+    "expected": "y = 3^x",
+    "demonstration": "f(x) = log_3(x). Let y = log_3(x), swap x and y: x = log_3(y). Convert to exponential: y = 3^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 3^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_3(x)",
+      "Swap x and y:",
+      "x = log_3(y)",
+      "Convert: y = 3^x",
+      "Final Answer: f⁻¹(x) = 3^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Write down the equation of f⁻¹ in the form y = ...",
+    "expected": "y = 5^x",
+    "demonstration": "f(x) = log_5(x). Let y = log_5(x), swap x and y: x = log_5(y). Convert to exponential: y = 5^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 5^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_5(x)",
+      "Swap x and y:",
+      "x = log_5(y)",
+      "Convert: y = 5^x",
+      "Final Answer: f⁻¹(x) = 5^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Write down the equation of f⁻¹ in the form y = ...",
+    "expected": "y = 10^x",
+    "demonstration": "f(x) = log_10(x). Let y = log_10(x), swap x and y: x = log_10(y). Convert to exponential: y = 10^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 10^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_10(x)",
+      "Swap x and y:",
+      "x = log_10(y)",
+      "Convert: y = 10^x",
+      "Final Answer: f⁻¹(x) = 10^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Find the equation of the inverse of f(x) = log_3(x).",
+    "expected": "y = 3^x",
+    "demonstration": "f(x) = log_3(x). Let y = log_3(x), swap x and y: x = log_3(y). Convert to exponential: y = 3^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 3^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_3(x)",
+      "Swap x and y:",
+      "x = log_3(y)",
+      "Convert: y = 3^x",
+      "Final Answer: f⁻¹(x) = 3^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Determine the equation of f⁻¹, the inverse of f(x) = log_2(x), in the form y = ...",
+    "expected": "y = 2^x",
+    "demonstration": "f(x) = log_2(x). Let y = log_2(x), swap x and y: x = log_2(y). Convert to exponential: y = 2^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 2^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_2(x)",
+      "Swap x and y:",
+      "x = log_2(y)",
+      "Convert: y = 2^x",
+      "Final Answer: f⁻¹(x) = 2^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Find the equation of the inverse of f(x) = log_4(x).",
+    "expected": "y = 4^x",
+    "demonstration": "f(x) = log_4(x). Let y = log_4(x), swap x and y: x = log_4(y). Convert to exponential: y = 4^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = 4^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_4(x)",
+      "Swap x and y:",
+      "x = log_4(y)",
+      "Convert: y = 4^x",
+      "Final Answer: f⁻¹(x) = 4^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  },
+  {
+    "variant_question": "Determine the equation of f⁻¹, the inverse of f(x) = log_1/3(x), in the form y = ...",
+    "expected": "y = (1/3)^x  (equivalently y = 3^(-x))",
+    "demonstration": "f(x) = log_{1/3}(x). Let y = log_{1/3}(x), swap x and y: x = log_{1/3}(y). Convert to exponential: y = {1/3}^x.",
+    "memo_marks": [
+      "1 mark for swapping x and y",
+      "1 mark for y = {1/3}^x"
+    ],
+    "fast_path": "Inverse of log_b(x) is b^x. Base stays, the log just goes away.",
+    "fatal_error": "DBE says: Candidates swap x and y but leave it as x = log_b(y) — that's the setup, not the answer. You must convert.",
+    "answer_book_layout": [
+      "y = log_{1/3}(x)",
+      "Swap x and y:",
+      "x = log_{1/3}(y)",
+      "Convert: y = {1/3}^x",
+      "Final Answer: f⁻¹(x) = {1/3}^x"
+    ],
+    "hack": "Swap and convert. Inverse of log_b is b^x. Same base — the log just disappears.",
+    "trap": "Don't stop after the swap. The answer needs y = ... form.",
+    "presentation": "Show the swap, then the conversion. Both lines earn marks.",
+    "diagram": "required",
+    "diagram_hint": "log_and_inverse_symmetry_across_y_equals_x"
+  }
+]

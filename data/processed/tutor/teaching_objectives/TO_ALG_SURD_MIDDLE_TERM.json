@@ -1,0 +1,43 @@
+{
+  "objective_id": "TO_ALG_SURD_MIDDLE_TERM",
+  "skill_id": "algebra.surd.solve",
+  "trigger_misconception": "M_BINOMIAL_MIDDLE_TERM_DROPPED",
+  "applies_when": "learner expands (x + a)^2 as x^2 + a^2, dropping the middle term",
+  "dbe_source": {
+    "years": [
+      "2015",
+      "2016",
+      "2020",
+      "2021"
+    ],
+    "recommendation": "Candidates omitted the middle term when squaring the binomial. (x + a)^2 is x^2 + 2ax + a^2, not x^2 + a^2.",
+    "verbatim": false
+  },
+  "lesson": {
+    "concept": "(x + a)^2 is not x^2 + a^2. The middle term matters. Expand as (x + a)(x + a).",
+    "why": "Most lost marks in surd equations come from this single error. The middle term is what turns the RHS into a solvable quadratic.",
+    "example": {
+      "problem": "Expand (x - 3)^2",
+      "work": [
+        "Write it out: (x - 3)(x - 3)",
+        "x times x gives x^2",
+        "x times -3 gives -3x",
+        "-3 times x gives -3x",
+        "-3 times -3 gives +9",
+        "Add: x^2 - 3x - 3x + 9",
+        "Answer: x^2 - 6x + 9",
+        "Not x^2 + 9. The -6x is the middle term."
+      ]
+    },
+    "probe": {
+      "problem": "Expand (x + 4)^2 fully.",
+      "expected": "x^2 + 8x + 16",
+      "hint": "Multiply every term in the first bracket by every term in the second. Do not skip the middle."
+    }
+  },
+  "outcome_hook": {
+    "measure_on": "M_BINOMIAL_MIDDLE_TERM_DROPPED",
+    "record_table": "teaching_outcome"
+  },
+  "learner_message": "(x + a)² is not x² + a². The middle term 2ax is the one that matters."
+}

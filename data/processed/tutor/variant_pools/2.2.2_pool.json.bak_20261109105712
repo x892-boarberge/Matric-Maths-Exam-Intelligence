@@ -1,0 +1,662 @@
+[
+  {
+    "variant_question": "Given sum from p=k to 100 of (5p - 1) = 24934, calculate k.",
+    "expected": "k = 10",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 5k - 1",
+      "Last term: 499",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 24934",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 10"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (4p - 1) = 19964, calculate k.",
+    "expected": "k = 9",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 4k - 1",
+      "Last term: 399",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 19964",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 9"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (2p - 1) = 9804, calculate k.",
+    "expected": "k = 15",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 2k - 1",
+      "Last term: 199",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 9804",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 15"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (4p - 1) = 20045, calculate k.",
+    "expected": "k = 6",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 4k - 1",
+      "Last term: 399",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 20045",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 6"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (3p - 1) = 14749, calculate k.",
+    "expected": "k = 15",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 3k - 1",
+      "Last term: 299",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 14749",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 15"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (3p - 1) = 14950, calculate k.",
+    "expected": "k = 9",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 3k - 1",
+      "Last term: 299",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 14950",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 9"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (3p - 1) = 14950, calculate k.",
+    "expected": "k = 9",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 3k - 1",
+      "Last term: 299",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 14950",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 9"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (3p - 1) = 14993, calculate k.",
+    "expected": "k = 7",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 3k - 1",
+      "Last term: 299",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 14993",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 7"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (5p - 1) = 24885, calculate k.",
+    "expected": "k = 11",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 5k - 1",
+      "Last term: 499",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 24885",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 11"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (4p - 1) = 19694, calculate k.",
+    "expected": "k = 15",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 4k - 1",
+      "Last term: 399",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 19694",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 15"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (4p - 1) = 19749, calculate k.",
+    "expected": "k = 14",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 4k - 1",
+      "Last term: 399",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 19749",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 14"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (6p - 1) = 29992, calculate k.",
+    "expected": "k = 9",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 6k - 1",
+      "Last term: 599",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 29992",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 9"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (2p - 1) = 9919, calculate k.",
+    "expected": "k = 10",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 2k - 1",
+      "Last term: 199",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 9919",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 10"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (2p - 1) = 9919, calculate k.",
+    "expected": "k = 10",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 2k - 1",
+      "Last term: 199",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 9919",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 10"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (5p - 1) = 24639, calculate k.",
+    "expected": "k = 15",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 5k - 1",
+      "Last term: 499",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 24639",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 15"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (6p - 1) = 29584, calculate k.",
+    "expected": "k = 15",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 6k - 1",
+      "Last term: 599",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 29584",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 15"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (4p - 1) = 19749, calculate k.",
+    "expected": "k = 14",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 4k - 1",
+      "Last term: 399",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 19749",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 14"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (2p - 1) = 9936, calculate k.",
+    "expected": "k = 9",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 2k - 1",
+      "Last term: 199",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 9936",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 9"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (3p - 1) = 14828, calculate k.",
+    "expected": "k = 13",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 3k - 1",
+      "Last term: 299",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 14828",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 13"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (4p - 1) = 19749, calculate k.",
+    "expected": "k = 14",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 4k - 1",
+      "Last term: 399",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 19749",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 14"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (2p - 1) = 9831, calculate k.",
+    "expected": "k = 14",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 2k - 1",
+      "Last term: 199",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 9831",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 14"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (5p - 1) = 25051, calculate k.",
+    "expected": "k = 7",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 5k - 1",
+      "Last term: 499",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 25051",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 7"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (6p - 1) = 30039, calculate k.",
+    "expected": "k = 8",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 6k - 1",
+      "Last term: 599",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 30039",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 8"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (2p - 1) = 9936, calculate k.",
+    "expected": "k = 9",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 2k - 1",
+      "Last term: 199",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 9936",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 9"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (3p - 1) = 14790, calculate k.",
+    "expected": "k = 14",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 3k - 1",
+      "Last term: 299",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 14790",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 14"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (5p - 1) = 24639, calculate k.",
+    "expected": "k = 15",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 5k - 1",
+      "Last term: 499",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 24639",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 15"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (5p - 1) = 24885, calculate k.",
+    "expected": "k = 11",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 5k - 1",
+      "Last term: 499",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 24885",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 11"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (6p - 1) = 29992, calculate k.",
+    "expected": "k = 9",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 6k - 1",
+      "Last term: 599",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 29992",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 9"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (6p - 1) = 29584, calculate k.",
+    "expected": "k = 15",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 6k - 1",
+      "Last term: 599",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 29584",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 15"
+    ]
+  },
+  {
+    "variant_question": "Given sum from p=k to 100 of (6p - 1) = 30080, calculate k.",
+    "expected": "k = 7",
+    "demonstration": "First term, last term, n terms, sum formula, solve for k.",
+    "memo_marks": [
+      "1 mark first/last",
+      "1 mark n",
+      "1 mark sum",
+      "2 marks solve"
+    ],
+    "fast_path": "ICE rule.",
+    "fatal_error": "DBE says: Just do top - bottom.",
+    "answer_book_layout": [
+      "First term: 6k - 1",
+      "Last term: 599",
+      "Number of terms: 100 - k + 1",
+      "S_n = n/2 (a + l) = 30080",
+      "...solve quadratic...",
+      "_________________________",
+      "Final Answer: k = 7"
+    ]
+  }
+]

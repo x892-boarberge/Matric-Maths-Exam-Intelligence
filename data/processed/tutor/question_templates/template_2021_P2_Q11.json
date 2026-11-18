@@ -67,6 +67,17 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.2.2",
+        "11.2.3",
+        "11.2.4"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.similarity",
+        "geometry.proportion"
       ]
     },
     {
@@ -83,6 +94,18 @@
           "r": "converse exterior angle of cyclic quad",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.2.2",
+        "11.2.3",
+        "11.2.4",
+        "11.2.1a"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.similarity",
+        "geometry.proportion"
       ]
     },
     {
@@ -119,6 +142,12 @@
           "r": "AAA",
           "mark": "S/R"
         }
+      ],
+      "given_from": [
+        "11.1.1"
+      ],
+      "requires_skills": [
+        "geometry.circle"
       ]
     },
     {
@@ -150,6 +179,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.2.2"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.similarity"
       ]
     },
     {
@@ -181,6 +218,15 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "11.1.1",
+        "11.2.2",
+        "11.2.3"
+      ],
+      "requires_skills": [
+        "geometry.circle",
+        "geometry.similarity"
       ]
     }
   ],

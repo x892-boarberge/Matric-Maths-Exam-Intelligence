@@ -43,6 +43,12 @@
       "expected_fn": "P(A or B) = {p}",
       "steps": [
         "P(A or B) = P(A) + P(B) - P(A and B)"
+      ],
+      "given_from": [
+        "10.1.1"
+      ],
+      "requires_skills": [
+        "probability.independent"
       ]
     },
     {
@@ -69,6 +75,14 @@
         "First branch: snow (0.05) or no snow (0.95).",
         "Second branch: below 0 or not below 0.",
         "Probabilities multiply along branches."
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.union"
       ]
     },
     {
@@ -82,6 +96,16 @@
         "P = P(snow) * P(not below | snow) + P(no snow) * P(not below | no snow)",
         "= 0.05 * 0.28 + 0.95 * 0.65",
         "= 0.014 + 0.6175 = 0.6315"
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.2.1"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.union",
+        "probability.tree"
       ]
     },
     {
@@ -93,6 +117,17 @@
       "expected_fn": "10! = 3 628 800",
       "steps": [
         "Permutation of 10 distinct items."
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.2.1",
+        "10.2.2"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.union",
+        "probability.tree"
       ]
     },
     {
@@ -106,6 +141,19 @@
         "Treat the 2 youngest as ends of a fixed block of 7.",
         "Count favourable arrangements.",
         "Divide by 10!"
+      ],
+      "given_from": [
+        "10.1.1",
+        "10.1.2",
+        "10.2.1",
+        "10.2.2",
+        "10.3.1"
+      ],
+      "requires_skills": [
+        "probability.independent",
+        "probability.union",
+        "probability.tree",
+        "probability.counting"
       ]
     }
   ],

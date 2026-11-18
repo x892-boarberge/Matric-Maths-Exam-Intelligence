@@ -1,0 +1,114 @@
+{
+  "question_id": "2025_P1_Q7",
+  "foundation_text": "Timeline! Focal point! Match the compounding periods.",
+  "acronym_strip": [
+    {
+      "code": "TIMELINE",
+      "meaning": "Draw it."
+    },
+    {
+      "code": "FOCAL",
+      "meaning": "Move to same date."
+    },
+    {
+      "code": "MATCH",
+      "meaning": "Divide rate by 4 if quarterly."
+    },
+    {
+      "code": "DUE",
+      "meaning": "Beginning of period = multiply by (1+i)."
+    }
+  ],
+  "subquestions": {
+    "7.1": {
+      "variant_question": "Cost in 4 years at 8.2% p.a.",
+      "demonstration": "A = P(1+i)^n = 50000(1.082)^4 = 68522.24.",
+      "memo_marks": [
+        "1 mark formula",
+        "1 mark i/n",
+        "1 mark answer"
+      ],
+      "fast_path": "Type the whole calculation in one go.",
+      "fatal_error": "DBE says: Candidates use simple interest when compound is implied.",
+      "answer_book_layout": [
+        "A = P(1 + i)^n",
+        "A = 50 000(1 + 0.082)^4",
+        "A = R68 522.24",
+        "_________________________",
+        "Final Answer: R68 522.24"
+      ],
+      "hack": "Use compound growth formula.",
+      "trap": "Simple interest.",
+      "presentation": "Formula first."
+    },
+    "7.2": {
+      "variant_question": "Annuity due for John.",
+      "demonstration": "i=0.016, n=20. Fv = 500[...]*(1.016). Add 1500 growth. Multiply by (1.016).",
+      "memo_marks": [
+        "1 mark i/n",
+        "1 mark Fv formula",
+        "1 mark due adjustment",
+        "1 mark final date",
+        "1 mark answer"
+      ],
+      "fast_path": "TVM: N=20, I/Y=1.6, PV=-1500, PMT=-500, BGN. Then multiply by (1.016).",
+      "fatal_error": "DBE says: Candidates use END mode instead of BGN, losing the first deposit's interest.",
+      "answer_book_layout": [
+        "i = 0.064 / 4 = 0.016",
+        "n = 20 quarters",
+        "Fv = 500 [((1.016)^20 - 1) / 0.016] * (1.016) = R11 843.90",
+        "Balance = [1500(1.016)^20 + 11843.90] * (1.016)",
+        "_________________________",
+        "Final Answer: R14 116.36"
+      ],
+      "hack": "Multiply by (1+i) for beginning of period.",
+      "trap": "Using END mode.",
+      "presentation": "Timeline."
+    },
+    "7.3.1": {
+      "variant_question": "Time for Sipho's loan.",
+      "demonstration": "Loan grows 4 months. Equate to Pv.",
+      "memo_marks": [
+        "1 mark grow loan",
+        "1 mark Pv setup",
+        "1 mark i",
+        "1 mark logs",
+        "1 mark answer"
+      ],
+      "fast_path": "Grow loan. Then TVM solver for N.",
+      "fatal_error": "DBE says: Candidates forget the months of interest on the loan before the first payment.",
+      "answer_book_layout": [
+        "i = 0.072/12 = 0.006",
+        "Loan = 750000(1.006)^4 = R769 576.80",
+        "769576.80 = 12000[(1 - (1.006)^-n)/0.006]",
+        "n = 74.8 months",
+        "_________________________",
+        "Final Answer: 75 months"
+      ],
+      "hack": "Grow the loan to focal point.",
+      "trap": "Starting annuity from month 1.",
+      "presentation": "Show the 4 months growth."
+    },
+    "7.3.2": {
+      "variant_question": "Final payment.",
+      "demonstration": "Balance after 74 months. Multiply by (1.006).",
+      "memo_marks": [
+        "1 mark balance",
+        "1 mark growth",
+        "1 mark answer"
+      ],
+      "fast_path": "Find balance at 74 months, add one month interest.",
+      "fatal_error": "DBE says: Candidates write the regular payment amount instead of the final exact payment.",
+      "answer_book_layout": [
+        "Balance = 750000(1.006)^4 - 12000[((1-1.006^-74)/0.006)]",
+        "Balance = R38 968.80",
+        "Final = 38968.80 * 1.006",
+        "_________________________",
+        "Final Answer: R39 202.61"
+      ],
+      "hack": "Find balance before final.",
+      "trap": "Writing regular payment.",
+      "presentation": "Show balance."
+    }
+  }
+}

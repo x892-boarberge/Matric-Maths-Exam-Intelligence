@@ -72,12 +72,46 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
   cursor:pointer;text-align:center;user-select:none;min-height:var(--key-h);display:flex;align-items:center;justify-content:center;font-family:inherit}
 .act.done{background:var(--green);color:#fff;border-color:var(--green)}
 .act.mode-on{background:var(--blue);color:#fff;border-color:var(--blue)}
-.result{padding:8px 12px;background:#0b1f44;color:#fff;font-family:ui-monospace,Menlo,monospace;font-size:10px;line-height:1.45;
-  max-height:0;overflow:hidden;transition:max-height .25s ease;flex:none}
-.result.shown{max-height:200px;overflow-y:auto}
+.result{margin:0;padding:10px 14px;background:#0b1f44;color:#fff;font-family:ui-monospace,Menlo,monospace;font-size:11px;line-height:1.5;max-height:0;overflow:hidden;transition:max-height .25s ease;flex:none;border-top:1px solid #0b1f44}
+.result.shown{max-height:260px;overflow-y:auto}
+.result.shown{max-height:260px;overflow-y:auto}
 .result .label{color:#9ab;margin-bottom:4px}
 .result pre{margin:0;color:#cfe2ff;white-space:pre-wrap;word-break:break-word}
 @media(max-width:480px){.work{max-height:clamp(90px,16vh,140px)}.key{min-height:36px}.key.phone{font-size:16px}}
+/* question card */
+.qcard{padding:10px 12px;background:#f8fbff;border-bottom:1px solid var(--line)}
+.qcard-head{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:10px;color:var(--ink2);font-weight:700;letter-spacing:.04em;
+  text-transform:uppercase;margin-bottom:4px}
+.qcard-skill{font-size:10px;font-weight:500;color:var(--ink3);
+  text-transform:none;letter-spacing:0}
+.qcard-body{font-size:15px;line-height:1.45;color:var(--ink);
+  font-family:'Cambria Math','Latin Modern Math',Georgia,serif}
+
+.mark { font-size: 26px; font-weight: 800; letter-spacing: -0.02em;
+        padding: 8px 0 10px; }
+.mark-full    { color: #6f6; }
+.mark-partial { color: #fbb; }
+.mark-zero    { color: #f88; }
+.strip-head   { font-size: 10px; font-weight: 700; text-transform: uppercase;
+                letter-spacing: .06em; color: #9ab; margin: 10px 0 4px; }
+.strip-line   { font-size: 12.5px; padding: 2px 0; color: #dde; line-height: 1.55; }
+.strip-example{ font-size: 12px; padding: 1px 0 4px 22px; color: #8fa8d6;
+                font-family: 'Cambria Math', Georgia, serif; }
+.strip-diag   { margin-top: 12px; padding: 9px 11px; background: rgba(255,220,120,.08);
+                border-left: 3px solid #fc8; font-size: 12.5px; color: #ffe8b8;
+                line-height: 1.55; }
+.strip-note   { font-size: 11.5px; color: #9ab; margin-top: 6px;
+                padding-left: 14px; font-style: italic; }
+.s-ok, .s-no, .s-maybe { font-weight: 700; margin-right: 4px; }
+.s-ok    { color: #6f6; }
+.s-no    { color: #f88; }
+.s-maybe { color: #fb8; }
+.marks   { opacity: 0.6; font-size: 11px; }
+.sibling-head { margin-top: 16px; padding-top: 12px;
+                border-top: 1px solid #2a3f66; }
+.sibling-step { color: #b8d0ff; padding-left: 16px; }
+
 </style>
 </head>
 <body>
@@ -90,6 +124,13 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
       <div class="tagline">Better Methods. Better Marks.</div>
     </div>
   </div>
+  <div class="qcard" id="qcard">
+    <div class="qcard-head">
+      <span class="qcard-label">Question</span>
+      <span class="qcard-skill" id="qcardSkill"></span>
+    </div>
+    <div class="qcard-body" id="qcardBody">Loading question…</div>
+  </div>
   <div class="err" id="err">MathQuill failed to load. Check network or use offline libs/.</div>
   <div class="work" id="work">
     <div class="work-head">
@@ -98,6 +139,20 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
     </div>
     <div class="lines" id="lines"></div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="result" id="result"></div>
+
   <div class="sbc" id="sbcWrap">
     <div class="sbc-head">
       <span class="left"><span class="dot"></span> Ask Tanaka — message / reason</span>
@@ -108,7 +163,6 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
   <div class="tabs" id="tabs"></div>
   <div class="kb-scroll"><div class="kb" id="kb"></div></div>
   <div class="acts" id="acts"></div>
-  <div class="result" id="result"></div>
 </div>
 <script>
 (function () {
@@ -117,6 +171,21 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
     return;
   }
   var MQ = MathQuill.getInterface(2);
+  var API_BASE = "http://127.0.0.1:8765";
+
+  function loadQuestion() {
+    fetch(API_BASE + "/next_question")
+      .then(function (r) { return r.json(); })
+      .then(function (q) {
+        document.getElementById("qcardSkill").textContent = q.skill_id || "";
+        document.getElementById("qcardBody").textContent  = q.prompt   || "";
+      })
+      .catch(function () {
+        document.getElementById("qcardBody").textContent =
+          "Server not reachable. Start drill_server first.";
+      });
+  }
+
 
   function K(label, type, value, opts) {
     opts = opts || {};
@@ -472,22 +541,174 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
   }
 
   function submit() {
-    var steps = [];
-    state.fields.forEach(function (item) {
-      var lx = item.field.latex();
-      if (lx && lx.trim()) steps.push(lx.trim());
-    });
-    var payload = {
-      learner_lines_latex: steps,
-      step_count: steps.length,
-      sbc_message: sbcEl.value.trim(),
-      tab_used: state.tab,
-    };
-    resultEl.classList.add("shown");
-    resultEl.innerHTML =
-      "<div class='label'>Payload for step_grader</div>" +
-      "<pre>" + JSON.stringify(payload, null, 2) + "</pre>";
-  }
+  var steps = [];
+  state.fields.forEach(function (item) {
+    var lx = item.field.latex();
+    if (lx && lx.trim()) steps.push(lx.trim());
+  });
+  var payload = {
+    learner_lines_latex: steps,
+    sbc_message: sbcEl.value.trim(),
+    tab_used: state.tab
+  };
+
+  resultEl.classList.add("shown");
+  resultEl.innerHTML = "<div class='label'>grading…</div>";
+
+  fetch(API_BASE + "/grade", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  })
+  .then(function (r) { return r.json().then(function (j) { return {ok: r.ok, body: j}; }); })
+  .then(function (wrapped) {
+    var res = wrapped.body;
+    var out = [];
+
+    // If the server returned an error, show it clearly and stop.
+    if (!wrapped.ok || res.error) {
+      out.push("<div class='label'>server error " +
+               (res.error ? "· " + res.error : "") + "</div>");
+      if (res.traceback) {
+        out.push("<pre style='color:#fbb;font-size:10px'>" +
+                 res.traceback + "</pre>");
+      }
+      resultEl.innerHTML = out.join("");
+      return;
+    }
+
+    // ── 1. Mark ──
+    if (res.mark && res.mark.total > 0) {
+      var ok = res.mark.awarded === res.mark.total;
+      var cls = ok ? "mark-full"
+              : (res.mark.awarded === 0 ? "mark-zero" : "mark-partial");
+      out.push("<div class='mark " + cls + "'>" +
+               res.mark.awarded + "/" + res.mark.total + "</div>");
+    } else if (res.match === "NO_MATCH") {
+      out.push("<div class='mark mark-zero'>0</div>");
+    }
+
+    // ── 2. Your working ──
+    if (res.your_working && res.your_working.length) {
+      out.push("<div class='strip-head'>Your working</div>");
+      res.your_working.forEach(function (l, i) {
+        out.push("<div class='strip-line'>" + (i + 1) + ". " + l + "</div>");
+      });
+    }
+
+    // ── 3. Memo expected ──
+    var sd = res.step_diagnosis || [];
+    if (sd.length) {
+      out.push("<div class='strip-head'>Memo expected</div>");
+      sd.forEach(function (d) {
+        var sym, cls;
+        if      (d.status === "CORRECT") { sym = "ok"; cls = "s-ok"; }
+        else if (d.status === "WRONG")   { sym = "x";  cls = "s-no"; }
+        else if (d.status === "MISSING") { sym = "x";  cls = "s-no"; }
+        else                             { sym = "?";  cls = "s-maybe"; }
+        var line = "<div class='strip-line'>" +
+                   "<span class='" + cls + "'>" + sym + "</span> " +
+                   "Step " + d.step + ": " + (d.name || "");
+        if (d.marks != null) {
+          line += " <span class='marks'>(" + d.marks +
+                  (d.marks === 1 ? " mark" : " marks") + ")</span>";
+        }
+        line += "</div>";
+        if (d.evidence) {
+          line += "<div class='strip-example'>you wrote: " + d.evidence + "</div>";
+        }
+        if (d.expected && d.status !== "CORRECT") {
+          line += "<div class='strip-example'>should be: " + d.expected + "</div>";
+        }
+        out.push(line);
+      });
+    } else if (res.memo_steps && res.memo_steps.length) {
+      out.push("<div class='strip-head'>Memo expected</div>");
+      res.memo_steps.forEach(function (s) {
+        var sym = s.status === "MATCHED" ? "ok"
+                : s.status === "NOT_MATCHED" ? "x" : "?";
+        var cls = s.status === "MATCHED" ? "s-ok"
+                : s.status === "NOT_MATCHED" ? "s-no" : "s-maybe";
+        var line = "<div class='strip-line'>" +
+                   "<span class='" + cls + "'>" + sym + "</span> " +
+                   (s.desc || "");
+        if (s.marks != null) {
+          line += " <span class='marks'>(" + s.marks +
+                  (s.marks === 1 ? " mark" : " marks") + ")</span>";
+        }
+        line += "</div>";
+        if (s.first_form) {
+          line += "<div class='strip-example'>" + s.first_form + "</div>";
+        }
+        out.push(line);
+      });
+    }
+
+    // ── 4. Diagnosis — misconception name + description ──
+    var mi = res.misconception_info || {};
+    if (res.misconception_id || mi.description || res.diagnosis) {
+      out.push("<div class='strip-head'>Diagnosis</div>");
+      if (res.misconception_id) {
+        out.push("<div class='strip-line'>" +
+                 "<strong>" + res.misconception_id + "</strong>" +
+                 (mi.severity ? "  <span class='marks'>[" + mi.severity + "]</span>" : "") +
+                 "</div>");
+      }
+      if (mi.description) {
+        out.push("<div class='strip-line'>" + mi.description + "</div>");
+      }
+      if (res.diagnosis && res.diagnosis !== mi.description) {
+        out.push("<div class='strip-diag'>" + res.diagnosis + "</div>");
+      }
+    }
+
+    // ── 5. Corpus context ──
+    if (res.corpus_context) {
+      var cc = res.corpus_context;
+      out.push("<div class='strip-head'>What the DBE corpus says</div>");
+      out.push("<div class='strip-line'>" + cc.total_errors +
+               " errors on this skill across " + (cc.years_count || "?") +
+               " years (" + (cc.years_span || "") + ").</div>");
+      out.push("<div class='strip-line'>Top error class: <strong>" +
+               cc.top_error_class + "</strong>  (" + cc.top_error_count + ")</div>");
+      if (cc.sample_text) {
+        out.push("<div class='strip-example'>DBE " +
+                 (cc.sample_year || "") + ": " +
+                 cc.sample_text.slice(0, 220) + "…</div>");
+      }
+    }
+
+    // ── 6. Intervention ──
+    if (res.intervention) {
+      out.push("<div class='strip-head'>Suggested intervention</div>");
+      out.push("<div class='strip-line'>Pattern: <strong>" +
+               (res.intervention.intervention_pattern || "") +
+               "</strong>  <span class='marks'>(" +
+               (res.intervention.intervention_id || "") + ")</span></div>");
+      if (mi.intervention) {
+        out.push("<div class='strip-line'>" + mi.intervention + "</div>");
+      }
+    }
+
+    // ── 7. Sibling ──
+    if (res.sibling) {
+      out.push("<div class='strip-head sibling-head'>Similar one, worked out</div>");
+      out.push("<div class='strip-line'>" + (res.sibling.problem || "") + "</div>");
+      (res.sibling.steps || []).forEach(function (s) {
+        out.push("<div class='strip-line sibling-step'>" + s + "</div>");
+      });
+      if (res.sibling.note) {
+        out.push("<div class='strip-note'>" + res.sibling.note + "</div>");
+      }
+    }
+
+    resultEl.innerHTML = out.join("");
+  })
+  .catch(function (err) {
+    resultEl.innerHTML = "<div class='label'>server error</div><pre>" +
+                         String(err) + "</pre>";
+  });
+}
 
   function renderTabs() {
     tabsEl.innerHTML = "";
@@ -500,7 +721,8 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
         state.abcMode = false;
         state.invMode = false;
         setTarget("math");
-        renderTabs(); renderActs(); renderKb();
+        loadQuestion();
+  renderTabs(); renderActs(); renderKb();
       };
       tabsEl.appendChild(b);
     });
@@ -619,6 +841,7 @@ body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSys
   renderKb();
   addLine(true);
   updateTargetUI();
+  loadQuestion();
 })();
 </script>
 </body>

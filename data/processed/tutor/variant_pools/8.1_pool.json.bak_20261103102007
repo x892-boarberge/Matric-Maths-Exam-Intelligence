@@ -1,0 +1,662 @@
+[
+  {
+    "variant_question": "First principles if f(x) = -3x^2 + 2x.",
+    "expected": "f'(x) = -6x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -3(x+h)\u00b2 + 2(x+h)",
+      "= -3x\u00b2 + -6xh + -3h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim -6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -6x + 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 2x^2 + 2x.",
+    "expected": "f'(x) = 4x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 2(x+h)\u00b2 + 2(x+h)",
+      "= 2x\u00b2 + 4xh + 2h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim 4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 4x + 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 2x^2 - 4x.",
+    "expected": "f'(x) = 4x - 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 2(x+h)\u00b2 - 4(x+h)",
+      "= 2x\u00b2 + 4xh + 2h\u00b2 - 4x - 4h",
+      "Subtract f(x) in brackets",
+      "lim 4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 4x - 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -3x^2 + 4x.",
+    "expected": "f'(x) = -6x + 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -3(x+h)\u00b2 + 4(x+h)",
+      "= -3x\u00b2 + -6xh + -3h\u00b2 + 4x + 4h",
+      "Subtract f(x) in brackets",
+      "lim -6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -6x + 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 3x^2 + 4x.",
+    "expected": "f'(x) = 6x + 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 3(x+h)\u00b2 + 4(x+h)",
+      "= 3x\u00b2 + 6xh + 3h\u00b2 + 4x + 4h",
+      "Subtract f(x) in brackets",
+      "lim 6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 6x + 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -2x^2 - 2x.",
+    "expected": "f'(x) = -4x - 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -2(x+h)\u00b2 - 2(x+h)",
+      "= -2x\u00b2 + -4xh + -2h\u00b2 - 2x - 2h",
+      "Subtract f(x) in brackets",
+      "lim -4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -4x - 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -3x^2 - 4x.",
+    "expected": "f'(x) = -6x - 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -3(x+h)\u00b2 - 4(x+h)",
+      "= -3x\u00b2 + -6xh + -3h\u00b2 - 4x - 4h",
+      "Subtract f(x) in brackets",
+      "lim -6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -6x - 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 2x^2 - 2x.",
+    "expected": "f'(x) = 4x - 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 2(x+h)\u00b2 - 2(x+h)",
+      "= 2x\u00b2 + 4xh + 2h\u00b2 - 2x - 2h",
+      "Subtract f(x) in brackets",
+      "lim 4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 4x - 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 2x^2 + 2x.",
+    "expected": "f'(x) = 4x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 2(x+h)\u00b2 + 2(x+h)",
+      "= 2x\u00b2 + 4xh + 2h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim 4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 4x + 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -2x^2 + 2x.",
+    "expected": "f'(x) = -4x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -2(x+h)\u00b2 + 2(x+h)",
+      "= -2x\u00b2 + -4xh + -2h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim -4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -4x + 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 3x^2 + 4x.",
+    "expected": "f'(x) = 6x + 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 3(x+h)\u00b2 + 4(x+h)",
+      "= 3x\u00b2 + 6xh + 3h\u00b2 + 4x + 4h",
+      "Subtract f(x) in brackets",
+      "lim 6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 6x + 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -3x^2 + 2x.",
+    "expected": "f'(x) = -6x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -3(x+h)\u00b2 + 2(x+h)",
+      "= -3x\u00b2 + -6xh + -3h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim -6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -6x + 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -3x^2 + 2x.",
+    "expected": "f'(x) = -6x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -3(x+h)\u00b2 + 2(x+h)",
+      "= -3x\u00b2 + -6xh + -3h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim -6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -6x + 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 2x^2 - 4x.",
+    "expected": "f'(x) = 4x - 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 2(x+h)\u00b2 - 4(x+h)",
+      "= 2x\u00b2 + 4xh + 2h\u00b2 - 4x - 4h",
+      "Subtract f(x) in brackets",
+      "lim 4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 4x - 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -2x^2 - 2x.",
+    "expected": "f'(x) = -4x - 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -2(x+h)\u00b2 - 2(x+h)",
+      "= -2x\u00b2 + -4xh + -2h\u00b2 - 2x - 2h",
+      "Subtract f(x) in brackets",
+      "lim -4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -4x - 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 3x^2 + 4x.",
+    "expected": "f'(x) = 6x + 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 3(x+h)\u00b2 + 4(x+h)",
+      "= 3x\u00b2 + 6xh + 3h\u00b2 + 4x + 4h",
+      "Subtract f(x) in brackets",
+      "lim 6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 6x + 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 2x^2 - 4x.",
+    "expected": "f'(x) = 4x - 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 2(x+h)\u00b2 - 4(x+h)",
+      "= 2x\u00b2 + 4xh + 2h\u00b2 - 4x - 4h",
+      "Subtract f(x) in brackets",
+      "lim 4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 4x - 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -3x^2 + 2x.",
+    "expected": "f'(x) = -6x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -3(x+h)\u00b2 + 2(x+h)",
+      "= -3x\u00b2 + -6xh + -3h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim -6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -6x + 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -2x^2 + 4x.",
+    "expected": "f'(x) = -4x + 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -2(x+h)\u00b2 + 4(x+h)",
+      "= -2x\u00b2 + -4xh + -2h\u00b2 + 4x + 4h",
+      "Subtract f(x) in brackets",
+      "lim -4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -4x + 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -3x^2 + 4x.",
+    "expected": "f'(x) = -6x + 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -3(x+h)\u00b2 + 4(x+h)",
+      "= -3x\u00b2 + -6xh + -3h\u00b2 + 4x + 4h",
+      "Subtract f(x) in brackets",
+      "lim -6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -6x + 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 2x^2 - 4x.",
+    "expected": "f'(x) = 4x - 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 2(x+h)\u00b2 - 4(x+h)",
+      "= 2x\u00b2 + 4xh + 2h\u00b2 - 4x - 4h",
+      "Subtract f(x) in brackets",
+      "lim 4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 4x - 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 3x^2 - 4x.",
+    "expected": "f'(x) = 6x - 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 3(x+h)\u00b2 - 4(x+h)",
+      "= 3x\u00b2 + 6xh + 3h\u00b2 - 4x - 4h",
+      "Subtract f(x) in brackets",
+      "lim 6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 6x - 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -3x^2 + 4x.",
+    "expected": "f'(x) = -6x + 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -3(x+h)\u00b2 + 4(x+h)",
+      "= -3x\u00b2 + -6xh + -3h\u00b2 + 4x + 4h",
+      "Subtract f(x) in brackets",
+      "lim -6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -6x + 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 3x^2 + 2x.",
+    "expected": "f'(x) = 6x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 3(x+h)\u00b2 + 2(x+h)",
+      "= 3x\u00b2 + 6xh + 3h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim 6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 6x + 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 2x^2 - 4x.",
+    "expected": "f'(x) = 4x - 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 2(x+h)\u00b2 - 4(x+h)",
+      "= 2x\u00b2 + 4xh + 2h\u00b2 - 4x - 4h",
+      "Subtract f(x) in brackets",
+      "lim 4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 4x - 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 3x^2 + 2x.",
+    "expected": "f'(x) = 6x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 3(x+h)\u00b2 + 2(x+h)",
+      "= 3x\u00b2 + 6xh + 3h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim 6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 6x + 2"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 3x^2 + 4x.",
+    "expected": "f'(x) = 6x + 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 3(x+h)\u00b2 + 4(x+h)",
+      "= 3x\u00b2 + 6xh + 3h\u00b2 + 4x + 4h",
+      "Subtract f(x) in brackets",
+      "lim 6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 6x + 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -3x^2 - 4x.",
+    "expected": "f'(x) = -6x - 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -3(x+h)\u00b2 - 4(x+h)",
+      "= -3x\u00b2 + -6xh + -3h\u00b2 - 4x - 4h",
+      "Subtract f(x) in brackets",
+      "lim -6xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -6x - 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = -2x^2 - 4x.",
+    "expected": "f'(x) = -4x - 4",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = -2(x+h)\u00b2 - 4(x+h)",
+      "= -2x\u00b2 + -4xh + -2h\u00b2 - 4x - 4h",
+      "Subtract f(x) in brackets",
+      "lim -4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = -4x - 4"
+    ]
+  },
+  {
+    "variant_question": "First principles if f(x) = 2x^2 + 2x.",
+    "expected": "f'(x) = 4x + 2",
+    "demonstration": "Limit formula.",
+    "memo_marks": [
+      "1 mark form",
+      "1 mark exp",
+      "1 mark simp",
+      "1 mark lim"
+    ],
+    "fast_path": "Check with rule.",
+    "fatal_error": "DBE says: Drop limit.",
+    "answer_book_layout": [
+      "f'(x) = lim [f(x+h)-f(x)]/h",
+      "f(x+h) = 2(x+h)\u00b2 + 2(x+h)",
+      "= 2x\u00b2 + 4xh + 2h\u00b2 + 2x + 2h",
+      "Subtract f(x) in brackets",
+      "lim 4xh / h",
+      "_________________________",
+      "Final Answer: f'(x) = 4x + 2"
+    ]
+  }
+]

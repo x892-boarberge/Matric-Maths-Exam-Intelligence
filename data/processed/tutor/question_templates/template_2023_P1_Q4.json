@@ -52,6 +52,12 @@
       "steps": [
         "Set 2^x - 4 = 0: 2^x = 4",
         "x = 2. B(2; 0)"
+      ],
+      "given_from": [
+        "4.1"
+      ],
+      "requires_skills": [
+        "functions.exponential"
       ]
     },
     {
@@ -74,6 +80,13 @@
         "A(0; -3), B(2; 0)",
         "m = (0 - (-3))/(2 - 0) = 1.5",
         "k(x) = 1.5x - 3"
+      ],
+      "given_from": [
+        "4.1",
+        "4.2"
+      ],
+      "requires_skills": [
+        "functions.exponential"
       ]
     },
     {
@@ -105,6 +118,15 @@
       "steps": [
         "k(1) = -1.5, f(1) = 2 - 4 = -2",
         "Distance = |-1.5 - (-2)| = 0.5"
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "requires_skills": [
+        "functions.exponential",
+        "functions.line"
       ]
     },
     {
@@ -135,6 +157,17 @@
       "expected_fn": "g(x) = 2^x",
       "steps": [
         "g(x) = 2^x - 4 + 4 = 2^x"
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "requires_skills": [
+        "functions.exponential",
+        "functions.line",
+        "functions.distance"
       ]
     },
     {
@@ -161,6 +194,18 @@
       "expected_fn": "x > 0",
       "steps": [
         "Domain of g^(-1) = range of g = (0; inf)"
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "requires_skills": [
+        "functions.exponential",
+        "functions.line",
+        "functions.distance"
       ]
     },
     {
@@ -179,6 +224,20 @@
       "steps": [
         "g(x) = 2^x. Swap x and y: x = 2^y.",
         "y = log_2(x)"
+      ],
+      "given_from": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6"
+      ],
+      "requires_skills": [
+        "functions.exponential",
+        "functions.line",
+        "functions.distance",
+        "functions.inverse"
       ]
     }
   ],

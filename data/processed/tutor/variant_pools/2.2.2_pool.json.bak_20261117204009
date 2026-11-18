@@ -1,0 +1,752 @@
+[
+  {
+    "variant_question": "Given that the sum from p=k to 50 of (2p - 5) equals 2160, calculate the value of k.",
+    "expected": "k = 15",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=50): 95.\nNumber of terms: 50 - k + 1.\nSum = (50-k+1)/2 · (2k - 5 + 95) = 2160.\nVerify k = 15: n_terms = 36, first = 25, last = 95, sum = 36/2 × (25 + 95) = 2160. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 95",
+      "1 mark for n_terms = 50-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 15"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 95",
+      "n_terms = 50-k+1",
+      "Sum = (50-k+1)/2 · (2k - 5 + 95) = 2160",
+      "k = 15"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 50 of (2p - 5) equals 2079, calculate the value of k.",
+    "expected": "k = 18",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=50): 95.\nNumber of terms: 50 - k + 1.\nSum = (50-k+1)/2 · (2k - 5 + 95) = 2079.\nVerify k = 18: n_terms = 33, first = 31, last = 95, sum = 33/2 × (31 + 95) = 2079. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 95",
+      "1 mark for n_terms = 50-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 18"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 95",
+      "n_terms = 50-k+1",
+      "Sum = (50-k+1)/2 · (2k - 5 + 95) = 2079",
+      "k = 18"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 50 of (2p - 5) equals 2015, calculate the value of k.",
+    "expected": "k = 20",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=50): 95.\nNumber of terms: 50 - k + 1.\nSum = (50-k+1)/2 · (2k - 5 + 95) = 2015.\nVerify k = 20: n_terms = 31, first = 35, last = 95, sum = 31/2 × (35 + 95) = 2015. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 95",
+      "1 mark for n_terms = 50-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 20"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 95",
+      "n_terms = 50-k+1",
+      "Sum = (50-k+1)/2 · (2k - 5 + 95) = 2015",
+      "k = 20"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 50 of (2p - 5) equals 1980, calculate the value of k.",
+    "expected": "k = 21",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=50): 95.\nNumber of terms: 50 - k + 1.\nSum = (50-k+1)/2 · (2k - 5 + 95) = 1980.\nVerify k = 21: n_terms = 30, first = 37, last = 95, sum = 30/2 × (37 + 95) = 1980. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 95",
+      "1 mark for n_terms = 50-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 21"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 95",
+      "n_terms = 50-k+1",
+      "Sum = (50-k+1)/2 · (2k - 5 + 95) = 1980",
+      "k = 21"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 50 of (2p - 5) equals 1820, calculate the value of k.",
+    "expected": "k = 25",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=50): 95.\nNumber of terms: 50 - k + 1.\nSum = (50-k+1)/2 · (2k - 5 + 95) = 1820.\nVerify k = 25: n_terms = 26, first = 45, last = 95, sum = 26/2 × (45 + 95) = 1820. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 95",
+      "1 mark for n_terms = 50-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 25"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 95",
+      "n_terms = 50-k+1",
+      "Sum = (50-k+1)/2 · (2k - 5 + 95) = 1820",
+      "k = 25"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 50 of (2p - 5) equals 1575, calculate the value of k.",
+    "expected": "k = 30",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=50): 95.\nNumber of terms: 50 - k + 1.\nSum = (50-k+1)/2 · (2k - 5 + 95) = 1575.\nVerify k = 30: n_terms = 21, first = 55, last = 95, sum = 21/2 × (55 + 95) = 1575. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 95",
+      "1 mark for n_terms = 50-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 30"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 95",
+      "n_terms = 50-k+1",
+      "Sum = (50-k+1)/2 · (2k - 5 + 95) = 1575",
+      "k = 30"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 60 of (2p - 5) equals 3220, calculate the value of k.",
+    "expected": "k = 15",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=60): 115.\nNumber of terms: 60 - k + 1.\nSum = (60-k+1)/2 · (2k - 5 + 115) = 3220.\nVerify k = 15: n_terms = 46, first = 25, last = 115, sum = 46/2 × (25 + 115) = 3220. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 115",
+      "1 mark for n_terms = 60-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 15"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 115",
+      "n_terms = 60-k+1",
+      "Sum = (60-k+1)/2 · (2k - 5 + 115) = 3220",
+      "k = 15"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 60 of (2p - 5) equals 3139, calculate the value of k.",
+    "expected": "k = 18",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=60): 115.\nNumber of terms: 60 - k + 1.\nSum = (60-k+1)/2 · (2k - 5 + 115) = 3139.\nVerify k = 18: n_terms = 43, first = 31, last = 115, sum = 43/2 × (31 + 115) = 3139. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 115",
+      "1 mark for n_terms = 60-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 18"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 115",
+      "n_terms = 60-k+1",
+      "Sum = (60-k+1)/2 · (2k - 5 + 115) = 3139",
+      "k = 18"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 60 of (2p - 5) equals 3075, calculate the value of k.",
+    "expected": "k = 20",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=60): 115.\nNumber of terms: 60 - k + 1.\nSum = (60-k+1)/2 · (2k - 5 + 115) = 3075.\nVerify k = 20: n_terms = 41, first = 35, last = 115, sum = 41/2 × (35 + 115) = 3075. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 115",
+      "1 mark for n_terms = 60-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 20"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 115",
+      "n_terms = 60-k+1",
+      "Sum = (60-k+1)/2 · (2k - 5 + 115) = 3075",
+      "k = 20"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 60 of (2p - 5) equals 3040, calculate the value of k.",
+    "expected": "k = 21",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=60): 115.\nNumber of terms: 60 - k + 1.\nSum = (60-k+1)/2 · (2k - 5 + 115) = 3040.\nVerify k = 21: n_terms = 40, first = 37, last = 115, sum = 40/2 × (37 + 115) = 3040. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 115",
+      "1 mark for n_terms = 60-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 21"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 115",
+      "n_terms = 60-k+1",
+      "Sum = (60-k+1)/2 · (2k - 5 + 115) = 3040",
+      "k = 21"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 60 of (2p - 5) equals 2880, calculate the value of k.",
+    "expected": "k = 25",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=60): 115.\nNumber of terms: 60 - k + 1.\nSum = (60-k+1)/2 · (2k - 5 + 115) = 2880.\nVerify k = 25: n_terms = 36, first = 45, last = 115, sum = 36/2 × (45 + 115) = 2880. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 115",
+      "1 mark for n_terms = 60-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 25"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 115",
+      "n_terms = 60-k+1",
+      "Sum = (60-k+1)/2 · (2k - 5 + 115) = 2880",
+      "k = 25"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 60 of (2p - 5) equals 2635, calculate the value of k.",
+    "expected": "k = 30",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=60): 115.\nNumber of terms: 60 - k + 1.\nSum = (60-k+1)/2 · (2k - 5 + 115) = 2635.\nVerify k = 30: n_terms = 31, first = 55, last = 115, sum = 31/2 × (55 + 115) = 2635. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 115",
+      "1 mark for n_terms = 60-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 30"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 115",
+      "n_terms = 60-k+1",
+      "Sum = (60-k+1)/2 · (2k - 5 + 115) = 2635",
+      "k = 30"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 80 of (2p - 5) equals 5940, calculate the value of k.",
+    "expected": "k = 15",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=80): 155.\nNumber of terms: 80 - k + 1.\nSum = (80-k+1)/2 · (2k - 5 + 155) = 5940.\nVerify k = 15: n_terms = 66, first = 25, last = 155, sum = 66/2 × (25 + 155) = 5940. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 155",
+      "1 mark for n_terms = 80-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 15"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 155",
+      "n_terms = 80-k+1",
+      "Sum = (80-k+1)/2 · (2k - 5 + 155) = 5940",
+      "k = 15"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 80 of (2p - 5) equals 5859, calculate the value of k.",
+    "expected": "k = 18",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=80): 155.\nNumber of terms: 80 - k + 1.\nSum = (80-k+1)/2 · (2k - 5 + 155) = 5859.\nVerify k = 18: n_terms = 63, first = 31, last = 155, sum = 63/2 × (31 + 155) = 5859. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 155",
+      "1 mark for n_terms = 80-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 18"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 155",
+      "n_terms = 80-k+1",
+      "Sum = (80-k+1)/2 · (2k - 5 + 155) = 5859",
+      "k = 18"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 80 of (2p - 5) equals 5795, calculate the value of k.",
+    "expected": "k = 20",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=80): 155.\nNumber of terms: 80 - k + 1.\nSum = (80-k+1)/2 · (2k - 5 + 155) = 5795.\nVerify k = 20: n_terms = 61, first = 35, last = 155, sum = 61/2 × (35 + 155) = 5795. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 155",
+      "1 mark for n_terms = 80-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 20"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 155",
+      "n_terms = 80-k+1",
+      "Sum = (80-k+1)/2 · (2k - 5 + 155) = 5795",
+      "k = 20"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 80 of (2p - 5) equals 5760, calculate the value of k.",
+    "expected": "k = 21",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=80): 155.\nNumber of terms: 80 - k + 1.\nSum = (80-k+1)/2 · (2k - 5 + 155) = 5760.\nVerify k = 21: n_terms = 60, first = 37, last = 155, sum = 60/2 × (37 + 155) = 5760. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 155",
+      "1 mark for n_terms = 80-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 21"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 155",
+      "n_terms = 80-k+1",
+      "Sum = (80-k+1)/2 · (2k - 5 + 155) = 5760",
+      "k = 21"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 80 of (2p - 5) equals 5600, calculate the value of k.",
+    "expected": "k = 25",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=80): 155.\nNumber of terms: 80 - k + 1.\nSum = (80-k+1)/2 · (2k - 5 + 155) = 5600.\nVerify k = 25: n_terms = 56, first = 45, last = 155, sum = 56/2 × (45 + 155) = 5600. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 155",
+      "1 mark for n_terms = 80-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 25"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 155",
+      "n_terms = 80-k+1",
+      "Sum = (80-k+1)/2 · (2k - 5 + 155) = 5600",
+      "k = 25"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 80 of (2p - 5) equals 5355, calculate the value of k.",
+    "expected": "k = 30",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=80): 155.\nNumber of terms: 80 - k + 1.\nSum = (80-k+1)/2 · (2k - 5 + 155) = 5355.\nVerify k = 30: n_terms = 51, first = 55, last = 155, sum = 51/2 × (55 + 155) = 5355. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 155",
+      "1 mark for n_terms = 80-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 30"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 155",
+      "n_terms = 80-k+1",
+      "Sum = (80-k+1)/2 · (2k - 5 + 155) = 5355",
+      "k = 30"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 100 of (2p - 5) equals 9460, calculate the value of k.",
+    "expected": "k = 15",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=100): 195.\nNumber of terms: 100 - k + 1.\nSum = (100-k+1)/2 · (2k - 5 + 195) = 9460.\nVerify k = 15: n_terms = 86, first = 25, last = 195, sum = 86/2 × (25 + 195) = 9460. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 195",
+      "1 mark for n_terms = 100-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 15"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 195",
+      "n_terms = 100-k+1",
+      "Sum = (100-k+1)/2 · (2k - 5 + 195) = 9460",
+      "k = 15"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 100 of (2p - 5) equals 9379, calculate the value of k.",
+    "expected": "k = 18",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=100): 195.\nNumber of terms: 100 - k + 1.\nSum = (100-k+1)/2 · (2k - 5 + 195) = 9379.\nVerify k = 18: n_terms = 83, first = 31, last = 195, sum = 83/2 × (31 + 195) = 9379. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 195",
+      "1 mark for n_terms = 100-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 18"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 195",
+      "n_terms = 100-k+1",
+      "Sum = (100-k+1)/2 · (2k - 5 + 195) = 9379",
+      "k = 18"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 100 of (2p - 5) equals 9315, calculate the value of k.",
+    "expected": "k = 20",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=100): 195.\nNumber of terms: 100 - k + 1.\nSum = (100-k+1)/2 · (2k - 5 + 195) = 9315.\nVerify k = 20: n_terms = 81, first = 35, last = 195, sum = 81/2 × (35 + 195) = 9315. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 195",
+      "1 mark for n_terms = 100-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 20"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 195",
+      "n_terms = 100-k+1",
+      "Sum = (100-k+1)/2 · (2k - 5 + 195) = 9315",
+      "k = 20"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 100 of (2p - 5) equals 9280, calculate the value of k.",
+    "expected": "k = 21",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=100): 195.\nNumber of terms: 100 - k + 1.\nSum = (100-k+1)/2 · (2k - 5 + 195) = 9280.\nVerify k = 21: n_terms = 80, first = 37, last = 195, sum = 80/2 × (37 + 195) = 9280. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 195",
+      "1 mark for n_terms = 100-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 21"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 195",
+      "n_terms = 100-k+1",
+      "Sum = (100-k+1)/2 · (2k - 5 + 195) = 9280",
+      "k = 21"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 100 of (2p - 5) equals 9120, calculate the value of k.",
+    "expected": "k = 25",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=100): 195.\nNumber of terms: 100 - k + 1.\nSum = (100-k+1)/2 · (2k - 5 + 195) = 9120.\nVerify k = 25: n_terms = 76, first = 45, last = 195, sum = 76/2 × (45 + 195) = 9120. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 195",
+      "1 mark for n_terms = 100-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 25"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 195",
+      "n_terms = 100-k+1",
+      "Sum = (100-k+1)/2 · (2k - 5 + 195) = 9120",
+      "k = 25"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 100 of (2p - 5) equals 8875, calculate the value of k.",
+    "expected": "k = 30",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=100): 195.\nNumber of terms: 100 - k + 1.\nSum = (100-k+1)/2 · (2k - 5 + 195) = 8875.\nVerify k = 30: n_terms = 71, first = 55, last = 195, sum = 71/2 × (55 + 195) = 8875. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 195",
+      "1 mark for n_terms = 100-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 30"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 195",
+      "n_terms = 100-k+1",
+      "Sum = (100-k+1)/2 · (2k - 5 + 195) = 8875",
+      "k = 30"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 117 of (2p - 5) equals 13081, calculate the value of k.",
+    "expected": "k = 15",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=117): 229.\nNumber of terms: 117 - k + 1.\nSum = (117-k+1)/2 · (2k - 5 + 229) = 13081.\nVerify k = 15: n_terms = 103, first = 25, last = 229, sum = 103/2 × (25 + 229) = 13081. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 229",
+      "1 mark for n_terms = 117-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 15"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 229",
+      "n_terms = 117-k+1",
+      "Sum = (117-k+1)/2 · (2k - 5 + 229) = 13081",
+      "k = 15"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 117 of (2p - 5) equals 13000, calculate the value of k.",
+    "expected": "k = 18",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=117): 229.\nNumber of terms: 117 - k + 1.\nSum = (117-k+1)/2 · (2k - 5 + 229) = 13000.\nVerify k = 18: n_terms = 100, first = 31, last = 229, sum = 100/2 × (31 + 229) = 13000. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 229",
+      "1 mark for n_terms = 117-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 18"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 229",
+      "n_terms = 117-k+1",
+      "Sum = (117-k+1)/2 · (2k - 5 + 229) = 13000",
+      "k = 18"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 117 of (2p - 5) equals 12936, calculate the value of k.",
+    "expected": "k = 20",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=117): 229.\nNumber of terms: 117 - k + 1.\nSum = (117-k+1)/2 · (2k - 5 + 229) = 12936.\nVerify k = 20: n_terms = 98, first = 35, last = 229, sum = 98/2 × (35 + 229) = 12936. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 229",
+      "1 mark for n_terms = 117-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 20"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 229",
+      "n_terms = 117-k+1",
+      "Sum = (117-k+1)/2 · (2k - 5 + 229) = 12936",
+      "k = 20"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 117 of (2p - 5) equals 12901, calculate the value of k.",
+    "expected": "k = 21",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=117): 229.\nNumber of terms: 117 - k + 1.\nSum = (117-k+1)/2 · (2k - 5 + 229) = 12901.\nVerify k = 21: n_terms = 97, first = 37, last = 229, sum = 97/2 × (37 + 229) = 12901. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 229",
+      "1 mark for n_terms = 117-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 21"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 229",
+      "n_terms = 117-k+1",
+      "Sum = (117-k+1)/2 · (2k - 5 + 229) = 12901",
+      "k = 21"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 117 of (2p - 5) equals 12741, calculate the value of k.",
+    "expected": "k = 25",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=117): 229.\nNumber of terms: 117 - k + 1.\nSum = (117-k+1)/2 · (2k - 5 + 229) = 12741.\nVerify k = 25: n_terms = 93, first = 45, last = 229, sum = 93/2 × (45 + 229) = 12741. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 229",
+      "1 mark for n_terms = 117-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 25"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 229",
+      "n_terms = 117-k+1",
+      "Sum = (117-k+1)/2 · (2k - 5 + 229) = 12741",
+      "k = 25"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  },
+  {
+    "variant_question": "Given that the sum from p=k to 117 of (2p - 5) equals 12496, calculate the value of k.",
+    "expected": "k = 30",
+    "demonstration": "First term (p=k): 2k - 5. Last term (p=117): 229.\nNumber of terms: 117 - k + 1.\nSum = (117-k+1)/2 · (2k - 5 + 229) = 12496.\nVerify k = 30: n_terms = 88, first = 55, last = 229, sum = 88/2 × (55 + 229) = 12496. ✓",
+    "memo_marks": [
+      "1 mark for first term 2k - 5",
+      "1 mark for last term 229",
+      "1 mark for n_terms = 117-k+1",
+      "1 mark for equation setup",
+      "1 mark for k = 30"
+    ],
+    "fast_path": "Sum = n/2·(first+last). Set to S. Solve for k.",
+    "fatal_error": "DBE says: Candidates lose the term count ({N}-k+1) and guess k values.",
+    "answer_book_layout": [
+      "First = 2k - 5, Last = 229",
+      "n_terms = 117-k+1",
+      "Sum = (117-k+1)/2 · (2k - 5 + 229) = 12496",
+      "k = 30"
+    ],
+    "hack": "Sum = n/2(first+last). Substitute k as unknown. Solve.",
+    "trap": "Term count is N-k+1, not N-k. ICE rule.",
+    "presentation": "Show first, last, count, equation, solve.",
+    "diagram": "not_required",
+    "diagram_hint": null
+  }
+]

@@ -185,7 +185,10 @@ def compare(response: Any, expected: Any) -> Match:
             idx = e2s.rfind(r2s)
             if idx >= 0 and idx + len(r2s) == len(e2s):
                 preceding = e2s[idx - 1] if idx > 0 else ""
-                if not preceding.isdigit():
+                # Do not accept a suffix match when the preceding character
+                # is a digit or a sign. `sinx` is a suffix of `-sinx` but
+                # they are NOT the same answer.
+                if not preceding.isdigit() and preceding not in ("-", "+"):
                     return Match.MATCH
 
     return Match.NO_MATCH

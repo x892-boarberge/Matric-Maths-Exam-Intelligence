@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "Calculate S_inf of 4, 1.33 ...",
+    "expected": "S_inf = 6",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.3333333333333333",
+      "Check: -1 < 0.3333333333333333 < 1",
+      "S_\u221e = 4 / (1 - (0.3333333333333333))",
+      "S_\u221e = 6",
+      "_________________________",
+      "Final Answer: S_\u221e = 6"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 4, 2.00 ...",
+    "expected": "S_inf = 8",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.5",
+      "Check: -1 < 0.5 < 1",
+      "S_\u221e = 4 / (1 - (0.5))",
+      "S_\u221e = 8",
+      "_________________________",
+      "Final Answer: S_\u221e = 8"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 3, -0.75 ...",
+    "expected": "S_inf = 12/5",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.25",
+      "Check: -1 < -0.25 < 1",
+      "S_\u221e = 3 / (1 - (-0.25))",
+      "S_\u221e = 12/5",
+      "_________________________",
+      "Final Answer: S_\u221e = 12/5"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 5, -2.50 ...",
+    "expected": "S_inf = 10/3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.5",
+      "Check: -1 < -0.5 < 1",
+      "S_\u221e = 5 / (1 - (-0.5))",
+      "S_\u221e = 10/3",
+      "_________________________",
+      "Final Answer: S_\u221e = 10/3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 5, -1.67 ...",
+    "expected": "S_inf = 15/4",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "Check: -1 < -0.3333333333333333 < 1",
+      "S_\u221e = 5 / (1 - (-0.3333333333333333))",
+      "S_\u221e = 15/4",
+      "_________________________",
+      "Final Answer: S_\u221e = 15/4"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 4, 1.33 ...",
+    "expected": "S_inf = 6",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.3333333333333333",
+      "Check: -1 < 0.3333333333333333 < 1",
+      "S_\u221e = 4 / (1 - (0.3333333333333333))",
+      "S_\u221e = 6",
+      "_________________________",
+      "Final Answer: S_\u221e = 6"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 6, -2.00 ...",
+    "expected": "S_inf = 9/2",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "Check: -1 < -0.3333333333333333 < 1",
+      "S_\u221e = 6 / (1 - (-0.3333333333333333))",
+      "S_\u221e = 9/2",
+      "_________________________",
+      "Final Answer: S_\u221e = 9/2"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 6, 3.00 ...",
+    "expected": "S_inf = 12",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.5",
+      "Check: -1 < 0.5 < 1",
+      "S_\u221e = 6 / (1 - (0.5))",
+      "S_\u221e = 12",
+      "_________________________",
+      "Final Answer: S_\u221e = 12"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 4, 2.00 ...",
+    "expected": "S_inf = 8",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.5",
+      "Check: -1 < 0.5 < 1",
+      "S_\u221e = 4 / (1 - (0.5))",
+      "S_\u221e = 8",
+      "_________________________",
+      "Final Answer: S_\u221e = 8"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 4, 2.00 ...",
+    "expected": "S_inf = 8",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.5",
+      "Check: -1 < 0.5 < 1",
+      "S_\u221e = 4 / (1 - (0.5))",
+      "S_\u221e = 8",
+      "_________________________",
+      "Final Answer: S_\u221e = 8"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 4, -1.33 ...",
+    "expected": "S_inf = 3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "Check: -1 < -0.3333333333333333 < 1",
+      "S_\u221e = 4 / (1 - (-0.3333333333333333))",
+      "S_\u221e = 3",
+      "_________________________",
+      "Final Answer: S_\u221e = 3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 8, 4.00 ...",
+    "expected": "S_inf = 16",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.5",
+      "Check: -1 < 0.5 < 1",
+      "S_\u221e = 8 / (1 - (0.5))",
+      "S_\u221e = 16",
+      "_________________________",
+      "Final Answer: S_\u221e = 16"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 6, 3.00 ...",
+    "expected": "S_inf = 12",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.5",
+      "Check: -1 < 0.5 < 1",
+      "S_\u221e = 6 / (1 - (0.5))",
+      "S_\u221e = 12",
+      "_________________________",
+      "Final Answer: S_\u221e = 12"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 3, 1.50 ...",
+    "expected": "S_inf = 6",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.5",
+      "Check: -1 < 0.5 < 1",
+      "S_\u221e = 3 / (1 - (0.5))",
+      "S_\u221e = 6",
+      "_________________________",
+      "Final Answer: S_\u221e = 6"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 8, -4.00 ...",
+    "expected": "S_inf = 16/3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.5",
+      "Check: -1 < -0.5 < 1",
+      "S_\u221e = 8 / (1 - (-0.5))",
+      "S_\u221e = 16/3",
+      "_________________________",
+      "Final Answer: S_\u221e = 16/3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 4, -2.00 ...",
+    "expected": "S_inf = 8/3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.5",
+      "Check: -1 < -0.5 < 1",
+      "S_\u221e = 4 / (1 - (-0.5))",
+      "S_\u221e = 8/3",
+      "_________________________",
+      "Final Answer: S_\u221e = 8/3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 6, -1.50 ...",
+    "expected": "S_inf = 24/5",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.25",
+      "Check: -1 < -0.25 < 1",
+      "S_\u221e = 6 / (1 - (-0.25))",
+      "S_\u221e = 24/5",
+      "_________________________",
+      "Final Answer: S_\u221e = 24/5"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 5, -2.50 ...",
+    "expected": "S_inf = 10/3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.5",
+      "Check: -1 < -0.5 < 1",
+      "S_\u221e = 5 / (1 - (-0.5))",
+      "S_\u221e = 10/3",
+      "_________________________",
+      "Final Answer: S_\u221e = 10/3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 4, -1.33 ...",
+    "expected": "S_inf = 3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "Check: -1 < -0.3333333333333333 < 1",
+      "S_\u221e = 4 / (1 - (-0.3333333333333333))",
+      "S_\u221e = 3",
+      "_________________________",
+      "Final Answer: S_\u221e = 3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 4, -2.00 ...",
+    "expected": "S_inf = 8/3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.5",
+      "Check: -1 < -0.5 < 1",
+      "S_\u221e = 4 / (1 - (-0.5))",
+      "S_\u221e = 8/3",
+      "_________________________",
+      "Final Answer: S_\u221e = 8/3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 6, 2.00 ...",
+    "expected": "S_inf = 9",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.3333333333333333",
+      "Check: -1 < 0.3333333333333333 < 1",
+      "S_\u221e = 6 / (1 - (0.3333333333333333))",
+      "S_\u221e = 9",
+      "_________________________",
+      "Final Answer: S_\u221e = 9"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 8, -2.00 ...",
+    "expected": "S_inf = 32/5",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.25",
+      "Check: -1 < -0.25 < 1",
+      "S_\u221e = 8 / (1 - (-0.25))",
+      "S_\u221e = 32/5",
+      "_________________________",
+      "Final Answer: S_\u221e = 32/5"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 3, 0.75 ...",
+    "expected": "S_inf = 4",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.25",
+      "Check: -1 < 0.25 < 1",
+      "S_\u221e = 3 / (1 - (0.25))",
+      "S_\u221e = 4",
+      "_________________________",
+      "Final Answer: S_\u221e = 4"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 5, -2.50 ...",
+    "expected": "S_inf = 10/3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.5",
+      "Check: -1 < -0.5 < 1",
+      "S_\u221e = 5 / (1 - (-0.5))",
+      "S_\u221e = 10/3",
+      "_________________________",
+      "Final Answer: S_\u221e = 10/3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 5, -1.25 ...",
+    "expected": "S_inf = 4",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.25",
+      "Check: -1 < -0.25 < 1",
+      "S_\u221e = 5 / (1 - (-0.25))",
+      "S_\u221e = 4",
+      "_________________________",
+      "Final Answer: S_\u221e = 4"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 6, -2.00 ...",
+    "expected": "S_inf = 9/2",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.3333333333333333",
+      "Check: -1 < -0.3333333333333333 < 1",
+      "S_\u221e = 6 / (1 - (-0.3333333333333333))",
+      "S_\u221e = 9/2",
+      "_________________________",
+      "Final Answer: S_\u221e = 9/2"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 8, -2.00 ...",
+    "expected": "S_inf = 32/5",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.25",
+      "Check: -1 < -0.25 < 1",
+      "S_\u221e = 8 / (1 - (-0.25))",
+      "S_\u221e = 32/5",
+      "_________________________",
+      "Final Answer: S_\u221e = 32/5"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 5, -2.50 ...",
+    "expected": "S_inf = 10/3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = -0.5",
+      "Check: -1 < -0.5 < 1",
+      "S_\u221e = 5 / (1 - (-0.5))",
+      "S_\u221e = 10/3",
+      "_________________________",
+      "Final Answer: S_\u221e = 10/3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 4, 1.00 ...",
+    "expected": "S_inf = 16/3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.25",
+      "Check: -1 < 0.25 < 1",
+      "S_\u221e = 4 / (1 - (0.25))",
+      "S_\u221e = 16/3",
+      "_________________________",
+      "Final Answer: S_\u221e = 16/3"
+    ]
+  },
+  {
+    "variant_question": "Calculate S_inf of 5, 1.25 ...",
+    "expected": "S_inf = 20/3",
+    "demonstration": "Brake check. S_inf = a/(1-r).",
+    "memo_marks": [
+      "1 mark check",
+      "1 mark formula",
+      "1 mark answer"
+    ],
+    "fast_path": "Brake check first.",
+    "fatal_error": "DBE says: No brake check.",
+    "answer_book_layout": [
+      "r = 0.25",
+      "Check: -1 < 0.25 < 1",
+      "S_\u221e = 5 / (1 - (0.25))",
+      "S_\u221e = 20/3",
+      "_________________________",
+      "Final Answer: S_\u221e = 20/3"
+    ]
+  }
+]

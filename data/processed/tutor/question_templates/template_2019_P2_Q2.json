@@ -49,6 +49,12 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1"
+      ],
+      "requires_skills": [
+        "stats.frequency"
       ]
     },
     {
@@ -64,6 +70,14 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2"
+      ],
+      "requires_skills": [
+        "stats.frequency",
+        "stats.mean"
       ]
     },
     {
@@ -94,6 +108,16 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ],
+      "requires_skills": [
+        "stats.frequency",
+        "stats.mean",
+        "stats.mode"
       ]
     },
     {
@@ -114,6 +138,18 @@
           "r": null,
           "mark": "S"
         }
+      ],
+      "given_from": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ],
+      "requires_skills": [
+        "stats.frequency",
+        "stats.mean",
+        "stats.mode",
+        "stats.ogive"
       ]
     }
   ],

@@ -1,0 +1,602 @@
+[
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  },
+  {
+    "variant_question": "Coffee sold on non-rainy day.",
+    "expected": "Number",
+    "demonstration": "Tree diagram.",
+    "memo_marks": [
+      "1 mark tree",
+      "1 mark eq",
+      "1 mark solve"
+    ],
+    "fast_path": "Set up tree.",
+    "fatal_error": "DBE says: No tree.",
+    "answer_book_layout": [
+      "P(rain) = 0.75, P(no rain) = 0.25",
+      "P(coffee | rain) = 3x, P(coffee | no rain) = x",
+      "0.75(3x) + 0.25(x) = 7/12",
+      "Solve x",
+      "_________________________",
+      "Final Answer: ..."
+    ]
+  }
+]

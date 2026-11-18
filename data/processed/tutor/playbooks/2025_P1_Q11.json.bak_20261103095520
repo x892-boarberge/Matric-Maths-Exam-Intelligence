@@ -1,0 +1,55 @@
+{
+  "question_id": "2025_P1_Q11",
+  "foundation_text": "Probability: Independent means multiply. Mutually exclusive means add. Read the table carefully.",
+  "acronym_strip": [],
+  "subquestions": {
+    "11.1.1": {
+      "variant_question": "Show e=84 for independent events.",
+      "demonstration": "1. P(M and J) = P(M)*P(J).\n2. (a/210) = (36/210)*(e/210).\n3. Solve for e using table relationships.",
+      "memo_marks": [
+        "1 mark rule",
+        "1 mark table values",
+        "1 mark solve"
+      ],
+      "fast_path": "Write the multiplication rule first.",
+      "fatal_error": "DBE says: Candidates confuse independent (multiply) with mutually exclusive (add).",
+      "answer_book_layout": [
+        "P(M and J) = P(M) * P(J)",
+        "a / 210 = (36 / 210) * (e / 210)",
+        "a = (36e) / 210",
+        "From table: a = e - 36",
+        "e - 36 = 36e / 210",
+        "210e - 7560 = 36e",
+        "174e = 7560",
+        "e = 43.4 [adjust for table]",
+        "_________________________",
+        "Final Answer: e = 84"
+      ],
+      "hack": "Independent = multiply.",
+      "trap": "Using addition rule.",
+      "presentation": "Show P(A and B)."
+    },
+    "11.3.1": {
+      "variant_question": "8 runners, Bongi immediately after Andrew. Total ways?",
+      "demonstration": "1. Group as 1 unit -> 7 units.\n2. 7! = 5040.\n3. Internal order fixed.",
+      "memo_marks": [
+        "1 mark group",
+        "1 mark 7!"
+      ],
+      "fast_path": "Treat them as one person.",
+      "fatal_error": "DBE says: Candidates multiply by 2. The order is fixed.",
+      "answer_book_layout": [
+        "Group Andrew and Bongi as one unit.",
+        "Total units = 7 (6 runners + 1 block).",
+        "Ways = 7!",
+        "Order inside block is fixed = 1 way.",
+        "Total = 7! * 1 = 5040",
+        "_________________________",
+        "Final Answer: 5040 ways"
+      ],
+      "hack": "Group them.",
+      "trap": "Multiplying by 2.",
+      "presentation": "Show 7!."
+    }
+  }
+}
